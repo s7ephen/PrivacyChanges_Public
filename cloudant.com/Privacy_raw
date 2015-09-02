@@ -1,1 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <meta charset="UTF-8" />
+  <title>Privacy | Cloudant</title>
+
+  <link rel="alternate" type="application/rss+xml" title="Cloudant Official News" href="https://cloudant.com/?feed=cloudant" />
+  <link rel="alternate" type="application/rss+xml" title="Cloudant Official News" href="http://feeds.feedburner.com/cloudantnews" />
+
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900,300italic,400italic,600italic,900italic' rel='stylesheet' type='text/css'>
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<script type='text/javascript'>
+     $(document).ready(function () {
+     if ($("[rel=tooltip]").length) {
+     $("[rel=tooltip]").tooltip();
+     }
+   });
+  </script>
+
+  
+  <link href="/wp-content/themes/cloudant/images/favicon.ico" rel='shortcut icon' type='image/vnd.microsoft.icon' />
+  <link href="/wp-content/themes/cloudant/images/favicon.png" rel='icon' type='image/png' />
+
+   <!--for geospatial page-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+<!--end geospatial page-->
+
+  <link rel='stylesheet' id='869200f85a0d637aaf566eb96c222962-css'  href='https://cloudant.com/wp-content/themes/cloudant/style.css?ver=531d09ab379f2b486866f03fec6c12cd' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.google.com/jsapi?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+<script type='text/javascript' src='https://cloudant.com/js/tracking-header.js?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+<link rel='prev' title='Terms of Service' href='https://cloudant.com/terms/' />
+<link rel='next' title='Contact Us' href='https://cloudant.com/history/contact-us/' />
+<link rel='canonical' href='https://cloudant.com/privacy/' />
+
+<meta name="google-site-verification" content="T90loEI9YAEQNunxGt9IJ2BReMglv8snkRMOT27-Yeg" />
+</head>
+
+<body class="page page-id-38 page-template page-template-page-php">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W38WT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W38WT8');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- TOP NAV -->
+
+
+  <nav class="navbar navbar-fixed-top">
+
+    <div class="masthead">
+        <div class="ibm">
+      </div>
+    </div>
+
+  
+  <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-test">  
+        <a data-km="Top Nav" title="Mobile Nav Button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a data-km="Top Nav" title="Cloudant Logo" href="/"  class="brand"></a>
+
+         <ul id="nav-search" class="nav main">
+            <li>
+            <button class="nav-search-button" data-drop-down="search" data-km="Top Nav Main">
+              <span class=" cloudant-search"></span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="nav-collapse">
+
+          <ul class="nav actions visible-desktop">
+            <div class="signage btn-group">
+              <a data-km="Top Nav" title="Sign In" href="/sign-in/" class="btn">Sign In</a>
+              <a data-km="Top Nav" title="Sign Up" href="/sign-up" class="btn btn-danger">Sign Up</a>
+            </div>
+
+            <div class="dashboardLink btn-group">
+              <a data-km="Top Nav" title="Your Dashboard" href="/dashboard/" class="btn">Your Dashboard</a>
+              <button class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li id="db-username">Welcome back, <span class="username"></span>.</li>
+                <li class="divider"></li>
+                <li><a data-km="Top Nav" title="Sign Out" href="#" class="sign-out">Sign out</a></li>
+              </ul>
+            </div>
+
+          </ul>
+
+          <ul id="top-nav-main" class="nav main visible-desktop mobile-hide">
+            <li>
+              <button type="button" data-km="Top Nav Main" data-toggle="button" data-drop-down="product" class="product btn dropdown-toggle">Product <span class="caret"></span></button>
+            </li>
+
+<!--            <li>
+              <a href="/product/pricing/" data-km="Top Nav Main" data-toggle="button" data-drop-down="pricing">Pricing</a>
+            </li>-->
+
+            <li>
+              <button type="button" data-km="Top Nav Main" data-toggle="button" data-drop-down="resources" class="resources btn dropdown-toggle">Resources <span class="caret"></span></button>
+            </li>
+
+
+<!--            <li>
+              <button type="button" data-km="Top Nav Main" data-toggle="button" data-drop-down="for-developers" class="for-developers btn dropdown-toggle">For Developers <span class="caret"></span></button>-->
+<!--              <button type="button" data-km="Top Nav Main" data-toggle="button" data-drop-down="for-developers" class="for-developers btn dropdown-toggle">Learn <span class="caret"></span></button>
+            </li>-->
+
+<!--            <li>
+              <a href="/history/contact-us/" data-km="Top Nav Main" data-toggle="button" data-drop-down="pricing">Contact Us</a>
+            </li>-->
+
+            <li>
+              <button type="button" data-km="Top Nav Main" data-toggle="button" data-drop-down="more" class="more btn dropdown-toggle">Contact Us <span class="caret"></span></button>
+            </li>
+          </ul>
+
+          <ul class="nav hidden-desktop">
+
+            <li class="signage"><a data-km="Mobile Nav" href="/sign-in/">Sign In</a></li>
+            <li class="signage"><a data-km="Mobile Nav" href="/sign-up">Sign Up</a></li>
+            <li class="dashboardLink"><a data-km="Mobile Nav" href="/dashboard/">Your Dashboard</a></li>
+            <li class="dashboardLink sign-out"><a data-km="Mobile Nav" href="#">Sign Out</a></li>
+
+            <li><a data-km="Mobile Nav" href="/product/">Product</a></li>
+<!--            <li><a data-km="Mobile Nav" href="/product/pricing">Pricing</a></li>-->
+            <li><a data-km="Mobile Nav" href="/learning-center/">Resources</li>
+<!--            <li><a data-km="Mobile Nav" href="/about-us/">About Us</a></li>
+            <li><a data-km="Mobile Nav" href="/blog/">Blog</a></li>-->
+            <li><a data-km="Mobile Nav" href="/about-us/contact-us/">Contact Us</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+ </div>
+  </nav>
+
+
+<div class="click-blocker"><!-- * --></div>
+
+  <div id="top-nav-drop-down">
+
+     <!-- RESOURCES DROP DOWN -->
+    <div class="drop-down resources visible-desktop">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="offset1 span4">
+            <h3>
+              Learning Resources
+            </h3>
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/learning-center/">Learning Center</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://docs.cloudant.com/">Documentation</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://developer.ibm.com/clouddataservices/services/">IBM Cloud Data Services DevCenter</a>
+              </li>
+            </ul>
+          </div>
+		
+          <div class="offset1 span2">
+            <h3>
+              Online
+            </h3>
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/case-studies/">Case Studies</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/white-papers/">White Papers</a>
+              </li>
+               <li>
+                <a data-km="Top Drop Down Nav" href="/resources/data-sheets/">Datasheets</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/webinars/">Webinars</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/videos/">Videos</a>
+              </li>
+                <li>
+                    <a data-km="Top Drop Down Nav" href="/blog/">Blog</a>
+                  </li>
+            </ul>
+          </div>
+
+
+
+          <div class="offset1 span2">
+            <h3>
+             In Person
+            </h3>
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/events">Events</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/events/meetups/">Meetups</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/training/">Training</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/resources/services/">Services</a>
+              </li>
+            </ul>
+          </div>
+
+
+<!--          <div class="offset1 span2">
+            <h3>
+             How-To's
+            </h3>
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/learning-center">Learning Center</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://docs.cloudant.com">Documentation</a>
+              </li>
+
+
+
+            </ul>
+          </div>-->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOR DEVELOPERS DROP DOWN -->
+    <div class="drop-down for-developers visible-desktop">
+      <div class="container">
+        <div class="row-fluid">
+
+<!--          <div class="span-20">
+            <a data-km="Top Drop Down Nav" href="/for-developers/crud/">
+              <div class="nav-icon reading-writing">
+                <div class="nav-icon-image reading-writing"></div>
+                <p>Reading &amp; Writing</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="span-20">
+            <a data-km="Top Drop Down Nav" href="/for-developers/all_docs/">
+              <div class="nav-icon primary-index">
+                <div class="nav-icon-image primary-index"></div>
+                <p>Primary Index</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="span-20">
+            <a data-km="Top Drop Down Nav" href="/for-developers/views/">
+              <div class="nav-icon secondary-index">
+                <div class="nav-icon-image secondary-index"></div>
+                <p>Secondary Indexes</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="span-20">
+            <a data-km="Top Drop Down Nav" href="/for-developers/search/">
+              <div class="nav-icon search-index">
+                <div class="nav-icon-image search-index"></div>
+                <p>Search Indexes</p>
+              </div>
+            </a>
+          </div>--><!--<div class="offset3 span3">
+            <h3>
+              Learning Resources
+            </h3>
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/learning-center/">Learning Center</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://docs.cloudant.com/">Documentation</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://developer.ibm.com/clouddataservices/services/">IBM Cloud Data Services DevCenter</a>
+              </li>
+            </ul>
+          </div>-->
+<!--          </div>-->
+<!--          <div class="span-20-end">
+            <ul>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/for-developers/">Developer Overview</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="/for-developers/faq/">FAQs</a>
+              </li>
+               <li>
+                <a data-km="Top Drop Down Nav" href="/learning-center/">How To's</a>
+              </li>
+              <li>
+                <a data-km="Top Drop Down Nav" href="https://docs.cloudant.com/api/index.html" target="_blank">Documentation</a>
+              </li>
+
+
+
+
+            </ul>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT DROP DOWN -->
+    <div class="drop-down product visible-desktop">
+      <div class="container">
+        <div class="row-fluid">
+
+          <div class="offset1 span2">
+            <h3>
+              Overview
+            </h3>
+            <ul>
+              <li><a data-km="Top Drop Down Nav" href="/product-options/">Comparison</a></li>
+              <li><a data-km="Top Drop Down Nav" href="/pricing/">Pricing</a></li>			  
+            </ul>
+          </div>
+          <div class="offset1 span4">
+            <h3>
+              Products
+            </h3>
+            <ul>
+              <li><a data-km="Top Drop Down Nav" href="/product/">Cloudant DBaaS</a></li>
+              <li><a data-km="Top Drop Down Nav" href="/cloudant-local/">Cloudant Local</a></li>
+              <li><a data-km="Top Drop Down Nav" href="/dashdb/">Data Warehousing with dashDB</a></li>		
+			  <li><a data-km="Top Drop Down Nav" href="https://console.ng.bluemix.net/catalog/cloudant-nosql-db/">Cloudant on IBM Bluemix</a></li>	
+			  <li><a data-km="Top Drop Down Nav" href="https://console.ng.bluemix.net/solutions/data-analytics">IBM Cloud Data Services</a></li>				  
+            </ul>
+          </div>
+
+
+<!--          <div class="offset1 span2">
+            <h3>
+              DBaaS
+            </h3>
+            <ul>
+               <li><a data-km="Top Drop Down Nav" href="/product/why-dbaas/">Why DBaaS</a></li>
+               <li><a data-km="Top Drop Down Nav" href="/product/comparison-of-dbaas/">Comparison of DBaaS</a></li>
+              <li><a data-km="Top Drop Down Nav" href="/product/service/">24/7 Support</a></li>
+            </ul>
+          </div>-->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT US DROP DOWN -->
+    <div class="drop-down more visible-desktop">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="offset1 span3">
+            <h3>
+              Contact Us
+            </h3>
+            <div class="row-fluid">
+                <ul>
+                  <li>
+                    <a data-km="Top Drop Down Nav" href="/history/contact-us/">General Inquiries</a>
+                  </li>
+                   <li>
+                    <a data-km="Top Drop Down Nav" href="/support/">Support</a>
+                  </li>
+<!--                   <li>
+                    <a data-km="Top Drop Down Nav" href="/blog/">Blog</a>
+                  </li>
+                  <li>
+                    <a data-km="Top Drop Down Nav" href="/history/news-room/">News</a>
+                  </li>-->
+                </ul>
+              </div>
+            </div>
+
+          <div class="offset1 span3 connect">
+            <h3>
+              Connect
+            </h3>
+
+            <ul class="social">
+              <li class="github">
+                <a href="https://github.com/cloudant" target="_blank"></a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/#!/IBMcloudant" target="_blank"></a>
+              </li>
+
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH DROP DOWN -->
+    <div class="drop-down search">
+      <div class="container">
+
+        <div class="row-fluid">
+          <div class="span12">
+
+            <div id="search">
+              <div id='cse' style='width: 100%;'>Loading</div>
+
+
+            </div >
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+  <div class="row title">
+    <div class="container page-title">
+        <h1>Privacy</h1>    </div>
+  </div>
+
+  <div id="pageArea" class="container">
+    
+          <h6 id="effective_as_of_august_5th_2010">Effective as of November 1, 2014</h6>
+<p><h3><b>Scope:</h3></b></p>
+  
+  <p>The <a href="http://www.ibm.com/privacy/details/us/en/" target="blank">IBM Online Privacy Statement</a> applies to IBM’s and our affiliates’ Web sites that link to the Statement. Below are some of the highlights of the Statement.</p>
+
+<p><h3><b>Personal Information</h3></b>
+    <ul>
+        <li> We collect your personal information for various purposes, such as processing your order, corresponding with you, providing you with a subscription or in connection with a job application.</li>
+        <li>We may combine the information we collect from you with information obtained from other sources to help us improve its overall accuracy and completeness, and to help us better tailor our interactions with you.</li>
+        <li>In addition, we may also collect information relating to your use of our Web sites through the use of various technologies, including cookies.</li>
+    </ul></p>
+
+<p><h3><b>Uses</b></h3>
+    <ul>
+        <li>To fulfill your requests by us or by others involved in fulfillment.</li>
+        <li>To contact you for customer satisfaction surveys, market research or in connection with certain transactions.
+        <li>To support products or services you have obtained from us.</li>
+        <li>By IBM and selected organizations for marketing purposes if you have permitted such use.</li>
+        <li>To personalize your experience while you are on our sites, make navigation easier, and for Web site usage statistics.</li>
+    </ul></p>
+
+<p><h3><b>Your Choices</h3></b>
+    <ul>
+        <li>When we collect information from you, you may tell us that you do not want it used for further marketing contact.</li>
+        <li>You may also turn off cookies in your browser.</li>
+    </ul></p>
+
+<p>To find out more about our privacy practices, see the <a href="http://www.ibm.com/privacy/details/us/en/" target="blank">IBM Online Privacy Statement</a>.</p>      
+  </div>
+
+  <!-- BEGIN FOOTER -->
  
+<div id="footer">
+  <div id="footerBottom">
+    <div class="container content">
+ 
+      <div class="row-fluid">
+        <div>
+          <div class="row-fluid company-resources">
+ 
+            <div class="span2">
+              <h3><a data-km="Footer Link" href="/product/">Product</a></h3>
+              <ul class="unstyled">
+                <li>
+                  <a data-km="Footer Link" href="/wp-content/uploads/Cloudant-DBaaS-Why-DBaaS1.pdf">Why DBaaS?</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/product/cloudant-features/">Features</a>
+                </li>
+                 <li>
+                  <a data-km="Footer Link" href="/product/pricing/">Pricing</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/product/comparison-of-dbaas/">DBaaS Comparison</a>
+                </li>
+              </ul>
+            </div>
+ 
+            <div class="span2">
+              <h3><a data-km="Footer Link" href="https://docs.cloudant.com/">Docs</a></h3>
+<ul class="unstyled">
+ <li>
+                  <a data-km="Footer Link" href="http://docs.cloudant.com/tutorials/index.html">Getting Started</a>
+                </li> 
+<li>
+                  <a data-km="Footer Link" href="http://docs.cloudant.com/api/index.html">API Reference</a>
+                </li>
+<li>
+                  <a data-km="Footer Link" href="http://docs.cloudant.com/using-cloudant-with/index.html">Libraries</a>
+                </li>
+<li>
+                  <a data-km="Footer Link" href="http://docs.cloudant.com/guides/index.html">Guides</a>
+                </li>
+ </ul>
+            </div>
+
+                       <div class="span2">
+              <h3><a data-km="Footer Link" href="/for-developers/">For Developers</a></h3>
+<ul class="unstyled">
+                   <li>
+                  <a data-km="Footer Link" href="/for-developers/faq/">FAQ</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/for-developers/examples/">Sample Apps</a>
+                </li>
+ </ul>
+            </div>
+ 
+            <div class="span2">
+              <h3><a data-km="Footer Link" href="/resources/">Resources</a></h3>
+              <ul class="unstyled">
+                <li>
+                  <a data-km="Footer Link" href="/blog/">Blog</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/resources/case-studies/">Case Studies</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/resources/data-sheets/">Data Sheets</a>
+                </li>
+  
+                <li>
+                  <a data-km="Footer Link" href="/product/training-services/">Training</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/resources/webinars/">Webinars</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/resources/white-papers/">Whitepapers</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/resources/videos/">Videos</a>
+                </li>
+                  <li>
+                  <a data-km="Footer Link" href="/resources/events">Events</a>
+                </li>
+              </ul>
+            </div>
+ 
+            <div class="span2">
+              <h3><a data-km="Footer Link" href="/history/">Company</a></h3>
+              <ul class="unstyled">
+                <li>
+                  <a data-km="Footer Link" href="/history/">About Us</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/history/contact-us/">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+ 
+            <div class="span2">
+              <h3><a data-km="Footer Link" href="/history/news-room/">News</a></h3>
+              <ul class="unstyled">
+                <li>
+                  <a data-km="Footer Link" href="/history/news-room/">In the Press</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/history/news-room/">Press Releases</a>
+                </li>
+                <li>
+                  <a data-km="Footer Link" href="/history/news-room/">Awards</a>
+                </li>
+              </ul>
+            </div>
+ 
+          </div>
+        </div>
+ 
+      </div>
+      <div class="row-fluid copyright">
+        <div class="span6">
+        <div class="socialbutton twittericon">
+        <a href="https://twitter.com/ibmcloudant">
+        <img src="/wp-content/themes/cloudant/images/footer/twitter.png" alt="Twitter"></a>
+        </div>
+ 
+        <div class="socialbutton rssicon">
+        <a href="/?feed=cloudant">
+        <img src="/wp-content/themes/cloudant/images/footer/rss.png" alt="RSS"></a>
+        </div>
+ 
+        <div class="socialbutton facebookicon">
+        <a href="https://www.facebook.com/cloudant">
+        <img src="/wp-content/themes/cloudant/images/footer/facebook.png" alt="Facebook"></a>
+        </div>
+ 
+        <div class="socialbutton linkedinicon">
+        <a href="https://www.linkedin.com/company/cloudant">
+        <img src="/wp-content/themes/cloudant/images/footer/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        </div>
+ 
+        <div class="span6">
+          <ul class="copyright_links">
+            <li><a data-km="Footer Link" href="/terms/">Terms Of Use</a></li>
+            <li>|</li>
+            <li><a data-km="Footer Link" href="/privacy/">Privacy</a></li>
+            <li>|</li>
+            <li>&copy;IBM Corporation 2014</li>
+          </ul>
+        </div>
+      </div>
+ 
+    </div>
+ 
+  </div>
+</div>
+<!-- BEGIN FOOTER -->    <script type='text/javascript' src='https://platform.twitter.com/oct.js?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+<script type='text/javascript' src='https://cloudant.com/js/tracking-footer.js?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+<script type='text/javascript' src='https://cloudant.com/js/main.js?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+<script type='text/javascript' src='https://www.googleadservices.com/pagead/conversion.js?ver=531d09ab379f2b486866f03fec6c12cd'></script>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4h19&p_id=Twitter" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4h19&p_id=Twitter" />
+<script type="text/javascript" src='/wp-content/themes/cloudant/js/jquery.flexslider-min.js'></script>
+<script type="text/javascript">
+$(function() {
+$('.flexslider').flexslider();
+});
+</script>
+
+<script type="text/javascript">
+$(window).load(function() {
+$('.flexslider').flexslider();
+});
+</script> 
+<script type="text/javascript">
+
+$("#api_feature1").mouseover(function () {
+$("#api_content1").css("z-index", "10")
+$("#api_content2").css("z-index", "0")
+$("#api_content3").css("z-index", "0")
+$("#api_content4").css("z-index", "0")
+$("#api_content5").css("z-index", "0")
+$("#api_content6").css("z-index", "0")
+});
+
+$("#api_feature2").mouseover(function () {
+$("#api_content1").css("z-index", "0")
+$("#api_content2").css("z-index", "10")
+$("#api_content3").css("z-index", "0")
+$("#api_content4").css("z-index", "0")
+$("#api_content5").css("z-index", "0")
+$("#api_content6").css("z-index", "0")
+});
+
+$("#api_feature3").mouseover(function () {
+$("#api_content1").css("z-index", "0")
+$("#api_content2").css("z-index", "0")
+$("#api_content3").css("z-index", "10")
+$("#api_content4").css("z-index", "0")
+$("#api_content5").css("z-index", "0")
+$("#api_content6").css("z-index", "0")
+});
+
+$("#api_feature4").mouseover(function () {
+$("#api_content1").css("z-index", "0")
+$("#api_content2").css("z-index", "0")
+$("#api_content3").css("z-index", "0")
+$("#api_content4").css("z-index", "10")
+$("#api_content5").css("z-index", "0")
+$("#api_content6").css("z-index", "0")
+});
+
+$("#api_feature5").mouseover(function () {
+$("#api_content1").css("z-index", "0")
+$("#api_content2").css("z-index", "0")
+$("#api_content3").css("z-index", "0")
+$("#api_content4").css("z-index", "0")
+$("#api_content5").css("z-index", "10")
+$("#api_content6").css("z-index", "0")
+});
+	
+$("#api_feature6").mouseover(function () {
+$("#api_content1").css("z-index", "0")
+$("#api_content2").css("z-index", "0")
+$("#api_content3").css("z-index", "0")
+$("#api_content4").css("z-index", "0")
+$("#api_content5").css("z-index", "0")
+$("#api_content6").css("z-index", "10")
+});
+	
+	
+$(".api_feature").one("mouseover", function() {
+$("#api_content7").addClass("hoveroff");
+});
+	
+	</script>
+  </body>
+</html>
