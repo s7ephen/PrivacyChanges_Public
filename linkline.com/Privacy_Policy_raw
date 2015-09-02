@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linkline.com - Under New Ownership</title>
+<meta name="keywords" content="UIA, linkline">
+<meta name="description" content="Linkline Communications, now a part of Ultimate Internet Access, Inc.">
+<meta charset="UTF-8">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+      var count = 30;
+	  var countdown = setInterval(function(){
+	    $("div#countdown").html("Redirecting in " + count + " seconds...");
+	    if (count == 0) {
+	      clearInterval(countdown);
+	      window.open('http://www.uia.net/', "_self");
+	
+	    }
+	    count--;
+	  }, 1000);
+
+});
+</script>
+<style type="text/css">
+body {
+	background-color:ffffff;
+	background-image:url(http://www.uia.net/assets/components/images/background_gradient_vertical.gif);
+	background-repeat:repeat-x;
+	background-position:top left;
+	background-attachment:fixed;
+}
+h1{
+	text-align:center;
+	font-family:Arial;
+	font-variant:small-caps;
+	letter-spacing:2px;
+	color:000000;
+}
+p {
+	font-family:Arial;
+	font-size:14px;
+	font-style:normal;
+	font-weight:normal;
+	color:000000;
+}
+div#main_content{
+	text-align: center;
+	font-family: Arial;
+}
+
+div#announcement_text{
+	position: relative;
+	text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+h2{
+	font-family: Arial;
+}
+div#linkline_logo{
+	position: relative;
+	float: right;
+}
+div#webmail_link_container{
+	text-align: left;
+}
+div#countdown{
+	position: fixed;
+	right: 5px;
+	background-color: rgba(0,0,0,0.2);
+	padding: 5px;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<div id="main_content">
+<div class="logo-head">
+      <a href="http://www.uia.net/"><img src="http://www.uia.net/assets/components/images/uia_logo_ian.png" alt=
+      "Ultimate Internet Access, Inc. - UIA.net" /></a>
+</div>
+
+
+
+
+
+<div id="announcement_text">
+
+
+
+<div id="linkline_logo">
+	<img src="images/linkline_logo.png">
+</div>
+
+<h1>Linkline Communications Under New Ownership </h1>
+<br>
+
+<h2>Welcome to Ultimate Internet Access, Inc.</h2>
+<p>
+We are pleased to announce that Ultimate Internet Access (UIA) has purchased the assets of LinkLine Communications from Chapter 7 Bankruptcy. UIA is a full service Internet Provider and has been in business for over 18 years serving the Inland Empire and greater Southern California areas. For more information on our services, please <a href="http://www.uia.net/">click here</a>.
+</p>
+<p>
+The following old linkline phone numbers have been disconnected: 877-546-5345  and 909-972-7000  (do not use). 
+</p>
+<p>
+Instead, please use the UIA main number: 
+</p>
+<p>
+<b>909-605-2000</b>
+</p>
+<br>
+<p>
+Or email: 
+<br><br>
+sales@uia.net<br>
+support@uia.net
+</p>
+
+
+<br>
+
+<div id="webmail_link_container">
+Webmail:   If you use webmail, please bookmark this link: <a href="http://webmail.linkline.com/">LINKLINE WEBMAIL</a>
+</div>
+
+
+
+</div>
+
+
+	<div id="countdown">
+	</div>
+
+
+
+<br>
+<br>
+
+<div id="footer">
+&copy; 2014 Ultimate Internet Access, Inc.
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
