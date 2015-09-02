@@ -1,1 +1,4552 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 modePublish"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 modePublish"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 modePublish"> <![endif]-->
+<!--[if IE 9]> <html class="no-js modePublish"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js gt-ie9 modePublish"><!--<![endif]-->
+  
+
+
+
+  <head>
+    
+    
+    <!-- Begin comScore Tag -->
+    <script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"18406752"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=18406752&cv=2.0&cj=1" pagespeed_url_hash="2509096413"/>
+    </noscript>
+    <!-- End comScore Tag -->
+    
+    
+    <script>if(window.location.search.indexOf("print")>-1){if(document.referrer.indexOf("http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html")!=0){window.location="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html";}}</script>
+    
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQ4OUFNbGwEGU1dUAwE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+    <script type="text/javascript">var slate_public_url="http://www.slate.com/";window._sf_startpt=(new Date()).getTime();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Slate's privacy policy.</title>
+    <meta name="description" content="Last Updated: February 28, 2014. The Slate Group LLC (&ldquo;Slate,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.&nbsp; This Privacy Policy (&ldquo;Policy&rdquo;) describes how we collect, use, and disclose information through the websites, mobile applications, and other..."/>
+    <meta name="keywords" content="slate privacy policy"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+    
+
+    
+    
+    
+    <script>var commercialNode='briefing/privacy';var commercialPageType='article';var selectedText="";</script>
+    <!-- Facebook OG -->
+    <meta id="ogtitle" property="og:title" content="Slate's Privacy Policy"/>
+    
+
+    <meta property="article:publisher" content="http://www.facebook.com/Slate"/>
+
+    
+
+    <meta property="og:type" content="article"/>
+    <meta id="ogurl" property="og:url" content="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"/>
+    <meta id="ogimage" property="og:image" content="http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png"/>
+    <meta property="og:site_name" content="Slate Magazine"/>
+    <meta id="ogdescription" property="og:description" content="Last Updated: February 28, 2014. The Slate Group LLC (&ldquo;Slate,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.&nbsp; This Privacy Policy (&ldquo;Policy&rdquo;) describes how we collect, use, and disclose information through the websites, mobile applications, and other..."/>
+    <meta property="fb:app_id" content="142011022527753"/>
+    <!-- Twitter -->
+    <meta name="twitter:card" value="summary_large_image"/>
+    <meta name="twitter:site" value="@slate"/>
+    
+    <meta name="twitter:creator" value=""/>
+    
+    <meta name="twitter:url" value="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"/>
+    <meta name="twitter:title" value="&lt;strong&gt;&lt;em&gt;Slate&lt;/em&gt;&lt;/strong&gt;'s Privacy Policy"/>
+    <meta name="twitter:description" value="Last Updated: February 28, 2014. The Slate Group LLC (&ldquo;Slate,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.&nbsp; This Privacy Policy (&ldquo;Policy&rdquo;) describes how we collect, use, and disclose information through the websites, mobile applications, and other..."/>
+    <meta name="twitter:image" value="http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png"/>
+    
+    <meta name="tw-line" content="Slate's Privacy Policy"/>
+
+      
+    <meta name="fb-share" content="Slate's Privacy Policy"/>
+
+    
+    <link type="text/css" href="http://static.cdnslate.com/etc/designs/slate/css/story.93f594de.css" rel="stylesheet"/>
+    
+    
+    
+    <script id="slate-webfont-localstorage-js">!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts.3d7d8557.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(document,"DOMContentLoaded",n)}();</script>
+    <noscript id="slate-font"><link rel="stylesheet" id="slate-font-css" href="http://static.cdnslate.com/etc/designs/slate/css/slate-fonts.3d7d8557.css" type="text/css" media="all"></noscript>
+    
+    
+    <script data-ad-site="slate" src="http://static.cdnslate.com/etc/designs/slate/js/libs/require.js"></script>
+    <script>requirejs.config({"baseUrl":"http://static.cdnslate.com/etc/designs/slate/js","waitSeconds":0,"paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min","modernizr":"/etc/designs/slate/js/libs/modernizr-2.6.1.min","announcements":"/etc/designs/slate/js/announcements","slate":"/etc/designs/slate/lib","hogan":"libs/hogan-2.0.0","facebook":"//connect.facebook.net/en_US/all","twitter":"//platform.twitter.com/widgets","livefyre":"//cdn.livefyre.com/Livefyre","brightcove":"https://sadmin.brightcove.com/js/BrightcoveExperiences","brightcovetracking":"/etc/designs/slate/js/brightcovetracking","mobileredirection":"libs/redirection_mobile_1.0.0.min","optimizely":"//cdn.optimizely.com/js/37441550","outbrain":"//widgets.outbrain.com/outbrain","shared":"http://static.cdnslate.com/etc/designs/shared/js","instafeed":"/etc/designs/slate/js/instafeed","campaigns":"http://campaigns.slate.com/campaigns/slate","clipboard":"libs/zeroclipboard/ZeroClipboard.min","tinypass":"https://cdn.tinypass.com/api/tinypass.min","rpxnow":window.location.protocol==='https:'?'https://rpxnow.com/load/login.slate.com?noext':'http://widget-cdn.rpxnow.com/load/login.slate.com?noext','promise':'requirejs-promise','youtube':"/etc/designs/slate/js/youtube",'youtubeapi':"https://www.youtube.com/iframe_api?noext","keywee":"https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min"},"shim":{"shared/devicemode":["modernizr"],"hcs/script":["jquery","modernizr","shared/devicemode"],"libs/jquery-plugins/jquery.browser":["jquery"],"hcs/plugins/jquery.transit":["jquery"],"hcs/plugins/SGFootnote.jquery":["jquery"],"hcs/plugins/SGSocialIcons.jquery":["jquery","hcs/script"],"hcs/plugins/SGNavDropdown.jquery":["jquery"],"hcs/plugins/SGComments.jquery":["jquery","hcs/script"],"hcs/plugins/SGRollup.jquery":["jquery","hcs/script"],"hcs/plugins/SGGlobalNav.jquery":["jquery","hcs/script"],"hcs/plugins/SGLightbox.jquery":["jquery"],"hcs/plugins/jQuery.highlighter":["jquery"],"hcs/libs/swipe":["jquery"],"hcs/libs/magnific":["jquery"],"hcs/plugins/jquery.swipebox":["jquery"],"hcs/plugins/SGBigSlider.jquery":["jquery","hcs/script","hcs/libs/swipe"],"hcs/plugins/jquery.placeholder.min":["jquery"],"libs/jquery-plugins/jquery.timeago":["jquery"],"libs/jquery-plugins/jquery.form":["jquery"],"libs/jquery-plugins/jquery.cookie":["jquery"],"libs/jquery-plugins/jquery.fittext":["jquery"],"libs/jquery-plugins/jquery.backgroundSize":["jquery"],"libs/jquery-plugins/jquery.flexslider":["jquery"],"libs/jquery-plugins/purl":["jquery"],"libs/jquery-plugins/jquery.colorbox":["jquery"],"libs/jquery-plugins/jquery.sticky":["jquery"],"libs/jquery-plugins/jquery.autoComplete":["jquery"],"libs/jquery-plugins/jquery.boxfit":["jquery"],"libs/jquery-plugins/jquery.dateformat":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.extra":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.bg":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.widget":["jquery"],"libs/jquery-plugins/jquery.storageapi":["jquery"],"libs/jquery-plugins/jquery.visible":["jquery"],"libs/jquery-plugins/jquery.event.move":["jquery"],"libs/jquery-plugins/jquery.twentytwenty":["jquery"],"optimizely":["jquery"],"facebook":{deps:["site-bottom"],exports:"FB"},"livefyre":{exports:"fyre"},"brightcove":{"exports":"brightcove"},"mobileredirection":{"exports":"mobileredirection"},"hogan":{"exports":"Hogan"},"outbrain":{"exports":"OBR"}},map:{'*':{'css':'libs/require-css/css'}}});define("config",{"env":{"edit":false,"environment":"prod"},"janrain":{"siteConfig":{"enabled":true,"propertyId":"login.slate.com","raceConditionTimeout":+"500".replace(/\D/gi,''),"jsNamespace":"slateJanrain","userMessage":""},"appUrl":"https://login.slate.com","tokenUrl":"http://www.slate.com","capture":{"appId":"dbuhzej2qm7k436x6jg4qpef3f","captureServer":"https://profile.slate.com","clientId":"sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha","accessTokenLifeHours":+"730".replace(/\D/gi,''),"returnExperienceUserData":"uuid,displayName,email".split(",").map(function(item){return item.trim();}),"flowVersion":"HEAD"}},"myslate":{"site_base_domain":"slate.com","site_path":"/","site_url":"//www.slate.com/","myslate_domain":"//my.slate.com/","myslateTokenPath":"proxies/livefyre/token/","myslateJanrainTokenPath":"proxies/janrain/token/","myslateVerifyPath":"proxies/janrain/verify/","myslateSubscriptionsManagePath":"subscriptions/manage/","myslate_https":true,"fb_xd_receiver":"http://www.slate.com/xd_receiver.htm","fb_app_id":142011022527753,},"livefyre":{"network":"slate.fyre.co","jsSourceUrl":"http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js","siteId":"337720","loadTiming":"immediate"},"campaigns":{"domain":"campaigns.slate.com"},"site":{"site":"slate","title":"Slate","staticUrl":"http://static.cdnslate.com","omniturePrefix":"sl"},"data_domain":"http://www.slate.com/","page":{"articleId":"100121206009","roadblocked":false,"embeddedContent":false,"slateplus":false,"enableIssueCollector":false},"ads":{"enableHomepageViewability":false,"enableStoryViewability":true,"viewabilityEnabled":true,"viewability":{"leaderboardRollup":true,"leaderboardRollupDisabledList":"","refreshInterval":"30","refreshPolar":false,"testPageList":"news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts","lazyload":{"homepageBB":true,"leaderboard_2":true,"tiffTiles":true,"rightflex":true}}},"tinypass":{"jsNamespace":"slateTinypass","enabled":true,"globalTrackPageview":true,"aid":"Ey9jlGV74T","rid":"PW_54887721","paywallId":"54887721","sandbox":false,"contentCreated":"2012-12-06T13:22:19","contentAuthor":[],"contentSection":"briefing","janrainAppName":"the-slate-group-prod.us","ribbonText":"","excludedSocialDomains":"".split(",").filter(function(item){item=item.trim();return item!=='';}),"templates":{"offerId":"OFRO847YFZZ2","defaultOffer":"OT6TPCSI94W5","reminder":"OTN6JFAPXOAR","curtain":"OTM6Z4P8U1OE","template4of5":"OT8HXCA1TCPX","template5of5":"OT0V1T3EU4ZQ","faq":"OT8KJPE8Z2CA"},"internationalOffers":{"CA":{"offerId":"OFNFOLDOUBN1","defaultOffer":"OTFKE6VMUTRA","reminder":"OTU0BN1RZA59","curtain":"OT522QEFSKBU","template4of5":"OTQU7V4J5Q1T","template5of5":"OTKAIYO11WCR","faq":"OTSLZE94Q7NN"},"GB":{"offerId":"OF5X80KUVFDM","defaultOffer":"OT5GZFNKVV0D","reminder":"OTDIACLP1GJX","curtain":"OT0NLDL4GAER","template4of5":"OT4QBVKACCOA","template5of5":"OTGBVZ3P6CZ1","faq":"OTVZPJFCMPKK"},"Europe":{"offerId":"OF9H1SAODWS3","defaultOffer":"OT425B0PIB6C","reminder":"OT6BUP2JE3WW","curtain":"OTPJJ9ZUK744","template4of5":"OT4TEJCCMP4K","template5of5":"OT2GTODIR962","faq":"OT58VOY6CJFC"},"AU":{"offerId":"OF130IZX2JU6","defaultOffer":"OTJXP44SQVU8","reminder":"OT68H8QOVXWC","curtain":"OTGKO7WOSR97","template4of5":"OT0UEZXM0KFO","template5of5":"OTDW9GU7L9UW","faq":"OT7SRU05FQPZ"}}},"_log":[],"log":function(data){requirejs(["config"],function(config){if(typeof console!="undefined"&&typeof console.log!="undefined"){console.log(data);}
+config._log.push(data);});}});requirejs(['config'],function(config){var documentDomain='slate.com';if(config.janrain.siteConfig.enabled){documentDomain=config.myslate.site_base_domain;}
+document.domain=documentDomain;});var homepagePolarSpot='b1';</script>
+    
+    <script src="http://static.cdnslate.com/etc/designs/slate/js/main.min.28bc6121.js"></script>
+    
+
+
+<script type="text/javascript" language="javascript">requirejs(["jquery","s_code","libs/jquery-plugins/jquery.cookie"],function($,s,unused){s.currencyCode="usd";s.charSet="utf-8";s.trackDownloadLinks=true;s.trackExternalLinks=true;s.trackInlineStats=true;s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls";s.linkInternalFilters="javascript:,slate.com,traffic.outbrain.com";s.linkTrackVars="none";s.linkTrackEvents="none";s.pageName="briefing:article - 20121206 - slate's privacy policy.";s.channel="sl - briefing";s.server="www.slate.com";s.prop2="slate user agreement and privacy policy";s.prop3="article";s.prop4="slate";s.prop5="";s.prop12="100121206009";s.prop13="slate's privacy policy.";s.prop14="1";s.prop34="3.77.0";s.prop36="general";s.prop39="briefing/privacy";s.prop40="legal, legal";s.hier1="briefing|slate user agreement and privacy policy|article";s.eVar8="";s.eVar17="article";s.prop32=$.cookie('spf')||'false';if(typeof placeAd2==='undefined'){$.cookie('spf','true',{expires:365,path:'/'});}
+s.t();});</script>
+
+
+    <script>var _isNavMoving=false;</script>
+
+    <!-- Google Sitemap -->
+    <meta name="google-site-verification" content="jXqoqqPSmx_PWchRdG-IXu-X616Ee2Ptf_AiElI9LzQ"/>
+    <link rel="canonical" href="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"/>
+    <link rel="image_src" href=""/>
+
+    <!-- Parsely -->
+        <meta name='parsely-page' content='{
+  "title": "Slate\u0027s Privacy Policy",
+  "link": "http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html",
+  "image_url": "",
+  "type": "post",
+  "post_id": "100121206009",
+  "pub_date": "2012-12-06T13:22:19Z",
+  "section": "briefing",
+  "author": "",
+  "tags": [
+    "legal",
+    "legal"
+  ]
+}'/>
+    
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="briefing (RSS 2.0)" href="http://www.slate.com/articles/briefing.fulltext.all.rss"/>
+
+    
+    <script>var wp_meta_data={"authors":[],"contentType":"article","page_id":"100121206009","keywords":"Slate User Agreement And Privacy Policy,legal,legal,Slate User Agreement And Privacy Policy,slate privacy policy","section":"briefing","rubric":"Slate User Agreement And Privacy Policy"};</script>
+
+    
+    <![if gte IE 8]>
+    <script type="text/javascript">requirejs(['jquery'],function($){var SlateNextbox={};SlateNextbox.data={'headline':'College Football Coaches\u2019 Bans on Players\u2019 Tweeting Might Be Unconstitutional','subhead':'','url':'http:\/\/www.slate.com\/blogs\/the_slatest\/2015\/09\/02\/college_football_twitter_bans_unconstitutional_espn_reporter_says_it_seems.html','article_id':'227150902007','hasImage':true,'image':'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/the_slatest\/2015\/09\/02\/college_football_twitter_bans_unconstitutional_espn_reporter_says_it_seems\/469358504.jpg.CROP.rectangle-small.jpg','section':'The Slatest','subscribe_type':'rubric'};$.data(window,"SlateNextbox",SlateNextbox);});</script>
+    <![endif]>
+    
+
+    
+
+      
+        <!-- sailthru meta -->
+        <meta name="sailthru.tags" content="slate privacy policy"/>
+        <meta name="sailthru.author" content=""/>
+        <meta name="sailthru.date" content="2012-12-06T13:22:19Z"/>
+        <meta name="sailthru.description" content="Last Updated: February 28, 2014. The Slate Group LLC (&ldquo;Slate,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.&nbsp; This Privacy Policy (&ldquo;Policy&rdquo;) describes how we collect, use, and disclose information through the websites, mobile applications, and other..."/>
+        <meta name="sailthru.image.full" content="http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png"/>
+
+        <meta name="sailthru.headline" content="Slate's Privacy Policy"/>
+        <meta name="sailthru.subheadline" content="Our data-collection practices."/>
+        <meta name="sailthru.promoheadline" content="Slate's Privacy Policy"/>
+        
+    
+      <script type="text/javascript">var teadsEnabled=true;requirejs(["jquery","myslate"],function($,myslate){if(myslate.isSlatePlusUser){teadsEnabled=false;}});</script>
+    
+      
+        <script type="application/ld+json">
+        {"@context":"http://schema.org","url":"http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html","@type":"Article","mainEntityOfPage":"True","articleBody":"Last Updated: February 28, 2014. The Slate Group LLC (\u201cSlate,\u201d \u201cwe,\u201d or \u201cus\u201d) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.  This Privacy Policy (\u201cPolicy\u201d) describes how we collect, use, and disclose information through the websites, mobile applications, and other online services and products that link to or post this Policy (collectively, the \u201cServices\u201d).  Please read the entire Privacy Policy before using our Services.  By using the Services, you consent to the terms of this Privacy Policy. 1.     Information We Collect You generally are not required to provide information about yourself when you visit the Services.  However, we may ask you for some or all of the following types of information when you register with our Services, access various content or features, register for contests or sweepstakes, submit comments and other content, order products, or directly contact us with questions or feedback: Contact information, such as name, e-mail address, postal address, and telephone number; User name, display name, and password; Demographic information, such as age information and gender; Payment information, such as credit card number and expiration date; Geolocation information; Communications preferences; Search queries; Stories, comments, photos, and other information posted in our interactive online features; Correspondence and other information that you send to us; and Additional information as otherwise described to you at the point of collection or pursuant to your consent. We also may collect certain information automatically when you visit the Services, including: Your browser type and operating system; Your Internet Protocol (IP) address, which is the number automatically assigned to your computer whenever you access the Internet and that can sometimes be used to derive your general geographic area; Other unique identifiers, including mobile device identification numbers; Sites you visited before and after visiting the Services; Pages you view and links you click on within the Services; Information collected through cookies, web beacons, and other technologies; Information about your interactions with e-mail messages, such as the links clicked on and whether the messages were opened or forwarded; and Standard Server Log Information We may use cookies, pixel tags, Local Shared Objects (sometimes referred to as \u201cFlash Cookies\u201d), and similar technologies to automatically collect this information.  Cookies are small bits of information that are stored by your computer\u2019s web browser.  Pixel tags are very small images or small pieces of data embedded in images, also known as \"web beacons\" or \"clear GIFs,\u201d that can recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag is placed, and similar information from your computer or device.  Local Shared Objects (sometimes referred to as \u201cFlash Cookies\u201d) are similar to standard cookies except that they can be larger and are downloaded to a computer or mobile device by the Adobe Flash media player.  By using the Services, you consent to our use of cookies and similar technologies.  You can decide if and how your computer will accept a cookie by configuring your preferences or options in your browser.  However, if you choose to reject cookies, you may not be able to use certain online products, services or features on the Services. 2.     Use of Information   We may use information that we collect through the Services for a variety of purposes, including to: Provide you with the products, promotions, services, newsletters, and information you request and respond to correspondence that we receive from you; Customize and personalize your use of the Services; Provide Slate Plus users with premium content, products, promotions, and information; Contact you via email and otherwise about products, services, and events that we think might be of interest to you; Contact you with surveys, legal notices, and other information that may be relevant to your use of the Services; Maintain or administer the Services, perform business analyses, or for other internal purposes to improve the quality of our business, the Services, and other products and services we offer; Publish stories, comments, and other information posted in our interactive online features; Process employment applications and inquiries; and As otherwise described to you at the point of collection or pursuant to your consent. To show you relevant ads both on our Services and elsewhere, and measure the effectiveness and reach of ads. To learn more about how you can opt out of interest-based advertising, please visit www.networkadvertising.org; 3.     Sharing of Information We are committed to maintaining your trust, and we want you to understand when and with whom we may share the information we collect. Corporate Parents, Affiliates, and Subsidiaries.  We may share your information with our corporate parents, subsidiaries, and other affiliated entities for a variety of purposes, including business, operational, and marketing purposes. Service Providers.  We may share your information with service providers that perform certain functions or services on our behalf, such as to host the Services, manage databases, host a store or other e-commerce platform, perform analyses, or send communications for us. Select Business Partners.  We may share your information with select business partners so that they can provide you with special offers, promotional materials, and other materials that may be of interest to you. However, Slate is not responsible for the privacy practices of these business partners, which may use your information for their own purposes. Other Parties When Required By Law or as Necessary to Protect the Services.  We may disclose your information to third parties in order to protect the legal rights, safety, and security of Slate, our corporate parents, affiliates, and subsidiaries, and the users of our Services; enforce our Terms of Use; prevent fraud (or for risk management purposes); and comply with or respond to law enforcement or legal process or a request for cooperation by a government or other entity, whether or not legally required. In Connection With a Transfer of Assets. If we sell all or part of our business, or make a sale or transfer of assets, or are otherwise involved in a merger or business transfer, or in the event of bankruptcy, we may transfer your information to one or more third parties as part of that transaction. Other Parties With Your Consent. We may share information about you with third parties when you consent to such sharing, including when you post information to a user profile or a public area of the Services, such as a chat room, forum, blog, or other community tool. Aggregate Information.  We may disclose to third parties information that does not describe or identify individual users, such as aggregate website usage data or demographic reports. We may allow third parties to place and read their own cookies, web beacons, Local Shared Objects, and similar technologies to collect information through the Services.  For example, our third-party service providers may use these technologies to collect information that helps us with traffic measurement, research, and analytics.  Local Shared Objects (sometimes referred to as \u201cFlash Cookies\u201d) are similar to standard cookies except that they can be larger and are downloaded to a computer or mobile device by the Adobe Flash media player.  Please note that you may need to take additional steps beyond changing your browser settings to refuse or disable Local Shared Objects and similar technologies.  For example, Local Shared Objects can be controlled through the instructions on Adobe\u2019s Setting Manager page.   If you choose to refuse, disable, or delete these technologies, some of the functionality of the Services may no longer be available to you. Slate does not share information that it collects with third parties for the third party\u2019s direct marketing purposes. 4.     Data Security We maintain reasonable security procedures to help protect against loss, misuse, unauthorized access, disclosure, alteration or destruction of the information you provide to us.  Please note that no data transmission or storage can be guaranteed to be 100% secure.  As a result, while we strive to protect your information and privacy, we cannot guarantee or warrant the security of any information you disclose or transmit to us online and cannot be responsible for the theft, destruction, or inadvertent disclosure of your information. You are responsible for maintaining the confidentiality of your account password and for any access to or use of the Services using your password, whether or not authorized by you.  Please notify us immediately of any unauthorized use of your password or account or any other breach of security. 5.     Children\u2019s Privacy The Services do not knowingly collect, use, or disclose personal information from children under the age of 13 without prior parental consent, except as permitted by the Children\u2019s Online Privacy Protection Act (\u201cCOPPA\u201d).  6.     Social Networking Services Slate has worked with certain third-party social media providers to offer you their social networking services through our Services.  For example, you can use third-party social networking services, including but not limited to Facebook, Twitter, and others to share information about your experience on our Services with your friends and followers on those social networking services.  These social networking services may be able to collect information about you, including your activity on our Services.  These third-party social networking services also may notify your friends, both on our Services and on the social networking services themselves, that you are a user of our Services or about your use of our Services, in accordance with applicable law and their own privacy policies.  If you choose to access or make use of third-party social networking services, we may receive information about you that you have made available to those social networking services, including information about your contacts on those social networking services. You also may be able to link an account from a social networking service (e.g., Facebook, Twitter) to an account through our Services.  This may allow you to use your credentials from the other site or service to sign in to certain features on our Services.  If you link your account from a third-party site or service, we may collect information from those third-party accounts, and any information that we collect will be governed by this Privacy Policy. 7.     Privacy Policy Updates We may modify this Privacy Policy at any time by posting revisions to the Services or other appropriate notice.  Your continued use of the Services after any modification to the Privacy Policy will constitute your acceptance of the new terms and conditions. 8.     Links to Third Party Sites and Services The Services may contain links to other websites or online services that are operated and maintained by third parties and that are not under the control of or maintained by Slate.  Such links do not constitute an endorsement by Slate of those other websites, the content displayed therein, or the persons or entities associated therewith.  This Privacy Policy does not apply to this third-party content.  We encourage you to review the privacy policies of these third-party websites or services. 9.     International Users Please note that the Services are directed towards users who reside in the United States. By using the Services, you consent to the collection, storage, processing, and transfer of your information in and to the United States, or other countries and territories, pursuant to the laws of the United States.  While some of these countries may not offer the same level of privacy protection as your own, Slate commits to uphold the privacy protections as explained in this Policy. 10.  Your California Privacy Rights It is our policy not to share your personal information with third parties for their direct marketing purposes.  Some web browsers may transmit \u201cdo-not-track\u201d signals to the websites with which the user communicates.  Because of differences in how web browsers incorporate and activate this feature, it is not always clear whether users intend for these signals to be transmitted, or whether they even are aware of them.  Because there currently is no industry standard concerning what, if anything, websites should do when they receive such signals, Slate currently does not take action in response to these signals.  If and when a final standard is established and accepted, we will reassess how to respond to these signals. 11.  Communications Preferences You may choose to receive promotional emails, newsletters, and similar communications from us.  You may opt out of receiving commercial emails from us by clicking on the opt-out or \u201cunsubscribe\u201d link included in the commercial e-mails you receive.  Please note that opt-out requests may take up to 10 business days to be effective.  Your opt-out request will not apply to messages that you request or that are not commercial in nature.  For example, we may contact you concerning any purchases you have made with us, even if you opt out of receiving unsolicited commercial email messages. 12.  Contact Us If you have any questions about this Privacy Policy, you may contact us at: slateoffice@slate.com","headline":"Slate's Privacy Policy","datePublished":"2012-12-06T13:22:19-05:00","image":{"@list":[""]}}
+        </script>
+      
+
+
+
+
+  </head>
+
+  
+
+  <body class="article story">
+    <script type="text/javascript">requirejs(["jquery","libs/jquery-plugins/jquery.cookie"],function($,unused1){var twitterReferral=document.referrer.indexOf("t.co/")>-1;var facebookReferral=document.referrer.indexOf("facebook.com/")>-1;var socialCookie=$.cookie('slate-social-referral');if(twitterReferral||facebookReferral||socialCookie){var hideSocialBanner=$.cookie('slate-social-referral-noshow');if(hideSocialBanner===undefined){hideSocialBanner="";}
+var referrerHost=socialCookie;if(twitterReferral||facebookReferral){referrerHost=twitterReferral?"twitter":"facebook";}
+if(hideSocialBanner.indexOf(referrerHost)==-1){$('#notification-'+referrerHost).show();$('.notification .close').click(function(){$.cookie('slate-social-referral-noshow',hideSocialBanner+"-"+referrerHost,{expires:30,path:'/'});});if(!socialCookie){$.cookie('slate-social-referral',referrerHost,{path:'/'});}}}});</script>
+
+    <header class="notification" style="display:none;" id="notification-facebook">
+    Like us on Facebook for more great Slate stories!
+    <div class="social">
+        <div class="fb-like" data-href="https://www.facebook.com/Slate" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+    </div>
+    <a href="#" class="close">X</a>
+    </header>
+
+    <header class="notification" style="display:none;" id="notification-twitter">
+    Follow us on Twitter for more great Slate stories!
+    <div class="social">
+    <a href="https://twitter.com/slate" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @slate</a>
+    </div>
+    <a href="#" class="close">X</a>
+    </header>
+
+
+
+    <input type="hidden" id="currPath" value="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy"/>
+    <!-- HCS: shared/roll_ups/tablet -->
+    <!-- This is the header bar we always show in tablet mode -->
+    <header class="roll-up" id="tablet_header">
+      <div class="container">
+        <div class="main">
+
+        </div>
+        <div class="sidebar">
+          
+
+
+
+
+
+
+
+<section class="nav-panel">
+  <div class="nav-header">
+    <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+    <a href="#" class="user-link "></a>
+    <a href="#" class="search-link "></a>
+    <a href="#" class="global-nav-handle "></a>
+    <div class="buttons">
+      
+      <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span>
+      <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+        </div>
+      </div><!-- /.container -->
+    </header><!-- /.header.roll-up -->
+    <!-- HCS END: shared/roll_ups/tablet -->
+    
+    <div class="top">
+
+      
+      
+<div id="slug_t" class="tAd ad " data-ad-type="t" data-ad-mode="mobile"></div>
+
+      
+      
+        
+          <div class="ad banner leaderboard" data-ad-type="leaderboard" data-ad-mode="large"></div>
+        
+        
+      
+      
+<div id="slug_pushdown" class="banner ad " data-ad-type="pushdown" data-ad-mode="large"></div>
+
+
+    </div><!-- end #top -->
+    
+    <!-- HCS END: layouts/shared/top -->
+    
+    
+    
+
+
+<!-- this is the rollup for basic article, no multipart fun -->
+<header class="roll-up with-dropdown" id="article_rollup">
+  <div class="container">
+    
+    <div class="main">
+      
+        
+        
+        
+        
+          <div class="titles centered-titles">
+            <h1 class="primary centered-primary"><strong><em>Slate</em></strong>'s Privacy Policy</h1>
+          </div>
+        
+      
+      
+
+
+<div class="social social-with-popup sharing-buttons">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Slate%27s+Privacy+Policy&p[summary]=Last+Updated:+February+28,+2014.+The+Slate+Group+LLC+(&ldquo;Slate,&rdquo;+&ldquo;we,&rdquo;+or+&ldquo;us&rdquo;)+is+committed+to+bringing+you+information+tailored+to+your+individual+needs+while+protecting+the+privacy+of+your+information.&nbsp;+This+Privacy+Policy+(&ldquo;Policy&rdquo;)+describes+how+we+collect,+use,+and+disclose+information+through+the+websites,+mobile+applications,+and+other...&p[ref]=sl_live&p[images][0]=http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png&p[url]=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html&u=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_fb_ru" class="facebook first">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>    
+    
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Slate%27s+Privacy+Policy&count=none&via=slate&url=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_tw_ru" class="twitter">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+    </div>
+
+    
+      <a href="#comments" class="comments">
+        <span class="icon"></span>           
+      </a>        
+    
+
+     <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ASlate%27s%20Privacy%20Policy%0Ahttp://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_em_ru" class="email">
+        <span class="icon"></span>         
+      </a>        
+</div>
+
+
+    </div>
+    <div class="sidebar">
+      
+
+
+
+
+
+
+
+<section class="nav-panel">
+  <div class="nav-header">
+    <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+    <a href="#" class="user-link "></a>
+    <a href="#" class="search-link "></a>
+    <a href="#" class="global-nav-handle "></a>
+    <div class="buttons">
+      
+      <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span>
+      <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+    </div>
+  </div><!-- /.container -->
+  <a href="#" class="mobile-social-toggle"><span></span></a> <!-- only shown in mobile -->
+</header><!-- /.header.roll-up -->
+
+
+
+
+
+    <div class="page">
+      
+      <article class="main">
+        
+        <div class="parsys contentWellTop iparsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys contentWellTop iparsys">
+</div>
+</div>
+</div>
+
+        
+
+
+
+<header class="article-header" id="article_header">
+    
+    <div class="meta">
+        <div class="prop-name print-only"><a href="http://www.slate.com">Slate</a></div><div class="prop-name"><a href="http://www.slate.com/articles/news_and_politics/slate_user_agreement_and_privacy_policy.html">Slate User Agreement And Privacy Policy</a></div><div class="prop-desc">Slate’s legalese.</div><div class="pub-date">Dec. 6 2012 1:22 PM</div>
+    </div>
+    
+    
+    <h1 class="hed"><strong><em>Slate</em></strong>'s Privacy Policy</h1>
+    
+
+
+ <div class="social social-with-popup sharing-buttons" id="header_social">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Slate%27s+Privacy+Policy&p[summary]=Last+Updated:+February+28,+2014.+The+Slate+Group+LLC+(&ldquo;Slate,&rdquo;+&ldquo;we,&rdquo;+or+&ldquo;us&rdquo;)+is+committed+to+bringing+you+information+tailored+to+your+individual+needs+while+protecting+the+privacy+of+your+information.&nbsp;+This+Privacy+Policy+(&ldquo;Policy&rdquo;)+describes+how+we+collect,+use,+and+disclose+information+through+the+websites,+mobile+applications,+and+other...&p[ref]=sl_live&p[images][0]=http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png&p[url]=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_fb_top" class="facebook">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Slate%27s+Privacy+Policy&count=none&via=slate&url=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_tw_top" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"><span class="count"></span></a>
+    </div>
+    
+      <a href="#comments" class="comments">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    
+ </div>
+
+
+    <h2 class="dek">Our data-collection practices.</h2>
+    
+
+</header><!-- /header -->
+
+
+<section class="content">
+    <div class="parsys iparsys editorsNote"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys editorsNote">
+</div>
+</div>
+</div>
+
+    
+    <div class="newbody body parsys">
+
+<div class="text text-1 parbase section">
+
+<p>Last Updated: February 28, 2014.</p>
+
+
+</div>
+
+<div class="section authorbox">
+
+
+</div>
+
+<div class="text-2 text parbase section">
+
+<p>The Slate Group LLC (&ldquo;Slate,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is committed to bringing you information tailored to your individual needs while protecting the privacy of your information.&nbsp; This Privacy Policy (&ldquo;Policy&rdquo;) describes how we collect, use, and disclose information through the websites, mobile applications, and other online services and products that link to or post this Policy (collectively, the &ldquo;Services&rdquo;).&nbsp; Please read the entire Privacy Policy before using our Services.&nbsp; By using the Services, you consent to the terms of this Privacy Policy.</p>
+
+
+</div>
+
+<div class="text-3 text parbase section">
+
+<p><strong>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information We Collect</strong></p>
+
+
+</div>
+
+<div class="text parbase text-4 section">
+
+<p>You generally are not required to provide information about yourself when you visit the Services.&nbsp; However, we may ask you for some or all of the following types of information when you register with our Services, access various content or features, register for contests or sweepstakes, submit comments and other content, order products, or directly contact us with questions or feedback:</p>
+
+
+</div>
+
+<div class="text parbase text-5 section">
+
+<ul>
+<li>Contact information, such as name, e-mail address, postal address, and telephone number;<br>
+<br>
+</li>
+<li>User name, display name, and password;<br>
+<br>
+</li>
+<li>Demographic information, such as age information and gender;<br>
+<br>
+</li>
+<li>Payment information, such as credit card number and expiration date;<br>
+<br>
+</li>
+<li>Geolocation information;<br>
+<br>
+</li>
+<li>Communications preferences;<br>
+<br>
+</li>
+<li>Search queries;<br>
+<br>
+</li>
+<li>Stories, comments, photos, and other information posted in our interactive online features;<br>
+<br>
+</li>
+<li>Correspondence and other information that you send to us; and<br>
+<br>
+</li>
+<li>Additional information as otherwise described to you at the point of collection or pursuant to your consent.</li>
+</ul>
+
+
+</div>
+
+<div class="text text-6 parbase section">
+
+<p>We also may collect certain information automatically when you visit the Services, including:</p>
+
+
+</div>
+
+<div class="text parbase text-7 section">
+
+<ul>
+<li>Your browser type and operating system;<br>
+<br>
+</li>
+<li>Your Internet Protocol (IP) address, which is the number automatically assigned to your computer whenever you access the Internet and that can sometimes be used to derive your general geographic area;<br>
+<br>
+</li>
+<li>Other unique identifiers, including mobile device identification numbers;<br>
+<br>
+</li>
+<li>Sites you visited before and after visiting the Services;<br>
+<br>
+</li>
+<li>Pages you view and links you click on within the Services;<br>
+<br>
+</li>
+<li>Information collected through cookies, web beacons, and other technologies;<br>
+<br>
+</li>
+<li>Information about your interactions with e-mail messages, such as the links clicked on and whether the messages were opened or forwarded; and<br>
+<br>
+</li>
+<li>Standard Server Log Information</li>
+</ul>
+
+
+</div>
+
+<div class="text parbase text-8 section">
+
+<p>We may use cookies, pixel tags, Local Shared Objects (sometimes referred to as &ldquo;Flash Cookies&rdquo;), and similar technologies to automatically collect this information.&nbsp; Cookies are small bits of information that are stored by your computer&rsquo;s web browser.&nbsp; Pixel tags are very small images or small pieces of data embedded in images, also known as "web beacons" or "clear GIFs,&rdquo; that can recognize cookies, the time and date a page is viewed, a description of the page where the pixel tag is placed, and similar information from your computer or device.&nbsp; Local Shared Objects (sometimes referred to as &ldquo;Flash Cookies&rdquo;) are similar to standard cookies except that they can be larger and are downloaded to a computer or mobile device by the Adobe Flash media player.&nbsp; By using the Services, you consent to our use of cookies and similar technologies.&nbsp; You can decide if and how your computer will accept a cookie by configuring your preferences or options in your browser.&nbsp; However, if you choose to reject cookies, you may not be able to use certain online products, services or features on the Services.</p>
+
+
+</div>
+
+<div class="text parbase text-9 section">
+
+<p><strong>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use of Information</strong></p>
+
+
+</div>
+
+<div class="text parbase text-10 section">
+
+<p><strong>&nbsp;</strong></p>
+
+
+</div>
+
+<div class="text-11 text parbase section">
+
+<p>We may use information that we collect through the Services for a variety of purposes, including to:</p>
+
+
+</div>
+
+<div class="text-12 text parbase section">
+
+<ul>
+<li>Provide you with the products, promotions, services, newsletters, and information you request and respond to correspondence that we receive from you;<br>
+<br>
+</li>
+<li>Customize and personalize your use of the Services;<br>
+<br>
+</li>
+<li>Provide Slate Plus users with premium content, products, promotions, and information;<br>
+<br>
+</li>
+<li>Contact you via email and otherwise about products, services, and events that we think might be of interest to you;<br>
+<br>
+</li>
+<li>Contact you with surveys, legal notices, and other information that may be relevant to your use of the Services;<br>
+<br>
+</li>
+<li>Maintain or administer the Services, perform business analyses, or for other internal purposes to improve the quality of our business, the Services, and other products and services we offer;<br>
+<br>
+</li>
+<li>Publish stories, comments, and other information posted in our interactive online features;<br>
+<br>
+</li>
+<li>Process employment applications and inquiries; and<br>
+<br>
+</li>
+<li>As otherwise described to you at the point of collection or pursuant to your consent.</li>
+<br>
+<li>To show you relevant ads both on our Services and elsewhere, and measure the effectiveness and reach of ads. To learn more about how you can opt out of interest-based advertising, please visit <a href="http://www.networkadvertising.org" target="_blank">www.networkadvertising.org</a>;</li>
+</ul>
+
+
+</div>
+
+<div class="text-13 text parbase section">
+
+<p><strong>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharing of Information</strong></p>
+
+
+</div>
+
+<div class="text text-14 parbase section">
+
+<p>We are committed to maintaining your trust, and we want you to understand when and with whom we may share the information we collect.</p>
+
+
+</div>
+
+<div class="text text-15 parbase section">
+
+<ul>
+<li><em>Corporate Parents, Affiliates, and Subsidiaries</em>.&nbsp; We may share your information with our corporate parents, subsidiaries, and other affiliated entities for a variety of purposes, including business, operational, and marketing purposes.<br>
+<br>
+</li>
+<li><em>Service Providers</em>.&nbsp;<strong>&nbsp;</strong>We may share your information with service providers that perform certain functions or services on our behalf, such as to host the Services, manage databases, host a store or other e-commerce platform, perform analyses, or send communications for us.<br>
+<br>
+</li>
+<li><em>Select Business Partners</em>.&nbsp; We may share your information with select business partners so that they can provide you with special offers, promotional materials, and other materials that may be of interest to you. However, Slate is not responsible for the privacy practices of these business partners, which may use your information for their own purposes.<br>
+<br>
+</li>
+<li><em>Other Parties When Required By Law or as Necessary to Protect the Services</em>.&nbsp; We may disclose your information to third parties in order to protect the legal rights, safety, and security of Slate, our corporate parents, affiliates, and subsidiaries, and the users of our Services; enforce our Terms of Use; prevent fraud (or for risk management purposes); and comply with or respond to law enforcement or legal process or a request for cooperation by a government or other entity, whether or not legally required.<br>
+<br>
+</li>
+<li><em>In Connection With a Transfer of Assets.&nbsp;</em>If we sell all or part of our business, or make a sale or transfer of assets, or are otherwise involved in a merger or business transfer, or in the event of bankruptcy, we may transfer your information to one or more third parties as part of that transaction.<br>
+<br>
+</li>
+<li><em>Other Parties With Your Consent</em>. We may share information about you with third parties when you consent to such sharing, including when you post information to a user profile or a public area of the Services, such as a chat room, forum, blog, or other community tool.<br>
+<br>
+</li>
+<li><em>Aggregate Information</em>.&nbsp; We may disclose to third parties information that does not describe or identify individual users, such as aggregate website usage data or demographic reports.</li>
+</ul>
+
+
+</div>
+
+<div class="text parbase text-16 section">
+
+<p>We may allow third parties to place and read their own cookies, web beacons, Local Shared Objects, and similar technologies to collect information through the Services.&nbsp; For example, our third-party service providers may use these technologies to collect information that helps us with traffic measurement, research, and analytics.&nbsp; Local Shared Objects (sometimes referred to as &ldquo;Flash Cookies&rdquo;) are similar to standard cookies except that they can be larger and are downloaded to a computer or mobile device by the Adobe Flash media player.&nbsp; Please note that you may need to take additional steps beyond changing your browser settings to refuse or disable Local Shared Objects and similar technologies.&nbsp; For example, Local Shared Objects can be controlled through the instructions on&nbsp;<a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html">Adobe&rsquo;s Setting Manager page</a>.&nbsp;&nbsp; If you choose to refuse, disable, or delete these technologies, some of the functionality of the Services may no longer be available to you.</p>
+
+
+</div>
+
+<div class="text parbase text-17 section">
+
+<p>Slate does not share information that it collects with third parties for the third party&rsquo;s direct marketing purposes.</p>
+
+
+</div>
+
+<div class="text parbase text-18 section">
+
+<p><strong>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Security</strong></p>
+
+
+</div>
+
+<div class="text parbase text-19 section">
+
+<p>We maintain reasonable security procedures to help protect against loss, misuse, unauthorized access, disclosure, alteration or destruction of the information you provide to us.&nbsp; Please note that no data transmission or storage can be guaranteed to be 100% secure.&nbsp; As a result, while we strive to protect your information and privacy, we cannot guarantee or warrant the security of any information you disclose or transmit to us online and cannot be responsible for the theft, destruction, or inadvertent disclosure of your information.</p>
+
+
+</div>
+
+<div class="text parbase section text-20">
+
+<p>You are responsible for maintaining the confidentiality of your account password and for any access to or use of the Services using your password, whether or not authorized by you.&nbsp; Please notify us immediately of any unauthorized use of your password or account or any other breach of security.</p>
+
+
+</div>
+
+<div class="text parbase text-21 section">
+
+<p><strong>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Children&rsquo;s Privacy</strong></p>
+
+
+</div>
+
+<div class="text-22 text parbase section">
+
+<p>The Services do not knowingly collect, use, or disclose personal information from children under the age of 13 without prior parental consent, except as permitted by the Children&rsquo;s Online Privacy Protection Act (&ldquo;COPPA&rdquo;).&nbsp;</p>
+
+
+</div>
+
+<div class="text text-23 parbase section">
+
+<p><strong>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Networking Services</strong></p>
+
+
+</div>
+
+<div class="text-24 text parbase section">
+
+<p>Slate has worked with certain third-party social media providers to offer you their social networking services through our Services.&nbsp; For example, you can use third-party social networking services, including but not limited to Facebook, Twitter, and others to share information about your experience on our Services with your friends and followers on those social networking services.&nbsp; These social networking services may be able to collect information about you, including your activity on our Services.&nbsp; These third-party social networking services also may notify your friends, both on our Services and on the social networking services themselves, that you are a user of our Services or about your use of our Services, in accordance with applicable law and their own privacy policies.&nbsp; If you choose to access or make use of third-party social networking services, we may receive information about you that you have made available to those social networking services, including information about your contacts on those social networking services.</p>
+
+
+</div>
+
+<div class="text-25 text parbase section">
+
+<p>You also may be able to link an account from a social networking service (e.g., Facebook, Twitter) to an account through our Services.&nbsp; This may allow you to use your credentials from the other site or service to sign in to certain features on our Services.&nbsp; If you link your account from a third-party site or service, we may collect information from those third-party accounts, and any information that we collect will be governed by this Privacy Policy.</p>
+
+
+</div>
+
+<div class="text parbase text-26 section">
+
+<p><strong>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy Updates</strong></p>
+
+
+</div>
+
+<div class="text parbase text-27 section">
+
+<p>We may modify this Privacy Policy at any time by posting revisions to the Services or other appropriate notice.&nbsp; Your continued use of the Services after any modification to the Privacy Policy will constitute your acceptance of the new terms and conditions.</p>
+
+
+</div>
+
+<div class="text text-28 parbase section">
+
+<p><strong>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Links to Third Party Sites and Services</strong></p>
+
+
+</div>
+
+<div class="text parbase text-29 section">
+
+<p>The Services may contain links to other websites or online services that are operated and maintained by third parties and that are not under the control of or maintained by Slate.&nbsp; Such links do not constitute an endorsement by Slate of those other websites, the content displayed therein, or the persons or entities associated therewith.&nbsp; This Privacy Policy does not apply to this third-party content.&nbsp; We encourage you to review the privacy policies of these third-party websites or services.</p>
+
+
+</div>
+
+<div class="text parbase text-30 section">
+
+<p><strong>9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International Users</strong></p>
+
+
+</div>
+
+<div class="text parbase text-31 section">
+
+<p>Please note that the Services are directed towards users who reside in the United States. By using the Services, you consent to the collection, storage, processing, and transfer of your information in and to the United States, or other countries and territories, pursuant to the laws of the United States.&nbsp; While some of these countries may not offer the same level of privacy protection as your own, Slate commits to uphold the privacy protections as explained in this Policy.</p>
+
+
+</div>
+
+<div class="text parbase text-32 section">
+
+<p><strong>10.&nbsp;&nbsp;Your California Privacy Rights</strong></p>
+
+
+</div>
+
+<div class="text parbase section text-33">
+
+<p>It is our policy not to share your personal information with third parties for their direct marketing purposes.&nbsp;</p>
+
+
+</div>
+
+<div class="text parbase text-34 section">
+
+<p>Some web browsers may transmit &ldquo;do-not-track&rdquo; signals to the websites with which the user communicates.&nbsp; Because of differences in how web browsers incorporate and activate this feature, it is not always clear whether users intend for these signals to be transmitted, or whether they even are aware of them.&nbsp; Because there currently is no industry standard concerning what, if anything, websites should do when they receive such signals, Slate currently does not take action in response to these signals.&nbsp; If and when a final standard is established and accepted, we will reassess how to respond to these signals.</p>
+
+
+</div>
+
+<div class="text parbase text-35 section">
+
+<p><strong>11.&nbsp;&nbsp;Communications Preferences</strong></p>
+
+
+</div>
+
+<div class="text parbase text-36 section">
+
+<p>You may choose to receive promotional emails, newsletters, and similar communications from us.&nbsp; You may opt out of receiving commercial emails from us by clicking on the opt-out or &ldquo;unsubscribe&rdquo; link included in the commercial e-mails you receive.&nbsp; Please note that opt-out requests may take up to 10 business days to be effective.&nbsp; Your opt-out request will not apply to messages that you request or that are not commercial in nature.&nbsp; For example, we may contact you concerning any purchases you have made with us, even if you opt out of receiving unsolicited commercial email messages.</p>
+
+
+</div>
+
+<div class="text parbase text-37 section">
+
+<p><strong>12.&nbsp;&nbsp;Contact Us</strong></p>
+
+
+</div>
+
+<div class="text parbase text-38 section">
+
+<p>If you have any questions about this Privacy Policy, you may contact us at:</p>
+
+
+</div>
+
+<div class="text parbase text-39 section">
+
+<p><a href="mailto:slateoffice@slate.com">slateoffice@slate.com</a></p>
+
+
+</div>
+</div>
+
+    
+</section>
+
+<footer>
+    
+
+    
+    <div class="pagination">
+        
+        
+
+
+    
+
+
+    <div class="social social-with-popup sharing-buttons">
+      <div class="plus-popup">
+        <a href="http://www.slatereprints.com/reprint-products-quote-request/?cf2_field_17=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html&cf2_field_18=www.slate.com&cf2_field_19=Slate%27s+Privacy+Policy&cf2_field_20=09%2F20%2F2013" class="reprint">REPRINT</a>
+        <a href="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.single.html?print" target="_blank" class="print">PRINT</a>
+        <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ASlate%27s%20Privacy%20Policy%0Ahttp://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_em_bot" class="email">EMAIL</a>
+        <div class="arrow-border"></div>
+        <div class="arrow"></div>        
+      </div>
+      <a href="#" class="plus">
+        <span class="icon"></span>
+      </a>
+      <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Slate%27s+Privacy+Policy&p[summary]=Last+Updated:+February+28,+2014.+The+Slate+Group+LLC+(&ldquo;Slate,&rdquo;+&ldquo;we,&rdquo;+or+&ldquo;us&rdquo;)+is+committed+to+bringing+you+information+tailored+to+your+individual+needs+while+protecting+the+privacy+of+your+information.&nbsp;+This+Privacy+Policy+(&ldquo;Policy&rdquo;)+describes+how+we+collect,+use,+and+disclose+information+through+the+websites,+mobile+applications,+and+other...&p[ref]=sl_live&p[images][0]=http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png&p[url]=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_fb_bot" class="facebook">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Slate%27s+Privacy+Policy&count=none&via=slate&url=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_dt_tw_bot" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"><span class="count"></span></a>
+    </div>
+      
+        <a href="#comments" class="comments">
+          <span class="icon"></span>         
+          <span class="count"></span>                
+        </a>              
+      
+    </div>
+    
+
+    </div><!-- /.pagination -->
+    
+   
+
+
+
+
+
+  
+  
+  
+
+
+<div class="social horiz-counts-mobile centered sharing-buttons">
+  
+    <div class="comments">
+      <a class="mobile-comments" href="#comments">
+        <span class="icon"></span>
+        <span class="count"></span>
+      </a>
+    </div>
+  
+  <div class="facebook">
+    <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&p[title]=Slate%27s+Privacy+Policy&p[summary]=Last+Updated:+February+28,+2014.+The+Slate+Group+LLC+(&ldquo;Slate,&rdquo;+&ldquo;we,&rdquo;+or+&ldquo;us&rdquo;)+is+committed+to+bringing+you+information+tailored+to+your+individual+needs+while+protecting+the+privacy+of+your+information.&nbsp;+This+Privacy+Policy+(&ldquo;Policy&rdquo;)+describes+how+we+collect,+use,+and+disclose+information+through+the+websites,+mobile+applications,+and+other...&p[ref]=sl_live&p[images][0]=http://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png&p[url]=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html&u=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_mob_fb_top" class="share facebook" target="_blank">
+      <span class="icon"></span>
+      <span class="count"></span>
+    </a>
+  </div>
+  <div class="twitter">
+    <a href="#" data-share="http://twitter.com/share?text=Slate%27s+Privacy+Policy&count=none&via=slate&url=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_mob_tw_top" class="twitter">
+       <span class="icon"></span>
+    </a>
+    <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html"><span class="count"></span></a>
+  </div>
+
+  
+  <div class="whatsapp">
+    <a href="whatsapp://send?text=Slate%27s%20Privacy%20Policy%20http%3A%2F%2Fwww.slate.com%2Farticles%2Fbriefing%2Fslate_user_agreement_and_privacy_policy%2F2012%2F12%2Fslate_s_privacy_policy.html%3Fwpsrc%3Dsh_all_mob_wa_top" class="whatsapp">
+       <span class="icon"></span>
+    </a>
+  </div>
+  
+  
+
+  <div class="email">
+    <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ASlate%27s%20Privacy%20Policy%0Ahttp://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html?wpsrc=sh_all_mob_em_top" class="email">
+      <span class="icon"></span>
+      <span class="count">&nbsp;</span>
+    </a>
+  </div>
+</div>
+
+
+    
+    <div class="row up-next" id="up-next-box"></div>
+    
+    
+    <div class="footer-tiles">
+        <div class="row">
+            
+
+  <div id="outbrain_placeholder"></div>
+  <div class="sl-outbrain-divider"></div>
+
+  <script type="text/javascript">requirejs(["jquery","myslate"],function($,myslate){var isCommentUser=$.cookie("s_segs")&&$.cookie("s_segs").indexOf('commenter')>-1;if(!myslate.isSlatePlusUser){var createOutbrainDivs=function(widgetId){var divHtml='<div class="OUTBRAIN" data-src="http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html" data-widget-id="'+widgetId+'" data-ob-template="SlateMag" ></div>';$("#outbrain_placeholder").append(divHtml);}
+if(mobileMode()){createOutbrainDivs("MB_1");}else{createOutbrainDivs("AR_3");createOutbrainDivs("AR_17");}
+$('<script>',{src:'//widgets.outbrain.com/outbrain.js'}).appendTo('body');}});</script>
+
+        </div>
+    </div> <!-- /.footer-tiles -->
+    
+    
+    
+</footer>
+
+
+
+
+
+<div id="comments" class="comments-container" data-lf-hash="MzM3NzIwOmNxLTEwMDEyMTIwNjAwOQ==">
+  <div id="livefyre">
+  	<div class="button-container lf-loader" style="text-align:center;">
+      <button class="push-button comments-push-button" style="padding: 0 15px;">Load Comments</button>
+    </div>
+  </div>
+  <div id="powered_by_livefyre_new"><a href="http://livefyre.com" target="_blank">Powered by Livefyre</a></div>
+</div>
+<div id="comments-ads" class="comments-ads-container">
+</div>
+<div id="comments-bigbox" class="comments-bigbox-container">
+  <div id="slug_bigbox" class="ad bigbox" data-ad-mode="desktop" data-ad-type="bigbox"></div>
+</div>
+
+<script type="text/javascript">requirejs(['config','jquery'],function(config,$){$('#livefyre .lf-loader').html(['<div style="color: #999;">Loading...</div>','<div style="color: #999; font-size: smaller; margin: 20px auto">','Are Slate\'s comments not loading even after a few seconds? ','<br/><a target="_blank" href="http://www.slate.com/features/browser-data-comment.html" class="issue-collector" data-issue-collector-value="11019">','Send us your browser and operating system information.</a>','</div>'].join(''));$.extend(config.livefyre,{collectionMeta:'eyJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6Ilx1MDAzY3N0cm9uZ1x1MDAzZVx1MDAzY2VtXHUwMDNlU2xhdGVcdTAwM2MvZW1cdTAwM2VcdTAwM2Mvc3Ryb25nXHUwMDNlXHUwMDI3cyBQcml2YWN5IFBvbGljeSIsInVybCI6Imh0dHA6Ly93d3cuc2xhdGUuY29tL2FydGljbGVzL2JyaWVmaW5nL3NsYXRlX3VzZXJfYWdyZWVtZW50X2FuZF9wcml2YWN5X3BvbGljeS8yMDEyLzEyL3NsYXRlX3NfcHJpdmFjeV9wb2xpY3kuaHRtbD93cGlzcmNcdTAwM2RsZiIsInRhZ3MiOiJsZWdhbCxsZWdhbCIsImNoZWNrc3VtIjoiOTdkODY4NTY2YmEyMzdhNzhiNDdlYzRmM2I4YTE4ZTciLCJhcnRpY2xlSWQiOiJjcS0xMDAxMjEyMDYwMDkifQ.GmbaBksltzpWHqiRKDeIFm3Gerh8q01r2Mn4tkjHfwo'});});requirejs(['slate-livefyre']);</script>
+
+
+
+
+        <div class="parsys iparsys contentWellBottom"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys contentWellBottom">
+</div>
+</div>
+</div>
+
+        
+        <div class="abridgedhomepage">
+
+
+<div class="twocolumn-stories">
+  <div class="twocolumn-stories__left large-tiles tiles">
+    <div class="parsys homepageSectionStoriesLeft"><div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: News & Politics" class="story-box-news-politics">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/news_and_politics.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+News & Politics</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/news_and_politics/jurisprudence/2015/09/150902_POL_texasVoters.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/news_and_politics/jurisprudence/2015/09/150902_POL_texasVoters.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/news_and_politics/jurisprudence/2015/09/voting_rights_act_sections_2_and_5_texas_defends_voter_id_laws.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Jurisprudence</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 12:36 PM</span>
+                <!-- <span class="hed">Texas Two-Steps All Over Voting Rights</span> -->
+                
+                  
+                  
+                    <span class="hed">Texas Two-Steps All Over Voting Rights</span>
+                  
+                
+                <span class="dek">It says it can make voting as difficult as it wants to, and any law that says otherwise is unconstitutional.</span>
+                <span class="byline">Richard L. Hasen</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/obama_s_jewish_problem_10_principles_that_have_guided_his_conversations.html" class="primary">10 Principles That Have Guided Obama’s Most Difficult Conversations With Jews</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/democrats_have_the_right_to_be_angry_with_hillary_clinton_her_email_scandal.html" class="primary">Why Democrats Have the Right to Be Angry With Clinton</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/republican_nonpoliticians_are_surging_the_gop_rift_that_matters_isn_t_about.html" class="primary">The Republican Rift That Matters Most</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/jurisprudence/2015/09/jamycheal_mitchell_died_in_jail_mentally_ill_man_stole_snacks_and_was_denied.html" class="primary">Jamycheal&nbsp;Mitchell Died in Jail Four Months After Being Arrested for Stealing a Snickers</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/hillary_clinton_s_newly_released_email_messages_what_the_state_department.html" class="primary">What Hillary Clinton’s New Batch of Emails Actually Reveals</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/the_republican_party_needs_a_mitt_romney_why_donald_trump_isn_t_the_gop.html" class="primary">Why Donald Trump Isn’t the GOP’s Biggest Problem</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/08/hurricane_katrina_10_years_later_the_myths_that_persist_debunked.html" class="primary">Ten Years After Katrina, Myths About Warnings, Violence, and Recovery Persist. Here’s the Truth.</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Business" class="story-box-business">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/business.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Business</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/business_insider/2015/09/02/apple_s_supersized_ipad_ipad_pro_and_mini_could_be_released_next_week/453248108-in-this-photo-illustration-an-apple-ipad-displays-its.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/business_insider/2015/09/02/apple_s_supersized_ipad_ipad_pro_and_mini_could_be_released_next_week/453248108-in-this-photo-illustration-an-apple-ipad-displays-its.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/business_insider/2015/09/02/apple_s_supersized_ipad_ipad_pro_and_mini_could_be_released_next_week.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Business Insider</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 3:42 PM</span>
+                <!-- <span class="hed">Apple’s Supersized iPad Might Finally Come Out Next Week</span> -->
+                
+                  
+                  
+                    <span class="hed">Apple’s Supersized iPad Might Finally Come Out Next Week</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Lisa Eadicicco</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/02/lonely_americans_we_re_less_likely_to_live_with_a_partner_except_in_old.html" class="primary">Americans Increasingly Likely to Lead Lonely, Loveless Existences, Except in Old Age</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/02/watch_hulu_ad_free_for_an_extra_4_per_month.html" class="primary">You Don’t Have to Suffer Through Ads on Hulu Anymore</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/02/americans_living_with_their_parents_gen_xers_are_returning_to_the_nest_too.html" class="primary">It’s Not Just Millennials. More Middle-Aged Americans Are Living With Their Parents, Too.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/01/uber_drivers_granted_class_action_status_over_tips_employment_classification.html" class="primary">A Federal Judge Just Shredded Uber’s Arguments Against a Major Class-Action Lawsuit</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/01/mcdonald_s_will_debut_all_day_breakfast_in_the_u_s_on_october_6_get_excited.html" class="primary">Your Lifelong Dream of an Egg McMuffin for Dinner Is Now Reality</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/business_insider/2015/09/01/google_s_maze_traffic_app_will_now_feature_the_voice_of_stephen_colbert.html" class="primary">Maze Will Soon Guide You With the Dulcet Tones of Stephen Colbert</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/moneybox/2015/09/01/chipotle_sued_over_gmo_free_advertising_consumers_are_missing_the_real_point.html" class="primary">Chipotle Is Being Sued Over Its Anti-GMO Advertising. Serves Them Right.</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Life" class="story-box-life">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/life.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Life</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/life/schooled/2015/09/150902_SCHOOLED_atlantaTeachers.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/life/schooled/2015/09/150902_SCHOOLED_atlantaTeachers.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/schooled/2015/09/02/atlanta_cheating_scandal_judge_hands_down_final_sentence_to_shani_robinson.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Schooled</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 2:00 PM</span>
+                <!-- <span class="hed">Final Sentence Handed Down in Epic Atlanta Cheating Scandal</span> -->
+                
+                  
+                  
+                    <span class="hed">Final Sentence Handed Down in Epic Atlanta Cheating Scandal</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Laura Moser</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/atlas_obscura/2015/09/02/alone_on_a_clifftop_g_sadalur_village_almost_disappeared_as_its_population.html" class="primary">Alone on a Clifftop, Gásadalur Village Almost Disappeared as Its Population Moved Away</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/outward/2015/09/02/how_collier_s_suggested_j_edgar_hoover_was_gay_back_in_1933.html" class="primary">In 1933, <em>Collier’s</em> Implied That J. Edgar Hoover Was Gay in the Subtlest Way Imaginable</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/the_eye/2015/09/02/the_bathysphere_and_the_discovery_of_deep_sea_marine_life_on_99_percent.html" class="primary">The Tiny Deep Sea Capsule That Changed Our Understanding of Marine Life</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/life/classes/2015/09/should_you_take_a_poetry_class_memorizing_poems_will_make_your_life_richer.html" class="primary">Memorizing Poems Sucks at the Time, but It Will Make Your Life Richer</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/the_vault/2015/09/02/history_of_solar_observation_synoptic_maps_in_an_animated_video.html" class="primary">Forty-Three Years of Hand-Drawn Maps of the Surface of the Sun, in One Mesmerizing Video</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/life/classes/2015/09/take_a_public_speaking_class_learn_to_manage_stress_get_a_job_deliver_a.html" class="primary">A Public Speaking Class Can Help You Land a Job or a Punch Line</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/life/classes/2015/09/first_aid_class_learn_cpr_heimlich_tourniquets_burn_care_wound_care.html" class="primary">First Aid Is the Most Important Class You Could Ever Take</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Double X" class="story-box-double-x">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/double_x.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Double X</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/xx_factor/2015/09/02/a_teen_girl_in_michigan_is_caught_faking_a_pregnancy_with_fakeababy_com/472177612-secondary-school-teacher-sarah-ward-at-home-on.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/xx_factor/2015/09/02/a_teen_girl_in_michigan_is_caught_faking_a_pregnancy_with_fakeababy_com/472177612-secondary-school-teacher-sarah-ward-at-home-on.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/xx_factor/2015/09/02/a_teen_girl_in_michigan_is_caught_faking_a_pregnancy_with_fakeababy_com.html" class="primary"></a>
+            
+            
+                <span class="rubrik">The XX Factor</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 1:19 PM</span>
+                <!-- <span class="hed">Why Would Anyone Fake a Pregnancy?</span> -->
+                
+                  
+                  
+                    <span class="hed">Why Would Anyone Fake a Pregnancy?</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Amanda Marcotte</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/09/01/teachers_shouldn_t_teach_for_free.html" class="primary">Teachers in Pennsylvania Are Going Back to School Without Paychecks. They Should Stay Home.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/09/01/a_judge_rules_that_march_for_life_can_cut_off_contraception_access_for_non.html" class="primary">D.C. Judge Says Employers Can Exercise “Moral” Objections to Birth Control Coverage</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/08/31/the_duggar_family_pops_up_in_a_tlc_sex_abuse_documentary.html" class="primary">TLC’s Sex-Abuse Documentary Was a Good Idea, Except for All the Duggars</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/08/31/feeling_some_post_vma_nostalgia_chrissie_hynde_can_help.html" class="primary">Feeling Post-VMA Nostalgia for the Women of Pop Music’s Past? Chrissie Hynde Can Fix That for You.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/08/28/owen_labrie_verdict_it_s_confusing_because_of_a_new_hampshire_sexual_consent.html" class="primary">The Odd Sexual-Consent Law That Explains the Bizarre Owen Labrie Verdict</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/08/28/viral_pta_fundraiser_every_parent_is_thinking_this_right_now.html" class="primary">This Viral PTA Fundraiser Sums Up What Every Parent Everywhere Is Thinking</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/xx_factor/2015/08/28/ashley_madison_hacked_email_list_why_do_we_want_men_punished_when_most_of.html" class="primary">Men Had a Terrible Time on Ashley Madison. They Deserve Our Pity, Not Scorn.</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+
+</div>
+
+  </div>
+  <div class="twocolumn-stories__right large-tiles tiles">
+    <div class="parsys homepageSectionStoriesRight"><div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Slate Plus" class="story-box-slate-plus">
+<header class="black-header">
+
+<a href="/plus/home?wpisrc=sp_all_native-by-section" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Slate Plus</header>
+
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed slateplus-preview" data-bg="http://www.slate.com/content/dam/slate/Slate%20Plus/articles/2015/09/150902_PLUS_RebeccaAndBaby.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/Slate%20Plus/articles/2015/09/150902_PLUS_RebeccaAndBaby.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/slate_plus/family/2015/09/flipping_the_bird_at_my_baby_brought_out_the_internet_s_ugly_side.html?wpsrc=sp_all_native_by-section" class="primary"></a>
+            
+            
+                <span class="rubrik">Family</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 3:05 PM</span>
+                <!-- <span class="hed">“Nobody Called CPS on Louis C.K.”</span> -->
+                
+                  
+                  
+                    <span class="hed">“Nobody Called CPS on Louis C.K.”</span>
+                  
+                
+                <span class="dek">Writing about giving your baby the finger makes people on the Internet go a little crazy.</span>
+                <span class="byline">Rebecca Schuman and Jessica Winter</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list slateplus-preview" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/slate_plus/2015/08/slate_s_weekly_roundup_joshua_keating_on_his_week_at_slate.html?wpsrc=sp_all_native_by-section" class="primary">Joshua Keating on What You Should Read From <strong><em>Slate</em></strong> This Week</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list slateplus-preview" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/plus_roundups/2015/08/what_we_like_right_now_a_recommendations_roundup_from_slate_writers_and_3.html?wpsrc=sp_all_native_by-section" class="primary">Here Are Our Favorite Reads From Around the Web This Week</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list slateplus-preview" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/technology/technology/2015/08/slate_voice_why_you_should_never_ever_use_two_spaces_after_a_period.html?wpsrc=sp_all_native_by-section" class="primary"><strong><em>Slate </em></strong>Voice: “Why You Should Never, Ever Use Two Spaces After a Period”&nbsp;</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+            <div class="section-list slateplus-preview last" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/podcasts/gabfest/2015/08/august_is_the_worst_month_we_should_get_rid_of_it.html?wpsrc=sp_all_native_by-section" class="primary">Should We Get Rid of August? A Political Gabfest Bonus Segment.</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+      
+      
+    
+    
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Arts" class="story-box-arts">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/arts.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Arts</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/browbeat/2015/09/02/screaming_rubber_duck_music_video_mashups_prove_they_re_the_yelling_goats/screen_shot_20150902_at_12.28.59_pm.png.CROP.promo-medium2.png" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/browbeat/2015/09/02/screaming_rubber_duck_music_video_mashups_prove_they_re_the_yelling_goats/screen_shot_20150902_at_12.28.59_pm.png.CROP.promo-medium2.png">
+            <a href="http://www.slate.com/blogs/browbeat/2015/09/02/screaming_rubber_duck_music_video_mashups_prove_they_re_the_yelling_goats.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Brow Beat</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 3:14 PM</span>
+                <!-- <span class="hed">Finally, Those Screaming Rubber Ducks Are Singing Your Favorite Pop Songs&nbsp; &nbsp;&nbsp;</span> -->
+                
+                  
+                  
+                    <span class="hed">Finally, Those Screaming Rubber Ducks Are Singing Your Favorite Pop Songs&nbsp; &nbsp;&nbsp;</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Laura Bradley, Forrest Wickman, and Aymann Ismail</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/02/thunderbitch_ep_brittany_howard_from_alabaa_shakes_drops_new_album_with.html" class="primary">Listen to a New, Punk-Tinged EP From Alabama Shakes’ Brittany Howard</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/02/diary_of_a_teenage_girl_interview_with_director_marielle_heller.html" class="primary">The Director of<em> Diary of a Teenage Girl </em>on Underage Sex Scenes and Getting That R Rating</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/behold/2015/09/02/ellen_cantor_s_prior_pleasures_a_nostalgic_look_at_some_classic_childhood.html" class="primary">Mesmerizing Photographs That Capture the Thrill of Reading</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/02/graywolf_press_profile_how_the_tiny_publisher_became_a_big_industry_player.html" class="primary">How the Tiny Graywolf Press Became a Big Player in Book Publishing</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/02/netflix_amazon_hulu_and_hbo_now_s_new_movies_and_tv_showsfor_september.html" class="primary">The Best Movies and TV Shows Coming This Month to Netflix, Hulu, HBO NOW, and Amazon Prime</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/01/if_joffrey_baratheon_were_the_hero_of_game_of_thrones_bloodblitz_comedy.html" class="primary">If Joffrey Baratheon Were the Hero of <em>Game of Thrones</em></a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Technology" class="story-box-technology">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/technology.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Technology</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/02/FT-150902-drone.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/02/FT-150902-drone.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/future_tense/2015/09/02/california_to_ban_flying_a_drone_over_someone_s_property_without_permission.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Future Tense</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 3:45 PM</span>
+                <!-- <span class="hed">California to Ban Flying a Drone Over Someone’s Property Without Permission</span> -->
+                
+                  
+                  
+                    <span class="hed">California to Ban Flying a Drone Over Someone’s Property Without Permission</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Justin Peters</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/02/facebook_picks_an_unusual_coding_language_for_anti_spam_is_haskell_future.html" class="primary">Facebook's New Spam-Killer Might Be the Evolution of Coding</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/02/meet_the_twitter_bot_generating_unnervingly_plausible_think_pieces.html" class="primary">Meet the Twitter Bot Generating Unnervingly Plausible Think Pieces</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/01/wikipedia_bans_318_accounts_for_doing_clandestine_brand_promotion.html" class="primary">Wikipedia Bans&nbsp;381 Accounts Because They Were “Editing for Profit”</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/01/obama_in_alaska_petrostate_politics_help_explain_mixed_climate_change_policy.html" class="primary">Despite His Climate Change Promises, Obama Is Basically Running a Petrostate</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/01/google_s_new_animated_logo_is_the_future_of_mobile_branding.html" class="primary">Google’s New Logo Looks Simple. It Isn’t.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/future_tense/2015/09/01/chrome_will_default_to_pausing_flash_ads_today.html" class="primary">Flash Might Really Be Dead This Time</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Health & Science" class="story-box-health-science">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/health_and_science.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Health & Science</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/09/02/strand_aurora_fisheye.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/09/02/strand_aurora_fisheye.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/bad_astronomy/2015/09/02/aurora_intense_activity_seen_in_sweden.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Bad Astronomy</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 2 2015 1:38 PM</span>
+                <!-- <span class="hed">INTENSE Aurora Display Over Sweden!</span> -->
+                
+                  
+                  
+                    <span class="hed">INTENSE Aurora Display Over Sweden!</span>
+                  
+                
+                <span class="dek"></span>
+                <span class="byline">Phil Plait</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/bad_astronomy/2015/09/02/photobomb_iss_transits_the_sun_by_thierry_legault.html" class="primary">A Prominent Photobomber</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/health_and_science/medical_examiner/2015/09/contraception_abortion_and_planned_parenthood_debate_long_acting_birth_control.html" class="primary">The Best Way to Reduce Abortions Is to Provide Long-Acting Contraception</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/wild_things/2015/09/01/bdelloid_rotifer_sex_evidence_for_dna_exchange_in_sexless_species_makes.html" class="primary">Animals That Scientists Thought Never, Ever Have Sex Actually Do Have Sex</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/bad_astronomy/2015/09/01/cosmos_1315_satellite_re_entry_over_hawaii.html" class="primary">When the Sky—or a Small Piece of It, Anyway—Fell Over Hawaii</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/bad_astronomy/2015/08/31/global_warming_sea_levels_are_rising_rapidly.html" class="primary">Sea Levels Are Rising, Faster Than You Think</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/bad_astronomy/2015/08/30/comic_brassens_in_space.html" class="primary">When Gods Looked Down on Man</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+<div class="storyboxgroupquery section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-vr-zone="Story Box: Sports" class="story-box-sports">
+<header class="black-header">
+
+<a href="http://www.slate.com/articles/sports.html" class="primary"></a>
+<span class="see-all">&nbsp;</span>
+
+Sports</header>
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+            
+            
+            
+              
+              
+            
+            
+            
+            
+            
+                
+                
+            
+            
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/sports/sports_nut/2015/08/150901_SNUT_Brandiose_top.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/sports/sports_nut/2015/08/150901_SNUT_Brandiose_top.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/sports/sports_nut/2015/09/how_brandiose_transformed_minor_league_baseball_from_the_hartford_yard_goats.html" class="primary"></a>
+            
+            
+                <span class="rubrik">Sports Nut</span>
+            
+            <div class="full-tile">
+                <span class="timestamp">Sept. 1 2015 3:42 PM</span>
+                <!-- <span class="hed">Of Flying Squirrels and Yard Goats</span> -->
+                
+                  
+                  
+                    <span class="hed">Of Flying Squirrels and Yard Goats</span>
+                  
+                
+                <span class="dek">Meet the branding geniuses behind some of minor league baseball’s craziest logos and mascots.</span>
+                <span class="byline">Alan Siegel</span>
+            </div>
+        </div>
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/sports/sports_nut/2015/08/justin_wilson_death_indycar_should_adopt_a_canopy_or_makes_another_safety.html" class="primary">Justin Wilson’s Death Was Horrific and Possibly Preventable. Indycar Needs Better Safety.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/sports/sports_nut/2015/08/northwestern_unionization_how_the_national_labor_relations_board_failed.html" class="primary">College Football Players Deserve the Right to Unionize. Why NLRB Is Too Cowardly to Say So.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/sports/culturebox/2015/08/serena_williams_how_to_be_a_successful_black_tennis_player.html" class="primary">How Serena Williams Survived in the Lily-White World of Women’s Tennis</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/sports/sports_nut/2015/08/katie_ledecky_kazan_the_olympics_should_give_the_american_a_chance_to_repeat.html" class="primary">Men Can Swim the 1,500 in the Olympics. Why Can’t Katie Ledecky?</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/the_spot/2015/07/28/human_gif_miguel_herrera_fired_as_mexico_coach_for_allegedly_hitting_journalist.html" class="primary">The Most GIF-Worthy Man in Sports Just Lost His Job for Allegedly Hitting a Reporter</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+            <div class="section-list  last" data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/sports/sports_nut/2015/07/los_angeles_and_boston_olympic_bids_we_should_force_cities_to_participate.html" class="primary">Let’s Force Cities to Host the Olympics With a Shirley Jackson–Style “Lottery”</a>
+            </div>
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+    
+
+</div>
+</div>
+
+</div>
+
+  </div>
+</div>
+</div>
+
+      </article><!-- /.main -->
+      
+
+      <aside class="sidebar" id="main_sidebar">
+        <div class="sidebar-wrapper">
+          
+          
+          
+          
+
+
+
+
+
+
+  
+  
+  
+
+
+<section class="nav-panel" id='slate_logo'>
+  <div class="nav-header">
+    <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+    <a href="#" class="user-link sidebar-handle"></a>
+    <a href="#" class="search-link sidebar-handle"></a>
+    <a href="#" class="global-nav-handle sidebar-handle"></a>
+    <div class="buttons">
+      
+      <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span>
+      <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+          
+
+          
+          
+
+<div class="parsys iparsys contentSidebar"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="parsys iparsys contentSidebar"><div class="renderHtml section">
+
+<style type="text/css">.mostshared{display:none}.mostpopular{display:none}</style>
+
  
+</div>
+<div class="mostpopular section">
+
+
+<section class="items">
+  <a class="header" href="#">Most Read</a>
+  <ul class="numbered-list">
+  
+    
+      
+      <li><a href="http://www.slate.com/articles/life/culturebox/2015/09/united_slang_of_america_map_if_every_state_had_an_official_word_what_would.html"><small>1.</small> <span>If Every State Had an Official Word, What Would It Be? (Illinois Gets <em>Grabowski</em>.)</span></a></li>
+      
+    
+  
+    
+      
+      <li><a href="http://www.slate.com/articles/news_and_politics/jurisprudence/2015/09/voting_rights_act_sections_2_and_5_texas_defends_voter_id_laws.html"><small>2.</small> <span>Texas Is Two-Stepping All Over Voting Rights</span></a></li>
+      
+    
+  
+    
+      
+      <li><a href="http://www.slate.com/blogs/moneybox/2015/09/02/lonely_americans_we_re_less_likely_to_live_with_a_partner_except_in_old.html"><small>3.</small> <span>Americans Increasingly Likely to Lead Lonely, Loveless Existences, Except in Old Age</span></a></li>
+      
+    
+  
+    
+      
+      <li><a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/democrats_have_the_right_to_be_angry_with_hillary_clinton_her_email_scandal.html"><small>4.</small> <span>Why Democrats Have the Right to Be Angry With Clinton</span></a></li>
+      
+    
+  
+    
+      
+      <li><a href="http://www.slate.com/articles/life/dear_prudence/2015/09/dear_prudence_my_husband_wants_me_to_dress_up_during_sex_as_someone_we_know.html"><small>5.</small> <span>Help! During Sex My Husband Wants Me to Dress Up as Someone We Know.</span></a></li>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+</section>
+
+</div>
+<div class="mostshared section">
+
+
+<section data-vr-zone="Most Shared">
+    <header class="black-header">Most Shared</header>
+    <ul class="numbered-list">
+        
+            
+                
+                <li data-vr-contentbox="">
+                  <a href="http://www.slate.com/blogs/the_slatest/2015/08/31/_10_000_icelanders_offer_to_house_syrian_refugees.html">
+                    <small>1.</small> <span>Iceland Caps Syrian Refugees at 50; 10,000 Icelanders Respond by Offering Up Their Homes</span>
+                  </a>
+                </li>
+                
+            
+        
+            
+                
+                <li data-vr-contentbox="">
+                  <a href="http://www.slate.com/articles/life/classes/2015/09/take_an_ethnic_studies_class_to_understand_history_and_racism_asian_american.html">
+                    <small>2.</small> <span>I Didn’t Understand American History Until I Took an Ethnic Studies Class</span>
+                  </a>
+                </li>
+                
+            
+        
+            
+                
+                <li data-vr-contentbox="">
+                  <a href="http://www.slate.com/blogs/bad_astronomy/2015/08/31/global_warming_sea_levels_are_rising_rapidly.html">
+                    <small>3.</small> <span>Sea Levels Are Rising, Faster Than You Think</span>
+                  </a>
+                </li>
+                
+            
+        
+            
+                
+                <li data-vr-contentbox="">
+                  <a href="http://www.slate.com/blogs/outward/2015/08/31/kim_davis_and_the_liberty_counsel_anti_gay_group_is_bad_news.html">
+                    <small>4.</small> <span>Is Kim Davis, Kentucky’s Infamous Anti-Gay Clerk, Getting Taken for a Ride by Her Lawyers?</span>
+                  </a>
+                </li>
+                
+            
+        
+            
+                
+                <li data-vr-contentbox="">
+                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/01/new_study_shows_how_gun_suicides_plummeted_in_connecticut_after_stricter.html">
+                    <small>5.</small> <span>Gun Suicides Plummet in State After New&nbsp;Licensing Law, Skyrocket After Law Repealed in Other State</span>
+                  </a>
+                </li>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+</section>
+</div>
+<div class="rightrailstories section">
+
+<section class="items">
+  
+
+  
+    <div id="rr-results" data-track-module="smart-rr" data-omit-views="true">
+    <div class="smallvideos">
+
+<div class="row">
+<section class="video-gallery" id="small_videos" style="display: none;">
+    <div id='small_video_gallery_mobile_wrap'>
+        
+        <div class="current-video">
+            <script pagespeed_no_defer="">//<![CDATA[
+(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html','SLoDkQnME-',true,false,'hps-UJlpM5M');
+//]]></script><img src="http://www.slate.com/content/dam/slate/articles/video/video/2015/09/a_baby_egg_delivered_to_a_stork_at_the_bronx_zoo_video/surrogatestork.jpg.CROP.hd-large.jpg" pagespeed_url_hash="1147982726" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+            <a href="http://www.slate.com/articles/video/video/2015/09/a_baby_egg_delivered_to_a_stork_at_the_bronx_zoo_video.html?wpisrc=seg_video" class="primary">
+                <span class="play-button"></span>
+                <span class="main-title">But What Happens When You Deliver a Baby <em>to</em> a Stork?</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+</div>
+<script>requirejs(["jquery"],function($){if($.cookie("s_segs")&&$.cookie("s_segs").indexOf('video')>-1){$(['#small_videos','#small_video_gallery_mobile_wrap','.current-video'].join(',')).show();if(mobileMode()){$('#video_gallery_mobile').show();}
+$(".video-gallery").css('height','auto');$(window).load(function(){var dataCount3=$('.rr-block[data-count="3"]');dataCount3.addClass('repositioned');$('.rr-block[data-count="9"]').before(dataCount3);});}});</script></div>
+
+      <div class="rr-block" data-count="3"></div>
+     
+      <div class="item ad-container">
+          
+            
+              <div class="ad rightflex" data-ad-mode="desktop" data-ad-type="rightflex"></div>
+              
+              
+<div id="slug_rightflex" class="ad " data-ad-type="rightflex" data-ad-mode="tabletLandscape"></div>
+
+              
+            
+            
+          
+      </div>
+      
+      <div class="rr-block" data-count="9"></div>
+     
+     <div class="sl-art-ad-midflex">
+        <div class="item ad-container">
+        
+          
+            <div class="ad rightflex-2" data-ad-mode="desktop" data-ad-type="rightflex|2"></div>
+            
+            
+<div id="slug_rightflex_2" class="ad " data-ad-type="rightflex|2" data-ad-mode="tabletLandscape"></div>
+
+            
+          
+          
+        
+        </div>
+      </div>
+      
+      <div class="rr-block"></div>
+    </div>
+
+  
+ </section>
+
+
+ 
+<script type="text/javascript">requirejs(["jquery","rrstories"],function($,rrs){if(!mobileMode()){rrs.init(40,14,"trending");}else{$(".rightrailstories section").remove();}});</script>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+          
+        </div><!-- /.sidebar-wrapper -->
+      </aside><!-- /.sidebar -->
+      
+      
+      
+      	
+
+  <footer id="article_footer_tiles">
+    
+  </footer>
+
+      
+    </div><!-- /.page -->
+
+
+
+<!-- HCS: layout -->
+  
+    <style type="text/css">body>.bottom{text-align:center;padding:10px 0}.bottom>#slug_leaderboard_2{position:relative;width:auto;text-align:center}</style>
+    <div class="bottom">
+      
+        
+          <div class="ad leaderboard-2" data-ad-type="leaderboard|2" data-ad-mode="desktop"></div>
+        
+        
+      
+    </div>
+    <footer class="footer-base">
+      <div class="container">
+
+      <div class="sub-slate-row">
+        <div class="left">
+          <span class="label">FOLLOW SLATE</span>
+          <a href="https://twitter.com/slate" class="twitter"><img src="http://static.cdnslate.com/etc/designs/slate/images/social/yellow-twitterNew.821dc365.png" pagespeed_url_hash="1882272147" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+          <a href="http://www.facebook.com/Slate" class="facebook"><img src="http://static.cdnslate.com/etc/designs/slate/images/social/yellow-facebookNew.74981e6f.png" pagespeed_url_hash="1244938924" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+          <a href="https://instagram.com/slate" class="instagram"><img src="http://static.cdnslate.com/etc/designs/slate/images/social/instagram2x.bcd68bf9.png" style="width: 39px;" pagespeed_url_hash="2385051725" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+        </div>
+
+        <div class="left slate-on">
+          <span class="label">SLATE ON</span>
+          <a href="http://itunes.apple.com/us/app/slate-magazine/id384914589?mt=8">IPAD</a>
+          <a href="http://itunes.apple.com/us/app/slate-com/id357555242?mt=8">IPHONE</a>
+          <a href="https://market.android.com/details?id=com.wapo.slate.android">ANDROID</a>
+          <a href="http://www.amazon.com/gp/product/B000IOMTC0?ie=UTF8&tag=slatmaga-20&link_code=as3&camp=211189&creative=373489&creativeASIN=B000IOMTC0/">KINDLE</a>
+        </div>
+
+        <div class="right">
+          <a href="http://www.slatereprints.com" class="label reprints">REPRINTS</a>
+
+          <a href="http://innovate.slate.com/" class="label advertise-with-us" target="_blank">ADVERTISE WITH US</a>
+        </div>
+      </div>
+
+      </div><!-- /.container -->
+
+
+    </footer>
+  
+  
+    <footer class="footer-base-toc">
+      <div class="container">
+        <div class="footer-link-cols">
+          <ul>
+            <li><a href="/articles/news_and_politics/slate_fare/2006/08/about_us.html">ABOUT US</a></li>
+            <li><a href="/articles/briefing/contact_us/2006/08/whereto_find_slate_staff.html">CONTACT US</a></li>
+            <li><a href="/articles/news_and_politics/slate_fare/2008/04/a_job_for_you_at_slate.html">WORK WITH US</a></li>
+          </ul>
+          <ul class="center">
+            <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_terms_of_service.html">USER AGREEMENT</a></li>
+            <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html">PRIVACY POLICY</a></li>
+            <li><a href="/articles/briefing/slate_fare/2011/12/commenting_on_slate_frequently_asked_questions.html">FAQ</a></li>
+          </ul>
+          <ul class="last">
+            <li><a href="mailto:feedback@slate.com">FEEDBACK</a></li>
+            <li><a href="/articles/news_and_politics/corrections.html">CORRECTIONS</a></li>
+          </ul>
+        </div>
+        <ul class="copyright unstyled">
+          <li><a href="http://www.slate.com"><img src="http://static.cdnslate.com/etc/designs/slate/images/the-slate-group-logo.12cbe5ac.png" pagespeed_url_hash="1056323748" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></li>
+          <li><a href="http://www.theroot.com"><img src="http://static.cdnslate.com/etc/designs/slate/images/the-root-logo.74009c0a.png" pagespeed_url_hash="706003561" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></li>
+          <li class="blurb">Slate is published by The Slate Group, a Graham Holdings Company. All contents &copy;
+          2015 The Slate Group
+          LLC. All rights reserved.</li>
+        </ul>
+      </div><!-- /.container -->
+    </footer> <!-- /.footer-base-toc -->
+<!-- HCS END: layout -->
+<!-- HCS: layouts/shared/bottom -->
+<div id="sidebar_toggle">
+  <a href="#" id="sidebar_handle"></a>
+</div>
+<div id="signIn"></div>
+<script>requirejs(['http://ads.cdnslate.com/wp-srv/ad/loaders/latest/js/min/polar_config.min.js']);</script>
+<script>requirejs(["jquery","hcs/libs/iscroll-lite","modernizr","hcs/script","hcs/plugins/SGGlobalNav.jquery","hcs/plugins/jQuery.highlighter","hcs/plugins/SGGlobalNav.jquery","libs/jquery-plugins/jquery.timeago","announcements","myslate"],function($,iScroll,unused0,unused1,unused2,unused3,unused4,unused5,announcements,myslate){$(document).ready(function(){announcements.deleteOldCookies();$("span.timeago").timeago();});function pageLoadedForScrolling(){scroller=new iScroll('main_sidebar',{hScroll:false,hScrollbar:false,bounce:false});if(!mobileMode()&&tabletMode()&&$('html').hasClass('touch')){window.tabletScroller=new iScroll('nav_sections',{hScroll:false,hScrollbar:false,bounce:false,onBeforeScrollStart:function(e){var target=e.target;while(target.nodeType!=1)target=target.parentNode;if(target.tagName!='SELECT'&&target.tagName!='INPUT'&&target.tagName!='TEXTAREA')
+e.preventDefault();}});}}
+Modernizr.addTest('webkit',function(){return RegExp(" AppleWebKit/").test(navigator.userAgent);});Modernizr.addTest('mobile',function(){return RegExp(" Mobile/").test(navigator.userAgent);});if(Modernizr.webkit&&Modernizr.mobile){if(document.addEventListener){document.addEventListener('DOMContentLoaded',function(){setTimeout(pageLoadedForScrolling,200);},false);}else if(document.attachEvent){document.attachEvent('DOMContentLoaded',function(){setTimeout(pageLoadedForScrolling,200);},false);}}
+$(function(){watchSidebar();if($('body').hasClass('home')||$('body').hasClass('landing')||$('body').hasClass('settings')){$('.nav-header').SGGlobalNav({noRollup:true,noBurgerScroll:$('body').hasClass('no-burger-scroll'),isSlatePlusUser:myslate.isSlatePlusUser});}else{$('.nav-header').SGGlobalNav({isSlatePlusUser:myslate.isSlatePlusUser});}
+jQuery(document).ready(function($){$(".field-with-placeholder").placeholder();});$('.content').highlighter({'selector':'.highlighter-container','noHighlightIds':$('#podcast-slateplus-page'),'minWords':0,'complete':function(data){selectedText=data;}});});$(document).ready(function(){$(".sticky").each(function(){var stickyTop=$(".sticky").offset().top;$(window).scroll(function(){var windowTop=$(window).scrollTop()+57+parseInt($(".sticky").css("margin-top").split("px")[0]);if(stickyTop<windowTop){$(".sticky").css({position:"fixed",top:"53px"});}else{$(".sticky").css("position","static");}});})});watchSocialWelcomeNotifications();});</script>
+
+    
+    
+
+    <script>requirejs(["jquery","myslate","hcs/script","hcs/plugins/SGNavDropdown.jquery","hcs/plugins/SGBigSlider.jquery","hcs/plugins/SGFootnote.jquery","hcs/plugins/SGRollup.jquery","hcs/plugins/SGNavDropdown.jquery","hcs/plugins/SGComments.jquery","hcs/plugins/SGLightbox.jquery","hcs/plugins/SGSocialIcons.jquery"],function($,myslate,unused0,unused1,unused2,unused3,unused4,unused5,unused6,unused7,unused8){$(function(){$('#big_slider').SGBigSlider({type:'home'});$('.footnote').SGFootnote();var multipartArticleRollup=$('#article_rollup');var subHed=$('#sub_hed');if(subHed.length>0){subHed.SGNavDropdown({extraId:'subhed',targetId:'#multipart_nav',leftOffset:function(){return $('#sub_hed').position().left;},topOffset:function(){return $('#sub_hed').position().top+$('#sub_hed').outerHeight(true);},onShow:function(){$('#multipart_nav').css('position','absolute');$('#multipart_nav').css('height','auto');$('#multipart_nav').css('overflow','auto');},onHide:function(){}});}
+if($('#article_header').length>0){$('#main_sidebar').SGRollup({rollupEl:multipartArticleRollup,topOffset:$('#slate_logo').height(),leftOffset:$('#article_header').offset().left,tablet:{el:$('#article_header'),topOffset:$('#article_header').height()},mobile:{el:$('#tablet_header'),topOffset:$('#tablet_header').height()},onHide:function(){if(multipartArticleRollup.data('plugin_SGNavDropdown').isTargetVisible()&&$('#multipart_nav').data('openedByRollup')){multipartArticleRollup.data('plugin_SGNavDropdown').close();}
+if(!myslate.isSlatePlusUser){if($('#comments').length>0&&$.type($('#comments').data('plugin_SGComments'))!=='undefined'){$('#comments').data('plugin_SGComments').close();}}}});}
+multipartArticleRollup.SGNavDropdown({targetId:'#multipart_nav',extraSpecificHandle:'.handle',extraId:'multipart',leftOffset:function(){return multipartArticleRollup.find('.main').offset().left;},topOffset:function(){return multipartArticleRollup.outerHeight(true)},onShow:function(){$('#multipart_nav').css('position','');$('#multipart_nav').addClass('fixed').data('openedByRollup',true);$('#multipart_nav').css('max-height',(mobileMode()?$(window).outerHeight(true)+10:$(window).height()-$('#article_rollup').height()));$('#multipart_nav').css('overflow','scroll');if(mobileMode()){$('#multipart_nav').css('right',0);}},onHide:function(){$('#multipart_nav').data('openedByRollup',false);}});if(!myslate.isSlatePlusUser){$('#comments').SGComments({handles:$('.social .comments, .comment-options a'),rollUp:$('#main_sidebar').data('plugin_SGRollup'),leftOffset:function(){if(tabletMode()){return 0;}else{return $('#main_sidebar').offset().left-$('#comments').outerWidth()-11;}},topOffset:function(){return $('#article_rollup').height();},onShow:function(){if(multipartArticleRollup.data('plugin_SGNavDropdown').isTargetVisible()){multipartArticleRollup.data('plugin_SGNavDropdown').close();}},mobile:{handle:$('#see_more_comments')}});}
+$('#slideshow_preview_link').SGLightbox({type:'slideshow',slideshowElement:$('#the_slideshow')});$('.social-with-popup').SGSocialIcons({});watchMobileRollupSocialToggle();$('.expandable').find('.toggle').click(function(e){$(this).closest('.social').toggleClass('visible');$('#main_byline').toggle();e.preventDefault();});$('.full-width').setFullWidth();myslate.benefits();});});</script>
+    <script>requirejs(["jquery","hcs/script"],function($,unused0){$(function(){$('.social').find('.toggle').click(function(e){e.preventDefault();$(this).closest('.social').toggleClass('visible');});});});</script>
+
+
+    
+    <script>requirejs(["facebook"],function(unused0){$(function(){FB.XFBML.parse();});});</script>
+    <!-- Buzzfeed -->
+    <!-- Chartbeat -->
+    
+<script type="text/javascript">var _sf_async_config={uid:9250,domain:"slate.com"};_sf_async_config.useCanonical=true;if(wp_meta_data){var sectionsArray=new Array();if(wp_meta_data.section!==undefined){sectionsArray.push(wp_meta_data.section);}
+if(wp_meta_data.rubric!==undefined){sectionsArray.push(wp_meta_data.rubric);}
+if(wp_meta_data.blog!==undefined){sectionsArray.push(wp_meta_data.blog);}
+_sf_async_config.sections=sectionsArray.join(",");if(wp_meta_data.authors!==undefined){_sf_async_config.authors=wp_meta_data.authors.join(",");}}
+(function(){function loadChartbeat(){window._sf_endpt=(new Date()).getTime();var e=document.createElement('script');e.setAttribute('language','javascript');e.setAttribute('type','text/javascript');e.setAttribute('src',(("https:"==document.location.protocol)?"https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/":"http://static.chartbeat.com/")+"js/chartbeat.js");document.body.appendChild(e);}
+var oldonload=window.onload;window.onload=(typeof window.onload!='function')?loadChartbeat:function(){oldonload();loadChartbeat();};})();</script>
+    <!-- Parsely -->
+    
+
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="slate.com"></div>
+</div>
+<script>(function(s,p,d){var h=d.location.protocol,i=p+"-"+s,e=d.getElementById(i),r=d.getElementById(p+"-root"),u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net":"static."+p+".com";if(e)return;e=d.createElement(s);e.id=i;e.async=true;e.src=h+"//"+u+"/p.js";r.appendChild(e);})("script","parsely",document);</script>
+<!-- END Parse.ly Include -->
+    
+
+
+
+    
+    
+        <script>requirejs(["shared/sgads"],function(slateads){slateads.wire("http://ads.cdnslate.com/wp-srv/ad/loaders/latest/js/min/loader.min.js");});</script>
+    
+
+<div class="nav-header" id="magic_nav_header">
+  <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+  <div class="buttons"></div>
+</div><!-- /.nav-header -->
+<!-- HCS: layouts/shared/nav/nav -->
+<div id="nav_sections"></div>
+<!-- HCS END: layouts/shared/nav/nav -->
+
+      
+      
+
+
+
+
+
+
+  
+  
+  
+
+
+<section class="nav-panel" id='nav_header_for_rollup_magic'>
+  <div class="nav-header">
+    <a class="slate-logo" href="/"><span class="logo">Slate</span></a>
+    <a href="#" class="user-link sidebar-handle"></a>
+    <a href="#" class="search-link sidebar-handle"></a>
+    <a href="#" class="global-nav-handle sidebar-handle"></a>
+    <div class="buttons">
+      
+      <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span>
+      <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span>
+      
+    </div>
+  </div>
+  
+</section>
+
+
+    <div id="nav_animation_mask">
+
+    </div>
+
+    
+    <span class='highlighter-container'>
+      <div class="social social-with-popup sharing-buttons">
+        <a href="#" data-share="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.htmlhttp://www.slate.com/etc/designs/slate/images/slate_facebook_icon.png&p[title]=Slate%27s+Privacy+Policy&p[summary]=Last+Updated%3A+February+28%2C+2014.+The+Slate+Group+LLC+%28%E2%80%9CSlate%2C%E2%80%9D+%E2%80%9Cwe%2C%E2%80%9D+or+%E2%80%9Cus%E2%80%9D%29+is+committed+to+bringing+you+information+tailored+to+your+individual+needs+while+protecting+the+privacy+of+your+information.%C2%A0+This+Privacy+Policy+%28%E2%80%9CPolicy%E2%80%9D%29+describes+how+we+collect%2C+use%2C+and+disclose+information+through+the+websites%2C+mobile+applications%2C+and+other..." class="facebook share highlighter">
+          <span class="icon"></span>
+        </a>
+        <a href="#" data-share="http://twitter.com/share?url=http://www.slate.com/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html&count=none&via=slate" class="twitter">
+          <span class="icon"></span>
+        </a>
+        
+          <a href="#comments" class="comments" style="display: none;">
+            <span class="icon"></span>
+          </a>
+        
+      </div>
+        <div class="arrow-border"></div>
+        <div class="arrow"></div>
+    </span>
+    <!-- Sailthru Horizon -->
+    <script>requirejs(['jquery'],function($){(function(){function loadHorizon(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=location.protocol+'//ak.sail-horizon.com/horizon/v1.js';var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}
+loadHorizon();var oldOnLoad=window.onload;window.onload=function(){if(typeof oldOnLoad==='function'){oldOnLoad();}
+Sailthru.setup({domain:'horizon.slate.com'});};})();});</script>
+    
+<!-- HCS END: layouts/shared/bottom -->
+
+    <!-- Campaigns -->
+    <script>requirejs(["shared/campaignManager","optimizely"],function(campaigns,optimizely){setTimeout(campaigns.execute,400);});</script>
+    
+    <script>requirejs(['rrstories']);</script>
+    
+
+  
+  
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":163,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5bRg0HUVBcVx5KXgVFXGsREVJLbVFWS1cBXFxaED1WV1ZvQUtbElBaTTsSWFVbU0gWGEsbFkcIA0NcbUNuSUANR1hXHT1HVl5ZUkAcDEVUWA==","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
+<!--
+Page Loading starts on 2015/09/02 16:12:39, Total time elapsed to render is 0.15360278 seconds, Server: pub2.slate.com
+-->
+  </body>
+</html>
