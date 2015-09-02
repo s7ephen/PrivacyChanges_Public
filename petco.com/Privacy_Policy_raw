@@ -1,1 +1,275 @@
- 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+    <head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4a7b1716ac","applicationID":"133136","transactionName":"NAZWZUBRC0RWABVRWQ1MdWJiHwZYWRcEVkJMBllBRkkGWFkXBFZCTQJHQUo=","queueTime":15,"applicationTime":6,"ttGuid":"B8F9283A123686A8","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgACUV9ACQADVVJU"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><title>
+	Pet Supplies, Pet Food, and Pet Products from petco.com
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="Content-Language" content="en-US" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="copyright" lang="en-US" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+<!-- Document Domain -->
+<script type="text/javascript">
+	document.domain = "petco.com";
+</script>
+
+
+  
+    <script type="text/javascript" src="/js_raw/jquery-1.4.4.min.js?v=1.0.5715.36024"></script>
+	<script type="text/javascript" src="/js_raw/jquery-ui-1.8.7.custom.min.js?v=1.0.5715.36024"></script>
+	<script type="text/javascript">	    var $j = jQuery.noConflict();</script>
+
+    <link rel="Stylesheet" type="text/css" href="/css/site.css?v=1.0.5715.36024" />
+    <link rel="Stylesheet" type="text/css" href="/css/jquery-ui-1.8.3.custom.css?v=1.0.5715.36024" />
+
+    
+    
+
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="/css/site_ie6.css?v=1.0.5715.36024" type="text/css" />
+	<![endif]-->
+    
+    
+
+    
+</head>
+    <body>
+        
+    
+    
+
+    <script type="text/javascript">var utag_data = {country_code:"US",currency_code:"USD",page_name: "privacypolicy",page_category: "",page_type: "section",resx_pageid:["res15090213719225523396965"]}</script><script type="text/javascript">(function (a, b, c, d) {a = '//tags.tiqcdn.com/utag/petco/main/prod/utag.js';b = document; c = 'script'; d = b.createElement(c); d.src = a; d.type = 'text/java' + c; d.async = true;a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);})();</script> 
+
+
+    
+    <script type="text/javascript" src="/js/site.js?v=1.0.5715.36024"></script>
+    <script type="text/javascript" src="/js/legacy.js?v=1.0.5715.36024"></script>
+
+    <div style="font-size:11px;font-family:Arial;">
+        
+    <div style="font-family:Arial;font-size:11px;">
+        <style type="text/css"><!--
+#privacyPolicy {
+	font: 14px/20px arial, sans-serif;
+	width: auto;
+        clear:both;
+        font: 14px/20px arial, sans-serif;
+}
+
+ul.links {
+	list-style: none;
+}
+ul.links li {
+	padding-bottom: 5px;
+}
+#privacyPolicy ol li {
+        padding-bottom: 20px;
+}
+h1 {
+	font-weight: bold;
+	font-style: normal;
+        font-size: 20px !important;
+}
+h2, h3, h4, h5, h6, th {
+	font-weight: bold;
+	font-style: normal;
+        font-size: 16px !important;
+}
+#logo {
+	text-align: left;
+	padding: 0.625em 0 0.3125em 0.3125em;
+}
+#logo img {
+	margin-right: auto;
+	margin-left: auto;
+}
+p.indent {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+
+.fl {float:left;}
+.fr {float:right;}
+.di {display:inline;}
+
+
+
+#content-left {width:222px;min-height:200px;margin-right:31px;margin-top:25px;font-size:14px;line-height:22px;}
+#content-right {width:727px;min-height:200px;}
+
+#privacy-nav ul {
+			position: relative;
+			float: left;
+			width: 980px;
+			padding: 0px;
+			margin: 0;
+			font-size: 12px;
+		}
+		#privacy-nav ul li {
+			position: relative;
+			float: left;
+			list-style-type: none;
+			margin: 0 22px 0 0;
+		}
+		#privacy-nav ul li.last {
+			margin: 0 0 0 20px;
+		}
+--></style>
+<div id="ptco-content">
+<div class="ptco-wrap">
+<div id="header">
+<div id="logo"><a href="http://www.petco.com"> <img src="/assets/layout/petco-logo.gif" alt="Petco" /></a></div>
+</div>
+<hr />
+<div id="privacy-nav">
+<ul>
+<li>Pet Talk Place</li>
+<li>Unleashed by Petco</li>
+<li>Petco Foundation</li>
+<li>Vetco Clinics</li>
+<li>Pooch Hotel</li>
+<li>Pooch Play</li>
+<li>Drs. Foster &amp; Smith</li>
+<li>LiveAquaria.com</li>
+<li>PetEducation.com</li>
+</ul>
+</div>
+<div class="clear"></div>
+<hr />
+<div id="privacyPolicy">
+<div>
+<div class="fl di" id="content-left">
+			<a class="activenav" href="/petco_Page_PC_privacypolicy.aspx">Privacy Policy</a><br />
+			<a href="/petco_Page_PC_termsofuse.aspx">Terms of Use</a><br />
+			<a href="/petco_Page_PC_copyrightclaims.aspx">Copyright Claims</a><br />
+			<a href="/petco_Page_PC_petmedicalrecords.aspx">Pet Medical Records Policy</a></div>
+<div class="fr di" id="content-right">
+<h1>PETCO PRIVACY POLICY</h1>
+<em>Last updated:</em> February 2, 2015<br /><br />
+<h2>Introduction</h2>
+<p>This privacy policy applies to all websites and mobile applications linking to or posting this privacy policy and that are operated by Petco Animal Supplies, Inc. or any of its divisions or affiliates (collectively, "<span style="text-decoration: underline;">Petco</span>", "<span style="text-decoration: underline;">we</span>" and "<span style="text-decoration: underline;">us</span>"). Each such website and mobile application is referred to in this privacy policy as a "<span style="text-decoration: underline;">Site</span>".</p>
+<p>In this privacy policy, we describe Petco's practices for collecting, storing, using, and disclosing the personal (and other) information that we may obtain about you through any of the Sites.* Please note that by using or accessing any of our Sites, you consent to the collection, storage, use and disclosure practices described in this privacy policy. </p>
+<p class="indent">*Please note that information we obtain through any of the Sites in connection with your pet receiving from us any veterinary, wellness, pharmacy, or other services involving your pet's medical records is subject to our pet medical records policy (available <a href="/petco_page_PC_petmedicalrecords.aspx" class="uline">here</a>).</p>
+<p>For ease of reference, you may click on any of the following links to jump to one of the topics addressed in this privacy policy:</p>
+<ul class="links">
+<li><a class="uline" href="#infoWeCollect">Information We Collect Through the Sites</a></li>
+<li><a class="uline" href="#howWeUseInfoCollected">How We Use Information Collected Through Our Sites</a></li>
+<li><a class="uline" href="#infoDisclosure">When Information We Collect Through Our Sites May Be Disclosed to Third Parties</a></li>
+<li><a class="uline" href="#securityMeasures">Security Measures for Information Collected Through Our Sites</a></li>
+<li><a class="uline" href="#howToCorrect">How to Correct or Update Information About You Collected Though Our Sites</a></li>
+<li><a class="uline" href="#doNotTrackSignals">How We Respond to Do Not Track Signals</a></li>
+<li><a class="uline" href="#transferOfData">Transfer of Data from Outside the United States</a></li>
+<li><a class="uline" href="#Children">Children</a></li>
+<li><a class="uline" href="#linkedWebsites">Privacy Policies of any Linked Websites or Other Parties</a></li>
+<li><a class="uline" href="#yourCaliforniaPrivacyRights">Your California Privacy Rights</a></li>
+<li><a class="uline" href="#governingLaw">Governing Law</a></li>
+<li><a class="uline" href="#changes">Changes to this Privacy Policy</a></li>
+<li><a class="uline" href="#contactUs">Contact Us</a></li>
+</ul>
+<h3><a name="infoWeCollect">Information We Collect Through the Sites</a></h3>
+<ul>
+<li><em>Online Purchases and Other Financial Transactions.</em> When you make a purchase or engage in any other financial transaction on one of our Sites, you will be asked to provide information necessary to facilitate the transaction, such as your credit card or debit card number, associated security code, telephone number, billing address, email address, and shipping address.</li>
+<li><em>Program Registration.</em> In connection with your registration or other interaction online with one of our programs (such as our PALS Rewards program), you may be asked to provide certain personal information, such as your name, email address, mailing address, and date of birth or age, as well as information about your pet, and to generate a user name and password. </li>
+<li><em>Sign-Up for Emails, Newsletters or Other Correspondence.</em> If you sign up on one of our Sites to receive email communications, newsletters, or other correspondence from us, you may be asked to provide us with your name, email address, and/or mailing address, along with other information related to your subscription or correspondence.</li>
+<li><em>Contests, Sweepstakes, and Other Promotions.</em> We may collect information about you when you participate in a promotion that we sponsor, such as a contest or sweepstakes (which we may sponsor alone or co-sponsor with one or more third parties). To participate in one of our promotions, you may be asked to provide your name and your email address, mailing address and/or other contact information. For some promotions, we may request other information about you as well. Note that your participation will be subject to the official rules of the promotion (as well as this privacy policy and the privacy policy of any co-sponsor).</li>
+<li><em>Interactive Forums.</em> You and other users may be allowed to post comments and other content on certain portions of our Sites, such as on a discussion board, blog or other interactive forum. We may collect any information that you or another user posts about you on one of our Sites, including personal information about you, and it may be available to all users who have access to the Site. Please keep this in mind when considering what information to post to our Sites.</li>
+<li><em>Social Networking Activities.</em> Our Sites may include the ability for you and other users to link to one or more social networking platforms (such as Facebook or Twitter). We may receive information about you when you choose to post or otherwise share information about us on any of these social networking platforms. Note that any information that you or others post to a social networking platform will be accessible by any users of such platform, subject to its terms of service and privacy policy.</li>
+<li><em>Social Sign-In.</em> Our Sites may incorporate functionality enabling you to sign-on using your login information from a social networking platform, in lieu of creating a new login account specifically for the Site. If we incorporate such functionality and you use it to sign into any of our Sites, we may collect information about you from the social networking platform, such as your list of friends, "likes," and interests, as well as your contact information.</li>
+<li><em>Usage Data.</em> When you use or access any of our Sites, we may collect certain usage data generated by your activities on the Sites, including your purchasing history, pages viewed, number of bytes transferred, hyperlinks clicked, and other actions you take on our Sites. Each of our Sites may also track the URL that you visited before you come to the Site, the URL to which you next go, and your Internet Protocol (IP) address or mobile device identifier.</li>
+<li><em>Location Data.</em> Some of our Sites may collect information about your location, such as the approximate location of your IP address. Unless you provide us with your permission, this location data is collected anonymously in a form that does not personally identify you.</li>
+<li><em>Online Information-Gathering Tools.</em> As with most websites, we use cookies, web beacons, and other online information-gathering tools in connection with our Sites. These tools are intended to make using our Sites easier by, among other things, saving your preferences for you. We may also use cookies to deliver content tailored to your interests. If your browser is set to reject cookies, or if your browser notifies you that you are about to receive a cookie and you reject it, then your use of our Site may not be as efficient as it would be if the cookie were enabled. </li>
+<li><em>Third-Party Integrated Services.</em> We may incorporate third-party ads and other third-party content on our Sites, and integrate other third-party offerings into the Sites, enabling certain such third parties to collect information about you or your online activities across other websites and over time through your use of our Sites. Any information collected through such integrated technologies is collected directly by these third parties for use by such third parties and other authorized parties, subject to the privacy policies of those other parties.</li>
+<li><em>Online Inquiries and Correspondence.</em> When you submit an inquiry or otherwise correspond through one of our Sites, you may be asked to provide your name, email address, and/or other personal information to us.</li>
+</ul>
+<p>We may keep indefinitely the information about you collected through our Sites.</p>
+<h3><a name="howWeUseInfoCollected">How We Use Information Collected Through Our Sites</a></h3>
+<p>We may use information about you collected through our Sites for a variety of commercial purposes. </p>
+<p>Without limitation, we may use such information to: </p>
+<ul>
+<li>administer and improve our Sites and businesses; </li>
+<li>promote our products and services to you, as well as the products and services of our affiliates; </li>
+<li>promote (and enable the promotion of) third-party products and services to you that we think you may find of interest; </li>
+<li>deliver email communications, newsletters, and other correspondence to which you subscribe;</li>
+<li>communicate with you about our contests, sweepstakes and other promotions; </li>
+<li>conduct other marketing activities; </li>
+<li>communicate with you regarding your membership in one of our programs and facilitate the functioning of our programs; and </li>
+<li>respond to your inquiries and other correspondence, or request that you provide feedback to us.</li>
+</ul>
+<h3><a name="infoDisclosure">When Information We Collect Through Our Sites May Be Disclosed to Third Parties</a></h3>
+<p>We disclose to third parties the personal (or other) information collected about you through any of our Sites either (i) when we have your permission to do so or (ii) in any of the following situations (without your permission):</p>
+<ul>
+<li>We may share the information collected about you within the Petco family of companies, which means we may disclose the information collected about you to our affiliates (subject to the terms of this privacy policy).</li>
+<li>We may disclose the information collected about you to our third-party contractors and partners in connection with their performing services or other activities in support of the Sites and/or our businesses, or their completing or confirming on our behalf a transaction or series of transactions that you conduct with us.</li>
+<li>As noted above, information about you collected by third-party ads, content or technologies integrated with any of our Sites may be disclosed to such third parties.</li>
+<li>We may disclose the results of aggregated data about you and other users of our Sites without restriction. In these situations, we do not disclose to these entities any information that could be used to personally identify you.</li>
+<li>We may disclose to one or more third parties the information collected about you as part of a merger, acquisition or other sale or transfer of any of the assets or business of Petco and/or of any of our affiliates. Please note that the entity receiving such information in connection with one of these transactions may not comply with all of the terms of this privacy policy.</li>
+<li>We may disclose information about you to the government or to other third parties to comply with the law, applicable regulations, governmental and quasi-governmental requests, court orders, subpoenas or other legal process, such as in connection with suspected illegal activity associated with any of the Sites or our business. We reserve the right to release information collected through any of the Sites to law enforcement or other government officials, as we, in our sole discretion, deem necessary or appropriate.</li>
+<li>We may also disclose information about you to third parties if needed to enforce any of the terms of use for one of our Sites or other agreements, or any investigation of potential violations thereof; to detect, prevent, or otherwise address fraud, security or technical issues; to protect against harm to any of the Sites; or to protect our rights, property or safety or the rights, property or safety of our users or others (e.g., to a consumer reporting agency for fraud protection).</li>
+</ul>
+<h3><a name="securityMeasures">Security Measures for Information Collected Through Our Sites</a></h3>
+<p>To help protect the privacy of information collected through our Sites, we employ security measures that are intended to be consistent with industry best practices. In addition, we take commercially reasonable steps to store such information with the objective of protecting such data against unauthorized access. Notwithstanding the foregoing, please be aware that our Sites are operated on software, hardware and networks, any component of which may, from time to time, experience breaches of security or other problems beyond our control and that may compromise the security of information collected about you. </p>
+<p>Please also be aware that despite our best intentions and the guidelines outlined in this privacy policy, no data transmission over the Internet or via a Wi-Fi network, or any encryption method, can be guaranteed to be completely secure. You understand that it may be possible for third parties not under Petco's control to intercept or access your personal information transmitted through one of our Sites or via email. Accordingly, although we undertake commercially reasonable steps to protect the security and integrity of all information you provide through our Sites, due to the inherent nature of the Internet, we cannot guarantee that any such information will be absolutely safe from intrusion by others who do not have your authorization. Any such transmission of information about you to Petco is at your own risk.</p>
+<h3><a name="howToCorrect">How to Correct or Update Information About You Collected Through Our Sites</a></h3>
+<p>You may correct or update information collected about you through any of our Sites by contacting us at the email or mailing address noted at the end of this privacy policy below, or (if available on a particular Site) by editing your information and preferences on the "My Account" page. You may also unsubscribe to any email subscriptions by following the applicable "unsubscribe" link. We will use commercially reasonable efforts to update our files to reflect your request as promptly as possible. </p>
+<p>We may retain original and updated information for reasons such as technical constraints, dispute resolution, compliance with laws, fraud prevention, troubleshooting and enforcement of our terms of use and other agreements. In addition, please note that we cannot update any information about you collected through any of the Sites that has already been disclosed (as permitted under this privacy policy) to a third party.</p>
+<h3><a name="doNotTrackSignals">How We Respond to Do Not Track Signals</a></h3>
+<p>At this time, our Sites do not support "Do Not Track" preferences that may be available in your browser for letting websites know that you do not want them collecting certain kinds of information. Specifically, if you turn on the Do Not Track setting on your browser, our Sites are not currently capable of following whatever Do Not Track preferences you set. For more information about Do Not Track, visit <a href="http://donottrack.us/" target="_blank" class="uline">donottrack.us</a>. </p>
+<h3><a name="transferOfData">Transfer of Data from Outside the United States</a></h3>
+<p>If you use any of our Sites from outside of the United States, information that we collect about you through the Site will be transferred to servers inside the United States and maintained indefinitely. By using the Site, you consent to the transfer of data about you into the United States, as well as the processing of such data in the United States. </p>
+<h3><a name="children">Children</a></h3>
+<p>Our Sites are not designed to appeal to persons under 13 years old ("children"). We do not knowingly collect or maintain personal information from children through our Sites, except for persistent identifiers that may be collected through children's sections of our Sites which (as permitted by applicable law) we will use solely to support the internal operations of the Sites. If we learn that any unauthorized personal information of a child has been collected, we will take appropriate steps to delete such information. If you are a parent or guardian and discover that your child has provided any such personal information to us, then you may contact us at the email or mailing address noted at the end of this privacy policy below and request that we delete that information from our systems.</p>
+<h3><a name="linkedWebsites">Privacy Policies of any Linked Websites or Other Parties</a></h3>
+<p>This privacy policy only addresses Petco's practices for the personal (and other) information that we may obtain about you through any of the Sites. Please be aware that when you use or access any of the Sites, you may be directed to other websites that are beyond our control, and Petco is not responsible for the privacy practices of third parties or the content of linked websites. We would expect most, if not all, of these third parties will collect information about you when you use their offerings. However, Petco is not responsible for the privacy practices of third parties, regardless whether they are linked or otherwise connected to our Sites. We encourage you to read the posted privacy policy and terms of use whenever interacting with any third-party website, app, or other offering.</p>
+<h3><a name="yourCaliforniaPrivacyRights">Your California Privacy Rights</a></h3>
+<p>From time to time, we may share information collected about you with our affiliates and/or other third parties for their direct marketing purposes. Under California law, a California resident with whom we have an established relationship has the right to request certain information with respect to the types of personal information that we have shared with third parties for these purposes, and the identities of those third parties, within the immediately preceding calendar year, subject to certain exceptions. All requests for such information must be in writing and sent to us at <a href="mailto:CaliforniaPrivacyRights@petco.com" class="uline">CaliforniaPrivacyRights@petco.com</a>.</p>
+<h3><a name="governingLaw">Governing Law</a></h3>
+<p>By choosing to visit any of our Sites, you agree that any dispute over privacy or the terms contained in this privacy policy will be governed by the law of the State of California, without reference to the choice of law or conflicts of law principles thereof, and will be subject to the dispute resolution clause contained in the terms of use applicable to the particular Site. You also agree to abide by any limitation on damages contained in the terms of use applicable to the Site or any other agreement that we have with you.</p>
+<h3><a name="changes">Changes to this Privacy Policy</a></h3>
+<p>We reserve the right to make changes to this privacy policy at any time, with any such changes to be effective prospectively. The use of your information is subject to the privacy policy and terms of use in effect at the time of collection. Please visit this page periodically so that you will be apprised of any such changes. Your continued use of our Sites after any modification to this privacy policy will constitute your acceptance of such modification. </p>
+<h3><a name="contactUs">Contact Us</a></h3>
+<p>If you have any questions or comments regarding this privacy policy or any of our Sites, you can contact us by:</p>
+<ul>
+<li>Calling Customer Service at (877) 738-6742;</li>
+<li>Emailing us at <a href="mailto:PrivacyPolicyInquiry@petco.com" class="uline">PrivacyPolicyInquiry@petco.com</a>; or</li>
+<li>Writing us at Petco, 9125 Rehco Rd., San Diego, CA 92121, Attn: Chief Information Security Officer/Privacy Policy.
+<ul>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+
+    </div>
+
+    
+<!-- XFS Protection Script -->
+<script type="text/javascript">
+	if (top.frames.length != 0) { if (!$pval.parentIsSameDomain()) { top.location = self.document.location; } }
+</script>
+
+
+<!-- JS Startup -->
+<script type="text/javascript">
+	var reviewURLBase = "http://reviews-cdn.petco.com/3554/##_FamilyID_##/ratings.gif";
+</script>
+
+
+<!-- ::TRACE
+CurrentExecutionFilePath: /Content/EmptyContent.aspx
+QueryString: PC=privacypolicy
+FilePath: /Content/EmptyContent.aspx
+Path: /Content/EmptyContent.aspx
+AppURL: http://www.petco.com/Content/EmptyContent.aspx?PC=privacypolicy
+WS: 103
+IsHTTPS: False
+-->
+
+
+
+
+    </body>
+</html>
