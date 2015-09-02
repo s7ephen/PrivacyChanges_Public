@@ -1,1 +1,959 @@
- 
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="">
+<!--<![endif]-->
+<head>
+
+    <title>Privacy</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="icon" href="/assets/img/Alot/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" />
+    <link rel="stylesheet" href="/assets/styles/skins/alot_homepage.css" />
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" media="all" href="/assets/styles/ie/ie8.css" />
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(function () {
+
+        // click handler for opening panels
+        $('.js--mobile-action').on('click', function (e) {
+            var action = $(this);
+            if (action.hasClass('toggled')) {
+                e.preventDefault();
+                hideAllPanels();
+            } else {
+                e.preventDefault();
+                hideAllPanels();
+                if (action.attr('href') === "#site_nav") {
+                    var target = "#network_nav";
+                } else {
+                    var target = action.attr('href');
+                }
+                $(this).addClass('toggled');
+                showPanel(target);
+            }
+        });
+
+        $('.network-dropdown-container').on('touchstart', function (e) {
+            window.location = $(this).find('a').attr('href');
+        });
+        $('.network-dropdown-container').hover(function (e) {
+            showNetworkPanel($(this));
+        }, function (e) {
+            hideNetworkPanel($(this));
+        });
+
+        // click handler for closing panels
+        $('.js--close, .overlay').on('click', function (e) {
+            e.preventDefault();
+            hideAllPanels();
+        });
+
+        // click handler for subnav slidedowns in main menu
+        $('.js--subnav-expand').on('click', function (e) {
+            e.preventDefault();
+            var nav_expand = $(this);
+            toggleSubnav(nav_expand);
+        });
+
+        // when the user clicks a link inside a panel, hide the panel and return true
+        $('.mobile-panel a').on('click', function (e) {
+            if (!$(this).hasClass('subnav-expand')) {
+                hideAllPanels();
+            }
+            return true;
+        });
+
+        // emulate placeholder attr in IE8
+        if ($('html').hasClass('lt-ie9') || $('html').hasClass('ie9')) {
+            var search_input = $('.site-header .search-input');
+            search_input.val('Search...');
+            search_input.focus(function () {
+                $(this).val('');
+            });
+            search_input.blur(function () {
+                $(this).val('Search...');
+            });
+        }
+
+        // watch esc key - hide panels/modals when pressed
+        $(document).keyup(function (e) {
+            if (e.keyCode == 27) {
+                hideAllPanels();
+            }
+        });
+
+        $('body').on('click', '.js--big-touch', function (e) {
+            var thing = $(this);
+            var link = thing.find('.js--big-touch-link').attr('href');
+            window.location = link;
+        });
+
+        $('.back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 350);
+        });
+
+        // opens panel based on ID of jquery object
+        function showPanel(target) {
+            $('.js--close').addClass('toggled');
+            $('.overlay').addClass('toggled');
+            $(target).addClass('toggled');
+            if (target == '#site_search') {
+                $('#site_search').find('input[type="text"]').focus();
+            }
+        }
+        // hides all panels and resets panel-related classes
+        function hideAllPanels() {
+            $('.toggled').removeClass('toggled');
+            $('.search-input').blur();
+        }
+
+        // functions for opening and closing network panels
+        function showNetworkPanel(network_link) {
+            var network_link = network_link;
+            var network_color = network_link.find('i').css('color');
+            var network_dropdown = network_link.children('.network-teaser-dropdown');
+            var network_list = network_link.parents('.network-nav');
+
+            network_link.addClass('toggled');
+            network_link.find('.alot-brand').after('<div class="network-dropdown-hover-border" style="border-bottom-color:' + network_color + '"></div>');
+            network_list.addClass('toggled');
+            network_dropdown.addClass('toggled').css({
+                borderTopColor: network_color
+            });
+        }
+        function hideNetworkPanel(network_link) {
+            var network_link = network_link;
+            var network_dropdown = network_link.children('.network-teaser-dropdown');
+            var network_list = network_link.parents('.network-nav');
+
+            network_link.removeClass('toggled');
+            $('.network-dropdown-hover-border').remove();
+            network_list.removeClass('toggled');
+            network_dropdown.removeClass('toggled');
+        }
+
+    });
+    </script>
+    <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        gads.onload = function () {
+            googletag.pubads().collapseEmptyDivs(true);
+        };
+    })();
+    </script>
+    
+</head>
+<body class="alot">
+
+
+
+<header class="site-header" id="site_header">
+    <div class="g  site-header-guts">
+        <div class="unit-9">
+            <div class="logo-and-network-nav">
+                <a href="http://www.alot.com">
+                    <div class="site-logo">
+                        <!--[if gte IE 9]><!-->
+                        <svg class="site-logo-svg" version="1.1" id="alot_logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 59 26" enable-background="new 0 0 59 26" xml:space="preserve">
+                        <g>
+                        <path fill="#111111" d="M58.8,23.8c0-0.1-0.1-0.2-0.2-0.3c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.2,0-0.3,0.1
+                            c-0.1,0-0.2,0.1-0.3,0.2c-0.1,0.1-0.1,0.2-0.2,0.3s-0.1,0.2-0.1,0.4c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.2,0.2,0.3
+                            c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1c0.1,0,0.2-0.1,0.3-0.2c0.1-0.1,0.1-0.2,0.2-0.3
+                            c0-0.1,0.1-0.2,0.1-0.3C58.9,24,58.8,23.9,58.8,23.8z M58.7,24.5c0,0.1-0.1,0.2-0.2,0.2c-0.1,0.1-0.2,0.1-0.2,0.2
+                            c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.2-0.1-0.2-0.2c-0.1-0.1-0.1-0.2-0.2-0.2c0-0.1-0.1-0.2-0.1-0.3
+                            c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.2-0.2c0.1-0.1,0.2-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1
+                            c0.1,0,0.2,0.1,0.2,0.2c0.1,0.1,0.1,0.2,0.2,0.2c0,0.1,0.1,0.2,0.1,0.3C58.7,24.3,58.7,24.4,58.7,24.5z" />
+                        <path fill="#111111" d="M58.1,24.2c0.1,0,0.1-0.1,0.2-0.1c0-0.1,0.1-0.1,0.1-0.2c0-0.1,0-0.1,0-0.1c0,0-0.1-0.1-0.1-0.1
+                            c0,0-0.1,0-0.1-0.1s-0.1,0-0.1,0h-0.3v1.1h0.1v-0.5h0.1h0c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0.1,0.2,0.1,0.3h0.1c0-0.1-0.1-0.2-0.1-0.3
+                            C58.2,24.4,58.1,24.3,58.1,24.2z M58,24.1h-0.2v-0.4H58c0.1,0,0.1,0,0.2,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1
+                            c0,0,0,0-0.1,0.1C58.1,24.1,58,24.1,58,24.1z" />
+                                            </g>
+                        <path fill="#111111" d="M25.5,20.5V0.6h-3.1v20.4c0,4,2.5,4.5,4.3,4.5c0.5,0,2.4,0,2.4,0v-2.7c0,0-1.7,0-2,0
+                        C26.2,22.8,25.5,22.4,25.5,20.5z" />
+                        <path fill="#111111" d="M52.7,20.5V7.3h2.9V4.2h-2.9V0.6h-3.1v3.6h-1.2v3.1h1.2v13.8c0,4,2.5,4.5,4.3,4.5c0.5,0,2.4,0,2.4,0v-2.7
+                        c0,0-1.7,0-2,0C53.4,22.8,52.7,22.4,52.7,20.5z" />
+                        <g>
+                        <path fill="#111111" d="M19.1,20.5V7.4H16v2c-0.8-0.8-1.7-1.4-2.8-1.9c-0.9-0.4-1.9-0.7-3-0.7v0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0
+                            c-0.1,0-0.2,0-0.3,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0v0c-1.1,0.1-2,0.3-3,0.7
+                            c-1.2,0.5-2.2,1.2-3,2.1c-0.8,0.9-1.5,1.9-2,3c-0.5,1.1-0.7,2.3-0.7,3.6c0,1.3,0.2,2.5,0.7,3.6c0.5,1.1,1.2,2.1,2,3
+                            c0.8,0.8,1.8,1.5,3,2c0.9,0.4,1.9,0.6,3,0.7v0c0.2,0,0.4,0,0.6,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0c0.2,0,0.4,0,0.6,0v0
+                            c1.1-0.1,2-0.3,3-0.7c1.2-0.5,2.2-1.2,3-2c0.6,2.4,2.6,2.7,4.1,2.7c0.2,0,0.5,0,0.7,0v-2.7c-0.1,0-0.2,0-0.2,0
+                            C19.8,22.8,19.1,22.4,19.1,20.5z M15.5,18.7c-0.3,0.8-0.8,1.5-1.4,2c-0.6,0.6-1.3,1-2.1,1.4c-0.8,0.3-1.6,0.5-2.5,0.5
+                            c-0.9,0-1.7-0.2-2.5-0.5c-0.8-0.3-1.5-0.8-2.1-1.4c-0.6-0.6-1-1.2-1.4-2c-0.3-0.8-0.5-1.6-0.5-2.6c0-0.9,0.2-1.7,0.5-2.5
+                            C4,12.8,4.4,12.1,5,11.6c0.6-0.6,1.3-1,2.1-1.4c0.8-0.3,1.6-0.5,2.5-0.5c0.9,0,1.7,0.2,2.5,0.5c0.8,0.3,1.5,0.8,2.1,1.4
+                            c0.6,0.6,1,1.3,1.4,2.1c0.3,0.8,0.5,1.6,0.5,2.5C16,17.1,15.8,17.9,15.5,18.7z" />
+                                            </g>
+                        <path fill="#111111" d="M46.7,12.6c-0.5-1.1-1.2-2.1-2-3c-0.8-0.9-1.8-1.5-3-2.1c-0.9-0.4-1.9-0.7-3-0.7v0c-0.1,0-0.2,0-0.3,0
+                        c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0v0
+                        c-1.1,0.1-2,0.3-3,0.7c-1.2,0.5-2.2,1.2-3,2.1c-0.8,0.9-1.5,1.9-2,3c-0.5,1.1-0.7,2.3-0.7,3.6c0,1.3,0.2,2.5,0.7,3.6
+                        c0.5,1.1,1.2,2.1,2,3c0.8,0.8,1.8,1.5,3,2c0.9,0.4,1.9,0.6,3,0.7v0c0.2,0,0.4,0,0.6,0c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0
+                        c0.2,0,0.4,0,0.6,0v0c1.1-0.1,2-0.3,3-0.7c1.2-0.5,2.2-1.2,3-2c0.8-0.8,1.5-1.8,2-3c0.5-1.1,0.7-2.3,0.7-3.6
+                        C47.4,14.9,47.2,13.7,46.7,12.6z M38,22.6c-3.6,0-6.4-2.9-6.4-6.4s2.9-6.4,6.4-6.4s6.4,2.9,6.4,6.4S41.5,22.6,38,22.6z" />
+                        </svg>
+                        <!--<![endif]-->
+
+                    </div>
+                </a>
+                <a href="#network_nav" class="network-toggle js--mobile-action">
+                    <div class="alot-brand">
+                        <span class="alot-brand-name">Alot</span>
+                        <span class="alot-brand-logo"><i class="icon-alot_alot"></i></span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="network_nav" class="mobile-panel network-nav-panel">
+                <nav class="nav network-nav  network-nav">
+                    <div class="cf">
+                            <div class="network-dropdown-container">
+
+                                <a href="http://health.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--health">
+                                        <span class="alot-brand-name">Health</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_health"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://health.alot.com/doctor">Find a Doctor</a>
+                                                            <a href="http://health.alot.com/conditions">Conditions</a>
+                                                            <a href="http://health.alot.com/wellness">Wellness</a>
+                                                            <a href="http://health.alot.com/pregnancy">Pregnancy</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://health.alot.com/conditions/10-celebrities-you-didnt-know-have-autism---8863" class="cf">
+                                                                    <img src="http://health.alot.com/assets/common/conditions/u8863_60x60.jpg" alt="Celebrities with autism" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Celebrities You Didn&#39;t Know Have Autism 
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://health.alot.com/wellness/bed-bugs-all-you-need-to-know-in-5-photos--6099" class="cf">
+                                                                    <img src="http://health.alot.com/assets/common/wellness/u6099_60x60.jpg" alt="a closeup picture of a bed bug" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Bed Bugs: All You Need to Know in 5 Photos
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://health.alot.com/conditions/chickenpox-and-shingles-all-you-need-to-know-in-10-photos--6329" class="cf">
+                                                                    <img src="http://health.alot.com/assets/common/conditions/u6329_60x60.jpg" alt="A child is treated for chickenpox" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Chickenpox and Shingles: All You Need to Know in 10 Photos
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://health.alot.com/wellness/10-drugs-that-didnt-exist-when-you-were-a-teen--6497" class="cf">
+                                                                    <img src="http://health.alot.com/assets/common/wellness/u6497_60x60.jpg" alt="bath salts" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Drugs That Didn&#39;t Exist When You Were a Teen
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://finance.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--finance">
+                                        <span class="alot-brand-name">Finance</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_finance"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://finance.alot.com/advisor">Find an Advisor</a>
+                                                            <a href="http://finance.alot.com/investing">Investing</a>
+                                                            <a href="http://finance.alot.com/personal-finance">Personal Finance</a>
+                                                            <a href="http://finance.alot.com/insurance">Insurance</a>
+                                                            <a href="http://finance.alot.com/legal">Legal</a>
+                                                            <a href="http://finance.alot.com/business">Business</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://finance.alot.com/personal-finance/the-most-affordable-states-in-america--6487" class="cf">
+                                                                    <img src="http://finance.alot.com/assets/common/personal_finance/u6487_60x60.jpg" alt="White Rock Mountain in Arkansas" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        The Most Affordable States in America
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://finance.alot.com/personal-finance/10-richest-movie-stars-in-hollywood--9137" class="cf">
+                                                                    <img src="http://finance.alot.com/assets/common/personal_finance/u9137_60x60.jpg" alt="Angelina Jolie is one of the richest stars in Hollywood" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Richest Movie Stars in Hollywood
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://finance.alot.com/personal-finance/10-most-expensive-places-to-live-in-the-us--8950" class="cf">
+                                                                    <img src="http://finance.alot.com/assets/common/personal_finance/u8950_60x60.jpg" alt="View of an expensive city" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Most Expensive Places to Live in the U.S.
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://finance.alot.com/legal/-the-most-important-strikes-in-us-history--9165" class="cf">
+                                                                    <img src="http://finance.alot.com/assets/common/legal/u9165_60x60.jpg" alt="Postal worker on strike holding a sign" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                         The Most Important Strikes in U.S. History
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://careers.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--careers">
+                                        <span class="alot-brand-name">Careers</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_careers"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://careers.alot.com/workplace-advice">Workplace Advice</a>
+                                                            <a href="http://careers.alot.com/career-paths">Career Paths</a>
+                                                            <a href="http://careers.alot.com/planning">Planning</a>
+                                                            <a href="http://careers.alot.com/watercooler">Watercooler</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://careers.alot.com/planning/10-best-jobs-after-retirement--6317" class="cf">
+                                                                    <img src="http://careers.alot.com/assets/common/planning/u6317_60x60.jpg" alt="A retired couple enjoys a sunny day together" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Best Jobs After Retirement
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://careers.alot.com/planning/editors-pick-best-2015-planners--5440" class="cf">
+                                                                    <img src="http://careers.alot.com/assets/common/planning/u5440_60x60.jpg" alt="A laptop, a planner, and a cup of coffee sit on a desk" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Editor&#39;s Pick: Best 2015 Planners
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://careers.alot.com/watercooler/11-types-of-annoying-co-workers-found-in-every-office--9320" class="cf">
+                                                                    <img src="http://careers.alot.com/assets/common/watercooler/u9320_60x60.jpg" alt="A hostile man gives the stink eye to his annoying coworkers" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        11 Types of Annoying Co-Workers Found in Every Office
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://careers.alot.com/career-paths/the-pros-and-cons-of-electrical-engineering--2253" class="cf">
+                                                                    <img src="http://careers.alot.com/assets/common/career/u2253_60x60.jpg" alt="Electrical board that electrical engineers work with" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        The Pros and Cons of Electrical Engineering
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://local.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--local">
+                                        <span class="alot-brand-name">Local</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_local"></i></span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://travel.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--travel">
+                                        <span class="alot-brand-name">Travel</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_travel"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://travel.alot.com/destinations">Destinations</a>
+                                                            <a href="http://travel.alot.com/themes">Themes</a>
+                                                            <a href="http://travel.alot.com/travel-tips">Travel Tips</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://travel.alot.com/themes/10-most-endangered-places-in-the-us--6440" class="cf">
+                                                                    <img src="http://travel.alot.com/assets/common/themes/u6440_60x60.jpg" alt="the battle mountain sanitarium is one of the most endangered places in the us" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 Most-Endangered Places in the U.S.
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://travel.alot.com/themes/20-places-you-cant-believe-really-exist--6572" class="cf">
+                                                                    <img src="http://travel.alot.com/assets/common/themes/u6572_60x60.jpg" alt="cherry blossoms bloom over streets in bonn germany" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        20 Places You Can&#39;t Believe Really Exist
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://travel.alot.com/themes/10-of-americas-hippie-hideouts--9070" class="cf">
+                                                                    <img src="http://travel.alot.com/assets/common/themes/u9070_60x60.jpg" alt="Hippies celebrate at an arts festival in Eugene, Oregon." class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        10 of America&#39;s Hippie Hideouts
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://travel.alot.com/themes/best-cities-for-a-solo-traveler--9228" class="cf">
+                                                                    <img src="http://travel.alot.com/assets/common/themes/u9228_60x60.jpg" alt="Bangkok is a perfect place to travel solo." class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Best Cities for a Solo Traveler
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://living.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--living">
+                                        <span class="alot-brand-name">Living</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_living"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://living.alot.com/family">Family</a>
+                                                            <a href="http://living.alot.com/home">Home</a>
+                                                            <a href="http://living.alot.com/relationships">Relationships</a>
+                                                            <a href="http://living.alot.com/beauty">Beauty</a>
+                                                            <a href="http://living.alot.com/entertainment">Entertainment</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://living.alot.com/entertainment/red-carpet-ratchet-2015-vmas--9387" class="cf">
+                                                                    <img src="http://living.alot.com/assets/common/entertainment/u9387_60x60.jpg" alt="Miley Cyrus and her many outfits as host of the 2015 VMAs" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Red Carpet Ratchet: 2015 VMAs
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://living.alot.com/entertainment/which-celebrity-is-your-spirit-animal--9348" class="cf">
+                                                                    <img src="http://living.alot.com/assets/common/entertainment/u9348_60x60.jpg" alt="Taylor Swift, Beyonce, Jennifer Lawrence, Emma Watson, and Nicki Minaj" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Which Celebrity is Your Spirit Animal?
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://living.alot.com/entertainment/mtv-social-consciousness-and-the-2015-vmas-a-disgruntled-recap---9394" class="cf">
+                                                                    <img src="http://living.alot.com/assets/common/entertainment/u9394_60x60.jpg" alt="Nicki Minaj on the VMAs red carpet" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        MTV, Social Consciousness, and the 2015 VMAs: A Disgruntled Recap 
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://living.alot.com/entertainment/red-carpet-ratchet-2015-tony-awards--8671" class="cf">
+                                                                    <img src="http://living.alot.com/assets/common/entertainment/u8671_60x60.jpg" alt="Idina Menzel walks the red carpet at the Tony Awards 2015" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Red Carpet Ratchet: 2015 Tony Awards
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="network-dropdown-container">
+
+                                <a href="http://education.alot.com" class="network-nav-item ">
+                                    <div class="alot-brand alot-brand--education">
+                                        <span class="alot-brand-name">Education</span>
+                                        <span class="alot-brand-logo"><i class="icon-alot_education"></i></span>
+                                    </div>
+                                </a>
+
+                                    <div class="network-teaser-dropdown">
+                                        <div class="cf g">
+                                            <div class="unit-3">
+                                                <nav class="nav--vertical  pad-right">
+                                                            <a href="http://education.alot.com/school">Find a School</a>
+                                                            <a href="http://education.alot.com/k-12">K-12</a>
+                                                            <a href="http://education.alot.com/higher-education">Higher Education</a>
+                                                            <a href="http://education.alot.com/planning">Planning</a>
+                                                </nav>
+                                            </div>
+                                            <div class="unit-9">
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://education.alot.com/higher-education/20-best-party-schools-in-the-us--6330" class="cf">
+                                                                    <img src="http://education.alot.com/assets/common/higher_education/u6330_60x60.jpg" alt="a college party rages on through the night" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        20 Best Party Schools in the US
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://education.alot.com/higher-education/8-reasons-you-should-take-free-typing-lessons--6264" class="cf">
+                                                                    <img src="http://education.alot.com/assets/common/higher_education/u6264_60x60.jpg" alt="An open computer and a cup of coffee" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        8 Reasons You Should Take Free Typing Lessons
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="cf">
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://education.alot.com/higher-education/25-celebs-who-graduated-from-ivy-league-schools--8821" class="cf">
+                                                                    <img src="http://education.alot.com/assets/common/higher_education/u8821_60x60.jpg" alt="Emma Watson walks the red carpet" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        25 Celebs Who Graduated From Ivy League Schools
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="unit-6">
+                                                            <div class="tiny-article">
+                                                                <a href="http://education.alot.com/higher-education/which-celebrity-was-in-your-fraternity-or-sorority--8921" class="cf">
+                                                                    <img src="http://education.alot.com/assets/common/higher_education/u8921_60x60.jpg" alt="Brad Pitt looks super fine at a black tie event" class="tiny-article-img" />
+                                                                    <span class="tiny-article-title">
+                                                                        Which Celebrity Was in Your Fraternity or Sorority?
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+
+                    </div>
+                    <a href="http://alot.com" class="mothership-link">The <span>alOt</span> network.</a>
+                </nav>
+            </div>
+
+        </div>
+
+
+        <div id="site_search" class="mobile-panel search-panel unit-3">
+            <form method="get" action="/search" class="search-form">
+                <input tabindex="1" placeholder="Search..." type="text" class="search-input input--fit" name="query" />
+                <button tabindex="2" type="submit" class="search-submit"><i class="icon-search"></i></button>
+            </form>
+        </div>
+
+
+        <a href="#site_nav" class="mobile-header-action menu-open js--mobile-action">
+            <i class="icon-navicon icon-fw"></i>
+            <span>menu</span>
+        </a>
+        <a href="#site_sidebar" class="mobile-header-action menu-open--article js--mobile-action">
+            <i class="icon-navicon icon-fw"></i>
+            <span>menu</span>
+        </a>
+
+        <a href="#site_search" class="mobile-header-action search-toggle js--mobile-action">
+            <i class="icon-search"></i>
+            <span>search</span>
+        </a>
+
+        <a href="#" class="mobile-header-action menu-close js--close">
+            <i class="icon-times"></i>
+            <span>close</span>
+        </a>
+
+            <div class="social-networks-list">
+                <a class="social-network-link  sn-facebook" href="http://www.facebook.com/alotsites" target="_blank">Facebook</a>
+                <a class="social-network-link  sn-twitter" href="http://www.twitter.com/alotdotcom" target="_blank">Twitter</a>
+            </div>
+
+    </div>
+</header>
+
+
+
+    <div class="overlay"></div>
+
+    <div class="g  page">
+
+        <div class="cf">
+
+            
+<div class="content  g">
+    <div class="unit-8 offset-2">
+
+        <h1 class="category-title  text-center">
+            <span class="category-title-pre">Alot.com</span>
+            Privacy Policy
+        </h1>
+        <div class="pad">
+            <p>
+                Thank you for visiting Alot.com. Alot.com is committed to protecting consumer privacy online.
+                We believe that greater protection of personal privacy on the Web will not only protect consumers, but also increase consumer confidence and ultimately their participation in online activities.
+                The purpose of our policy is to inform you about the types of information we gather about you when you visit our site, how we may use that information,
+                whether we disclose it to anyone, and the choices you have regarding our use of the information.
+                Our site may contain links to other Web sites, including Web sites directed to children. We have no control over the privacy practices or the content of any of our business partners,
+                advertisers, sponsors or other sites to which we provide links from our sites. You should check the applicable privacy policy of the Web site sponsor when linking to other Web sites.
+                Alot.com strives to offer its visitors the many advantages of Internet technology and to provide an interactive and personalized experience.
+            </p>
+            <h3>
+                How We Gather Information and Technologies We Use
+            </h3>
+            <p>
+                At Alot.com you can visit many pages on our site without physically taking any steps to provide information.
+                Like most Web sites, we do collect information automatically and through the use of electronic tools that may be transparent to our visitors.
+                This section provides information about the information we collect and how the technologies we utilize work.
+            </p>
+            <ul>
+                <li>
+                    <strong>Cookies.</strong>
+                    <p>
+                        We use "cookies." The cookies we place on your computer are very small text files that uniquely identify your browser and may be sent to your computer or mobile device.
+                        They are stored on your hard drive and communicate with our servers only when you are visiting our websites. We use cookies to improve the quality of Alot.com.
+                        They allow us to monitor aggregate metrics such as total number of visitors and number of pages viewed. They also allow us to optimize Alot.com to make sure that we are delivering the best possible experience to our users.
+                        Your web browser is likely already set to accept cookies, yet you may choose to block cookies in your web browser’s settings. Note that blocking cookies may result in some features not being able to function properly.
+                        To learn more about controlling browser cookies visit: <a href="http://www.aboutcookies.org/Default.aspx?page=1" target="_blank">http://www.aboutcookies.org/Default.aspx?page=1</a>.
+                    </p>
+                    <p>
+                        Additionally, we allow third parties that display advertisements, search listings, and other content on portions of Alot.com to set and access their cookies on your computer
+                        or device and any cookies are subject to the applicable third parties privacy policies and not ours. These companies may use non-personally identifiable information
+                        (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to
+                        Alot.com and other unaffiliated Web sites in order to provide advertisements about goods and services likely to be of greater interest to you.
+                        These companies typically use a cookie or third party web beacon to collect this information.
+                        We also partner with a limited number of interest-based advertising companies to serve ads and/or collect certain information when you visit our websites.
+                        Interest-based advertising companies may use cookies to collect non-personally identifiable information during your visit to our websites in order to help show advertisements on other websites likely to be more interesting to you.
+                        To learn more about this 'interest-based advertising' practice or to opt-out of this use of your anonymous information, you can go to the National Advertising Initiative's website at <a href="http://www.networkadvertising.org/managing/opt_out.asp" target="_blank">http://www.networkadvertising.org/managing/opt_out.asp</a>.
+                    </p>
+                </li>
+                <li>
+                    <strong>Device Information.</strong>
+                    <p>
+                        We collect information regarding the Internet browser, computer, tablet, mobile phone, smartphone or other device utilized to access Alot.com to ensure that
+                        Alot.com is optimized for those devices.
+                    </p>
+                </li>
+                <li>
+                    <strong>Internet Protocol Addresses.</strong>
+                    <p>
+                        Internet browsers automatically transmit information such as the URL of the website you just came from and the Internet Protocol (IP) address and the browser version of your computer.
+                        This information is utilized to optimize Alot.com.
+                    </p>
+                </li>
+                <li>
+                    <strong>Location Information.</strong>
+                    <p>
+                        On some of our mobile applications we may (or may enable a third party to) request your geolocation information.
+                        If allowed, we (or the third party) may use this information to supply you with location specific advertisements, offers and functionality.
+                        Additionally, we may (or may enable a third party to) capture geolocation information (such as IP address data) when you access Alot.com, and may use that geo-location information to targets ads, offers and functionality.
+                    </p>
+                </li>
+                <li>
+                    <strong>Analytics.</strong>
+                    <p>
+                        We use third party information, reports and analysis about the usage and browsing patterns of users of Alot.com.
+                        We allow the third party analytics companies to include web beacons and cookies on Alot.com.
+                        The collected information includes search terms, search parameters, click-throughs by users, and other similar information. We utilize this information to improve Alot.com and make sure we are delivering relevant content to our users.
+                        The Analytics we use do not identify individual users of Alot.com.
+                    </p>
+                </li>
+                <li>
+                    <strong>Log Files.</strong>
+                    <p>
+                        We may also automatically log certain anonymous information about visitors to Alot.com, including, but not limited to, where the user came from to visit our site,
+                        IP address, search terms utilized, browser type and a reading history of the pages viewed.
+                    </p>
+                </li>
+                <li>
+                    <strong>Web Beacons.</strong>
+                    <p>
+                        We (or our third party partners) may use web beacons.  Web beacons communicate information from your Internet browser to a web server.
+                        We (or our third party partners) use web beacons for a variety of purposes, including to analyze the use of Alot.com and in conjunction with cookies to provide content and ads that are more relevant to you.
+                    </p>
+                </li>
+                <li>
+                    <strong>Other.</strong>
+                    <p>
+                        As new technologies develop we may implement and/or test them on Alot.com.
+                        We only utilize technologies as permitted by law.
+                    </p>
+                </li>
+            </ul>
+            <h3>
+                What we do with the information we collect
+            </h3>
+            <p>
+                We will use your information only as permitted by law.  We use the information we collect to: optimize Alot.com, including ensuring that the site is accessible to your device; ensure the site is available in the appropriate language;
+                customize the advertising and content available to you; improve our product offerings and services; optimize our marketing campaigns; conduct research;
+                supply our third party partners with aggregate and/or anonymous information to help them enhance their own products, data, or analytics;
+                and provide anonymous reporting for internal and external clients.
+            </p>
+            <p>
+                As we continue to develop our business, we may sell, buy, merge or partner with other companies or businesses.
+                In such transactions, user information may be among the transferred assets. We may also disclose your information in response to a court order,
+                at other times when we believe we are reasonably required to do so by law, in connection with the collection of amounts you may owe to us, and/or whenever
+                we deem it appropriate or necessary to give such information to law enforcement authorities.
+                Please note we may not provide you with notice prior to disclosure in such cases.
+            </p>
+            <h3>
+                Affiliated Sites, Linked Sites and Advertisements
+            </h3>
+            <p>
+                Alot.com expects its partners, advertisers and third-party affiliates to respect the privacy of our users.
+                However, third parties, including our partners, advertisers, affiliates and other content providers accessible through our site, may have their own privacy and data collection
+                policies and practices. For example, during your visit to our site you may link to, or view as part of a frame on Alot.com page, certain content that is actually created or hosted by a third party.
+                Also, through Alot.com you may be introduced to, or be able to access, information, Web sites, advertisements, features, contests or sweepstakes offered by other parties.
+                Alot.com is not responsible for the actions or policies of such third parties.
+                You should check the applicable privacy policies of those third parties when providing information on a feature or page operated by a third party.
+            </p>
+            <p>
+                While on our site, our advertisers, promotional partners or other third parties may use cookies or other technology to attempt to identify some of your preferences or retrieve information about you.
+                For example, some of our advertising is served by third parties and may include cookies that enable the advertiser to determine whether you have seen a particular advertisement before.
+                Through features available on our site, third parties may use cookies or other technology to gather information.
+                Alot.com does not control the use of this technology or the resulting information and is not responsible for any actions or policies of such third parties.
+            </p>
+            <p>
+                We use third-party advertising companies to serve ads when you visit our Web site.
+                These companies may use non-personal information (i.e., information that does not
+                include your name, address, email address or telephone number) about your visits
+                to this and other Web sites in an effort to provide advertisements about goods and
+                services that may be of interest to you. To learn more about third-party advertising
+                or to opt-out of such advertising, you can visit both the <a href="http://www.networkadvertising.org/" target="_blank">
+                    Network Advertising Initiative
+                </a> and the <a href="http://www.aboutads.info/" target="_blank">
+                    Digital
+                    Advertising Alliance
+                </a>.
+            </p>
+            <p>
+                In addition to the above, we have implemented at Alot.com certain "Google Analytics" features that support display advertising, including re-targeting.
+                Visitors to Alot.com may opt out of Google Analytics, customize the Google Display Network ads by using the <a href="https://www.google.com/settings/u/0/ads/" target="_blank">Google Ad Preferences Manager</a>
+                and learn more about how google serves ads by viewing its <a href="https://support.google.com/ads/?hl=en" target="_blank">Customer Ads Help Center</a>.
+                if you do not wish to participate in Google Analytics, you may also download the <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank">Google Analytics pt-out browser add-on</a>.
+            </p>
+            <h3>Communication with Contributors</h3>
+            <p>
+                Alot.com Contributors provide content to Alot.com.
+                Contributors are independent contractors and not employees of Alot.com.
+                If you contact a Contributor via e-mail or otherwise then that communication is independent of Alot.com and is not governed by this Privacy Policy.
+                Alot.com is not responsible for the actions of our Contributors or how they may use information you have provided to them.
+                Any communications with a Contributor are not confidential or subject to any other privilege.
+            </p>
+            <h3>
+                Our Parent Company
+            </h3>
+            <p>
+                Alot.com is a wholly-owned subsidiary of Inuvo, Inc. We share information we
+                collect with Inuvo, Inc. to better understand our users and to improve the content
+                delivered across the Inuvo, Inc. network.
+            </p>
+            <h3>
+                Minors
+            </h3>
+            <p>
+                Alot.com does not knowingly solicit or collect information from visitors under
+                thirteen (13) years of age. Alot.com encourages parents and guardians to spend
+                time online with their children and to participate and monitor the interactive activities
+                of their children.
+            </p>
+            <h3>
+                Compliance with legal process
+            </h3>
+            <p>
+                We may disclose information if we are required to do so by law or we in good faith
+                believe that such action is necessary to (1) comply with the law or with legal process;
+                (2) protect and defend our rights and property; (3) protect against misuse or unauthorized
+                use of our websites; or (4) protect the personal safety or property of our users
+                or the public.
+            </p>
+            <h3>
+                Changes in Privacy Policy
+            </h3>
+            <p>
+                Alot.com reserves the right to change or update this Privacy Policy at any time
+                by posting a notice at the Site explaining that we are changing our Privacy Policy.
+            </p>
+            <h3>Users from outside the United States</h3>
+            <p>
+                Visitors to Alot.com from outside the United States will have their data transferred to and stored in our servers in the U.S.
+                By using Alot.com, international users are consenting to our use and collection of their data as described herein.
+            </p>
+            <h3>
+                Contacting the Site
+            </h3>
+            <p>
+                We listen to or read, as applicable, every message sent to us and endeavor to reply
+                promptly to each one. This information is used to respond directly to your questions
+                or comments. If you have any questions about this Privacy Policy or the practices
+                of Alot.com, please feel free to contact us at <a href="mailto:info@alot.com">
+                    info@alot.com
+                </a>.
+            </p>
+            Last updated: July 22, 2015
+        </div>
+    </div>
+</div>
+
+        </div>
+
+
+        <footer class="copyright  pad-sides  cf">
+            <a href="#site_header" class="back-to-top"><i class="icon-chevron-up"></i></a>
+            <p>
+                <a href="http://www.inuvo.com">&copy;2015 Inuvo, Inc.</a>
+                <nav class="homepage-footer-nav  no-layout pad-top">
+                    <a href="http://alot.com/privacy" class="button--link">Privacy Policy</a>
+                    <a href="http://alot.com/terms" class="button--link">Terms of Use</a>
+                    <a href="mailto:info@alot.com" class="button--link">Contact</a>
+                </nav>
+            </p>
+        </footer>
+    </div>
+    
+
+    <script type="text/javascript">
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-4224885-6', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+
+</html>
