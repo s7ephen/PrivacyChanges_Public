@@ -1,1 +1,1675 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help-Privacy Policy</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="description" content="J.Crew men's clothing: famous broken-in chino, denim, polos, italian leather shoes, sweaters, tailored suits and more. Look good without even trying." />
+    
+    
+        <script>
+        var monetateT = new Date().getTime();
+        (function() {
+            var p = document.location.protocol;
+            if (p == "http:" || p == "https:") {
+                var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true; m.src = (p == "https:" ? "https://s" : "http://") + "b.monetate.net/js/1/a-088824c9/p/jcrew.com/" + Math.floor((monetateT + 2740041) / 3600000) + "/g";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+            }
+        })();
+        </script>
+	
+    
+
+
+
+<script src="/media/js/cookies_v2_m56577569835061584.js"></script>
+<script src="/media/js/cookieChecker_v2_m56577569835061490.js"></script>
+<!--
+<link rel="stylesheet" href="" />--><!--
+<link rel="stylesheet" href="" />-->
+
+<link href="/media/css/footer_v2_m56577569835060923.css" rel="stylesheet" />
+<script>
+function isEmailValid(formObj) {
+        var formValid=true;
+        var errorMsg='';
+        var erorDiv=document.getElementById('erorMsg');
+        if(formObj.emailFlag.checked==true){
+        if(!validateEmail(formObj.emailAddress.value)){errorMsg='Please enter a valid email address';formValid=false;}}
+        if(errorMsg!='')erorDiv.innerHTML=errorMsg;
+        return formValid;
+}
+function openPop(filename) {
+    window.open(filename,filename,'width=400, height=400, toolbar=0, resizable=1, scrollbars=0');   
+}
+function openwindow() {
+        blowupWin = window.open('/help/encryption.jsp', 'encryption', 'width=410,height=360');
+        blowupWin.focus();
+}
+</script>
+<link href="/media/css/help_v2_m56577569835060893.css" rel="stylesheet" />
+
+
+<style>
+#dd { position:relative; width: 260px; top:-70px; text-align: left;z-index: 30}
+.search {font-family:arial,geneva,helvetica; font-size:9px; color:#a9a9a9; text-align: center;}
+.item {font-family:arial,geneva,helvetica; font-size:10px; color:#898989; }
+.itemdetails {font-family:arial,geneva,helvetica; font-size:10px; color:#000000; }
+.numberofitemsinbag {font-family:verdana,arial,geneva,helvetica; font-size:10px; color:#ffffff; text-align: left;}
+#dw_blank { z-index: 40;width: 297px; height: 94px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/topnav/shoppingbagbg_v2_m56577569830474527.png', sizingMethod='scale'); }
+#tddw_blank { z-index: 40;  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='scale'); }
+</style>
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+        <link rel="stylesheet" href="/media/wro/css/global-default_v2_m56577569835062380.css" />
+    
+
+
+
+
+<script>
+var globalObj = {};
+var globalObj = globalObj || {};
+globalObj.version = '1.0';
+
+globalObj.config = {
+	protocol : 'https:',
+	systemId : 'JCREW',
+	deviceGroup: (document.documentElement && document.documentElement.clientWidth < 600 && true) ? 'phone' : 'all',
+	isApp : false,
+	siteName : 'JCrew',
+	isPinterestTag : true,
+	isFacebookLikeTag : true,
+    isBazaarVoiceTag : true,
+	navType : '',
+	userId : '',
+	starsOnArrayEnabled : false,
+	server : 'www.jcrew.com',
+	port : '443',
+	isUserSignIn : false,
+	imageBaseUrl: 'https://i.s-jcrew.com/is/image/jcrew/',
+	apiDomain : '',
+	isOmnitureToLoad : true,
+  	renderHtml:!false,
+	secureBaseURL: 'https://www.jcrew.com/',
+	orderContext: 'jcrew',
+    countryContext: 'US'
+};
+
+globalObj.flags = {
+      isCheckout: 'false',
+      isEmbedded: false,
+      isHomepage: '',
+      showSidecar: false
+};
+
+globalObj.pageError = {
+	hasError : false,
+	errorCodes : ''
+};
+
+globalObj.commConfig = {
+	protocol : document.location.protocol
+};
+
+var require = {
+	waitSeconds : 25
+};
+</script>
+
+
+    
+    
+        <script src="/media/wro/js/head_v2_m56577569835062296.js"></script>
+    
+
+
+<script>
+var query = document.location.search,
+    HeadAjax = {};
+
+var setFirstPageLoadCookie = function () {
+    var cookieName = 'firstPageLoad';
+    var cookieExists = (Utils.getCookie(cookieName) !== null);
+    Utils.setCookie(cookieName, (!cookieExists), '', '/', '', '');
+}();
+
+if(!globalObj.flags.showSidecar){
+	var userDetailsAJAX = $.ajax({
+    	url : (globalObj.flags.isEmbedded) ? globalObj.config.secureBaseURL + 'ajax/userDetails.jsp' : '/ajax/userDetails.jsp',
+    	contentType : (globalObj.flags.isEmbedded) ? "application/jsonp" : "application/json",
+    	dataType : (globalObj.flags.isEmbedded) ? "jsonp" : "json",
+    	jsonpCallback : 'userDetailsJSON',
+    	crossDomain : globalObj.flags.isEmbedded,
+		data : {"user" : true, "cart" : true, "omniture" : true, "template" : "/footer/privacy.jsp", "t" : new Date().getTime(), "query":query},
+    	timeout : 5000,
+    	async : false
+	}).done(function(json) {
+    	HeadAjax.jsonResponse = json; 
+    	Global.loadCustomerDetails(json);
+	}).fail(function() {
+    	if (typeof s != 'undefined') {
+        	s.eVar37 = 'ajaxFail';
+        	s.prop19 = 'ajaxFail';
+        	s.prop23 = 'ajaxFail';
+        	s.list1 = 'ajaxFail';
+        	s.prop44 = 'ajaxFail';
+        	s.eVar44 = 'ajaxFail';
+        	s.eVar57 = 'ajaxFail';
+        	s.server = 'ajaxFail';
+    	}
+	});
+}
+
+if (!globalObj.flags.showSidecar && globalObj.flags.isEmbedded) {
+    var sessionCountryAJAX = $.ajax({
+        url : globalObj.config.secureBaseURL + 'intl/sessionCountryDetail.jsp?isEmbedded=true',
+        contentType : "application/jsonp",
+        dataType : "jsonp",
+        jsonpCallback : 'sessionCountryDetailsJSON',
+        crossDomain : true,
+        timeout : 5000,
+        async : false
+    }).done(function(json) {
+        HeadAjax.jsonCountryDetails = json;
+        Global.setCountryDetails(json);
+    });
+}
+
+var sl_tr_start = sl_tr_end = sl_tr_html_start = sl_tr_html_end = sl_tr_json_start = sl_tr_json_end = sl_notr_start = sl_notr_end = function(){ return true; };
+
+</script>
+
+
+
+    <style>
+.globalheader-sprite, .globalheader-back-to-top, .jcrew #backToTop, .globalheader-caret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerCaret, .globalheader-close-btn-14x14, .globalheader-close-btn-active, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose:active span, .globalheader-close-btn-default, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose span, .globalheader-close-btn-hover, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose:hover span, .globalheader-close-x, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, .globalheader-jcrew-logo, #globalHeader #globalHeaderLogoContainer #globalHeaderLogo, .globalheader-magnifying-glass-bar-act, #globalHeaderSearchBoxContainer .search-container .search-button:active .icon, .globalheader-magnifying-glass-bar-disabled, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref:hover .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref:active .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading:hover .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading:active .icon, .globalheader-magnifying-glass-bar-hov, #globalHeaderSearchBoxContainer .search-container .search-button:hover .icon, .globalheader-magnifying-glass-bar, #globalHeaderSearchBoxContainer .search-container .search-button .icon, .globalheader-magnifying-glass, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchLink span, .globalheader-right-arrow, #globalHeader #globalHeaderCountryContext .global-country-context-icon {
+  background-image: url('/media/images/sprites/globalheader_v2_m56577569833217535.png');
+  background-repeat: no-repeat;
+}
+
+.globalheader-back-to-top, .jcrew #backToTop {
+  background-position: -179px 0;
+  height: 78px;
+  width: 51px;
+}
+
+.globalheader-caret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerCaret, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerCaret {
+  background-position: -4px 0;
+  height: 7px;
+  width: 15px;
+}
+
+.globalheader-close-btn-14x14 {
+  background-position: -27px 0;
+  height: 14px;
+  width: 14px;
+}
+
+.globalheader-close-btn-active, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose:active span {
+  background-position: -73px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.globalheader-close-btn-default, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose span {
+  background-position: -57px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.globalheader-close-btn-hover, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchClose:hover span {
+  background-position: -41px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.globalheader-close-x, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderPromoDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderPromoDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderDisclaimerClose .global-header-ship-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-close-img, #globalHeader #globalHeaderMessageContainer #globalHeaderShipDetailsContainer #globalHeaderShipDetails #globalHeaderShipDisclaimerClose .global-header-ship-close-img {
+  background-position: -19px 0;
+  height: 8px;
+  width: 8px;
+}
+
+.globalheader-jcrew-logo, #globalHeader #globalHeaderLogoContainer #globalHeaderLogo {
+  background-position: 0 -78px;
+  height: 46px;
+  width: 260px;
+}
+
+.globalheader-magnifying-glass-bar-act, #globalHeaderSearchBoxContainer .search-container .search-button:active .icon {
+  background-position: -107px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.globalheader-magnifying-glass-bar-disabled, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref:hover .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-ref:active .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading:hover .icon, #globalHeaderSearchBoxContainer .search-container .search-button.disabled-loading:active .icon {
+  background-position: -125px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.globalheader-magnifying-glass-bar-hov, #globalHeaderSearchBoxContainer .search-container .search-button:hover .icon {
+  background-position: -143px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.globalheader-magnifying-glass-bar, #globalHeaderSearchBoxContainer .search-container .search-button .icon {
+  background-position: -161px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.globalheader-magnifying-glass, #globalHeader #globalHeaderMenuContainer #globalHeaderSearchContainer #globalHeaderSearchLink span {
+  background-position: -89px 0;
+  height: 17px;
+  width: 18px;
+}
+
+.globalheader-right-arrow, #globalHeader #globalHeaderCountryContext .global-country-context-icon {
+  background-position: 0 0;
+  height: 5px;
+  width: 4px;
+}
+
+</style>
+
+
+
+<script src="//fonts.jcrew.com/kga0gvy.js"></script>
+<script>
+	try {
+		Typekit.load();
+	} catch (e) {
+	}
+</script>
+
+
+</head>
+
+<body class="bodyclass" leftmargin="0px" topmargin="0px" rightmargin="0px" id="remove_padding_margin">
+<!-- *** headnav.html goes here *** -->
+<div   align="center"   class="topnavigation">
+
+<noscript>
+     <img src="/media/images/common/javascript_v2_m56577569830510843.gif" />
+</noscript>
+
+
+<script src="/media/wro/js/legacy_v2_m56577569835062304.js"></script>
+
+
+
+
+<iframe width="0" scrolling="no" height="0" frameborder="0" src="/media/images/common/spacer_v2_m56577569830537995.gif" id="if_persistShoppingBag" style="position:absolute;"></iframe>
+<div >
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+<!--
+if (document.images) {
+    changebuttonup       = new Image();
+    changebuttonup.src   = "/media/images/globalnav/flags/glnav_change_on_v2_m56577569830768206.gif" ;
+    changebuttondown     = new Image() ;
+    changebuttondown.src = "/media/images/globalnav/flags/glnav_change_v2_m56577569830768214.gif" ;
+}
+function buttondown( buttonname )
+{
+    if (document.images) {
+      document[ buttonname ].src = eval( buttonname + "down.src" );
+    }
+}
+function buttonup ( buttonname )
+{
+    if (document.images) {
+      document[ buttonname ].src = eval( buttonname + "up.src" );
+    }
+}
+// -->
+</script>
+
+<style>
+#wishlistNew, #globalHeaderWishlistNew, #wishlistTout .item-remove, #wishlistTout .carat,  .content-button-secondary-confirmation .icon {
+    background-image: url('/media/images/sprites/wishlist-sprite_v2_m56577569832109007.png');
+}
+</style>
+
+
+<header id="globalHeader" class="jcrew ">
+  
+    <section id="globalHeaderMessageContainer">       
+  <div id="globalHeaderContainer" class="global-header-section">            
+          
+      <div id="globalHeaderPromoContainer">
+        <span class="global-header-text"><a href="/sale.jsp"><i>In stores & online:</i> extra 40% off sale styles with code SALETREAT.* </a>&nbsp;</span> 
+        
+          <span id="globalHeaderDetails" class="global-header-details"><a href="#" id="globalHeaderDetailsLink" class="global-header-promo-details">details</a> 
+          </span>
+          <div id="globalHeaderPromoDetailsContainer">     
+            <div id="globalHeaderPromoDetails" class="global-header-details-show-hide">
+              <span id="globalHeaderDisclaimerCaret"></span>    
+              <div id="globalHeaderDisclaimerClose">                      
+                <a href="#" id="globalHeaderPromoDetailsClose"> 
+                  <span> CLOSE </span>
+                  <span class="global-header-close-img"></span>
+                </a>
+              </div>
+              <div id="globalHeaderDisclaimertext">*40% discount valid on the purchase of select sale items in J.Crew stores and at jcrew.com from August 29, 2015, 12:01am ET through August 30, 2015, 11:59pm ET. In-store discount as advertised. Online discount valid on sale items marked "Extra 40% off with code SALETREAT." Offer not valid in the 769 Madison Avenue, Brookfield Place, Liquor Store, Ludlow Shops, J.Crew Factory or J.Crew Mercantile stores; at jcrewfactory.com; or on phone orders. Offer cannot be applied to previous purchases or the purchase of gift cards and cannot be redeemed for cash or combined with any other offer. In-store discount automatically taken at the register. To redeem online, enter code SALETREAT in the promo code box at checkout. Limit one promotional code per order. Offer valid in the U.S. and Canada only. Terms of offer are subject to change.<br><br>***25% discount valid on the purchase of select crewcuts items in J.Crew stores and at jcrew.com from August 29, 2015, 12:01am ET through August 30, 2015, 11:59pm ET. In-store discount as advertised. Online discount valid on crewcuts items marked "25% off with code SALETREAT." Offer not valid in the 769 Madison Avenue, Brookfield Place, Liquor Store, Ludlow Shops, J.Crew Factory or J.Crew Mercantile stores; at jcrewfactory.com; or on phone orders. Offer cannot be applied to previous purchases or the purchase of gift cards and cannot be redeemed for cash or combined with any other offer. In-store discount automatically taken at the register. To redeem online, enter code SALETREAT in the promo code box at checkout. Limit one promotional code per order. Offer valid in the U.S. and Canada only. Terms of offer are subject to change.</div>
+            </div> 
+          </div>                    
+                
+      </div>
+         
+          
+      <div id="globalHeaderShipMessageContainer">
+        <span class="global-header-ship-text"><span><a href="/help/shipping_handling.jsp">$5 flat-rate shipping & free shipping on orders of $150+.<br> Shipping is always free on crewcuts orders.&dagger;</a></span></span>       
+                   
+      </div> 
+        
+  </div>
+</section>
+
+  
+
+  <section id="globalHeaderUtilityNavContainer">
+    <div class="global-header-section">
+      
+      <div id="globalHeaderUserPanel">
+        <ul id="userPanelFull">
+          <li id="userPanelMyAccount">
+            <a href="https://www.jcrew.com/account/home.jsp?FOLDER%3C%3Efolder_id=2534374302024423&amp;bmUID=k_fj4R2" id="globalHeaderMyAccount" name="&lpos=header>my_account">
+              My Account
+            </a>
+          </li>
+          <li id="userPanelUnrecognized">
+            <a href="https://www.jcrew.com/account/new_account.jsp" id="globalHeaderRegister">
+              Register
+            </a>
+            <span class="global-header-pipe">|</span>
+            <a href="https://www.jcrew.com/signin/signin.jsp" id="globalHeaderSignIn" name="&lpos=header>sign_in">
+              Sign In
+            </a>
+          </li>
+          <li id="userPanelRecognized">
+            <span id="globalHeaderWelcome">Welcome, <span id="userPanelName"></span></span>
+            <span class="global-header-usernotyou">
+              <a href="https://www.jcrew.com/signin/signin.jsp?FOLDER%3C%3Efolder_id=2534374302024423&amp;bmForm=logout&amp;bmFormID=k_fj4R3%2F14f8f841f36&amp;bmSubmit=logout&amp;bmUID=k_fj4R4" id="globalHeaderNotYou" name="&lpos=header>not_you">
+                (Not you?)
+              </a>
+            </span>
+            <span class="global-header-pipe global-header-usernotyou">|</span>
+            <span id="userPanelSignOut">
+              <span class="global-header-useryou"></span>
+              <a href="https://www.jcrew.com/account/logout.jsp?FOLDER%3C%3Efolder_id=2534374302024423&amp;bmUID=k_fj4R7" id="globalHeaderSignOut" name="&lpos=header>sign_out">
+                Sign Out
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div id="globalHeaderUserUtilContainer">
+        <div id="globalHeaderCountryContext" class="global-country-context">
+          <span class="global-header-pipe">|</span>
+          
+            <span id="globalHeaderCountryContextShipTo">Ship To:</span>
+            <div id="globalHeaderCountryContextLocale" class="global-country-context-locale">
+              <img id="globalHeaderCountryContextLocaleImg" src="/media/images/contextchooser/flags/US_v2_m56577569830737431.gif" />
+              <span id="globalHeaderCountryContextLocaleName">United States</span>
+            </div>
+            <span class="global-country-context-pipe">|</span>
+          
+          <span id="globalHeaderCountryContextChange" class="global-country-context-change">
+            <a href="https://www.jcrew.com/intl/context_chooser.jsp?FOLDER%3C%3Efolder_id=2534374302024423&bmUID=k_fj4R9" class="btn-context-chooser">
+              <span class="global-country-context-change-text">Change</span>
+              <img id="globalHeaderCountryContextLocaleImg" src="/media/images/contextchooser/flags/US_v2_m56577569830737431.gif" class="global-country-context-change-flag" />
+              <span class="global-country-context-icon global-country-context-change-flag search2-right-caret"></span>
+            </a>
+          </span>
+          
+        </div>
+
+        <div id="globalHeaderUtilities" >
+          
+            <div id="globalHeaderWishlistContainer">
+              
+              <span id="globalHeaderWishlistLink" class="wishlist-child"><a href="https://www.jcrew.com/wishlist?FOLDER%3C%3Efolder_id=2534374302024423&bmUID=k_fj4Ra" name="&lpos=top_nav>wishlist">Wishlist</a></span>
+            </div>
+            <div class="global-header-pipe">|</div>
+          
+
+          
+          <div id="globalHeaderShoppingBagContainer">
+            <div id="globalHeaderShoppingBagWrapper">
+              <a href="https://www.jcrew.com/checkout2/shoppingbag.jsp?FOLDER%3C%3Efolder_id=2534374302024423&amp;bmUID=k_fj4R8" id="globalHeaderShoppingBagBttn" name="&lpos=shopping_bag_link"
+                class="global-header-bag-link">Shopping Bag</a>
+            </div>
+            <div id="miniCartWrapper">
+              <div id="miniCartTab"><a href="https://www.jcrew.com/checkout2/shoppingbag.jsp?FOLDER%3C%3Efolder_id=2534374302024423&amp;bmUID=k_fj4R8" id="globalHeaderShoppingBagBttn2" name="shoppingBagBttn2"
+                class="global-header-bag-link">
+                Shopping Bag <span id="miniCartTabQty"></span>
+              </a></div>
+              <div id="miniCart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <section id="globalHeaderLogoContainer">
+    
+      
+        <a href="https://www.jcrew.com/index.jsp" name="&lpos=top_nav>jcrew" id="globalHeaderLogo"></a>
+      
+      
+    
+  </section>
+
+  
+
+  
+  <section id="globalHeaderMenuContainer" class="global-header-section">
+    <nav id="globalHeaderNavContainer" >
+      
+      <ul id="globalHeaderNav">
+        
+              <li >
+                
+                  <a href="https://www.jcrew.com/womens-clothing.jsp" name="&lpos=top_nav>women">Women</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/mens-clothing.jsp" name="&lpos=top_nav>men">Men</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/Girls.jsp" name="&lpos=top_nav>girl">Girls</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/Boys.jsp" name="&lpos=top_nav>boy">Boys</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/womens_category/shoes.jsp" name="&lpos=top_nav>shoe">Shoes</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/womens_category/swim.jsp" name="&lpos=top_nav>swim">Swim</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/womens_category/jewelry.jsp" name="&lpos=top_nav>jewelry">Jewelry</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/wedding.jsp" name="&lpos=top_nav>wedding">Wedding</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/womens_special_sizes/petite.jsp" name="&lpos=top_nav>petite">Petite</a>
+                
+              </li>
+              <li >
+                
+                  <a href="https://www.jcrew.com/sale.jsp" name="&lpos=top_nav>sale">sale</a>
+                
+              </li>
+                <li>
+                  <a target='_blank' href="https://factory.jcrew.com/index.jsp?srcCode=JCNav" name='&lpos=top_nav>factory'>Factory</a>
+                </li>
+              
+              <li >
+                
+                  <a href="https://hello.jcrew.com" name="&lpos=top_nav>blog">Blog</a>
+                
+              </li>
+      </ul>
+      
+    </nav>
+
+    
+    <div id="globalHeaderSearchContainer">
+      <a href="#" id="globalHeaderSearchLink">Search <span class="search-icon"></span></a>
+      <a href="#" id="globalHeaderSearchClose"><span class="close-icon"></span></a>
+    </div>
+    
+  </section>
+
+  
+    
+
+<section id="globalHeaderSearchBoxContainer">
+    <div id="globalHeaderSearchBoxWrapper"   >
+	    <div id="globalHeaderSearchBox" class="search-container">
+	        <input id="globalHeaderSearchInput" placeholder="What can we help you find?" class="search-input" results="5" value="">
+	        <a class="search-button disabled-ref" href=""><span class="icon search2-magnify"></span></a>
+	        
+	    	<script>
+	    		window.getJcrewNameSpaceLegacy('globalObj.jcrew.search.config.pageLoadObj');
+	    		globalObj.jcrew.search.config.pageLoadObj.ntrm = '';
+	    	</script>
+	    </div>
+    </div>
+</section>
+
+  
+
+  
+  <div id="globalsearch">
+    <form name="search_topnav" action="https://www.jcrew.com/footer/privacy.jsp">
+<input type="hidden" name="bmForm" value="search_topnav">
+<input type="hidden" name="bmFormID" value="k_fj4RC/14f8f841f98">
+<input type="hidden" name="bmUID" value="k_fj4RD">
+<input type="hidden" name="bmIsForm" value="true">
+<input type="hidden" name="bmPrevTemplate" value="/footer/privacy.jsp">
+    <input type="hidden" name="bmText" value="searchTerm"><input type="text" class="search_box" name="searchTerm" id="searchTerm" maxlength="40" size="25" value="search keyword or item #" onfocus="javascript:if(this.value == 'search keyword or item #'){this.value = '';}" secure="false" autocomplete="off">
+    <input type="hidden" name="bmSubmit" value="findIt"><input type="submit" name="findIt" border="0" value="GO" onclick="javascript:if(document.search_topnav.searchTerm.value == 'search keyword or item #'){document.search_topnav.searchTerm.value = '';}" class="search_button" onmouseover="this.className='search_buttonHover'" onmouseout="this.className='search_button'">
+    <input type="hidden" name="bmHidden" value="FOLDER&lt;&gt;folder_id"><input type="hidden" name="FOLDER&lt;&gt;folder_id" value="2534374302024423">
+</form>
+  </div>
+
+  <div id="hdr-countrycode">
+    <div id="globalnav_all">
+      
+        <div id="ship_to">ship to:</div>
+        <div id="top_nav_country">
+          <div class="hdr-flag-img"><img src="/media/images/contextchooser/flags/US_v2_m56577569830737431.gif"/></div>
+          United States
+        </div>
+        <div class="ver-rule">|</div>
+      
+      
+        
+        <div id="change"><a href="https://www.jcrew.com/intl/context_chooser.jsp?FOLDER%3C%3Efolder_id=2534374302024423&bmUID=k_fj4R9" class="btn-context-chooser">change</a></div>
+      
+    </div>
+  </div>
+  
+
+  
+
+  
+
+</header>
+
+
+
+	<div id="topNavDiv" name="topNavDiv">
+		<form name="persistent_shopping_cart" method="POST" action="https://www.jcrew.com/footer/privacy.jsp">
+<input type="hidden" name="bmForm" value="persistent_shopping_cart">
+<input type="hidden" name="bmFormID" value="k_fj4RE/14f8f841f99">
+<input type="hidden" name="bmUID" value="k_fj4RF">
+<input type="hidden" name="bmIsForm" value="true">
+<input type="hidden" name="bmPrevTemplate" value="/footer/privacy.jsp">
+			
+
+<!-- this is the START of shopping bag pop-up-->
+<div style="position:absolute;top:110px;width:291;display:none;z-index:300;" id="persistShoppingBag" name="persistShoppingBag">
+</div>
+<!-- this is the END of shopping bag pop-up-->
+
+		<input type="hidden" name="bmHidden" value="FOLDER&lt;&gt;folder_id"><input type="hidden" name="FOLDER&lt;&gt;folder_id" value="2534374302024423">
+</form>
+	</div>
+</div>
+
+
+<link rel="stylesheet" href="/media/wro/css/doctype-fix_v2_m56577569835062368.css" /></div>
+
+<table cellpadding="0" cellspacing="0" width="100%" border="0" style="padding-top:0px">
+    <tr>
+        <td class="outertable">
+            <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="800" align="center" class="innertable">
+            <tr>
+        <td class="banner" colspan="2"  align="center"><img src="/media/images/help/help_banner_v2_m56577569832002738.gif" alt="Banner" width="799px" height="42px" border="0"></td>
+      </tr>
+          <tr>
+            <td colspan="2"><img src="/media/images/common/spacer_v2_m56577569830537995.gif" width="1" height="5px" border="0"></td>
+          </tr>
+
+          <tr>
+            <td class="leftPane" nowrap valign="top" width="161" >
+
+
+
+
+
+
+<script>
+
+	if(document.images) 
+	{
+		var arrowOn = new Image();
+		arrowOn.src = "/media/images/help/helpon.gif";
+		var arrowOff = new Image();
+		arrowOff.src = "/media/images/help/helpoff.gif";
+	}
+	function rollIt(item,onOrOff) 
+	{
+		document[item].src = eval("arrow" + onOrOff + ".src");
+	}
+	
+</script>
+
+
+
+<ul>
+			
+				<li class="">
+					<a href="/help/order_status.jsp">CHECK ORDER STATUS</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/registration_qa.jsp">REGISTRATION Q&A</a>
+		</li>
+			
+				<li class="active">
+					<a href="/help/privacy_policy.jsp">PRIVACY POLICY</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/contact_us.jsp">CONTACT US</a>
+		</li>
+
+	</ul>
+
+<ul>
+			
+				<li class="">
+					<a href="/help/about_jcrew.jsp">ABOUT J.CREW</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/careers.jsp">CAREERS</a>
+		</li>
+
+            <li class=""><a href="http://investors.jcrew.com" target="_blank">INVESTOR RELATIONS</a></li>
+			
+				<li class="">
+					<a href="/help/terms_of_use.jsp">TERMS OF USE</a>
+		</li>
+
+	</ul>
+
+<ul>
+
+            <li class=""><a href="https://stores.jcrew.com">FIND A STORE NEAR YOU</a></li>
+			
+				<li class="">
+					<a href="/help/request_catalog.jsp">REQUEST A CATALOG</a>
+		</li>
+
+	</ul>
+
+<ul>
+			
+				<li class="">
+					<a href="/help/credit_card.jsp">J.CREW CREDIT CARD</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/gift_card.jsp">J.CREW GIFT CARD</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/teacher_student_discount.jsp">TEACHER AND STUDENT DISCOUNT</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/using_coupon.jsp">USING A PROMOTION CODE</a>
+		</li>
+
+	</ul>
+
+<ul>
+			
+				<li class="">
+					<a href="/help/payment_options.jsp">PAYMENT OPTIONS</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/secure_ordering.jsp">SECURE ORDERING</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/order_verification.jsp">ORDER VERIFICATION</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/shipping_handling.jsp">SHIPPING & HANDLING</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/returns_exchanges.jsp">RETURNS & EXCHANGES</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/international_orders.jsp">INTERNATIONAL</a>
+		</li>
+
+	</ul>
+
+<ul>
+			
+				<li class="">
+					<a href="/help/gift_options.jsp">GIFT OPTIONS</a>
+		</li>
+			
+				<li class="">
+					<a href="/sizecharts/main.jsp">SIZE CHARTS</a>
+		</li>
+			
+				<li class="">
+					<a href="/help/alteration.jsp">ALTERATIONS</a>
+		</li>
+
+	</ul>
+
+</td>
+            <td class="helpContents" width="639" height="100%" align="left" valign="top" style="padding-top:20px;">
+                    
+
+   
+    <b><p>OUR PRIVACY POLICY</p></b>    
+    <p>Last Updated: April 29, 2015</p>
+    <p>This Privacy Policy describes how J.Crew Group, Inc. and our brands and subsidiaries (including but not limited to J.Crew, crewcuts, Factory and Madewell) (collectively, "J.Crew," "we" or "us") collect, use and share information about you. This policy applies to information we collect when you use our websites, shop in our stores or otherwise interact with us as described below.</p>
+    
+    <p>We may change this Privacy Policy from time to time. If we make changes, we will notify you by revising the date at the top of this policy, and in some cases, we may provide you with additional notice (such as adding a statement to the homepages of our websites or sending you an email notification). We encourage you to review the Privacy Policy whenever you interact with us to stay informed about our information practices and the ways you can help protect your privacy.</p>
+
+    <h3 class="privacyUpdated">collection of information </h3>
+
+    <h2 class="fprivacyTitle">information you provide to us </h2>
+    <p>We collect information you provide directly to us. For example, we collect information when you use our websites, shop in our stores, call us on the phone, create an online account, sign up to receive our emails, request a catalog, participate in a sweepstakes, contest, promotion or survey, communicate with us via third party social media sites, request customer support, apply for a job or otherwise communicate with us.</p>
+    <p>The types of information we may collect include your name, email address, zip code, billing address, shipping address, phone number, payment card information, product preferences, demographic information and any other information you choose to provide.</p>
+    <p>In some cases, we may also collect information you provide about others, such as when you purchase a gift card for someone and request that we deliver it electronically, create and share a "wish list" or decide to purchase and ship products to someone. We will use this information to fulfill your requests and may also use that information to send marketing communications to your contact, unless he or she has previously opted out of marketing communications from J.Crew.</p>
+
+    <h2 class="fprivacyTitle">information we collect automatically</h2>
+    <p>We automatically collect certain information about you when you access or use our websites or transact business with us, including:</p>
+    <ul>
+     <li><strong>Log Information:</strong>  We collect information about your use of our websites, such as the type of browser you use, access times, pages viewed, your IP address and the referring link through which you accessed our websites.</li>
+     <li><strong>Transaction Information:</strong>  When you purchase or return a product, we collect information about the transaction, such as product details and the date and location of the purchase/return.</li>
+     <li><strong>Information Collected by Cookies and Other Tracking Technologies:</strong>  We may use cookies, web beacons (also known as "tracking pixels") and other tracking technologies to collect information about you when you interact with our websites or emails, including information about your browsing and purchasing behavior.  We may combine this information with other information we collect about you and use it for various purposes, such as improving our websites and your online experience, understanding which areas and features of our sites are popular, counting visits, understanding campaign effectiveness, tailoring our communications with you, determining whether an email has been opened and links within the email have been clicked and for other internal business purposes.  For more information about cookies and how to disable them, please see <a href="#cookies">cookies</a>.</li>
+    </ul>
+
+    <h2 class="fprivacyTitle">information we collect from our partners and other sources</h2>
+     <p>We may also obtain information about you from other sources and combine that with information we collect about you.  For example, we collect information from the U.S. Postal Service's national change of address database to verify and update mailing addresses.  In addition, if you apply for a J.Crew Credit Card, we obtain limited information about you from the partner that manages our private label credit card program.</p>
+     
+     <h3 class="privacyUpdated">use of information</h3>
+     <p>We may use information about you for various purposes, including to:</p>           
+     <ul>
+      <li>Facilitate and improve your in-store and online shopping experience; </li>
+      <li>Provide the products and services you request, process transactions and send you related information, including confirmations and receipts; </li>
+      <li>Respond to your comments, questions and requests and provide customer service; </li>
+      <li>Communicate with you about products, services, offers, promotions, rewards and events and provide news and information we think will be of interest to you (for information about how to manage these communications, please see <a href="#yourchoices">Your Choices</a>.</li>
+      <li>Manage your online account(s) and send you technical notices, updates, security alerts and support and administrative messages;</li>
+      <li>Personalize your online experience and provide advertisements, content or features that match your profile and interests;</li>
+      <li>Monitor and analyze trends, usage and activities;</li>
+      <li>Process and deliver contest, promotion and sweepstakes entries and rewards;</li>
+      <li>Link or combine with information we get from others to help understand your needs and provide you with better service; and </li>
+      <li>Carry out any other purpose for which the information was collected.   </li>                           
+     </ul>
+     <p>We are based in the United States and the information we collect is governed by U.S. law.  By accessing or using our websites or otherwise providing information to us, you consent to the processing and transfer of information in and to the U.S. and other countries.</p>
+    <h3 class="privacyUpdated">sharing of information</h3>    
+     <p>We may share information about you as follows:</p>
+     <ul>
+      <li>With vendors, consultants and other service providers who need access to such information to carry out work on our behalf; </li>
+      <li>With our business partners and other third parties for purposes of sending their own direct mail, unless you opt out of this type of sharing by logging into your online account and changing your preferences or by <a href="#contactus">contacting us</a>.</li>
+      <li>With our banking partner Comenity Bank, the issuer of the J.Crew Credit Card. Comenity Bank is independent of J.Crew and has its own privacy and security policies.</li>
+      <li>In response to a request for information if we believe disclosure is in accordance with any applicable law, regulation or legal process, or as otherwise required by any applicable law, rule or regulation; </li>
+      <li>If we believe your actions are inconsistent with our user agreements or policies, or to protect the rights, property and safety of us or any third party; </li>
+      <li>In connection with, or during negotiations of, any merger, sale of company assets, financing or transfer of all or a portion of our business to another company; and </li>
+      <li>With your consent or at your direction.</li>
+     </ul>  
+    
+     <p>We may also share aggregated or de-identified information, which cannot reasonably be used to identify you. </p>
+     
+     <h3 class="privacyUpdated">advertising &amp; analytics services</h3>
+     <p>We engage third parties to serve advertisements on our behalf across the Internet and to provide analytics services.  These entities may use cookies, web beacons and other technologies to collect information about your use of our websites, such as your IP address, web browser, pages viewed, time spent on pages, links clicked and conversion information.  This information may be used by us and others to, among other things, analyze and track data, determine the popularity of certain content, deliver advertising and content targeted to your interests on our websites and other websites and better understand your online or offline activity.  For more information about Internet-based ads, or to opt out of having your web browsing information used for behavioral advertising purposes, please visit <a href="http://www.networkadvertising.org/managing/opt_out.asp" target="_blank">www.networkadvertising.org/managing/opt_out.asp</a> and <a href="http://www.aboutads.info/choices" target="_blank">www.aboutads.info/choices</a>.</p>
+     <p>We may also work with third parties to serve ads to you as part of a customized campaign on other websites or platforms. </p>
+     
+     <h3 class="privacyUpdated"> security</h3>
+     <p>We take reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction.</p>
+     
+     <h3 class="privacyUpdated">children </h3>
+     <p>We do not knowingly collect any personal information from children under the age of 13.  We do not sell products for purchase by children and all children's products we sell are for purchase by adults only. </p>
  
+ 
+     <a name="yourchoices"><h3 class="privacyUpdated">your choices</h3></a>
+     <h2 class="fprivacyTitle">online account information </h2>
+     <p>You may update, correct or delete your online account information at any time by logging into your account and navigating to the "My Account" page or by <a href="#contactus">contacting us</a>. You can also <a href="#contactus">contact us</a> if you wish to deactivate your online account, but note that we may retain certain information as required by law or for legitimate business purposes.  We may also retain cached or archived copies of information about you for a certain period of time.</p>
+     
+     <h2 class="fprivacyTitle">promotional communications</h2>
+     <p>You can opt out of receiving promotional communications from us at any time by doing the following:</p>
+     <ul>
+     <li>To opt out of direct mail (such as catalogs and post cards):  Log into your online account and adjust your settings under the "Catalog Preferences" page or <a href="#contactus">contact us</a>.</li>
+     
+     <li>To opt out of promotional emails and text messages:  Follow the instructions provided in those communications or <a href="#contactus">contact us</a>.</ul>
+     
+     <p>Please note that even if you opt out of receiving promotional communications, we may continue to send you non-promotional emails, such as those about your account or our ongoing business relations.</p>
+     <a name="cookies"></a><h2 class="fprivacyTitle">cookies </h2></a>
+     <p>Most web browsers are set to accept cookies by default.  If you prefer, you can usually set your browser to remove or reject cookies, but note that doing so does not necessarily affect third party flash cookies used in connection with our websites.  For more information about disabling flash cookies, see <a href="http://www.adobe.com/products/flashplayer/security" target="_blank">http://www.adobe.com/products/flashplayer/security</a>. Please note that if you choose to remove or reject cookies, this could affect the availability and functionality of our websites. In addition, many web browsers support Do Not Track technology. If you enable Do Not Track, J.Crew will not use information about your web viewing activities to tailor your online experience on other websites operated by J.Crew. Note, however, that our third party advertising providers may continue to use information about your web viewing activities to tailor advertising to your interests across different websites even when you have Do Not Track enabled in your browser. For more information about how to opt out of ad targeting by our partners, see &#34;advertising &amp; analytics services&#34; above.  </p>
+     
+     <h2 class="fprivacyTitle">your california privacy rights </h2>
+     <p>California law permits residents of California to request certain details about how their information is shared with third parties for direct marketing purposes.  Under the law, a business must either provide this information or permit California residents to opt in to, or opt out of, this type of sharing.  J.Crew permits California residents to opt out of having their information shared with third parties for direct marketing purposes.  To opt out, please log into your online account and change your settings under the "Catalog Preferences" page or <a href="#contactus">contact us</a>.</p>
+
+     <h3 class="privacyUpdated">safe harbor statement</h3>
+     <p>J.Crew recognizes that the European Union ("EU") and Switzerland have implemented omnibus data protection regimes established pursuant to the European Data Protection Directive (95/46/EC) and the Swiss Federal Act on Data Protection, respectively. Among other things, these laws require "adequate protection" for the transfer of certain individually identifiable data about individuals in EU member countries and Switzerland to J.Crew's operations in the United States of America ("U.S."). J.Crew complies with the U.S.-EU Safe Harbor Framework and the U.S.-Swiss Safe Harbor Framework as set forth by the U.S. Department of Commerce regarding the collection, use and retention of Personal Information from EU member countries and Switzerland. J.Crew has certified that it adheres to the Safe Harbor Privacy Principles of notice, choice, onward transfer, security, data integrity, access and enforcement. To learn more about the Safe Harbor program and to view J.Crew's certification, please visit <a href="http://export.gov/safeharbor/" target="_blank">www.export.gov/safeharbor/</a>.</p>
+     
+     <a name ="contactus"> <h3 class="privacyUpdated">contact us </h3></a>
+     <p>If you have any questions about this Privacy Policy, please contact us at: <br><br>
+        J.Crew Customer Relations<br>
+        3 Ivy Crescent<br>
+        Lynchburg, VA  24513-1001<br>
+        Phone:  (800) 562-0258<br>
+        Fax:  (434) 385-5750<br>
+        <a href="mailto:contactus@jcrew.com">contactus@jcrew.com</a><br><br>
+     </p>
+
+
+
+                
+                 </td>
+      </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+<footer id="ftr" >
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  window.getJcrewNameSpaceLegacy('globalObj.config.storeLocatorWidget.show');
+  globalObj.config.storeLocatorWidget.show = false;
+</script>
+
+
+
+<nav id="ftrFootNavTop">
+
+  
+	
+  <div class="ftr-foot-col" id="ftrCol1">
+	<ul>
+
+			<li>
+LET US HELP YOU
+
+                    <ul itemscope itemtype="http://schema.org/Organization" class=inner-ul1>
+                
+                    <li itemprop="telephone">
+                800 562 0258
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/footie/verypersonalstylist_sm.jsp">VERY PERSONAL STYLIST</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/request_catalog.jsp">THE J.CREW STYLE GUIDE</a>     
+			          
+					</li>
+
+                    <li>
+                
+							<a href="javascript:void(0)" onclick="javascript:window.open('https://www.jcrew.com/sizecharts/main.jsp','parentWindow','height=600,width=760,scrollbars=yes,resizable=yes');">OUR SIZE CHARTS</a>
+						
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+YOUR ORDERS
+
+                    <ul class=inner-ul2>
+                
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/order_status.jsp">ORDER STATUS</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/shipping_handling.jsp">SHIPPING INFORMATION</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/returns_exchanges.jsp">RETURNS & EXCHANGES</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/international_orders.jsp">INTERNATIONAL ORDERS</a>     
+			          
+					</li>
+
+				</ul>
+
+			</li>
+
+   	</ul>
+    </div>
+    
+
+  
+	
+  <div class="ftr-foot-col" id="ftrCol2">
+	<ul>
+
+			<li>
+OUR STORES
+
+                    <ul class=inner-ul1>
+                
+                    <li>
+                
+			              <a href="https://www.jcrew.com/help/store_locator.jsp?language=en">STORE LOCATOR</a>     
+			            
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+ABOUT J.CREW
+
+                    <ul class=inner-ul2>
+                
+                    <li>
+                
+			            <a href="https://www.jcrew.com/aboutus/jcrew.jsp">OUR STORY</a>     
+			          
+					</li>
+
+                    <li>
+                
+			              <a href="https://jobs.jcrew.com">CAREERS</a>
+			            
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/flatpages/social_responsibility.jsp">SOCIAL RESPONSIBILITY</a>     
+			          
+					</li>
+
+                    <li>
+                
+
+                        	<a href="http://investors.jcrew.com" target="_blank">INVESTOR RELATIONS</a>
+
+						
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+
+			</li>
+
+			<li>
+OUR CARDS
+
+                    <ul class=inner-ul4>
+                
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/credit_card.jsp">THE J.CREW CREDIT CARD</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/help/gift_card.jsp">THE J.CREW GIFT CARD</a>     
+			          
+					</li>
+
+				</ul>
+
+			</li>
+
+   	</ul>
+    </div>
+    
+
+  
+	
+  <div class="ftr-foot-col" id="ftrCol3">
+	<ul>
+
+			<li>
+POPULAR SEARCHES
+
+                    <ul class=inner-ul1>
+                
+                    <li>
+                
+			            <a href="https://www.jcrew.com/womens_feature/TheCashmereShop.jsp">CASHMERE SWEATERS</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/womens_category/denim.jsp">WOMEN'S JEANS</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/mens_feature/TheSuitShop.jsp">MEN'S SUITS</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/womens_feature/Whitedresses.jsp">WHITE DRESSES</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/womens_feature/Linen.jsp">LINEN</a>     
+			          
+					</li>
+
+                    <li>
+                
+			            <a href="https://www.jcrew.com/womens_feature/Stripes.jsp">STRIPES</a>     
+			          
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+
+			</li>
+
+			<li>
+OUR BRANDS
+
+                    <ul class=inner-ul3>
+                
+                    <li>
+                
+
+                        	<a href="http://factory.jcrew.com/index.jsp?srcCode=JCFooter" target="_blank">J.CREW FACTORY</a>
+
+						
+					</li>
+
+                    <li>
+                
+
+                        	<a href="https://www.madewell.com/index.jsp?srcCode=JCFooter" target="_blank">MADEWELL</a>
+
+						
+					</li>
+
+				</ul>
+
+			</li>
+
+   	</ul>
+    </div>
+    
+
+  
+	
+  <div class="ftr-foot-col" id="ftrCol4">
+	<ul>
+
+   	</ul>
+    </div>
+    
+
+  
+	
+  <div class="ftr-foot-col" id="ftrCol5">
+	<ul>
+
+			<li>
+LIKE BEING FIRST?
+
+                    <ul class=inner-ul1>
+                
+                    <li>
+                
+							<div id="ftrEmailSignupform">
+                            <form method="post" name="emailSubscribeForm" action="https://www.jcrew.com/footer/privacy.jsp">
+<input type="hidden" name="bmForm" value="emailSubscribeForm">
+<input type="hidden" name="bmFormID" value="k_fj4RG/14f8f841f9c">
+<input type="hidden" name="bmUID" value="k_fj4RH">
+<input type="hidden" name="bmIsForm" value="true">
+<input type="hidden" name="bmPrevTemplate" value="/footer/privacy.jsp">
+							<input type="hidden" name="bmArch" value="bmAction"><input type="hidden" name="bmAction" secure="false"/>
+                            <input type="hidden" name="bmArch" value="bmSubmit"><input type="hidden" name="bmSubmit" secure="false"/>
+                            <input type="hidden" name="bmHidden" value="sSourceId"><input type="hidden" name="sSourceId" secure="false" value="JC-ES-FOOTER"/>
+                            <input type="hidden" name="bmHidden" value="subscribeEmail"><input type="hidden" name="subscribeEmail" secure="false" id="subscribeEmail"/>
+							              <input type="hidden" name="bmText" value="emailID"><input type="text" id="emailID" name="emailID" onfocus="javascript:this.value = '';" class="ftr-email-signup translate" maxlength="202" size="20" value="Enter your email." onblur="javascript:this.value=this.value.toLowerCase();" onkeydown="javascript:return getFooterEnterKeyPress(event);" onkeypress="javascript:return getFooterEnterKeyPress(event);"/><a href="javascript:void(0);" onclick="javascript:validateEmailAndSubmit(document.forms['emailSubscribeForm'].emailID.value);return false;" class="ftr-submit-btn">Sign Up</a>
+
+                            <input type="hidden" name="bmHidden" value="currRequestUrlString"><input type="hidden" name="currRequestUrlString" value="https://www.jcrew.com/footer/privacy.jsp" secure="false"/>
+                            <input type="hidden" name="bmHidden" value="footerRedirect"><input type="hidden" name="footerRedirect" value="true" secure="false"/>
+                            <input type="hidden" name="bmHidden" value="isEmailInvalid"><input type="hidden" name="isEmailInvalid" secure="false"/>
+							<input type="hidden" name="bmHidden" value="FOLDER&lt;&gt;folder_id"><input type="hidden" name="FOLDER&lt;&gt;folder_id" value="2534374302024423">
+</form>
+                            </div>
+                            <span class="ftr-signup-txt">Then get our can't-miss style news,<br>before everybody else.</span>
+
+                        
+					</li>
+
+				</ul>
+
+			</li>
+
+			<li>
+&nbsp;
+
+                    <ul class=inner-ul2>
+                
+                    <li>
+                
+
+                        	<div class="knowus" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></div>
+
+                         
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social1" class="socialicons" href="https://www.facebook.com/jcrew" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social2" class="socialicons" href="https://twitter.com/jcrew" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social3" class="socialicons" href="http://jcrew.tumblr.com/" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social4" class="socialicons" href="http://pinterest.com/jcrew/" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social5" class="socialicons" href="http://instagram.com/jcrew" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social6" class="socialicons" href="https://plus.google.com/+JCrew" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+                    <li>
+                
+
+	                        <a id="social7" class="socialicons" href="http://www.youtube.com/user/jcrewinsider" target="_blank" style="background-image:url('/media/assets/all/footer/social_sprite_v2_m56577569832082368.png');"></a>
+
+                        
+					</li>
+
+				</ul>
+
+			</li>
+
+   	</ul>
+    </div>
+    
+
+</nav>
+
+
+
+
+
+
+
+
+<iframe id="if_ajaxLoadMessage_1" scrolling="no" frameborder="0" border="0" allowtransparency="true" src="/media/images/common/spacer_v2_m56577569830537995.gif" style="overflow:hidden;position:absolute;left:0px;top:0px;height:0px;width:0px;"></iframe>
+
+<div id="ajaxLoadMessage_1" class="block" style="position:absolute;"></div>
+
+
+<nav id="ftrFootNavBottom">
+<ul>
+
+	<li class="ftr-first-li">
+    <a href="https://www.jcrew.com/index.jsp"><img src="/media/assets/all/footer/logo_v2_m56577569830805852.gif"/></a>
+    </li>
+
+    <li class="ftr-mid-li">
+    <a href="
+	
+    	https://www.jcrew.com/footie/contactus.jsp
+    " target="">CONTACT US</a>
+    </li>
+    <li class="ftr-divider">|</li>
+
+    <li class="ftr-mid-li">
+    <a href="
+	
+    	https://www.jcrew.com/footer/termsofuse.jsp
+    " target="">TERMS OF USE</a>
+    </li>
+    <li class="ftr-divider">|</li>
+
+    <li class="ftr-mid-li">
+    <a href="
+	
+    	https://www.jcrew.com/help/privacy_policy.jsp
+    " target=""><span style="font-weight: 900;">UPDATED PRIVACY POLICY</span></a>
+    </li>
+    <li class="ftr-divider">|</li>
+
+    <li class="ftr-mid-li">
+    <a href="
+	
+    	https://www.jcrew.com/footer/sitemap.jsp
+    " target="">SITE MAP</a>
+    </li>
+    <li class="ftr-divider">|</li>
+
+	<li class="ftr-last-li">&copy; 2015 J.Crew</li>
+</ul>
+<div id="globalFooterCountryContext" class="global-country-context">
+  
+    <span id="globalFooterCountryContextShipTo">Ship To:</span>
+    <div id="globalFooterCountryContextLocale" class="global-country-context-locale">
+      <img id="globalFooterCountryContextLocaleImg" src="/media/images/contextchooser/flags/US_v2_m56577569830737431.gif" />
+      <span id="globalFooterCountryContextLocaleName">United States</span>
+    </div>
+    <span class="global-country-context-pipe">|</span>
+  
+  
+    
+     
+      <span id="globalFooterCountryContextChange" class="global-country-context-change">
+        <a href="https://www.jcrew.com/intl/context_chooser.jsp?FOLDER%3C%3Efolder_id=2534374302024423&bmUID=k_fj4RB">Change</a>
+      </span>
+    
+  
+</div>
+
+</nav>
+
+
+
+</footer>
+
+<script>
+//<![CDATA[
+sl_tr_json_start();
+globalObj.objectFromServer = {"sl_translate":"sl_all","config":null,"images":{"transitionIndicatorImg":"/media/images/theme/loader_18x18_v2_m56577569832189990.gif","vpsDiamond":"/media/images/productDetail/vps_diamond_v2_m56577569832079176.gif","sizeOutOfStockHover":"/media/images/productDetail/redesign/size_out_of_stock_hover_v2_m56577569832104435.png","colorOutOfStock":"/media/images/productDetail/redesign/color_out_of_stock_v2_m56577569832104431.png","sizeOutOfStock":"/media/images/productDetail/redesign/size_out_of_stock_v2_m56577569832104430.png","sizeOutOfStockTwoLinesHover":"/media/images/productDetail/redesign/size_out_of_stock_two_lines_hover_v2_m56577569832104433.png","sizeOutOfStockTwoLines":"/media/images/productDetail/redesign/size_out_of_stock_two_lines_v2_m56577569832104434.png"},"content":{"addToBagLabel":"add to bag","addToWishListLabel":"add to wishlist","shoppingBagSuccess":"Shopping Bag","vpsMailToMessage":"<a href=\"mailto:erica@jcrew.com\">erica@jcrew.com</a>","ajaxFail":"We are having trouble communicating with our servers. Please refresh the page and try again.","preorderedErrorMessage1":"is available for pre-order. Select a size for estimated ship date.","soldOutQuestionsMessage2":".","backorderedErrorMessage1":"is backordered. Select a size for estimated ship date.","soldOutQuestionsMessage1":"For help finding something else you&rsquo;ll love, please email our specialist ","outOfStockLabel":"Out Of Stock","soldOutPopularMessage1":"We&rsquo;re sorry. This item has been so popular, it has sold out.","soldOutPopularMessage3":", we&rsquo;re here to help.","soldOutPopularMessage2":"We&rsquo;ve got other great ideas&mdash;just call us at<br>","soldOutPopularMessage4":"SOLDOUT_POPULAR_04","soldOutMailToMessage":"<a href=\"mailto:julie@jcrew.com\">julie@jcrew.com</a>","contentNo":"No","soldOutNumberMessage":"out_of_stock_msg2","addToBagSuccessLabel":"Item Added","soldOutIntlMessage":"We&rsquo;re sorry, this product cannot be shipped internationally.","contentYes":"Yes","outOfStockErrorMessage1":"is no longer available to ship immediately. The new estimated ship date is","outOfStockErrorMessage2":"Would you still like to add the item to bag?","soldOutPopularPhoneMessage":"800 562 0258","soldOutEntirelyMessage":"We&rsquo;re sorry&mdash;<br />this item has sold out.","vpsPhoneMessage":"800 261 7422","soldOutVpsMessage1":"Need some other ideas? Want free shipping? Call a <em>Very</em> Personal Stylist at ","vpsMessage3":" or email ","addToBagSuccessMessage":"The item was successfully added to your","vpsMessage2":"Call ","soldOutVpsMessage2":"We&rsquo;re here to help.","vpsMessage4":" to order.","monoQSLabel":"To monogram view full details","selectSizeErrorMessage":"Please select a size","estimatedShipDateLabel":"estimated ship date is","monoDetailsInitial":"M","vpsMessage1":"Since this is a special, limited-edition item with a small quantity available, our <em>Very</em> Personal Stylists are on hand to help you purchase yours.","lowInventoryMessage1":"In Stock","finalSaleLabel":"Final Sale","lowInventoryMessage2":"Only a few left","preorderedLabel":"Pre-order","sizeLabel":"size","finalSaleErrorMessage1":"is available but cannot be exchanged or returned. Valid while supplies last. All sales final.","soldOutErrorMessage":"is no longer available and was not added to bag. Check out some of our other available color and size options.","addToWishListSuccessLabel":"Added to Wishlist","partialQtyErrorMsg2":"We are unable to fulfill the total quantity you have requested for one or more of your items. Please review the adjusted quantities in your","backorderedLabel":"Backordered","partialQtyErrorMsg1":"Total Quantity Not Available","updateBagLabel":"update bag"},"errorMessages":{"errSelectInseamCuff":"You must fill in cuff","errSelectInseamLength":"You must fill in inseam length","errSelectQty":"You must fill in quantity","errSelectSize":"You must fill in size","errSelectColor":"You must fill in color"}};
+sl_tr_json_end();
+globalObj.config.domainLocale = '';
+//]]>
+</script>
+
+<script src="/media/wro/js/footer_v2_m56577569835062271.js"></script>
+
+
+  
+  
+
+<script>
+if (document.getElementById("welcome_all")!=null){
+    $(document).ready(function(){showWelcomeMat();});
+}
+</script>
+ 
+
+
+
+
+<!-- site catalyst -->
+
+
+
+
+
+
+
+
+<script>globalObj.config.restrictedCookieCntry = false;</script>
+
+
+ 
+
+<script>
+var s_account="jcrewcom,jcrewglobalrollup";
+var lp_unit = "jcrew"; 
+var lp_num = "1338460";	
+var pageUrl = window.location.href;
+var brandOrCategory = '';
+if (pageUrl.indexOf("#catTitle") > 0) {
+	brandOrCategory = pageUrl.substring(pageUrl.indexOf("#catTitle") + 9);	
+	brandOrCategory = brandOrCategory.toLowerCase().replace(/[^a-z]/gi,'');
+}
+
+function omniFlashTrack(pageName) {	
+	var s=s_gi(s_account);
+	s.linkTrackVars="pageName,channel,prop9,prop10,prop11,prop12,prop13,prop14,prop19,prop23,eVar5,eVar11,eVar12,eVar13,eVar15,eVar29,eVar30,eVar33,eVar37,list1";
+	s.pageName=pageName;
+	s.channel="Help";
+	s.prop9="";
+	s.prop10="";
+	s.prop11="Help";
+	s.prop12="";
+	s.prop13="";
+	s.prop14="";
+	s.prop19="Logged Out";
+	s.prop23="No Type";
+	s.eVar5="";
+	s.eVar11=s.prop12;
+	s.eVar12=s.prop13;
+	s.eVar13=s.prop14;
+	s.eVar15=s.prop9;
+	s.eVar29=s.prop10;
+	s.eVar30="USD";
+	s.eVar33="US";
+	s.eVar37=s.prop19;
+	s.list1=s.prop23;
+	s.t();	
+}
+</script>
+
+
+<script src="/media/wro/js/s_code_v2_m56577569835062288.js"></script>
+<script>
+
+
+
+s.pageName="Help: Privacy Policy"
+s.server="p04"
+s.channel="Help"
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop6=""
+s.prop7=""
+s.prop8=""
+s.prop9=""
+s.prop10=""
+s.prop11="Help"
+s.prop12=""
+s.prop13=""
+s.prop14=""
+if (brandOrCategory) {
+	s.prop14=s.prop14+':'+brandOrCategory;
+}
+s.prop15=""
+s.prop16=""
+s.prop17=""
+s.prop18=""
+s.prop19="Logged Out"
+s.prop20=""
+s.prop21=""
+s.prop23="No Type"
+s.prop44=""
+
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar6=""
+s.eVar7=""
+s.eVar8=""
+s.eVar9=""
+s.eVar10=""
+s.eVar11=""
+s.eVar12=""
+s.eVar13=""
+if (brandOrCategory) {
+	s.eVar13=s.eVar13+':'+brandOrCategory;
+}
+s.eVar14=""
+s.eVar15=""
+s.eVar16=""
+s.eVar17=""
+s.eVar18=""
+s.eVar19=""
+s.eVar20=""
+s.eVar21=""
+s.eVar22=""
+s.eVar23=""
+s.eVar24=""
+s.eVar25=""
+s.eVar26=""
+s.eVar27=""
+s.eVar28=""
+s.eVar29=""
+s.eVar30="USD" 
+s.eVar31=""
+s.eVar32=""
+s.eVar33="US" 
+s.eVar34=""
+s.eVar35=""
+s.eVar36=""
+s.eVar37=s.prop19;
+s.eVar38=""
+s.eVar39=""
+s.eVar44=""
+s.eVar57=""
+s.eVar62=""
+s.list1=s.prop23;
+</script>
+<script>
+var pageCacheable = true
+if (pageCacheable){
+  if (typeof HeadAjax !== 'undefined' 
+      && typeof HeadAjax.jsonResponse !== 'undefined' 
+      && typeof HeadAjax.jsonResponse.omnitureVars === 'object') {
+
+    var omnitureVars = HeadAjax.jsonResponse.omnitureVars;
+    var omEvents = omnitureVars.events;
+    if (typeof omEvents !== 'undefined') {
+        if (s.events !== 'undefined' && s.events.length > 0) {
+            s.events = s.events + "," + omEvents
+        } else {
+            s.events = omEvents;
+        }
+        delete omnitureVars.events;
+    }
+    
+    for (key in omnitureVars) {
+      if (omnitureVars.hasOwnProperty(key)) {
+        s[key] = omnitureVars[key];
+      } 
+    }
+  }
+}
+</script>
+
+<script>
+
+var s_code=s.t();if(s_code)document.write(s_code)</script>
+
+
+
+		<script src="/media/wro/js/baynote_v2_m56577569835062330.js"></script>
+	
+
+
+	<script>
+		var div_node = document.getElementById('lpButton');
+		if(div_node!=null)
+		{
+		div_node.id = 'lpMCButtonHelp';
+		}
+	</script>
+	
+			<script>
+				if (typeof(lpUnit)=='undefined') var lpUnit='jcrew';
+			</script>
+			<script src="/media/wro/js/mtagconfig_v2_m56577569835062289.js"></script>
+			<script>
+			lpAddVars('page','Country','US');
+			lpAddVars('page','Currency','USD');
+			lpAddVars('page','Section','help');
+			lpAddVars('page','CartTotal','0.00');
+			lpAddVars('page','CartTotalLocal','0.00');
+			lpAddVars('session', 'CustomerEmail', '');
+
+			//jstl for sidecar usage don't remove
+			
+			
+			
+	
+			</script>
+	
+
+    
+    
+        
+        
+        <script>
+              dataLayer=[];
+              dataLayer.push({
+                'pageTitle': 'Help: Privacy Policy',
+                'visitorType': 'No Type',
+                'userId':''
+
+              });
+            </script>
+ 
+
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-GKX6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-GKX6');</script>
+    
+    
+
+
+<style>
+#ftr_emailsignupform {white-space: nowrap;} 
+.ftr_emailsignup {height:20px; width:202px; width:196px !ie; height:18px !ie;} 
+.ftr_submit_btn {top: 1px !ie;} 
+</style>
+
+<script src="/media/wro/js/global-object-implementation_v2_m56577569835062285.js"></script>
+<script src="/media/wro/js/global-object-personalization_v2_m56577569835062302.js"></script>
+
+<script>
+globalObj.quickShop = {};
+globalObj.quickShop.pleaseNoteMsg = 'Please note: ';
+globalObj.quickShop.showShippingRestrictMsg = 'This item is only available for ground shipping to the contiguous United States.';
+
+globalObj.personalization.customer.init();
+</script>
+ 
+</body>
+</html>
+
+
+
