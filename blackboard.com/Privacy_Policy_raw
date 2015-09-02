@@ -1,1 +1,920 @@
- 
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title>
+                Privacy Center | Blackboard
+            </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"> 
+                    <meta name="description" content="Privacy is important to Blackboard and the teachers, learners and educational institutions that we serve. Blackboard is committed to following both legal obligations and best practices with regard to the collection, protection, use and storage of private information. We also support the privacy policies of your educational institution.">
+                        <link rel="icon" href="/static/img/BbFav.png" />
+        <!--[if IE]><link rel="shortcut icon" href="/static/img/BbFav.png"><![endif]-->
+            <meta property="og:title" content="Privacy Center| Blackboard">
+<meta property="og:type" content="website" />
+    <meta property="og:description" content="Privacy is important to Blackboard and the teachers, learners and educational institutions that we serve. Blackboard is committed to following both legal obligations and best practices with regard to the collection, protection, use and storage of private information. We also support the privacy policies of your educational institution.">
+
+        <script src="/static/modernizr.2.7.1-cust.min.js"></script>
+        <!--<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6460892/613604/css/fonts.css" />-->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/static/v-635761724380000000/main.min.css" />
+        
+        <script src="/static/jquery-1.11.0.min.js"></script>
+        <script data-main="/static/v-504911052000000000/require.min" src="/static/require.min.js"></script>
+        <script data-main="/static/v-504911052000000000/main.min" src="/static/main.min.js"></script>
+        <script data-main="/static/v-504911052000000000/xpm-custom-adjustments" src="/static/xpm-custom-adjustments.js"></script>
+
+        <!-- 1st May 2015 - Added JS for Recaptcha for Sarah to incorporate in main.min.js -->
+        <script type="text/javascript">
+            var Tahzoo = Tahzoo || {};
+            Tahzoo.Recaptcha = {};
+            Tahzoo.Recaptcha.found = [];
+            Tahzoo.Recaptcha.siteKey = "6Lco0wYTAAAAAPTUGjVoGVSR7zGQ6Pvk53T1nOQY";
+            var createRecaptcha = function() {
+                /*console.log("Recaptcha onload");*/
+                if (Tahzoo.Recaptcha.found.length == 0) return false;
+                /*console.log("Recaptcha siteKey: " + Tahzoo.Recaptcha.siteKey);*/
+                for (var i = 0; i < Tahzoo.Recaptcha.found.length; i++) {
+                    var rId = Tahzoo.Recaptcha.found[i].id;
+                    if (rId != '' && grecaptcha) {
+                        /*console.log("Recaptcha Processing: " + rId);*/
+                        grecaptcha.render(rId, { 'sitekey': Tahzoo.Recaptcha.siteKey });
+                    }
+                }
+            };
+            jQuery(document).ready(function () {
+                Tahzoo.Recaptcha.found = jQuery("div.recaptcha-wrapper");
+                if (Tahzoo.Recaptcha.found.length > 0) {
+                    /*console.log("Recaptcha Active, Found: " + Tahzoo.Recaptcha.found.length);*/
+                    jQuery.getScript("https://www.google.com/recaptcha/api.js?onload=createRecaptcha&render=explicit");
+                } else {
+                    /*console.log("Recaptcha Not Active");*/
+                }
+            });
+        </script>
+        <!-- End of JS for Recaptcha -->
+               
+        <!-- 12th May - Added Google knowledge graph script-->
+        
+        <!-- End of Google knowledge graph script-->
+    </head>
+    
+
+
+
+<!-- View: ContentPage -->
+<body class="subsection twocol sticky__nav  viewport__desktop">
+    <a href="#accessibility-content" class="accessibility-offscreen" title="Skip to Main Content">Skip to Main Content</a>
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KQ8FVX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KQ8FVX');</script>
+<!-- End Google Tag Manager -->
+<!-- ClickTale Top part -->
+<script type="text/javascript">var WRInitTime = (new Date()).getTime();</script>
+<!-- ClickTale end of Top part -->
+    
+<!-- View: _Header -->
+    <header class="header page__header">
+
+
+
+
+
+    <div class="utility__bar">
+            <ul class="utility__bar__list utility__bar__list--left">
+    <li>
+        <a href="/about-us/index.aspx" target="_self" title="">ABOUT BLACKBOARD</a>
+    </li>
+    <li>
+        <a href="/news-and-events/index.aspx" target="_self" title="">NEWS &amp; EVENTS</a>
+    </li>
+    <li>
+        <a href="/community/index.aspx" target="_self" title="">COMMUNITY</a>
+    </li>
+    <li>
+        <a href="/support/index.aspx" target="_self" title="">SUPPORT</a>
+    </li>
+    </ul>
+
+            <ul class="utility__bar__list utility__bar__list--right">
+    <li>
+        <a href="/Student-Resources.aspx" target="_self" title="">STUDENTS</a>
+    </li>
+    <li>
+        <a href="/Faculty-Resources.aspx" target="_self" title="">EDUCATORS</a>
+    </li>
+    <li>
+        <a href="/blackboard-insights.aspx" target="_self" title="">RESOURCES</a>
+    </li>
+    </ul>
+
+        <div class="clear"></div>
+    </div>
+
+        <div class="header__wrapper page__header__wrapper">
+                <h1 class="page__header__logo">
+        <a class="page__header__logo__img" href="http://www.blackboard.com/">
+                <img src="/Images/blackboard-corporate-logo_tcm21-12923.png" alt="Blackboard Corporate Logo"/>
+        </a>
+    </h1>
+
+    <nav class="nav nav--page">
+        <ul class="nav--page__ul nav__ul">
+                <li class="nav--page__li nav__li" data-sequence="1">
+                    <a class="nav__a nav--page__a" href="/k12/index.aspx" target="_self" title="K-12">K-12</a>
+                </li>
+                <li class="nav--page__li nav__li" data-sequence="2">
+                    <a class="nav__a nav--page__a" href="/higher-education/index.aspx" target="_self" title="Higher Education">Higher Education</a>
+                </li>
+                <li class="nav--page__li nav__li" data-sequence="3">
+                    <a class="nav__a nav--page__a" href="/government/" target="_self" title="Government">Government</a>
+                </li>
+                <li class="nav--page__li nav__li" data-sequence="4">
+                    <a class="nav__a nav--page__a" href="/business/" target="_self" title="Business">Business</a>
+                </li>
+        </ul>
+    </nav>
+    <div class="page__header__actions">
+        
+        
+        <form class="page__header__search__form header__search__form search__form" name="headerSearch" action="http://www.blackboard.com/search.aspx" method="get">
+            <span>
+                <input class="page__header__search__text header__search__input search__input" type="search" name="q" placeholder="" />
+                <button class="page__header__search__submit header__search__submit search__submit" type="submit">,</button>
+            </span>
+        </form>
+    </div>
+        </div>
+        <div class="clear"></div>
+            <div class="navigation-menu">
+        <ul class="nav--page__ul_content nav__ul_content">
+                <li class="nav--page__li_content" data-sequence="1" style="display: none;">
+                        <section class="nav--page__li__section">
+                            <div class="nav--page__section__block">
+                                <div class="nav--page__block__entries">
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/k12/teaching-and-learning/index.aspx" target="_self" title="Teaching &amp;amp; Learning Solutions">Teaching &amp; Learning Solutions</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/teaching-and-learning/innovative-classroom.aspx" target="_self" title="Innovative Classroom">Innovative Classroom &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/teaching-and-learning/collaborate-starter.aspx" target="_self" title="Collaborate Starter">Collaborate Starter &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/teaching-and-learning/common-core.aspx" target="_self" title="Competency Learning">Competency Learning &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/teaching-and-learning/open-learning.aspx" target="_self" title="Open Learning">Open Learning &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/k12/community-parental-engagement.aspx" target="_self" title="Community &amp;amp; Parent Engagement">Community &amp; Parent Engagement</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/schoolwires-product.aspx" target="_self" title="Classroom and School Websites">Classroom and School Websites &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/communications/parentlink.aspx" target="_self" title="Mobile App">Mobile App &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/Platforms/Connect/Overview.aspx" target="_self" title="Notification Services">Notification Services &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/sociability-product.aspx" target="_self" title="Social Media Management">Social Media Management &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                                <span class="nav--page__entry__link">
+        Solutions By Role
+    </span>
+    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/academic-edtech-leadership.aspx" target="_self" title="Academic or Educational Technology Leadership">Academic or Educational Technology Leadership &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/IT-Leadership.aspx" target="_self" title="IT Leadership">IT Leadership &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/School-District-Leadership.aspx" target="_self" title="School or District Leadership">School or District Leadership &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/communications-professionals.aspx" target="_self" title="Communications">Communications &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/teachers.aspx" target="_self" title="Teachers">Teachers &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/K12/parents.aspx" target="_self" title="Parents">Parents &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                                <span class="nav--page__entry__link">
+        Partnerships
+    </span>
+    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/k12/partnerships/index.aspx" target="_self" title="Current K-12 Partnerships">Current K-12 Partnerships &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/Partnerships/Overview.aspx" target="_self" title="Become a Partner">Become a Partner &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                </div>
+                                    <div class="nav--page__section__block--roles">
+                                                                                    <p class="nav--page__entry__link__header nav--page__entry__link--roles">
+                                                Looking for something else?
+                                            </p>
+                                                                                    <ul class="nav--page__entry__ul">
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/blackboard-insights.aspx?market=k-12" target="_self" title="Resources">Resources &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/k12/k-12-events.aspx" target="_self" title="Webinars &amp;amp; Events">Webinars &amp; Events  &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="https://trainingcenter.blackboard.com/Public/Course/Browse?viewstate=eyJPcGVuTWFpbkNhdGVnb3JpZXMiOnsiNSI6dHJ1ZX0sIkFjdGl2ZUNvdXJzZUNhdGVnb3J5SW5kZXgiOjE0LCJBY3RpdmVDb3Vyc2VDYXRlZ29yeUlzU3ViU3ViIjpmYWxzZSwiVmlld0xpc3RUeXBlIjoiR3JpZCIsIlBhZ2UiOjEsIlBhZ2VTaXplIjoyNSwiT3JkZXJCeUZpZWxkIjoiU3lzdGVtRGVmYXVsdCIsIk9yZGVyQnlEaXJlY3Rpb24iOiJBc2NlbmRpbmciLCJDb3Vyc2VBY3RpdmVTdGF0ZSI6IkN1cnJlbnQiLCJNYWluQ2F0ZWdvcnkiOiJTb2x1dGlvbnMgZm9yIEsxMiIsIlN1YkNhdGVnb3J5IjoiT25saW5lIENvdXJzZXMiLCJTdWJDYXRlZ29yeUlzU3ViU3ViIjpmYWxzZSwiVGV4dCI6IiIsIkRhdGVGcm9tIjpudWxsLCJEYXRlVW50aWwiOm51bGwsIkNhbmNlbFN0YXRlIjoiTm90Q2FuY2VsbGVkIiwiQ291cnNlUG9wb3V0IjowfQ%3D%3D&amp;allowdirectload=1" target="_blank" title="Buy Training">Buy Training &gt;</a>
+                                                    </li>
+                                            </ul>
+                                    </div>
+                            </div>
+                        </section>
+                </li>
+                <li class="nav--page__li_content" data-sequence="2" style="display: none;">
+                        <section class="nav--page__li__section">
+                            <div class="nav--page__section__block">
+                                <div class="nav--page__block__entries">
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/higher-education/learning-solutions/index.aspx" target="_self" title="Learning Solutions">Learning Solutions</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/learning-solutions/learning-core.aspx" target="_self" title="Learning Core">Learning Core &gt;</a>
+                    <p>
+                        Learning Delivery
+                    </p>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/learning-solutions/learning-essentials.aspx" target="_self" title="Learning Essentials">Learning Essentials &gt;</a>
+                    <p>
+                        Learning Delivery + Collaboration
+                    </p>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/learning-solutions/learning-insight.aspx" target="_self" title="Learning Insight">Learning Insight &gt;</a>
+                    <p>
+                        Learning, Collaboration &amp; Analytics
+                    </p>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/learning-solutions/learning-insight-and-student-retention.aspx" target="_self" title="Learning Insight &amp;amp; Student Retention">Learning Insight &amp; Student Retention &gt;</a>
+                    <p>
+                        Learning, Collaboration &amp; Retention
+                    </p>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/internet2-netplus.aspx" target="_self" title="Internet2 NET+">Internet2 NET+ &gt;</a>
+                    <p>
+                        Learning, Collaboration, Analytics &amp; Services
+                    </p>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/higher-education/campus-solutions/index.aspx" target="_self" title="Campus Solutions">Campus Solutions</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/campus-solutions/commerce-management.aspx" target="_self" title="Commerce Management">Commerce Management &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/campus-solutions/security-management.aspx" target="_self" title="Security Management">Security Management &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/campus-solutions/financial-services.aspx" target="_self" title="Financial Services">Financial Services &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/campus-solutions/mass-notifications.aspx" target="_self" title="Mass Notifications">Mass Notifications &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/higher-education/services.aspx" target="_self" title="Services">Services</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/consulting-training/index.aspx" target="_self" title="Consulting and Training">Consulting and Training &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/marketing-and-recruiting-services/index.aspx" target="_self" title="Strategic Marketing &amp;amp; Recruiting">Strategic Marketing &amp; Recruiting &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/student-services-and-technology-support/index.aspx" target="_self" title="Student Services &amp;amp; Technology Support">Student Services &amp; Technology Support &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="https://trainingcenter.blackboard.com/Public/Course/Browse" target="_blank" title="Buy Online Training">Buy Online Training &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                                <span class="nav--page__entry__link">
+        Solutions By Role
+    </span>
+    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/academic-leaders.aspx" target="_self" title="Academic Leaders">Academic Leaders &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/administrative-leaders.aspx" target="_self" title="Administrative Leaders">Administrative Leaders &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/presidents-and-provosts.aspx" target="_self" title="Presidents &amp;amp; Provosts">Presidents &amp; Provosts &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/higher-education/it-and-technology-leaders.aspx" target="_self" title="IT &amp;amp; Technology Leaders">IT &amp; Technology Leaders &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                </div>
+                                    <div class="nav--page__section__block--roles">
+                                            <div class="nav--page__section__block--resources">
+<a class="nav--page__entry__link" href="/Student-Resources.aspx#&amp;panel1-1" target="_blank" title="Student Resources">Student Resources</a><a class="nav--page__entry__link" href="/Faculty-Resources.aspx#&amp;panel1-1" target="_self" title="Educator Resources">Educator Resources</a>                                            </div>
+                                                                                    <p class="nav--page__entry__link__header nav--page__entry__link--roles">
+                                                Looking for something else?
+                                            </p>
+                                                                                    <ul class="nav--page__entry__ul">
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/consulting-training/training-technical-services/index.aspx" target="_self" title="Training">Training &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/blackboard-insights.aspx?market=higher%20education" target="_self" title="Resources">Resources &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/Partnerships/Overview.aspx" target="_self" title="Partnerships">Partnerships &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/higher-education/higher-education-events.aspx" target="_self" title="Events &amp;amp; Webinars">Events &amp; Webinars &gt;</a>
+                                                    </li>
+                                            </ul>
+                                    </div>
+                            </div>
+                        </section>
+                </li>
+                <li class="nav--page__li_content" data-sequence="3" style="display: none;">
+                        <section class="nav--page__li__section">
+                            <div class="nav--page__section__block">
+                                <div class="nav--page__block__entries">
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/government/solutions.aspx" target="_self" title="Solutions By Market">Solutions By Market</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/federal-government.aspx" target="_self" title="Federal Solutions">Federal Solutions &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/state-local-government.aspx" target="_self" title="State &amp;amp; Local Solutions">State &amp; Local Solutions &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/military.aspx" target="_self" title="Military Solutions">Military Solutions &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/government/solutions.aspx" target="_self" title="Solutions">Solutions</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/online-learning.aspx" target="_self" title="Online Learning">Online Learning &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/online-training.aspx" target="_self" title="Online Training">Online Training &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/emergency-communications.aspx" target="_self" title="Mass Notifications and Communications">Mass Notifications and Communications &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/professional-services.aspx" target="_self" title="Professional Services">Professional Services &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/open-source-learning.aspx" target="_self" title="Open Source Learning">Open Source Learning &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/government/data-driven-outcomes.aspx" target="_self" title="Data Driven Outcomes">Data Driven Outcomes &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                </div>
+                                    <div class="nav--page__section__block--roles">
+                                                                                    <p class="nav--page__entry__link__header nav--page__entry__link--roles">
+                                                Looking for something else?
+                                            </p>
+                                                                                    <ul class="nav--page__entry__ul">
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/support/index.aspx" target="_self" title="Support">Support &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/blackboard-insights.aspx?market=government" target="_self" title="Resources">Resources &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/government/government-contracts-and-certifications.aspx" target="_self" title="Contracts and Certifications">Contracts and Certifications &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/Partnerships/Overview.aspx" target="_self" title="Partnerships">Partnerships &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="https://trainingcenter.blackboard.com/Public/Course/Browse" target="_blank" title="Buy Training">Buy Training &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="http://www.blackboard.com/proed-events.aspx" target="_self" title="Events">Events &gt;</a>
+                                                    </li>
+                                            </ul>
+                                    </div>
+                            </div>
+                        </section>
+                </li>
+                <li class="nav--page__li_content" data-sequence="4" style="display: none;">
+                        <section class="nav--page__li__section">
+                            <div class="nav--page__section__block">
+                                <div class="nav--page__block__entries">
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/business/solutions.aspx" target="_self" title="Solutions By Market">Solutions By Market</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/corporate.aspx" target="_self" title="Corporate">Corporate &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/associations.aspx" target="_self" title="Associations">Associations &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/small-business.aspx" target="_self" title="Small Business">Small Business &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/learning-solutions.aspx" target="_self" title="Learning Solutions">Learning Solutions</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/learning-solutions/learning-basics.aspx" target="_self" title="Learning Basics">Learning Basics &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/learning-solutions/open-source-learning.aspx" target="_self" title="Open Source Learning">Open Source Learning &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/learning-solutions/learning-professional.aspx" target="_self" title="Learning Professional">Learning Professional &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/learning-solutions/learning-performance.aspx" target="_self" title="Learning Performance">Learning Performance &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/professional-services.aspx" target="_self" title="Professional Services">Professional Services &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                        <div class="nav--page__block__entry">
+
+                                            <a class="nav--page__entry__link" href="/business/collaboration-and-communication/" target="_self" title="Collaboration &amp;amp; Communication">Collaboration &amp; Communication</a>    <ul class="nav--page__entry__ul">
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/collaboration-and-communication/mass-notification.aspx" target="_self" title="Mass Notifications">Mass Notifications &gt;</a>
+            </li>
+            <li class="nav--page__entry__li">
+                <a class="nav--page__entry__li__link" href="/business/collaboration-and-communication/web-conferencing.aspx" target="_self" title="Web Conferencing">Web Conferencing &gt;</a>
+            </li>
+    </ul>
+
+                                        
+                                        
+                                        </div>
+                                </div>
+                                    <div class="nav--page__section__block--roles">
+                                                                                    <p class="nav--page__entry__link__header nav--page__entry__link--roles">
+                                                Looking for something else?
+                                            </p>
+                                                                                    <ul class="nav--page__entry__ul">
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/support/index.aspx" target="_self" title="Support">Support &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/blackboard-insights.aspx?market=corporations" target="_self" title="Resources">Resources &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="/Partnerships/Overview.aspx" target="_self" title="Partnerships">Partnerships &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="https://trainingcenter.blackboard.com/Public/Course/Browse" target="_blank" title="Buy Training">Buy Training &gt;</a>
+                                                    </li>
+                                                    <li class="nav--page__entry__li">
+                                                        <a class="nav--page__entry__li__link" href="http://www.blackboard.com/proed-events.aspx" target="_self" title="Events">Events &gt;</a>
+                                                    </li>
+                                            </ul>
+                                    </div>
+                            </div>
+                        </section>
+                </li>
+        </ul>
+    </div>
+
+            <div class="page__header__subheader">
+                <h1></h1>
+                <div class="page__header__subheader__top">
+                    Top
+                    <span>&nbsp;</span>
+                </div>
+            </div>
+    </header>
+    <div class="top__gradient">&nbsp;</div>
+
+
+
+    <div class="wrapper page__wrapper">
+        <a name="accessibility-content"></a>
+        
+        <div class="clear"></div>
+        
+
+
+
+<div class="subsection__header sticky">
+    
+    <h1> Privacy Center</h1>
+    ﻿
+</div>
+
+
+        <div class="main__content">
+
+            
+
+
+<div class="main__content--split">
+
+    <div class="twocol__rail sticky__navigation">
+        <ul class="main__content__jumpNav">
+                <li>
+                    <a href="#" data-id="twocol__section--1">Privacy Overview<span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-id="twocol__section--2">Privacy:  Your Institution, Blackboard And You<span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-id="twocol__section--3">Cookies And Related Technologies <span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-id="twocol__section--4">Support for SSL Encryption<span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-id="twocol__section--5">Blackboard Social<span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-id="twocol__section--6">Privacy Contacts<span>&nbsp;</span></a>
+                    <ul class="hide">
+
+                    </ul>
+                </li>
+        </ul>
+    </div>
+
+</div>
+
+
+                <div class="main__content--split">
+                    
+
+
+    <section class="twocol__featured">
+        
+        <div class="twocol__featured--img">
+            <a href="#" data-modal="{&quot;src&quot; : &quot;#twocolfeatured-1&quot;}" id="flexModal-1">
+            </a>
+        </div>
+        <div class="twocol__featured--content">
+                                </div>
+        <div id="twocolfeatured-1" class="modal__container hide">
+            <div class="modal__content">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+                    
+
+
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--1">
+                     Privacy Overview
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">Privacy is important to Blackboard and the teachers, learners and educational institutions that we serve. Blackboard is committed to following both legal obligations and best practices with regard to the collection, protection, use and storage of private information. We also support the privacy policies of your educational institution.</p>
+                </span>
+                    </section>
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--2">
+                     Privacy:  Your Institution, Blackboard And You
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">Blackboard provides certain products run by educational institutions at non-Blackboard sites. For such products, Blackboard recommends that you consult with your educational institution's privacy policies. Blackboard provides a number of configuration options to allow such institutions to implement their privacy guidelines within our products.</p><p xmlns="http://www.w3.org/1999/xhtml">Blackboard products, websites, and other services may also connect with or be run as managed services or software-as-a-service offerings from within Blackboard or third-party datacenters located around the world. Use of such products, websites, and services may result in collection of private information by Blackboard. Please see our <a href="http://www.blackboard.com/footer/privacy-policy.aspx">privacy policy located here</a> to learn more about the information we collect, store, use and share. By using such products, websites, and services, you consent to the practices disclosed in the privacy policy.</p>
+                </span>
+                    </section>
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--3">
+                     Cookies And Related Technologies 
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">Cookies and Related Technologies installed on end user terminal devices.</p><p xmlns="http://www.w3.org/1999/xhtml">The European Union has enacted privacy laws and regulations which seek to better inform users about the use of cookies and other related technologies that are installed on end user devices. These technologies may be used for supporting application functionality such as secure login or storing user preferences, improving application performance and tracking usage. PLEASE CONSULT COUNSEL OF YOUR CHOICE TO LEARN MORE ABOUT THESE REGULATIONS.</p><p xmlns="http://www.w3.org/1999/xhtml">To help with compliance with this regulation, Blackboard has provided the following summaries about the use of cookies within Blackboard Products and Services.</p><p xmlns="http://www.w3.org/1999/xhtml"><a href="/Footer/Privacy-Center/Blackboard-Learn.aspx">Cookies and Privacy Information for Blackboard Learn</a><br /><a href="/Footer/Privacy-Center/Blackboard-xpLor.aspx">Cookies and Privacy Information for Blackboard xpLor</a><br /><a href="/Footer/Privacy-Center/Xythos-Filer.aspx">Cookies and Privacy Information for Xythos Filer</a><br /><a href="/Footer/Privacy-Center/Xythos-Drive.aspx">Cookies and Privacy Information for Xythos Drive</a><br /><a href="/Footer/Privacy-Center/SafeAssign.aspx">Cookies and Privacy Information for SafeAssign</a><br /><a href="/Footer/Privacy-Center/Blackboard-Drive.aspx">Cookies and Privacy Information for Blackboard Drive</a><br /><a href="/Footer/Privacy-Center/ANGEL-LMS.aspx">Cookies and Privacy Information for ANGEL LMS</a><br /><a href="/Footer/Privacy-Center/CE-Vista.aspx">Cookies and Privacy Information for CE Vista</a><br /><a href="/Footer/Privacy-Center/CourseSites.aspx">Cookies and Privacy Information for CourseSites</a><br /><a href="/Footer/Privacy-Center/Collaborate/LTI-for-Voice-Classroom.aspx">Cookies and Privacy Information for Collaborate - LTI for Voice/Classroom</a><br /><a href="/Footer/Privacy-Center/Collaborate/Plan.aspx">Cookies and Privacy Information for Collaborate - Plan</a><br /><a href="/Footer/Privacy-Center/Collaborate/Publish.aspx">Cookies and Privacy Information for Collaborate - Publish</a><br /><a href="/Footer/Privacy-Center/Collaborate/Voice.aspx">Cookies and Privacy Information for Collaborate - Voice Authoring</a><br /><a href="/Footer/Privacy-Center/Collaborate/Web-Conferencing.aspx">Cookies and Privacy Information for Collaborate - Web Conferencing</a><br /><a href="/Footer/Privacy-Center/Collaborate/Wimba-Classroom.aspx">Cookies and Privacy Information for Collaborate - Wimba Classroom</a><br /><a href="/Footer/Privacy-Center/Mobile-Central.aspx">Cookies and Privacy Information for Mobile Central</a><br /><a href="/Footer/Privacy-Center/Mobile-Learn.aspx">Cookies and Privacy Information for Mobile Learn</a><br /><a href="/Footer/Privacy-Center/Mobile-Portal.aspx">Cookies and Privacy Information for Mobile Portal</a></p>
+                </span>
+                    </section>
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--4">
+                     Support for SSL Encryption
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">Any institution may choose to run its Blackboard Learn solution under SSL. SSL is a browser technology that encrypts the data transmitted between your computer and the Blackboard server. SSL websites have an address that begins with https:// instead of http:// (note the additional “s”). Blackboard strongly encourages all schools to run under SSL to ensure data privacy of transmitted data and to secure the transmission of login and password information.</p>
+                </span>
+                    </section>
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--5">
+                     Blackboard Social
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">The Blackboard Social functionality includes the ability of its users to determine appropriate privacy settings for users' data, subject to limitations imposed by the users' applicable institutions. All users of the social media functionality are solely responsible for monitoring and updating their privacy settings on a regular basis, in order to help protect the privacy of the users' data in accordance with the users' preferences.</p>
+                </span>
+                    </section>
+        <section class="twocol__main__content__section">
+            
+                <h2 id="twocol__section--6">
+                     Privacy Contacts
+                </h2>            
+                            <span>
+                    
+                    <p xmlns="http://www.w3.org/1999/xhtml">If you have specific questions or concerns regarding these policies please contact:</p><p xmlns="http://www.w3.org/1999/xhtml">General Counsel
+<br />
+Blackboard Inc.
+<br />
+650 Massachusetts Ave NW, 6th floor
+<br />
+Washington DC 20001-3796
+<br />
+P: +1 202.303.9372
+<br />
+Efax: +1 623.476.1481
+<br />
+privacy@blackboard.com</p>
+                </span>
+                    </section>
+
+
+                    
+
+                    
+
+                    
+                </div>
+
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+
+    
+    <!-- View: _Footer -->
+        <div class="bottom__gradient">&nbsp;</div>
+    <div class="footer_container">
+        <footer class="footer_container__wrapper">
+            <div class="footer_container__link_farm">
+                            <div class="footer_container__link_farm--item">
+                <ul class="footer_container__link_farm--list">
+                            <li class="footer_container__link_farm--list_item footer_container__link_farm--list_item--header">
+                                <a class="footer_container__link_farm--list_item--mainLink" href="/about-us/index.aspx" target="_self" title="About Blackboard">About Blackboard</a>
+                            </li>
+                                                    <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/about-us/who-we-are.aspx" target="_self" title="Who We Are">Who We Are</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/about-us/leadership.aspx" target="_self" title="Leadership">Leadership</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="http://careers.Blackboard.com" target="_blank" title="Work at Blackboard">Work at Blackboard</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/news-and-events/index.aspx" target="_self" title="News and Events">News and Events</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="http://labs.blackboard.com" target="_blank" title="Blackboard Labs">Blackboard Labs</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="http://blog.blackboard.com/" target="_blank" title="Blog">Blog</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/blackboard-insights.aspx" target="_self" title="Blackboard Insights">Blackboard Insights</a>
+                                </li>
+                </ul>
+            </div>
+            <div class="footer_container__link_farm--item">
+                <ul class="footer_container__link_farm--list">
+                            <li class="footer_container__link_farm--list_item footer_container__link_farm--list_item--header">
+                                <a class="footer_container__link_farm--list_item--mainLink" href="/products.aspx" target="_self" title="Products">Products</a>
+                            </li>
+                                                    <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Platforms/Analytics/Overview.aspx" target="_self" title="Blackboard Analytics">Blackboard Analytics</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/online-collaborative-learning/index.aspx" target="_self" title="Blackboard Collaborate">Blackboard Collaborate</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Platforms/Connect/Overview.aspx" target="_self" title="Blackboard Connect">Blackboard Connect</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/learning-management-system/blackboard-learn.aspx" target="_self" title="Blackboard Learn">Blackboard Learn</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/k12/parentlink.aspx" target="_self" title="Blackboard ParentLink">Blackboard ParentLink</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/k12/schoolwires-product.aspx" target="_self" title="Blackboard Schoolwires">Blackboard Schoolwires</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/k12/sociability-product.aspx" target="_self" title="Blackboard Sociability">Blackboard Sociability</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Platforms/Transact/Overview.aspx" target="_self" title="Blackboard Transact">Blackboard Transact</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="https://mymosaic.com/" target="_blank" title="Mosaic by Blackboard">Mosaic by Blackboard</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="https://www.myedu.com/" target="_blank" title="MyEdu">MyEdu</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/moodlerooms.aspx" target="_self" title="Moodlerooms">Moodlerooms</a>
+                                </li>
+                </ul>
+            </div>
+            <div class="footer_container__link_farm--item">
+                <ul class="footer_container__link_farm--list">
+                            <li class="footer_container__link_farm--list_item footer_container__link_farm--list_item--header">
+                                <a class="footer_container__link_farm--list_item--mainLink" href="/Partnerships/Overview.aspx" target="_self" title="Partners">Partners</a>
+                            </li>
+                                                    <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Partnerships-Program.aspx" target="_self" title="Partnership Program">Partnership Program</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Content-Distribution-Program.aspx" target="_self" title="Content Distribution Program">Content Distribution Program</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Featured-Partners.aspx" target="_self" title="Featured Partners">Featured Partners</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Partner-Resources.aspx" target="_self" title="Partner Resources">Partner Resources</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Resellers.aspx" target="_self" title="Resellers">Resellers</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Partnerships/Extensions.aspx" target="_self" title="Extension Catalog">Extension Catalog</a>
+                                </li>
+                </ul>
+            </div>
+            <div class="footer_container__link_farm--item">
+                <ul class="footer_container__link_farm--list">
+                            <li class="footer_container__link_farm--list_item footer_container__link_farm--list_item--header">
+                                <a class="footer_container__link_farm--list_item--mainLink" href="/contact-us/index.aspx" target="_self" title="Contact Us">Contact Us</a>
+                            </li>
+                                                    <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/support/index.aspx" target="_self" title="Support">Support</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/contact-us/sales-form.aspx" target="_self" title="Get More Information">Get More Information</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Contact-Us/Suggest-Product-Enhancements.aspx" target="_self" title="Product Suggestions">Product Suggestions</a>
+                                </li>
+                                <li class="footer_container__link_farm--list_item">
+                                          <a class="footer_container__link_farm--list_item--link" href="/Forms/signupform.aspx" target="_self" title="Subscribe">Subscribe</a>
+                                </li>
+                </ul>
+            </div>
+
+                        <div class="footer_container__link_farm--social">
+<a class="footer_container__link_farm--social_icon twitter-follow-small" href="https://twitter.com/Blackboard" target="_blank" title="Twitter">Twitter</a><a class="footer_container__link_farm--social_icon facebook-follow-small" href="https://www.facebook.com/blackboard" target="_blank" title="Facebook">Facebook</a><a class="footer_container__link_farm--social_icon youtube-follow-small" href="https://www.youtube.com/user/BlackboardTV" target="_blank" title="YouTube">YouTube</a><a class="footer_container__link_farm--social_icon linkedin-follow-small" href="https://www.linkedin.com/company/blackboard" target="_blank" title="LinkedIn">LinkedIn</a><a class="footer_container__link_farm--social_icon gplus-follow-small" href="https://plus.google.com/+BlackboardOnGoogle/posts" rel="publisher" target="_blank" title="G+">G+</a>        </div>
+
+                <div class="clear"></div>
+            </div>
+            <div class="footer_container__quick_links">
+    <ul class="footer_container__quick_links--list">
+                <li class="footer_container__quick_links--list_item">
+                    <a href="http://www.blackboard.com/Footer/Site-Map.aspx" target="_self" title="Site Map">Site Map</a>
+                </li>
+                <li class="footer_container__quick_links--list_item">
+                    <a href="http://www.blackboard.com/Footer/Security-Policy.aspx" target="_self" title="Security">Security</a>
+                </li>
+                <li class="footer_container__quick_links--list_item">
+                    <a href="/Footer/privacy-center.aspx" target="_self" title="Privacy Policy">Privacy Policy</a>
+                </li>
+                <li class="footer_container__quick_links--list_item">
+                    <a href="http://www.blackboard.com/Footer/Terms-of-Use.aspx" target="_self" title="Terms of Use">Terms of Use</a>
+                </li>
+                <li class="footer_container__quick_links--list_item">
+                    <a href="http://www.blackboard.com/accessibility.aspx" target="_self" title="Accessibility">Accessibility</a>
+                </li>
+    </ul>
+        <div class="footer_container__quick_links--button">
+          
+                <a class="footer_container__quick_links--button_item" href="http://www.blackboard.com/international/overview.aspx" target="_self" title="Global English">Global English<span>&nbsp;</span></a>
+          
+        </div>
+        <div class="clear"></div>
+            </div>
+                <div class="footer_container__disclosure">
+                            <p>
+                                © 1997 - 2015 Blackboard Inc. All Rights Reserved.
+                            </p>
+                                                <p>
+                                Copyright © 1997 - 2015. Blackboard Inc. All rights reserved. Blackboard, the Blackboard Logo, BbWorld, Blackboard Learn, Blackboard Transact, Blackboard Connect, Blackboard Mobile, Blackboard Collaborate, Blackboard Analytics, Blackboard Engage, Blackboard Student Services, the Mosaic logo, Behind the Blackboard, and Connect-ED are trademarks or registered trademarks of Blackboard Inc, or its subsidiaries in the United States and/or other countries. Blackboard products and services may be covered by one or more of the following <a href="/patents-(1).aspx" title="U.S. Patents" >U.S. Patents</a>.
+                            </p>
+                </div>
+        </footer>
+    </div>
+
+
+    <script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+		var t, js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+		js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+		return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+	}(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+    
+
+</html>
