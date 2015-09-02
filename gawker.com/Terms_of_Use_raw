@@ -1,1 +1,926 @@
- 
+<!DOCTYPE html><!--[if lt IE 8]>	 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]--><!--[if IE 8]>	  <html class="no-js lt-ie9" lang="en-US"> <![endif]--><!--[if IE 9]>	<html class="no-js ie-9" lang="en-US"> <![endif]--><!--[if gt IE 9]><!--> <html class="no-js" lang="en-US"> <!--<![endif]--><!-- THIS IS OVERLORD --><head><meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE" /><script async type="text/javascript" src="//kinja.com/api/profile/assets/javascripts/sso.js"></script>
+	<script type="text/javascript">
+		var _sf_startpt=(new Date()).getTime();
+		if (typeof(performance) !== 'undefined' && typeof performance.now === 'function') {
+			var _kinjaperf_start = performance.now();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		(function () {
+		  var w = typeof window != 'undefined' ? window : exports,
+			  marks = [];
+		  w.performance || (w.performance = {});
+		  w.performance.now || (
+			w.performance.now = performance.now || performance.webkitNow ||
+									 performance.msNow || performance.mozNow);
+		  if (!w.performance.now){
+			var s = Date.now ? Date.now() : +(new Date());
+			if (performance.timing && performance.timing)
+			  s = performance.timing.navigationStart
+			w.performance.now = (function(){
+			  var n = Date.now ? Date.now() : +(new Date());
+			  return n-s;
+			});
+		  }
+		  w.performance.mark || (
+		  w.performance.mark =
+			w.performance.webkitMark ? w.performance.webkitMark :
+			(function (l) {
+			  marks.push({'name': l, 'entryType': 'mark', 'startTime': w.performance.now(), 'duration':0 });
+			}));
+		  w.performance.getEntriesByType || (
+		  w.performance.getEntriesByType =
+			w.performance.webkitGetEntriesByType ? w.performance.webkitGetEntriesByType :
+			(function (t) {
+			  return t == 'mark' ? marks : [];
+			}));
+		  w.performance.clearMarks || (
+			w.performance.clearMarks = w.performance.webkitClearMarks ? w.performance.webkitClearMarks :
+			(function () {
+			  marks = [];
+			}));
+		  w.markUserTime = function(l) {
+			setTimeout(function() {
+				if (typeof w.performance.mark === 'function') {
+					w.performance.mark(l);
+				}
+				if (w.console && w.console.timeStamp) {
+					w.console.timeStamp(l);
+				}
+			}, 0);
+		  };
+
+		}());
+	</script>
+	<script>
+	window.Krux || ((Krux = function () {
+		Krux.q.push(arguments);
+	}).q = []);
+	(function () {
+		function retrieve(n) {
+			var m, k = 'kx' + n;
+			if (window.localStorage) {
+				return window.localStorage[k] || "";
+			} else if (navigator.cookieEnabled) {
+				m = document.cookie.match(k + '=([^;]*)');
+				return (m && unescape(m[1])) || "";
+			} else {
+				return '';
+			}
+		}
+		Krux.user = retrieve('user');
+		Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+	})();
+	</script><link rel="stylesheet" href="//x.kinja-static.com/assets/stylesheets/tiger-7ed89a90beb31002c918b978107e9ecf.css"><meta name="dynamic-stylesheet" id="editor-css-url" content="//x.kinja-static.com/assets/stylesheets/editor-200d0f26350b32097785ec6c603067ae.css"><meta name="google-site-verification" content="P13oAn8o8LB6FVCJWKsHWXvxfbR-SJrmvox6EgULpUs" /><!-- IE Fix for HTML5 Tags --><!--[if lte IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta charset="utf-8" /><!-- Set the viewport width to device width for mobile --><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0" /><meta name="ROBOTS" content="INDEX, FOLLOW" /><title>Kinja Terms of Use</title><!-- favicon and touch icons --><link rel="shortcut icon" href="//x.kinja-static.com/assets/images/logos/favicons/default.ico" /><link rel="apple-touch-icon" href="//x.kinja-static.com/assets/images/logos/touchicons/default-touch-icon-200x200.png" /><meta name="msapplication-square70x70logo" content="//x.kinja-static.com/assets/images/logos/touchicons/default-touch-icon-72x72.png" /><meta name="msapplication-square150x150logo" content="//x.kinja-static.com/assets/images/logos/touchicons/default-touch-icon-200x200.png" /><!-- rss --><link rel="alternate" type="application/rss+xml" title="Kinja Legal - All stories" href="http://legal.kinja.com/rss" /><!-- Open Graph/Facebook headers --><meta name="keywords" content="Kinja Legal" /><meta name="news_keywords" content="Kinja Legal" /><link rel="canonical" href="http://legal.kinja.com/kinja-terms-of-use-90161644" /><meta name="twitter:url" content="http://legal.kinja.com/kinja-terms-of-use-90161644" /><meta property="og:title" content="Kinja Terms of Use" /><meta property="og:type" content="article" /><meta name="twitter:image" content="http://kinja.com/assets/images/logos/touchicons/default-touch-icon-200x200.png" /><meta property="og:image" content="http://kinja.com/assets/images/logos/touchicons/default-touch-icon-200x200.png" /><meta name="author" content="Kinja Legal" /><meta property="og:url" content="http://legal.kinja.com/kinja-terms-of-use-90161644" /> <!-- permalink --><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@kinja"><meta name="twitter:title" content="Kinja Terms of Use"><meta property="og:description" content="Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you are agreeing that you, and each person you allow to access Kinja through your account, will abide by the terms of the following User Agreement, which is summarized here, and set forth in its entirety below. This User Agreement is between you and Kinja (“We” or the “Company”), and it governs your access to and use of the services, websites, and applications offered by Kinja (the &amp;quot;Service&amp;quot;). Your access to and use of the Service is conditioned on your acceptance of and compliance with this agreement." /><meta name="description" content="Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you are agreeing that you, and each person you allow to access Kinja through your account, will abide by the terms of the following User Agreement, which is summarized here, and set forth in its entirety below. This User Agreement is between you and Kinja (“We” or the “Company”), and it governs your access to and use of the services, websites, and applications offered by Kinja (the &amp;quot;Service&amp;quot;). Your access to and use of the Service is conditioned on your acceptance of and compliance with this agreement." /><meta name="twitter:description" content="Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you are agreeing that you, and each person you allow to access Kinja through your account, will abide by the terms of the following User Agreement, which is summarized here, and set forth in its entirety below. This User Agreement is between you and Kinja (“We” or the “Company”), and it governs your access to and use of the services, websites, and applications offered by Kinja (the &amp;quot;Service&amp;quot;). Your access to and use of the Service is conditioned on your acceptance of and compliance with this agreement." /><meta property="og:locale" content="en_US" /><meta property="og:site_name" content="Kinja Legal" /><meta property="fb:app_id" content="36368793975"/><script>window._K_MSGS = []; window._K_MSG_L = function (e) {_K_MSGS.push(e);}; window.addEventListener('message', window._K_MSG_L);</script></head><body class="legal blog-group-default custom-skin permalink en-US no-ads f_ads_controller_on f_amazon_matchbuy_on f_analyticstracking_on f_bigpic_share_on f_commerce_insets_disclosure_on f_css_inset_loader_on f_dfp_desktop_three_on f_dfp_promotions_on f_dfpnative_on f_discovery_pagination_on f_editor_export_blacklist_on f_editor_inset_reduction_on f_editor_remove_form_on f_editor_separate_links_on f_editor_serverside_media_on f_email_collection_on f_fake_htmlparser_on f_foobar_foo f_fullheadline_on f_general_image_error_on f_gns_on f_google_search_carousel_on f_grecaptcha_on f_groupchats_refactor_on f_hide_pending_replies_on f_html_editor_status_fix_on f_httpsredirect_on f_image_annotation_to_ga_on f_killpopover_on f_lazysidebar_on f_limit_draft_controls_on f_load_engine_on_show_on f_manageblog_on f_moatads_headertag_on f_moatads_promoted_on f_native_video_none f_nav_titles_on f_new_chartbeat_service_on f_new_editor_dst_fix_on f_new_sidebar_api_on f_new_stats_day_on f_new_user_settings_on f_newblogproperties_on f_newsidebar_on f_newsidebar_crossfade_on f_no_follow_pending_on f_no_offcanvas_on f_nostickyposttools_on f_permalink_body_mobile_ad_on f_permalink_body_mobile_ad_label_on f_post_completion_on f_postmodelcleanup_on f_purge_permalink_on_update_on f_raven_on f_reply_noautosubmit_on f_round_avatars_on f_rubicon_no_collapse_on f_rulesystem_nsc_on f_scribe_curly_quotes_on f_secondary_nav_on f_sharingfooter_on f_sidebar_top_uses_subdomain_on f_simplereach_expanded_on f_superhero_resize_0 f_svgicons_on f_taboolatracking_on f_throttle_measuring_off f_throttle_test_foo_lorem f_track_adblock_on f_universalanalytics_on f_useecommerce_on f_userstats_on" data-timezone-offset="-14400000"><div id="js_svg-definitions" class="hide"><svg id="svggroup--essential" class="hide"><symbol id="iconset-search" viewBox="0 0 15 15"><path d="M9.5 8C11.433 8 13 6.433 13 4.5S11.433 1 9.5 1 6 2.567 6 4.5 7.567 8 9.5 8zm-3.233-.975c.196-.195.518-.19.708 0 .195.195.19.517 0 .708l-4.95 4.95c-.195.194-.517.19-.707 0-.195-.196-.19-.518 0-.708l4.95-4.95zM9.5 9C7.015 9 5 6.985 5 4.5S7.015 0 9.5 0 14 2.015 14 4.5 11.985 9 9.5 9z" /></symbol><symbol id="iconset-add" viewBox="0 0 18 18"><path d="M9 2.494C9 2.226 8.776 2 8.5 2c-.268 0-.5.22-.5.494V8H2.494C2.226 8 2 8.224 2 8.5c0 .268.22.5.494.5H8v5.506c0 .268.224.494.5.494.268 0 .5-.22.5-.494V9h5.506c.268 0 .494-.224.494-.5 0-.268-.22-.5-.494-.5H9V2.494z" /></symbol><symbol id="iconset-add--small" viewBox="0 0 10 10"><path d="M6 1.007C6 .45 5.552 0 5 0c-.556 0-1 .45-1 1.007V4H1.007C.45 4 0 4.448 0 5c0 .556.45 1 1.007 1H4v2.993C4 9.55 4.448 10 5 10c.556 0 1-.45 1-1.007V6h2.993C9.55 6 10 5.552 10 5c0-.556-.45-1-1.007-1H6V1.007z"></path></symbol><symbol id="iconset-site-default" viewBox="0 0 18 18"><path d="M9 16.158c3.953 0 7.158-3.205 7.158-7.158 0-3.953-3.205-7.158-7.158-7.158-3.953 0-7.158 3.205-7.158 7.158 0 3.953 3.205 7.158 7.158 7.158zM9 17c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"/><path d="M9 16.158c1.97 0 3.79-3.143 3.79-7.158 0-4.015-1.82-7.158-3.79-7.158S5.21 4.985 5.21 9c0 4.015 1.82 7.158 3.79 7.158zM9 17c-2.558 0-4.632-3.582-4.632-8S6.442 1 9 1s4.632 3.582 4.632 8S11.558 17 9 17z"/><path d="M2.742 4.674c1.69.883 3.947 1.383 6.345 1.383 2.396 0 4.65-.5 6.34-1.38l-.39-.746c-1.564.82-3.684 1.29-5.95 1.29-2.27 0-4.39-.47-5.955-1.28l-.39.746zm.39 9.403c1.564-.817 3.686-1.288 5.955-1.288 2.266 0 4.386.47 5.95 1.28l.39-.75c-1.69-.88-3.944-1.38-6.34-1.38-2.398 0-4.654.5-6.345 1.38l.39.744z"/><path d="M8.58 8.58H1.083v.84H8.58v7.496h.84V9.42h7.496v-.84H9.42V1.083h-.84V8.58z" /></symbol><symbol id="iconset-zoom-in" viewBox="0 0 18 18"><path d="M9 4.494C9 4.226 9.224 4 9.5 4c.268 0 .5.22.5.494V7h2.506c.268 0 .494.224.494.5 0 .268-.22.5-.494.5H10v2.506c0 .268-.224.494-.5.494-.268 0-.5-.22-.5-.494V8H6.494C6.226 8 6 7.776 6 7.5c0-.268.22-.5.494-.5H9V4.494zM9.5 13C6.462 13 4 10.538 4 7.5S6.462 2 9.5 2 15 4.462 15 7.5 12.538 13 9.5 13zm-4.877-1.36l-3.48 3.51c-.194.194-.188.514 0 .703.196.195.51.196.704.002l3.48-3.51c-.304-.275-.416-.34-.704-.706zM9.5 14c3.59 0 6.5-2.91 6.5-6.5S13.09 1 9.5 1 3 3.91 3 7.5 5.91 14 9.5 14z" /></symbol><symbol id="iconset-star" viewBox="0 0 18 18"><path d="M9.005 13.115L4.083 16.88l1.895-6.07-4.943-3.563 6.094.014L9 1.01l1.866 6.25 6.093-.01-4.93 3.563 1.89 6.07z" /></symbol><symbol id="iconset-star-circle" viewBox="0 0 18 18"><path d="M9 17c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM9 3.7c.093 0 .185.06.208.158l1.146 3.39 3.413.085c.104 0 .185.073.22.17.034.097 0 .207-.08.267l-2.72 2.175.972 3.44c.03.096 0 .206-.09.266-.05.04-.097.05-.14.05-.05 0-.09-.02-.13-.05L9 11.61l-2.81 2.04c-.036.038-.082.05-.13.05-.045 0-.09-.012-.138-.05-.07-.06-.104-.17-.08-.266l.97-3.44L4.095 7.77c-.08-.06-.115-.17-.08-.267.034-.097.127-.17.22-.17l3.412-.085 1.134-3.39c.04-.098.13-.158.22-.158z" /></symbol><symbol id="iconset-chevron-right" viewBox="0 0 18 18"><path d="M6.165 3.874c-.217-.204-.22-.53-.008-.73.206-.192.56-.195.776.008l5.902 5.48c.11.102.165.236.165.37-.002.126-.055.262-.165.365l-5.902 5.478c-.217.204-.564.207-.776.007-.206-.193-.21-.525.008-.728L11.69 9 6.165 3.873z" /></symbol><symbol id="iconset-chevron-right--small" viewBox="0 0 10 10"><path d="M7.782 4.497L3.272.207c-.287-.274-.763-.278-1.054 0-.292.277-.29.724.002 1L6.205 5 2.22 8.79c-.288.273-.292.726-.002 1.002.293.28.763.276 1.054 0l4.51-4.29C7.926 5.363 8 5.18 8 5c.002-.183-.072-.364-.218-.503z" /></symbol><symbol id="iconset-flame" viewBox="0 0 18 18"><path d="M3.923 10.89c0 2.678 2.447 5.17 5.077 5.17s5.077-2.492 5.077-5.17c0-1.752-.618-3.036-1.977-4.664-1.196-1.433-1.154-3.453-1.093-3.453-.356-.04-2.164 2.918-2.49 5.764-.507 1.5-2.29 1.018-2.543-.126-.245-.62-.296-1.97-.296-2.47 0-.5-1.755 2.72-1.755 4.95zm2.962-2.617c.25.344.63.345.72.077.185-2.933 2.015-5.63 2.643-6.247.78-.766 1.7-1.444 1.984-.915.072.135-.047.438-.167.826-.267.863-.412 2.224.738 3.602C13.883 6.912 15 8.516 15 10.89c0 3.2-2.86 6.11-6 6.11s-6-2.912-6-6.11c0-2.018 1.45-5.456 2.972-6.798l.198-.17c.233-.197.806-.146.715.164-.837 2.85 0 4.187 0 4.187z" /></symbol><symbol id="iconset-logo-kinja" viewBox="0 0 18 18"><path d="M2.898 8.293c.746.24 1.423.978 1.734 1.495.31.517 2.246 3.78 2.905 4.916.726 1.253 1.743 1.294 2.308 1.294h4.125s-3.023-5.378-3.943-6.846c-.622-.994-1.452-1.11-2.374-1.11H2.1C2.093 8.042 3 7.065 5 7c2-.065 5.284.006 6.64 0 1.354-.006 2.046-.727 2.33-1.195.284-.468 2.03-3.8 2.03-3.8S8.793 1.995 6.992 2c-1.21.006-1.734.647-2.197 1.41l-2.792 4.6c-.01.017.007.07.017.098 0 0 .35.018.878.186z" /><</symbol><symbol id="iconset-bubble" viewBox="0 0 18 18"><path d="M6.292 13.952l.34-.503.577.1c.43.07.86.11 1.29.11 3.65 0 6.56-2.65 6.56-5.84 0-3.186-2.91-5.836-6.57-5.836-3.657 0-6.566 2.65-6.566 5.836 0 1.918 1.054 3.7 2.83 4.84l.437.256c0 .18-.375 2.06-.57 2.54-.054.132 1.12-.71 1.66-1.51zm-2.01-.426C2.3 12.254 1 10.182 1 7.832 1 4.06 4.358 1 8.5 1 12.642 1 16 4.06 16 7.832c0 3.774-3.36 6.833-7.5 6.833-.495 0-.978-.047-1.447-.13-.32.473-2.45 2.172-3.165 2.4-.714.226-.823-.164-.51-.713.313-.548.903-1.95.903-2.696z" /></symbol><symbol id="iconset-checkmark" viewBox="0 0 18 18"><path d="M14.855 5.87c.192-.195.195-.523 0-.722-.19-.194-.51-.2-.706 0l-7.418 7.62-2.88-2.978c-.19-.195-.515-.2-.71-.002-.19.194-.194.525.003.726L6.38 13.85c.095.1.224.15.353.15.128 0 .257-.047.355-.147l7.767-7.982z" /></symbol><symbol id="iconset-checkmark--small" viewBox="0 0 10 10"><path d="M.292 5.078c-.39.4-.388 1.044-.002 1.442l2.038 2.15c.313.344 1.125.526 1.703 0L9.71 2.746c.39-.402.388-1.046 0-1.445-.39-.402-1.014-.4-1.4 0l-5.11 5.39L1.69 5.075C1.31 4.683.68 4.68.293 5.078z"></path></symbol><symbol id="iconset-close" viewBox="0 0 18 18"><path d="M1.737 1.12c-.16-.158-.44-.164-.61.006-.165.165-.172.443-.005.61L7.885 8.5l-6.763 6.764c-.167.167-.16.445.005.61.17.17.45.164.61.005L8.5 9.11l6.763 6.764c.16.158.44.164.61-.006.165-.164.172-.442.005-.61L9.115 8.5l6.763-6.764c.167-.167.16-.445-.005-.61-.17-.17-.45-.164-.61-.005L8.5 7.89 1.737 1.12z" /></symbol><symbol id="iconset-close--small" viewBox="0 0 10 10"><path d="M2.884 1.47c-.394-.394-1.03-.395-1.42-.005-.392.393-.387 1.026.006 1.42L3.586 5 1.47 7.116c-.394.394-.395 1.03-.005 1.42.393.392 1.026.387 1.42-.006L5 6.414 7.116 8.53c.394.394 1.03.395 1.42.005.392-.393.387-1.026-.006-1.42L6.414 5 8.53 2.884c.394-.394.395-1.03.005-1.42-.393-.392-1.026-.387-1.42.006L5 3.586 2.884 1.47z" /></symbol><symbol id="iconset-facebook" viewBox="0 0 18 18"><path d="M7.003 17l-.006-7H4l.006-3h2.997V4.995C7.003 2.408 8.457 1 10.808 1c1.126 0 1.91.082 2.192.12v2.877h-1.447c-1.278 0-1.526.597-1.526 1.472V7h2.866l-.403 3h-2.47l.007 7H7.003z" /></symbol><symbol id="iconset-twitter" viewBox="0 0 18 18"><path d="M12.077 2c-1.812 0-3.282 1.582-3.282 3.534 0 .277.03.547.085.806-2.728-.148-5.147-1.555-6.766-3.693-.283.522-.445 1.13-.445 1.777 0 1.226.58 2.308 1.46 2.942-.54-.02-1.05-.178-1.49-.443v.045c0 1.712 1.13 3.14 2.63 3.465-.28.08-.57.124-.87.124-.21 0-.418-.022-.62-.063.418 1.404 1.63 2.426 3.067 2.455-1.125.94-2.54 1.51-4.078 1.51-.267 0-.528-.02-.785-.05 1.46 1 3.185 1.59 5.04 1.59 6.037 0 9.34-5.39 9.34-10.06 0-.153-.005-.306-.01-.457.64-.5 1.197-1.12 1.637-1.83-.59.28-1.22.47-1.885.557.677-.437 1.198-1.13 1.443-1.955-.633.405-1.336.7-2.084.858C13.88 2.43 13.028 2 12.08 2" /></symbol><symbol id="iconset-googleplus" viewBox="0 0 18 18"><path d="M13.657 13.42c0 .914-.4 1.74-1.202 2.475-.4.354-.916.62-1.545.796-.573.208-1.245.31-2.017.31-1.402 0-2.575-.264-3.52-.795C4.457 15.645 4 14.938 4 14.085c0-.62.2-1.18.6-1.68.43-.59 1.002-1.033 1.718-1.327.658-.324 1.46-.487 2.403-.487.03 0 .798-.15.827-.15-.458-.382-.653-.57-.653-1.04 0-.355.043-.665.214-.93h-.472c-1.058 0-1.903-.574-2.618-1.28-.686-.708-1.03-1.56-1.03-2.565 0-.972.43-1.812 1.288-2.52C7.106 1.37 8.09 1 9.236 1H14l-1.073.796h-1.502c.486.236.872.604 1.16 1.105.284.59.428 1.166.428 1.725 0 1.032-.472 1.9-1.416 2.608-.373.295-.63.546-.773.752-.115.147-.172.383-.172.707 0 .325.444.84 1.33 1.548.573.413 1.002.87 1.288 1.37.258.472.387 1.076.387 1.812zM11.31 4.483c-.145-.705-.46-1.29-.95-1.75-.487-.488-1.06-.73-1.72-.73-.604-.025-1.077.18-1.422.62-.373.46-.517 1.057-.43 1.787.143.73.473 1.337.99 1.824.517.51 1.076.766 1.68.766.66 0 1.162-.243 1.506-.73.373-.486.488-1.082.345-1.787zm.153 10.713c.55-.38.826-.862.826-1.445 0-1.7-2.757-2.05-3.06-2.05-.88 0-1.667.19-2.356.573-.69.403-1.033.873-1.033 1.41 0 .54.304 1.01.91 1.413.58.403 1.295.605 2.15.605 1.13 0 1.983-.167 2.56-.503z" fill-rule="evenodd"/></symbol><symbol id="iconset-external-link" viewBox="0 0 18 18"><path d="M3.006 17C1.898 17 1 16.103 1 14.994V5.006C1 3.898 1.897 3 3.006 3H5.5c.276 0 .5.224.5.5s-.224.5-.5.5H3.006C2.45 4 2 4.45 2 5.006v9.988C2 15.55 2.45 16 3.006 16h9.988C13.55 16 14 15.55 14 14.994V11.5c0-.276.224-.5.5-.5s.5.224.5.5v3.494C15 16.102 14.103 17 12.994 17H3.006zM10 1.5c0-.276.228-.5.51-.5h5.98c.51 0 .51.5.51.51v5.98c0 .282-.232.51-.5.51-.276 0-.5-.228-.5-.51V2.75l-8.095 8.1c-.206.204-.548.197-.75-.004-.207-.207-.205-.545-.002-.748L15.247 2H10.51c-.282 0-.51-.232-.51-.5z" /></symbol><symbol id="iconset-link" viewBox="0 0 18 18"><path d="M8.72 13.36l-2.044 2.017c-.954.952-2.418.797-3.05.083L2.53 14.18c-.942-.93-.59-2.446 0-3.072.96-1.017 3.698-3.656 3.698-3.656.952-.975 2.245-1.038 3.27 0 1.023 1.038.97.997.97.997.262.26.64.21.835 0 .195-.22.16-.58-.102-.85l-.94-.93c-1.31-1.35-3.322-1.3-4.61 0l-3.68 3.75c-1.28 1.26-1.28 3.38 0 4.68l.92.93c.627.63 1.45.96 2.337.96.887 0 1.71-.335 2.334-.966L9.4 14.17c.263-.266.263-.555 0-.82-.263-.266-.673 0-.673 0zm.56-8.72l2.044-2.017c.954-.952 2.418-.797 3.05-.083l1.095 1.28c.94.93.59 2.446 0 3.072-.96 1.017-3.7 3.656-3.7 3.656-.95.975-2.25 1.038-3.27 0s-.97-.997-.97-.997c-.26-.26-.64-.21-.84 0-.2.22-.16.58.1.85l.944.93c1.31 1.35 3.327 1.3 4.61 0l3.68-3.75c1.284-1.26 1.284-3.38 0-4.68l-.92-.93c-.62-.63-1.443-.96-2.33-.96-.888 0-1.71.334-2.335.965L8.6 3.825c-.262.266-.262.555 0 .82.264.266.674 0 .674 0z" /></symbol><symbol id="iconset-image" viewBox="0 0 18 18"><path d="M1 2.994v12.012c0 .548.446.994.995.994h14.01c.55 0 .995-.445.995-.994V2.994c0-.548-.446-.994-.995-.994H1.995C1.445 2 1 2.445 1 2.994zm-1 0C0 1.894.893 1 1.995 1h14.01C17.107 1 18 1.895 18 2.994v12.012c0 1.1-.893 1.994-1.995 1.994H1.995C.893 17 0 16.105 0 15.006V2.994z"/><path d="M1.38 15.804L5.807 8.24l-.86.007 3.682 6.068c.17.288.573.324.8.073l2.5-2.82-.74.01 4.514 4.832c.188.202.504.213.706.024.203-.19.213-.505.025-.707l-4.515-4.83c-.2-.216-.543-.212-.74.008l-2.5 2.82.8.07L5.8 7.728c-.197-.324-.67-.32-.86.007L.51 15.298c-.137.24-.057.545.18.684.24.14.546.06.685-.178zM12 9c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm0 1c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></symbol><symbol id="iconset-burner" viewBox="0 0 18 18"><path d="M14.24 10.837c-.39.175-.853.28-1.387.28-.27 0-.593-.044-.955-.126-.344-.07-.713-.19-1.093-.32-.284-.1-1.218-.51-1.31-.54-.158-.06-.32-.093-.488-.093-.175 0-.336.038-.493.096-.092.035-1.035.444-1.32.545-.38.136-.748.247-1.093.326-.36.083-.68.127-.95.127-.53 0-.99-.103-1.39-.28-.22-.1-.55-.353-.65-.46-.17-.18-.34-.39-.502-.634-.38-.57-.635-1.22-.712-1.934l-.006.14c.268-1.33 1.078-2.07 2.03-2.07 1.53 0 2.884.31 4.662 1.284 0 0 .266.147.41.147.146 0 .43-.143.43-.143 1.78-.974 3.137-1.282 4.666-1.282.95 0 1.762.74 2.038 2.057l-.002-.14c-.076.72-.33 1.364-.71 1.94-.162.24-.335.453-.507.633-.1.105-.43.36-.657.46zm1.907-.61c.453-.684.76-1.463.853-2.33l-.007-.137C16.635 6.053 15.48 5 14.083 5c-1.672 0-3.175.34-5.093 1.393C7.092 5.34 5.59 5 3.916 5c-1.397 0-2.55 1.053-2.91 2.76L1 7.897c.093.867.4 1.646.853 2.33.33.498.664.846.9 1.036.114.1.332.24.64.38.503.223 1.09.357 1.754.357.346 0 .732-.052 1.154-.15.39-.086.79-.207 1.2-.354.31-.108.6-.223.87-.34.16-.068.6-.248.647-.248.045 0 .474.18.636.25.27.115.56.23.865.338.41.147.813.268 1.195.355.42.1.805.15 1.15.15.666 0 1.25-.13 1.755-.35.31-.14.528-.28.65-.39.228-.18.56-.53.89-1.03zm-9.99-2.604c-.155-.077-.316-.133-.483-.17-.53-.118-1.078-.037-1.605.164-.22.08-.38.164-.48.223l-.24.146.03.28c.07.623.45 1.266 1.22 1.502.34.11.77.117 1.27.05.3-.044.63-.115.95-.206.19-.053.373-.11.54-.167.1-.034.174-.062.22-.078l.735-.285-.628-.477c-.07-.052-.2-.145-.394-.273-.315-.21-.69-.444-1.13-.696l-.02-.013zm.243 1.19s-.447.1-.654.13c-.374.05-.68.046-.878-.017-.367-.114-.48-.485-.48-.485s.76-.2 1.093-.12c.1.02.92.5.92.5zm5.42-1.177c-.437.252-.813.485-1.128.696-.192.128-.322.22-.39.273l-.63.477.74.285c.042.016.117.044.218.078.167.057.35.114.542.167.33.09.652.162.96.205.493.068.92.06 1.27-.05.762-.235 1.146-.88 1.214-1.502l.03-.28-.24-.145c-.1-.06-.263-.142-.475-.223-.52-.2-1.07-.282-1.6-.164-.16.037-.32.093-.48.17l-.02.013zm.7.68c.333-.075 1.09.125 1.09.125s-.11.38-.475.49c-.202.07-.507.07-.88.02-.265-.032-.64-.15-.64-.15s.808-.45.904-.472z" /></symbol></svg></div><div class="success-messages" id="js_success-box-container"></div>
+	<script type="text/javascript">
+		var readOnlyRequest;
+		var cn = "read-only";
+		var cacheBusterParam = "?cb=" + Math.floor(Date.now() / 60000); // update every minute
+		var setReadOnly = function () {
+			document.body.className = (document.body.className === '') ? cn : document.body.className + ' ' + cn;
+		};
+		if (window.XMLHttpRequest) {
+			readOnlyRequest = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			readOnlyRequest = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		readOnlyRequest.onreadystatechange = function() {
+			if (readOnlyRequest.readyState == 4 && readOnlyRequest.status >= 500 && readOnlyRequest.status < 600) {
+				setReadOnly();
+			}
+		};
+    	readOnlyRequest.open('GET', "/ajax/readOnlyMode" + cacheBusterParam);
+    	readOnlyRequest.send();
+	</script>
+	<!--  md5!  --><a class="exit-off-canvas"></a><div class="navwrap--outer js-navwrap--outer"><nav class="js_global-nav-wrap js_top-nav global-nav notransition shown"><div class="global-nav__left global-nav__triggers"><a class="js_mobile-menu-button hide-for-large-up hamburger-trigger " data-ga="[Kinja Menu, Menu Click, js_pageType]"><span class="icon-dustinburger"><span></span><span></span><span></span></span></a><a data-dropdown="global-blog" class="js_menu-button hamburger-trigger hamburger-trigger--desktop" data-ga="[Kinja Menu, Menu Click, js_pageType]"><span class="icon-dustinburger"><span></span><span></span><span></span></span></a><a href="#" id="global-search-trigger" class="search-trigger icon--svg u-prepended u-highlighted--onhover u-undecorated" data-dropdown="global-search" data-ga="[Kinja Menu, Search Click, js_pageType]"><svg class="svg-icon svg-search"><use xlink:href="#iconset-search" /></svg><svg class="svg-icon svg-close"><use xlink:href="#iconset-close" /></svg></a></div><div class="global-nav__right global-nav__triggers js_right-user-bar"></div><div class="global-nav__center row"><div class="logo-wrapper large-6 columns large-offset-4"><a href="//legal.kinja.com" class="logo" title="Kinja Legal" data-ga="[Kinja Menu, Logo/Blog Title Click, js_pageType]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--2_jBZRy2--/c_fit,fl_progressive,q_80,w_600/19gprfzwjxj20png.png" alt="" /></a><div class="follow-controls follow-controls--header js_follow-controls js_follow-blog-controls" data-blogid="90984381"><a href="#" class="js_followblogforuser follow-controls__link icon--svg u-prepended u-highlighted" title="Follow Kinja Legal" data-ga="[Kinja Menu, Follow Link Click, js_pageType]"><svg class="svg-icon svg-add"><use xlink:href="#iconset-add" /></svg>Follow</a><a href="#" class="js_unfollowblogforuser follow-controls__link hide icon--svg u-prepended u-highlighted" title="Unfollow Kinja Legal" data-ga="[Kinja Menu, Unfollow Link Click, js_pageType]"><svg class="svg-icon svg-checkmark"><use xlink:href="#iconset-checkmark" /></svg>Following</a></div></div></div><div class="proxima f-dropdown content nav-dropdown main-menu hide-for-medium-down " id="global-blog" data-dropdown-content><div id="js_blogmenu--dropdown"><div class="top-tools"><div class="search show-for-medium-down"><form method="GET" class="search search-simple" action="/search" onsubmit="window.ga('send', 'event', 'Search', 'Submit', 'permalink');"><div class="input-with-icon"><span class="icon--svg"><svg class="svg-icon svg-search"><use xlink:href="#iconset-search" /></svg></span><input type="text" placeholder="Search Kinja Legal" name="q" class="mbn" autocomplete="off" data-focus-on-display/></div></form></div><div class="divider show-for-medium-down"></div><div class="js_login-links show-for-medium-down login-links"><a href="#" class="login-button button inverse js_login-link list-control" data-ga="[User Menu, Login/Signup Click, js_pageType]">Log in / Sign up</a></div><ul class="show-for-medium-down"><li class="js_follow-controls js_follow-blog-controls follow-controls--blog-menu" data-blogid="90984381"><a href="#" class="js_followblogforuser button list-entity__button--follow list-control follow-state following list-control--active hide"><span>Follow Kinja Legal</span><svg class="svg-icon small svg-add--small"><use xlink:href="#iconset-add--small" /></svg></a><a href="#" class="js_unfollowblogforuser button list-entity__button--following list-control follow-state following list-control--active hide"><span>Following Kinja Legal</span><svg class="svg-icon small svg-checkmark--small"><use xlink:href="#iconset-checkmark--small" /></svg></a></li></ul></div><ul class="gmg-blog-list"><li class="title">Blogs you may like</li><li><a href="http://deadspin.com" data-ga="[Kinja Menu, Blogs You May Like Click, Deadspin]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--hYvXo8Vk--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/rnxqtvv6advgidzfs6am.png" width="16" height="16" class="icon icon-prepend" />Deadspin</a></li><li><a href="http://gawker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gawker]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--Di2kTRut--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/my2vnuuejg3jt9yqbx3z.png" width="16" height="16" class="icon icon-prepend" />Gawker</a></li><li><a href="http://gizmodo.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gizmodo]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--O07tru6M--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdj3buryz5nuzyf2k620.png" width="16" height="16" class="icon icon-prepend" />Gizmodo</a></li><li><a href="http://io9.com" data-ga="[Kinja Menu, Blogs You May Like Click, io9]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--uWw7HXhn--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/eh1hvjxamru5z6aobgwc.png" width="16" height="16" class="icon icon-prepend" />io9</a></li><li><a href="http://jalopnik.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jalopnik]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--w1bSCXke--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/aqhdzcldymb9mkltfhxh.png" width="16" height="16" class="icon icon-prepend" />Jalopnik</a></li><li><a href="http://jezebel.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jezebel]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--7IykX4GV--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/pch44wvo0v6acpdlt0f6.png" width="16" height="16" class="icon icon-prepend" />Jezebel</a></li><li><a href="http://kotaku.com" data-ga="[Kinja Menu, Blogs You May Like Click, Kotaku]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--q13K9fyk--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/ghxlwgdztvqerb4zptdx.png" width="16" height="16" class="icon icon-prepend" />Kotaku</a></li><li><a href="http://lifehacker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Lifehacker]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--N2eqEvT8--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/u0939doeuioaqhspkjyc.png" width="16" height="16" class="icon icon-prepend" />Lifehacker</a></li><li><a href="http://sploid.gizmodo.com/" data-ga="[Kinja Menu, Blogs You May Like Click, Sploid]"><img data-src="https://i.kinja-img.com/gawker-media/image/upload/s--yCML1MxC--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdmagj52rhclnn6dfoig.png" width="16" height="16" class="icon icon-prepend" />Sploid</a></li></ul></div></div><div class="f-dropdown content nav-dropdown search-dropdown hide-for-medium-down" id="global-search" data-dropdown-content><form method="GET" action="/search" data-ga="[Search, Submit, js_pageType]"><div class="input-with-icon icon--svg"><svg class="svg-icon svg-search"><use xlink:href="#iconset-search" /></svg><input id="global-search-input" type="search" name="q" placeholder="Search Kinja Legal" autocomplete="off" /></div></form></div><div class="proxima f-dropdown nav-dropdown content notif-menu" id="js_notifications--dropdown" data-dropdown-content></div><div class="js_global-user scrollable-container noskimlinks noskimwords"><div class="proxima f-dropdown nav-dropdown content user-menu user-menu--mobile" id="js_usermenu--dropdown" data-dropdown-content></div></div></nav></div><div class="row page js_page"><div class="large-4 columns sidebar hide-for-medium-down"><div class="sidebar-container js_sidebar-actual-container"><div class="sidebar-content js_sidebar-container js_sidebar"><div id="js_leftrailmodule--popular" class="sidebar-module js_leftrailmodule leftrailmodule--popular"><header><h2><strong>Popular</strong> from Kinja Legal</h2></header><div class="sidebar-item"><a href="http://legal.kinja.com/content-guidelines-90185358" data-ga="[Popular stories click, position 1, js_pageType]"><div class="meta meta--source"><strong>Kinja Legal</strong> &middot; Kinja Legal</div><h4 class="headline">Content Guidelines</h4><div class="meta"><time>2/08/13 12:11pm</time></div></a></div></div><div id="js_leftrailmodule--preloadedad" class="sidebar-module js_contained-ad-container contained-ad-container js_leftrailmodule invisible"><div class="contained-ad-shaft js_contained-ad-shaft"><div class="contained-ad-wrapper js_contained-ad-wrapper notransform"><div class="ad-pad"></div><div class="ad-unit js_ad-unit ad-left-rail js_ad-left-rail"><div id="ad-container-75684065" class="ad-container js_ad-container" data-zone-type="LEFT_RAIL"></div></div><div class="ad-pad"></div></div></div></div></div></div></div><script>markUserTime('Content - Before main column');</script><div class="large-8 columns main-column js_main-column"><div id="fb-root"></div><section class="branch-wrapper"><div class="js_ie-message hide"></div><div id="editorplaceholder" class="editorplaceholder"></div><div class="post-wrapper js_post-wrapper "  ><article class="post hentry js_post_item status-published post-item-permalink js_amazon_module" data-id="90161644" id="post_90161644" data-model="%7B%22id%22%3A90161644%2C%22isBlip%22%3Afalse%2C%22authorBlogId%22%3A788%2C%22authorId%22%3A%225724294337227169076%22%2C%22defaultBlogId%22%3A90984381%2C%22contentType%22%3A%22Text%20only%22%2C%22sharedPostId%22%3Anull%2C%22parentId%22%3Anull%2C%22parentAuthorId%22%3Anull%2C%22starterId%22%3A90161644%7D"><div class="row content-wrapper"><div class="column"><div class="row js_kinja-share-wrapper hide"><div class="column post-tools-above"><a href="#" class="js_kinja-share replywithshare inline-block"><span class="icon--svg"><svg class="svg-icon svg-reload"><use xlink:href="#iconset-reload" /></svg></span></a></div></div><header class=""><h1 class="headline hover-highlight entry-title"><a href="http://legal.kinja.com/kinja-terms-of-use-90161644" data-id="" onClick="window.ga('send', 'event', 'Permalink page click', 'Permalink page click - post header', 'standard');">Kinja Terms of Use</a></h1></header><div class="meta-container without-dropdown"><div class="meta-avatar js_author" data-authorid="5724294337227169076" data-blogid="788"><span class="meta-tools"><div class="view-count-container"></div><a data-likecount="true" href="#" data-analytics-target="starterTop" class="js_like button-recommend-post hover-icon icon--svg u-darkened--onhover js_like_icon" title="Recommend"><span class="js_like_count">151</span><svg class="svg-icon svg-star"><use xlink:href="#iconset-star" /></svg></a></span><div class="floated-container img-30" data-dropdownhover-container><div class="avatar avatar-container js_avatar-container"><span class="icon--svg"><svg class="svg-icon small svg-checkmark--small"><use xlink:href="#iconset-checkmark--small" /></svg></span><span class="img-border"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--PCdXcq10--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/17jcxip9se2h9png.jpg" /></span><span class="avatar-default hide"></span></div><div class="txt"><span class="display-name">Kinja Legal</span><div class="second-line post-meta"><span class="publish-time js_publish_time" data-publishtime="1360343340782"><a class="hover-switch" href="http://legal.kinja.com/kinja-terms-of-use-90161644" target="_self" ><span class=" published updated">2/08/13 12:09pm</span></a></span></div></div></div></div><div class="post-dropdown-ct js_post-dropdown-ct js_post-dropdown-ct-sticky"><ul id="dropdown-90161644" class="f-dropdown proxima js_post-dropdown js_follow-controls js_user-follow-controls whitelisted-links" data-postid="90161644" data-starterid="90161644" data-authorid="5724294337227169076" data-blogid="788" data-sourceblogid="90984381" data-dropdown-content><li class="js_edit-post hover-icon hide readonly-hide"><a href="#" rel="nofollow" class="icon--svg u-darkened--onhover u-prepended"><svg class="svg-icon svg-write"><use xlink:href="#iconset-write" /></svg>Edit</a></li><li class="js_delete-post hover-icon hide readonly-hide"><a href="#" rel="nofollow" class="icon--svg u-darkened--onhover u-prepended"><svg class="svg-icon svg-close"><use xlink:href="#iconset-close" /></svg>Delete</a></li><li class="js_invite-to-post-manually hover-icon hide"><a href="#" rel="nofollow" class="icon--svg"><svg class="svg-icon svg-mail"><use xlink:href="#iconset-mail" /></svg>Invite manually</a></li><li class="js_promote hover-icon hide readonly-hide"><a href="#" rel="nofollow" class="icon--svg u-darkened--onhover u-prepended"><svg class="svg-icon svg-star-circle"><use xlink:href="#iconset-star-circle" /></svg>Promote</a></li><li class="js_dismiss hover-icon hide readonly-hide"><a href="#" class="dismiss icon--svg u-darkened--onhover u-prepended" rel="nofollow" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Dismiss click');"><svg class="svg-icon svg-user-remove"><use xlink:href="#iconset-user-remove" /></svg>Dismiss</a><a href="#" class="undismiss icon--svg u-darkened--onhover u-prepended" rel="nofollow" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Undismiss click');"><svg class="svg-icon svg-user-remove"><use xlink:href="#iconset-user-remove" /></svg>Undismiss</a></li><li class="js_block hover-icon hide disabled readonly-hide" data-blogid="90984381" data-targetblogid="788" data-targetblogname="legal" data-targetauthorname="Scott Kidder"><a href="#" rel="nofollow" class="icon--svg u-darkened--onhover u-prepended"><svg class="svg-icon svg-disabled"><use xlink:href="#iconset-disabled" /></svg><span>Block for legal</span></a></li><li class="js_hide-post hover-icon hide readonly-hide"><a href="#" rel="nofollow" class="icon--svg u-darkened--onhover u-prepended"><svg class="svg-icon svg-disabled"><use xlink:href="#iconset-disabled" /></svg>Hide</a></li><li class="js_kinja-share-block readonly-hide"><a class="js_kinja-share hover-icon icon--svg u-darkened--onhover u-prepended" href="#" rel="nofollow"><svg class="svg-icon svg-external-link"><use xlink:href="#iconset-external-link" /></svg>Share to Kinja</a></li><li class="js_go-to-permalink"><a class="hover-icon icon--svg u-darkened--onhover u-prepended" href="http://legal.kinja.com/kinja-terms-of-use-90161644" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Go to permalink click');"><svg class="svg-icon svg-link"><use xlink:href="#iconset-link" /></svg>Go to permalink</a></li><li class="repostblock js_repostblock hide"></li></ul><a href="#" target="_self" class="post-dropdown-trigger js_post-menu-toggler icon--svg u-highlighted--onhover" data-dropdown="dropdown-90161644" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down click');"><svg class="svg-icon svg-chevron chevron--bottom"><use xlink:href="#iconset-chevron-right" /></svg></a></div></div><div class="post-content entry-content "><p class="first-text" data-textannotation-id="4efd1ceb3467d7661402539adfb95995">Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you are agreeing that you, and each person you allow to access Kinja through your account, will abide by the terms of the following User Agreement, which is summarized here, and set forth in its entirety below. This User Agreement is between you and Kinja (“We” or the “Company”), and it governs your access to and use of the services, websites, and applications offered by Kinja (the &quot;Service&quot;). Your access to and use of the Service is conditioned on your acceptance of and compliance with this agreement.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="23fa94001939f427d62e72682f7433f8">Summary</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="09a7a48a6a48e6a28120a8d95c88698a"><strong>Using Kinja, User Conduct, and Your Content</strong></p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="40434a9b83726267634f0090da0a3b8f">Anything you post on Kinja is public. So make sure you’re comfortable with the idea that anyone can view anything you post here.</li><li data-textannotation-id="94d324615c982ffcc6e2e14f1ea5770b">You shouldn’t post any content or use our service to do anything illegal or malicious.</li><li data-textannotation-id="1755edec717091c94583709f3567d92c">If it turns out any of your content or use <em>is</em> illegal or malicious, Kinja is not responsible — you’re responsible.</li><li data-textannotation-id="c3e8329a5f1172da00a70181475fef73">Please do not hack, attack, or copy Kinja or our services.</li><li data-textannotation-id="7b795b0dfdc32bfbd825981e1a1c2a6a">While we wouldn’t do it without good reason, ultimately Kinja may remove your content or terminate or suspend your account at its sole discretion.</li><li data-textannotation-id="1efb7c7e266c70ba0099857d7492f8ad">If disputes arise between you and anyone other than Kinja, we have no obligation to participate or assist either party.</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="4de52045f055fc1de3f97bcd8c3a621c"><strong>Licensing Agreements</strong><a href="https://docs.google.com/a/gawker.com/document/d/1ZT7WD4tmP0j-jkmpOQnC7bgyrATjyz0vMC2Q3pWLYOQ/edit#bookmark=id.451mtyb6sriy" target="_blank"><br /> </a>You own the content that you create on Kinja, however Kinja may distribute or use that content in a variety of ways. Examples include:</p><div class="ad-unit js_ad-unit hide-contents ad-mobile js_ad-mobile">
+	<div class="ad-mobile-inner">
+		<p class="ad-label proxima"><small class=" proxima">Advertisement</small></p>
+		<div id="ad-container-66273306" class="ad-container js_ad-container" data-zone-type="MOBILE"></div>
+		<p class="ad-label-bottom"></p></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="45a5782bd92afcda0df9083f12c895fd">Your post may be selected to be featured on another Kinja site by a staff member or editor</li><li data-textannotation-id="f07984c6779514a399e955b095672fb5">Any Kinja user can repost any content you create to their own Kinja blog, however it will link to your blog</li><li data-textannotation-id="63148c79e82e431d70126f994e2543e7">If you post a favorable review of a company or its product, the company may pay us to feature your post across Kinja</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="4a5ec2c55c0a90e54dc58ea9e60f9285"><strong>Advertising</strong><br /> You may see advertising in and around Kinja. In each of these cases, we aim to respect your copyright and privacy and ensure you have an uncluttered experience. Examples include:</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="d40ff6eb1d9d2dcf3aa22a1c18089ef9">We will insert ads in and around the Kinja platform and content experience where it makes sense, however, we will not place any ads on your blog</li><li data-textannotation-id="8b2d767bdd12d566973d2541349efe0c">We will insert affiliate links into your content where it makes sense, however, if you insert your own affiliate codes then we won’t remove them</li><li data-textannotation-id="a791f03e42790760c95289e97ed9468e">Your content may be used in ads with full credit and link back to you</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="1b75ac4d7ee9482c63030ae68f08eb89"><strong>Privacy</strong><br /> We do our best to protect your personal information, and store it only as long as necessary. We do reserve the right to reveal your personal information if the law requires us to.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="d781b4ac35bf745a95c0661a8fd0d67a"><strong>Copyright Policy</strong><a href="https://docs.google.com/a/gawker.com/document/d/1ZT7WD4tmP0j-jkmpOQnC7bgyrATjyz0vMC2Q3pWLYOQ/edit#bookmark=id.mba34b8ulp8t" target="_blank"><br /> </a>Kinja respects the intellectual property rights of others and expects users and contributors to do the same. We will respond to notices of alleged copyright infringement where necessary.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="6cd94e23a24d14282dc310e0cc8b50f2"><strong>Warranty, Disclaimer, Limitations of Liability, and Waivers </strong></p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="f1da0eb2c4b7892d39b5ece647fb01ca">These are exceptions the lawyers make us include to ensure that we are not at risk for significant liabilities. Since we are offering the Service free of charge, we hope you’ll understand.</li><li data-textannotation-id="551c295c4db6cfbba5bc841655f73397">Whenever we make any updates to these Terms, we will update them here and do our best to communicate any material changes to our users.</li></ul>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="f0f6ed813da1892ae58b93b06edc7f29">User Agreement</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="0e70b60c06aefbb84d1a5bd733a4e917">The following agreement (“Terms”) describes the terms on which we offer you access to the Services, defined below.  Capitalized terms used in these Terms shall have the meanings set forth below under “Definitions” or in the text of these Terms. Our offer to allow you to access the Service is conditioned on your agreement to all of the terms and conditions contained in these Terms, including your compliance with the policies and terms linked to (via URLs or hyperlinks) from this Agreement, such as our <a href="http://legal.kinja.com/privacy-policy-90190742" x-inset="1">Privacy Policy</a> and our <a href="http://legal.kinja.com/content-guidelines-90185358" x-inset="1">Content Guidelines</a>.  If you do not agree to be bound by these Terms in their entirety, you must cease accessing or otherwise using the Services in any way.  Your use of any of the services constitutes your agreement to these Terms.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="34a3000f225b54cedd329a1228567b0a">We may amend these Terms at any time in our sole discretion, effective upon posting the amended Terms at this URL where the prior version of these Terms was posted or by communicating these changes through any written contact method we have established with you.  Your use of the Services following the date on which such amended Terms are published will constitute consent to such amendments.  However, if you cease using the Services upon such publication, your relationship with us will continue to be controlled by the previous version of these Terms.  You agree that you will periodically check this page for updates to these Terms, and read the messages we send you to inform you of any changes.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="e0173e012a6f059cf976fd4f5b523e71">DEFINITIONS</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="5348645b72ad3e3e616396b9cf271f9d"><strong>“Company”</strong> or “Kinja” or “We” shall mean each of Kinja, Gawker Media, LLC, Blogwire KFT, and/or any of their affiliates, individually and collectively, doing business as Kinja or otherwise.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="cd9905efee55bd2c5a5a8836b2b1ea79"><strong>“Company Parties”</strong> shall mean the Company, its affiliates and subsidiaries, and any of their directors, employees, agents, attorneys, third-party content providers, distributors, licensees or licensors.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="bc56a6449014b00b8b99dd518a17cd73"><strong>“Service”</strong> or “Services” shall mean any of the internet based or other services offered by the Company, including, but not limited to, those described in this Agreement, whether through a website owned or controlled by the Company, through a social networking system, a mobile application, on your cellphone or otherwise.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="857e003e857540efdf61b4a4bf900988"><strong>“User Contributed Content”</strong> or “Content” shall mean each and every item of content or other material (whether images, links, documents, text, writings, photographs, graphics, videos, or files) uploaded by a user through the Service or otherwise integrated into the Service by a user.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="911cfa3e0475e9361cf52865bed9a827">1. Using Kinja, User Conduct, and Your Content</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="f08ec027102728d2b7c147c0218ff259"><em>Eligibility:</em> You may use our Services only if you can form a binding contract with Kinja in compliance with the Agreement.  In order to become a “Registered User” (by creating an account), Kinja requires an individual to be at least eighteen (18) years old and not have a previous account terminated by Kinja or otherwise have had his or her access to the Services terminated by Kinja .  It is a violation of the Agreement to provide false or misleading information to Kinja in connection with the creation of an account.  If you would like to report an account registered for a minor, please email help [at] gawker.com.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="6684387047056f756e7025c80a8e3ae0"><em>User Responsibilities:</em> You are solely responsible for your use of our Service, for any Content you submit to us, any interactions with other Kinja users, and for any consequences thereof.  Content you submit will be viewable by other users of the Service and through third party services and websites.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="17b4bdbf3ec865d1888b0aa66b1d5b38">You should only provide Content that you are comfortable sharing with others under these Terms, and that does not violate any third-party’s rights of any kind, including without limitation, any intellectual property rights, rights of privacy, or publicity rights. Unless provided otherwise under a separate agreement with Kinja, you agree to abide by the <a href="http://legal.kinja.com/content-guidelines-90185358" x-inset="1">Content Guidelines</a> located here: <a href="http://legal.kinja.com/content-guidelines-90185358" x-inset="1">Content Guidelines</a>.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="66597f82e34aa1573f73cdacf9999720">Kinja reserves the right, but is not obligated, to reject and/or remove any Content that Kinja in its sole discretion, including, but not limited to, violations of these Terms or <a href="http://legal.kinja.com/content-guidelines-90185358" x-inset="1">Content Guidelines</a>. Kinja reserves the right, but has no obligation, to monitor disputes between you and other users. Kinja shall have no liability for your interactions with other users, or for any user’s action or inaction.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="6879917948baa5b2e46aee9a90179156"><em>User Conduct:</em> In exchange for your being able to use the Services, you agree to be bound by the following obligations:</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="91bb81f7bd64320591d6f73920207573">1. Registration.</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="afbd31bb3c117bed00cb3447ba55ce92">Even if you choose to create an anonymous account, you are still agreeing to all of these Terms.</li><li data-textannotation-id="6e43a19b2a6d936d41d2c19633e87618">You may not:<ul><li data-textannotation-id="458088b3e40e1311b5538a80ba37f1da">use a false information or an account owned or controlled by another person with the intent to mislead other users maliciously by impersonating that person or for any other reason;</li><li data-textannotation-id="8ab8d524a3007c3b0aa519bba8998f5f">use as a User ID a name subject to any rights of a person other than yourself without appropriate authorization or in violation of our <a href="http://legal.kinja.com/content-guidelines-90185358" x-inset="1">Content Guidelines</a>; or</li><li data-textannotation-id="1f04d00d97c95fc24e70412e46dc2eee">otherwise submit false or misleading information to the Company.</li></ul></li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="2565566b553962d01b966a456c68a2fe">2. No Changes to the Software/Prohibited Uses.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="247f96410bb3003d897e0106e34e871c">You may not and may not allow any third party to:</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="bbb6322e2999f38db2c984d8fc30ac19">modify, adapt, disassemble, decompile, translate, reverse engineer or otherwise attempt to discover the source code or structure, sequence and organization of the Services or any portion of any website on which the Services are offered (except where the foregoing is required by applicable local law, and then only to the extent so required under such laws);</li><li data-textannotation-id="3aa5cab2ef46fb625848f5f81a3b8e43">use the Service in any manner that could damage, disable, overburden, or impair the Service or another user's use of the Service;</li><li data-textannotation-id="6da6f99119f0d551544e9dd588e17dfe">remove, obscure or change any copyright, trademark, hyperlink or other proprietary rights notices (“Notices“) contained in or on the Service or any website on which the Service is offered, Company code embeddable or embedded on a third party web site, and/or Company software;</li><li data-textannotation-id="4ea4cc90e77a8c12fc7e61c8f8d27206">submit any content or material that falsely express or imply that such content or material is sponsored or endorsed by the Company; or</li><li data-textannotation-id="09685f34b8516e5d086d9aec5d3a64d6">use the Services to violate the security of any computer network or transfer or store illegal material.</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="952d8e36ff38d7dab4df51528e08d936">3. Usage Rules.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="314a80cd564293eb0e53bde8d97bf0c8">You agree that your use of and conduct on the Service (including any forum, message board, chat or other communication feature), and your User Contributed Content shall be lawful and will not:</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="7c4237db5243df2b74627ff5e2a997bf">violate the contractual, personal, intellectual property or other rights of any party, or promote or constitute illegal activity;</li><li data-textannotation-id="1253516c326a4e3b004d4f5405914840">be in violation of these Terms, any local, state, federal or international law, rule or regulation or the rules of conduct posted with respect to any individual feature of the Services;</li><li data-textannotation-id="dc5bfe013d737af9eaada2e8d0c1c5ac">create user accounts by automated means or under false pretenses or mislead others as to the origins of your communications;</li><li data-textannotation-id="5485b6a15a8d46d31c8fe2afed5e737d">trick, defraud or mislead the Company or other users, especially in any attempt to learn sensitive account information such as passwords;</li><li data-textannotation-id="0148e6e064893d0775bf3c6d9514ae98">make improper use of the Company’s support services or submit false reports of abuse or misconduct;</li><li data-textannotation-id="a110830cf302f1e21a62f789ad78eeda">engage in promoting any pyramid schemes or other multi-tiered marketing schemes or engage in promoting any websites or services that are deemed spam, malware, or contain objectionable material in the Company's sole discretion;</li><li data-textannotation-id="d7822b964035f2baf48ce063010316a4">create or transmit unwanted electronic communications such as “spam,” to other users or members of Service or otherwise interfere with other users' or members' enjoyment of the Service;</li><li data-textannotation-id="c242ee057fc76b47474c8f4fc218e8b0">disseminate or transmit viruses, worms, Trojan horses, RATs, keyboard loggers, time bombs, spyware, adware, cancelbots, passive collection mechanisms (“PCMs”), or any other malicious or invasive code or program or upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including, without limitation, clear graphics interchange formats (&quot;gifs&quot;), 1x1 pixels, web bugs, cookies or other similar devices;</li><li data-textannotation-id="14ea16c58b56d817d44fb6e16e352016">copy or adapt the Service’s software including but not limited to Flash, PHP, HTML, JavaScript or other code;</li><li data-textannotation-id="1ff039a843a960358a23c7847dba5748">reverse engineer, decompile, reverse assemble, modify or attempt to discover any software (source code or object code) that the Service create to generate web pages or any software or other products or processes accessible through the Service;</li><li data-textannotation-id="00f2bf6fd09350febdcd909cef36bf0d">except as may be the result of standard search engine or Internet browser usage, use or launch, develop or distribute any automated system, including, without limitation, any spider, robot (or &quot;bot&quot;), cheat utility, scraper or offline reader that accesses the Service, or use or launch any unauthorized script or other software;</li><li data-textannotation-id="bcda95443d21574bd56e40f804ddca20">cover or obscure any notice, banner, advertisement or other branding on the Service;</li><li data-textannotation-id="b111a7807ed40fb799f6789a24b2afbd">disguise the source of your User Contributed Content or other information you submit to the Service;</li><li data-textannotation-id="d6c6d67f8f2a959f49e679291102fd73">interfere with or circumvent any security feature of the Service or any feature that restricts or enforces limitations on use of or access to the Service, Content or the User Content;</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="b752701a454da20f2e5252e53b116d76">4. You agree that you shall be responsible for any consequences (including a responsibility to indemnify the Company for damages it may suffer) arising in the event that any use of and conduct on the Service (including any forum, message board, chat or other communication feature), and your User Contributed Content:</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="bbed99312f8a05840b44c5971d775f3e">includes any offensive comments that are connected to race, national origin, gender, sexual preference or physical handicap;</li><li data-textannotation-id="e7056e6232c492d9fd38092e291388c2">includes profanity or any obscene, indecent, pornographic, sexual or otherwise objectionable content or language;</li><li data-textannotation-id="c56b71ba735ddbd3f8ee8223883e1504">defames, libels, ridicules, mocks, disparages, threatens, harass, intimidates or abuses anyone;</li><li data-textannotation-id="a256de0291b73a9826852918c2268b48">promotes violence or describes how to perform a violent act;</li><li data-textannotation-id="3393611a3b5cd5dcad3e0a60de2a8de8">reveals any personal information about another individual, including another person's address, phone number, e-mail address, credit card number or any information that may be used to track, contact or impersonate that individual;</li><li data-textannotation-id="70383c7b2dd809e1b734f6ff776292f0">attempts to impersonate any other party;</li><li data-textannotation-id="6c16f35384b7735df5ad1fc12ffc1725">or uses tools which anonymize your internet protocol address (e.g. anonymous proxy) to access the Service;</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="2b86438780b5481ba471a3b9a7de342c">5. The Company does not control or endorse the content, messages or information found in User Contributed Content or external sites that may be linked to or from a Company product or its forum and, therefore, the Company specifically disclaims any responsibility with regard thereto.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="c17b2ac1dd9b3e17fba01565d21872e6">6. The Service may contain or deliver advertising and sponsorships. Advertisers and sponsors are responsible for ensuring that material submitted for inclusion is accurate and complies with applicable laws. We are not responsible for the illegality or any error, inaccuracy or problem in the advertiser's or sponsor's materials.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="1a533ff04a8f8fb76a0797b491dc59d1">2. Licensing Agreements</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="1df11a154fd749bae19b21bf64000931"><em>User License:</em> You retain your rights to any Content you submit to or through the Service. By posting any Content on the Service, however, you expressly grant, and you represent and warrant that you have all rights necessary to  and do grant, to Kinja a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, reproduce, modify, publish, list information regarding, edit, translate, distribute, syndicate, publicly perform, publicly display, and make derivative works of all such Content and your name, voice, and/or likeness as contained in your Content, in whole or in part, and in any form, media or technology, whether now known or hereafter developed, for use in connection with the Service and Kinja’s (and its successors, assignees, or affiliates) business, including without limitation for promoting and redistributing part or all of the Service (and derivative works thereof) in any media formats, whether now known or hereafter developed, and through any media channels or search engines for commercial and noncommercial purposes alike. You also hereby grant each user of the Service a non-exclusive license to access your Content through the Service, and to use, reproduce, distribute, display and perform such Content as permitted through the functionality of the Service and under these Terms.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="71f0774e275582bc8665af46ac502d2a">Such additional uses by Kinja, or other companies, organizations or individuals who partner with or use Kinja, may be made with no compensation paid to you with respect to the Content that you submit, post, transmit or otherwise make available through the Service. We may add or insert affiliate and partner code into Content that you submit. We may modify or adapt your Content in order to transmit, display or distribute it over computer networks and in various media and/or make changes to your Content as are necessary to conform and adapt that Content to any requirements or limitations of any networks, devices, services or Third Party Services, and you are responsible for reading and understanding those Third Party Services' privacy policies.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="a00b04d86da003e08b4650b507a0a1b5"><em>Site License:</em> All right, title, and interest in and to the Service (excluding Content provided by users) shall remain the exclusive property of Kinja and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Nothing in the Terms gives you a right to use the Kinja name or any of the Kinja trademarks, logos, domain names, and other distinctive brand features. Any feedback, comments, or suggestions you may provide regarding Kinja, or the Services is entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without any obligation to you.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="db5bebdd4260afcf2be009bb3d8a1f5a">Subject to your acceptance of these Terms, Kinja grants you a non-exclusive, limited, non-transferable, freely revocable license to use the Service for your personal, noncommercial (i.e. you may not use the Service to provide or serve or permit others to provide or serve ads or contests or sweepstakes) use only and as permitted by the features of the Service. Kinja reserves all rights not expressly granted herein in the Service and the Kinja Content. Kinja reserves the right to terminate your license to use the Service at any time and for any reason or in the future to charge for commercial usage.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="e19d86d5cb9c7d3dd62fda5e18ad41c4">3. Privacy</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="530e9ed54452ae16b843c70ca6c60620">We care about the privacy of our users. You understand that by using the Service you consent to the collection, use, and disclosure of your personally identifiable information (see “ Information Sharing” below) and aggregate data as set forth in our <a href="http://legal.kinja.com/privacy-policy-90190742" x-inset="1">Privacy Policy</a>, and to have your personally identifiable information collected, used, transferred to and processed in the United States and abroad.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="ea76c193415a4920db0002569b370009">4. Information Sharing</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="ea48fe6898e14faeeb709d7c1a56909d">Kinja has technical, administrative and physical safeguards in place to help protect against unauthorized access to, use or disclosure of user information we maintain. Under our security practices and policies, access to personally identifiable information is authorized only for those who have a business need for such access, and sensitive records are to be retained only as long as necessary for business or legal needs and destroyed before disposal.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="7fff00442c7ca08f10db52878333fdd9">Although we work hard to protect personal information that we collect and store, no program is one hundred percent secure and we cannot guarantee that our safeguards will prevent every unauthorized attempt to access, use or disclose personal information.  If you become aware of a security issue, please email us at legal [at] gawker [dot] com.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="e228f1abfada0e2beb4a78455be371ad">Our servers automatically record information (&quot;Log Data&quot;) created by your use of the Services. Log Data may include information such as your IP address, browser type, operating system, the referring web page, pages visited, location, your mobile carrier, device and application IDs, search terms, and cookie information. We receive Log Data when you interact with our Services, for example, when you visit our websites, sign into our Services, interact with our email notifications, use your Kinja account to authenticate to a third-party website or application, or visit a third-party website that includes a Kinja button or widget. Kinja uses Log Data to provide our Services and to measure, customize, and improve them.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="3a3e8d894139c7ac4333f1a677fa87d6">The Company reserves the right to reveal your identity (or whatever information we know about you) in the event of a complaint or legal action arising from any message or other content posted by you or where such information is otherwise relevant.  The Company may log all internet protocol addresses accessing the Services and other information about users' access, and maintain backup copies of content indefinitely.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="9a172ce5f7c50180d339a5464e47c7e4">5. Advertisements</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="b00c34ad0bef826d0e3fd551679cf448">As part of the Service, we may include advertisements and/or content provided by Kinja and/or a third party, which may be targeted to the Content or information on the Service, queries made through the Service, or other information. The types and extent of advertising by Kinja on the Service are subject to change. In consideration for Kinja granting you access to and use of the Service, you agree that Kinja and its third party providers and partners may place such advertising on the Service or in connection with the display of Content or information from the Service whether submitted by you or others.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="7f9490417db1a6a4e065e28969155348">Contests, Sweepstakes, and Promotions: From time to time you may be able to participate in contests, giveaways, or other similar promotions we sponsor. Participation may require sharing your personal information with us or third parties sponsoring the contest, giveaway, or promotion, and you should check the rules to determine how your information will be used and shared with others.  The Company may announce rules in connection with any such opportunity, but regardless of whether specific rules are announced, all such opportunities will be controlled by the Company’s “Contest Policies“ set forth here: <a href="http://legal.kinja.com/contest-guidelines-90974785" x-inset="1">Contest Policies</a>.  Any rules announced at the time of a contest will be in addition to the Contest Policies.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="5d42e740018110f9ba94466b79a4e10b">In addition, as a condition to receiving any awards or prizes, you may be required to provide additional information, to sign a release, or to authorize the use of certain information about you in marketing materials.  If a third party administers the contest, your participation may be subject to additional terms and conditions and that third party's privacy policy.  We are not responsible for such third parties.  You should carefully review the Contest Policies and these third parties' terms and conditions before deciding whether to participate in a contest publicized through the Service.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="eb4a8d2d2f87a2282e4af07a707a924a">6. Third-Party Links Disclaimer</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="704b49fb08d04597b9bcd8cf61d84faf">The Service may contain links to third-party websites, advertisers, services, special offers, or other events or activities that are not owned or controlled by Kinja. Kinja does not endorse or assume any responsibility for any such third-party sites, information, materials, products, or services. If you access a third party website from the Service, you do so at your own risk, and you understand that these Terms and Kinja’s <a href="http://legal.kinja.com/privacy-policy-90190742" x-inset="1">Privacy Policy</a> do not apply to your use of such sites. You expressly release Kinja from any and all liability arising from your use of any third-party website, service, or Content. Your dealings with or participation in promotions of advertisers found on the Service, including payment and delivery of goods, and any other terms (such as warranties) are solely between you and such advertisers. You agree that Kinja shall not be responsible for any loss or damage of any sort relating to your dealings with such advertisers.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="0decf7ca019fe14a908e7f667b232db3">7. Copyright Policy</h2>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="48cc48ba3c2b109fa2b2cce77d3e436e">If Kinja receives notice that Content posted is unlawful or not in keeping with the Terms or the intended use of the Service, we reserve to right to remove the material. Please note that we will respond only to notices of alleged infringement that comply with the Digital Millennium Copyright Act (“DMCA”). The text of the Act can be found at the<a href="http://www.copyright.gov/" target="_blank"> U.S. Copyright Office Web Site</a>.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="ef97094b283d9c6c728ecff4b3a42794">To file a notice of infringement with us, you must provide a written communication (by email with an attached and signed PDF or by fax) that sets forth the items specified below. Please do not send us regular mail, as we may not receive it in a timely fashion.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="39cffc6e0dd49df4aab1e5c1602a35bd">In all cases, if you do not hear a response from us within 10 days of submitting a complaint, please telephone us at (212) 655-9524 x8007 to confirm that we received your original complaint. Spam blockers sometimes devour important emails from strangers! To enable us to address your concerns, please provide the following information:</p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="09541553182fbd3853a8ab6fcfed34ae">For each allegedly infringing image, video, music, or piece of text that you wish to have removed from one of our sites, provide the exact permanent URL for the page containing the material.</li><li data-textannotation-id="0f423bffbb662ab338aae85efb22861a">Provide information reasonably sufficient to permit us to contact you: an email address is preferred, as well as a telephone contact number.</li><li data-textannotation-id="c863a7a2e3d83cda937e27ce98a8b49c">For images, provide the following information detailing your claim to ownership of the copyright in the allegedly infringing image, video, music, or piece of text: Proof of copyright in the image, video, music, or piece of text concerned, namely proof of registration; OR, absent such registration, a detailed description and evidence to support your claim that you own the copyright in the image, video, music, or piece of text. We will not comply with requests to remove an image, video, music, or piece of text where the complainant cannot prove that they own the copyright in the Content in question.</li><li data-textannotation-id="3400ece34e15bcfb49a6fb4879770df2">Include the following statement: &quot;I swear, under penalty of perjury, that the information in the notification is accurate and that I am the copyright owner or am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.&quot;</li><li data-textannotation-id="a1d7d6f4f5645cfb8eb787a292569317">Sign the document and fax it to: (917) 591-7090, Attn: Legal / DMCA Complaints OR email it to: legal AT gawker DOT com</li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="5934845f19660d02a9a8a7869406663b">Please note that you will be liable for damages (including costs and attorneys' fees) if you materially misrepresent that any material on our sites is infringing your copyrights. We also reserve the right to publish your letter on the Kinja site(s).</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="43b2871c81847427eb6521cb01a0e78c">8. Termination of Agreement</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="a1e58ba9e71da93c48b60fe785e78574">You may discontinue your use of the Service at any time without informing us. We may, however, retain and continue to use any Content that you have submitted or uploaded through the Service.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="00e5c3dc950ac23db268457cbdb7ede6">Kinja may, without prior notice, change the Service, stop providing the Service or features of the Service to you or to users generally, or create usage limits for the Service.We may permanently or temporarily terminate or suspend your access to the Service without notice and liability for any reason, including if, in our sole determination, you violate any provision of these Terms. In particular, Kinja may immediately terminate or suspend accounts that have been flagged for repeat copyright infringement, in accordance with the DMCA and other applicable laws.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="ca9d5531b4cdf290ce34e3f96846b646">Upon termination of your access to or ability to use a Service, including but not limited to suspension of your account, your right to use or access that Service and any Content will immediately cease. All provisions of this Agreement that by their nature should survive termination, shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, and limitations of liability. Termination of your access to and use of the Services shall not relieve you of any obligations arising or accruing prior to such termination or limit any liability which you otherwise may have to Kinja or any third party</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="7f8a6a4354276946c1b0949f511b3cea">On termination of your Account or upon your deletion of particular pieces of your Content from the Services, you acknowledge and agree that: (a) caching of, copies of, or references to the Content may not be immediately removed; (b) such removed Content may persist in backups (not available to others) for a reasonable period of time; and (c) such removed Content may be available (and stored on our servers) through the accounts of other users, because of liking. You agree to release and indemnify Kinja from all claims related to the retention of deleted content.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="4e32221c94a2b6e55b2141bcfe2b2be4">9. Indemnity</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="b770553a0938c3de75df0cf08d0fa3c8">You agree to defend, indemnify and hold harmless Kinja and its subsidiaries, agents, licensors, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney’s fees) arising from: (i) your use of and access to the Service, including any data or Content transmitted, submitted, viewed, or received by you; (ii) your violation of any provision of these Terms, including without limitation your breach of any of the representations and warranties above; (iii) your violation of any third-party right, including without limitation any right of privacy or intellectual property rights; (iv) your violation of any applicable law, rule or regulation; (v) any claim or damages that arise as a result of any of your Content or any that is submitted via your account; or (vi) any other party’s access and use of the Service with your unique username, password or other appropriate security code.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="34fd2542c0492dd866ddff585c41c3ad">10. Warranty, Disclaimer, and Limitations of Liability</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="276be44778a1c44ca6bcd6d968d1dd00">Your access to and use of the Service or any Content is at your own risk.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="56cd8f1c14cf74862b4df4d0ec61bc1c">SERVICES ARE AVAILABLE “AS IS”: YOU UNDERSTAND AND AGREE THAT THE SERVICE IS PROVIDED TO YOU ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS. WITHOUT LIMITING THE FOREGOING, TO THE FULL EXTENT PERMITTED BY LAW, KINJA DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="eaa01aebd57663f1e1f0a4851d4848cb">Kinja makes no representations or warranties of any kind with respect to the Service, including any representation or warranty that the use of the Service will (a) be timely, uninterrupted or error-free or operate in combination with any other hardware, software, system or data, (b) meet your requirements or expectations, (c) be free from errors or that defects will be corrected, or (d) be free of viruses or other harmful components. Kinja also makes no representations or warranties of any kind with respect to Content; user Content, in particular, is provided by and is solely the responsibility of the users providing that Content. No advice or information, whether oral or written, obtained from Kinja or through the Service, will create any warranty not expressly made herein.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="a0cc2a28b77aff46dc06956c1b205fb5"><em>Release From Liability:</em> You release, to the fullest extent permitted by law, Kinja, its directors, officers, shareholders, employees, representatives, consultants, agents, suppliers, and/or distributors from responsibility, liability, claims, demands, and/or damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with the following: (i) Disputes between users, including those between you and other users; (ii) Third party sites and services, including Content found on such sites and services; (iii) Disputes concerning any use of or action taken using your account by you or a third party; (iv) Claims relating to the unauthorized access to any data communications or Content stored under or relating to your account, including unauthorized use or alteration of such communications or your Content.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="15f605d725befb4271ea99e73728c299"><em>Limitation of Liability:</em> TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, KINJA, ITS DIRECTORS, OFFICERS, SHAREHOLDERS, EMPLOYEES, REPRESENTATIVES, CONSULTANTS, AGENTS, SUPPLIERS, AND/OR DISTRIBUTORS SHALL NOT BE LIABLE FOR: (A) ANY INDIRECT, INCIDENTAL, EXEMPLARY PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND WHATSOEVER; (B) LOSS OF: PROFITS, REVENUE, DATA, USE, GOOD-WILL, OR OTHER INTANGIBLE LOSSES; (C) DAMAGES RELATING TO YOUR ACCESS TO, USE OF, OR INABILITY TO ACCESS OR USE THE SERVICES; (D) DAMAGES RELATING TO ANY CONDUCT OR CONTENT OF ANY THIRD PARTY OR SUBSCRIBER USING THE SERVICES, INCLUDING WITHOUT LIMITATION, DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OR CONTENT; AND/OR (E) DAMAGES IN ANY MANNER RELATING TO ANY CONTENT. THIS LIMITATION APPLIES TO ALL CLAIMS, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, WHETHER OR NOT KINJA HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, AND FURTHER WHERE A REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED ITS ESSENTIAL PURPOSE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL LIABILITY OF KINJA AND ITS DIRECTORS, OFFICERS, SHAREHOLDERS, EMPLOYEES, REPRESENTATIVES, CONSULTANTS, AGENTS, SUPPLIERS, AND/OR DISTRIBUTORS, FOR ANY CLAIM UNDER THIS AGREEMENT, INCLUDING FOR ANY IMPLIED WARRANTIES, IS LIMITED TO THE GREATER OF FIFTY DOLLARS (USD$50) OR THE AMOUNT YOU PAID US TO USE THE APPLICABLE SERVICE(S).</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="27f72df278ab61a0810308fc2bd978b7">11. Waiver, Severability &amp; Entire Agreement</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="48143efa3304313c3fa7e1a8c0abecf0"><em>Waiver:</em> The failure of Kinja to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="1d60ba9b3c94519ad7c487aa3f1afdcd"><em>Severability:</em> In the event that any provision of these Terms is held to be invalid or unenforceable, then that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions of these Terms will remain in full force and effect.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="c9cda0388869a189ad66da1f17326962"><em>Entire Agreement:</em> These Terms and our <a href="http://kinja.com/privacy" target="_blank">Privacy Policy</a>  and <a href="http://kinja.com/content-guidelines" target="_blank">Content Guidelines</a> are the entire and exclusive agreement between Kinja and you regarding the Service (excluding any services for which you have a separate written agreement with Kinja that is explicitly in addition or in place of these Terms), and these Terms supersede and replace any prior agreements between Kinja and you regarding the Services.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="c927bf188da97f5b656a79ee7d94b8d7">12. Legal Disputes</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="11bd303c2e44526a19b0927f92f46ff3"><em>Applicable Law.</em> You agree that the laws of the State of New York, without regard to principles of conflict of laws, will govern these Terms and any claim or dispute that has arisen or may arise between you and Kinja, except as otherwise stated in these Terms.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="12943f6af13584635ace9820f47b4a4a"><em>Binding Arbitration. </em>If you and the Company are unable to resolve a Dispute through informal negotiations, either you or the Company may elect to have the Dispute (except those Disputes expressly excluded below) finally and exclusively resolved by binding arbitration. Any election to arbitrate by one party shall be final and binding on the other. YOU UNDERSTAND THAT ABSENT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL. The arbitration shall be commenced and conducted under the Commercial Arbitration Rules of the American Arbitration Association (&quot;AAA&quot;) and, where appropriate, the AAA’s Supplementary Procedures for Consumer Related Disputes (&quot;AAA Consumer Rules&quot;), both of which are available at the AAA website <a href="www.adr.org" target="_blank">www.adr.org</a>. The determination of whether a Dispute is subject to arbitration shall be governed by the Federal Arbitration Act and determined by a court rather than an arbitrator. Your arbitration fees and your share of arbitrator compensation shall be governed by the AAA Rules and, where appropriate, limited by the AAA Consumer Rules. If such costs are determined by the arbitrator to be excessive, the Company will pay all arbitration fees and expenses. The arbitration may be conducted in person, through the submission of documents, by phone or online. The arbitrator will make a decision in writing, but need not provide a statement of reasons unless requested by a party. The arbitrator must follow applicable law, and any award may be challenged if the arbitrator fails to do so. Except as otherwise provided in this Agreement, you and the Company may litigate in court to compel arbitration, stay proceedings pending arbitration, or to confirm, modify, vacate or enter judgment on the award entered by the arbitrator.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="d8b06874594cc64b78f3b9ce6b0d948a"><em>Judicial Forum for Legal Disputes. </em>Unless you and we agree otherwise, in the event that the Binding Arbitration provision above is found not to apply to you or to a particular claim or dispute, either as a result of your decision to opt-out of the Terms or a court order, you agree that any claim or dispute that has arisen or may arise between you and Kinja must be resolved exclusively by a state or federal court located in New York City, New York.  You and Kinja agree to submit to the personal jurisdiction of the courts located within New York City, New York for the purpose of litigating all such claims or disputes.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="8b200499635307c8e92330984c4defa3"><strong>13. Statute of Limitations.</strong></h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="5fc34f015f83149e5c090496fb6095ca">You and the Company both agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to use of the Service, Terms or <a href="http://legal.kinja.com/privacy-policy-90190742" x-inset="1">Privacy Policy</a> must be filed within one (1) year after such claim or cause of action arose or be forever barred.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="8cc31b1d585ea43f1bd7aed2cec92b62">14. Notification of Changes to Terms of Service.</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="af6dcdce590017338d3f7d49132b0e51">Whenever we change our Terms, we will post those changes to this Terms of Service page, and other places we deem appropriate so that our users are aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. By continuing to use the service, you agree and accept the changes and agree to the Terms.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="f8dc88b1b696f6c60c95d834a57f6f53">15. Comments, Feedback, Suggestions, Ideas, And Other Submissions.</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="c589355eb8fbb969a38e9ac476f323bb">The Service may invite you to chat or participate in blogs, message boards, online forums and other functionality and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute or broadcast User Contributed Content to the Company and/or to or via the Service, including, without limitation, text, writings, photographs, graphics, comments, suggestions or personally identifiable information or other material. Any material you transmit to the Company or otherwise through the Service will be treated as non-confidential and non-proprietary.  All feedback, suggestions, ideas regarding the Service, and other similar submissions (&quot;Ideas&quot;) disclosed, submitted, or offered to the Company in connection with the use of the Service or otherwise and any chat, blog, message board, online forum, text, email or other communication with the Company shall be the exclusive property of the Company.  You agree that unless otherwise prohibited by law, the Company may use, sell, exploit and disclose the Ideas in any manner, without restriction and without compensation to you.</p>
+
+
+
+
+
+
+
+
+<h3 data-textannotation-id="962e0dc39e529d7af6fdbed5a1dc8e23">16. Effective Date.</h3>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="dc9a045f7e9dc75da221ba0c2abce645">This statement of the Terms of Service is effective February 1, 2013 and as updated by us from time to time subject to the notice language contained in the Terms.</p><!-- core-decorated --></div><div class="row"><div class="post-bottom column"><a name="replies"></a><div class="post-tools-wrapper right" data-forpost="90161644"></div><div class="fb-like" data-href="http://legal.kinja.com/kinja-terms-of-use-90161644" data-layout="button_count" data-width="100" data-show-faces="false"></div></div></div></div></div></article></div></section><section id="js_discussion-region" class="discussion-region" zSoyz zSoyz><div class="twelve columns end mbx"><div class="reply-create media"><div class="img mrm icon--svg"><svg class="svg-icon svg-bubble-close"><use xlink:href="#iconset-bubble-close" /></svg></div><div class="bd proxima"><span class="msg text-small text-light">This discussion is closed</span></div></div></div></section><script type="text/javascript">(function () {window.kinja = window.kinja || {}; window.kinja.postMeta = JSON.parse('{\x22post\x22:{\x22id\x22:90161644,\x22headline\x22:\x22Kinja Terms of Use\x22,\x22isStarter\x22:true,\x22allowReplies\x22:false,\x22replyCount\x22:0,\x22status\x22:\x22PUBLISHED\x22,\x22permalink\x22:\x22http:\/\/legal.kinja.com\/kinja-terms-of-use-90161644\x22,\x22first100Characters\x22:\x22Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you\x22,\x22firstSentence\x22:\x22Welcome to Kinja! \x22,\x22facebookImage\x22:null,\x22twitterCardType\x22:\x22summary\x22,\x22plaintext\x22:\x22Welcome to Kinja! By using Kinja (including by simply viewing content on Kinja.com (the “Site”), you are agreeing that you, and each person you allow to access Kinja through your account, will abide by the terms of the following User Agreement, which is summarized here, and set forth in its entirety below. This User Agreement is between you and Kinja (“We” or the “Company”), and it governs your access to and use of the services, websites, and applications offered by Kinja (the \x26quot;Service\x26quot;). Your access to and use of the Service is conditioned on your acceptance of and compliance with this agreement.\x22,\x22author\x22:{\x22id\x22:\x225724294337227169076\x22,\x22screenName\x22:\x22scott\x22,\x22displayName\x22:\x22Scott Kidder\x22,\x22defaultBlogId\x22:788,\x22defaultBlog\x22:null,\x22avatar\x22:{\x22id\x22:\x2218tpdlvt583uajpg\x22,\x22format\x22:\x22jpg\x22}},\x22authorScreenName\x22:\x22scott\x22,\x22tags\x22:[],\x22publishTimeMillis\x22:1360343340782,\x22adZone\x22:\x22\x22,\x22sponsored\x22:false,\x22blogs\x22:[{\x22id\x22:788,\x22name\x22:\x22scott\x22,\x22displayName\x22:\x22Scott Kidder\x22,\x22canonicalHost\x22:\x22scott.kinja.com\x22,\x22hosts\x22:[],\x22status\x22:\x22ENABLED\x22,\x22timezone\x22:\x22America\/New_York\x22,\x22timezoneOffset\x22:-14400000,\x22timezoneShortname\x22:\x22EDT\x22,\x22createTimeMillis\x22:null,\x22ownerId\x22:null,\x22description\x22:null,\x22properties\x22:null,\x22avatar\x22:null,\x22logo\x22:null,\x22locale\x22:\x22en-US\x22,\x22fbAppId\x22:\x2236368793975\x22,\x22robotsAllowed\x22:true,\x22googleSiteVerification\x22:null,\x22googleAnalyticsID\x22:null,\x22kruxId\x22:null,\x22isGmgBlog\x22:false,\x22groupBlog\x22:false,\x22blogGroup\x22:\x22default\x22,\x22aboutPostId\x22:null,\x22noindex\x22:false},{\x22id\x22:90984381,\x22name\x22:\x22legal\x22,\x22displayName\x22:\x22Kinja Legal\x22,\x22canonicalHost\x22:\x22legal.kinja.com\x22,\x22hosts\x22:[],\x22status\x22:\x22ENABLED\x22,\x22timezone\x22:\x22America\/New_York\x22,\x22timezoneOffset\x22:-14400000,\x22timezoneShortname\x22:\x22EDT\x22,\x22createTimeMillis\x22:null,\x22ownerId\x22:null,\x22description\x22:null,\x22properties\x22:{\x22groupBlog\x22:true,\x22showInsets\x22:false},\x22avatar\x22:null,\x22logo\x22:null,\x22locale\x22:\x22en-US\x22,\x22fbAppId\x22:\x2236368793975\x22,\x22robotsAllowed\x22:true,\x22googleSiteVerification\x22:null,\x22googleAnalyticsID\x22:null,\x22kruxId\x22:null,\x22isGmgBlog\x22:false,\x22groupBlog\x22:true,\x22blogGroup\x22:\x22default\x22,\x22aboutPostId\x22:null,\x22noindex\x22:false}],\x22sharedPostId\x22:null,\x22defaultBlogId\x22:90984381,\x22images\x22:[],\x22videos\x22:[]},\x22starterId\x22:90161644,\x22tags\x22:\x22\x22,\x22postId\x22:90161644,\x22authors\x22:\x22Scott Kidder\x22,\x22postAuthorBlogName\x22:\x22scott\x22}');}());</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","url":"http://legal.kinja.com/kinja-terms-of-use-90161644","author":{"@type":"Person","name":"Scott Kidder"},"headline":"Kinja Terms of Use","datePublished":"2013-02-08T12:09:00-05:00","mainEntityOfPage":true,"image":{"@list":[]}}</script><div class="js_stats" style="display: none;" data-trackurl="//kinja.com/api/analytics/stats/track.gif?&objectType=post&objectId=90161644&blogId=90984381&amp;authorId=5724294337227169076"></div><div id="analytics-permalink-view" style="display: none;" data-analytics-api-root-url="//kinja.com/api/analytics/" data-post-id="90161644" data-blog-id="90984381" data-author-id="5724294337227169076" data-tag-ids=""></div><div id="js_placeholder--duimodal"></div></div></div><div data-analytics-target="sharingBottom" id="sharingfooter" class="sharingfooter noskimlinks noskimwords"><div class="sharingfooter__internal"><a href="#replies" class="sharingfooter__comment js_reply-to-post icon--svg"><svg class="svg-icon svg-bubble"><use xlink:href="#iconset-bubble" /></svg><span class="js_reply-count">0</span></a><a href="#" class="sharingfooter__recommend js_like icon--svg"><span class="js_like_icon"><svg class="svg-icon svg-star"><use xlink:href="#iconset-star" /></svg></span><span class="js_like_count">151</span></a></div><div class="sharingfooter__external"><a class="sharingfooter__facebook js_share-post-item facebook icon--svg" rel="nofollow" href="http://facebook.com/sharer.php?u=http%3A%2F%2Flegal.kinja.com%2Fkinja-terms-of-use-90161644" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Share to Facebook click');"><svg class="svg-icon svg-facebook-circle"><use xlink:href="#iconset-facebook-circle" /></svg></a><a class="sharingfooter__twitter js_share-post-item twitter icon--svg" rel="nofollow" href="http://twitter.com/share?url=http%3A%2F%2Flegal.kinja.com%2Fkinja-terms-of-use-90161644&amp;text=POST_TITLE" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Share to Twitter click');"><svg class="svg-icon svg-twitter-circle"><use xlink:href="#iconset-twitter-circle" /></svg></a></div></div><div id="matchbuy-placeholder"></div><div id="trackers" style="display: none;"></div><noscript><img src="http://pubads.g.doubleclick.net/activity;dc_iu=/4246/DFP_Audience_Pixel;dc_seg=22540930;blog=legal;ord=1?" width="1" height="1" border="0" /></noscript><script type="text/javascript">
+		Date.now = Date.now || function() { return +new Date; };
+		window.statsdTicks = [{
+			ms: Date.now(),
+			message: "JS init reached",
+			reporting: false
+		}];
+		</script><script>markUserTime("JS - Before Require load");</script><script type="text/javascript">(function () {window.kinja = window.kinja || {}; window.kinja.meta = JSON.parse('{\x22cloudinaryRequest\x22:{\x22default\x22:{\x22eager\x22:\x22c_fill,fl_progressive,g_center,h_180,q_80,w_320|c_scale,fl_progressive,g_center,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_600|c_fill,fl_progressive,g_center,h_100,q_80,w_100|c_fill,fl_progressive,g_center,h_77,q_80,w_137|c_fit,fl_progressive,q_80,w_600|c_fill,fl_progressive,g_north,h_264,q_80,w_470|c_fill,fl_progressive,g_center,h_358,q_80,w_636|c_fill,fl_progressive,g_north,h_264,q_80,w_470|c_fill,fl_progressive,g_center,h_77,q_80,w_137|c_fill,fl_progressive,g_north,h_77,q_80,w_137|c_scale,fl_progressive,g_north,h_450,q_80,w_800|c_fill,fl_progressive,g_center,h_120,q_80,w_120|c_fit,fl_progressive,q_80,w_636|c_fill,fl_progressive,g_north,h_77,q_80,w_137|c_fill,fl_progressive,g_north,h_358,q_80,w_636|c_fit,fl_progressive,q_80,w_470|c_scale,fl_progressive,q_80,w_800|c_fill,fl_progressive,g_center,h_80,q_80,w_80|c_fit,fl_progressive,h_166,q_80,w_295|c_fill,fl_progressive,g_north,h_180,q_80,w_320|c_fill,fl_progressive,g_north,h_180,q_80,w_320|c_fit,fl_progressive,q_80,w_320|c_fill,fl_progressive,g_center,h_120,q_80,w_120|c_fill,fl_progressive,g_center,h_200,q_80,w_200|c_fill,fl_progressive,g_faces,h_77,q_80,w_137|c_fill,fl_progressive,g_faces,h_77,q_80,w_137|c_fill,fl_progressive,g_center,h_80,q_80,w_80||c_fill,fl_progressive,g_north,h_358,q_80,w_636|c_fit,fl_progressive,q_80,w_470|c_fill,fl_progressive,g_center,h_100,q_80,w_100|c_fit,fl_progressive,h_100,q_80,w_75|c_scale,fl_progressive,q_80,w_800|c_fill,fl_progressive,g_center,h_200,q_80,w_200|c_scale,fl_progressive,g_center,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_636|c_scale,fl_progressive,g_north,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_320|c_fit,fl_progressive,h_100,q_80,w_75|c_fit,fl_progressive,h_166,q_80,w_295|c_fill,fl_progressive,g_center,h_358,q_80,w_636|c_fill,fl_progressive,g_center,h_180,q_80,w_320|\x22,\x22timestamp\x22:\x221441224170\x22,\x22signature\x22:\x2221ff2536e1cddc41d801a05b209f11247e5f3a6f\x22,\x22api_key\x22:\x22196565315244936\x22,\x22eager_async\x22:\x22true\x22},\x22gif\x22:{\x22eager\x22:\x22c_fill,fl_progressive,g_center,h_180,q_80,w_320|c_scale,fl_progressive,g_center,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_600|c_fill,fl_progressive,g_center,h_100,q_80,w_100|c_fill,fl_progressive,g_center,h_77,q_80,w_137|c_fit,fl_progressive,q_80,w_600|c_fill,fl_progressive,g_north,h_264,q_80,w_470|c_fill,fl_progressive,g_center,h_358,q_80,w_636|c_fill,fl_progressive,g_north,h_264,q_80,w_470|c_fill,fl_progressive,g_center,h_77,q_80,w_137|c_fill,fl_progressive,g_north,h_77,q_80,w_137|c_scale,fl_progressive,g_north,h_450,q_80,w_800|c_fill,fl_progressive,g_center,h_120,q_80,w_120|c_fit,fl_progressive,q_80,w_636|c_fill,fl_progressive,g_north,h_77,q_80,w_137|c_fill,fl_progressive,g_north,h_358,q_80,w_636|c_fit,fl_progressive,q_80,w_470|c_scale,fl_progressive,q_80,w_800|c_fill,fl_progressive,g_center,h_80,q_80,w_80|c_fit,fl_progressive,h_166,q_80,w_295|c_fill,fl_progressive,g_north,h_180,q_80,w_320|c_fill,fl_progressive,g_north,h_180,q_80,w_320|c_fit,fl_progressive,q_80,w_320|c_fill,fl_progressive,g_center,h_120,q_80,w_120|c_fill,fl_progressive,g_center,h_200,q_80,w_200|c_fill,fl_progressive,g_faces,h_77,q_80,w_137|c_fill,fl_progressive,g_faces,h_77,q_80,w_137|c_fill,fl_progressive,g_center,h_80,q_80,w_80||c_fill,fl_progressive,g_north,h_358,q_80,w_636|c_fit,fl_progressive,q_80,w_470|c_fill,fl_progressive,g_center,h_100,q_80,w_100|c_fit,fl_progressive,h_100,q_80,w_75|c_scale,fl_progressive,q_80,w_800|c_fill,fl_progressive,g_center,h_200,q_80,w_200|c_scale,fl_progressive,g_center,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_636|c_scale,fl_progressive,g_north,h_450,q_80,w_800|c_fit,fl_progressive,q_80,w_320|c_fit,fl_progressive,h_100,q_80,w_75|c_fit,fl_progressive,h_166,q_80,w_295|c_fill,fl_progressive,g_center,h_358,q_80,w_636|c_fill,fl_progressive,g_center,h_180,q_80,w_320|\x22,\x22timestamp\x22:\x221441224170\x22,\x22tags\x22:\x22gif\x22,\x22signature\x22:\x220c8cfa30e5388b9ed37f5199f17ecc4ade85f098\x22,\x22api_key\x22:\x22196565315244936\x22,\x22eager_async\x22:\x22true\x22}},\x22syncFeatures\x22:null,\x22featuresLastUpdate\x22:1441219492826,\x22mode\x22:\x22live\x22,\x22pageType\x22:\x22permalink\x22,\x22currentUrl\x22:\x22\/kinja-terms-of-use-90161644\x22,\x22locale\x22:\x22en-US\x22,\x22localeWithUnderscore\x22:\x22en_US\x22,\x22imageSizes\x22:{\x22KinjaCenteredMedium\x22:{\x22width\x22:320,\x22height\x22:180,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22CenteredWideExtraLarge\x22:{\x22width\x22:800,\x22height\x22:450,\x22crop\x22:\x22scale\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22blg-logo\x22:{\x22width\x22:600,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22blg-avt-\x22:{\x22width\x22:100,\x22height\x22:100,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22kc-small\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22BlogLogo\x22:{\x22width\x22:600,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22k-large\x22:{\x22width\x22:470,\x22height\x22:264,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22kc-xlarge\x22:{\x22width\x22:636,\x22height\x22:358,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaLarge\x22:{\x22width\x22:470,\x22height\x22:264,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaCenteredSmall\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22k-small\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22widexlarge\x22:{\x22width\x22:800,\x22height\x22:450,\x22crop\x22:\x22scale\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22AvatarMedium\x22:{\x22width\x22:120,\x22height\x22:120,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22ku-xlarge\x22:{\x22width\x22:636,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaSmall\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaExtraLarge\x22:{\x22width\x22:636,\x22height\x22:358,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22ku-large\x22:{\x22width\x22:470,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22UncroppedWideExtraLarge\x22:{\x22width\x22:800,\x22crop\x22:\x22scale\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22avt-small\x22:{\x22width\x22:80,\x22height\x22:80,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22CommerceInset\x22:{\x22width\x22:295,\x22height\x22:166,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22k-medium\x22:{\x22width\x22:320,\x22height\x22:180,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaMedium\x22:{\x22width\x22:320,\x22height\x22:180,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22ku-medium\x22:{\x22width\x22:320,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22avt-medium\x22:{\x22width\x22:120,\x22height\x22:120,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22avt-large\x22:{\x22width\x22:200,\x22height\x22:200,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22k-thumb\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22faces\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaThumb\x22:{\x22width\x22:137,\x22height\x22:77,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22faces\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22AvatarSmall\x22:{\x22width\x22:80,\x22height\x22:80,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22original\x22:{},\x22k-xlarge\x22:{\x22width\x22:636,\x22height\x22:358,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaUncroppedLarge\x22:{\x22width\x22:470,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22BlogAvatar\x22:{\x22width\x22:100,\x22height\x22:100,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22ku-inset\x22:{\x22width\x22:75,\x22height\x22:100,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22uncroppedwidexlarge\x22:{\x22width\x22:800,\x22crop\x22:\x22scale\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22AvatarLarge\x22:{\x22width\x22:200,\x22height\x22:200,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22centeredwidexlarge\x22:{\x22width\x22:800,\x22height\x22:450,\x22crop\x22:\x22scale\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaUncroppedExtraLarge\x22:{\x22width\x22:636,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22WideExtraLarge\x22:{\x22width\x22:800,\x22height\x22:450,\x22crop\x22:\x22scale\x22,\x22gravity\x22:\x22north\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaUncroppedMedium\x22:{\x22width\x22:320,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaUncroppedInset\x22:{\x22width\x22:75,\x22height\x22:100,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22commerceinset\x22:{\x22width\x22:295,\x22height\x22:166,\x22crop\x22:\x22fit\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22KinjaCenteredExtraLarge\x22:{\x22width\x22:636,\x22height\x22:358,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22kc-medium\x22:{\x22width\x22:320,\x22height\x22:180,\x22crop\x22:\x22fill\x22,\x22gravity\x22:\x22center\x22,\x22flags\x22:\x22progressive\x22,\x22quality\x22:80},\x22Original\x22:{}},\x22blog\x22:{\x22id\x22:90984381,\x22name\x22:\x22legal\x22,\x22displayName\x22:\x22Kinja Legal\x22,\x22canonicalHost\x22:\x22legal.kinja.com\x22,\x22hosts\x22:[],\x22status\x22:\x22ENABLED\x22,\x22timezone\x22:\x22America\/New_York\x22,\x22timezoneOffset\x22:-14400000,\x22timezoneShortname\x22:\x22EDT\x22,\x22createTimeMillis\x22:1360347628291,\x22ownerId\x22:\x225724294337227169076\x22,\x22description\x22:\x22Kinja Legal\x22,\x22properties\x22:{\x22groupBlog\x22:true,\x22showInsets\x22:false},\x22avatar\x22:null,\x22logo\x22:{\x22id\x22:\x2219gprfzwjxj20png\x22,\x22format\x22:\x22png\x22},\x22locale\x22:\x22en-US\x22,\x22fbAppId\x22:\x2236368793975\x22,\x22robotsAllowed\x22:true,\x22googleSiteVerification\x22:null,\x22googleAnalyticsID\x22:null,\x22kruxId\x22:null,\x22isGmgBlog\x22:false,\x22groupBlog\x22:true,\x22blogGroup\x22:\x22default\x22,\x22aboutPostId\x22:null,\x22noindex\x22:false},\x22blogOwner\x22:{\x22id\x22:\x225724294337227169076\x22,\x22screenName\x22:\x22scott\x22,\x22displayName\x22:\x22Scott Kidder\x22,\x22avatar\x22:{\x22id\x22:\x2218tpdlvt583uajpg\x22,\x22format\x22:\x22jpg\x22},\x22superUser\x22:true,\x22defaultBlogId\x22:788,\x22defaultBlog\x22:null},\x22blogSales\x22:{\x22blogId\x22:90984381,\x22amazonInsetsEnabled\x22:false,\x22adsEnabled\x22:false,\x22tagsExcludedFromPartnerRss\x22:[],\x22tagsForceSynced\x22:[],\x22adSlotsDisabled\x22:[]},\x22imgassets\x22:\x22\/\/x.kinja-static.com\/assets\/images\/\x22}');}());</script><script type="text/javascript" src="//x.kinja-static.com/assets/javascripts/lib/require.js?2"></script><script type="text/javascript">(function () {/* This AMD configuration is used in these contexts:1) in-browser2) build process3) tests*/(function () {'use strict';/*globals requirejs, document */requirejs.config({bundles: {'lib/scribe/scribe': ['scribe']},paths: (function () {var paths = {'html-janitor': 'lib/html-janitor',jquery: 'lib/jquery',underscore: 'lib/underscore',backbone: 'lib/backbone','backbone.marionette': 'lib/backbone.marionette','backbone.stickit': 'lib/backbone.stickit',moment: 'lib/amd-wrapped/momentjs/moment','moment-timezone': 'lib/amd-wrapped/momentjs/moment-timezone',ace: 'lib/ace','scribe-plugin-heading-command': 'lib/scribe/plugins/scribe-plugin-heading-command','scribe-plugin-blockquote-command': 'lib/scribe/plugins/scribe-plugin-blockquote-command','scribe-plugin-intelligent-unlink-command': 'lib/scribe/plugins/scribe-plugin-intelligent-unlink-command','scribe-plugin-formatter-html-ensure-semantic-elements': 'lib/scribe/plugins/scribe-plugin-formatter-html-ensure-semantic-elements','scribe-plugin-keyboard-shortcuts': 'lib/scribe/plugins/scribe-plugin-keyboard-shortcuts','scribe-plugin-sanitizer': 'lib/scribe/plugins/scribe-plugin-sanitizer','scribe-plugin-code-command': 'lib/scribe/plugins/scribe-plugin-code-command','scribe-plugin-curly-quotes': 'lib/scribe/plugins/scribe-plugin-curly-quotes'};if (typeof document !== 'undefined') {paths.templates = 'templates/closure/' + (document.getElementsByTagName('html')[0].getAttribute('lang') || 'en-US');}return paths;}())});}());var modules = {"BaseApp": "-e23ac8742c5beb37eedb003fce0a2238","TagPageApp": "-4f0c3a103d6e5990cdd3183704c859ab","PromoteModalModule": "-b587730ec38fbee076c5d792d2732160","FrontPageApp": "-18469da726d2a793017fbe0c14c0bdf4","Main": "-5985ae991724b010430607847c24ec4d","PromotedPostPreview": "-d204f8e12498b79bcd6afea34f0b8b47","PromotedPostAdminApp": "-6c6e51260da635326806274ce8101412","ProfilePageApp": "-7b711b62176a3d7ea7e72d5676b30134","LoginModule": "-d4d55d9a71d562dc51c6e6cc834471cf","AmazonStats": "-79693c0251158d324d7adc31e8d34260","KindrApp": "-f04ec1e8144abea1e8e5eb4d50f0a88d","FeaturesPageApp": "-0c1fc19fae89a87aa6b767ae9d4ff2c0","LeaderboardStatsPageApp": "-dc453fd8e12c3cfb61a8715a6940d7af","SplashPageApp": "-9b89e12067a071691daaa8281105ba28","UserSettingsApp": "-a45629af42de2243d4e661339cf049d3","PostApp": "-2d05e97f71591c439989a4c9bb22d536","EssentialIconModule": "-4ef50f34cb4e00798c358602d2b2fd43","DashboardPageApp": "-adeea2fd15ee1f0440d5e9dc3bdc65a3","StatsPageApp": "-430623ec8a66c2d264eaafb7c16d8e79","RuleSystemApp": "-64447c30dea658b24af2b8db4da074c7","FlaggedRepliesApp": "-45d044d794e89269d09f53abcfd7fed0","FeaturePanelModule": "-fd2570bb1888afee8c71ae54dc0a76c7","MarionetteEditor": "-4faea48cb239033627560bb6b131e33d","SubblogModule": "-0e92589d829a821b836a7e2df23c1701","BlacklistPageApp": "-8b0d2b30a5c2a6d3ad1ef8ecdbe30c91","ManageBlogsApp": "-0a330e835d9147a1fdf5b018602d5772","JWPlayer": "-bcb2726c49022f1b0a79203da422279b","GmgFeaturesPageApp": "-9f6c147afd41bcab97e775444b34fba8","DiscussionIconModule": "-b94686ffdc3556578b1dbe2656dc9fa6","DiscussionModule": "-3370e76c455b56ca241daeb2d614d69f","EditorApp": "-07d59b2c0f3df89bf669301e18749590","EditorIconModule": "-2f83065ef9bc690de709504433106d4f","ErrorPageApp": "-193161afa10528194562fb97191d6c68","PlacesIconModule": "-8676b045118fb929c5790f520b67723b","KinjaAnalytics": "-40ee4ffe60bc052922b38805856a0902","FollowPageApp": "-029a8b6a75a651063ea614688370e96c","SearchPageApp": "-0ff61ff6a4df7b5f09e015d2314dbb63","Raven": "-3467f3aed7fecb0be39f14c0d7095e44","BusinessModule": "-f6acfedcd78edb9a00717467abbfbb23","UIKitApp": "-854c97a94b8969f2f6c1d69761027ab4","BlogSettingsModule": "-0f9e5db95e5997687f3fb535c3d2aabe","AdModule": "-2ccabd50b673bad41e07a1529f77fb46","StatsPerformanceApp": "-81488c350343d7558ba83400ee58168d","ActionsIconModule": "-298b8dbdf101e6942e2b8d7e00f8e3e1"}, paths = {}, baseUrl = "\/\/x.kinja-static.com\/assets\/javascripts-min\/", modulePath = "layer/"; for (var module in modules) {if (modules.hasOwnProperty(module)) {paths["module/" + module] = "module/" + module + "-en-US" + modules[module]; paths["layer/" + module] = "layer/" + module + "-en-US" + modules[module];}}require.config({waitSeconds: 0, baseUrl: baseUrl, paths: paths, map: {"*": {"config": "config"}}});markUserTime("JS - Before preload"); require([modulePath + "Main", modulePath + "PostApp"], function () {markUserTime("JS - After preload"); require(["module/PostApp"], function () {markUserTime("JS - After app init");});});}());</script><!--[if gte IE 9]> --><script>require(["module/Raven"]);</script><!-- <![endif]--><div class="reveal-modal-bg"></div><div class="ad-background"></div><div id="modalplaceholder"></div><div class="kinja-logo-divider"><hr /></div><footer class="site-footer js_site-footer noskimlinks noskimwords"><div class="footer__items"><div class="footer__inner"><li class="footer__item"><a class="footer__link" href="http://deals.kinja.com/todays-best-deals-running-shoes-nest-closeout-bike-g-1728209054"><div class="footer__image lazy-image"><img alt="Today&#39;s Best Deals: Cheaper Shoes, Nest Closeout, Bike Gear, and More" data-lazy-interchange="[https://i.kinja-img.com/gawker-media/image/upload/s--W3X_wogp--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/1413107649126779308.jpg, (small)], [https://i.kinja-img.com/gawker-media/image/upload/s--We2t8Qrw--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1413107649126779308.jpg, (large)]"></div><div class="footer__content"><h4 class="headline footer__headline">Today&apos;s Best Deals: Cheaper Shoes, Nest Closeout, Bike Gear, and More</h4><p class="footer__excerpt">Here are the best of today’s deals. Get every great deal every day on Kinja Deals, follow us on Facebook and Twitter to…</p><p class="proxima readmore">Read on Deals<svg class="svg-icon svg-chevron chevron--right"><use xlink:href="#iconset-chevron-right" /></svg></p></div></a></li><li class="footer__item"><a class="footer__link" href="http://co-op.kinja.com/five-best-desktop-mice-1727987074"><div class="footer__image lazy-image"><img alt="Five Best Desktop Mice" data-lazy-interchange="[https://i.kinja-img.com/gawker-media/image/upload/s--SoDhJ6mi--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/1412909838339650223.jpg, (small)], [https://i.kinja-img.com/gawker-media/image/upload/s--srRPrf95--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1412909838339650223.jpg, (large)]"></div><div class="footer__content"><h4 class="headline footer__headline">Five Best Desktop Mice</h4><p class="footer__excerpt">Logitech swept the nominations round, but will its trackballs, gaming mice, new flagship models, or budget performers…</p><p class="proxima readmore">Read on Kinja Co-Op<svg class="svg-icon svg-chevron chevron--right"><use xlink:href="#iconset-chevron-right" /></svg></p></div></a></li><li class="footer__item"><a class="footer__link" href="http://deals.kinja.com/todays-best-gaming-deals-mario-maker-shovel-knight-a-1728230238"><div class="footer__image lazy-image"><img alt="Today&#39;s Best Gaming Deals: Mario Maker, Shovel Knight, and More" data-lazy-interchange="[https://i.kinja-img.com/gawker-media/image/upload/s--H17amAQi--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/1412927186624412817.jpg, (small)], [https://i.kinja-img.com/gawker-media/image/upload/s--01Qs4bzH--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1412927186624412817.jpg, (large)]"></div><div class="footer__content"><h4 class="headline footer__headline">Today&apos;s Best Gaming Deals: Mario Maker, Shovel Knight, and More</h4><p class="footer__excerpt">A lot of you have preordered Super Mario Maker already, but if you were waiting to see the reviews first, they just…</p><p class="proxima readmore">Read on Deals<svg class="svg-icon svg-chevron chevron--right"><use xlink:href="#iconset-chevron-right" /></svg></p></div></a></li><li class="footer__item"><a class="footer__link" href="http://co-op.kinja.com/five-best-ballet-flats-1728239246"><div class="footer__image lazy-image"><img alt="Five Best Ballet Flats" data-lazy-interchange="[https://i.kinja-img.com/gawker-media/image/upload/s---rgGyb6N--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/1412903006370485136.jpg, (small)], [https://i.kinja-img.com/gawker-media/image/upload/s--1xQtSanP--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1412903006370485136.jpg, (large)]"></div><div class="footer__content"><h4 class="headline footer__headline">Five Best Ballet Flats</h4><p class="footer__excerpt">Your ballet flat nominations could fill many a closet, but these five were the clear favorites, and now it’s time to…</p><p class="proxima readmore">Read on Kinja Co-Op<svg class="svg-icon svg-chevron chevron--right"><use xlink:href="#iconset-chevron-right" /></svg></p></div></a></li></div></div><hr class="show-for-medium-down divider"></hr><div class="footer__nav"><ul class="list proxima list--site"><li><a class="icon--svg u-darkened--onhover" href="http://kinja.com" data-ga="[Kinja Footer, Kinja.com Click, js_pageType]"><svg class="svg-icon svg-logo-kinja"><use xlink:href="#iconset-logo-kinja" /></svg></a></li><li><a href="http://help.gawker.com/" target="_blank" data-ga="[Footer, click, Help]">Need Help?</a></li><li><a href="http://legal.kinja.com/content-guidelines-90185358" data-ga="[Footer, click, Content Guidelines]">Content Guide</a></li></ul><ul class="list text-light proxima list--legal"><li><a href="http://advertising.gawker.com/about/index.php#contact" data-ga="[Footer, click, Permissions]">Permissions</a></li><li><a href="http://legal.kinja.com/privacy-policy-90190742" data-ga="[Footer, click, Privacy]">Privacy</a></li><li><a href="http://legal.kinja.com/kinja-terms-of-use-90161644" data-ga="[Footer, click, Terms]">Terms of Use</a></li><li><a href="http://advertising.gawker.com/" data-ga="[Footer, click, Advertising]">Advertising</a></li><li><a href="http://grnh.se/2ctqpi" data-ga="[Footer, click, Jobs]">Jobs</a></li><li><a href="http://legal.kinja.com/rss">RSS</a></li></ul></div></footer>
+	<!-- Begin comScore Tag -->
+	<noscript>
+		<img src="http://b.scorecardresearch.com/p?c1=2&c2=6770184&cv=2.0&cj=1" />
+	</noscript>
+	<!-- End comScore Tag -->
+	<div id="js_placeholder--duimodal"></div><div style="display:none;" id="read-only-warning"><div class="row"><div class="column small-12">Kinja is in read-only mode. We are working to restore service.</div></div></div></body></html>
