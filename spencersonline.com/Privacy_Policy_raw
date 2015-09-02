@@ -1,1 +1,1075 @@
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+<!DOCTYPE HTML>
+<html
+		 xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<title>Home Page - Spencer's</title>
+
+        <link href="/assets/images/cms/spn-headerfooter/favicon.ico" rel="icon" type="image/x-icon"/><link href="/assets/images/cms/spn-headerfooter/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="//t.p.mybuys.com/clients/SPENCERSONLINE/css/styles.css"  type="text/css" rel="stylesheet" id="mybuysstyles">
+                <link href="/css/layout.css" rel="stylesheet" type="text/css"/><link href="/css/consolidated.jsp" rel="stylesheet" type="text/css"/><link href="/css/spencers.css" rel="stylesheet" type="text/css"/><link href="/css/includes/overrides.jsp" rel="stylesheet" type="text/css"/><script src="/js/plugins/jquery-1.8.2.min.js" language="JavaScript" type="text/javascript"></script><script type ="text/javascript">
+					$(document).ready(function() {
+						$.ga.load("UA-61867044-1");
+					});	
+				</script>
+                <script type="text/javascript" src="//t.p.mybuys.com/js/mybuys4.js"></script>
+                    <script type="text/javascript"  src="//t.p.mybuys.com/clients/SPENCERSONLINE/js/setup.js"></script>
+                <script type="text/javascript">
+                        (function(d,s){var js=d.getElementsByTagName(s)[0];var
+                            r=d.createElement(s);
+                            r.src=("https:"==location.protocol?"https:":"http:")+"//static.criteo.net/js/ld/ld.js";
+                            js.parentNode.insertBefore(r,js)})(document,"script");
+                    </script>
+                <meta name="keywords" content="Spencer&#39;s"/>
+		<meta name="description" content="Welcome to Spencer&#39;s"/>
+		</head>
+    <body id="home" class="desktop" data-userAgent='Python&#45;urllib/2.7' data-deviceType="Desktop" data-siteCode="spn">
+        <script type="text/javascript" src='/pwr/engine/js/full.js'></script>
+            <script type="text/javascript">
+                var pr_locale= "en_US";
+                var pr_zip_location = 'http://www.spencersonline.com/';
+                var pr_style_sheet = 'http://www.spencersonline.com/css/pwr/pr_override-spn.css';
+            </script>
+        <div id="containerMain" class="container">
+            <div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function() {
+	FB.init({
+		appId: '145129405615083',
+		status: true,
+		cookie: true,
+		xfbml: true
+	});
+	};
+	(function() {
+		var e = document.createElement('script');
+		e.async = true;
+		e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+		document.getElementById('fb-root').appendChild(e);
+	}());
+
+	var FBSubFunc = function() {
+	FB.Event.subscribe('edge.create', function(response) {
+		$.ajax({
+			url: '/user/facebook_like.cmd',
+			success: function(data) {
+			/* not really needed since just hitting the command will set the condition */
+			//console.log(data);
+			}
+		});
+	});
+	};
+
+	$(document).ready(function() {
+		if(typeof(FB)!== 'undefined') {
+			FBSubFunc();
+			if(typeof(FBEventSubscribe) !== 'undefined') {
+				clearInterval(FBEventSubscribe);
+			}
+		} else {
+			FBEventSubscribe = setInterval(FBSubFunc,200);
+		}
+	});
+</script>
+<div class="responsiveWrap">
+                <header class="header"><script type="text/javascript">
+    var secureURLVal = 'http://www.spencersonline.com/';
+    var nonsecureURLVal = 'http://www.spencersonline.com/';
+
+    var searchErrorText = "Please enter a search term and try your search again.";
+
+    function submitSearchForm(searchForm) {
+        var searchForm = $("form#headerSearch");
+        var searchInputVal = $("#keyword").val();
+        if (searchInputVal !== "") {
+            searchForm.submit();
+        }
+    }
+
+    $(document).ready(function() {
+        var utilitySearch = $(".searchForm");
+
+        $(".searchForm .searchButton").on("click", function (e) {
+            e.preventDefault();
+            submitSearchForm(searchForm);
+        });
+
+        $("li.search.icon a").on("click", function (e) {
+            e.preventDefault();
+            utilitySearch.toggle();
+        });
+
+    });
+</script>
+
+<script language="JavaScript" type="text/javascript">var s_account='REPLACE-ME';var webAnalyticsinternalFilters='REPLACE-ME';var webAnalyticsCurrencyCode='USD';</script><script src="/js/s_code.js" language="JavaScript"></script><div class="headerInner">
+
+    <div class="cmsWrapper" id="Header-Area1" data-content-name="Header &#45; Area 1"><script src="//assets.adobedtm.com/6a9f5b20301b21edac665a5dbcfe94536da98c9e/satelliteLib-f2d51a960b73f75258afb59ee3d188ccc8cede4d.js"></script></div><div class="cmsWrapper" id="Header-Area3" data-content-name="Header &#45; Area 3"><div id="logo-wrapper"><a id="logo" href="/"></a></div></div><div class="utility twelve columns alpha">
+
+        <div id="signInContainer" class="signin-container">
+	<div class="welcomeInfo">
+            <span class="welcomeMessage">
+                <a class="sign-in-link js_userLogin" data-qaAutomationId="hdr-SignInLink" href="#">Sign In</a></span>
+        </div>
+	<script type="text/javascript">
+        $(document).ready(function () {
+
+            // Below supports to direct the user to where the user accessed Sign In link in the header. Append current url
+            // in the address bar to login link as dest param in order to direct users to previous page after signed in
+            $('.js_userLogin').click(function () {
+                var loginURL = 'http://www.spencersonline.com/user/login.jsp';
+                var curURL = window.location.href;
+                var destParam = curURL;
+
+                // If current url is a command, we need to append the params submitted along with that command
+                
+
+                // Ignore appending dest param if it does already that prevents duplicated appending
+                if (curURL.indexOf(loginURL) >= 0) {
+                    destParam = '';
+                    loginURL = curURL;
+                }
+
+                // Ignore appending dest param if the user has just logged out that prevents the user is auto logged
+                // out when the user login again
+                if (curURL.indexOf("user/logout.cmd") >= 0) {
+                    destParam = '';
+                }
+                
+                // Ignore appending dest param if the user has just clicked the URL in reset password email or done 
+                // resetting password and tried to sign in.
+                if (curURL.indexOf("user/reset_password.cmd") >= 0 || curURL.indexOf("user/reset_password.jsp") >= 0) {
+                    destParam = '';
+                }
+                
+                // If the user was reviewing Order Status before clicking Sign In, go to Order History
+                if (curURL.indexOf("checkout/order_status.jsp") >= 0 || curURL.indexOf("checkout/order_status.cmd") >= 0) {
+                    destParam = '/user/orderhistory.cmd';
+                }
+
+                // If the user was processing checkout before clicking Sign In, start over the checkout process when
+                // turning back since billing info, shipping info and payment info of anonymous pipeline are clean up.
+                if (curURL.indexOf("checkout/checkout.jsp") >= 0) {
+                    destParam = "checkout/checkout.jsp";
+                }
+
+                if (destParam != '') {
+                    // Remove the additional # character of the URL so that we can easily add some parameter at the end 
+                    // of the destination otherwise it causes issue like http://starter.fry.com#?newParam=abc.
+                    if (stringUtil.endsWith(destParam, "#")) {
+                        destParam = destParam.split('#')[0];
+                    }
+                    
+                    loginURL += "?dest=" + encodeURIComponent(destParam);
+                }
+
+                window.location = loginURL;
+            });
+        });
+    </script>
+</div>
+<div id="utility-links-wrapper" class="fr">
+            <ul id="utility-links">
+                    <li id="live-chat">
+<!-- BEGIN ProvideSupport.com Text Chat Link Code -->
+<div id="cinXlz" style="z-index:100;position:absolute"></div><div id="scnXlz" style="display:inline"></div><div id="sdnXlz" style="display:none"></div><script type="text/javascript">var senXlz=document.createElement("script");senXlz.type="text/javascript";var senXlzs=(location.protocol.indexOf("https")==0?"https":"http")+"://image.providesupport.com/js/0vll9j65gpw8j0uq8nf5bzt4op/safe-textlink.js?ps_h=nXlz&ps_t="+new Date().getTime()+"&online-link-html=Live%20Chat%20Online&offline-link-html=Live%20Chat%20Offline";setTimeout("senXlz.src=senXlzs;document.getElementById('sdnXlz').appendChild(senXlz)",1)</script><noscript><div style="display:inline"><a href="http://www.providesupport.com?messenger=0vll9j65gpw8j0uq8nf5bzt4op">Live Chat</a></div></noscript>
+<!-- END ProvideSupport.com Text Chat Link Code -->
+    </li>
+    <li>
+	<a href="/custserv/custserv.jsp">Help</a>
+    </li>
+    <li>
+	<a href="/custserv/locate_store.cmd">Stores</a>
+    </li>
+    <li>
+	<a href="/user/orderhistory.cmd">Order Status</a>
+    </li>
+    <li>
+	<a href="/user/main.jsp">My Account</a>
+    </li></ul>
+			<div class="cartButton">
+                        <div class="cartArrow">
+                            <a class="cartIcon" id="js_ucart" data-qaAutomationId="hdr-CartLink" title="Cart" href="http://www.spencersonline.com/checkout/basket.jsp"><span class="cartText"></span>
+        <span class="js_itemcount" id="item-count">
+		<span id="headerItemCount">0</span> <span id="headerItemLabel">item(s)</span><script type="text/javascript">
+				$(document).ready(function(){
+					cartInfoUtil.updateCartCount("", false);
+				});
+			</script>
+		</span>
+	</a></div>
+                    </div>
+                <div class="cmsWrapper" id="Header-Area4" data-content-name="Header &#45; Area 4"><div style="height:26px;"></div></div></div>
+
+        <ul class="topNavIcons">
+            <li class="search icon close-menu">
+                <a href="/catalog/search.jsp"><span>Search</span></a></li>
+            <li class="stores icon">
+                <a href="/custserv/locate_store.cmd"><span>Stores</span></a></li>
+            <li class="account icon">
+                <a href="/user/main.jsp"><span>Account</span></a></li>
+            <li class="cart icon">
+                <a href="/checkout/basket.jsp"><span>Cart</span>
+                    <span id="iconItemCount">&nbsp;</span>
+                </a></li>
+            </ul>
+	    <div class="clr"></div>
+    </div>
+
+    <div class="secondaryUtility twelve columns alpha">
+        <div class="searchDesktop">
+            <div class="searchForm clearfix">
+                <form id="headerSearch" action="http://www.spencersonline.com/catalog/search.cmd" method="get" name="searchForm"><input type='hidden' name='form_state' value='searchForm'/><input id="keyword" data-qaAutomationId="hdr-SearchField" name="keyword" type="search" value="" autofillparam="ON" maxlength="100" autocorrect="on" autocapitalize="off" placeholder="wut r u lkn 4?"/><input class="searchButton" data-qaAutomationId="hdr-SearchLink" title="Search" name="Search" type="submit" value="Find It" autofillparam="ON"/></form></div>
+            </div>
+        <ul id="secondary-nav">
+                <li>
+               <a class="parent" data-qaAutomationId="hdrSecNav-Trend Shop" href="/section/trend-shop/364.uts">Trend Shop</a></li>
+        <li>
+               <a class="parent" data-qaAutomationId="hdrSecNav-Music" href="/section/music/2536.uts">Music</a></li>
+        <li>
+               <a class="parent" data-qaAutomationId="hdrSecNav-Back To School" href="/section/back-to-school/603.uts">Back To School</a></li>
+        <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=8fa5b5600a845a05123844184c7a30a7' />
+<li>
+<div style="width:54px;"></div>
+</li></ul>
+        </div>
+    <div class="clr"></div>
+</div>
+
+<div class="clr"></div>
+<div id="globalNavSelectors" data-parentCategory="" data-selectedCategory="" data-selectedSubCategory=""></div>
+
+<div id="navContainer">
+    <nav class="navInner">
+        <a id="toggleMenu" href="#" style="display: none;"><span>Menu</span></a>
+		<ul class="nav" >
+			<li id="hdrParentCat-2249" class='' data-nav-column-size="19">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Girls" href="/section/girls/2249.uts">Girls</a><ul class='subnav'><li id="hdrCat-NewArrivals-2249" class='static'>
+									<a href="/new_arrivals/2249/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-2249" class='static'>
+									<a href="/on_sale/2249/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-2252" class=''>
+	                                <a class="parent" href="/category/girls/girls-tees/pc/2249/2252.uts">Girls Tees</a></li>
+	                        <li id="hdrCat-2262" class=''>
+	                                <a class="parent" href="/category/girls/girls-pajamas/pc/2249/2262.uts">Girls Pajamas</a></li>
+	                        <li id="hdrCat-2269" class=''>
+	                                <a class="parent" href="/category/girls/fashion-tops/pc/2249/2269.uts">Fashion Tops</a></li>
+	                        <li id="hdrCat-2270" class=''>
+	                                <a class="parent" href="/category/girls/tanks-tubes/pc/2249/2270.uts">Tanks & Tubes</a></li>
+	                        <li id="hdrCat-2274" class=''>
+	                                <a class="parent" href="/category/girls/sweatshirts-hoodies/pc/2249/2274.uts">Sweatshirts & Hoodies</a></li>
+	                        <li id="hdrCat-2275" class=''>
+	                                <a class="parent" href="/category/girls/long-sleeve/pc/2249/2275.uts">Long Sleeve</a></li>
+	                        <li id="hdrCat-2277" class=''>
+	                                <a class="parent" href="/category/girls/dresses/pc/2249/2277.uts">Dresses</a></li>
+	                        <li id="hdrCat-2278" class=''>
+	                                <a class="parent" href="/category/girls/jumpers-romp/pc/2249/2278.uts">Jumpers & Rompers</a></li>
+	                        <li id="hdrCat-2279" class=''>
+	                                <a class="parent" href="/category/girls/skirts/pc/2249/2279.uts">Skirts</a></li>
+	                        <li id="hdrCat-2280" class=''>
+	                                <a class="parent" href="/category/girls/shorts/pc/2249/2280.uts">Shorts</a></li>
+	                        <li id="hdrCat-2281" class=''>
+	                                <a class="parent" href="/category/girls/leggings-tights/pc/2249/2281.uts">Leggings & Tights</a></li>
+	                        <li id="hdrCat-2282" class=''>
+	                                <a class="parent" href="/category/girls/swimwear/pc/2249/2282.uts">Swimwear</a></li>
+	                        <li id="hdrCat-213" class=''>
+	                                <a class="parent" href="/category/girls/lingerie/pc/2249/213.uts">Lingerie</a></li>
+	                        <li id="hdrCat-2670" class=''>
+	                                <a class="parent" href="/category/girls/bras-panties/pc/2249/2670.uts">Bras & Panties</a></li>
+	                        <li id="hdrCat-2284" class=''>
+	                                <a class="parent" href="/category/girls/mommy-to-be/pc/2249/2284.uts">Mommy To Be</a></li>
+	                        <li id="hdrCat-2285" class=''>
+	                                <a class="parent" href="/category/girls/extended-sizes/pc/2249/2285.uts">Extended Sizes</a></li>
+	                        <li id="hdrCat-2286" class=''>
+	                                <a class="parent" href="/category/girls/baby-girl/pc/2249/2286.uts">Baby Girl</a></li>
+	                        <li id="hdrCat-4" class=''>
+	                                <a class="parent" href="/category/girls/girls-accessories/pc/2249/4.uts">Girls Accessories</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-7" class='' data-nav-column-size="15">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Guys" href="/section/guys/7.uts">Guys</a><ul class='subnav'><li id="hdrCat-NewArrivals-7" class='static'>
+									<a href="/new_arrivals/7/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-7" class='static'>
+									<a href="/on_sale/7/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-10" class=''>
+	                                <a class="parent" href="/category/guys/guys-tees/pc/7/10.uts">Guys Tees</a></li>
+	                        <li id="hdrCat-21" class=''>
+	                                <a class="parent" href="/category/guys/tanks/pc/7/21.uts">Tanks</a></li>
+	                        <li id="hdrCat-22" class=''>
+	                                <a class="parent" href="/category/guys/long-sleeve/pc/7/22.uts">Long Sleeve</a></li>
+	                        <li id="hdrCat-23" class=''>
+	                                <a class="parent" href="/category/guys/sweatshirts-hoodies/pc/7/23.uts">Sweatshirts & Hoodies</a></li>
+	                        <li id="hdrCat-24" class=''>
+	                                <a class="parent" href="/category/guys/casual-tops/pc/7/24.uts">Casual Tops</a></li>
+	                        <li id="hdrCat-28" class=''>
+	                                <a class="parent" href="/category/guys/guys-pajamas/pc/7/28.uts">Guys Pajamas</a></li>
+	                        <li id="hdrCat-34" class=''>
+	                                <a class="parent" href="/category/guys/party-suits/pc/7/34.uts">Party Suits</a></li>
+	                        <li id="hdrCat-2134" class=''>
+	                                <a class="parent" href="/category/guys/hats-beanies/pc/7/2134.uts">Hats & Beanies</a></li>
+	                        <li id="hdrCat-31" class=''>
+	                                <a class="parent" href="/category/guys/boxers-briefs/pc/7/31.uts">Boxers & Briefs</a></li>
+	                        <li id="hdrCat-37" class=''>
+	                                <a class="parent" href="/category/guys/guys-socks/pc/7/37.uts">Guys Socks</a></li>
+	                        <li id="hdrCat-38" class=''>
+	                                <a class="parent" href="/category/guys/shorts-boardshorts/pc/7/38.uts">Shorts & Boardshorts</a></li>
+	                        <li id="hdrCat-39" class=''>
+	                                <a class="parent" href="/category/guys/extended-sizes/pc/7/39.uts">Extended Sizes</a></li>
+	                        <li id="hdrCat-40" class=''>
+	                                <a class="parent" href="/category/guys/baby-boy/pc/7/40.uts">Baby Boy</a></li>
+	                        <li id="hdrCat-2013" class=''>
+	                                <a class="parent" href="/section/guys-accessories/pc/7/2013.uts">Guys Accessories</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-2021" class='' data-nav-column-size="23">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Accessories" href="/section/accessories/2021.uts">Accessories</a><ul class='subnav'><li id="hdrCat-NewArrivals-2021" class='static'>
+									<a href="/new_arrivals/2021/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-2021" class='static'>
+									<a href="/on_sale/2021/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-2024" class=''>
+	                                <a class="parent" href="/category/accessories/backpacks/pc/2021/2024.uts">Backpacks</a></li>
+	                        <li id="hdrCat-2025" class=''>
+	                                <a class="parent" href="/category/accessories/body-jewelry/pc/2021/2025.uts">Body Jewelry</a></li>
+	                        <li id="hdrCat-71" class=''>
+	                                <a class="parent" href="/category/accessories/jewelry/pc/2021/71.uts">Jewelry</a></li>
+	                        <li id="hdrCat-2133" class=''>
+	                                <a class="parent" href="/category/accessories/watches/pc/2021/2133.uts">Watches</a></li>
+	                        <li id="hdrCat-2134" class=''>
+	                                <a class="parent" href="/category/accessories/hats-beanies/pc/2021/2134.uts">Hats & Beanies</a></li>
+	                        <li id="hdrCat-112" class=''>
+	                                <a class="parent" href="/category/accessories/handbags-totes/pc/2021/112.uts">Handbags & Totes</a></li>
+	                        <li id="hdrCat-113" class=''>
+	                                <a class="parent" href="/category/accessories/belts-buckles/pc/2021/113.uts">Belts & Buckles</a></li>
+	                        <li id="hdrCat-117" class=''>
+	                                <a class="parent" href="/category/accessories/wallets/pc/2021/117.uts">Wallets</a></li>
+	                        <li id="hdrCat-126" class=''>
+	                                <a class="parent" href="/category/accessories/keychains-lanyards/pc/2021/126.uts">Keychains & Lanyards</a></li>
+	                        <li id="hdrCat-128" class=''>
+	                                <a class="parent" href="/category/accessories/socks/pc/2021/128.uts">Socks</a></li>
+	                        <li id="hdrCat-129" class=''>
+	                                <a class="parent" href="/category/accessories/slippers/pc/2021/129.uts">Slippers</a></li>
+	                        <li id="hdrCat-130" class=''>
+	                                <a class="parent" href="/category/accessories/footwear/pc/2021/130.uts">Footwear</a></li>
+	                        <li id="hdrCat-2205" class=''>
+	                                <a class="parent" href="/category/accessories/hair-accessories/pc/2021/2205.uts">Hair Accessories</a></li>
+	                        <li id="hdrCat-2206" class=''>
+	                                <a class="parent" href="/category/accessories/makeup-tattoos/pc/2021/2206.uts">Makeup & Tattoos</a></li>
+	                        <li id="hdrCat-2207" class=''>
+	                                <a class="parent" href="/category/accessories/legwarmers/pc/2021/2207.uts">Legwarmers</a></li>
+	                        <li id="hdrCat-2208" class=''>
+	                                <a class="parent" href="/category/accessories/fashion-scarves-bandanas/pc/2021/2208.uts">Fashion Scarves & Bandanas</a></li>
+	                        <li id="hdrCat-2209" class=''>
+	                                <a class="parent" href="/category/accessories/sunglasses/pc/2021/2209.uts">Sunglasses</a></li>
+	                        <li id="hdrCat-2210" class=''>
+	                                <a class="parent" href="/category/accessories/fashion-glasses/pc/2021/2210.uts">Fashion Glasses</a></li>
+	                        <li id="hdrCat-2211" class=''>
+	                                <a class="parent" href="/category/accessories/suspenders-bow-ties/pc/2021/2211.uts">Suspenders & Bow Ties</a></li>
+	                        <li id="hdrCat-2212" class=''>
+	                                <a class="parent" href="/category/accessories/gloves-armwarmers/pc/2021/2212.uts">Gloves & Armwarmers</a></li>
+	                        <li id="hdrCat-2214" class=''>
+	                                <a class="parent" href="/category/accessories/contact-lenses/pc/2021/2214.uts">Contact Lenses</a></li>
+	                        <li id="hdrCat-2676" class=''>
+	                                <a class="parent" href="/category/accessories/baby-accessories/pc/2021/2676.uts">Baby Accessories</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-2352" class='' data-nav-column-size="15">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Naughty" href="/section/naughty/2352.uts">Naughty</a><ul class='subnav'><li id="hdrCat-NewArrivals-2352" class='static'>
+									<a href="/new_arrivals/2352/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-2352" class='static'>
+									<a href="/on_sale/2352/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-2355" class=''>
+	                                <a class="parent" href="/category/naughty/vibrators/pc/2352/2355.uts">Vibrators</a></li>
+	                        <li id="hdrCat-2377" class=''>
+	                                <a class="parent" href="/category/naughty/dildos/pc/2352/2377.uts">Dildos</a></li>
+	                        <li id="hdrCat-2376" class=''>
+	                                <a class="parent" href="/category/naughty/sex-toys/pc/2352/2376.uts">Sex Toys</a></li>
+	                        <li id="hdrCat-183" class=''>
+	                                <a class="parent" href="/category/naughty/mens-pleasure/pc/2352/183.uts">Mens Pleasure</a></li>
+	                        <li id="hdrCat-2387" class=''>
+	                                <a class="parent" href="/category/naughty/cuffs-restraints/pc/2352/2387.uts">Cuffs & Restraints</a></li>
+	                        <li id="hdrCat-2385" class=''>
+	                                <a class="parent" href="/category/naughty/bondage/pc/2352/2385.uts">Bondage</a></li>
+	                        <li id="hdrCat-2383" class=''>
+	                                <a class="parent" href="/category/naughty/dance-poles/pc/2352/2383.uts">Dance Poles</a></li>
+	                        <li id="hdrCat-213" class=''>
+	                                <a class="parent" href="/category/naughty/lingerie/pc/2352/213.uts">Lingerie</a></li>
+	                        <li id="hdrCat-2361" class=''>
+	                                <a class="parent" href="/category/naughty/vibrating-panties/pc/2352/2361.uts">Vibrating Panties</a></li>
+	                        <li id="hdrCat-196" class=''>
+	                                <a class="parent" href="/category/naughty/lubes-lotions/pc/2352/196.uts">Lubes & Lotions</a></li>
+	                        <li id="hdrCat-187" class=''>
+	                                <a class="parent" href="/category/naughty/naughty-novelty/pc/2352/187.uts">Naughty Novelty</a></li>
+	                        <li id="hdrCat-204" class=''>
+	                                <a class="parent" href="/category/naughty/massage/pc/2352/204.uts">Massage</a></li>
+	                        <li id="hdrCat-2515" class=''>
+	                                <a class="parent" href="/category/naughty/for-the-couple/pc/2352/2515.uts">For The Couple</a></li>
+	                        <li id="hdrCat-207" class=''>
+	                                <a class="parent" href="/category/naughty/hygiene-care/pc/2352/207.uts">Hygiene & Care</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-1509" class='' data-nav-column-size="17">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Fun &amp; Games" href="/section/fun-games/1509.uts">Fun & Games</a><ul class='subnav'><li id="hdrCat-NewArrivals-1509" class='static'>
+									<a href="/new_arrivals/1509/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-1509" class='static'>
+									<a href="/on_sale/1509/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-285" class=''>
+	                                <a class="parent" href="/category/fun-games/drinkware/pc/1509/285.uts">Drinkware</a></li>
+	                        <li id="hdrCat-1513" class=''>
+	                                <a class="parent" href="/category/fun-games/drinking-accessories/pc/1509/1513.uts">Drinking Accessories</a></li>
+	                        <li id="hdrCat-1524" class=''>
+	                                <a class="parent" href="/category/fun-games/beer-pong/pc/1509/1524.uts">Beer Pong</a></li>
+	                        <li id="hdrCat-227" class=''>
+	                                <a class="parent" href="/category/fun-games/bachelorette-party/pc/1509/227.uts">Bachelorette Party</a></li>
+	                        <li id="hdrCat-237" class=''>
+	                                <a class="parent" href="/category/fun-games/bachelor-party/pc/1509/237.uts">Bachelor Party</a></li>
+	                        <li id="hdrCat-244" class=''>
+	                                <a class="parent" href="/category/fun-games/birthday/pc/1509/244.uts">Birthday</a></li>
+	                        <li id="hdrCat-263" class=''>
+	                                <a class="parent" href="/category/fun-games/books/pc/1509/263.uts">Books</a></li>
+	                        <li id="hdrCat-1581" class=''>
+	                                <a class="parent" href="/category/fun-games/gags-pranks/pc/1509/1581.uts">Gags & Pranks</a></li>
+	                        <li id="hdrCat-1582" class=''>
+	                                <a class="parent" href="/category/fun-games/bathroom-humor/pc/1509/1582.uts">Bathroom Humor</a></li>
+	                        <li id="hdrCat-1583" class=''>
+	                                <a class="parent" href="/category/fun-games/adult-humor/pc/1509/1583.uts">Adult Humor</a></li>
+	                        <li id="hdrCat-1584" class=''>
+	                                <a class="parent" href="/category/fun-games/office-humor/pc/1509/1584.uts">Office Humor</a></li>
+	                        <li id="hdrCat-1586" class=''>
+	                                <a class="parent" href="/category/fun-games/toys-figures/pc/1509/1586.uts">Toys & Figures</a></li>
+	                        <li id="hdrCat-1585" class=''>
+	                                <a class="parent" href="/category/fun-games/car-accessories/pc/1509/1585.uts">Car Accessories</a></li>
+	                        <li id="hdrCat-1593" class=''>
+	                                <a class="parent" href="/category/fun-games/games-puzzles/pc/1509/1593.uts">Games & Puzzles</a></li>
+	                        <li id="hdrCat-1680" class=''>
+	                                <a class="parent" href="/category/fun-games/tech-toys/pc/1509/1680.uts">Tech Toys</a></li>
+	                        <li id="hdrCat-1595" class=''>
+	                                <a class="parent" href="/category/fun-games/dress-up-humor/pc/1509/1595.uts">Dress Up Humor</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-272" class='' data-nav-column-size="14">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Home &amp; Dorm" href="/section/home-dorm/272.uts">Home & Dorm</a><ul class='subnav'><li id="hdrCat-NewArrivals-272" class='static'>
+									<a href="/new_arrivals/272/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-272" class='static'>
+									<a href="/on_sale/272/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-275" class=''>
+	                                <a class="parent" href="/category/home-dorm/party-lighting/pc/272/275.uts">Party Lighting</a></li>
+	                        <li id="hdrCat-310" class=''>
+	                                <a class="parent" href="/category/home-dorm/lava-lamps/pc/272/310.uts">Lava Lamps</a></li>
+	                        <li id="hdrCat-298" class=''>
+	                                <a class="parent" href="/category/home-dorm/posters/pc/272/298.uts">Posters</a></li>
+	                        <li id="hdrCat-285" class=''>
+	                                <a class="parent" href="/category/home-dorm/drinkware/pc/272/285.uts">Drinkware</a></li>
+	                        <li id="hdrCat-306" class=''>
+	                                <a class="parent" href="/category/home-dorm/fleece-blankets-plush/pc/272/306.uts">Fleece Blankets & Plush</a></li>
+	                        <li id="hdrCat-1680" class=''>
+	                                <a class="parent" href="/category/home-dorm/tech-toys/pc/272/1680.uts">Tech Toys</a></li>
+	                        <li id="hdrCat-1688" class=''>
+	                                <a class="parent" href="/category/home-dorm/incense-burners/pc/272/1688.uts">Incense & Burners</a></li>
+	                        <li id="hdrCat-1684" class=''>
+	                                <a class="parent" href="/category/home-dorm/room-accessories/pc/272/1684.uts">Room Accessories</a></li>
+	                        <li id="hdrCat-1691" class=''>
+	                                <a class="parent" href="/category/home-dorm/speakers/pc/272/1691.uts">Speakers</a></li>
+	                        <li id="hdrCat-1693" class=''>
+	                                <a class="parent" href="/category/home-dorm/black-lights-accessories/pc/272/1693.uts">Black Lights & Accessories</a></li>
+	                        <li id="hdrCat-2522" class=''>
+	                                <a class="parent" href="/category/home-dorm/beach-towels/pc/272/2522.uts">Beach Towels</a></li>
+	                        <li id="hdrCat-1586" class=''>
+	                                <a class="parent" href="/category/home-dorm/toys-figures/pc/272/1586.uts">Toys & Figures</a></li>
+	                        <li id="hdrCat-2688" class=''>
+	                                <a class="parent" href="/category/home-dorm/pet-accessories/pc/272/2688.uts">Pet Accessories</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-2523" class='' data-nav-column-size="14">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Movies &amp; TV" href="/section/movies-tv/2523.uts">Movies & TV</a><ul class='subnav'><li id="hdrCat-NewArrivals-2523" class='static'>
+									<a href="/new_arrivals/2523/NewArrivals.uts">New Arrivals</a></li>
+							<li id="hdrCat-OnSale-2523" class='static'>
+									<a href="/on_sale/2523/OnSale.uts">Sale</a></li>
+							<li id="hdrCat-1708" class=''>
+	                                <a class="parent" href="/category/movies-tv/superheroes/pc/2523/1708.uts">Superheroes</a></li>
+	                        <li id="hdrCat-323" class=''>
+	                                <a class="parent" href="/category/movies-tv/television/pc/2523/323.uts">Television</a></li>
+	                        <li id="hdrCat-342" class=''>
+	                                <a class="parent" href="/category/movies-tv/movies/pc/2523/342.uts">Movies</a></li>
+	                        <li id="hdrCat-1806" class=''>
+	                                <a class="parent" href="/category/movies-tv/gaming/pc/2523/1806.uts">Gaming</a></li>
+	                        <li id="hdrCat-405" class=''>
+	                                <a class="parent" href="/category/movies-tv/celebrities/pc/2523/405.uts">Celebrities</a></li>
+	                        <li id="hdrCat-2507" class=''>
+	                                <a class="parent" href="/category/movies-tv/anime/pc/2523/2507.uts">Anime</a></li>
+	                        <li id="hdrCat-2527" class=''>
+	                                <a class="parent" href="/category/movies-tv/cartoons/pc/2523/2527.uts">Cartoons</a></li>
+	                        <li id="hdrCat-2528" class=''>
+	                                <a class="parent" href="/category/movies-tv/horror/pc/2523/2528.uts">Horror</a></li>
+	                        <li id="hdrCat-2529" class=''>
+	                                <a class="parent" href="/category/movies-tv/comedy/pc/2523/2529.uts">Comedy</a></li>
+	                        <li id="hdrCat-2530" class=''>
+	                                <a class="parent" href="/category/movies-tv/sci-fi-fantasy/pc/2523/2530.uts">Sci Fi & Fantasy</a></li>
+	                        <li id="hdrCat-2531" class=''>
+	                                <a class="parent" href="/category/movies-tv/cult-classics/pc/2523/2531.uts">Cult Classics</a></li>
+	                        <li id="hdrCat-1913" class=''>
+	                                <a class="parent" href="/category/movies-tv/disney/pc/2523/1913.uts">Disney</a></li>
+	                        <li id="hdrCat-2532" class=''>
+	                                <a class="parent" href="/category/movies-tv/retro-tv-movie/pc/2523/2532.uts">Retro TV Movie</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-3191" class='' data-nav-column-size="4">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Baby" href="/section/baby/3191.uts">Baby</a><ul class='subnav'><li id="hdrCat-40" class=''>
+	                                <a class="parent" href="/category/baby/baby-boy/pc/3191/40.uts">Baby Boy</a></li>
+	                        <li id="hdrCat-2286" class=''>
+	                                <a class="parent" href="/category/baby/baby-girl/pc/3191/2286.uts">Baby Girl</a></li>
+	                        <li id="hdrCat-2676" class=''>
+	                                <a class="parent" href="/category/baby/baby-accessories/pc/3191/2676.uts">Baby Accessories</a></li>
+	                        <li id="hdrCat-2284" class=''>
+	                                <a class="parent" href="/category/baby/mommy-to-be/pc/3191/2284.uts">Mommy To Be</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    <li id="hdrParentCat-441" class='' data-nav-column-size="12">
+	                        <a class="parent" data-qaAutomationId="hdrNav-Halloween" href="/section/halloween/441.uts">Halloween</a><ul class='subnav'><li id="hdrCat-1986" class=''>
+	                                <a class="parent" href="/category/halloween/girls-costumes/pc/441/1986.uts">Girls Costumes</a></li>
+	                        <li id="hdrCat-1995" class=''>
+	                                <a class="parent" href="/category/halloween/guys-costumes/pc/441/1995.uts">Guys Costumes</a></li>
+	                        <li id="hdrCat-2003" class=''>
+	                                <a class="parent" href="/category/halloween/group-couple-costumes/pc/441/2003.uts">Group & Couple Costumes</a></li>
+	                        <li id="hdrCat-462" class=''>
+	                                <a class="parent" href="/category/halloween/costume-pajamas/pc/441/462.uts">Costume Pajamas</a></li>
+	                        <li id="hdrCat-3224" class=''>
+	                                <a class="parent" href="/category/halloween/baby-costumes/pc/441/3224.uts">Baby Costumes</a></li>
+	                        <li id="hdrCat-463" class=''>
+	                                <a class="parent" href="/category/halloween/halloween-masks/pc/441/463.uts">Halloween Masks</a></li>
+	                        <li id="hdrCat-3230" class=''>
+	                                <a class="parent" href="/category/halloween/halloween-accessories/pc/441/3230.uts">Halloween Accessories</a></li>
+	                        <li id="hdrCat-469" class=''>
+	                                <a class="parent" href="/category/halloween/wigs/pc/441/469.uts">Wigs</a></li>
+	                        <li id="hdrCat-479" class=''>
+	                                <a class="parent" href="/category/halloween/party-supplies/pc/441/479.uts">Party Supplies</a></li>
+	                        <li id="hdrCat-3233" class=''>
+	                                <a class="parent" href="/section/halloween-decorations/pc/441/3233.uts">Halloween Decorations</a></li>
+	                        <li id="hdrCat-3221" class=''>
+	                                <a class="parent" href="/category/halloween/pet-costumes/pc/441/3221.uts">Pet Costumes</a></li>
+	                        <li id="hdrCat-480" class=''>
+	                                <a class="parent" href="/category/halloween/shop-by-character/pc/441/480.uts">Shop by Character</a></li>
+	                        <div class="closeCSSIcon"></div>
+	                        </ul></li>
+                    </ul>
+        <div class="clr"></div>
+	</nav>
+    </div>
+<div id="headerBottomContentWrap">
+    <div class="cmsWrapper" id="Header-GlobalBottomArea" data-content-name="Header &#45; Global Bottom Area"><a href="/content.jsp?pageName=PromoDetails.jsp"><img src="//spencers.scene7.com/is/image/Spencers/siteWideBannerDesktop%2DSHIPDEAL?$fullsize$" class="image-scale"></a></div></div>
+
+</header>
+
+        <div class="content_wrap container">
+            <div class="displayTable">
+            <div class="tableRow">
+                <div class='body_wrap '>
+                    <div class="twelve columns">
+                    <div class="cmsWrapper" id="Home-Area1" data-content-name="Home &#45; Area 1"><style type="text/css">
+  #sync1 .item{
+    margin: 0;
+    position: relative;
+  }
+  #sync1 .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .owl-item {
+    width: 100%;
+  }
+  .btn-girl,
+  .btn-guy {
+    position: absolute;
+    display: block;
+    background: transparent;
+    width: 28.2%;
+    height: 12.5%;
+    left: 7%;
+  }
+  .btn-girl {
+    bottom: 10%; 
+  }
+  .btn-guy {
+    bottom: 24%;
+  }
+  
+  
+   /*jewelery buttons*/
+  .btn-jewelry,
+  .btn-bodJewelry {
+    position: absolute;
+    display: block;
+    background: transparent;
+    width: 30.2%;
+    height: 15.5%;
+    left: 7%;
+  }
+  .btn-jewelry {
+    bottom: 1%;
+	left: 2%; 
+  }
+  .btn-bodJewelry {
+    bottom: 1%;
+	left: 70%; 
+  }
+  
+  
+  /*jewelery buttons */
+  
+</style>
+
+
+ <!-- Backpacks -->
+<div id="sync1" class="owl-carousel owl-theme row" style="width:102.1110000%;">
+  <div class="item">
+    <a href="//www.spencersonline.com/category/accessories/backpacks/pc/2021/2024.uts?utm_source=Home%20Page&utm_medium=Banner1&utm_content=BackPacks&utm_campaign=Backpacks_50%25Off_08_24_15
+ ">
+      <img src="http://spencers.scene7.com/is/image/Spencers/backpacks50Aspot1506?wid=1200" alt="Backpacks 50% off">
+    </a>
+  </div>
+
+  <!-- Drinkware -->
+  <div class="item">
+    <a href="//www.spencersonline.com/category/home-dorm/drinkware/pc/272/285.uts?utm_source=Home%20Page&utm_medium=Banner3&utm_content=Carnival%20Cups&utm_campaign=BOGO%20Drinkware_08_24_15">
+      <img src="//spencers.scene7.com/is/image/Spencers/8%2D19%2D15%5FCuppedUp%2DASpot2400x1082?wid=1200" alt="Buy 1 Get 1 50% OFF All Drinkware">
+    </a>
+  </div>
+
+  <!-- T-Shirts -->
+  <div class="item">
+    <a class="btn-guy" href="//www.spencersonline.com/category/guys/guys-tees/pc/7/10.uts?utm_source=Home%20Page&utm_medium=Banner2&utm_content=Guys%20Tees%20GNR&utm_campaign=BOGOTEES_50%25Off_08_24_15"></a>
+    <a class="btn-girl" href="//www.spencersonline.com/category/girls/girls-tees/pc/2249/2252.uts?utm_source=Home%20Page&utm_medium=Banner2&utm_content=Girls%20Tees%20Smile%20Whiskey&utm_campaign=BOGOTEES_50%25Off_08_24_15"></a>
+    <img src="//spencers.scene7.com/is/image/Spencers/teesBogo50Aspot1507?wid=1200" alt="Buy 1 get 1 Tees">
+  </div>
+
+  <!-- Jewelry -->
+ <div class="item">
+    <a class="btn-jewelry" href="//www.spencersonline.com/category/accessories/jewelry/pc/2021/71.uts?utm_source=Home%20Page&utm_medium=Banner4&utm_content=Jewelry&utm_campaign=Jewelry_B2G1F_08_24_15
+ "></a>
+    <a class="btn-bodJewelry" href="//www.spencersonline.com/category/accessories/body-jewelry/pc/2021/2025.uts?utm_source=Home%20Page&utm_medium=Banner4&utm_content=Body%20Jewelry&utm_campaign=Jewelry_B2G1F_08_24_15"></a>
+    <img src="//spencers.scene7.com/is/image/Spencers/JewelryB2g1FreeAspot1508?wid=1200" alt="Jewelry buy 2 get one Free" class="block image-scale">
+  </div>
+  
+  <!-- Sweepstakes -->
+  <div class="item">
+    <a target="_blank" href="http://bit.ly/1LcbgTB">
+      <img src="http://spencers.scene7.com/is/image/Spencers/Toe%2Daspot?wid=1200" target="_blank" alt="Win $100 Giftcard and a Laundry Basket Full of Socks!">
+    </a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#sync1").owlCarousel({
+      autoPlay : true,
+      slideSpeed : 300,
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+    });
+  });
+</script></div><div class="cmsWrapper" id="Home-Area2" data-content-name="Home &#45; Area 2"><style type="text/css">
+.col-12 { width: 100%; }
+.col-8 { width: 66.66666667%; }
+.col-7 { width: 58.33333333%; }
+.col-5 { width: 41.66666667%; }
+.col-4 { width: 33.33333333%; }
+.col-3 { width: 25%; }
+.row {
+  margin-right: -1.07166667%;
+}
+.begin {
+  padding: 0 0.75% 0 1.5%;
+}
+.mid {
+  padding: 0 0.75%;
+}
+.end {
+  padding: 0 1.5% 0 0.75%;
+}
+.full {
+  padding: 0 1.5%;
+}
+.HomeGridContainer {
+  background-color: #ffffff;
+  font-size: 0;
+  padding: 0 0 20px;
+}
+.homeGridItem {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 20px 0 0;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.homeGridItem > a {
+  display: block;
+  position: relative;
+}
+.homeGridItem2 {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 20px 0 0;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.homeGridItem2 > a {
+  display: block;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+.image-scale2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+</style>
+
+
+
+
+
+
+<div class="HomeGridContainer row">
+<div style="height:15px; min-height:15px;"></div>
+<div class="group">
+<div class="container">
+
+<div class="eight columns omega"><a href="/category/home-dorm/fleece-blankets-plush/pc/272/306.uts"><img src="//spencers.scene7.com/is/image/Spencers/homeGrid%5Ffleece%5F1431x996?$fullsize$" class="image-scale"></a></div>
+
+<div class="two columns omega"><a href="/category/guys/baby-boy/pc/7/40.uts"><img src="http://spencers.scene7.com/is/image/Spencers/babyBoy1?$fullsize$" class="image-scale"></a></div>
+<div class="two columns alpha"><a href="/category/girls/baby-girl/pc/2249/2286.uts"><img src="http://spencers.scene7.com/is/image/Spencers/babyGirl1?$fullsize$" class="image-scale"></a></div>
+</div>
+</div>
+
  
+  
+  <div class="group">
+    <div class="homeGridItem col-7 begin">
+      <a href="/category/fun-games/beer-pong/pc/1509/1524.uts">
+        <img class="image-scale" src="//spencers.scene7.com/is/image/Spencers/homeGrid%5Fbeerpong%5F1242x996?scl=1">
+      </a>
+    </div>
+    <div class="homeGridItem2 col-5 end">
+      <a href="/category/home-dorm/drinkware/pc/272/285.uts" style="padding-top: 114.1%">
+        <img class="image-scale2" src="//spencers.scene7.com/is/image/Spencers/homeGrid%5Fdrinkware%5F851x996?scl=1">
+      </a>
+    </div>
+  </div>
+  <div class="group">
+    <div class="homeGridItem col-12 full">
+      <a href="/category/accessories/backpacks/pc/2021/2024.uts">
+        <img class="image-scale" src="//spencers.scene7.com/is/image/Spencers/Grid%2DBackpacks%2D1507%2D2210x996?$fullSize1200$">
+      </a>
+    </div>
+  </div>
+  <div class="group">
+    <div class="homeGridItem col-7 begin">
+      <a href="/category/home-dorm/posters/pc/272/298.uts?utm_source=Home%20Page&utm_medium=Grid%20Spot%206&utm_term=HPG6&utm_content=Posters&utm_campaign=BOGO%20Posters_09_01_15">
+        <img class="image-scale" src="//spencers.scene7.com/is/image/Spencers/homeGrid%5Fposters%5F1242x996?$fullsize$">
+      </a>
+    </div>
+    <div class="homeGridItem2 col-5 end">
+      <a href="/section/naughty/2352.uts" style="padding-top: 114.1%">
+        <img class="image-scale2" src="//spencers.scene7.com/is/image/Spencers/homeGrid%5Fnaughty%5F851x996?scl=1">
+      </a>
+    </div>
+  </div>
+  <div class="group">
+    <div class="homeGridItem col-4 begin">
+      <a href="/category/naughty/bondage/pc/2352/2385.uts">
+        <img class="image-scale" src="//s7d9.scene7.com/is/image/Spencers/homeGrid_bondage_662x420?scl=1">
+      </a>
+    </div>
+    
+    <div class="homeGridItem2 col-4 mid">
+      <a href="/category/guys/baby/pc/7/40.uts" style="width:48%;position:absolute;z-index:2;display:block;height:100%;left:2%"></a>
+      <a href="/category/girls/baby/pc/2249/2286.uts" style="width:46%;position:absolute;z-index:2;display:block;height:100%;left:50%"></a>
+      <a style="padding-top: 62%"><img class="image-scale2" src="http://s7d2.scene7.com/is/image/Spencers/homeGrid%5Fbaby%5F662x420?$png$"></a>
+    </div>
+    <div class="homeGridItem col-4 end">
+      <a href="/section/jewelry/pc/2021/71.uts" style="padding-top:62%">
+        <img class="image-scale2" src="//s7d9.scene7.com/is/image/Spencers/homeGrid_jewelry_662x420?scl=1">
+      </a>
+    </div>
+  </div>
+</div></div><div class="cmsWrapper" id="Home-Area3" data-content-name="Home &#45; Area 3"><style>
+  .homeSocialTitleWrap {
+    padding: 20px 10px 10px 10px;
+    min-height: 100px;
+  }
+  .facebookContTitle {
+    overflow: hidden;
+    padding-top:26px;
+  }
+  .youTubeTitle {
+    padding-top:24px;
+  }
+  .homeSocialBodyWrap {
+    padding: 10px;
+  }
+</style>
+<div class="row add-bottom-2x" style="background-color:#000000">
+  <div class="columns four">
+    <div class="homeSocialTitleWrap facebookContTitle">
+      <a href="https://www.facebook.com/spencers/">
+      <img src="http://spencers.scene7.com/is/image/Spencers/FB%5FLogo%5FSONew?$png$"></a>
+      <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
+      <script src="//connect.facebook.net/en_US/all.js#appId=218815131480644&amp;xfbml=1"></script>
+      <fb:like href="http://www.facebook.com/spencers" send="false" layout="button_count" width="450" show_faces="false" colorscheme="dark"
+        font="" fb-xfbml-state="rendered" class="fb_edge_widget_with_comment fb_iframe_widget"
+        fb-iframe-plugin-query="app_id=138676109509652&amp;color_scheme=dark&amp;container_width=150&amp;href=http%3A%2F%2Fwww.facebook.com%2Fspencers&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450"><span
+        style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;">
+        <iframe name="f30d5a847" width="450px" height="1000px" frameborder="0" allowtransparency="true"
+          scrolling="no"
+          title="fb:like Facebook Social Plugin"
+          src="//www.facebook.com/plugins/like.php?app_id=138676109509652&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FrFG58m7xAig.js%3Fversion%3D41%23cb%3Dfcd20d61%26domain%3Dwww.spencersonline.com%26origin%3Dhttp%253A%252F%252Fwww.spencersonline.com%252Ff3bca1ec5c%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=150&amp;href=http%3A%2F%2Fwww.facebook.com%2Fspencers&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450"
+          style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span>
+      </fb:like>
+    </div>
+    <div class="homeSocialBodyWrap">
+      <a target="_blank" href="http://bit.ly/1LcbgTB">
+      <img style="width:100%" src="//spencers.scene7.com/is/image/Spencers/TOE%2Dsocial%2Dspot?$fullsize$" ></a>
+    </div>
+  </div>
+  <div class="columns four">
+    <div class="homeSocialBodyWrap">
+      <a target="_blank" href="http://instagram.com/spencers"><img
+        src="http://spencers.scene7.com/is/image/Spencers/instaLogoSocial?$png$"></a>
+    </div>
+    <div class="homeSocialTitleWrap">
+      <a target="_blank" href="http://instagram.com/spencers"> 
+      <img style="width:100%" src="//spencers.scene7.com/is/image/Spencers/instagramSocialSpot140515?$fullsize$">
+      </a>
+    </div>
+  </div>
+  <div class="columns four">
+    <div class="homeSocialTitleWrap youTubeTitle">
+      <a href="https://www.youtube.com/channel/UCYJ4RrYWn9EWgOym9-I6uTw">
+      <img src="http://spencers.scene7.com/is/image/Spencers/youTubeLogoNew?$png$">
+      </a>
+    </div>
+    <div class="homeSocialBodyWrap">
+      <iframe width="300" height="250" src="//www.youtube.com/embed/5aH7aKCO39g?rel=0" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div></div><div class="cmsWrapper" id="Home-Area4" data-content-name="Home &#45; Area 4"><div class="row">
+	<div class="blockCalloutShaded">
+		<h4>About Spencer's</h4>
+		<p>Spencer's knows funny. Funny thing, everyone knows Spencer's back from when they were a kid hanging out at the mall. Maybe you're not a kid anymore but you still like to laugh, need a gag gift or just wanna have fun – Spencer's is the place. From fart machines to <strong>lava lamps</strong>, blacklights, beer pong and bachelorette party stuff, Spencer's has funny stuff, cool stuff and a whole lot more. Need a rockin' birthday gift idea – get it at Spencer's. From cheap gifts to great gifts, <strong>outrageous tees</strong>, funny tees and custom tees, you can get it all at Spencer's. Get gifts for dad, bro, and sis, even mom, along with all your BFFs, family, friends, and friends with benefits. Oh yea, don't forget to treat yourself – you deserve a <strong>fun gift</strong>!</p>
+	</div>
+</div></div><div class="clr"></div>
+<!-- MyBuys Page Parameters – Place in <body> element -->
+    <script type="text/javascript">
+        mybuys.setPageType("HOME");
+    </script>
+   <!-- end -->
+<script type="text/javascript">
+    window.criteo_q = window.criteo_q || [];
+    window.criteo_q.push(
+    { event: "setAccount", account: "SPENCERSONLINE" },
+    { event: "setHashedEmail", email: [""] },
+    { event: "setSiteType", type: "d" },
+    { event: "viewHome" }
+    );
+    </script>
+<script language="JavaScript" type="text/javascript">s.server='10.132.90.5';s.pageName='Spencer\'s home spencer\'s';s.channel='Spencer\'s home spencer\'s';s.prop1='Spencer\'s home spencer\'s';s.prop2='Spencer\'s home spencer\'s';s.prop3='Spencer\'s home spencer\'s';s.prop4='Spencer\'s home spencer\'s';s.prop5='Spencer\'s home spencer\'s';s.prop6='Spencer\'s home spencer\'s';s.prop7='home';</script></div>
+                    <div class="clr"></div>
+                    <div id="fixedLeftMarginContent">
+                            <div class="cmsWrapper" id="FixedLeftMarginArea" data-content-name="Fixed Left Margin Area"></div></div>
+                        <div id="fixedRightMarginContent">
+                            <div class="cmsWrapper" id="FixedRightMarginArea" data-content-name="Fixed Right Margin Area"></div></div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	    <footer class="footer"><!-- Footer Begins -->
+<div class="container">
+    <div class="email-signup-container clearfix">
+        <div class="cmsWrapper" id="Footer-Email" data-content-name="Footer &#45; Email"><div id="signUpText" class="columns seven actual">
+        <span id="emailSignUpTitle">EMAIL SIGN UP </span>
+        <span class="subh3">BE THE FIRST TO FIND OUT ABOUT GREAT STORE SPECIALS AND ONLINE DEALS!</span>
+</div>
+
+<div id="emailForm" class="columns four actual">
+    <form action="/subscribe.cmd" method="post" name="subscribeForm" id="subscribeForm">
+	<input type="hidden" value="false" name="unSubscribe">
+        <input type="hidden" name="detectedCountryCode" class="geoIPGetCountry" value=""/>
+	<p id="emailSignUp" class="common-message"></p>
+	<div class="displayTable">
+	    <div class="tableRow">
+		<div class="tableCell alignTop">
+			<input type="email" placeholder="Enter your email address" maxlength="65" size="20" value="" style="width:65%;" class="user-email fl" name="userEmail">
+			<input type="submit" style="width:30%; margin-left:1.5%;" value="Submit" class="signup-button">
+			<div class='formFieldContainer checkRadio geoIPContent-CA'>
+				<input id="CASLAcknowledged" type="checkbox" name="CASLAcknowledged" />
+				<label for="CASLAcknowledged" style="color: #999;">
+				    You must agree to receive emails from Spencer Gifts LLC.
+				</label>
+			</div>
+		</div>
+	    </div>
+	</div>
+    </form>
+</div>
+<div class="clr"></div></div><div class="clr"></div>
+    </div>
+
+    <div class="footer-body">
+        <div class="cmsWrapper" id="Footer-Area1" data-content-name="Footer &#45; Area 1"><div class="columns five">
+  <div id="social-div">
+    <h3 class="icon_header">Follow Us</h3>
+    <ul class="social">
+      <li id="fb_image">
+        <a href="http://www.facebook.com/spencers" target="_blank"><img alt="Facebook" src="//s7d9.scene7.com/is/image/Spencers/footer/SpencersSocialIcons_Facebook.svg?scl=1" class="image-scale"></a>
+      </li>
+      <li id="tw_image">
+        <a href="http://twitter.com/spencers/" target="_blank"><img alt="Twitter" src="//s7d9.scene7.com/is/image/Spencers/footer/SpencersSocialIcons_Twitter.svg?scl=1" class="image-scale"></a>
+      </li>
+      <li id="ig_image">
+        <a href="http://instagram.com/spencers" target="_blank"><img alt="Instagram" src="//s7d9.scene7.com/is/image/Spencers/footer/SpencersSocialIcons_Instagram.svg?scl=1" class="image-scale"></a>
+      </li>
+    </ul>
+    <h3 class="icon_header">MAKE A DIFFERENCE</h3>
+    <a href="/content.jsp?pageName=BbsMkMe"><img id="soc_image" src="//s7d9.scene7.com/is/image/Spencers/footer/BMMS_Logo.svg?scl=0.9&cropN=0,0,0.99,1" alt="Spirit of Children"></a><br><br>
+  </div>
+</div>
+<div id="links_mobile"><a href="/content.jsp?pageName=GuestServ">Help</a> | <a href="http://www.jobs.net/jobs/spencer-gifts-spirithalloween/en-us/?IPath=TNCNTPG" target="_blank">Opportunities</a> | <a href="/content.jsp?pageName=CompInfo">Company Info</a></div>
+<div class="columns help actual">
+  <div class="inner">
+    <h3><a href="/content.jsp?pageName=GuestServ">Help</a></h3>
+    <ul>
+      <li><a href="/user/main.jsp">My Account</a></li>
+      <li><a href="/content.jsp?pageName=TrckOrder">Order Status</a></li>
+      <li><a href="/content.jsp?pageName=RetExch">Return Policy</a></li>
+      <li><a href="/content.jsp?pageName=Shipping">Shipping Info</a></li>
+      <li><a href="/content.jsp?pageName=ProdInfo">Product Info</a></li>
+      <li><a href="/custserv/sitemap.jsp">Site Map</a></li>
+    </ul>
+  </div>
+</div>
+<div class="columns opportunities actual">
+  <div class="inner">
+    <h3><a href="http://www.jobs.net/jobs/spencer-gifts-spirithalloween/en-us/?IPath=TNCNTPG" target="_blank">Opportunities</a></h3>
+    <ul>
+      <li><a href="http://www.jobs.net/jobs/spencer-gifts-spirithalloween/en-us/?IPath=TNCNTPG" target="_blank">Spencer's Careers</a></li>
+      <li><a href="/content.jsp?pageName=Mod">Be A Spencer's Model</a></li>
+      <li><a target="_blank" href="https://spencergifts.affiliatetechnology.com/">Affiliates</a></li>
+    </ul>
+  </div>
+</div>
+<div class="columns info actual">
+  <div class="inner">
+    <h3><a href="/content.jsp?pageName=CompInfo">Company Info</a></h3>
+    <ul>
+      <li><a href="/custserv/locate_store.cmd">Store Locator</a></li>
+      <li><a href="/content.jsp?pageName=About">About Spencer's</a></li>
+      <li><a href="/content.jsp?pageName=BbsMkMe">Charitable Giving</a></li>
+      <li><a href="/content.jsp?pageName=SocRes">California Transparency In Supply Chains Act</a></li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">_satellite.pageBottom();</script>
+<div class="clr"></div></div><div class="clr"></div>
+    </div>
+    <div class="footer-copyright">
+        <div class="cmsWrapper" id="Footer-Area2" data-content-name="Footer &#45; Area 2"><div class="fl cards">
+	<img width="170" alt="American Express, Visa, MasterCard, Discover, PayPal" src="/assets/images/cms/globalmisc/payment-cards.svg">
+</div>
+<div class="fl logos" style="width:20%">
+	
+</div>
+<div class="fl copyright">
+<span><a href="/content.jsp?pageName=SecPriv">Security &amp; Privacy</a> | </span><a href="/content.jsp?pageName=Terms">Terms of Use</a> 
+</div>
+<div class="fr privacy">
+	Copyright &copy; 2015 Spencer Gifts,llc  
+</div>
+<script src="//api.temails.com/cs/?c=187&ck=52654265727"></script>
+<div class="clr"></div></div></div>
+</div>
+
+</footer>
+		</div>
+        </div>
+
+        <script src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
+
+        <script src="/js/common.js" language="JavaScript" type="text/javascript"></script><script src="/js/persistent_cart.jsp" language="JavaScript" type="text/javascript"></script><!-- MyBuys Page Initialization – Place after </body> tag -->
+                <script type="text/javascript">
+                        mybuys.initPage();
+                </script>
+                <!-- End MyBuys Page Initialization -->
+            <script src="/js/utility/utility.jsp" type="text/javascript"></script><script src="/js/plugins/plugins.jsp" type="text/javascript"></script><script>
+				var s7ViewerReadyEvent = jQuery.Event("s7ViewerReady");
+				var s7ViewerLoaded = false;
+				var s7ViewerLibLoaded = true;
+				function setS7ViewerReady() {
+					if (s7ViewerLoaded && s7ViewerLibLoaded) {
+						$("body").trigger("s7ViewerReady");
+					}
+				}
+			</script>
+			<script type="text/javascript" onload="s7ViewerLoaded = true; setS7ViewerReady()" src='http://s7d9.scene7.com/s7viewers/html5/js/MixedMediaViewer.js'></script>
+			<script language="JavaScript" type="text/javascript">var s_code=top.s.t();if(s_code)document.write(s_code);</script><script type="text/javascript">
+            
+            var common_header_text_items = ' item(s)';
+
+            
+	        var strengthStr = ['TOO SHORT', 
+                               'WEAK', 
+                               'MEDIUM', 
+                               'STRONG'];
+            
+            createCookie("DEVICE_TYPE", "Desktop");
+            window.sourceId = '1';
+            validate.initLocale({"US":"^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})(?:\\s*(?:#|x\\.?|ext\\.?|extension)\\s*(\\d+))?$","CA":"^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})(?:\\s*(?:#|x\\.?|ext\\.?|extension)\\s*(\\d+))?$"}, {"US":"^\\d{5}(-\\d{2}[N0-9][D0-9])?$","CA":"^[ABCEGHJKLMNPRSTVXY]{1}\\d{1}[A-Z]{1} *\\d{1}[A-Z]{1}\\d{1}$"});
+            
+
+            // Password Rule Switches
+            var passwordRules = {"passwordMinLengthCheck":8,"passwordAtLeastOneSpecialCheck":false,"passwordMixedCaseCheck":false,"passwordAtLeastOneDigitCheck":false,"passwordNotRepeatOrSequenceCheck":3};
+
+            
+			if (getCookie('STYLE_OVERRIDE') != '') {
+				var href = "/css/sales_overrides.jsp?time=" + new Date().getTime();
+				$.ajax({
+					url: href,
+					dataType: 'text',
+					success: function(data) {
+						$('<style type="text/css">' + data + '</style>').appendTo("head");
+					}
+				});
+			}
+
+            </script>
+</body>
+
+</html>
