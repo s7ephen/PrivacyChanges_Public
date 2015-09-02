@@ -1,1 +1,414 @@
- 
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content= "" >
+		<meta name="author" content= "" >
+										
+
+	<meta property="fb:app_id" content="215187277353" /> 	<meta property="og:site_name" content="MyPoints.com" />
+
+
+
+		<link rel="shortcut icon" href="/favicon.ico">
+
+		<title>Cookies are Required</title>
+
+
+		<!-- Bootstrap core CSS -->
+				<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="http://sc0.mypoints.com/md5/cc/ccb70eceeb2605914be5669d1d930c69_main.css" rel="stylesheet">
+						<link href="/md5/02/029b07781b8c2d43fd89683adaa48a2d_brown-font.css" rel="stylesheet">
+		<link href="/emp/u/css/tiles.vm" rel="stylesheet">
+
+								
+
+
+								<style id="xfb">body{display:none !important;}</style>
+		<script>if(self === top){var xfb=document.getElementById("xfb"); xfb.parentNode.removeChild(xfb);}else{top.location=self.location;}</script>
+
+								<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://sc3.mypoints.com/js/bootstrap.min.js"></script>
+		<script src="http://sc0.mypoints.com/md5/13/139783e5afcc8273b62f29c69a859471_main.js"></script>
+		<script src="http://sc2.mypoints.com/js/g/util/typeahead.min.js"></script>
+                
+								
+				
+						
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+				
+				
+
+
+
+
+<div class="header navbar navbar-fixed-top" id="main-header" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a href="/" id="logo" class="navbar-left pull-left hide-on-focus"><h1>MyPoints</h1></a>
+			<button type="button" class="navbar-toggle pull-left hide-on-focus" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Menu</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<form class="navbar-form search navbar-left pull-left hidden-md hidden-lg" method="GET" action="/emp/u/search.vm" role="search">
+				<i class="glyphicon glyphicon-search glyph-flip"></i>
+				<input type="text" class="typeahead" placeholder="Search" id="main-search-collapse" name="q" autocomplete="off" required="true"/><!--IMPORTANT #main-search is used in js dont change -->
+				<input type="submit" value="Submit" class="invisible_btn"/>
+				<a class="clear-text" data-target="#main-search-collapse">&times;</a>
+			</form>
+
+
+			<ul class="nav navbar-nav navbar-left pull-right hidden-md hidden-lg">
+							<li style="float:right;"><a class="navbar-right pull-right nav-join bannerNonAuthLanding" href="https://www.mypoints.com/emp/u/signup.do" data-toggle="modal" data-target="#joinModal">Join Now</a></li>
+				                				<li style="float:right;"><a class="navbar-right pull-right" href="https://www.mypoints.com/emp/u/login.do?rloc=%2Femp%2Fu%2FcookieTest.do%3Fq%3D%252Femp%252Fu%252Fprivacy.vm" class="loginModal" data-onok="/emp/u/cookieTest.do?q=%2Femp%2Fu%2Fprivacy.vm" >Sign In</a></li>
+						</ul>
+		</div><!--.navbar-header-->
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left hide-on-focus">
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <span class="caret hidden-md hidden-lg"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/emp/u/shop.vm">Featured</a></li>
+						<li><a href="/emp/u/shop-by-store.vm">By Store</a></li>
+						<li><a href="/emp/u/shop-by-product.vm">Products</a></li>
+					</ul>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Deals <span class="caret hidden-md hidden-lg"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/emp/u/local-deals.vm">Local</a></li>
+						<li><a href="/emp/u/deals.vm">Goods</a></li>
+						<li><a href="/emp/u/travel-deals.vm">Travel</a></li>
+					</ul>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Coupons <span class="caret hidden-md hidden-lg"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/emp/u/coupon-codes.vm">Coupon Codes</a></li>
+						<li><a href="/emp/u/grocery-coupons.vm">Grocery Coupons</a></li>
+					</ul>
+				</li>
+									<li ><a href="/emp/u/videos.vm">Videos</a></li>
+				
+								<li ><a href="/emp/u/games.vm">Games</a></li>
+								<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret hidden-md hidden-lg"></span></a>
+					<ul class="dropdown-menu">
+												<li><a href="/emp/u/surveys.vm">Surveys</a></li>
+												<li><a href="/emp/u/member/download-mobile-app.vm">Download Mobile App</a></li>
+						<li><a href="/emp/u/shopping-extension/install.vm">Download Score!</a></li>
+						<li><a href="/emp/u/mysearch.vm">Search and Earn</a></li>
+						<li><a href="/emp/u/editProfile.do?view=raf">Refer-a-Friend</a></li>
+											</ul>
+				</li>
+				<li class="divider hidden-md hidden-lg"></li>
+				<li	class="hidden-md hidden-lg "><a href="/emp/u/rewards.vm" >Rewards</a></li>
+								<li class="divider hidden-md hidden-lg"></li>
+				<li	class="hidden-md hidden-lg"><a href="https://mypoints.zendesk.com" target="_blank">Help</a></li>
+								<li class="hidden-xs hidden-md hidden-lg"><a href="https://www.mypoints.com/emp/u/login.do?rloc=%2Femp%2Fu%2FcookieTest.do%3Fq%3D%252Femp%252Fu%252Fprivacy.vm" class="loginModal" data-onok="/emp/u/cookieTest.do?q=%2Femp%2Fu%2Fprivacy.vm">Sign In</a></li>
+				<li class="hidden-sm hidden-md hidden-lg"><a href="https://www.mypoints.com/emp/u/login.do?rloc=%2Femp%2Fu%2FcookieTest.do%3Fq%3D%252Femp%252Fu%252Fprivacy.vm">Sign In</a></li>
+				<li class="hidden-md hidden-lg"><a class="bannerNonAuthLanding" href="https://www.mypoints.com/emp/u/signup.do">Join Now</a></li>
+							</ul>
+
+			<form class="navbar-form search navbar-left hidden-sm hidden-xs" method="GET" action="/emp/u/search.vm" role="search">
+				<i class="glyphicon glyphicon-search glyph-flip"></i>
+				<input type="text" class="typeahead" placeholder="Search" id="main-search" name="q" autocomplete="off" required="true"/><!--IMPORTANT #main-search is used in js dont change -->
+				<input type="submit" value="Submit" class="invisible_btn"/>
+				<a class="clear-text" data-target="#main-search">&times;</a>
+			</form>
+
+			<ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+								<li><a href="https://www.mypoints.com/emp/u/login.do?rloc=%2Femp%2Fu%2FcookieTest.do%3Fq%3D%252Femp%252Fu%252Fprivacy.vm" class="loginModal" data-onok="/emp/u/cookieTest.do?q=%2Femp%2Fu%2Fprivacy.vm">Sign In</a></li>
+				<li class="nav-join"><a class="bannerNonAuthLanding" href="https://www.mypoints.com/emp/u/signup.do">Join Now</a></li>
+								<li class="nav-rewards" ><a href="/emp/u/rewards.vm" title="Rewards"><span class="gift-icon"></span></a></li>
+			</ul>
+		</div><!--.collapse navbar-collapse-->
+
+	</div><!--.container-fluid-->
+</div><!--.header-->
+
+
+
+
+						<div>                                            
+    
+                        
+    
+</div>
+
+		
+
+				<div class="container">
+							
+Please enable cookies and  <a href="/emp/u/privacy.vm">retry</a>  your request.
+
+					</div>
+
+				
+
+
+
+
+							
+<footer class="tc">
+	<a href="/"><h1 id="footer-logo">MyPoints</h1></a>
+	<p class="ninety-nine">Rewarding Our Members Since 1996</p>
+	<hr/>
+	<div class="container">
+		<div class="row tl">
+			<div class="col-xs-10 col-xs-push-2 col-md-push-0 col-md-6 col-lg-5 col-lg-push-1 col-sm-11 col-sm-push-1">
+				<div class="row mb">
+					<div class="col-xs-6 col-sm-4 col-sm-push-2 col-md-6 col-md-push-0">
+						<h4>ABOUT</h4>
+						<ul>
+							<li><a href="/emp/u/how-mypoints-works.vm">How MyPoints Works</a></li>
+							<li><a href="https://mypoints.zendesk.com">FAQs</a></li>
+							<li><a href="http://www.untd.com/careers/index.html" target="_blank">Careers</a></li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-sm-push-2 col-md-6 col-md-push-0">
+						<h4>POLICIES</h4>
+						<ul>
+							<li><a href="/emp/u/privacy.vm">Privacy Policy</a></li>
+							<li><a href="/emp/u/terms.vm">Terms of Service</a></li>
+							<li><a href="/emp/u/shopping-extension/eula.vm">Score! Privacy Policy &amp; EULA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-push-2 col-md-push-0 col-md-6 col-lg-5 col-lg-push-1 col-sm-11 col-sm-push-1">
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-sm-push-2 col-md-6 col-md-push-0">
+						<h4>PARTNERSHIPS</h4>
+						<ul>
+							<li><a href="http://www.untd.com/advertisers/properties/mypoints/" target="_blank">Advertise With Us</a></li>
+							<li><a href="https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=1933569" target="_blank">Affiliates</a></li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 col-sm-4 col-sm-push-2 col-md-6 col-md-push-0">
+						<h4>CONTACT US</h4>
+						<ul>
+							<li>44 Montgomery Street, Suite 250</li>
+							<li>San Francisco, CA 94104</li>
+							<li><a href="/emp/u/member/transactionDetail.vm">Contact Member Services </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--.container-->
+	<p class="social">Looking for more great deals?  Follow us! <br/>
+		<a href="https://www.facebook.com/mypoints" target="_blank"><img src="http://sc1.mypoints.com/md5/da/da74a52125fed387cf855b8df1214f5a_icon-facebook.png"/></a>
+		<a href="https://www.twitter.com/MyPoints" target="_blank"><img src="http://sc2.mypoints.com/md5/9b/9b48f3ed02483e4b3c87051490dcf0d9_icon-twitter.png"/></a>
+	</p>
+	<p class="copyright">&copy; 2004-2015 MyPoints.com   |   All Rights Reserved</p>
+</footer>
+		
+
+												
+		<!-- modal favorites -->
+		
+										
+		                        		
+
+
+								<script language="javascript" src="/emp/u/js/onload.vm" type="text/javascript"></script>
+		<script src="http://sc1.mypoints.com/md5/af/af4d9d84ba3f1b456c61785b836e17a6_placeholder.js"></script>
+		
+
+
+
+		
+	
+					
+				
+
+
+
+
+
+
+		
+
+
+
+
+	
+	
+	
+				
+					
+
+
+<div id="fb-root"></div>
+<script type="text/javascript" src="http://sc3.mypoints.com/md5/0e/0e782685859cf38b5e096f71f6932489_onboarding.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://sc2.mypoints.com/md5/b8/b8c645c8b16509d7acb517381242a071_login-validation.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://sc2.mypoints.com/js/g/util/datepicker-moment.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	var prefillForm = "";
+
+	window.fbAsyncInit = function() {
+		  FB.init({
+			appId : '215187277353',
+			cookie     : true,
+			xfbml      : true,
+			version    : 'v2.1'
+		  });
+	};
+
+	// Load the SDK asynchronously
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+	//clear error msgs
+	function clearErrors() {
+	   $('.error').tooltip('hide');
+	   $('input.error').removeClass('error');
+	   $('#js_alert_box').html('');
+	   $('#js_alert_box').hide();
+	}
+
+	function fb_connect() {
+   	   clearErrors();
+	   FB.login(function(response){
+		  signUpCallback(response);
+		},{scope: 'public_profile,email'});
+	}
+
+			
+	function signUpCallback(response) {
+		console.log(response);
+		if (response.status === 'connected') {
+			var fb_accessToken = response.authResponse.accessToken;
+			FB.api('/me', {fields: 'name,email,id,gender,first_name,last_name,age_range'}, function(response) {
+					console.log('Fb API response');
+					console.log(response);
+					var email = response.email;
+					var name  = response.name;
+					var first_name = response.first_name;
+					var last_name = response.last_name;
+					var gender = response.gender;
+					var fb_id = response.id;
+					var age_range = response.age_range;
+					console.log(age_range);
+					if ( age_range.min != undefined && age_range.min ){
+						if ( age_range.min < 18 ){
+																												$('#regForm #birthDateMonth').val(1);
+							$('#regForm #birthDateDay').val(1);
+							$('#regForm #birthDateYear').val(new Date().getFullYear());
+						}
+					}
+
+										if ( email != undefined && email != "" ){
+						$('#regForm #email').val(email);
+
+						if ( $('#regForm #firstName') != undefined && first_name )
+							$('#regForm #firstName').val(first_name);
+
+						if ( $('#regForm #lastName') != undefined && last_name )
+							$('#regForm #lastName').val(last_name);
+
+						if ( $('#regForm #fullName') != undefined && name )
+							$('#regForm #fullName').val(name);
+						else if ( $('#regForm #fullName') != undefined && first_name && last_name )
+							$('#regForm #fullName').val(first_name + " " + last_name);
+
+						if ( $('#regForm #gender-input') != undefined && gender ){
+							$('#regForm #gender-input').val(gender);
+							if ( gender === 'male') {
+								$('#regForm #gender-input').val('M');
+							} else if( gender === 'female' ) {
+								$('#regForm #gender-input').val('F');
+							}
+						}
+
+												if ( fb_id && fb_id != "")
+							setCookie('mp_fbId',fb_id,2);
+
+						if ( prefillForm == "true" ){
+							$('button.facebook-btn').hide();
+							$('#js_alert_box').html('<p>Please verify the below details and click "Join MyPoints"</p>');
+							$('#js_alert_box').show();
+						} else {
+							$('#regForm').submit();
+						}
+					}
+					else {
+						// TODO::
+						console.log('Member has no email id with facebook account.. TBD??');
+						$('#js_alert_box').html('<p>Looks like your facebook account has not been linked with an email address <br/>Please try again or sign up with your email address below.</p>');
+						$('#js_alert_box').show();
+					}
+			});
+
+		} else if (response.status === 'not_authorized') {
+			$('#js_alert_box').html('<p>Looks like you did not give permissions to the MyPoints app. Please try again or sign up with your email address below.</p>');
+			console.log('Looks like you did not give permissions to the MyPoints app. Please try again or sign up with your email address below.');
+			$('#js_alert_box').show();
+		} else {
+			$('#js_alert_box').html('<p>Oh! could not sign up with Facebook. Please try again or sign up with your email address below.</p>');
+			console.log('Error - Could not connect to Facebook. Please sign up with your email address.');
+			$('#js_alert_box').show();
+		}
+	}
+
+	function setCookie(name,value,days) {
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime()+(days*24*60*60*1000));
+			var expires = "; expires="+date.toGMTString();
+		}
+		else var expires = "";
+		document.cookie = name+"="+value+expires+"; path=/emp/u";
+	}
+
+	$(document).ready(function(){
+		/*Facebook connect  */
+		$('button.facebook-btn').click(fb_connect);
+	});
+</script>
+
+			
+<script type="text/javascript" language="JavaScript">
+//basic configuration
+var io_bbout_element_id           = 'ioBlackBox'; // populate ioBlackBox in form
+var io_install_stm                = false; // do not install ActiveX
+var io_exclude_stm                = 12; // exclude Active X on XP and higher
+var io_flash_needs_update_handler = "";
+//configure parameters for network latency
+var io_max_wait                   = 3000; // wait 3 seconds
+var io_submit_form_id             = ''; // form Id
+</script>
+
+<script type="text/javascript" language="JavaScript" src="https://mpsnare.iesnare.com/snare.js">
+</script>
+		
+		   		
+								
+	</body>
+</html>
