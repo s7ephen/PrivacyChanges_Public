@@ -1,1 +1,882 @@
- 
+<!DOCTYPE html>
+<html lang='en' xmlns:fb='http://www.facebook.com/2008/fbml' xmlns:og='http://opengraphprotocol.org/schema/' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<script src="//www.google-analytics.com/cx/api.js"></script>
+<title>Bloomberg - Business, Financial &amp; Economic News, Stock Quotes</title>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="kEOcnl25FxDgTLCSRAgqjnB3okVE9HS98WILZHnfDAE=" name="csrf-token" />
+<meta charset='utf-8'>
+<meta content='IE=10; IE=9; IE=8' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"32a39e099b","applicationID":"2021368","transactionName":"JVwPEhAJDlRSQ0tVAwFSAh9NEg1L","queueTime":4,"applicationTime":18,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgMEUVZACgMCVVJUDw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content="21600;URL='http://www.bloomberg.com/tos/'" http-equiv='refresh'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='false' name='preview-mode'>
+<meta content='false' name='from-dash'>
+<meta content='telephone=no' name='format-detection'>
+<meta content='Terms and conditions, including linking terms, intellectual property issues, privacy policy and terms for Taiwanese customers.' name='description'>
+<meta content='Terms of Service' name='title'>
+
+<!--[if lt IE 9]>
+<link href="http://cdn.gotraffic.net/assets/adaptive/full/global/global-00e836fb14d5ec50bea77cbc56145b5b.css" media="all" rel="stylesheet" />
+<link href="http://cdn.gotraffic.net/assets/adaptive/full/controller/legacy_static-159e8ce9427099d900267c360de30aa3.css" media="all" rel="stylesheet" />
+<link href="http://cdn.gotraffic.net/assets/site_ie8-0e298567581c8559894998d473fe6499.css" media="all" rel="stylesheet" />
+<![endif]-->
+<!--[if lte IE 7]>
+<link href="http://cdn.gotraffic.net/assets/site_ie7-c0df5a017d976d4cb1b5d734bd4a954b.css" media="all" rel="stylesheet" />
+<![endif]-->
+<!--[if lte IE 9]>
+<link href="http://cdn.gotraffic.net/assets/site_ie9-e58e94cd4d8259a8807e59850b31e319.css" media="all" rel="stylesheet" />
+<![endif]-->
+<!--[if gte IE 9]>
+<link href="http://cdn.gotraffic.net/assets/adaptive/desktop/global/global-4405b090d0096baa36fa2486bb479d7f.css" media="all" rel="stylesheet" />
+<link href="http://cdn.gotraffic.net/assets/adaptive/desktop/controller/legacy_static-159e8ce9427099d900267c360de30aa3.css" media="all" rel="stylesheet" />
+
+<script src="//fonts.gotraffic.net/bnj8lwv.js"></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+
+<link href="http://cdn.gotraffic.net/assets/adaptive/desktop/global/global/ie_drop_nav-32bdae7a8df2b2b4176fc8ff604507fd.css" media="all" rel="stylesheet" />
+<![endif]-->
+<!--[if !IE]> -->
+<link href="http://cdn.gotraffic.net/assets/adaptive/desktop/global/global-4405b090d0096baa36fa2486bb479d7f.css" media="all" rel="stylesheet" />
+<link href="http://cdn.gotraffic.net/assets/adaptive/desktop/controller/legacy_static-159e8ce9427099d900267c360de30aa3.css" media="all" rel="stylesheet" />
+
+<script src="//fonts.gotraffic.net/bnj8lwv.js"></script>
+<script>
+  try{Typekit.load();}catch(e){}
+</script>
+
+<!-- <![endif]-->
+
+
+<script>
+  if(defaultSectionCookie = document.cookie.match(/defaultSection=(\S+)\;/)){
+    if(document.location.pathname === '/' && defaultSectionCookie[1] !== '' && document.referrer === ''){
+      window.location = defaultSectionCookie[1] + '?cmpid_int=hpdft';
+    }
+  }
+</script>
+
+<link href="http://cdn.gotraffic.net/assets/application-dfc808d1af72c1984a89aa0efe012bc2.css" media="all" rel="stylesheet" />
+<link href="//assets.bwbx.io/business/public/stylesheets/snippet_application.6f491621.css" media="all" rel="stylesheet" />
+<script>
+  var _sf_startpt=(new Date()).getTime();
+</script>
+
+<script>
+  window.BcomServerVars = window.BcomServerVars || {};
+  (function(h){
+    h.asset_host = "http://cdn.gotraffic.net/";
+    h.ad_test_domain = "bb20ad";
+    h.bregUrl = "https://login.bloomberg.com";
+    h.chartCloseButton = "http://cdn.gotraffic.net/assets/chart/x-button-39393ad61195a7cd0e330b147a51c229.png"
+    h.chartStoryMarker = "http://cdn.gotraffic.net/assets/chart/story-marker-a93071dfe2cf24b829fff07e5214dd36.png"
+    h.forceTrusteConsentBar = false;
+    h.pageName = "legacy_static";
+    h.qRegCssJs = ["http://cdn.gotraffic.net/q/v/20150819_165700/stylesheets/q_reskin-min.css"].concat(["http://cdn.gotraffic.net/r/v/20150819_165700/javascripts/breg-min.js"], ["http://cdn.gotraffic.net/q/v/20150819_165700/javascripts/q_reskin-min.js"]);
+    h.qUrl = "https://q.bloomberg.com";
+    h.symautocompleteUrl = "http://www.bloomberg.com/apps/data?pid=symautocomplete&Query=";
+    h.utcOffset = -14400000;
+    h.watchlistUrl = "http://www.bloomberg.com/markets/watchlist";
+    h.watchlistSslProxyUrl = "https://login.bloomberg.com/watchlist/markets/watchlist/proxy";
+    h.refreshIfOriginChanged = false;
+    h.bucketRange = {"start":0,"end":0};
+    h.update_api_version = "20150831_183722";
+    h.mediaVoicePropertyId = "NA-BLOOCOM-11236026";
+    h.mediaVoicePlacementSwitch = "nativewell1 nativewell2 nativedata nativelead";
+    h.contentSegment = "";
+  
+    if(false) {
+      h.disableAnalytics = false;
+      h.deviceType = "";
+      delete h.qRegCssJs;
+    }
+  })(window.BcomServerVars);
+  
+  window.mobileIOS = function(){
+    return (/(iPhone|iPad)/i).test(navigator.userAgent);
+  }
+</script>
+
+<script src="http://cdn.gotraffic.net/assets/application-bd81b183536254fe33f8b7118481a86b.js"></script>
+
+<script data-exclude="true" src="//assets.bwbx.io/business/public/javascripts/bb.loader.f1e7eb11.js"></script>
+<script data-exclude="true" src="//assets.bwbx.io/business/public/javascripts/polyfills.7cb33556.js"></script>
+<script data-exclude="true" src="//assets.bwbx.io/business/public/javascripts/application.b8b855e2.js"></script>
+<script>
+  Bcom.Ads.Interstitial.domain = "bloomberg.com";
+  Bcom.Ads.Interstitial.initInterstitialAd();
+</script>
+<div id='show_interstitial'>
+<div id='intro_ad_header'>
+<div id='small_logo'><img alt="Bloomberg Logo" border="0" height="22" src="http://cdn.gotraffic.net/assets/logo_bloomberg_22x103-2462403962f71a6fe26db2ddafed7e6c.png" width="103" /></div>
+<div id='skip_ad' onclick='javascript:Bcom.Ads.Interstitial.disableInterstitial();'>
+<a>Continue to Bloomberg</a>
+</div>
+</div>
+<div id='intro_ad'>
+<div class="ad-interstitial" id="ad-container-interstitial"><div bcom-ad-code="blp.home/index" bcom-ad-position="interstitial" bcom-ad-sizes="[640, 480]" bcom-ad-url="/" class="ad_inner_container" id="ad-interstitial"><script>
+//<![CDATA[
+Bcom.Ads.Interstitial.renderInterstitial("ad-interstitial");
+//]]>
+</script></div></div>
+</div>
+</div>
+<div id='background_interstitial'></div>
+
+<noscript>
+<style>
+  #bcom_homepage_headlines_top_news {
+    display: block;
+    margin-top: 12px;
+  }
+  .article_content .container {
+    margin-top: 0;
+  }
+  
+  .adsense,
+  .advertisements,
+  .article_interaction .save,
+  .footer_nav_toggle,
+  .headlines .filter,
+  .related_links,
+  .search_container,
+  .sidebar_panel_trigger {
+    display: none;
+  }
+  .b_nav {
+    cursor: default;
+  }
+  .footer_nav_contain {
+    max-height: none;
+  }
+  .homepage_content {
+    overflow: visible;
+  }
+  .mini_player,
+  .on_btv_now {
+    display: none;
+  }
+  .top_nav .drop_arrow {
+    display: none !important;
+  }
+  .quick_view nav .change_menu {
+    cursor: default;
+  }
+  .quick_view nav .change_menu h2:after {
+    content: '';
+  }
+  .quick_view nav .change_menu h2:hover {
+    color: #0c0c0c;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .related_links {
+      display: block;
+    }
+  
+    .footer_nav .mobile_apps .mobile_icon {
+      background-image: url("http://cdn.gotraffic.net/assets/mobile-sprites-9ef274b94bbd974cc13cbf921bc0e56a.png");
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .article_interaction .save {
+      display: block;
+    }
+    .article_interaction .save .icon {
+      color: transparent;
+      cursor: default;
+    }
+    .article_interaction .save .icon:after {
+      background: none;
+    }
+    .article_interaction .save:hover .icon {
+      background-color: #545454;
+    }
+  }
+  
+  @media screen and (min-width: 970px) {
+    .section_nav ul.top_level li a {
+      font-size: 13.4px;
+    }
+  }
+  
+  @media screen and (min-width: 1366px) {
+    .section_nav ul.top_level li a {
+      font-size: 16px;
+    }
+  }
+</style>
+</noscript>
+
+</head>
+<body class='legacy_static'>
+<div class='content_disable'>
+<div class='content_contain'>
+<div class="snippet-view business-snippet default-layout section-front" data-view-uid="snippetHeaderViews"><div data-view-uid="snippetHeaderViews_1"><div class="tophat"> <section class="tophat-menu"> <h2 class="tophat-menu__link-toggle">Bloomberg the Company &amp; Products</h2> <a href="https://bba.bloomberg.net/?utm_source=bloomberg-menu" class="tophat-menu__link-bba">Bloomberg Anywhere Login</a> </section> <div class="tophat__sitemap"> <div class="tophat__categories"> <div class="tophat__close-sitemap-button"></div> <section class="tophat-category"> <h2 class="tophat-category__title">Bloomberg</h2> <div class="tophat-category__content"> <p class="tophat-category__text"> Connecting decision makers to a dynamic network of information, people and ideas, Bloomberg quickly and accurately delivers business and financial information, news and insight around the world. </p> </div> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Company</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloomberg.com/company/careers/?utm_source=bloomberg-menu" class="tophat-category__link">Careers</a></li> <li><a href="http://www.bloomberg.com/diversity-inclusion/?utm_source=bloomberg-menu" class="tophat-category__link">Diversity &amp; Inclusion</a></li> <li><a href="http://www.bloomberg.com/philanthropy/?utm_source=bloomberg-menu" class="tophat-category__link">Philanthropy &amp; Engagement</a></li> <li><a href="http://www.bloomberg.com/bcause/?utm_source=bloomberg-menu" class="tophat-category__link">Sustainability</a></li> <li><a href="http://www.bloomberg.com/company/technology/?utm_source=bloomberg-menu" class="tophat-category__link">Technology</a></li> <li><a href="http://www.bloomberg.com/company/bloomberg-facts/?utm_source=bloomberg-menu" class="tophat-category__link">History &amp; Facts</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Financial Products</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloomberg.com/professional/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-09-12-CORE-bbgmenu" class="tophat-category__link">Bloomberg Professional</a></li> <li><a href="http://www.bloombergtradebook.com/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-02-13-TBOOK-bbgmenu" class="tophat-category__link">Bloomberg Tradebook</a></li> <li><a href="http://www.bloombergbriefs.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Briefs</a></li> <li><a href="http://www.bloombergindexes.com/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-05-13-INDEXES-bbgmenu" class="tophat-category__link">Bloomberg Indexes</a></li> <li><a href="http://www.bloombergsef.com/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-08-13-SEF-bbgmenu" class="tophat-category__link">Bloomberg SEF</a></li> <li><a href="http://about.bloomberginstitute.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Institute</a></li> <li><a href="http://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu" class="tophat-category__link">Service Center</a></li> <li><a href="http://www.bloomberg.com/professional/systems-support/downloads/?utm_source=bloomberg-menu" class="tophat-category__link">Downloads</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Enterprise Products</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloomberg.com/enterprise/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-09-13-ES-bbgmenu" class="tophat-category__link">Enterprise Solutions</a></li> <li><a href="http://www.bloomberg.com/trading-solutions/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-09-13-TS-bbgmenu" class="tophat-category__link">Trading Solutions</a></li> <li><a href="http://www.bloomberg.com/vault/?utm_source=bloomberg-menu&amp;bbgsum=DG-WS-09-13-ES-BVAULT-bbgmenu" class="tophat-category__link">Bloomberg Vault</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Media</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloomberg.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Business</a></li> <li><a href="http://www.bloomberg.com/politics/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Politics</a></li> <li><a href="http://www.bloombergview.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg View</a></li> <li><a href="http://www.bloomberg.com/live?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Television</a></li> <li><a href="http://www.bloomberg.com/radio/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Radio</a></li> <li><a href="http://www.bloomberg.com/mobile/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Mobile Apps</a></li> <li><a href="http://www.bloomberg.com/company/news-bureaus/?utm_source=bloomberg-menu" class="tophat-category__link">News Bureaus</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Customer Support</h2> <ul class="tophat-category__content"> <li class="tophat-category__item"> <p class="tophat-category__text">Americas</p> <p class="tophat-category__text">+1 212 318 2000</p> </li> <li class="tophat-category__item"> <p class="tophat-category__text">Europe, Middle East, &amp; Africa</p> <p class="tophat-category__text">+44 20 7330 7500</p> </li> <li class="tophat-category__item"> <p class="tophat-category__text">Asia Pacific</p> <p class="tophat-category__text">+65 6212 1000</p> </li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Communications</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloomberg.com/company/announcements/?utm_source=bloomberg-menu" class="tophat-category__link">Press Announcements</a></li> <li><a href="http://www.bloomberg.com/company/press-contacts/?utm_source=bloomberg-menu" class="tophat-category__link">Press Contacts</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Industry Products</h2> <ul class="tophat-category__content"> <li><a href="http://about.bgov.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Government</a></li> <li><a href="http://www.bna.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Law/BNA</a></li> <li><a href="https://bol.bna.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Big Law</a></li> <li><a href="http://about.bnef.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg New Energy Finance</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Media Services</h2> <ul class="tophat-category__content"> <li><a href="http://www.bloombergmedia.com/?utm_source=bloomberg-menu" class="tophat-category__link">Advertising</a></li> <li><a href="http://www.bloomberg.com/content-service/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Content Service</a></li> <li><a href="http://www.bloomberglive.com/?utm_source=bloomberg-menu" class="tophat-category__link">Bloomberg Live Conferences</a></li> </ul> </section> <section class="tophat-category"> <h2 class="tophat-category__title">Follow Us</h2> <ul class="tophat-category__content"> <li><a href="http://www.facebook.com/Bloomberglp" class="tophat-category__social-link facebook" data-network="facebook" target="_blank"> Facebook </a></li> <li><a href="https://twitter.com/bloomberg" class="tophat-category__social-link twitter" data-network="twitter" target="_blank"> Twitter </a></li> <li><a href="https://www.linkedin.com/company/2494" class="tophat-category__social-link linkedin" data-network="linkedin" target="_blank"> LinkedIn </a></li> <li><a href="https://instagram.com/bloomberg" class="tophat-category__social-link instagram" data-network="instagram" target="_blank"> Instagram </a></li> </ul> </section> </div> </div> </div></div><div class="persistent-header-placeholder" data-view-uid="snippetHeaderViews_2"><div class="persistent-header"> <div class="persistent-header__bounding-width"> <div class="persistent-header__container"> <div class="persistent-header__just-so-logo-link-isnt-full-width"> <a href="http://www.bloomberg.com/" class="persistent-header__logo-link make-svg-clickable" title="Bloomberg Business"> <object class="persistent-header__logo-image normal" type="image/svg+xml" data="//assets.bwbx.io/business/public/images/logos/BB-Logo-H1.c318357b.svg" title="Bloomberg Business Logo"> </object> <object class="persistent-header__logo-image vertical" type="image/svg+xml" data="//assets.bwbx.io/business/public/images/logos/BB-Logo-V.313783e5.svg" title="Bloomberg Business Logo"> </object> <object class="persistent-header__logo-image horizontal" type="image/svg+xml" data="//assets.bwbx.io/business/public/images/logos/BB-Logo-H.37109099.svg" title="Bloomberg Business Logo"> </object> <object class="persistent-header__logo-image special-section-front-vertical-logo" type="image/svg+xml" data="//assets.bwbx.io/business/public/images/logos/BB-Logo-V-SFF.84957dfc.svg" title="Bloomberg Business Logo"> </object> <object class="persistent-header__logo-image special-section-front-horizontal-logo" type="image/svg+xml" data="//assets.bwbx.io/business/public/images/logos/BB-Logo-H-SFF.cfc95f5f.svg" title="Bloomberg Business Logo"> </object> </a> <span class="persistent-header__menu"> Menu </span> </div> <div class="persistent-header__content"> <div class="persistent-header__content-container"> <div class="persistent-header__nav">  <div class="persistent-header__nav-item news" data-key="news"> <a href="http://www.bloomberg.com/" class="persistent-header__link"> News </a> </div>  <div class="persistent-header__nav-item markets" data-key="markets"> <a href="http://www.bloomberg.com/markets" class="persistent-header__link"> Markets </a> </div>  <div class="persistent-header__nav-item insights" data-key="insights"> <a href="http://www.bloomberg.com/insights" class="persistent-header__link"> Insights </a> </div>  <div class="persistent-header__nav-item live_tv" data-key="live_tv"> <a href="http://www.bloomberg.com/live" class="persistent-header__link"> Video </a> </div>  </div> <div class="persistent-header-reading-now"> <span class="persistent-header-reading-now__title">Now Reading:</span> <span class="persistent-header-reading-now__headline"></span> </div> <div class="persistent-header__social showable"> <div class="persistent-header__social-container"> </div> </div> </div> <div class="persistent-header__search-box"> <div class="persistent-header__search-close"></div> <label class="persistent-header__search-label"> <input type="search" class="persistent-header__search-input"> </label> </div> </div> <span class="persistent-header__search-button"> <a href="http://www.bloomberg.com/search" class="persistent-header__link"> Search </a> </span> <div class="experience-dropdown" data-view-uid="snippetHeaderViews_2_2"><ul class="experience-dropdown__experiences">  <li class="experience-dropdown__experience AMER" data-experience="AMER"> <a class="experience-dropdown__experience-link" href="http://www.bloomberg.com/">Global</a> </li>  <li class="experience-dropdown__experience EUR" data-experience="EUR"> <a class="experience-dropdown__experience-link" href="http://www.bloomberg.com/">Europe</a> </li>  </ul></div> </div> <a class="mini-live-player loading" href="http://www.bloomberg.com/live">  </a> </div> <div class="persistent-header__submenu-container"><div data-view-uid="snippetHeaderViews_2_1"><section class="navigation-submenu"> <div class="navigation-submenu__container">  <div id="news" class="navigation-submenu__vertical"> <ul class="navigation-submenu__categories">  <li class="navigation-submenu__category-item" id="latest" data-key="latest"> <a href="http://www.bloomberg.com/" class="navigation-submenu__category-link"> Latest </a> </li>  <li class="navigation-submenu__category-item" id="world" data-key="world"> <a href="http://www.bloomberg.com/news/world" class="navigation-submenu__category-link"> World </a> </li>  <li class="navigation-submenu__category-item" id="industries" data-key="industries"> <a href="http://www.bloomberg.com/news/industries" class="navigation-submenu__category-link"> Industries </a> </li>  <li class="navigation-submenu__category-item" id="science_energy" data-key="science_energy"> <a href="http://www.bloomberg.com/news/science-energy" class="navigation-submenu__category-link"> Science+Energy </a> </li>  <li class="navigation-submenu__category-item" id="technology" data-key="technology"> <a href="http://www.bloomberg.com/technology" class="navigation-submenu__category-link"> Technology </a> </li>  <li class="navigation-submenu__category-item" id="design" data-key="design"> <a href="http://www.bloomberg.com/news/design" class="navigation-submenu__category-link"> Design </a> </li>  <li class="navigation-submenu__category-item" id="culture" data-key="culture"> <a href="http://www.bloomberg.com/news/culture" class="navigation-submenu__category-link"> Culture </a> </li>  <li class="navigation-submenu__category-item" id="graphics" data-key="graphics"> <a href="http://www.bloomberg.com/graphics" class="navigation-submenu__category-link"> Graphics </a> </li>  <li class="navigation-submenu__category-item" id="pursuits" data-key="pursuits"> <a href="http://www.bloomberg.com/pursuits" class="navigation-submenu__category-link"> Pursuits </a> </li>  <li class="navigation-submenu__category-item" id="view" data-key="view"> <a href="http://www.bloombergview.com" class="navigation-submenu__category-link"> View </a> </li>  <li class="navigation-submenu__category-item" id="politics" data-key="politics"> <a href="http://www.bloomberg.com/politics" class="navigation-submenu__category-link"> U.S. Politics </a> </li>  <li class="navigation-submenu__category-item" id="businessweek" data-key="businessweek"> <a href="http://www.bloomberg.com/businessweek" class="navigation-submenu__category-link"> Businessweek </a> </li>  </ul> </div>  <div id="markets" class="navigation-submenu__vertical"> <ul class="navigation-submenu__categories">  <li class="navigation-submenu__category-item" id="stocks" data-key="stocks"> <a href="http://www.bloomberg.com/markets/stocks" class="navigation-submenu__category-link"> Stocks </a> </li>  <li class="navigation-submenu__category-item" id="currencies" data-key="currencies"> <a href="http://www.bloomberg.com/markets/currencies" class="navigation-submenu__category-link"> Currencies </a> </li>  <li class="navigation-submenu__category-item" id="commodities" data-key="commodities"> <a href="http://www.bloomberg.com/markets/commodities/futures" class="navigation-submenu__category-link"> Commodities </a> </li>  <li class="navigation-submenu__category-item" id="rates_bonds" data-key="rates_bonds"> <a href="http://www.bloomberg.com/markets/rates-bonds" class="navigation-submenu__category-link"> Rates+Bonds </a> </li>  <li class="navigation-submenu__category-item" id="magazine" data-key="magazine"> <a href="http://www.bloomberg.com/markets/markets-magazine" class="navigation-submenu__category-link"> Magazine </a> </li>  <li class="navigation-submenu__category-item" id="benchmark" data-key="benchmark"> <a href="http://www.bloomberg.com/markets/benchmark" class="navigation-submenu__category-link"> Benchmark </a> </li>  <li class="navigation-submenu__category-item" id="watchlist" data-key="watchlist"> <a href="http://www.bloomberg.com/markets/watchlist" class="navigation-submenu__category-link"> Watchlist </a> </li>  <li class="navigation-submenu__category-item" id="economic_calendar" data-key="economic_calendar"> <a href="http://www.bloomberg.com/markets/economic-calendar" class="navigation-submenu__category-link"> Economic Calendar </a> </li>  </ul> </div>  <div id="insights" class="navigation-submenu__vertical"> <ul class="navigation-submenu__categories">  <li class="navigation-submenu__category-item" id="latest" data-key="latest"> <a href="http://www.bloomberg.com/insights" class="navigation-submenu__category-link"> Latest </a> </li>  <li class="navigation-submenu__category-item" id="game_plan" data-key="game_plan"> <a href="http://www.bloomberg.com/game-plan" class="navigation-submenu__category-link"> Game Plan </a> </li>  <li class="navigation-submenu__category-item" id="business_schools" data-key="business_schools"> <a href="http://www.bloomberg.com/business-schools" class="navigation-submenu__category-link"> Business Schools </a> </li>  <li class="navigation-submenu__category-item" id="small_business" data-key="small_business"> <a href="http://www.bloomberg.com/small-business" class="navigation-submenu__category-link"> Small Business </a> </li>  <li class="navigation-submenu__category-item" id="personal_finance" data-key="personal_finance"> <a href="http://www.bloomberg.com/personal-finance" class="navigation-submenu__category-link"> Personal Finance </a> </li>  <li class="navigation-submenu__category-item" id="profiles" data-key="profiles"> <a href="http://www.bloomberg.com/research/company/overview/overview.asp" class="navigation-submenu__category-link"> Profiles </a> </li>  </ul> </div>  <div id="live_tv" class="navigation-submenu__vertical"> <ul class="navigation-submenu__categories">  <li class="navigation-submenu__category-item" id="watch_now" data-key="watch_now"> <a href="http://www.bloomberg.com/live" class="navigation-submenu__category-link"> Watch Now </a> </li>  <li class="navigation-submenu__category-item" id="video" data-key="video"> <a href="http://www.bloomberg.com/video" class="navigation-submenu__category-link"> Video </a> </li>  <li class="navigation-submenu__category-item" id="schedule_shows" data-key="schedule_shows"> <a href="http://www.bloomberg.com/live/schedule-shows" class="navigation-submenu__category-link"> Schedule + Shows </a> </li>  <li class="navigation-submenu__category-item" id="radio" data-key="radio"> <a href="http://www.bloomberg.com/radio" class="navigation-submenu__category-link"> Radio </a> </li>  <li class="navigation-submenu__category-item" id="events" data-key="events"> <a href="http://www.bloomberg.com/live/events" class="navigation-submenu__category-link"> Events </a> </li>  </ul> </div>  <div class="navigation-submenu__card-container">  </div> </div> </section></div></div> <div data-view-uid="snippetHeaderViews_2_3"><div class="reading-progress"> <div class="reading-progress__bar"></div> </div></div></div></div></div>
+
+<div class='container' id='tos'>
+<h1>Terms of Service</h1>
+<section class='support_tabs'>
+<ul class='filter'>
+<li class='selected'>
+<a href="/tos">Terms of Service</a>
+</li>
+<li class=''>
+<a href="/privacy">Privacy Policy</a>
+</li>
+<li class=''>
+<a href="/sponsor">Sponsor Content</a>
+</li>
+<li class=''>
+<a href="/trademarks">Trademarks</a>
+</li>
+<li class=''>
+<a href="/social-media-terms">Social Media</a>
+</li>
+</ul>
+</section>
+
+<div id='primary_content'>
+<ol class='tos_list'>
+<li>
+<a class='registration_link' href='#terms'>General Terms</a>
+</li>
+<li>
+<a class='registration_link' href='#linking'>Linking Terms and Conditions</a>
+</li>
+<li>
+<a class='registration_link' href='#inq'>Inquiries Regarding this Site's Content</a>
+<ul class='tos_nested_list'>
+<li>Feedback</li>
+<li>Bloomberg F.A.Q.</li>
+</ul>
+</li>
+<li>
+<a class='registration_link' href='#intellectual'>Intellectual Property Issues:</a>
+<ul class='tos_nested_list'>
+<li>
+General Inquiries:
+<a class='registration_link' href='/feedback' onclick='window.open(this.href); return false;'>FEEDBACK</a>
+</li>
+<li>Copyright Agent for Copyright Infringement Claims</li>
+<li>Trademark Information</li>
+</ul>
+</li>
+<li>
+<a class='registration_link' href='#privacy'>Privacy Policy for this Web Site</a>
+</li>
+<li>
+<a class='registration_link' href='#ecom'>E-Commerce Directive Information</a>
+</li>
+<li>
+<a class='registration_link' href='#telecom'>Telecommunication Terms for Taiwanese Customers</a>
+</li>
+<li>
+<a class='registration_link' href='http://www.bloomberg.com/notices/Reglamento_Bloomberg_Colombia.pdf'>
+GENERAL AND OPERATIONAL RULES OF THE INFORMATION SYSTEM MANAGED BY BLOOMBERG
+COLOMBIA LLC (REGLAMENTO GENERAL Y OPERATIVO DEL SISTEMA DE INFORMACIÓN
+ADMINISTRADO POR BLOOMBERG COLOMBIA LLC)
+</a>
+</li>
+</ol>
+<p>PLEASE READ ALL OF THE FOLLOWING TERMS AND CONDITIONS OF SERVICE FOR THIS WEB SITE ("TOS") BEFORE USING THIS SITE. By continuing to access, link to, or use this site, or any service on this site, you signify YOUR ACCEPTANCE OF THE TOS. Bloomberg L.P. (“BLP”) reserves the right to amend, remove, or add to the TOS at any time. Such modifications shall be effective immediately. Accordingly, please continue to review the TOS whenever accessing, linking to, or using this site. Your access, link to, or use of the site, or any service on this site, after the posting of modifications to the TOS will constitute YOUR ACCEPTANCE OF THE TOS, as modified. If, at any time, you do not wish to accept the TOS, you may not access, link to, or use the site. Any terms and conditions proposed by you which are in addition to or which conflict with the TOS are expressly rejected by BLP and shall be of no force or effect.</p>
+<a name='terms'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+A. General Terms
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<span>1. User Consent to the TOS.</span>
+<p>You represent that you have read and agree to be bound by the TOS.</p>
+<span>2. Intellectual Property.</span>
+<p>
+This Web site, including but not limited to text, content, photographs, video, audio and graphics, and goods (the "Service"),
+is protected by copyrights, trademarks, service marks, international treaties, and/or other proprietary rights and laws of the U.S.
+and other countries. The Service is also protected as a collective work or compilation under U.S. copyright and other laws and
+treaties. All individual articles, columns and other elements making up the Service are also copyrighted works.
+You agree to abide by all applicable copyright and other laws, as well as any additional copyright notices or restrictions
+contained in the Service. You acknowledge that the Service has been developed, compiled, prepared, revised, selected,
+and arranged by BLP, its general and limited partners, and its subsidiaries, and their respective general partners and
+affiliates (collectively “Bloomberg”) and others (including certain other information sources) through the application
+of methods and standards of judgment developed and applied through the expenditure of substantial time, effort, and money
+and constitutes valuable intellectual property of Bloomberg and such others. You agree to protect the proprietary rights of
+Bloomberg and all others having rights in the Service during and after the term of this agreement and to comply with all
+reasonable written requests made by BLP or its suppliers and licensors of content, equipment, or otherwise ("Suppliers") to protect
+their and others' contractual, statutory, and common law rights in the Service. You agree to notify BLP in writing promptly upon
+becoming aware of any unauthorized access or use of the Service by any individual or entity or of any claim that the Service
+infringes upon any copyright, trademark, or other contractual, statutory, or common law rights. All present and future rights
+in and to trade secrets, patents, copyrights, trademarks, service marks, know-how, and other proprietary rights of any type
+under the laws of any governmental authority, domestic or foreign, including rights in and to all applications and registrations
+relating to the Service (the "Intellectual Property Rights") shall, as between you and Bloomberg, at all times be and remain
+the sole and exclusive property of Bloomberg. All present and future rights in and title to the Service (including the right
+to exploit the Service and any portions of the Service over any present or future technology) are reserved to Bloomberg for its
+exclusive use. Except as specifically permitted by the TOS, you may not copy or make any use of the Service or any portion thereof.
+Except as specifically permitted herein, you shall not use the Intellectual Property Rights or the Service, or the names of any
+individual participant in, or contributor to, the Service, or any variations or derivatives thereof, for any purpose, without
+BLP’s prior written approval.
+</p>
+<span>3. Restrictions on Use.</span>
+<p>
+You may not use the Service for any illegal purpose, for the facilitation of the violation of any law or regulation, or in any manner
+inconsistent with the TOS. You agree to use the Service solely for your own noncommercial use and benefit, and not for resale or other
+transfer or disposition to, or use by or for the benefit of, any other person or entity. You agree not to use, transfer, distribute,
+or dispose of any information contained in the Service in any manner that could compete with the business of Bloomberg or any of
+its suppliers.
+</p>
+<p>
+You may not copy, reproduce, recompile, decompile, disassemble, reverse engineer, distribute, publish, display, perform, modify,
+upload to, create derivative works from, transmit, or in any way exploit any part of the Service, except that you may download
+material from the Service and/or make one print copy for your own personal, noncommercial use, provided that you retain all
+copyright and other proprietary notices. You may not recirculate, redistribute or publish the analysis and presentation included
+in the Service without BLP’s prior written consent. You may use the "e-mail this article" function solely to inform others about
+a Bloomberg News article, and you shall immediately cease using this function with regard to recipients who have requested not
+to receive such information. You may not offer any part of the Service for sale or distribute it over any other medium including
+but not limited to over-the-air television or radio broadcast, a computer network or hyperlink framing on the internet without
+the prior written consent of BLP. The Service and the information contained therein may not be used to construct a database of
+any kind. Nor may the Service be stored (in its entirety or in any part) in databases for access by you or any third party or
+to distribute any database Services containing all or part of the Service. You may not use the Service in any way to improve
+the quality of any data sold or contributed by you to any third party.
+</p>
+<p>
+You may not input, distribute, upload, post, email, transmit or otherwise make available any content through the Service that:
+(i) is promotional in nature, including solicitations for funds or business, without the prior written authorization of BLP,
+or constitutes junk mail, spam, chain letters, pyramid schemes or the like; (ii) is unlawful, harmful, threatening, abusive,
+harassing, tortious, defamatory, vulgar, obscene, libelous, invasive of another's privacy, hateful, or racially, ethnically
+or otherwise objectionable; (iii) you do not have the right to make available under any law or under contractual or fiduciary
+relationships (such as inside information, proprietary and confidential information learned or disclosed as part of employment
+relationships or under nondisclosure agreements); (iv) infringes any patent, trademark, trade secret, copyright or other
+proprietary rights of any party; (v) contains software viruses or any other computer code, files or programs designed to
+interrupt, destroy or limit the functionality of any computer software or hardware, or telecommunications equipment;
+(vi) is harmful to minors; or (vii) constitutes the personally identifiable information of any other person that such person
+has not authorized you to disclose.
+</p>
+<p>
+You may not use any of the trademarks, trade names, service marks, copyrights, or logos of Bloomberg in any manner which
+creates the impression that such items belong to or are associated with you or are used with Bloomberg’s consent, and you
+acknowledge that you have no ownership rights in and to any of such items.
+</p>
+<p>
+You may neither interfere with nor attempt to interfere with nor otherwise disrupt the proper working of the Service, any
+activities conducted on or through the Service or any servers or networks connected to the Service. You may neither obtain
+nor attempt to obtain through any means any materials or information on the Service that have not been intentionally made
+publicly available either by public display on the Service or through accessibility by a visible link on the Service.
+You shall not violate the security of the Service or attempt to gain unauthorized access to the Service, data, materials,
+information, computer systems or networks connected to any server associated with the Service, through hacking, password
+timing or any other means. You may neither take nor attempt any action that, in the sole discretion of BLP, imposes or may
+impose an unreasonable or disproportionately large load or burden on the Service or the infrastructure of the Service. You
+shall not use or attempt to use any “scraper,” “robot,” “bot,” “spider,” “data mining,” “computer code,” or any other
+automate device, program, tool, algorithm, process or methodology to access, acquire, copy, or monitor any portion of the
+Service, any data or content found on or accessed through the Service, or any other Service information without the prior
+express written consent of BLP.  You may not forge headers or otherwise manipulate identifiers in order to disguise the
+origin of any other content.
+</p>
+<span>4. License.</span>
+<p>
+(i) You acquire absolutely no rights or licenses in or to the Service and materials contained within the Service other than
+the limited right to utilize the Service in accordance with the TOS. Should you choose to download content from the Service,
+you must do so in accordance with the TOS. Such download is licensed to you by Bloomberg ONLY for your own personal,
+noncommercial use in accordance with the TOS and does not transfer any other rights to you.
+</p>
+<p>
+(ii) If you submit material to this site or to BLP or its representative, unless BLP indicates otherwise, you grant to Bloomberg
+a perpetual, nonexclusive, irrevocable,  fully paid, royalty-free, sublicensable and transferable (in whole or in part) worldwide
+right and license in any and all media, now known or later developed, to use, publish, reproduce, display, modify, transmit
+digitally, create derivative works based upon, distribute, copy, and otherwise exploit , such content for any purpose whatsoever
+(including, without limitation, advertising, commercial, promotional and publicity purposes) in Bloomberg’s discretion without
+additional notice, attribution or consideration to you or to any other person or entity.. You also permit any other user to access,
+store, or reproduce such material for that user's personal use. You grant Bloomberg the right to use the name that you submit in
+connection with such content. You represent and warrant that you own or otherwise control all of the rights to the material that
+you submit; that the material you submit is truthful and accurate; that use of the material you supply does not violate this TOS
+and will not cause injury to any person or entity; and that you will indemnify Bloomberg and its Suppliers, agents, directors,
+officers, employees, representatives, successors, and assigns for all claims resulting from material you supply. Bloomberg and
+its Suppliers, agents, directors, officers, employees, representatives, successors, and assigns disclaim any responsibility and
+assume no liability for any material submitted by you or any third party.
+</p>
+<span>5. Fees and Payments.</span>
+<p>
+BLP reserves the right at any time to charge fees for access to portions of the Service or the Service as a whole. If at any
+time BLP requires a fee for portions of the Service or the Service as a whole, BLP will require you to register and create an
+account. You shall pay all fees and charges incurred through your account at the rates in effect for the billing period in which
+such fees and charges are incurred, including but not limited to charges for any products or services offered for sale through
+the Service by Bloomberg or by any other vendor or service provider. All fees and charges shall be billed to you, and you
+shall be solely responsible for their payment. You shall pay all applicable taxes relating to the use of the Service through
+your account, and the purchase of any other products or services. Certain portions of the Service or the Service as a whole may
+require a prepaid fee ("Prepaid Fee"), which may be modified from time to time in BLP’s sole discretion. The Prepaid Fee, and all
+taxes and other fees related thereto will be paid by you in advance. In no event will you receive any portions of the Service or
+the Service as a whole if a Prepaid Fee is required unless BLP receives all fees and charges payable by you, including the Prepaid Fee.
+</p>
+<span>6. Registration and Account Creation.</span>
+<p>
+As part of the registration and account creation process necessary to obtain access to certain portions of the Service,
+including those portions that require a fee or payment for access, you will select a username and a password. You will provide
+BLP with certain registration information, all of which must be accurate, truthful, and updated. You shall not: (i) select a
+username already used by another person; (ii) use a username in which another person has rights without such person's authorization;
+or (iii) use a username or password that BLP, in its sole discretion, deems offensive or inappropriate. BLP reserves the right
+to deny creation of your account based on BLP’s inability to verify the authenticity of your registration information. You shall
+be solely responsible for maintaining the confidentiality of your password. You shall immediately notify BLP by submitting
+<a href='/feedback' onclick='window.open(this.href); return false;'>FEEDBACK</a>
+of any known or suspected unauthorized use(s) of
+your account, or any known or suspected breach of security, including loss, theft, or unauthorized disclosure of your password or
+credit card information. You are fully responsible for all usage and activity on your account, including, but not limited to, use
+of the account by any third party authorized by you to use your username and password. The use of your account by any individual under
+age eighteen (18) is strictly prohibited. If the computer system on which you accessed the Service is sold or transferred to another
+party, you warrant and represent that you will delete all cookies and software files obtained by or through use of the Service. BLP
+reserves the right to terminate your account, in its sole discretion, at any time without notice. You may terminate your account at any
+time by submitting feedback. Upon termination, you will receive an automated confirmation via e-mail that the request was received, and
+your account will be terminated within five (5) business days. You are responsible for all charges incurred up to the time the account is
+terminated. Notwithstanding anything else herein, BLP reserves the right to pursue any and all claims against any user of your account.
+You agree to maintain only one account with the Service at any time and certify that you currently have no other account(s) with the Service.
+</p>
+<span>7. Disclaimer and Limitation of Liability.</span>
+<p>
+(i) YOU AGREE THAT YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK AND ACKNOWLEDGE THAT THE SERVICE AND ANYTHING CONTAINED WITHIN THE SERVICE,
+INCLUDING, BUT NOT LIMITED TO, CONTENT, SERVICES, GOODS, OR ADVERTISEMENTS ARE PROVIDED "AS IS" AND "AS AVAILABLE," AND THAT BLOOMBERG MAKES NO
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE SERVICE, INCLUDING, BUT NOT LIMITED TO, MERCHANTABILITY, NON-INFRINGEMENT, TITLE, OR
+FITNESS FOR A PARTICULAR PURPOSE OR USE.
+</p>
+<p>
+(ii) Bloomberg does not warrant that the Service is compatible with your equipment or that the Service, or e-mail sent by Bloomberg or its
+representative, is free of errors or viruses, worms or "Trojan horses," or any other harmful, invasive, or corrupted files, and is not
+liable for any damage you may suffer as a result of such destructive features. You agree that Bloomberg and its Suppliers, agents,
+directors, officers, employees, representatives, successors, and assigns shall have no responsibility or liability for: (i) any injury
+or damages, whether caused by the negligence of Bloomberg, its parent, or their respective affiliates, Suppliers, agents, directors,
+officers, employees, representatives, general partner, subsidiaries, successors, and assigns, or otherwise arising in connection with
+the Service and shall not be liable for any lost profits, losses, punitive, incidental or consequential damages, or any claim against
+Bloomberg by any other party; or (ii) any fault, inaccuracy, omission, delay, or any other failure in the Service caused by your
+computer equipment or arising from your use of the Service on such equipment. The content of other Web sites, services, goods, or
+advertisements that may be linked to the Service is not maintained or controlled by Bloomberg. Bloomberg is therefore not
+responsible for the availability, content, or accuracy of other Web sites, services, or goods that may be linked to, or advertised
+on, the Service. Bloomberg does not: (a) make any warranty, express or implied, with respect to the use of the links provided on,
+or to, the Service; (b) guarantee the accuracy, completeness, usefulness or adequacy of any other Web sites, services, goods, or
+advertisements that may be linked to the Service; or (c) make any endorsement, express or implied, of any other Web sites, services,
+goods, or advertisements that may be linked to the Service. Bloomberg is also not responsible for the reliability or continued
+availability of the telephone lines, wireless services, communications media, and equipment you use to access the Service. You understand
+that Bloomberg and/or third-party contributors to the Service may choose at any time to inhibit or prohibit their content from being
+accessed under the TOS.
+</p>
+<p>
+(iii) You acknowledge that: (i) the Service is provided for information purposes only and is not intended for trading purposes; (ii)
+the Service may include certain information taken from stock exchanges and other sources from around the world; (iii) Bloomberg does
+not guarantee the sequence, accuracy, completeness, or timeliness of the Service; (iv) the provision of certain parts of the Service
+is subject to the terms and conditions of other agreements to which Bloomberg is a party; (v) none of the information contained on
+this site constitutes a solicitation, offer, opinion, or recommendation by Bloomberg to buy or sell any security, or to provide
+legal, tax, accounting, or investment advice or services regarding the profitability or suitability of any security or investment;
+and (vi) the information provided on this site is not intended for use by, or distribution to, any person or entity in any jurisdiction
+or country where such use or distribution would be contrary to law or regulation. Accordingly, anything to the contrary herein set
+forth notwithstanding, Bloomberg, its Suppliers, agents, directors, officers, employees, representatives, successors, and assigns
+shall not, directly or indirectly, be liable, in any way, to you or any other person for any: (a) inaccuracies or errors in or
+omissions from the Service including, but not limited to, quotes and financial data; (b) delays, errors, or interruptions in
+the transmission or delivery of the Service; or (c) loss or damage arising therefrom or occasioned thereby, or by any reason of
+nonperformance.
+</p>
+<p>
+(iv) UNDER NO CIRCUMSTANCES, INCLUDING BUT NOT LIMITED TO NEGLIGENCE, SHALL BLOOMBERG, ITS SUPPLIERS, AGENTS, DIRECTORS, OFFICERS,
+EMPLOYEES, REPRESENTATIVES, SUCCESSORS, OR ASSIGNS BE LIABLE TO YOU FOR DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL,
+PUNITIVE, OR EXEMPLARY DAMAGES EVEN IF BLOOMBERG HAS BEEN ADVISED SPECIFICALLY OF THE POSSIBILITY OF SUCH DAMAGES, ARISING FROM
+USE OF OR INABILITY TO USE THE SERVICE OR ANY LINKS OR ITEMS ON THE SERVICE OR ANY PROVISION OF THE TOS, SUCH AS, BUT NOT LIMITED
+TO, LOSS OF REVENUE OR ANTICIPATED PROFITS OR LOST BUSINESS. APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY
+OR INCIDENTAL OR CONSEQUENTIAL DAMAGES. IN NO EVENT SHALL BLOOMBERG'S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES AND CAUSES OF
+ACTION (WHETHER IN CONTRACT OR TORT, INCLUDING BUT NOT LIMITED TO, NEGLIGENCE) EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR
+ACCESSING THIS SITE.
+</p>
+<span>8. Your Authority to Agree to this TOS.</span>
+<p>You represent, warrant and covenant that: (i) you have the power and authority to enter into this agreement; and (ii) you are at least eighteen (18) years old.</p>
+<span>9. Indemnification.</span>
+<p>
+You agree, at your own expense, to indemnify, defend and hold harmless Bloomberg, its Suppliers, agents, directors, officers,
+employees, representatives, successors, and assigns from and against any and all claims, damages, liabilities, costs, and
+expenses, including reasonable attorneys’ and experts’ fees, arising out of or in connection with the Service, or any links
+on the Service, including, but not limited to: (i) your use or someone using your computer's use of the Service; (ii) use by
+someone using your account; (iii) a violation of the TOS by you or anyone using your computer (or account, where applicable);
+(iv) a claim that any use of the Service by you or someone using your computer (or account, where applicable) infringes any
+intellectual property right of any third party, or any right of privacy or publicity, is libelous or defamatory, or otherwise
+results in injury or damage to any third party; (v) any deletions, additions, insertions or alterations to, or any unauthorized
+use of, the Service by you or someone using your computer (or account, where applicable); (vi) any misrepresentation or
+breach of representation or warranty made by you contained herein; or (vii) any breach of any covenant or agreement to be
+performed by you hereunder. You agree to pay any and all costs, damages, and expenses, including, but not limited to, reasonable
+attorneys' fees and costs awarded against or otherwise incurred by or in connection with or arising from any such claim, suit, action,
+or proceeding attributable to any such claim. Bloomberg reserves the right, at its own expense, to assume the exclusive defense and control
+of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with Bloomberg in asserting any available
+defense. You acknowledge and agree to pay Bloomberg's reasonable attorneys’ fees incurred in connection with any and all lawsuits brought
+against you by Bloomberg under the TOS and any other terms and conditions of service on this site, including without limitation, lawsuits
+arising from your failure to indemnify Bloomberg pursuant to the TOS.
+</p>
+<span>10. Termination.</span>
+<p>
+(a) You may terminate the TOS, with or without cause and at any time, by discontinuing your use of the Service and destroying
+all materials obtained from the Service. (b) You agree that, without notice, BLP may terminate the TOS, or suspend your access
+to the Service, with or without cause at any time and effective immediately. The TOS will terminate immediately without
+notice from BLP if you, in BLP’s sole discretion, fail to comply with any provision of the TOS. (c) Bloomberg shall not be
+liable to you or any third party for the termination or suspension of the Service, or any claims related to the termination
+or suspension of the Service. Upon termination of the TOS by you or BLP, you must discontinue your use of the Service and
+destroy promptly all materials obtained from the Service and any copies thereof.
+</p>
+<span>11. Governing Law.</span>
+<p>
+The TOS shall be governed and construed in accordance with the laws of the United States and the State of New York, without
+giving effect to conflicts-of-law principles thereof. You agree to submit to the personal jurisdiction of the state and federal
+courts located in New York County in the State of New York with respect to any legal proceedings that may arise in connection with
+the Service or from a dispute as to the interpretation or breach of the TOS.
+</p>
+<span>12. United States Export Control &amp; Foreign Assets Control Regulations.</span>
+<p>
+Bloomberg does not represent that materials in the Service are appropriate or available for use in any particular location.
+Those who choose to access the Service do so on their own initiative and are responsible for compliance with all applicable laws.
+Software from the Service is subject to U.S. export controls and may not be downloaded, exported or re-exported: (i) into (or to
+a national or resident of) Cuba, Iran, North Korea, Sudan, Syria, or any other country with respect to which the United States
+maintains trade sanctions prohibiting the shipment of goods; or (ii) to anyone on or acting on behalf of an entity on the U.S.
+Treasury Department's list of Specially Designated Nationals and Blocked Persons or the U.S. Commerce Department's Denied Persons
+List or Entities List or included in General Order 3 (15 C.F.R. Part 736, Supplement 1), which prohibits exports to Mayrow General
+Trading, affiliated entities and persons, and specified persons involved in the manufacture or sale of Improvised Explosive Devices
+(together referred to as "U.S. Prohibited Party Lists").  By downloading or using such software, you represent and warrant that you
+are not (a) located in or a national or resident of any country noted above that is subject to U.S. trade sanctions, or (b) on any
+U.S. Prohibited Party List or acting on behalf of any person or entity on any such list.
+</p>
+<span>13. Miscellaneous.</span>
+<p>
+You accept that BLP has the right to change the content or technical specifications of any aspect of the Service at any time
+in BLP’s sole discretion. You further accept that such changes may result in your being unable to access the Service. The failure
+of Bloomberg to exercise or enforce any right or provision of the TOS shall not constitute a waiver of such right or provision.
+Sections 2 through 9, 10(c), and 11 through 17 shall survive any termination of the TOS.
+</p>
+<span>14. Headings.</span>
+<p>The section titles in the TOS are used solely for the convenience of you and Bloomberg and have no legal or contractual significance.</p>
+<span>15. Severability.</span>
+<p>
+If any provision of the TOS is found invalid or unenforceable, that provision will be enforced to the maximum extent permissible, and
+the other provisions of the TOS will remain in force.
+</p>
+<span>16. Entire Agreement.</span>
+<p>The TOS and any other terms and conditions of service on this site, and its successor, constitute the entire agreement between you and BLP and govern your use of the Service.</p>
+<a name='linking'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+B. LINKING AND FRAMING TERMS AND CONDITIONS
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p>
+<b>YOU MAY NOT LINK TO OR FRAME THIS WEB SITE, OR ANY PORTION THEREOF, EXCEPT AS PROVIDED HEREIN.</b>
+</p>
+<span>1. Intellectual Property.</span>
+<p>
+Upon linking to this Web site pursuant to the TOS, you will be granted a non-exclusive, non-transferable, royalty-free sub-license to
+use the BLOOMBERG mark owned by Bloomberg Finance L.P. solely for providing an underlined, textual link from your Web site to
+<a href='http://www.bloomberg.com' onclick='window.open(this.href); return false;'>Bloomberg.com</a>.
+No other use of Bloomberg's
+marks, names or logos is permitted without express written permission from BLP.
+</p>
+<span>2. Restrictions on Linking to this Web Site.</span>
+<p>
+Without limiting other provisions contained in our TOS, you may include a link(s) on your Web site to Bloomberg.com's publicly
+accessible Web pages (i.e., any Web page which does not require a login and password and/or restrict access). You may not link to
+Bloomberg.com any site containing an inappropriate, profane, defamatory, infringing, obscene, indecent or unlawful topic, name,
+material or information that violates any applicable intellectual property, proprietary, privacy or publicity rights.
+</p>
+<span>3. Restrictions on Framing Activities.</span>
+<p>
+BLP is concerned about the integrity of this Web site when it is accessed in a manner solely determined by third parties or
+viewed in a setting solely created by third parties. Specifically, BLP is concerned with activities such as bringing up or
+presenting content of this Web site within another Web site ("framing"). In this regard, without limiting the provisions contained
+in our TOS, you may not frame any Web page from Bloomberg.com, except with our express written permission. Further, you may not
+archive, cache, or mirror any Bloomberg.com Web page or portions of a Web page. If you would like to use, reprint, frame, or
+redistribute any Bloomberg.com content other than as permitted herein, you must request permission from BLP by writing to
+<a href='/feedback' onclick='window.open(this.href); return false;'>FEEDBACK</a>.
+Please include: (a) your name, e-mail address,
+and telephone number; (b) the name of your company; (c) the Web site address(es) where the proposed use will occur; and (d)
+specific details about the contemplated linking or framing activities, including the content or Web page(s) of this Web site
+which you would like to use.
+</p>
+<a name='inq'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+C. INQUIRIES REGARDING THIS SITE'S CONTENT
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p>
+<a href='/feedback' onclick='window.open(this.href); return false;'>Click here</a>
+for inquiries regarding this site's content.
+</p>
+<p>
+<a href='/help.html' onclick='window.open(this.href); return false;'>Click here</a>
+for the Bloomberg FAQ.
+</p>
+<a name='intellectual'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+D. INTELLECTUAL PROPERTY ISSUES
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<span>1. General Inquiries:</span>
+<p>
+Please send general inquiries regarding intellectual property issues to
+<a href='/feedback' onclick='window.open(this.href); return false;'>FEEDBACK</a>
+</p>
+<span>2. Copyright Agent for Copyright Infringement Claims (Digital Millennium Copyright Act):</span>
+<p>
+The designated agent to receive notification of claimed infringement under Title II of the Digital Millennium Copyright Act is: William Ried, Bloomberg L.P.,
+731 Lexington Avenue, New York, NY 10022, telephone (212) 318-2000, facsimile: 917-522-2600, e-mail:
+<a href='mailto:ried@bloomberg.net' onclick='window.open(this.href); return false;'>ried@bloomberg.net.</a>
+</p>
+<span>3. Trademark Notice:</span>
+<p>
+<a href='/trademarks' onclick='window.open(this.href); return false;'>Click here</a>
+for this site's trademarks.
+</p>
+<a name='privacy'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+E. PRIVACY POLICY FOR THIS WEB SITE
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p>
+<a href='/privacy' onclick='window.open(this.href); return false;'>Click here</a>
+for this site's privacy policy
+</p>
+<a name='ecom'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+F. E-Commerce Directive Information
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p>
+Bloomberg LP is authorized and regulated by the Financial Conduct Authority (the "FCA") under reference number 206006 on the
+Financial Services Register at http://www.fsa.gov.uk/register/. The FCA can be contacted at Tel. +44 20 7066 1000, at its Head Office at 25 The
+North Colonnade, London E14 5HS, or by the other methods listed on its website at http://www.fca.org.uk/site-info/contact.
+</p>
+<p>
+The contact at our New York office is: Paul Ramundo Phone: +1 (212) 617-7816 Fax: +1 (917) 369-3801 Email:
+<a href='mailto:Pramundo@bloomberg.net' onclick='window.open(this.href); return false;'>Pramundo@bloomberg.net.</a>
+</p>
+<a name='telecom'>
+<!--  -->
+</a>
+<h3 class='section_headings'>
+G. Telecommunication Terms for Taiwanese Customers
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p class='tos_japan'>美商彭博新聞有限公司台北分公司 彭博高速資訊網路業務營業規章</p>
+<p>第 一 條	彭博高速資訊網路（英文名稱： Bloomberg High Speed Data Network）業務（以下簡稱「本業務」），係指美商彭博新聞有限公司台北分公司（以下簡稱「本公司」）利用彭博高速資訊網路所提供之各項財經資訊服務。</p>
+<p>第 二 條	本業務之營業項目為「存取網路服務(Store and Retrieve Network)」（如電話秘書、線上資訊接取、電子佈告欄(BBS)、電子資料交換、統合信息服務(Unified message service)、電子文件服務、語音訊息、語音信箱服務），及「存轉網路服務（Store &amp; Forward Network）」（如傳真存轉、交易服務、數據網路服務）。</p>
+<h5>第 三 條</h5>
+<span class='tos_japan'>用戶租用本業務，應依本公司規定向本公司申請並簽訂相關用戶合約，載明各項權利義務。</span>
+<h5>第 四 條</h5>
+<span class='tos_japan'>自用戶端連結至彭博高速資訊網路之電信機線設備，應由本公司負責向第一類電信事業承租，其租用條件應依該第一類電信事業之規定訂之，且其架設、維修、通信品質等均由該第一類電信事業負責，本公司僅負責代用戶與該第一類電信事業聯繫。</span>
+<h5>第 五 條</h5>
+<span class='tos_japan'>本業務系統所需各項硬體及軟體設備之取得、設置以及所有權，均依本公司相關業務規定或用戶合約約定辦理。</span>
+<h5>第 六 條</h5>
+<span class='tos_japan'>本公司提供本業務所收取之服務費主要可分為系統建置費、設定費、網路系統維護費、資訊服務費、其他電信事業所收取之通訊費用等。本公司應於用戶合約中載明詳細付費項目以及各項費用之計算標準。</span>
+<h5>第 七 條</h5>
+<span class='tos_japan'>本公司若對於服務費有所調整或變更時，除報請主管機關備查外，應於彭博高速資訊網路之網站以及本公司營業場所公告，並事前個別通知用戶。用戶若不同意服務費之調整或變更，得立即終止用戶合約，本公司應退還用戶所預付之服務費。</span>
+<h5>第 八 條</h5>
+<span class='tos_japan'>用戶於向本公司申請使用本業務時，應提出正確之用戶資料，並於變更時通知本公司，否則概由用戶自行負責。</span>
+<h5>第 九 條</h5>
+<span class='tos_japan'>本公司對於因提供本業務所取得之用戶資料應加以保密，並遵守「電腦處理個人資料保護法」之規定處理用戶資料。惟於下列情形，本公司得提供用戶資料予第三人：</span>
+<span class='tos_japan'>一、經用戶同意。</span>
+<span class='tos_japan'>二、司法機關或犯罪偵查機關，為偵查或調查犯罪依法所為之命令。</span>
+<span class='tos_japan'>三、其他政府機關因執行公權力而依法所為之命令。</span>
+<span class='tos_japan'>四、與公眾生命安全有關之機關為進行緊急救助者。</span>
+<span class='tos_japan'>五、符合「電腦處理個人資料保護法」第二十三條之規定者。</span>
+<p>第 十 條	本公司預定暫停或終止本業務之一部或全部時，應於預定暫停或終止日一個月前報請主管機關備查，並立即通知用戶。</p>
+<p>前項暫停營業之時間最長不得超過一年。</p>
+<h5>第十一條</h5>
+<span class='tos_japan'>若本公司營業許可遭主管機關廢止，或本公司預定暫停或終止本業務之一部或全部時，本公司應退還用戶所預付之費用，並應依法律規定以及用戶合約約定賠償用戶之損失。</span>
+<h5>第十二條</h5>
+<span class='tos_japan'>用戶若有拒絕或遲延給付本業務之服務費之情事，本公司應定相當期限催告該用戶給付所積欠之服務費，並告知該用戶若未於所定期限內給付時，本公司有權依用戶合約之規定停止提供本業務，或期前終止用戶合約。</span>
+<h5>第十三條</h5>
+<span class='tos_japan'>若本公司發現用戶使用本業務有下列情形之一時，本公司有權立即停止對該用戶提供本業務，且該用戶應自行負擔任何責任：</span>
+<span class='tos_japan'>一、危害國家安全、擾亂治安。</span>
+<span class='tos_japan'>二、妨害公共秩序、善良風俗。</span>
+<span class='tos_japan'>三、竊取、更改、破壞他人資訊。</span>
+<span class='tos_japan'>四、危害本公司或他人網路系統安全。</span>
+<span class='tos_japan'>五、妨礙通訊秘密。</span>
+<h5>第十四條</h5>
+<span class='tos_japan'>用戶使用本業務，如因本公司或其他電信業者之系統設備障礙、阻斷，以致發生錯誤、遲滯、中斷或不能傳遞時，本公司依電信法第二十三條之規定不負損害賠償責任，但應依下列規定扣減服務費：</span>
+<span class='tos_japan'>一、若服務中斷達十二小時以上，而本公司仍未能使其恢復者，每中斷十二小時扣減每月服務費之三十分之一。</span>
+<span class='tos_japan'>二、當月因通信不通所扣減之服務費總額應以當月所應繳納之服務費總數為限。</span>
+<span class='tos_japan'>三、服務中斷之起始時間，以本公司察覺服務中斷或接獲用戶服務中斷之通知時為準，但若有紀錄證明服務中斷之實際起始時間者，以中斷實際發生之時為準。</span>
+<h5>第十五條</h5>
+<span class='tos_japan'>本公司接獲用戶有關服務中斷之通知後，應立即展開系統之檢查及修復，並儘速排除服務中斷之原因，以維持本業務之服務品質。</span>
+<p>第十六條 用戶若對於本業務有任何意見或申訴，得利用客服電話：+886-2-7719-1592與本公司聯絡。</p>
+<p>第十七條	本公司應遵守電信法之相關規定，確保用戶使用本業務之通訊秘密。</p>
+<h5>第十八條</h5>
+<span class='tos_japan'>若用戶有利用本業務從事非法活動者，本公司有權向相關單位檢舉，並有權將之視為拒絕往來戶。</span>
+<p>第十九條	本營業規章未盡事宜，悉依相關適用法令以及用戶合約之規定辦理。</p>
+<p>第二十條	本營業規章自公告日起施行，於有變更時亦同。</p>
+<h3 class='section_headings'>
+H. RULES MANAGED BY BLOOMBERG COLOMBIA LLC
+<a class='to_top' href='#'>
+back to top
+<span></span>
+</a>
+</h3>
+<p>
+Click
+<a class='registration_link' href='http://www.bloomberg.com/notices/Reglamento_Bloomberg_Colombia.pdf'>here</a>
+for GENERAL AND OPERATIONAL RULES OF THE INFORMATION SYSTEM MANAGED BY BLOOMBERG
+COLOMBIA LLC (REGLAMENTO GENERAL Y OPERATIVO DEL SISTEMA DE INFORMACIÓN ADMINISTRADO POR BLOOMBERG COLOMBIA LLC)
+</p>
+</div>
+</div>
+
+
+<div id='business-footer'>
+<div class="snippet-view business-snippet default-layout section-front" data-view-uid="snippetFooterViews"><div data-view-uid="snippetFooterViews_1"><footer id="footer" class="footer"> <div class="footer__container"> <div class="footer__links"> <ul class="footer__row"> <li class="footer__link"><a href="http://www.bloomberg.com/tos">Terms of Service</a></li> <li class="footer__link"><a href="http://www.bloomberg.com/trademarks">Trademarks</a></li> <li class="footer__link"><a href="http://www.bloomberg.com/privacy">Privacy Policy</a></li> </ul> <ul class="footer__row"> <li> <span class="footer__copyright">©2015 Bloomberg L.P. All Rights Reserved</span> </li> </ul> </div> <div class="footer__links"> <ul class="footer__row"> <li class="footer__link"><a href="http://jobs.bloomberg.com/">Careers</a></li> <li class="footer__link"><a href="http://nytm.org/made-in-nyc">Made in NYC</a></li> <li class="footer__link"><a href="http://bloombergmedia.com">Advertise</a></li> <li class="footer__link"><a href="http://www.bloomberg.com/privacy#advertisements">Ad Choices <img src="//assets.bwbx.io/business/public/images/icons/ad_choices_icon.49173bcd.png"></a></li> </ul> <ul class="footer__row"> <li class="footer__link"><a href="http://www.bloomberg.com/feedback">Website Feedback</a></li> <li class="footer__link"><a href="http://www.bloomberg.com/help/">Help</a></li> <li class="footer__link"><div id="truste" style="display: none;"></div></li> </ul> </div> </div> </footer></div></div>
+</div>
+
+
+</div>
+</div>
+
+<script>
+  $(Bcom.init);
+</script>
+<script>
+  <!-- Chartbeat -->
+  var _sf_async_config={};
+  _sf_async_config.uid = 15087;
+  _sf_async_config.domain = 'bloomberg.com';
+  _sf_async_config.useCanonical = true;
+  _sf_async_config.authors = '';
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement("script");
+      e.setAttribute("language", "javascript");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != "function") ?
+      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<script>
+  (function() {
+    // Native article pages don't have the correct tracking info until the contents are loaded through
+    // Polar's API call. The tracking is delayed here and will be fired on native article render event.
+    if(Bcom.global_var.IS_NATIVE) {
+      return;
+    }
+    Bcom.Tracker.Page.trackToComScore();
+  })();
+</script>
+<noscript>
+<p>
+<img alt="*" height="1" src="http://b.scorecardresearch.com/p?c1=2&amp;c2=3005059" width="1" />
+</p>
+</noscript>
+<script>
+  window.Utils.AB.setExperimentsChosen();
+  
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11413116-1']);
+  Bcom.Tracker.Page.trackToGoogleAnalytics();
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  $(document).ready(function () {
+    Bcom.Tracker.Events.setupTrackingExternalLinks();
+  });
+</script>
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script>
+  $(window).load(function () {
+    Bcom.Tracker.Events.trackNielsenEvent('0');
+  });
+</script>
+<noscript>
+<div>
+<img alt="" height="1" src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-905417h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" />
+</div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+<!-- BEGIN Krux Control Tag for "Bloomberg.com" -->
+<!-- Source: /snippet/controltag?confid=IDeZBlqQ&site=Bloomberg.com&edit=1 -->
+<script class='kxct' data-id='IDeZBlqQ' data-timing='async' data-version='1.9' type='text/javascript'>
+window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+(function(){
+  var k=document.createElement('script');k.type='text/javascript';k.async=true;
+  var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+  k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :(location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=IDeZBlqQ";
+  var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+}());
+</script>
+<!-- END Krux Controltag -->
+
+<script>
+  // iOS scaling fix
+  (function(e){var c="addEventListener",b="gesturestart",g="querySelectorAll",f=[1,1],d=g in e?e[g]("meta[name=viewport]"):[];function a(){d.content="width=device-width,minimum-scale="+f[0]+",maximum-scale="+f[1];e.removeEventListener(b,a,true)}if((d=d[d.length-1])&&c in e){a();f=[0.25,1.6];e[c](b,a,true)}}(document));
+</script>
+
+<script>
+  if (!Bcom.Ads.Interstitial.enabled) {
+    $.ajax( { dataType: "script",
+              cache: true,
+              url: "http://cdn.gotraffic.net/vendor/foresee_v_1/javascripts/foresee-trigger.js"
+             });
+  }
+</script>
+
+<script>
+  (function(w, d) { var a = function() { var a = d.createElement('script'); a.type = 'text/javascript';
+      a.async = 'async'; a.src = '//' + ((w.location.protocol === 'https:') ? 's3.amazonaws.com/cdx-radar/' :
+      'radar.cedexis.com/') + '01-12403-radar10.min.js'; d.body.appendChild(a); };
+      if (w.addEventListener) { w.addEventListener('load', a, false); }
+      else if (w.attachEvent) { w.attachEvent('onload', a); }
+  }(window, document));
+</script>
+
+<script type="text/javascript">
+var SnippetApp = require('app/SnippetApp');
+var snippetApp = new SnippetApp({"byzantiumUrl":"http://byzantium.bloomberg.com","showTrendingEntitiesModule":true,"appRoot":"","appleCampaignRunning":false,"assetManifest":{"public/images/500error.gif":"//assets.bwbx.io/business/public/images/500error.96cb50c5.gif","public/images/bbiz404.gif":"//assets.bwbx.io/business/public/images/bbiz404.3020e8d7.gif","public/images/fallback.jpg":"//assets.bwbx.io/business/public/images/fallback.269a48ad.jpg","public/images/favicons/apple-touch-icon-114x114.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-114x114.4aeb3b13.png","public/images/favicons/apple-touch-icon-120x120.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-120x120.616b256f.png","public/images/favicons/apple-touch-icon-144x144.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-144x144.166dda65.png","public/images/favicons/apple-touch-icon-152x152.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-152x152.c9951ac7.png","public/images/favicons/apple-touch-icon-180x180.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-180x180.dc9ca3d6.png","public/images/favicons/apple-touch-icon-57x57.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-57x57.bd486901.png","public/images/favicons/apple-touch-icon-60x60.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-60x60.f457f1df.png","public/images/favicons/apple-touch-icon-72x72.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-72x72.7d226513.png","public/images/favicons/apple-touch-icon-76x76.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-76x76.4fb8818e.png","public/images/favicons/apple-touch-icon-precomposed.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon-precomposed.c3e3dfeb.png","public/images/favicons/apple-touch-icon.png":"//assets.bwbx.io/business/public/images/favicons/apple-touch-icon.dc9ca3d6.png","public/images/favicons/favicon-160x160.png":"//assets.bwbx.io/business/public/images/favicons/favicon-160x160.9b14619b.png","public/images/favicons/favicon-16x16.png":"//assets.bwbx.io/business/public/images/favicons/favicon-16x16.8cab4be4.png","public/images/favicons/favicon-192x192.png":"//assets.bwbx.io/business/public/images/favicons/favicon-192x192.03482356.png","public/images/favicons/favicon-32x32.png":"//assets.bwbx.io/business/public/images/favicons/favicon-32x32.fa02118e.png","public/images/favicons/favicon-96x96.png":"//assets.bwbx.io/business/public/images/favicons/favicon-96x96.6dbd1316.png","public/images/favicons/favicon.ico":"//assets.bwbx.io/business/public/images/favicons/favicon.9628b26e.ico","public/images/favicons/mstile-144x144.png":"//assets.bwbx.io/business/public/images/favicons/mstile-144x144.539def7a.png","public/images/favicons/mstile-150x150.png":"//assets.bwbx.io/business/public/images/favicons/mstile-150x150.05f21a40.png","public/images/favicons/mstile-310x150.png":"//assets.bwbx.io/business/public/images/favicons/mstile-310x150.07f7515d.png","public/images/favicons/mstile-310x310.png":"//assets.bwbx.io/business/public/images/favicons/mstile-310x310.b5b6727a.png","public/images/favicons/mstile-70x70.png":"//assets.bwbx.io/business/public/images/favicons/mstile-70x70.1b6952cd.png","public/images/feature_article/feature-arrow.svg":"//assets.bwbx.io/business/public/images/feature_article/feature-arrow.159d059a.svg","public/images/icons/ad_choices_icon.png":"//assets.bwbx.io/business/public/images/icons/ad_choices_icon.49173bcd.png","public/images/logos/BB-Logo-H-HP-TOP.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-H-HP-TOP.3d81db4e.svg","public/images/logos/BB-Logo-H-SFF.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-H-SFF.cfc95f5f.svg","public/images/logos/BB-Logo-H.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-H.37109099.svg","public/images/logos/BB-Logo-H1.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-H1.c318357b.svg","public/images/logos/BB-Logo-V-HP-TOP.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-V-HP-TOP.a8517901.svg","public/images/logos/BB-Logo-V-SFF.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-V-SFF.84957dfc.svg","public/images/logos/BB-Logo-V.svg":"//assets.bwbx.io/business/public/images/logos/BB-Logo-V.313783e5.svg","public/images/logos/BB-Politics.svg":"//assets.bwbx.io/business/public/images/logos/BB-Politics.8ba9ea31.svg","public/images/logos/BB-View.svg":"//assets.bwbx.io/business/public/images/logos/BB-View.465688fb.svg","public/images/logos/benchmark_logo.svg":"//assets.bwbx.io/business/public/images/logos/benchmark_logo.d018c7c5.svg","public/images/logos/bloombergGraphics.svg":"//assets.bwbx.io/business/public/images/logos/bloombergGraphics.59cde388.svg","public/images/logos/bloomberg_markets_logo.svg":"//assets.bwbx.io/business/public/images/logos/bloomberg_markets_logo.1eb0d9dc.svg","public/images/logos/bloomberg_pursuits_logo.svg":"//assets.bwbx.io/business/public/images/logos/bloomberg_pursuits_logo.7fccb70f.svg","public/images/logos/businessweek.svg":"//assets.bwbx.io/business/public/images/logos/businessweek.5ab1d0e1.svg","public/images/masks/0.svg":"//assets.bwbx.io/business/public/images/masks/0.6673ff57.svg","public/images/masks/1.svg":"//assets.bwbx.io/business/public/images/masks/1.878a21c9.svg","public/images/masks/2.svg":"//assets.bwbx.io/business/public/images/masks/2.f0f70f59.svg","public/images/masks/3.svg":"//assets.bwbx.io/business/public/images/masks/3.cd142ccc.svg","public/images/masks/4.svg":"//assets.bwbx.io/business/public/images/masks/4.fac7b759.svg","public/images/masks/5.svg":"//assets.bwbx.io/business/public/images/masks/5.487be3a1.svg","public/images/masks/6.svg":"//assets.bwbx.io/business/public/images/masks/6.831d863f.svg","public/images/masks/7.svg":"//assets.bwbx.io/business/public/images/masks/7.257607a5.svg","public/images/masks/8.svg":"//assets.bwbx.io/business/public/images/masks/8.d7942ba7.svg","public/images/masks/9.svg":"//assets.bwbx.io/business/public/images/masks/9.4984fa8e.svg","public/images/newsletter-loader.gif":"//assets.bwbx.io/business/public/images/newsletter-loader.47c1a967.gif","public/images/no-image-header-BREAKING.jpeg":"//assets.bwbx.io/business/public/images/no-image-header-BREAKING.475e12b5.jpeg","public/images/top-noimage-ph.jpeg":"//assets.bwbx.io/business/public/images/top-noimage-ph.5d911b62.jpeg","public/javascripts/application.js":"//assets.bwbx.io/business/public/javascripts/application.b8b855e2.js","public/javascripts/bb.loader.js":"//assets.bwbx.io/business/public/javascripts/bb.loader.f1e7eb11.js","public/javascripts/critical.js":"//assets.bwbx.io/business/public/javascripts/critical.be6c425f.js","public/javascripts/experienceRedirect.js":"//assets.bwbx.io/business/public/javascripts/experienceRedirect.83a17d33.js","public/javascripts/polyfills.js":"//assets.bwbx.io/business/public/javascripts/polyfills.7cb33556.js","public/javascripts/previewModules.js":"//assets.bwbx.io/business/public/javascripts/previewModules.eda4815e.js","public/javascripts/tophat_snippet.js":"//assets.bwbx.io/business/public/javascripts/tophat_snippet.c48138c2.js","public/stylesheets/application.css":"//assets.bwbx.io/business/public/stylesheets/application.a76c847d.css","public/stylesheets/noscript.css":"//assets.bwbx.io/business/public/stylesheets/noscript.78e39895.css","public/stylesheets/snippet_application.css":"//assets.bwbx.io/business/public/stylesheets/snippet_application.6f491621.css","public/stylesheets/split/application-ie-blessed1.css":"//assets.bwbx.io/business/public/stylesheets/split/application-ie-blessed1.3f6fce91.css","public/stylesheets/split/application-ie-blessed2.css":"//assets.bwbx.io/business/public/stylesheets/split/application-ie-blessed2.21323119.css","public/stylesheets/split/application-ie.css":"//assets.bwbx.io/business/public/stylesheets/split/application-ie.3a065da5.css","public/stylesheets/tophat_snippet.css":"//assets.bwbx.io/business/public/stylesheets/tophat_snippet.17817bb0.css"},"bplayerJs":"//cdn.gotraffic.net/projector/latest/bplayer.js","videoPlayerConfig":{"shareOverlay":"true"},"searchHost":"http://search.bloomberg.com","clientApp":"app/ClientApp","clientAppUrl":"//assets.bwbx.io/business/public/javascripts/application.b8b855e2.js","startClientAppAsync":true,"snippetApp":"app/SnippetApp","snippetHost":"http://www.bloomberg.com","featureFlags":{"experiencesEnabled":true,"marketsV2":false,"inlineSlideshow":true,"transporterABTest":true},"markets":{"host":"http://www.bloomberg.com/markets/api"},"recommendation":{"site":"bbiz","url":"http://personalization.bloomberg.com"},"newRelicLicenseKey":"32a39e099b","newRelicAppId":"4892087","disqusShortname":"bloomberg","twitterUser":"business","twitterSite":"@business","WSSNewsletterService":{"bridgeEndpoint":"/newsletter"},"tracking":{"gtm":{"id":"GTM-NV5B7R"},"chartbeat":{"domain":"bloomberg.com","uid":"15087"},"comscore":{"clientId":"3005059","site":"bloomberg","siteIdentifier":"004"},"googleAnalytics":{"gaAccount":"UA-11413116-1"},"personalization":{"site":"bbiz","trackingUrl":"http://tracking.bloomberg.com/images/tracking-pixel.gif"},"timeouts":{"iframe":2000,"message":3000,"request":3000},"urls":{"tracking":"http://tracking.bloomberg.com/images/tracking-pixel.gif"}},"brisket:wantsCookies":true});
+snippetApp.start({"host":"http://www.bloomberg.com","viewFunctionNames":["snippetHeaderViews","snippetFooterViews"]});
+</script>
+<!--
+Environment: production
+Server Time: 16.226999999999997 ms
+Timestamp: 2015-09-02 16:11:45 -0400
+
+-->
+</body>
+</html>
