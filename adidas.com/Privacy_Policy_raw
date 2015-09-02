@@ -1,1 +1,153 @@
- 
+<!doctype html>
+<html>
+<head>
+<title>adidas - back soon, stronger than ever.</title>
+	<meta name="robots" content="noindex, nofollow, noarchive, nosnippet"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="expires" content="-1"/>
+	<script type="text/javascript" src="//tags.tiqcdn.com/utag/adidas/adidasglobal/prod/utag.sync.js"></script>
+<style>
+body,div,span,form{color:#333;font-family:Arial,Helvetica,sans-serif;font-size:11px;text-align:center;margin:0;padding:0;}
+input,a{margin:0;padding:0;}
+#site-down-container{width:640px;height:620px;margin-left:auto;margin-right:auto;background:url(https://www.adidas.com/usecomm/adidas_500_mobile.jpg) no-repeat;}
+#site-down-container #site-down-email{height:84px;overflow:hidden;position:relative;top:0;right:0;}
+#site-down-container #form-wrapper * {text-align:left;}
+#site-down-container #form-wrapper{float:right;width:280px;clear:both;margin-top:2px;}
+#site-down-container #twitter-box{margin-top:4px;margin-right:4px;float:left;}
+#site-down-container #twitter-btn{border:none;line-height:16px;}
+#site-down-container #email-box{float:right;margin-top:4px;}
+#site-down-container #email{width:160px;height:1.5em;color:#666;padding:2px}
+#site-down-container #imgSubmit{vertical-align:middle;}
+#site-down-container #row2{margin-top:4px;}
+.error{display:block;position:absolute;color:#00d1fe;right:0px;bottom:0px;text-align:right;padding-right:1em;}
+.hidden{display:none;visibility:hidden}
+</style>
+</head>
+<body>
+<div id="site-down-container">
+<!--<div id="site-down-email">
+		<div id="form-wrapper" class="promo-2">
+			<form name="formCH2" id="formCH2" method="post" action="//ebm.adidasusnews.com/r/regf2" target="_blank" onsubmit="return Newsletter.CheckOnSubmit();">
+				<input type="hidden" name="aid" value="344098838" />
+				<input type="hidden" name="n" value="198" />
+				<input type="hidden" name="nc" value="SOURCE" />
+				<input type="hidden" name="SOURCE" value="SITE" />
+				<input type="hidden" name="nc" value="ACQUISITION_CAMPAIGN_ID" />
+				<input type="hidden" name="ACQUISITION_CAMPAIGN_ID" value="0710OUTAGE"/>
+				<input type="hidden" name="SUBBED_DATE" value="%%_DT_TODAY%%" />
+				<input type="hidden" value="SUBBED_DATE" name="nc" id="eebnc" />
+				<input type="hidden" value="345395768" name="fsub" id="eebfsub" />
+				<input type="hidden" name="SPORTINTEREST" value="20" />
+				<input type="hidden" name="f" value="SPORTINTEREST|1|||bit|" />
+			<div id="twitter-box">
+				<a id="twitter-link" href="//twitter.com/adidasus">
+					<img id="twitter-btn" src="twitter-btn.jpg" alt="Follow @adidasus on Twitter" title="Follow @adidasus on Twitter"/></a>
+			</div>
+			<div id="email-box">
+				<div id="row1">
+					<input type="email" name="email" id="email" onfocus="if(this.value=='sign up for email'){this.value='';}else{this.select();}" onblur="if(this.value==''){this.value='sign up for email';}" value="sign up for email"/>
+					<input type="image" id="imgSubmit" src="signup-btn.gif" width="72" height="15" alt="Click here to sign up" /></div>
+				<div id="row2">
+					<input type="checkbox" name="age3" id="cbAge" class="radios age-line" />
+					<label id="over13" class="age-line" for="age3">Yes, I am over 13 years old.</label></div>
+			</div>
+			</form>
+		</div>
+		<div id="lblError" class="error hidden"></div>
+</div>-->
+</div>
+
+
+<script type="text/javascript">
+var markets = {  
+'it':['IT','IT'], 
+'es':['ES','ES'],
+'de':['DE','DE'],
+'fr':['FR','FR'],
+'nl':['NL','NL'],
+'co.uk':['GB','EN'],
+'at':['AT','DE'],
+'ie':['IE','EN'],
+'be':['BE','FR'],
+'se':['se','SE'],
+'dk':['DK','DK'],
+'fi':['FI','FI'],
+'cz':['CZ','CZ'],
+'sk':['SK','SK'],
+'pl':['PL','PL'],
+'ru':['RU','RU'],
+'com.au':['AU','EN'],
+'co.nz':['NZ','EN'],
+'com':['US','EN'], 
+'ca':['CA','EN'],
+'com.br':['BR','PT'],
+'mx':['MX','ES'],
+'com.ar':['AR','ES'],
+'pe':['PE','ES'],
+'cl':['CL','ES'],
+'co':['CO','ES'],
+'cn':['CN','ZH'],
+'com.tw':['TW','ZH'],
+'com.hk':['HK','ZH'],
+'com.vn':['VN','VN'],
+'co.th':['TH','TH'],
+'co.kr':['KR','KO'], 
+'co.id':['ID','ID'],
+'com.sg':['SG','EN'],
+'com.ph':['PH','EN'],
+'com.my':['MY','EN'],
+'co.in':['IN','EN'],
+'co.za':['ZA','EN'],
+'ch':['CH','DE'],
+'gr':['GR','EL'],
+'hu':['HU','HU'],
+'no':['NO','NO'],
+'pt':['PT','PT'],
+'com.tr':['TR','TR']
+};
+
+var lh = location.hostname.toLowerCase();
+var ptype = 'ERROR';
+var pname = '500 ERROR';
+var brand = lh.indexOf('adidas')>-1 ?'ADIDAS':'REEBOK' ;
+
+var env = 'PRODUCTION';
+if (lh.indexOf('staging') >-1) 	{ 	env = 'STAGING';	}
+else if (lh.indexOf('development')>-1)	{	env = 'DEVELOPMENT';	}
+
+var tld = lh.replace(/.*(adidas|reebok|crossfit)\./g,'');
+var pcountry = (typeof markets[tld][0] != 'undefined')? markets[tld][0]:'X';
+var lang = (typeof markets[tld][1] != 'undefined')? markets[tld][1]:'X';
+
+//override for global / regional
+if (lh.indexOf('japan') >-1) { pcountry= 'JP'; lang='JP';} 
+else if (lh.indexOf('global') >-1) { pcountry= 'GLOBAL'; lang='EN';} 
+else if (lh.indexOf('mena') >-1) { pcountry= 'AE'; lang='AR';} 
+else if (lh.indexOf('baltics') >-1) { pcountry= 'BALTICS'; lang='EN';} 
+else if (lh.indexOf('latin-america') >-1) { pcountry= 'LATAM'; lang='ES';} 
+else if (lh.indexOf('crossfit') >-1) { pcountry= 'CROSSFIT'; lang='EN';}
+else if (lh.indexOf('adidas.com') >-1) { pcountry= 'US'; lang='EN';} 
+else if (lh.indexOf('reebok.com') >-1) { pcountry= 'US'; lang='EN';} 
+
+var utag_data = {
+       breadcrumb: [ pname ],
+       country: pcountry,
+       customer_id: '',
+       environment: env,
+       is_mobile: '',
+       language: lang,
+       logged_in: '',
+       page_name: pname,
+       page_type: ptype,
+       site_name: brand
+};
+
+(function(a,b,c,d){
+a='//tags.tiqcdn.com/utag/adidas/adidasglobal/prod/utag.js';
+b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+var Newsletter={strMessageAge:"You must be at least 13 to enter your personal information.",strMessageEmail:"Please enter a valid email address.",CheckOnSubmit:function(){var a=document.getElementById("lblError");a.className+="hidden";return!1==document.getElementById("cbAge").checked?(Newsletter.ShowErrorMessage(a,this.strMessageAge),!1):!Newsletter.ValidateEmail(document.getElementById("email").value)?(Newsletter.ShowErrorMessage(a,this.strMessageEmail),!1):!0},ShowErrorMessage:function(a,b){a.innerHTML= b;a.className="error"},ValidateEmail:function(a){return null!=a.match(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/)},SetSubmitFormDate:function(a){var b=new Date,d="JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split(" ")[b.getMonth()],c=b.getDate();10>c&&(c="0"+c);b=b.getFullYear();myForms=document.getElementById(a);myForms.elements.SUBBED_DATE.value=c+"-"+d+"-"+b},GetUTCDateTimeStamp:function(){var a=new Date,b=a.getUTCMonth()+1,d=a.getUTCDate(),c=a.getUTCSeconds(),e=a.getUTCMinutes(),f=a.getUTCHours();10>f&&(f="0"+f);10>e&&(e="0"+e);10>d&&(d="0"+d);10>b&&(b="0"+b);10> c&&(c="0"+c);return a.getUTCFullYear()+"-"+b+"-"+d+" "+f+":"+e+":"+c}};Newsletter.SetSubmitFormDate("formCH2");</script>
+</body>
+</html>
