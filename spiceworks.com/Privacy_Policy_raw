@@ -1,1 +1,1157 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAUEV1FACgQCVVVVBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+	<title>Spiceworks Privacy Policy</title>
+	<meta name="description" content="Spiceworks is the first free IT management software designed to meet the unique needs of small and medium businesses. Spiceworks software helps IT professionals easily discover, manage and monitor the software and hardware assets in their networks.">
+	
+	<script>
+window['optimizely'] = window['optimizely'] || [];
+</script>
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="dcterms.rights" content="Copyright (c) 2006-2015 Spiceworks. All rights reserved." />
+<meta name="dcterms.rightsHolder" content="Spiceworks" />
+<meta name="dcterms.audience" content="global" />
+<meta property="og:image" content="http://www.spiceworks.com/images/icons/swoosh.png" />
+<link rel="shortcut icon" href="/favicon.gif" />
+<link href="https://plus.google.com/108660400379322656127" rel="publisher" />
+<link rel="home" title="Spiceworks" href="http://www.spiceworks.com" />
+<link href="//wwwstatic.spiceworks.com/css/all-styles_20150304.css?version=20150901" rel="stylesheet">
+<script>//document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>   
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="//wwwstatic.spiceworks.com/css/ie.css?version=20150106" />
+<![endif]-->
+<script>
+var SWUFR = SWUFR || {};
+SWUFR.cmd = SWUFR.cmd || [];
+SWUFR.cmd.push(function() { SWUFR.ufr.visit(); });
+</script>
+<script async src="//gekko.spiceworks.com/swufr.js"></script>
+  </head>
+
+  <body>   
+  
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PGLF8G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PGLF8G');</script>
+<!-- End Google Tag Manager -->        <div class="navbar navbar-inverse navbar-static-top navbar-dropdown">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-small btn-secondary btn-navbar btn-inverse collapsed" data-toggle="collapse" data-target=".nav-collapse" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Mobile Navigation Menu']);">Menu</a>
+          <a class="brand" href="/">Spiceworks</a>
+
+          <div class="nav-action pull-right">
+
+            
+              <a onclick="_gaq.push(['_trackEvent', 'Menu', 'Clicked', 'Features']);" href="/app/" class="btn btn-link " role="button" data-toggle="modal" data-tab="login">Products</a>
+              <a onclick="_gaq.push(['_trackEvent', 'Menu', 'Clicked', 'Downloads']);" href="/downloads/" class="btn btn-link " role="button" data-toggle="modal" data-tab="login">Downloads</a>
+
+        			                <a href="#join-login" class="btn btn-link" role="button" data-toggle="modal" data-tab="login" onClick="_gaq.push(['_trackEvent', 'Modals', 'Opened', 'Login']);">Login</a>
+        			
+
+            
+			    </div>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu']);">About <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/about/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Our Story']);">Our Story</a></li>
+                  <li><a href="/jobs/meet-the-team/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Meet the Team']);">Meet the Team</a></li>
+                  <li><a href="http://community.spiceworks.com/blog" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Blog']);">Blog</a></li>
+                  <li><a href="/press/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Press']);">Press</a></li>
+                  <li><a href="/jobs/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Jobs']);">Jobs</a></li>
+                  <li><a href="/contact/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Contact']);">Contact</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu']);">Apps <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/app/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Overview']);">Overview</a></li>
+                    <li><a href="/network-management/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Inventory Management']);">Inventory Management</a></li>
+					<li><a href="/free-mobile-device-management-mdm-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Mobile Device Management']);">Mobile Device Management</a></li>
+                    <li><a href="/free-help-desk-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - IT Help Desk']);">IT Help Desk</a></li>
+                    <li><a href="/free-network-monitoring-management-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Network Monitoring']);">Network Monitoring</a></li>
+                    <li><a href="/appcenter/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - App Center']);">App Center</a></li>
+                    <li class="divider"></li>
+                	<li><a href="/new-features/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - What\'s New']);">What's New</a></li>
+                	<li><a href="/downloads/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Downloads']);">Downloads</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu']);">IT Careers <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/it-careers/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Overview']);">Overview</a></li>
+                    <li><a href="/it-career-portfolio/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Portfolio']);">Portfolios</a></li>
+                    <li><a href="http://community.spiceworks.com/careers/jobs" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - IT Jobs']);">IT Jobs</a></li>
+                    <li><a href="http://community.spiceworks.com/careers" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Discussions']);">Discussions</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu']);">Community <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/free-it-community-network/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Overview']);">Overview</a></li>
+                    <li><a href="http://community.spiceworks.com/launch/see_all" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Discussion Groups']);">Discussion Groups</a></li>
+                    <li><a href="http://community.spiceworks.com/people" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - IT Profiles']);">IT Profiles</a></li>
+					<li><a href="http://community.spiceworks.com/how_to" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - How-Tos']);">How-Tos</a></li>
+					<li><a href="http://community.spiceworks.com/spiceworks-tv" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Videos']);">Videos</a></li>
+					<li><a href="http://community.spiceworks.com/product" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Ratings & Reviews']);">Ratings &amp; Reviews</a></li>
+					<li><a href="http://community.spiceworks.com/service_providers" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - IT Service Providers']);">IT Service Providers</a></li>
+					<li><a href="http://community.spiceworks.com/pages" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Vendor Pages']);">Vendor Pages</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu']);">Marketing <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Overview']);">Overview</a></li>
+                  <li><a href="/marketing/research-your-market/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Research Your Market']);">Research Your Market</a></li>
+                  <li><a href="/marketing/generate-demand/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Generate Demand']);">Generate Demand</a></li>
+                  <li><a href="/marketing/interact-with-buyers/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Connect with buyers']);">Connect with buyers</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/marketing/products/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Products']);">Products</a></li>
+                  <li><a href="/marketing/solutions/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Solutions']);">Solutions</a></li>
+                  <li><a href="/marketing/resources/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Resources']);">Resources</a></li>
+                  <li><a href="/marketing/success-story/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Success Stories']);">Success Stories</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="hero">	
+		<div class="navbar navbar-static-top navbar-section hidden-phone">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li class="navbar-title">Privacy and Terms:</li>
+						<li class="active"><a href="/privacy/">Privacy Policy</a></li>
+						<li><a href="/terms/">Terms of Use</a></li>
+						<li><a href="/requirements/">System Requirements</a></li>
+						<li><a href="/privacy/cookies/">Cookie Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	<div class="container box"> 
+        
+        <div class="row-fluid"> 
+        	<div class="span4 pull-right hidden-phone">
+        		<div class="well">
+	        		<ul class="nav nav-list">
+  						<li class="nav-header">Table of Contents</li>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#not-for-sale">Your Privacy is Not for Sale</a></li>
+						<li><a href="#why">Why We Collect Information</a></li>
+						<li><a href="#what">What Information We Collect</a></li>
+						<li><a href="#cookies">Cookies</a></li>
+						<li><a href="#how">How We Use The Information</a></li>
+						<li><a href="#how-share">How We Share Information</a></li>
+						<li><a href="#choices">Your Choices</a></li>
+						<li><a href="#security">Information Confidentiality and Security</a></li>
+						<li><a href="#international-users">International Users</a></li>
+						<li><a href="#third-party">Third-Party Sites</a></li>
+						<li><a href="#children">Children's Privacy</a></li>
+						<li><a href="#disclaimer">Legal Disclaimer</a></li>
+						<li><a href="#changes">Changes to Privacy Statement</a></li>
+						<li><a href="#feedback">Feedback</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="span8">
+        		<h1>Spiceworks Privacy Policy</h1>
+
+				<p><em>Last Updated: July 31, 2015</em></p> 
+				
+				<hr>
+				
+				<p>At Spiceworks, our most important asset is our relationship with our user community. We are committed to maintaining the confidentiality, integrity and security of information about our users and their organizations. We are proud of our privacy practices and want you to know how we protect your information submitted or collected through your use of (a) the Spiceworks website located at <a href="/">www.spiceworks.com</a> and <a href="http://community.spiceworks.com/">community.spiceworks.com</a>, and any subdomain of thereof (collectively, the "Site"), (b) any off-line software components made available to you by or on behalf of Spiceworks on or through the Site that have links to this Privacy Policy (collectively, the "Software"), and (c) any web-based services made available to you by or on behalf of Spiceworks via the Site that have links to this Privacy Policy (each, a “Web-Based Offering” and (a), (b) and (c), collectively or any part thereof, the "Service").</p>
+				
+				<p>This Spiceworks Privacy Policy describes how we treat Personal Information you provide or we collect when you use the Service. “Personal Information” means information that alone or when in combination with other information may be used to readily identify, contact, or locate you, such as: name, address, email address, or phone number. We do not consider “Personal Information” to include information that has been anonymized so that it does not allow a third party to easily identify a specific individual.</p>
+				
+				<p>Please take a moment to read the following to learn more about our information practices, including what type of Personal Information is gathered, how the Personal Information is used and for what purposes, to whom we disclose Personal Information, and how we safeguard your Personal Information. If you do not agree with our policies and practices, your choice is not to use our Service. By accessing or using any portion of the Service, you agree to this Privacy Policy.</p>
+				
+				<p>This Privacy Policy is incorporated by reference into the Spiceworks Terms of Use or other legal document applicable to your relationship with Spiceworks. The term “Spiceworks” includes Spiceworks, Inc. and our affiliates and subsidiaries.</p>
+				
+				<hr>
+				
+				<h4 id="introduction">Introduction</h4>
+				
+				<p>The Spiceworks service is not just a website; it is a social IT management application that combines the tools you need to manage your network, with information about IT products and services, and advice and expertise from other IT professionals like you, to dramatically simplify your day-to-day job. It’s important to us that you understand how the Service works with respect to collection and use of Personal Information and the ramifications on our privacy policies.</p>
+				
+				<p>For those who download the Spiceworks Desktop application (“Desktop”), it is designed to make it easy to inventory and monitor the hardware and software on your network. This “inventory data” is limited to systems related information about your network devices and how they are configured. It does not include any non-systems related information such as personal files and content, application specific data files and content, common user directories or other user data and documents. This Inventory Data is stored locally in a file on your computer in an encoded format. Access to this file is password protected using the standard operating systems access control mechanisms. In a standard Windows installation, you can find this file and its contents located at C:/Program Files/Spiceworks/db/spiceworks.db.</p>
+				
+				<h4 id="not-for-sale">Your Privacy is Not for Sale</h4>
+				
+				<p>Simply put, we do not and will not sell or rent your Personal Information to anyone, for any reason. Spiceworks uses and discloses your Personal Information only as follows:</p>
+				
+				<ul>
+					<li>to analyze site usage and improve the service;</li>
+					<li>to deliver to you any administrative notices, network alerts, system notifications, and communications relevant to your use of the Service;</li>
+					<li>to fulfill your requests for certain products, information and services;</li>
+					<li>for market research, project planning, troubleshooting Service problems, detecting and protecting against error, fraud or other criminal activity;</li>
+					<li>to third-party contractors that provide services to Spiceworks and are bound by these same privacy restrictions;</li>
+					<li>to enforce the Terms of Use; and</li>
+					<li>as otherwise set forth in this Privacy Policy.</li>
+				</ul>
+				
+				<br />
+				
+				<h4 id="why">Why We Collect Information</h4>
+				
+				<p>We collect information because it helps us deliver the absolute best user experience we possibly can. It is one of our core beliefs that we can only achieve that goal with your help, by customizing your experience to your unique environment. Gathering this information enables us to connect you with other IT professionals like yourself, provide you with convenient and accurate information about discussion topics you may be interested in, and bring you timely and relevant information about the IT products and services that you may need. In addition, this information helps us keep you informed on the latest product and service announcements, software updates, and support information in a timely fashion. Most importantly, this information allows us to tune the product experience over time, optimizing the Service based on your feedback and how you actually use the Service.</p>
+				
+				<h4 id="what">What Information We Collect</h4>
+				
+				<p><strong>Account Information.</strong> When you sign up for a Spiceworks Account, we ask you for Personal Information such as your name, email address, company name and zip code.</p>
+				
+				<p><strong>Social Networking Site Information.</strong> For your convenience, we may allow you to register to join Spiceworks by using log in credentials from third-party social networking sites (“SNS”) such as Facebook and LinkedIn. If you register via an SNS, the SNS may provide us with some of the Personal Information you have provided to the SNS.</p>
+
+				<p><strong>Profile Information.</strong> We also collect Personal Information you provide when completing the sections of your Spiceworks profile, a project page or a profile page that request Personal Information.</p>
+
+				<p><strong>Payment Information.</strong> If you elect to use paid features of the Service, you may need to provide Personal Information to our third-party payment processors, such as your credit card number.</p>
+				
+				<p><strong>Customer Support.</strong> We may collect Personal Information through your communications with our customer support team.</p>
+
+				<p><strong>Other Information.</strong> We also collect some information from you when you use the Service that does not constitute “Personal Information.” For example, each installed copy of the Desktop includes a unique application number. If you install the Desktop, this number and a message indicating whether the installation succeeded or failed, is sent back to Spiceworks. Also, when the Desktop automatically checks to see if a new version is available, the current version number and the unique application number are sent to Spiceworks. The unique application number is required for the Desktop to function properly and cannot be disabled. From time to time, the Desktop also collects anonymous aggregate information about your computing environment. This information is anonymized and collected into groups so that it no longer reflects or references an individually identifiable company or user. We also collect information you input into the any Web-based Offerings made available by Spiceworks in connection with your use of those offerings.</p>
+
+				<p><strong>User Contributions.</strong> You also may provide information to be published or displayed on public areas of the Site, or transmitted to other users of the Site or third parties. Spiceworks is not responsible for the privacy practices of the other users or third parties who may view and use that information.</p>
+
+				<p><strong>Automatic Data Collection.</strong> As is true of most websites, we gather certain information automatically from your browser and store it in log files. This information includes display size, browser type, referring/exit pages, operating system, date/time stamp, and various click-stream data. If your browser has a “private browsing” mode you may be able to block this information from being sent to Spiceworks, but in some cases this may impact your ability to use the Service.</p>
+
+				
+				<h4 id="cookies">Cookies and Related Technologies</h4>
+				
+				<p>Spiceworks uses cookies, which are alphanumeric identifiers in the form of text files that are stored on your computer, to make the Service easier to use, to improve our advertising, and to protect you and Spiceworks. For example, we use them to store your login ID (but never your password) to make it easier for you to login whenever you come back to the Site. We also use them to remember the last application page you visited and advertisements you’ve already seen. You can remove or block cookies using the settings in your browser, but in some cases that may impact your ability to use the Service.</p>
+				
+				<p>Many of the advertisements you see when using the Service have been placed by third parties. These third parties may choose to use their own cookies for the purposes of collecting information relating to the viewing of their advertising. This Privacy Policy is intended to cover the use of cookies implemented by Spiceworks and does not describe third party cookies in detail or their privacy policies.</p>
+				
+				<p>We use a third-party service provider to serve ads on our behalf across the Internet and sometimes on our site. They may collect anonymous information about your visits to our Site and your interaction with our products and services.</p>
+				
+				<p>Small pieces of code called web beacons (also referred to as clear gifs, pixel tags and single-pixel gifs), which are typically one-pixel images embedded in web pages or emails, are used in conjunction with cookies on the Service and our emails to help us manage and monitor our online advertising and wider business arrangements with third parties and for the purpose of measuring and analyzing site usage and activity, and improving the quality of the Service. These files allow us to aggregate anonymous information relating to advertising and website usage. For example, the type of information collected includes information relating to page views. These web beacons may be used to recognize third party cookies and inform us and/or third parties of which advertisement or link brought you to the Site, allowing us to monitor the efficacy of our business relationships with third parties.</p>
+				
+				<p>We also work with a third party to monitor certain pages of our Site for the purpose of reporting Site traffic and other advertising statistics. Where authorized by us, this third party may use cookies and/or other monitoring technologies to compile anonymous statistics about our Site visitors. No Personal Information is transferred to this third party.</p>
+				
+				<h4 id="how">How We Use The Information</h4>
+				
+				<p><strong>Internal and Service-Related Usage.</strong> We use data you input into or that is collected by the Service to perform the services requested in connection with those Services. For example, if you input inventory data into one of the Web-based Offerings, we will use that information to display that inventory data to you when you use such Web-based Offering. We use your payment information to collect payment for the applicable Services. We may store and combine the Personal Information you submit or we collect via any part of the Service with information from other Spiceworks services or third parties (including SNS) in order to deliver the Service, to provide you with a better experience and to improve the quality of our services. We may use anonymized aggregate personal or environment information to provide the services you've requested, including services that display customized content and advertising, and compare your environment configuration to those of the broader user community. Such information does not identify you or your company individually. We may use browser usage information, which does not identify individual users or companies, to analyze trends, to administer the Service, to track users' movements around the Site, to gather demographic information about our user base as a whole, and to operate and improve the Spiceworks technologies and services. We may use and retain any data we collect to provide and improve our services.</p>
+
+				<p><strong>Displaying to Other Users.</strong> Personal Information you include in your profile information and user contributions you post are considered publicly available and can be read, collected, or used by other individuals, including to send you unsolicited messages. With the exception of your email address, which is never viewable, some of the information provided from your SNS may be viewable by persons who visit Spiceworks, which you can control by editing your Spiceworks profile. We cannot control the actions of other users of the Site with whom you may choose to share your user contributions or who may view your profile information. Therefore, we cannot and do not guarantee that your user contributions or profile information will not be viewed or used by unauthorized persons. We are not responsible for the privacy practices of the other users who will view and use the posted information.</p>
+
+				<p><strong>Spiceworks-Related Communication.</strong> We use your Personal Information to contact you about administrative notices, application & network alerts, community activity, product updates, offers and promotions, and general news about Spiceworks and our partners. This communication may be in the form of an in-app alert, email or possibly a phone call. The frequency of this type of communication varies based on the type of notification. For example, application alerts are delivered as they occur, while our product newsletter is generally delivered monthly. You can manage your email preferences with respect to content and delivery or you may unsubscribe from all emails about Spiceworks and our partners. You can also email us at info@spiceworks.com regarding your communication preferences.</p>
+
+				<p><strong>Advertising.</strong> Third party service providers that we use to serve ads on our behalf may also use information about your visits to our site and other websites to target advertisements for goods and services. This anonymous information is collected through the use of a pixel tag, which is industry standard technology used by most major websites. No personally identifiable information is collected or used in this process. They do not know the name, phone number, address, email address or any personally identifying information about the user.</p>
+
+				<p><strong>Customer Testimonials.</strong> From time-to-time we may ask individual users to participate in customer testimonials posted on our website. We never post these testimonials without their express permission. Any information provided as part of these testimonials is used solely for the purpose of these testimonials and is not used in any other way. If you wish to update or delete your testimonial, you can contact us at <a href="mailto:info@spiceworks.com">info@spiceworks.com</a>.</p>
+
+				<p><strong>Search Engines.</strong> Certain Personal Information may also be accessible via search engines or similar services. For example, if you make a post on one of our community forums, your profile information and the content of the posts you make may accessible through a Google search.</p>
+				
+				<h4 id="how-share">How We Share Information</h4>
+
+				<p><strong>Service Providers.</strong> We may use third party service providers to help us deliver parts of the Service. For example, we use a third party service to manage our email marketing campaigns. This system stores your name, email address and the date on which you registered. When we use third parties to assist us in processing your Personal Information, we require that they comply with this Privacy Policy and any other appropriate confidentiality and security measures.</p>
+
+				<p><strong>Marketing.</strong> We may share anonymous aggregated information with third parties outside of Spiceworks, such as advertisers and market research firms approved by Spiceworks, for their marketing and promotional purposes. For example, we share with advertisers the breakdown of our user community by company size and industry. When we share such information it does not identify you or your company individually.</p>
+
+				<p><strong>As Required by Law and Similar Disclosures.</strong> We reserve the right to disclose your personally identifiable information as required by law and when we believe that disclosure is necessary to protect our rights and/or to comply with a judicial proceeding, court order, or legal process served on the Service. We may also share Personal Information with third parties in limited circumstances, including when preventing fraud or imminent harm and ensuring the security of our network and services.</p>
+
+				<p><strong>Merger, Sale or Other Asset Transfers.</strong> If we are involved in a merger, acquisition, financing due diligence, reorganization, bankruptcy, receivership, sale of our assets, or transition of service to another provider, your information may be sold or transferred as part of such a transaction as permitted by law and/or contract.</p>
+			
+				<h4 id="choices">Your Choices</h4>
+				
+				<p>We offer you choices when we ask for Personal Information, whenever reasonably possible. You may decline to provide Personal Information to us and/or refuse cookies in your browser, although some if not all of our features or services may not function properly as a result.</p>
+				
+				<p>You can manage your email subscriptions at any time by editing your personal profile at the following URL: <a href="http://community.spiceworks.com/profile/subscriptions">http://community.spiceworks.com/profile/subscriptions</a></p>
+				
+				<p>Spiceworks relies on Google Services for display of ads on our site <a href="http://community.spiceworks.com">http://community.spiceworks.com</a>.  To Opt-Out of any targeted ads based on your activity on our site, please utilize the following URL: <a href="http://www.google.com/policies/technologies/ads/">http://www.google.com/policies/technologies/ads/</a>.  </p>
+				
+				<p>We make good faith efforts to provide you access to your Personal Information upon request and to let you correct such data if it is inaccurate and delete it, when reasonably possible. If your Personal Information changes, you may update it using the "Update Profile" link at the bottom of the email newsletter. When you update information, we may keep a copy of the prior version for our records.</p>
+				
+				<p>You have control over your Spiceworks user profile and related privacy settings and can edit such to remove information that you do not want others to see publicly via the Site. You can manage your personal profile information by visiting the URL: http://community.spiceworks.com/profile. The information you post in your project pages or profile pages is publicly available and there are not any privacy settings on those pages so if you do not want certain information to be publicly available, do not post it to your project pages or profile pages.</p>
+				
+				<p>We may access, preserve, and disclose your Personal Information, other account information, and content, including after you terminate usage of our Service, if we believe doing so is required or appropriate to: comply with our legal obligations, resolve disputes, respond to your requests; or protect yours’, ours’ or  others’ rights, property, or safety.</p>
+				
+				<p>If you wish to terminate your community log-in, contact us at <a href="mailto:info@spiceworks.com">info@spiceworks.com</a>.</p>
+				
+				<p>You can uninstall the Desktop software through the "Add or Remove Programs" Control Panel within the Desktop at any time. When you uninstall the software, the Desktop and all its associated data files (i.e. inventory data, helpdesk tickets, configuration history, etc.) will be deleted. Once deleted it cannot be recovered.</p>
+				
+				<p>If you terminate your use of our hosted help desk Web-based Offering, we will make commercially reasonable efforts to retain the data you submitted to Spiceworks via that Web-based Offering for 3 months after you terminate your usage of it. Spiceworks has no obligation to retain that data after that period.</p>
+				
+				<h4 id="security">Information Confidentiality and Security</h4>
+				
+				<p>We take steps to ensure that your information is treated securely and in accordance with this Privacy Policy. For example, we use SSL to transmit information between the Desktop and Spiceworks. Unfortunately, the Internet cannot be guaranteed to be 100% secure, and we cannot ensure or warrant the security of any information you provide to us. We do not accept liability for unintentional disclosure.</p>
+				
+				<p>By using the Service or providing Personal Information to us, you agree that we may communicate with you electronically regarding security, privacy, and administrative issues relating to your use of the Site. If we learn of a security system’s breach, we may attempt to notify you electronically by posting a notice on the Site or sending an email to you. You may have a legal right to receive this notice in writing. To receive free written notice of a security breach (or to withdraw your consent from receiving electronic notice), please notify us at <a href="mailto:info@spiceworks.com">info@spiceworks.com</a>.</p>
+				
+				<h4 id="international-users">International Users</h4>
+				
+				<p>Spiceworks processes Personal Information on servers in the United States of America and in other countries. In some cases, we may process Personal Information on a server outside your own country. If you are visiting from the European Union or other regions with laws governing data collection and use, please note that you are agreeing to the transfer of your information to the United States and processing globally. By providing your information you consent to any transfer and processing in accordance with this Privacy Policy.</p>
+				
+				<h4 id="third-party">Third-Party Sites</h4>
+				
+				<p>Please be aware that other websites that may be accessed through the Service may collect Personal Information about you. Please note that the privacy policies of these sites may differ from those of Spiceworks. Spiceworks is not responsible for the privacy policies and practices of any linked website. This Privacy Policy does not cover the information practices of those third-party websites linked to our site. We encourage you to read the privacy statement of any website you may visit.</p>
+				
+				<p>Parts of our Service may include social media features, such as the Facebook Like button, and widgets, such as the Google Maps button or interactive mini-programs that run on our Service. These features may collect your IP address and which page you are visiting on our Site, and may set a cookie to enable the feature to function properly. These features and widgets are either hosted by a third party or hosted directly on our Service. Your interactions with these features are governed by the privacy policy of the company providing it.</p>
+				
+				<h4 id="children">Children's Privacy</h4>
+				
+				<p>Any person who provides their information to Spiceworks through the account login page for new customers or any other party of the service represents to Spiceworks that they are 15 years of age or older.</p>
+				
+				<p>We do not knowingly collect, maintain, or use Personal Information from children under 13 years of age, and no part of the Service is intended for or directed to persons under the age of 15. If you learn that your child has provided us with Personal Information without your consent, you may alert us at <a href="mailto:info@spiceworks.com">info@spiceworks.com</a>. If we learn that we have collected any Personal Information from children under 13, we will promptly take steps to delete such information and terminate the child’s account.</p>
+				
+				<h4 id="changes">Changes to Privacy Statement</h4>
+				
+				<p>Spiceworks may update this Privacy Policy from time to time. We will post any adjustments to the Privacy Policy on this web page, and the revised version will be effective when it is posted. When we change this Privacy Policy in a material way, a prominent notice will be posted on our Site along with the updated this Privacy Policy prior to the changes becoming effective. Please check this URL frequently to see the latest version of this this Privacy Policy.</p>
+				
+				<h4 id="feedback">Feedback</h4>
+				
+				<p>If you have comments on any part of the Service or ideas on how to improve it, please send email to <a href="mailto:feedback@spiceworks.com">feedback@spiceworks.com</a>. Please note that by doing so, you also grant Spiceworks and third parties permission to use and incorporate your ideas or comments into the service (or third party software or content) without further compensation or approval.</p>
+		
+				<p>The information contained in this web site is subject to change without notice.<br />
+				Copyright &copy; 2006-2015 Spiceworks, Inc. All rights reserved.<br />
+				Spiceworks, Inc. 3700 North Capital of Texas Highway #100, Austin, TX 78759, USA</p>
+        	</div>
+        </div>
+    	
+    </div>
+        
+       <footer id="footer" class="footer-jumbo">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<ul class="inline center separator-bar blue-links">
+						<li><a href="/app/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - App']);">App</a></li>
+						<li><a href="/downloads/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Downloads']);">Downloads</a></li>
+						<li><a href="http://community.spiceworks.com/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Community']);">Community</a></li>
+						<li><a href="http://community.spiceworks.com/support" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Support']);">Support</a></li>
+						<li><a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Advertise']);">Advertise</a></li>
+						<li><a href="http://community.spiceworks.com/spiceworks-tv" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Videos']);">Videos</a></li>
+					</ul>
+					<ul class="inline center separator-bar">
+						<li><a href="/about/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - About Us']);">About Us</a></li>
+						<li><a href="/story/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Our Story']);">Our Story</a></li>
+						<li><a href="/partner-program/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Affiliate Program']);">Partner Referral Program</a></li>
+						<li><a href="http://community.spiceworks.com/blog" ="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Blog']);">Blog</a></li>
+						<li><a href="/press/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Press']);">Press</a></li>
+						<li><a href="/jobs/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Jobs']);">Jobs</a></li>
+						<li><a href="/contact/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Contact']);">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr class="divider">			
+			<div class="footer-share row-fluid">
+				<div class="span12">
+					<ul class="inline footer-social pull-right">
+						<li><a href="http://community.spiceworks.com/pages/Spiceworks/follow" id="spiceworks_follow" target="_blank" title="Follow us in Spiceworks" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Spiceworks']);">Spiceworks</a></li>
+						<li><a href="http://www.facebook.com/pages/Spiceworks/15382903707" id="facebook" target="_blank" rel="nofollow" title="Follow us on Facebook" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Facebook']);">Facebook</a></li>
+						<li><a href="http://www.twitter.com/spiceworks" id="twitter" target="_blank" rel="nofollow" title="Follow us on Twitter"  onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Twitter']);">Twitter</a></li>
+						<li><a href="https://plus.google.com/+spiceworks" id="google" target="_blank" rel="nofollow" title="Connnect with us on Google+" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Google+']);">Google+</a></li>
+						<li><a href="http://www.linkedin.com/companies/spiceworks" id="linkedin" target="_blank" rel="nofollow" title="Connnect with us on LinkedIn" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on LinkedIn']);">LinkedIn</a></li>
+						<li><a href="http://www.flickr.com/photos/spiceworks" id="flickr" target="_blank" rel="nofollow" title="View our Flickr photostream" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Flickr']);">Flickr</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="legal" class="row-fluid">
+				<div class="span6 pull-right text-right">
+					<small class="muted">
+						<a href="/sitemap/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Sitemap']);">Sitemap</a> &nbsp; &bull; &nbsp; 
+						<a href="/terms-and-privacy/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Privacy Policy']);">Privacy Policy</a> &nbsp; &bull; &nbsp;  
+						<a href="/terms-and-privacy/#terms" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Terms of Use']);">Terms of Use</a> &nbsp; &bull; &nbsp; 
+						<a href="/terms-and-privacy/#system-requirements" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - System Requirements']);">System Requirements</a>
+					</small>
+				</div>
+				
+				<div class="span6 footer-legal">
+					<small class="muted">
+						&copy; Copyright 2006-2015 Spiceworks Inc. 
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script>
+(function () {
+
+	// should be moved into JS library
+	window.SW_DOWNLOAD_WAIT = true;
+	var anchors = document.getElementsByTagName('a'),
+		anchor, anchordata,
+		noLogin,
+		alen = anchors.length,
+		i = 0,
+		reg = /\/download\//,
+		timeout, scheduleClick,
+		iters = 0;
+
+	scheduleClick = function (a) {
+		clearTimeout(timeout);
+		if (window.SW_DOWNLOAD_WAIT) {
+			timeout = setTimeout(function () {
+				iters++;
+				if (iters > 40) window.SW_DOWNLOAD_WAIT = false;
+				a.click();
+			}, 200);
+		}
+	};
+
+	for (; i < alen; i++) {
+		anchor = anchors[i];
+		anchordata = anchor.data || anchor.dataset;
+		noLogin = anchor.dataset ? anchor.dataset.noLogin : false;
+		if (anchordata.href && anchordata.href.match(reg) ||
+			anchor.href && anchor.href.match(reg) && !noLogin) {
+			if (anchor.addEventListener) {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					scheduleClick(this);
+				}, false);
+			}
+			else {
+				anchor.attachEvent("onclick", function (e) {
+					e.preventDefault();
+					scheduleClick(this);
+				});
+			}
+		}
+	}
+
+})();
+</script>
+
+<script src="//wwwstatic.spiceworks.com/js/global.js?version=20150603"></script>
+	<aside>
+    <div id="join-login" class="modal modal-join-login join-login fade hide" tabindex="-1" role="dialog" aria-labelledby="login_label" aria-hidden="true">
+    		    <div class="tab-content">
+	    	<div id="join" class="tab-pane active">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3 id="login_label">Get free apps and a community of millions of IT pros.</h3>
+		        </div>
+		        <div class="modal-body">
+			        <div class="social-register text-center">
+						<h4>Connect with</h4>
+
+						<a href="#" data-social-join="facebook" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join with Facebook']);"><img alt="Login with Facebook" src="//static.spiceworks.com/assets/community/icons/social/facebook_thin.png"></a>
+						<a href="#" data-social-join="linkedin" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join with LinkedIn']);"><img alt="Login with LinkedIn" src="//static.spiceworks.com/assets/community/icons/social/linkedin_thin.png"></a>
+
+					</div>
+					<div class="or-divider"><div>Or</div></div>
+					<h4 class="sign-up-header">Sign up with your email address</h4>
+
+		      		<form accept-charset="UTF-8" action="https://community.spiceworks.com/join/register" class="form-horizontal register-form" data-remote-json="true" id="new_registration" method="post" target="_parent">
+
+						<input name="utf8" type="hidden" value="&#x2713;" />
+						<input name="registration[terms]" type="hidden" value="1" />
+
+												<input id="new_registration_referer" name="registration[referer]" type="hidden" value="http://www.spiceworks.com/privacy/" />
+						
+						<div class="sui-alert no-controls generic-error"></div>
+
+						<div class="control-group">
+							<label class="control-label" for="new_registration_first_name" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'First Name Label']);">First Name</label>
+							<div class="controls">
+								<input id="new_registration_first_name" name="registration[first_name]" size="30" type="text" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'First Name Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="new_registration_last_name" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Last Name Label']);">Last Name</label>
+							<div class="controls">
+								<input id="new_registration_last_name" name="registration[last_name]" size="30" type="text" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Last Name Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="new_registration_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Email Label']);">Email</label>
+							<div class="controls">
+								<input id="new_registration_email" name="registration[email]" size="30" type="email" value="" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Email Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+    						<div class="controls">
+								<button class="btn btn-primary" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join Now']);">Join Now</button>
+							</div>
+						</div>
+						<input name="registration[terms]" type="hidden" value="1" />								
+					</form>
+
+					<p class="text-center join-form-copy">Already have an account? <a href="#login" class="iframe join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In from Join']);">Sign In</a></p>
+					<p class="text-center terms-disclaimer">By creating your account, you are agreeing to our <a href="http://www.spiceworks.com/terms-and-privacy/#terms" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Terms of Use']);">Terms of Use</a> and our <a href="http://www.spiceworks.com/terms-and-privacy/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Privacy Policy']);">Privacy Policy</a>.</p>
+		        </div>
+		        <div class="modal-footer">
+					<strong>Are you a tech marketer?</strong> <a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join - Marketer Link']);">Join Here</a>
+		        </div>
+			</div>
+
+			<div id="join_download" class="tab-pane ">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	            <h2 class="text-center">Create your FREE Spiceworks Account.</h2>
+	            	            	<h4 class="text-center">Once that's done, your download will begin immediately.</h4>
+	            	          </div>
+	          <div class="modal-body">
+              <div class="social-register text-center">
+                <h4>Connect with</h4>
+                <div class="social_links text-center">
+
+                </div>
+                <div class="or-divider"><div>Or</div></div>
+              </div>
+	            <form accept-charset="UTF-8" action="javascript:void(0);" class="form-horizontal register-form" id="join_download_form" method="post" target="_parent">
+	              <input name="utf8" type="hidden" value="&#x2713;" />
+
+	              <a href="#password-reset" role="button" data-toggle="tab" style="display:none;"></a>
+	              <div class="alert alert-error generic-error" style="display:none"></div>
+	              <div class="alert alert-error email-use-error" style="display:none">An account already exists for this email but the password was wrong.<br>Try correcting the password or use a different email.</div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="registration_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email Label']);">Username (Email)</label>
+	                <div class="controls">
+	                  <input id="registration_email" name="registration[email]" size="30" type="email" value="" placeholder="Use your email for verification" required onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email Field']);" />
+	    			  <span id="registration_email_success" class="help-inline success" style="display:none;"><i class="fa fa-check"></i> Looks good!</span>
+	    			  <span id="registration_email_error" class="help-inline error" style="display:none;"><i class="fa fa-times"></i> Oops</span>
+	                  <span id="registration_email_help" class="help-block">A valid email is required to verify<br>your Spiceworks account.</span>
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="registration_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Password Label']);">Password</label>
+	                <div class="controls">
+	                  <input id="registration_password" name="registration[password]" size="30" type="password" value="" placeholder="Create a strong password" required onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Password Field']);" />
+	    			  <span id="registration_password_success" class="help-inline success" style="display:none;"><i class="fa fa-check"></i> Perfect!</span>
+	    			  <span id="registration_password_error" class="help-inline error" style="display:none;"><i class="fa fa-times"></i> Not quite</span>
+	                  <span id="registration_password_help" class="help-block" style="display:none;">No spaces. Must include at least<br><strong>8 characters</strong> and <strong>1 upper case letter</strong>.</span>
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <div class="controls">
+	                  	                  	<button class="btn btn-primary btn-large btn-form disabled" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Start Download in Upfront Reg Modal']);" disabled>Start Download</button>
+	                  	                </div>
+	              </div>
+	              <input name="registration[terms]" type="hidden" value="1" />
+	  			</form>
+
+	  			<p class="text-center join-form-copy">Already have an account?  <a href="#login_download" class="iframe join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In from Join-Download']);">Sign In</a></p>
+	  			<p class="text-center terms-disclaimer">By creating your account, you are agreeing to our <a href="http://www.spiceworks.com/terms-and-privacy/#terms" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Terms of Use']);">Terms of Use</a> and our <a href="http://www.spiceworks.com/terms-and-privacy/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Privacy Policy']);">Privacy Policy</a>.</p>
+
+	          </div>
+			</div>
+
+		    <div id="login_download" class="tab-pane">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	            <h3>Log in to download Spiceworks.</h3>
+	          </div>
+            <div class="social_links text-center">
+
+            </div>
+            <div class="or-divider"><div>Or</div></div>
+
+	          <div class="modal-body">
+	            <form method="post" action="javascript:void(0);" id="login_download_form" class="simple form-horizontal" >
+	              <input name="utf8" type="hidden" value="&#x2713;" />
+
+	              <div class="alert alert-error generic-error" style="display:none"></div>
+
+	              <div class="mbs control-group">
+	                <label class="control-label" for="login_download_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Email Label']);">Email</label>
+	                <div class="controls">
+	                  <input type="email" size="40" name="login[email]" id="login_download_email" class="text email" required onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Email Field']);" />
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="login_download_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Password Label']);">Password</label>
+	                <div class="controls">
+	                  <input type="password" size="40" name="login[password]" id="login_download_password" class="text password" required onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Password Field']);" />
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <div class="controls">
+	                  <button class="btn btn-primary btn-large btn-form disabled" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Start Download with login in Upfront Reg Modal']);">Start Download</button>
+	                </div>
+	              </div>
+	            </form>
+	            <p class="join-form-copy text-center">
+	            	<a href="#password-reset" class="forgot-password btn-forgot-password from-log-in-download" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Forgot Password from Log In-Download']);">Forgot your password?</a><br /><br />
+	              Not a member?
+	              <a href="#join_download" class="join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Log In-Download']);">Join Now</a>
+	              </p>
+	          </div>
+		    </div>
+
+	    	<div id="login" class="tab-pane">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3>Log in to Spiceworks.</h3>
+		        </div>
+		        <div class="modal-body">
+					<div class="social-register text-center">
+						<h4>Connect with</h4>
+
+						<a href="#" data-social-join="facebook" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Login with Facebook']);"><img alt="Login with Facebook" src="//static.spiceworks.com/assets/community/icons/social/facebook_thin.png"></a>
+						<a href="#" data-social-join="linkedin" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Login with LinkedIn']);"><img alt="Login with LinkedIn" src="//static.spiceworks.com/assets/community/icons/social/linkedin_thin.png"></a>
+					</div>
+					<div class="or-divider"><div>Or</div></div>
+
+												<form method="post" id="login_form" class="simple form-horizontal" action="https://community.spiceworks.com/login/login/">
+						
+		                <input type="hidden" value="/" name="referer" id="referer" class="hidden">
+		                <input type="hidden" value="true" name="from_overlay" id="from_overlay" class="hidden">
+		                <div class="mbs control-group">
+		                    <label class="control-label" for="login_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Email Label']);">Email</label>
+		    				<div class="controls">
+		                    	<input type="email" size="40" name="email" id="login_email" class="text email" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Email Field']);">
+		                    </div>
+		                </div>
+		                <div class="control-group">
+		                    <label class="control-label" for="login_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Password Label']);">Password</label>
+		    				<div class="controls">
+		                   		<input type="password" size="40" name="password" id="login_password" class="text password" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Password Field']);">
+		                   	</div>
+		                </div>
+
+		                <div class="control-group">
+		    				<div class="controls">
+		                    	<button type="submit" name="commit" id="register_button" class="btn btn-primary" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In']);">Log In</button>
+		                    </div>
+		                </div>
+		            </form>
+		            <p class="join-form-copy text-center">
+		            	<a href="#password-reset" class="forgot-password btn-forgot-password from-login-in" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Forgot Password from Log In']);">Forgot your password?</a><br /><br />
+		            Not a member?
+		            		            <a href="#join" class="join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Log In']);">Join Now</a>
+		            		            </p>
+		        </div>
+	    	</div>
+
+	    	<div id="password-reset" class="tab-pane">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3>Reset your Spiceworks Account password.</h3>
+		        </div>
+		        <div class="modal-body">
+				    <form id="password-reset-form" accept-charset="UTF-8" action="javascript:void(0);" class="form-horizontal reset-form" data-remote-json="true" method="post" style="">
+						<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓" class="hidden"></div>
+
+						<div class="alert alert-error generic-error" style="display:none"></div>
+						<div class="alert alert-success generic-success" style="display:none">We've sent you an email with instructions for resetting your Spiceworks password.</div>
+
+						<div class="control-group">
+		                    <label class="control-label" for="reset-form_email">Email</label>
+							<div class="controls">
+								<input id="reset-form_email" name="login[email]" size="30" type="email" value="" class="email">
+							</div>
+						</div>
+
+						<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-primary btn-large btn-form password-reset-submit" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Reset Passord']);">Reset Password</button>
+						</div>
+						</div>
+					</form>
+
+			        <p class="join-form-copy text-center">
+			        	Not a member?
+		              <a href="#join_download" class="join_community btn-join-community" id="joinFromReset" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Reset Password']);">Join Now</a>
+			            <div class="desktop-password-reset text-center">Need to recover your <a href="http://community.spiceworks.com/help/Resetting_Your_Password_Outside_The_Spiceworks_Desktop">Spiceworks IT Desktop password</a>?</div>
+			        </p>
+				</div>
+			</div>
+
+	    </div>
+		    </div>
+</aside>
+
+
+
+<script src="//wwwstatic.spiceworks.com/js/underscore.min.js"></script>
+
+<script type="text/javascript">
+
+  var getDownloadTrackingData = function(){
+    var tracking = {'download_tracking': {"landing_category":"","landing_page":""}};
+    if (typeof tracking.download_tracking.landing_page != "undefined") // need to encode urls like landing_page (fixes referrer)
+      tracking.download_tracking.landing_page = encodeURI(tracking.download_tracking.landing_page);
+    tracking.download_tracking.download_page = encodeURI("\/privacy\/");
+    return tracking;
+  };
+
+  $(function(){
+    var i,
+    policy = 'www',
+    success = '//www.spiceworks.com/social-success',
+    socialContainer = $('.social_links');
+
+    $.ajax({
+      url: 'http://accounts.spiceworks.com/auth/spiceworks/providers.js',
+        dataType: 'jsonp',
+        data: { 'client_version': 'www' }
+    })
+    .success(function(links){
+		var i, link, successLink, numProviders = 0;
+		for (provider in links){
+			link = links[provider];
+	        (function(provider){
+	        	var properName;
+	        	if (provider == 'facebook') properName = 'Facebook';
+	        	if (provider == 'linkedin') properName = 'LinkedIn';
+	        	numProviders++;
+	          $('<a href="#" style="margin:0 8px;" onclick="_gaq.push([\'_trackEvent\', \'Buttons\', \'Clicked\', \'Join with ' + properName + ' - Download\']);" data-social-join="'+provider+'">'+'<img alt="'+link.img_alt+'" src="'+link.img_src+'"></a>')
+	            .appendTo(socialContainer)
+	            .on("click", function(e) {
+	              var params = jQuery.param(getDownloadTrackingData()),
+	                  where = document.location,
+	                  social_network = $(this).attr('data-social-join'),
+	                  window_opts = "width="+link.width+",height="+link.height,
+	                  newUser = $(this).parents(".social_links").next("#join_download_form").length > 0;
+
+	              successLink = success + "?provider=" + provider + "&newuser=" + "false"
+	              _gaq.push(['_trackEvent', 'Buttons', 'Using '+ provider +' to Download', 'Clicked for ' + (newUser ? 'new user' : 'existing_user')]);
+
+	              Cookie.set('social_auth_referer_url', where, {path: '/'});
+	              query = "?policy=" + policy + "&success=" + success + "&" + params;
+	              window.open("http://accounts.spiceworks.com/auth/" + provider + "/start" + query, "sw_social_join", window_opts);
+	              e.preventDefault();
+	            });
+	        })(provider);
+	    }
+      if (!numProviders) {
+      	$('#join-login .social-register, #join-login .or-divider').hide();
+      }
+    });
+  });
+
+
+$(document).on('click.modal.data-api', '[data-tab]', function (tab) {
+	tab = $(this).data('tab');
+	$(".tab-pane").removeClass("active");
+	$("#" + tab).addClass("active in");
+});
+
+$('#join-login').on('hidden', function () {
+	if ( $('#join_download').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Closed']);
+		if (typeof email !== "undefined") {
+			SWUFR.cmd.push(function() { SWUFR.ufr.modalClose(email); });
+		}
+	} else if ( $('#login_download').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Closed']);
+	} else if ( $('#join').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Join Spiceworks', 'Closed']);
+	} else if ( $('#login').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Login to Spiceworks', 'Closed']);
+	}
+});
+
+//$('.password-reset-link').bind("click",function() {
+    //$('a[href="#password-reset"]').tab('show');
+//});
+
+$('#join-login').on('shown', function () {
+	var $join_download = $('#join_download');
+	if ($join_download.hasClass('active')) {
+
+		var openedMessage = 'Opened';
+		_gaq.push(['_trackEvent', 'Form', 'Register to Download', openedMessage]);
+		window.optimizely.push(["trackEvent", "Register to Download - Opened"]);
+		SWUFR.cmd.push(function() {
+			SWUFR.ufr.modalOpen();
+		});
+		$join_download.find('#registration_email').focus();
+	}
+});
+
+(function() {
+    $('#join_download_form input').bind("change keyup",function() {
+        var form_empty = false;
+        $('#join_download_form input').each(function() {
+            if ( $(this).val() == '' ) {
+                form_empty = true;
+            }
+        });
+
+        if (form_empty == false) {
+            $('#join_download_form .btn-form').removeAttr('disabled');
+            $('#join_download_form .btn-form').removeClass('disabled');
+        } else {
+            $('#join_download_form .btn-form').attr('disabled');
+            $('#join_download_form .btn-form').addClass('disabled');
+        }
+    });
+
+    $('input#registration_password').bind("focus",function() {
+    	$('#registration_password_help').show();
+    });
+
+    function validateEmail(email){
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(re.test(email)){
+        return true;
+      }else{
+        return false;
+      }
+    };
+
+    function validatePassword(password){
+      var re = /^(?=.*[A-Z])[A-Za-z\d$@$!%*#?&^()-_+=`~|]{8,}$/;
+      if(re.test(password)){
+        return true;
+      }else{
+        return false;
+      }
+    };
+
+    $('input#registration_email').bind("change",function() {
+	    if ( validateEmail($(this).val()) ) {
+        	$(this).removeClass('error');
+        	$('#registration_email_success').show();
+        	$('#registration_email_error').hide();
+        	$('#registration_email_help').slideUp(500);
+    		email = $(this).val();
+	    } else {
+        	$(this).addClass('error');
+        	$('#registration_email_success').hide();
+        	$('#registration_email_error').show();
+        	$('#registration_email_help').slideDown(500);
+	    }
+    });
+
+    $('input#registration_password').bind("change",function() {
+	    if ( validatePassword($(this).val()) ) {
+        	$(this).removeClass('error');
+        	$('#registration_password_success').show();
+        	$('#registration_password_error').hide();
+        	$('#registration_password_help').slideUp(500);
+	    } else {
+        	$(this).addClass('error');
+        	$('#registration_password_success').hide();
+        	$('#registration_password_error').show();
+	    }
+    });
+})();
+
+(function() {
+    $('#login_download_form input').bind("change keyup",function() {
+        var form_empty = false;
+        $('#login_download_form input').each(function() {
+            if ( $(this).val() == '' ) {
+                form_empty = true;
+            }
+        });
+
+        if (form_empty == false) {
+            $('#login_download_form .btn-form').removeAttr('disabled');
+            $('#login_download_form .btn-form').removeClass('disabled');
+        } else {
+            $('#login_download_form .btn-form').attr('disabled');
+            $('#login_download_form .btn-form').addClass('disabled');
+        }
+    });
+})();
+
+(function(){
+
+  var joinDownloadCloseModal = false;
+
+  var getDownloadTrackingData = function() {
+    var tracking = {'download_tracking': {"landing_category":"","landing_page":""}};
+    tracking.download_tracking.download_page = "\/privacy\/";
+    return tracking;
+  };
+
+  var parseErrorResponse = function(responseText) {
+    try { return jQuery.parseJSON(responseText); } catch(err) { return {errors: {}}; }
+  };
+
+  var formatErrorMessage = function(key, error) {
+    var fragment = key + ' ' + error;
+    return fragment.charAt(0).toUpperCase() + fragment.slice(1);
+  };
+
+  var handleErrors = function(form, jqxhr) {
+    var errorMessages = [];
+    var response = parseErrorResponse(jqxhr.responseText);
+    if (response.errors) {
+      _.each(response.errors, function(errors, key) {
+        if (key == 'base') {
+          errorMessages = errorMessages.concat(errors);
+        }
+        else {
+          errors.forEach(function(error){ errorMessages.push(formatErrorMessage(key, error));});
+          var inputSelector = 'input[name*="[' + key + ']"]';
+          form.find(inputSelector).parents('.control-group').addClass('error');
+          $('#registration_email_error').hide();
+          $('#registration_password_error').hide();
+        }
+      });
+    }
+    if (errorMessages.length == 0) {
+      errorMessages.push("Yikes, that didn't work. Please try again or <a href=\"mailto:support@spiceworks.com\" onClick=\"_gaq.push([\'_trackEvent\', \'Form\', \'Links\', \'Contact Support\']);\">contact support</a>.");
+      $('#registration_email_error').hide();
+      $('#registration_email_success').hide();
+      $('#registration_password_error').hide();
+      $('#registration_password_success').hide();
+    }
+    form.find('.generic-error').html(errorMessages.join("<br />")).slideDown(250);
+  };
+
+  var hideErrors = function(form) {
+    form.find('.control-group').removeClass('error');
+    form.find('.generic-error').slideUp(250);
+  };
+
+  $('#join_download_form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this);
+
+    // Success tracking message
+    var successMessage = 'Successful Download';
+    if (joinDownloadCloseModal) {
+      successMessage += ' - Direct';
+    }
+    
+    hideErrors(self);
+    self.find('button').prop('disabled','disabled');
+    var formDataString = self.serialize();
+    formDataString += '&' + $.param({'registration': getDownloadTrackingData()});
+    $.post('/community/join/register_for_download', formDataString,
+      function(data){
+        if (data.login) {
+          _gaq.push(['_trackEvent', 'Form', 'Login to Download', successMessage]);
+		  window.optimizely.push(["trackEvent", "Login to Download - Successful Download"]);
+    	  if (joinDownloadCloseModal) {
+  	   	    $('#join-login').modal('hide');
+  	      } else {
+  	   	    setTimeout(function(){window.location.href = downloadDestination + 'app/'}, 150);
+  	      }
+        } else {
+      	  _gaq.push(['_trackEvent', 'Form', 'Register to Download', successMessage]);
+		  window.optimizely.push(["trackEvent", "Register to Download - Successful Download"]);
+  		    SWUFR.cmd.push(function() {
+  		      SWUFR.ufr.download(function(){
+  		      	if (joinDownloadCloseModal) {
+  		      	  $('#join-login').modal('hide');
+  		      	} else {
+  		      	  window.location.href = downloadDestination;
+  		      	}
+  		      });
+  		    });
+  	   }
+  	   if (joinDownloadCloseModal) {
+  	   	 $('#join-login').modal('hide');
+  	   } else {
+  	     setTimeout(function(){window.location.href = downloadDestination}, 150);
+  	   }
+      }, 'json'
+    )
+      .fail(function(jqxhr){
+      	if (jqxhr.status == 401) {
+        	_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email In Use']);
+          	$('.email-use-error').slideDown(250);
+      	} else {
+	        _gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Error']);
+	        handleErrors(self, jqxhr);
+      	}
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+  $('#login_download_form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this);
+
+    // Success tracking message
+    var successMessage = 'Successful Download';
+    if (joinDownloadCloseModal) {
+      successMessage += ' - Direct';
+    }
+    
+    hideErrors(self);
+    self.find('button').prop('disabled','disabled');
+    var formDataString = self.serialize();
+    formDataString += '&' + $.param({'login': getDownloadTrackingData()});
+    $.post('/community/login/login_for_download', formDataString, function(){
+    	_gaq.push(['_trackEvent', 'Form', 'Login to Download', successMessage]);
+		window.optimizely.push(["trackEvent", "Login to Download - Successful Download"]);
+		if (joinDownloadCloseModal) {
+  	   	  $('#join-login').modal('hide');
+  	    } else {
+          setTimeout(function(){window.location.href = downloadDestination + 'app/'}, 150);
+        }
+      }, 'json')
+      .fail(function(jqxhr){
+        _gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Error']);
+        handleErrors(self, jqxhr);
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+  $('.btn-forgot-password').click(function(e) {
+    var href = '#join';
+    if ($(this).hasClass('from-log-in-download')) {
+      href += '_download';
+    }
+    $('#joinFromReset').attr('href', href);
+  });
+
+  $('#password-reset-form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this),
+    	endpoint = window.location.protocol + '//' + window.location.host + '/library/includes/identity/reset_password/',
+    	email = $('#reset-form_email').val(),
+    	callbackURL = window.location.toString();
+    hideErrors(self);
+    self.find('.generic-error').hide();
+    self.find('.generic-success').hide();
+    self.find('button').prop('disabled','disabled');
+    $.post(endpoint, {'email': email, 'url': callbackURL}, function(data) {
+    	if (data && data.status == 'success') {
+    		_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Email Sent']);
+    		self.find('.generic-success').slideDown(250);
+    	} else if (data && data.status == 'error' && data.message) {
+        	_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+    		self.find('.generic-error').text(data.message).slideDown(250);
+    	} else {
+        	_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+    		self.find('.generic-error').text('Something went wrong. Please check your email and try again.').slideDown(250);
+    	}
+      }, 'json')
+      .fail(function(jqxhr){
+        _gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+        self.find('.generic-error').text('Something went wrong. Please check your email and try again.').slideDown(250);
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+})();
+
+</script>
+
+
+<script type="text/javascript">
+  $(function() {
+
+  	var $specialDest = $('meta[name=specialdownloaddest]');
+  	var specialDest = false;
+  	if ($specialDest.length) {
+  		specialDest = $specialDest.attr('content');
+  	}
+    var monitorRE = /monitor/;
+    if ($("#join-login.modal #join_download").length) {
+      $(document).on('click', 'a[href^="/download/"]', function(evt) {
+      	if ($(this).hasClass('skip-modal')) {
+      		window.location = this.href;
+      		return;
+      	}
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = this.href;
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+
+      // Add temp support for GNS3
+      $(document).on('click', 'a[href^="/gns3/download/"]', function(evt) {
+      	if ($(this).hasClass('skip-modal')) {
+      		window.location = this.href;
+      		return;
+      	}
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = this.href;
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+
+      // Add support for data-attr.
+      $(document).on('click', 'a[data-href^="/download/"]', function(evt) {
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = $(this).attr('data-href');
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+    }
+    window.SW_DOWNLOAD_WAIT = false;
+  });
+</script>
+
+
+<script async src="//cdn.optimizely.com/js/168363181.js"></script>
+    
+    <script type="text/javascript">
+	    $(window).load(function() {	
+			$('.nav-list li a').click(function(event) {
+			
+				var el = $(this).attr('href');
+				var elWrapped = $(el);
+				scrollToDiv(elWrapped,40);
+				return false;
+			
+			});
+			
+			var navHeight = 80;
+			function scrollToDiv(element,navheight){
+				var offset = element.offset();
+				var offsetTop = offset.top;
+				var totalScroll = offsetTop-navHeight;
+				$('body,html').animate({
+						scrollTop: totalScroll
+				}, 500);
+			}
+		
+		});
+    </script>
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"16b4f0abc5","applicationID":"2721470","transactionName":"ZwMGZ0BQVkFWB0QNWV5JMUFbHkhAXhJRB08fDwpXV0kWQl8U","queueTime":0,"applicationTime":213,"atts":"S0QFEQhKRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
