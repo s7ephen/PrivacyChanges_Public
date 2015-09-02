@@ -1,1 +1,1652 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" ><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgYGWV9TGwYBVFdXBQE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+
+
+    <title>Policies - Auto Parts Warehouse</title>
+
+
+
+
+    <meta name="description" content="Auto Parts Warehouse offers Replacement Auto Parts, Performance Parts, and Auto Accessories at wholesale prices." />
+    
+	<meta name="keywords" content="auto parts, auto accessories, replacement auto parts, performance parts, air filters, brakes, shocks, mufflers, oxygen sensor, headlights, cold air intakes, car covers" />
+<link itemprop="url" rel="canonical" href="http://www.autopartswarehouse.com/privacy/" /></div>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-itunes-app" content="app-id=513189838">
+<meta name="google-play-app" content="app-id=com.apw.ui" />
+<meta property="fb:admins" content="143354983131" />
+
+
+
+
+
+
+<link rel="publisher" href="https://plus.google.com/103302358132603402841" />
+
+
+
+<link href="http://img.apwcontent.com/sites/apw-migration/includes/css/prd/style.css?7.0.0" type="text/css" rel="stylesheet" />
+
+<link rel="icon" href="http://img.apwcontent.com/sites/apw-migration/design/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://img.apwcontent.com/sites/apw-migration/design/favicon.ico" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var splitEnabled = new Object();
+	splitEnabled = "";
+      
+  if (typeof dynamicSettingsObj == 'undefined') {
+        var dynamicSettingsObj = {};
+  }
+
+  dynamicSettingsObj.controller="miscellaneous";
+  dynamicSettingsObj.action="privacypolicy";
+  dynamicSettingsObj.jsDomain="http://img.apwcontent.com/sites/apw-migration/includes/js/prd";
+  dynamicSettingsObj.jsDomain="http://img.apwcontent.com/sites/apw-migration/includes/js/prd";
+  dynamicSettingsObj.cssDomain="http://img.apwcontent.com/sites/apw-migration/includes/css/prd";
+  dynamicSettingsObj.appVersion="7.0.0";
+  dynamicSettingsObj.partfinderSort="ymm";
+  dynamicSettingsObj.tealiumEnable=1;
+  dynamicSettingsObj.isTire=0;
+  dynamicSettingsObj.isCart="1";
+  dynamicSettingsObj.hostName="http://www.autopartswarehouse.com";
+  dynamicSettingsObj.homePage="http://www.autopartswarehouse.com";
+  dynamicSettingsObj.autoSubmitVSKillswitch="";
+  dynamicSettingsObj.myAccountHostName="https://account.autopartswarehouse.com";
+  dynamicSettingsObj.cartHostName="http://cart.autopartswarehouse.com";
+  dynamicSettingsObj.checkoutHostName="https://checkout.autopartswarehouse.com";
+  dynamicSettingsObj.customerId="CUSTOMERID";
+  dynamicSettingsObj.customerFName="FIRSTNAME";
+  dynamicSettingsObj.imagesDomain="http://img.apwcontent.com/sites/apw-migration/design";
+  dynamicSettingsObj.selectedVehicleCookieName="activeVehicleKey";
+  dynamicSettingsObj.selectedVehicleTextCookieName="activeVehicleText";
+  dynamicSettingsObj.vehicleListsCookieName="user_save_vehicles";
+
+    dynamicSettingsObj.marketingCookies={"affiliate":"affiliate_tracking_code","ppc":"ppc_code","email":"ref_email","scpm":"s_cpm"};
+
+  
+  var blockedBrowser = new Array();
+  var blockedBrowserName = new Array();
+  
+  var PAGE_SECTION = "privacypolicy";
+
+      
+  
+  blockedBrowser[0]="MSIE 6";
+  blockedBrowserName[0]="Microsoft Internet Explorer 6";
+       
+  
+</script>
+
+
+<script type="text/javascript">
+    var objSomniture = []; //use for selenium test script
+    
+    var COHORT_TEST_OBJECT = {"enable":"1","ab_test_config":{"cohorts_test":{"traffic":"1","name":"header_footer_design"}}};
+var SMARTFIT_TEST_OBJECT = {"enable":"1","ab_test_config":{"smart_fit":{"traffic":"0.5","name":"smart_fit_07152014"}}};</script>
+
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/jquery-migration.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/cookie-plugin.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/jquery.blockedbrowser.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/ymmv2result.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/functionsTop.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/_download/gpt.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/jquery-ui.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/cookiegroup.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/cohorts.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/smartfit_test.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/classie.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/bxslider.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/hoverIntent.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/mailcheck.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/jquery.lazyload.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/lazyload.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/global-ui.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/ndropdown.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/accordion.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/emailtracking.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/affiliate.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/proactive.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/supply_chain_lb.js?7.0.0"></script><script type="text/javascript">
+	jQuery(function($) {
+
+		// Affiliate Params
+		var oAffiliateParams = {}, oUrlParams = {};
+						oAffiliateParams[0] = "JCW_SRC";
+								oAffiliateParams[1] = "cj";
+								oAffiliateParams[2] = "gan";
+								oAffiliateParams[3] = "TID";
+								oAffiliateParams[4] = "jcw";
+				
+		oUrlParams = getUrlParams();
+
+		$.each(oAffiliateParams, function(i, val) {
+			if (typeof oUrlParams[val] != 'undefined') {
+				$.cookie(val, oUrlParams[val], "/");
+			}
+		});
+	});
+	
+</script>
+
+<!-- Dart MVT -->
+<script type="text/javascript">
+    if (typeof dynamicSettingsObj == 'undefined') {
+        var dynamicSettingsObj = {};
+    }
+
+    dynamicSettingsObj.dartMvt = {"enabled":"1","weight":{"a":"0.25","b":"0.7","c":"0.05"},"cookie":{"value":"mvt","split":"mvt_split"},"forceparam":"force_mvt"};
+    dynamicSettingsObj.dartMvtValue = null;
+    dynamicSettingsObj.dartMvtSplit = null;
+
+    (function(){
+        if (typeof dynamicSettingsObj.dartMvt.enabled !== "undefined" && dynamicSettingsObj.dartMvt.enabled) {
+            var forceParam = getQueryString(dynamicSettingsObj.dartMvt.forceparam);
+            var fromCookie = $.cookie(dynamicSettingsObj.dartMvt.cookie.value);
+            var fromCookieSplit = $.cookie(dynamicSettingsObj.dartMvt.cookie.split);
+
+            if (forceParam && forceParam in dynamicSettingsObj.dartMvt.weight) {
+                dynamicSettingsObj.dartMvtValue = forceParam;
+                dynamicSettingsObj.dartMvtSplit = parseInt(dynamicSettingsObj.dartMvt.weight[forceParam] * 100);
+            } else if (fromCookie && fromCookie in dynamicSettingsObj.dartMvt.weight) {
+                dynamicSettingsObj.dartMvtValue = fromCookie;
+                dynamicSettingsObj.dartMvtSplit = parseInt(dynamicSettingsObj.dartMvt.weight[fromCookie] * 100);
+            } else {
+                if (!Object.keys) {
+                    Object.keys = function(obj) {
+                        var keys = [];
+
+                        for (var i in obj) {
+                            if (obj.hasOwnProperty(i)) {
+                                keys.push(i);
+                            }
+                        }
+
+                        return keys;
+                    };
+                }
+                var keys = Object.keys(dynamicSettingsObj.dartMvt.weight);
+                var values = $.map(dynamicSettingsObj.dartMvt.weight, function(value, index) {
+                        return [parseFloat(value)];
+                });
+                var random = getWeightedRandom(keys, values);
+                if (random in dynamicSettingsObj.dartMvt.weight) {
+                    dynamicSettingsObj.dartMvtValue = random;
+                    dynamicSettingsObj.dartMvtSplit = parseInt(dynamicSettingsObj.dartMvt.weight[random] * 100);
+                }
+            }
+
+            setCookie(dynamicSettingsObj.dartMvt.cookie.value, dynamicSettingsObj.dartMvtValue, 30);
+            setCookie(dynamicSettingsObj.dartMvt.cookie.split, dynamicSettingsObj.dartMvtSplit, 30);
+        }
+    })();</script>
+
+<!-- Start:: Toll Free Number - Dynamically change based on affiliate -->
+<script type="text/javascript">
+		
+	var affiliate_no = $.cookie("affiliate_tracking_code");
+	var sid_no       = $.cookie("sid");
+	var email_ref 	 = $.cookie("ref_email");
+	
+			affiliate_no = 'APWED20150902EM522';
+		
+	if (affiliate_no == null || sid_no == null || ref_email == null)
+	{
+		var dynamic_pricing = $.cookie("DP");
+		if(dynamic_pricing != null && typeof dynamic_pricing != 'undefined')
+		{
+			var dp_data = eval('('+Base64.decode(dynamic_pricing)+')');
+		}
+	}
+	//array to set affiliate toll number
+	var affKey = 'a';
+	var affnumbers  = new Array();
+	affnumbers['a'] = new Array("one",   "1.800.913.6027", "1-800-913-6027", "blank", "6027", "1-312-431-6258", "1.312.431.6258");
+	affnumbers['b'] = new Array("two",   "1.800.913.6119", "1-800-913-6119", "",      "6119");
+	affnumbers['c'] = new Array("three", "1.888.913.3133", "1-888-913-3133", "sem",   "3133");
+	affnumbers['d'] = new Array("four",  "1.800.913.6027", "1-800-913-6027", "rep",   "6027");
+	affnumbers['e'] = new Array("five",  "1.866.789.3624", "1-866-789-3624", "",      "3624");
+	affnumbers['f'] = new Array("six",   "1.866.895.0440", "1-866-895-0440", ""); // delete new SEM
+	affnumbers['g'] = new Array("", "", "", "");
+
+	var url = window.location.href;
+	if ((url.indexOf('om_u=') != -1 && url.indexOf('om_i=') != -1) || $.cookie('ref_email')) {
+		var altTollNumber = '1-312-431-6258';
+	}
+	else {
+		var altTollNumber = '1-801-214-2997';
+	}
+
+	if( typeof dp_data != 'undefined' ) 
+	{
+		affnumbers['h'] = new Array("four",   dp_data.phone_number.replace(/-/g,"."), dp_data.phone_number, "rep",   "0864");
+	} 
+	else {
+		affnumbers['h'] = new Array("four",   "1.888.279.0864", "1-888-279-0864", "rep",   "0864");// for CJ PPC
+	}
+	var ppcpnClass = '';
+	//this will select what affiliate toll number to be used
+	if(affiliate_no == null && sid_no == null){
+		if(email_ref == 'true'){
+			// Traffic from email
+			affKey = 'a';
+		} 
+		else{
+			affKey = 'b';
+			// SEM TollFree No
+			if (typeof componentsContents != 'undefined' && typeof componentsContents['component'] != 'undefined' ) {
+				if ( typeof componentsContents['component']['TollFreeSEM'] != 'undefined' ) {
+					if ( componentsContents['component']['TollFreeSEM'] == 'Old' ) {
+						affKey = 'e';
+					}
+				}
+			}
+			if( typeof dp_data != 'undefined' )
+			{
+				affKey = 'h';
+			}
+		}
+	} 
+	else{
+		if(affiliate_no != null &&  affiliate_no == 'V1230948606W495ec8fec53c4'){
+			affKey = 'g';
+		} 
+		else if(affiliate_no != null && (affiliate_no == 'I1242172961W4a0a0e2192802' || affiliate_no == 'Y1246404150W4a4a9e36d7b9d' || affiliate_no == 'C1246404235W4a4a9e8bad0d7')){
+			affKey = 'c';
+		} 
+		else if(affiliate_no != null && (affiliate_no == 'A1154013966W44c8db0e4c70a' || affiliate_no == 'E1209090014W48113fdeed4c3' || affiliate_no == 'I1209692992W481a73408bff5'  || affiliate_no == 'G1225939187W491258f3acead'  )){
+			affKey = 'h';
+			ppcpnClass = 'class="promoNumber"';
+		} 
+		else{
+			affKey = 'd';
+			if( typeof dp_data != 'undefined' )
+			{
+				affKey = 'h';
+			}
+		}
+	}
+
+	// this will change the affiliate toll number
+	if (affKey != 'g') {
+		$(document).ready(function () {
+			if (affKey == 'h') {
+				$('#h-letstalk-tollfree').addClass('promoNumber');
+				$('#h-letstalk-tollfree').text(affnumbers[affKey][2]);
+				$('#gf-primary-toll-number strong').css("background-position","0 -160px");
+				
+				// for checkout footer
+				$('#checkoutFooterTollFree').text(affnumbers[affKey][2]);
+				
+				//$('.tollletstalk').text(affnumbers[affKey][2]);
+			} else {
+				$('#h-letstalk-tollfree').text(affnumbers[affKey][2] );
+				$('.tollletstalk').text(affnumbers[affKey][2]);
+				
+				// for checkout footer
+				$('#checkoutFooterTollFree').text(affnumbers[affKey][2]);
+			}
+			if( affKey == 'a' ){
+				$('#h-letstalk-toll').text(affnumbers[affKey][5] );
+				$('#h-alternative-toll').text(affnumbers[affKey][6]);
+				
+				// for checkout footer
+				$('#gf-primary-toll-number strong').css("background-position","0 -118px");
+			}
+
+			// For generic tollfree container
+			$(".tollfreeNumberDashed").text(affnumbers[affKey][2]);
+
+			// apw specific
+			$(".tollNumberDashed").html(altTollNumber);
+
+			// Convert the phone numbers into links when using ios/android device
+			var convertToTel = false;
+			// iOS devices
+			if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+				convertToTel = true;
+			} else {
+				var ua = navigator.userAgent.toLowerCase();
+				if (ua.indexOf("android") > -1) {
+					convertToTel = true;
+				}
+			}
+			if (convertToTel) {
+				var tollfreeHtml = '<a href="tel:' + affnumbers[affKey][2] + '">' + affnumbers[affKey][2] + '</a>';
+				// var tollfreeHtml = affnumbers[affKey][2];
+				$(".tollfreeNumberDashed").html(tollfreeHtml);
+
+				var nonTollFreeNum = $(".tollNumberDashed").attr("data-phonenum");
+				var nonTollFreeHtml = '<a href="tel:' + nonTollFreeNum + '">' + nonTollFreeNum + '</a>';
+				$(".tollNumberDashed").html(nonTollFreeHtml);
+			}
+
+			// 3 ways on home page only
+			$("#tollfree-hp-3ways").text(affnumbers[affKey][2]);
+			/* right image with toll free number */
+			$("#three-ways p").html('Three ways to order:\
+			<br/>\
+			Online: autopartswarehouse.com\
+			<br/>\
+			Order toll-free:\
+			<br/>\
+			' + affnumbers[affKey][2] + '\
+			<br/>\
+			Live Chat:\
+			<br/>\
+			');
+			if (affnumbers[affKey][3] == "") {
+				if (affKey == 'e') {
+					$("#three-ways").attr('style','background: url(/images/right-3ways-old.gif);');
+				} else {
+					$("#three-ways").attr('style','');
+				}
+				/* how to shop page */
+				$("#step1").attr('style','');
+				$("#step3").attr('style','');
+				$("#info").attr('style','');
+				$('img#howtoshop-tollfree').attr('src',dynamicSettingsObj.imagesDomain+'/migration/howtoshop/' + affnumbers[affKey][2] + '.jpg');
+			} else {
+				if (affKey == 'h') {
+					$("#three-ways").html('<span ' + ppcpnClass + ' style="font-family: Arial, sands-serif; font-size: 22px; color: #970f0f; font-weight: bold; display: block; padding-top: 100px;">' + affnumbers[affKey][2] + '</span>');
+					$("#three-ways").attr('style','background: url(/images/affiliatetollnumber/tollnumber_right-3ways.gif) no-repeat; width: 160px; height: 171px; margin: 0;');
+				} else {
+					$("#three-ways").attr('style','background: url(/images/affiliate/right-3ways-' + affnumbers[affKey][3] + '.gif);background-repeat:no-repeat;background-position:left top;background-color:transparent;background-attachment:scroll');
+				}
+				/* how to shop page */
+				$("#step1").attr('style','background-image:url(/images/affiliate/step1-' + affnumbers[affKey][3] + '.jpg)');
+				$("#step3").attr('style','background-image:url(/images/affiliate/step3-' + affnumbers[affKey][3] + '.jpg)');
+				$('img#howtoshop-tollfree').attr('src',dynamicSettingsObj.imagesDomain+'/migration/howtoshop/' + affnumbers[affKey][2] + '.jpg');
+				$("#info").attr('style','background-image:url(/images/affiliate/other-information-' + affnumbers[affKey][3] + '.jpg)');
+			}
+			if (affKey == 'h') {
+				/* matchbeat page */
+				$("#affiliate-matchbeat").html('If you have any questions, please do not hesitate to call us anytime at <label ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</label>, 24 hours a day, 7 days a week.');
+				$("#howtoshop_affiliate").html('<p><span class="heading">Still having difficulty shopping?</span></p><p><a href="/contact_the_warehouse.html#contactus" style="* cursor:pointer"><strong>Email us</strong></a> or give our representatives a call <strong ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</strong> and they will be glad to help out.</p>');
+				/* details */
+				$("#affiliate-details").html('If you don\'t see your model here, call us at <label ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</label>, or ');
+				/* affiliate fax */
+				$("#affiliate-fax").html('<b><u>Questions</u></b><br>If you have any questions about this process please call <label ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</label>.');
+				$("#affiliate-privacy").html('<b>Toll-Free Calling for AutoPartsWarehouse Customers</b><p  style="margin-bottom:10px;margin-top:10px">Every customer of AutoPartsWarehouse has the unique privilege of accessing our toll-free number at <label ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</label>. We also have an alternative toll number: ' + altTollNumber + '. Waiting on the other end are AutoPartsWarehouse\'s highly-trained Auto Accessory Specialists, ready with a wealth of information on every product we sell. Auto Parts Specialists are here to solve your problems and answer questions.</span>');
+			} else {
+				/* matchbeat page */
+				$("#affiliate-matchbeat").html('If you have any questions, please do not hesitate to call us anytime at ' + affnumbers[affKey][2] + ', 24 hours a day, 7 days a week.');
+				$("#howtoshop_affiliate").html('<p><span class="heading">Still having difficulty shopping?</span></p><p><a href="/contact_the_warehouse.html#contactus" style="* cursor:pointer"><strong>Email us</strong></a> or give our representatives a call <strong>' + affnumbers[affKey][2] + '</strong> and they will be glad to help out.</p>');
+				/* details */
+				$("#affiliate-details").html('If you don\'t see your model here, call us at ' + affnumbers[affKey][2] + ', or ');
+				/* affiliate fax */
+				$("#affiliate-fax").html('<b><u>Questions</u></b><br>If you have any questions about this process please call ' + affnumbers[affKey][2] + '.');
+				$("#affiliate-privacy").html('<b>Toll-Free Calling for AutoPartsWarehouse Customers</b><p  style="margin-bottom:10px;margin-top:10px">Every customer of AutoPartsWarehouse has the unique privilege of accessing our toll-free number at ' + affnumbers[affKey][2] + '. We also have an alternative toll number: ' + altTollNumber + '. Waiting on the other end are AutoPartsWarehouse\'s highly-trained Auto Accessory Specialists, ready with a wealth of information on every product we sell. Auto Parts Specialists are here to solve your problems and answer questions.</span>');
+			}
+			
+			
+			if (affKey == 'a' || affKey == 'c') {
+				$("#aff-toll-help-center-img").html('');
+			} else if (affKey == 'b') {
+				$("#aff-toll-help-center-img").html('<img src="/images/help/footer-help-center-img.jpg" width="139" height="31" border="0" class="help-center-img" />');
+			} else {
+				$("#aff-toll-help-center-img").html('<img src="/images/help/footer-help-center-img2.jpg" width="139" height="31" border="0" class="help-center-img" />');
+			}
+			//sem partsearch
+			$("#sem-partsearch-tollfree").attr('src', '/images/right_widget/sem-toll-free-146x30-' + affnumbers[affKey][4] + '.gif');
+			$("#sem-partsearch-tollfree").attr('alt', 'Order Toll Free - ' + affnumbers[affKey][1]);
+			//new footer
+			$("#gf-primary-toll-number strong").addClass(affnumbers[affKey][0]).html('Call ' + affnumbers[affKey][1]);
+			
+			// Dynamic Toll Number
+			//details page
+			$("div#rightWidget").html('');
+			$("#rightWidget").html('<span style="font-family: Arial, sands-serif; font-size: 22px; color: #be0000; font-weight: bold; display: block; padding: 25px 5px 0 0;"><label ' + ppcpnClass + '>' + affnumbers[affKey][2] + '</label></span>');
+			$("#rightWidget").attr('style', 'background:url(/images/affiliatetollnumber/tollnumber_right_widget.gif) no-repeat; width: 300px; height: 55px; margin: 0;text-align:center');
+			//about us contact information
+			$('#contactInformation').addClass('promoNumber');
+			$('#contactInformation').html(affnumbers[affKey][2]);
+			// Dynamic Toll Number
+
+			// Help center pages
+			$(".text-tollfree-number").text(affnumbers[affKey][2]);
+
+			 if (affKey == 'a') {
+				$("#ThirdFooter .lets-talk ul li.fone strong.two").css({"background-position": "0 -118px"});
+			}
+
+			// added dynamic tollfree number for seo
+			$("#ymmp_need_help").find('span.with-toll-text').text('or Call our auto parts experts at');
+			$("#ymmp_need_help").find('strong.tollfree').html(affnumbers[affKey][2]);
+
+			$('#LowPriceGuarantee').find('span.lowpricetollfree').html('<strong>Call us to claim: '+affnumbers[affKey][1]+'</strong>');
+		});
+	} else {
+		$(document).ready(function () {
+			// header
+			$('#customer-help > div.phone .letstalk').attr('style','cursor:auto; text-decoration:none;');
+			$('#h-letstalk-tollfree').remove();
+			$('#h-letstalk-tollfree-or').remove();
+			$('.tollAmp').remove();
+			/* right image with toll free number */
+			$("#three-ways, #three-ways-hp-only").attr('style','display:none');
+			/* matchbeat page */
+			$("#affiliate-matchbeat").html('');
+			/* details */
+			$("#affiliate-details").html('');
+			/* how to shop page */
+			$("#step1").attr('style','background-image:url(/images/affiliate/step1-blank.jpg)');
+			$("#step3").attr('style','background-image:url(/images/affiliate/step3-blank.jpg)');
+			$("#info").attr('style','background-image:url(/images/affiliate/other-information-blank.jpg)');
+			$("#howtoshop_affiliate").html('');
+			/* affiliate fax */
+			$("#affiliate-fax").html('');
+			$("#affiliate-privacy").html('<b>Call AutoPartsWarehouse</b><p  style="margin-bottom:10px;margin-top:10px">Every customer of AutoPartsWarehouse can call us at ' + altTollNumber + '. Waiting on the other end are AutoPartsWarehouse\'s highly-trained Auto Accessory Specialists, ready with a wealth of information on every product we sell. Auto Parts Specialists are here to solve your problems and answer questions.</span>');
+			$("#aff-toll-help-center-img").html('');
+			//sem partsearch
+			$("#sem-partsearch-tollfree").attr('style', 'display: none;');
+			$("#sem-partsearch-tollfree").attr('src', '');
+			$("#sem-partsearch-tollfree").attr('alt', '');
+			//new footer
+			$(".lets-talk ul").addClass("no-toll");
+			$("#gf-primary-toll-number").css("display","none");
+			$(".tollFreeSupport").css("display","none");
+			// Dynamic Toll Number
+			//details page
+			$("#rightWidgetImg").attr('src', '');
+			//about us contact information
+			$('#contactInformation').html('');
+			// Dynamic Toll Number
+			$('img#howtoshop-tollfree').attr('src',dynamicSettingsObj.imagesDomain+'/migration/howtoshop/1-801-214-2997.jpg');
+			// Help center pages
+			$(".text-tollfree-number, .text-toll-or").hide();
+
+			// added dynamic tollfree number for seo
+			$("#ymmp_need_help").find('span.with-toll-text').text('');
+			$("#ymmp_need_help").find('strong.tollfree').html('');
+
+			$('#LowPriceGuarantee').find('span.lowpricetollfree').html('');
+
+			// For generic tollfree container
+			$(".tollfreeNumberDashed").remove();
+			$(".tollfreeNumberSeparator").remove();
+
+			// Convert the phone numbers into links when using ios/android device
+			var convertToTel = false;
+			// iOS devices
+			if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+				convertToTel = true;
+			} else {
+				var ua = navigator.userAgent.toLowerCase();
+				if (ua.indexOf("android") > -1) {
+					convertToTel = true;
+				}
+			}
+			if (convertToTel) {
+				var nonTollFreeNum = $(".tollNumberDashed").attr("data-phonenum");
+				var nonTollFreeHtml = '<a href="tel:' + nonTollFreeNum + '">' + nonTollFreeNum + '</a>';
+				$(".tollNumberDashed").html(nonTollFreeHtml);
+			}
+
+		});
+	}
+	
+</script>
+<!-- End:: Toll Free Number - Dynamically change based on affiliate -->
+
+<script type="text/javascript">
+	if(typeof $.cookie("activeVehicleText") != 'undefined' && $.cookie("activeVehicleText") != null){
+    var vehicle = JSON.parse($.cookie('activeVehicleText'));
+    if(typeof vehicle[0] != 'undefined' && vehicle[0] != null){
+        dynamicSettingsObj.yearTxt = vehicle[0];
+    }
+
+    if(typeof vehicle[1] != 'undefined' && vehicle[1] != null){
+        dynamicSettingsObj.makeTxt = decodeURIComponent(vehicle[1]).replace(/\+/g,' ');
+    }
+
+    if(typeof vehicle[2] != 'undefined' && vehicle[2] != null){
+        dynamicSettingsObj.modelTxt = decodeURIComponent(vehicle[2]).replace(/\+/g,' ');
+    }
+
+    if(typeof vehicle[3] != 'undefined' && vehicle[3] != null){
+        dynamicSettingsObj.subModelTxt = decodeURIComponent(vehicle[3]).replace(/\+/g,' ');
+    }
+
+    if(typeof vehicle[4] != 'undefined' && vehicle[4] != null){
+        dynamicSettingsObj.engineTxt = decodeURIComponent(vehicle[4]).replace(/\+/g,' ');
+    }
+}
+</script>
+
+
+
+<script src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/modernizr-2.6.2-respond-1.1.0.js?7.0.0"></script>
+
+	<script type="text/javascript">
+		// DCMS 2.0 Integration
+
+
+$.ajax({
+	'url'  : '/ajax/dcms/?apwcoupon=TODAY15&apwcid=APWED20150902EM522&om_u=AAAAAA&om_i=&REQUEST_URI=/privacy/?apwcoupon=TODAY15&apwcid=APWED20150902EM522&om_u=AAAAAA&om_i=&QUERY_STRING=apwcoupon=TODAY15&apwcid=APWED20150902EM522&om_u=AAAAAA&om_i=&controller=miscellaneous&action=privacypolicy',
+	'type' : 'GET',
+	success : function(data){
+		// :: update order data display if necessary 
+	}
+});
+
+	</script>
+
+<script type="text/javascript" charset="utf-8">
+  (function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+  arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(
+  O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js';
+  e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+</script>
+
+
+        <link href='http://fonts.googleapis.com/css?family=Scada:700italic,400' rel='stylesheet' type='text/css'>
+</head>
+<body  class="cbp-spmenu-push privacypolicyPage">
+
+	<div id="MobileBanner"></div>
+<script type="text/javascript">
+    // $("header #MobileBanner .closedlapp").live('click', function () {
+//     $("header #MobileBanner").slideUp(100);
+// });
+
+// add extra padding for #container
+//jQuery(document).ready(function () {
+//    // check if an android device
+//    // var device=getCookie("mobiledevice");
+//    // if (device == "android") {
+//    //     if ($(window).width() < 1024) {
+//    //         $("#container").css("padding-top", "230px");
+//    //     }
+//    //     if ($(window).width() == 768 && $("#MobileBanner").length == 0) {
+//    //         $("#container").css("padding-top", "130px");
+//    //     } else if ($(window).width() === 768 && $("#MobileBanner").length > 0) {
+//    //         $("#container").css("padding-top", "210px");
+//    //     }
+//    // } else {
+//    //     if ($(window).width() == 768) {
+//    //         $("#container").css("padding-top", "130px");
+//    //     };
+//    // }
+//    containerPadding();
+//    //Keep track of last scroll
+//    var lastScroll = 0;
+//    $(window).scroll(function(event){
+//      //Sets the current scroll position
+//      var st = $(this).scrollTop();
+//      var neartop = $('body');
+//      var offset = neartop.offset();
+//      var neartopValue =  offset.top - $(window).scrollTop();;
+//      //Determines up-or-down scrolling
+//      if (st > lastScroll){
+//         //Replace this with your function call for downward-scrolling
+//         if ($(window).width() < 768 && neartopValue < -150) {
+//            $('#MobileBanner').slideUp( "fast", function() {
+//              // Animation complete.
+//              // console.log (neartopValue);
+//            });
+//          }
+//          else {
+//          }
+//      }
+//      else {
+//         //Replace this with your function call for upward-scrolling
+//         if ($(window).width() < 768) {
+//            $('#MobileBanner').slideDown( "fast", function() {
+//              // Animation complete.
+//            });
+//          }
+//          else {
+//             
+//          }
+//      }
+//      //Updates scroll position
+//      lastScroll = st;
+//    });
+//});</script>
+	
+    
+	<nav id="CategoryPushMenu" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+        		<h3>Shop by Category</h3>
+            <ul>
+                					<li><a href="http://www.autopartswarehouse.com/category/auto_body_parts_-and-_mirrors.html">Auto Body Parts & Mirrors</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/headlights_-and-_lighting.html">Headlights & Lighting</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/engine_-and-_drivetrain.html">Engine & Drivetrain</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/brakes-comma-_suspension_-and-_steering.html">Brakes, Suspension & Steering</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/interior_accessories.html">Interior Accessories</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/exterior_accessories.html">Exterior Accessories</a></li>
+									<li><a href="http://www.autopartswarehouse.com/wheels.html">Wheels</a></li>
+					<li><a href="http://www.autopartswarehouse.com/tires.html">Tires</a></li>
+									<li><a href="http://www.autopartswarehouse.com/category/tools_-and-_garage.html">Tools & Garage</a></li>
+				            </ul>
+    </nav>
+	
+	
+    
+<div id="WhiteLabelBanner">
+    <div>
+				<p>
+		   Shopping outside the US? <strong><em>International Shipping</em></strong> is now available!
+		</p>
+	</div>
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+</div>
+
+<script type="text/javascript">
+        $(function(){
+        $("#WhiteLabelBanner > span").click(function () {
+            $("#WhiteLabelBanner").slideUp(100);
+			document.cookie = "bongo_cc=false; domain="+getDomain()+"; path=/";
+			$('#Content').attr('style','margin-top:55px');
+			$('body').addClass('whitelabelBG');
+        });
+    });</script>
+
+
+
+
+
+<body class="" >
+
+    <div class="popupwindowwrap" id="privacypolicy">
+        <div class="header">
+            <a class="logo" href="http://www.autopartswarehouse.com"><img src="http://img.apwcontent.com/sites/apw-migration/design/migration/apwlogo.png"/></a>
+        </div>
+        <div class="popupwindowcontent">
+            <h1>Privacy Policy <a class="printthis" href="javascript:window.print()" style="float:right; font-size:12px;">Print this page</a></h1>
+
+                <p>AutoPartsWarehouse.com  recognizes the importance of maintaining your privacy. We value our relationship with you and we appreciate the trust you show in providing information to us. Explaining how we collect, use and protect customer information is, therefore, of utmost importance to us.</p>
+
+                <p>This privacy policy ("Privacy Policy") applies to <b>www.AutoPartsWarehouse.com</b>  (the "Site", "Web Site", "we", or "us"). The Policy is designed to tell you how we collect and use personal information (as defined below) so you can make an informed decision about using AutoPartsWarehouse.com . Please read this statement before using AutoPartsWarehouse.com  or submitting any personal information to us. <b>We reserve the right to change the provisions of this Privacy Policy at any time. We will notify you of these changes by posting a revised Privacy Policy on AutoPartsWarehouse.com  and indicating on the Privacy Policy the date it was last updated. Your use of AutoPartsWarehouse.com  following the posting of such changes or revised statement shall constitute your consent to any such changes.</b> We encourage you to review our Privacy Policy whenever you visit AutoPartsWarehouse.com  to determine if any changes have been made and to make sure that you understand how any personal information you provide will be used.</p>
+
+                <p>PLEASE READ THIS PRIVACY POLICY CAREFULLY. BY USING THIS WEB SITE, YOU AGREE TO BE BOUND BY THIS PRIVACY POLICY DESCRIBED HEREIN, AND ALL UPDATES THERETO AND ALL ADDITIONAL TERMS, GUIDELINES AND DISCLOSURES INCORPORATED BY REFERENCE.
+                YOU ACCEPT THIS PRIVACY POLICY BY ACTUALLY USING THIS WEB SITE OR ITS SERVICES. IN THIS CASE, YOU UNDERSTAND AND AGREE THAT AUTOPARTSWAREHOUSE.COM  WILL TREAT YOUR USE OF THE WEB SITE AS ACCEPTANCE OF THIS PRIVACY POLICY, FROM THAT POINT ONWARDS.</p>
+
+                <p>AUTOPARTSWAREHOUSE.COM  DOES NOT PUBLISH CONTENT THAT IS TARGETED TO CHILDREN</p>
+
+                <p>If you are under age 13, please do not attempt to use this Site or provide any personal information about yourself to us. If we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible.</p>
+
+                <p>We strongly recommend that minors 13 years of age or older ask their parents for permission before sending any information about themselves to anyone over the Internet and we encourage parents to teach their children about safe internet use practices.</p>
+
+                <p>This Privacy Policy applies to all of the software, apps, applications, products, services and Web Sites offered by AutoPartsWarehouse.com  or any of its subsidiaries or affiliated companies.</p>
+
+                <p>If you have any questions about this Privacy Policy, please feel free to contact us through our Web Site or write to us at:</p>
+
+                <p>
+                Privacy Policy<br>
+                c/o AutoPartsWarehouse.com<br>
+                17150 South Margay Avenue<br>
+                Carson, CA 90746<br>
+                USA
+                </p>
+
+                <p><b>Information Collected and "Cookies"</b></p>
+
+                <p>This section of our Privacy Policy applies to all information collected by or submitted to AutoPartsWarehouse.com . The information that we collect from you helps us personalize and continually improve upon your AutoPartsWarehouse.com  shopping experience. You have the option not to provide certain information; however, withholding information may prevent you from being able to take full advantage of some of our Web Site's features.</p>
+
+                <p>When you visit our Site, we automatically receive and store any information you enter on our Web Site. For example, you provide information when you: search for a product; place an order through AutoPartsWarehouse.com ; place an item in your shopping cart; browse our Site; provide information in your account; communicate with us by phone, chat, or e-mail; complete a questionnaire or any other way. As a result of those actions, you might supply us with such information as your: name, address, e-mail address, phone numbers, financial information (such as credit card or similar payment information), transactional information (based on your activities on the Site and content you generate or that relates to your account), shipping information, billing information (and other information you provide to purchase or ship an item), community discussions, chats, dispute resolution, correspondence through the Site, and correspondence sent to us. We use this information to market products to you on the Site and through e-mail, do internal research on your interests, and to help us better understand and serve you.</p>
+
+                <p>We also store certain types of information when you interact with us on our Site. For example, we use "cookies" and can obtain certain information from your web browser. By transferring these alphanumeric identifiers or "cookies" that your browser creates at our request in an approved and standardized place on your computer, AutoPartsWarehouse.com  assigns you a unique customer code and records information about your activity on our Site. When you visit or return to our Site, we read the cookie to identify you as one of our customers and help you recall orders or preferences you have selected. The cookie also enables us to recall your past activities, post your account data, send e-mail to you, and tailor Site elements and special offers to you. The cookie does not retain your billing information, nor does it save any of your personally identifiable information in an explicit fashion. Most Web browsers accept cookies by default, but allow users to reject cookies by changing the browser preferences. If you have set up your browser to reject cookies, some aspects of our Site, including our Shopping Cart, will not work properly. This privacy statement covers the use of cookies by AutoPartsWarehouse.com  only and does not cover the use of cookies by any advertisers.</p>
+
+                <p>Whenever you interact with us and our Site, we collect, store, and analyze some data about you, which may include the full Uniform Resource Locator (URL) click stream to, through and from our Web Site, including date and time; cookie number; products you viewed or searched for or placed in your shopping cart; and the phone number you used to call our 800 number. Your IP address is used for AutoPartsWarehouse.com  internal use only and helps us diagnose problems with our server and administer our Web Site. We also automatically track certain information about your activities on our Site. These may include: browser type and version, operating system and platform, statistics on page views, traffic to and from the Site, ad data, standard web log information, and purchase history. We use this information to market products to you on the Site and through e-mail, do internal research on your interests, and to help us better understand and serve you. If you are a registered AutoPartsWarehouse.com  customer or if you make a purchase on our Site, we link this automatically-collected data to your personally identifiable information. We may collect and measure session information, including page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page.</p>
+
+                <p>When you purchase products from us you are required to provide us with your email address. We use your email address to keep you updated on the status of your order. We use this to send you your order confirmation, tracking numbers and other pertinent information about your order such as notifications on shipping delays. You will also receive product updates, recommendations, special announcements as well as email-only discounts from autopartswarehouse.com . You can always stop these emails by clicking on the unsubscribe link found on every email we send you or by emailing us at <em>privacy@autopartswarehouse.com</em>.  We respect your privacy and will never rent or sell your email address to external marketing companies.</p>
+
+                <p>We might also receive information about you from other sources and add it to our account information. Examples of these include: updated delivery and address information from our carriers or other third parties (which we use to correct our records and deliver your next purchase or communication more easily); page-view information from some merchants with which we operate co-branded businesses or for which we provide technical, fulfillment, advertising, or other services; search term and search result information including paid listings. Supplemental information received from third parties may also include credit history information from credit bureaus and third-party credit card fraud detection services, which we use to help prevent and detect fraud . Also, if the information you provide cannot be verified, we may ask you to send us additional information (such as your driver license, credit card statement, and/or a recent utility bill or other information confirming your address), or to answer additional questions online to help verify your information.</p>
+
+                <p>We use third-party advertising companies to serve ads on our behalf. These companies may use a cookie or an action tag to track your response to their advertisement and to measure the effectiveness of their advertising or to award incentives or points to their members who respond to their advertisements. AutoPartsWarehouse.com  has no access to or control over these cookies. By using these action tags AutoPartsWarehouse.com does not gain access to any of your information collected by these advertisers nor does it share any of your personally identifiable information such as your name, telephone number or address with these companies unless the advertiser or AutoPartsWarehouse.com  otherwise notifies you. Please <a href="http://www.networkadvertising.org/" rel="nofollow" target="_blank">click here</a> in order to learn more about the information collection practices of some of the third-party advertising companies we may use. Please <a href="http://www.networkadvertising.org/choices/" rel="nofollow" target="_blank">click here</a> in order to learn more about the "opt-out" procedures of some of the third-party advertising companies we may use.</p>
+
+                <p><b>Retargeting</b></p>
+
+                <p>Autopartswarehouse.com  is part of the Google AdWords Remarketing program. Google Remarketing may assign a cookie to track visitors coming and leaving pages or areas of a website. This information is then used to generate Remarketing Lists of visitors that left the site from that particular area or page and may be used to tailor and serve ad content on the Google Display Network that target these groups of users.</p>
+
+                <p>Autopartswarehouse.com  has no access to or control over these third party cookies and does not gain access to any of your information collected by Google nor does it share any of your personally identifiable information such as your name, telephone number, e-mail, and home address with the Google Display Network of sites unless the site or Autopartswarehouse.com otherwise notifies you. If you choose to customize your ads preferences or outright prevent Google's use of cookies during your browsing sessions, you may do so by visiting the <b>Google Advertising Opt-out page</b>. Alternatively, you may also choose to opt out of receiving cookies from other third party ad servers simultaneously through the <b>Network Advertising Initiative (NAI) Opt-out Tool</b>.</p>
+
+                <p>AutoPartsWarehouse.com  occasionally enters into cooperative marketing arrangements with independent companies. Under these cooperative marketing arrangements, our Site may display the name and/or brand(s) of the independent company. Personally identifiable information that you supply to us while you are on our Site, whether or not our Site displays a name or brand of another company, will be handled in accordance with this AutoPartsWarehouse.com  Privacy Policy and will not be shared with the cooperative marketing company unless AutoPartsWarehouse.com otherwise notifies you.</p>
+
+                <p><b>Use of Information</b></p>
+
+                <p>To carry out certain business functions, such as order fulfillment or e-mail delivery, we sometimes hire other companies to perform these functions on our behalf. These companies have access to the information needed to perform their functions, but are required to keep it secure and confidential and not use it for any other purpose than completing their contractual requirements to AutoPartsWarehouse.com . As a part of the normal process of completing your purchase, AutoPartsWarehouse.com  may provide your personal data to a third party payment processor, depending on your chosen method of payment. 
+                Any credit card or similar payment information you submit is used in billing for the specific transaction in which the information was submitted unless otherwise disclosed. Payment information is stored for a time on our secure servers to allow the processing of refunds or to respond to customer inquiries.</p>
+
+                <p>From time-to-time AutoPartsWarehouse.com  may provide you the opportunity to participate in contests or surveys on our Site. If you participate, we will request certain personally identifiable information from you. Participation in these surveys or contests is completely voluntary and you therefore have a choice whether or not to disclose this information.</p>
+
+                <p>AutoPartsWarehouse.com  may use aggregate, non-personally identifying information for purposes that we deem necessary. For instance, we will use this non-identifying and aggregate information to better design our Web Site and to share with advertisers for marketing and promotional purposes. However, in these instances we do not disclose anything that could be used to identify you. We do not use or share the personally identifiable information provided to us online in ways unrelated to the ones described herein without providing you an opportunity to opt-out of such operations.</p>
+
+                <p>It is possible that in the future AutoPartsWarehouse.com  or its assets may be acquired by another company. It is also possible that AutoPartsWarehouse.com  may partner with or purchase another company to continue to do business as a combined entity. In the event that this occurs, it is possible that our customer information may be transferred to the new business entity as one of AutoPartsWarehouse.com  assets. In such an event, we will update this Privacy Policy to notify you of such change in ownership or control of your personal information.</p>
+
+                <p><b>Compliance with Law and Fraud Protection</b></p>
+
+                <p>We may collect and disclose any information, including personally identifiable and transactional information, we deem necessary, in our sole discretion, to comply with any applicable law, regulation, legal process or governmental request. We may collect and possibly share personally identifiable information and any other information available to us in order to investigate, prevent or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any personal or as otherwise required by law. We may also exchange information, including personally identifiable information, with other companies and organizations for credit fraud protection and risk reduction.</p>
+
+                <p><b>Secure Encryption</b></p>
+
+                <p>We use Secure Socket Layer (SSL) technology, which is supported by the vast majority of modern Internet browsers. SSL works best when you are using the latest 128-bit encryption version of Microsoft Internet Explorer. SSL technology represents the highest level of security available on the Internet. It automatically encrypts information traveling over the Internet, verifies the identity of the transacting servers through certificates and digital signatures, and confirms that the integrity of message content is maintained throughout transmission.</p>
+
+                <p>AutoPartsWarehouse.com  minimum requirement for transactions is the standard 40-bit or 56-bit encryption supported by the Internet Explorer 5.0 browser. If you are not using this browser, please refer to your browser's documentation for information on its security features. We transmit the entire credit card number to the appropriate credit card company during order processing, but we reveal only the last four digits of your credit card numbers when confirming an order in compliance with Payment Card Industry Data Security Standard.</p>
+                <a name="creditcard"></a>
+                <p><b>Credit Card Security</b></p>
+
+                <p>Our servers use Secure Sockets Layer (SSL), an encryption technology that works with Netscape, Microsoft Internet Explorer, AOL, and Apple's Safari's browser. This ensures that only AutoPartsWarehouse.com  can read your personal information. We reveal only the last four digits of your credit card numbers when confirming an order. We will, however, transmit the entire credit card number to the appropriate credit card company during order processing.</p>
+
+                <p>After you click on the "checkout" button, be sure that the Site's URL always begins with https://www.AutoPartsWarehouse.com / The "s" in "https://" at the beginning of the URL means you are logging into a secure page. If the URL does not begin with https, you are not on any AutoPartsWarehouse.com  page.</p>
+
+                <p>AutoPartsWarehouse.com  has also obtained a digital certificate from Network Solutions, a leading provider of Internet trust services. When you enter a secured portion of our Site, an image of a closed lock or a solid key should appear in the bottom bar of your browser window. If you click on this image, a small popup window displaying site-security information will appear. This certificate guarantees that your personal information is being transmitted in a secure (encrypted) form to an AutoPartsWarehouse.com Web server, not to an unknown or unauthorized server.</p>
+
+                <p>AutoPartsWarehouse.com  is regularly tested and certified to pass industry-leading third party security assessment services testing. This industry-leading third party security assessment services testing helps protect you from identity theft and credit card fraud.</p>
+
+                <p>Ultimately, your personal information is protected by the password you created when you registered for an account at AutoPartsWarehouse.com  on the "Log-In / Quick Checkout" page. Please keep this password confidential. No representative of AutoPartsWarehouse.com  will ever ask you for your password. The confidentiality of your password is yours to protect.</p>
+
+                <p><b>Information Security</b></p>
+
+                <p>We take appropriate security measures to protect against unauthorized access to or unauthorized alteration, disclosure or destruction of data. These include internal reviews of our data collection, storage and processing practices and security measures, including appropriate encryption and physical security measures to guard against unauthorized access to systems where we store personal data. We restrict access to personal information to employees, contractors and agents who need to know that information in order to process it on our behalf. These individuals are bound by confidentiality obligations and may be subject to discipline, including termination and criminal prosecution, if they fail to meet these obligations.</p>
+
+                <p><b>Changes to this Privacy Policy</b></p>
+
+                <p>This Privacy Policy was last modified on August 29, 2012.</p>
+
+                <p>Please note that this Privacy Policy may change at any time. We reserve the right to modify this Privacy Policy at any time, so please review it frequently. We will post any Privacy Policy changes on this page.</p>
+
+                <div class="action">
+                    <button class="btn-secondary" onclick="window.close();">Close</button>
+                </div>
+                      
+            </div>
+            <footer></footer>            
+        </div>
+
+
+
+
+<!-- /all-container -->
+
+
+
+
+	    </div> 
+    
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+    if ( 'function' === typeof showCohortsTest) {
+        showCohortsTest();
+    } else {
+        $('.cohorts-ab-test-control').show();
+    }
+    
+    
+    if ( 'function' === typeof showSmartFitTest) {
+        showSmartFitTest();
+    } else {
+        $('.smart-fit-test-control').show();
+    }
+</script>
+<noscript>
+<style>
+.smart-fit-test-control{display:block !important;}
+.cohorts-ab-test-control{display:block !important;}
+</style>
+</noscript>
+<script type="text/javascript">
+    var utag_data={
+    site_name:"AutoPartsWarehouse",
+user_status:"logged out",
+page_name:"Privacy Policy",
+section_name:"Privacy",
+page_type:"About Us Page"    };
+    
+</script>
+
+
+<script type="text/javascript">
+var s_account  = "usautopartswh"
+var sc_domain  = "autopartswarehouse"
+var sc_cid     = "scid" //apwcid
+var sc_cj      = "A1154013966W44c8db0e4c70a" //A1154013966W44c8db0e4c70a
+var sc_gan     = "D1203533282W47bc75e2bd0dd" //D1203533282W47bc75e2bd0dd
+var sc_cidkwd  = "scid,emcid,affcid,ppcid,chcid,tid,apwcid" //apwcid,apwkw
+var sc_cidkwdsec  = "APW_SRC" //JCW_SRC
+var sc_tracksrv = "www2.autopartswarehouse.com" //
+var sc_tracksrvsecure = "www2s.autopartswarehouse.com" //
+
+var dcmsCookieName = "apwdcms"
+/* Affiliate Code */
+var affCodes = Array(
+"A1154013966W44c8db0e4c70a","D1203533282W47bc75e2bd0dd","I1209692992W481a73408bff5","E1209090014W48113fdeed4c3","I1204594883W47cca8c3e1d5e","V1201565613W479e6fadc9fce","B1216110463W487c5f7f8f826"
+);
+</script>
+
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/s_code.js?7.0.0"></script>
+<script type="text/javascript">
+s.pageName = "Privacy Policy"; 
+s.channel = "Privacy"; 
+s.pageType = "About Us Page"; 
+s.prop3 = "About Us Page"; 
+s.prop6 = "Privacy Policy"; 
+s.eVar12 = "AAAAAA"; 
+s.eVar49 = "No"; 
+        // Cookie based tagging
+    // Includes mostly vehicle related since
+    // page is cached by akamai
+    (function(){
+        var hasVehicle = false;
+        var vehicle = {
+            "year": "",
+            "make": "",
+            "model": "",
+            "submodel": "",
+            "engine": ""
+        };
+        var vehicleText = [];
+
+        if (typeof dynamicSettingsObj.selectedVehicleTextCookieName !== "undefined") {
+            var vcookie = getCookie(dynamicSettingsObj.selectedVehicleTextCookieName);
+            if (vcookie) {
+                vcookie = vcookie.replace(/\+/g, " ");
+                vcookie = JSON.parse(vcookie);
+                if (typeof vcookie[0] !== "undefined") {
+                    vehicle["year"] = vcookie[0];
+                    vehicle["make"] = vcookie[1];
+                    vehicle["model"] = vcookie[2];
+
+                    vehicleText.push(vcookie[0]);
+                    vehicleText.push(vcookie[1]);
+                    vehicleText.push(vcookie[2]);
+                    hasVehicle = true;
+
+                    if (typeof vcookie[3] !== "undefined" && vcookie[3]) {
+                        vehicle["submodel"] = vcookie[3];
+                        vehicleText.push(vcookie[3]);
+                        if (typeof vcookie[3] !== "undefined" && vcookie[4]) {
+                            vehicle["engine"] = vcookie[4];
+                            vehicleText.push(vcookie[4]);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Override if vehicle is present
+        if (hasVehicle) {
+            // Override omniture tagging
+            var vtxt = vehicleText.join(":");
+            window.s.eVar11 = vtxt;
+            window.s.eVar38 = "Yes";
+
+            window.s.prop4 = vtxt;
+            window.s.prop11 = vehicle["year"];
+            window.s.prop12 = vehicle["make"];
+            window.s.prop13 = vehicle["model"];
+            window.s.prop19 = "Yes";
+
+            if (vehicle["submodel"]) {
+                window.s.prop25 = vehicle["submodel"];
+                if (vehicle["engine"]) {
+                    window.s.prop26 = vehicle["engine"];
+                }
+            }
+        }
+
+        // Dart ads tagging
+        
+        var adZone = "other";
+        var adChannel = "other ";
+        var adYear = "";
+        var adMakeName = "other";
+        var adModelName = "other";
+        var adBrandName = "other";
+        var adPartName = "other";
+        var adSizes = [];
+        var adSizesText = "";
+
+        if (adSizes.length) {
+            window.s.prop20 = adZone + "|" + adSizesText;
+            if (hasVehicle) {
+                window.s.prop21 = vehicle["make"] + "|" + vehicle["model"] + "|" + adSizesText;
+            } else {
+                window.s.prop21 = adMakeName + "|" + adModelName + "|" + adSizesText;
+            }
+            window.s.prop22 = adZone + "|" + adPartName + "|" + adSizesText;
+            window.s.prop23 = adBrandName + "|" + adSizesText;
+        }
+    })();
+
+    //omniture tagging for a/b test
+    //due to the cohorts is creating a cookie in the client side we need to do the omniture tagging in the client side also
+    
+    //delete the cookie of mobile a/b test if the value is invalid 
+    if ( -1 == $.inArray(getCookie('mobilemvt'), ['a','b','c']) ) {
+        $.cookie("mobilemvt", null, { expires: -3600, domain:getDomain() });
+    }
+    
+	 		if ( 'undefined' != typeof COHORT_TEST_OBJECT && 'undefined' != typeof COHORT_TEST_OBJECT.enable && COHORT_TEST_OBJECT.enable ) {
+			_evar41 = 'Control'; 
+			
+			if ( 'undefined' != typeof smart_fit_test && smart_fit_test.inTest() ) {
+				 _evar41 = 'without SmartFit'; 
+				
+				if ( 'test' == smart_fit_test.getCohort() ) {
+					_evar41 = 'with SmartFit'; 
+				}
+			}
+			
+			s.eVar41 = _evar41; 
+		}
+		
+	//Tagging for APW Migration ab test Mobile
+    if ( null != getCookie('mvtAco') ) {
+        if ( 'a' == getCookie('mvtAco').substring(0,1) ){
+            s.eVar40 = 'Mobile Old';
+        } else if( 'b' == getCookie('mvtAco').substring(0,1) ) {
+            s.eVar40 = 'Mobile Redesign';
+        } else if( 'c' == getCookie('mvtAco').substring(0,1) ) {
+            s.eVar40 = 'Mobile Control';
+        }
+    }
+
+    //Tagging for APW Migration ab test Desktop
+    if ( null != getCookie('mvtDesktopAco') ) {
+        if ( 'a' == getCookie('mvtDesktopAco').substring(0,1) ){
+            s.eVar40 = 'Desktop Old';
+        } else if( 'b' == getCookie('mvtDesktopAco').substring(0,1) ) {
+            s.eVar40 = 'Desktop Redesign';
+        } else if( 'c' == getCookie('mvtDesktopAco').substring(0,1) ) {
+            s.eVar40 = 'Desktop Control';
+        }
+    }
+    
+    //Tragging for Smartfit
+	//omniture tagging for a/b test
+//due to the cohorts is creating a cookie in the client side we need to do the omniture tagging in the client side also
+
+//delete the cookie of mobile a/b test if the value is invalid 
+if ( -1 == $.inArray(getCookie('mobilemvt'), ['a','b','c']) ) {
+    $.cookie("mobilemvt", null, { expires: -3600, domain:getDomain() });
+}
+
+    if ( 'undefined' != typeof COHORT_TEST_OBJECT && 'undefined' != typeof COHORT_TEST_OBJECT.enable && COHORT_TEST_OBJECT.enable ) {
+        _evar41 = 'Control'; 
+        
+        if ( 'undefined' != typeof smart_fit_test && smart_fit_test.inTest() ) {
+             _evar41 = 'without SmartFit'; 
+            
+            if ( 'test' == smart_fit_test.getCohort() ) {
+                _evar41 = 'with SmartFit'; 
+            }
+        }
+        
+        s.eVar41 = _evar41; 
+    }
+
+
+(function(){
+    var apwsess = CookieGroupHandler.getCookieInstance("apwsession");
+    var recentAddVehicleSERP = 0;
+    var currentVid = getCookie("activeVehicleKey");
+
+    if (currentVid && currentVid == apwsess.getValue("serp_add_v")) {
+        recentAddVehicleSERP = 1;
+    }
+
+    if (PAGE_SECTION == "vehicle") {
+        fireVLPPreloadTagging();
+    } else if (PAGE_SECTION == "search") {
+
+        var sfStatus = deepFind(dynamicSettingsObj, 'smartfitFirstQuestion.status');
+if (sfStatus && sfStatus !== "Disabled") {
+
+    cleanupSmartfitVehicle();
+
+    // Tagging when filters are suddenly removed
+    if (!dynamicSettingsObj.selectedPartId || !dynamicSettingsObj.hasSelectedRefinement) {
+        if (apwsess.getValue('smartfit_show_partfinder_lb') == "1" || (apwsess.getValue('smartfit_event93_flag') == "1" && !isCurrentVehicleSmartfit())) {
+            if (apwsess.getValue('isEvent91Triggered') == "1" && !recentAddVehicleSERP) {
+
+                var sfPart = ( null != apwsess.getValue('smartfit_partname') ) ? apwsess.getValue('smartfit_partname').replace(/\+/g," ") : '';
+                var _keys =  ['pageName', 'channel', 'prop3', 'events', 'eVar34', 'eVar40'];
+                var _values = [s.pageName, s.channel, s.prop3, 'event93', sfPart, s.eVar40];
+
+                setAnalyticsByOnclick(_keys, _values);
+                
+                if (!isCurrentVehicleSmartfit()) {
+                    apwsess.removeValue('lb_smartfit_engaged');
+                    apwsess.removeValue('left_nav_engaged');
+                    apwsess.writeGroup();
+                }
+
+                apwsess.removeValue('isEvent91Triggered');
+            }
+        }
+    }
+
+    // Part was changed or was first time set
+    if (dynamicSettingsObj.selectedPart) {
+        var sfPart = dynamicSettingsObj.selectedPart;
+        if (apwsess.getValue('smartfit_partname') != null && sfPart != apwsess.getValue('smartfit_partname').replace(/\+/g," ") ) {
+            apwsess.removeValue('smartfit_evar66_properties');
+        }
+        
+        apwsess.setValue('smartfit_partname', sfPart);
+        apwsess.writeGroup();
+
+    } else {
+        apwsess.removeValue('smartfit_partname');
+        apwsess.removeValue('smartfit_evar66_properties');
+        apwsess.removeValue('isEvent91Triggered');
+        apwsess.writeGroup();
+    }
+
+    // There is a part selected and it is a smartfit enabled part
+    if (deepFind(dynamicSettingsObj, 'smartfitFirstQuestion.part') && dynamicSettingsObj.isPartnameSmartfit) {
+
+        // #nofilter yet selected (left nav or smartfit)
+        if (!dynamicSettingsObj.hasSelectedRefinement) {
+            if (isCurrentVehicleSmartfit()) {
+                apwsess.removeValue('smartfit_evar66_properties');
+                // Make it YMM as the first engaged smartfit section
+                smartfitFlagForEvar66('YMM');
+            }
+        }
+
+        // Set tracking cookie to tell analytics that visitor filtered by left nav
+        $('.smartfit-tracking-evar66').on('click', function(){
+            smartfitFlagForEvar66('LN+Filters');
+            apwsess.setValue('left_nav_engaged', 1).writeGroup();
+        });
+        
+        // Set tracking cookie to track vehicle widget engagement
+        $('#PartfinderFilter').on('click', '.smartfit-tracking-evar66-sbvw', function(){
+            apwsess.setValue('smartfit_ymm_flag', 1).writeGroup();
+        });
+
+        // If selected part is not smartfit, then no engagement
+        var sfSegment = deepFind(dynamicSettingsObj, 'smartfitFirstQuestion.segment');
+        if (sfSegment !== "master" && sfSegment !== "test") {
+            // Not a smartfit partname, clear flags
+            apwsess.removeValue('lb_smartfit_engaged').removeValue('left_nav_engaged').writeGroup();
+        }
+
+        // If user engaged in left nav or lightbox, engagement will carry over
+        // only to the next landing page as long as user does not change partname
+        // However, if current vehicle is added from SERP, engagement is 
+        // carried over even on other partnames (as long as they are smartfit enabled)
+        if (isSmartfitEngaged() || isCurrentVehicleSmartfit()) {
+            
+            if (apwsess.getValue('smartfit_evar66_flag') == '1') {
+                if (apwsess.getValue('smartfit_evar66_properties') != null && validateEvar66Flag()) {
+
+                    var _sortedEvar66Properties = sortObject(apwsess.getValue('smartfit_evar66_properties'));
+                    var joinSortedEvarProperties = '';
+                    
+                    for ( var i in _sortedEvar66Properties ) {
+                        joinSortedEvarProperties = joinSortedEvarProperties+'|'+i;
+                    }
+                    
+                    s.eVar66 = joinSortedEvarProperties.substring(1).replace(/\+/g," ");
+                }
+            
+                s.events = setNewEvent('event91',s.events);
+                apwsess.setValue('isEvent91Triggered', 1);
+            }
+            
+            // Track clicks to sku pages
+            $('.smartfit-tracking-sku').click(function(){
+                apwsess.setValue('smartfit_sku', 1);
+                apwsess.setValue('smartfit_pl_sku', (dynamicSettingsObj.hasBrandSelected ? 0: 1));
+                apwsess.writeGroup();
+            });
+
+            // Track clicks to add-to-cart flow
+            $('input[class=add-to-cart-big], a.add-to-cart, a.add-special-price').click(function(){
+                apwsess.setValue('event_92_tag', true).writeGroup();
+            });
+            
+            apwsess.writeGroup();
+        }
+        
+        $('.edit-filtered-attribute').click(function(){
+            apwsess.removeValue('smartfit_event93_flag').writeGroup();
+        })
+        
+        $('.remove-filtered-attribute').click(function(){
+            apwsess.setValue('smartfit_event93_flag', 1).writeGroup();
+        });
+        
+        $('.smartfit-tracking-click').click(function(){
+            apwsess.removeValue('lb_smartfit_engaged');
+            apwsess.removeValue('left_nav_engaged');
+            apwsess.writeGroup();
+        });
+        
+        $('.smartfit-tracking-submit').submit(function(){
+            apwsess.removeValue('lb_smartfit_engaged');
+            apwsess.removeValue('left_nav_engaged');
+            apwsess.writeGroup();
+        });
+
+    } else {
+        // Reset if there is no smartfit question active
+        apwsess.removeValue('smartfit_evar66_properties');
+        apwsess.removeValue('isEvent91Triggered');
+        apwsess.removeValue('lb_smartfit_engaged');
+        apwsess.removeValue('left_nav_engaged');
+    }
+} else {
+    // Either smartfit is disabled or no partname is selected yet
+    fireSERPPreloadTagging();
+}
+
+    } else if (PAGE_SECTION == "compare") {
+
+        userObject = apwsess.getValue('users');
+var skuLinks = $('.smartfit-tracking-sku');
+
+// Track branded and pl sku
+$('.smartfit-tracking-sku').each(function(i, obj){
+    $(this).click(function(){
+        var smarfit_sku = smartfit_pl_sku = 0;
+    
+        if ( 'undefined' !=  typeof userObject.selectedSku[obj.id.substring(2)] ) {
+            
+            if ( 'undefined' !=  typeof userObject.selectedSku[obj.id.substring(2)][2] ) {
+                smarfit_sku = userObject.selectedSku[obj.id.substring(2)][2];
+            }
+            
+            if ( 'undefined' !=  typeof userObject.selectedSku[obj.id.substring(2)][3] ) {
+                smartfit_pl_sku = userObject.selectedSku[obj.id.substring(2)][3];
+            }
+        }
+    
+        apwsess.setValue('smartfit_sku', smarfit_sku);
+        apwsess.setValue('smartfit_pl_sku', smartfit_pl_sku);
+        apwsess.writeGroup();
+    });
+});
+
+// Track add-to-cart
+$(".add-to-cart-compare").click(function(){
+    var p_id_val = encode($(this).siblings('form').children('input[name=productId]').val());
+
+    if ( p_id_val.indexOf('-semmi-') != -1 ) {
+      p_id_val = decode(p_id_val); 
+    }
+    if ( null != userObject && 'undefined' !=  typeof userObject.selectedSku[p_id_val][2] && userObject.selectedSku[p_id_val][2]) {
+        apwsess.setValue('event_92_tag', true).writeGroup();
+    }
+
+});
+
+apwsess.removeValue('lb_smartfit_engaged');
+apwsess.removeValue('left_nav_engaged');
+apwsess.removeValue('smartfit_evar66_properties');
+apwsess.removeValue('isEvent91Triggered');
+apwsess.writeGroup();
+
+    } else {
+
+        apwsess.removeValue('lb_smartfit_engaged');
+        apwsess.removeValue('left_nav_engaged');
+        apwsess.removeValue('smartfit_evar66_properties');
+        apwsess.removeValue('isEvent91Triggered');
+        apwsess.writeGroup();
+    }
+ })();    
+    //Tagging for Private label
+    /*
+
+Ominture tagging logic for Private label sku, due to the page caching we need to track the sku by creating a flag in cookie session and fire the corresponding event in their corresponding page ang scenario
+
+*/
+
+function setPlEventFlag(flag){
+    CookieGroupHandler.getCookieInstance('apwsession').setValue(flag, true).writeGroup();
+}
+
+function removePlEventFlag(objFlag){
+    
+    for ( var i in objFlag ) {
+        CookieGroupHandler.getCookieInstance('apwsession').removeValue(objFlag[i]).writeGroup();
+    }
+}
+    
+if ( CookieGroupHandler.getCookieInstance('apwsession').getValue('event_52_flag') ) {
+    s.events = setNewEvent("event52",s.events);
+    
+    $('.add-to-cart-sku').bind('click',function(){
+        setPlEventFlag('event_53_flag');
+    });
+}
+
+
+removePlEventFlag(['event_52_flag','event_53_flag']);
+
+    if ( $.cookie("mvt") != null && $.cookie("mvt_split") != null ) {
+		if ( $.cookie("mvt") == "a" ) {
+			s.eVar23 = "a."+$.cookie("mvt_split");
+		}
+		else if ( $.cookie("mvt") == "b" ) {
+			s.eVar23 = "b."+$.cookie("mvt_split");
+		}
+		else if ( $.cookie("mvt") == "c" ) {
+			s.eVar23 = "c."+$.cookie("mvt_split");
+	    }
+	}
+
+	cookieV48 = null;
+	var eVar48Fires = false;
+	if (typeof PAGE_SECTION !== "undefined" && PAGE_SECTION && PAGE_SECTION != "compare") {
+		eVar48Fires = true;
+	}
+
+	if (eVar48Fires) {
+		cookieV48 = $.cookie("evar48");
+	}
+	cookieV56 = $.cookie("evar56");
+	cookieV57 = $.cookie("evar57");
+	cookieP17 = $.cookie("prop17");
+	cookieP18 = $.cookie("prop18");
+
+	if ( (cookieV48!=null) && (cookieV56!=null) && (cookieV57!=null) && (cookieP17!=null) && (cookieP18!=null) && (cookieV48!=null)) {
+		s.eVar48 = cookieV48;
+		s.eVar56 = cookieV56;
+		s.eVar57 = cookieV57;
+		s.prop17 = cookieP17;
+		s.prop18 = cookieP18;
+		$.cookie('evar48', '',{expires:-1, path:'/'});
+		$.cookie('evar56', '',{expires:-1, path:'/'});
+		$.cookie('evar57', '',{expires:-1, path:'/'});
+		$.cookie('prop17', '',{expires:-1, path:'/'});
+		$.cookie('prop18', '',{expires:-1, path:'/'});
+	}
+
+	cookieE83 = $.cookie("cmmEvent");
+	if(typeof(cookieE83) != "undefined" && cookieE83 !== null) {
+		if(typeof(s.events) != "undefined" && s.events !== null) {
+			s.events = s.events+","+cookieE83;
+		} else {
+			s.events = cookieE83;
+		}
+		$.cookie('cmmEvent', '',{expires:-1, path:'/'});
+	}
+	
+	if(typeof(yt_event81) != "undefined" && yt_event81 !== null) {
+		s.events = s.events+",event81";
+	}
+
+	cookie_continue_link = $.cookie("continueLink");
+	if(typeof(cookie_continue_link ) != "undefined" && cookie_continue_link  !== null) {
+		var event54 = "event54";
+		if( s.events != 'undefined' && s.events != null && s.events != '' ) {
+			event54 = s.events + ",event54";
+		}
+		$.cookie('continueLink', '',{expires:-1, path:'/', domain: getDomain()});
+		s.events = event54;	
+	}
+
+	
+
+	
+	cookieOldPagename = $.cookie("oldPageName");
+        if(typeof(cookieOldPagename ) != "undefined" && cookieOldPagename  !== null) {
+		s.prop6 = cookieOldPagename;   
+                $.cookie('cookieOldPagename', '',{expires:-1, path:'/', domain: getDomain()});
+        }
+
+
+
+	if ( typeof componentsContents != 'undefined' && typeof componentsContents['component'] != 'undefined' && typeof componentsContents['component'].Analytics != 'undefined' ) {
+		for ( var key in componentsContents['component'].Analytics[1] ) {
+			if ( componentsContents['component'].Analytics[1][key] != '' && componentsContents['component'].Analytics[1][key] != null ) {
+				eval("s."+key+" = componentsContents['component'].Analytics[1]."+key+"; \n");
+			}
+		}
+	}
+
+	cookieV48 = $.cookie("v48");
+    if (cookieV48!=null && eVar48Fires) {
+	    s.eVar48 = cookieV48;
+	    $.cookie('v48', '',{expires:-1, path:'/'});
+	}
+
+	// apw set eVar48 :: page where user selected vehicle year
+	if($.cookie('eVar48') && eVar48Fires) {
+		s.eVar48 = decodeURIComponent($.cookie('eVar48'));
+	}
+
+	if ($.cookie("isSetSplit") == null) {
+		if ( splitEnabled ) {
+			if ($.cookie("splitb") != null) {
+				var evarvalue = $.cookie("splitb");
+				s.eVar49 = "b."+evarvalue;
+				var s_code=s.t();
+				if(s_code) {
+					document.write(s_code);
+				}
+				$.cookie("isSetSplit", "true", {path:"/"});
+			}
+		}
+	}
+		 $(window).load(function() {
+			var s_code=s.t();
+		});
+	
+	$('#SocialMediaFixed > ul > li').click(function(){
+		var arrTrackVars = ['events','eVar25'];
+		var arrTrackValues = ['event64',$(this).attr('socialmedianame')];
+		setOnloadAnalytics('socialmediaOmniture',arrTrackVars,arrTrackValues);
+	}); 
+
+
+	function setCheckoutCreateAccountFailedOmni(eventValue, evarValue) {
+
+		if ( evarValue == 'Failed' ) {
+			var sc_events = '';
+
+			if ( s.events != '' ) {
+				sc_events = s.events;
+			}
+			if ( sc_events.search(/evarValue/i) < 0 ){
+				if(sc_events != ''){sc_events += ',';}
+				sc_events += eventValue;
+			}
+
+			s.events =  sc_events;
+			s.eVar61 = evarValue;
+			var s_code=s.t();
+			if(s_code){
+				document.write(s_code);
+			}
+		}
+	}
+
+	function changePageName(pageName) {
+		s.pageName = pageName;
+		var s_code=s.t();
+		if(s_code){
+			document.write(s_code);
+		}
+	}
+</script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<noscript><img src="http://www2.autopartswarehouse.com/b/ss/usautopartswh/1/H.22.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33997217-1']);
+	_gaq.push(['_setSiteSpeedSampleRate', 100]);
+	_gaq.push(['_trackPageview']);
+
+
+		
+	$(window).load(function(){
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	});
+</script>
+
+
+<script type="text/javascript">
+// Begin Certona Script
+var resx    = new Object();
+resx.appid  = "AUTOPARTSWAREHOUSE";
+resx.top1   = 100000;
+resx.top2   = 100000;
+$(window).load(function(){
+    certonaResx.run();
+});
+// End Certona Script
+</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function(){
+		//reseller rating
+        $(document.createElement("img")).attr({ src: '//seals.resellerratings.com/seal.php?seller=9224',
+                                                border: '0',
+                                                onclick: "alert('Copying Prohibited by Law - ResellerRatings seal is a Trademark of All Enthusiast, Inc.'); return false;"
+                                                }).appendTo('.anchorResselerRating');
+		});
+	</script>
+
+		
+	<script type="text/javascript">
+		// BEGIN: Google Trusted Stores
+		var gts = gts || [];
+		gts.push(['id', '1138226']); // TS_MERCHANT_ID //required
+		gts.push(['google_base_offer_id', '']); //ITEM_GOOGLE_SHOPPING_ID //optional
+		gts.push(['google_base_subaccount_id', '1138226']); //ITEM_GOOGLE_SHOPPING_ACCOUNT_ID //optional
+
+		$(window).load(function(){
+			var scheme = (("https:" == document.location.protocol) ? "https://" :
+			"http://");
+			var gtscript = document.createElement('script');
+			gtscript.type = 'text/javascript';
+			gtscript.async = true;
+			gtscript.src = scheme + "www.googlecommerce.com/trustedstores/api/js";
+
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gtscript, s);
+		});
+		// END: Google Trusted Stores
+	</script>
+
+
+
+<div class="lightBox"></div>
+
+<script type="text/javascript">
+    // Delay lightbox
+    if (dynamicSettingsObj.canadaLightboxEnabled || dynamicSettingsObj.emailGatingEnabled) {
+        nLightboxProxy.lbDelayed = true;
+    }
+
+    // Canada lightbox vs email gating
+    $(window).load(function(){
+        var calbKillSwitch = dynamicSettingsObj.canadaLightboxEnabled;
+        var eglbKillSwitch = (dynamicSettingsObj.emailGatingEnabled && !isLoggedIn() && !isNonOrganicTraffic());
+        var sess = CookieGroupHandler.getCookieInstance("apwsession");
+        var egignore = sess.getValue("egignore");
+
+        function detectCountry(callback) {
+            $.ajax({ 
+                url: "/ajax/getcountrybyip",
+                dataType: 'json',
+                cache: false,
+                success: function(result) { 
+                    var country = null;
+                    if (result && typeof result.getLocation !== "undefined" && typeof result.getLocation.country !== "undefined") {
+                        country = result.getLocation.country;
+                    }
+                    callback(country);
+                },
+                error: function() {
+                    callback(null);
+                }
+            });
+        }
+
+        function initLightbox(country) {
+            if (country == "CA") {
+                if (calbKillSwitch && !isAffiliateTraffic()) {
+                    // Canada and non-affiliate traffic
+                    nLightboxProxy.showLb("InternationalNotice");;
+                }
+            } else {
+                if (eglbKillSwitch && (egignore == null || egignore == "n")) {
+                    // Non-canada and user not yet ignored the lightbox
+                    nLightboxProxy.showLb("NewsLetterV2");
+                }
+            }
+        }
+
+        if (calbKillSwitch || eglbKillSwitch) {
+            if (sess.getValue('countrydetect') == null) {
+                // We only show popup for canada for now
+                detectCountry(function(country) {
+                    initLightbox(country);
+                    sess.setValue("countrydetect", country).writeGroup();
+                });
+            } else {
+                // Country has been known due to cookie
+                var country = sess.getValue("countrydetect");
+                initLightbox(country);
+            }
+        }
+    });
+</script>
+
+<script type="text/javascript">
+var usCode = "1-866-529-4366";
+var intlCode = "404-592-4536";
+var mobileType = ["isiOS","isAndroidOS"];
+var mobilePhoneBannerKillSwitch = "1";
+var mobileBannerKillSwitch = "1";
+var sess = CookieGroupHandler.getCookieInstance("apwsession");
+
+if (sess.getValue('mobiledevice') == null && mobileBannerKillSwitch == 1){
+    var params = {"mobileType":mobileType};
+    $.ajax({
+        url:"/ajax/mobiledetect/?",
+        data: params,
+        dataType:'json',
+        cache:false,
+        success:function(result){
+            if(result.isAndroidOS == true){
+                sess.setValue("mobiledevice", "android").writeGroup();
+                showAppBanner();
+                
+            }else if(result.isiOS == true){
+                sess.setValue("mobiledevice", "iOS").writeGroup();
+            }
+        } 
+    });
+} else {
+    showAppBanner();
+}
+
+function showAppBanner() {
+    var appbanner = '<div class="DLApp"><div class="dlappwrap"><div class="dlappbg"></div><div class="dlappcont clearfix"><a href="market://details?id=com.apw.ui" class="app"><img src="'+dynamicSettingsObj.imagesDomain+'/icon-apwapp.png" alt="" /><strong>Download our App</strong><span>Get a fast and easy way to order auto parts - even while mobile</span></a></div><span class="closedlapp"></span></div></div>';
+    
+    if ( 'android' == sess.getValue("mobiledevice") && null == sess.getValue("androidsession") ) {
+        if ($('#MobileBanner').length > 0) {
+            androidBanner = $('#MobileBanner').html(appbanner);
+            // functionality for close button
+            $("#MobileBanner .closedlapp").click(function () {
+                sess.setValue("androidsession", 1).writeGroup();
+                $("#MobileBanner").remove();
+                containerPadding();
+            });
+            //add the banner at header
+            $('body header').prepend(androidBanner);
+            containerPadding();
+            
+            //Keep track of last scroll
+            var lastScroll = 0;
+            $(window).scroll(function(event){
+              //Sets the current scroll position
+              var st = $(this).scrollTop();
+              var neartop = $('body');
+              var offset = neartop.offset();
+              var neartopValue =  offset.top - $(window).scrollTop();;
+              //Determines up-or-down scrolling
+              if (st > lastScroll){
+                 //Replace this with your function call for downward-scrolling
+                 if ($(window).width() < 768 && neartopValue < -150) {
+                    $('#MobileBanner').slideUp("fast");
+                  }
+              }
+              else {
+                 //Replace this with your function call for upward-scrolling
+                 if ($(window).width() < 768) {
+                    $('#MobileBanner').slideDown("fast");
+                  }
+              }
+              //Updates scroll position
+              lastScroll = st;
+            });
+        }
+    }
+}
+</script>
+
+
+
+    
+        
  
+<script  type="text/javascript">
+    var talCustProp = "PageName=Privacy";</script>
+
+	<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/bottom.warranty.js?7.0.0"></script>
+<script type="text/javascript" src="http://img.apwcontent.com/sites/apw-migration/includes/js/prd/thirdpartyloader.js?7.0.0"></script>
+
+
+<script type="text/javascript">
+
+
+var thirdparty_deprioritize=true;
+var thirdparty_deprioritize_dart=false;
+var tealiumfile ='//tealium.hs.llnwd.net/o43/utag/usautoparts/autopartswarehouse/prod/utag.js';
+var pgaction = 'privacypolicy';
+
+$(window).load(function(){
+    var utagscript = document.createElement('script');
+    utagscript.type ='text/javascript';
+    utagscript.async = true;
+    utagscript.src = tealiumfile;
+    document.body.appendChild(utagscript);
+});
+
+
+
+var analyticsChannel = "Privacy";
+
+
+
+// New WebIQ survey
+
+  
+
+
+//Proactive chat moxie js library
+var proActiveVars = {"PageName":"Privacy"};
+
+if(typeof dynamicSettingsObj.yearTxt != 'undefined' && dynamicSettingsObj.yearTxt != null){
+    proActiveVars.Year = vehicle[0];
+}
+
+if(typeof dynamicSettingsObj.makeTxt != 'undefined' && dynamicSettingsObj.makeTxt != null){
+    proActiveVars.Make = decodeURIComponent(vehicle[1]);
+}
+
+if(typeof dynamicSettingsObj.modelTxt != 'undefined' &&  dynamicSettingsObj.modelTxt != null){
+    proActiveVars.Model = decodeURIComponent(vehicle[2]);
+}
+
+if(PAGE_SECTION == 'nomatch'){
+    proActiveVars.NullResult = s.prop1;
+}
+
+ProactiveChat.init(proActiveVars, [], []).writeCookie().writeTag();
+
+// this is used to reset serp buybox to list view if user navigates to other pages
+    $.cookie('serpview','',{path:'/'});
+</script>
+
+<!-- Include Amazon Widget -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"55916a94dc","applicationID":"5106520","transactionName":"Zl0HNRNXCkEDAUBaDV8XJhQSQgtfTTJGWhRQWxxBMVkIWwEbFGMDVl0=","queueTime":0,"applicationTime":256,"atts":"ShoEQ1tNGU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
+
