@@ -1,1 +1,457 @@
- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy policy | jobgo.com</title>    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta http-equiv="Content-Language" content="en" >    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/screen.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/jquery-ui-1.7.2.custom.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/style.css?1441223863" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/tools.css?1441223863" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/jquery.selectbox.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/print.css" media="print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/controls/dialog.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/jquery.fancybox.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/font-awesome.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/jquery.tagsinput.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/Talentor.SkillSelector.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/three60/widget/randomfriend.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="http://s.jobgo.com/s/static-resources/360fb/css/Talentor/three60.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/three60/widget/receivedanswers.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/three60/widget/full360.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/screen.css" media="screen, print" rel="stylesheet" type="text/css" >
+<link href="/css/modern/modern-header.css" media="screen, print" rel="stylesheet" type="text/css" >        <script src="//cdn.optimizely.com/js/2659120491.js"></script><script type="text/javascript" src="/js/modern/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/modern/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript" src="/js/json2.js"></script>
+<script type="text/javascript" src="/js/jquery.zend.jsonrpc.js"></script>
+<script type="text/javascript" src="/js/Talentor.Event.js"></script>
+<script type="text/javascript" src="/js/buttonizer.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/JobGo.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/jobgo.jquery.validate.js"></script>
+<script type="text/javascript" src="/js/modern/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/js/modern/jquery.easytabs.js"></script>
+<script type="text/javascript" src="/js/modern/jquery.hashchange.min.js"></script>
+<script type="text/javascript" src="/js/modern/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/js/modern/object.suggest.js"></script>
+<script type="text/javascript" src="/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/js/JobGo.StaticPopup.js"></script>
+<script type="text/javascript" src="/js/JobGo.analytics.js"></script>
+
+</head>
+<body class="talentor">
+    <!-- header :: start -->
+<!--<div class="main-container">-->
+
+<div id="header">
+    <div class="container header">
+
+        
+        <!--<div class="header">-->
+
+        
+        <div class="logo">
+            <a href="/"><img src="/images/modern/logo_new.png" title="JobGO" alt="JobGo"/></a>
+        </div>
+
+
+        <!-- Display form for search job or company -->
+                
+        <a class="search_btn head_search_btn">
+            <span class="fa fa-bars"></span>
+            <span class="head_search_btn_txt">Search</span>
+        </a>
+
+        <form name="head_search"
+            id="head_search"
+            action="/main/search/"
+            method="post"
+            class="JobGoForm TopJobSearchForm head_search">
+            <tr id="select-row"><td class="field-content"  >
+                    
+<select name="select" id="select" class="ser_btn" tabindex="1">
+    <option value="job" label="Job">Job</option>
+    <option value="company" label="Company">Company</option>
+</select>
+                </td></tr><tr class="ErrorRow" id="select-Row-Error">
+                <td></td>
+                <td id="select-Errors" class="error">
+                    
+                </td>
+            </tr>            <tr id="what-row"><td class="field-content"  >
+                    
+<input type="text" name="what" id="what" value="" class=" txtbox_1" placeholder="Title or position">
+                </td></tr><tr class="ErrorRow" id="what-Row-Error">
+                <td></td>
+                <td id="what-Errors" class="error">
+                    
+                </td>
+            </tr>            <tr id="where-row"><td class="field-content"  >
+                    
+<input type="text" name="LOCATION_NAME" id="where" value="" countryId="" class=" txtbox_2">
+                </td></tr><tr class="ErrorRow" id="where-Row-Error">
+                <td></td>
+                <td id="where-Errors" class="error">
+                    
+                </td>
+            </tr>            <tr id="where_id-row"><td class="field-content"  >
+                    
+<input type="hidden" name="LOCATION_ID" value="" id="where_id">
+                </td></tr><tr class="ErrorRow" id="where_id-Row-Error">
+                <td></td>
+                <td id="where_id-Errors" class="error">
+                    
+                </td>
+            </tr>            
+<input type="submit" name="submit" id="search_submit" value="Go" onclick="$(this).closest('form').submit()" class="go_btn">        </form>
+
+        <div class="rbox rbox_1">
+                        <div class="JobGoWidget language Model_Locale_Widget_LocaleSelection" id="Model_Locale_Widget_LocaleSelection_1693478386" style="">
+<!-- We don't need check for layouts  // to remove this part of code-->
+        <!-- <span id="language_current" class="no-shift language"><span class="label">Language: </span>English</span> -->
+
+<div class="menubtn">
+    <a href="#" class="lan">English</a>
+    <div class="dropdown dropdown_1">
+        <div class="dropdown_inn">
+            <ul>
+                                                            <li>
+                            <a href="?Locale=fi">Suomi</a>
+                        </li>
+                                                                                <li>
+                            <a href="?Locale=fr">Français</a>
+                        </li>
+                                                </ul>
+        </div>    
+    </div>
+</div>
+</div>            <div class="JobGoWidget UserSection" id="JobGo_View_UiSections_SectionWidget_664601330" style=""><div class="JobGoWidget userbar Model_User_Widget_Login" id="Model_User_Widget_Login_108506553" style="">    <a href="#login" class="login fancybox">Sign In</a>
+
+    <div id="login" class="popup login_popup_1">
+        <div id="tab_wrap_1">
+            <ul class="tab">
+                <li><a href="#tab_1">Create profile</a></li>
+                <li id="tab-2"><a href="#tab_2">Sign In</a></li>
+            </ul>
+            <div class="popup_inn row" id="tab_1">
+                <div class="form-wrap">
+                    <!-- <h4></h4>-->
+
+                    
+<script type="text/javascript">
+    $(function () {
+        $(".country_id").selectbox();
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.fancybox').fancybox({
+            padding:0
+        });
+
+        $("#tab_wrap_1").easytabs({
+            animationSpeed: 1000,
+            defaultTab: "li:nth-child(2)"
+        });
+
+    });
+</script>
+
+<form
+    name="Registration"
+    id="Registration"
+    action="/user/registration/"
+    method="post"
+    class="JobGoForm Registration"
+>
+    
+<input type="hidden" name="LOCATION_ID" value="" class="LOCATION_ID" id="user_registration_location_id">    
+<input type="hidden" name="COMPANY_ID" value="" class="COMPANY_ID" id="person_personpositions_company_id">    
+<input type="hidden" name="CAMPAIGN" value="" id="person_personpositions_campaign">    <table class="section-content">
+                                                        <tr id="user_new_email-row"><td class="field-caption field-caption-PREPEND">
+                <label for="user_new_email" class="required">*<span class="Label">E-mail</span></label>
+            </td><td class="field-content"  >
+                    
+<input type="text" name="NEW_EMAIL" id="user_new_email" value="" class=" Validate_NEW_EMAIL">
+                </td></tr><tr class="ErrorRow" id="user_new_email-Row-Error">
+                <td></td>
+                <td id="user_new_email-Errors" class="error">
+                    
+                </td>
+            </tr>        <tr id="user_password-row"><td class="field-caption field-caption-PREPEND">
+                <label for="user_password" class="required">*<span class="Label">Password</span></label>
+            </td><td class="field-content"  >
+                    <div class="WithNote"><div>
+<input type="password" name="PASSWORD" id="user_password" value="" note="Min. 8 characters" class="passwordField Validate_PASSWORD"></div> <div class="Note">Min. 8 characters</div></div>
+                </td></tr><tr class="ErrorRow" id="user_password-Row-Error">
+                <td></td>
+                <td id="user_password-Errors" class="error">
+                    
+                </td>
+            </tr>        <tr id="user_registration_password_again-row"><td class="field-caption field-caption-PREPEND">
+                <label for="user_registration_password_again" class="required">*<span class="Label">Password again</span></label>
+            </td><td class="field-content"  >
+                    
+<input type="password" name="PASSWORD_AGAIN" id="user_registration_password_again" value="" class="passwordField Validate_PASSWORD_AGAIN">
+                </td></tr><tr class="ErrorRow" id="user_registration_password_again-Row-Error">
+                <td></td>
+                <td id="user_registration_password_again-Errors" class="error">
+                    
+                </td>
+            </tr>                
+                
+<input type="hidden" name="FACEBOOK_UID" value="" id="facebook_uid">        <tr id="ref_uid-row"><td class="field-content"  >
+                    
+<input type="hidden" name="REF_UID" value="" id="ref_uid">
+                </td></tr><tr class="ErrorRow" id="ref_uid-Row-Error">
+                <td></td>
+                <td id="ref_uid-Errors" class="error">
+                    
+                </td>
+            </tr>    </table>
+
+    <div class="form-btn-hldr">
+        <hr/>
+        <p class="mandatory-hint"><span class="required">*</span> Required information.</p>
+        <br />
+                <p class="txt_1">
+        By clicking Register, you are indicating that you have read, understood,<br/> and agree to JobGo's <a href="/index/terms" onclick="JobGo.StaticPopup.ShowClick('terms'); return false;">Terms of Use</a> and <a href="/index/privacy" onclick="JobGo.StaticPopup.ShowClick('privacy'); return false;">Privacy policy</a>.        </p>
+
+        <div class="form-btn-wrap">
+            
+<input type="submit" name="REGISTER" id="user_registration_register" value="Register" class="login_btn">
+            <div class="clear"></div>
+        </div>
+    </div>
+</form>
+                </div>
+            </div>
+            <div class="popup_inn row" id="tab_2">
+                <form id="mainLoginForm" action="/user/login" method="post">
+                    <h4>Sign in or register</h4>
+                    <!-- a href="#" class="btn_1"><span class="fa fa-linkedin"></span>Sign in with Linked in</a -->
+                    <!-- a href="#" class="btn_1 google"><span class="fa fa-google-plus"></span>Sign in with Google</a -->
+                    <!-- a class="btn_1 facebook" href="https://www.facebook.com/dialog/oauth?client_id=195600817186360&redirect_uri=http%3A%2F%2Fapps.facebook.com%2Fjobgonetwork%2F&state=9f2bcbd927315a008565f8dae496414c&scope=email%2C+publish_stream" target="_self">
+                    <span class="fa fa-facebook"></span>Login with Facebook</a -->
+                    <!-- div class="txt_1">Everything you see or apply to is private</div -->
+                    <!-- div class="txt_2"><span>Or</span></div-->
+                    <div class="login_form row">
+                        <input type="text" id="main_username" name="username" class="txtbox header-login" value=""/>
+                        <input type="password" id="main_password" name="password" class="txtbox header-password" value=""/>
+                        <div class="row">
+                            <div class="remember">
+                                <input type="checkbox" class="chkbox">
+                                <span>Remember me</span>
+                            </div>
+                            <a href="/user/recover" class="forgot">Forgot your password?</a>
+                        </div>
+                        <input type="submit" class="login_btn" value="Sign In">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--     <div id="Model_User_Widget_Login_108506553" class="userlogin">
+        <form id="mainLoginForm" action="/user/login" method="post">
+            <input type="submit" style="position:fixed; top:-1000px; left:-1000px;"/>
+
+            <div class="left">
+                <a href="/user/recover" class="forgot-password">Forgot your password?</a>
+            </div>
+            <div class="field-note-container left">
+                <input type="text" id="main_username" name="username" class="header-login" value=""/>
+
+                <div id="main_username_note"
+                     class="field-note header-login-note">Email</div>
+            </div>
+            <div class="field-note-container left">
+                <input type="password" id="main_password" name="password" class="header-password" value=""/>
+
+                <div id="main_password_note"
+                     class="field-note header-password-note">Password</div>
+            </div>
+            <div class="left" style="padding-top:2px;">
+                <a class="header-button header-login-link" href="/user/login"><span><span>Sign In</span></span></a>
+            </div>
+            <div class="left">
+                <a class="join-us"
+                   href="/user/registration">Join</a>
+            </div>
+        </form>
+    </div -->
+
+</div><div class="JobGoWidget UserActions" id="Model_User_Widget_HeaderActions_599561134" style=""></div></div>            <div class="clr"></div>
+        </div>
+
+    </div>
+</div>
+<div id="container">
+    <div class="container">
+        <div id="inner">
+            <div class="navigation row">
+                <ul>
+                        <li class="active"><a href="/">Home</a></li>
+    <li><a href="/job/search">Jobs</a></li>
+    <li><a href="/person/searchtalent">Talents</a></li>
+    <li><a href="/company/search">Companies</a></li>
+                </ul>
+            </div>
+            <div class="row inner_c">
+
+                                <div class="systemMessage hidden">
+    <span class="messageBody">&nbsp;</span>
+    <div class="noticeClose" onclick="$(this).parent().hide(); return false;"></div>
+</div>        <div id="legal-text">
+    <div id="legal-text">
+<h1>Privacy Policy</h1>
+<p>This Privacy Policy applies to Internet based Recruitment and Social media services rendered worldwide by JobGo and JobGo International Ltd. (&lsquo;JobGo&rsquo;), as well as to products and web sites under the JobGo brand.</p>
+<p>The privacy and security of your personal information is among our top priorities, and we would like you to be aware of how JobGo handles and safeguards the information you provide while using our services and the www.JobGo.com web site.</p>
+<h2>What information does JobGo collect from me?</h2>
+<p>Depending on type of services used by the User JobGo may collect personally identifiable information, including but not limited to your name, company name, street address, e-mail address, telephone number, CV information and other recruitment based information as well as user and log info on Social Media use. For the same purposes, JobGo may gather such information as name and e-mail address of the persons you invited to join you in using our services.</p>
+<p>JobGo may also collect non-personally identifiable information from you, such as web site pages viewed, time spent while using the JobGo services, cookies, demographic data, aggregated traffic data and other information.</p>
+<h2>How does JobGo use the information collected from me?</h2>
+<p>JobGo may use the information collected from you for the following purposes: - to render services and products requested by you; - to continuously improve our services and products through own research and development programs; - to perform our market communication activities. - To enable Potential Employers to see the information allowed by User. - Fulfill any regulatory obligations</p>
+<p>Any kind of information received from you is not used or shared for non-JobGo related purposes.</p>
+<p><strong>JobGo Work Behaviour Profile</strong></p>
+<p>Any results from the personal qualities test are stored in a secure database and protected by password and username. JobGo takes all necessary precautions to protect this information from third parties, and does not provide access to any third parties without the consent of the user. JobGo occasionally uses test results for statistical purposes, but only in an aggregated and anonymous form.</p>
+<p><strong>Content Liability</strong></p>
+<p>Please note that you are solely responsible for all texts entered into our system or sent to us. You must make sure you do not send us any attachments that contain viruses.</p>
+<p>The information you send us must be accurate and must not breach copyrights, trademarks or other intellectual property rights, law or other applicable provisions, official regulations, the rights of third parties in general or public policy. Please note that you undertake to indemnify us against all claims made against us as a consequence of your failure to prevent false Content appearing in any information you provide.</p>
+<p><strong>How does JobGo secure my personal information?</strong></p>
+<p>JobGo employs the latest technology for the purpose of safeguarding privacy of information on its corporate network and web site. All information that JobGo receives from you is protected by a 6-to-20-character password. JobGo stores your information on secure servers duly protected by a hardware firewall.</p>
+<p>However, please be advised that even the most advanced protective technology cannot give a 100% guarantee of security, in particular in the public Internet-based communications. In light of this, you acknowledge a certain risk that third parties may get unauthorized access to your information in violation of law. At the same time, please be aware that JobGo constantly invests significant financial and technological resources in preventing such violations.</p>
+<h2>How do I define if I accept this Privacy Policy, and may the policy be changed?</h2>
+<p>Use of JobGo service or JobGo web site by you constitutes your acceptance of this Privacy Policy.</p>
+<p>JobGo reserves the right to modify the Privacy Policy at any time by publishing new versions of it on JobGO Website Such new version shall become effective after thirty (30) days from the date of publication. Use of JobGo service, products, or www.JobGo.com web site by you past the expiration of the thirty-day period shall constitute your acceptance of the new version of the Privacy Policy.</p>
+<p>&nbsp;</p>
+<p>Copyright &copy; 2014 JobGo International. All rights reserved.&nbsp;</p>
+<p><strong>&nbsp;Last revision: 19.01.2014</strong></p>
+</div></div>        </div>
+    </div>
+    <div class="JobGoWidget  JobGoWidgetStringOutput" id="JobGo_Widget_StringOutput_1386371354" style=""></div><div class="row" id="footer">
+    <div class="leftnav">
+        <div><a href="/index/about">About The service</a></div>
+        <div><a href="/index/terms">Terms of Use</a></div>
+        <div><a href="/index/privacy">Privacy policy</a></div>
+        <div><a href="/company/create">Recruiter membership</a></div>
+    </div>
+    <div class="middbox">Global customer service: <a href="mailto:support@jobgo.com">support@jobgo.com</a></div>
+    <div class="copyright">
+        Copyright &copy; 2015 JobGo International Oy. All rights reserved.
+    </div>
+</div>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-52XQL7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52XQL7');</script>
+    <!-- End Google Tag Manager -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-51759512-1', 'auto');
+	//ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="http://10890325.collect.igodigital.com/collect.js"></script>
+<script type="text/javascript"> _etmc.push(["setOrgId", "10890325"]); _etmc.push(["trackPageView"]); </script>
+    
+
+<script type="text/javascript">
+//<!--
+$(document).ready(function() {
+    JobGo.Image.init('http://s.jobgo.com/s/');
+    JobGo.apiUrl='/api_jsonrpc';
+    JobGo.Nav.init('/index/privacy','/');
+    
+        function moveHeadSearch() {
+            if (window.innerWidth <= 1114) {
+                if ($("#header").find("#head_search")) {
+                    $(".navigation").prepend($("#head_search"));
+                };
+            } else {
+                if ($(".navigation").find("#head_search")) {
+                    $(".rbox_1").before($("#head_search"));
+                };
+            };
+        };
+
+        function headSearchToggle() {
+            $("#head_search").toggle();
+        };
+
+        window.addEventListener("resize", moveHeadSearch);
+
+        $(function() {
+            moveHeadSearch();
+        });
+        $(".head_search_btn").click(function() {
+            headSearchToggle();
+        });
+
+        $(function() {
+            var cookieInfobar = document.cookie.match("(^|;) ?" + "infobar_close" + "=([^;]*)(;|$)");
+            if (cookieInfobar == null) {
+                setTimeout(function() {
+                    $(".infobar").fadeIn(400);
+                    var randomInfobar = Math.floor(Math.random()*5);
+                    $("#infobar-content"+randomInfobar).css("display", "block");
+                }, 15000);
+            };
+            $(".infobar-close").click(function() {
+                $(".infobar").fadeOut(400);
+                var expires = new Date();
+                expires.setTime(expires.getTime() + (30 * 60 * 1000));
+                document.cookie = "infobar_close=clickOnClose;path=/"+ ";expires=" + expires.toUTCString();
+            });
+        });
+    
+    $('#where').each(function(i, e){$(e).objectSuggest({"hint":"Country or location","serviceUrl":"\/dictionary\/quicksearch\/type\/extlocation\/view\/2","recursive":true,"itemSubstitutedTemplate":"%9","itemSuggestedTemplate":"%8","max":18,"RENDERER":JobGo.ObjectSuggest.LocationSearchRenderer,"hiddenId":"#where_id"}, {"resultsClass":"ac_results  txtbox_2"});});
+    initMainLoginForm();
+    JobGo.Form.User.Registration.init();
+    JobGo.Form.Person.Edit.init();
+    
+            $("#person_preview").click(function(evt){
+                if (window.tinyMCE) {
+                    tinyMCE.triggerSave();
+                }
+                $(evt.target).closest('form').attr('action', '/person/preview').submit();
+                return false;
+            });
+        
+    $("form").each(function(i,e){if (!$(e).validate) {return;}; $(e).validate({"rules":[],"errorPlacement":JobGo.Validator.errorPlacement,"unhighlight":JobGo.Validator.unHighlight});});
+    $('.Validate_NEW_EMAIL').each(function (i, e){$(e).rules('add', {"required":true,"valueNotAllowed":"","messages":{"required":"Value is required and can't be empty","valueNotAllowed":"Value is required and can't be empty"}});});
+$('.Validate_PASSWORD').each(function (i, e){$(e).rules('add', {"required":true,"valueNotAllowed":"","messages":{"required":"Value is required and can't be empty","valueNotAllowed":"Value is required and can't be empty"}});});
+$('.Validate_BIRTH_DATE').each(function (i, e){$(e).rules('add', {"dateFormat":"dd.MM.yyyy","messages":{"dateFormat":" does not appear to be a valid date"}});});
+$('.Validate_PASSWORD_AGAIN').each(function (i, e){$(e).rules('add', {"required":true,"valueNotAllowed":"","messages":{"required":"Value is required and can't be empty","valueNotAllowed":"Value is required and can't be empty"}});});
+    
+    JobGo.StaticPopup.createContainer();
+    JobGo.StaticPopup.OnLoad();
+});
+//-->
+
+</script>    </div>
+    </div>
+    <div class="infobar">
+        <div class="container">
+                            <div class="infobar-content" id="infobar-content0"><a href="#login" class="login fancybox">Sign up to get more benefits!</a></div>
+                            <div class="infobar-content" id="infobar-content1"><a href="#login" class="login fancybox">Sign up to get more benefits!</a></div>
+                            <div class="infobar-content" id="infobar-content2"><a href="#login" class="login fancybox">Sign up to get more benefits!</a></div>
+                            <div class="infobar-content" id="infobar-content3"><a href="#login" class="login fancybox">Sign up to get more benefits!</a></div>
+                            <div class="infobar-content" id="infobar-content4"><a href="#login" class="login fancybox">Sign up to get more benefits!</a></div>
+                        <a class="infobar-close"></a>
+        </div>
+    </div>
+
+</body>
+</html>
+
