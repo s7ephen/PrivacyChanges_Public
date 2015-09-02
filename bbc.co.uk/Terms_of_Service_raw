@@ -1,1 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head profile="http://dublincore.org/documents/dcq-html/">
+
+
+
+
+
+<title>BBC - 
+Terms
+ - 
+Terms of Use of BBC Online Services - Personal Use
+</title>
+
+<meta name="description" content="" />
+<meta name="keywords" content="user generated content, ugc, contributions, personal information, definition of bbc online services, what are bbc online services, bbc online services, how can I use bbc.co.uk, how can I use bbc online services, how can I use the bbc website, non-commercial use" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<meta name="dcterms.created" content="2010-11-24" />
+<meta name="dcterms.modified" content="2010-11-24" />
+<!-- Barlesque: -->
+
+
+    
+
+                    <!-- Glow cachebust:    
+                -->       <!-- Barlesque 2.75.0 -->         <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />  <link rel="index" href="http://www.bbc.co.uk/a-z/" title="A to Z" /> <link rel="copyright" href="http://www.bbc.co.uk/terms/" title="Terms of Use" /> <link rel="icon" href="http://www.bbc.co.uk/favicon.ico" type="image/x-icon" />  <meta name="viewport" content="width = 974" />    <link rel="stylesheet" type="text/css" href="/staticarchive/c808749ad4d537416e40591def8e05c130d72722.css"  />  <script type="text/javascript">/*<![CDATA[*/ (function(undefined){if(!window.bbc){window.bbc={}}var ROLLING_PERIOD_DAYS=30;window.bbc.Mandolin=function(id,segments,opts){var now=new Date().getTime(),storedItem,DEFAULT_START=now,DEFAULT_RATE=1,COOKIE_NAME="ckpf_mandolin";opts=opts||{};this._id=id;this._segmentSet=segments;this._store=new window.window.bbc.Mandolin.Storage(COOKIE_NAME);this._opts=opts;this._rate=(opts.rate!==undefined)?+opts.rate:DEFAULT_RATE;this._startTs=(opts.start!==undefined)?new Date(opts.start).getTime():new Date(DEFAULT_START).getTime();this._endTs=(opts.end!==undefined)?new Date(opts.end).getTime():daysFromNow(ROLLING_PERIOD_DAYS);this._signupEndTs=(opts.signupEnd!==undefined)?new Date(opts.signupEnd).getTime():this._endTs;this._segment=null;if(typeof id!=="string"){throw new Error("Invalid Argument: id must be defined and be a string")}if(Object.prototype.toString.call(segments)!=="[object Array]"){throw new Error("Invalid Argument: Segments are required.")}if(opts.rate!==undefined&&(opts.rate<0||opts.rate>1)){throw new Error("Invalid Argument: Rate must be between 0 and 1.")}if(this._startTs>this._endTs){throw new Error("Invalid Argument: end date must occur after start date.")}if(!(this._startTs<this._signupEndTs&&this._signupEndTs<=this._endTs)){throw new Error("Invalid Argument: SignupEnd must be between start and end date")}removeExpired.call(this,now);var overrides=window.bbccookies.get().match(/ckns_mandolin_setSegments=([^;]+)/);if(overrides!==null){eval("overrides = "+decodeURIComponent(RegExp.$1)+";");if(overrides[this._id]&&this._segmentSet.indexOf(overrides[this._id])==-1){throw new Error("Invalid Override: overridden segment should exist in segments array")}}if(overrides!==null&&overrides[this._id]){this._segment=overrides[this._id]}else{if((storedItem=this._store.getItem(this._id))){this._segment=storedItem.segment}else{if(this._startTs<=now&&now<this._signupEndTs&&now<=this._endTs&&this._store.isEnabled()===true){this._segment=pick(segments,this._rate);if(opts.end===undefined){this._store.setItem(this._id,{segment:this._segment})}else{this._store.setItem(this._id,{segment:this._segment,end:this._endTs})}log.call(this,"mandolin_segment")}}}log.call(this,"mandolin_view")};window.bbc.Mandolin.prototype.getSegment=function(){return this._segment};function log(actionType,params){var that=this;require(["istats-1"],function(istats){istats.log(actionType,that._id+":"+that._segment,params?params:{})})}function removeExpired(expires){var items=this._store.getItems(),expiresInt=+expires;for(var key in items){if(items[key].end!==undefined&&+items[key].end<expiresInt){this._store.removeItem(key)}}}function getLastExpirationDate(data){var winner=0,rollingExpire=daysFromNow(ROLLING_PERIOD_DAYS);for(var key in data){if(data[key].end===undefined&&rollingExpire>winner){winner=rollingExpire}else{if(+data[key].end>winner){winner=+data[key].end}}}return(winner)?new Date(winner):new Date(rollingExpire)}window.bbc.Mandolin.prototype.log=function(params){log.call(this,"mandolin_log",params)};window.bbc.Mandolin.prototype.convert=function(params){log.call(this,"mandolin_convert",params);this.convert=function(){}};function daysFromNow(n){var endDate;endDate=new Date().getTime()+(n*60*60*24)*1000;return endDate}function pick(segments,rate){var picked,min=0,max=segments.length-1;if(typeof rate==="number"&&Math.random()>rate){return null}do{picked=Math.floor(Math.random()*(max-min+1))+min}while(picked>max);return segments[picked]}window.bbc.Mandolin.Storage=function(name){validateCookieName(name);this._cookieName=name;this._isEnabled=(bbccookies.isAllowed(this._cookieName)===true&&bbccookies.cookiesEnabled()===true)};window.bbc.Mandolin.Storage.prototype.setItem=function(key,value){var storeData=this.getItems();storeData[key]=value;this.save(storeData);return value};window.bbc.Mandolin.Storage.prototype.isEnabled=function(){return this._isEnabled};window.bbc.Mandolin.Storage.prototype.getItem=function(key){var storeData=this.getItems();return storeData[key]};window.bbc.Mandolin.Storage.prototype.removeItem=function(key){var storeData=this.getItems();delete storeData[key];this.save(storeData)};window.bbc.Mandolin.Storage.prototype.getItems=function(){return deserialise(this.readCookie(this._cookieName)||"")};window.bbc.Mandolin.Storage.prototype.save=function(data){window.bbccookies.set(this._cookieName+"="+encodeURIComponent(serialise(data))+"; expires="+getLastExpirationDate(data).toUTCString()+";")};window.bbc.Mandolin.Storage.prototype.readCookie=function(name){var nameEq=name+"=",ca=window.bbccookies.get().split("; "),i,c;validateCookieName(name);for(i=0;i<ca.length;i++){c=ca[i];if(c.indexOf(nameEq)===0){return decodeURIComponent(c.substring(nameEq.length,c.length))}}return null};function serialise(o){var str="";for(var p in o){if(o.hasOwnProperty(p)){str+='"'+p+'"'+":"+(typeof o[p]==="object"?(o[p]===null?"null":"{"+serialise(o[p])+"}"):'"'+o[p].toString()+'"')+","}}return str.replace(/,\}/g,"}").replace(/,$/g,"")}function deserialise(str){var o;str="{"+str+"}";if(!validateSerialisation(str)){throw"Invalid input provided for deserialisation."}eval("o = "+str);return o}var validateSerialisation=(function(){var OBJECT_TOKEN="<Object>",ESCAPED_CHAR='"\\n\\r\\u2028\\u2029\\u000A\\u000D\\u005C',ALLOWED_CHAR="([^"+ESCAPED_CHAR+"]|\\\\["+ESCAPED_CHAR+"])",KEY='"'+ALLOWED_CHAR+'+"',VALUE='(null|"'+ALLOWED_CHAR+'*"|'+OBJECT_TOKEN+")",KEY_VALUE=KEY+":"+VALUE,KEY_VALUE_SEQUENCE="("+KEY_VALUE+",)*"+KEY_VALUE,OBJECT_LITERAL="({}|{"+KEY_VALUE_SEQUENCE+"})",objectPattern=new RegExp(OBJECT_LITERAL,"g");return function(str){if(str.indexOf(OBJECT_TOKEN)!==-1){return false}while(str.match(objectPattern)){str=str.replace(objectPattern,OBJECT_TOKEN)}return str===OBJECT_TOKEN}})();function validateCookieName(name){if(name.match(/ ,;/)){throw"Illegal name provided, must be valid in browser cookie."}}})(); /*]]>*/</script>  <script type="text/javascript">/*<![CDATA[*/ if (typeof bbccookies_flag === 'undefined') { bbccookies_flag = 'ON'; } showCTA_flag = true; cta_enabled = (showCTA_flag && (bbccookies_flag === 'ON') ); (function(){var e="ckns_policy",m="Thu, 01 Jan 1970 00:00:00 GMT",k={ads:true,personalisation:true,performance:true,necessary:true};function f(p){if(f.cache[p]){return f.cache[p]}var o=p.split("/"),q=[""];do{q.unshift((o.join("/")||"/"));o.pop()}while(q[0]!=="/");f.cache[p]=q;return q}f.cache={};function a(p){if(a.cache[p]){return a.cache[p]}var q=p.split("."),o=[];while(q.length&&"|co.uk|com|".indexOf("|"+q.join(".")+"|")===-1){if(q.length){o.push(q.join("."))}q.shift()}f.cache[p]=o;return o}a.cache={};function i(o,t,p){var z=[""].concat(a(window.location.hostname)),w=f(window.location.pathname),y="",r,x;for(var s=0,v=z.length;s<v;s++){r=z[s];for(var q=0,u=w.length;q<u;q++){x=w[q];y=o+"="+t+";"+(r?"domain="+r+";":"")+(x?"path="+x+";":"")+(p?"expires="+p+";":"");bbccookies.set(y,true)}}}window.bbccookies={_setEverywhere:i,cookiesEnabled:function(){var o="ckns_testcookie"+Math.floor(Math.random()*100000);this.set(o+"=1");if(this.get().indexOf(o)>-1){g(o);return true}return false},set:function(o){return document.cookie=o},get:function(){return document.cookie},_setPolicy:function(o){return h.apply(this,arguments)},readPolicy:function(o){return b.apply(this,arguments)},_deletePolicy:function(){i(e,"",m)},isAllowed:function(){return true},_isConfirmed:function(){return c()!==null},_acceptsAll:function(){var o=b();return o&&!(j(o).indexOf("0")>-1)},_getCookieName:function(){return d.apply(this,arguments)},_showPrompt:function(){var o=(!this._isConfirmed()&&window.cta_enabled&&this.cookiesEnabled()&&!window.bbccookies_disable);return(window.orb&&window.orb.fig)?o&&(window.orb.fig("no")||window.orb.fig("ck")):o}};bbccookies._getPolicy=bbccookies.readPolicy;function d(p){var o=(""+p).match(/^([^=]+)(?==)/);return(o&&o.length?o[0]:"")}function j(o){return""+(o.ads?1:0)+(o.personalisation?1:0)+(o.performance?1:0)}function h(r){if(typeof r==="undefined"){r=k}if(typeof arguments[0]==="string"){var o=arguments[0],q=arguments[1];if(o==="necessary"){q=true}r=b();r[o]=q}else{if(typeof arguments[0]==="object"){r.necessary=true}}var p=new Date();p.setYear(p.getFullYear()+1);p=p.toUTCString();bbccookies.set(e+"="+j(r)+";domain=bbc.co.uk;path=/;expires="+p+";");bbccookies.set(e+"="+j(r)+";domain=bbc.com;path=/;expires="+p+";");return r}function l(o){if(o===null){return null}var p=o.split("");return{ads:!!+p[0],personalisation:!!+p[1],performance:!!+p[2],necessary:true}}function c(){var o=new RegExp("(?:^|; ?)"+e+"=(\\d\\d\\d)($|;)"),p=document.cookie.match(o);if(!p){return null}return p[1]}function b(o){var p=l(c());if(!p){p=k}if(o){return p[o]}else{return p}}function g(o){return document.cookie=o+"=;expires="+m+";"}function n(){var o='<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/bbccookies/0.6.6/script/bbccookies.js"><\/script>';if(window.bbccookies_flag==="ON"&&!bbccookies._acceptsAll()&&!window.bbccookies_disable){document.write(o)}}n()})(); /*]]>*/</script>      <script type="text/javascript"> if (! window.gloader) { window.gloader = [ "glow", {map: "http://node1.bbcimg.co.uk/glow/glow/map.1.7.7.js"}]; } </script>  <script type="text/javascript" src="http://node1.bbcimg.co.uk/glow/gloader.0.1.6.js"></script>   <script type="text/javascript" src="/staticarchive/21f604032d29edfa0a166f89bd41c95004718ed2.js"></script> <script type="text/javascript">  bbcRequireMap = {"jquery-1":"/staticarchive/6cabfa9be6f12b6fec5ddf61c2dca1dde868555e", "jquery-1.4":"/staticarchive/cce0a0919c693f9473535d6941613bad16a4b40f", "jquery-1.9":"/staticarchive/14a082a42c1074b40bedae2666d3204e142899f5", "swfobject-2":"/staticarchive/b02e05aa3b12cfe8510390c7eccecd0af315b0a6", "demi-1":"/staticarchive/a916559c328a465dafcc30056734651ac8fdbb4b", "gelui-1":"/staticarchive/0159feca9179b145c659298e302b55dc76dfa15d", "cssp!gelui-1/overlay":"/staticarchive/fee6b4a3b22c51a59dd3ddebfb1b765049c683f6.css", "istats-1":"/staticarchive/125ca583fde51c9babc88112cf0545a6d2cf53ac", "relay-1":"/staticarchive/ab39b61cf0980994246594bebe70fe460df87a42", "clock-1":"/staticarchive/7b8bb05c3fa19067c2c4c99144d21702cc15704f", "canvas-clock-1":"/staticarchive/703fd8b8a1b4ecf9cf624195bfb9691c648d3919", "cssp!clock-1":"/staticarchive/85ca997ae2f6bd2990765422dcc5b1c386c9d0cb.css", "jssignals-1":"/staticarchive/238f1d675d1626860f85815b7ab638cd41811a06", "jcarousel-1":"/staticarchive/3b38690b91f14468826c5f05f6e3da9beb55f4b1", "bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3.js", "gelui-1/widget": "/staticarchive/fcf01fd866ac629bad5a92592c208c3b04184cd3", "gelui-1/carousel": "/staticarchive/562f83c33cfe04062d95de8024ba03636cd0af4c", "gelui-1/core": "/staticarchive/d69cc93987af4e17f910996164dc15516614353e", "gelui-1/overlay": "/staticarchive/84bd061f5e14f0728caa8c933fe6d758b54fec5a", "gelui-1/autosuggest": "/staticarchive/ca81d8400ee443b0c31a47f1eea1c6872091dd48"}; require({ baseUrl: 'http://'+location.host+'/', paths: bbcRequireMap, waitSeconds: 30 }); </script>      <script type="text/javascript" src="/staticarchive/1b2549937977a29e048af5c307e7f73044570f03.js"></script>
+  <!--[if (IE 6)|(IE 7)|(IE 8)]> <style type="text/css"> html{font-size:125%} body{font-size:50%} .blq-tooltipped:hover {background-position:0 0} #blq-autosuggest ul li { zoom:normal; } .skylightTheme #blq-mast-home, .doveTheme #blq-mast-home, .tealTheme #blq-mast-home, .aquaTheme #blq-mast-home, .greenTheme #blq-mast-home, .violetTheme #blq-mast-home, .purpleTheme #blq-mast-home, .pinkTheme #blq-mast-home, .oliveTheme #blq-mast-home, .suedeTheme #blq-mast-home, .redTheme #blq-mast-home, .orangeTheme #blq-mast-home { filter: none; -ms-filter: ""; } #blq-nav-main { background-position: 96% 17px; } </style> <![endif]--> <!--[if IE 7]> <link rel="stylesheet" href="http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/style/ie7.css" type="text/css" /> <style type="text/css"> .blq-clearfix {display: inline-block} </style> <![endif]-->  <!--[if IE 6]> <link rel="stylesheet" href="http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/style/ie6.css" type="text/css" /> <style type="text/css"> .blq-js #blq-nav-foot div {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/img/panel.png', sizingMethod='image');margin-top:-139px}  #blq-container {height: 15%} #blq-mast-home span.blq-home { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod='crop', src='/staticarchive/2e00d1d53e9c3bd91993196aa19a1d88589969f0.png');} #blq-mast #blq-search-btn { background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/img/blq-search_grey_alpha.png', sizingMethod='image'); } </style>  <script type="text/javascript"> try { document.execCommand("BackgroundImageCache",false,true); } catch(e) {} </script> <![endif]-->  <script type="text/javascript"> blq.assetPath="http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/"; blqOnDomReady(function() {  blq.suggest_short = false; blq.addAutoSuggest(); });  blq.setEnvironment('live');  if (! /bbc\.co\.uk$/i.test(window.location.hostname) ) { document.documentElement.className += ' blq-not-bbc-co-uk'; }  </script>   <script type="text/javascript"> /*<![CDATA[*/ function oqsSurveyManager(w, flag) {  var defaultThreshold = 0, usePulseThreshold = (flag === 'OFF')? 1 : defaultThreshold, activeThreshold; w.oqs = w.oqs || {}; /* we support cookie override for testing */ if ( w.document.cookie.match(/(?:^|; *)ckns_oqs_usePulseThreshold=([\d.]+)/) ) { activeThreshold = RegExp.$1; } /* we support clientside override */ else if (typeof w.oqs_usePulseThreshold !== 'undefined') { activeThreshold = w.oqs_usePulseThreshold; } else { activeThreshold = usePulseThreshold; } w.oqs.usePulse = (w.Math.random() < activeThreshold); if (!w.oqs.usePulse) {  w.document.write('<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/barlesque/2.75.0/desktop/2.8/script/vendor/edr.js"><'+'/script>'); } } oqsSurveyManager(window, 'ON'); /*]]>*/ </script>  <!-- ISTATS -->
+
+    
+
+
+
+    
+
+
+
+
+
+
+ <script type="text/javascript"> /* <![CDATA[ */ define('id-statusbar-config', { 'translation_signedout': "Sign in", 'translation_signedin': "Your account", 'use_overlay' : false, 'signin_url' : "https://ssl.bbc.co.uk/id/signin", 'locale' : "en-GB", 'policyname' : "", 'ptrt' : "http://www.bbc.co.uk/" }); /* ]]> */ </script>  <script type="text/javascript"> (function () { if (! window.require) { throw new Error('idcta: could not find require'); } var map = {}; map['idapp-1'] = 'http://static.bbci.co.uk/idapp/0.63.23/modules/idapp/idapp-1'; map['idcta/idcta-1'] = 'http://static.bbci.co.uk/id/0.23.4/modules/idcta/idcta-1'; require({paths: map}); define('id-config', {"idapp":{"version":"0.63.23","hostname":"ssl.bbc.co.uk","insecurehostname":"www.bbc.co.uk","tld":"bbc.co.uk"},"idtranslations":{"version":"0.29.1"},"identity":{"baseUrl":"https:\/\/talkback.live.bbc.co.uk\/identity"},"pathway":{"name":null,"staticAssetUrl":"http:\/\/static.bbci.co.uk\/idapp\/0.63.23\/modules\/idapp\/idapp-1\/View.css"}}); })(); </script>                            
+    
+
+<script type="text/javascript">
+<!--
+	var empFlashReq = 9,
+		empUrl = "/staticarchive/42c5226a7927952a5d3bfe350aafa63f2894ffdf.swf";
+	if (document.documentElement && document.getElementById){
+		document.documentElement.className += " js";
+	}
+// -->
+</script>
+
+<!-- Glow library : core modules -->
+<script type="text/javascript">
+	gloader.load(["glow", "1.5.1", "glow.anim", "glow.embed", "glow.net", "glow.widgets.Carousel"]);
+</script>
+
+<!-- Vision Apps Comments default settings -->
+
+
+
+
+
+<!-- programme status box -->
+
+
+
+
+
+
+
+	
+
+
+<style type="text/css">
+	@import '/staticarchive/c99d28101930fbf0cfb91173109393a0e6f6bfc4.css';
+</style>
+
+
+<!-- iPlayer Syndication Scripts -->
+<!--EMP SSI Implement ...begin-->
+
+<script type="text/javascript" src="/staticarchive/296b7e9b01b56142aec1bfa4760e2eb86073b802.js"></script>  
+<script type="text/javascript" src="/staticarchive/880927e055ea2d75cc32254b7274b0e4a04822c2.js"></script>
+<!--EMP SSI Implement ...end-->
+
+
+
+
+<!-- progs scripts -->
+<script type="text/javascript" src="/staticarchive/fc0a8c5539851ff879d134ef3824edcadace2bdf.js"></script>
+<!-- (More shared scripting at page bottom, in foot.sssi include) -->
+
+<!--[if IE]><![if gte IE 6]><![endif]-->
+<style type="text/css">
+	@import '/staticarchive/e0a884de1135cf18d0431db607b9aa0e0b2a3fcb.css';
+	@import '/staticarchive/780e61520c736fc01edf8864c16b171644a3fbeb.css';
+</style>
+<!--[if IE]><![endif]><![endif]-->
+
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/cs/vision/progs/3/css/styles/s-ie.css" media="screen"/>
+<![endif]-->
+<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="/cs/vision/progs/3/css/styles/s-ie-png.css" media="screen"/>
+<![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/terms/css/styles/s-ie.css" media="screen"/>
+<![endif]-->
+<!--[if lte IE 6]>
+	<link rel="stylesheet" type="text/css" href="/terms/css/styles/s-ie-png.css" media="screen"/>
+<![endif]-->
+
+</head>
+<body id="prg-type-content" class="prg-personal prg-index-a nav-cat-sitecategory">
+                <script type="text/javascript">/*<![CDATA[*/ bbcFlagpoles_istats = 'ON'; istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=SET-COUNTER&app_type=web&ml_name=SSI&ml_version=0.23.1&language=en-GB'; /*]]>*/</script><script type="text/javascript" src="http://static.bbci.co.uk/archive_stats/modules/stats-1.0.0.js"></script>    <div id="blq-container" class="blq-lang-en-GB blq-gvl-2-8"> <div id="blq-pre-mast" lang="en-GB"> <!-- Pre mast -->  </div>  <script type="text/html" id="blq-bbccookies-tmpl"><![CDATA[ <div id="bbccookies-prompt" class="bbccookies-d"> <h2> Cookies on the BBC website </h2> <p> We use cookies to ensure that we give you the best experience on our website.<span class="bbccookies-international-message"> We also use cookies to ensure we show you advertising that is relevant to you.</span> If you continue without changing your settings, we'll assume that you are happy to receive all cookies on the BBC website. However, if you would like to, you can <a href="/privacy/cookies/managing/cookie-settings.html">change your cookie settings</a> at any time. </p> <ul> <li id="bbccookies-continue"> <button type="button" id="bbccookies-continue-button">Continue</button> </li> <li id="bbccookies-more"><a href="/privacy/cookies/bbc">Find out more</a></li></ul> </div> ]]></script> <script type="text/javascript">/*<![CDATA[*/ (function(){if(bbccookies._showPrompt()){var i=document,b=i.getElementById("blq-pre-mast"),f=i.getElementById("blq-global"),h=i.getElementById("blq-container"),c=i.getElementById("blq-bbccookies-tmpl"),a,g,e;if(b&&i.createElement){a=i.createElement("div");a.id="bbccookies";e=c.innerHTML;e=e.replace("<"+"![CDATA[","").replace("]]"+">","");a.innerHTML=e;if(f){f.insertBefore(a,b)}else{h.insertBefore(a,b)}g=i.getElementById("bbccookies-continue-button");g.onclick=function(){a.parentNode.removeChild(a);return false};bbccookies._setPolicy()}}})(); /*]]>*/</script>  <span id="blq-mast-background"></span> <div id="blq-container-inner" lang="en-GB">  <div id="blq-acc" class="blq-rst">  <p id="blq-mast-home" class="blq-no-images"><a href="/" hreflang="en-GB"> <span id="blq-blocks-wrapper"> <span class="blq-home">British Broadcasting Corporation</span><img src="/staticarchive/2e00d1d53e9c3bd91993196aa19a1d88589969f0.png" alt="BBC" id="blq-blocks" width="84" height="24" /><span class="blq-span">Home</span> </span> </a></p>  <p class="blq-hide"><strong><a id="page-top">Accessibility links</a></strong></p> <ul id="blq-acc-links">   <li><a href="#blq-content">Skip to content</a></li>  <li><a href="#blq-local-nav">Skip to local navigation</a></li>  <li><a href="#blq-nav-main">Skip to bbc.co.uk navigation</a></li> <li><a href="#blq-search">Skip to bbc.co.uk search</a></li>  <li><a href="/accessibility/">Accessibility Help</a></li>   </ul>  </div>   <div id="blq-main" class="blq-clearfix">        
+
+<!-- START PROGRAMMES CONTENT CONTAINER SHELL -->
+<div id="prg-wrapper-shell" class="prg-wrapper">
+	<h1 class="accessible">
+	Terms of Use of BBC Online Services - Personal Use
+	</h1>
+	<!-- Programmes masthead/banner (required): -->
+	<div id="prg-masthead">
+		<p>Terms of Use of BBC Online Services</p>
+	</div>
+	<!-- Main nav module (required): -->
+	<div id="blq-local-nav">
+		<ul class="nav-strip">
+			<li class="nav-cat-home nth-child-1"><a href="/terms">Home</a></li>
+<li class="nav-cat-personal"><a href="/terms/personal.shtml">Personal Use</a></li>
+<li class="nav-cat-business"><a href="/terms/business.shtml">Business Use</a></li>
+<li class="nav-cat-additional"><a href="/terms/additional.shtml">Additional Terms</a></li>
+<li class="nav-cat-help"><a href="/terms/help.shtml">Help and FAQ</a></li>
+
+
+		</ul>
+	</div>
+	<div id="blq-content">
+		<div id="prg-wrapper-featured">
+			<!-- START MAIN CONTENT AREA -->
+			<div class="prg-header">
+				<h2>Terms of Use of BBC Online Services - Personal Use</h2>
+			</div>
+			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					
+				<p>These terms were last updated on 15 October 2012</p>
+					<ul>
+						<li><a href="#1">1. What are these Terms of Use about?</a></li>
+						<li><a href="#2">2. What are BBC Online Services?</a></li>
+						<li><a href="#3">3. How can I use BBC Online Services?</a></li>
+						<li><a href="#4">4. Who owns or has rights in BBC Online Services and BBC Content?</a></li>
+						<li><a href="#5">5. How can I make contributions to the BBC?</a></li>
+						<li><a href="#6">6. What are the features of BBC Online Services and how do they work?</a></li>
+						<li><a href="#7">7. What obligations do I have under the terms?</a></li>
+						<li><a href="#8">8. How does the BBC use my personal information?</a></li>
+						<li><a href="#9">9. What are the BBC's legal obligations to me and how do the Terms limit the BBC's liability?</a></li>
+						<li><a href="#10">10. How can the BBC stop making BBC Online Services available to me and what happens if it does so?</a></li>
+						<li><a href="#11">11. What other (general) Terms of Use apply?</a></li>
+					</ul>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>
+			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="1"></a>1. What are these Terms of Use about?</h2>
+					<p><strong>1.1</strong> <strong>Why should I read these Terms of Use?</strong></p>
+<p>These terms of use (&quot;<strong>Terms of Use</strong>&quot;) tell you how you may use BBC Online Services to access, view and/or listen to BBC Content for your personal and non-business use so please read them carefully.</p>
+
+<p>Additional terms which vary or supplement these Terms of Use may apply to your access of some BBC Online Services (&quot;<strong>Additional Terms</strong>&quot;). If so, these Additional terms will be set out at the point of access to the relevant BBC Online Services. If there is any inconsistency between the Additional Terms for a particular BBC Online Service and the Terms of Use, the Additional Terms will prevail. These Terms of Use and any Additional Terms are collectively referred to as &quot;<strong>Terms</strong>&quot;. The BBC may update the Terms from time to time so please review the relevant pages regularly. If you access BBC Online Services, you agree to be legally bound by whichever version of the Terms is in force at such time. </p>
+<p>These Terms of Use apply solely to non-business users of BBC Online Services. If you are accessing and/or using BBC Online Services in a business capacity, please read the <a href="http://www.bbc.co.uk/terms/business.shtml">Terms of Use of BBC Online Services for Business Users</a>.<br />
+</p>
+<p><strong>1.2 Who makes BBC Online Services available to me and what should I do if I have questions, comments, complaints or enquiries?</strong></p>
+
+<p>BBC Online Services are made available to you by the British Broadcasting Corporation of Broadcasting House, Portland Place, London, W1A 1AA (the &quot;<strong>BBC</strong>&quot;).</p>
+
+<p>Any reference in the Terms to &quot;<strong>you</strong>&quot; or &quot;<strong>your</strong>&quot; means you as a non-business user of BBC Online Services.</p>
+<p>If you have any questions about the Terms or your use of BBC Online Services then you may find the answer at the <a href="http://www.bbc.co.uk/help">BBC Help page</a> or the <a href="http://www.bbc.co.uk/terms/help.shtml">Frequently Asked Questions</a>. If you cannot find the answer there, or if you have any comments or complaints about BBC Online Services, you can <a href="http://www.bbc.co.uk/feedback">contact the BBC</a>.</p>
+<p>If you receive any enquiries which relate to the BBC, any BBC Online Service and/or BBC Content, you should promptly <a href="http://www.bbc.co.uk/feedback">refer such enquiries to the BBC</a>. </p>
+<p>If you think that BBC Content and/or any BBC Online Service should not be appearing on a website, blog or service then please contact us. <a href="http://www.bbc.co.uk/newswatch">Contact us about BBC News content</a> or <a href="http://www.bbc.co.uk/feedback">contact us about any other content</a>. <br />
+</p>
+<p><strong>1.3</strong> <strong>Should I read any other information or terms?</strong></p>
+<p>Please also read the BBC's <a href="/privacy/">Privacy and Cookies Policy</a>, which explains how the BBC uses any information about you that it receives. The Privacy and Cookies Policy form part of the Terms. If there is any inconsistency between the Privacy and Cookies Policy and the Terms, the Terms will prevail.</p>
+<p>Some BBC services may ask you to agree to <a href="/terms/additional.shtml">Additional Terms</a> or other terms of use which will apply to your use of that particular service.</p>
+
+
+					<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>
+			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="2"></a>2. What are BBC Online Services?</h2>
+<p><strong>2.1</strong>	In the Terms:</p>
+
+<p>&quot;<strong>BBC Online Service(s)</strong>&quot; are any BBC or other BBC-authorised internet services, websites, products and/or software applications that enable you to access, view and/or listen to BBC Content on compatible devices and are identified as &quot;BBC Online Services&quot; in Additional Terms. BBC Online Services include the website at bbc.co.uk, BBC iPlayer, BBC Embedded Media Player and BBC RSS Feeds.</p>
+<p>&quot;<strong>BBC Content</strong>&quot; means audio, video, text, images or other content made available by the BBC to you through BBC Online Services and may sometimes include content which is owned or controlled by third parties which the BBC is permitted to make available to you through the relevant BBC Online Service.<br />
+</p>
+<a name="clause2point2"></a><p><strong>2.2</strong>	<strong>Availability of BBC Content</strong></p>
+<p>BBC Content is selected, edited, updated and made available to you by the BBC through BBC Online Services at its sole discretion. The period of time during which you may access, view and/or listen to BBC Content using BBC Online Services may vary. This is usually because of agreements which the BBC has with owners of rights in parts of BBC Content.</p>
+
+<p><strong>2.3</strong>	<strong>BBC Editorial Control of BBC Content</strong></p>
+<p>You acknowledge that the BBC has absolute editorial control over all BBC Content at all times.</p>
+					<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>
+			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="3"></a>3. How can I use BBC Online Services?</h2>
+<p><strong>3.1 How you may use BBC Online Services</strong>	</p>
+	<ul id="indent">
+		<li><strong>3.1.1</strong> If you comply with these Terms of Use and any applicable Additional Terms and with all relevant laws (for instance, copyright law), you may use BBC Online Services to access, view and/or listen to BBC Content for your personal and non-business use.</li>					
+		<li><strong>3.1.2</strong> As mentioned above, these Terms of Use apply solely to non-business users of BBC Online Services. If you are a business user, please read the <a href="http://www.bbc.co.uk/terms/business.shtml">Terms of Use of BBC Online Services for Business Users</a>.<br />
+		  </li>
+	</ul>
+
+<p><strong>3.2 How you may NOT use BBC Online Services</strong>	</p>	
+	<ul id="indent">
+		<li><strong>3.2.1</strong> <em>If you are outside the UK</em></li>
+		<li>You may not access, view and/or listen to certain parts of BBC Content (such as video or live television services) using BBC Online Services if you are outside the UK, although you may, in accordance with the Terms, access and view bbc.co.uk or other websites and listen to some (but not all) BBC radio content. The types of BBC Content that may be available outside the UK will usually depend on the BBC's agreements with the persons who own rights in such content.</li>
+		<li><strong>3.2.2</strong> <em>If you do not have a valid television licence</em></li>
+		<li>You may not watch television programmes using BBC Online Services on any device (including mobile phones, &quot;smart&quot; phones or devices, laptops, tablets and personal computers) at the same time (or virtually the same time) as the programmes are being broadcast, simulcast or otherwise made available by the BBC on television, unless you have a valid television licence. For more information on this requirement please see the <a href="http://www.bbc.co.uk/terms/help.shtml">Frequently Asked Questions</a> or you can contact TV Licensing by calling 0870 241 5590 or by visiting www.tvlicensing.co.uk.<br />
+		  </li>
+		<a name="generalrestrictions"></a>
+		<li><strong>3.2.3</strong>&nbsp;<em>General restrictions on how you may use BBC Online Services to access, view</em> <em>and/or listen to BBC Content</em>
+			<ul>
+			<li>(a) You may not infringe or try to infringe the privacy or other rights of other BBC Online Services users. This includes you storing or trying to store personal data or usage details of other BBC Online Services users.</li>
+			<li>(b) You may not infringe any applicable law (for instance copyright law) when using BBC Online Services to access, view or listen to BBC Content.</li>
+			<li>(c) You may not subject the BBC Online Services and/or the BBC Content to any derogatory treatment or use them in such a way that would bring the BBC into disrepute (with reference to the <a href="http://www.bbc.co.uk/guidelines/">BBC Guidelines</a>), or cause the BBC to incur liability to any third party.</li>
+			<li>(d) You agree to use BBC Online Services and access, download, view and/or listen to BBC Content as supplied to you by the BBC and you may not, and you may not assist anyone to, or attempt to, reverse engineer, decompile, disassemble, adapt, modify, copy, reproduce, lend, hire, rent, perform, sub-license, make available to the public, create derivative works from, broadcast, distribute, commercially exploit, transmit or otherwise use in any way BBC Online Services and/or BBC Content in whole or in part except to the extent permitted in these Terms of Use, any relevant Additional Terms and at law.</li>
+			<li>(e) You may not directly or indirectly charge others for accessing, viewing or listening to any BBC Content, or commercialise or attempt to re-sell the BBC Content in any way, which includes advertising or selling any goods and services which offer BBC Content including any third party software applications.</li>
+			<li>(f) You may not directly or indirectly suggest any endorsement or approval by the BBC of a product or service (for instance, a personal website) or any non-BBC entity, product or content or any belief or opinion expressed within a product or service.</li>
+			<li>(g) You may not disrupt or try to disrupt BBC Online Services. You agree not to use BBC Online Services to distribute software viruses or other harmful programs, or use BBC Online Services to engage in harmful, harassing or otherwise objectionable activity, including activity inhibiting access to BBC Online Services by others.</li>
+			<li>(h) You may not harass or cause distress or inconvenience to any other person using BBC Online Services or transmit obscene or offensive content or disrupt the normal flow of dialogue within BBC Online Services, in particular, on BBC message boards and blogs.</li>
+			<li>(i) Additional Terms for particular BBC Online Services may allow you to display the BBC Content on your website, blog or other product or service, but you may not display BBC Content where it is on or in connection with Excluded Products or Services, namely products or services which: contain pornography and sexually explicit content;<br />
+              </li>
+            <ul>
+			  <li>contain offensive text or images;</li>
+			  <li>incite hatred whether based on race, religion, gender, sexuality or otherwise, or promote, encourage or facilitate anti-social behaviour;</li>
+              <li>contain gratuitous violence or promote, encourage or facilitate violence;</li>
+              <li>promote, encourage or facilitate terrorism or other activities that risk national security;</li>
+              <li>discriminate against any specific social group or otherwise exploit vulnerable sections of society;</li>
+              <li>promote, facilitate or encourage illegal activity;</li>
+              <li>are misleading, defamatory, or that contain illegal, or otherwise actionable content under UK law;</li>
+              <li>infringe individual privacy (based on the parameters laid down in the &quot;Privacy&quot; chapter of the BBC's <a href="http://www.bbc.co.uk/guidelines/editorialguidelines/">Editorial Guidelines</a>);</li>
+              <li>put the welfare of children at risk;</li>
+              <li>promote the tobacco industry or the armaments industry (including gun clubs);</li>
+              <li>where presence of a BBC application might be perceived as damaging the BBC's reputation for accuracy and impartiality (with reference to the <a href="http://www.bbc.co.uk/guidelines/">BBC Guidelines</a>); and</li>
+              <li>bring the BBC into disrepute (with reference to the <a href="http://www.bbc.co.uk/guidelines/">BBC Guidelines</a>).</li>
+            </ul>
+            
+            <li>This list is not exhaustive and may be amended by the BBC from time to time (collectively referred to as &quot;Excluded Products or Services&quot;).<br />
+            
+			
+			</ul>
+		</li>
+	</ul>
+
+<p><strong>3.4</strong>	<strong>Parental Guidance</strong></p>
+<p>Some BBC Online Services offer a <a href="/guidance/">BBC Parental Guidance tool</a> to parents who are concerned about the suitability of BBC Content for young audiences. The BBC also offers child-friendly online services such as <a href="/iplayer/cbeebies/">CBeebies iPlayer</a> and <a href="/iplayer/cbbc/">CBBC Online Services</a>. BBC Content may contain content you consider indecent, objectionable or offensive, or which may not be suitable for young audiences. If you permit a child to use your device to access, view or listen to BBC Content on BBC Online Services you are solely responsible for deciding whether or not that BBC Content is appropriate for that child to view. If you are concerned about the suitability of BBC Content you should look at the BBC's "guidance labelling" information prior to accessing (or allowing children to access) BBC Content and/or where appropriate use the <a href="/guidance/">BBC Parental Guidance tool</a>. Please be aware that if you do not set up BBC Parental Guidance anyone using your device will be able to view all available BBC Content, including guidance-labelled programmes.</p>
+
+<p><strong>3.5</strong>	<strong>Accessibility</strong></p>
+<p>The BBC is committed to making its content accessible by as many people as possible so BBC Online Services follows the <a href="/accessibility/bbc/standards.shtml">BBC Online Accessibility Standards</a>.</p>
+					<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>
+			
+						<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="4"></a>4. Who owns or has rights in BBC Online Services and BBC Content?</h2>
+<p><strong>4.1	Rights in BBC Online Services and BBC Content</strong></p>
+<p>All copyright, trade marks, design rights, patents and other intellectual property rights (registered and unregistered) in and on BBC Online Services and BBC Content belong to the BBC and/or third parties (which may include you or other users). The BBC reserves all of its rights in BBC Content and BBC Online Services. Nothing in the Terms grants you a right or licence to use any trade mark, design right or copyright owned or controlled by the BBC or any other third party except as expressly provided in the Terms.</p>
+<p><strong>4.2	Digital Rights Management</strong></p>
+<p>So that the BBC can meet its obligations to third parties who own rights in BBC Content, the BBC may embed digital rights management security in BBC Online Services or BBC Content and/or use other content-protection measures. You may not adjust or circumvent or try to adjust or circumvent these technical measures.
  
+<!--For more information on digital rights management and why the BBC uses it, see the <a href="http://www.bbc.co.uk/webwise/tv/index.shtml?initialModule=drm">BBC Webwise Guide to Digital Rights Management</a>.-->
+</p>
+
+			  <p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="5"></a>5. How can I make contributions to the BBC?</h2>
+					<p><strong>5.1</strong> The BBC may invite you to make, share or submit your own, original contributions to BBC Online Services. These Terms of Use and any Additional Terms for particular BBC Online Services set out the rules governing how you may do so and how the BBC may use your contribution. Your contribution may include text, photographs, graphics, video or audio.</p> 
+
+                    <p><strong>5.2</strong> If you submit your contribution to the BBC you must allow the BBC to use the material in your contribution in any way it may reasonably choose on a free-of-charge basis in any media throughout the world. Any contributions you make may be moderated by the BBC which means they may be reviewed, edited and/or removed. The BBC reserves the right to remove any of your contributions if the BBC believes that they do not comply with the Terms.</p>
+                    <p><strong>5.3</strong> You grant the BBC the right to change or edit the materials in your contribution for operational and editorial reasons. The BBC may also share your contribution with trusted third parties, for instance with other users of BBC Online Services or, in the case of news-related material, the BBC may share your contribution with its overseas partners (for instance reputable foreign news broadcasters).</p>
+                    <p><strong>5.4</strong> Any copyright in your contribution will remain with you and this permission is not exclusive, so you can continue to use the material you contribute in any way including allowing others to use it.</p>
+                    <p><strong>5.5</strong> You confirm that your contribution is your own original work, is not defamatory or unlawful and does not infringe anyone else's rights (including privacy rights) and that it complies with the Terms. You also confirm that your contribution is made in your personal (rather than business) capacity and that such contribution does not unfairly promote or further any business activities and has not been contributed for commercial gain. You also confirm that you have the consent of anyone who is identifiable in your contribution or the consent of their parent/guardian if they are under 16.</p>
+                    <p><strong>5.6</strong> We normally show your name with your contribution, unless you request otherwise, but for operational reasons this is not always possible. </p>
+                    <p><strong>5.7</strong> The BBC may need to contact you for administrative or verification purposes in relation to your contribution, or in relation to particular projects. For full details of when and how we may contact you please see the BBC's <a href="http://www.bbc.co.uk/privacy/">Privacy and Cookies Policy</a> plus any specific local terms, where applicable.</p>
+                    <p><strong>5.8</strong> Please do not endanger yourself or others, take any unnecessary risks or break any laws when creating any content you may share with the BBC.</p>
+                    <p><strong>5.9</strong> As part of your contribution, the BBC may ask you to provide some personal information. Disclosure of this information shall be subject to terms set out in the BBC's <a href="http://www.bbc.co.uk/privacy/">Privacy and Cookies Policy</a>. The BBC will keep your personal information secure and will only use it for the purposes specified in the <a href="http://www.bbc.co.uk/privacy/">Privacy and Cookies Policy</a>. All personal information held by the BBC will be held in accordance with the terms of applicable data protection laws. </p>
+                    <p><strong>5.10</strong> If you do not want to grant the BBC permission to use your contributions in accordance with the Terms, please do not share with or submit them to bbc.co.uk.</p>
+                    <p><strong>5.11</strong> If you have any questions about contributing content to the BBC, please see our <a href="http://www.bbc.co.uk/terms/help.shtml">Frequently Asked Questions</a>.<br />
+                  </p>
+<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="6"></a>6. What are the features of BBC Online Services and how do they work?</h2>
+<p><strong>6.1 BBC Online Services and your device</strong></p>
+<p>You can use BBC Online Services on a variety of compatible devices. The Terms apply to your use of BBC Online Services on any device. BBC Online Services or some of the features and functionalities may not be available on all devices. The BBC makes no guarantee that all or any features of BBC Online Services will work on any particular device.</p>
+<a name="clause6point2"></a><p><strong>6.2	Interacting with BBC Online Services and other BBC Online Services users</strong></p>
+<p>If you interact with BBC Online Services and other users of BBC Online Services the BBC may need to use some of your personal information. Please read the <a href="/privacy/">Privacy and Cookies Policy</a> to find out how the BBC may use your personal information.</p>
+	<ul id="indent"><a name="bbcaccount"></a>
+		<li><strong>6.2.1</strong> <em>Do I need to have a BBC account to interact with BBC Online Services and other BBC Online Services users?</em></li>
+		<li>Some of the features and functions of BBC Online Services are only available to users who have a free BBC website login, known as &quot;BBC iD&quot;. Having a BBC iD allows you to sign in with a username and password so that you can access more features and functions, and so that you can interact with BBC services and other users of BBC services. You can create your BBC iD here.</li>
+	    <li><strong>6.2.2</strong> <em>Favourite BBC Content and Categories</em></li>
+	    <li>BBC Online Services may give you the option to choose your favourite BBC Content and/or your favourite categories of BBC Content. Your favourites will be saved to your BBC iD if you are signed in. If you are not signed in, the BBC will use cookies (if they are enabled on your device) to keep your favourites, and they will be deleted if you delete cookies from your device. Logging in with a BBC iD will allow you to access your favourites on any device that you are logged into that supports this type of BBC Online Services functionality (e.g. on your laptop or your mobile phone).</li>
+	    <li><strong>6.2.3</strong> <em>Connecting with other BBC Online Services users</em></li>
+	    <li>Some of the BBC Online Services allow you to connect with your contacts or friends from social networking services who use BBC Online Services at the same time as you do, subject to any other terms or conditions which apply to your use of the relevant social networking services.<br />
+	      </li>
+	</ul>
+<p><strong>6.3	Advertisements</strong></p>
+	<p>International users may see advertisements on some BBC Online Services. These advertisements are provided and delivered by the BBC's commercial arm, BBC Worldwide Limited.</p>	
+<p><strong>6.4	Links</strong></p>
+	<p>BBC Online Services and/or BBC Content may contain hyperlinks to websites and resources owned and operated by third parties. These third party websites and resources have their own terms of use and we urge you to review them. We do not accept any responsibility or liability for any third party websites and resources and your access and use of such services and content is at your own risk.</p>
+
+			  <p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="7"></a>7. What obligations do I have under the Terms?</h2>
+<p><strong>7.1	Compliance with the Terms</strong></p>
+<p>You must comply with the Terms, in particular the <a href="#generalrestrictions">General restrictions on how you may use BBC Online Services</a>.</p>
+<p><strong>7.2	Expenses, equipment and software</strong></p>
+<p>You are solely responsible for paying all expenses you may incur when you access or use BBC Online Services or access or download BBC Content including your internet or data service provider charges and any excess charges to that provider if you have a limit on the amount of data you can download together with all costs of the equipment and software you need to connect to and use BBC Online Services. Accessing and using some BBC Online Services features to access, download, view or listen to BBC Content (especially video or audio) may lead to substantial bandwidth usage by you which can be expensive so you should be careful you do not exceed any 'bandwidth cap' on your account with your internet or data service provider. The BBC is not responsible if your equipment or software is not compatible with any BBC Online Service. BBC Content may be streamed or downloaded to your device from servers owned and operated by the BBC or (on behalf of the BBC) by third-party content distribution networks to enhance your experience when you watch or listen to BBC Content. </p>
+<p><strong>7.3	Managing your account details and activity</strong></p>
+<p>You are solely responsible for keeping your BBC account username and password (if you have them) confidential and you are responsible for all activity that occurs under your BBC account. Please see <a href="#bbcaccount">clause 6.2.1</a> for more information on BBC accounts and why you might want to create one.</p>
+
+					<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="8"></a>8. How does the BBC use my personal information?</h2>
+					<p>You can read how the BBC uses your personal information in the BBC's <a href="/privacy/">Privacy and Cookies Policy</a> which forms part of the Terms.</p>
+					<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="9"></a>9. What are the BBC's legal obligations to me and how do the terms limit the BBC's liability?</h2>
+<p><strong>9.1	The basis on which BBC makes the BBC Online Services available to you</strong></p>
+<p>The BBC does not guarantee that all BBC Content and/or BBC Online Services will always be available or be uninterrupted, timely, secure or free from bugs, viruses, errors and omissions.</p>
+<p>The BBC reserves its right to modify, suspend or discontinue all or part of any BBC Online Service or any part of the BBC Content without giving you any notice.</p>
+<p>Any commentary, opinions or other materials included in BBC Content are not intended to amount to advice on which you should rely.<br />
+</p>
+<p><strong>9.2	Types of loss or damage the BBC is not responsible for</strong></p>
+<p>The BBC is not responsible for the following kinds of loss or damage which may arise from your use of BBC Online Services:</p>
+	<ul>
+		<li><strong>9.2.1</strong> loss or damage suffered by you or someone else when the BBC complies with the Terms;</li>
+		<li><strong>9.2.2</strong> loss or damage which is caused by the BBC when it does not comply with the Terms but which the BBC and you could not anticipate nor expect to happen when you started using BBC Online Services;</li>
+	    <li><strong>9.2.3</strong> any loss which is indirect or a side effect of the main loss or damage and which the BBC and you could not anticipate nor expect to happen when you started using BBC Online Services, for instance if you lose revenue or salary, profit, opportunity or reputation;</li>
+	    <li><strong>9.2.4</strong> provided the BBC complies with its <a href="http://www.bbc.co.uk/privacy/">Privacy and Cookies Policy</a>, any loss of data or damage to your device or software; and</li>
+	    <li><strong>9.2.5</strong> any loss or damage if BBC Online Services are not provided to you or are interrupted or suspended or if the BBC does not comply with the Terms because of events beyond the BBC's control, such as an act of God, accident, fire, lockout, strike or other official or unofficial labour dispute, civil commotion, decision of the BBC Trust, rule or order or act of Government or other act or event beyond the reasonable control of the BBC. <br />
+	      </li>
+	</ul>
+
+<p>Nothing in the Terms excludes or limits either the BBC's or your liability for death or personal injury caused by negligence or for fraud.</p>
+
+<p><strong>9.3	Your legal rights as a consumer</strong></p>
+<p>As a consumer, you may have certain legal rights regarding claims in respect of losses caused by the BBC's negligence or the failure by the BBC to carry out its obligations. Nothing in the Terms is intended to limit your legal rights as a consumer. For further information about your legal rights you can contact your local authority Trading Standards Department or Citizens Advice Bureau.</p>
+			  <p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="10"></a>10. How can the BBC stop making BBC Online Services available to me and what happens if it does so?</h2>
+					<p><strong>10.1	The BBC's right to stop making BBC Online Services available to you</strong></p>
+<p>The BBC reserves the right to stop making all or any part of the BBC Online Services available to you with immediate effect and without notice if:</p>
+	<ul>
+		<li>10.1.1 in its sole reasonable opinion you are using the BBC Content, BBC Online Services and/or any other BBC service, inappropriately (for instance harassing or causing distress or inconvenience to any other person), incompetently or in any way that may constitute derogatory treatment of the BBC or might bring the BBC into disrepute or in a way that might be considered to be prejudicial to the image of the BBC (with reference to the <a href="http://www.bbc.co.uk/guidelines">BBC Guidelines</a>);</li>
+		<li>10.1.2 you breach the Terms in a way that cannot be corrected, or you fail to correct a breach within a reasonable period of time if the BBC asks you to do so; or</li>
+	    <li>10.1.3 there is, in the BBC's reasonable opinion, any reason why the BBC Online Services must be withdrawn.<br />
+	      </li>
+	</ul>
+
+	<p><strong>10.2	What happens if the BBC stops making BBC Online Services available to me? </strong></p>
+<p>If the BBC stops making BBC Online Services available to you, you may be asked to delete all BBC Content downloaded by you to your device(s).</p>
+			  <p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>			<!-- START Row - 2 columns (index RHN) -->
+			<div class="p-grp p-grp-aa p-grp-theme-n nth-row-n">
+				<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				<div class="promo">
+					<h2><a name="11"></a>11. What other (general) Terms of Use apply?</h2>
+<p><strong>11.1 What happens if the BBC does not enforce a right against me?</strong></p>
+<p>If the BBC decides not to exercise or enforce any right that it has against you at a particular time, then this does not prevent the BBC from later deciding to exercise or enforce that right.</p>
+<p><strong>11.2 What happens if any part of the Terms is found to be ineffective?</strong></p>
+<p>If any part of the Terms is found to be illegal, invalid or otherwise unenforceable by a court or regulator, then, where required, that part shall be deleted from the Terms and the remaining parts of the Terms will continue to be enforceable.</p>
+<p><strong>11.3 Third parties</strong></p>
+<p>The Terms do not create or infer any rights that are enforceable by any person who is not party to the Terms.</p>
+<p><strong>11.4 Transfer of rights</strong></p>
+<p>You may not assign, sub-license or otherwise transfer any of your rights and obligations in the Terms to any other person.</p>
+<p><strong>11.5 What happens if there is a dispute arising out of the Terms?</strong></p>
+<p>Any disputes arising out of the Terms will be governed by and interpreted in accordance with the laws of England and Wales (or the laws of Scotland or Northern Ireland if you live there). If you choose to bring proceedings in connection with the Terms you must do so in the courts of England and Wales unless you live in Scotland or Northern Ireland, in which case you can choose to bring proceedings there.<br />
+  <br />
+</p>
+<p>
+						<a href="#page-top">Skip to top</a>
+					</p>
+				</div>
+				<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+			</div>
+				
+			</div>
+		<!-- END MAIN CONTENT AREA -->
+		<!-- START RIGHT HAND CONTENT AREA
+		(APS, MPU ad, related content etc) -->
+		<div id="prg-wrapper-extra">
+			<!-- INSERT more supplementary right-hand components HERE -->
+						<!-- New row: -->
+			<div class="p-grp p-grp-theme-n nth-row-n">
+				<!-- [ INSERT row contents HERE ] -->
+				<!-- New module: -->
+				<div class="p-mod nth-child-n">
+					<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+					<div class="promo">
+						<h3>Terms of Use</h3>
+						<p>
+							You are in the Terms of Use section of the BBC website.
+						</p>
+					</div>
+					<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				</div>
+				<!-- end module -->
+			</div>
+			<!-- End row -->
+						<!-- New row: -->
+			<div class="p-grp p-grp-theme-n nth-row-n">
+				<!-- [ INSERT row contents HERE ] -->
+				<!-- New module: -->
+				<div class="p-mod nth-child-n">
+					<div class="cap-t"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+					<div class="promo">
+						<h3>Useful Links</h3>
+						<p>
+							<a href="/terms/additional.shtml">Additional terms</a>
+						</p>
+						<p>
+							<a href="/privacy">Privacy &amp; Cookies Policy</a>
+						</p>
+						<p>
+							<a href="/guidelines/editorialguidelines">BBC Editorial Guidelines</a>
+						</p>
+						<p>
+							<a href="/accessibility/bbc/standards.shtml">BBC Online Accessibility Standards</a>
+						</p>
+						<p>
+							<a href="/webwise/">BBC Webwise Guides</a>
+						</p>
+						<p>
+							<a href="/terms/downloads/Personal_Use_Terms_121012.pdf">Terms of Use of BBC Online Services - Personal use (download as PDF)</a>
+						</p>
+
+						<p><strong>External Link:</strong></p>
+						<p>
+							<a href="http://www.tvlicensing.co.uk">TV Licensing</a>
+						</p>						
+					</div>
+					<div class="cap-b"><div class="cnr-r"></div><div class="cnr-l"></div></div>
+				</div>
+				<!-- end module -->
+			</div>
+			<!-- End row -->
+		</div>
+		<!-- END RIGHT HAND CONTENT (APS, MPU ad, related content etc) -->
+	</div>
+	<!-- END PROGRAMMES CONTAINER SHELL -->
+</div>
+<!-- END BLQ-CONTENT -->
+               </div>   <div id="blq-mast" class="blq-rst blq-default-domestic blq-new-nav" lang="en-GB"> <div id="blq-sign-in">   <div id="id-status" class="blq-id-v4"> <div class="id-out id-gel"> <h2 class="blq-hide">BBC iD</h2> <a href="https://ssl.bbc.co.uk/id/status" id="blq-idstatus-link"> <span class="id-icon"> <span></span> </span> <span id="blq-idstatus-text"> BBC iD </span> <span class="id-spinner"></span> <span class="blq-dropdown-arrow"> <span></span> </span> </a> </div> <div id="id-status-nav" > <div class="id-in blq-rst"> <ul> <li> <a name="idDash" class="blq-nogo has-ptrt idDash" href="https://ssl.bbc.co.uk/id/settings"> Settings </a> </li> <li> <a name="idSignout" class="blq-nogo has-ptrt idSignout" href="https://ssl.bbc.co.uk/id/signout"> Sign out </a> </li> </ul> </div> </div> </div>          </div>  <form method="get" id="blq-search-form" action="http://search.bbc.co.uk/search" accept-charset="utf-8"> <p id="blq-nav-search">  <input type="hidden" name="go" value="toolbar" />  <input type="hidden" name="uri" value="/terms/personal.shtml" />    <label for="blq-search" class="blq-hide">Search term:</label> <input id="blq-search" type="text" name="q" value="" maxlength="128" /> <input id="blq-search-btn" type="submit" value="Search" /> </p> </form>   <h2 class="blq-hide">BBC navigation</h2> <ul id="blq-nav-main" class="blq-not-uk">      <li id="blq-nav-n"><a href="http://www.bbc.co.uk/news/" hreflang="en-GB">News</a></li>  <li id="blq-nav-s"><a href="http://www.bbc.co.uk/sport/" hreflang="en-GB">Sport</a></li> <li id="blq-nav-w"><a href="http://www.bbc.co.uk/weather/" hreflang="en-GB">Weather</a></li>  <li id="blq-nav-i">  <a href="/iplayer/" hreflang="en-GB">iPlayer</a>  </li>  <li id="blq-nav-t"><a href="/tv/" hreflang="en-GB">TV</a></li>  <li id="blq-nav-r"><a href="/radio/" hreflang="en-GB">Radio</a></li> <li id="blq-nav-m"><a href="#blq-nav">More&hellip;</a></li>  </ul> </div>  <div id="blq-nav" class="blq-orange"> <div id="blq-nav-links" class="blq-clearfix" lang="en-GB"> <div id="blq-nav-links-inner">  <ul class="blq-nav-sub blq-first"> <li><a href="/cbbc/">CBBC</a></li> <li><a href="/cbeebies/">CBeebies</a></li> <li><a href="/comedy/">Comedy</a></li> <li><a href="/food/">Food</a></li> <li><a href="/history/">History</a></li> </ul> <ul class="blq-nav-sub"> <li><a href="/learning/">Learning</a></li> <li><a href="/music/">Music</a></li> <li><a href="/science/">Science</a></li> <li><a href="http://www.bbc.com/earth/">Earth</a></li> <li><a href="/local/">Local</a></li> </ul> <ul class="blq-nav-sub blq-last"> <li><a href="/northernireland/">Northern Ireland</a></li> <li><a href="/scotland/">Scotland</a></li> <li><a href="/wales/">Wales</a></li> <li id="blq-az"><a href="/a-z/">Full A-Z<span class="blq-hide"> of BBC sites</span></a></li> </ul>  </div> </div> </div>  <!--[if IE 6]> <div id="blq-ie6-upgrade"> <p> <span>You're using the Internet Explorer 6 browser to view the BBC website. Our site will work much better if you change to a more modern browser. It's free, quick and easy.</span> <a href="http://www.browserchoice.eu/">Find out more <span>about upgrading your browser</span> here&hellip;</a> </p> </div> <![endif]-->  <div id="blq-foot" lang="en-GB" class="blq-rst blq-clearfix blq-foot-grey">  <div id="blq-footlinks"> <h2 class="blq-hide">BBC links</h2> <ul> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list">  <li><a href="http://m.bbc.co.uk/">Mobile site</a></li>      <li><a href="/terms/">Terms of Use</a></li>       <li><a href="/aboutthebbc/">About the BBC</a></li>  </ul> </li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list">       <li><a href="/privacy/">Privacy</a></li>       <li><a href="/accessibility/">Accessibility Help</a></li>  </ul> </li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list">       <li><a href="/privacy/cookies/about">Cookies</a></li>        <li><a href="/contact/">Contact the BBC</a></li>   </ul> </li> <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list">      <li><a href="/guidance/">Parental Guidance</a></li>  </ul> </li>  </ul> </div>   <div id="blq-foot-blocks" class="blq-footer-image-light"><img src="/staticarchive/a8e42f8fe987b7cc9bf2d43b74b2c74b2448d2e3.png" width="84" height="24" alt="BBC" /></div> <p id="blq-disclaim"><span id="blq-copy">BBC &copy; 2014</span> <a href="/help/web/links/">The BBC is not responsible for the content of external sites. Read more.</a></p> <div id="blq-obit"><p><strong>This page is best viewed in an up-to-date web browser with style sheets (CSS) enabled. While you will be able to view the content of this page in your current browser, you will not be able to get the full visual experience. Please consider upgrading your browser software or enabling style sheets (CSS) if you are able to do so.</strong></p></div> </div> </div>  </div>  <script type="text/javascript"> if (typeof require !== 'undefined') { require(['istats-1'], function(istats){ istats.track('external', { region: document.getElementById('blq-main') }); istats.track('download', { region: document.getElementById('blq-main') }); }); } </script>                  
+
+<!-- progs scripts -->
+<script type="text/javascript" src="/staticarchive/04eae7b519428be008ed3e477d96c4cc2d7221e3.js"></script>
+<script type="text/javascript" src="/staticarchive/c22b3ff9cd32a6a8c384665fef98785674d88408.js"></script>
+<script type="text/javascript" src="/staticarchive/3ded77041adfe97ffe90a865be9de0ceb0bcd249.js"></script>
+</body>
+</html>
