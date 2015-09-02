@@ -1,1 +1,989 @@
- 
+<!DOCTYPE html>
+<html id=Template2a class="" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema">
+<head>
+<meta charset=UTF-8 />
+<meta name=exp_name scheme=DMINSTR2 content=desktop:test3 />
+<meta name=google-site-verification content=2Sjuk6i2I0L5DymnlDCPrXO9Gl4PkbmX_VlrJQGy0Qg />
+<meta name=msvalidate.01 content=5F1B06EBE88583F1C05B9114514366ED />
+<meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+<meta name=siteid scheme=DMINSTR2 content=CRCC />
+<meta name=wa_lgdin scheme=DMINSTR2 content=0 />
+<meta name=wa_lgsrc scheme=DMINSTR2 content=""/>
+<meta name=viewport content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVVVVGwADVVFWAwg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta name=application-name content=CRACKED.com />
+<meta name=msapplication-tooltip content="Start at CRACKED.com"/>
+<meta name=msapplication-starturl content="/"/>
+<meta name=msapplication-navbutton-color content="#145E9D"/>
+<meta name=msapplication-TileColor content="#2D383E"/>
+<meta name=msapplication-square310x310logo content="http://i.crackedcdn.com/mstile-310x310.png"/>
+<meta name=msapplication-wide310x150logo content="http://i.crackedcdn.com/mstile-310x150.png"/>
+<meta name=msapplication-square150x150logo content="http://i.crackedcdn.com/mstile-150x150.png"/>
+<meta name=msapplication-TileImage content="http://i.crackedcdn.com/mstile-144x144.png"/>
+<meta name=msapplication-square70x70logo content="http://i.crackedcdn.com/mstile-70x70.png"/>
+<meta name=msapplication-task content="name=Articles; action-uri=/funny-articles.html; icon-uri=http://i.crackedcdn.com/favicon.ico"/>
+<meta name=msapplication-task content="name=Columnists; action-uri=/blog; icon-uri=http://i.crackedcdn.com/favicon.ico"/>
+<meta name=msapplication-task content="name=Photoplasty; action-uri=/photoplasty/; icon-uri=http://i.crackedcdn.com/favicon.ico"/>
+<meta name=msapplication-task content="name=Videos; action-uri=/funny-videos.html; icon-uri=http://i.crackedcdn.com/favicon.ico"/>
+<meta name=msapplication-task content="name=Roll The Die – Random Content; action-uri=http://ajax.cracked.com/random/; icon-uri=http://i.crackedcdn.com/favicon.ico"/>
+<meta name=apple-mobile-web-app-capable content=yes />
+<meta name=apple-mobile-web-app-title content=Cracked.com />
+<link rel=apple-touch-icon-precomposed sizes=180x180 href="http://i.crackedcdn.com/apple-touch-icon-180x180-precomposed.png"/>
+<link rel=apple-touch-icon-precomposed sizes=152x152 href="http://i.crackedcdn.com/apple-touch-icon-152x152-precomposed.png"/>
+<link rel=apple-touch-icon-precomposed sizes=120x120 href="http://i.crackedcdn.com/apple-touch-icon-120x120-precomposed.png"/>
+<link rel=apple-touch-icon-precomposed sizes=76x76 href="http://i.crackedcdn.com/apple-touch-icon-76x76-precomposed.png"/>
+<link rel=apple-touch-icon-precomposed href="http://i.crackedcdn.com/apple-touch-icon-precomposed.png"/>
+<link rel=icon href="http://i.crackedcdn.com/favicon.ico"/>
+<link rel=icon type="image/png" href="http://i.crackedcdn.com/favicon-196x196.png" sizes=196x196 />
+<link rel=icon type="image/png" href="http://i.crackedcdn.com/favicon-128x128.png" sizes=128x128 />
+<link rel=icon type="image/png" href="http://i.crackedcdn.com/favicon-96x96.png" sizes=96x96 />
+<link rel=icon href="http://i.crackedcdn.com/favicon.ico" sizes=64x64 />
+<link rel=icon href="http://i.crackedcdn.com/favicon.ico" sizes=32x32 />
+<link rel=icon href="http://i.crackedcdn.com/favicon.ico" sizes=16x16 />
+<meta name=p:domain_verify content=ad14342da7209e1d26b552e8a0b665c7 />
+<meta name=og:name content="Terms &amp;amp; Conditions | Cracked.com"/>
+<title>Terms &amp;amp; Conditions | Cracked.com</title>
+<!--[if lt IE 9]>
+		<script src="http://i.crackedcdn.com/ui/mashed/ie_lt9_only-M2Y1YmQ5ZDQ.js"></script>
+		<![endif]-->
+<script>window._newsroom=window._newsroom||[];!function(e,f,u){e.async=1;e.src=u;f.parentNode.insertBefore(e,f);}(document.createElement('script'),document.getElementsByTagName('script')[0],'//c2.taboola.com/nr/cracked/newsroom.js');</script>
+<script src="//load.sumome.com/" data-sumo-site-id=3e3dcd58982fe9b04f514d0564aceae05fba8152199eaf20503a1d135bf8ff95 async=async></script>
+<link href='//fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel=stylesheet type='text/css'>
+<link type="text/css" href="http://i.crackedcdn.com/ui/mashed/common_header-Mzc0NzhkMGM.css" rel=stylesheet />
+<link type="text/css" href="http://i.crackedcdn.com/ui/mashed/footer-pages-YzQwNTJhZTU.css" rel=stylesheet />
+<script type="text/javascript" src="http://i.crackedcdn.com/ui/shared/scripts/ad_detect.js"></script>
+<script type="text/javascript" src="http://i.crackedcdn.com/ui/mashed/common_header-MzZjMWY4MWE.js"></script>
+<script type="text/javascript">var googleAdSlots=googleAdSlots||{};var CrackedJS=CrackedJS||{};googletag.cmd.push(function(){if(CKDFP.getNetworkId()==8422){googleAdSlots["1x1"]=googletag.defineSlot("/"+CKDFP.getNetworkId()+"/dmd.cracked/content",[1,1],"1x1").addService(googletag.pubads());}
+googleAdSlots["4x4"]=googletag.defineSlot("/"+CKDFP.getNetworkId()+"/dmd.cracked/content",[4,4],"4x4").addService(googletag.pubads()).setTargeting("loc","atf");googleAdSlots["OutOfPage"]=googletag.defineOutOfPageSlot("/"+CKDFP.getNetworkId()+"/dmd.cracked/content",'outofpage').addService(googletag.pubads());googletag.pubads().setTargeting("envr","test3");googletag.pubads().setTargeting("ugc","0");googletag.pubads().setTargeting("twig","0");googletag.pubads().setTargeting("rating","pg");googletag.pubads().setTargeting("dc_ref",encodeURIComponent(top.window.location));var googleAdCounter=0;var googleEventIDTag=null;googletag.pubads().addEventListener("slotRenderEnded",function(e){if(googleEventIDTag==null){for(testTag in e.slot["b"]){if(testTag.length=="1"&&typeof e.slot["b"][testTag]=="string"&&e.slot["b"][testTag].match(/\dx\d/)){googleEventIDTag=testTag;break;}}}
+var body=document.getElementsByTagName("body")[0];if(e.slot["b"][googleEventIDTag]=="728x90_990x90"||e.slot["b"][googleEventIDTag]=="728x90_990x90_970x250"){if(e.isEmpty===true){document.getElementsByClassName("mainAd")[0].style.display="none";document.getElementsByClassName("headerWrapper")[0].style.marginBottom="120px";}else{body.className=body.className.replace(" noOPA","");}}
+if(e.slot["b"][googleEventIDTag]=="1x1"){if(e.isEmpty===false){document.getElementsByTagName('html')[0].setAttribute("branded",true);body.className=body.className.replace(" noSkin","");}}
+googleAdCounter++;if(googleAdCounter==Object.keys(googleAdSlots).length){if(typeof CrackedJS.initRan!=="undefined"&&CrackedJS.initRan===false){CrackedJS.init();}else{CrackedJS.autoRunInit=true;}}});googletag.pubads().collapseEmptyDivs();googletag.pubads().setTargeting("ksg",Krux.segments);googletag.pubads().setTargeting("kuid",Krux.user);googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>
+<script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-143148-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+<script src="//pagead2.googlesyndication.com/pagead/js/google_top_exp.js"></script>
+<script type="text/javascript">window._tfa=window._tfa||[];_tfa.push({notify:"action",name:'page_view'});</script>
+<script src="//cdn.taboola.com/libtrc/cracked-sc/tfa.js"></script>
+</head>
+<body id="" class=" noSkin noOPA">
+<header class=headerWrapper>
+<div class=mainHeader>
+<div class=headerContainer>
+<div class=HorrorEyeGlow></div>
+<a href="http://www.cracked.com" class=logo title=Cracked></a>
+<div class=topHeader>
+<div class="topHeaderLoginWrapper right">
+<ul class=inlineList id=headerLogin>
+<li><a href="http://www.cracked.com/users/register/" id=registerButton rel="#Register" class=url>Register </a></li>
+<li> |</li>
+<li><a href="http://www.cracked.com/login/login-popup/" class="LoginButton url" id=LoginButton onClick="return false;"> Login</a></li>
+</ul>
+</div>
+<a href="/store/" target=_blank class="crackedStoreButton houseTopNavButton"></a>
+<div id=4x4 class=ad4x4>
+<script type='text/javascript'>if(typeof googleAdSlots["4x4"]!=="undefined")googletag.cmd.push(function(){googletag.display('4x4');});</script>
+</div>
+</div>
+<nav class=primaryNav>
+<ul>
+<li class="first hasSubMenu noRelativePosition" data-header=article>
+<a href="http://www.cracked.com/funny-articles.html">Articles <i class=icon-caret-down></i></a>
+<ul data-header-target=article>
+<li>
+<div class="rightColumnHeader active" id=header-nav-articles>
+</div>
+<div class=leftColumnHeader>
+<h3>BROWSE BY</h3>
+<div class="headerDemoOne default-skin">
+<ul class="headerListMenu scrollPanel">
+<li><a href="http://www.cracked.com/humor-movies-tv.html" title=""><i class=icon-caret-right></i> <span>Movies & TV</span></a></li>
+<li><a href="http://www.cracked.com/humor-music.html" title=""><i class=icon-caret-right></i> <span>Music</span></a></li>
+<li><a href="http://www.cracked.com/humor-celebrities.html" title=""><i class=icon-caret-right></i> <span>Celebrities</span></a></li>
+<li><a href="http://www.cracked.com/humor-tech.html" title=""><i class=icon-caret-right></i> <span>Tech</span></a></li>
+<li><a href="http://www.cracked.com/humor-sex.html" title=""><i class=icon-caret-right></i> <span>Sex</span></a></li>
+<li><a href="http://www.cracked.com/humor-sports.html" title=""><i class=icon-caret-right></i> <span>Sports</span></a></li>
+<li><a href="http://www.cracked.com/humor-news.html" title=""><i class=icon-caret-right></i> <span>News</span></a></li>
+<li><a href="http://www.cracked.com/humor-science.html" title=""><i class=icon-caret-right></i> <span>Science</span></a></li>
+<li><a href="http://www.cracked.com/humor-history.html" title=""><i class=icon-caret-right></i> <span>History</span></a></li>
+<li><a href="http://www.cracked.com/humor-weird-world.html" title=""><i class=icon-caret-right></i> <span>Weird World</span></a></li>
+<li><a href="http://www.cracked.com/humor-video-games.html" title=""><i class=icon-caret-right></i> <span>Video Games</span></a></li>
+</ul>
+</div>
+<hr/>
+<a href="http://www.cracked.com/funny-articles.html" title="See More" class=seeMoreBtn>All
+Articles</a>
+</div>
+</li>
+</ul>
+</li>
+<li class="hasSubMenu noRelativePosition" data-header=videos>
+<a href="http://www.cracked.com/funny-videos.html">Videos <i class=icon-caret-down></i></a>
+<ul data-header-target=videos>
+<li>
+<div class="rightColumnHeader active" id=header-nav-videos>
+</div>
+<div class=leftColumnHeader>
+<h3>BROWSE BY</h3>
+<div class="headerDemoOne default-skin">
+<ul class="headerListMenu scrollPanel" id=header-nav-videos-menu>
+<li><a href="http://www.cracked.com/series/antiheroes/"><i class=icon-caret-right></i> <span>Antiheroes</span></a></li>
+<li><a href="http://www.cracked.com/series/after-hours/"><i class=icon-caret-right></i> <span>After Hours</span></a></li>
+<li><a href="http://www.cracked.com/series/adventures-in-jedi-school/"><i class=icon-caret-right></i> <span>Adventures in Jedi School</span></a></li>
+<li><a href="http://www.cracked.com/series/rom-com/"><i class=icon-caret-right></i> <span>Rom.com</span></a></li>
+<li><a href="http://www.cracked.com/series/welcome-back-potter/"><i class=icon-caret-right></i> <span>Welcome Back, Potter</span></a></li>
+<li><a href="http://www.cracked.com/series/artist-in-residency/"><i class=icon-caret-right></i> <span>Artist in Residency</span></a></li>
+<li><a href="http://www.cracked.com/series/todays-topic/"><i class=icon-caret-right></i> <span>Today's Topic</span></a></li>
+<li><a href="http://www.cracked.com/series/the-spit-take/"><i class=icon-caret-right></i> <span>The Spit Take</span></a></li>
+<li><a href="http://www.cracked.com/series/obsessive-pop-culture-disorder/"><i class=icon-caret-right></i> <span>Obsessive Pop Culture Disorder</span></a></li>
+<li><a href="http://www.cracked.com/series/8-bits/"><i class=icon-caret-right></i> <span>8-Bits</span></a></li>
+<li><a href="http://www.cracked.com/series/marvels-science/"><i class=icon-caret-right></i> <span>Marvels of the Science</span></a></li>
+<li><a href="http://www.cracked.com/series/dispatches-from-space/"><i class=icon-caret-right></i> <span>Dispatches From Goddamn Space</span></a></li>
+<li><a href="http://www.cracked.com/series/does-not-compute/"><i class=icon-caret-right></i> <span>Does Not Compute</span></a></li>
+<li><a href="http://www.cracked.com/series/the-katie-willert-experience/"><i class=icon-caret-right></i> <span>The Katie Willert Experience</span></a></li>
+<li><a href="http://www.cracked.com/series/cracked-advice-board/"><i class=icon-caret-right></i> <span>Cracked Advice Board</span></a></li>
+<li><a href="http://www.cracked.com/series/agents-cracked/"><i class=icon-caret-right></i> <span>Agents of Cracked</span></a></li>
+<li><a href="http://www.cracked.com/series/cracked-tv/"><i class=icon-caret-right></i> <span>Cracked TV</span></a></li>
+<li><a href="http://www.cracked.com/series/lonny/"><i class=icon-caret-right></i> <span>Lonny</span></a></li>
+<li><a href="http://www.cracked.com/series/cracked-cut-ups/"><i class=icon-caret-right></i> <span>Cracked Cut-Ups</span></a></li>
+<li><a href="http://www.cracked.com/series/stuff-that-must-have-happened/"><i class=icon-caret-right></i> <span>Stuff That Must Have Happened</span></a></li>
+<li><a href="http://www.cracked.com/series/the-start-up/"><i class=icon-caret-right></i> <span>The Start Up</span></a></li>
+<li><a href="http://www.cracked.com/series/sketch-competition/"><i class=icon-caret-right></i> <span>Sketch Competition</span></a></li>
+</ul>
+</div>
+<hr/>
+<a href="http://www.cracked.com/funny-videos.html" title="See More" class=seeMoreBtn>All
+Videos</a>
+</div>
+</li>
+</ul>
+</li>
+<li class="hasSubMenu noRelativePosition" data-header=columnists>
+<a href="http://www.cracked.com/blog">Columnists <i class=icon-caret-down></i></a>
+<ul data-header-target=columnists>
+<li>
+<div class="rightColumnHeader active" id=header-nav-blogs>
+</div>
+<div class=leftColumnHeader>
+<h3>BROWSE BY</h3>
+<div class="headerDemoOne default-skin">
+<ul class="headerListMenu scrollPanel">
+<li><a href="http://www.cracked.com/blog/author/auroratudor" title=""><i class=icon-caret-right></i><span>Kathy Benjamin</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Sorenb" title=""><i class=icon-caret-right></i><span>Soren Bowie</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Robert+Brockway" title=""><i class=icon-caret-right></i><span>Robert Brockway</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Adam+Tod+Brown" title=""><i class=icon-caret-right></i><span>Adam Tod Brown</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Robotman" title=""><i class=icon-caret-right></i><span>Chris Bucholz</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/John+Cheese" title=""><i class=icon-caret-right></i><span>John Cheese</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/MisterClay" title=""><i class=icon-caret-right></i><span>Felix Clay</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/sephira" title=""><i class=icon-caret-right></i><span>C. Coville</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Fortey" title=""><i class=icon-caret-right></i><span>Ian Fortey</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/G-Stone" title=""><i class=icon-caret-right></i><span>Gladstone</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Mortal+Wombat" title=""><i class=icon-caret-right></i><span>Christina H.</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/hereinidaho" title=""><i class=icon-caret-right></i><span>Kristi Harrison</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Cody+Johnston" title=""><i class=icon-caret-right></i><span>Cody Johnston</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/MojitoJackson" title=""><i class=icon-caret-right></i><span>Cyriaque Lamar</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/BrendanMcGinley" title=""><i class=icon-caret-right></i><span>Brendan McGinley</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/LukeMcKinney" title=""><i class=icon-caret-right></i><span>Luke McKinney</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/daniel./" title=""><i class=icon-caret-right></i><span>Daniel O'Brien</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Jack+Obrien" title=""><i class=icon-caret-right></i><span>Jack O'Brien</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Collision/" title=""><i class=icon-caret-right></i><span>Pauli Poisuo</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/limpl0uie/" title=""><i class=icon-caret-right></i><span>Luis Prada</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/chickenface" title=""><i class=icon-caret-right></i><span>Tom Reimann</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/winstonrowntree" title=""><i class=icon-caret-right></i><span>Winston Rowntree</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Antagonasty/" title=""><i class=icon-caret-right></i><span>J. F. Sargent</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/seanbaby" title=""><i class=icon-caret-right></i><span>Seanbaby</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/Arkard" title=""><i class=icon-caret-right></i><span>C. J. Strusiewicz</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/MichaelSwaim" title=""><i class=icon-caret-right></i><span>Michael Swaim</span></a></li>
+<li><a href="http://www.cracked.com/blog/author/David+Wong" title=""><i class=icon-caret-right></i><span>David Wong</span></a></li>
+</ul>
+</div>
+<hr/>
+<a href="http://www.cracked.com/blog" title="See More" class=seeMoreBtn>All Columnists</a>
+</div>
+</li>
+</ul>
+</li>
+<li><a href="http://www.cracked.com/forums">Forums</a></li>
+<li><a href="http://www.cracked.com/personal-experiences/">Personal Experiences</a></li>
+<li><a href="http://www.cracked.com/photoplasty">Photoplasty</a></li>
+<li class="navIcon hasSubMenu noRelativePosition" id=moreIcon data-header=more-icon>
+<a href="javascript:void(0)">
+<span></span>
+</a>
+<ul data-header-target=more-icon>
+<li>
+<div class="rightColumnHeader active" data-list-target=link-storm>
+<div id=header-nav-linkstorm class=imageHeaderContainer></div>
+<hr/>
+</div>
+<div class=rightColumnHeader data-list-target=podcast>
+<div id=header-nav-podcast class=imageHeaderContainer>
+</div>
+<hr/>
+</div>
+<div class=rightColumnHeader data-list-target=craptions>
+<div id=header-nav-craptions class=imageHeaderContainer>
+</div>
+<hr/>
+</div>
+<div class=rightColumnHeader data-list-target=greatest-hits>
+<div id=header-nav-greatest class=imageHeaderContainer>
+<h3>Greatest Hits</h3>
+<div class=imageHeaderContainer>
+<div class=generalHeaderModule>
+<a href="http://www.cracked.com/photoplasty_1236_21-sex-tips-that-science-says-actually-work/" class=imgHeaderCont title="">
+<img src="http://i.crackedcdn.com/phpimages/photoshop/0/2/4/354024_v1.jpg" alt="" class=thumb width=176 height=103>
+</a>
+<h4><a href="http://www.cracked.com/photoplasty_1236_21-sex-tips-that-science-says-actually-work/" class=imgHeaderCont title="">21 Sex Tips That Science Says Actually Work</a></h4>
+<div class=clearfix></div>
+<div class="meta metaGreatestHits">
+<div class=numberHits>
+01	</div>
+<div class=dateView>
+<div class=view>4,496,576 Views</div>
+<span class=authors>By
+<a href="http://www.cracked.com/members/Cracked+Readers/">CRACKED Reade...</a>	</span>
+|
+<span class=date>2014-12-22</span>
+</div>
+</div>
+</div>
+<div class=generalHeaderModule>
+<a href="http://www.cracked.com/photoplasty_1200_41-awesome-food-hacks-to-make-life-deliciously-easier/" class=imgHeaderCont title="">
+<img src="http://i.crackedcdn.com/phpimages/photoshop/4/6/6/346466_v1.jpg" alt="" class=thumb width=176 height=103>
+</a>
+<h4><a href="http://www.cracked.com/photoplasty_1200_41-awesome-food-hacks-to-make-life-deliciously-easier/" class=imgHeaderCont title="">41 Amazing Food Tricks You Won't Believe You Didn't Know</a></h4>
+<div class=clearfix></div>
+<div class="meta metaGreatestHits">
+<div class=numberHits>
+02	</div>
+<div class=dateView>
+<div class=view>3,642,807 Views</div>
+<span class=authors>By
+<a href="http://www.cracked.com/members/Cracked+Readers/">CRACKED Reade...</a>	</span>
+|
+<span class=date>2014-12-01</span>
+</div>
+</div>
+</div>
+<div class=generalHeaderModule>
+<a href="http://www.cracked.com/photoplasty_1404_34-movie-facts-that-sound-like-april-fools-jokes/" class=imgHeaderCont title="">
+<img src="http://i.crackedcdn.com/phpimages/photoshop/8/0/6/389806_v1.jpg" alt="" class=thumb width=176 height=103>
+</a>
+<h4><a href="http://www.cracked.com/photoplasty_1404_34-movie-facts-that-sound-like-april-fools-jokes/" class=imgHeaderCont title="">The 34 Most Mind-Blowing Behind-the-Scenes Factoids Ever</a></h4>
+<div class=clearfix></div>
+<div class="meta metaGreatestHits">
+<div class=numberHits>
+03	</div>
+<div class=dateView>
+<div class=view>3,500,292 Views</div>
+<span class=authors>By
+<a href="http://www.cracked.com/members/Cracked+Readers/">CRACKED Reade...</a>	</span>
+|
+<span class=date>2015-04-01</span>
+</div>
+</div>
+</div>
+<div class=clearfix></div>
+</div>
+<hr/>
+<a class=seeMoreBtn href="http://www.cracked.com/top-50.html">See More</a>
+</div>
+</div>
+<div class=rightColumnHeader data-list-target=cracked-bunker>
+<div id=header-nav-cracked-bunker class=imageHeaderContainer>
+</div>
+</div>
+<div class=leftColumnHeader>
+<h3>MORE</h3>
+<ul class=headerListMenu>
+<li><a href="http://www.cracked.com/linkstorm" title="" data-list=link-storm class=active><i class=icon-caret-right></i> <span>LinkSTORM</span></a></li>
+<li><a title="" data-list=podcast><i class=icon-caret-right></i> <span>The Cracked Podcast</span></a></li>
+<li><a href="http://www.cracked.com/craptions" title="" data-list=craptions><i class=icon-caret-right></i> <span>Craptions Classics</span></a></li>
+<li><a href="http://www.cracked.com/top-50.html" title="" data-list=greatest-hits><i class=icon-caret-right></i> <span>Greatest Hits</span></a></li>
+<li><a href="http://www.cracked.com/the-cracked-bunker" title="" data-list=cracked-bunker><i class=icon-caret-right></i> <span>The Cracked Bunker</span></a></li>
+</ul>
+<hr/>
+</div>
+</li>
+</ul>
+</li>
+<li class=navIcon id=diceIcon>
+<a href="http://www.cracked.com/random">
+<span></span>
+</a>
+</li>
+<li class=navIcon id=rssIcon>
+<a id=rss class=rss href="http://feeds.feedburner.com/CrackedRSS">
+<span></span>
+</a>
+</li>
+<li class="last navIcon hasSubMenu" id=searchIcon data-header=search>
+<a href="#">
+<span></span>
+</a>
+<ul data-header-target=search>
+<li>
+<h3>Search Cracked</h3>
+<form method=get action="http://www.cracked.com/search/search.php/?sa=search" id=HeaderSearch>
+<span id=iconoSearchHeader></span>
+<input type=hidden name=sa value=search>
+<input name=q type=text id=searchHeader data-type=searchinput />
+<div class=btnSearchContainerHeader><input type=submit value=Search class=btnSearchHeader /></div>
+</form>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<nav class=secondaryNav>
+<div class=secondaryContainer>
+<ul>
+<li><a href="http://www.cracked.com/humor-movies-tv.html">Movies &amp; TV</a></li>
+<li><a href="http://www.cracked.com/humor-video-games.html">Video Games</a></li>
+<li><a href="http://www.cracked.com/humor-weird-world.html">Weird World</a></li>
+<li><a href="http://www.cracked.com/humor-history.html">History</a></li>
+<li><a href="http://www.cracked.com/humor-science.html">Science</a></li>
+<li><a href="http://www.cracked.com/humor-tech.html">Tech</a></li>
+<li><a href="http://www.cracked.com/humor-music.html">Music</a></li>
+<li class=writeForUs><a href="http://www.cracked.com/write-for-cracked/">Write For Us</a></li>
+<li class=store><a href="/store/" target=_blank>Store</a></li>
+<li class="last virals"><a href="http://www.cracked.com/virals/"><i class=icnViral></i>Viral Now</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<div class=mainFrame>
+<ol class="mainFrameModule breadCrumbs">
+<li><a href="http://www.cracked.com">Home</a></li>
+<li><a href="http://www.cracked.com/terms-and-conditions.html">Terms and Conditions</a></li></ol>
+<section class=mainFrameModule>
+<div class="fullColumn dropShadowBottomCurved">
+<section class=body>
+<h1>Terms and Conditions</h1>
+<p><strong id=PositionDate>Effective Date: November 1, 2013</strong></p>
+<p><strong>DISCLAIMER</strong>: All characters, names and places used in CRACKED fiction and semifiction (whether online, in print or any other media) are fictitious and are used herein for the purposes of comment, criticism, parody, pointing out political and/or social injustice or any other purpose through which humanity is held up to the ridicule it frequently deserves. Any similarity to real people, without parodic purpose, is a coincidence. All trade names, product names and trademarks of third parties, including any trademarked characters, used in CRACKED fiction and semifiction (whether online, in print or any other media) are used without the authorization of those third parties, and are used only for the purpose of parody and identification. No sponsorship, endorsement or affiliation by or with those third parties exists or should be implied.</p>
+<p>THESE TERMS OF USE, AS AMENDED FROM TIME TO TIME ("Terms"), ARE A BINDING CONTRACT BETWEEN DEMAND MEDIA, INC..
+("Cracked" or "we") AND YOU ("you"). YOU MUST READ AND AGREE TO THESE TERMS, INCLUDING THE
+<a href="/privacy-policy.html">PRIVACY POLICY</a>, BEFORE USING THE CRACKED.COM WEBSITE (the "Site") OR ANY
+SOFTWARE, GAMES, APPLICATIONS, FEATURES OR FUNCTIONALITY AVAILABLE ON OR THROUGH THE SITE (COLLECTIVELY, THE
+"SERVICE"). BY USING THE SERVICE, YOU AGREE TO THESE TERMS. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THE
+SERVICE.</p>
+<ol class=NumberedList>
+<li class=item>
+<h2>DESCRIPTION OF SERVICE; MINIMUM AGE REQUIREMENT</h2>
+<ol class=NumberedList>
+<li class=item><strong>Description of Service</strong>. Cracked.com is an award-winning, smart and irreverent
+website best known for its funny and informative lists and non-fiction cultural commentary. Created as an
+online extension of the American humor magazine founded in 1958, Cracked.com is one of the longest-running
+and fastest growing comedy brands online.
+</li>
+<li class=item><strong>Age Requirement</strong>. You must be at least 16 (sixteen) years old to use the
+Service.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>MODIFICATIONS TO TERMS</h2>
+<ol class=NumberedList>
+<li class=item><strong>Procedure</strong>. At any time Cracked may change these Terms, which includes the
+<a href="/privacy-policy.html">Privacy Policy</a> and any other agreement that is incorporated by reference
+into these Terms. We will provide notice to you of any material change in the Terms by posting notice to the
+Site. Your continued use of the Service 30 days after our notice to you of a change in the
+Agreement will mean that you have agreed to be bound by the amended Agreement.
+</li>
+<li class=item><strong>Your Obligation to Stay Current</strong>. It is critical that you keep your email
+contact information correct and updated with Cracked at all times. In addition, we encourage you to check
+back regularly to review these Terms at least once every thirty days.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>MODIFICATIONS TO SERVICE</h2>
+<p>We reserve the right to modify or discontinue, and restrict or block access to, the Service without notice to
+you. We may modify or remove any Content from the Service at any time without notice to you, including removal
+of Content that we believe to be obscene, lewd, lascivious, filthy, excessively violent, harassing, or otherwise
+objectionable. We are not liable for any such modification, suspension, discontinuance or removal, and any such
+action by us will not affect Cracked's license to your Content as stated in Section 5 below.</p>
+</li>
+<li class=item>
+<h2>POSTING CONTENT ON THE SERVICE; REPRESENTATIONS AND WARRANTIES</h2>
+<ol class=NumberedList>
+<li class=item><strong>Content Protected by Intellectual Property Rights</strong>. Any content available
+through the Service, including games, applications, software, text, audio, video, pictures, graphics, music,
+sound clips, images, likenesses, personal information and other works of authorship (collectively,
+"Content") is protected by the intellectual property rights of Cracked or its licensors.
+</li>
+<li class=item>
+<strong>Your Warranties Regarding Your Content</strong>. By displaying or publishing ("posting") any Content
+on the Service, you warrant and represent that:
+<ol class=NumberedList>
+<li class=item>you own all rights in your Content or, alternatively, you have sufficient rights in
+your Content to grant to Cracked the rights described in these Terms;
+</li>
+<li class=item>you will pay all license fees, clearance fees, and other financial obligations of any
+kind, arising from any use of your Content;
+</li>
+<li class=item>you are the individual pictured, depicted, and/or heard in your Content or you have
+obtained permission from each person (including consent from parents or guardians for anyone under
+the age of eighteen (18)) who appears and/or is heard in your Content to grant the rights to Cracked
+described in these Terms; and
+</li>
+<li class=item>your Content is not defamatory, does not infringe the intellectual property rights,
+privacy, rights to publicity or any other legal or moral rights of any third party.
+</li>
+</ol>
+</li>
+<li class=item><strong>Establishing an Account to Post Content</strong>. To post Content on the Site, you must
+first complete the Site registration process to create an account with a user name and password (the
+"Account"). You may not share your password with anyone unless you are a minor, in which case you may share
+your password with your parents or other legal guardians. You must always provide accurate current and
+complete information to Cracked for the Service. You must update such information in a timely manner to
+maintain its accuracy and completeness. Any use of the Service through your Account will be deemed as being
+used by you. Cracked is entitled to rely on the contact and other information that is supplied to us through
+your Account. Your Account is non-transferable and non-assignable.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>OWNERSHIP OF RIGHTS; LICENSE RIGHTS; USER SUBMISSIONS</h2>
+<ol class=NumberedList>
+<li class=item><strong>Ownership of Your Content</strong>. You retain ownership of your rights in any Content
+you post to the Service, subject to the non-exclusive rights that you grant to us as described in these
+Terms.
+</li>
+<li class=item>
+<strong>Your License to Cracked</strong>.
+<ol class=NumberedList>
+<li class=item>Subject to Section 5.b.ii, you hereby grant Cracked a worldwide, royalty-free, freely
+transferable, freely sublicensable (through unlimited levels of sublicense), non-exclusive license
+to use, reproduce, modify, transmit, distribute, publicly perform and display (including in each
+case by means of a digital audio transmission), advertise in, on, and around, and create derivative
+works of the Content, and to incorporate such Content into other works in any form, media, or
+technology now known or later developed.
+</li>
+<li class=item>With respect to Content other than photos, graphics, audio or video you submit or make
+available for inclusion on publicly accessible areas of the Service (collectively, "Interactive
+Content"), you hereby grant Cracked an irrevocable, perpetual, worldwide, royalty-free, freely
+transferable, freely sublicensable (through unlimited levels of sublicense), non-exclusive license
+to use, reproduce, modify, transmit, distribute, publicly perform and display (including in each
+case by means of a digital audio transmission), advertise in, on, and around, and create derivative
+works of the Content, and to incorporate such Content into other works in any form, media, or
+technology now known or later developed.
+</li>
+<li class=item>You also hereby waive any moral rights you may have in such Content under the laws of
+any jurisdiction. We may (but are not obligated to) display your Content, including your username
+and your actual name (according to the preferences you select).
+</li>
+</ol>
+</li>
+<li class=item><strong>Your Right to Terminate the License</strong>. With the exception of Interactive
+Content, you may remove or modify Content that you post on the Site. If, prior to such removal or
+modification, Cracked has distributed, or developed specific plans to distribute, any electronic, printed,
+or other materials containing such Content (e.g., in advertising, promotion or otherwise), then Cracked has
+a limited right to continue to distribute those materials. If you want Cracked to stop distributing the
+materials, simply send us written notice to stop distributing such materials, in which event we will stop
+distributing the materials within 30 days. Your notice must be signed by you, include your telephone number
+and email address, and be sent by first class mail, postage prepaid, to Demand Media, Inc. 1655 26<sup>th</sup> Street, Santa Monica, CA 90404, Attn: Copyright Agent. Copyright fax 1-310-828-6531. In
+addition, the notice must clearly identify the Content at issue, describe the specific use of the Content
+you wish to end, and contain statements that you own or have an exclusive right to the Content and that all
+the information in the notice is true and correct. The 30 day period for Cracked to stop distributing your
+Content begins only once Cracked has received a notice complying with the requirements of this Section.
+</li>
+<li class=item><strong>User Contact Submissions</strong>. When you submit ideas, suggestions, documents, or
+proposals (collectively, "Submissions") to Cracked you represent, warrant, and agree that: (a) your
+Submissions do not include confidential or proprietary information; (b) if we so choose, Cracked may use and
+disclose your Submissions in any way; and (c) Cracked has no obligation to pay or reimburse you for your
+Submissions or our use of your Submissions.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>PROHIBITED CONTENT</h2>
+<p>You must not post to the Service any Content that, as reasonably determined by Cracked, is or appears to be:</p>
+<ol class=NumberedList>
+<li class=item>untrue, misleading, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene,
+invasive to another person's privacy or protected data, hateful, or racially or otherwise objectionable;
+</li>
+<li class=item>infringing upon a third party's intellectual property rights, including any patent, trademark,
+trade secret, copyright, right of publicity, including any Content that is the subject of any claim of
+infringement;
+</li>
+<li class=item>of a type that you do not have a right to transmit under any law or under contractual or
+fiduciary relationships, such as proprietary and confidential information;
+</li>
+<li class=item>unsolicited, undisclosed or unauthorized advertising;</li>
+<li class=item>software viruses or any other computer code, files, or programs designed to interrupt, destroy,
+or limit the functionality of any computer software or hardware or telecommunications equipment;
+</li>
+<li class=item>data or information obtained through access that was not authorized by the owner, or that you
+are not authorized to post; or
+</li>
+<li class=item>in violation of any applicable local, state, national or international law (including export
+laws).
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>PROHIBITED CONDUCT; LIQUIDATED DAMAGES FOR SPAM</h2>
+<ol class=NumberedList>
+<li class=item>
+<strong>Prohibited Conduct</strong>. You must not do, or attempt to do, any of the following, as reasonably
+determined by Cracked, subject to applicable law:
+<ol class="NumberedList lowerAlpha">
+<li class=item>access or use the Service in any way that is not in compliance with any applicable
+local, state, national or international law (including export laws), contracts, intellectual
+property rights or constitutes the commission of a tort, or for any purpose that is harmful or
+unintended (by us), or other than in full compliance with these Terms;
+</li>
+<li class=item>access, tamper with, or use services or areas of the Service that you are not
+authorized to access;
+</li>
+<li class=item>alter information on or obtained from the Service;</li>
+<li class=item>tamper with postings, registration information, profiles, submissions or Content
+belonging to Cracked or other users of Cracked;
+</li>
+<li class=item>use any robot, spider, scraper or other automated means or interface not provided by us
+to access the Service or extract data or gather or use information, such as email addresses,
+available from the Service or transmit any unsolicited advertising, "junk mail," "spam," or "chain
+letters";
+</li>
+<li class=item>frame any part of the Service, or link to the Service, or otherwise make it look like
+you have a relationship to us or that we have endorsed you or your Content for any purpose except as
+expressly permitted in writing by Cracked;
+</li>
+<li class=item>impersonate or misrepresent your affiliation with any person or entity;</li>
+<li class=item>reverse engineer any licensed software, application, games or any other aspect of the
+Service or do anything that might discover source code, or bypass or circumvent measures employed to
+prevent or limit access to any area, content or code of the Service;
+</li>
+<li class=item>send to or otherwise impact us or the Service (or anything or anyone else) with
+harmful, illegal, deceptive or disruptive code such as a virus, "spyware," "adware" or other code
+that could adversely impact the Service or any recipient; or
+</li>
+<li class=item>take any action which might impose a significant burden (as determined by us) on the
+Service's infrastructure or computer systems, or otherwise interfere with the ordinary operation of
+the Service.
+</li>
+</ol>
+</li>
+<li class=item><strong>Liquidated Damages</strong>. IF YOU SEND UNSOLICITED COMMERCIAL EMAIL OR ADVERTISING,
+BULK EMAIL, SPAM, OR CHAIN LETTERS (COLLECTIVELY, "UNSOLICITED EMAIL OR OTHER COMMUNICATION") THROUGH THE
+SERVICE, YOU ACKNOWLEDGE THAT YOU WILL HAVE CAUSED SUBSTANTIAL HARM TO CRACKED, BUT THAT THE AMOUNT OF THE
+HARM WOULD BE EXTREMELY DIFFICULT TO ASCERTAIN. AS A REASONABLE ESTIMATION OF SUCH HARM, YOU WILL PAY
+LICENSOR $40 FOR EACH SUCH UNSOLICITED EMAIL OR OTHER COMMUNICATION.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>MONITORING OF SERVICE CONTENT; RESOLUTION OF USER DISPUTES</h2>
+<ol class=NumberedList>
+<li class=item><strong>No Duty to Monitor</strong>. We are under no obligation to restrict or monitor the
+Service or any Content in any way. CRACKED DOES NOT REGULARLY MONITOR THE ACCURACY OR RELIABILITY OF
+CONTENT. However, we reserve the right to modify or remove any Content at any time. Any opinions, advice,
+statements, services, offers, or other information or Content expressed or made available by third parties,
+including other users, are those of the respective author(s) and not of Cracked. Cracked neither endorses
+nor is responsible for the accuracy or reliability of any opinion, advice, information, or statement made on
+the Service.
+<li class=item><strong>Right to Resolve Disputes</strong>. Cracked has the right but not the obligation to
+resolve disputes between users relating to the Service and Cracked's resolution of a particular dispute does
+not create an obligation to resolve any other dispute. Cracked's resolution of any dispute is final with
+respect to the Service.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>PROTECTION OF CONTENT</h2>
+<ol class=NumberedList>
+<li class=item><strong>License by Cracked to You.</strong> You must respect the intellectual property laws
+protecting our Service. Cracked grants you a limited, revocable, non-transferable, non-sublicensable,
+non-exclusive license, under the rights Cracked has in the Content, to privately display and perform the
+Content on your computer for your own personal, noncommercial purposes.
+</li>
+<li class=item><strong>Reservation of Rights</strong>. On its own behalf and the behalf of its licensors,
+Cracked reserves all rights in the Content, including any software, not expressly granted in this Section 9.
+Cracked does not in any way grant any other rights to you. Except as expressly stated in this Section 9, you
+may not reproduce, distribute, modify, publicly perform or display, or prepare derivative works of any
+Content, including any software, without prior written consent from Cracked or other third-party owner of
+the rights in that Content (if any).
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>PRODUCT SALES</h2>
+<ol class=NumberedList>
+<li class=item>
+To order a tangible product offered via the Service (“Products”), you will need to follow the ordering procedures described via the Service. Pricing details for Products and the procedures for payment and delivery are displayed via the Service, and are subject to change without notice. By placing an order via the Service, you expressly agree that we are authorized to charge to the payment method you provide at that time (or to a different payment method you designate that we accept) the applicable fee at the then-current rate displayed via the Service plus any applicable taxes, shipping fees, and any other charges you may incur in connection with your use of the Service or your order. At any time, and for any reason, we may in our discretion (but are under no obligation to) provide a refund, bonus or other consideration to some or all of our customers. Any delivery times or dates are estimates only. All Products sales are final. However, if you would like to be considered for a refund, please contact customer service through the Service.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>PRIVACY POLICY</h2>
+<p>Please see our <a href="/privacy-policy.html">Privacy Policy</a>. Our <a href="/privacy-policy.html">Privacy
+Policy</a> is part of and incorporated into these Terms. We reserve the right to contact you about these Terms
+or any Content or activities relating to the Service.</p>
+</li>
+<li class=item>
+<h2>TERMINATION OR CANCELLATION</h2>
+<ol class=NumberedList>
+<li class=item>
+Right to Terminate. We may, at any time, without notice to you, terminate, block or suspend your access to the Service, and
+your Account.
+</li>
+<li class=item><strong>Notice of Termination</strong>. If applicable law requires us to provide notice of
+termination or cancellation, we may give prior or subsequent notice by posting it on the Site or by sending
+a communication to any address (email or otherwise) that we have for you in our records.
+</li>
+<li class=item><strong>Effect of Termination</strong>. Upon termination of your Account or the Service, your
+agreement with Cracked pursuant to these Terms will also terminate, except that the following provisions
+survive the termination: Section 4 "Posting Content on the Service; Representations and Warranties," Section
+5 "Ownership of Rights; License Rights; User Submissions," Section 9 "Protection of Content," Section 14
+"Indemnification," Section 15 "Disclaimer of Warranties," Section 16 "Exclusion of Damages; Limitation of
+Liability," and Section 20 "Additional Terms". If
+your Account or access to the Service is terminated, you may no longer have access to the Content you posted
+on the Service.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>DEALINGS WITH MERCHANTS; LINKS</h2>
+<ol class=NumberedList>
+<li class=item><strong>Advertisements and Links</strong>. The Service contains advertisements, offers, or
+other links to websites of third parties that we do not control. Advertisements and other information
+provided by third parties may not be wholly accurate. Cracked is not responsible or liable for (i) the
+availability or accuracy of such sites or advertisements; or (ii) the content, products or services
+available from such sites. The inclusion of any link on the Service does not imply that we endorse the
+linked site. You use the links at your own risk. Cracked's <a href="/privacy-policy.html">Privacy Policy</a>
+is applicable only when you are on our Site. Once you link to another website, its privacy statement applies
+to any personal information you supply.
+</li>
+<li class=item><strong>Transactions with Third Parties</strong>. Your transactions and other dealings with
+third party merchants or advertisers that are found on or through the Service, including "click to
+purchase," "co-registration," and other similar programs, including payment and delivery of related goods or
+services, are solely between you and such merchant or advertiser.
+</li>
+</ol>
+</li>
+<li class=item>
+<h2>INDEMNIFICATION</h2>
+<p>You agree to hold Cracked and Demand Media, and their subsidiaries, affiliates (for example, those listed at <a href="http://www.demandmedia.com/">www.demandmedia.com</a>), officers, directors, employees, agents,
+attorneys, and suppliers, and each of their respective successors and assigns (collectively, the "Indemnified
+Persons"), harmless from, and indemnify them for, all damages, costs, expenses and other liabilities, including
+reasonable attorneys' fees and expenses, relating to any claim arising out of or related to: (i) your access to
+and use of the games, software, and other aspects of the Service and the Content; (ii) your violation of these
+Terms, and any applicable law or the rights of another person or party; (iii) any dispute you have with any user
+of the Service and any dispute you have related to any merchant or advertising found on or through the Service;
+(iv) Cracked's resolution (if any) of any dispute you have with any user of the Service; (v) your improper
+authorization for Cracked to collect, use or disclose any Content provided by you; and (vi) any disclosures made
+with your permission.</p>
+</li>
+<li class=item>
+<h2>DISCLAIMER OF WARRANTIES</h2>
+<p>CRACKED PROVIDES THE SERVICE AND PRODUCTS "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM EXTENT PERMITTED BY LAW, CRACKED MAKES NO
+REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE PRODUCTS, SERVICE OR
+THE INFORMATION, GAMES, SOFTWARE, OR CONTENT INCLUDED IN THE SERVICE. CRACKED MAKES NO REPRESENTATIONS OR
+WARRANTIES THAT THE PRODUCTS OR SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, VIRUS-FREE, SECURE, OR TIMELY. TO THE MAXIMUM
+EXTENT PERMITTED BY LAW, CRACKED EXPRESSLY DISCLAIMS ALL REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND,
+WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED REPRESENTATIONS, WARRANTIES OR CONDITIONS OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT AND THOSE ARISING FROM A COURSE OF DEALING, TRADE,
+USAGE OR PERFORMANCE. SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES, AND THEREFORE SOME OF
+THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. WE URGE YOU TO KEEP BACKUP COPIES OF YOUR PERSONAL CONTENT, IF ANY,
+THAT YOU MAINTAIN ON OR USE WITH THE SERVICE. IF YOUR USE OF THE SERVICE RESULTS IN THE NEED FOR SERVICING OR
+REPLACING PROPERTY, MATERIAL, EQUIPMENT OR DATA, WE ARE NOT RESPONSIBLE FOR ANY RESULTING COSTS OR DAMAGES.</p>
+</li>
+<li class=item>
+<h2>EXCLUSION OF DAMAGES; LIMITATION OF LIABILITY</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NONE OF THE INDEMNIFIED PERSONS ARE LIABLE TO YOU OR ANY OTHER PERSON FOR
+INDIRECT, INCIDENTAL, PUNITIVE, EXEMPLARY, SPECIAL, STATUTORY, OR CONSEQUENTIAL DAMAGES, LOST PROFITS, LOST
+REVENUE, LOSS OF DATA, LOSS OF PRIVACY, LOSS OF GOODWILL OR ANY OTHER LOSSES, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES AND EVEN IN THE EVENT OF FAULT, TORT (INCLUDING NEGLIGENCE) OR STRICT OR PRODUCT LIABILITY.
+WITHOUT LIMITING THE FOREGOING, IN NO EVENT WILL THE AGGREGATE LIABILITY TO YOU OF THE INDEMNIFIED PERSONS
+EXCEED, IN TOTAL, THE AMOUNTS PAID BY YOU TO US.</p>
+</li>
+<li class=item>
+<h2>COPYRIGHT INFRINGEMENT/DMCA</h2>
+<p>Cracked respects the intellectual property rights of others and requests that users of the Service do the same.
+If you believe that your work is being used on the Service in a way that constitutes copyright infringement, you
+may notify us by providing our copyright agent with the following information in writing:</p>
+<ol class=NumberedList>
+<li class=item>the electronic or physical signature of the owner of the copyright or the person authorized to
+act on the owner's behalf;
+</li>
+<li class=item>identification of the copyrighted work that you claim has been infringed;</li>
+<li class=item>identification of the material that is claimed to be infringing and information reasonably
+sufficient to permit Cracked to locate the material (for example, by providing a URL to the material);
+</li>
+<li class=item>your name, address, telephone number, and email address;</li>
+<li class=item>a statement by you that you have a good faith belief that the disputed use is not authorized by
+the copyright owner, its agent, or the law; and
+</li>
+<li class=item>a statement that the information in your notification is accurate and a statement, made under
+penalty of perjury, that you are the copyright owner or are authorized to act on the copyright owner's
+behalf.
+</li>
+</ol>
+<p>Our designated agent to receive notification of claimed infringement can be reached at:</p>
+<address class=vcard>
+<div class=fn>Copyright Agent</div>
+<div class=adr>
+<div class=street-address>1655 26<sup>th</sup> Street</div>
+<span class=locality>Santa Monica</span>, <span class=region>CA</span> <span class=postal-code>90404</span>
+</div>
+<div class=tel><span class=value>(310) 828-6531 </span> <span class=type>(fax)</span></div>
+<a href="mailto:copyright@demandmedia.com" class=email>copyright@demandmedia.com</a>
+</address>
+<p>It is our policy to terminate in appropriate circumstances any Account or user for repeated infringement of
+intellectual property rights, including copyrights, and we also reserve the right to terminate an Account or
+user for even one instance of infringement.</p>
+<p>Cracked may access, preserve and disclose to third parties any of your information or data (including personally
+identifiable information and private communications) related to a written complaint of copyright infringement if
+we believe in our sole discretion that such access, preservation, or disclosure is necessary or useful to
+respond or otherwise address such complaint.</p>
+</li>
+<li class=item>
+<h2>CUSTOMER SUPPORT</h2>
+<p>We have no obligation to provide you with customer support of any kind. However, we may provide you with customer
+support from time to time, at our sole discretion, if you have created an Account and you submit your customer
+support questions using your Account.</p>
+</li>
+<li class=item>
+<h2>NOTICES AND CONTACT INFORMATION</h2>
+<p>Except as otherwise provided in these Terms, Cracked will give you notices by posting them on the Site. Since
+notice of any material change to the Terms will be posted to the Site for at least 30 days, we encourage you to
+visit the Site at least that often. You also authorize Cracked to send notices (including notice of subpoenas or
+other legal process, if any) via electronic mail to either your Cracked email account or to the non-Cracked
+email address that we have on record for you. You must check the Site for notices, and you will be considered to
+have received a notice when it is made available to you by posting on the Site or when sent by Cracked via
+electronic mail, whether or not received by you. Cracked may provide notice to any e-mail or other address that
+you provide to us. You must keep your address current and any notice sent by Cracked to the address that you
+have most recently provided is effective notice. With the exception of notices related to removal of licensed
+material and to copyright infringement as described in Sections 5 and 17 above, respectively, you must send us
+any notice by mailing it to our address for Legal Notices which is: Demand Media, Inc., 1655 26<sup>th</sup> Street, Santa Monica, CA 90404, Attn: Legal Department. Copyright fax 1-310-828-6531.</p>
+</li>
+<li class=item>
+<h2>ADDITIONAL TERMS</h2>
+<ol class=NumberedList>
+<li class=item><strong>Agreement to Conduct Transactions Electronically</strong>. All of your transactions
+with or through the Service may, at our option, be conducted electronically from start to finish. If we
+decide to proceed non-electronically, those services will still be governed by the remainder of these Terms
+unless you enter into different terms on a form provided by us. If the law allows you to withdraw this
+consent or if we are ever required to deal with you non-electronically, we reserve the right to charge or
+increase fees and you agree to print or make an electronic copy of the Terms and any other contract or
+disclosure that we are required to provide to you.
+</li>
+<li class=item><strong>Compliance with Laws</strong>. You are responsible for compliance with applicable local
+laws. Access to the Service Content by certain persons or in certain countries may not be legal.
+</li>
+<li class=item><strong>No Agency; No Third Party Beneficiary</strong>. These Terms do not create any agency,
+partnership, joint venture, employee-employer or franchisor-franchisee relationship. Except for the
+Indemnified Persons, there are no third party beneficiaries of these Terms.
+</li>
+<li class=item><strong>Severance</strong>. If any part of the Terms is held by a court of competent
+jurisdiction to be invalid or unenforceable, the invalid or unenforceable part will be given effect to the
+greatest extent possible and the remainder will remain in full effect, provided that the allocation of risks
+described in these Terms is given effect to the fullest extent possible.
+</li>
+<li class=item><strong>Assignment</strong>. These Terms are personal to you and you may not transfer, assign
+or delegate them to anyone without the express written permission of Cracked. Any attempt by you to assign,
+transfer or delegate these Terms without the express written permission of Cracked will be null and void.
+Cracked has the right to transfer, assign and delegate these Terms to one or more third parties without your
+permission.
+</li>
+<li class=item><strong>Jurisdiction; Choice of Law; Export Limitations</strong>. This Service is controlled by
+us from our offices in the United States of America and is directed to U.S. users. If you access the Service
+from locations outside the U.S., you do so at your own risk and you are responsible for compliance with
+applicable local laws. You may not use or export anything from the Service in violation of U.S. export laws
+and regulations or the Terms. These Terms and all performances and claims of every nature between us are
+governed by the laws of the State of California, U.S.A., without regard to any conflicts of laws principles
+that would result in the application of the law of a different jurisdiction. You and we submit to the
+exclusive personal jurisdiction and venue of the state and federal courts located within Los Angeles County,
+California.
+</li>
+<li class=item><strong>Limitations on Actions</strong>. Any action concerning any dispute with respect to the
+Service must be commenced within one year after the cause of the dispute arises, or the cause of action is
+barred.
+</li>
+<li class=item><strong>Interpretation</strong>. The paragraph headings in these Terms are included to help
+make these Terms easier to read and have no binding effect. As used in these Terms, the words "include" and
+"including" are meant to be illustrative and not exhaustive.
+</li>
+<li class=item><strong>Entire Agreement</strong>. These Terms (including terms incorporated into them, e.g.,
+the <a href="">Privacy Policy</a> and Supplemental Terms) and any policies and guidelines posted to the
+Service by Cracked comprise the entire agreement (the "Entire Agreement") between you and Cracked with
+respect to the use of the Service and supersede all contemporaneous and prior agreements between the parties
+regarding the subject matter contained herein, and neither party has relied on any representations made by
+the other that are not expressly set forth in the Entire Agreement.
+</li>
+<li class=item><strong>No Waiver</strong>. The failure of any party to exercise or enforce any right or
+provision of these Terms, including any failure to act with respect to a breach, will not constitute a
+waiver of such right or provision or that party's right to act with respect to subsequent or similar
+breaches. We suggest that you print out a copy of these Terms for your records.
+</li>
+</ol>
+</li>
+</ol>
+<h3>Further Information</h3>
+<p>If you have a complaint, you may contact us at Demand Media, Inc. Legal Department, 1655 26<sup>th</sup> Street,
+Santa Monica, CA 90404. If you are a California resident, the Complaint Assistance Unit of the Division of
+Consumer Services of the Dept. of Consumer Affairs may be contacted at 400 R Street, Sacramento, CA 95814 or (800)
+952-5210.</p>
+<h3>LEGAL NOTICES.</h3>
+<h4>NOTICE OF AVAILABILITY OF FILTERING SOFTWARE</h4>
+<p>All users are hereby informed by the provider of this interactive computer service that parental control protections
+(such as computer hardware, software, or filtering services) are commercially available that may assist in limiting
+access to material that is harmful to minors. A report detailing some of those protections can be found at <a href="http://www.ntia.doc.gov/ntiahome/ntiageneral/cipa2003/index.html">http://www.ntia.doc.gov/ntiahome/ntiageneral/cipa2003/index.html</a>
+(Children's Internet Protection Act: Report on the Effectiveness of Internet Protection Measures and Safety
+Policies).</p>
+<h4>NOTICE: NO HARVESTING OR DICTIONARY ATTACKS ALLOWED</h4>
+<p>YOU MAY VIOLATE FEDERAL LAW IF YOU: (1) INITIATE THE TRANSMISSION TO CRACKED COMPUTERS OR DEVICES OF A COMMERCIAL
+ELECTRONIC MAIL MESSAGE (AS DEFINED IN THE U.S. "CAN-SPAM ACT OF 2003") THAT DOES NOT MEET THE MESSAGE TRANSMISSION
+REQUIREMENTS OF THAT ACT; OR (2) ASSIST IN THE ORIGINATION OF SUCH MESSAGES THROUGH THE PROVISION OR SELECTION OF
+ADDRESSES TO WHICH THE MESSAGES WILL BE TRANSMITTED.</p>
+<h4>NOTICE RE TRADEMARKS</h4>
+<p>The trademarks Cracked, Demand, Demand Media and all other trademarks listed below or used in the Service are owned
+or used under license by Cracked and its affiliated organizations. The names of third parties and their products
+mentioned may be their trademarks. You may not use any of the above or other trademarks displayed on the Service or
+in any Service content. All rights are reserved.</p>
+<h4>NOTICE RE COPYRIGHT OWNERSHIP: &copy; [Cracked Owner] U.S.A. All rights reserved.</h4>
+</section>
+</div>
+</section>
+</div>
+<div class=facebookWrapperModule>
+<div class=facebookContainerModule>
+<div class=columnBig>
+Choosing to "Like" Cracked has no side effects, so what's the worst that could happen?
+</div>
+<div class=columnSmall>
+<a href="http://www.cracked.com/" class=logoCrackedFacebook></a>
+<div class=facebookColumns>
+<a href="http://www.facebook.com/cracked" target=_blank class=crackedFacebook>Cracked.com <span>on Facebook</span></a>
+<div class=fb-like data-href="http://www.facebook.com/cracked" data-send=false data-layout=button_count data-width=300 data-show-faces=false></div>
+</div>
+</div>
+<div class=clearfix></div>
+<a href="#" class=closeBtnFacebook></a>
+</div>
+</div>
+<footer class=footer>
+<div class=footerWrapperTop>
+<div class=footerShadowTop>
+<a href="#" class=btnClose title=Close id=btnFooterClose></a>
+<div class=linkAndSocialContainer>
+<div class="fourColumns first">
+<h5>About</h5>
+<ul>
+<li><a href="http://www.cracked.com/about-us/" title="About Us">About Us</a></li>
+<li><a href="http://www.cracked.com/write-for-cracked/" title="Write for Cracked">Write for Cracked</a></li>
+<li><a href="http://www.cracked.com/contact-us.html" title="Contact Us" class="ContactButton url" onClick="return false;">Contact Us</a></li>
+<li><a href="http://www.demandmedia.com/media/#cracked" title=Advertise>Advertise</a></li>
+<li><a href="http://www.cracked.com/sitemap.html" title=Sitemap>Sitemap</a></li>
+<li><a href="http://www.cracked.com/terms-and-conditions.html" title="Terms & Conditions">Terms & Conditions</a></li>
+<li><a href="http://www.cracked.com/privacy-policy.html" title="Privacy Policy">Privacy Policy</a></li>
+<li class=last><a id=_bapw-link href="#" class=btnChoices><img id=_bapw-icon /><span>AdChoices</span></a></li>
+</ul>
+</div>
+<div class=fourColumns>
+<h5>Cracked Mobile Apps</h5>
+<ul>
+<li><h6>iOS</h6></li>
+<li><a href="https://itunes.apple.com/us/app/the-cracked-reader-lite/id375994906?mt=8" title="Cracked Reader for iPhone">Cracked Reader for iPhone</a></li>
+<li><a href="https://itunes.apple.com/us/app/cracked-com-for-ipad/id381073477?mt=8" title="Reader for iPad">Reader for iPad</a></li>
+<li><a href="https://itunes.apple.com/us/app/best-of-cracked-vol.-1/id505727976?mt=8" title="Best of 2011 for iOS">Best of 2011 for iOS</a></li>
+<li><h6>Android</h6></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.cracked.asstrology" title="Cracked Asstrology">Cracked Asstrology</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.cracked.android.lite&hl=en" title="Cracked Reader for Android">Cracked Reader for Android</a></li>
+<li class=last><a href="https://play.google.com/store/apps/details?id=com.cracked.android.lite.bestof2011 " title="Best of 2011 for Android">Best of 2011 for Android</a></li>
+</ul>
+</div>
+<div class=fourColumns>
+<h5>Popular Topics</h5>
+<ul>
+<li><a href="http://www.cracked.com/funny-212-boobs/" title=Boobs>Boobs</a></li>
+<li><a href="http://www.cracked.com/article_15643_5-scientific-reasons-zombie-apocalypse-could-actually-happen.html" title=Zombies>Zombies</a></li>
+<li><a href="http://www.cracked.com/funny-4573-hipster/" title=Hipsters>Hipsters</a></li>
+<li><a href="http://www.cracked.com/article_15628_the-5-creepiest-urban-legends-that-happen-to-be-true.html" title="Urban Legends">Urban Legends</a></li>
+<li class=last><a href="http://www.cracked.com/blog/5-personality-flaws-skyrim-forces-you-to-deal-with/" title=Skyrim>Skyrim</a></li>
+</ul>
+</div>
+<div class="fourColumns last">
+<h5>Stay Connected</h5>
+<ul>
+<li class="paddingLeftFooter facebookLogo">Like us on Facebook
+<div class=fb-like data-href="http://www.facebook.com/cracked" data-send=false data-layout=button_count data-width=300 data-show-faces=false></div>
+</li>
+<li class="paddingLeftFooter twitterLogo">Follow us on Twitter
+<a href="https://twitter.com/cracked" class=twitter-follow-button data-show-count=false>Follow @cracked</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+</li>
+<li class=bottomLineDivider></li>
+<li class=last>
+<form method=post action="http://www.cracked.com/users/newsletter/" onsubmit="return newsletter(this);">
+<label for=email>Sign up for our weekly Newsletter</label>
+<input id=emailSignUp name=email type=text id=Newsletter value="Enter Email Address Here:"/>
+<div class=dropShadowBottomLeft><input type=submit value="Sign up" class="signUpButton ckButtonBlue"/></div>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=footerWrapperBottom>
+<div class=copyrightContainer>
+<div class="logoDemanMedia left">
+<a href="http://www.demandmedia.com/" title="Driven by Demand Media" target=_blank></a>
+</div>
+<div class="copyright right textRight">
+<ul class=switchWeb>
+<li><a href="#" onClick="dmjs.dmp.switchPlatform('mobile');" title=Mobile>Mobile</a></li>
+<li>|</li>
+<li class=active><a href="#" title=Desktop>Desktop</a></li>
+</ul>
+<p>Cracked, Cracked.com, the "Cracked" logo, and Demand Media are each a trademark or a registered trademark of Demand Media, Inc. in the United States and/or other countries.</p>
+<p class=last>Copyright &#169; 2007-2013. Demand Media, Inc.</p>
+</div>
+</div>
+</div>
+</footer>
+<div class=ad-footer id=ad-footer>an advertisement</div>
+<script type="text/javascript" src="http://i.crackedcdn.com/ui/mashed/common_footer-YmNlZDJmMTI.js"></script>
+<div id=footTrack><script>document.write(unescape("%3Cscript src='"+(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));</script>
+<script>COMSCORE.beacon({c1:2,c2:6036385,c3:"",c4:"",c5:"",c6:"",c15:""});</script>
+<noscript><img src="http://b.scorecardresearch.com/b?c1=2&c2=6036385&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style=display:none width=0 height=0 alt=""/></noscript>
+<noscript><img src="http://vs.dmtracker.com/images/zig.gif?Log=1"/></noscript>
+<script src="http://vs.dmtracker.com/tags/vs.js"></script>
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt);})();</script>
+<script type="text/javascript">_qevents.push({qacct:"p-4dIM5nVs2rFio"});</script>
+<noscript>
+<div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-4dIM5nVs2rFio" height=1 width=1 alt=Quantcast /></div>
+</noscript>
+</div>
+<script src="http://cdn.optimizely.com/js/8057353.js"></script><script>var env="production";if(typeof CKIncite!=="undefined"){CKIncite.init(true);CKIncite.inject(1,4);}</script>
+<script>if(typeof request_google_ads==="function")request_google_ads();</script>
+<div id=fb-root></div>
+<script>Facebook.api_key="112808382072672";Facebook.initalize(function(){Facebook.getLoginStatus(FBOpenGraph.CK_FacebookConnectStatus);});</script>
+<div id=FB_HiddenContainer></div>
+<div id=fbSliver></div>
+<script type="text/javascript" src="//native.sharethrough.com/assets/tag.js"></script>
+<div class=newsletterPopUp>
+<div class=imgNewsletter>
+</div>
+<header>
+<h2>The <span class=logoCracked></span> Weekly Hit List</h2>
+</header>
+<div class=body>
+<div class=infoNewTitle>Sit back... Relax... <span class=yellowText>We'll do all the work.</span></div>
+<div class=infoNewsLetter>Get a weekly update on the best at Cracked. Subscribe now!</div>
+</div>
+<div class=signUpNewslleter>
+<form onSubmit="return newsletter(this);">
+<input type=text name=email placeholder="Enter Your Email Address" class=textBox />
+<div class=shadowBox><input type=submit value="Sign Up" class=btnBox /></div>
+</form>
+</div>
+</div>
+<div id=outofpage>
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.display('outofpage');});</script>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bf1842d93a","applicationID":"3310449","transactionName":"YVABZkACXxFQAUVZW1gaIlFGCl4MHjFFUUBfVkxGXRA=","queueTime":0,"applicationTime":79,"atts":"TRcCEAgYTB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
