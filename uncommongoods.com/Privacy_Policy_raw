@@ -1,1 +1,864 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+  <title>
+      UncommonGoods Support : Privacy &amp; Security
+  </title>
+
+  <link href="https://ugoods.zendesk.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  
+
+  <meta property="og:locale" content="en_US" />
+<meta property="og:title" content="Privacy &amp; Security" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://support.uncommongoods.com/forums/20813912-Privacy-Security" />
+<meta property="og:image" content="https://support.uncommongoods.com/system/logos/2034/5940/logo_Site-Header.png" />
+<meta property="og:site_name" content="UncommonGoods Support" />
+<meta property="og:description" content="" />
+
+  
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="Y/X3pwFyJAUAO5iWECNAXUax2jmitzJ/CIr/2jdD6Bk=" name="csrf-token" />
+
+  <!--[if lt IE 9]>
+  <script src="https://p5.zdassets.com/assets/vendor/html5_shiv-5a1a7623bcbeef0bfccb2117866abc8a.js"></script>
+<script src="https://p5.zdassets.com/assets/vendor/excanvas-7aeb59a355327db929fc3ec625ff6ec2.js"></script>
+  <![endif]-->
+
+  <link href="https://p5.zdassets.com/assets/application/global-88ef6ccb051344ade321217ada47eb3d.css" media="all" rel="stylesheet" />
+<link href="https://p5.zdassets.com/assets/application/end_user-cf61851ac4af33f92b06c1ed2dfcd232.css" media="all" rel="stylesheet" />
+<link href="https://p5.zdassets.com/assets/application/agent-6ab25799ed72f3aae2e5388a6fa53482.css" media="all" rel="stylesheet" />
+<link href="https://p5.zdassets.com/assets/application/admin-e7645680080f6f67bdbdac8f62920f26.css" media="all" rel="stylesheet" />
+  <link href="https://p5.zdassets.com/assets/print-b9c9930d3290ee9cb0a09bd4426bd8b5.css" media="print" rel="stylesheet" />
+
+  <!--[if lte IE 8]><link href="https://p5.zdassets.com/assets/ie-54c1a435ea3cca3ef0b693ddde214179.css" media="screen" rel="stylesheet" /><![endif]-->
+  <!--[if lte IE 6]><link href="https://p5.zdassets.com/assets/ie6-cc3f44c6791dea4e27512e127640b8b4.css" media="screen" rel="stylesheet" /><![endif]-->
+
+    <link id='generated_styles' rel='stylesheet' type='text/css' href='/generated/stylesheets/branding/894/89487/1438889728.css' media='screen' />
+
+    <script src="https://p5.zdassets.com/assets/vendor/jquery-1.6.1-24e9320e19b7eb8c3644af7ceadf2b83.js"></script>
+
+
+  <script id='generated_javascript' type='text/javascript' src='/generated/javascripts/locale/0/1/1440616987-1-0.js'></script>
+  <script src="https://p5.zdassets.com/assets/bootstrap-d615d68a65dcb9e942dc19a3caa08c02.js"></script>
+  <script type="text/javascript">
+//<![CDATA[
+Zendesk.assetHost = 'https://p5.zdassets.com';
+Zendesk.ToTangoID = 'SP-1111-01';
+Zendesk.viewedOnMobileDevice = false;
+
+  currentUser = Zendesk.currentUser = new User({"id":null,"externalId":null,"name":"Anonymous user","first_name":"Anonymous","role":0,"isOwner":false,"accessibleForums":true,"hasEmail":true,"email":"invalid@example.com","restriction":0,"uses12HourClock":true,"passwordExpiresAt":null,"voiceClientName":"agent_","voicePresenceName":"agent__presence","version":"users/new","localeVersion":"1.","tags":[],"managePinnedOrder":false,"locale_id":1,"localeIsDifferent":false,"assumed":false,"sharedOrganizations":[],"availabilityControlsEnabled":false});
+  currentUser.account = currentAccount = Zendesk.currentAccount = new Account({"id":89487,"name":"UncommonGoods Support","showUserProfile":false,"showChangePassword":false,"hasRemoteAuthentication":false,"subdomain":"ugoods","domain":"zendesk.com","isZendesk":false,"isSandbox":false,"isOpen":true,"isInTrial":false,"isPayingCustomer":false,"forumsTitle":"Customer Support","urlPrefix":"https://support.uncommongoods.com","secureUrlPrefix":"https://support.uncommongoods.com","creationDate":"2011/06/22 12:16:55 -0400","lastTrialDay":null,"daysLeftInTrial":null,"planType":3,"planName":"Plus","showExtendedTicketMetrics":true,"rulesCanReferenceMacros":false,"hasInvalidationTriggers":false,"assetHost":"p5.zdassets.com","features":["collaboration","businessHours","customerSatisfaction","chatApplyMacro","cms","lotus","lotusForAgents","placeholderSuggestions","useStatusHold","mobile","secureSessions","untilDueDate","userModel","radarSSLPubsub","chatLittleMermaid","chatDisableWarning","voiceClassicUseTwilioJs12","aceEmailEditors","userAndOrganizationTags"],"twitter_accounts":[],"facebookPages":[],"isLotusVisibleToAgents":true,"doAgentsPreferLotus":true,"clientSideLogging":false});
+  currentUser.organization = null;
+  currentUser.canViewOrganization = currentUser.organization != null && (!currentUser.isEndUser || currentUser.restriction === User.restrictions.organization || currentUser.organization.isShared);
+
+
+//]]>
+</script>
+
+  <script src="https://p5.zdassets.com/assets/node_pubsub_2-0ef7d5972eeeaa33cb364ffbda48bc7b.js"></script>
+  <script type="text/javascript">
+//<![CDATA[
+
+  ;(function(){
+    Minilog.zendeskConfiguration({
+      jQuery: jQuery,
+      debug: Zendesk.currentAccount.features.include('clientSideLogging'),
+      subdomain: Zendesk.currentAccount.subdomain,
+      userId: Zendesk.currentUser.id,
+      userType: Zendesk.currentUser.role
+    });
+    var apiHost = "";
+    RadarClient.setAPIHost(apiHost);
+  }());
+
+//]]>
+</script>
+  <script type="text/javascript">
+    if(Zendesk.currentAccount && Zendesk.currentAccount.features.include('secureSessions')) {
+      jQuery.cookie.defaults.secure = true;
+    }
+
+    if(Zendesk.currentUser) {
+      Zendesk.currentUser.authenticityToken = $j("meta[name='csrf-token']").attr('content');
+    }
+  </script>
+
+    <script type="text/javascript">
+      // disable Sammy logging in production
+      Sammy.log = function(){};
+    </script>
+
+  <script type="text/javascript">
+//<![CDATA[
+
+    
+    $j(document).ready(function () {
+      
+    });
+
+//]]>
+</script>
+  
+
+
+  <link href="https://support.uncommongoods.com/forums/20813912-Privacy-Security" rel="canonical"></link>
+  <style type="text/css">
+/* Hide the Zendesk logo and help desk title text */
+#table_header {
+	display: none;
+}
+
+/* Hide 'Powered by Zendesk' */
+.view footer .branding {
+display: none;
+text color: #0084A9
+}
+/*Header*/
+#header {
+	height: 100px;
+	background-color:#def0fb; /* web header */
+}
+
+#headerLeft{padding-left:10px;margin-top:10px;float:left;}
+#headerRight{padding-right:10px;margin-top:10px;float:right;padding-left:400px;}
+#contactInfo{padding-bottom:30px;}
+
+
+/* Set properties of new div for logo link */
+/* Inserted via JS Widget */
+/* Must match the H and W of the logo image */
+#header2 a { 
+	display: block; 
+	height: 68px; 
+	width: 280px; 
+	position: relative; 
+	top: 0px; 
+	left: 0px 
+} 
+
+#header2 a span { 
+	visibility: hidden; 
+}
+/*End Header*/
+
+
+/*** Code for formatting the top menu background, borders, and menu tabs ***/
+
+/* Set the background color of the top menu bar */
+#top-menu-background, #top form#topquery {
+    background-color: #DEF0FB; /* web header */
+}
+
+/* Set the left border color of the tabs to the same color as the background */
+ul#green.agent-tabs li.main {
+    border-left: 2px solid #DEF0FB; /* web header */
+font-size: inherit;
+} 
+
+/* This code controls the positioning of the menu tabs.
+*  No need to change anything here - just be sure to include it. */
+ul#green.agent-tabs li.tab_home.first, ul#green.agent-tabs li.tab_home.first:hover, ul#green.agent-tabs li.tab_forums, ul#green.agent-tabs li.tab_forums:hover {
+    border-left: 0!important;
+    padding-left: 0!important;
+}
+
+/* Set the hover background color for the inactive (unselected) tabs */
+ul#green.agent-tabs li.main:hover, ul#green.agent-tabs li.over, ul#green li.main:hover {
+    background: #084A9; /* ug light blue */
+}
+
+/* Set the hover background color for the active (selected) tab */
+ul#green.agent-tabs li.active:hover, ul#green.agent-tabs li.active.over {
+    border-left: 2px solid #084A9; /* ug light blue */
+    background: #084A9; /* ug light blue */
+}
+
+/*** Code for formatting the drop down menus (Manage and Settings) ***/
+
+/* Set the drop down menu section labels (Business Rules and Sandbox) */
+#green li.drop-header {
+	color: #084A9; /* ug light blue */
+	background-color: #FFFFFF; /* white */
+} 
+
+/* Set the drop-down menu background and border color */
+#green ul.menu-drop {
+	border-color: #DEF0FB; /* web header */
+	background-color: #FFFFFF; /* white */
+}
+
+/* Set the drop-down menu list item text and background color  */
+#green ul.menu-drop li a {
+	background-color: #FFFFFF; /* white */
+	color: #084A9; /* ug light blue */
+} 
+
+/* Set the drop-down menu list item text and background hover color */
+#green ul.menu-drop li a:hover {
+	color: #084A9; /* ug light blue */
+	background-color: #DEF0FB; /* web header */
+}
+
+/*End Menu Items */
+
+/* Set the width of the page */
+/* If you want to constrain it
+ * to a specific size. */
+#page {
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 1000px;
+	min-width: 1000px;
+	position:relative;
+	right: 2px;
+/* These two settings remove the white border next to the header. */
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/* Set the minimum width of the frame */
+.frame {
+	min-width: 550px;
+}
+
+/* Add a border within the content container
+ * to compensate for taking it away
+ * in #page. */
+div#container {
+	padding-left:10px;
+	padding-right:10px;
+}
+/* Set the footer width to match the page width */
+#footer {
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 1000px;
+  min-width: 1000px;
+  }
+
+html, body{
+	background: #f8f8f8;
+}
+
+/**
+body {
+	background: url(http://data.uncommongoods.com.edgesuite.net/images/newweb/frame/frame_bg.png) top repeat-y;
+}
+*/
+
+div#frame {
+	position:relative;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+/**FOOTER**/
+
+#footer{
+	padding:20px;
+	font-family:Helvetica, Arial, sans-serif;
+	background-color:#FFF;
+	clear:both;
+	text-align:left;
+	width:960px;
+	min-width:960px;
+	height:auto;
+	
+}
+#footer, #footer a:link, #footer a:hover, #footer a:active, #footer a:visited{
+	color:#333!important;
+}
+#footer p, #footer a{
+	text-align:left;
+	color:#333;
+}
+#footer ul, #footer li, #footer dl, #footer dt, #footer dd{	
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.footerMsg{
+	color:#333;
+	text-align:center;
+	border-bottom: 1px solid #EAEAEA;
+	margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-align: center !important;
+    width:auto!important;
+    font-size:11px;
+}
+.footerList{
+	float:left;
+	width:17.5%;
+	padding-bottom:20px;
+}
+.footerList p{
+	font-weight:bold;
+	font-size:13px!important;
+	margin-top:0;
+	margin-bottom: 5px;
+}
+.footerList li{
+	font-size:11px;
+	  margin-bottom: 2px !important;
+}
+#footer a, #footer a:link, #footer a:active, #footer a:visited{
+	text-decoration:none;
+}
+#footer a:hover{
+	text-decoration:underline;
+}
+#follow{
+	float:right;
+	width:25%;
+	padding-left:4%;
+	border-left:1px solid #eaeaea;
+}
+#socialLinks{
+	font-size:13px!important;
+	font-weight:bold;
+}
+#socialLinks span{
+	display:block;
+	float:left;
+	height:25px;
+	line-height:25px;
+	margin-right:4px;
+}
+.socialCircle{
+display: inline-block;
+width: 25px;
+height: 25px;
+border-radius: 12px;
+background: url("http://www.uncommongoods.com/images/social-sprite.png") no-repeat scroll left center #006993;
+}
+#socialLinks a{ 
+	margin-left: 2px;
+    margin-right: 3px;
+}
+
+.facebook.socialCircle{
+	background-position: 0 -0;
+}
+.twitter.socialCircle{
+	background-position: 0 -25px;
+}
+.googlePlus.socialCircle{
+	background-position: 0 -50px;
+}
+.pinterest.socialCircle{
+	background-position: 0 -75px;
+}
+.tumblr.socialCircle{
+	background-position: 0 -100px;
+}
+.instagram.socialCircle{
+	background-position: 0 -125px;
+}
+#signUp {
+    background: url("http://www.uncommongoods.com/images/footer-email.png") no-repeat scroll left center transparent;
+    clear: both;
+    display: block;
+    font-size: 13px;
+    margin-top: 33px;
+    padding-left: 25px;
+	margin-bottom:5px;
+}
+#footer form{
+	border:1px solid #d1d3d4;
+	background-color:#FFF;
+	height:27px;
+}
+#footer input{
+	border:none;
+	height:27px;
+	float:left;
+}
+
+.emailSignInput{
+	width:209px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	color: #333!important;
+padding: 2px 7px!important;
+}
+
+.emailSignBtn{
+	background: url("http://www.uncommongoods.com/images/footer-submit.gif") no-repeat center;
+	display:inline-block;
+	width:27px;
+	border-left:1px solid #d1d3d4!important;
+}
+#contactFooter{
+	clear:both;
+	border-top:1px solid #eaeaea;
+	font-size:11px;
+	padding-top:20px;
+}
+#contactFooter .phone, #contactFooter .clock, #contactFooter .map{
+	background-image:url('http://www.uncommongoods.com/images/footer-sprite.png');
+	background-repeat:no-repeat;
+	padding-left:20px;
+}  
+#contactFooter .phone{
+	background-position:0 0;
+}
+#contactFooter .clock{
+	background-position:0 -20px;
+}
+#contactFooter .map{
+	background-position:0 -40px;
+}
+#contactFooter dl{
+	float:left;
+	margin-right:60px;
+}
+#contactFooter dl:last-child{
+	float:right;
+	margin-right:80px;
+}
+#contactFooter dt{
+	font-weight:bold;
+	float:left;
+	margin-right:10px;
+}
+#contactFooter dd{
+	float:left;
+}
+#footer #cy_image{
+	width:1px!important;
+	height:1px!important;
+	display:block;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.emailSign strong {
+	color: #126788;
+}
+
+.emailSign p {
+	text-align: left !important;
+}
+
+.emailSignBtn {
+	margin-bottom: -6px;
+}
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+margin:0;
+padding:0;
+border:0;
+font-weight:inherit;
+font-style:inherit;
+font-family:inherit;
+vertical-align:baseline;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+display:block;
+}
+
+table {
+border-collapse:separate;border-spacing:0;
+}
+
+caption, th, td {
+text-align:left;font-weight:normal;
+}
+
+table, td, th {
+vertical-align:middle;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+content:"";
+}
+
+blockquote, q {
+quotes:"" "";
+}
+
+a img {
+border:none; vertical-align:bottom;
+}
+
+a,a:visited{
+color: #126788;
+}
+
+/* typography.css */
+body, div, span, h1, h2, h3, h4, h5, h6, p, a, a:hover, a:visited, a:active, ul, ol, li, strong, bold, i, td {
+font-family: Helvetica, Arial, sans-serif;
+}
+.ugfont{
+	text-decoration: none;
+	font-size: 11px;
+}
+</style>
+
+</head>
+
+
+<body class="forums forums-show">
+  <ul id='banners'>
+  <script type='text/html' id='banner-item-template' data-template-name='banner-item'>
+    <li>
+      <span class='icon'>&nbsp; &nbsp; &nbsp; </span>
+      <span class='content'>{{ text }}</span>
+      <span class='ignore'>(<a href="#">ignore this</a>)</span>
+      <span class='reload'>(<a href="">reload</a>)</span>
+    </li>
+  </script>
+</ul>
+
+  <div id="page">
+    <div id="top">
+      <div id="header">
+        <div id="top-right"></div>
+        <div id="header_container">
+    
+    <table id="table_header"><tr>
+      <td><a href="http://www.uncommongoods.com" target="_blank" title=""><img alt="" id="logo" src="https://ugoods.zendesk.com/system/logos/2034/5940/logo_Site-Header.png" /></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="/images/logo-delimiter.png" />&nbsp;</td>
+      <td><a href="/home">UncommonGoods Support</a></td>
+    </tr></table>
+</div>
+
+      </div>
+
+      <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="main clazz tab_home"><a href="/home" class="tab">Home</a></li>
+              <li class="main clazz tab_new"><a href="/anonymous_requests/new" class="tab">Submit a request</a></li>
+            <li class="main clazz tab_requests"><a href="/requests" class="tab">Check your existing requests</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="container" class="clearfix">
+
+  <div id="flash">
+</div>
+
+
+
+  <div id="flash_messages">
+    
+<script type="text/javascript">
+</script>
+
+  </div>
+
+    <div id="contentwrapper">
+      <div id="contentcolumn">
+        
+  
+
+<div class="content content_grey"><div class="grey_box_top"><div class="box box_top"></div></div>
+  <div class="content-top-right top">
+    <p></p>
+  </div>
+
+  <h2 class="forums"><a href="/forums">Customer Support</a><span class="delim">/</span><a href="/categories/20055778-We-ve-got-your-answers-here-">We&#39;ve got your answers here!</a><span class="delim">/</span>Privacy &amp; Security</h2>
+
+  <form accept-charset="UTF-8" action="/forums/20813912-Privacy-Security/entries/search" id="searchform" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="title" id="query" name="query" type="text" />
+    
+    <input id="for_search" name="for_search" type="hidden" value="1" />
+    
+    <input class="button search primary" disable_with_ignored="Searching&amp;hellip;" id="buttonsubmit" name="commit" type="submit" value="Search" />
+</form>
+
+<div class="grey_box_bottom"><div class="box box_bottom"></div></div></div><div class="box_bottom_clear">&nbsp;</div>
+<script type="text/javascript">
+//<![CDATA[
+zd.jsInitializers.push(["forums/_search",[{"per_page":5,"focus":true,"model":{"category_id":20055778,"description":"","display_type_id":1,"entries_count":4,"is_locked":true,"name":"Privacy &amp; Security","organization_id":null,"position":10,"translation_locale_id":null,"updated_at":null,"use_for_suggestions":true,"visibility_restriction_id":1,"is_public":true},"autocomplete":true,"incremental_search":false,"search_scopes":[{"name":"all forums","url":"/categories/search"}],"model_name":"Privacy &amp; Security"}]]);
+//]]>
+</script>
+
+
+  <div class="forum_tabs">
+    <div class="content content_grey"><div class="grey_box_top"><div class="box box_top"></div></div>
+          <div class="content-top-right top add-button">
+    <p class="button-item">
+      
+    </p>
+  </div>
+
+  <p class="forum-nav">
+    <a href="#overview" id="forum_nav_overview" url="/forums/20813912-Privacy-Security">Overview</a>
+    <span class="delim">|</span>
+    <a href="#recent" id="forum_nav_recent" url="/forums/20813912-Privacy-Security/recent_entries">Recent</a>
+
+
+  </p>
+
+        
+
+      <div id="content_entries">
+        
+<div class="frame paginates_with_more" id="search-result">
+
+      <div class="item ">
+      
+
+<div class="icon">
+    <!-- only highlight topics in forum overviews -->
+    <img src="/images/types/article.png" title="Article"/>
+</div>
+
+<div class="item-info" id ="entry-21436196">
+  <h1 id="entry_21436196_subj" class="fade_truncation_outer">
+      <div class="fade_truncation_inner"></div>
+      <span class="">
+        <a href="/entries/21436196-Site-security" title="Site security">Site security</a>
+      </span>
+  </h1>
+
+  <p class="info data">
+        Jennifer Grim May 11, 2012  </p>
+
+</div>
+
+
+  </div>
+  <div class="item ">
+      
+
+<div class="icon">
+    <!-- only highlight topics in forum overviews -->
+    <img src="/images/types/article.png" title="Article"/>
+</div>
+
+<div class="item-info" id ="entry-32021200">
+  <h1 id="entry_32021200_subj" class="fade_truncation_outer">
+      <div class="fade_truncation_inner"></div>
+      <span class="">
+        <a href="/entries/32021200-OpenSSL-Security" title="OpenSSL / Security">OpenSSL / Security</a>
+      </span>
+  </h1>
+
+  <p class="info data">
+        Jennifer Grim April 9, 2014  </p>
+
+</div>
+
+
+  </div>
+  <div class="item ">
+      
+
+<div class="icon">
+    <!-- only highlight topics in forum overviews -->
+    <img src="/images/types/article.png" title="Article"/>
+</div>
+
+<div class="item-info" id ="entry-21519323">
+  <h1 id="entry_21519323_subj" class="fade_truncation_outer">
+      <div class="fade_truncation_inner"></div>
+      <span class="">
+        <a href="/entries/21519323-Tell-me-more-about-your-privacy-and-security-policies-" title="Tell me more about your privacy and security policies.">Tell me more about your privacy and security policies.</a>
+      </span>
+  </h1>
+
+  <p class="info data">
+        Jennifer Grim June 4, 2012  </p>
+
+</div>
+
+
+  </div>
+  <div class="item nobottom">
+      
+
+<div class="icon">
+    <!-- only highlight topics in forum overviews -->
+    <img src="/images/types/article.png" title="Article"/>
+</div>
+
+<div class="item-info" id ="entry-21409411">
+  <h1 id="entry_21409411_subj" class="fade_truncation_outer">
+      <div class="fade_truncation_inner"></div>
+      <span class="">
+        <a href="/entries/21409411-My-credit-card-is-saved-on-file-Why-do-I-need-to-enter-my-CVV-number-when-I-order-" title="My credit card is saved on file. Why do I need to enter my CVV number when I order?">My credit card is saved on file. Why do I need to enter my CVV number when I order?</a>
+      </span>
+  </h1>
+
+  <p class="info data">
+        Jennifer Grim May 11, 2012  </p>
+
+</div>
+
+
+  </div>
+
+
+</div>
+
+      </div>
+<div class="grey_box_bottom"><div class="box box_bottom"></div></div></div><div class="box_bottom_clear">&nbsp;</div>  </div>
+
+<script type="text/javascript">
+//<![CDATA[
+zd.jsInitializers.push(["forums/show",[{"autocomplete":true}]]);
+//]]>
+</script>
+
+      </div>
+    </div>
+
+    <div id="sidebar">
+        <div id="widget_fixed" class="draggable">  <div><div class="blue_box_top"></div><div class="side-box-content"><h3>Privacy &amp; Security</h3><div style="clear:left; height:8px;"></div></div><div class="blue_box_bottom">&nbsp;</div></div></div>
+    </div>
+</div>
+
+
+  </div>
+
+  <div id="footer">
+  
+
+    <p>
+       <a href="http://www.zendesk.com/help-desk-software?company_name=UncommonGoods+Support&amp;utm_campaign=text&amp;utm_medium=poweredbyzendesk&amp;utm_source=webportal" target="_blank">Support Software</a> by Zendesk 
+    </p>
+</div>
+
+<!-- Render any mouseover tips on the page -->
+
+<script type="text/javascript">
+//<![CDATA[
+  if(!Zendesk) var Zendesk = {};
+  Zendesk.tab = "forums";
+
+//]]>
+</script>
+<script src="https://p5.zdassets.com/assets/auto_included-f3c80cdcfcc78cb127076e5dd48a6ae0.js"></script>
+<script src="https://p5.zdassets.com/assets/zd_tickets_table_node-f666c6418aab3f385d4ae27e0331ed8a.js"></script>
+<script src="https://p5.zdassets.com/assets/zd_ticket_viewing_status_node-28ddd42d7133b78c1e646870873819e8.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+  $z.initializeModules(zd.jsInitializers);
+
+//]]>
+</script>
+  <script type="text/javascript" charset="utf-8">
+var now = new Date();
+var dateToday = now.getDate();
+var monthToday = now.getMonth();
+var yearToday = now.getFullYear();
+var hourDifference = Math.ceil(now.getTimezoneOffset() / 60) - 5;
+var estHour = hourDifference + now.getHours();
+if (estHour > 23) {
+    dateToday++;
+}
+if (estHour < 0) {
+    dateToday--;
+}
+if (dateToday == 0) {
+    monthToday--;
+    dayToday = 30;
+}
+if ((dateToday == 31) && (monthToday == 10)) {
+    monthToday = 11;
+    dayToday = 1;
+}
+if ((dateToday == 32) && (monthToday == 11)) {
+    monthToday = 0;
+    dayToday = 1;
+}
+hours = "Mon - Fri 8am - 12am ET<br>Sat &amp; Sun 8am - 11pm ET";
+if ((dateToday >= 27) && (monthToday >= 10)) {
+    hours = "11/27 8am - 12am ET<br>11/28 9am - 12am ET<br>11/29 7am - 12am ET";
+}
+if (((dateToday >= 30) && (monthToday >= 10)) || ((dateToday >= 1) && (monthToday >= 11))) {
+    hours = "24 hours until 12/24";
+}
+if ((dateToday >= 23) && (monthToday >= 11)) {
+    hours = "12/23 12am - 12am ET<br>12/24 12am - 9pm ET<br>12/25 9am - 9pm ET";
+}
+if ((dateToday >= 25) && (monthToday >= 11)) {
+    hours = "12/25 9am - 9pm ET<br>12/26 & 12/27 8am - 12am ET<br>12/28 & 12/29 8am - 11pm ET";
+}
+if ((dateToday >= 29) && (monthToday >= 11)) {
+    hours = "12/29 8am - 11pm ET<br>12/30 8am - 12am ET<br>12/31 8am - 9pm ET";
+}
+if (((dateToday == 31) && (monthToday == 11)) || ((dateToday == 1) && (monthToday == 0))) {
+    hours = "12/31 8am - 9pm ET<br>1/1 9am - 12am ET";
+}
+var foo = $('footer').innerHTML;
+foo = "";
+foo += "<div class=\"footerList\"> <p>Story &amp; Mission</p> <ul> <li><a href=\"http://www.uncommongoods.com/static/about_company.jsp\">Our Story</a></li> <li><a href=\"http://www.uncommongoods.com/static/mission.jsp\">Mission Statement</a></li> <li><a href=\"http://www.uncommongoods.com/careers\">Careers</a></li> <li><a href=\"http://www.uncommongoods.com/static/better.jsp\">Better To Give</a></li> <li><a href=\"http://better.bcorporation.net/company/uncommongoods\" target=\"_blank\">B Corporation</a></li> <li><a href=\"http://www.uncommongoods.com/images/vendorCode.pdf\" target=\"_blank\">Vendor Code of Conduct</a></li> </ul> </div> <div class=\"footerList\"> <p>Community</p> <ul> <li><a href=\"http://www.uncommongoods.com/designs\">Submit Your Product</a></li> <li><a href=\"http://www.uncommongoods.com/lists/design-challenges\">Design Challenge Calendar</a></li> <li><a href=\"http://blog.uncommongoods.com/\">Blog: The Goods</a></li> <li><a href=\"http://www.uncommongoods.com/designs/events\">Events</a></li> <li><a href=\"http://www.uncommongoods.com/reviews\">Blogger Review Program</a></li> </ul> </div> <div class=\"footerList\"> <p>Support</p> <ul> <li><a href=\"https://ugoods.zendesk.com/forums\">FAQ</a></li> <li><a href=\"https://ugoods.zendesk.com/forums/20822448-customer-service\">Customer Service</a></li> <li><a href=\"https://ugoods.zendesk.com/forums/20813852-shipping-options-pricing\">Shipping Options</a></li> <li><a href=\"http://www.uncommongoods.com/orderform\">Print an Order Form</a></li> <li><a href=\"https://ugoods.zendesk.com/entries/21418402-who-do-i-contact-about-corporate-orders\">Corporate Orders</a></li> <li><a href=\"http://www.uncommongoods.com/product/gift-certificate\">Gift Certificates</a></li> </ul> </div> <div class=\"footerList\"> <p>Connect</p> <ul> <li><a href=\"http://www.uncommongoods.com/catalogSignup/catalogSignup.jsp\">Request a Catalog</a></li> <li><a href=\"http://www.uncommongoods.com/static/sitecatalog.jsp\" target=\"_blank\">Browse Online Catalog</a></li> <li><a class=\"expose-choice-tab\" href=\"# \">Catalog Unsubscribe</a></li> <li><a href=\"http://www.uncommongoods.com/static/emailOptOut.jsp\">Email Unsubscribe</a></li> <li><a href=\"http://www.uncommongoods.com/rss/rss_pop.jsp\" onclick=\"javascript:openWin('http://www.uncommongoods.com/rss/rss_pop.jsp');return false;\">This Just In RSS</a></li> <li><a href=\"http://www.uncommongoods.com/feedback/feedback.jsp\">Submit Feedback</a></li> </ul> </div> <div id=\"follow\"> <p id=\"socialLinks\"> <a target=\"_blank\" rel=\"external\" href=\"https://www.facebook.com/pages/UncommonGoods/44340057816\" class=\"facebook socialCircle\" title=\"Facebook\"></a> <a target=\"_blank\" rel=\"external\" href=\"http://www.twitter.com/uncommongoods\" class=\"twitter socialCircle\" title=\"Twitter\"></a> <a target=\"_blank\" rel=\"author\" href=\"https://plus.google.com/+uncommongoods\" class=\"googlePlus socialCircle\" title=\"Google+\"></a> <a target=\"_blank\" rel=\"external\" href=\"http://pinterest.com/uncommongoods\" class=\"pinterest socialCircle\" title=\"Pinterest\"></a> <a target=\"_blank\" rel=\"external\" href=\"http://ugoods.tumblr.com/\" class=\"tumblr socialCircle\" title=\"tumblr.\"></a> <a target=\"_blank\" rel=\"external\" href=\"http://instagram.com/uncommongoods\" class=\"instagram socialCircle\" title=\"Instagram\"></a> </p> <span id=\"signUp\">Sign up for our weekly emails!</span> <form parentpageid=\"3381057\" siteid=\"90789\" pageid=\"3381059\" action=\"http://www.pages01.net/uncommongoods/signup/entry?sessionGUID=b273d8e6-918b-c8dc-c4d1-dd7bb8cc2e77&amp;trackedExternalFormPost=1&amp;webSyncID=69a6c561-ae20-65e0-2753-36d556676ce3&amp;sessionGUID=b273d8e6-918b-c8dc-c4d1-dd7bb8cc2e77&amp;trackedExternalFormPost=1\" name=\"sign_up\" method=\"post\"> <input type=\"text\" onclick=\"clickclear(this, 'Email')\" value=\"Email\" maxlength=\"50\" name=\"Email\" class=\"emailSignInput\"> <input type=\"submit\" value=\"\" class=\"emailSignBtn\"> <input type=\"hidden\" value=\"24.143.197.183\" name=\"header-x\"> <input type=\"hidden\" value=\"38.105.201.194\" name=\"y-header-y\"> <input type=\"hidden\" value=\"StandardForm\" name=\"formSourceName\"> <input type=\"hidden\" value=\"yes\" name=\"sp_exp\"> </form> </div> <div id=\"contactFooter\" class=\"clearfix\"> <dl> <dt style=\"display:none;\"></dt> <dd class=\"phone\">888.365.0056</dd> </dl> <dl> <dt class=\"clock\">Hours:</dt> <dd>" + hours + "</dd> </dl> <dl> <dt class=\"map\">Address:</dt> <dd>Brooklyn Army Terminal <br/>140 58th Street, Building B, Suite 5A <br/>Brooklyn, New York 11220</dd> </dl> <dl> <dt></dt> <dd><a href=\"/sitemap.html\">Site Map</a> \| <a href=\"/static/terms.jsp\">Terms &amp; Conditions</a> <br/><a href=\"http://nytm.org/made\" target=\"_blank\">Made in NYC</a> <br/>&copy;2013 UncommonGoods&trade; LLC</dd> </dl> <dl style=\"clear:both; float:none; width:100%\"></dl> </div>";
+$('footer').update(foo);
+
+function clickclear(thisfield, defaulttext) {
+    if (thisfield.value == defaulttext) {
+        thisfield.value = "";
+    }
+}
+function clickrecall(thisfield, defaulttext) {
+    if (thisfield.value == "") {
+        thisfield.value = defaulttext;
+    }
+}
+var cpcHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + cpcHost + "www.choicetab.com/javascripts/choice_tab.js?id=620fb1c9ab2f452eb100413539c11fc078bee931&amp;format=relative' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript" charset="utf-8">
+var head = $('header').innerHTML;
+
+head="";
+
+head+="<div id=\"header\" ><div id=\"headerLeft\"> <span id=\"supportBanner\"> <a href=\"http://www.uncommongoods.com\"> <img src=\"http://www.uncommongoods.com/images/ugoods_logo_0414.png\" alt=\"\" width=\"220\"/></a></span> </div>   <div id=\"headerRight\"> <p id=\"contactInfo\"><strong>888.365.0056 . <a class=\"noLineOnLink\"  href=\"http://server.iad.liveperson.net/hc/49111037/?cmd=file&amp;file=visitorWantsToChat&amp;site=49111037&amp;byhref=1\" target=\"chat49111037\" onclick=\"window.open(\'http://server.iad.liveperson.net/hc/49111037/?cmd=file&amp;file=visitorWantsToChat&amp;site=49111037\',\'chat49111037\',\'width=472,height=320\');return false;\">live chat</a></strong></p>  </div></div>";
+
+$('header').update(head);
+</script>
+<script type="text/javascript" charset="utf-8">
+jQuery('#top-menu #green .tab_new')[0].update('<a href="/anonymous_requests/new" class="tab">Email Us</a>');
+</script>
+<script type="text/javascript" charset="utf-8">
+jQuery("li.clazz.tab_home").remove();
+jQuery("li.clazz.tab_requests").remove();
+
+jQuery("div#top-menu ul#green li.tab_new").after('<li class="main tab_documentation"><a class="tab" href="http://www.uncommongoods.com" target="_parent">Keep Shopping</a></li>');
+</script>
+
+    <script type="text/javascript" charset="utf-8">
+      $j(document).ready(function () {
+        var cacheBuster = currentUser.isAnonymous ? currentUser.localeVersion : currentUser.version;
+        $j.ajax({
+          url: '/widgets/async.json?user_id=' + currentUser.id + '&v=' + cacheBuster,
+          data: {"controller_name":"forums","action_name":"show","action_method":"get","forum_id":"20813912"},
+          success: Widget.asyncInsertion
+        });
+      });
+    </script>
+
+  
+
+  <script type="text/javascript">
+//<![CDATA[
+    
+    jQuery(document).ready(function () {
+          Zendesk.Alerts.showPasswordExpiration();
+      Zendesk.Alerts.showUserAssumeNotice();
+
+    });
+
+//]]>
+</script></body>
+</html>
