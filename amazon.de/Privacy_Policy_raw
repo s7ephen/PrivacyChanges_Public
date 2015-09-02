@@ -1,1 +1,2316 @@
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+
+
+<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-91ff7fc385224097472b71c90d6dbc0e097d5e2f._V2_.css#AUIClients/AmazonUI.rendering_engine-not-trident.min" />
+<script>
+(function(n,b,j,k){function e(a,b){G&&G.count&&G.count("aui:"+a,b===0?0:b||(G.count("aui:"+a)||0)+1)}function i(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function h(a,b,c,d){b=b&&c?b+a+c:b||c;return d?h(a,b,d):b}function g(a,b){try{Object.defineProperty(n,a,{value:b})}catch(c){n[a]=b}}function d(){return setTimeout(D,0)}function c(a,b){var c=a.length,e=c,f=function(){e--||(A.push(b),v||(d(),v=!0))};for(f();c--;)C[a[c]]?f():(m[a[c]]=m[a[c]]||[]).push(f)}
+function a(a,c,d,e){var f=b.createElement(a?"script":"link");i(f,"error",e);a?(f.type="text/javascript",f.async=!0,d&&(c.indexOf("images/I")!==-1||/AUIClients/.test(c))&&f.setAttribute("crossorigin","anonymous"),f.src=c):(f.rel="stylesheet",f.href=c);b.getElementsByTagName("head")[0].appendChild(f)}function f(b,c){return function(d){function f(){a(c,d,g,function(a){!H&&g?(g=!1,e("resource_retry"),f()):(e("resource_error"),b.log("Asset failed to load: "+d,H?"WARN":k));if(a&&a.stopPropagation)a.stopPropagation();
+else if(n.event)n.event.cancelBubble=!0})}if(z[d])return!1;z[d]=!0;e("resource_count");var g=!0;return!f()}}function l(a,b,d,e,f){return function(g,h){var i=f||this;typeof g==="function"&&(h=g,g="anon"+F++);var j=i.guardError(g,function(){for(var c=[],d=0;d<a.length;d++)c[d]=I.hasOwnProperty(a[d])?I[a[d]]:k;d=null;e?d=h:typeof h==="function"&&(d=h.apply(n,c));if(b){I[g]=d;c=g;for(C[c]=!0;(m[c]||[]).length;)m[c].shift()();delete m[c]}});I.hasOwnProperty(g)&&i.error("Component already registered",g);
+I[g]=k;d?j():c(a,j)}}function o(a){return function(){return{execute:l(arguments,!1,a,!1,this),register:l(arguments,!0,a,!1,this)}}}function p(a,b){return function(c,d){var e=this;return function(){d||(d=c,c=k);try{d.apply(this,arguments)}catch(f){var g=n.console;if(g&&g.error&&e.log(f,b,c))g.error(h(String.fromCharCode(10),h(": ",a,c,f.message),f.stack||f));else throw f instanceof Error?f:Error(h(": ",a,c,f));}}}}function r(a){this.log=function(b,c,d){var e=n.ueLogError;return e?(e({message:b,logLevel:c||
+"ERROR",attribution:h(":",a,d)}),!0):!1};this.error=function(b,c,d,e){throw Error(h(" @ ",h(":",e,b),h(":",a,c,d)));};this.guardError=p(a);this.guardFatal=p(a,"FATAL");this.load={js:f(this,!0),css:f(this)}}function s(a,b){for(var c=a.className.split(" "),d=c.length;d--;)if(c[d]===b)return;a.className+=" "+b}function q(a,b){for(var c=a.className.split(" "),d=[],e;(e=c.pop())!==k;)e&&e!==b&&d.push(e);a.className=d.join(" ")}function w(a){try{return a()}catch(b){return!1}}function t(){if(Na){var a=n.innerWidth?
+{w:n.innerWidth,h:n.innerHeight}:{w:Q.clientWidth,h:Q.clientHeight},b=!1;Math.abs(a.w-Oa.w)>5||a.h-Oa.h>50?(Oa=a,qa=4,(b=ea.mobile||ea.tablet?a.w>a.h:a.w>=1250)?s(Q,"a-ws"):q(Q,"a-ws")):qa--&&(Pa=setTimeout(t,16))}}function u(){clearTimeout(Pa);qa=4;t()}function x(a){(Na=a===k?!Na:!!a)&&t()}function E(){return Na}var y=n.AmazonUIPageJS||n.P;if(y&&y.when&&y.register)throw Error("A copy of P has already been loaded on this page.");var G=n.ue;G&&G.tag&&(G.tag("aui"),G.tag("aui:aui_build_date:3.15.8.2-2015-08-26"));
+var B=j.now=j.now||function(){return+new j},A=[],v=!1,D;D=function(){for(var a=d(),b=B();A.length;)if(A.shift()(),B()-b>50)return;clearTimeout(a);v=!1};(function(a){try{return a.test(navigator.userAgent)}catch(b){return!1}})(/OS 6_[0-9]+ like Mac OS X/i)&&i(n,"scroll",d);var C={},m={},z={},H=!1;i(n,"beforeunload",function(){H=!0;setTimeout(function(){H=!1},1E4)});var F=0,I={},L;r.prototype={declare:l([],!0,!0,!0),register:l([],!0),execute:l([]),AUI_BUILD_DATE:"3.15.8.2-2015-08-26",when:o(),now:o(!0),
+trigger:function(a,b){var c=n.aPageStart||NaN,d=B(),c={data:b,pageElapsedTime:d-c,triggerTime:d};this.declare(a,c);L&&L(a,c)},handleTriggers:function(a){L&&this.error("Trigger handler already registered");L=a},attributeErrors:function(a){return new r(a)}};g("AmazonUIPageJS",new r);g("P",n.AmazonUIPageJS);if(b.addEventListener){var K;b.addEventListener("DOMContentLoaded",K=function(){n.AmazonUIPageJS.trigger("a-domready");b.removeEventListener("DOMContentLoaded",K,!1)},!1)}var Q=b.documentElement,
+R;try{R=navigator.userAgent}catch(N){R=""}var W=function(){var a="O,ms,Moz,Webkit".split(","),c=b.createElement("div");return{testGradients:function(){c.style.cssText=("background-image:"+"-webkit- ".split(" ").join("gradient(linear,left top,right bottom,from(#9f9),to(white));background-image:")+a.join("linear-gradient(left top,#9f9, white);background-image:")).slice(0,-17);return c.style.backgroundImage.indexOf("gradient")>-1},test:function(b){for(var d=b.charAt(0).toUpperCase()+b.substr(1),b=(a.join(d+
+" ")+d+" "+b).split(" "),d=b.length;d--;)if(c.style[b[d]]==="")return!0;return!1},testTransform3d:function(){var a=!1;if(n.matchMedia)a=n.matchMedia("(-webkit-transform-3d)").matches;return a}}}(),y=Q.className,J=/(^| )a-mobile( |$)/.test(y),T=/(^| )a-tablet( |$)/.test(y),ea={audio:function(){return!!b.createElement("audio").canPlayType},video:function(){return!!b.createElement("video").canPlayType},canvas:function(){return!!b.createElement("canvas").getContext},svg:function(){return!!b.createElementNS&&
+!!b.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in b.createElement("span")},geolocation:function(){return!!navigator.geolocation},history:function(){return!(!n.history||!n.history.pushState)},webworker:function(){return!!n.Worker},autofocus:function(){return"autofocus"in b.createElement("input")},inputPlaceholder:function(){return"placeholder"in
+b.createElement("input")},textareaPlaceholder:function(){return"placeholder"in b.createElement("textarea")},localStorage:function(){return"localStorage"in n&&n.localStorage!==null},orientation:function(){return"orientation"in n},touch:function(){return"ontouchend"in b},gradients:function(){return W.testGradients()},hires:function(){var a=n.devicePixelRatio&&n.devicePixelRatio>=1.5||n.matchMedia&&n.matchMedia("(min-resolution:144dpi)").matches;e("hiRes"+(J?"Mobile":T?"Tablet":"Desktop"),a?1:0);return a},
+transform3d:function(){return W.testTransform3d()},touchScrolling:function(){return RegExp("Windowshop|android.([3-9]|[L-Z])|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|Chrome|Silk|Firefox|Trident"+String.fromCharCode(92)+"/.+?; Touch","i").test(R)},ios:function(){return!!R.match(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)},android:function(){return!!R.match(/android.([1-9]|[L-Z])/i)&&!/trident/i.test(R)},mobile:function(){return J},tablet:function(){return T}},ca;for(ca in ea)ea.hasOwnProperty(ca)&&
+(ea[ca]=w(ea[ca]));for(var ja="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),Ma=0;Ma<ja.length;Ma++)ea[ja[Ma]]=w(function(){return W.test(ja[Ma])});var Na=!0,Pa=0,Oa={w:0,h:0},qa=4;t();typeof n.addEventListener==="function"?n.addEventListener("resize",u,!1):n.attachEvent("onresize",u);q(Q,"a-no-js");s(Q,"a-js");y=[];for(ca in ea)ea.hasOwnProperty(ca)&&ea[ca]&&y.push("a-"+ca.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));s(Q,y.join(" "));
+Q.setAttribute("data-aui-build-date","3.15.8.2-2015-08-26");n.AmazonUIPageJS.register("p-detect",function(){return{capabilities:ea,toggleResponsiveGrid:x,responsiveGridEnabled:E}})})(window,document,Date);
+//Locally override
+</script>
+<script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-4145f9e070e4176867c88bbe5474b2f471b549e3._V2_.js#AUIClients/AmazonUI.rendering_engine-not-trident.min');
+</script>
+
+  
+  
+
+
+
+
+<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpCoreCSS-eae508ff8acbf8611feec949de9e0e05f01f88ca.min._V2_.css" />
+<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpV4CSS-26a2857e1d98ae6dbe23b6044befd34a705ad5d1.min._V2_.css" />
+
+<style type="text/css">
+.cs-help-content .cs-help-note p {
+  padding-left:88px !important;
+  background: url("http://g-ecx.images-amazon.com/images/G/03/x-locale/cs/help/images/indexcard_note._V365960985_.png") no-repeat 10px 15px !important;
+}
+.cs-help-content .cs-help-note p.take_action {
+  padding-left:75px !important;
+  background-image: url("http://g-ecx.images-amazon.com/images/G/03/x-locale/cs/help/images/indexcard_takeaction._V365960985_.png") !important;
+}
+.cs-help-content .cs-help-note div.cs-help-callout-button {
+  margin-left:75px !important;
+}
+</style>
+
+  
+  
+
+
+
+
+
+
+
  
+ 
+
+
+
+
+<script type="text/javascript">
+
+var amznJQ,jQueryPatchIPadOffset=false;
+(function() {
+  function f() {}
+  function ch(y) {return String.fromCharCode(y);}
+  amznJQ={
+    addLogical:f,
+    addStyle:f,
+    addPL:f,
+    available:f,
+    chars:{EOL:ch(10), SQUOTE:ch(39), DQUOTE:ch(34), BACKSLASH:ch(92), YEN:ch(165)},
+    completedStage:f,
+    declareAvailable:f,
+    onCompletion:f,
+    onReady:f,
+    strings:{}
+  };
+}());
+
+
+</script>
+
+
+
+
+
+<title>
+Amazon.de Hilfe: Datenschutzerklärung 
+</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpOmnitureJS-009b5be529845f0542146032fe38f3bca764253c.min._V2_.js');
+</script>
+
+<script language="JavaScript" type="text/javascript">
+   <!--
+var csHelpOmnitureAccountName = 'acsde-prod';
+
+if (typeof csHelpOmniture === 'undefined') { csHelpOmniture = {}; }
+
+
+csHelpOmniture.setupHMDWidget = function() {
+
+   if (window.P && window.P.AUI_BUILD_DATE) {
+
+      P.when("A").register("csHelpOmniture", function() {
+
+         return {
+            storeHMDResults: function(wasHelpful, feedbackKind, freeformText) {
+               s.linkTrackVars = 'events,eVar53,eVar54,eVar56';
+               s.linkTrackEvents = 'event30,event31';
+               s.events   = "event31"; // Assume "yes".
+               s.pageName = "3312401";
+
+               if (! wasHelpful) {
+                  s.events = "event30";
+                  s.eVar53 = feedbackKind;
+
+                  // Not for Phase I.  s.eVar56 = freeformText; //TODO:  right var name?
+               }
+
+               s.eVar54 = "0";
+
+               if (s.tl) {
+                  s.tl(/*objectBeingClickedOrTrue=>*/ true,
+                       /*linkType=>Custom Links*/     "o",
+                       /*linkName=>*/                 "Digital HMD Widget");
+               }
+            }
+         }
+      });
+   }
+};
+
+csHelpOmniture.event = function(omnitureObjJson, jQuery) {
+
+    this.setupHMDWidget();
+
+    s.pageName = '3312401';
+    s.channel = 'Retail';
+    s.eVar46 = s.channel;
+    s.fpCookieDomainPeriods = '2';
+
+
+
+    s.prop14 = 'amazon.de-datenschutzerklärung';
+    // The first H1 entry takes precedence over the encoded title value, if present.
+    var firstH1 = '';
+    // Migrate to Help 4.0, need to compatible with Help 3.0, will delete else branch once Help 4.0 fully launched
+    if (jQuery('.cs-help-content h1:first').length) {
+        if (jQuery('.cs-help-content h1:first img').length) {
+            if ( jQuery('.cs-help-content h1:first img').attr("alt") !== undefined ) {
+                firstH1 = jQuery('.cs-help-content h1:first img').attr("alt").replace(/["'`\r\n]/g, '');
+            }
+        } else {
+            firstH1 = jQuery('.cs-help-content h1:first').text().replace(/["'`\r\n]/g, '');
+        }
+    } else {
+        firstH1 = jQuery('.center-col h1:first').text();
+    }
+
+    if ( firstH1 ) { s.prop14 = firstH1; }
+
+    s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T2|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:|CS_SEARCH_QUICK_SOLUTIONS_ANSWER_BOX_53722:|CS_HELP_GATEWAY_SS_V2_57525:C|CS_HELP_GATEWAY_SEARCH_BOX_TOP_DESKTOP_52698:'; // Store any useful weblab settings here, uncomment when we need it
+    // Append Help 3.0 / 4.0 flag
+    if (jQuery('.cs-help-content').length) {
+        s.prop15 += '|HELP_VERSION:4.0';
+    } else {
+        s.prop15 += '|HELP_VERSION:3.0';
+    }
+    s.list1 = s.prop15;
+
+    s.prop37 = '0'; // encrypted customer id
+    s.eVar37 = s.prop37;
+
+    s.prop38 = '000-0000000-0000000'; // session id
+    s.eVar38 = s.prop38;
+
+
+    s.prop41 = 'de_DE';  // TO-DO: find correct variable name.
+    s.eVar41 = s.prop41;
+    s.eVar44 = s.prop14;
+
+
+    var mobileSubTopicNodes;
+    if (jQuery('div.a-touch .cs-help-content .a-box-group a').length) {
+        mobileSubTopicNodes = jQuery('div.a-touch .cs-help-content .a-box-group a');
+        mobileSubTopicNodes.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'prop44';
+
+            var link = jQuery(this);
+            var position = mobileSubTopicNodes.index(jQuery(this)) + 1;
+            s.prop44 = link.text() + ":" + position;
+
+            s.tl(this,'o');
+        }
+        );
+    }
+    var mobileTopicH2Nodes;
+    if (jQuery('a.a-expander-header').length) {
+        mobileTopicH2Nodes = jQuery('a.a-expander-header');
+        mobileTopicH2Nodes.click(
+        function(e) {
+            if ( ! mobileTopicH2Nodes.children('i.a-icon-section-collapse').length ) return;
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'prop45,eVar45';
+            s.linkTrackEvents =' event1,event2,event3,event4,event5,event6,event7,event21';
+            s.events = 'event21';
+
+            var link = jQuery(this);
+            s.prop45 = link.text();
+            s.eVar45 = link.text();
+
+            s.tl(this,'o', link.text());
+        }
+        );
+    }
+    var firstThreeSearchResultNodes;
+    if (jQuery('.results-list').length) {
+        firstThreeSearchResultNodes = jQuery('.results-list').children('li:lt(3)').find('a');
+    } else {
+        firstThreeSearchResultNodes = jQuery('.cs-help-search-results').children('div.cs-help-search-result-row:lt(3)').children('h2').find('a');
+    }
+    firstThreeSearchResultNodes.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'prop10,eVar10';
+            s.linkTrackEvents = (omnitureObjJson['page'] >= 1) ? 'event1,event2,event3,event4,event5,event6,event7,event22' : 'event1,event2,event3,event4,event5,event6,event7,event20,event22';
+            s.events = (omnitureObjJson['page'] >= 1) ? 'event22' : 'event20,event22';
+
+            var link = jQuery(this);
+
+            s.prop10 = '';
+            s.eVar10 = '';
+
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var otherSearchResultNodes;
+    if (jQuery('.results-list').length) {
+        otherSearchResultNodes = jQuery('.results-list').children('li:gt(2)').find('a');
+    } else {
+        otherSearchResultNodes = jQuery('.cs-help-search-results').children('div.cs-help-search-result-row:gt(2)').children('h2').find('a');
+    }
+
+    otherSearchResultNodes.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'events';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event22';
+            s.events = 'event22';
+
+            var link = jQuery(this);
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    jQuery("#displayLink a, .csg-hover-box-content a[href*='gp/help/customer/contact-us']").click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'events,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event4'; // Clicked the Contact Us button
+
+            var link = jQuery(this);
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T2|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:|CS_SEARCH_QUICK_SOLUTIONS_ANSWER_BOX_53722:|CS_HELP_GATEWAY_SS_V2_57525:C|CS_HELP_GATEWAY_SEARCH_BOX_TOP_DESKTOP_52698:';
+            s.list1 = s.prop15;
+
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var navTopicNodes;
+    if (jQuery('.cs-help-sidebar-module').length) {
+        navTopicNodes = jQuery('.cs-help-sidebar-module.topic-sidebar .nav-topics li a');
+    } else {
+        navTopicNodes = jQuery('#other-areas-content li').add('.nav-level').add('.nav-siblings').add('.nav-children').add('.nav').find('a');
+    }
+    navTopicNodes.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars =' events,eVar12,prop11,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event5'; // Clicked a left-nav link
+
+            var link = jQuery(this);
+
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T2|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:|CS_SEARCH_QUICK_SOLUTIONS_ANSWER_BOX_53722:|CS_HELP_GATEWAY_SS_V2_57525:C|CS_HELP_GATEWAY_SEARCH_BOX_TOP_DESKTOP_52698:';
+            s.list1 = s.prop15;
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    var takeActionNodes;
+    if (jQuery('.cs-help-sidebar-module').length) {
+          if(jQuery('.cs-help-sidebar-module.take-action-sidebar li a').length) {
+              takeActionNodes = jQuery('.cs-help-sidebar-module.take-action-sidebar li a').not('a-button');
+          } else {
+              takeActionNodes = jQuery('.cs-help-sidebar-module.take-action-sidebar .a-row .a-column a.quick-solution-action');
+          }
+    } else {
+        takeActionNodes = jQuery('.cs-list-jq li a').add('.gray_box div.inner ul.small_list li a').not('.amzn-btn');
+    }
+    takeActionNodes.add("#help-gateway-category-0 .cs-tools a, a[href*='gp/help/customer/forums']");
+    takeActionNodes.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'events,eVar17,prop15';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7';
+            s.events = 'event7'; // Clicked a right hand link
+
+            var link = jQuery(this);
+            s.eVar17 = link.text();
+            s.prop15 = 'REDESIGN_HELP_GATEWAY_32610:T2|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:|CS_SEARCH_QUICK_SOLUTIONS_ANSWER_BOX_53722:|CS_HELP_GATEWAY_SS_V2_57525:C|CS_HELP_GATEWAY_SEARCH_BOX_TOP_DESKTOP_52698:';
+            s.list1 = s.prop15;
+            s.tl(this,'o', link.text());
+        }
+    );
+
+    jQuery('#search-help').add('#search-help-bottom').submit(
+        function () {
+            var input_value = this.help_keywords.value;
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'events,eVar47,prop46';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event27';
+            s.events = "event27";
+            s.eVar47 = input_value;
+            s.prop46 = input_value;
+
+            s.tl(this,'o', input_value);
+
+        }
+    );
+
+    P.when('wcs-help-faceted-update', 'ready').execute('help-facet-omniture', function() {
+        jQuery('.cs-help-search-facets li a').click(
+            function (e) {
+                var s = s_gi('acsde-prod');
+                s.linkTrackVars = 'events,eVar48,eVar49,eVar50';
+                s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event28';
+                s.events = 'event28';
+
+                var link = jQuery(this);
+                var facetName = link.closest('fieldset').find('legend').text();
+                var facetValue = link.text();
+                s.eVar48 = '' + '|' + facetName + '|' + facetValue;
+                s.eVar49 = facetName;
+                s.eVar50 = facetValue;
+
+                s.tl(this,'o', link.text());
+            }
+        );
+    });
+
+    var answerBoxLinks = jQuery(".answer-box a").filter(function() {
+                                return jQuery(this).attr('href');
+                            });
+    answerBoxLinks.click(
+        function(e) {
+            var s = s_gi('acsde-prod');
+            s.linkTrackVars = 'events,eVar9,eVar10,prop10,list1';
+            s.linkTrackEvents = 'event1,event2,event3,event4,event5,event6,event7,event13';
+            s.events = 'event13';
+            s.prop10 = '';
+            s.eVar10 = '';
+            s.list1 = 'REDESIGN_HELP_GATEWAY_32610:T2|REFUND_VIDEOS_35985:|CARNAC_SHAPSHOT_CLICKSTREAM_DATA_22374:|CARNAC_HELP_MOST_RELEVANT_ORDER_35759:|HELP_CARNAC_REPLACE_QUICK_SOLUTIONS_39214:|HELP_KM_VIDEO_SS_43037:|HELP_KM_VIDEO_TYO_43090:|HELP_KM_VIDEO_PSLIP_43091:|CS_HELP_ANSWER_BOX_43117:|CS_HELP_ANSWER_BOX_MOBILE_46921:|CS_SEARCH_ANSWER_BOX_REDESIGN_50548:|CS_SEARCH_QUICK_SOLUTIONS_ANSWER_BOX_53722:|CS_HELP_GATEWAY_SS_V2_57525:C|CS_HELP_GATEWAY_SEARCH_BOX_TOP_DESKTOP_52698:';
+
+            var link = jQuery(this);
+            s.tl(this, 'o', link.text());
+        }
+    );
+
+
+
+
+   /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+   var s_code=s.t();if(s_code)document.write(s_code)
+   //-->
+
+};
+P.when('cs-retail-help-omniture','jQuery', 'ready').execute('cs-retail-help-omniture-events', function(helpOmniture, jQuery) {
+    // TODO when we're done migrating, move the event function inside of here and replace s_gi with helpOmniture
+    window.s_gi = helpOmniture;
+    csHelpOmniture.event(0,
+        jQuery);
+});
+   <!--
+      /* Ensure a separate start and end tag via a meaningless comment. */
+   //-->
+</script>
+
+
+<noscript>
+   <img alt="" border="0" height="1" src="https://amazoncustomerservice.d2.sc.omtrdc.net/b/ss/acsde-prod/1/H.25.2--NS/0" width="1"/>
+</noscript>
+
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.3. -->
+
+
+
+  <link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpVideoPlayerCSS-23e5359b36a09e969ef31ac94188bf320ca37144.min._V2_.css" />
+
+
+</head>
+<body>
+
+<!-- BeginNav --><!-- From remote config --><style type="text/css"><!--
+.nav-sprite-v1 .nav-sprite, .nav-sprite-v1 .nav-icon {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-32-v1._V308131310_.png);
+  background-position: 0 1000px;
+  background-repeat: repeat-x;
+}
+.nav-spinner {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/03/javascripts/lib/popover/images/snake._V192194539_.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.nav-timeline-icon {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/03/gno/sprites/timeline_sprite_1x.png);
+  background-repeat: no-repeat;
+}
+--></style>
+<!--  -->
+<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min" />
+<link rel="stylesheet" href="https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset" />
+<!--  -->
+<script>
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
+});
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+});
+</script>
+<!-- From remote config v3-->
+<script type="text/javascript">
+(function(d){document.createElement("header");function b(e){return[].slice.call(e)}function c(f,e){return{m:f,a:b(e)}}var a=function(f){var g={};g._sourceName=f;g._replay=[];g.getNow=function(i,h){return h};function e(i,h,j){i[j]=function(){g._replay.push(h.concat(c(j,arguments)))}}g.when=function(){var i=[c("when",arguments)];var h={};e(h,i,"run");e(h,i,"declare");e(h,i,"publish");e(h,i,"build");return h};e(g,[],"declare");e(g,[],"build");e(g,[],"publish");e(g,[],"importEvent");a._shims.push(g);return g};a._shims=[];if(!d.$Nav){d.$Nav=a("rcx-nav")}if(!d.$Nav.make){d.$Nav.make=a}}(window));
+$Nav.importEvent('navbarJS-beaconbelt');
+$Nav.importEvent('NavAuiBeaconbeltAssets');
+$Nav.declare('img.sprite', {
+  'png8': 'http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-v1._V308131311_.png',
+  'png32': 'http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-32-v1._V308131310_.png',
+  'png32-2x': 'http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-32-2x-v1._V308131305_.png'
+});
+$Nav.declare('img.timeline', {
+  'timeline-icon-2x': 'http://g-ecx.images-amazon.com/images/G/03/gno/sprites/timeline_sprite_2x.png'
+});
+window._navbarSpriteUrl = 'http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-32-v1._V308131310_.png';
+$Nav.declare('img.pixel', 'http://g-ecx.images-amazon.com/images/G/03/x-locale/common/transparent-pixel._V386942701_.gif');
+</script>
+<img src="http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-32-v1._V308131310_.png" style="display:none" alt=""/>
+<img src="http://g-ecx.images-amazon.com/images/G/03/x-locale/common/transparent-pixel._V386942701_.gif" style="display:none" alt="" id="nav_trans_pixel"/>
+<!--[if IE 6]>
+<style type="text/css"><!--
+  #navbar.nav-sprite-v3 .nav-sprite {
+    background-image: url(http://g-ecx.images-amazon.com/images/G/03/gno/sprites/global-sprite_bluebeacon-v1._V308131311_.png);
+  }
+--></style>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Pilu -->
+<a id="nav-top"></a>
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>window.$Nav && window.$Nav.when("$","subnav.initFlyouts","constants","nav.inline").build("subnav.builder",function(a,t,e){var n=a("#navbar");return function(s){var r=a("#nav-subnav");if(0===r.length&&(r=a("<div id='nav-subnav'></div>").appendTo("#navbar")),r.html(""),n.removeClass("nav-subnav"),s.categoryKey&&s.digest){r.attr("data-category",s.categoryKey).attr("data-digest",s.digest).attr("class",s.category.data.categoryStyle),s.style?r.attr("style",s.style):r.attr("style")&&r.removeAttr("style");var i=function(t){if(t&&t.href){var n="nav-a",s=t.text,i=t.dataKey;if(!s&&!t.image){if(!i||0!==i.indexOf(e.ADVANCED_PREFIX))return;s="",n+=" nav-aText"}var d=t.image?"<img src='"+t.image+"'class='nav-categ-image' ></a>":s,l=a("<a href='"+t.href+"' class='"+n+"'></a>"),v=a("<span class='nav-a-content'>"+d+"</span>");if("image"===t.type&&(v.html(""),l.addClass("nav-hasImage"),t.rightText=""),t.bold&&!t.image&&l.addClass("nav-b"),t.floatRight&&l.addClass("nav-right"),t.flyoutFullWidth&&"0"!==t.flyoutFullWidth&&l.attr("data-nav-flyout-full-width","1"),t.src){var g=["nav-image"];t["absolute-right"]&&g.push("nav-image-abs-right"),t["absolute-right"]&&g.push("nav-image-abs-right"),a("<img src='"+t.src+"' class='"+g.join(" ")+"' alt='"+(t.alt||"")+"' />").appendTo(v)}t.rightText&&v.append(t.rightText),v.appendTo(l),i&&(a("<span class='nav-arrow'></span>").appendTo(l),l.attr("data-nav-key",i).addClass("nav-hasArrow")),l.appendTo(r),r.append(document.createTextNode(" "))}};if(s.category&&s.category.data&&(s.category.data.bold=!0,i(s.category.data)),s.subnav&&"linkSequence"===s.subnav.type)for(var d=0;d<s.subnav.data.length;d++)i(s.subnav.data[d]);n.addClass("nav-subnav"),t()}}});</script>
+<script type='text/javascript'>
+window.uet && uet('ns');
+
+window._navbar = (function (o) {
+  o.componentLoaded = o.loading = function(){};
+  o.browsepromos = {};
+  o.issPromos = [];
+  return o;
+}(window._navbar || {}));
+
+window.$Nav && $Nav.declare('logEvent.enabled',
+  false);
+
+
+window.$Nav && $Nav.declare('config.lightningDeals',{});
+window.$Nav && $Nav.declare('config.swmStyleData',{});
+window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
+
+</script>
+
+
+<!-- navp-dJtnX74o2eQslF6lqujGtIUoMhpycoS1WySB7qfhuxZ6DTeee5NP6YOrDXA1oIh+BvQrFEmMcog= rid-0ZYCKECWRFMREQACDQ6X (Wed Sep  2 21:58:41 2015) -->
+
+
+
+
+<![if gt IE 6]><noscript><![endif]>
+<style type="text/css"><!--
+  #navbar #nav-shop .nav-a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+  }
+  #navbar #nav-search .nav-search-facade,
+  #navbar #nav-tools .nav-icon,
+  #navbar #nav-shop .nav-icon,
+  #navbar #nav-subnav .nav-hasArrow .nav-arrow {
+    display: none;
+  }
+  #navbar #nav-search .nav-search-submit,
+  #navbar #nav-search .nav-search-scope {
+    display: block;
+  }
+  #nav-search .nav-search-scope {
+    padding: 0 5px;
+  }
+  #navbar #nav-search .nav-search-dropdown {
+    position: relative;
+    top: 5px;
+    height: 23px;
+    font-size: 14px;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+  }
+--></style>
+<![if gt IE 6]></noscript><![endif]>
+
+
+<header class='nav-locale-de nav-lang-de nav-unrec nav-xshop-small'>
+  <div id='navbar' role="navigation" class='nav-sprite-v1 nav-bluebeacon nav-search-swap'>
+       
+       
+       <div id='nav-belt'>
+         <div class='nav-left'>
+          
+<div id='nav-logo' >
+  <a href="/"
+    class='nav-logo-link' 
+    data-nav-tabindex="2"
+    aria-label='Amazon.de'
+  >
+    <span class='nav-logo-base nav-sprite'>Amazon.de</span>
+    <span class='nav-logo-ext nav-sprite'></span>
+    <span class='nav-logo-locale nav-sprite'></span>
+  </a>
+  
+
+  <a href="/gp/prime" data-nav-tabindex="3" class='nav-logo-tagline nav-sprite nav-prime-try' >
+    Prime testen
+  </a>
+</div>
+
+
+         </div>
+         <div class='nav-right'>
+           
+
+  <div id='nav-swmslot'>
+    <div id="navSwmHoliday" style="background-image: url(http://g-ecx.images-amazon.com/images/G/03/digital/video/placement/sitewide/SWMs/dark_FTS_400x39._V307064771_.jpg); width: 400px; height: 39px; overflow: hidden;"><img alt='AIV' src='http://g-ecx.images-amazon.com/images/G/03/x-locale/common/transparent-pixel._V386942701_.gif' border='0' width='400px' height='39px' usemap='#nav-swm-holiday-map' /></div><div style="display: none;"><map id="nav-swm-holiday-map" name="nav-swm-holiday-map"><area shape="rect" coords="1,2,400,39" href ="/gp/video/primesignup" alt ="AIV" /></map></div>
+  </div>
+
+         </div>
+         <div class='nav-fill'>
+           
+<div id="nav-search">
+  <div id="nav-bar-left"></div>
+  <form accept-charset='utf-8' action='/s' class='nav-searchbar' method='GET' name='site-search' role='search'>
+    <input type="hidden" name="__mk_de_DE" value="ÅMÅŽÕÑ" />
+    <div class="nav-left">
+      <div class="nav-search-scope nav-sprite">
+        
+<div class="nav-search-facade" data-value="search-alias=aps">
+  <span class="nav-search-label">Alle</span>
+  <i class="nav-icon"></i>
+</div>
+
+        
+<select class='nav-search-dropdown searchSelect' data-nav-digest='spZRG9huYJ90EXrh+qoesz1sZuM' data-nav-selected='0' data-nav-tabindex='20' id='searchDropdownBox' name='url' title='Suchen in'>
+<option selected='selected' value='search-alias=aps'>Alle Kategorien</option>
+<option value='search-alias=instant-video'>Amazon Instant Video</option>
+<option value='search-alias=mobile-apps'>Apps & Spiele</option>
+<option value='search-alias=automotive'>Auto & Motorrad</option>
+<option value='search-alias=baby'>Baby</option>
+<option value='search-alias=diy'>Baumarkt</option>
+<option value='search-alias=beauty'>Beauty</option>
+<option value='search-alias=clothing'>Bekleidung</option>
+<option value='search-alias=lighting'>Beleuchtung</option>
+<option value='search-alias=stripbooks'>Bücher</option>
+<option value='search-alias=office-products'>Bürobedarf & Schreibwaren</option>
+<option value='search-alias=computers'>Computer & Zubehör</option>
+<option value='search-alias=drugstore'>Drogerie & Körperpflege</option>
+<option value='search-alias=dvd'>DVD & Blu-ray</option>
+<option value='search-alias=appliances'>Elektro-Großgeräte</option>
+<option value='search-alias=electronics'>Elektronik & Foto</option>
+<option value='search-alias=english-books'>Fremdsprachige Bücher</option>
+<option value='search-alias=videogames'>Games</option>
+<option value='search-alias=outdoor'>Garten</option>
+<option value='search-alias=gift-cards'>Geschenkgutscheine</option>
+<option value='search-alias=pets'>Haustier</option>
+<option value='search-alias=photo'>Kamera &amp; Foto</option>
+<option value='search-alias=digital-text'>Kindle-Shop</option>
+<option value='search-alias=classical'>Klassik</option>
+<option value='search-alias=luggage'>Koffer, Rucksäcke & Taschen </option>
+<option value='search-alias=kitchen'>Küche & Haushalt</option>
+<option value='search-alias=grocery'>Lebensmittel & Getränke</option>
+<option value='search-alias=dvd-bypost'>LOVEFiLM DVD Verleih</option>
+<option value='search-alias=popular'>Musik-CDs & Vinyl</option>
+<option value='search-alias=digital-music'>Musik-Downloads</option>
+<option value='search-alias=mi'>Musikinstrumente & DJ-Equipment</option>
+<option value='search-alias=luxury-beauty'>Premium Beauty</option>
+<option value='search-alias=jewelry'>Schmuck</option>
+<option value='search-alias=shoes'>Schuhe & Handtaschen</option>
+<option value='search-alias=software'>Software</option>
+<option value='search-alias=toys'>Spielzeug</option>
+<option value='search-alias=sports'>Sport & Freizeit</option>
+<option value='search-alias=watches'>Uhren</option>
+<option value='search-alias=magazines'>Zeitschriften</option>
+</select>
+
+
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-search-submit nav-sprite">
+        
+<span id="nav-search-submit-text" class="nav-search-submit-text nav-sprite">Los</span>
+
+        <input type="submit" class="nav-input" value="Los" data-nav-tabindex="22"/>
+      </div>
+    </div>
+    <div class="nav-fill">
+      <div class="nav-search-field">
+        <input type='text'
+          id='twotabsearchtextbox'
+          value=""
+          name='field-keywords'
+          autocomplete='off'
+          class='nav-input'
+          data-nav-tabindex="21"
+        >
+      </div>
+      <div id="nav-iss-attach"></div>
+    </div>
+  </form>
+</div>
+
+         </div>
+       </div>
+       <div id='nav-main' class='nav-sprite'>
+         <div class='nav-left'>
+           
+<div id='nav-shop'>
+  <a href='/gp/site-directory' class='nav-a nav-a-2' data-nav-tabindex='15' id='nav-link-shopall'><span class='nav-line-1'>Alle</span><span class='nav-line-2'>Kategorien<span class='nav-icon nav-arrow'></span></span></a>
+</div>
+
+         </div>
+         <div class='nav-right'>
+           
+
+
+
+
+
+
+<div id='nav-tools'>
+  <a href='https://www.amazon.de/ap/signin?_encoding=UTF8&openid.assoc_handle=deflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_ya_signin' class='nav-a nav-a-2' data-nav-tabindex='25' id='nav-link-yourAccount'><span class='nav-line-1'>Hallo! Anmelden</span><span class='nav-line-2'>Mein Konto<span class='nav-icon nav-arrow'></span></span></a><a href='/gp/prime' class='nav-a nav-a-2' data-nav-tabindex='26' id='nav-link-prime'><span class='nav-line-1'>Testen Sie</span><span class='nav-line-2'>Prime<span class='nav-icon nav-arrow'></span></span></a><a href='https://www.amazon.de/gp/cart/view.html' class='nav-a nav-a-2' data-nav-tabindex='27' id='nav-cart'><span class='nav-line-1'>Einkaufs-</span><span class='nav-line-2'>wagen<span class='nav-icon nav-arrow'></span></span><span class='nav-cart-icon nav-sprite'></span><span id='nav-cart-count' class='nav-cart-count nav-cart-0'></span></a><a href='/gp/registry/wishlist' class='nav-a nav-a-2' data-nav-tabindex='28' id='nav-link-wishlist'><span class='nav-line-1'>Wunsch-</span><span class='nav-line-2'>zettel<span class='nav-icon nav-arrow'></span></span></a>
+</div>
+
+         </div>
+         <div class='nav-fill'>
+           <div id='nav-xshop-container' ><div id='nav-xshop'>
+<a href='/gp/yourstore/home' data-nav-tabindex='5' class='nav-a nav_a' id='nav-your-amazon'>Mein Amazon</a><a href='/gp/angebote' class='nav-a' data-nav-tabindex='9'>Angebote</a><a href='/Geschenkgutscheine/b?ie=UTF8&amp;node=1571256031' class='nav-a' data-nav-tabindex='10'>Gutscheine</a><a href='/b/?_encoding=UTF8&amp;ld=AZDEGNOSellT2&amp;node=2383621031' class='nav-a' data-nav-tabindex='11'>Verkaufen Sie Ihre Produkte</a><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504874' class='nav-a' data-nav-tabindex='12'>Hilfe</a>
+</div></div>
+         </div>
+       </div>
+       
+    <div id='nav-subnav'>
+      
+    </div>
+
+       
+       
+  </div>
+  
+
+</header>
+
+<!-- nav promo cached -->
+
+
+<map name="nav_imgmap_nav-sa-android" id="nav_imgmap_nav-sa-android">
+<area shape="rect" coords="10,10,468,472" href="/b?ie=UTF8&node=6369057031" alt=""/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-apparel-shoes-watches" id="nav_imgmap_nav-sa-apparel-shoes-watches">
+<area shape="rect" coords="1,1,472,460" href="/gp/b?ie=UTF8&node=5866124031" alt="newseasonhw2015"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-auto-bike" id="nav_imgmap_nav-sa-auto-bike">
+<area shape="rect" coords="6,5,462,450" href="/b?_encoding=UTF8&node=82400031" alt="Hier klicken"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-baby-kids-toys" id="nav_imgmap_nav-sa-baby-kids-toys">
+<area shape="rect" coords="0,0,460,439" href="/gp/family/signup/welcome" alt="Jetzt Mitglied werden"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-books" id="nav_imgmap_nav-sa-books">
+<area shape="rect" coords="1,1,494,480" href="/b?_encoding=UTF8&node=7457132031" alt="lagercrantz"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-cloud-drive" id="nav_imgmap_nav-sa-cloud-drive">
+<area shape="rect" coords="1,1,442,426" href="/clouddrive/learnmore" alt="Cloud Drive Photos"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-electronics-computers" id="nav_imgmap_nav-sa-electronics-computers">
+<area shape="rect" coords="1,1,516,425" href="/b?_encoding=UTF8&node=3581963031" alt="WHDsFly"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-fire-tv" id="nav_imgmap_nav-sa-fire-tv">
+<area shape="rect" coords="0,0,499,474" href="/dp/B00KAKPZYG" alt="Learn More"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-food-beverages-health-beauty" id="nav_imgmap_nav-sa-food-beverages-health-beauty">
+<area shape="rect" coords="1,1,501,478" href="/b?_encoding=UTF8&node=365206031" alt="praktisch"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-home-garden-tools" id="nav_imgmap_nav-sa-home-garden-tools">
+<area shape="rect" coords="2,266,485,466" href="/s?_encoding=UTF8&bbn=677823011&rh=i%3Aoutdoor%2Cn%3A10925031%2Cn%3A!12957951%2Cn%3A!401392011%2Cn%3A677823011%2Cn%3A11718751" alt="ssvpatio"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-instant-video" id="nav_imgmap_nav-sa-instant-video">
+<area shape="rect" coords="21,4,498,469" href="/gp/redirect.html?location=http://www.amazon.de/dp/B0117VRVRU/ref=tvod_gno_HiK&token=EBC7637E551C69E801C6B030EF8B5ED613A56E92&source=standards" alt=""/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-kindle-fire-tablet" id="nav_imgmap_nav-sa-kindle-fire-tablet">
+<area shape="rect" coords="0,0,499,474" href="/dp/B00JXOUMES" alt="Shop Kindle"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-kindle-reader" id="nav_imgmap_nav-sa-kindle-reader">
+<area shape="rect" coords="0,0,499,474" href="/dp/B00QJDO0QC" alt="Shop Kindle"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-mp3" id="nav_imgmap_nav-sa-mp3">
+<area shape="rect" coords="1,1,460,439" href="/b?_encoding=UTF8&node=4361573031" alt="Sparpaket"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-music-games-film-tv" id="nav_imgmap_nav-sa-music-games-film-tv">
+<area shape="rect" coords="1,1,480,439" href="/autorip-cd-vinyl-kaufen-mp3-kostenlos/b?ie=UTF8&node=2624847031" alt="Autorip"/>
+</map>
+
+
+
+<map name="nav_imgmap_nav-sa-sports-outdoors" id="nav_imgmap_nav-sa-sports-outdoors">
+<area shape="rect" coords="0,0,459,445" href="/b?_encoding=UTF8&node=6804051031" alt="SummerSale"/>
+</map>
+
+
+
+<script type="text/javascript"><!--
+
+window.$Nav && $Nav.when("data").run(function(data) { data({"emptyWishlist":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"Mein Wunschzettel","url":"/gp/registry/wishlist/"},"title":" ","paragraph":"Ihre Liste ist leer"}}}},"yourAccountContent":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"Mein Konto","url":"/gp/css/homepage.html"},"title":" ","paragraph":"Leider können die Kategorien vorübergehend nicht aufgerufen werden."}}}},"errorWishlist":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"Mein Wunschzettel","url":"/gp/registry/wishlist/"},"title":" ","paragraph":"Leider können die Kategorien vorübergehend nicht aufgerufen werden."}}}},"ewcTimeout":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"Mein Einkaufswagen","url":"/gp/cart/view.html"},"title":" ","paragraph":"Es gibt ein Problem Abrufen Einkaufswagen jetzt"}}}},"cartTimeout":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"Mein Einkaufswagen","url":"/gp/cart/view.html"},"title":" ","paragraph":"Es gibt ein Problem Abrufen Einkaufswagen jetzt"}}}},"kindleTimeout":{"template":{"name":"flyoutError","data":{"error":{"paragraph":"Leider können die Kategorien vorübergehend nicht aufgerufen werden."}}}},"shopAllTimeout":{"template":{"name":"flyoutError","data":{"error":{"paragraph":"Leider können die Kategorien vorübergehend nicht aufgerufen werden."}}}},"primeTimeout":{"template":{"name":"flyoutError","data":{"error":{"title":"<a href='/gp/prime'><img src='https://images-na.ssl-images-amazon.com/images/G/03/prime/yourprime/yourprime-widget-piv-fallback._V309896279_.jpg' /></a>"}}}}}); });
+
+  window.$Nav && $Nav.when("util.templates").run("FlyoutErrorTemplate", function (templates) {
+    templates.add("flyoutError", "<# if(error.title) { #><span class='nav-title'><#=error.title #></span><# } #><# if(error.paragraph) { #><p class='nav-paragraph'><#=error.paragraph #></p><# } #><# if(error.button) { #><a href='<#=error.button.url #>' class='nav-action-button' ><span class='nav-action-inner'><#=error.button.text #></span></a><# } #>");
+  });
+
+
+window.$Nav && $Nav.declare('config.navDebugHighres', false);
+
+
+window.$Nav && $Nav.declare('config.upnavHighResImgInfo',
+  {"upnav2xImageHeight":"","upnav2xImagePath":""});
+
+window.$Nav && $Nav.declare('config.upnav2xAiryPreloadImgInfo',
+  {"preloadImgPath":"","preloadImgHeight":""});
+
+window.$Nav && $Nav.declare('config.upnav2xAiryPostSlateImgInfo',
+  {"postslateImgHeight":"","postslateImgPath":""});
+
+window.$Nav && $Nav.declare('config.pageType', 'GPHelp');
+window.$Nav && $Nav.declare('config.subPageType', 'Display');
+
+window.$Nav && $Nav.declare('config.dynamicMenuUrl', '/gp/navigation/ajax/dynamic-menu.html');
+
+window.$Nav && $Nav.declare('config.dismissNotificationUrl',
+  '/gp/navigation/ajax/dismissnotification.html');
+
+window.$Nav && $Nav.declare('config.enableDynamicMenus', true);
+
+window.$Nav && $Nav.declare('config.isInternal', false);
+
+window.$Nav && $Nav.declare('config.isRecognized', false);
+
+window.$Nav && $Nav.declare('config.transientFlyoutTrigger', '#nav-transient-flyout-trigger');
+
+window.$Nav && $Nav.declare('config.subnavFlyoutUrl',
+  '/gp/navigation/ajax/subnav-flyout');
+
+
+window.$Nav && $Nav.declare('config.readyOnATF', false);
+
+window.$Nav && $Nav.declare('config.dynamicMenuArgs',
+  {"rid":"0ZYCKECWRFMREQACDQ6X","isPrime":0,"weblabs":"53154:T1","primeMenuWidth":310});
+
+window.$Nav && $Nav.declare('config.signOutText',
+  null);
+
+window.$Nav && $Nav.declare('config.yourAccountPrimeURL',
+  null);
+
+window.$Nav && $Nav.declare('config.yourAccountPrimeHover',
+  true);
+
+window.$Nav && $Nav.declare('config.primeEventLoggingEnabled', true);
+
+window.$Nav && $Nav.declare('config.primeFlyoutProfilingUrl',
+    '/gp/prime/navigation/record-prime-menu-event.html?ie=UTF8&rid=0ZYCKECWRFMREQACDQ6X');
+
+window.$Nav && $Nav.declare('config.searchBackState',
+  {});
+
+
+
+
+
+
+
+
+
+if (window.amznJQ && amznJQ.available) {
+  amznJQ.available('jQuery', function() {
+    if (!jQuery.isArray) {
+      jQuery.isArray = function(o) {
+        return Object.prototype.toString.call(o) === "[object Array]";
+      };
+    }
+  });
+}
+
+
+    if (typeof uet == 'function') {
+      uet('bb', 'iss-init-pc', {wb: 1});
+    }
+
+    if (!window.$SearchJS && window.$Nav) {
+      window.$SearchJS = $Nav.make('sx');
+    }
+
+  
+  var opts = {
+      host: "completion.amazon.co.uk/search/complete"
+    , marketId: "4"
+    , obfuscatedMarketId: "A1PA6795UKMFR9"
+    , searchAliases: ["aps", "stripbooks", "popular", "clothing", "dvd", "instant-video", "prime-instant-video", "shop-instant-video", "dvd-bypost", "electronics", "sports", "videogames", "toys", "jewelry", "watches", "drugstore", "baby", "software", "magazines", "vhs", "automotive", "english-books", "pantry", "photo", "computer", "kitchen", "luggage", "beauty", "outdoor", "diy", "classical", "shoes", "music-song", "mp3-downloads", "prime-digital-music", "digital-music", "digital-music-track", "digital-music-album", "digital-text", "lighting", "office-products", "outlet", "apparel-outlet", "shoes-outlet", "watches-outlet", "jewelry-outlet", "sports-outlet", "grocery", "computers", "pets", "mi", "videogames-tradein", "appliances", "gift-cards", "mobile-apps", "tradein-aps", "audiobooks", "warehouse-deals", "luxury-beauty", "banjo-apps", "industrial"]
+    , isDoCtw: 1
+    , pageType: "GPHelp"
+    , requestId: "0ZYCKECWRFMREQACDQ6X"
+    , keydownTriggeredWeblabs: []
+    , displayTriggeredWeblabs: [      function(data) {
+        return data && data.fastlabs ? data.fastlabs : undefined;
+      }
+]
+    , isDdInT3: 0
+    , isDdInT1: 0
+    , isJpOrCn: 0
+    , isUseAuiIss: 1
+  };
+
+  var issOpts = {
+      fallbackFlag: 1
+    , isDigitalFeaturesEnabled: 0
+    , isWayfindingEnabled: 0
+    , issPrimeEligible: []
+    , dropdown: "select.searchSelect"
+    , departmentText: "in {department}"
+    , suggestionText: "Suchvorschläge"
+    , isTriggerIssOnClick: 0
+    , xcatSuggestionImprovementFlag: 2
+    , np: 0
+    , issCorpus: []
+    , cf: 1
+  };
+  
+
+  if (opts.isUseAuiIss === 1 && window.$Nav) {
+    window.$Nav.when('sx.iss').run('iss-mason-init', function(iss){
+      var issInitObj = buildIssInitObject(opts, issOpts, true);
+      new iss.IssParentCoordinator(issInitObj);
+
+      tryInitClientTriggeredWeblabs(issInitObj);
+    });
+  } else if (window.$SearchJS) {
+    
+    var iss;
+
+    // BEGIN Deprecated globals
+    var issHost = opts.host
+      , issMktid = opts.marketId
+      , issSearchAliases = opts.searchAliases
+      , updateISSCompletion = function() { iss.updateAutoCompletion(); };
+    // END deprecated globals
+
+    
+    
+    
+    $SearchJS.when('jQuery', 'search-js-autocomplete-lib').run('autocomplete-init', initializeAutocomplete);
+    $SearchJS.when('canCreateAutocomplete').run('createAutocomplete', createAutocomplete);
+
+    
+    if (opts.isDdInT3) {
+      $SearchJS.when('search-js-autocomplete').run('autocomplete-dd-init', function(){ mergeBTFDropdown(); });
+    }
+
+    if (opts.isDdInT1) {
+      $SearchJS.when('search-js-autocomplete').run('autocomplete-dd-init', function(){ searchDropdown(); });
+    }
+
+  } // END conditional for window.$SearchJS
+
+  
+  
+  function initializeAutocomplete(jQuery) {
+    
+    var issInitObj = buildIssInitObject(opts, issOpts);
+
+    tryInitClientTriggeredWeblabs(issInitObj);
+  } // END initializeAutocomplete
+
+  
+  
+  function tryInitClientTriggeredWeblabs(issInitObj) {
+    
+    if (opts.isDoCtw) {
+      $SearchJS.importEvent('search-csl');
+      $SearchJS.when('search-csl').run('autocomplete-csl-init', function delegateToInitSearchCsl(searchCSL) { initSearchCsl( searchCSL, issInitObj ); } );
+    } else {
+      $SearchJS.declare('canCreateAutocomplete', issInitObj);
+    }
+  }
+
+  
+  
+  function initSearchCsl(searchCSL, issInitObject) {
+    searchCSL.init(opts.pageType, (window.ue && window.ue.rid) || opts.requestId);
+
+    
+    var keydownCtw = opts.keydownTriggeredWeblabs;
+    var displayCtw = opts.displayTriggeredWeblabs;
+
+    
+    issInitObject.doCTWKeydown = function(e) {
+        for (var i = 0; i < keydownCtw.length; i++) {
+          searchCSL.addWlt(keydownCtw[i].call ? keydownCtw[i](e) : keydownCtw[i]);
+        }
+      };
+
+    issInitObject.doCTWDisplay = function(data) {
+        for (var i = 0; i < displayCtw.length; i++) {
+          searchCSL.addWlt(displayCtw[i].call ? displayCtw[i](data) : displayCtw[i]);
+        }
+      };
+
+    $SearchJS.declare('canCreateAutocomplete', issInitObject);
+  } // END initSearchCsl
+
+  
+  
+  function createAutocomplete(issObject) {
+    iss = new AutoComplete(issObject);
+
+    $SearchJS.publish('search-js-autocomplete', iss);
+
+    logMetrics();
+  } // END createAutocomplete
+
+  
+  
+  function buildIssInitObject(opts, issOpts, isNewIss) {
+    var issInitObj = {
+        src: opts.host
+      , mkt: opts.marketId
+      , obfMkt: opts.obfuscatedMarketId
+      , aliases: opts.searchAliases
+      , fb: issOpts.fallbackFlag
+      , isDigitalFeaturesEnabled: issOpts.isDigitalFeaturesEnabled
+      , isWayfindingEnabled: issOpts.isWayfindingEnabled
+      , issPrimeEligible: issOpts.issPrimeEligible
+      , deptText: issOpts.departmentText
+      , sugText: issOpts.suggestionText
+      , cf: issOpts.cf
+      , ime: opts.isJpOrCn
+      , mktid: opts.marketId
+      , qs: opts.isJpOrCn
+      , issCorpus: issOpts.issCorpus
+      , deepNodeISS: {
+          searchAliasAccessor: function($) {
+            return (window.SearchPageAccess && window.SearchPageAccess.searchAlias()) ||
+                   $('select.searchSelect').children().attr('data-root-alias');
+          },
+          searchAliasDisplayNameAccessor: function() {
+            return (window.SearchPageAccess && window.SearchPageAccess.searchAliasDisplayName());
+          }
+        }
+    };
+
+    // If we aren't using the new ISS then we need to add these properties
+    if (!isNewIss) {
+      issInitObj.dd = issOpts.dropdown; // The element with id searchDropdownBox doesn't exist in C.
+      issInitObj.imeSpacing = issOpts.imeSpacing;
+      issInitObj.xcatSuggestionImprovementFlag = issOpts.xcatSuggestionImprovementFlag;
+      issInitObj.isNavInline = 1;
+      issInitObj.triggerISSOnClick = issOpts.triggerIssOnClick
+      issInitObj.sc = 1;
+      issInitObj.np = issOpts.np;
+    }
+
+    return issInitObj;
+  } // END buildIssInitObject
+
+  
+  function logMetrics() {
+    if (typeof uet == 'function' && typeof uex == 'function' ) {
+      uet('be', 'iss-init-pc', {wb: 1});
+      uex('ld', 'iss-init-pc', {wb: 1});
+    }
+  } // END logMetrics
+
+
+    window.$Nav && $Nav.declare('nav.inline');
+
+(function (i) {
+i.onload = function() {window.uet && uet('ne')};
+i.src = window._navbarSpriteUrl;
+}(new Image()));
+
+window.$Nav && $Nav.declare('config.autoFocus', false);
+
+
+window.$Nav && $Nav.declare('config.responsiveTouchAgents', ["ieTouch"]);
+
+window.$Nav && $Nav.declare('config.responsiveGW',false);
+
+window.$Nav && $Nav.declare('config.velocityFlyoutToggling', false);
+window.$Nav && $Nav.declare('config.velocityFlyoutThreshold', 40);
+
+window.$Nav && $Nav.declare('config.twoClickFlyouts',false);
+
+window.$Nav && $Nav.declare('config.pageHideEnabled',false);
+
+window.$Nav && $Nav.declare('config.sslTriggerType','');
+window.$Nav && $Nav.declare('config.sslTriggerRetry',0);
+
+window.$Nav && $Nav.declare('config.bletchley', false);
+
+window.$Nav && $Nav.declare('config.doubleCart',false);
+
+
+window.$Nav && $Nav.declare('config.fixedBarBeacon',false);
+
+window.$Nav && $Nav.declare('config.signInOverride', false);
+
+window.$Nav && $Nav.declare('config.signInTooltip',false);
+
+window.$Nav && $Nav.declare('config.isPrimeMember',false);
+
+window.$Nav && $Nav.declare('config.expandedFlyouts', false);
+
+window.$Nav && $Nav.declare('config.pinataConfetti', false);
+window.$Nav && $Nav.declare('config.pinataNavPinned', false);
+
+window.$Nav && $Nav.declare('config.primeTooltip',{url:'/gp/prime/digital-adoption/navigation-bar'});
+
+window.$Nav && $Nav.declare('config.carnac',false);
+
+window.$Nav && $Nav.declare('config.csYourAccount',false);
+
+window.$Nav && $Nav.declare('config.cartFlyoutDisabled', true);
+
+
+
+window.$Nav && $Nav.declare('config.ewc', false);
+
+window.$Nav && $Nav.declare('config.blackbelt', true);
+window.$Nav && $Nav.declare('config.beaconbelt', true);
+
+window.$Nav && $Nav.declare('config.beaconbeltCover', false);
+
+window.$Nav && $Nav.declare('config.pinnedNav',false);
+
+window.$Nav && $Nav.declare('config.pinnedNavStart',700);
+
+window.$Nav && $Nav.declare('config.pinnedNavMinWidth',1000);
+window.$Nav && $Nav.declare('config.pinnedNavMinHeight',false);
+
+window.$Nav && $Nav.declare('config.iPadTablet', false);
+
+
+window.$Nav && $Nav.declare('config.searchapiEndpoint',false);
+
+window.$Nav && $Nav.declare('config.timeline', false);
+
+    window._navbar = window._navbar || {};
+    window._navbar.browsepromos = window._navbar.browsepromos || {};
+    
+ _navbar.browsepromos['nav-sa-android'] = {"width":480,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-20","height":449,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/mas/retail/gateway/flyout/Marty_flyout_de_460x439._V313498324_.png"}; 
+ _navbar.browsepromos['nav-sa-apparel-shoes-watches'] = {"width":500,"promoType":"wide","destination":null,"vertOffset":"-1","horizOffset":"-20","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/apparel/gateway/2015/DE_AW15_NEW_SEASON_FLYOUT_500x472._V311560494_.png"}; 
+ _navbar.browsepromos['nav-sa-auto-bike'] = {"width":487,"promoType":"wide","destination":null,"vertOffset":"0,5","horizOffset":"-19,5","height":447,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/Automotive/Fly-outs/lux_auto_17-02-2015_march-carcare_de-final_flyout._V328819169_.png"}; 
+ _navbar.browsepromos['nav-sa-baby-kids-toys'] = {"width":460,"promoType":"wide","destination":"/gp/family/signup/welcome","vertOffset":"-0","horizOffset":"-19","height":439,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/baby/amazonmom/extra/de_baby_22_10_13_amazonFamily_flyout._V354123356_.png"}; 
+ _navbar.browsepromos['nav-sa-books'] = {"width":511,"promoType":"wide","destination":null,"vertOffset":"-21,5","horizOffset":"-22,5","height":490,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/books/flyout/DE_books_Coop-3922-_27-8-2015_Flyout._V313358320_.png"}; 
+ _navbar.browsepromos['nav-sa-cloud-drive'] = {"width":495,"promoType":"wide","destination":null,"vertOffset":"0","horizOffset":"0","height":427,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/digital/adrive/images/gno/de_cd_filler14_flyout_7._V349057138_.png"}; 
+ _navbar.browsepromos['nav-sa-electronics-computers'] = {"width":500,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-20","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/warehousedeals/banner/DE_WHD_27-2-15_General_Flyout._V327578526_.png"}; 
+ _navbar.browsepromos['nav-sa-fire-tv'] = {"width":500,"promoType":"wide","destination":"/dp/B00KAKPZYG","vertOffset":"0","horizOffset":"0","height":492,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/kindle/merch/2014/campaign/fs/montoya_launch_nonpromo-gno-d-de-500x492._V308496086_.png"}; 
+ _navbar.browsepromos['nav-sa-food-beverages-health-beauty'] = {"width":500,"promoType":"wide","destination":null,"vertOffset":"-21","horizOffset":"-22","height":434,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/grocery/sns/Flyout/DE_HPC_06-08-14_Welness_Flyout_500x434_1.1._V326245576_.png"}; 
+ _navbar.browsepromos['nav-sa-home-garden-tools'] = {"width":500,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-20","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/garden/campaigns/SSV/2015/de_garden_09-072-015_summerflyouts-3_flyout_R1._V315750515_.png"}; 
+ _navbar.browsepromos['nav-sa-instant-video'] = {"width":521,"promoType":"wide","destination":null,"vertOffset":"-21,5","horizOffset":"-21,5","height":489,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/digital/video/AIV/GNO/Honig_im_Kopf_Leihen_GNO_FlyOut._V314133127_.png"}; 
+ _navbar.browsepromos['nav-sa-kindle-fire-tablet'] = {"width":500,"promoType":"wide","destination":"/dp/B00JXOUMES","vertOffset":"0","horizOffset":"0","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/kindle/merch/2015/campaigns/aston_firetag_aug/aston_firetag_aug-ext-gno-d-de-500x492._V311778749_.png"}; 
+ _navbar.browsepromos['nav-sa-kindle-reader'] = {"width":500,"promoType":"wide","destination":"/dp/B00QJDO0QC","vertOffset":"0","horizOffset":"0","height":352,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/kindle/merch/2015/campaign/KM/km_np-gno-d-de._V317130181_.png"}; 
+ _navbar.browsepromos['nav-sa-mp3'] = {"width":511,"promoType":"wide","destination":"/b?_encoding=UTF8&node=4361573031","vertOffset":"-21","horizOffset":"-22","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/music/katharina/mp3/DE_Music_3f12-GNO_24-8-2015_flyout._V313497495_.png"}; 
+ _navbar.browsepromos['nav-sa-music-games-film-tv'] = {"width":480,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-8","height":426,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/music/flyout/autorip_flyout_acdc._V332327470_.png"}; 
+ _navbar.browsepromos['nav-sa-sports-outdoors'] = {"width":502,"promoType":"wide","destination":null,"vertOffset":"-21","horizOffset":"-22","height":469,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/03/sporting-goods/promotions/SummerSaleFS15/Final/DE_Sport_09_07-2015_SumemrSale70_flyout._V313543678_.png"}; 
+
+
+    window.$Nav && $Nav.declare('config.browsePromos', window._navbar.browsepromos);
+
+
+window.$Nav && $Nav.declare('config.extendedFlyout', false);
+
+window.$Nav && $Nav.declare('config.enableBbPrefetch', false);
+
+window.$Nav && $Nav.declare('config.enableBbAaProx', false);
+
+window.$Nav && $Nav.declare('configComplete');
+
+--></script>
+
+
+
+
+<!--Tilu -->
+
+
+<!-- EndNav -->
+    
+
+<div class='cs-help-v4'>
+
+  <!-- Help Header -->
+  <div class="cs-help-header">
+      <div class="inner">
+        
+
+
+
+<div class="a-row a-spacing-top-small">
+    <div class="a-column a-span9">
+         <a class="cs-help-title" href="/gp/help/customer/display.html?ie=UTF8&nodeId=504874">Hilfe und Kundenservice</a>
+    </div>
+</div>
+
+      </div>
+    </div>
+  <!-- /Help Header -->
+
+  <div class='cs-help-container'>
+    <div class='cs-help-content'>
+      
+      <div>
+      	<!-- Main content -->
+      	
+
+
+
+<div class="cs-help-breadcrumb">
+  <a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504966">Sicherheit, Datenschutz & Barrierefreiheit</a><span class="a-list-item">&nbsp;&rsaquo;&nbsp;</span><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201504540">Rechtliche Hinweise</a><span>&rsaquo;</span>
+</div>
+
+
+
+
+
+<div class="help-content">
+
+ 
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C"></a>
+<h1>Amazon.de-Datenschutzerkl&auml;rung</h1>
+  
+   
+  
+<div>
+<p class="lead">
+<strong> Zuletzt ge&auml;ndert:</strong> 01. Juli 2014.</p>
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0"></a>
+</div>
+<p>Welche &Auml;nderung zur Datenschutzerkl&auml;rung vom 26. Februar 2014 bestehen, sehen Sie <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html/ref=hp_3312401_oldpriv?nodeId=201550920" target="_self">hier</a></span>.</p>
+ 
+<p>Wir wissen, dass Ihnen der sorgf&auml;ltige Umgang mit Ihren pers&ouml;nlichen Informationen wichtig ist. Deshalb sch&auml;tzen wir Ihr Vertrauen, dass Amazon gewissenhaft mit diesen Informationen umgeht. Mit dieser Erkl&auml;rung geben Sie uns Ihr Einverst&auml;ndnis daf&uuml;r, dass Amazon.de <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7C569F52615A45629A7A4922B1CFA46C">Ihre nachstehend aufgef&uuml;hrten personenbezogenen Daten zu den hier genannten Zwecken</a> erheben, verarbeiten und nutzen darf. Diese Einwilligung kann jederzeit mit Wirkung f&uuml;r die Zukunft widerrufen werden. 
+		<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_097E661120B94BEE9B70EF6AA837C38F"> 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_59D17962BEAC4806A83E752ECC5FC54D"> Verantwortliche Stelle</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"><a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7C569F52615A45629A7A4922B1CFA46C"> Welche pers&ouml;nlichen Informationen unserer Kunden erheben und benutzen wir?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_702C0851FE5042E5AD0C358CAF1A0AE0"> Was hat es mit Cookies auf sich?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_2609CB37E82B4A4991D3BECAE70486B7"> Gibt Amazon.de die erhaltenen Informationen weiter?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"><a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_26F575D46C974094A0C700AB397EA006"> Wie sicher sind Informationen &uuml;ber mich?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9BF94D4200AA4207B2A835DE6B7957FE">Was hat es mit Werbung von Dritten und Links zu anderen Seiten auf sich?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"><a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_384164D5979342509569F0D6B900E5DC"> Welche Informationen kann ich einsehen?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_58728EF7358E4BF093F107D16E3E9451">Welche Wahlm&ouml;glichkeiten habe ich?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8A2B50F690A24C9CB4EC89B95DEDA8A9">D&uuml;rfen Kinder Amazon.de benutzen?</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"><a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_CC8D0F28BF6544B5937531FB0B44AE58"> Allgemeine Gesch&auml;ftsbedingungen</a> </span>
+</li>
+ 
+		
+</ul>
+ 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_59D17962BEAC4806A83E752ECC5FC54D">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_59D17962BEAC4806A83E752ECC5FC54D"></a>
+</div>
+<h2>Verantwortliche Stelle</h2>  
+<p>Verantwortliche Stelle im Sinne der Datenschutzgesetze sind die Amazon Europe Core S.&agrave;.r.l., die Amazon EU S.&agrave;.r.l, die Amazon Services Europe S.&agrave;.r.l. und die Amazon Media EU S.&agrave;.r.l., alle vier ans&auml;ssig 5, Rue Plaetis, L-2338 Luxemburg sowie Amazon Instant Video Germany GmbH, Domagkstr. 28, 80807 M&uuml;nchen. Als Datenverarbeiter wird in ihrem Auftrag die Amazon Deutschland Services GmbH, Marcel-Breuer-Str. 12, 80807 M&uuml;nchen, t&auml;tig.</p>
+ 
+<p>Amazon.com, Inc. und die von ihr beherrschten US-Tochterunternehmen nehmen an dem Programm Safe Harbor ("Sicherer Hafen") teil, das von dem U.S. Handelsministerium und der Europ&auml;ischen Union gemeinsam entwickelt worden ist. Diese Unternehmen aus der Amazon-Gruppe haben amtlich best&auml;tigt, dass sie sich an die Datenschutzprinzipien der Safe Harbor Privacy halten werden, auf die sich die USA und die EU geeinigt haben. Wenn Sie sich &uuml;ber das Programm Safe Harbor informieren, oder die amtliche Zertifizierung f&uuml;r die Amazon-Gruppe sehen m&ouml;chten, besuchen Sie bitte die Safe Harbor Website des US Handelsministeriums. Sie k&ouml;nnen auch eine E-Mail an <a href="mailto:safeharbor@amazon.com">safeharbor@amazon.com</a> senden, wenn Sie zu diesem Thema Kontakt aufnehmen m&ouml;chten.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7C569F52615A45629A7A4922B1CFA46C">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7C569F52615A45629A7A4922B1CFA46C"></a>
+</div>
+<h2>Welche pers&ouml;nliche Informationen unserer Kunden erheben und nutzen wir? </h2> 
+<p>Informationen, die wir von Ihnen bekommen, helfen uns, Ihr Einkaufserlebnis bei Amazon.de individuell zu gestalten und stetig zu verbessern. Wir nutzen diese Informationen f&uuml;r die Abwicklung von Bestellungen, die Lieferung von Waren und das Erbringen von Dienstleistungen sowie die Abwicklung der Zahlung (bei Rechnungskauf auch f&uuml;r erforderliche Pr&uuml;fungen). Wir verwenden Ihre Informationen auch, um mit Ihnen &uuml;ber Bestellungen, Produkte, Dienstleistungen und &uuml;ber Marketingangebote (siehe unten Kommunikation per E-Mail) zu kommunizieren sowie dazu, unsere Datens&auml;tze zu aktualisieren und Ihre Kundenkonten bei uns zu unterhalten und zu pflegen sowie dazu, Inhalte wie z. B. Wunschzettel oder Kundenrezensionen abzubilden und Ihnen Produkte oder Dienstleistungen zu empfehlen, die Sie interessieren k&ouml;nnten. Wir nutzen Ihre Informationen auch dazu, unser Kaufhaus und unsere Plattform zu verbessern, Missbrauch, insbesondere Betrug, vorzubeugen oder aufzudecken oder Dritten die Durchf&uuml;hrung technischer, logistischer oder anderer Dienstleistungen in unserem Auftrag zu erm&ouml;glichen.</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_6CF7F3B544934D8A8F319CABBBEABA16">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_6CF7F3B544934D8A8F319CABBBEABA16"></a>
+</div>
+<h2>Wir sammeln folgende Informationen:</h2>  
+		
+<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_BC88C206FD5A41E693E830985469E08B"> 
+<li>
+<span class="a-list-item">Informationen, die Sie uns geben: Wir erfassen und speichern alle Informationen, die Sie auf unserer Website eingeben oder uns in anderer Weise &uuml;bermitteln. <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser">Klicken</span> Sie <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_B1A612A0C0F44BECB53C001C486B5CFE">hier</a>, um sich einige Beispiele anzusehen. Sie k&ouml;nnen entscheiden, uns bestimmte Informationen nicht zu geben, was allerdings dazu f&uuml;hren kann, dass Sie viele unserer Angebote (Services/Features) nicht nutzen k&ouml;nnen. Wir benutzen diese Informationen, um Ihre zuk&uuml;nftigen Einkaufserlebnisse pers&ouml;nlicher zu gestalten, um unser Kaufhaus zu verbessern, und um mit Ihnen zu kommunizieren.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Automatische Informationen: Sobald Sie mit uns Kontakt aufnehmen, erhalten und speichern wir bestimmte Informationen. Unter anderem verwenden wir - wie viele andere Websites auch -- so genannte Cookies und Flash Cookies und erhalten bestimmte Informationen, sobald Ihr Webbrowser die Amazon.de-Website oder Werbung und andere Inhalte, die von oder im Namen von Amazon.de auf anderen Webseiten bereitgestellt werden, &ouml;ffnet. <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser">Klicken Sie </span> <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_61FADCCC4CF941AA8E93F14E028064B8">hier</a>, um Beispiele derjenigen Informationen sehen zu k&ouml;nnen, die wir erhalten.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Mobile: Soweit Sie <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/feature.html/ref=sa_menu_adr_amz2?ie=UTF8&amp;docId=1000502953" target="_self">Applikationen von Amazon</a></span> oder von einem mit Amazon verbundenen Unternehmen downloaden oder nutzen und - soweit m&ouml;glich - Sie standortbezogene Services aktiviert haben bzw. sich damit einverstanden erkl&auml;rt haben, &uuml;bermitteln Sie damit m&ouml;glicherweise Informationen &uuml;ber Ihren Aufenthaltsort und &uuml;ber das von Ihnen genutzte Endger&auml;t sowie eine eindeutig Ihrem Endger&auml;t zuordenbare Kennnummer an uns. Wir k&ouml;nnen diese Informationen nutzen, um Ihnen standortbezogene Dienste, wie z.B. Suchergebnisse oder andere personalisierte Inhalte anzubieten. Bei den meisten Endger&auml;ten ist es m&ouml;glich, diese standortbezogenen Dienste abzuschalten. <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser">Klicken</span> Sie <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_081D072F608A4147B93AB0DD4E45368D">hier</a>, um weitere Informationen dar&uuml;ber zu erhalten.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Kommunikation per E-Mail: Um Ihre E-Mails n&uuml;tzlicher und interessanter gestalten zu k&ouml;nnen, erhalten wir h&auml;ufig eine Best&auml;tigung dar&uuml;ber, welche E-Mails von Amazon.de Sie &ouml;ffnen, soweit Ihr Computer diese Funktion unterst&uuml;tzt. Wir vergleichen auch unseren Kundenstamm mit dem anderer Unternehmen, um zu vermeiden, dass unn&ouml;tig E-Mails an unsere Kunden versandt werden. Sofern Sie grunds&auml;tzlich keine E-Mails von uns erhalten wollen, stellen Sie bitte Ihr <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/gss/ccp/" target="_self">Benutzerkonto</a></span> entsprechend ein.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Informationen aus anderen Quellen: Gelegentlich nutzen wir auch Informationen &uuml;ber Sie aus anderen Quellen und f&uuml;gen diese unseren Informationen &uuml;ber Ihr Kundenkonto hinzu. <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser">Klicken</span> Sie <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8E8555298F744144B56A48C866F09067">hier</a>, um Beispiele f&uuml;r Informationen zu sehen, die wir von Dritten erhalten. Wir behalten uns das Recht vor, bei Dritten (z. B. Versandh&auml;ndlern, Kreditauskunfteien) Ausk&uuml;nfte &uuml;ber Ihr Zahlungsverhalten einzuholen, um Ihnen bestimmte Zahlungsm&ouml;glichkeiten (z. B. Rechnungskauf) oder andere Finanzdienstleistungen anzubieten.</span>
+</li>
+ 
+		
+</ul>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_702C0851FE5042E5AD0C358CAF1A0AE0">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_702C0851FE5042E5AD0C358CAF1A0AE0"></a>
+</div>
+<h2>Was hat es mit Cookies auf sich?</h2> 
+<p>Um das von Ihnen genutzte Endger&auml;t zu erkennen und Ihnen besondere Services anbieten zu k&ouml;nnen, nutzen wir Cookies. Weitere Informationen &uuml;ber Cookies und wie wir diese einsetzen, finden Sie unter <a href="https://www.amazon.de/gp/BIT/InternetBasedAds" target="_blank">Cookies &amp; Internet Richtlinie</a>.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_2609CB37E82B4A4991D3BECAE70486B7">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_2609CB37E82B4A4991D3BECAE70486B7"></a>
+</div>
+<h2>Gibt Amazon.de die erhaltenen Informationen weiter?</h2>  
+<p>Informationen &uuml;ber unsere Kunden sind wichtig f&uuml;r uns und helfen uns, unser Angebot zu optimieren. Es geh&ouml;rt jedoch nicht zu unserem Gesch&auml;ft, diese Kundeninformationen zu verkaufen. Wir geben die Informationen, die wir erhalten, ausschlie&szlig;lich in dem im Folgenden beschriebenen Umfang an Dritte weiter: 
+		<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_9D223CC9404B4DE3943F03B6B45D51A5"> 
+<li>
+<span class="a-list-item">Verbundene Unternehmen: Verbundene Unternehmen, die von Amazon.com, Inc. beherrscht werden und deren Tochtergesellschaften, wenn diese entweder dieser Datenschutzerkl&auml;rung unterliegen oder Richtlinien befolgen, die mindestens ebenso viel Schutz bieten wie diese Datenschutzerkl&auml;rung.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Partnerunternehmen, die nicht von Amazon.com, Inc. beherrscht werden: Wir arbeiten eng mit unseren Partnerunternehmen zusammen. In einigen F&auml;llen, wie bei den Verk&auml;ufern bei Marketplace, betreiben diese Unternehmen oder Einzelpersonen einen eigenen Shop bei Amazon.de, oder sie verkaufen Ihnen ihre Produkte &uuml;ber Amazon.de. In anderen F&auml;llen betreiben wir die Shops f&uuml;r die Unternehmen und erbringen andere Dienstleistungen oder bieten Produkte gemeinsam oder in deren Auftrag an. <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser">Klicken</span> Sie <a class="same_window" href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_37E3A9F3B10940399940A4F3681DE475">hier, um sich einige Beispiele anzusehen</a>. Sie wissen stets, ob ein dritter Partner an Transaktionen beteiligt ist und ob wir Informationen &uuml;ber die Transaktionen mit diesem dritten Partner an diesen weitergeben k&ouml;nnen.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Dienstleister: Wir beauftragen andere Unternehmen und Einzelpersonen mit der Erf&uuml;llung von Aufgaben f&uuml;r uns. Beispiele sind u. a. Paketlieferung, Sendung von Briefen oder E-Mails, die Pflege unserer Kundenlisten, die Analyse unserer Datenbanken, Werbema&szlig;nahmen (einschlie&szlig;lich der Zur-Verf&uuml;gung-Stellung von Suchergebnissen und Links), Abwicklung von Zahlungen (Kreditkarte, Lastschriftverfahren und Rechnungskauf) sowie Kundenservice. Diese Dienstleister haben Zugang zu pers&ouml;nlichen Informationen, die zur Erf&uuml;llung ihrer Aufgaben ben&ouml;tigt werden. Sie d&uuml;rfen diese jedoch nicht zu anderen Zwecken verwenden. Dar&uuml;ber hinaus sind sie verpflichtet, die Informationen gem&auml;&szlig; dieser Datenschutzerkl&auml;rung sowie den einschl&auml;gigen Datenschutzgesetzen zu behandeln.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Promotionen: Zuweilen versenden wir Angebote an ausgew&auml;hlte Amazon.de-Kundengruppen im Auftrag anderer Unternehmen. Soweit dies geschieht, erh&auml;lt dieses Unternehmen weder Ihren Namen, noch Ihre Adresse oder andere pers&ouml;nlich identifizierende Informationen. Wenn Sie solche Angebote nicht erhalten m&ouml;chten, stellen Sie ganz einfach Ihr <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/gss/ccp/" target="_self">Benutzerkonto</a></span> entsprechend ein.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">&Uuml;bertragung von Gesch&auml;ftsanteilen: Da wir unser Gesch&auml;ft st&auml;ndig weiterentwickeln, kann es sein, dass wir oder andere von Amazon.com, Inc. beherrschte Unternehmen einzelne Tochtergesellschaften, Unternehmensteile oder Bestandteile (z. B. L&auml;den) verkaufen oder kaufen. Bei solchen Transaktionen werden die Kundeninformationen gew&ouml;hnlich zusammen mit dem zu &uuml;bertragenden Teil des Unternehmens &uuml;bertragen. Die Daten unterliegen jedoch auch weiterhin den vorher bestehenden Datenschutzerkl&auml;rungen (ausgenommen hiervon ist selbstverst&auml;ndlich der Fall, in dem der Kunde anderen Bestimmungen ausdr&uuml;cklich zustimmt). In dem ebenfalls unwahrscheinlichen Fall, dass Amazon.com, Inc. insgesamt oder die wesentlichen Teile davon verkauft werden, werden pers&ouml;nliche Daten an den K&auml;ufer weitergegeben.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Schutz von Amazon.de und Dritten: Wir geben Kundenkonten und pers&ouml;nliche Daten &uuml;ber Kunden bekannt, wenn wir hierzu gesetzlich verpflichtet sind oder wenn eine solche Weitergabe erforderlich ist, um unsere <a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=505048" target="_self">Allgemeinen Gesch&auml;ftsbedingungen</a> oder andere Vereinbarungen durchzusetzen oder unsere Rechte sowie die Rechte unserer Kunden und diejenigen Dritter zu sch&uuml;tzen. Dies beinhaltet einen Datenaustausch mit Unternehmen, die auf die Vorbeugung und Minimierung von Missbrauch und Kreditkartenbetrug spezialisiert sind. Es wird ausdr&uuml;cklich klargestellt, dass in diesem Zusammenhang keine Weitergabe der Daten an diese Unternehmen zum wirtschaftlichen Gebrauch erfolgt, der im Widerspruch zu dieser Datenschutzerkl&auml;rung steht.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Mit Ihrer Einwilligung: In allen anderen F&auml;llen werden wir Sie dar&uuml;ber informieren, wenn pers&ouml;nliche Informationen an Dritte weitergegeben werden sollen und Ihnen so die M&ouml;glichkeit geben, Ihre Einwilligung zu erteilen.</span>
+</li>
+ 
+		
+</ul>
+ 
+</p>
+ 
+<p>Immer bei der Weitergabe pers&ouml;nlicher Informationen an Dritte in dem oben beschriebenen Umfang, in L&auml;nder au&szlig;erhalb des Europ&auml;ischen Wirtschaftsraums (EWR), stellen wir sicher, dass die Informationen in &Uuml;bereinstimmung mit dieser Datenschutzerkl&auml;rung und den deutschen Datenschutzgesetzen erfolgt.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_26F575D46C974094A0C700AB397EA006">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_26F575D46C974094A0C700AB397EA006"></a>
+</div>
+<h2>Wie sicher sind Informationen &uuml;ber mich?</h2> 
+		
+<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_CCD0A40A7BEB42B3BEFE8E25196E0F5E"> 
+<li>
+<span class="a-list-item">Um die Sicherheit Ihrer Informationen bei &Uuml;bertragung zu sch&uuml;tzen, benutzen wir Secure Sockets Layer Software (SSL). Diese Software verschl&uuml;sselt die Informationen, die von Ihnen &uuml;bermittelt werden.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Bei der Best&auml;tigung einer Bestellung offenbaren wir nur die letzten vier Stellen Ihrer Kreditkartennummer. Selbstverst&auml;ndlich &uuml;bertragen wir im Laufe der Auftragsbearbeitung die vollst&auml;ndige Kreditkartennummer an das zust&auml;ndige Kreditkartenunternehmen.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Wir unterhalten physische, elektronische und verfahrenstechnische Sicherheitsma&szlig;nahmen im Zusammenhang mit der Erhebung, dem Speichern und der Offenlegung von pers&ouml;nlichen Informationen unserer Kunden. Diese Sicherheitsma&szlig;nahmen beinhalten, dass wir Sie gelegentlich darum bitten, einen Nachweis &uuml;ber Ihre Identit&auml;t zu erbringen, bevor wir Ihnen pers&ouml;nliche Informationen offen legen.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">F&uuml;r Sie ist es wichtig, sich gegen unbefugten Zugang zu Ihrem Passwort und Ihrem Computer zu sch&uuml;tzen. Wenn Sie Ihren Computer mit anderen teilen, sollten Sie darauf achten, sich nach jeder Sitzung <a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=527594" target="_self">abzumelden</a>.</span>
+</li>
+ 
+		
+</ul>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9BF94D4200AA4207B2A835DE6B7957FE">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9BF94D4200AA4207B2A835DE6B7957FE"></a>
+</div>
+<h2>Was hat es mit Werbung von Dritten und Links zu anderen Seiten auf sich?</h2> 
+<p>Unsere Seite beinhaltet Werbung von Dritten und Links zu Webseiten, f&uuml;r die Amazon nicht verantwortlich ist. Weitere Informationen &uuml;ber Werbung von Dritten, inkl. personalisierter oder standortbezogener Werbung auf Amazon.de, finden Sie unter <a href="https://www.amazon.de/gp/BIT/InternetBasedAds" target="_blank">Cookies &amp; Internet Richtlinie</a>.</p>
+
+<p>
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_384164D5979342509569F0D6B900E5DC">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_384164D5979342509569F0D6B900E5DC"></a>
+</div>
+<h2>Welche Informationen kann ich einsehen?</h2> 
+<p>Sie k&ouml;nnen eine Vielzahl von Informationen &uuml;ber Ihr Konto und Ihre Interaktion mit Amazon.de einsehen und sie in bestimmten F&auml;llen aktualisieren. Welche Informationen das sind, erfahren Sie, wenn Sie <a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_83D867933B6342ACB5BD435BB4E4BA5B">hier</a> <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser"> klicken</span>. Die Liste &auml;ndert sich entsprechend den Ver&auml;nderungen unserer Website.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_58728EF7358E4BF093F107D16E3E9451">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_58728EF7358E4BF093F107D16E3E9451"></a>
+</div>
+<h2>Welche Wahlm&ouml;glichkeiten habe ich?</h2> 
+		
+<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_8E4BE2E01F9A4EFC9669D27FC83D8463"> 
+<li>
+<span class="a-list-item">Wie oben dargelegt, steht es Ihnen immer offen, keine Informationen zu geben, obwohl diese zum Einkauf oder zur Nutzung von Amazon-Features wie Mein Profil, <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=504924" target="_self">Wunschzettel</a></span>, <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=697300" target="_self">Kundenrezensionen</a></span> und Amazon Prime gebraucht werden k&ouml;nnten.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Auf den unter "Welche Informationen kann ich unter Mein Konto einsehen?" bezeichneten Seiten k&ouml;nnen Sie bestimmte Informationen hinzuf&uuml;gen oder aktualisieren. Wenn Sie Informationen aktualisieren, behalten wir gew&ouml;hnlich eine Kopie Ihrer urspr&uuml;nglichen Angaben in unseren Unterlagen.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Sie k&ouml;nnen Ihr <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/gss/ccp/" target="_self">Benutzerkonto</a></span> entsprechend anpassen, wenn Sie keine E-Mails oder andere Post von uns erhalten wollen.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Wenn Sie nicht m&ouml;chten, dass wir Ihre von uns erhobenen pers&ouml;nlichen Daten dazu benutzen, Werbung, die wir Ihnen zeigen, von Dritten personalisieren zu lassen, <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/dra/info" target="_self">&auml;ndern Sie bitte Ihre Werbungseinstellungen</a></span>.</span>
+</li>
+ 
+<li>
+<span class="a-list-item">Die Hilfe-Funktion in der Men&uuml;leiste der meisten Webbrowser erkl&auml;rt Ihnen, wie Sie Ihren Browser davon abhalten, neue Cookies zu akzeptieren, wie Sie Ihren Browser darauf hinweisen lassen, wenn Sie ein neues Cookie erhalten oder auch wie Sie s&auml;mtliche erhaltenen Cookies ausschalten. &Auml;hnliche Funktionen wie Flash Cookies, die durch Browser-Add-ons genutzt werden, k&ouml;nnen Sie durch die &Auml;nderung der Einstellungen des Browser-Add-on oder auch &uuml;ber die Website des Herstellers des Browser Add-on ausschalten oder l&ouml;schen. Allerdings erm&ouml;glichen Ihnen Cookies, einige von Amazons wesentlichen Funktionen zu nutzen, sodass wir Ihnen empfehlen, die Cookie-Funktionen eingeschaltet zu lassen. Zum Beispiel k&ouml;nnen Sie keine Waren in Ihren Einkaufswagen legen, nicht zum Checkout gehen oder andere Funktionen auf Amazon.de nutzen, die eine Registrierung voraussetzen, wenn Cookies nicht akzeptiert werden.</span>
+</li>
+ 
+		
+</ul>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8A2B50F690A24C9CB4EC89B95DEDA8A9">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8A2B50F690A24C9CB4EC89B95DEDA8A9"></a>
+</div>
+<h2>D&uuml;rfen Kinder Amazon.de benutzen?</h2> 
+<p>Amazon.de bietet keine Produkte zum Kauf durch Minderj&auml;hrige an. Auch unsere Produkte f&uuml;r Kinder k&ouml;nnen nur von Erwachsenen gekauft werden. Wenn Sie das 18. Lebensjahr noch nicht vollendet haben, d&uuml;rfen Sie die Amazon.de Seite nur zusammen mit einem Elternteil oder Vormund benutzen.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_CC8D0F28BF6544B5937531FB0B44AE58">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_CC8D0F28BF6544B5937531FB0B44AE58"></a>
+</div>
+<h2>Hinweise</h2> 
+<p>Wenn Sie Fragen zum Datenschutz bei Amazon.de haben, schreiben Sie uns bitte -- m&ouml;glichst genau -- &uuml;ber unser <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser"><a href="https://www.amazon.de/kontakt" target="_blank">Kontaktformular</a></span> an, und wir werden versuchen, Ihre Bedenken aus dem Weg zu r&auml;umen. Unser Gesch&auml;ft &auml;ndert sich st&auml;ndig. Ebenso &auml;ndern sich diese Datenschutzerkl&auml;rung und unsere Nutzungsbedingungen. Wir behalten uns vor, Ihnen in gewissen Zeitr&auml;umen Mitteilungen &uuml;ber die bei uns geltenden Richtlinien zu schicken. Sie sollten dennoch in jedem Fall regelm&auml;&szlig;ig unsere Website besuchen und &Auml;nderungen zur Kenntnis nehmen. Soweit nichts anderes geregelt ist, unterliegt die Nutzung s&auml;mtlicher Informationen, die wir &uuml;ber Sie und Ihre Kundenkonten haben, dieser Datenschutzerkl&auml;rung. Wir versichern Ihnen, dass wir wesentliche &Auml;nderungen unserer Datenschutzerkl&auml;rung, die zu einem schw&auml;cheren Schutz bereits erhaltener Kundendaten f&uuml;hren, stets nur mit der Zustimmung der betroffenen Kunden vornehmen werden.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7D8D4CB61A3542F6AF142DBBB156EC7E">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_7D8D4CB61A3542F6AF142DBBB156EC7E"></a>
+</div>
+<h2>Verwandte Themen</h2> 
+		
+<ul id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__UL_FB8127DE70514D47BDF4EDE012BB976B"> 
+<li>
+<span class="a-list-item"> <a href="https://www.amazon.de/gp/help/customer/display.html?nodeId=505048" target="_blank"> Allgemeine Gesch&auml;ftsbedingungen</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a href="https://www.amazon.de/gp/forum/content/db-guidelines.html/ref=cm_cd_dp_t_guidelines" target="_blank">Diskussionsforen</a></span> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a href="https://www.amazon.de/gp/help/customer/display.html/ref=hp_left_ac?nodeId=3366971" target="_blank">Community-Richtlinien</a></span> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <a href="https://www.amazon.de/gp/help/customer/display.html?nodeId=504874" target="_blank"> Hilfe-Seiten</a> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=505016" target="_self">Wo ist meine Bestellung?</a></span> </span>
+</li>
+ 
+<li>
+<span class="a-list-item"> <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser"><a href="https://www.amazon.de/gp/help/customer/display.html?nodeId=200040440" target="_blank">Richtlinien f&uuml;r alle Teilnehmer und den Service "Mein Profil"</a></span> </span>
+</li>
+ 
+		
+</ul>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_B1A612A0C0F44BECB53C001C486B5CFE">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_B1A612A0C0F44BECB53C001C486B5CFE"></a>
+</div>
+<h2>Informationen, die Sie uns geben</h2> 
+<p>Sie geben uns Informationen, wenn Sie etwas suchen, kaufen oder &uuml;ber Marketplace etwas verkaufen oder kaufen, ein eigenes Angebot erstellen, Filme oder Videos abrufen oder leihen, an einem Gewinnspiel teilnehmen, einen Fragebogen ausf&uuml;llen oder mit unserem Kundenservice sprechen. Sie erteilen z. B. Informationen, wenn Sie nach einem Produkt suchen, eine Bestellung - einschlie&szlig;lich Angabe Ihrer Telefonnummer, ohne die wir Ihre Bestellung nicht durchf&uuml;hren k&ouml;nnen -- &uuml;ber Amazon.de oder &uuml;ber einen Dritth&auml;ndler aufgeben oder Angaben in Ihrem Kundenkonto machen (beachten Sie, dass Sie u. U. mehrere Kundenkonten unterhalten, wenn Sie sich mit unterschiedlichen E-Mail-Adressen bei uns registriert haben) oder Angaben bei "Mein Profil", wenn Sie mit uns per Telefon, E-Mail oder auf andere Weise kommunizieren; wenn Sie einen Fragebogen oder ein Gewinnspiel ausf&uuml;llen; wenn Sie einen unserer Dienste nutzen; wenn Sie einen Wunschzettel anlegen oder andere Geschenkartikel vormerken; wenn Sie Filme oder Videos in Ihre Watchlist und Ihre Leihliste aufnehmen; bei Er&ouml;ffnung eines Unterkontos Daten des Arbeitgebers bereitstellen; bei der Teilnahme in einem Diskussionsforum oder weiterer Community-Angebote; Rezensionen schreiben oder bewerten; wenn Sie eine Termin-Erinnerung einrichten sowie wenn Sie andere Serviceangebote, bei denen Sie pers&ouml;nlich &uuml;ber bestimmte Angebote informiert werden, in Anspruch nehmen, z. B. Amazon.de-Newsletter, die Benachrichtigungsservices und die Aktualisierung Ihrer Kommunikationseinstellungen bei Amazon.de. Informationen, die Sie uns hierbei geben, k&ouml;nnen Ihr Name, Ihre Adresse, Ihr Alter, Telefonnummer, Kreditkarteninformationen, der Name von Personen, an die das gekaufte Produkt geliefert werden soll, einschlie&szlig;lich deren Adresse und Telefonnummer, sein, sowie Personen, die Sie in Ihre 1-Click&reg;-Einstellungen aufnehmen (mit Adresse und Telefonnummer), E-Mail-Adressen anderer Personen, Inhalte von Rezensionen und an uns gesandte E-Mails, Ihre pers&ouml;nlichen Daten und Fotos in "Mein Profil" oder auf dem Wunschzettel sowie Finanzdaten, einschlie&szlig;lich Ihrer Personalausweisnummer.</p>
+ 
+<p>
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_61FADCCC4CF941AA8E93F14E028064B8">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_61FADCCC4CF941AA8E93F14E028064B8"></a>
+</div>
+<h2>Automatische Informationen</h2> 
+<p>Beispiele f&uuml;r Informationen, die wir sammeln und analysieren, schlie&szlig;en die Internet-Protocol-Adresse (IP) ein, die Ihren Computer mit dem Internet verbindet, Empfangs- und Lesebest&auml;tigungen von E-Mails, Logins, E-Mail-Adressen, Passw&ouml;rtern, Informationen &uuml;ber Computer und Verbindung zum Internet wie z. B. Browsertyp, -version, -nummer und -erweiterungen, Zeitzoneneinstellungen, Betriebssystem und Plattform, Ihre Bestellhistorie, die wir manchmal mit &auml;hnlichen Informationen anderer Kunden zusammenf&uuml;hren und in nicht pers&ouml;nlich identifizierbarer Form in Features wie Bestseller abbilden sowie der komplette Uniform Resource Locators (URL) Clickstream zu, durch und aus unserer Website, d. h. die Reihenfolge der Seiten unseres Internet-Angebots, die Sie aufsuchen, einschlie&szlig;lich Datum und Zeit, Cookie- oder Flash-Cookie-Nummer, der Produkte, die Sie angeschaut oder nach denen Sie gesucht haben. Au&szlig;erdem die Telefonnummern, die Sie benutzt haben, um uns anzurufen. Auf unserer Website benutzen wir auch Browser-Daten wie Cookies und Flash Cookies (auch Flash Local Shared Objects genannt) oder &auml;hnliche Daten, um Missbrauch, insbesondere Betrug vorzubeugen, und f&uuml;r andere Zwecke. W&auml;hrend Ihrer Besuche benutzen wir zuweilen JavaScript, um Informationen zu sammeln und bewerten, einschlie&szlig;lich der Dauer bis zum Aufbau einer Webseite, deren fehlerhaftes Herunterladen, die Dauer des Besuchs auf einer Detailseite, Informationen zur Interaktion zwischen Seiten (z.B. Scrolling, Klicken, Mouse-overs) und &uuml;ber das Verlassen der Seite. Wir k&ouml;nnen dar&uuml;ber hinaus technische Informationen sammeln, die es uns erleichtern, Ihr Endger&auml;t zu identifizieren und dadurch Missbrauch zu vermeiden bzw. zur Fehlerdiagnose.</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_081D072F608A4147B93AB0DD4E45368D">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_081D072F608A4147B93AB0DD4E45368D"></a>
+</div>
+<h2>Mobile</h2> 
+<p>Die meisten mobilen Endger&auml;te erm&ouml;glichen es ihren Nutzern, standortbezogene Dienste auszuschalten. In den meisten F&auml;llen findet sich diese M&ouml;glichkeit im Men&uuml; unter "Einstellungen". <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser"> <a class="same_window" href="https://www.amazon.de/gp/help/customer/display.html?nodeId=201020430" target="_self">Klicken Sie hier</a></span> f&uuml;r Informationen &uuml;ber bestimmte Ger&auml;te. Falls Sie noch weitere Fragen dazu haben, wie Sie bei Ihrem Ger&auml;t die standortbezogenen Dienste ausschalten k&ouml;nnen, empfehlen wir Ihnen, sich mit Ihrem Mobilfunkbetreiber bzw. dem Hersteller Ihres Endger&auml;tes in Verbindung zu setzen.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a> 
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8E8555298F744144B56A48C866F09067">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_8E8555298F744144B56A48C866F09067"></a>
+</div>
+<h2>Informationen aus anderen Quellen</h2> 
+<p>Beispiele f&uuml;r Informationen, die wir aus anderen Quellen erhalten, beinhalten aktualisierte Informationen &uuml;ber Bestell- und Lieferadresse von unseren Paketzustellern und anderen Transportunternehmen, die wir dazu verwenden, unsere Datenbank zu aktualisieren, um Ihre n&auml;chsten Bestellungen sicher stellen zu k&ouml;nnen und zu gew&auml;hrleisten, dass wir mit Ihnen kommunizieren k&ouml;nnen, Informationen &uuml;ber Konten, Kauf- und Zahlungsverhalten sowie Page Views von einigen Partnern, mit denen wir einen gemeinsamen (co-branded) Shop unterhalten oder f&uuml;r die wir technische, logistische oder Marketing-Services durchf&uuml;hren (z. B. Target.com, f&uuml;r die Amazon.com solche Dienste durchf&uuml;hrt), Informationen &uuml;ber Suchworte und Suchergebnisse, die von dem mit uns verbundenen Unternehmen Alexa Internet durchgef&uuml;hrt werden, Suchergebnisse und Links, einschlie&szlig;lich bezahlter Listungen (z.B. Sponsored Links) sowie Ausk&uuml;nfte von Kreditauskunfteien, die wir dazu verwenden, Missbrauch, insbesondere Betrug, aufzudecken und dazu, Ihnen bestimmte Finanzdienstleistungen und Zahlungsarten anbieten zu k&ouml;nnen. </p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_37E3A9F3B10940399940A4F3681DE475">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_37E3A9F3B10940399940A4F3681DE475"></a>
+</div>
+<h2>Angebote in gemeinsamer Vermarktung</h2> 
+<p>Gelegentlich k&ouml;nnten wir Ihnen gemeinsame oder co-gebrandete Produkte und Dienste anbieten.</p>
+ 
+<p> 
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+	 
+<div id="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_83D867933B6342ACB5BD435BB4E4BA5B">
+<a name="GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_83D867933B6342ACB5BD435BB4E4BA5B"></a>
+</div>
+<h2>Informationen, zu denen Sie Zugang haben</h2> 
+<p>Beispiele f&uuml;r Informationen, zu denen Sie bei Amazon.de ganz leichten Zugang haben: Dazu geh&ouml;ren Informationen &uuml;ber fr&uuml;here Bestellungen und Film- und Videoabrufe, pers&ouml;nliche Daten (einschlie&szlig;lich Name, E-Mail-Adresse, Passwort, Kommunikations- und personalisierte Werbungseinstellungen, Adressbuch und 1-Click&reg;-Einstellungen), Einstellungen zu Zahlungsarten (einschlie&szlig;lich Kreditkarteninformationen, Geschenkgutscheinen, Geschenkkarten und Kontoausz&uuml;ge), Angaben dar&uuml;ber, welche Informationen Sie per E-Mail von uns erhalten m&ouml;chten (einschlie&szlig;lich der Benachrichtigungsservices von Amazon.de, Verf&uuml;gbarkeits- und Bestellbenachrichtigungen, Termin-Erinnerungen, Amazon.de-Newsletter; Empfehlungen (inkl. Unsere Empfehlungen f&uuml;r Sie und Korrigieren Sie Ihre Empfehlungen Einkaufslisten und Wunschzettel, Marketplace-Verk&auml;uferkonten sowie der "Mein Profil"-Bereich (einschlie&szlig;lich Rezensionen, Anfragen und Empfehlungen, Lieblingslisten, pers&ouml;nliche Profile).</p>
+ 
+<p>
+<a href="#GUID-2293EA1E-F5F2-42EB-A7CE-199305986D1C__SECTION_9C9DC47C52F34279AB4754FE83DD23A0">Zur&uuml;ck zum Anfang</a>
+</p>
+ 
+	 
+ 
+  
+</div>
+ 
+
+
+</div>
+<span class="focus cs-none">Sie haben Fragen zum Datenschutz bei Amazon? Finden Sie hier unsere aktuellsten Informationen zu diesem Thema. </span>
+
+
+
+
+
+<script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpHMDJS-83b157a4f23fe01af286b8be9b47b26a9f2d9f5c.min._V2_.js');
+</script>
+
+
+<div class="a-box-group a-spacing-top-base">
+
+   <div id="hmd-FeedbackBox" class="a-box a-box-normal a-text-left a-width-extra-large"><div class="a-box-inner">
+      <p>
+         Ist diese Information hilfreich?
+      </p>
+
+      <span class="a-declarative" data-action="a-hmd-yes" data-a-hmd-yes="{}">
+         <span class="a-button"><span class="a-button-inner"><input class="a-button-input" type="submit"><span class="a-button-text" aria-hidden="true">
+            Ja
+         </span></span></span>
+      </span>
+
+      <span class="a-declarative" data-action="a-hmd-no" data-a-hmd-no="{}">
+         <span class="a-button"><span class="a-button-inner"><input class="a-button-input" type="submit"><span class="a-button-text" aria-hidden="true">
+            Nein
+         </span></span></span>
+      </span>
+   </div></div> <!-- box !-->
+
+   <div id="hmd-ConfirmYesBox" class="a-box a-box-normal a-text-left a-width-extra-large a-hidden"><div class="a-box-inner">
+      <p>
+         Vielen Dank für Ihr Feedback.
+      </p>
+   </div></div> <!-- box !-->
+
+   <div id="hmd-ReasonBox" class="a-box a-box-normal a-text-left a-width-extra-large a-hidden"><div class="a-box-inner">
+      <p>
+         Bitte sagen Sie uns, warum die Information nicht hilfreich war:
+      </p>
+      <fieldset class="a-spacing-base">
+          <div data-a-input-name="info" class="a-radio"><label><input type="radio" name="info" value="Confused By Information"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+              Diese Informationen sind verwirrend oder falsch
+          </span></label></div>
+          <div data-a-input-name="info" class="a-radio"><label><input type="radio" name="info" value="Not What Looking For"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+              Nach diesen Informationen habe ich nicht gesucht
+          </span></label></div>
+          <div data-a-input-name="info" class="a-radio"><label><input type="radio" name="info" value="Didn&#39;t Like What Found"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+              Mir gefällt diese Richtlinie nicht
+          </span></label></div>
+      </fieldset>
+
+      <div class="a-input-text-wrapper a-hidden"><textarea maxlength="200" placeholder="Weitere Kommentare zum Hilfeinhalt hier ..." id="hmd-Comments"></textarea></div>
+
+      <span class="a-declarative" data-action="a-hmd-submit" data-a-hmd-submit="{}">
+         <span class="a-button a-spacing-top-medium"><span class="a-button-inner"><input class="a-button-input" type="submit"><span class="a-button-text" aria-hidden="true">
+            Senden
+         </span></span></span>
+      </span>
+
+   </div></div> <!-- box !-->
+
+   <div id="hmd-ConfirmNoBox" class="a-box a-box-normal a-text-left a-width-extra-large a-hidden"><div class="a-box-inner">
+      <p>
+         Danke! Wir können zwar nicht direkt auf Ihr Feedback antworten, aber Sie helfen uns hiermit, unsere Online-Hilfe zu verbessern.
+    
+      </p>
+   </div></div> <!-- box !-->
+
+</div> <!-- box_group !-->
+
+    
+    
+    
+
+
+
+
+
+  
+<script language="javascript">
+  if ( ! window.stageMarkers) {
+     window.stageMarkers = {};
+     window.stageMarkers.count = {};
+     window.stageMarkers.stage = function (stage, t) {
+       window.stageMarkers.count[stage] = 1 + (window.stageMarkers.count[stage] ? window.stageMarkers.count[stage] : 0);
+       if (window.stageMarkers.count[stage] >= t) {
+         amznJQ.completedStage(stage);
+       }
+     }
+  }
+</script>   
+
+<div style="display:none;" id="cf-div"> 
+<img onload="if (typeof uet == 'function') { uet('cf'); }" src="http://g-ecx.images-amazon.com/images/G/03/x-locale/common/transparent-pixel._V386942701_.gif" width="1" alt="" height="1" border="0" /><img onload="if (typeof uet == 'function') { uet('cf'); }" src="http://ecx.images-amazon.com/images/G/03/x-locale/common/transparent-pixel._V386942701_.gif" width="1" alt="" height="1" border="0" />
+</div>                                                                                                                                          
+
+
+
+      </div>
+      
+
+
+
+
+
+
+
+
+
+    
+        <div id="csg-search-cu" class="a-section a-spacing-small a-spacing-top-none">
+                <hr class="a-spacing-extra-large a-spacing-top-extra-large a-divider-normal">
+
+
+	<div class="a-row csg-search-box">
+	        <form id="search-help" name="search-help" method="get" action="/gp/help/customer/display.html?ie=UTF8&nodeId=">
+	            <input type="hidden" name="__mk_de_DE" value="ÅMÅŽÕÑ" />
+	            <div class="a-column a-span10">
+	                <div class="a-row">
+	                    <div class="a-search a-span12"><i class="a-icon a-icon-search"></i><input type="search" maxlength="100" id="helpsearch" autocomplete="off" placeholder="Thema oder Schlagwort" name="help_keywords" class="a-input-text a-span12"></div>
+	                </div>
+	                <div class="a-row">
+	                    <div id="help_srch_sggst" 
+	                         class="a-section a-text-left a-span12 a-box" 
+	                         style="display: none;">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="a-column a-span2 a-span-last">
+	                <span id="helpSearchSubmit" class="a-button a-button-span12 a-button-dark"><span class="a-button-inner"><input class="a-button-input" type="submit" aria-labelledby="helpSearchSubmit-announce"><span id="helpSearchSubmit-announce" class="a-button-text" aria-hidden="true">Los
+	                </span></span></span>
+	            </div>
+	            <input type="hidden" name="search" value="true">
+	            <input type="hidden" name="nodeId" value="3312401">
+	            <input type="hidden" name="kwHidden" value="true" id="searchPlaceholder">
+                <input type="hidden" name="sprefix" id="searchAutocomplete">
+                <input type="hidden" name="locale" value="de_DE">
+	        </form>
+	    </div>
+	</div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class='cs-help-sidebar'>
+      <!-- Sidebar content -->
+      
+
+
+
+
+
+
+    
+        <div id="search-help-sidebar" class="a-section a-spacing-small a-spacing-top-none">
+
+
+	<div class="a-row search-help">
+	        <form id="search-help" name="search-help" method="get" action="/gp/help/customer/display.html?ie=UTF8&nodeId=">
+	            <input type="hidden" name="__mk_de_DE" value="ÅMÅŽÕÑ" />
+	            <div class="a-column a-span8">
+	                <div class="a-row">
+	                    <div class="a-search a-span12"><i class="a-icon a-icon-search"></i><input type="search" maxlength="100" id="helpsearch" autocomplete="off" placeholder="Thema oder Schlagwort" name="help_keywords" class="a-input-text a-span12"></div>
+	                </div>
+	                <div class="a-row">
+	                    <div id="help_srch_sggst" 
+	                         class="a-section a-text-left a-span12 a-box" 
+	                         style="display: none;">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="a-column a-span4 a-span-last">
+	                <span id="helpSearchSubmit" class="a-button a-button-span12 a-button-dark"><span class="a-button-inner"><input class="a-button-input" type="submit" aria-labelledby="helpSearchSubmit-announce"><span id="helpSearchSubmit-announce" class="a-button-text" aria-hidden="true">Los
+	                </span></span></span>
+	            </div>
+	            <input type="hidden" name="search" value="true">
+	            <input type="hidden" name="nodeId" value="3312401">
+	            <input type="hidden" name="kwHidden" value="true" id="searchPlaceholder">
+                <input type="hidden" name="sprefix" id="searchAutocomplete">
+                <input type="hidden" name="locale" value="de_DE">
+	        </form>
+	    </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cs-help-sidebar-module topic-sidebar">
+  <div class="inner">
+    <span>
+      <span class="a-color-state">&lsaquo;</span>
+      <a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504874">Alle Hilfethemen</a>
+    </span>
+  </div>
+  <div class="inner">
+    
+
+
+
+
+
+ <h3>Rechtliche Hinweise</h3>
+    <ul class="nav-topics"><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=505048">Allgemeine Geschäftsbedingungen</a></li><li class="selected">Datenschutzerklärung</li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201136900">Patente</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201550920">Änderungen an der Datenschutzerklärung vom 26. Februar 2014</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201471830">Änderungen an der Datenschutzerklärung vom 25. September 2012</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201025390">Änderungen an der Datenschutzerklärung vom 20. September 2010</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200533510">Änderungen an der Datenschutzerklärung vom 11. Februar 2009</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200321760">Änderungen an der Datenschutzerklärung vom 18. September 2008</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200183160">Änderungen an der Datenschutzerklärung vom 20. Juni 2007</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=505050">Impressum</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200418640">Mitteilung an Amazon.de über einen Buchpreisfehler</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200041540">Mitteilung an Amazon.de über eine Rechtsverletzung</a></li><li><a href="/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201151440">Cookies & Internetwerbung</a></li></ul>
+
+
+  </div>
+</div>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="cs-help-sidebar-module take-action-sidebar">
+  <div class="inner">
+    <h3>Schnelle Lösungen</h3>
+    <div class="a-spacing-base">
+      <ul class="cs-list-jq default-actions"><li class="a-spacing-micro"><a href="https://www.amazon.de/gp/css/order-history">Lieferung verfolgen oder Bestellung anzeigen</a></li><li class="a-spacing-micro"><a href="/gp/css/account/cards/view.html">Zahlungsarten verwalten</a></li><li class="a-spacing-micro"><a href="/gp/css/returns/homepage.html">Artikel zurücksenden oder ersetzen</a></li><li class="a-spacing-micro"><a href="https://www.amazon.de/ap/cnep?_encoding=UTF8&openid.assoc_handle=deflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fhelp%2Fcustomer%2Fdisplay.html%3Fie%3DUTF8%26ref%3Dhp_ss_comp_cnep">Namen, E-Mail-Adresse oder Passwort ändern</a></li><li class="a-spacing-micro"><a href="/gp/css/account/address/view.html">Adressbuch verwalten</a></li><li class="a-spacing-micro"><a href="/gp/digital/fiona/manage">Meine Inhalte und Geräte</a></li><li class="a-spacing-micro cs-divider-before"><a href="/gp/help/customer/forums/kindleqna">Kindle Hilfeforum</a></li><li class="a-spacing-micro"><a href="/gp/help/customer/forums">Allgemeines Hilfeforum</a></li></ul>
+    </div>
+    <div id="displayLink">
+      <a class="a-button a-button-secondary a-spacing-micro" href="/gp/help/customer/contact-us?ie=UTF8&nodeId=3312401">
+        <span class="a-button-inner">
+          <span class="a-button-text">
+              Kontaktieren Sie uns
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+    
+</div>
+
+<div class="a-divider a-divider-section">
+  <div class="a-divider-inner"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='navFooter'><table class="navFooterVerticalColumn" cellspacing="0" align="center"><tr><td class="navFooterLinkCol"><div class="navFooterColHead">Über uns</div><ul><li class='nav_first'><a href='/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.jobs%2Fgp%2Fredirect.html%3Flocation%3D%252F&amp;source=standards&amp;token=25117E9F01C8F0AB1D649F37EDDD2DEBE047C3A6' class='nav_a'>Karriere bei Amazon</a></li><li><a href='http://www.amazon-presse.de/' class='nav_a'>Pressemitteilungen</a></li><li><a href='/unser-Planet/b?ie=UTF8&amp;node=305522031' class='nav_a'>Amazon und unser Planet</a></li><li><a href='/b?ie=UTF8&amp;node=2616664031' class='nav_a'>Amazon gemeinsam</a></li><li><a href='/gp/feature.html?ie=UTF8&amp;docId=1000746243' class='nav_a'>Amazon Storys</a></li><li><a href='http://www.amazon-logistikblog.de/' class='nav_a'>Amazon Logistikblog</a></li><li class='nav_last'><a href='/b?ie=UTF8&amp;node=505050' class='nav_a'>Impressum</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Geld verdienen mit Amazon</div><ul><li class='nav_first'><a href='http://services.amazon.de/programme/online-verkaufen/so-funktionierts-pro?ld=AZDESOAFooter' class='nav_a'>Jetzt verkaufen</a></li><li><a href='https://partnernet.amazon.de' class='nav_a'>Partnerprogramm</a></li><li><a href='http://services.amazon.de/programme/versand-durch-amazon/merkmale-und-vorteile/?ld=AZDEFBAFooter' class='nav_a'>Versand durch Amazon</a></li><li><a href='http://services.amazon.de/programme/gesponserte-produkte/so-funktionierts.html/ref=AMZfooter_DE_SP?ld=AMZfooterDEsp' class='nav_a'>Bewerben Sie Ihre Produkte</a></li><li><a href='https://kdp.amazon.com/help?topicId=A32I2OF1510VZV&amp;language=de_DE' class='nav_a'>Ihr Buch mit uns veröffentlichen</a></li><li><a href='https://payments.amazon.de?ld=AWREDEAPAFooter' class='nav_a'>Login und Bezahlen mit Amazon</a></li><li class='nav_last nav_a_carat'><span class="nav_a_carat">&rsaquo;</span><a href='/gp/seller-account/mm-landing.html?ie=UTF8&amp;topic=200330420' class='nav_a'>Alle anzeigen</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Amazon Zahlungsarten</div><ul><li class='nav_first'><a href='/gp/cobrandcard/marketing.html?ie=UTF8&amp;ad=DECBFOOT&amp;flavor=DECB3ST&amp;inc=10stmt&amp;place=enum&amp;plattr=DECBFOOT&amp;pr=con' class='nav_a'>Amazon.de VISA Karte</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504930' class='nav_a'>Kreditkarten</a></li><li><a href='/Geschenkgutscheine/b?ie=UTF8&amp;node=1571256031' class='nav_a'>Gutscheine</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=915628' class='nav_a'>Rechnung</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504928' class='nav_a'>Bankeinzug</a></li><li class='nav_last'><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=200219670' class='nav_a'>Amazon Currency Converter</a></li></ul></td><td class="navFooterColSpacerInner"></td><td class="navFooterLinkCol"><div class="navFooterColHead">Wir helfen Ihnen</div><ul><li class='nav_first'><a href='/gp/css/order-history' class='nav_a'>Lieferung verfolgen oder Bestellung anzeigen</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504938' class='nav_a'>Versand & Verfügbarkeit</a></li><li><a href='/gp/subs/primeclub/signup/main.html' class='nav_a'>Amazon Prime</a></li><li><a href='/gp/css/returns/homepage.html' class='nav_a'>Rückgabe & Ersatz</a></li><li><a href='/gp/digital/fiona/manage' class='nav_a'>Meine Inhalte und Geräte</a></li><li><a href='/b?ie=UTF8&amp;node=4951330031' class='nav_a'>Amazon App</a></li><li class='nav_last'><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=504874' class='nav_a'>Hilfe</a></li></ul></td></tr></table>
+
+<div class="navFooterLine navFooterLogoLine"><a href="/"><img src="http://g-ecx.images-amazon.com/images/G/03/gno/images/general/navAmazonLogoFooter._V169459258_.gif" width="113" alt="amazon.de" height="28" border="0" /></a></div>
+
+<div class="navFooterLine navFooterLinkLine navFooterPadItemLine"><ul><li class='nav_first'><a href='http://www.amazon.com.au' class='nav_a'>Australien</a></li><li><a href='http://www.amazon.com.br' class='nav_a'>Brasilien</a></li><li><a href='http://www.amazon.cn/' class='nav_a'>China</a></li><li><a href='http://www.amazon.fr/' class='nav_a'>Frankreich</a></li><li><a href='http://www.amazon.co.uk/' class='nav_a'>Großbritannien</a></li><li><a href='http://www.amazon.in/' class='nav_a'>Indien</a></li><li><a href='http://www.amazon.it/' class='nav_a'>Italien</a></li><li><a href='http://www.amazon.co.jp/' class='nav_a'>Japan</a></li><li><a href='http://www.amazon.ca/' class='nav_a'>Kanada</a></li><li><a href='http://www.amazon.com.mx/' class='nav_a'>Mexiko</a></li><li><a href='http://www.amazon.nl/' class='nav_a'>Niederlande</a></li><li><a href='http://www.amazon.at/' class='nav_a'>Österreich</a></li><li><a href='http://www.amazon.es/' class='nav_a'>Spanien</a></li><li class='nav_last'><a href='http://www.amazon.com/' class='nav_a'>USA</a></li></ul></div>
+
+<div class="navFooterLine navFooterLinkLine navFooterDescLine"><table cellspacing="0"><tr>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+<td class="navFooterDescItem"><a href='http://www.abebooks.de' class='nav_a'>AbeBooks<br/> <span class="navFooterDescText">Antiquarische<br/> & gebrauchte Bücher</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://de.buyvip.com' class='nav_a'>Amazon BuyVIP<br/> <span class="navFooterDescText">Shopping Club<br/> für Mode</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://aws.amazon.com/de/?sc_channel=el&amp;sc_campaign=deamazonfooter&amp;sc_publisher=de_amazon&amp;sc_medium=footer&amp;sc_content=&amp;sc_category=AWS_cloud_computing&amp;TRK=EL_de_amazon_footer' class='nav_a'>Amazon Web Services<br/> <span class="navFooterDescText">Cloud Computing Dienste<br/> von Amazon</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://www.audible.de' class='nav_a'>Audible<br/> <span class="navFooterDescText">Download<br/> Audiobücher</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://www.bookdepository.com/' class='nav_a'>Book Depository<br/> <span class="navFooterDescText">Bücher mit kostenfreier<br/> Lieferung weltweit</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='https://www.createspace.com/pub/l/diy_de.do' class='nav_a'>CreateSpace<br/> <span class="navFooterDescText">Ihr Buch als gedruckte<br/> Version veröffentlichen</span></a></td>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+<td class="navFooterDescItem"><a href='http://www.imdb.de/' class='nav_a'>IMDb<br/> <span class="navFooterDescText">Filme, TV<br/> & Stars</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://kdp.amazon.de' class='nav_a'>Kindle Direct Publishing<br/> <span class="navFooterDescText">Ihr E-Book<br/> veröffentlichen</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://www.myhabit.com/' class='nav_a'>MYHABIT<br/> <span class="navFooterDescText">Private Modeschöpfer<br/> Verkäufe</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://www.shopbop.com/de/welcome' class='nav_a'>Shopbop<br/> <span class="navFooterDescText">Designer<br/> Modemarken</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='/Warehouse-Deals/b?ie=UTF8&amp;node=3581963031' class='nav_a'>Warehouse Deals<br/> <span class="navFooterDescText">Reduzierte B-Ware</span></a></td>
+<td class="navFooterDescSpacer" style="width: 4%"></td>
+<td class="navFooterDescItem"><a href='http://www.zvab.com/index.do?ref=amazon&amp;utm_medium=referral&amp;utm_source=amazon.de' class='nav_a'>ZVAB<br/> <span class="navFooterDescText">Zentrales Verzeichnis<br/> Antiquarischer Bücher</span></a></td>
+<td class="navFooterDescSpacer" style="width: 40.0%"></td>
+</tr>
+</table></div>
+
+<div class="navFooterLine navFooterLinkLine navFooterPadItemLine"><ul><li class='nav_first'><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=505048' class='nav_a'>Unsere AGB</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=3312401' class='nav_a'>Datenschutzerklärung</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=505050' class='nav_a'>Impressum</a></li><li class='nav_last'><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=201151440' class='nav_a'>Cookies & Internet-Werbung</a></li></ul><span>© 1998-2015, Amazon.com, Inc. oder Tochtergesellschaften</span><ul></ul></div>
+</div>
+
+<!-- whfh-Skp7TTvdjeOTZZuaxdcJiPDdmkuYhYoOlhBvTPl9fo4tD9UQ5aWN9lRiTbTU2BRu rid-0ZYCKECWRFMREQACDQ6X -->
+<div id="sis_pixel_r2" aria-hidden="true" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.de&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1441223921561" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});</script>
+
+
+
+
+
+
+
+<style>
+  #nav-prime-tooltip{
+    padding: 0 20px 2px 20px;
+    background-color: white;
+    font-family: arial,sans-serif;
+  }
+  .nav-npt-text-title{
+    font-family: arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #E47923;
+  }
+  .nav-npt-text-detail, a.nav-npt-a{
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin: 2px 0px;
+  }
+  a.nav-npt-a {
+    text-decoration: underline;
+  }
+</style>
+
+<div  style="display: none">
+  <div id="nav-prime-tooltip">
+    <div class="nav-npt-text-title"> Kostenloser Premiumversand und vieles mehr </div>
+    <div class="nav-npt-text-detail"> Prime-Mitglieder genießen kostenlosen Premiumversand und unbegrenztes Streaming von Filmen und Serien </div>
+    <div class="nav-npt-text-detail">
+      &gt;
+      <a class="nav-npt-a" href="/gp/prime">Jetzt kostenlos testen</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div style="display: none">
+  <div id="nav-prime-menu" class="nav-empty nav-flyout-content nav-ajax-prime-menu">
+    <div class="nav_dynamic"></div>
+    <div class="nav-ajax-message"></div>
+    <div class="nav-ajax-error-msg">
+      <p class="nav_p nav-bold">Momentanes Problem beim Laden dieses Menüs.</p>
+      <p class="nav_p"><a href="/gp/prime" class="nav_a">Weitere Informationen über Amazon Prime.</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+<script type="text/javascript">
+  window.$Nav && $Nav.when("data").run(function(data) { data({"AutoBikePanel":{"promoID":"nav-sa-auto-bike","template":{"name":"itemList","data":{"text":"Auto & Motorrad","items":[{"text":"Auto & Motorrad","items":[{"text":"Autoteile & -zubehör","url":"/auto-tuning-autoteile/b?ie=UTF8&node=78191031"},{"text":"Werkzeug & Wartung","url":"/b?ie=UTF8&node=2611181031"},{"text":"Motorrad","url":"/Motorradreifen-Roller-Motorrad/b?ie=UTF8&node=4606925031"},{"text":"Navigation & Car-Hi-Fi","url":"/Navigationssystems-Car-HiFi-Autoradios/b?ie=UTF8&node=236861011"}]}]}}},"shopAllContent":{"template":{"name":"itemList","data":{"items":[{"text":"Amazon Instant Video","panelKey":"InstantVideoPanel"},{"text":"Musik-Downloads","panelKey":"Mp3Panel"},{"subtext":"Apps & Spiele, Amazon Coins","text":"App-Shop für Android","subtextKey":"android-tagline","panelKey":"AndroidPanel"},{"text":"Amazon Cloud Drive","panelKey":"CloudDrivePanel"},{"text":"Kindle eReader & Bücher","panelKey":"KindleReaderPanel"},{"text":"Fire-Tablets","panelKey":"KindleFireTabletPanel"},{"text":"Fire TV","panelKey":"FireTvPanel"},{"text":"Fire Phone","panelKey":"FirePhonePanel"},{"text":"Bücher","dividerBefore":"1","panelKey":"BooksPanel"},{"text":"Filme, Serien, Musik & Games","panelKey":"MusicGamesFilmTvPanel"},{"text":"Elektronik & Computer","panelKey":"ElectronicsComputersPanel"},{"text":"Haushalt, Garten, Baumarkt","panelKey":"HomeGardenToolsPanel"},{"text":"Beauty, Drogerie & Lebensmittel","panelKey":"FoodBeveragesHealthBeautyPanel"},{"text":"Spielzeug & Baby","panelKey":"BabyKidsToysPanel"},{"text":"Kleidung, Schuhe & Uhren","panelKey":"ApparelShoesWatchesPanel"},{"text":"Sport & Freizeit","panelKey":"SportsOutdoorsPanel"},{"text":"Auto & Motorrad","panelKey":"AutoBikePanel"},{"text":"Alle Kategorien","decorate":"carat","url":"/gp/site-directory","dividerBefore":"1"}]}}},"KindleReaderPanel":{"promoID":"nav-sa-kindle-reader","template":{"name":"itemList","data":{"text":"Kindle eReader & Bücher","items":[{"text":"Kindle eReader","items":[{"subtext":"Klein, leicht, günstig, mit Touchscreen","text":"Kindle","url":"/dp/B00KDRUCJY"},{"subtext":"Unser meistverkaufter Kindle - jetzt noch besser","text":"Kindle Paperwhite","url":"/dp/B00QJDO0QC"},{"subtext":"Aus Liebe zum Lesen","text":"Kindle Voyage","url":"/dp/B00IOY524S"},{"subtext":"Hüllen, Ladegeräte, Sleeves und mehr","text":"Kindle-Zubehör","url":"/b?ie=UTF8&node=530884031"}]},{"text":"Kindle-Shop","dividerBefore":"1","items":[{"text":"Kindle eBooks","url":"/ebooks-kindle-buecher/b?ie=UTF8&node=530886031"},{"text":"Englische eBooks","url":"/fremdsprachige-ebooks-kindle-buecher/b?ie=UTF8&node=567135031"},{"subtext":"Grenzenloses Lesevergnügen, für € 9,99 pro Monat.","text":"Kindle Unlimited","url":"/gp/kindle/ku/sign-up/ui/rw/about"}]},{"text":"Inhalte und Verwaltung","columnBreak":"1","items":[{"subtext":"Für PC, iPad, iPhone, Android und mehr","text":"Gratis Kindle Lese-Apps","url":"/gp/kindle/kcp"},{"subtext":"Kindle eBooks im Browser lesen","text":"Kindle Cloud Reader","url":"https://www.amazon.de:443/gp/redirect.html?location=https://lesen.amazon.de/&token=1FFC583B23B3165AA95D1BA1D89BEA1F37FF6C16&source=standards","extra":"target=\"_blank\""},{"text":"Meine Inhalte und Geräte","url":"/gp/digital/fiona/manage"}]}]}}},"signinContent":{"html":"<div id='nav-signin-tooltip'><a href='https://www.amazon.de/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=deflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_custrec_signin' class='nav-action-button' data-nav-role='signin' data-nav-ref='nav_custrec_signin'><span class='nav-action-inner'>Anmelden</span></a><div class='nav-signin-tooltip-footer'>Neuer Kunde? <a href='https://www.amazon.de/ap/register?_encoding=UTF8&amp;openid.assoc_handle=deflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_custrec_newcust' class='nav-a'>Starten Sie hier.</a></div></div>"},"ElectronicsComputersPanel":{"promoID":"nav-sa-electronics-computers","template":{"name":"itemList","data":{"text":"Elektronik & Computer","items":[{"text":"Elektronik & Foto","items":[{"text":"Kamera & Foto","url":"/Kamera-Foto-Digitalkameras-Spiegelreflexkameras-Camcorder/b?ie=UTF8&node=571860"},{"text":"Smartphones & Telefone","url":"/Handys-Smartphones-Handyvertr%C3%A4ge/b?ie=UTF8&node=571954"},{"text":"Fernseher & Heimkino","url":"/Heimkino-TV-Fernseher/b?ie=UTF8&node=761254"},{"text":"Audio & HiFi","url":"/b?ie=UTF8&node=1966060031"},{"text":"Musikinstrumente & DJ-Equipment","url":"/b?ie=UTF8&node=340849031"},{"text":"Navigation","url":"/Navigationssystems-Car-HiFi-Autoradios/b?ie=UTF8&node=236861011"},{"text":"Elektronik-Zubehör","url":"/Elektronik-Zubeh%C3%B6r/b?ie=UTF8&node=569866"},{"text":"Konsolen & Games-Zubehör","url":"/Zubeh%C3%B6r-Hardware-Games/b?ie=UTF8&node=700032"},{"text":"Haushaltsgeräte & Staubsauger","url":"/Haushaltsger%C3%A4te/b?ie=UTF8&node=3169211"},{"text":"Elektro-Großgeräte\n","url":"/Haushaltsger%C3%A4te-Hausger%C3%A4te/b?ie=UTF8&node=908823031"},{"text":"Alle Produkte","url":"/Elektronik-Foto/b?ie=UTF8&node=562066"}]},{"text":"Computer & Büro","columnBreak":"1","items":[{"text":"Notebooks","url":"/b?ie=UTF8&node=427957031"},{"text":"Tablets","url":"/b?ie=UTF8&node=429874031"},{"text":"Computer-Zubehör","url":"/b?ie=UTF8&node=514839031"},{"text":"PC-Komponenten","url":"/b?ie=UTF8&node=427956031"},{"text":"Software","url":"/b?ie=UTF8&node=301927"},{"text":"Software-Downloads","url":"/b?ie=UTF8&node=950236031"},{"text":"PC- & Video-Games","url":"/computer-video-spiele-games-konsolen/b?ie=UTF8&node=300992"},{"text":"Games-Downloads","url":"/pc-mac-downloads-herunterladen-digital-steam/b?ie=UTF8&node=1333619031"},{"text":"Drucker & Tintenpatronen","url":"/b?ie=UTF8&node=427955031"},{"text":"Bürobedarf & Schreibwaren","url":"/B%C3%BCro-B%C3%BCromaterial-Schreibwaren-B%C3%BCrobedarf-B%C3%BCroartikel/b?ie=UTF8&node=192416031"}]}]}}},"ApparelShoesWatchesPanel":{"promoID":"nav-sa-apparel-shoes-watches","template":{"name":"itemList","data":{"text":"Kleidung, Schuhe & Uhren","items":[{"text":"Kleidung, Schuhe & Uhren","items":[{"text":"Bekleidung","url":"/Bekleidung-Mode-Damen-Herren-Kinder/b?ie=UTF8&node=77028031"},{"text":"Schuhe","url":"/Schuhe-Handtaschen-Accessoires/b?ie=UTF8&node=355006011"},{"text":"Handtaschen","url":"/Handtaschen-Taschen/b?ie=UTF8&node=1760236031"},{"text":"Reisegepäck","url":"/koffer-rucks%C3%A4cke-taschen/b?ie=UTF8&node=2454118031"},{"text":"Accessoires","url":"/Accessoires-Uhren-Schmuck/b?ie=UTF8&node=2614058031"},{"text":"Schmuck","url":"/Schmuck-Charms-Ohrringe-Ketten/b?ie=UTF8&node=327472011"},{"text":"Uhren","url":"/Uhren/b?ie=UTF8&node=193707031"},{"subtext":"Entdecken Sie den Amazon Shopping Club","text":"Amazon BuyVIP","url":"/gp/feature.html?ie=UTF8&docId=1000728993","dividerBefore":"1"}]}]}}},"FireTvPanel":{"promoID":"nav-sa-fire-tv","template":{"name":"itemList","data":{"text":"Fire TV","items":[{"text":"Video- und Spielespaß","items":[{"subtext":"1080p Streaming Media Player mit Sprachsuche","text":"Amazon Fire TV","url":"/dp/B00KQEIMY6"},{"subtext":"Streaming Media Stick mit Amazon Instant Video und Netflix","text":"Fire TV Stick","url":"/dp/B00KAKPZYG"},{"subtext":"Unser kabelloser Controller","text":"Amazon Fire-Gamecontroller","url":"/dp/B00KQE907E"}]},{"text":"Filme, Serien und Spiele","columnBreak":"1","items":[{"text":"Prime Instant Video","url":"/Prime-Instant-Video/b?ie=UTF8&node=3279204031"},{"text":"Amazon Instant Video","url":"/Instant-Video/b?ie=UTF8&node=3010075031"},{"text":"Spiele für Fire TV","url":"/b?ie=UTF8&node=2988052031"},{"text":"Amazon Cloud Drive","url":"/clouddrive"}]}]}}},"Mp3Panel":{"promoID":"nav-sa-mp3","template":{"name":"itemList","data":{"text":"Musik-Downloads","items":[{"text":"Musik-Downloads","items":[{"subtext":"Mehr als 30 Millionen Songs.","text":"Musik-Downloads","url":"/MP3-Musik-Downloads/b?ie=UTF8&node=77195031"},{"text":"Bestseller","url":"/gp/bestsellers/dmusic/"},{"text":"Neuheiten","url":"/Neuheiten/b?ie=UTF8&node=180893031"},{"text":"Sonderangebote","url":"/Sonderangebote-MP3-Downloads/b?ie=UTF8&node=213834031"},{"subtext":"Alle Songs an einem Ort.","text":"Ihre Musikbibliothek","url":"/gp/dmusic/mp3/player","dividerBefore":"1"},{"subtext":"Überall, online und offline.","text":"Amazon Music Apps","url":"/amazon-music-app/b?ie=UTF8&node=1949586031"}]}]}}},"FirePhonePanel":{"promoID":"nav-sa-fire-phone","template":{"name":"itemList","data":{"text":"Fire Phone","items":[{"text":"Smartphones und Zubehör","items":[{"subtext":"HD-Display, Quad-Core-Prozessor, LTE, 13MP-Kamera, 32 GB oder 64 GB","text":"Fire Phone","url":"/dp/B00IFQ35P8"},{"subtext":"Hüllen, Kopfhörer und mehr","text":"Zubehör","url":"/b?ie=UTF8&node=5198259031"}]},{"text":"Inhalte und Services","dividerBefore":"1","items":[{"text":"Musik-Downloads","url":"/MP3-Musik-Downloads/b?ie=UTF8&node=77195031"},{"text":"Amazon Cloud Drive","url":"/clouddrive/"},{"text":"Amazon Instant Video","url":"/Instant-Video/b?ie=UTF8&node=3010075031"}]}]}}},"MusicGamesFilmTvPanel":{"promoID":"nav-sa-music-games-film-tv","template":{"name":"itemList","data":{"text":"Filme, Serien, Musik & Games","items":[{"text":"Filme, Serien, Musik & Games","items":[{"text":"Amazon Instant Video","url":"/Instant-Video/b?ie=UTF8&node=3010075031"},{"text":"Alle DVDs & Blu-rays","url":"/dvd-blu-ray-filme-3D-vhs-video/b?ie=UTF8&node=284266"},{"text":"TV-Serien auf DVD & Blu-ray","url":"/TV-Serien-Produktionen-DVD-Blu-ray/b?ie=UTF8&node=508214"},{"text":"Blu-ray-Shop","url":"/Blu-ray-Filme-Neuheiten-Angebote/b?ie=UTF8&node=514450"},{"text":"LOVEFiLM DVD Verleih","url":"/LOVEFiLM-DVD-Verleih/b?ie=UTF8&node=3054250031"},{"text":"Musik-CDs & Vinyl","url":"/b?ie=UTF8&node=255882","dividerBefore":"1"},{"text":"Klassische Musik","url":"/Klassik-Klassiche-Musik-CDs/b?ie=UTF8&node=255966"},{"text":"Musik-Downloads","url":"/MP3-Musik-Downloads/b?ie=UTF8&node=77195031"},{"text":"Musikinstrumente & DJ-Equipment","url":"/b?ie=UTF8&node=340849031"},{"text":"Games","url":"/computer-video-spiele-games-konsolen/b?ie=UTF8&node=300992","dividerBefore":"1"},{"subtext":"Für Konsolen, PC und Mac","text":"Games-Downloads","url":"/pc-mac-downloads-herunterladen-digital-steam/b?ie=UTF8&node=1333619031"},{}]}]}}},"CloudDrivePanel":{"promoID":"nav-sa-cloud-drive","template":{"name":"itemList","data":{"text":"Amazon Cloud Drive","items":[{"text":"Amazon Cloud Drive","items":[{"subtext":"Sicheres speichern von Fotos und mehr","text":"Über Cloud Drive","url":"/clouddrive/home"},{"subtext":"Für PC, iOS und Android","text":"Laden Sie die kostenlosen Apps herunter","url":"/clouddrive/home#download-section"},{"subtext":"Kostenlos für Prime-Mitglieder","text":"Unbegrenzter Speicherplatz für Fotos","url":"/clouddrive/primephotos"},{"subtext":"Alle Kunden erhalten 5 GB an kostenlosem Speicherplatz","text":"Preispakete","url":"/clouddrive/pricing"},{"subtext":"Ihr Konto verwalten","text":"Anmelden","url":"/clouddrive?_encoding=UTF8&sf=1","extra":"target=\"_blank\""}]}]}}},"KindleFireTabletPanel":{"promoID":"nav-sa-kindle-fire-tablet","template":{"name":"itemList","data":{"text":"Fire-Tablets","items":[{"text":"Fire-Tablets","items":[{"subtext":"Volle Leistung im Taschenformat","text":"Fire HD 6","url":"/dp/B00IRKMZX0"},{"subtext":"Leistungsstarkes Tablet, große Unterhaltung","text":"Fire HD 7","url":"/dp/B00JXOUMES"},{"subtext":"Sollte es kaputt gehen, ersetzen wir es. Versprochen.","text":"Fire HD Kids Edition","url":"/dp/B00V985HN2"},{"subtext":"HDX-Display, leistungsstarker 2,2-GHz-Prozessor","text":"Kindle Fire HDX","url":"/dp/B00D2J4D4U"},{"subtext":"Unser leistungsstärkstes Tablet - grenzenlos vielseitig","text":"Fire HDX 8.9","url":"/dp/B00KQNUZ9M"},{"subtext":"Hüllen, Ladegeräte, Sleeves und mehr","text":"Fire-Zubehör","url":"/b?ie=UTF8&node=530884031"}]},{"text":"Inhalte und Verwaltung","columnBreak":"1","items":[{"text":"Amazon Instant Video","url":"/Instant-Video/b?ie=UTF8&node=3010075031"},{"text":"Apps & Spiele","url":"/mobile-apps/b?ie=UTF8&node=1661648031"},{"text":"Musik-Downloads","url":"/MP3-Musik-Downloads/b?ie=UTF8&node=77195031"},{"text":"Kindle eBooks","url":"/ebooks-kindle-buecher/b?ie=UTF8&node=530886031"},{"text":"Alle Hörbuch-Downloads","url":"/audible-h%C3%B6rbuch-downloads/b?ie=UTF8&node=251105031"},{"text":"Meine Inhalte und Geräte","url":"/gp/digital/fiona/manage"}]}]}}},"AndroidPanel":{"promoID":"nav-sa-android","template":{"name":"itemList","data":{"subtext":"Apps & Spiele, Amazon Coins","text":"App-Shop für Android","subtextKey":"android-tagline","items":[{"text":"App-Shop für Android","items":[{"subtext":"Apps und Spiele, die <strong>wirklich</strong> gratis sind","text":"Underground Apps & Spiele","url":"/b?ie=UTF8&node=6369057031"},{"subtext":"Für Kindle Fire und Android-Geräte","text":"Alle Apps und Spiele","url":"/mobile-apps/b?ie=UTF8&node=1661648031"},{"text":"Spiele","url":"/b?ie=UTF8&node=1720689031"},{"subtext":"Sparen Sie bis zu 20% bei Apps und In-App-Artikeln","text":"Amazon Coins","url":"/gp/feature.html?ie=UTF8&docId=1000749413"},{"subtext":"Kindle, mobiles Shopping, MP3 und mehr","text":"Amazon Apps","url":"/b?ie=UTF8&node=4951330031","dividerBefore":"1"},{"subtext":"Ihre Apps in der Übersicht sowie Geräte-Einstellungen","text":"Ihre Apps und Geräte","url":"https://www.amazon.de/gp/mas/your-account/myapps"}]}]}}},"wishlistContent":{"template":{"name":"itemList","data":{"items":[{"text":"Wunschzettel anlegen","url":"/gp/registry/wishlist?ie=UTF8&triggerElementID=createList"},{"text":"Wunschzettel finden","url":"/gp/registry/search.html?ie=UTF8&type=wishlist"},{"subtext":"Artikel von überall auf Ihre Liste setzen","text":"Universal-Wunschzettel","url":"/wishlist/universal"},{"text":"Hochzeitsliste","url":"/gp/wedding/homepage"},{"text":"Baby-Wunschliste","url":"/gp/registry/baby"}]}}},"SportsOutdoorsPanel":{"promoID":"nav-sa-sports-outdoors","template":{"name":"itemList","data":{"text":"Sport & Freizeit","items":[{"text":"Sport & Freizeit","items":[{"text":"Alle Sport-Produkte","url":"/sport-freizeit-sportartikel/b?ie=UTF8&node=16435051"},{"text":"Camping & Outdoor","url":"/Camping-Outdoor/b?ie=UTF8&node=16435151"},{"text":"Fitness","url":"/Fitness/b?ie=UTF8&node=16435171"},{"text":"Fußball","url":"/Fu%C3%9Fball/b?ie=UTF8&node=16435181"},{"text":"Radsport","url":"/Radsport/b?ie=UTF8&node=16435211"},{"text":"Running","url":"/Running/b?ie=UTF8&node=16435231"},{"text":"Sportelektronik","url":"/pulsuhren-gps-ger%C3%A4te/b?ie=UTF8&node=190534011"},{"text":"Sportbekleidung","url":"/Sportbekleidung/b?ie=UTF8&node=3772226031"}]}]}}},"BabyKidsToysPanel":{"promoID":"nav-sa-baby-kids-toys","template":{"name":"itemList","data":{"text":"Spielzeug & Baby","items":[{"text":"Spielzeug & Baby","items":[{"text":"Spielzeug","url":"/spielzeug-brettspiele-baby-kleinkind/b?ie=UTF8&node=12950651"},{"text":"Baby","url":"/baby-babyausstattung-babyartikel/b?ie=UTF8&node=355007011"},{"text":"Babybekleidung","url":"/Babymode-Babykleidung-Baby/b?ie=UTF8&node=1981001031"},{"url":"/b?ie=UTF8&node=5228883031"},{"text":"Brettspiele","url":"/Spiele-Brettspiele-Kinderspiele-Aktionsspiele-Haba-Monopoly/b?ie=UTF8&node=12956501"},{"text":"Baby-Wunschliste","url":"/gp/registry/baby"},{"subtext":"20% auf Windeln, Gratis-Premiumversand und mehr","text":"Amazon Family","url":"/gp/family/signup/welcome"}]}]}}},"HomeGardenToolsPanel":{"promoID":"nav-sa-home-garden-tools","template":{"name":"itemList","data":{"text":"Haushalt, Garten, Baumarkt","items":[{"text":"Küche, Haushalt & Wohnen","items":[{"text":"Haushaltsgeräte & Staubsauger","url":"/Haushaltsger%C3%A4te/b?ie=UTF8&node=3169211"},{"text":"Kaffee & Espresso","url":"/Espressomaschinen-Kaffeemaschine/b?ie=UTF8&node=3310781"},{"text":"Elektro-Großgeräte\n","url":"/Haushaltsger%C3%A4te-Hausger%C3%A4te/b?ie=UTF8&node=908823031"},{"text":"Kochen & Essen","url":"/Kochen-Braten-Backen-K%C3%BCche-Haushalt/b?ie=UTF8&node=257408011"},{"text":"Aufbewahren & Ordnen","url":"/aufbewahren-und-ordnen/b?ie=UTF8&node=3437522031"},{"text":"Möbel & Wohnaccessoires","url":"/M%C3%B6bel-Dekoration/b?ie=UTF8&node=3312261"},{"text":"Heimtextilien","url":"/Heimtextilien-Matratzen-Bettw%C3%A4sche/b?ie=UTF8&node=10176091"},{"text":"Beleuchtung","url":"/Beleuchtung/b?ie=UTF8&node=213083031"},{"text":"Alles in Küche & Haushalt","url":"/k%C3%BCche-haushalt/b?ie=UTF8&node=3167641"}]},{"text":"Baumarkt, Garten & Tier","columnBreak":"1","items":[{"text":"Elektro- & Handwerkzeuge","url":"/elektrowerkzeuge-handwerkzeuge/b?ie=UTF8&node=2076939031"},{"text":"Elektrisches Gartenwerkzeug","url":"/Elektrisches-Gartenwerkzeug-Gartenger%C3%A4te-Elektro-Handwerkzeuge-Produkte/b?ie=UTF8&node=120589031"},{"text":"Elektroinstallation","url":"/elektroinstallation-steckdosen-zeitschaltuhr/b?ie=UTF8&node=2076361031"},{"text":"Heizen & Kühlen","url":"/heizen-k%C3%BChlen-luftbefeuchtung/b?ie=UTF8&node=2076254031"},{"text":"Küchen- & Badinstallation","url":"/badinstallation-k%C3%BCcheninstallation/b?ie=UTF8&node=2076820031"},{"text":"Smart Home","url":"/Smart-Home-Automation/b?ie=UTF8&node=4816541031"},{"text":"Werkzeuge für Profis","url":"/professionelle-werkzeuge-f%C3%BCr-handwerker/b?ie=UTF8&node=5490374031"},{"text":"Alles in Baumarkt","url":"/baumarkt-werkzeug-heimwerken/b?ie=UTF8&node=80084031"},{"text":"Alle Garten-Produkte","url":"/garten-freizeit-grillen-gartenger%C3%A4te-garteneinrichtung/b?ie=UTF8&node=10925031"},{"text":"Alles für Tiere","url":"/Tierbedarf-Tiernahrung/b?ie=UTF8&node=340852031"}]}]}}},"yourAccountContent":{"template":{"name":"itemList","data":{"items":[{"text":"Mein Konto","url":"https://www.amazon.de/gp/css/homepage.html"},{"text":"Meine Bestellungen","url":"https://www.amazon.de/gp/css/order-history","id":"nav_prefetch_yourorders"},{"text":"Wunschzettel","url":"/gp/registry/wishlist?ie=UTF8&requiresSignIn=1"},{"text":"Empfehlungen","url":"/gp/yourstore"},{"text":"Spar-Abo verwalten","url":"https://www.amazon.de/gp/subscribe-and-save/manager/viewsubscriptions"},{"text":"Meine Prime-Mitgliedschaft","url":"/gp/subs/primeclub/account/homepage.html"},{"text":"Meine Inhalte und Geräte","url":"/gp/digital/fiona/manage","dividerBefore":"1"},{"subtext":"Ehemals Cloud Player","text":"Meine Musikbibliothek","url":"/gp/dmusic/mp3/player"},{"subtext":"Kostenfreier unbegrenzter<br />Fotospeicherplatz mit Prime","text":"Mein Cloud Drive","url":"/clouddrive"},{"subtext":"Unbegrenzt Filme und Serien streamen<br />mit Amazon Prime","text":"Mein Prime Instant Video","url":"/Prime-Instant-Video/b?ie=UTF8&node=3279204031"},{"text":"Ihr Kindle Unlimited","url":"/gp/kindle/ku/ku_central"},{"text":"Meine Watchlist","url":"/gp/video/watchlist"},{"text":"Meine Video-Bibliothek","url":"/gp/video/library"},{"text":"Meine Leihliste","url":"/gp/rentallist"},{"text":"Meine Games- & Software-Bibliothek","url":"/gp/swvgdtt/your-account/manage-downloads.html"},{"text":"Meine Apps & Geräte","url":"https://www.amazon.de/gp/mas/your-account/myapps"}]}},"signInHtml":"<div id='nav-flyout-ya-signin'><a href='https://www.amazon.de/ap/signin?_encoding=UTF8&amp;openid.assoc_handle=deflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin' rel='nofollow' class='nav-action-button' data-nav-role='signin' data-nav-ref='nav_signin'><span class='nav-action-inner'>Anmelden</span></a><div id='nav-flyout-ya-newCust' class='nav_pop_new_cust'>Neuer Kunde? <a href='https://www.amazon.de/ap/register?_encoding=UTF8&amp;openid.assoc_handle=deflex&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_newcust' rel='nofollow' class='nav-a'>Starten Sie hier.</a></div></div>"},"BooksPanel":{"promoID":"nav-sa-books","template":{"name":"itemList","data":{"text":"Bücher","dividerBefore":"1","items":[{"text":"Bücher","items":[{"text":"Alle Bücher","url":"/b%C3%BCcher-buch-lesen/b?ie=UTF8&node=186606"},{"text":"Kindle eBooks","url":"/ebooks-kindle-buecher/b?ie=UTF8&node=530886031"},{"text":"Fremdsprachige Bücher","url":"/books-englischsprachige-fremdsprachige-b%C3%BCcher/b?ie=UTF8&node=52044011"},{"text":"Fachbücher","url":"/fachb%C3%BCcher-fachbuch/b?ie=UTF8&node=288100"},{"text":"Schulbücher & Lernhilfen","url":"/lernen-nachschlagen-bildung-b%C3%BCcher/b?ie=UTF8&node=403432"},{"text":"Hörbücher","url":"/h%C3%B6rb%C3%BCcher-h%C3%B6rbuch/b?ie=UTF8&node=300259"},{"text":"Amazon Student","url":"/b?ie=UTF8&node=469664031","dividerBefore":"1"}]},{"text":"Hörbuch-Downloads","dividerBefore":"1","items":[{"subtext":"30 Tage kostenlos testen","text":"Audible-Abo","url":"/dp/B00NTQ6K7E"},{"text":"Alle Hörbuch-Downloads","url":"/audible-h%C3%B6rbuch-downloads/b?ie=UTF8&node=251105031"},{"subtext":"Nahtlos zwischen Lesen und Hören wechseln","text":"Whispersync for Voice","url":"/b?ie=UTF8&node=4824719031"}]}]}}},"cartContent":{"html":"<div id='nav-cart-flyout' class='nav-empty nav-flyout-content' data-one='{count} Artikel' data-many='{count} Artikel'><div class='nav-dynamic-full'><div id='nav-cart-standard' class='nav-cart-content'><a href='https://www.amazon.de/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1' class='nav-cart-title'>Artikel in Ihrem Einkaufswagen</a><div class='nav-cart-subtitle'></div><div class='nav-cart-items'></div></div><div id='nav-cart-pantry' class='nav-cart-content' data-box='{count} Karton' data-boxes='{count} Kartons' data-box-filled='{pct}% gefüllt' data-boxes-filled='{pct}% des aktuellen Kartons gefüllt'><a href='https://www.amazon.de/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1' class='nav-cart-title'>Prime Pantry Artikel</a><div class='nav-cart-subtitle'></div><div class='nav-cart-items'></div></div><div id='nav-cart-fresh' class='nav-cart-content'><a href='https://www.amazon.de/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1' class='nav-cart-title'><img id='nav-cart-fresh-logo' src='http://g-ecx.images-amazon.com/images/G/03/gno/ec-logo-fresh-color.jpg'></a><div class='nav-cart-subtitle'></div><div class='nav-cart-items'></div></div></div><div class='nav-ajax-message'></div><div class='nav-dynamic-empty'><p class='nav_p nav-bold nav-cart-empty'> Ihr Einkaufswagen ist leer.</p><p class='nav_p '> Nutzen Sie ihn und befüllen Sie ihn mit Büchern, Filmen, Spielsachen, Elektronikartikeln und mehr.</p><p class='nav_p '> Wenn Sie bereits ein Kundenkonto besitzen, <a href='https://www.amazon.de/ap/signin?_encoding=UTF8&openid.assoc_handle=deflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.de%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin_cart' class='nav_a'>melden Sie sich an</a>.</p></div><div class='nav-ajax-error-msg'><p class='nav_p nav-bold'> Es gibt gegenwärtig ein Problem mit der Vorschau Ihres Einkaufswagen.</p><p class='nav_p '> Überprüfen Sie Ihre Internetverbindung und <a href='https://www.amazon.de/gp/cart/view.html?ie=UTF8&hasWorkingJavascript=1' class='nav_a'>gehen Sie zu Ihrem Einkaufswagen</a>, oder <a href='javascript:void(0);' class='nav_a nav-try-again'>versuchen Sie es erneut</a>.</p></div><div id='nav-cart-footer'><a href='https://www.amazon.de/gp/cart/view.html?ie=UTF8&amp;hasWorkingJavascript=1' id='nav-cart-menu-button' class='nav-action-button'><span class='nav-action-inner'>Einkaufswagen ansehen<span id='nav-cart-menu-button-count' ><span id='nav-cart-zero'>(<span class='nav-cart-count'>0</span> Artikel)</span><span id='nav-cart-one' style='display: none;'>(<span class='nav-cart-count'>0</span> Artikel)</span><span id='nav-cart-many' style='display: none;'>(<span class='nav-cart-count'>0</span> Artikel)</span></span></span></a></div></div>"},"InstantVideoPanel":{"promoID":"nav-sa-instant-video","template":{"name":"itemList","data":{"text":"Amazon Instant Video","items":[{"text":"Amazon Instant Video","items":[{"subtext":"Alle Filme und Serien","text":"Amazon Instant Video","url":"/Instant-Video/b?ie=UTF8&node=3010075031"},{"subtext":"Unbegrenzter Film- und Seriengenuss","text":"Prime Instant Video","url":"/Prime-Instant-Video/b?ie=UTF8&node=3279204031"},{"subtext":"Leihen oder Kaufen von Filmen und Serien","text":"Instant Video Shop","url":"/Instant-Video-Shop/b?ie=UTF8&node=3279205031"},{"subtext":"Videos hinzufügen zum späteren Ansehen","text":"Meine Watchlist","url":"/gp/video/watchlist","dividerBefore":"1"},{"subtext":"Ihre ausgeliehenen und gekauften Videos","text":"Meine Video-Bibliothek","url":"/gp/video/library"},{"subtext":"Fire Tablets, iPad, Spielekonsolen, TV-Geräte und viele mehr","text":"Auf vielen Geräten verfügbar","url":"/b?ie=UTF8&node=5573494031"}]}]}}},"FoodBeveragesHealthBeautyPanel":{"promoID":"nav-sa-food-beverages-health-beauty","template":{"name":"itemList","data":{"text":"Beauty, Drogerie & Lebensmittel","items":[{"text":"Beauty & Drogerie","items":[{"text":"Beauty","url":"/Parf%C3%BCmerie-Kosmetik-Beauty/b?ie=UTF8&node=84230031"},{"text":"Premium Beauty","url":"/Premium-Beauty/b?ie=UTF8&node=3765352031"},{"text":"Männerpflege","url":"/m%C3%A4nnerpflege-rasiermesser-rasierer-m%C3%A4nnerparfum/b?ie=UTF8&node=4388424031"},{"text":"Drogerie, Körper- & Babypflege","url":"/Drogerie-K%C3%B6rperpflege/b?ie=UTF8&node=64187031"},{"text":"Gesundheit, Mobilität & Sehhilfen","url":"/Gesundheit-Physiotherapie-Medikation-Nahrungserg%C3%A4nzung/b?ie=UTF8&node=64268031"}]},{"text":"Lebensmittel & Getränke","dividerBefore":"1","items":[{"text":"Lebensmittel & alkoholfreie Getränke","url":"/Lebensmittel-Getr%C3%A4nke/b?ie=UTF8&node=340846031"},{"text":"Bier, Wein & Spirituosen","url":"/Bier-Wein-Spirituosen/b?ie=UTF8&node=358556031"},{"subtext":"Bio, glutenfrei, laktosefrei & vegan","text":"Bewusst genießen","url":"/Bio-Fairtrade/b?ie=UTF8&node=2004486031"},{"text":"Sonderangebote","url":"/b?ie=UTF8&node=3599395031","dividerBefore":"1"},{"subtext":"5% sparen und kostenfreie Lieferung","text":"Spar-Abo","url":"/b?ie=UTF8&node=365206031"}]}]}}},"templates":{"asin-promo":"<a href='<#=destination #>' class='nav_asin_promo'>  <img src='<#=image #>' class='nav_asin_promo_img'/>  <span class='nav_asin_promo_headline'><#=headline #></span>  <span class='nav_asin_promo_info'>    <span class='nav_asin_promo_title'><#=productTitle #></span>    <span class='nav_asin_promo_title2'><#=productTitle2 #></span>    <span class='nav_asin_promo_price'><#=price #></span>  </span>  <span class='nav_asin_promo_button nav-sprite'><#=button #></span></a>","discoveryPanelList":"<# var renderItems = function(items) { #>    <span class='nav-dp-title nav-item'>        <div class='nav-divider-container'><div class='nav-divider'></div></div></span>    <# jQuery.each(items, function (i, item) { #>        <span class='nav-item'>            <a href='<#=item.order_link#>' class='nav-dp-link'>                <span class='nav-dp-left-column'>                    <img src='<#=item.image#>' class='nav-dp-image'/>                </span>                <span class='nav-dp-right-column'>                    <span class='nav-dp-text <#=item.status#>'>                        <#=item.status_text#>                        <br/>                    </span>                    <# if(item.secondary_status_text) { #>                        <span class='nav-dp-text-secondary <#=item.status#>'>                            <#=item.secondary_status_text#>                        </span>                    <# } #>                </span>            </a>            <div class='nav-divider-container'><div class='nav-divider'></div></div>        </span>  <# }); #>  <a href='/your-orders/ref=nav_dp_ayo' class='nav-dp-link-emphasis'>        </a><# }; #><# renderItems(items); #>","itemList":"<# var hasColumns = (function () {  var checkColumns = function (_items) {    if (!_items) {      return false;    }    for (var i=0; i<_items.length; i++) {      if (_items[i].columnBreak || (_items[i].items && checkColumns(_items[i].items))) {        return true;      }    }    return false;  };  return checkColumns(items);}()); #><# if(hasColumns) { #>  <div class='nav-column nav-column-first'><# } #><# var renderItems = function(items) { #>  <# jQuery.each(items, function (i, item) { #>    <# if(hasColumns && item.columnBreak) { #>      </div><div class='nav-column nav-column-notfirst'>    <# } #>    <# if(item.dividerBefore) { #>      <div class='nav-divider'></div>    <# } #>    <# if(item.text || item.content) { #>      <# if(item.url) { #>        <a href='<#=item.url #>' class='nav-link      <# } else {#>        <span class='      <# } #>      <# if(item.panelKey) { #>        nav-hasPanel      <# } #>      <# if(item.items) { #>        nav-title      <# } #>      <# if(item.decorate == 'carat') { #>        nav-carat      <# } #>      nav-item'      <# if(item.extra) { #>        <#=item.extra #>      <# } #>      <# if(item.id) { #>        id='<#=item.id #>'      <# } #>      <# if(item.panelKey) { #>        data-nav-panelkey='<#=item.panelKey #>'      <# } #>      <# if(item.subtextKey) { #>        data-nav-subtextkey='<#=item.subtextKey #>'      <# } #>      <# if(item.image && item.image.height > 16) { #>        style='line-height:<#=item.image.height #>px;'      <# } #>      >      <# if(item.decorate == 'carat') { #>        <i class='nav-icon'></i>      <# } #>      <# if(item.image && item.image.src) { #>        <img class='nav-image' src='<#=item.image.src #>' style='height:<#=item.image.height #>px; width:<#=item.image.width #>px;' />      <# } #>      <# if(item.text) { #>        <span class='nav-text'><#=item.text#></span>      <# } else if (item.content) { #>        <span class='nav-content'><# jQuery.each(item.content, function (j, cItem) { #><# if(cItem.url && cItem.text) { #><a href='<#=cItem.url #>' class='nav-a'><#=cItem.text #></a><# } else if (cItem.text) { #><#=cItem.text#><# } #><# }); #></span>      <# } #>      <# if(item.subtext) { #>        <span class='nav-subtext'><#=item.subtext #></span>      <# } #>      <# if(item.url) { #>        </a>      <# } else {#>        </span>      <# } #>    <# } #>    <# if(item.image && item.image.src) { #>      <img class='nav-image' src='<#=item.image.src #>' />    <# } #>    <# if(item.items) { #>      <div class='nav-panel'> <# renderItems(item.items); #> </div>    <# } #>  <# }); #><# }; #><# renderItems(items); #><# if(hasColumns) { #>  </div><# } #>","notificationsList":"<div class='nav-item nav-title'>  </div><# jQuery.each(items || [], function (i, item) { #>  <div class='nav-item<# if (item.type) { #> nav-noti-list-<#= item.type #><# } #><# if (item.image && item.image.src) { #> nav-noti-list-with-image<# } #>'>    <# if (item.dismissId) { #>      <div class='nav-noti-list-x' data-noti-id='<#= item.dismissId #>'>&times;</div>    <# } #>    <# if (item.image && item.image.src) { #>      <div class='nav-noti-list-image'>        <img class='nav-noti-list-image-tag' src='<#= item.image.src #>' <# if (item.image.alt) { #> alt='<#= item.image.alt #>'<# } #> <# if (item.image.title) { #> title='<#= item.image.title #>'<# } #>/>      </div>    <# } #>    <# if (item.heading) { #>      <div class='nav-noti-list-heading'><#= item.heading #></div>    <# } #>    <# jQuery.each(item.content || [], function (j, itemContent) { #>      <# if (itemContent.url) { #>        <a href='<#= itemContent.url #>' class='nav-noti-list-content'>      <# } else { #>        <div class='nav-noti-list-content'>      <# } #>        <# if (itemContent.text) { #>          <span class='nav-noti-list-text'><#= itemContent.text #></span>        <# } #>        <# if (itemContent.subtext) { #>          <span class='nav-noti-list-subtext'><#= itemContent.subtext #></span>        <# } #>      <# if (itemContent.url) { #>        </a>      <# } else { #>        </div>      <# } #>    <# }); #>  </div><# }); #>","discoveryPanelSummary":"    <span class='nav-dp-title nav-item'>        <div class='nav-divider-container'><div class='nav-divider'></div></div></span>    <# jQuery.each(items || [], function (i, item) { #>        <span class='nav-item'>            <span class='nav-dp-left-column'>                <img src='<#=item.image.url#>' class='nav-dp-image' height='<#=item.image.height#>'/>            </span>            <span class='nav-dp-right-column'>                <#=item.status_text#>                <div class='nav-dp-secondary-row'>                    <a href='/your-orders/ref=nav_dp_ryo' class='nav-dp-link-emphasis'>                                            </a>                </div>            </span>        </span>    <# }); #>","htmlList":"  <# jQuery.each(items, function (i, item) { #>    <div class='nav-item'>      <#=item #>    </div>  <# }); #>","subnav":"<# if (obj && obj.type === 'vertical') { #>  <# jQuery.each(obj.rows, function (i, row) { #>    <# if (row.flyoutElement === 'button') { #>      <div class='nav_sv_fo_v_button'        <# if (row.elementStyle) { #>          style='<#= row.elementStyle #>'        <# } #>      >        <a href='<#=row.url #>' class='nav-action-button nav-sprite'>          <#=row.text #>        </a>      </div>    <# } else if (row.flyoutElement === 'list' && row.list) { #>      <# jQuery.each(row.list, function (j, list) { #>        <div class='nav_sv_fo_v_column <#=(j === 0) ? 'nav_sv_fo_v_first' : '' #>'>          <ul class='<#=list.elementClass #>'>          <# jQuery.each(list.linkList, function (k, link) { #>            <# if (k === 0) { link.elementClass += ' nav_sv_fo_v_first'; } #>            <li class='<#=link.elementClass #>'>              <# if (link.url) { #>                <a href='<#=link.url #>' class='nav_a'><#=link.text #></a>              <# } else { #>                <span class='nav_sv_fo_v_span'><#=link.text #></span>              <# } #>            </li>          <# }); #>          </ul>        </div>      <# }); #>    <# } else if (row.flyoutElement === 'link') { #>      <# if (row.topSpacer) { #>        <div class='nav_sv_fo_v_clear'></div>      <# } #>      <div class='<#=row.elementClass #>'>        <a href='<#=row.url #>' class='nav_sv_fo_v_lmargin nav_a'>          <#=row.text #>        </a>      </div>    <# } #>  <# }); #><# } else if (obj) { #>  <div class='nav_sv_fo_scheduled'>    <#= obj #>  </div><# } #>","wishlist":"<# jQuery.each(wishlist, function (i, item) { #>  <li class='nav_pop_li'>    <a href='<#=item.url #>' class='nav_a'>      <#=item.name #>    </a>    <div class='nav_tag'>      <!-- TODO this logic should now be in dynamic-wish-list.mi -->      <# if(typeof item.count !='undefined') { #>        <#=          (item.count == 1 ? '{count} Artikel' : '{count} Artikel')            .replace('{count}', item.count)        #>      <# } #>    </div>  </li><# }); #>","cart":"<# jQuery.each(items, function (i, item) { #>  <div class='nav-cart-item'>    <a href='<#=item.url #>' class='nav-cart-item-link'>      <img src='<#=item.img #>' class='nav-cart-item-image' />      <span class='nav-cart-item-title'><#=item.name #></span>      <# if (item.weight) { #>        <span class='nav-cart-item-weight' style='display:none;'>          <#= 'Versandgewicht: {value} {unit}'.replace('{value}', item.weight.value).replace('{unit}', item.weight.unit) #>        </span>      <# } #>      <# if (item.ourPrice) { #>        <span class='nav-cart-item-buyingPrice'><#=item.ourPrice #></span>      <# } #>      <# if (item.scarcityMessage) { #>        <span class='<#=item.scarcityClass #>'><#=item.scarcityMessage #></span>      <# } #>      <span class='nav-cart-item-quantity'>        <# if(typeof item.wireless !== 'undefined') { #>          <#= 'Artikel: {count}'.replace('{count}', item.qty) #>        <# } else { #>          <#= 'Menge: {count}'.replace('{count}', item.qty) #>        <# } #>      </span>    </a>  </div>  <# if (i%2==1) { #>    <div class='nav-cart-item-break'></div>  <# } #><# }); #><div class='nav-cart-item-break'></div>"}}); });
+</script>
+
+  <script type='text/javascript'>
+      window.$Nav && $Nav.declare('config.prefetchUrls', ["https://images-eu.ssl-images-amazon.com/images/G/01/authportal/common/images/amznbtn-sprite03._V395592492_.png","https://images-eu.ssl-images-amazon.com/images/G/03/authportal/common/images/amazon_logo_no-org_mid._V143113074_.png","https://images-eu.ssl-images-amazon.com/images/G/03/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.0._V309248132_.js","https://images-eu.ssl-images-amazon.com/images/G/03/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.1._V343893857_.css","https://images-eu.ssl-images-amazon.com/images/G/03/gno/images/general/navAmazonLogoFooter._V169459258_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/common/buttons/sign-in-secure._V192194049_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/common/login/fwcim._V342129235_.js","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/communities/social/snwicons_v2._V402380168_.png","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/help/images/spotlight/kindle-family-02b._V369420141_.jpg","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/orders/images/acorn._V192558166_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/orders/images/amazon-gc-100._V192236811_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/orders/images/amazon-gcs-100._V192558166_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/orders/images/btn-close._V192558167_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/projects/text-trace/texttrace_typ._V353753409_.js","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/ya/images/new-link._V192235928_.gif","https://images-eu.ssl-images-amazon.com/images/G/03/x-locale/cs/ya/images/shipment_large_lt._V192235641_.gif","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/de-site-wide-css-beacon/site-wide-6800426958._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/site-wide-js-1.2.6-beacon/site-wide-6851225134._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-1284596852._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-673430403._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-order-history-beaconized/wcs-ya-order-history-beaconized-207125090._V1_.css"]);
+window.$Nav && $Nav.declare('config.prefetch',function() {
+    var pUrls = window.$Nav.getNow('config.prefetchUrls');
+    (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute(function (A) { A.preload(pUrls); });
+});
+
+  /*  */
+  
+  __auiPreloadIndex = window.__auiPreloadIndex || 0;
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadJS_"+(++__auiPreloadIndex), function(A){
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.secure.min');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+  });
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadCSS_"+(++__auiPreloadIndex), function(A){
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.secure.min');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset');
+  });
+
+
+
+    window.$Nav && $Nav.declare('config.flyoutURL', null);
+    window.$Nav && $Nav.declare('btf.lite');
+    window.$Nav && $Nav.declare('btf.full');
+    window.$Nav && $Nav.declare('btf.exists');
+    (window.AmazonUIPageJS ? AmazonUIPageJS : P).register('navCF');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--AMZNJQFINAL-->
+
+
+<script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpSearchAutocompleteJS-3fe026245e7b9fa146cf36b80f606e735a02e9b1.min._V2_.js');
+</script>
+
+
+<script type="text/javascript">
+
+P.when('jQuery', 'ready').execute(function(jQuery) {
+    jQuery('a.expander').bind(
+        'click',
+        function(event) {
+            event.preventDefault();
+            jQuery(this).parent().next().children().toggleClass('cs-none');
+            jQuery(this).toggleClass('close');
+        }
+    );
+});
+
+P.when('jQuery', 'a-popover', 'ready').execute(function(jQuery, popover) {
+    jQuery('.cs-help-pop-link').each(function() {
+        var localContent = jQuery(this).attr('name') + '-content';
+        if (localContent) {
+            jQuery(this).addClass('cs-link-hover');
+            popover.create(jQuery(this), {
+                closeButton: false,
+                position: 'triggerVerticalAlignLeft',
+                content: jQuery('#' + localContent).html()
+            });
+        }
+    });
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+    P.when('cs-retail-help-autocomplete').execute( function(helpCSTools) {
+        var data = ["","1-Click","1-Click-Ordering","1-Click®-Einstellungen ändern","2-Tage-Express","<div id=\"ap_container\"><iframe tabindex=\"-1\" src=\"javascript:void(false)\" style=\"display:none;position:absolute;z-index:0;filter:Alpha(Opacity='0');opacity:0;\" frameborder=\"0\"></iframe><iframe tabindex=\"-1\" src=\"javascript:void(false)\" style=\"display:none;position:absolute;z-index:0;filter:Alpha(Opacity='0');opacity:0;\" frameborder=\"0\"></iframe><iframe tabindex=\"-1\" src=\"javascript:void(false)\" style=\"display:none;position:absolute;z-index:0;filter:Alpha(Opacity='0');opacity:0;\" frameborder=\"0\"></iframe></div>rechnung","A-bis-z-Garantie","A-bis-z-Garantieantrag stellen","A-bis-z-Garantieantrag zurückziehen","A-to-z Safe Buying Guarantee Protection","APO addresses / Nato","Abholung","Abmelden","About Our Returns Policy","Add Addresses","Add Payment Methods","Adobe Flash Player","Allgemeine Geschäftsbedingungen","Altgeräteabholung","Amazon App","Amazon FreeTime","Amazon Kundenkonto","Amazon MP3 DRM-Free Music Downloads","Amazon Prime","Amazon Spar-Abo","Amazon Student","Amazon kontaktieren","Amazon.de Marketplace","Android","Anmelden","App - Bestellen über Ihr Mobilgerät","Appstore","Artikel stornieren","Artikel suchen","Artikel umtauschen","Artikel zurücksenden","Audiobooks","Ausgewiesene Umsatzsteuer","Ausleihe","Ausloggen","Austausch","AutoRip","Availability Guide","Bankdaten hinterlegen","Bankeinzug","Barrierefreiheit","Bestelldetails","Bestellen","Bestellung stornieren","Bestellung zurückschicken","Bestellung ändern","Betrugsversuche","Bezahlen","Blick ins Buch","Blitzangebote","Bluetooth","Bücher ausleihen","Cancel Items or Orders","Cloud Drive","Cloud Musikbibliothek","Currency Converter","DHL Packstation","DVD Regional-Codes","Darstellungsprobleme","Datendiebstahl","Datenschutzerklärung","Defekt","Download","E-Mail-Adresse ändern","E-Mails von Amazon","Eilzustellung","Einloggen","Einlösen von Gutscheinen","Empfehlungen","Entering your VAT Registration Certificate","Erstattungen","Evening-Express","Expresszustellung","FSK","FSK18","Facebook","Feedback","Feedback zur Verpackung","Fire HD Software-Update","Fire HDX Software-Update","FreeTime","Games","Garantie","Garantiertes Lieferdatum","General Delivery Information","Geschenkgutschein ausdrucken","Geschenkgutscheine","Geschenkkarten","Geschenkverpackung","Gewährleistung","Gift Cards","Gift Certificates","Gutschrift","Hochzeitsliste","Hörbücher","Importgebühr","Instant Video","International Delivery Rates &amp; Times","International Shipping - Important Information","Internationaler Versand","Kauf auf Rechnung","Kindersicherung","Kindle","Kindle Fire HD","Kindle Fire HDX","Kindle Lese-Apps","Kindle Paperwhite","Kindle Support","Kindle für Android","Kindle für Blackberry","Kindle für PC","Kindle für iPhone","Kindle-Rücksendungen","Kontakt zu Amazon","Konto schließen","Konto ändern","Kontodaten löschen","Kontodaten ändern","Kontoerstellung","Kostenlose Lieferung","Kreditkarte","Kunden Community","Kundenkonto schließen","Kundenrezensionen","Kundenservice","LOVEFiLM","Leihbücherei","Lieferkosten","Lieferschein","MP3 Downloads","Manage Addresses","Manage Payment Methods","Managing Your Account","Marketplace Verkäufer","Mayday","Mehrwertsteuer","Mein Konto","Meine Bestellungen","Morning-Express","Musik-Downloads","Neukunde","Neustart","Nicht zustellbare Sendungen","Order a Gift Certificate","Ordering from Amazon.de Marketplace","Other Topics","Packstation","Paket verfolgen","Passwort","Passwort vergessen","Passwort wählen","Passwort ändern","Payment Methods","Phishing","Placing an Order","Premiumversand","Prime","Produktsicherheit","RSS Feeds","Rechnung","Rechnung mit ausgewiesener Umsatzsteuer","Rechnungen","Rechnungsduplikat","Rechnungskauf","Rechnungskopie","Rechnungssupport","Redeem a Gift Certificate","Reklamation","Reklamation","Reparatur","Return Items You Ordered","Returns","Rückrufe","Rücksendekosten","Rücksendung","Selling at Amazon.de Marketplace","Sendung verfolgen","Shipping and Delivery","Software Downloads","Spar-Abo","Spezialversand","Spoofen","Spoofing","Step-by-Step Guide to Ordering","Stornierung","Studenten","Technische Hilfe","Telefonnummer","Trade-In-Programm","Twitter","Umsatzsteuer","Umtausch","Unbekannte Abbuchung","Unzustellbare Sendungen","Uploading Your VAT Registration Certificate","VAT","VAT Registration Certificate","Vergessenes Passwort","Verkaufen","Verkäufer","Verlorener Geschenkgutschein","Verpackungsfeedback","Versand","Versandkosten","Versandkostenfreie Lieferung","Videos streamen","Vorbesteller-Preisgarantie","Vorbestellung","WEEE Customer Information Ireland","WLAN","Werbung","Wireless LAN","Wo ist meine Bestellung?","Wunschterminlieferung","Wunschzettel","Your Account","Zahlungsarten","Zahlungsdaten hinterlegen","Zahlungsprobleme","Zeitschriften","Zoll","Zustellung","auf rechnung","gefälschte E-Mails","iPad","iPod","iPod Touch","kauf auf rechnung","keine rechnung","rechnung anfordern","rechnung ausdrucken","rechnung drucken","rechnung fehlt","rechnungsduplikat","zahlung auf rechnung"];
+        helpCSTools.suggestions = new helpCSTools.searchSuggest('helpsearch','search-help','searchPlaceholder','helpSearchSubmit',data,data);
+        helpCSTools.suggestions.init();
+    });
+</script>
+
+
+
+  <div class="playlist-initial-video hidden" data-initial-video-id="" data-autoplay=""> </div>
+
+
+  <script>
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/CSHelpVideoPlayerJS-f7adfe17b3df2d5d4f7c81e41300845c27459d1b.min._V2_.js');
+</script>
+
+
+</body>
+</html>
+
+
+
+
