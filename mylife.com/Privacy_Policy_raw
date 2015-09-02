@@ -1,1 +1,731 @@
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:fb="http://www.facebook.com/2008/fbml"
+class="no-js lt-ie9"
+lang="en"
+>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      class="no-js"
+      lang="en"
+        >
+<!--<![endif]-->
+<head>
+    <!--================================================================================
+
+        Author                  :           MyLife Team
+        Author URI              :           http://www.mylife.com/
+        Copyright               :           MyLife 2013 - Present All Rights Reserved
+        File                    :           index.html
+        Description             :           MyLife Homepage Layout
+
+    ================================================================================-->
+
+    <!-- Start Meta -->
+    <meta charset="utf-8"
+            />
+    <meta http-equiv="Pragma"
+          content="no-cache"
+            />
+    <meta http-equiv="expires"
+          content="0"
+            />
+    <meta name="format-detection"
+          content="telephone=no"
+            />
+    
+    <!-- End Meta -->
+
+    <!-- Start Title -->
+    <title>MyLife.com - Login</title>
+    <!-- End Title -->
+
+    <!-- Start CSS -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start JS Error Captures -->
+<script>
+    window.jsErrors = [];
+
+    window.onerror = function ( errorMessage, url, lineNumber )
+    {
+        var
+                message     = "Error: " + errorMessage + ", url: " + url + ", line: " + lineNumber
+                ;
+
+        window.jsErrors.push(message);
+
+        return false;
+    };
+</script>
+<!-- End JS Error Captures -->
+
+<!--[if IE 8]><script src="https://s1.mylife.com/site/wro/ie8.js"></script><![endif]-->
+
+<link href="https://s1.mylife.com/site/wro/global-loggedout.css?v=3.0.1-D-3"
+      rel="stylesheet"
+/>
+
+
+
+    <link href="https://s1.mylife.com/site/wro/login.css?v=3.0.1-D-3"
+          rel="stylesheet"
+    />
+
+    <!-- End CSS -->
+
+    
+    
+    
+          
+            
+    
+
+    
+    
+
+    
+    
+    
+
+    
+        
+            
+        
+        
+        
+    
+</head>
+
+<body class="loggedout noSidebars login">
+<div id="shadowOverlay"><!-- Empty --></div>
+<div id="wrapper">
+    <span id="showFiltersBtn">Show Filters &darr;</span>
+    <span id="backToTop" class="visibleHidden">Back<br />to top</span>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header id="header">
+    
+    <header id="headerInner">
+        <h1 id="logo">
+            <a href="/" id="logoa">MyLife.com</a>
+        </h1>
+        <!-- End #logo -->
+        <div id="headerRight">
+            <nav id="globalNav">
+                <ul id="nav">
+                    <li id="mainNavProfileLi" class="mainNavLi">
+                        <a href="/" id="mainNavProfileLink" class="mainNavLink">
+                            Home
+                        </a>
+                    </li>
+                    <!-- End #mainNavProfileLi -->
+                    <li id="mainNavConnectionsLi" class="mainNavLi">
+                        <a href="/site/login.pubview" id="mainNavConnectionsLink" class="mainNavLink">
+                            Member Login
+                        </a>
+                    </li>
+                    <!-- End #mainNavConnectionsLi -->
+                    <li id="mainNavHomeLi" class="mainNavLi">
+                        <a href="/showRegistration.pub" id="mainNavHomeLink" class="mainNavLink">
+                            Join Now
+                        </a>
+                    </li>
+                    <!-- End #mainNavHomeLi -->
+                </ul>
+                <!-- End #nav -->
+            </nav>
+            <!-- End #globalNav -->
+        </div>
+        <!-- End #headerRight -->
+    </header>
+    <!-- End #headerInner -->
+</header>
+<!-- End #header -->
+
+    <div id="mainWrap">
+        <div id="main">
+            
+
+            <div id="mainContentWrap">
+                <div id="content">
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loginFormWrapper">
+    
+    
+    
+    
+    <div class="top">
+        <h1>Sign in to MyLife</h1>
+        <span class="not-member">Not a member yet? <a href="/showRegistration.pub">Join now.</a></span>
+    </div>
+    <div class="sign-in-with-facebook">
+        <button class="connectFacebook">Connect with Facebook</button>
+        <span class="or">OR</span>
+    </div>
+    <div class="traditional-login">
+        <form id="login-form" name="logon" method="post" action="/site/login.proc">
+            <input type="hidden" id="_spring_security_remember_me" name="_spring_security_remember_me" value="1">
+            <label>Username or Email Address:
+                <input type="text" name="j_username" value="">
+            </label>
+            <label>Password:
+                <input type="password" name="j_password">
+            </label>
+            <button type="submit" class="orangeButton">Login</button>
+            <input type="hidden" name="dispatch" value="logon">
+            <input type="hidden" name="fromURL" value='$!request.getAttribute("fromURL")'>
+        </form>
+        <a href="/forgotUsername.pub" class="forgotCredentials">Forgot your password?</a>
+    </div>
+</div>
+
+
+
+                    
+                    
+<footer id="footer">
+    <footer id="footerInner">
+        <div id="footerTopLinks">
+            <a href="http://www.mylife.com/about-us">About Us</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/blog">MyLife Blog</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://tbe.taleo.net/NA7/ats/careers/jobSearch.jsp?org=REUNION&cws=1">Jobs</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/press-room">Press</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/user-agreement">User Agreement</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/privacy-policy">Privacy Policy</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/high-schools/">High School Alumni</a>
+            <br />
+            <a href="http://www.mylife.com/help/">Help</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.mylife.com/DatingSafetyTips.pub">Online Dating Safety Tips</a>
+        </div>
+        <!-- End #footerTopLinks -->
+        <p id="footerCopyright">
+            
+            Copyright &copy; 2015 MyLife.com, Inc | U.S. Patent No. 6,701,348 and 6,694,353
+        </p>
+        <!-- End #FooterCopyright -->
+    </footer>
+    <!-- End #footerInner -->
+</footer>
+<!-- End #footer -->
+                </div>
+                <!-- End #content -->
+
+                
+            </div>
+            <!-- End #mainContentWrap -->
+        </div>
+        <!-- End #main -->
+    </div>
+    <!-- End #mainWrap -->
+</div>
+<!-- End #wrapper -->
+
+<!-- Start Javascript -->
+<!-- Omniture -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	   <script>s_account="reunionprod";</script>
+    
+    
+
+
+<script src="https://s1.mylife.com/site/wro/omniture.js?v=3.0.1-D-3"></script>
+<script>
+    // ommiture data
+    s.prop1                 = 'Guest';
+    s.prop2                 = '';
+    s.prop3                 = '';
+    s.prop4                 = 'NONE';
+    s.prop5                 = '';
+    s.prop6                 = '';
+    s.prop14                = '';
+    s.prop24                = '2.0';
+    s.prop25                = 'MyLife';
+    s.prop16                = '';
+    s.zip                   = '';
+    s.state                 = '';
+    s.pageName              = 'login';
+    s.channel               = 'site';
+    if ( 'false' == 'true' ) {
+        s.prop2             = '';
+        s.prop6             = '';
+        s.zip               = '';
+        s.state             = '';
+        s.eVar3             = '';
+        s.eVar23            = '';
+    }
+    // mail campaign
+    if ( 'false' == 'true' ) {
+        s.prop16            = 'NONE - ' + s.pageName;
+    }
+
+    if ( typeof strUseThisSPageName !== 'undefined' ) {
+        s.pageName          = strUseThisSPageName;
+    }
+    
+    
+
+    
+</script>
+
+<script>
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code = s.t();
+    if( s_code ) {
+        document.write(s_code);
+    }
+</script>
+<!-- [if !IE] -->
+    <noscript>
+        <img src="http://reunioncom.112.2o7.net/b/ss/reunionprod/1/H.23.8--NS/0?[AQB]&cdp=4&[AQE]" height="1" width="1" border="0" alt="" />
+    </noscript>
+<!-- [endif] -->
+<!-- End SiteCatalyst code version: H.23.8. -->
+
+
+<!-- Global Javascript -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var
+            strSitePath             = '/site'
+        ,   boolSubjectView         = false
+        ,   strUserFirstName        = ""
+        ,   userFullName            = ""
+        ,   intUserID               = ''
+        ,   strAvatar               = ''
+        ,   strUserGender           = 'm'
+        ,   intGlobalYear           = 2015
+        ,   psSub                   = false
+        ,   wsfySub                 = false
+        ,   qmsSub                  = false
+        ,   prrSub                  = false
+        ,   subscribedAny           = psSub || wsfySub || qmsSub || prrSub
+        ,   boolValidUsZip          = false
+        ,   boolHasAvatar           = false
+        ,   boolHasBothEduTypes     = false
+        ,   boolHasPrimarySchool    = false
+        ,   boolHasCollege          = false
+        ,   boolHasWork             = false
+        ,   strPMSG_API_URI         = '/pmsg.v2'
+        ,   strPCONN_API_URI        = '/pconn.v1'
+        ,   strPLFEV_API_URI        = '/plfev.v1'
+        ,   strPPIC_API_URI         = '/ppic.v1'
+        ,   strPRM_API_URI          = '/api.v1'
+        ,   strPSRCH_API_URI        = '/psrch.v1'
+        ,   strPIDENTITY_API_URI    = '/pidentity.v1'
+		,	strPSOCIAL_API_URI 		= "/psocial.v2/connect/facebook?whyReg=";
+    ;
+</script>
+<script src="https://s1.mylife.com/site/wro/global-loggedout.js?v=3.0.1-D-3"></script>
+
+    <script>
+    if (typeof MyLifeVisit !== 'undefined') {
+        
+        MyLifeVisit.init({
+            client: 'site',
+            apiUrl: strPMSG_API_URI + '/pub/visitor/track.json',
+            sCid: '',
+            ip: '52.2.142.173'
+        });
+    }
+    </script>
+
+
+
+    <script>
+    if (typeof MyLifeVisit !== 'undefined') {
+        
+        
+        MyLifeVisit.init({
+            client: 'site',
+            apiUrl: strPMSG_API_URI + '/pub/visitor/track.json',
+            sCid: '',
+            ip: '52.2.142.173'
+        });
+    }
+    </script>
+
+
+
+
+
+    <script src="https://s1.mylife.com/site/wro/login.js?v=3.0.1-D-3"></script>
+
+<!--  Quantcast Tag -->
+<script>
+  qcdata = {} || qcdata;
+       (function(){
+       var elem = document.createElement('script');
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-Je7HEss8EuAcv";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem,scpt);
+     }());
+
+
+   var qcdata = {qacct: 'p-Je7HEss8EuAcv',
+                        orderid: '',
+                        revenue: ''
+                        };
+</script>
+  <noscript>
+    <img src="//pixel.quantserve.com/pixel/p-Je7HEss8EuAcv.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+  </noscript>
+<!-- End Quantcast Tag -->
+
+<!-- End Javascript -->
+</body>
+</html>
