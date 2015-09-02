@@ -1,1 +1,1876 @@
+
+
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" lang="en">
+<head>
+<meta name="X-Yottaa-Metrics" content="012136ad2779/[16,-,-]" />
+<meta name="X-Yottaa-Optimizations" content="ob/1001000001100001100 si/1680367124 tts/1441120806527 ti/54636bb786305e35ea00041e ai/5466313f86305e52200022bc" />
+<meta name="profile.id" content="54636bb786305e35ea00040e" />
+<meta name="tod.id" content="54636bb786305e35ea00041e" />
+<meta name="profile.name" content="Default Profile" />
+<meta name="resource.version" content="v~c.74.0.0" />
+<meta name="adn.id" content="5466313f86305e52200022bc" />
+<meta name="shard.size" content="0" />
+<meta name="cdn.hostname" content="//cdn-us-ec.yottaa.net" /><!-- INSERT BY TRANSFORMER. SELECTOR=head,LOCATION=prepend --><script>
+
+(function(){function V(a,b){if(!1==A(a,this,function(c,d){m[m.length]={type:'insert',newNode:a,before:b,me:d,config:c};a.setAttribute('data-yo-src',a.getAttribute('data-yo-src'))}))return p.scripts.passed++,B(a,b,this,w(a),!1);domCompleteTriggered&&(p.scripts.captured++,x(m.length-1))}function W(a){if(!1==A(a,this,function(b,c){m[m.length]={type:'append',newNode:a,before:c,me:c,config:b};a.getAttribute&&a.setAttribute('data-yo-src',a.getAttribute('data-yo-src'))}))return p.scripts.passed++,B(a,null, this,w(a),!0);domCompleteTriggered&&(p.scripts.captured++,x(m.length-1))}function A(a,b,c){var d=a.nodeName.toLowerCase(),e=null,h=!1;if('script'==d||'iframe'==d){if(e=w(a),null!=e&&f(e.onLoad)&&!f(b.onLoad)&&r(a,'load',function(){l('Executing onLoad ');e.onLoad()}),null==e||'none'!=e.delayType)c(e,b),h=!0}else if(e=w(b),null==e||'none'!=e.delayType)c(e,b),e.before=b,h=!0;l(a.nodeName+' '+a.src+' is '+(h?'':'NOT')+' delayed loaded');!1==h&&null!=e&&f(e.onBefore)&&null!=e.onBefore&&(l(a.nodeName+' onBefore '+ a.src),e.onBefore());return h}function G(a){a&&(a.yo_ac=f(a.yo_ac)?a.yo_ac:a.appendChild,a.yo_ib=f(a.yo_ib)?a.yo_ib:a.insertBefore,a.appendChild=W,a.insertBefore=V)}function w(a){var b=a.src;if(null==b||0==b.length)return{delayType:'none'};for(var c=0;c<h.resources.length;c++){var d;d=h.resources[c].url;var e=b;null==d||null==e?d=!1:(l('Match src',e,'and url',d),d='string'===typeof d&&-1!=e.indexOf(d)||null!=e.match(d));if(!0==d)return l('Found configuration for '+b+' delayType '+h.resources[c].delayType), 'empty'==h.resources[c].delayType&&(a.src=null==h.resources[c].delaySrc?'data:text/javascript;plain,//':h.resources[c].delaySrc,h.resources[c].delayType='none'),h.resources[c]}l('Did NOT find configuration for '+b+' checking local configuration. ');return null!=a.delayType?('empty'==a.delayType&&(a.src=null==a.delaySrc?'data:text/javascript;plain,//':a.delaySrc,a.delayType='none'),{delayType:a.delayType,delayValue:a.delayValue}):{delayType:h.defaultType,delayValue:h.defaultDelay}}function H(a,b,c){c= c.currentTarget;if(-1===C(c,_targets)){var d=c.getAttribute('data-yo-src'),e=w({src:d}),h=c.getAttribute('data-yo-delayType'),s=c.getAttribute('data-yo-animator'),q=c.getAttribute('data-yo-delayValue'),n=c.getAttribute('data-yo-onbefore'),k=c.getAttribute('data-yo-onLoad');null!=n&&y(g[n])?n=g[n]:null!=e&&f(e.onBefore)&&(n=e.onBefore);null!=k&&y(g[k])?k=g[k]:null!=e&&f(e.onLoad)&&(k=e.onLoad);m[m.length]={type:b,newNode:a,before:c,me:c.parentNode,config:{delayType:h,delayValue:q,animator:s,onBefore:n, onLoad:k}};_targets[_targets.length]=c;c.onload&&y(c.onload)&&z(c,'load',c.onload);c.onerror&&y(c.onerror)&&z(c,'error',c.onerror);l(c.nodeName+'Loader( '+d+', 0, '+h+', '+q+')')}}function D(a){a=m[a];if(f(a)){var b=a.config;b.delayType='none';b.loaded=!0;p.objectsLoaded++;l('Injecting '+a.newNode+', by '+a.type+' into the DOM now.');f(b.onBefore)&&null!=b.onBefore&&(l('Executing onBefore '),b.onBefore(a));var c=a.me,d=a.newNode,e=a.type,g=a.before;if('insert'==e)B(d,g,c,a.config,!1);else if('append'== e)B(d,null,c,a.config,!0);else if('replace'==e)c.replaceChild(d,g);else if('src'==e)f(b.animator)&&null!=b.animator?M(g,b.animator):f(h.animator)&&M(g,h.animator),g.src=d.getAttribute('data-yo-src');else if('style'==e)d.style.backgroundImage='url('+d.getAttribute('data-yo-src')+')';else if('inner'==e){l(a.how+' -> '+d);if('replace'==a.how)N(g,d);else if('eval'==a.how)try{eval(d.replace('<scri'+'ipt>','').replace('\x3c/scri'+'ipt>',''))}catch(s){l('Error eval',s)}else E(g,d,a.how);f(b.onLoad)&&null!=b.onLoad&& (l('Executing onLoad '),b.onLoad(a))}else'xhr'==e?xhr_send.apply(a.xhr,a.xhr._yo.send_args):'image'==e&&k.createElement('img').setAttribute('src',d.src);X()}}function B(a,b,c,d,e){if(!0==Y(a,b,c,d)){var f;a:{try{f=!0==e?c.yo_ac(a):c.yo_ib(a,b);break a}catch(h){l('ERROR adding node into dom',a)}f=void 0}return f}}function Y(a,b,c,d){if(h.sequenceWrites&&'script'==a.nodeName.toLowerCase()){for(var e in v)if(0<v[e].length&&d.writeLocation!=v[e][0].getWriteSelector())return f(d.writeLocation)&&(a.yo_writeSelector= d.writeLocation),v[e][0].addScript(a),!1;e=null;h&&(e=t(d.writeLocation));if(null!=e){a.write_context=new u(e,a,d.writeLocation);var g=v[d.writeLocation];f(g)||(g=v[d.writeLocation]=[]);g.push(a.write_context);I=function(){var a=Array.prototype.slice.call(arguments).join('');0<g.length&&g[g.length-1].collectDocumentWrite(a)};a.original_onload=a.onload;var s=!1;a.onerror=a.onload=a.onreadystatechange=function(){s||this.readyState&&'loaded'!==this.readyState&&'complete'!==this.readyState||(l('loading ', this,this.write_context.getId()),s=!0,this.original_onload&&this.original_onload.call(arguments),this.write_context.finalizeWriteOverride(),this.original_onload=this.write_context=this.onload=this.onreadystatechange=null)}}}return!0}function X(){for(var a=0;a<m.length;a++)if('none'!=m[a].config.delayType)return;null!=intervalID&&clearInterval(intervalID)}function F(a){viewPort.height=g.innerHeight||k.documentElement.clientHeight||k.body.clientHeight;viewPort.bottom=viewPort.height;viewPort.width= g.innerWidth||k.documentElement.clientWidth||k.body.clientWidth;viewPort.right=viewPort.width;if(!f(k.documentElement.getBoundingClientRect))return!0;for(var b=a=0;b<m.length;b++)J(m[b],'lazy')&&(O(b),a++)}function O(a){var b=m[a].config.delayValue;if('string'===typeof b)b=t(b);else if(null==b||f(b))b=m[a].before;if(null!=b&&!0==P(k.documentElement,b)){var c=Q(b);if(!1==(null!=intervalID&&f(b.getBoundingClientRect))&&c.top<viewPort.height+yo_offset)l('showIfVisible is visible ',a,', ',b),D(a);else{var d; if(d=!0==(null!=intervalID&&f(b.getBoundingClientRect)))if(d=0<c.width&&0<c.height)if(d=!0==R(c,viewPort)){if(!0==!f(b.yo_clipped)){for(d=b.parentNode;null!=d&&1==d.nodeType;){var e=Z(d,'overflow');if(e&&'hidden'==e.toLowerCase()){b.yo_clipped=d;break}d=d.parentNode}!0==!f(b.yo_clipped)&&(b.yo_clipped=!1)}d=!0==(!1!=b.yo_clipped?R(c,Q(b.yo_clipped)):!0)}d&&(l('showIfVisible is visible ',a,', ',b),D(a))}}}function M(a,b){a.className+=' '+b+'Before';r(a,'load',function(){a.className+=' '+b+'Loaded'})} function x(a){var b=m[a];if(J(b,'defer')){var c=null!=b.config?b.config.delayValue:h.defaultDelay;l('Loading '+b.newNode.src+' via timer event. It will load in '+c);setTimeout('yo_afterShock('+a+');',c)}else J(b,'lazy')&&O(a)}function $(){h.sequenceWrites&&!f(k.yo_write)&&(k.yo_write=k.write,I=aa,k.write=function(){var a=Array.prototype.slice.call(arguments).join('');I(a)})}function aa(a){for(var b=!1,c=0;c<h.write.length;c++){var d=h.write[c];if(a.match(d.start)||1==d.state){var e={},g;for(g in d)e[g]= d[g];b=!0;d.string?d.string+=a:(d.state=1,d.string=a);if(!f(d.end)||a.match(d.end))f(e.delayType)&&'none'!=e.delayType?(f(e.selector)?e.selector=t(e.selector):(e.selector='yo_write_'+Math.floor(1E9*Math.random()),f(e.how)||(e.how='append'),f(e.delayValue)||(e.delayValue=e.selector),k.yo_write('<di'+'v id='+e.selector+' style=width:0px;height:0px></di'+'v>'),e.selector=t(e.selector).parentNode),m[m.length]={type:'inner',how:d.how,newNode:a,before:e.selector,me:e.selector,config:e},domCompleteTriggered&& x(m.length-1),p.writes.captured++):E(t(e.selector),d.string,e.how),d.state=2,d.string=''}}!1==b&&(p.writes.passed++,k.yo_write(a));l('write hander = '+a)}function ba(){f(Object.defineProperty)&&!1!=h.sequenceImage&&(f(k.yo_createElement)||(k.yo_createElement=k.createElement,k.createElement=ca),g.Image=function(){return function(){this._src='';this.nodeName='img';S(this)}}())}function ca(){var a=arguments[0];f(a)&&(a=a.toLowerCase());return'img'==a?(a=k.yo_createElement.apply(this,arguments),S(a), a):k.yo_createElement.apply(this,arguments)}function S(a){try{Object.defineProperty(a,'src',{get:function(){return a._src},set:function(b){a._src=b;if(!1==A(a,a,function(a,b){m[m.length]={type:'image',newNode:b,before:b,me:b,config:a}}))return k.createElement('img').setAttribute('src',a._src);domCompleteTriggered&&x(m.length-1)}}),a.yo_setAttribute=a.setAttribute,a.setAttribute=function(){var b=arguments[0];f(b)&&(b=b.toLowerCase());'src'==b&&(nodeConfig=w({src:arguments[1]}),null==nodeConfig||'none'!= nodeConfig.delayType)&&(m[m.length]={type:'src',newNode:a,before:a,me:a,config:nodeConfig},arguments[0]='data-yo-src');return a.yo_setAttribute.apply(a,arguments)}}catch(b){}}function l(){if(h.log&&f(g.console)&&f(g.console.log)){for(var a='',b=0;b<arguments.length;b++)a='object'===typeof arguments[b]&&f(arguments[b].nodeName)?a+('['+arguments[b].nodeName+', '+arguments[b].id+'] '):a+(arguments[b]+' ');g.console.log('yo_AfterShocK: '+a)}}function f(a){return'undefined'!=typeof a}function y(a){return!!(a&& a.constructor&&a.call&&a.apply)}function r(a,b,c){a.attachEvent?a.attachEvent('on'+b,c):a.addEventListener(b,c,!1)}function z(a,b,c){a.detachEvent?a.detachEvent('on'+b,c):a.removeEventListener(b,c,!1)}function C(a,b,c){var d;if(b){if(Array.prototype.indexOf)return Array.prototype.indexOf.call(b,a,c);d=b.length;for(c=c?0>c?Math.max(0,d+c):c:0;c<d;c++)if(c in b&&b[c]===a)return c}return-1}function N(a,b){for(;a.firstChild;)a.removeChild(a.firstChild);E(a,b)}function E(a,b,c){var d=k.createElement('div'); d.innerHTML='string'===typeof b?b:b.innerHTML;for(b=d.childNodes;0<b.length;)'insert'==c?a.parentNode.insertBefore(d.removeChild(b[0]),a):a.appendChild(d.removeChild(b[0]));return this}function t(a){if(null==a||1==a.length)return null;if('.'==a[0])return a=k.getElementsByClassName(a.substring(1)),0<a.length?a[0]:null;'#'==a[0]&&(a=a.substring(1));return k.getElementById(a)}function da(a,b,c,d){function e(a){l('Loading '+m[c].before.src+' via event handler '+d.delayValue);D(c);var h=null;f(a.currentTarget)? h=a.currentTarget:f(a.srcElement)&&(h=a.srcElement);z(h,b[0],e)}r(a,b[0],e)}function K(a){if(h.scan){for(var b=0,c=h.scan.length;b<c;b++){var d=h.scan[b],e=k.getElementsByTagName(d),g=void 0;l('Find all '+d+' tags in the document.');for(var s=0,q=e.length;s<q;s+=1){var g=e[s],n=g.getAttribute('data-yo-src');n?(f(p.tags[d])?p.tags[d]++:p.tags[d]=0,l('Found a '+d+', src = '+n+' tag to handle with AfterShocK.'),H(g,f(g.src)?'src':'style',{currentTarget:g})):'script'==d&&((n=g.getAttribute('type'))&& -1<n.indexOf('yo/sequence')?(l('Found a '+d+', yo/sequence tag to handle with AfterShocK.'),yo_sequenceContent(g)):'yo/abtest'==n&&abTestScript(g))}F();setTimeout(L,25)}!0!==a&&(h.scan=null)}}function J(a,b){return null!=a&&null!=a.config&&a.config.delayType==b}function Q(a){a=a.getBoundingClientRect();f(a.width)||(a={top:a.top,left:a.left,right:a.right,bottom:a.bottom,width:a.right-a.left,height:a.bottom-a.top});return a}function R(a,b){return a.top>b.top-a.height&&a.bottom<b.bottom+yo_offset+2* a.height&&a.left>b.left-a.width&&a.right<b.right+yo_offset+2*a.width}var k=document,g=window,m=[];testingAnalytics={};var h={defaultDelay:5E3,defaultType:'none',fixLinks:null,log:!1,throttle:20,jquery:!1,sequenceXHR:!1,sequenceWrites:!1,sequenceImage:!1,sendTimingData:!1,timingDataURL:'',scan:['script','img'],resources:[],abTesting:[],write:[]},p={releaseDate:'2015-06-10',writes:{captured:0,passed:0},scripts:{captured:0,passed:0},tags:{},errors:{},objectsLoaded:0};_targets=[];yo_offset=100;viewPort={top:0- yo_offset,left:0-yo_offset,height:0,width:0,right:0,bottom:0};intervalID=null;var L=function(a,b){var c=0;return function(){var d=+new Date;d-c<b||(c=d,a.apply(this,arguments))}}(F,20);domCompleteTriggered=!1;xhr_open=XMLHttpRequest.prototype.open;xhr_send=XMLHttpRequest.prototype.send;xhr_abort=XMLHttpRequest.prototype.abort;var v={},u=function(a,b,c){this.writeContent='';this.writeLocation=a;this.writeSelector=c;this.offScreenDom=null;this.node=b;this.scripts=[];this.id='yo_write_'+Math.floor(1E9* Math.random());l('creating WriteContext',this.id,this.node.src);u.prototype.getId=function(a){return this.id};u.prototype.collectDocumentWrite=function(a){this.writeContent+=a;l('write override',this.getId(),this.node.src,a)};u.prototype.addScript=function(a){this.scripts.push(a)};u.prototype.getWriteSelector=function(a){return this.writeSelector};u.prototype.executeDeferredScripts=function(){for(var a=0;a<this.scripts.length;a++)yo_scriptLoader(this.scripts[a].getAttribute('src'),'none',void 0,void 0, void 0,this.scripts[a].yo_writeSelector)};u.prototype.finalizeWriteOverride=function(){null==this.writeLocation?l('write location is null, content ignored',this.getId(),this.node.src):0<this.writeContent.length?(l('creating off screen DOM',this.getId(),this.node.src),this.offScreenDom=k.createElement('div'),this.offScreenDom.innerHTML=this.writeContent):l('no content, just continue',this.getId(),this.node.src);this.continueWrite()};u.prototype.insertContent=function(){for(;0<this.offScreenDom.childNodes.length;){var a= this.offScreenDom.childNodes[0],b=a.nodeName.toLowerCase();if('script'==b){b=a.getAttribute('language');if(null==b||'vbscript'!=b.toLowerCase()){v[this.writeSelector].push(this);try{this.offScreenDom.removeChild(a)}catch(c){}yo_scriptLoader(a.getAttribute('src'),'none',void 0,void 0,void 0,this.writeSelector);return!1}try{eval(a.innerHTML),this.offScreenDom.removeChild(a)}catch(f){}this.writeLocation.parentNode.insertBefore(a,this.writeLocation)}else'link'==b&&'stylesheet'==a.getAttribute('rel').toLowerCase()? document.getElementsByTagName('head')[0].appendChild(a):this.writeLocation.parentNode.insertBefore(a,this.writeLocation)}this.offScreenDom.innerHTML='';return!0};u.prototype.continueWrite=function(){for(var a=v[this.writeSelector],b=a.pop();b;){l('Continue writing ',b.getId());if(b.offScreenDom&&!1==b.insertContent())break;0==a.length&&b.executeDeferredScripts();b=a.pop()}}};window.yo_configureAfterShock=function(a){for(var b in a)h[b]=a[b];$();!0==h.sequenceXHR&&!0==f(XMLHttpRequest)&&(XMLHttpRequest.prototype.open= xhrOpen,XMLHttpRequest.prototype.send=xhrSend,XMLHttpRequest.prototype.abort=xhrAbort);ba();configureAbTestAnalytics()};window.yo_addScaner=function(a){-1===C(a,h.scan)&&h.scan.push(a)};window.yo_addResource=function(a,b,c,d,e,g){f(h.resources)||(h.resources=[]);for(var l=-1,k=0;k<h.resources.length;k++){var n=h.resources[k].url;if('string'===typeof a&&'string'===typeof n&&-1!=a.indexOf(n)||'string'!==typeof n&&'string'===typeof a&&null!=a.match(n)){l=k;break}}a={url:a,delayType:b,delayValue:c,onBefore:d, onLoad:e,writeLocation:g};-1==l?h.resources.push(a):h.resources.splice(l,0,a)};window.yo_deferLoadResource=function(a,b,c,d,e){window.yo_addResource(a,'defer',b,c,d,e)};window.yo_lazyLoadResource=function(a,b,c,d,e){window.yo_addResource(a,'lazy',b,c,d,e)};window.yo_eventLoadResource=function(a,b,c,d,e){window.yo_addResource(a,'event',b,c,d,e)};window.yo_removeResource=function(a){window.yo_addResource(a,'remove')};window.yo_scriptEval=function(a,b,c,d,e,f){m[m.length]={type:'inner',how:'eval',newNode:a, before:{src:a},config:{delayType:b,delayValue:c,onBefore:d,onLoad:e,writeLocation:f}};x(m.length-1)};window.yo_deferScriptEval=function(a,b,c,d,e){window.yo_scriptEval(a,'defer',b,c,d,e)};window.yo_lazyScriptEval=function(a,b,c,d,e){window.yo_scriptEval(a,'lazy',b,c,d,e)};window.yo_eventScriptEval=function(a,b,c,d,e){window.yo_scriptEval(a,'event',b,c,d,e)};window.yo_addWrite=function(a,b,c,d,e,g,l,k,n){f(h.write)||(h.write=[]);h.write[h.write.length]={start:a,end:b,selector:c,how:d,delayType:e,delayValue:g, onBefore:l,onLoad:k,writeLocation:n}};window.yo_deferLoadWrite=function(a,b,c,d,e,f,g,h){window.yo_addWrite(a,b,c,d,'defer',e,f,g,h)};window.yo_lazyLoadWrite=function(a,b,c,d,e,f,g,h){window.yo_addWrite(a,b,c,d,'lazy',e,f,g,h)};window.yo_eventLoadWrite=function(a,b,c,d,e,f,g,h){window.yo_addWrite(a,b,c,d,'event',e,f,g,h)};window.yo_removeWrite=function(a,b){window.yo_addWrite(a,b,'remove')};var I=null,P=k.documentElement.compareDocumentPosition?function(a,b){return!!(a.compareDocumentPosition(b)& 16)}:k.documentElement.contains?function(a,b){return a!==b&&(a.contains?a.contains(b):!1)}:function(a,b){for(;b=b.parentNode;)if(b===a)return!0;return!1};errorCapture=function(a,b,c){l('errorCapture',a,b,c);p.errors={has:!0}};g.yo_createTimer=function(a){intervalID=setInterval(F,a)};r(g,'scroll',L);r(g,'resize',L);r(g,'load',function(){domCompleteTriggered=!0;for(var a=0;a<m.length;a++)x(a)});r(g,'error',errorCapture);G(k.getElementsByTagName('script')[0].parentNode);(function(a){function b(c){if('poll'!== c&&'readystatechange'!==c.type||'complete'===k.readyState)if(z('load'===c.type?g:k,c.type,b),!d){d=!0;a();yo_displayNow();executeAllAbTest();if(!0==h.sendTimingData){c=k.createElement('img');var e=h.timingDataURL+'?v=1&url='+k.location.href+'&time='+(new Date).getTime();if(f(g.performance))for(key in start=g.performance.timing.navigationStart,timing=g.performance.timing,timing)(time=timing[key])&&(e+='&'+key+'='+(time-start));l('Sending timing data to ',e);var n=yo_metaDataValue('X-Yottaa-Optimizations'); n&&(e+='&'+n.replace(/ /g,'&').replace(/\//g,'='));c.src=e}for(c=0;c<m.length;c++)(e=m[c].config)&&'event'==e.delayType&&(l('Event handling '+m[c].before.src+' '+e.delayValue),n=e.delayValue.split(' '),da(t(n[1]),n,c,e));if(f(h.fixLinks)&&null!=h.fixLinks){e=k.getElementsByTagName('a');for(c=0;c<e.length;c++)n=e[c].href,-1!=n.indexOf(h.fixLinks.oldHost)&&(e[c].href=n.replace(h.fixLinks.oldHost,h.fixLinks.newHost));e=k.getElementsByTagName('form');for(c=0;c<e.length;c++)n=e[c].action,-1!=n.indexOf(h.fixLinks.oldHost)&& (e[c].action=n.replace(h.fixLinks.oldHost,h.fixLinks.newHost))}}}function c(){try{k.documentElement.doScroll('left')}catch(a){setTimeout(c,50);return}b('poll')}var d=!1,e=!0;if('complete'===k.readyState)a();else{if(k.createEventObject&&k.documentElement.doScroll){try{e=!g.frameElement}catch(p){}e&&c()}r(k,'DOMContentLoaded',b);r(k,'readystatechange',b);r(g,'load',b)}})(K);g.yo_afterShock=D;g.yo_nodeWatch=G;g.yo_nodeClearWatch=function(a){f(a.yo_ib)&&(me.insertBefore=me.yo_ib);f(a.yo_ac)&&(me.appendChild= me.yo_ac)};g.yo_imageLoader=function(a){H(a.currentTarget,'src',a)};g.yo_frameLoader=function(a,b,c,d){H(event.currentTarget,'src',event)};g.yo_scanTags=K;g.yo_addEvent=r;g.yo_removeEvent=z;g.yo_displayNow=function(){l('Handle the display of all visible tags up to now.');K(!0);F({})};g.yo_sequenceContent=function(a){a='string'===typeof a?t(a):a;var b=t(a.getAttribute('data-yo-location')),c=a.getAttribute('data-yo-how');'eval'==c&&(b=a.innerHTML);var d=a.getAttribute('data-yo-delayType'),e=a.getAttribute('data-yo-delayValue'), h=a.getAttribute('src'),k=a.getAttribute('data-yo-animator'),q=a.getAttribute('data-yo-onbefore');null!=q&&y(g[q])&&(q=g[q]);var n=a.getAttribute('data-yo-onLoad');null!=n&&y(g[n])&&(n=g[n]);null==b&&(b=a,c='insert');if(null==d||'none'==d)f(q)&&null!=q&&(l('Executing onBefore '),q(a)),null==c||'replace'==c?N(b,a.innerHTML):'eval'==c?eval(a.innerHTML):E(b,a.innerHTML,c),f(n)&&null!=n&&(l('Executing onLoad '),n(a));else{if(-1!==C(a,_targets))return;'eval'==c&&(b=a.innerHTML);l('Sequence a script = '+ a.id+', type '+d);m[m.length]={type:h&&0<h.length?'src':'inner',how:c,newNode:'eval'==c?b:a,before:b,me:a,config:{delayType:d,delayValue:e,animator:k,onBefore:q,onLoad:n}}}_targets[_targets.length]=a};g.yo_sequenceDom=function(a){if(-1===C(a,_targets)){a='string'===typeof a?t(a):a;var b=a.getAttribute('data-yo-delayType'),c=a.getAttribute('data-yo-delayValue'),d=a.getAttribute('data-yo-animator');a.src=a.id+a.className;h.resources[h.resources.length]={url:a.id+a.className,delayType:b,delayValue:c, animator:d};G(a);_targets[_targets.length]=a}};g.yo_scriptLoader=function(a,b,c,d,e,f){h.resources[h.resources.length]={url:a,delayType:b,delayValue:c,onBefore:d,onLoad:e,writeLocation:f};b=k.createElement('script');b.type='text/javascript';b.async=!0;b.src=a;a=k.getElementsByTagName('script')[0];return a.parentNode.insertBefore(b,a)};xhrOpen=function(a,b,c,d,e){this._yo={open_args:arguments,async:!1===c?!1:!0};l('xhr open = '+b+', async '+c);h.fixLinks&&-1!=b.indexOf(h.fixLinks.oldHost)&&(b=b.replace(h.fixLinks.oldHost, h.fixLinks.newHost),l('overriding the old host in XHR open = '+b));return xhr_open.apply(this,arguments)};xhrSend=function(a){if(!f(this._yo)||!0!==this._yo.async)return xhr_send.apply(this,arguments);var b=this;node={src:this._yo.open_args[1],nodeName:'xhr'};if(!1==A(node,node,function(a,d){m[m.length]={type:'xhr',xhr:b,newNode:d,config:a}}))return l('xhr send is NOT defered, '+node.src),xhr_send.apply(this,arguments);this._yo.send_args=arguments;l('xhr send is defered, '+node.src+', '+m[m.length- 1].config.delayType)};xhrAbort=function(){if(!f(this._yo)||!f(this._yo.send_args)||!0!==this._yo.async)return xhr_abort.apply(this,arguments);l('Abort to the xhr object is called',' async true')};g.yo_executeWhenAvailable=function(a,b,c){!0==f(window[a])?c():setTimeout(function(){yo_executeWhenAvailable(a,b,c)},b)};window.yo_rum=function(a){h.sendTimingData=!0;h.timingDataURL=a};window.yo_rewrite=function(a){version=yo_metaDataValue('resource.version');cdn=yo_metaDataValue('cdn.hostname');adnId=yo_metaDataValue('adn.id'); return location.protocol+cdn+'/'+adnId+'/'+location.hostname+'/'+version+'/'+a};g.yo_metaDataValue=function(a){a=k.getElementsByName(a);return null!=a&&1==a.length?a[0].getAttribute('content'):null};g.yo_abTest=function(a,b,c,d,e,h,k){yo_addResource(d,'none',null,function(){l('adding the google segmentation using a custom (dimension'+a+', '+b+', '+c+')',e,h);f(p.errors.has)&&(c+='_error');if('universal'==e)window.ga=function(){if(f(a)&&2<arguments.length&&0<=arguments[0].indexOf('set')&&arguments[1]!= 'dimension'+a){if((g.ga.q=g.ga.q||[]).push(arguments),ga(arguments[0],'dimension'+a,c),!0==f(k)){for(var b=[],d=0;d<g.ga.q.length;d++)if(3!=g.ga.q[d].length||g.ga.q[d][1]!='dimension'+k)b[b.length]=g.ga.q[d];g.ga.q=b}}else(g.ga.q=g.ga.q||[]).push(arguments);abTestAnalyticsUniversal(arguments)};else if(f(_gaq)){for(var d=1,n=[],m=0;m<_gaq.length;m++)f(_gaq[m])&&2<_gaq[m].length&&-1!=_gaq[m][0].indexOf('_setCustomVar')?(!0!=!f(a)&&_gaq[m][1]==a||!0!=!f(k)&&_gaq[m][1]==k||(n[n.length]=_gaq[m]),d=m): n[n.length]=_gaq[m];_gaq=n;f(a)&&(n='_setCustomVar',0<_gaq.length&&0<_gaq[0].length&&(m=_gaq[0].indexOf('.'),-1!=m&&(n=_gaq[0].substring(0,m-1)+n)),_gaq.splice(d,0,[n,a,b,c,f(h)?h:2]));l('abTestAnalyticsClassic()');abTestAnalyticsClassic()}else l('Error creating ga information, no selected version',e)})};g.yo_afterShockStats=function(){return{config:h,stats:p}};var T,U;document.defaultView&&document.defaultView.getComputedStyle&&(T=function(a,b){var c,d;if(d=a.ownerDocument.defaultView){if(d=d.getComputedStyle(a, null))c=d.getPropertyValue(b),''!==c||P(a.ownerDocument.documentElement,a)||(c=a.style[b]);return c}});document.documentElement.currentStyle&&(U=function(a,b){var c=a.currentStyle&&a.currentStyle[b];return''===c?'auto':c});var Z=T||U;document.getElementsByClassName||(document.getElementsByClassName=function(a){return this.querySelectorAll('.'+a)});g.yo_abTesting=function(a){f(a.variants)||(a.variants={});f(a.splitBy)||(a.splitBy='percentage');f(a.stickiness)||(a.stickiness='session');f(a.version)|| (a.version='0');f(a.analytics)||(a.analytics={});f(a.analytics.valuePrefix)||(a.analytics.valuePrefix='yo_abtesting_');f(a.analytics.name)||(a.analytics.name='yottaa_abtest');f(a.valuePrefix)||(a.valuePrefix='');h.abTesting[a.name]=a};g.yo_abVariant=function(a,b){var c=h.abTesting[name];f(c)||l('Test',name,'was not defined');c.variants[tests.variants.length]=b};getCookieVariant=function(a){testName='yo_abtesting_'+a.name+'v'+a.version;a=document.cookie.split(';');for(var b=0;b<a.length;b++){var c= a[b];if(-1!=c.indexOf(testName)){for(;' '==c.charAt(0);)c=c.substring(1,c.length);return c.substring(testName.length+1,c.length)}}return null};setCookieVariant=function(a,b,c){testName='yo_abtesting_'+a.name+'v'+a.version;a='';c&&(a=new Date,a=new Date(a.getTime()+1E3*c),a='; expires='+a.toGMTString());document.cookie=testName+'='+b+a+'; path=/';return!0};configureAbTestAnalytics=function(){var a=h.abTestingAnalytics;f(a)&&!f(a.loaded)&&(yo_abTest(void 0,void 0,void 0,a.url,a.gaVersion),l('Registering analytics', a.url,a.gaVersion),a.loaded=!0)};executeAllAbTest=function(){f(h.abTestingAnalytics)?'classic'==h.abTestingAnalytics.gaVersion?executeAllAbTestClassic():executeAllAbTestUniversal():l('Analytics for ab testing not properly defined')};executeAllAbTestUniversal=function(){for(var a in h.abTesting){var b=h.abTesting[a];executeAbTest(b);ga('set','dimension'+b.analytics.index,b.valuePrefix+b.name+'_v'+b.version+'_'+b.chosenVariant)}!0==testingAnalytics.delayedTrack&&ga('send','pageview')};executeAllAbTestClassic= function(){var a=null;if(f(g._gat)&&f(testingAnalytics.uaCode))for(var b=g._gat._getTrackers(),c=0;c<b.length;c++)b[c]._getAccount()==testingAnalytics.uaCode&&(a=b[c]);for(var d in h.abTesting)b=h.abTesting[d],executeAbTest(b),c=2,'hit'==b.analytics.stickiness?c=3:'visitor'==b.analytics.stickiness&&(c=1),null!=a?a._setCustomVar(b.analytics.index,b.analytics.name,b.valuePrefix+b.name+'_v'+b.version+'_'+b.chosenVariant,c):f(g._gaq)&&g._gaq.push(['_setCustomVar',b.analytics.index,b.analytics.name,b.valuePrefix+ b.name+'_v'+b.version+'_'+b.chosenVariant,c]);!0==testingAnalytics.delayedTrack&&(null!=a?(a._trackPageview(),l('pageTracker._trackPageview()')):f(g._gaq)?(g._gaq.push(['_trackPageview']),l("win._gaq.push(['_trackPageview'])")):l('Did not find the UA code so we can not track'))};executeAbTest=function(a){var b=getCookieVariant(a);null==b&&(b=chooseVariant(a));'hit'!=a.stickiness&&setCookieVariant(a,b,'visitor'==a.stickiness?864E5:60*(f(a.sessionTime)?a.sessionTime:30));l('Variant',b,'was chooen for test', a.name);a.chosenVariant=b;a=a.variants[b];if(f(a))for(b=0;b<a.targets.length;b++){var c=a.targets[b];'function'==typeof c?c():yo_sequenceContent(c)}else'original'!=b&&l('Using original content as the variant',b,'was not found')};abTestScript=function(a){var b=a.getAttribute('data-yo-abtestname'),c=h.abTesting[b];if(f(c))if(b=a.getAttribute('data-yo-variant'),f(c.variants[b]))l('Variant script with existing name',b,'already exists. This variant will be excluded');else{var b=a.getAttribute('data-yo-variantname'), d=a.getAttribute('data-yo-splitcondition');f(c.variants[b])?c.variants[b].targets.push(a):c.variants[b]={splitCondition:d,targets:[a]};l('Found script variant',b,'with splitCondition',d)}else l('Found variant script for test',b,"but doesn't exist")};chooseVariant=function(a){var b=a.variants;if('percentage'==a.splitBy){var c=0,d;for(d in b){a=b[d];var e=c;a.splitCondition*=1;c+=a.splitCondition;a.splitCondition+=e}100<b[b.length-1]&&l('Total percentage of variants is greater than 100, test will always leave out some variants'); c=100*Math.random();for(d in b)if(a=b[d],c<a.splitCondition)return d;return'original'}l('Unsupported splitType',a.splitBy,'for test',a.name)};abTestAnalyticsUniversal=function(a){'send'==a[0]&&f(testingAnalytics.delayedTrack)&&(g.ga.q.pop(),testingAnalytics.delayedTrack=!0)};abTestAnalyticsClassic=function(a){if(f(testingAnalytics.delayedTrack)){a=[];for(var b=0;b<_gaq.length;b++)!f(_gaq[b])||1>_gaq[b].length||'_trackPageview'!=_gaq[b][0]?('_setAccount'==_gaq[b][0]&&(testingAnalytics.uaCode=_gaq[b][1]), a[a.length]=_gaq[b]):testingAnalytics.delayedTrack=!0;_gaq=a}}})();
+
+</script><!-- INSERT BY TRANSFORMER. SELECTOR=head,LOCATION=prepend --><script>yo_createTimer(20);</script>
+<script>
+yo_configureAfterShock({log:false,sequenceXHR:false}); 
+yo_addResource("gtm.js", "none");
+yo_addResource("certona", "none");
+yo_addResource("analytics.js", "none");
+yo_addResource("EBAGS.js", "none");
+yo_addResource("richmediasets", "none");
+yo_addResource("linkid.js", "none");
+yo_addResource("eBagsBundles", "none");
+yo_addResource("trustedstores", "none");
+yo_addResource("SearchResultsAsJson", "none");
+yo_addResource("GetAutoSuggestionResponseForSearch", "none");
+yo_addResource("GetQuickViewModelInformationAsJson", "none");
+yo_addResource("cart", "none");
+yo_addResource("wishlist", "none");
+yo_addResource("core", "none");
+yo_addResource("extole", "none");
+yo_addResource("externalservice", "none");
+yo_addResource("google", "none");
+yo_addResource("async-ads.js", "none");
+yo_addResource('views-site-header-bootstrap', 'none');
+yo_addResource('crumb0.js', "none");
+yo_addResource('tellapart', 'none');
+yo_addResource('liveclicker', 'none');
+yo_addResource('ld.js', 'none');
+yo_addResource('fbevents.js', 'none');
+</script><!-- INSERT BY TRANSFORMER. SELECTOR=head,LOCATION=prepend --><script>
+   yo_configureAfterShock({log:false});
+   yo_addResource(/.*/, "defer", 50);
+</script>
+<script type="text/javascript">
+function yo_loader(url){ 
  
+ try{(new Image()).src = url;}catch(e){ } 
+ }
+
+</script>
+<script type="text/javascript">yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/logo/ebags-logo-02?qlt=100,1&align=0,1&wid=240&fmt=png-alpha&yocs=2i_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-222?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-223?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-560?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-2?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-4?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/kate-spade-new-york-accessories-jewelry-20150721-fb?qlt=60,1&align=0,1&wid=855&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/20150728_BackpackSale_Banner?qlt=60,1&align=0,1&wid=855&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-579?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+yo_loader("http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-36?qlt=60,1&align=0,1&yocs=_&yoloc=us");
+
+</script>
+    <meta name="google-site-verification" content="haEGRQ8p0gAH1TK-OubvZSbz7Qj_gu3u1jp0G2JhJZk" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<script type="text/javascript">
+    var requireJsBaseUrl = '//cdn3.ebags.com/eBagsBundles/21.62.2.3';
+</script><!-- INSERT BY TRANSFORMER. SELECTOR=script[*var requireJsBaseUrl],LOCATION=after --><script>
+
+   var requireJsBaseUrl = yo_rewrite(requireJsBaseUrl.substring(requireJsBaseUrl.indexOf('eBagsBundles')));
+
+</script>
+
+<script src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/requirejs?yocs=_&amp;yoloc=us"></script>
+
+<script type="text/javascript">
+    require.config({
+        baseUrl: requireJsBaseUrl,
+        waitSeconds: 30,
+        map: {
+            '*': {
+                'bootstrapShim': 'bootstrap'
+            }
+        },
+        shim: {
+            "bootstrap": {
+                deps: ["jquery"]
+            },
+            "liveclickerLib": {
+                deps: ["jquery"]
+            }
+        }
+    });
+    
+    require.onError = function (err) {
+        if(window.console) console.log(err.requireType);
+        if (err.requireType === 'timeout') {
+            if(window.console) console.log('modules request timeout - increase requirejs config timeout: ' + err.requireModules);
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            var url = '/logme.cfm?message=requirejs-timeout-error-script-request-of-script-timed-out+modules:+' + encodeURIComponent(err.requireModules) + '&machine=' + window.location.host;
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }
+
+        throw err;
+    };
+</script>
+<!--[if lt IE 8]>
+<script type="text/javascript">require.config({waitSeconds: 30});</script>
+<![endif]-->
+
+ 
+    <script type="text/javascript" src="//cdn.optimizely.com/js/998202935.js"></script>
+    <script type="text/javascript">
+        require(['get!core/eBags'], function (eBags) {
+            eBags.subscribe('/cart/add', function (itemCount, skuId) {
+                window['optimizely'] = window['optimizely'] || [];
+                window.optimizely.push(["trackEvent", "addToCart"]);
+            });
+        });
+    </script>
+
+    <script src="https://tags.extole.com/733354/core.js"></script>
+    <script type="text/javascript">
+        require(['views-extole']);
+    </script>
+
+	<script type="text/javascript">
+	    require(['jquery', 'get!pageLocation/pageLocation'], function ($, pageLocation) {
+	        $(function() {
+	            pageLocation.init();
+	        });
+	    });
+	</script>    
+
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type='text/javascript'>
+    googletag.cmd.push(function () {
+        var mapping = googletag.sizeMapping().
+            addSize([1200, 900], [728, 90]).
+            addSize([900, 1200], [728, 90]).
+            addSize([1024, 768], [728, 90]).
+            addSize([768, 1024], [728, 90]).       
+            addSize([980, 690], [728, 90]).
+            addSize([690, 980], [728, 90]).
+            addSize([966, 604], [728, 90]).
+            addSize([604, 966], [468, 60]).
+            addSize([640, 480], [468, 60]).
+            addSize([640, 360], [468, 60]).
+            addSize([360, 640], [234, 60]).
+            addSize([568, 320], [468, 60]).
+            addSize([320, 568], [234, 60]).            
+            addSize([480, 320], [468, 60]).
+            addSize([320, 480], [234, 60]).
+            addSize([384, 640], [234, 60]).
+            addSize([640, 384], [468, 60]).
+            addSize([0, 0], [234, 60]).build();
+
+        googletag.defineSlot('/94566778/other', [160, 600], 'div-dfp-ad-nav-skyscrapper').addService(googletag.pubads());
+        googletag.defineSlot('/94566778/other', [728, 90], 'div-dfp-ad-footer').defineSizeMapping(mapping).addService(googletag.pubads());
+        googletag.defineSlot('/94566778/other', [300, 250], 'div-dfp-ad-pdp').addService(googletag.pubads());
+        
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
+
+    <title>
+    Privacy Policy - eBags.com
+</title>
+    
+    <meta name="description" content="Read the eBags privacy policy.  Our goal is to provide you with a safe and enjoyable shopping experience.">
+
+    
+    
+
+    
+
+<link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/favicon?qlt=100,1&amp;align=0,1&amp;wid=16&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" rel="shortcut icon" type="image/x-icon" />
+<link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/favicon?qlt=100,1&amp;align=0,1&amp;wid=16&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" rel="icon" type="image/x-icon" />
+<link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/ebagsicon?qlt=100,1&amp;align=0,1&amp;wid=512&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" rel="apple-touch-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/apple-touch-icon-144x144-precomposed?qlt=100,1&amp;align=0,1&amp;wid=144&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/apple-touch-icon-120x120-precomposed?qlt=100,1&amp;align=0,1&amp;wid=120&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/apple-touch-icon-114x114-precomposed?qlt=100,1&amp;align=0,1&amp;wid=114&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/apple-touch-icon-72x72-precomposed?qlt=100,1&amp;align=0,1&amp;wid=72&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" />
+<link rel="apple-touch-icon-precomposed" href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/apple-touch-icon-precomposed?qlt=100,1&amp;align=0,1&amp;wid=57&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" /><link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/cssBootStrap?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+
+    <link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/cssTemplate?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+
+    <link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/cssIntercept?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+
+    
+    <!--[if IE 7]><link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/ieSeven?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+<![endif]--> 
+    <!--[if IE 8]><link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/ieEight?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+<![endif]--> 
+    <!--[if IE 9]><link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/ieNine?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+<![endif]--> 
+    
+    <!--[if lt IE 9]>
+        
+            <link href="//cdn3.ebags.com/Content/respondJsProxy/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+        
+        <link href="/Content/respondJsProxy/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+        <script src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/preIE9BodyRender?yocs=_&amp;yoloc=us"></script>
+
+    <![endif]-->
+
+    
+    
+    
+    <link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/cssHelp?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+
+
+
+    
+    <link href="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/dff7ff10f7750132cab90a3ba3fac80a.yottaa.net/v~c.74/eBagsBundles/21.62.2.3/cssTwitterTypeahead?yocs=_&amp;yoloc=us" rel="stylesheet"/>
+
+
+    <noscript><style>.responsive-img { display: none; }</style></noscript>
+</head>
+
+
+<!-- END OF YOTTAA PREFETCH LOCATION=<body> -->
+<!--PREFETCH COOKIES START-->
+
+<script type="text/javascript">yo_loader("yo-app-sequencer.png?v=JL800WwL-dnJaKjZfON8XC7Hvj-xwpSQvnsBwZtMjCbrtB-eQTNqX8OnTDNrZsbsmXaCy2PXxSh5YLaRyCgYg_YuWlWN2GxO5mUJzpxdqpA=,qdOYAFlLuc7X8G6-6ogxnqYwdWqTDNGRbxJ_bDBLiigtuQY255-Tur4-ECfCArsnKc-zHUtNW0yQNqp7Hah4JDbWKEptPdCn1FD6fB82Wobzt-LThATUfaDR4d-32OAONZxyExxpgciF-F78-5OdMg==&t=IYUBNNjTF7v6kT9Z0KrCMw==&s=bb02dfa9bfd9e15c8d9085b34323ba9b");
+
+</script>
+<!--PREFETCH COOKIES END-->
+<body>
+    
+
+<script>
+	dataLayer = [{
+  "email": "",
+  "encryptedCustomerId": ""
+}];
+	
+	
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-RLKB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-RLKB');</script>
+<!-- End Google Tag Manager -->
+    <div id="masterContainer">
+	    
+
+<div class="container-fluid conBanner">
+    
+
+<style>
+        .conBanner {text-align:center;}
+        .microPromoBarContainer {
+            max-width:1170px;
+            margin:0 auto;
+            font-family: open_sanssemibold, Arial, sans-serif;
+            font-size:12px;
+            text-transform:uppercase;
+            color:#fff;
+            padding-left:0;
+            padding-right:0;
+            text-align:center;
+        }
+        .microPromoBarContainer a, .microPromoBarContainer a:hover, .microPromoBarContainer a:active {color:#fff;text-decoration:none;cursor:pointer;font-size:12px;}
+        .referFriendCon, .freeShippingCon, .fivePercentBackCon {display:inline;}
+        .rewardsPopupHeaderCenter {background: url('http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/2013-pdp-sprite?qlt=90,1&align=0,1&wid=200&fmt=png-alpha&yocs=2i_&yoloc=us') no-repeat center transparent; width:100%; height:30px; background-position:50px -70px; margin:0 auto;}
+        .microBarRewardsHeader {font-family: open_sanssemibold, Arial, sans-serif;color: #063a69;}
+        .microBarRewardsHighlight {color:#3185cd;}
+        .microBarRewardsBody {font-family: open_sanssemibold, Arial, sans-serif;font-size:12px;}
+        #extole-placeholder-header_new .header_new {color:#ffffff !important;display:inline;width:auto;font-size:12px;font-family: open_sanssemibold, Arial, sans-serif !important;}
+        .microPromoBarContainerPad {padding:3px 0 2px 0;}
+        @media screen and (max-width:800px){
+            .fivePercentBackCon {display:none;}
+        }
+        @media screen and (max-width:700px){
+            .referFriendCon {display:none;}
+        }
+        @media screen and (max-width:500px){
+            .priceGuaranteeCon {display:none;}
+        }
+    </style>
+
+    <div class="container microPromoBarContainer">
+        <div class="microPromoBarContainerPad">
+        <span class="fivePercentBackCon">
+            <a class="rewardsTooltipMicroBar" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<span class='microBarRewardsBody' >Earn eBags Rewards points on every order!  Each Rewards point converts to a $1.00 back to spend on future purchases. To join, just use a password during checkout to create your account. See <a href='/rewards/AccountSummary' target='_blank' id='rewardsDetailLink'>eBags Rewards Details</a>.</span>" data-original-title="<span class='microBarRewardsHeader' ><span class='microBarRewardsHighlight'>eBags</span> Rewards</span>" >5% Back in Rewards</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        </span>
+        <span class="referFriendCon">
+<span id="extole-zone-header_new" data-extole-location="header" data-signed-in="false">
+    <script type="extole/widget">{"zone":"header_new"}</script>
+</span>
+&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <span class="priceGuaranteeCon"><a href="/help/priceguarantee">100% Price Guarantee</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <span class="freeShippingCon"><a href="/help/shippingrates">Free Shipping Over $49</a> + <a href="/help/returnpolicy">Free Returns</a></span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        require(['jquery', 'bootstrap'], function ($, bootstrap) {
+            $(function () {
+                $('.rewardsTooltipMicroBar').popover();
+                $('body').on('ontouchstart' in document.documentElement ? 'touchstart' : 'click', function (e) {
+                    $('.rewardsTooltipMicroBar').each(function () {
+                        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                            $(this).popover('hide');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</div>
+<div class="container conHeader ieFixedWidth">
+    <div class="conHeaderRight hidden-xs pull-right">
+        <div class="headerRightTop">
+            <div class="headerAccountRewardsCon">
+                
+        <a href="https://www.ebags.com/account/create">Create an Account</a>
+    
+
+<div id="divRewardsPointsCon" class="rewardsPointsCon">
+    
+</div>
+            </div>
+            <div class="headerIconCon">
+                <div class="headerCartCon pull-right" id="headerCartCon">
+                    <a href="/cart/preview">
+                        <span class="headerCartIcon"></span>
+                        <span class="headerCartNumber cartCount" id="cartItemCount" data-bind="text: itemCount">0</span>
+                        
+                            <span id="persistentCartDownArrow" class="downArrow"></span>
+                        
+                    </a>
+                </div>
+            
+                <div class="myEbagsIconCon pull-right" id="header-interest-wide" data-tooltip="#header-interest-tooltip">
+                    
+    <a href="/favorites"><span class="myEbagsIcon"></span></a>
+    <a href="/favorites"><span class="headerMyEbagsNumber mobileMyEbagsNumber myEbagsCount" id="myEbagsCount"></span></a>
+
+        <div id="header-interest-tooltip" class="hidden" data-client-event="/favorites/header-message/shown" data-placement="bottom">
+            <h3 class="popover-title">My Favorites</h3>
+            <div class="popover-content">Keep track of items you are interested in by clicking the <span class="heartEmptyIcon"></span> icon on any product. Click here to see all items added to My Favorites.</div>
+            <div class="popover-touch-footer"><p class="buffer-top text-center"><a class="btn btn-action-primary" href="/favorites">View My Favorites</a></p></div>
+        </div>
+        <script type="text/javascript">
+            require(['jquery', 'get!core/trackedTooltip'], function ($, trackedTooltip) {
+                $(function () {
+                    trackedTooltip().init('#header-interest-wide');
+                });
+            });
+        </script>
+    
+        <div id="lnkAddToWishlist-interest-tooltip" class="hidden" data-client-event="/favorites/add-message/shown" data-placement="bottom">
+            <h3 class="popover-title">Add to My Favorites</h3>
+            <div class="popover-content">Simply click the <span class="heartEmptyIcon"></span> on any product that interests you and My Favorites will keep track of all items on your list.</div>
+            <div class="popover-touch-footer"><p class="buffer-top text-center"><button class="btn btn-action-primary">Add to My Favorites</button></p></div>
+        </div>
+
+        <script type="text/javascript">
+            require(['jquery', 'get!core/trackedTooltip', 'get!core/eBags'], function ($, trackedTooltip, eBags) {
+                $(function () {
+                    trackedTooltip().init('.lnkAddToWishlist');
+
+                    eBags.subscribe('/interestListItem/added', function () {
+                        trackedTooltip().dispose('.lnkAddToWishlist');
+                    });
+                });
+            });
+        </script>
+    
+                </div>
+            </div>
+        </div>
+        <div class="accountCon">
+            
+            <a class="accountItem" data-toggle="modal" data-target="#pageModal" data-remote="/site/HeaderHelpPopup" href="/help/contactus">Contact Us</a>
+		<a title="Incredible Daily Bag Deals" class="accountItem sotdaccountitem" id="lnkStealOfTheDay" data-sotd='{&quot;IsActive&quot;:true,&quot;IsMobile&quot;:false,&quot;ScheduleId&quot;:&quot;8895&quot;,&quot;DomainName&quot;:&quot;www.ebags.com&quot;,&quot;DropBoxTime&quot;:&quot;8&quot;}' href="#"><span class="headerSOTDicon"></span>Steals of the Day</a><div id="headerStealOfTheDay" class="divDotd"></div>
+		<script type="text/javascript">require(['jquery', 'views-stealoftheday-stealofthedaypopuplink'], function ($, module) { module('#lnkStealOfTheDay', { container: '#headerStealOfTheDay' }); });</script>
+	<a class="accountItem" id="myAccountItem" href="http://www.ebags.com/help/manageyouraccount">My Account<div id="myAccountArrow" class="downArrow"></div></a><a class="accountItem" href=" https://www.ebags.com/orderhistory">Order Tracking</a><br/>
+            <div id="divYourAccountHoverContent" class="yourAccountHoverContent myAcct">
+                <div class="headerSignInSignOut accountHoverIE7 text-center">
+                    
+                        <a id="headerSignIn" class="btn btn-sm btn-action-primary" href="https://www.ebags.com/members/index.cfm?fuseaction=login">Sign In</a>
+                    
+                    <!--[if !IE]> --><div class="clearfix"></div><!-- <![endif] -->
+                    <!--[if gte IE 8]><div class="clearfix"></div><![endif]-->
+                    <hr />
+                </div>
+                <a href="http://www.ebags.com/help/manageyouraccount">Your Account</a><br/>
+                <a href="https://www.ebags.com/orderhistory">Track Your Recent Orders</a><br/>
+                <a href="https://www.ebags.com/members/addressbook">Manage Address Book</a><br/>
+                <a href="https://www.ebags.com/members/managepaymentmethods">Manage Payment Methods</a>
+            </div>
+        </div>
+    </div>
+    <div class="conHeaderLeft">
+        <div class="headerConLeftMobile visible-xs pull-right"> 
+            <div class="mobileAccountCon"></div>
+            <div class="mobileMenuCon"></div>
+            
+            <div class="mobileMyEbagsCon" id="header-interest-narrow" data-tooltip="#header-interest-tooltip">
+                <div class="mobileMyEbagsNumberCon">
+                     
+    <a href="/favorites"><span class="myEbagsIcon"></span></a>
+    <a href="/favorites"><span class="headerMyEbagsNumber mobileMyEbagsNumber myEbagsCount" id="myEbagsCount"></span></a>
+
+        <div id="header-interest-tooltip" class="hidden" data-client-event="/favorites/header-message/shown" data-placement="bottom">
+            <h3 class="popover-title">My Favorites</h3>
+            <div class="popover-content">Keep track of items you are interested in by clicking the <span class="heartEmptyIcon"></span> icon on any product. Click here to see all items added to My Favorites.</div>
+            <div class="popover-touch-footer"><p class="buffer-top text-center"><a class="btn btn-action-primary" href="/favorites">View My Favorites</a></p></div>
+        </div>
+        <script type="text/javascript">
+            require(['jquery', 'get!core/trackedTooltip'], function ($, trackedTooltip) {
+                $(function () {
+                    trackedTooltip().init('#header-interest-narrow');
+                });
+            });
+        </script>
+    
+        <div id="lnkAddToWishlist-interest-tooltip" class="hidden" data-client-event="/favorites/add-message/shown" data-placement="bottom">
+            <h3 class="popover-title">Add to My Favorites</h3>
+            <div class="popover-content">Simply click the <span class="heartEmptyIcon"></span> on any product that interests you and My Favorites will keep track of all items on your list.</div>
+            <div class="popover-touch-footer"><p class="buffer-top text-center"><button class="btn btn-action-primary">Add to My Favorites</button></p></div>
+        </div>
+
+        <script type="text/javascript">
+            require(['jquery', 'get!core/trackedTooltip', 'get!core/eBags'], function ($, trackedTooltip, eBags) {
+                $(function () {
+                    trackedTooltip().init('.lnkAddToWishlist');
+
+                    eBags.subscribe('/interestListItem/added', function () {
+                        trackedTooltip().dispose('.lnkAddToWishlist');
+                    });
+                });
+            });
+        </script>
+    
+                </div>
+            </div>
+
+            <div class="mobileCartCon">
+                <div class="mobileCartNumberCon">
+                    <p class="cartCount"><strong data-bind="text: itemCount"></strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="pull-left">
+            <div class="conLogo">
+                <a href="/"><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/logo/ebags-logo-02?qlt=100,1&amp;align=0,1&amp;wid=240&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" border="0" alt="eBags" /></a>
+            </div>
+        </div>
+        <div class="conHeaderSearch">
+            
+
+<form id="searchFormResponseHeader" role="search" action="/search" method="GET">
+    <div class="input-group">
+        <input type="text" name="term" id="txtSearchHeader" class="form-control ie-txt-remove-clear" autocomplete="off" value="" />
+        <input type="hidden" name="pl" value="hdr_srch_sf_l1">
+        <input type="button" class="btnResetSearch" value="" />
+        <div class="input-group-btn">
+            <button type="submit" id="btnSubmitSearchHeader" class="btn headerSearchBtn"></button>
+        </div>
+    </div>
+</form>
+<div id="divAutoCompleteTermListHeader" class="divAutoCompleteTermList"></div>
+
+<script type="text/javascript">
+    require(["get!core/searchFormElasticSearch"], function (SiteSearch) {
+        $(document).ready(function () {
+            var container = $("#searchFormResponseHeader");
+
+            new SiteSearch({ delay: 300 })
+                .initialize(
+                    $("#txtSearchHeader", container),
+                    $(".btnResetSearch", container));
+        });
+    });
+</script>
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container-fluid slider for-mobileAccountCon slideMenu clearfix">
+    <div class="row">
+        <div class="col-xs-6">
+                
+                        <a href="https://www.ebags.com/account/create">Create an Account</a>
+                    
+        </div>
+        <div class="col-xs-6"><a href="https://www.ebags.com/members/addressbook">Manage Address Book</a><br/></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6"><a href="http://www.ebags.com/help/manageyouraccount">Your Account</a></div>
+        <div class="col-xs-6"><a href="https://www.ebags.com/members/managepaymentmethods">Manage Payment Methods</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12"><a href="https://www.ebags.com/orderhistory">Track Orders</a></div>
+    </div>
+    </div>
+    <div class="cartSlider for-mobileCartCon clearfix">
+        <div class="cartLoading">
+            <div class="loadIcon"></div>
+            <p>Loading Shopping Cart</p>
+        </div>
+    </div>
+    <div class="slider for-mobileMenuCon slideMenu clearfix">
+    <div class="row">
+        <div class="col-xs-6"><a href="/help/contactus">Contact Us</a></div>
+        <div class="col-xs-6"><a href="/help/returnpolicy">Returns</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            
+                <a href="https://www.ebags.com/account/create">Create an Account</a>                    
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="/search/h/sale~steals-of-the-day">Steal of the Day</a>
+        </div>
+    </div>
+</div>
+
+<div class="mainNav">
+    <div id="mainNavCon" class="mainNavInnerCon ieFixedWidth">
+        <div id="mobileHeaderSearch" class="searchConResponse visible-xxs pull-left">
+            
+
+<form id="searchFormResponseResponsiveHeader" role="search" action="/search" method="GET">
+    <div class="input-group">
+        <input type="text" name="term" id="txtSearchResponsiveHeader" class="form-control ie-txt-remove-clear" autocomplete="off" value="" />
+        <input type="hidden" name="pl" value="hdr_srch_sf_l1">
+        <input type="button" class="btnResetSearch" value="" />
+        <div class="input-group-btn">
+            <button type="submit" id="btnSubmitSearchResponsiveHeader" class="btn headerSearchBtn"></button>
+        </div>
+    </div>
+</form>
+<div id="divAutoCompleteTermListResponsiveHeader" class="divAutoCompleteTermList"></div>
+
+<script type="text/javascript">
+    require(["get!core/searchFormElasticSearch"], function (SiteSearch) {
+        $(document).ready(function () {
+            var container = $("#searchFormResponseResponsiveHeader");
+
+            new SiteSearch({ delay: 300 })
+                .initialize(
+                    $("#txtSearchResponsiveHeader", container),
+                    $(".btnResetSearch", container));
+        });
+    });
+</script>
+
+        </div>
+        
+
+
+<ul id="MainNavItems">
+    <li class="deptLuggage mainNavItem priority01 "><a href="/department/luggage" data-pl='fly_lg_c0_l' class="sliderNav">Luggage</a></li><li class="deptHandbags mainNavItem priority02 "><a href="/department/handbags" data-pl='fly_hb_c0_l' class="sliderNav">Handbags</a></li><li class="deptAccessories mainNavItem priority08 "><a href="/department/accessories" data-pl='fly_ac_c0_l' class="sliderNav">Accessories</a></li><li class="deptBusiness mainNavItem priority03 "><a href="/department/business" data-pl='fly_bs_c0_l' class="sliderNav">Business</a></li><li class="deptBackpacks mainNavItem priority06 "><a href="/department/backpacks" data-pl='fly_bp_c0_l' class="sliderNav">Backpacks</a></li><li class="deptSports mainNavItem priority07 "><a href="/department/sports" rel="nofollow" data-pl='fly_sp_c0_l' class="sliderNav">Sports</a></li><li class="deptPLP mainNavItem priority09 "><a href="/department/the-ebags-brand" data-pl='fly_plp_c0_l' class="sliderNav">eBags Brand</a></li><li class="deptSale mainNavItem mainNavSale priority05 "><a href="/department/sale" data-pl='fly_sl_c0_l' class="sliderNav saleRed">Sale</a></li><li class="deptBrands mainNavItem priority10"><a href="http://www.ebags.com/brands" data-pl='fly_br_c0_l'>Brands</a></li><li class="deptAll mainNavItem shopAllDepartments"><a href="#" class="sliderNav">Shop All Departments</a></li>
+</ul>
+
+
+<div class="for-deptLuggage boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/luggage" data-pl='fly_lg_c1_l' class="flyDeptButton">Luggage Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/search/b/ebags/bc/hybrid-spinner-lite" data-pl='fly_lg_c1_l'>eBags New Hybrid <br> Spinner Lite Collection</a>
+                <a href="/search/dept/luggage/f/softside" data-pl='fly_lg_c1_l'>Softside Luggage</a>
+                <a href="/search/dept/luggage/f/two-wheeled" data-pl='fly_lg_c1_l'>Two Wheeled Luggage</a>
+                <a href="/search/dept/luggage/f/fashion" data-pl='fly_lg_c1_l'>Fashion Luggage</a>
+                <a href="/category/luggage/dept/luggage" data-pl='fly_lg_c1_l'><strong>Shop All Luggage</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/category/luggage/dept/luggage/h/sale" data-pl='fly_lg_c1_l'>Shop Luggage Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/luggage/dept/luggage" data-pl='fly_lg_c2_l'>Luggage <div class="rightArrow"></div></a></div>
+            <a href="/category/luggage/dept/luggage/f/carry-on" data-pl='fly_lg_c2_l'>Carry-On Luggage</a>
+            <a href="/category/luggage/dept/luggage/f/checked" data-pl='fly_lg_c2_l'>Checked Luggage</a>
+            <a href="/category/luggage/dept/luggage/f/hardside" data-pl='fly_lg_c2_l'>Hardside Luggage</a>
+            <a href="/category/luggage/luggage-sets/dept/luggage" data-pl='fly_lg_c2_l'>Luggage Sets</a>
+            <a href="/search/dept/luggage/f/spinner" data-pl='fly_lg_c2_l'>Spinner Luggage</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/travel-accessories/dept/luggage" data-pl='fly_lg_c3_l'>Travel Accessories <div class="rightArrow"></div></a></div>
+            <a href="/category/travel-accessories/packing-aids/dept/luggage" data-pl='fly_lg_c3_l'>Packing Aids</a>
+            <a href="/category/travel-accessories/toiletry-kits/dept/luggage" data-pl='fly_lg_c3_l'>Toiletry Kits</a>
+            <a href="/category/luggage/travel-bags/dept/luggage" data-pl='fly_lg_c3_l'>Travel Bags</a>
+            <a href="/search/dept/luggage/f/anti-theft" data-pl='fly_lg_c3_l'>Anti-Theft</a>
+            <a href="/category/travel-accessories/insulated-bags/dept/luggage" data-pl='fly_lg_c3_l'>Travel Coolers</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Size</div>
+            <a href="/category/luggage/dept/luggage/f/carry-on" data-pl='fly_lg_c4_l'>Domestic Carry-On</a>
+            <a href="/category/luggage/dept/luggage/z/international-carry-on" data-pl='fly_lg_c4_l'>International Carry-On</a>
+            <a href="/category/luggage/dept/luggage/z/checked-medium" data-pl='fly_lg_c4_l'>Checked Medium</a>
+            <a href="/category/luggage/dept/luggage/z/checked-large" data-pl='fly_lg_c4_l'>Checked Large</a>
+            <a href="/category/luggage/dept/luggage/z/checked-extra-large" data-pl='fly_lg_c4_l'>Checked Extra Large</a>
+        </div>
+        <div class="flyDeptLogos">
+            <div class="flyDeptLogoBox">
+                <a href="/brand/ebags" data-pl='fly_lg_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-222?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/tumi" data-pl='fly_lg_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-223?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/victorinox" data-pl='fly_lg_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-560?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/samsonite" data-pl='fly_lg_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-2?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/briggs-and-riley" data-pl='fly_lg_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-4?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/category/luggage/dept/luggage/h/sale" data-pl='fly_lg_c5_l'>Shop Luggage Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptHandbags boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/handbags" data-pl='fly_hb_c1_l' class="flyDeptButton">Handbags Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/search/dept/handbags/h/new-arrivals" data-pl='fly_hb_c1_l'>New Arrivals</a>
+                <a href="/search/dept/handbags/p/30-minus~30-to-50" data-pl='fly_hb_c1_l'>Handbags under $50</a>
+                <a href="/category/handbags/dept/handbags/m/leather?sort=BestSeller" data-pl='fly_hb_c1_l'>Best-Selling Leather Handbags</a>
+                <a href="/mp/new-and-novel" data-pl='fly_hb_c1_l'>​New &amp; Novel Brands</a>                
+                <a href="/search/dept/handbags" data-pl='fly_hb_c1_l'><strong>Shop All Handbags</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/dept/handbags/h/sale" data-pl='fly_hb_c1_l'>Shop Handbag Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/handbags/dept/handbags" data-pl='fly_hb_c2_l'>Handbag Types <div class="rightArrow"></div></a></div>
+            <a href="/category/handbags/cross-body-bags?sort=FeaturedProduct" data-pl='fly_hb_c2_l'>Crossbody Bags</a>
+            <a href="/category/handbags/backpack-handbags/dept/handbags" data-pl='fly_hb_c2_l'>Backpack Handbags</a>
+            <a href="/category/handbags/hobos/dept/handbags" data-pl='fly_hb_c2_l'>Hobos</a>
+            <a href="/category/handbags/satchels/dept/handbags?sort=FeaturedProduct" data-pl='fly_hb_c2_l'>Satchels</a>
+            <a href="/category/totes/handbag-totes/dept/handbags?sort=FeaturedProduct" data-pl='fly_hb_c2_l'>Totes</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Trending Categories</div>
+            <a href="/search/dept/handbags/u/day-travel" data-pl='fly_hb_c3_l'>Travel Handbags</a>
+            <a href="/category/handbags/dept/handbags/de/designer" data-pl='fly_hb_c3_l'>Designer Handbags</a>
+            <a href="/search/dept/handbags/u/special-occasion?sort=newest" data-pl='fly_hb_c3_l'>Party Bags &amp; Clutches</a>
+            <a href="/mp/trend-shop" data-pl='fly_hb_c3_l'>Must-Have Trends</a>
+            <a href="/category/diaper-bags?sort=Newest" data-pl='fly_hb_c3_l'>Diaper Bags for Mom</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Featured Brands</div>            
+            <a href="/brand/michael-michael-kors" data-pl='fly_hb_c4_l'>Michael Michael Kors</a>
+            <a href="/brand/vera-bradley" data-pl='fly_hb_c4_l'>Vera Bradley</a>
+            <a href="/brand/kate-spade" data-pl='fly_hb_c4_l'>kate spade new york</a>
+            <a href="/brand/baggallini" data-pl='fly_hb_c4_l'>baggallini</a>
+            <a href="/category/handbags/b/fossil" data-pl='fly_hb_c4_l'>Fossil</a>
+        </div>
+        <div class="flyDeptLogos">
+            <a href="/search/dept/handbags/u/day-travel" data-pl='fly_hb_lgs_l'>
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" border="0" class="img-responsive responsive-img" data-yo-delayType="lazy" data-yo-src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/splash/travel-handbags-cute-confy-convenient-20150713-fb?qlt=60,1&amp;align=0,1&amp;wid=855&amp;yocs=_&amp;yoloc=us" />
+            </a> 
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/dept/handbags/h/sale" data-pl='fly_hb_c5_l'>Shop Handbag Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptAccessories boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/accessories" data-pl='fly_ac_c1_l' class="flyDeptButton">Accessories Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/search/dept/accessories/h/best-of-the-best" data-pl='fly_ac_c1_l'>Best of the Best</a>
+                <a href="/category/wallets/dept/accessories/h/sale" data-pl='fly_ac_c1_l'>Wallet Sale</a>
+                <a href="/search/dept/accessories/g/womens" data-pl='fly_ac_c1_l'>Women's Accessories</a>
+                <a href="/search/dept/accessories/g/mens" data-pl='fly_ac_c1_l'>Men's Accessories</a>
+                <a href="/search/dept/accessories" data-pl='fly_ac_c1_l'><strong>Shop All Accessories</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/dept/accessories/h/sale" data-pl='fly_ac_c1_l'>Shop Accessories Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/wallets-and-accessories/dept/accessories" data-pl='fly_ac_c2_l'>Fashion Accessories <div class="rightArrow"></div></a></div>
+            <a href="/category/jewelry/dept/accessories?sort=Newest" data-pl='fly_ac_c2_l'>Jewelry</a>
+            <a href="/category/hats/dept/accessories" data-pl='fly_ac_c2_l'>Hats</a>
+            <a href="/category/eyewear/sunglasses/dept/accessories" data-pl='fly_ac_c2_l'>Sunglasses</a>
+            <a href="/category/wallets/dept/accessories" data-pl='fly_ac_c2_l'>Wallets</a>
+            <a href="/category/watches/dept/accessories" data-pl='fly_ac_c2_l'>Watches</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/travel-accessories/dept/accessories" data-pl='fly_ac_c3_l'>Travel Accessories <div class="rightArrow"></div></a></div>
+            <a href="/category/travel-accessories/insulated-bags/lunch-bags/dept/accessories" data-pl='fly_ac_c3_l'>Lunch Bags</a>
+            <a href="/category/travel-accessories/packing-aids/packing-cubes/dept/accessories" data-pl='fly_ac_c3_l'>Packing Cubes</a>
+            <a href="/category/travel-accessories/toiletry-kits/dept/accessories" data-pl='fly_ac_c3_l'>Toiletry Kits</a>
+            <a href="/category/travel-accessories/travel-wallets/dept/accessories" data-pl='fly_ac_c3_l'>Travel Wallets</a>
+            <a href="/category/travel-accessories/umbrellas/dept/accessories" data-pl='fly_ac_c3_l'>Umbrellas</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/electronics-cases/dept/accessories" data-pl='fly_ac_c4_l'>Tech Accessories <div class="rightArrow"></div></a></div>
+            <a href="/category/electronics-cases/camera-bags-and-cases/dept/accessories" data-pl='fly_ac_c4_l'>Camera Cases</a>
+            <a href="/category/electronics-cases/ipad-and-tablet-cases/dept/accessories" data-pl='fly_ac_c4_l'>iPad & Tablet Cases</a>
+            <a href="/category/electronics-cases/kindle-and-ereader-cases/dept/accessories" data-pl='fly_ac_c4_l'>Kindle & eReader Cases</a>
+            <a href="/category/electronics-cases/phone-cases/dept/accessories" data-pl='fly_ac_c4_l'>Phone Cases</a>
+            <a href="/category/electronics-cases/portable-batteries-and-chargers/dept/accessories" data-pl='fly_ac_c4_l'>Batteries & Chargers</a>
+        </div>
+        <div class="flyDeptLogos">
+            <a href="/category/jewelry/b/kate-spade" data-pl='fly_ac_lgs_l'>
+                <img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/kate-spade-new-york-accessories-jewelry-20150721-fb?qlt=60,1&amp;align=0,1&amp;wid=855&amp;yocs=_&amp;yoloc=us" border="0" class="img-responsive responsive-img" />
+            </a>
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/dept/accessories/h/sale" data-pl='fly_ac_c5_l'>Shop Accessories Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptBusiness boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/business" data-pl='fly_bs_c1_l' class="flyDeptButton">Business Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>               
+                <a href="/search/dept/business/u/business/g/mens" data-pl='fly_bs_c1_l'>Men's</a>
+                <a href="/search/dept/business/u/business/g/womens" data-pl='fly_bs_c1_l'>Women's</a>
+                <a href="/category/electronics-cases/ipad-and-tablet-cases/dept/accessories" data-pl='fly_bs_c1_l'>iPad & Tablet Cases</a>
+                <a href="/category/business-cases/laptop-bags/dept/business/h/sale" data-pl='fly_bs_c1_l'>Laptop Bag Sale</a>
+                <a href="/search/dept/business" data-pl='fly_bs_c1_l'><strong>Shop All Business</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/dept/business/h/sale" data-pl='fly_bs_c1_l'>Shop Business Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/business-cases/laptop-bags/dept/business" data-pl='fly_bs_c2_l'>Laptop Bags <div class="rightArrow"></div></a></div>
+            <a href="/category/backpacks/laptop-backpacks/dept/business/u/business?sort=BestSeller" data-pl='fly_bs_c2_l'>Laptop Backpacks</a>
+            <a href="/category/totes/laptop-totes/dept/business" data-pl='fly_bs_c2_l'>Laptop Totes</a>
+            <a href="/category/business-cases/laptop-bags/laptop-sleeves/dept/business" data-pl='fly_bs_c2_l'>Laptop Sleeves</a>
+            <a href="/category/business-cases/laptop-bags/dept/business/m/leather" data-pl='fly_bs_c2_l'>Leather Laptop Bags</a>
+            <a href="/category/business-cases/laptop-bags/dept/business/f/rolling" data-pl='fly_bs_c2_l'>Rolling Laptop Bags</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/messenger-and-shoulder-bags/messenger-bags/dept/business" data-pl='fly_bs_c3_l'>Messenger Bags <div class="rightArrow"></div></a></div>
+            <a href="/category/messenger-and-shoulder-bags/messenger-bags/dept/business/m/leather" data-pl='fly_bs_c3_l'>Leather Messenger Bags</a>
+            <a href="/category/messenger-and-shoulder-bags/messenger-bags/dept/business/m/canvas" data-pl='fly_bs_c3_l'>Canvas Messenger Bags</a>
+            <a href="/category/messenger-and-shoulder-bags/shoulder-bags/dept/business" data-pl='fly_bs_c3_l'>Shoulder Bags</a>
+            <a href="/category/messenger-and-shoulder-bags/laptop-messenger-bags/dept/business" data-pl='fly_bs_c3_l'>Laptop Messenger Bags</a>
+            <a href="/category/messenger-and-shoulder-bags/messenger-bags/dept/business/g/mens" data-pl='fly_bs_c3_l'>Men's Messenger Bags</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Shop by Price</div>
+            <a href="/search/dept/business/p/30-minus" data-pl='fly_bs_c4_l'>$30 and Under</a>
+            <a href="/search/dept/business/p/30-to-50" data-pl='fly_bs_c4_l'>$30 - $50</a>
+            <a href="/search/dept/business/p/50-to-70~70-to-100" data-pl='fly_bs_c4_l'>$50 - $100</a>
+            <a href="/search/dept/business/p/100-to-150" data-pl='fly_bs_c4_l'>$100 - $150</a>
+            <a href="/search/dept/business/p/150-to-200~200-plus" data-pl='fly_bs_c4_l'>$150+</a>
+        </div>        
+        <div class="flyDeptLogos">            
+            <a href="/brand/solo" data-pl='fly_bs_lgs_l'>                                
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" border="0" class="img-responsive responsive-img" data-yo-delayType="lazy" data-yo-src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/splash/solo-backpack-business-20150713-fb?qlt=60,1&amp;align=0,1&amp;wid=855&amp;yocs=_&amp;yoloc=us" />
+            </a>           
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/dept/business/h/sale" data-pl='fly_bs_c5_l'>Shop Business Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptBackpacks boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/backpacks" data-pl='fly_bp_c1_l' class="flyDeptButton">Backpacks Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/category/backpacks/dept/backpacks/o/most-recommended/u/school" data-pl='fly_bp_c1_l'>Most Recommended School Packs</a>
+                <a href="/top-ranked/category/backpacks/dept/backpacks/o/most-durable/u/school/g/kids" data-pl='fly_bp_c1_l'>Top 10 Most Durable Kids’ Packs</a>
+                <a href="/category/backpacks/dept/backpacks/o/most-stylish/g/womens" data-pl='fly_bp_c1_l'>Most Stylish Women’s Backpacks</a>
+                <a href="/search/dept/backpacks/p/30-minus~30-to-50?sort=FeaturedProduct" data-pl='fly_bp_c1_l'>Backpacks under $50</a>
+                <a href="/search/dept/backpacks" data-pl='fly_bp_c1_l'><strong>Shop All Backpacks</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/dept/backpacks/h/sale" data-pl='fly_bp_c1_l'>Shop Backpacks Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/backpacks/dept/backpacks" data-pl='fly_bp_c2_l'>Backpacks <div class="rightArrow"></div></a></div>
+            <a href="/category/backpacks/dept/backpacks/u/school" data-pl='fly_bp_c2_l'>School Backpacks</a>
+            <a href="/category/backpacks/dept/backpacks/u/day-hiking" data-pl='fly_bp_c2_l'>Day Hiking Backpacks</a>
+            <a href="/category/backpacks/laptop-backpacks/dept/backpacks" data-pl='fly_bp_c2_l'>Laptop Backpacks</a>
+            <a href="/category/backpacks/travel-backpacks/dept/backpacks" data-pl='fly_bp_c2_l'>Travel Backpacks</a>
+            <a href="/category/backpacks/dept/backpacks/u/backpacking" data-pl='fly_bp_c2_l'>Backpacking Packs</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/category/backpacks/dept/backpacks" data-pl='fly_bp_c3_l'>Gender and Age <div class="rightArrow"></div></a></div>
+            <a href="/search/dept/backpacks/g/womens" data-pl='fly_bp_c3_l'>Women's</a>
+            <a href="/search/dept/backpacks/g/mens" data-pl='fly_bp_c3_l'>Men's</a>
+            <a href="/search/dept/backpacks/g/girls" data-pl='fly_bp_c3_l'>Girls'</a>
+            <a href="/search/dept/backpacks/g/boys" data-pl='fly_bp_c3_l'>Boys'</a>
+            <a href="/search/dept/backpacks/g/kids" data-pl='fly_bp_c3_l'>Kids'</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/search/dept/backpacks/u/school" data-pl='fly_bp_c4_l'>School Age <div class="rightArrow"></div></a></div>
+            <a href="/search/sc/toddler-and-preschool" data-pl='fly_bp_c4_l'>Toddler and Pre-School</a>
+            <a href="/search/sc/elementary-school" data-pl='fly_bp_c4_l'>Elementary School</a>
+            <a href="/search/sc/middle-school" data-pl='fly_bp_c4_l'>Middle School</a>
+            <a href="/search/sc/high-school" data-pl='fly_bp_c4_l'>High School</a>
+            <a href="/search/u/college" data-pl='fly_bp_c4_l'>College</a>
+        </div>
+        <div class="flyDeptLogos">
+            <a href="/category/backpacks/b/adidas/h/sale" data-pl='fly_bp_lgs_l'>                                
+                <img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/20150728_BackpackSale_Banner?qlt=60,1&amp;align=0,1&amp;wid=855&amp;yocs=_&amp;yoloc=us" border="0" class="img-responsive responsive-img" />
+            </a>    
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/dept/backpacks/h/sale" data-pl='fly_bp_c5_l'>Shop Backpacks Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptSports boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/sports" rel="nofollow" data-pl='fly_sp_c1_l' class="flyDeptButton">Sports Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/search/dept/sports/h/best-of-the-best" data-pl='fly_sp_c1_l'>Best of the Best</a>
+                <a href="/search/dept/sports/b/high-sierra?sort=BestSeller" data-pl='fly_sp_c1_l'>Top Brand: High Sierra</a>
+                <a href="/category/sport-bags/snow-sports/dept/sports/h/sale" data-pl='fly_sp_c1_l'>Snow Sports Sale</a>                        
+                <a href="/search/dept/sports" data-pl='fly_sp_c1_l'><strong>Shop All Sports & Outdoor</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/dept/sports/h/sale" data-pl='fly_sp_c1_l'>Shop Sports Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/search/dept/sports" data-pl='fly_sp_c2_l'>Sports Activity <div class="rightArrow"></div></a></div>
+            <a href="/search/dept/sports/u/gym-and-fitness" data-pl='fly_sp_c2_l'>Gym & Fitness</a>
+            <a href="/search/dept/sports/u/yoga-and-studio" data-pl='fly_sp_c2_l'>Yoga & Studio</a>
+            <a href="/category/sport-bags/sport-specific-bags/dept/sports" data-pl='fly_sp_c2_l'>Team & Individual Sports</a>
+            <a href="/category/outdoor-accessories/dept/sports" data-pl='fly_sp_c2_l'>Outdoor Recreation</a>
+            <a href="/category/sport-bags/golf-bags/dept/sports" data-pl='fly_sp_c2_l'>Golf</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Gender and Age</div>
+            <a href="/search/dept/sports/g/womens" data-pl='fly_sp_c3_l'>Women's</a>
+            <a href="/search/dept/sports/g/mens" data-pl='fly_sp_c3_l'>Men's</a>
+            <a href="/search/dept/sports/g/girls" data-pl='fly_sp_c3_l'>Girls'</a>
+            <a href="/search/dept/sports/g/boys" data-pl='fly_sp_c3_l'>Boys'</a>
+            <a href="/search/dept/sports/g/kids" data-pl='fly_sp_c3_l'>Kids'</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader flyNoHover">Bag Type</div>
+            <a href="/category/sport-bags/sports-and-outdoor-duffels" data-pl='fly_sp_c4_l'>Sports & Outdoor Duffels</a>
+            <a href="/category/sport-bags/fitness-totes/dept/sports" data-pl='fly_sp_c4_l'>Fitness Totes</a>
+            <a href="/search/dept/sports/u/tactical" data-pl='fly_sp_c4_l'>Tactical</a>
+            <a href="/category/hydration/dept/sports" data-pl='fly_sp_c4_l'>Hydration</a>
+            <a href="/search/dept/sports/u/hunting" data-pl='fly_sp_c4_l'>Hunting</a>
+        </div>
+        <div class="flyDeptLogos">
+            <div class="flyDeptLogoBox">
+                <a href="/brand/nike/dept/sports" data-pl='fly_sp_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-579?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/the-north-face" data-pl='fly_sp_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-36?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/ogio/dept/sports" data-pl='fly_sp_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-20?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/ful" data-pl='fly_sp_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-10097?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/adidas/dept/sports" data-pl='fly_sp_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-415?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/dept/sports/h/sale" data-pl='fly_sp_c5_l'>Shop Sports Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptPLP boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/the-ebags-brand" data-pl='fly_plp_c1_l' class="flyDeptButton">eBags Brand</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/category/handbags/b/ebags/g/womens" data-pl='fly_plp_c1_l'>Travel Handbags</a>
+                <a href="/category/travel-accessories/packing-aids/b/ebags" data-pl='fly_plp_c1_l'>Packing Aids</a>
+                <a href="/search/b/ebags/g/womens" data-pl='fly_plp_c1_l'>Women's</a>
+                <a href="/category/travel-accessories/insulated-bags/b/ebags" data-pl='fly_plp_c1_l'>Lunch Coolers</a>
+                <a href="/brand/ebags" data-pl='fly_plp_c1_l'><strong>Shop All eBags Brand</strong></a>
+            </div>
+            <div class="shopSaleItems boxSizing hideOnMobile">
+                <a href="/search/b/ebags/h/sale" data-pl='fly_plp_c1_l'>Shop eBags Brand Sale</a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/brand/ebags" data-pl='fly_plp_c2_l'>Categories <div class="rightArrow"></div></a></div>
+            <a href="/category/luggage/b/ebags" data-pl='fly_plp_c2_l'>Luggage</a>
+            <a href="/category/backpacks/b/ebags" data-pl='fly_plp_c2_l'>Backpacks</a>
+            <a href="/category/business-cases/b/ebags" data-pl='fly_plp_c2_l'>Business & Laptop Cases</a>
+            <a href="/category/travel-accessories/packing-aids/packing-cubes/b/ebags" data-pl='fly_plp_c2_l'>Packing Cubes</a>
+            <a href="/category/travel-accessories/b/ebags" data-pl='fly_plp_c2_l'>Travel Accessories</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/brand/ebags" data-pl='fly_plp_c3_l'>Collections <div class="rightArrow"></div></a></div>
+            <a href="/search/b/ebags/bc/tls" data-pl='fly_plp_c3_l'>TLS Luggage</a>
+            <a href="/search/b/ebags/bc/etech-20" data-pl='fly_plp_c3_l'>eTech 2.0 Luggage</a>
+            <a href="/search/b/ebags/bc/exo-20-hardside" data-pl='fly_plp_c3_l'>EXO 2.0 Hardside Luggage</a>
+            <a href="/search/b/ebags/bc/kalya" data-pl='fly_plp_c3_l'>Kalya Handbags</a>
+            <a href="/search/b/ebags/bc/hybrid-spinner-lite" data-pl='fly_plp_c3_l'>Hybrid Spinner Lite</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/brand/ebags" data-pl='fly_plp_c4_l'>Shop by Color <div class="rightArrow"></div></a></div>
+            <a href="/search/c/black/b/ebags" data-pl='fly_plp_c4_l'>Black</a>
+            <a href="/search/c/blue/b/ebags" data-pl='fly_plp_c4_l'>Blue</a>
+            <a href="/search/c/green/b/ebags" data-pl='fly_plp_c4_l'>Green</a>
+            <a href="/search/c/red/b/ebags" data-pl='fly_plp_c4_l'>Red</a>
+            <a href="/search/c/purple/b/ebags" data-pl='fly_plp_c4_l'>Purple</a>
+        </div>
+        <div class="flyDeptLogos">            
+            <a href="/category/travel-accessories/packing-aids/packing-cubes/b/ebags" data-pl='fly_plp_lgs_l'>                                
+                <img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/20150730_Travel_Organized_Banner?qlt=60,1&amp;align=0,1&amp;wid=855&amp;yocs=_&amp;yoloc=us" border="0" class="img-responsive responsive-img" />
+            </a>           
+        </div>
+        <div class="flyCol flyLeftCol boxSizing" style="clear:both;">
+            <div class="shopSaleItems boxSizing showOnMobile visible-xxs">
+                <a href="/search/b/ebags/h/sale" data-pl='fly_plp_c5_l'>Shop eBags Brand Sale</a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<div class="for-deptSale boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol flyLeftCol boxSizing">
+            <a href="/department/sale" data-pl='fly_sl_c1_l' class="flyDeptButton">Sale Department</a>
+            <div class="flySpotlight boxSizing">
+                <div class="flyawayHeader"><em>Featured</em></div>
+                <a href="/site/activepromotions" data-pl='fly_sl_c1_l'>Active Promotions</a>
+                <a href="/search/h/sale/de/designer" data-pl='fly_sl_c1_l'>Designer Sale</a>
+                <a href="/search/h/sale~steals-of-the-day" data-pl='fly_sl_c1_l'>Steals of the Day</a>
+                <a href="/search/h/sale?sort=RecentlyMarkedDown" data-pl='fly_sl_c1_l'>Recently Marked Down</a>
+                <a href="/search/h/final-sale" data-pl='fly_sl_c1_l'>Final Sale</a>
+                <a href="/search/h/sale" data-pl='fly_sl_c1_l' class="saleRed"><strong>Shop All Sale</strong></a>
+            </div>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/sale" data-pl='fly_sl_c2_l'>Departments <div class="rightArrow"></div></a></div>
+            <a href="/search/dept/luggage/h/sale" data-pl='fly_sl_c2_l'>Luggage</a>
+            <a href="/search/dept/handbags/h/sale" data-pl='fly_sl_c2_l'>Handbags</a>
+            <a href="/search/dept/accessories/h/sale" data-pl='fly_sl_c2_l'>Accessories</a>
+            <a href="/search/dept/business/h/sale" data-pl='fly_sl_c2_l'>Business</a>
+            <a href="/search/dept/backpacks/h/sale" data-pl='fly_sl_c2_l'>Backpacks</a>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/sale" data-pl='fly_sl_c2_l'>Price <div class="rightArrow"></div></a></div>
+            <a href="/search/p/30-minus/h/sale" data-pl='fly_sl_c3_l'>$30 and Under</a>
+            <a href="/search/p/30-to-50/h/sale" data-pl='fly_sl_c3_l'>$30 - $50</a>
+            <a href="/search/p/50-to-70~70-to-100/h/sale" data-pl='fly_sl_c3_l'>$50 - $100</a>
+            <a href="/search/p/100-to-150/h/sale" data-pl='fly_sl_c3_l'>$100 - $150</a>
+            <a href="/search/p/150-to-200~200-plus/h/sale" data-pl='fly_sl_c3_l'>$150 +</a>
+        </div>
+        <div class="flyDeptLogos">
+            <div class="flyDeptLogoBox">
+                <a href="/brand/samsonite/h/sale" data-pl='fly_sl_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-2?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/search/b/fossil/h/sale" data-pl='fly_sl_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-10656?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/search/b/baggallini/h/sale" data-pl='fly_sl_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-376?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/jansport/h/sale" data-pl='fly_sl_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-1?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+            <div class="flyDeptLogoBox">
+                <a href="/brand/kate-spade/h/sale?sort=BestSeller" data-pl='fly_sl_lgs_l'><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/logo-582?qlt=60,1&amp;align=0,1&amp;yocs=_&amp;yoloc=us" border="0" /></a>
+            </div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+</div>
+
+<div class="for-deptAll boxSizing flyawayNav navSlider">
+    <div class="flyTopRow clearfix">
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/luggage" data-pl='fly_sd_bl2_l' class="allDeptLinks">Luggage <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/luggage/f/carry-on" data-pl='fly_sd_bl2_l'>Carry-On Luggage</a>
+                <a href="/category/luggage/f/checked" data-pl='fly_sd_bl2_l'>Checked Luggage</a>
+                <a href="/category/luggage/f/hardside" data-pl='fly_sd_bl2_l'>Hardside Luggage</a>
+                <span class="showAboveTablet hidden-xs"></span>
+            <div class="flyawayHeader"><a href="/department/handbags" data-pl='fly_sd_bl3_l' class="allDeptLinks">Handbags <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/handbags/m/leather" data-pl='fly_sd_bl3_l'>Leather Handbags</a>
+                <a href="/category/handbags/cross-body-bags" data-pl='fly_sd_bl3_l'>Crossbody Bags</a>
+                <a href="/category/handbags/dept/handbags/de/designer?items=48" data-pl='fly_sd_bl3_l'>Designer Handbags</a>
+                <span class="showAboveTablet hidden-xs"></span>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/the-ebags-brand" data-pl='fly_sd_bl4_l' class="allDeptLinks">eBags Brand <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/luggage/b/ebags" data-pl='fly_sd_bl4_l'>Luggage</a>
+                <a href="/category/travel-accessories/b/ebags" data-pl='fly_sd_bl4_l'>Travel Accessories</a>
+                <a href="/category/business-cases/b/ebags" data-pl='fly_sd_bl4_l'>Business</a>
+                <span class="showAboveTablet hidden-xs"></span>
+            <div class="flyawayHeader"><a href="/department/accessories" data-pl='fly_sd_bl5_l' class="allDeptLinks">Accessories <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/wallets-and-accessories" data-pl='fly_sd_bl5_l'>Fashion Accessories</a>
+                <a href="/category/travel-accessories" data-pl='fly_sd_bl5_l'>Travel Accessories</a>
+                <a href="/category/electronics-cases" data-pl='fly_sd_bl5_l'>Tech Accessories</a>
+                <span class="showAboveTablet hidden-xs"></span>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/business" data-pl='fly_sd_bl6_l' class="allDeptLinks">Business <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/business-cases/laptop-bags" data-pl='fly_sd_bl6_l'>Laptop Bags</a>
+                <a href="/category/messenger-and-shoulder-bags" data-pl='fly_sd_bl6_l'>Messenger Bags</a>
+                <a href="/category/electronics-cases/dept/business" data-pl='fly_sd_bl6_l'>iPad & Tech Cases</a>
+                <span class="showAboveTablet hidden-xs"></span>
+            <div class="flyawayHeader"><a href="/department/backpacks" data-pl='fly_sd_bl7_l' class="allDeptLinks">Backpacks <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/backpacks/laptop-backpacks" data-pl='fly_sd_bl7_l'>Laptop Backpacks</a>
+                <a href="/category/backpacks/u/school" data-pl='fly_sd_bl7_l'>School Backpacks</a>
+                <a href="/category/backpacks/u/day-hiking" data-pl='fly_sd_bl7_l'>Day Hiking Backpacks</a>
+                <span class="showAboveTablet hidden-xs"></span>
+        </div>
+        <div class="flyCol boxSizing">
+            <div class="flyawayHeader"><a href="/department/sports" data-pl='fly_sd_bl8_l' class="allDeptLinks">Sports <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/duffel-bags/all-purpose-duffel-bags" data-pl='fly_sd_bl8_l'>Sports &amp; Outdoor Duffels</a>
+                <a href="/search/u/gym-and-fitness" data-pl='fly_sd_bl8_l'>Gym &amp; Fitness</a>
+                <a href="/category/sport-bags/u/yoga-and-studio" data-pl='fly_sd_bl8_l'>Yoga &amp; Studio</a>
+                <span class="showAboveTablet hidden-xs"></span>
+            <div class="flyawayHeader saleRed"><a href="/department/sale" data-pl='fly_sd_bl9_l' class="allDeptLinks">Sale <div class="rightArrow showAboveTablet hidden-xs"></div></a></div>
+                <a href="/category/luggage/h/sale" data-pl='fly_sd_bl9_l'>Luggage</a>
+                <a href="/search/dept/handbags/h/sale" data-pl='fly_sd_bl9_l'>Handbags</a>
+                <a href="/search/dept/backpacks/h/sale" data-pl='fly_sd_bl9_l'>Backpacks </a>
+                <span class="showAboveTablet hidden-xs"></span>
+
+            <div class="flyawayHeader showBelowDesktop hidden-lg"><a href="/brands" data-pl='fly_sd_bl10_l' class="allDeptLinks">Brands</a></div>
+        </div>
+        <div class="flyClose"></div>
+    </div>
+    <div class="flyBottomRow">
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+    require(["get!core/headerNavInit", "get!core/screenInit", "get!core/slider", "get!core/flyawayInit", "get!core/headerNavFlyaway", "get!core/headerNavFlyawayTouch"],
+        function (headerNavInit, screenInit, slider, flyawayInit, headerNavFlyaway, headerNavFlyawayTouch) {
+            screenInit(headerNavInit(), { minWidth: 768 });
+            screenInit(slider({ selector: '.navSlider' }), { maxWidth: 767 });
+            screenInit(flyawayInit(), { minWidth: 768 });
+            screenInit(headerNavFlyaway({ menuItemSelector: '#MainNavItems > li', contentSelector: '.navFlyaway' }), { minWidth: 768, checkTouch: true, forTouch: false });
+            screenInit(headerNavFlyawayTouch({ menuItemSelector: '#MainNavItems > li', contentSelector: '.navFlyaway' }), { minWidth: 768, checkTouch: true, forTouch: true });
+        }
+    );
+</script>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    require(['views-site-header-bootstrap']);
+</script>
+
+        <div id="contentContainer" class="container buffer-top buffer-bottom">
+            
+    
+
+            
+    <div class="row promobarBootstrap">
+
+<div class="row">
+    <div class="col-xs-12">
+        <img id="cpPromoBar" src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/banner/20150901-promo-bar-medium?qlt=80,1&amp;wid=1400&amp;align=0,1&amp;yocs=_&amp;yoloc=us" alt="Labor Day Sale" class="col-xs-12 img-responsive responsive-img" usemap="#exdeals" />
+            <map name="exdeals" id="exdeals">
+              <area shape="rect" coords="402,3,668,93" href="/category/luggage/dept/luggage/h/sale" alt="Shop Luggage Sale" />
+              <area shape="rect" coords="670,3,902,92" href="/search/dept/handbags/h/sale" alt="Shop Handbag Sale" />
+              <area shape="rect" coords="902,3,1135,93" href="/search/dept/backpacks/h/sale" alt="Shop Backpack Sale" />
+              <area shape="rect" coords="1136,4,1391,91" href="/search/h/sale" alt="Shop Labor Day Sale" />
+              <area shape="rect" coords="2,1,400,94" href="/search/h/sale" alt="Shop Labor Day Sale" />
+            </map>
+        <div class="cpPromoBarText"><a href="/search/h/sale"><h2>Labor Day Sale - Save Up To 70%* - Shop All</h2></a></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require(['jquery'], function ($) {
+        $(document).ready(function () {
+            $('img[usemap]').rwdImageMaps();
+        });
+    });
+</script></div>
+    <a id="toTop" href="#">Top<img id="toTopArrow" src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/back-to-top?qlt=80,1&amp;align=0,1&amp;wid=22&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" border="0" /></a>
+    <script type="text/javascript">
+        require(['get!core/screenInit', 'get!responsive/stalker'], function (screenInit, stalker) {
+            screenInit(stalker(), { minWidth: 768 });
+            screenInit(stalker({ legacySetTop: false, showOffsetMob: 500 }), { maxWidth: 767 });
+        });
+    </script> 
+    
+	
+	<div id="helpcenter-maincontent" class="col-xs-12 col-sm-9 no-padding pull-right buffer-top-medium">
+		<div class="row">
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+            <a class="btn btn-primary btn-sm" href="/help" >Back to Help Center</a>
+            </div>
+		</div>
+		<h1>Privacy Policy</h1>
+		<h3>Our Privacy Pledge</h3>
+        <div class="row">
+		    <div class="col-xs-12 col-sm-9 pull-left">
+			<p>We understand and share your concern about privacy. We want to assure you that eBags respects your privacy and treats your personal information with the highest standards of safety, security and confidentiality. To better protect your privacy, we provide this notice explaining our online information practices and the choices you can make about the way your information is collected and used. If you have questions regarding this Policy, you may direct them to <a href="mailto:privacy@ebags.com">privacy@ebags.com</a>.
+				<ul>
+					<li><a href="#1">What information does eBags collect?</a></li>
+					<li><a href="#2">Our use of your information</a></li>
+					<li><a href="#3">Does eBags share the information it receives?</a></li>
+					<li><a href="#4">Accessing and updating your information</a></li>
+					<li><a href="#5">Security</a></li>
+					<li><a href="#6">A special note about children's privacy</a></li>
+					<li><a href="#7">Privacy Policy changes</a></li>
+					<li><a href="#8">Contacting eBags with question or comments</a></li>
+				</ul>
+			</p>
+		</div>
+
+            <div class="col-xs-12 col-sm-3 pull-right">
+			    <a target="_blank" href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.ebags.com&lang=en" id="eb_verisign" data-popup="width=525,height=450,resizable=no,scrollbars=yes,status=no,left=111,top=111"><img class="img-responsive" alt="VeriSign Secured" src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/verisignseal?qlt=90,1&amp;wid=100&amp;align=0,1&amp;yocs=_&amp;yoloc=us" /></a>
+		    </div>
+        </div>
+
+		<p><a name="1" class="privacy-header"><h3>What type of information does eBags collect?</h3></a>
+		Our goal is to provide you with a safe and enjoyable shopping experience. When we collect information about you it is in an effort to create a customized and meaningful experience with the products and brands that are most relevant to you. You are free to browse the eBags site without revealing any personal information about yourself. However, once you give us your personal information, you are not anonymous to us.</p>
+		<p><strong>Automatic Information</strong><br />
+		We automatically track certain information based upon your behavior on our site. We use this information to analyze our users' behavior, interests, and demographics to better understand and serve our shoppers. This information may include the URLs, pages viewed on the site, which browser you are using and your IP address.</p>
+		<p><strong>What about Cookies?</strong><br />
+		"Cookies" are small pieces of information that a web site will store on your computer's hard drive. eBags will use cookies to identify you during your session, make our services easier to use and to store items in your shopping cart between visits. Cookies are never used to store sensitive customer information such as names, addresses, credit card numbers or passwords. Acceptance of cookies is not a requirement to browse our site, however, our shopping cart does require the acceptance of cookies to work properly. Most browsers automatically accept cookies, but you can configure your browser to prevent that. If you would like to place an order on our site but object to or otherwise are unable to use cookies, please feel free to place your order via our toll free number: 1-800-820-6126.</p>
+		<p><strong>Personally Identifiable Information</strong><br />
+		This is information that you provide to us that is specific to you. We collect information such as your name, phone number, billing information, shipping information and other personal information as indicated on the forms throughout our site. You provide such information when you make a purchase, enter a contest or sweepstakes, fill out a survey or form, provide ratings or testimonials feedback, give or redeem a gift certificate, etc. Where possible, we indicate which fields are required and which fields are optional. You can always choose not to provide information, but you may not be able to use a particular service or feature by omitting the information.</p>
+
+		<p><a name="2" class="privacy-header"><h3>Our use of your information</h3></a>
+		We use the information we collect from you to improve our products and services and make your shopping experience more efficient and relevant. We review the actions of our visitors on an aggregate basis to determine customers' preferences. eBags also conducts analysis and research on our visitors' demographics, interests, and pages viewed based on the information provided to us during ordering, from our server log files, contests or surveys.</p>
+		<p><strong>Contests and Sweepstakes</strong><br />
+		When you enter a contest or other promotion, we may ask you for contact information such as your name, address and e-mail address in order to administer the contest, to send you promotional e-mails, notify winners and make the winners' list publicly available pursuant to certain states' laws. Your consent to such promotional use and disclosure of this information is a condition of your participation. As a condition of receiving any prize, you will be required to complete, execute and return an Affidavit of Eligibility, a Liability Release, and where lawful, a Publicity Release, for us to ensure that you are eligible to receive the prize according to the Contest Rules. In cases where the sweepstakes or promotional offer is co-branded with or sponsored by another party, we may share your information, with your consent, to that party.</p>
+		<p><strong>E-mails</strong><br />
+		It is possible to register as an email subscriber directly from our site or through another source, such as an eBags sweepstakes hosted on another site, Facebook contest, or a co-registration network. Upon registering, we will send you newsletters and e-mails featuring exclusive sales, promotions and other members-only benefits. When you join or make a purchase on eBags.com, you will automatically be subscribed to emails unless you opt-out during guest checkout. If you are a subscribed member, we will also send you emails to collect ratings and testimonials feedback related to your purchase and account status updates. If you'd rather not receive emails, please visit <a href="/members/emailpreferences">Manage Email Preferences</a> to change your preferences.</p>
+		<p><strong>Gift Certificates</strong><br />
+		If you purchase a gift certificate on our site, we will ask you to provide the recipient's name and e-mail address. The recipient information you provide us will only be used to deliver the gift certificate and for no other purpose.</p>
+		<p><strong>Affiliate Program</strong><br />
+		Our Affiliate Program is administered by Commission Junction. Any information collected by them is not governed by this Policy.</p>
+
+		<p><a name="3" class="privacy-header"><h3>Does eBags share the information it receives?</h3></a>
+		The following describes some of the ways that your personally identifiable information may be disclosed:</p>
+		<p><strong>Fulfillment</strong><br />
+		During the purchase process, we will share your information with certain intermediaries (e.g. UPS, APX, USPS, FedEx, Payment Processing Service Provider, Product Manufacturers) strictly to process and ship your order.</p>
+		<p><strong>Promotional Offers</strong><br />
+		At times we may send offers to select eBags subscribers on behalf of other parties. When we do this, we do not give that company your personally identifiable information without your consent. If you do not want to receive such communications, please visit <a href="/members/emailpreferences">Manage Email Preferences</a>.</p>
+		<p><strong>Agents</strong><br />
+		We employ other third parties to perform services or functions on our behalf in order to improve our site, merchandising, marketing and promotional efforts, communications or other services. Those third parties include authorized contractors, consultants and other companies working with us (collectively, "agents"). They only have access to information needed to perform their functions, and may not share any information with others or use it for any other purpose than improving eBags' services and offerings. If you have made a purchase on the eBags website, we may make your name and postal address available to pre-screened companies who have specific direct mail (e.g. catalog) product or service offers that we think may be of interest to you. We only share with these pre-screened companies the individual names and postal address of customers who have actually purchased products from us. If you do not want us to share your name and postal address information, simply follow the instructions in the section below titled "Accessing and Updating Your Information." We may also receive information about you from other sources (such as demographic information and purchase history) and add it to our information in order to make our marketing efforts more efficient.</p>
+		<p><strong>Advertisers</strong><br />
+		We work with third party advertising companies to serve and track our ads. These third parties may serve other cookies. Our advertising partners use the anonymous, non-personally identifying information they collect from our site, in the aggregate, to help us better market and serve our customers. In the event that our advertisers collect any personal information on our behalf, it will not be used by them or disclosed to any third parties.</p>
+		<p><strong>Third Party Sites</strong><br />
+		You may visit other web sites, through links on our site, who may collect, use and share your personal information in accordance with their own privacy policies. The information practices of those websites linking from or to our site are not covered by this Policy, and we encourage you to be very cautious before you disclose your personal information to others. If you register for eBags on another web site or use a web site providing a service for eBags, that web site may provide personal information about you and your transactions back to eBags. It is possible that eBags could merge with or be acquired by another business entity. Should such an event occur, you should expect that eBags would share some or all of your information in order to continue to provide such products and services. Notice of such an event will be posted and we will require that the new combined entity follow the practices disclosed in this Privacy Policy.</p>
+		<p><strong>Legal Requests</strong><br />
+		eBags will cooperate with law enforcement inquiries. eBags reserves the right to disclose any activities or information about you to law enforcement or other government officials as we, in our sole discretion, determine necessary or appropriate, in connection with an investigation of fraud, intellectual property infringements or other activity that is illegal or may expose us or you to legal liability.</p>
+		<p><a name="4" class="privacy-header"><h3>Accessing and Updating Your Information</h3></a>
+		You always have the opportunity to review and change the information you provide to us by logging into the site and entering in the new information yourself. You can edit your name, contact information and preferences by logging into the Your Account section of the site.</p>
+		<p>As a customer, subscriber or contest entrant, you will receive e-mail communications about new eBags products, special offers and requests for feedback. If you want to stop receiving our emails or to specify the communications you prefer to receive, you may unsubscribe or edit your profile at any time. You can do this through any of our emails, by visiting <a href="/members/emailpreferences">Manage Email Preferences</a> or by sending us an email at <a href="mailto:help@ebags.com">help@ebags.com</a>.</p>
+		<p>You may ask to have your account information removed from our active databases; however, because we keep track of past purchases, you cannot delete information associated with past purchases. Such information will be deactivated as soon as reasonably possible based on your account activity. Also, as a security measure we "back up" the data stored on our systems, and such prior information cannot be completely removed from our databases. Therefore, you should not expect that all of your personally identifiable information will be completely removed from our databases in response to your requests.</p>
+		<p><a name="5" class="privacy-header"><h3>Security</h3></a>
+		The eBags Security Pledge protects you while you shop at eBags so that you never have to worry about credit card safety. We guarantee that every transaction you make at eBags will be safe. This means you pay nothing if unauthorized charges are made to your credit card as a result of shopping at eBags. eBags' servers use Secure Sockets Layer (SSL), an encryption technology that works with all modern web browsers, so that only eBags can read a buyer's personal information. We reveal only the last five digits of your credit card numbers when confirming an order. However, we will transmit the entire credit card number to the appropriate credit card company during order processing.</p> 
+		<p><a name="6" class="privacy-header"><h3>A special note about children's privacy</h3></a>
+		You must be at least 18 years old to have our permission to use this site. We do not knowingly collect, use or disclose Personally Identifiable Information about visitors under 18 years of age. If you are a minor, you can use this service only in conjunction with your parents or guardians.</p>
+		<p><a name="7" class="privacy-header"><h3>Privacy Policy Changes</h3></a>
+		eBags reserves the right to change, modify, add or remove portions of this Policy at any time. Any changes will be posted in this document and will become effective immediately upon being posted unless we tell you otherwise.</p>
+		<p><a name="8" class="privacy-header"><h3>Contacting eBags</h3></a>
+		If you have further questions about eBags' Privacy Policy or comments on how we can improve the eBags shopping experience, please do not hesitate to email us at <a href="mailto:privacy@ebags.com">privacy@ebags.com</a>.</p>
+		<p>Need more help? You can refer to our Help Center, email one of our friendly Customer Help Specialists at <a href="mailto:help@ebags.com">help@ebags.com</a> or call 1-800-820-6126.</p>
+		<p>You may also write to us at:<br />
+		Privacy Manager<br />
+		eBags, Inc.<br />
+		5500 Greenwood Plaza Blvd.<br />
+		Suite 160<br />
+		Greenwood Village, CO 80111<br />
+        </p>
+		<p>We always enjoy hearing from you and appreciate your business.</p>
+	</div>
+
+    
+
+<div class="help-nav-panel hidden-xs col-sm-3 no-padding pull-left buffer-top-medium">
+<h2>Help Center Topics</h2>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="navHeadingOne">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavOne" aria-expanded="true" aria-controls="helpNavOne" ><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="your-orders-icon"></span>Your Orders</a>
+          </h4>
+        </div>
+        <div id="helpNavOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingOne">
+          <div class="panel-body">
+		    <ul class="help-subnav-panel">
+                <li><a href="https://www.ebags.com/orderhistory">Track Your Recent Orders</a></li>
+		        <li><a href="https://www.ebags.com/orderhistory">See Entire Order History</a></li>
+                <li><a href="https://www.ebags.com/orderhistory/guestorderlookup">Look up a Guest Order</a></li>
+			<li><a href="/help/cancelorchangeyourorder">Cancel or Change Your Order</a></li>
+			<li><a href="/help/sendgiftnotification">Send an Electronic Gift Notification</a></li>
+			<li><a href="/help/obtainreceipt">How to Obtain a Receipt</a></li>
+            <li><a href="/info/ratings/index.cfm?Fuseaction=View_Selection" class="last">Rate your Previous Purchases</a></li>
+		</ul>
+        
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="navHeadingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavTwo" aria-expanded="false" aria-controls="helpNavTwo" ><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="placing-an-order-icon"></span>Placing An Order</a>
+          </h4>
+        </div>
+        <div id="helpNavTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingTwo">
+          <div class="panel-body">
+		    <ul class="help-subnav-panel">
+			<li><a href="/help/howtoplaceyourorder">How to Place Your Order</a></li>
+			<li><a href="/help/productavailability">Product Availability</a></li>
+			<li><a href="/help/paymentmethods">Payment Methods</a></li>
+			<li><a href="/help/salestax">Sales Tax</a></li>
+			<li><a href="/help/orderconfirmpricing">Confirming Prices</a></li>
+			<li><a href="/help/whenwillmyorderarrive" class="last">When Will My Order Arrive?</a></li>
+		</ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="navHeadingThree">
+          <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavThree" aria-expanded="false" aria-controls="helpNavThree"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="shipping-icon"></span>Shipping</a>
+          </h4>
+        </div>
+        <div id="helpNavThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingThree">
+          <div class="panel-body">
+            <ul class="help-subnav-panel">
+			    <li><a href="https://www.ebags.com/orderhistory">Track Your Orders</a></li>
+			<li><a href="/help/shippingguidelines">US Shipping Guidelines</a></li>
+			<li><a href="/help/shippingrates">US Shipping Rates</a></li>
+            
+				<li><a href="/help/shoprunnershipping">ShopRunner 2-Day Shipping</a></li>
+			
+			<li><a href="/help/internationalshipping">International &amp; U.S Territory Shipping</a></li>
+            
+        </ul>
+          </div>
+        </div>
+      </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingFour">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavFour" aria-expanded="false" aria-controls="helpNavFour"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="returns-icon"></span>Returns</a>
+              </h4>
+            </div>
+            <div id="helpNavFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingFour">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="/help/returnpolicy">Returns Policy</a></li>
+                <li><a href="/orderhistory/eligiblereturns">Return an Item</a></li>
+	            <li><a href="/orderhistory/returnstatus">Print Return Label</a></li>
+            <li><a href="https://www.ebags.com/help/contactus">Receive Multiple Labels</a></li>
+            <li><a href="https://www.ebags.com/help/contactus">Can't print your label? Or need it sent US Mail?</a></li>
+			<li><a href="/help/shippingyourreturn">Packing &amp; Shipping Your Return</a></li>
+	            <li><a href="/orderhistory/returnstatus">Track Your Return Progress</a></li>
+                <li><a href="/orderhistory/guestreturnstatuslookup" class="last">Manage a Guest Order Return</a></li>
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingFive">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavFive" aria-expanded="false" aria-controls="helpNavFive"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="pricing-and-discounts-icon"></span>Pricing &amp; Discounts</a>
+              </h4>
+            </div>
+            <div id="helpNavFive" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingFive">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="/help/pricingconfirmpricing">Confirming Prices</a></li>
+			<li><a href="/help/discounttermsandconditions" class="last">Terms &amp Conditions for Discounts</a></li>
+            <li><a href="/help/priceguarantee" class="last">100% Price Guarantee</a></li>
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingSix">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavSix" aria-expanded="false" aria-controls="helpNavSix"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="product-information-icon"></span>Product Information</a>
+              </h4>
+            </div>
+            <div id="helpNavSix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingSix">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="http://blog.ebags.com/bag-glossary/luggage-glossary/">Luggage Glossary</a></li>
+			<li><a href="http://blog.ebags.com/bag-glossary/handbag-glossary/">Handbag Glossary</a></li>
+			<li><a href="http://blog.ebags.com/bag-glossary/backpack-glossary/">Backpack Glossary</a></li>
+			<li><a href="http://blog.ebags.com/bag-glossary/sports-bag-glossary/">Sport Bag Glossary</a></li>
+			<li><a href="/help/howtopackyourluggage">How to Pack Your Luggage</a></li>
+            <li><a href="/help/luggageBuyersGuide">Luggage Buyer's Guide</a></li>
+			<li><a href="/help/carryonrestrictions">Carry-on Restrictions</a></li>
+			<li><a href="http://video.ebags.com/">Video Library</a></li>
+			<li><a href="http://blog.ebags.com/">eBags Blog</a></li>
+			<li><a href="http://www.handbags.com/" class="last">Handbags.com</a></li>
+            <li><a href="/help/customeropinionsdefinition">Customer Opinions Definition</a></li>
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingSeven">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavSeven" aria-expanded="false" aria-controls="helpNavSeven"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="warranties-and-repairs-icon"></span>Warranties &amp Repairs</a>
+              </h4>
+            </div>
+            <div id="helpNavSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingSeven">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="/help/warrantyebags">eBags Brand</a></li>
+			<li><a href="/help/warrantyotherbrands" class="last">All Other Brands</a></li>
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingEight">
+              <h4 class="panel-title">
+                  <a class="collapsed" href="/help/wishlist" ><span class="my-favorites-icon"></span>My Favorites </a>
+              </h4>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingNine">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavNine" aria-expanded="false" aria-controls="helpNavNine"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="manage-your-account-icon"></span>Manage Your Account</a>
+              </h4>
+            </div>
+            <div id="helpNavNine" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingNine">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="https://www.ebags.com/members/forgotpassword">Forgot Password</a></li>
+			<li><a href="https://www.ebags.com/members/memberprofile">Edit My Account</a></li>
+			<li><a href="https://www.ebags.com/members/emailpreferences">Manage Email Preferences</a></li>
+			<li><a href="https://www.ebags.com/members/addressbook">Manage Address Book</a></li>
+			<li><a href="https://www.ebags.com/members/managepaymentmethods">Manage Stored Credit Card Info</a></li>
+                <li><a href="https://www.ebags.com/orderhistory">See Entire Order History</a></li>
+            <li>
+                
+                  <a href="https://www.ebags.com/members/index.cfm?fuseaction=login" class="last">Sign In</a>
+                
+            </li>            
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingTen">
+              <h4 class="panel-title"><a class="collapsed"  href="/help/contactus"><span class="contact-customer-care-icon"></span>Contact Customer Care </a></h4>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingEleven">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavEleven" aria-expanded="false" aria-controls="helpNavEleven"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="ebags-rewards-icon"></span>eBags Rewards</a>
+              </h4>
+            </div>
+            <div id="helpNavEleven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingEleven">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			        <li><a href="/rewards/">Join eBags Rewards</a></li>
+			        <li><a href="/help/rewardstermsandconditions">Terms &amp Conditions</a></li>
+			        <li><a href="/help/rewardsfaq">eBags Rewards FAQ</a></li>
+                    
+		        </ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingTwelve">
+              <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#helpNavTwelve" aria-expanded="false" aria-controls="helpNavTwelve"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="electronic-gift-certificates-icon"></span>Electronic Gift Certificates</a>
+              </h4>
+            </div>
+            <div id="helpNavTwelve" class="panel-collapse collapse " role="tabpanel" aria-labelledby="navHeadingTwelve">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+			<li><a href="/giftcertificates/create">Purchase an Electronic Gift Certificate</a></li>
+			<li><a href="/help/giftcertificatetermsandconditions">Overview, Terms &amp; Conditions</a></li>
+			<li><a href="/help/redeemgiftcertificate">Redeem Your Electronic Gift Certificate</a></li>
+                <li><a href="https://www.ebags.com/orderhistory/giftcertificatehistory">Check Gift Certificate Balance</a></li>
+			<li><a href="/help/giftcertificateproblems" class="last">Electronic Gift Certificate Problems</a></li>
+		</ul>
+              </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingThirteen">
+              <h4 class="panel-title">
+                  <a class="selected" data-toggle="collapse" data-parent="#accordion" href="#helpNavThirteen" aria-expanded="false" aria-controls="helpNavThirteen"><span title="Expand/Collapse" class="expandCollapse pull-right collapse">-</span><span title="Expand/Collapse" class="expandCollapse pull-right expand">+</span><span class="privacy-and-security-icon"></span>Privacy &amp Security</a>
+              </h4>
+            </div>
+            <div id="helpNavThirteen" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="navHeadingThirteen">
+              <div class="panel-body">
+                <ul class="help-subnav-panel">
+          <li><a href="/help/termsofuse">Terms of Use</a></li>
+          <li><a href="/help/privacypolicy" class="selected">Privacy Policy</a></li>
+          <li><a href="/help/oursecuritypledge" class="last">Our Security Pledge</a></li>
+		</ul>
+</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingFourteen">
+              <h4 class="panel-title">
+                    <a class="collapsed" href="/help/suggestions"><span class="suggestions-for-our-website-icon"></span>Suggestions for Our Website </a>
+              </h4>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="navHeadingFifteen">
+              <h4 class="panel-title">
+                  <a class="collapsed" href="https://www.ebags.com/help/shoprunner" ><img class="shopRunnerIconHelpNav" src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/icon-shoprunner?qlt=90,1&amp;wid=39&amp;align=0,1&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" width="24" height="24" border="0" alt="Shoprunner" />ShopRunner </a>
+              </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require(['jquery'],function($) {
+        $(document).ready(function() {
+            $('.help-nav-panel .panel')
+            .on('shown.bs.collapse',function(e) {
+                $('.selectedSingle').addClass('collapsed');
+            })
+            .on('hidden.bs.collapse',function(e) {
+                if(!$('.panel-collapse').hasClass('in'))
+                {
+                    $('.selectedSingle').removeClass('collapsed');
+                }
+            })
+        });
+    });
+</script>
+
+
+	<script type="text/javascript">
+	    require(['jquery'], function ($) {
+	        $("#lnkPrivacyPolicyVerisign").colorbox({ href: 'https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.ebags.com&lang=en', close: '', opacity: 0.6, scrolling: false });
+	    });
+	</script>
+	
+
+
+            
+    
+
+        </div>
+        
+
+        
+
+
+<div class="footerOuterCon">
+    <div class="footerInnerCon clearfix">
+        <div class="footerSection">
+            <div class="footerSectionInner">
+                 
+                <div id="fsEmail">
+                    <h4>eBags Email Sign Up</h4>
+                </div>
+                  
+                <div id="fsSocial" class="fsMobileButton">
+                    <h4>Social</h4>
+                </div>
+                <div id="for-fsSocial" class="fsMobileMenuOpen slide-group-footer">
+                    <div class="yourEmailCon">
+                        
+
+<form class="emailSignUpForm clearfix" action="/search" method="GET" id="quicksignup">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="email" id="txtEmailAddress" class="form-control input-sm" placeholder="Your Email" autocomplete="off" required style="font-size:12px;" />
+            <div class="input-group-btn">
+                <input class="btn btn-sm btn-action-secondary" type="submit" value="Go" />
+            </div>
+        </div>
+        <div class="input-group checkboxFooter">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="chkSubscribeToStealsOfTheDay" checked="checked" /> Also get Steals of the Day alerts
+                </label>
+            </div>
+        </div>
+        <div class="errorDisplay" style="display:none">Please enter a valid email address (e.g. name@domain.com)</div>
+    </div>
+    <div class="successDisplay" style="display:none" >
+        <span style="font-weight:bold; color:#063b69; font-size:14px;">Thanks for becoming an<br />eBags Insider!</span>
+        <span>Look for your exclusive email savings.</span>
+    </div>
+</form>
+
+<script type="text/javascript">
+    require(['get!smarterRemarketer/smarterRemarketer']);
+    
+    require(['jquery', 'get!googleTagManager/eBagsGtm'], function ($, eBagsGtm) {
+        $(document).off("submit", "#quicksignup"); //remove any duplicate submit event wireups
+        $(document).on("submit", "#quicksignup", function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '/Site/SubscribeEmailWithStealOfTheDayAjax',
+                cache: false,
+                type: "POST",
+                dataType: "json",
+                data: {
+                        "AnchorTag": "FT",
+                        "SubscribeEmailServiceModel.EmailAddress": $("#txtEmailAddress").val(),
+                        "SubscribeEmailServiceModel.SubscriptionType": "Site",
+                        "SubscribeToStealsOfTheDay": $("#chkSubscribeToStealsOfTheDay").attr('checked') ? true : false
+                    },
+                success: function (data) {
+                    if (data.SuccessfullySubscribed) {
+                        $(".emailSignUpForm .errorDisplay").hide();
+                        $(".emailSignUpForm .submitControls").hide();
+                        $(".emailSignUpForm .successDisplay").show();
+                        eBagsGtm.FireRegistrationEvent('eBagsEmailSubscribe');
+                    }
+                    else {
+                        $(".emailSignUpForm .errorDisplay").show();
+                        $(".emailSignUpForm .submitControls").show();
+                        $(".emailSignUpForm .successDisplay").hide();
+                    }
+                }
+            });
+        });
+
+    });
+
+</script>
+                    </div>
+                    <div class="socialRow">
+                        <a href="http://www.facebook.com/eBags" target="_blank" class="socialFacebook socialIconNew" data-text="Like Us on Facebook">Facebook</a>
+                        <a href="http://twitter.com/eBags" target="_blank" class="socialTwitter socialIconNew" data-text="Follow Us on Twitter">Twitter</a>
+                        <a href="http://pinterest.com/ebags/" target="_blank" class="socialPinterest socialIconNew" data-text="Follow Us on Pinterest">Pinterest</a>
+                        <a href="http://blog.eBags.com" target="_blank" class="socialBlog socialIconNew" data-text="Read Our Blog">Blog</a>
+                        <a href="http://video.eBags.com/" target="_blank" class="socialVideo socialIconNew" data-text="Watch Our Videos">Video</a>
+                   </div>
+                   
+<span id="extole-zone-global_footer" data-extole-location="below" data-signed-in="false">
+    <script type="extole/widget">{"zone":"global_footer"}</script>
+</span>
+ 
+                </div>
+            </div>
+        </div><div class="footerSection">
+            <div class="footerSectionInner">
+                <div id="fsCustomer" class="fsMobileButton">
+                    <h4>Customer Support</h4>
+                </div>
+                <div id="for-fsCustomer" class="fsMobileMenu slide-group-footer">
+                    <a href="https://www.ebags.com/orderhistory">Track Your Order</a>
+                    <a href="https://www.ebags.com/orderhistory/eligiblereturns">Returns</a>
+                    <a href="/help/contactus">Contact Us</a>
+                    <a href="/help">Help Center</a>
+                    <a href="/help/priceguarantee">100&#37; Price Guarantee</a>                    
+                    <a href="/giftcertificates/create" class="mobileOnly">Gift Card</a>
+                </div>
+            </div>
+        </div><div class="footerSection lastChild-mobile">
+            <div class="footerSectionInner">
+                <div id="fsCompany" class="fsMobileButton">
+                    <h4>Company Info</h4>
+                </div>
+                <div id="for-fsCompany" class="fsMobileMenu slide-group-footer">
+                    <a href="/aboutus/ourcompany">About eBags</a>
+                    <a class="hideMobile" href="/buyingguides/">eBags Buying Guides</a>
+                    <a href="/aboutus/careers">Careers</a>
+                    <a href="/rewards/accountsummary">eBags Rewards</a>
+                    <a href="http://www.ebagscorporate.com/" data-pl='ftr_corpsales_s02_l' class="mobileOnly">Corporate Sales</a>
+                </div>
+            </div>
+        </div><div class="footerSection hidden-mobile">
+            <div class="footerSectionInner">
+                <h4>eBags <span class="giftBlue">Gift Card</span></h4>
+                <p>Who doesn't want a bag?</p>
+                <a href="/giftcertificates/create" class="giftCardIcon"><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/giftcard-footer-sm?qlt=90,1&amp;wid=134&amp;align=0,1&amp;yocs=2i_&amp;yoloc=us" border="0" alt="eBags Gift Card" class="img-responsive responsive-img" /></a>
+            </div>
+        </div>
+        <div class="footerSection lastChild">
+            <div class="footerSectionInner">
+                <h4>eBags Corporate Sales</h4>
+                <p>Logo Decoration & Volume Orders</p>
+                <a href="http://www.ebagscorporate.com/" data-pl='ftr_corpsales_s01_l' class="corporateSalesIcon" ><img src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/your-logo-here-sketch?wid=137&amp;fmt=png-alpha&amp;yocs=2i_&amp;yoloc=us" class="img-responsive responsive-img" ></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-center gray">
+    <div>
+        <h5><strong>#1 Online Bag Retailer Since 1999</strong></h5>
+        <p>3,178,700 Reviews&nbsp;&nbsp;|&nbsp;&nbsp;23,897,878 Bags Shipped</p>
+    </div>
+    <p>
+        <a target="_blank" href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.ebags.com&lang=en" id="eb_verisign" data-popup="width=525,height=450,resizable=no,scrollbars=yes,status=no,left=111,top=111"><img alt="VeriSign Secured" src="http://cdn-us-ec.yottaa.net/54636bb786305e35ea00040e/ca3ea000f77501321219123dfe2baf36.yottaa.net/v~c.74/is/image/img01/icon/verisignseal?qlt=90,1&amp;wid=100&amp;align=0,1&amp;yocs=_&amp;yoloc=us" width="100" height="52" ></a>
+        <span id="gts-c" ></span>
+    </p>
+    <p><a href="/help/termsofuse">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/help/privacypolicy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/affiliates/">Affiliate Program</a><span class="hidden-xs">&nbsp;&nbsp;|&nbsp;&nbsp;</span><br class="visible-xs" /><a href="/help/index.cfm?fuseaction=vendor">Vendor Inquiries</a>&nbsp;&nbsp;|&nbsp;&nbsp;Contact Us: 1-800-820-6126</p>
+    <p class="smallPrint">All other trademarks not owned by eBags.com or its subsidiaries that appear on this site are the property of their respective owners.</p>
+    <p class="smallPrint">eBags USA &copy; 1999 - 2015 eBags, Inc. All rights reserved.<!-- INSERT BY TRANSFORMER. SELECTOR=p[*eBags USA &copy; 1999],LOCATION=append -->Y</p>
+</div>
+<script type="text/javascript">
+    require(['views-site-footer']);
+</script>
+
+    </div>
+    
+    
+        <span id="mystid22-64"></span>
+    
+        <span id="mystid23-66"></span>
+    
+
+    
+
+<script type="text/javascript">
+    require(["jquery"], function ($) {
+        if ($.browser.msie && $.browser.version === "6.0") {
+            $.colorbox({ href: "/site/browserupgrade", close: '', opacity: 0.6 });
+        }
+    });
+</script>
+
+
+<script type="text/javascript">
+    require(["get!core/webTrackedVisitor"], function (webTrackedVisitor) {
+        webTrackedVisitor.log();
+    });
+</script>
+
+    <img src="//tracking.searchmarketing.com/welcome.asp?SMCID=261&amp;x=" width="1" height="1" border="0" >
+
+
+<script type="text/javascript">
+var gts = gts || [];
+
+gts.push(["id", "8047"]);
+
+gts.push(["google_base_subaccount_id", "7835"]);
+gts.push(["google_base_country", "US"]);
+gts.push(["google_base_language", "EN"]);
+gts.push(['gtsContainer', 'gts-c']);
+
+(function() {
+var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+var gts = document.createElement("script");
+gts.type = "text/javascript";
+gts.async = true;
+gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(gts, s);
+})();
+</script>
+
+
+<style type="text/css"> 
+    .modal-header {border-bottom:none;}
+    input.formbutton {color:#fff !important; background-color:#063b69; border:0px; width:100px; height:38px;}
+    #emailAcquisitionModal .btn:hover, #emailAcquisitionModal .btn:focus {color:#fff !important; text-decoration:none;}
+    #emailAcquisitionLightboxLightBoxEmail { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    #emailAcquisitionModal .checkbox {margin-top:10px;}
+</style>
+ 
+
+<div id="emailAcquisitionModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header header">
+                <span class="modalRemove glyphicon glyphicon-remove-circle pull-right" data-dismiss="modal" aria-hidden="true"></span>
+            </div>
+            <div class="modal-body">
+                <div data-bind="visible: state() == 'form'">
+                    <div class="email-header">Extra 15% Off &amp; Free Shipping over $49</div>
+                    <span class="getExclusive">Sign up for eBags Insider Emails!</span>
+                        <div class="input-container">
+                            <div class="input-group email-input">
+                                <input type="text" id="emailAcquisitionLightboxLightBoxEmail" placeholder="Enter your email..." class="form-control input-sm box-sizing" data-bind="value: emailAddress, css: emailAddressValidityCssClass" />
+                                <div class="input-group-btn">
+                                    <input type="button" id="emailAcquisitionLightboxLightSubmit" value="Sign Up" class="btn btn-sm btn-action-secondary" data-bind="click: submit" />
+                                </div>
+                            </div>
+                        </div>
+                    <div class="input-container">
+                        <span class="error-text" data-bind="visible: emailAddressValid() == false">Please enter a valid email address (e.g. name@domain.com)</span>
+                    </div>
+                    <div class="input-container">
+                        <div class="getAlerts checkbox text-left">
+                            <label>
+                                <input id="emailAcquisitionLightboxLightBoxSignUp" type="checkbox" data-bind="checked: stealOfTheDayAlerts" />
+                                Also Get Steal of The Day Alerts
+                            </label>
+                        </div>  
+                    </div>                      
+
+                    <div data-bind="visible: displayError">We're sorry but there was an issue processing your request</div>
+                </div>
+                <div data-bind="visible: state() == 'confirmation'">
+                    <div class="thanksFor">
+                        Check your inbox
+                        <br />
+                        for your coupon!
+                    </div>
+                    <div class="emailSavings buffer-bottom-medium">Thanks for becoming an eBags Insider.</div>
+                </div>
+                <div class="privacyPol">
+                    <p class="small">We will not rent or sell your email address. View <a href="/help/privacypolicy" target="_blank">eBags Privacy Policy</a></p>
+                </div>
+                <div class="privacyPol">
+                    <p class="small">*Prices as marked. Certain brand restrictions apply.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require(['get!emailLightbox/bootstrapEmailAcquisitionModal', 'ko', 'jquery'], function (BootstrapEmailModal, ko, $) {
+        $(function() {
+            var bootstrapEmailModal = new BootstrapEmailModal({ displayOnPageLoad: 'False', emailRegexPattern: '^[a-zA-Z0-9_\+-]+(\.[a-zA-Z0-9_\+-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.([a-zA-Z]{2,4})$'});
+
+            bootstrapEmailModal.init();
+
+            ko.applyBindings(bootstrapEmailModal, document.getElementById('emailAcquisitionModal'));
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    require(['jquery', 'bootstrap'], function ($) {
+        $(function() {
+            $('.eBagsPopover').popover({ html: true });
+            require(['get!bootstrap/eBagsPopover']);
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    require(['get!core/marketingInterceptEventPublish']);
+</script>
+<div class="modal fade" id="pageModal" tabindex="-1" role="dialog" aria-labelledby="pageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-header modal-header-remote">
+            <span type="button" class="modalRemove glyphicon glyphicon-remove-circle pull-right" data-dismiss="modal" aria-hidden="true"></span>
+        </div>
+        <div class="modal-content">
+            <div class="modal-content-inner"></div>
+        </div>
+    </div>
+</div>
+  <!-- INSERT BY TRANSFORMER. SELECTOR=body,LOCATION=append --><script>
+
+require(['jquery', 'get!core/eBags'], function($, eBags) {
+        $(function () {
+          
+           //Will load lazy the menu images.
+            $(window).load(function(){
+                  yo_configureAfterShock({scan: ['img']});
+                  yo_scanTags();
+            });
+ 
+          //lazy load certona images
+          if (document.location.href.indexOf("/category/") == -1){
+             eBags.subscribe("/productBlock/dataDisplayed", function(){
+                  yo_configureAfterShock({scan: ['img']});
+                  yo_scanTags();
+             });
+           }
+ 
+        });
+});
+
+</script></body>
+</html>
