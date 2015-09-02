@@ -1,1 +1,432 @@
- 
+<!--  -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+
+<script type="text/javascript">
+	var cbd = cbd || {};
+	cbd.pagePerformance = {};
+	cbd.pagePerformance.headStart = new Date().getTime();
+	
+	var _cbdNonRiaPageReady = false;
+</script>
+
+<style type="text/css"> 
+   .hidePageIfJSdisabled{ display: none; } 
+</style> 
+
+<script type="text/javascript"> 
+	// Delete rule hiding page for IE
+	if (document.styleSheets[0].rules)
+	{ 
+		   document.styleSheets[0].removeRule(0);
+	}
+	// ...for Firefox/Safari/Opera
+	else if (document.styleSheets[0].cssRules)
+	{ 
+		   document.styleSheets[0].deleteRule(0);        
+	}			
+</script>
+<script type="text/javascript">
+var plsVersionQueryStr = '?20150610|113257',
+	_cbdImagePath = 'https://static.vgcontent.info/ret/hnw/web/images/',
+	_cbdFlashPath = '/web/flash/',
+	_cbdContentDomain = 'https://static.vgcontent.info/ret/hnw',
+	_cbdCommonPath = '/web/cbd/common/',
+	_cbdYuiFilterExt = '-min',
+	_cbdYuiComboBase = 'https://static.vgcontent.info/web/common/c?',
+	_cbdYuiComboBaseBackup = 'https://static-origin.vgcontent.info/web/common/c?',
+	_cbdYuiRoot = '/web/common/yui/3.4.0/build/',
+	_cbdForceDomain = null;
+	
+</script>
+<base href="https://personal.vanguard.com"/><!-- cell id is: EV1_01 -->
+<script type="text/javascript">
+var cbd = cbd || {};
+cbd._cbdContextRoot = '/us/' //cbd._cbdContextRoot is used in TeaLeaf.js
+window._cbdContextRoot = cbd._cbdContextRoot;
+
+cbd.url = cbd.url || {};
+cbd.url._cbdWebContextRoot = '/web';
+window._cbdWebContextRoot = cbd.url._cbdWebContextRoot;
+
+cbd.page = cbd.page || {};
+cbd.page._plsVersionQueryStr = plsVersionQueryStr;
+cbd.page._cbdImagePath = _cbdImagePath;
+cbd.page._cbdFlashPath = _cbdFlashPath;
+cbd.page._cbdContentDomain = _cbdContentDomain;
+cbd.page._cbdCommonPath = _cbdCommonPath;
+cbd.page._cbdYuiFilterExt = _cbdYuiFilterExt;
+cbd.page._cbdYuiComboBase = _cbdYuiComboBase;
+cbd.page._cbdYuiComboBaseBackup = _cbdYuiComboBaseBackup;
+cbd.page._cbdYuiRoot = _cbdYuiRoot;
+cbd.page._cbdForceDomain = _cbdForceDomain;
+cbd.page._viewContext = 'faces';
+
+var APP_CONTEXT_ROOT = {};
+var CONTEXT_ROOT_SECURE = 'CONTEXT_ROOT_SECURE';
+APP_CONTEXT_ROOT[CONTEXT_ROOT_SECURE] = '/us/';
+var CONTEXT_ROOT_PUBLIC = 'CONTEXT_ROOT_PUBLIC';
+APP_CONTEXT_ROOT[CONTEXT_ROOT_PUBLIC] = '/us/';
+var CONTEXT_ROOT_TRANS = 'CONTEXT_ROOT_TRANS';
+APP_CONTEXT_ROOT[CONTEXT_ROOT_TRANS] = '/us/investnow/';
+
+
+function jsCBDgetContextRoot(app)
+{	
+	var GS_APP_CONTEXT_ROOT = APP_CONTEXT_ROOT[app];
+	
+	if(GS_APP_CONTEXT_ROOT != null)
+	{
+		return GS_APP_CONTEXT_ROOT;
+	}
+	
+	return _cbdContextRoot;
+}
+</script>
+
+<!--[if lte IE 9]>
+		
+			<script>
+				(function() {
+					if(!/*@cc_on!@*/0) return; // Conditional compilation feature of IE
+					var elementTags = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),
+					    elementTagsLength = elementTags.length,
+					    i;
+					for(i=0;i<elementTagsLength;i++) { 
+						document.createElement(elementTags[i]);
+					}
+				})();
+			</script>
+	<![endif]-->
+
+<script type="text/javascript" src="https://static.vgcontent.info/ret/hnw/web/vendorlibs/tealeaf/TeaLeaf.js?20150610|113257"></script>
+<link rel="stylesheet" href="https://static.vgcontent.info/ret/hnw/web/stylesheet/VGI-nrg.css?20150610|113257"/>
+		<link rel="stylesheet" href="https://static.vgcontent.info/ret/hnw/web/stylesheet/RIA-nrg.css?20150610|113257" type="text/css" />
+<link rel="stylesheet" href="https://static.vgcontent.info/ret/hnw/web/stylesheet/VGI-common-nrg-fw-ca.css?20150610|113257" type="text/css" />
+		<link rel="stylesheet" href="https://static.vgcontent.info/ret/hnw/web/cbd/common/globalheader/ghBase.css?20150610|113257" type="text/css" />
+	<meta name="viewport" content="initial-scale=1.0,width=device-width"/>
+		<script type="text/javascript">
+var _cbdHistory = false;
+
+var isNearGen = true;
+cbd.page.isResponsiveCapable = cbd.page.isResponsive = false;
+</script>
+
+<script id="yuiBaseModules" type="text/javascript" src="https://static.vgcontent.info/web/common/c?/web/common/yui/3.4.0/build/yui/yui-min.js&amp;/web/common/yui/3.4.0/build/oop/oop-min.js&amp;/web/common/yui/3.4.0/build/features/features-min.js&amp;/web/common/yui/3.4.0/build/dom-core/dom-core-min.js&amp;/web/common/yui/3.4.0/build/event-custom-base/event-custom-base-min.js&amp;/web/common/yui/3.4.0/build/dom-base/dom-base-min.js&amp;/web/common/yui/3.4.0/build/selector-native/selector-native-min.js&amp;/web/common/yui/3.4.0/build/selector/selector-min.js&amp;/web/common/yui/3.4.0/build/node-core/node-core-min.js&amp;/web/common/yui/3.4.0/build/node-base/node-base-min.js&amp;/web/common/yui/3.4.0/build/event-base/event-base-min.js&amp;/web/common/yui/3.4.0/build/event-delegate/event-delegate-min.js&amp;/web/common/yui/3.4.0/build/node-event-delegate/node-event-delegate-min.js&amp;/web/common/yui/3.4.0/build/pluginhost-base/pluginhost-base-min.js&amp;/web/common/yui/3.4.0/build/pluginhost-config/pluginhost-config-min.js&amp;/web/common/yui/3.4.0/build/node-pluginhost/node-pluginhost-min.js&amp;/web/common/yui/3.4.0/build/dom-style/dom-style-min.js&amp;/web/common/yui/3.4.0/build/dom-screen/dom-screen-min.js&amp;/web/common/yui/3.4.0/build/node-screen/node-screen-min.js&amp;/web/common/yui/3.4.0/build/node-style/node-style-min.js&amp;/web/common/yui/3.4.0/build/classnamemanager/classnamemanager-min.js&amp;/web/common/yui/3.4.0/build/event-custom-complex/event-custom-complex-min.js&amp;/web/common/yui/3.4.0/build/attribute-base/attribute-base-min.js&amp;/web/common/yui/3.4.0/build/base-base/base-base-min.js&amp;/web/common/yui/3.4.0/build/plugin/plugin-min.js&amp;/web/common/yui/3.4.0/build/event-synthetic/event-synthetic-min.js&amp;/web/common/yui/3.4.0/build/event-focus/event-focus-min.js&amp;/web/common/yui/3.4.0/build/event-touch/event-touch-min.js&amp;/web/common/yui/3.4.0/build/json-parse/json-parse-min.js&amp;/web/common/yui/3.4.0/build/json-stringify/json-stringify-min.js"></script>
+
+<script type="text/javascript" src="/web/cbd/common/rollup/cbdcommon.js?20150610|113257"></script>
+<script type="text/javascript" src="https://static.vgcontent.info/ret/hnw/web/javascript/vg2.js?20150610|113257"></script>
+<script type="text/javascript" src="https://static.vgcontent.info/ret/hnw/web/javascript/vg.js?20150610|113257"></script>
+
+<script type="text/javascript">
+js_cbdServer = '';
+var _cbdContentDomain = 'https://static.vgcontent.info/ret/hnw';
+jsCBDinitGlobals();
+</script>
+
+<script id="cbdcommon-webAnalytics" type="application/json">
+        {"page_data":{"siteDescriptor":"retail","reportSuiteIds":["vanguard<siteDescriptor><environment>","vanguardcrosssite<environment>"],"environment":"prod","cookiePrefix":"retail","channel":"retail:web"},"visitor_data":{"crewSPOID":"","crewFlag":"","segment":"","coverageRole":"","age":"","planNumber":"","responsibilityCenter":"","peRelationship":"","region":"","sponsorSegment":"","industryCode":"","department":"","clientNumber":"","contactTier":"","planDetails":"","securityRole":"","contactRole":"","salesChannel":"","assetsUnderManagement":"","sPOID":"","marketingSegment":"","siebelContactID":"","businessLine":"","companyTier":"","doNotTrackPlan":"","tenure":"","vbsStatus":"","siebelCompanyNumber":""},"dfaConfig":{"maxDelay":"750","enabled":true,"SPOTID":"844392"}}</script>
+    <script id="cbdcommon-webAnalyticsHelper" type="application/json">
+        {"pageName":{"siteIdentifier":"retail","platform":"web","country":"us","language":"en"}}</script>
+<script type="text/javascript" src='https://static.vgcontent.info/ret/hnw/web/appMeasurement/AllAppMeasurement.min.js?20150610|113257'></script>
+<meta name="DCSext.poid" content=""/>
+<meta name="WT.seg_1" content=""/>
+<meta name="WT.seg_2" content=""/>
+<meta name="WT.seg_3" content=""/>
+<meta name="WT.seg_4" content=""/>
+<meta name="WT.seg_5" content=""/>
+<meta name="WT.seg_6" content=""/>
+<meta name="WT.z_lv1" content=""/>
+<meta name="WT.ServiceAgreement" content=""/>
+<meta name="WT.SalesAssociate" content=""/>
+<meta name="WT.SalesExecutive" content=""/>
+<meta name="WT.UserExperience" content=""/>
+<meta name="WT.BusinessFocus" content=""/>
+<meta name="DCSext.PartStatus" content=""/>
+<meta name="WT.rememberMe" content=""/>
+<meta name="DCSext.PartWebRegStatus" content=""/>
+<meta name="DCSext.hybridDeviceType" content=""/>
+<meta name="WT.busMktSegment" content=""/>
+<meta name="WT.companyTier" content=""/>
+<meta name="WT.contactTier" content=""/>
+<meta name="WT.selfId" content=""/>
+<meta name="WT.matchedContactRowId" content=""/>
+<script type="text/javascript">
+	var gDomain = 'watag.vanguard.com';
+	var gDcsId  = 'dcsp306jac2byeyp3cifb566v_6x5h';
+	var wtActive = true;
+</script>
+<script type="text/javascript" src="https://static.vgcontent.info/ret/hnw/web/vendorlibs/webusage/webUsage.js?20150610|113257"></script>
+
+<script type="text/javascript">
+	var _tag = new WebTrends();
+	_tag.dcsGetId();
+</script>
+
+<script type="text/javascript">
+function jsCBDclearLogonMetaTag()
+{
+	// clear from meta tags
+	var head = document.getElementsByTagName('head')[0];
+	var metaArray =  head.getElementsByTagName('meta');
+	for (var i = 0; i < metaArray.length; i++)
+	{
+		if (metaArray[i].name == "WT.z_lv1" && metaArray[i].content == "1")
+		{
+			metaArray[i].content = "";
+		}
+	}
+	
+	// clear from WT object
+	if(_tag.WT["z_lv1"])
+	{
+		_tag.WT["z_lv1"] = "";
+	}
+}
+</script>
+
+<script type="text/javascript">
+if (ie6)
+{
+	try
+	{ 
+		//prevents disruption of progress animation in IE6.
+        document.execCommand("BackgroundImageCache", false, true);
+	} 
+	catch (e) {} 
+}
+</script>
+
+<SCRIPT type="text/VBScript">
+<!--
+Function checkAdobeIE()
+	On error resume next
+        checkAdobeIE = false
+	checkAdobeIE =  checkControl( "PDF.PdfCtrl.1") Or checkControl( "PDF.PdfCtrl.5") Or checkControl( "PDF.PdfCtrl.6") Or checkControl( "AcroExch.Document") Or checkControl( "AcroPDF.PDF.1")
+End Function
+
+Function checkFlashIE()
+        On error resume next
+	checkFlashIE = false
+	For flashVersion = 9 to 10
+		If checkControl( "ShockwaveFlash.ShockwaveFlash." & flashVersion ) Then
+			checkFlashIE = true
+		End If
+	Next
+End Function
+
+Function checkControl(Byval progId )
+	On error resume next
+        checkControl = false
+	checkControl = IsObject( CreateObject( progId ) )
+End Function
+-->
+</SCRIPT>
+<script type="text/javascript">
+jsCBDsetDomain();
+</script>	
+<script type="text/javascript">
+<!--
+function jsCBDgetUrlPrefix()
+{
+	return 'https://personal.vanguard.com';
+}
+cbdcommon.url.prefix = jsCBDgetUrlPrefix();
+
+function jsCBDadobeWarning()
+{
+}
+//-->
+</script>
+
+<link rel="stylesheet" href="https://eus.vanguard.com/global-components/1.0.3/css/vgcHeaderFooterDesktopOnly.css" type="text/css" />   
+<link rel="stylesheet" href="https://static.vgcontent.info/ret/hnw/web/stylesheet/2.css?20150610|113257" type="text/css">
+<!--DCR Name: \SiteWide\LglDocs\SWLglPrivacyPolicyContent -->
+
+
+<TITLE>Vanguard - Privacy Policy  </TITLE>
+<META name="DCSext.pageid" content="SWLglPrivacyPolicyContent">
+
+		<META name="ROBOTS" content="NOINDEX">
+<META name="DESCRIPTION" content="Privacy policy for Vanguard.com.">
+<script type="text/javascript">
+		function jsFundsInvStartTrans(url) {
+			url = jsCBDaddQueryStringParam(url, CBD_INIT_TRANS_URL,
+					escape(jsCBDstripServerName(window.location.href)));
+			jsCBDgoToUrl(url, null);
+		}
+	</script><script type="text/javascript">
+
+function _cbdOnLoad()
+{
+	//	Delaying the call to fix a race condition with the modem value not being set correctly.
+	setTimeout( _cbdCheckConnectionSpeed, 1000 );
+	
+	_cbdNonRiaPageReady = true;
+	
+	// fixed width near Gen changes
+    _cbdAdjustFixedWidthModalPop();
+    
+	jsCBDrewriteUrlsForGH();
+		
+	cbdInitChatPosX = null;
+cbdInitChatPosY = null;
+cbdInitChatWidth = null;
+cbdInitChatHeight = null;
+
+	
+	cbd.pagePerformance.pageResponsive = new Date().getTime();
+	
+	vg.comp.initFloodlightFrame();
+	
+	vg.comp.initWebAnalytics();
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" id="body"
+
+class="vdp "
+onFocus="jsCBDdoModalCB()"
+onClick="jsCBDdoModalCB(); jsCBDcloseFlyouts(event);"
+onMouseUp="jsCBDdoModalCB();jsCBDcloseAutoSuggest(event);"
+onMouseDown="jsCBDdoModalCB();"
+onScroll="jsCBDdoModalCB();"
+onUnload='jsCBDunloadCB()'
+onLoad='_cbdOnLoad()'
+>
+<noscript>
+<table width="100%" cellpadding="5" style="font: 75% Verdana; color: #903; margin-bottom: 10px; background-color: #F9EAAF;">
+  <tr>
+    <td width="15px"><img src="https://static.vgcontent.info/ret/hnw/web/images/icons/ind_error.gif" align="absmiddle" width="15" height="15"/></td>
+    <td><b>Warning: Vanguard.com will not work properly with <a href="https://www.vanguard.com/web/corpcontent/scatJavaScriptError.html"> JavaScript disabled!</a></b></td>
+  </tr>
+</table>
+</noscript>
+<noscript>
+    <img alt="" border="0" name="DCSIMG" width="1" height="1" src="http://watag.vanguard.com/dcsp306jac2byeyp3cifb566v_6x5h/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.0" class="displayNone" />
+</noscript>
+<noscript>
+    <img src="https://vanguard.d2.sc.omtrdc.net/b/ss/vanguardretailprod,vanguardcrosssiteprod/1/H.26.2--NS/0" height="1" width="1" border="0" alt="" class="displayNone" />
+</noscript>    
+<div id="vg0" class="vg0 hidePageIfJSdisabled" onclick="javascript:void(0)">
+<div style="height:0px;width:0px;visibility:hidden">
+<input type="hidden" id="CBD_STATE_CHANGED" value="0" />
+</div>
+
+<!--CBD: GlobalHeaderTag-->
+<div id='vgc-globalHeader' data-current-site='P' data-vgc-data-endpoint='https://eus.vanguard.com/site-taxonomy/?rel=personal' data-logged-on='false' data-vgc-alt-banner="false" data-showWelcomeMessage='false' data-vgc-primary-silo='CBD_NAV_NONE' data-vgc-secondary-silo=''><div class='vgc-navBar'><div class='vgc-navBarContainer'><div class='vgc-logo'><a href='#{Config.investorSite}/home' alt='Vanguard' title='Home'><span class='vgc-backupText'>Vanguard home</span></a></div></div></div><noscript><div class='vgc-noJSWarning'><div><h2>Warning</h2><p>This page won't work properly unless JavaScript is enabled.</p></div></div></noscript></div><!--End CBD--><div id="main">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td>
+<div class="pageHead">
+<div class="pageHeadContent"><!--PPE:Page_Header-1--><h1><a id="privpolicy" class="bookmark" title="privpolicy" name="privpolicy" id="privpolicy" ></a><a id="top" class="bookmark" title="top" name="top" id="top" ></a>Vanguard's privacy policy</h1><!--End PPE--></div>
+</div>
+</td>
+<td align="right">
+</td>
+</tr>
+</table>
+<!-- table with colL, colM and colR --> 
+<table id="columnContainer" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+
+<td valign="top" id="colM">
+<div id="colMcontent">
+
+<!--PPE:Content-1--><table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td></td>
+<td valign="top" align="right"><a id="SWLglPrivacyPolicyContent001" data-vg-handler="true" data-vg-click="jsCBDPrintPage(true);return false" href="#"><img title="Print page"  style="border:none" alt="Print page" title="Print page" src="https://static.vgcontent.info/ret/hnw/web/images/icons/act_print.gif" width="22" height="22" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><i>The following privacy policy is provided by the Vanguard funds, The Vanguard Group, Inc., Vanguard Marketing Corporation, Vanguard Advisers, Inc., Vanguard Fiduciary Trust Company, and Vanguard National Trust Company.</i></p>
+<p><b>Our commitment to you</b></p>
+<p>As a Vanguard investor, you have entrusted to our care not only your hard-earned money but your personal and financial data as well. We recognize that your relationship with us is based on trust, and that you expect us to act responsibly and in your best interests. Because your personal and financial data are your private information, we hold ourselves to the highest standards in their safekeeping and use.</p>
+<p><b>This means, most importantly, that we do not sell client or prospective client information&#8212;whether it is your personal information or the fact that you are or may become a Vanguard client&#8212;to anyone.</b></p>
+<p>Instead, we use your information primarily to complete transactions that you request or to make you aware of other financial products and services that we offer or sponsor.</p>
+<p><b>The personal information we collect about you</b></p>
+<p>You provide personal information when you complete a Vanguard account application. (If you enter information in an online application, we may store the information even if you don't complete or submit the application.) You also provide personal information when you request literature or a transaction that involves Vanguard or one of the Vanguard-affiliated companies.</p>
+<p>In addition to personal information you provide to us, we may receive information about you that you authorize third parties to provide to us. We also may obtain personal information from third-party service providers in order to verify your identity, to prevent fraud, or to help us identify products and services that may benefit you. Personal information collected from any source may include, among other things, your name and address, Social Security or taxpayer identification number, date of birth, assets, income, account balances, investment activity, and accounts at other institutions. The information we collect about you may be transferred to or stored by Vanguard or our service providers in the United States or elsewhere, as permitted by law.</p>
+<p><b>How we handle your personal information</b></p>
+<p>We do not sell information about current or former clients or their accounts to third parties. Nor do we share personal information about clients or prospective clients, except when needed to complete transactions at your request or to make you aware of related financial products and services that we offer. Here are the details:</p>
+<ul type="disc">
+<li>In order to complete certain transactions or account changes that you direct, it may be necessary to provide identifying information about you&#160;to companies, individuals, or groups that are not affiliated with Vanguard. For example, if you ask to transfer assets from another financial institution to Vanguard, we will need to provide certain information about you to that company to complete the transaction.</li>
+<li>In order to alert you to other financial products and services that Vanguard offers or sponsors, we may share your information within the Vanguard family of affiliated companies, to the extent permitted by law. This would include, for example, sharing your information within Vanguard to make you aware of new Vanguard funds or other investment offerings, or the brokerage services offered through Vanguard's brokerage companies, or the asset management and trust services offered through Vanguard's trust companies and registered investment advisors inside Vanguard.</li>
+<li>In certain instances, we may contract with nonaffiliated companies to perform services for us. Where necessary, we will disclose information we have about you to these third parties. In all such cases, we provide the third party with only the information necessary to carry out its assigned responsibilities, and only for that purpose. And we require these third parties to treat your private information with the same high degree of confidentiality that we do.</li>
+<li>Finally, we will release information about you if you direct us to do so, if we are compelled by law to do so, or in other legally limited circumstances (for example, to prevent fraud).</li>
+</ul>
+<p><b>Cookies, web beacons, and online privacy</b></p>
+<p>Our concern for the privacy of our shareholders naturally extends to those who use our Personal Investors website, vanguard.com.</p>
+<ul type="disc">
+<li>Our website uses some of the most secure forms of online communication available, including data encryption, Secure Sockets Layer (SSL) protocol, user names and passwords, adaptive authentication techniques, and back-end fraud and account monitoring.&#160; These technologies provide a high level of security and privacy when you access your account information, initiate online transactions, or send secure messages.</li>
+<li>Our website uses a variety of technologies to collect information that helps us understand how our site is used. A cookie is a small file of letters and numbers that is stored on the hard drive of your computer. Cookies may expire at the end of a web session or persist in order to store your settings and preferences. A web beacon, also known as a pixel tag, is a tiny transparent image embedded in a webpage or an e-mail to measure usage and activity. In some cases, a web beacon triggers the placement of a persistent cookie on your computer.</li>
+<li>Vanguard.com offers customized features that require our use of cookies and web beacons. Certain sections of our site require cookies to be enabled to support website performance and provide enhanced authentication. For example, cookies enable us to personalize and improve your user experience and help enhance site navigation. Cookies also help us to understand how people use our site so that we can improve site structure, functionality, and content. Web beacons allow us, directly or through our third-party service providers, to collect information used for website analytics, such as how many users have visited particular pages or downloaded documents on our website, or how frequently users search for a particular term on our website. However, our use of these cookies and web beacons is limited. We don't use them to pull other data from your hard drive or to view data in cookies or other similar data files created by other websites. We will not share the information in these data files or give others access to it&#8212;except to help us better serve your investment needs and in accordance with this privacy policy. You can change your cookie preferences by activating the setting on your web browser that allows you to delete or refuse the setting of cookies. If you delete or reject cookies, you may be unable to register for or log on to our website, some pages of the site might not function properly, and the site experience will not be tailored to you from visit to visit. Please consult your web browser's help documentation for more information about deleting or blocking cookies.</li>
+<li>When you register for access to vanguard.com, we ask you to authorize Vanguard's storage of an encrypted Adobe Flash Shared Object, or Flash cookie,&#160;in order to authenticate your computer. You may change your local storage settings at any time through Adobe Flash Player.</li>
+<li>When you visit our website, we may collect, either directly or through third-party service providers, certain technical and navigational information, such as computer browser type, internet protocol (IP) address, pages visited, date and time of your visit, and average time spent on our website. This information may be used, for example, to alert you to software compatibility issues or to resolve technical or service problems. We also analyze this information, with the assistance of our service providers, to improve our web design and functionality, to enhance our ability to serve you and your accounts, and to tailor our communications to you regarding our products and services.</li>
+<li>We and our service providers may use web beacons to determine whether and when you receive and open our e-mails; these beacons may also capture information about the type of device, operating system, e-mail program, and web browser used to view the e-mail and whether you click on any links in the e-mail. This enables us to gauge the effectiveness, relevance, and value of our e-mail communications.</li>
+<li>If you are a Vanguard investor who has registered for secure access to your accounts on vanguard.com, we are able to combine the information we collect about your usage of our website during a secure (logged-on) session with other information we know about you, such as any account transactions you conduct during your web session. We can also identify your computer or device on each visit to our website even if you don't log on, and link information about that visit, as well as Vanguard ads that you may have viewed on other websites, to you. We may use this combined information to assess the appeal and usefulness of the information and tools offered on our website and the effectiveness of our online advertising, as well as to identify Vanguard products and services that may be of interest to you.</li>
+<li>We may use third-party service providers' technologies that enable us to establish connections among related devices (such as smartphones, tablets, and computers). This means that information about your use of our website through different devices may be combined. By making these connections, we may be able to better understand the relevance of our content and the impact of our advertising and to customize that content and advertising to our site users.</li>
+<li>In certain cases, we may use third-party service providers to place advertisements for us on other websites, and to help us measure brand awareness and the effectiveness of our online advertising. These service providers may use cookies and web beacons to collect limited technical, web navigation, and other information, such as the advertisement presented, your IP address, operating system, and browser type, the webpage from which you linked to our site (if any), and pages visited or generated on our site. We and our service providers may use data collected on this site or when you open e-mails from Vanguard, together with other information we have about you and your Vanguard relationships, to serve ads to you on other sites as you browse the web. We do not provide any personally identifiable information about our users or clients to these service providers, and they do not collect such information for us. All information collected on our website is used exclusively by Vanguard, or by our service providers on our behalf, and is not shared with unaffiliated third parties.</li>
+<li>Vanguard uses the Ghostery assurance service to comply with the Self-Regulatory Program for Online Behavioral Advertising managed by the Digital Advertising Alliance. As part of this service, Vanguard's advertisements on other websites are sometimes delivered with icons that help consumers understand how their data are being used and provide choices for consumers&#160;who want more control. For information about online behavioral advertising and your choices, you may visit aboutads.info.</li>
+</ul>
+<p>See our <a id="SWLglPrivacyPolicyContent002" href="https://personal.vanguard.com/us/help">Site Help</a> and <a id="SWLglPrivacyPolicyContent003" href="https://personal.vanguard.com/us/help/FAQTechHelpCtrOverviewContent.jsp">Technical Help</a> for more details about our online security and privacy features.</p>
+<p><b>How we safeguard your personal information</b></p>
+<p>Within Vanguard, we restrict access to information about you to those Vanguard employees who need to know the information in order to perform their jobs, such as servicing your accounts, providing you with information you request, or notifying you of new products and services. To protect your personal information, we maintain physical, electronic, and procedural safeguards in keeping with industry standards and practices, and we review and adjust these safeguards regularly in response to advances in technology.</p>
+<p><b>What you can do</b></p>
+<p>For your protection, we strongly recommend that you do not provide your account information, user name, or password to anyone. If you become aware of any suspicious activity relating to your account, it is your responsibility to contact us immediately.</p>
+<p><b>We'll keep you informed</b></p>
+<p>As required by federal law, we will notify you of our privacy policy annually. We reserve the right to modify this policy at any time, but rest assured that if we do change it, we will tell you promptly.</p>
+<p><i>Revised 9/2014</i>.</p>
+<p><a id="SWLglPrivacyPolicyContent004" data-vg-handler="true" data-vg-click="jsCBDgoToUrl('#top'); return false;" href="#">Return to top</a></p><!--End PPE--><!--PPE:Content-2--><p>&#160;</p>
+
+
+<!-- left blank //--><!--End PPE--><!--PPE:Content-3--><p>&#160;</p>
+
+
+<!-- left blank //--><!--End PPE--><!--PPE:Content-4--><p>&#160;</p>
+
+
+<!-- left blank //--><!--End PPE--><!--PPE:Content-5--><p>&#160;</p>
+
+
+<!-- left blank //--><!--End PPE--><!-- This common File is used for implementing SEO Tags in Required Pages -->
+<script type="text/javascript" src="/web/publicsite/js/iqseotag.js">
+</script>
+<script type="text/javascript" src="/web/publicsite/js/SeoIqCommon.js">
+</script>
+<script type="text/javascript">
+jsSEOTagCommon('true','prd');
+</script></div>		 <!-- end colMContent -->
+</td>
+
+<td valign="top" id="colR">
+    <div id="colRcontent">&nbsp;</div>
+        </td>
+</tr>
+
+</table>
+
+<div id="content2">
+</div>
+
+</div> <!-- end main -->
+
+<!--CBD: GlobalFooterTag-->
+<div id='vgc-globalFooter' data-vgc-data-ref='#vgc-globalHeader' data-vgc-build='EV1_01' data-vgc-footer-type='' data-vgc-custom-text=''></div><script type="text/javascript" src="https://eus.vanguard.com/global-components/1.0.3/js/vgcHeaderFooter.js"></script><script type="text/javascript" src="https://eus.vanguard.com/global-components/1.0.3/js/vgcHeaderFooterInit.js"></script><!--End CBD-->
+<script type="text/javascript">
+jsCBDrestoreAllSelectionLists();
+</script>
+</div>
+
+<script type="text/javascript">
+cbd.pagePerformance.pageRendered = new Date().getTime();
+cbd.pagePerformance.serverTime = 8;</script>
+
+</body>
+</html>
