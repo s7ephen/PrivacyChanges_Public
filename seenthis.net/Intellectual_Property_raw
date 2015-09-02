@@ -1,1 +1,230 @@
- 
+<!DOCTYPE html>
+<html>
+<head>
+<base href="http://seenthis.net/" />
+<title>Propriété intellectuelle - SeenThis</title>
+<meta charset="utf-8">
+<script><!--
+var langue_visiteur = false;
+--></script>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<script type='text/javascript' src='http://static0.seenthis.net/local/cache-js/50a078895b3a883c2a7f0e3f6ef84333.js'></script>
+<!-- insert_head -->
+<link rel='alternate stylesheet'  media='all' href='http://static2.seenthis.net/local/cache-css/e1408790dd75fb9c74994c04775c1ad7.e6fb_rtl.css' type='text/css' id='css_rtl'>
+<link rel='stylesheet'  media='all' href='http://static2.seenthis.net/local/cache-css/e1408790dd75fb9c74994c04775c1ad7.css' type='text/css' id='css_default'>
+<link rel="search" type="application/opensearchdescription+xml" title="SeenThis" href="http://seenthis.net/spip.php?page=opensearch.xml" />
+<style type='text/css'>
+img[data-photo].photoshow { cursor: zoom-in; }
+</style>
+
+
+<script type="text/javascript">
+// configuration
+photoswipe = {
+path: "plugins/photoswipe/lib/photoswipe//",
+gallery: true, // galerie
+debug: false, // galerie
+};
+$(function() {
+photoswipe_init();
+if (!!$.fn.on) {
+$(document).on("mouseover", "img[data-photo]", photoshow_hover);
+$(document).on("click", "img[data-photo]", photoshow);
+} else if (!!$.fn.live) {
+$("img[data-photo]").live("mouseover", photoshow_hover);
+$("img[data-photo]").live("click", photoshow);
+}
+});
+</script>
+<!--[if lt IE 9]>
+<script src='http://static2.seenthis.net/plugins/seenthis_squelettes/javascript/ie9/html5.js' type="text/javascript"></script>
+<script src='http://static3.seenthis.net/plugins/seenthis_squelettes/javascript/ie9/css3-mediaqueries.js' type="text/javascript"></script>
+<![endif]-->
+<script><!--
+var verif_hash = [];
+var time_verif_hash = 0;
+var auteur_page = 0;
+var reg_tag = new RegExp("(\#[a-z0-9\u0080-\uFFFFFF\'‘’°\&\+–\_\@\.\/-]*[a-z0-9\u0080-\uFFFFFF\'‘’°\&\+–\_])", "gi");
+var reg_url = /((http|ftp)s?:\/\/[a-z0-9\u0080-\uFFFFFF\'‘’°\&\+–\_"#~!«»“”;:\|\.’\?=&%@!\/\,$\(\)\[\]\\<>*-]+[a-z0-9\u0080-\uFFFFFF\'‘’°\&\+–\_#«»“”\/\=\(\)\[\]\\$*-])/gi;
+var racine_url_match = new RegExp("((http|ftp)s?:\/\/(www\.)?)", "gi");
+var fin_url_match = new RegExp("(\.(html?|jpg|gif|png|php|css|js)\/?$)", "gi");
+var reg_personne_local = /\B@([a-zA-Z0-9\.\_\-]*)$/;
+var reg_personne = /\B@[a-zA-Z0-9\.\_\-]+[a-zA-Z0-9\_\-]/g;
+var isCtrl = false;
+var texte_effacer = "effacer";
+var texte_modifier = "modifier";
+var texte_favori = "partager";
+var shortHost = "seen.li";
+if (typeof Shadowbox != 'undefined') { Shadowbox.init({
+language:   "fr"
+}); }
+-->	
+</script><link rel="stylesheet" href="http://seenthis.net/spip.php?page=couleur&amp;couleur=#dcdf03" type="text/css" media="all">
+<style><!--
+.coloration_code {
+font-size: 85%;
+border: 1px solid #999;
+padding: 5px;
+background-color: #f0f0f0;
+}
+--></style>
+<script><!--
+var auteur_connecte = '';
+var liensPartageFacebook = true;
+var liensPartageTwitter =true;
+--></script></head>
+<body class="accueil plier">
+<div id="fond_degrade"></div>
+<nav id="entete">
+
+	<div class="seenthis">
+		<a href="http://seenthis.net/"><img src="rien.gif" alt="Seenthis"></a>
+	</div>
+
+	
+		<div class="liens accueil"><a href="http://seenthis.net"></a></div>
+		<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+<form action="http://seenthis.net/recherche" method="get"><div>
+	
+	<label for="recherche">Rechercher&nbsp;:</label>
+	<input type="text" class="text" size="10" name="recherche" id="recherche" accesskey="4">
+	<input type="submit" style="background: transparent url(plugins/seenthis_squelettes/imgs/search.png); border: solid 0px #000000; width:14px; height:14px;"src="plugins/seenthis_squelettes/imgs/search.png" class="submit" value="" />
+</div></form>
+</div>
+		<div id="interface_connexion"><div id="popupCachee">
+	<div class="intitule intitule_connexion">•</div>
+</div>
+
+<div id="popupAffichee">
+	<div class="intitule intitule_connexion">&nbsp;</div>
+	<div class="encadre">
+		<div class="formulaire_principal"><div class='formulaire_spip formulaire_login'>
+	
+	
+	
+
+	
+
+	 
+	<form id='formulaire_login' method='post' action='/fran%C3%A7ais/mentions/article/propri%C3%A9t%C3%A9-intellectuelle' enctype='multipart/form-data'>
+	
+	<div><input name='formulaire_action' type='hidden'
+		value='login' /><input name='formulaire_action_args' type='hidden'
+		value='QXHgaVUCJlr/BVaw4n1xxrBDF0yJScuK0MjlKO1crxGcQooPl+ihEC4HfCpOBlGkIngwl6dBwMMrRlNCbHB45xNmQ6r9K0s=' /></div><fieldset>
+		<legend>Identifiants personnels</legend>
+		<ul>
+			<li class="editer_login obligatoire">
+				<label for="var_login">Login (identifiant de connexion au site)&nbsp;:</label><input type='text' class='text' name='var_login' id='var_login' value="" size='40'>
+			</li>
+			<li class="editer_password obligatoire">
+				<label for="password">Mot de passe&nbsp;:</label><input type='password' class='password' name='password' id='password' value="" size='40'>
+				<span class='details'>&#91;<a href="http://seenthis.net/spip.php?page=spip_pass&amp;lang=fr" id='spip_pass'>mot&nbsp;de&nbsp;passe&nbsp;oubli&eacute;&nbsp;?</a>&#93;</span>
+			</li>
+			 
+			<li class="editer_session"><div class='choix'>
+				<input type="checkbox" class="checkbox" name="session_remember" id="session_remember" value="oui"  onchange="jQuery(this).addClass('modifie');">
+				<label class='nofx' for="session_remember">Rester identifi&eacute; quelques jours</label>
+			</div></li>
+		</ul>
+	</fieldset>
+	<p class="boutons"><input type="submit" class="submit" value="Valider"></p>
+	</form>
+	
+	
+	
+</div>
+<script type="text/javascript" src="prive/javascript/sha256.js"></script><script type="text/javascript" src="prive/javascript/login.js"></script><script type="text/javascript">/*<![CDATA[*/var alea_actuel='';var alea_futur='';var login='';var page_auteur = 'http://seenthis.net/spip.php?page=informer_auteur';var informe_auteur_en_cours = false;var attente_informe = 0;var compat_md5 = false;jQuery(function(){
+		jQuery('#password')
+			.after("<em id='pass_securise'><img src='prive/images/securise.gif' width='16' height='16' alt='Login s&#233;curis&#233;' title='Login s&#233;curis&#233;' \/><\/em>");
+		affiche_login_secure();
+		jQuery('#var_login').change(actualise_auteur);
+		jQuery('form#formulaire_login').submit(login_submit);
+	});/*]]>*/</script></div>
+	</div>
+</div></div>
+	
+	<script><!--
+  var _gaq = _gaq || [];
+  window.google_analytics_uacct = "UA-2985608-16";
+  _gaq.push(['_setAccount', 'UA-2985608-16']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+--></script>
+</nav><div id="principale">
+<div>
+<div id="centre">
+<header>
+<div id="tetiere">
+<h1>Propriété intellectuelle</h1>
+</div>
+</header>
+<div id="scroller">
+<ul id="scroll_tags">
+<li>#<a href="tag/migrations">migrations</a></li>
+<li>#<a href="tag/education">education</a></li>
+<li>#<a href="tag/asile">asile</a></li>
+<li>#<a href="tag/culture_du_viol">culture_du_viol</a></li>
+<li>#<a href="tag/femmes">femmes</a></li>
+<li>#<a href="tag/syrie">syrie</a></li>
+<li>#<a href="tag/cartographie">cartographie</a></li>
+<li>#<a href="tag/katrina">katrina</a></li>
+<li>#<a href="tag/allemagne">allemagne</a></li>
+<li>#<a href="tag/musique">musique</a></li>
+<li>#<a href="tag/radio">radio</a></li>
+<li>#<a href="tag/murs">murs</a></li>
+<li>#<a href="tag/r%C3%A9fugi%C3%A9s">réfugiés</a></li>
+<li>#<a href="tag/visualisation">visualisation</a></li>
+<li>#<a href="tag/russie">russie</a></li>
+<li>#<a href="tag/climat">climat</a></li>
+<li>#<a href="tag/sovi%C3%A9tisme">soviétisme</a></li>
+<li>#<a href="tag/propagande">propagande</a></li>
+<li>#<a href="tag/liban">liban</a></li>
+<li>#<a href="tag/hongrie">hongrie</a></li>
+<li>#<a href="tag/enfants">enfants</a></li>
+<li>#<a href="tag/film">film</a></li>
+<li>#<a href="tag/sexisme">sexisme</a></li>
+<li>#<a href="tag/bad_market">bad_market</a></li>
+<li>#<a href="tag/solidarit%C3%A9">solidarité</a></li>
+<li>#<a href="tag/statistiques">statistiques</a></li>
+<li>#<a href="tag/bulgarie">bulgarie</a></li>
+<li>#<a href="tag/web">web</a></li>
+<li>#<a href="tag/paywall">paywall</a></li>
+<li>#<a href="tag/viol">viol</a></li>
+</ul>
+</div><div id="texte_article" style="padding: 40px;"><p><strong>Les messages publiés sur Seenthis restent la propriété de leurs auteurs respectifs.</strong></p>
+<p>Seenthis ne revendique aucun droit sur les billets publiés, en dehors de ces deux autorisations permettant le bon fonctionnement du système&nbsp;: en publiant leurs messages sur Seenthis, les auteurs acceptent&nbsp;:
+<br />&mdash;&nbsp;que ces messages soient publiés (présentés au public) sur le site seenthis.net,
+<br />&mdash;&nbsp;que ces messages soient organisés et enrichis par les automatismes présents dans le système Seenthis (traduction,  thématisation...).</p>
+<p>Les auteurs peuvent à tout moment modifier ou supprimer leurs propres messages. Un outil permet à chaque auteur de récupérer, au format XML, l&#8217;ensemble de ses messages. Un auteur peut demander à faire détruire son propre compte (nous contacter).</p>
+<h3 class="spip">Mention de la licence de diffusion</h3>
+<p>Les utilisateurs qui le souhaitent peuvent, depuis la page de configuration de leur &#171;&nbsp;Profil&nbsp;&#187;, indiquer une licence de diffusion sous Creative Commons. L&#8217;outil ayant vocation au partage d&#8217;information, autant promouvoir les licences qui favorisent ce type de comportement.</p>
+<h3 class="spip">Récupérer son propre contenu</h3>
+<p>Tout utilisateur peut, d&#8217;ors et déjà, récupérer l&#8217;intégralité de ses contenus dans un fichier XML au format ATOM.&nbsp;Ce fichier est accessible à l&#8217;adresse&nbsp;:</p>
+<form action=''  method='get'><div>
+<input type='hidden' name='exec' value='' />
+<textarea readonly='readonly' cols='40' rows='2' class='spip_cadre' dir='ltr'>https://LOGIN:PASSWD@seenthis.net/?page=xml_export</textarea></div></form>
+<p>(remplacez LOGIN et PASSWD par votre login et votre mot de passe personnel).</p>
+<h3 class="spip">API et outils de récupération</h3>
+<p>Seenthis propose par ailleurs <a href="français/mentions/article/api" class='spip_in'>une API</a> qui permettra à des développeurs tiers de proposer des outils permettant de manipuler vos contenus.</p>
+<p>Parmi ces outils, un premier outil permet de sauvegarder tous vos messages sur Seenthis sous forme de fichiers indépendants (votre ordinateur doit disposer d&#8217;un serveur Apache/PHP)&nbsp;: <a href="http://seenthis.net/messages/30043" class=''>seen-local</a>.</p></div>
+</div>
+<aside id="droite"></aside>
+<footer>
+	
+		<a href="fran%C3%A7ais/mentions/article/%C3%80-propos-de-seenthis">À propos de Seenthis</a>
+	
+		<a href="fran%C3%A7ais/mentions/article/propri%C3%A9t%C3%A9-intellectuelle">Propriété intellectuelle</a>
+	
+		<a href="fran%C3%A7ais/mentions/article/recommandations">Recommandations</a>
+	
+		<a href="fran%C3%A7ais/mentions/article/api">API</a>
+	
+</footer></div>
+</div>
+</body>
+</html>
