@@ -1,1 +1,1863 @@
- 
+
+
+
+
+
+
+    
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"  xmlns:fb="http://www.facebook.com/2008/fbml">
+
+
+
+    
+    <head>
+    
+    
+    
+
+    
+
+        
+        <!-- Required for Membership/SSO -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw4AWVVADAoDUFlW"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"114b3a1f69","agent":"js-agent.newrelic.com/nr-686.min.js","transactionName":"NFVSbRBSCxFYAUBeWA0fdkwMUBELVgwbR1YEVR5PC1YSERcSVVBSEApGUAdEOhJYBVE=","applicationID":"493484","errorBeacon":"bam.nr-data.net","applicationTime":1273}</script>
+        <meta http-equiv="Content-Language" content="en-us" />
+
+        <!-- Robots metadata -->
+        <meta name="robots" content="all" />
+        <meta name="google-site-verification" content="2ixYEN-8M4fZTstcEhbqVJHmtIpX5dj2v5yOMypYkJ4" />
+
+        <!-- Pinterest Blocker -->
+        
+        <meta name="pinterest" content="nopin" />
+        
+
+        <!-- Smart Banners for iOS -->
+        
+        
+        <!-- Copyright metadata -->
+        <meta name="copyright" content="National Geographic" />
+        <!-- (c) Copyright  by National Geographic All Rights Reserved. -->
+
+        <!-- Page metadata -->
+        <meta name="description" content="National Geographic Society - Terms of Service"  />
+        <meta name="keywords" content="National Geographic Society  - Terms of Service" />
+
+        
+        
+            <meta name="author" content="National Geographic Society" />
+        
+        
+
+
+        
+        <link rel="canonical" href="http://www.nationalgeographic.com/community/terms/" />
+
+        
+            <meta name="twitter:site" content="@NatGeo"/>
+            <meta name="twitter:title" content="National Geographic Society  - Terms of Service" />
+            <meta name="twitter:description" content="National Geographic Society - Terms of Service" />
+            
+                
+                    <meta name="twitter:card" content="summary_large_image">
+                    
+                        
+                            <meta name="twitter:image" content="http://images.nationalgeographic.com/wpf/sites/common/i/presentation/NGLogo560x430.png"/>
+                        
+                    
+                
+            
+        
+
+        
+            
+            <meta property="article:publisher" content="https://www.facebook.com/natgeo" />
+            
+            <meta property="fb:admins" content="1442858697"/> <meta property="fb:admins" content="506432430" /> <meta property="fb:admins" content="104276" /> <meta property="fb:admins" content="7800037" />
+            <meta name="site_name" property="og:site_name" content="National Geographic" />
+            <meta property="og:title" content="National Geographic Society  - Terms of Service" />
+            <meta name="description" property="og:description" content="National Geographic Society - Terms of Service"/>
+            <meta name="content_type" property="og:type" content="article" />
+            <meta property="og:url" content="http://www.nationalgeographic.com/community/terms/" />
+            
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                <meta name="image" property="og:image" content="http://images.nationalgeographic.com/wpf/sites/common/i/presentation/NGLogo560x430.png"/>
+                                <meta name="image" property="og:image:secure_url" content="https://images.nationalgeographic.com/wpf/sites/common/i/presentation/NGLogo560x430.png"/>
+                            
+                            
+                          
+                        
+                      
+                    
+                  
+                
+            
+        
+
+        
+        <link rel="icon" type="image/x-icon" href="//images.nationalgeographic.com/wpf/sites/common/i/icons/favicon-cb1274471343.ico" />
+        
+
+        
+        <title>National Geographic Society  - Terms of Service</title>
+        
+
+        
+            <!-- Google Corporate Contact Info -->
+            <script type="application/ld+json">
+                {
+                    "@context" : "http://schema.org",
+                    "@type" : "Organization",
+                    "url" : "http://www.nationalgeographic.com/",
+                    "contactPoint" :
+                        [
+                            {
+                                "@type" : "ContactPoint",
+                                "telephone" : "+1-800-647-5463",
+                                "contactType" : "customer service",
+                                "areaServed" : ["US","CA"]
+                            },
+                            {
+                                "@type" : "ContactPoint",
+                                "telephone" : "+1-813-979-6845",
+                                "contactType" : "customer service"
+                            }
+                        ]
+                }
+            </script>
+            <!-- End Google Corporate Contact Info -->
+        
+    
+
+    
+        
+            <style>
+                #navigation_global_container { min-width: 990px; }
+            </style>
+        
+        <!-- CSS -->
+        
+        <link rel="stylesheet" href="//images.nationalgeographic.com/wpf/CACHE/css/854264f81d61-cb1435146417.css" type="text/css" media="screen" charset="utf-8" />
+
+
+        <!-- JS-enabled styles -->
+        <link href="//images.nationalgeographic.com/wpf/sites/common/c/js_enabled-cb1438601206.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <!-- start css js manager -->
+<!-- site_files -->
+
+<!-- taxi_files -->
+
+<!-- greedy_url_files -->
+
+<!-- url_files -->
+
+<!-- end css js manager -->
+
+        
+
+        
+        <link rel="stylesheet" href="//images.nationalgeographic.com/wpf/CACHE/css/b92759a2c6ca-cb1403695716.css" type="text/css" media="print" charset="utf-8" />
+
+        
+
+        
+    <!--[if IE 7]>
+        <link href="//images.nationalgeographic.com/wpf/sites/themes/global/c/ie7-cb1291920458.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="//images.nationalgeographic.com/wpf/sites/themes/unified/c/ie7-cb1274462936.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="//images.nationalgeographic.com/wpf/sites/common/c/ie7-cb1315395344.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!--[if lt IE 7]>
+        <link href="//images.nationalgeographic.com/wpf/sites/themes/global/c/ie6-cb1274462930.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="//images.nationalgeographic.com/wpf/sites/themes/unified/c/ie6-cb1274462936.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="//images.nationalgeographic.com/wpf/sites/common/c/ie6-cb1312282972.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!--[if IE]>
+        <link href="//images.nationalgeographic.com/wpf/sites/themes/global/c/ie-cb1357792894.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+        
+    
+
+    
+        <script src="//images.nationalgeographic.com/wpf/sites/common/j/modernizr-cb1312282973.js" type="text/javascript"></script>
+
+        
+        <script src="//images.nationalgeographic.com/wpf/sites/common/j/jquery/jquery.min-cb1322821703.js" type="text/javascript" ></script>
+        
+
+        <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script><script type="text/javascript" src="//assets.nationalgeographic.com/modules-livefyre/js/livefyre_auth.js"></script><script type="text/javascript" src="//assets.nationalgeographic.com/modules-livefyre/js/livefyre_manager.js"></script><script type="text/javascript">
+if ('undefined' == typeof livefyreConfig) {
+    var livefyreConfig = {
+        "global" : {
+            "network": "natgeo.fyre.co"
+        },
+        "streams": []
+    }
+}
+if (window.livefyreCallbackAlreadyRegistered === undefined && window.GN && window.GN.ready) {
+    window.livefyreCallbackAlreadyRegistered = true;
+    window.GN.ready(function(core) {
+        var lf_debug =  false; 
+        window.livefyreManager = new LivefyreManager(core, lf_debug);
+    });
+}
+</script>
+
+        <script>
+        (function() {
+            window.loadStyleSheet = function(uri) {
+                if (document.createStyleSheet) {
+                // Covers all IE, but needed to load the CSS in IE8
+                document.createStyleSheet(uri);
+                } else {
+                    $('<link href="'+ uri +'" media="screen" rel="stylesheet">').appendTo("head");
+                }
+            };
+            window.MOBILE_FEATURES = {
+                mobilePhoneIncludeAgents: ['iphone', 'ipod', 'ipad', 'phone', 'mobile', 'mini', 'silk', 'iemobile'],
+                mobilePhoneExcludeAgents: ['ipad', 'tablet'],
+                nativeMobile: false,
+                forceResponsiveGlobalNav: false,
+            
+                womp: false,
+            
+                isMobilePhone: function(){
+                    var includeAgents = window.MOBILE_FEATURES.mobilePhoneIncludeAgents.join("|");
+                    var excludeAgents = window.MOBILE_FEATURES.mobilePhoneExcludeAgents.join("|");
+                    if (new RegExp(includeAgents, 'i').exec(navigator.userAgent)) {
+                        if (!new RegExp(excludeAgents, 'i').exec(navigator.userAgent)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            };
+            if (window.MOBILE_FEATURES.isMobilePhone() === true && window.MOBILE_FEATURES.nativeMobile === true) {
+                $('<meta name=viewport content="width=device-width">').appendTo("head");
+                window.loadStyleSheet("//images.nationalgeographic.com/wpf/sites/common/c/responsive-cb1435230581.css");
+            }
+        })();
+        </script>
+        
+
+    
+
+    
+            <script type="text/javascript" src="//images.nationalgeographic.com/wpf/CACHE/js/85f9734275a6-cb1396614252.js" charset="utf-8"></script>
+        
+
+    
+
+    
+        <script type="text/javascript" src="//images.nationalgeographic.com/wpf/CACHE/js/9a5b343d5797-cb1414755311.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).ready(function(){
+                if(getURLParam('from_bing') != 'null'){
+                    $('#headerboard').prepend("<div style='width:997px;height:40px;margin-bottom:10px;background-color:#000;'><a href='http://www.bing.com' title='Bing'><img src='http://s.ngm.com/img/bing-promo.jpg' alt='Bing' /></a></div>");
+                }
+
+                function getURLParam(name) {
+                    return unescape((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+                }
+            });
+            //]]>
+        </script>
+        <!-- start css js manager -->
+<!-- site_files -->
+
+<!-- taxi_files -->
+
+<!-- greedy_url_files -->
+
+<!-- url_files -->
+
+<!-- end css js manager -->
+
+        <script type="text/javascript">
+        function OnSubmitGlobalSearchForm()
+        {
+            var collection=document.header_search_video.collection;
+            var rad=document.header_search_video.search_dest;
+            for(var i=0;i<rad.length;i++){
+                if(rad[i].checked){
+                    switch(rad[i].value){
+                    case 'video':
+                        // do video-only search
+                        if (collection.value === "cms_ngkids"){
+                            document.header_search_video.action ="/video/kids/search/";
+                        }else{
+                            document.header_search_video.action ="http://video.nationalgeographic.com/video/search/";
+                        }
+                        break;
+                    case 'content':
+                    default:
+                        // do site-wide google content search
+                        if (collection.value === "cms_ngkids"){
+                            document.header_search_video.action ="http://kids.nationalgeographic.com/kids/search/";
+                        }else{
+                            document.header_search_video.action ="http://www.nationalgeographic.com/search/";
+                        }
+                        document.header_search_video.site="default_collection"
+                        document.header_search_video.client="default_frontend"
+                        document.header_search_video.proxystylesheet="default_frontend"
+                        break;
+                    }
+                }
+            }
+
+          return true;
+        }
+        </script>
+        
+            
+<!-- use_gpt_format for ad instance is True, so nothing goes here ATM -->
+
+
+        
+    
+
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    </head>
+    
+
+
+
+
+    <body class="www  boxgrid">
+        <div id="flyout_container"><!-- advertising -->
+
+
+    
+
+        <!-- start with simple case: 1 size per slot -->
+        <div class="adunit " data-adunit="ng.test/placeholder" data-dimensions="340x475"></div>
+
+
+    
+
+</div>
+        
+
+
+    <!-- Analytics -->
+    <!-- webanalytics -->
+<script>
+var ngs_furl="/community/terms/",
+    ngs_contentgroup="",
+    ngs_reportsuite="natgeoglobal",
+    ngs_channel="",
+    ngs_pagenumber="",
+    ngs_sections="",
+    ngs_authors="",
+    // regex: ,
+    ngs_event="",
+    isAuthenticated = ('False' === 'True') ? true : false;
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  dataLayer = [{
+    'pageCategory': ''
+     }];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-S6J5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-S6J5');</script>
+<!-- End Google Tag Manager -->
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=3005368&cv=2.0&cj=1" />
+</noscript>
+<!-- /webanalytics -->
+
+
+
+
+    
+        
+    
+
+    
+        <div id="ad_1x1_top">
+        
+        <!-- advertising -->
+
+
+    
+
+        <!-- start with simple case: 1 size per slot -->
+        <div class="adunit " data-adunit="ng.test/placeholder" data-dimensions="1x1"></div>
+
+
+    
+
+
+        </div>
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+        
+        <script type="text/javascript">
+            isHTTPS = !!document.location.protocol.match('https:');
+
+            window.staticUrl = (isHTTPS ? "https://www-s.nationalgeographic.com/wpf/" : "//images.nationalgeographic.com/wpf/");
+        </script>
+        
+            <style type="text/css">
+                #navigation_global_container{
+                    background-color: #000;
+                }
+            </style>
+        
+    
+
+
+    
+        <!--[if IE 8]>
+            <script type="text/javascript">
+                var ie8CSS = window.staticUrl + 'sites/themes/global/c/ie8.css';
+                if (document.createStyleSheet) {
+                    document.createStyleSheet(ie8CSS);
+                };
+            </script>
+        <![endif]-->
+    
+
+    
+        
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript">
+            var articleKey,
+                staticURL = '//images.nationalgeographic.com/wpf/',
+                geoipCountryEndpoint = 'http://www.nationalgeographic.com/geoip/country.js',
+                django_page_id = '6779',
+                baseURL = window.location.hostname, 
+                pathURL = window.location.pathname, 
+                _sf_startpt=(new Date()).getTime(); 
+        </script>
+
+        
+            
+        
+
+    
+
+
+
+
+
+<div id="navigation_global_container">
+    <p id="skip_navigation" class="hidden"><a href="#content">Skip to this page's content</a></p>
+    <div id="navigation_advertising"><!-- Top Advertising -->
+        
+        
+        <!-- HEADER ADVERTISEMENT -->
+        <div id="headerboard">
+            
+                    
+                        
+                            
+                                
+                                <!-- advertising -->
+
+
+    
+
+        <!-- start with simple case: 1 size per slot -->
+        <div class="adunit leaderboard" data-adunit="ng.test/placeholder" data-dimensions="970x66,970x250,728x90,320x50"></div>
+
+
+    
+
+
+                            
+                        
+                    
+            
+            <div class="secondary_ad hidden">
+                <h3 class="hidden">Advertisement</h3>
+                
+                        
+                            
+                                
+                                    
+                                    <!-- advertising -->
+
+
+    
+
+        <!-- start with simple case: 1 size per slot -->
+        <div class="adunit ad-after" data-adunit="ng.test/placeholder" data-dimensions="257x90"></div>
+
+
+    
+
+
+                                
+                            
+                        
+                
+            </div><!-- .secondary_ad -->
+        </div><!-- #headerboard -->
+        
+        
+    </div>
+    
+    <div id="global_nav"></div>
+    
+</div><!-- #navigation_global_container -->
+
+
+
+
+    
+        <script>
+            window.getScript = function(resource) {
+                return $.getScript(resource);
+            };
+        </script>
+    
+
+    <script type="text/javascript">
+        window.getScript(window.staticUrl + 'sites/common/j/html5shiv.js');
+    </script>
+
+    <!--GEOIP-->
+    
+    <script type="text/javascript" src="//images.nationalgeographic.com/wpf/CACHE/js/07275cbec303-cb1427888493.js" charset="utf-8"></script>
+    
+    <!-- END GEOIP -->
+
+    
+    
+    <script type="text/javascript">
+        
+        
+            
+        
+
+        $(window).on('hashchange', function () {
+            var currentHash = window.location.hash;
+
+            if (currentHash === '#logout') {
+                $.get('/accounts/sign-out/');
+            }
+        });
+    </script>
+    
+        <script>
+        (function() {
+            var responsiveNav = false;
+            if (window.MOBILE_FEATURES.forceResponsiveGlobalNav === true) {
+                responsiveNav = true;
+            } else if (window.MOBILE_FEATURES.isMobilePhone()) {
+                if (window.MOBILE_FEATURES.womp === true || window.MOBILE_FEATURES.nativeMobile === true) {
+                    responsiveNav = true;
+                }
+            }
+            window.GN = {
+                baseContainer: '#global_nav',
+                display: 'biggie',
+                loadRegistration: true,
+                responsive: responsiveNav,
+                registrationOptions: {
+                    mmdbHost: "https://mmdb.nationalgeographic.com",
+                    memcenHost: "https://members.nationalgeographic.com",
+                    notificationsHost: "https://notifications.nationalgeographic.com",
+                    notificationsKey: "e6c4b4af844c454fc2110a4d09828559489837313bd2e519cf",
+                    gigyaKey: "3_LOaUF9fHrs7lFHW7YFFA22qD6MhVsbO_bpqkn6nnKj9-AbGRsec864eKWqmR2Jdu",
+                    show_user_ui: false
+                },
+                searchUrl: "http://www.nationalgeographic.com/search/",
+            
+            };
+            if (responsiveNav === true) {
+                loadStyleSheet("//assets.nationalgeographic.com/modules-global-nav/styles/main.css");
+            } else {
+                loadStyleSheet("//assets.nationalgeographic.com/modules-global-nav/styles/main-nonresponsive.css");
+            }
+        })();
+        </script>
+        <script type="text/javascript" src="//assets.nationalgeographic.com/modules-global-nav/scripts/global-nav.min.js"> </script>
+    
+    
+
+
+
+        
+    
+
+    
+        <div id="body_wrap">
+            <div id="container">
+    
+    
+
+        
+            
+        
+
+        
+                <!-- ### PAGE TITLE WITH SPONSORSHIP ### -->
+                <div id="page_head">
+            
+                    <div class="advertisement">
+                        <!-- advertising -->
+
+
+    
+
+        <!-- start with simple case: 1 size per slot -->
+        <div class="adunit " data-adunit="ng.test/placeholder" data-dimensions="210x50"></div>
+
+
+    
+
+
+                    </div>
+            
+
+            
+
+    
+
+            
+
+            
+                    
+                    <h1>Terms of Service</h1>
+                    
+            
+                </div>
+        
+
+                <div id="content">
+        
+                    
+
+    
+
+		
+			
+
+
+
+
+
+
+
+
+    
+    
+
+		
+		
+			
+            
+			
+			
+	 		
+
+
+
+
+
+  
+    
+	<div >
+	
+		
+		
+	    
+		    <script type="text/javascript">
+    $('div#content > div').css('border','none');
+</script>
+<div style="font-family: Arial, Helvetica, sans-serif; font-size:13px;line-height:22px; color:#333;">
+  <div>
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Acceptance of Terms </span><br/>
+                <p style="padding-top: 30px;">
+                    THESE TERMS AND CONDITIONS OF SERVICE (the "Terms") ARE A LEGAL AND BINDING AGREEMENT BETWEEN YOU AND NATIONAL GEOGRAPHIC governing your use of this Service, <a href="http://www.nationalgeographic.com">www.nationalgeographic.com</a>, which includes but is not limited to products, software and services offered by way of the website such as any "Video Player," "Uploader," and other applications that link to these Terms (the "Service").  "National Geographic" includes National Geographic Society, its subsidiaries, and its licensees that produce or distribute NG Products.  An NG Product is defined as "a product of National Geographic, a subsidiary, affiliate, joint venturer, or licensee of National Geographic, in any language, over which National Geographic has Editorial Control."  For the purposes of this Agreement, "Editorial Control" means the right to review, consult regarding, formulate standards for, or to exercise a veto over the appearance, text, use, or promotion of the NG Product.  <br /><br />
+
+Please review the Terms fully before you continue to use the Service.  By using the Service, you agree to be bound by the Terms. You shall also be subject to any additional terms posted with respect to individual sections of the Service.  Please review our Privacy Policy, which also governs your use of the Service, to understand our practices.  If you do not agree, please discontinue using the Service.  National Geographic reserves the right to change the Terms at any time without prior notice.  Your continued access or use of the Service after such changes indicates your acceptance of the Terms as modified.  It is your responsibility to review the Terms regularly.  The Terms were last updated on 14 August 2013.<br /><br />
+
+Your use and browsing of the Service is at your risk.  If you are dissatisfied with any of the materials contained in the Service, with the quality of service, or with these Terms, your sole and exclusive remedy is to discontinue accessing and using the Service.
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                 These are the terms of service for the use of National Geographic websites, apps, games, and other digital products. Please review them. <br /><br />
+
+By using our services, you agree to be bound by these terms.<br /><br />
+
+We update these terms from time to time.
+
+                </p>
+            </div>
+        </div>
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Registration </span><br/>
+                <p style="padding-top: 30px;">
+                   In order to utilize certain functionality of the Service, you must complete a registration process.  As a registered user of the Service, you agree to (a) provide true, accurate, current, and complete information about yourself as prompted by the Service registration form ("Registration Data"), and (b) maintain and promptly update the Registration Data to keep it true, accurate, current, and complete.  Upon completing the registration process, you shall receive confirmation of a password and user name.  You are responsible for maintaining the confidentiality of the password and user name, and you are fully responsible for all activities that occur under your password or user name.  You agree to (a) immediately notify National Geographic of any unauthorized use of your password or user name or any other breach of security; (b) exit from your account at the end of each session; and (c) defend, indemnify, and hold harmless National Geographic from any loss or damage arising from unauthorized use of your password or user name.  <br /><br />
+
+By registering, you consent to the collection of your data, including, without limitation, Registration Data, by National Geographic and processing of such data by National Geographic in connection with your use of the Service.  You consent to the technical processing and transmission involved in your use of the Service, including, without limitation, Registration Data, and you acknowledge that such process may involve (a) transmission of such data over various networks; and (b) modifying such data to conform and adapt to technical requirements of connecting networks or devices.
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    You agree that you are who you say you are when you register. <br /><br />
+
+It’s important that the email address associated with your account is accurate and up to date.
+
+
+
+                </p>
+            </div>
+        </div>
+
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Intellectual Property Issues </span><br/>
+                <p style="padding-top: 30px;">
+                    The Service is owned by National Geographic.  All of the content featured or displayed on the Service, including, but not limited to, still images, text, pictorial works, video images, still images of video, graphic designs, audio recordings, multimedia combinations, and computer programs, including web-based programs (“Content”) is owned or licensed by National Geographic.  <br /><br />
+
+Advertisements for third-party entities are not considered Content for the purposes of this Section.  However, these advertisements are owned or licensed by their respective third-party entities and are subject to protections similar to those set forth in these Terms.<br /><br />
+	
+Pursuant to the copyright and trademark laws of the United States, <em>you agree</em>: <br />
+<style type="text/css">
+ul.tos li, ol.tos li {margin-top:10px;line-height:1.4em !important;}
+</style>
+
+                    <ol class="tos" style="list-style-type: decimal; list-style: decimal; padding: 10px;margin: auto;">
+                        <li>That you may only download Content that National Geographic designates as offered for download to any single computer a single copy of any Content for personal and noncommercial use.</li>
+                        <li>To not reproduce, distribute, modify, re-post on another Service (regardless of the server on which the Content is stored), or sell any Content without specific written authorization from National Geographic, unless such use is pursuant to <strong>Educational Use of Content</strong> of this agreement.</li>
+                        <li>To maintain any and all copyright or other proprietary notices embedded in or attached to any Content.</li>
+                        <li>To refrain from framing, inline linking, or mirroring any portion of the Service.</li>
+                        <li>
+                            You retain all of your ownership rights in material you upload, comments you post, or other content you provide to the Service (“Your Content”).  
+
+                            <ol class="tos" style="list-style-type: lower-latin; list-style: lower-latin; padding: 20px;margin: auto;">
+                                <li>National Geographic will make no sale of Your Content to a third party unless and until you have expressly consented to be represented by National Geographic Image and Video Sales. </li>
+                                <li>By uploading Your Content, however, you grant National Geographic (which includes its subsidiaries, affiliates, joint venturers, and licensees) the following rights: a worldwide, perpetual license to display, distribute, reproduce, and create derivatives of Your Content, in whole or in part, without further review or participation from you, in any medium now existing or subsequently developed, in editorial, commercial, promotional, and trade uses in connection with NG Products.  National Geographic may license or sublicense, in whole or in part, to third parties rights in Your Content as appropriate to distribute, market, or promote such NG Products.  You also grant National Geographic permission to use and authorize others to use your name and any profile picture you provide in association with Your Content for identification, editorially, publicity related to Your Content or the Service, and for similar institutional promotional purposes.  You also agree that National Geographic may make Your Content available to users of the Service who may display and redistribute it in the same way that National Geographic makes all other Content available.</li>
+                                <li>National Geographic may use Your Content, without compensation to you, in any NG Products that feature Your Content in the context of, in direct promotion of, or otherwise strongly identified with (beyond mere attribution), the special section or community of the Service to which it was submitted, such as “Your Shot,” My Shot,” or successor sections or communities of the service.</li>
+                                <li>National Geographic may exercise its rights to use Your Content in NG Products other than described in sub-section c., immediately above (e.g. for an “App,” a book or e-book, merchandise, etc.), and will pay you at National Geographic’s rates.  Certain NG Products in production prior to 1 June 2013 and scheduled for release after 1 June 2013 but before 31 December 2013, are exempt from this provision and use of Your Content in such NG Products is governed by the Terms in effect prior to 1 June 2013.</li>
+                                <li>To enable National Geographic to use Your Content in NG Products, NG may request you to provide Your Content in other formats, and if technically possible, you agree to provide Your Content in such other formats so long as National Geographic pays you the reasonable out of pocket costs of providing Your Content in such other formats.  </li>
+                                <li>Any payment to you is conditioned upon you keeping your registration information up to date and you completing any paperwork that National Geographic requires to make payments to third parties.  National Geographic also reserves the right not to make payment to you if National Geographic reasonably believes that to do so would violate applicable law.</li></li>
+                            </ol>
+                        </li>
+                        <li>
+                           Pursuant to Title 17, United States Code, Section 512, notifications of claimed copyright infringement on the Service should be sent to our designated agent.  If you believe that your work has been used in a way that may constitute copyright infringement, please provide National Geographic’s designated agent the following information:
+
+                            <ol class="tos" style="list-style-type: lower-latin; list-style: lower-latin; padding: 20px;margin: auto;">
+                                <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;  </li>
+                                <li>A description of the copyrighted work that you claim has been infringed;  </li>
+                                <li>A description of where the material that you claim is infringing is located on the Service (such as the URL); </li>
+                                <li>Your address, telephone number, and e-mail address;  </li>
+                                <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</li>
+                                <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.   </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    National Geographic’s designated agent for notice of claims of copyright infringement on the Service is its Executive Vice President of Law, Business and Governmental Affairs who can be reached as follows: 
+
+                    <div style="overflow: hidden;">
+                        <div class="left-column" style="width: 15%; float: left;">
+                            By Mail:    
+                        </div>
+                        <div class="rigth-column" style="width: 85%; float: right;">
+                            Terrence B. Adamson <br/>  
+                            Executive Vice President, Law, Business and Governmental Affairs <br/>
+                            NGT Library, Inc. <br/>
+                            1145 Seventeenth Street, NW<br/>
+                            Washington, DC  20036-4688<br/>
+                        </div>
+                    </div>
+                    <br/>
+                    <div style="overflow: hidden;">
+                        <div class="left-column" style="width: 15%; float: left;">
+                            By e-mail:   
+                        </div>
+                        <div class="rigth-column" style="width: 85%; float: right;">
+                            infringementnotice@nationalgeographic.com 
+                        </div>
+                    </div>
+                      
+                    <br/><br/>
+                   <strong> THIS CONTACT INFORMATION IS ONLY FOR REPORTING ALLEGED COPYRIGHT INFRINGEMENTS.  CONTACT INFORMATION FOR OTHER MATTERS IS PROVIDED ELSEWHERE ON THE SITE.</strong>
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    You can use only the Content that we designate as available for download or other uses.  If you do download or use Content, respect others’ rights.<br /><br />
+
+We claim no ownership of anything you post or upload (for example, images, video, comments, editorial content, etc.), and we’ll never sell it to a third party without your permission. You retain all copyrights you have in Your Content that you post or upload.<br /><br />
+
+You give us permission to display Your Content on technology platforms operated by us and our partners.  You also allow us to identify you as the source of Your Content by name or your profile picture.<br /><br />
+
+If we select Your Content for use in an NG Product that is that is not in the context of, in direct promotion of, or otherwise strongly identified with (beyond mere attribution), the special section or community of the Service to which it was submitted, we will pay you at our established rates (provided your contact email is up to date, you complete any necessary payment paperwork, and there is no U.S. law that prohibits us from making a payment to you).<br /><br />
+
+We take copyright very seriously.  If you think you have suffered an infringement, please follow the instructions in the last section of these Terms of Service to notify us.
+
+                </p>
+            </div>
+        </div>
+        <div>
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Liability </span><br/>
+                <p style="padding-top: 30px;">
+                    The Service is provided for informational purposes only.  The Service should not be used in any high risk activities where damage or injury to persons, property, environment, finances or business may result if an error occurs.  You expressly assume all risk for such use. <br /><br /> 
+
+Although National Geographic does not routinely monitor the postings to the Service, National Geographic reserves the right (but assumes no obligation) to delete, move, or edit any Your Content that comes to its attention that National Geographic considers in its sole discretion to be unacceptable or inappropriate, whether for legal or other reasons.   Conduct by any user that, at the sole discretion of National Geographic, restricts or inhibits any other user from using or enjoying the Service will not be permitted.  National Geographic reserves the right to refuse access to the Service to any user for any reason, including, without limitation, a reasonable belief that the user in question has violated these Terms, any other operating rules or terms currently posted on the Service, or any of the copyright or trademark laws of the United States.<br /><br />
+
+The Service may provide, or third parties may provide, links to other sites or resources.  Because National Geographic has no control over such sites and resources, you acknowledge and agree that National Geographic is not responsible for the availability of such external sites or resources, and does not endorse and is not responsible or liable for any content, advertising, products, or other materials on or available from such sites or resources.  You further acknowledge and agree that National Geographic shall not be responsible or liable for any damage or loss caused or alleged to be caused in connection with use of or reliance on any such linked content, goods or services available on or through any such linked site or resource.<br /><br />
+
+Your interactions with companies, organizations and/or individuals found on or through our Service, including any purchases, transactions, or other dealings, and any terms, conditions, warranties or representations associated with such dealings, are solely between you and such companies, organizations and/or individuals.  You agree that National Geographic will not be responsible or liable for any loss or damage of any sort incurred as the result of any such dealings.  You also agree that, if there is a dispute between users of this Service, or between a user and any third party, National Geographic is under no obligation to become involved, and you agree to release National Geographic and its affiliates from any claims, demands and damages of every kind or nature, known or unknown, suspected and unsuspected, disclosed and undisclosed, arising out of or in any way related to such dispute and/or the Service.<br /><br />
+
+THE INFORMATION, PRODUCTS AND SERVICES OFFERED ON OR THROUGH THE SITE AND ANY THIRD-PARTY SITES ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED.  TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, NATIONAL GEOGRAPHIC DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  NATIONAL GEOGRAPHIC MAKES NO WARRANTY THAT THE SITE OR ANY OF ITS FUNCTIONS WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT ANY PART OF THIS SITE, INCLUDING BULLETIN BOARDS, OR THE SERVERS THAT MAKE IT AVAILABLE, ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.  NATIONAL GEOGRAPHIC NEITHER WARRANTS NOR MAKES ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE SITE OR MATERIALS ON THIS SITE OR ON THIRD-PARTY SITES IN TERMS OF THEIR CORRECTNESS, ACCURACY, TIMELINESS, RELIABILITY OR OTHERWISE.<br /><br />
+
+UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL NATIONAL GEOGRAPHIC, OR OUR SUBSIDIARIES, PARENT COMPANIES, AFFILIATES, SERVICE PROVIDERS, AND/OR LICENSORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THIS SITE, INCLUDING ITS MATERIALS, PRODUCTS, OR SERVICES, OR THIRD-PARTY MATERIALS, PRODUCTS, OR SERVICES MADE AVAILABLE THROUGH THIS SITE, EVEN IF WE ARE ADVISED BEFOREHAND OF THE POSSIBILITY OF SUCH DAMAGES. (BECAUSE SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN CATEGORIES OF DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. IN SUCH STATES, OUR LIABILITY AND THE LIABILITY OF NATIONAL GEOGRAPHIC SUBSIDIARIES, PARENT COMPANIES, AFFILIATES, SERVICE PROVIDERS, AND/OR LICENSORS IS LIMITED TO THE FULLEST EXTENT PERMITTED BY SUCH STATE LAW.)  YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT NATIONAL GEOGRAPHIC IS NOT LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER. IF YOU ARE DISSATISFIED WITH THE SITE, OR ANY MATERIALS, PRODUCTS, OR SERVICES ON THE SITE, OR WITH ANY OF THE SITE'S TERMS AND CONDITIONS, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE SITE.
+
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                Don’t look at our website while you are flying a plane, driving a car, skiing, kayaking, descending a steep ravine, or chopping vegetables.
+                </p>
+            </div>
+        </div>
+        
+         <div>
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Your Conduct </span><br/>
+                <p style="padding-top: 30px;">
+                National Geographic wants to encourage an open exchange of information and ideas on the Service.  You can expect the Service to include information and opinions from a variety of individuals and organizations other than National Geographic.  National Geographic neither endorses nor guarantees the accuracy of any of Your Content.  National Geographic may review Your Content from time to time and may take steps to remove inappropriate Your Content that comes to its attention; however, National Geographic engages in no routine monitoring of Your Content on the Service.  There is no substitute for healthy skepticism and your own good judgment. <br /><br />
+
+You agree to assume full and sole responsibility for any Your Content you post to the Service, and you agree to:
+<ol class="tos" style="list-style-type: decimal; list-style: decimal; padding: 20px;margin: auto;">
+<li>Abide by the <em><a href="http://www.nationalgeographic.com/community/community-rules/">National Geographic Community Rules</a></em> (which are fully incorporated into these Terms);</li>
+
+<li>Post Your Content that is relevant to and appropriate for the specific topic and designed to help people share information and supports National Geographic's mission of inspiring people to care about the world; </li>
+
+<li>Represent that you are the owner of Your Content, or are making your submission with express consent of the owner, that you have obtained all third party releases and permissions necessary for National Geographic’s use, in accordance with the license you grant in paragraph 5 of <strong>Intellectual Property Issues</strong> above, of any Your Content that you post, and nothing you post will infringe on the rights of others;</li> 
+
+<li>Neither post nor transmit any unlawful, obscene, defamatory, threatening, pornographic, harassing, hateful, racially or ethnically offensive Your Content, or Your Content that encourages conduct that would be considered a criminal offense, give rise to civil liability, violate any law, or any otherYour Content that infringes on the ability of others to enjoy the Service or is otherwise inappropriate;</li>
+
+<li>Refrain from posting any personal information of your own such as your email address, phone number, address, etc., and refrain from soliciting personal information from any user.  However, if you do choose to post any personal information it means that you are making that information public and allowing everyone to use and access that information, and to associate it with you (i.e. your user name and if applicable any profile photo);</li>
+
+<li>Neither post nor transmit through the Service any Your Content that constitutes advertising or solicitation with respect to any product or service;</li>
+
+<li>Not post anonymously or impersonate any other person; </li>
+
+<li>Use no automated means, including spiders, robots, offline readers, crawlers, data mining tools, or the like to download or store data from the Service.  Exception is made for publicly available Internet search engines (e.g., Google, Bing) and non-commercial public archives (e.g., archive.org) that comply with our Terms of Service but not for any archive that hosts, promotes, or links primarily to infringing or unauthorized content; and </li> 
+
+<li>Not to alter or modify any part of the Service, make no use that would interfere with or disrupt the Service or servers or networks connected to the Service, make none of Your Content available (whether through upload, post, email, transmit, or otherwise) that contains software viruses or any other computer code, files, or programs designed to interrupt, destroy, or limit the functionality of any computer software or hardware or telecommunications equipment, and neither circumvent nor disable any security or data-protection measures implemented by National Geographic.</li>
+
+<li>Not to translate, reverse engineer, decompile, disassemble, or attempt to discover any source code or underlying ideas or algorithms of the object code of any portion of the Service</li>
+</ol>
+
+<strong>CAUTION:</strong> ANY ATTEMPT BY ANY PERSON TO DELIBERATELY DAMAGE THE SITE IS A VIOLATION OF CRIMINAL AND CIVIL LAWS.  SHOULD SUCH AN ATTEMPT BE MADE, NATIONAL GEOGRAPHIC RESERVES THE RIGHT TO SEEK DAMAGES FROM ANY SUCH PERSON TO THE FULLEST EXTENT PERMITTED BY LAW.<br /><br />
+
+You must provide and are solely responsible for all hardware and/or software necessary to access the Service. You assume the entire cost of and responsibility for any damage to, and all necessary maintenance, repair or correction of, that hardware and/or software.
+   </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+               Do share freely. We encourage an open exchange of information and ideas. <br /><br />
+
+Don’t be unpleasant, dishonest, or inappropriate; follow the <em><a href="http://www.nationalgeographic.com/community/community-rules/">National Geographic Community Rules</a></em>.
+
+
+                </p>
+            </div>
+        </div>
+        
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Indemnification </span><br/>
+                <p style="padding-top: 30px;">
+                    You agree to indemnify, defend, and hold harmless National Geographic; its affiliates and partners; and their respective officers, directors, employees, agents, members, licensors, representatives, and third party providers to the Service from and against all losses, expenses, damages, and costs, including attorneys' fees, resulting from any violation of these Terms.  National Geographic reserves the right to assume, at its sole expense, the exclusive defense and control of any matter subject to indemnification by you, in which event you will fully cooperate with National Geographic. 
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+            </div>
+        </div>
+    
+
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> The National Geographic Archive </span><br/>
+                <p style="padding-top: 30px;">
+                    The National Geographic Archive online product is subject to all of these Terms of Service, including particularly the commitment that you will not reproduce, distribute, modify, re-post on another Service (regardless of the server on which the Content is stored), or sell any Content without specific written authorization from National Geographic.  In addition, to the extent you are authorized to use the National Geographic Archive product through a login ID, such use is authorized only for personal and non-commercial purposes.  Use by libraries, which include without limitation all academic, school (K-12), public, government, corporate and special libraries, worldwide, is prohibited.
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+            </div>
+        </div>
+
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Educational Use of Content </span><br/>
+                <p style="padding-top: 30px;">
+                    With respect to Content designated as available for download for educational purposes (“Downloadable Content”), Educators or Learners may download and exhibit such Downloadable Content on a stand-alone basis or embed in their own presentations, handouts, worksheets, other educational aids, homework, school reports, and other educational assignments or projects.  For the purposes of this Agreement, “Educators or Learners” consists of librarians, teachers, support staff, administrators and other staff of educational institutions, students, and adults supporting such students’ learning.  The following restrictions apply to all Downloadable Content:
+                </p>
+
+                <ul style="padding: 20px;margin: auto;list-style-type:disc;list-style:disc">
+                    <li>Educators or Learners are prohibited from disseminating Downloadable Content beyond such Educator’s or Learner’s particular educational institution, organization, or home.</li>
+                    <li>Under no circumstances may an Educator or Learner use Downloadable Content for commercial purposes.</li>
+                    <li>Educators or Learners may make no modifications to Downloadable Content and must preserve all National Geographic or Licensor credits, copyright notices and other proprietary notices.</li>
+                    <li>Educators or Learners may neither make use of nor allow or enable the use of Downloadable Content in a manner in which it is re-posted, framed, or mirrored on any other websites, regardless of educational use, but may store Downloadable Content on  password-protected computer networks administered by the Educator’s or Learner’s school or school system.</li>
+                    <li>Educators or Learners may post only products the Educator or Learner has created that contain Downloadable Content and only to a password-protected website administered by the Educator’s or Learner’s school or school system or by National Geographic.</li>
+                    <li>Educators or Learners who embed Downloadable Content in the form of video material (e.g. through a video player) must also comply with the NG Terms of Service Your Conduct with respect to Video Players.</li>
+                </ul>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    Educators and students may download Content for use in educational presentations, handouts, homework, projects, etc.<br /><br />
+
+You cannot use this content for commercial purposes, or distribute beyond your school, organization or home.
+<br /><br />
+You may post and store Downloadable Content only to password-protected school websites.
+
+                </p>
+            </div>
+        </div>
+		
+         <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Online Courses (MOOCs) </span><br/>
+                <p style="padding-top: 30px;">
+                    From time to time National Geographic provides Massive Online Open Courses (“Online Courses”) through different providers (e.g. Google, Udacity, Coursera, etc.) (each a “Platform”).  By accessing and/or using the Platform or Online Courses, you agree to be bound by these additional Terms of Service, whether you are a “Visitor,” meaning you simply browse the Online Courses, including, without limitation, through a mobile or other wireless device, or otherwise use the Online Courses without being registered; or a “Student,” meaning that you have registered to use the Online Courses and will complete the homework assignments and exams; or an “Attendee;” meaning that you have registered to use the Online Courses and that you intend to audit the Online Courses, i.e., attend or view lectures online without completing homework assignments, exams or other course work.  The term “Course User” refers to a Visitor, Student or Attendee.
+ <ul class="tos" style="padding: 20px;margin: auto;list-style-type:disc;list-style:disc">
+<li><span style="text-decoration:underline">Age Restrictions</span>. Registration and participation on the Platform is restricted to those individuals over 18 years of age, emancipated minors, or those who possess legal parental or guardian consent, and are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations and warranties herein. By registering or participating in services or functions on the Platform, you hereby represent that you are over 18 years of age, an emancipated minor or in possession of consent by a legal parent or guardian and have the authority to enter into the terms herein. In any case, you affirm that you are over the age of 13 as the Site is not intended for children under 13. If you are under 13 years of age, do not use the Site. In addition, those who wish to register and participate must meet the minimum requirements laid out in the Terms of Use (of which this is one section), any independent Terms of Use for any Platform, and abide by the <a href="/community/honor-code/">Honor Code</a>. In addition, certain Online Courses may have additional eligibility requirements, as specified on the specific Online Courses.  If you do not qualify or do not agree to these terms, you may not register as a Student or an Attendee.</li>
+
+<li><span style="text-decoration:underline">Content Disclaimer</span>. The text and other material in Online Courses may include the opinion of the specific instructor and are not statements of advice, opinion, or information from National Geographic. If you feel you might be offended by the content of the Online Courses, you should refrain from registering for the Online Courses.</li>
+
+<li><span style="text-decoration:underline">Online Courses and Certificates of Completion</span>. National Geographic and the instructors of the Online Courses reserve the right to cancel, interrupt or reschedule any Online Courses or modify its content as well as the point value or weight of any assignment, exam or other evaluation of progress. Online Courses offered are subject to the Disclaimer of Warranties / Limitation of Liabilities found in Liability above. 
+
+
+
+For some Online Courses, subject to your satisfactory performance in the Online Courses as determined in the sole discretion of the instructors, you may be awarded a statement acknowledging your completion of the class ("Statement of Accomplishment") or Continuing Education Units (“CEU”). The term “Recognition” refers to a Statement of Accomplishment and/or CEU. Recognition, if provided to you, would be from National Geographic and/or from the instructors. The type of Recognition, if provided to you, will be explicitly stated in the Online Courses. Further, National Geographic reserves the right to offer or not offer any such Recognition for an Online Courses. You acknowledge that the Statement of Accomplishment does not convey academic credit and will not stand in the place of a course taken at an accredited institution. You acknowledge that neither the instructors of any Online Courses nor National Geographic will be involved in any attempts to get the course recognized by any educational or accredited institution, unless explicitly stated otherwise by in the Online Courses. The format of the Recognition will be determined at the discretion of National Geographic and the instructors, and may vary by class in terms of formatting, e.g., whether or not it reports your detailed scores or grades in the class, and in other ways. Where CEU is provided, the format will conform to CEU requirements.<br /><br />
+
+You may not take any Online Courses offered by National Geographic or use any Recognition as part of any tuition-based or for-credit certification or program for any college, university, or other academic institution without the express written permission from National Geographic. Such use of an Online Course or Recognition is a violation of these Terms of Use.<br /><br /></li>
+
+
+<li><span style="text-decoration:underline">Intellectual Property Rights and License</span>. All content or other material available through the Online Courses, including but not limited to online lectures, speeches, video lessons, quizzes, presentation materials, homework assignments, programming assignments, programs, code, and other images, text, layouts, arrangement, displays, illustrations, documents, materials, audio and video clips, HTML and files (collectively, the “Course Content”), are the property of National Geographic and/or its affiliates or licensors and are protected by copyright, patent and/or other proprietary intellectual rights under United States and foreign law. In consideration for your agreement to these Terms of Service, National Geographic grants you a personal, non-exclusive, non-transferable license to access and use the Online Courses and Course Content. You may download Course Content identified as available for download only for your own personal, non-commercial use. You may not otherwise copy, reproduce, retransmit, distribute, publish, commercially exploit or otherwise transfer any Course Content, nor may you modify or create derivatives works of the Course Content. </li>
+
+<li><span style="text-decoration:underline">Course User Conduct</span>. Online Courses are public and open forums. You agree to assume full and sole responsibility for any of Your Content you post to the Online Courses. Course User conduct is subject to standards described in the “Your Conduct” section of these Terms of Service above, which includes your obligation to abide by the Community at National Geographic Rules for Members. </li>
+
+<li><span style="text-decoration:underline">Termination Rights</span>. You acknowledge that for the purpose of any National Geographic Online Courses your sole relationship is with National Geographic.  National Geographic has the right to cancel, delay, reschedule or alter the format of any Online Courses at any time, and that National Geographic has no liability to you for any such action.  If you no longer desire to participate in the Online Courses, you may terminate your participation therein upon notice to National Geographic.</li>
+
+<li><span style="text-decoration:underline">Feedback</span>. National Geographic may, in National Geographic’s sole discretion, utilize, in any manner National Geographic deems appropriate, all comments and suggestions, whether written or oral, furnished by any Course User to National Geographic in connection with Online Courses (“Feedback”). Course User assigns to National Geographic all right, title and interest, including, without limitation, all intellectual property rights, in and to the Feedback.</li>
+
+<li><span style="text-decoration:underline">Research</span>. Records of your activity in Online Courses may be used for researching online education intended to improve future Online Courses and contribute to overall knowledge in the field. This research will involve analyzing patterns about the use of the site and user submitted resources and comments. You may also be asked if you are willing to respond to survey questions or be interviewed for the research. Individual participants will not be identified, and reasonable efforts will be made to avoid including information that could be connected to any individual, school or district, in all research reports. In the interests of this research, you may be exposed to variations in the course materials that should have no substantive effect on your learning experience. All research findings will be reported at the aggregate level and will not expose your personal identity.</li>
+</ul>
+
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    If you participate in an Online Course offered by National Geographic, please review these Terms of Service.  National Geographic may offer an Online Course through a Platform (such as Google, Udacity, Coursera, etc.), and you agree to be subject to any additional terms and conditions of that Platform.
+                </p>
+            </div>
+        </div>
+        
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Shopping </span><br/>
+                <p style="padding-top: 30px;">
+                    Certain sections of this Service may allow you to purchase different types of products and services online that are provided by third parties.  National Geographic has no responsibility for the quality, accuracy, timeliness, reliability or any other aspect of these products and services. If you make a purchase from a merchant on the Service, or on a third-party website that you have accessed via a link on the Service, the information obtained during your visit to that merchant’s online store or site, and the information that you give as part of the transaction, such as your credit card number and contact information, may be collected by both the merchant and National Geographic.  A merchant may have privacy and data collection practices that are different from National Geographic. National Geographic has no responsibility or liability for these independent policies. In addition, when you purchase products or services on or through the Service, you may be subject to additional terms and conditions that specifically apply to your purchase or use of such products or services. For more information regarding a merchant, its online store, its privacy policies, and/or any additional terms and conditions that may apply, visit that merchant’s website and click on its information links or contact the merchant directly.  You release National Geographic and its affiliates from any damages that you incur, and agree not to assert any claims against National Geographic or any of its affiliates, arising from your purchase or use of any products or services made available by third parties through the Service.<br /><br />
+
+You agree to be financially responsible for all purchases made by you or someone acting on your behalf through the Service.  You agree to use the Service, and to purchase services or products through the Service, for legitimate, non-commercial purposes only.  You also agree not to make any purchases for speculative, false or fraudulent purposes or for the purpose of anticipating demand for a particular product or service.  You agree to only purchase goods or services for yourself or for another person for whom you are legally permitted to do so. When making a purchase for a third party that requires you to submit the third party's personal information to us or a merchant, you represent that you have obtained the express consent of such third party to provide such third party's personal information.
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    If you follow a link to a third party site for shopping or anything else, National Geographic has no responsibility for that third party.  Surf safely.
+                </p>
+            </div>
+        </div>
+
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Video Player </span><br/>
+                <p style="padding-top: 30px;">
+                    With respect to your use of any Video Player offered on the Service, you also agree:
+<ol class="tos" style="list-style-type: lower-latin; list-style: lower-latin; padding: 20px;margin: auto;">
+<li>If you use a Video Player on your website, you must include a prominent link back to the Service on the pages containing the Video Player and you may not modify, build upon, or block any portion of the Video Player in any way;</li>
+
+<li>You may embed videos using the Video Player, provided you do not embed the Video Player on any website or other location that (i) contains or hosts content that is unlawful, infringing, pornographic, obscene, defamatory, threatening, harassing, vulgar, indecent, profane, hateful, or racially or ethnically offensive, (ii) encourages criminal conduct, gives rise to civil liability, violates any law, rule, or regulation, or infringes any right of any third party including intellectual property rights, (iii) is otherwise inappropriate or objectionable to National Geographic (in National Geographic’s sole discretion), or (iv) links to infringing or unauthorized content (collectively, "Unsuitable Material"); </li>
+
+<li>You are prohibited from embedding the Video Player into any hardware or software application, even for non-commercial purposes.  National Geographic reserves the right to prevent embedding to any website or other location that National Geographic finds inappropriate or objectionable (as determined by National Geographic in its sole discretion); and</li>
+
+<li>You may make no use of the Video Player for any commercial use, without the prior written authorization of National Geographic; provided, however, that you may use the Video Player to show National Geographic content on an ad-enabled blog or website, provided the primary purpose of using the Video Player is not to gain advertising or any other form of revenue (e.g. license fees, subscriptions, etc.).  Prohibited commercial uses include, without limitation, any use of the Video Player that National Geographic finds, in its sole discretion, to use National Geographic resources or Your Content with the effect of competing with or displacing the market for National Geographic content.</li>
+</ol>
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    
+                </p>
+            </div>
+        </div>
+
+       
+
+        <div style="overflow: hidden; height: 1%; border-bottom: 1px solid #d5d5d5; padding-bottom: 30px;">
+            <div class="left-column" style="width: 54%; float: left; margin: 10px;">
+                <span style="font-size: 1.5em; color: #333; font-weight: bold;"> Miscellaneous </span><br/>
+                <p style="padding-top: 30px;">
+                   Any and all disputes, with the exception of copyright claims, arising out of, under or in connection with this Agreement, including without limitation, its validity, interpretation, performance, or breach, shall be settled by final and binding arbitration in Washington, D.C., pursuant to the rules of the American Arbitration Association.  Judgment upon any award rendered may be entered in the highest court of the forum, state or federal, having jurisdiction.  This Agreement, its validity and effect, shall be interpreted under and governed by the laws of the District of Columbia, without regard to its conflict of laws provisions, and you agree that the arbitrators shall award all costs of arbitration, including reasonable attorneys’ fees plus legal rate of interest, to the successful party.  Copyright claims shall be brought in the Federal court having jurisdiction.  If you are an agent for or an employee of a non-United States company but operate in a place of business in the U.S. or its territories, you expressly agree that any dispute regarding this contract shall be adjudicated within the U.S. in the manner described here.  If National Geographic is obligated to go to court, rather than arbitration, to enforce any of its rights, you agree to reimburse National Geographic for its respective legal fees, costs, and disbursements if National Geographic is successful.<br /><br />
+
+These Terms and any other operating rules or terms currently posted on the Service constitute the entire agreement between National Geographic and the users of the Service, and supersede all previous written or oral agreements between the parties with respect to such subject matter.  No action of National Geographic may be construed as a waiver of any part of these Terms.  Should any of the above paragraphs be unenforceable, the other paragraphs will remain in full force and effect.
+
+                </p>
+            </div>
+            <div class="rigth-column" style="width: 40%; float: right; margin: 10px;">
+                <span style="font-size: 14px; font-weight: bold;"> HIGHLIGHTS </span><br/>
+                <p style=" padding-top: 30px; font-size: 17px;">
+                    All disputes regarding these Terms of Service, with the exception of copyright claims, will be settled by arbitration in Washington, D.C., under its laws.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+	    
+	
+	</div>
+	
+
+
+
+			
+	             		
+		
+		
+
+    
+
+
+		
+		
+
+    
+
+        
+
+        
+
+        
+                    
+
+    
+
+		
+			
+
+
+
+
+
+
+
+    
+    
+
+		
+		<div class="primary">
+		
+			
+            
+			
+	 		
+
+
+
+
+
+  
+	
+	<div class="promo_collection carousel js_enabled seven">
+	
+		
+			
+				
+
+
+
+
+
+
+
+	
+	
+		
+		    
+		        <h2>More From National Geographic</h2>
+		    
+		
+	
+		
+		 
+		
+		
+		<ul class="jcarousel-skin-geocore restrain  seven">
+			
+			
+			
+			 	
+					
+						
+							
+
+
+
+
+
+
+	
+	<li class="first ">
+		
+		    <a href="http://www.nationalgeographic.com/trajan-column/index.html" title="Reading an Ancient Comic Strip" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/889/cache/promo-1-_88916_100x75.jpg"  width="100" height="75" alt="Picture of Trajan&#39;s Column" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://www.nationalgeographic.com/trajan-column/index.html" title="Reading an Ancient Comic Strip" >Reading an Ancient Comic Strip</a></p>
+</li>
+
+
+
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://outofedenwalk.nationalgeographic.com/2013/01/22/lets-walk/" title="Let&#39;s Walk" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/635/cache/paul-salopek-ethiopia-walk3-990x659_63576_100x75.jpg"  width="100" height="75" alt="Paul-Salopek-Ethiopia-Walk3-990x659.jpg" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://outofedenwalk.nationalgeographic.com/2013/01/22/lets-walk/" title="Let&#39;s Walk" >Let's Walk</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://www.nationalgeographic.com/explorers/explorer-moment-of-week/" title="Explorer Moment of the Week" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/769/cache/emow-george-kourounis-gateway-to-hell-990_76996_100x75.jpg"  width="100" height="75" alt="Picture of George Kourounis rappelling across a fiery pit
+" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://www.nationalgeographic.com/explorers/explorer-moment-of-week/" title="Explorer Moment of the Week" >Explorer Moment of the Week</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://adventure.nationalgeographic.com/adventure/extreme-photo-of-the-week/#/ice-climb-will-gadd-eidfjord-norway_35092_600x450.jpg" title="Extreme Photos" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/350/overrides/ice-climb-will-gadd-eidfjord-norway_35092_100x75.jpg"  width="100" height="75" alt="Photo: Will Gadd ice climbs in Eidfjord, Norway
+" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://adventure.nationalgeographic.com/adventure/extreme-photo-of-the-week/#/ice-climb-will-gadd-eidfjord-norway_35092_600x450.jpg" title="Extreme Photos" >Extreme Photos</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://www.nationalgeographic.com/foodfeatures/evolution-of-diet/" title="Are We Eating Correctly?" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/833/cache/tanzania3-1536_83357_100x75.jpg"  width="100" height="75" alt="Picture of two people" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://www.nationalgeographic.com/foodfeatures/evolution-of-diet/" title="Are We Eating Correctly?" >Are We Eating Correctly?</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="/travel/best-winter-trips-2015/" title="Best Winter Trips 2015" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/862/cache/lapland-reindeer-sledding_86213_100x75.jpg"  width="100" height="75" alt="Picture of a reindeer sleigh ride in Lapland, Finland" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="/travel/best-winter-trips-2015/" title="Best Winter Trips 2015" >Best Winter Trips 2015</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="/explorers/grants-programs/emerging-explorers/" title="Emerging Explorers" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/204/cache/albert-calit-erik-jepsen_20453_100x75.jpg"  width="100" height="75" alt="Photo: Albert Yu-Min Lin" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="/explorers/grants-programs/emerging-explorers/" title="Emerging Explorers" >Emerging Explorers</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://ngm.nationalgeographic.com/2014/06/puffins/oneill-text" title="Puffin Therapy" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/863/cache/puffin-promo_86341_100x75.jpg"  width="100" height="75" alt="puffin.jpg" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://ngm.nationalgeographic.com/2014/06/puffins/oneill-text" title="Puffin Therapy" >Puffin Therapy</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="  ">
+		
+		    <a href="http://yourshot.nationalgeographic.com/assignments/family-portrait/" title="How Do You Define Family?" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/746/overrides/underwater-family-portrait-yourshot_74689_100x75.jpg"  width="100" height="75" alt="Picture of a family portrait taken underwater" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="http://yourshot.nationalgeographic.com/assignments/family-portrait/" title="How Do You Define Family?" >How Do You Define Family?</a></p>
+</li>
+
+
+
+							
+						
+					
+				
+					
+						
+							
+								
+
+
+
+
+
+
+	
+	<li class="last ">
+		
+		    <a href="https://genographic.nationalgeographic.com/genographic/lan/en/genealogy.html" title="Discover Your Heritage" class="">
+				
+
+
+	<img src="//images.nationalgeographic.com/wpf/media-live/photos/000/281/cache/5-sisters-ancestry-990_28182_100x75.jpg"  width="100" height="75" alt="Photo: Five sister holding hands" />	
+
+
+			</a>
+			
+	
+    <p class="headline"><a href="https://genographic.nationalgeographic.com/genographic/lan/en/genealogy.html" title="Discover Your Heritage" >Discover Your Heritage</a></p>
+</li>
+
+
+
+							
+						
+					
+					
+			
+			
+
+		
+		</ul>
+
+
+
+
+	
+			
+		
+		
+	
+	
+
+
+	
+
+
+	
+	</div><!-- .promo_collection -->
+
+
+
+
+			
+	             		
+		
+		</div>
+    
+
+
+
+		
+		
+
+    
+
+        
+                </div><!-- #content -->
+
+    
+
+    
+                <hr class="hidden"/>
+    
+
+    
+                <!-- ### SITE FOOTER ### -->
+                <div class="footer" id="footer_site">
+                    
+                    <div id="footer_breadcrumb">
+                        <ul>
+                            <li class="nav1"><a href="http://www.nationalgeographic.com" id="intl_link_breadcrumb_home">National Geographic Home &raquo;</a></li>
+                            
+                                
+
+                                
+                            <li class="nav2 selected">Terms of Service</li>
+                                
+                            
+                        </ul>
+                        
+                    </div><!-- #footer_breadcrumb -->
+                    
+                </div><!-- #footer_site -->
+    
+
+    
+            </div><!-- #container -->
+        </div><!-- #body_wrap -->
+    
+
+    
+        <hr class="hidden"/>
+    
+
+    
+        
+    <link rel="stylesheet" href="//images.nationalgeographic.com/wpf/sites/common/c/liquid_footer-cb1432726238.css">
+    <div class="footer">            
+        <footer id="main-footer" class="footer-hidden-xs footer-hidden-sm">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div id="copyright" class="footer-col-md-5 footer-col-sm-5">
+                        <p class="footer-item copyright-item">© <span itemprop="copyrightYear">1996</span>-2015 <span itemprop="copyrightHolder">National Geographic Society</span>.</p>
+                        <p class="footer-item copyright-item">All rights reserved</p>
+                    </div>
+                    <div class="footer-col-md-2 footer-col-sm-2">
+                        <h6 class="footer-menu-title">General</h6>
+                        <ul class="big-footer-menu">
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/about/" >About</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/jobs/" >Jobs</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/newsletter/" >Newsletter</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/siteindex/international/" >Global Sites</a></li>
+                            <li class="footer-item"><a href="http://press.nationalgeographic.com/" >Press Room</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/mediakit/" >Advertise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-md-2 footer-col-sm-2">
+                        <h6 class="footer-menu-title">Shop</h6>
+                        <ul class="big-footer-menu">
+                            <li class="footer-item"><a href="http://shop.nationalgeographic.com/ngs/index.jsp?code=NG94281" >Store</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/magazines/" >Subscribe</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographicexpeditions.com/home?utm_source=travel.nationalgeographic.com&amp;utm_medium=Link&amp;utm_content=Footer_link_Our_Trips&amp;utm_campaign=NGdotcom" >Trips</a></li>
+                            <li class="footer-item"><a href="http://events.nationalgeographic.com/" >Events</a></li>
+                            <li class="footer-item"><a href="http://events.nationalgeographic.com/events/exhibits/" >Exhibits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-md-2 footer-col-sm-2">
+                        <h6 class="footer-menu-title">Contact</h6>
+                        <ul class="big-footer-menu">
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/siteindex/customer/" >Customer Service</a></li>
+                            <li class="footer-item"><a href="https://donate.nationalgeographic.org/Page.aspx?pid=184" >Donate</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/community/email/" >Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-md-2 footer-col-sm-2">
+                        <h6 class="footer-menu-title">Follow Nat Geo</h6>
+                        <ul class="social-icons-list">
+                            <li class="social-icons-footer"><a href="https://www.facebook.com/natgeo" ><i id="icongs-footer-facebook" class="icongs icongs-facebook"></i></a>&nbsp;</li>
+                            <li class="social-icons-footer"><a href="http://instagram.com/natgeo" ><i id="icongs-footer-instagram" class="icongs icongs-instagram"></i></a>&nbsp;</li>
+                            <li class="social-icons-footer"><a href="https://twitter.com/NatGeo" ><i id="icongs-footer-twitter" class="icongs icongs-twitter"></i></a>&nbsp;</li>
+                        </ul>
+                        <ul class="terms-privacy">
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/community/terms/" >Terms of Service</a></li>
+                            <li class="footer-item"><a href="http://www.nationalgeographic.com/community/privacy/" >Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer id="main-footer" class="footer-hidden-md footer-for-mobile">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div id="copyright" class="footer-col-md-5 footer-col-sm-5"></div>
+                </div>
+            </div>
+            <div class="tabs-links clearfix">
+                <h6 id="footer-menu-general" data-tab="tab-info-general" class="footer-menu-title">General</h6>
+                <h6 id="footer-menu-shop" data-tab="tab-info-shop" class="footer-menu-title">Shop</h6>
+                <h6 id="footer-menu-contact" data-tab="tab-info-contact" class="footer-menu-title">Contact</h6>
+            </div>
+            <div class="tabs-info">
+                <ul id="tab-info-general" class="big-footer-menu" style="display: none;">
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/about/" >About</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/jobs/" >Jobs</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/newsletter/" >Newsletter</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/siteindex/international/" >Global Sites</a></li>
+                    <li class="footer-item"><a href="http://press.nationalgeographic.com/" >Press Room</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/mediakit/" >Advertise</a></li>
+                </ul>
+                <ul id="tab-info-shop" class="big-footer-menu" style="display: none;">
+                    <li class="footer-item"><a href="http://shop.nationalgeographic.com/ngs/index.jsp?code=NG94281" >Store</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/magazines/" >Subscribe</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographicexpeditions.com/home?utm_source=travel.nationalgeographic.com&amp;utm_medium=Link&amp;utm_content=Footer_link_Our_Trips&amp;utm_campaign=NGdotcom" >Trips</a></li>
+                    <li class="footer-item"><a href="http://events.nationalgeographic.com/" >Events</a></li>
+                    <li class="footer-item"><a href="http://events.nationalgeographic.com/events/exhibits/" >Exhibits</a></li>
+                </ul>
+                <ul id="tab-info-contact" class="big-footer-menu" style="display: none;">
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/siteindex/customer/" >Customer Service</a></li>
+                    <li class="footer-item"><a href="https://donate.nationalgeographic.org/Page.aspx?pid=184" >Donate</a></li>
+                    <li class="footer-item"><a href="http://www.nationalgeographic.com/community/email/" >Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-title">Follow Nat Geo</div>
+            <ul class="social-icons-list">
+                <li class="social-icons-footer"><a href="https://www.facebook.com/natgeo" ><i id="icongs-footer-facebook" class="icongs icongs-facebook"></i></a>&nbsp;</li>
+                <li class="social-icons-footer"><a href="http://instagram.com/natgeo" ><i id="icongs-footer-instagram" class="icongs icongs-instagram"></i></a>&nbsp;</li>
+                <li class="social-icons-footer"><a href="https://twitter.com/NatGeo" ><i id="icongs-footer-twitter" class="icongs icongs-twitter"></i></a>&nbsp;</li>
+            </ul>
+            <ul class="terms-privacy">
+                <li class="footer-item"><a href="http://www.nationalgeographic.com/community/terms/" >Terms of Service</a></li>
+                <li class="footer-item"><a href="http://www.nationalgeographic.com/community/privacy/" >Privacy Policy</a></li>
+            </ul>
+            <div class="copyright">
+                <p class="footer-item">© 1996-2015 National Geographic Society.</p>
+                <p class="footer-item">All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+    (function(window){
+        var Tabs = function(selector){
+            var $rootElement = $(selector),
+                $activeTab = void(0),
+                $activeTitle = void(0),
+                //Private Methods start here
+                attachHandlers = function () {
+                    $rootElement.on("click", function (event) {
+                        var $el = $(event.currentTarget),
+                            dest = "#"+$el.data("tab");
+
+                        if (!$activeTitle){
+                            $activeTitle = $el;
+                            $activeTitle.addClass("active");
+                        } else if ($activeTitle && $activeTab.selector != dest){
+                            $activeTitle.removeClass("active");
+                            $activeTitle = $el;
+                            $activeTitle.addClass("active");
+                        } else {
+                            $activeTitle.removeClass("active");
+                            $activeTitle = void(0);
+                        }
+
+                        if (!$activeTab) {
+                            $activeTab = $(dest);
+                            $activeTab.addClass("active");
+                            //$activeTab.show();
+                            $activeTab.slideDown();
+                        } else if($activeTab && $activeTab.selector != dest) {
+                            //$activeTab.hide();
+                            $activeTab.slideUp();
+                            $activeTab.removeClass("active");
+                            $activeTab = $(dest);
+                            //$activeTab.show();
+                            $activeTab.slideDown();
+                        } else {
+                            //$activeTab.hide();
+                            $activeTab.slideUp();
+                            $activeTab = void(0);
+                        }
+                    });
+                };
+                //Public Methods start here.
+                this.init = function () {
+                    attachHandlers();
+                };
+
+        },
+        tabsInstance = new Tabs(".footer .footer-menu-title");
+        tabsInstance.init();
+    })(window);
+    </script>
+
+
+    
+
+    
+
+
+
+
+
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+    FB.init({
+        appId        :     '130939060280023',
+        status       :     true, // check login status
+        cookie       :     true, // enable cookies to allow the server to access the session
+        xfbml        :     true,  // parse XFBML
+        channelUrl   :     'http://images.nationalgeographic.com/wpf/sites/common/inc/channel.html'
+    });
+};
+
+(function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+
+
+    <div id="gigya_login_div"></div>
+
+
+
+
+
+<script src="//images.nationalgeographic.com/wpf/sites/common/j/jquery.dfp.min-cb1414755310.js"></script>
+<script>
+    /* Initializes the ad slots.
+     * Arguments:
+     *  - loadSecondaryAdBox: boolean. 
+     *    -- `true`: the function will load/reload only the secondary ad slot (after-ad).
+     *    -- other value than `true`: the function will load all the ad slots.
+     */ 
+    function initAds(loadSecondaryAdBox) {
+        var $units;
+        $('.adunit').each(function() {
+            var $element = $(this);
+            var $parent = $element.closest('.advertisement');
+            if ($parent.length == 0 || $parent.css('display') !== 'none') {
+                $element.addClass('visible');
+            }
+        });
+        
+        if (loadSecondaryAdBox) {
+            $('div.secondary_ad').removeClass('hidden');
+            $units = $('#headerboard .adunit.ad-after');
+        } else {
+            $('div.secondary_ad').addClass('hidden');
+            $units = $('.adunit.visible:not(.ad-after)');
+        }
+        
+        $units.each(function(i, unit) {
+            $(unit).data().afterLoadAdreadyExecuted = false;
+        });
+        $units.dfp({
+            dfpID: '2994',
+            collapseEmptyDivs: true,
+            enableSingleRequest: false,
+
+            // Callback which is run after the render of all ads.
+            afterEachAdLoaded: function (adUnit, event) {
+                if (adUnit.data().afterLoadAdreadyExecuted === false) {
+                    var slotWidth = event.size[0];
+                    if (adUnit.is('.ad-after') && adUnit.closest('#headerboard').length > 0) {
+                        if (slotWidth > 0) {
+                            $('div.adunit.leaderboard:not(.hidden)').css('float', 'left');
+                        }
+                    } else {
+                        if (adUnit.is('.leaderboard')) {
+                            if (slotWidth <= 728) {
+                                initAds(true);
+                            } else {
+                                $('div.adunit.leaderboard:not(.hidden)').css('float', 'none');
+                            }
+                        }
+                    }
+                    adUnit.data().afterLoadAdreadyExecuted = true;
+                }
+            }
+        });
+    }
+
+    /**
+     * Add a script inside the interstitial div, that initialize
+     * the slot to show the GPT ad; this function also save the
+     * slot's instance in window, to refresh the ad every time
+     * this function is called.
+     * ad-gallery-container is the div's id
+     */
+    function interstitialAd(adunit, adsize, divId) {
+        var gtag = document.createElement('script');
+        gtag.type = 'text/javascript';
+        gtag.innerHTML = 'googletag.cmd.push(function() {' +
+            'if(window.adInterstitial == undefined){' +
+                'var slot1 = googletag.defineSlot("2994/' 
+                    + adunit + '", [' + adsize[0] + ', ' 
+                    + adsize[1] + '],"'+divId+'");' +
+                'window.adInterstitial = slot1;' +
+            '}' +
+            'else{' +
+                'slot1 = window.adInterstitial;' +
+            '}' +
+            'slot1.addService(googletag.pubads());googletag.'+
+                'enableServices();googletag.display("'+divId+'");});';
+        //add the script tag inside the div
+        $('#'+divId).append(gtag);
+        //refresh only the instance of the interstitial ad
+        googletag.pubads().refresh([window.adInterstitial]);
+    }
+
+    function ngsAdvertisingRefresh(){
+        initAds();
+    }
+
+    function ngsPageView(pageName,separator){
+        if (window.location.hostname.indexOf ("video.") === 0){
+            return;
+        }
+        // if there are refreshable ads on a page then refresh them
+        ngsAdvertisingRefresh();
+    }
+
+    initAds();
+</script>
+
+
+
+
+</body>
+
+
+
+</html>
+
