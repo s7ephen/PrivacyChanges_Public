@@ -1,1 +1,6094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<script type="text/javascript" src="//s3.amazonaws.com/madmobile/zales/js/mobiledirect.js"></script>
+	
+    
+		<title>Privacy Policy - Zales</title>
+	
+
+
+
+<script language="Javascript">
+function trimString (str) {
+  while (str.charAt(0) == ' ')
+    str = str.substring(1);
+  while (str.charAt(str.length - 1) == ' ')
+    str = str.substring(0, str.length - 1);
+  return str;
+}
+
+
+function emailCheck(type) // not sure if anybody uses this, but just in case i'm leaving it functional
+{
+ var email = trimString(document.emailForm.emailAddress.value);
+
+    if (!validEmail(email))
+	{
+        alert('Please enter a valid e-mail address.');
+        return false;
+    }
+	if(type == 1)
+	{
+        document.emailForm.submit();
+	}
+}
+
+function validEmail(email)
+{
+    var vAtSym    = email.indexOf('@')
+    var vPeriod   = email.lastIndexOf('.')
+    var vSpace    = email.indexOf(' ')
+    var vLength   = email.length - 1   // Array is from 0 to length-1
+
+    if (vAtSym < 1 ||                     // '@' cannot be in first position
+    	vPeriod <= vAtSym + 1 ||          // Must be atleast one valid char btwn '@' and '.'
+    	vPeriod == vLength  ||            // Must be atleast one valid char after '.'
+    	vSpace  != -1)                    // No empty spaces permitted
+	{
+        return false;
+    }
+	return true;
+}
+
+
+
+
+
+function showCustomPopUp(thisUrl,thisName,theseParams)
+{
+	remote = open(thisUrl, thisName, theseParams);
+}
+
+
+//	verisign POP-UP WINDOW
+function popUp(url)
+{
+	sealWin=window.open(url,"win",'toolbar=0,location=0,directories=0,status=1,menubar=1,scrollbars=1,resizable=1,width=500,height=450');
+	self.name = "mainWin";
+}
+
+function jump(url)
+{
+	if (url != "" && url != null)
+	{
+		self.location.href = url;
+	}
+}
+</SCRIPT>
+
+
+
+
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<!--Start ../include/headtag_inc.jsp content - adds Live Bookmark -->
+<link rel="alternate" type="application/rss+xml" title="Zales Promotions" href="http://feeds.feedburner.com/Zales">
+<!--  Do not edit/add css links here. Use the min-cat project. Config file: /ant-min-cat/site-css.xml -->
+<link href="http://ZALES.imageg.net/min-cat/site-css.xml.min.css" type="text/css" rel="stylesheet" />
+<!--  end min-cat section -->
+
+<script type="text/javascript" src="http://ZALES.imageg.net/js/Df.js"></script>
+
+	
+
+    <script src="//nexus.ensighten.com/zales/Bootstrap.js"></script>
+
+
+
+
+
+
+
+<script src="http://ZALES.imageg.net/min-cat/site-head-js.xml.min.js"></script>
+<script type="text/javascript">
+	jQuery.noConflict();
+	if(typeof window.mboxCreate != 'function') {
+		// function does not exists, create it it
+		mboxCreate = function(test) {
+
+		}
+	}
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/webfonts/zalesFonts.css" />
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="http://ZALES.imageg.net/css/ie6.css" />
+<![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="http://ZALES.imageg.net/css/ie7.css" />
+<![endif]-->
+
+
+<link rel="stylesheet" type="text/css" href="http://ZALES.imageg.net/include/store.css" />
+<link rel="stylesheet" type="text/css" href="http://ZALES.imageg.net/css/zales_helpdesk.css" />
+<style> p.footerlinks2 { color:#000000; } </style>
+</head>
+<body class="helpdesk">
+<A NAME="pageTop()"></A>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+-->
+
+<!-- </html> -->
+
+
+
+
+<noscript><div id="no-js-message"><p>We have detected that you have <b>JavaScript disabled</b>. Certain features may be unavailable to you on our website.
+For a more complete experience, please enable JavaScript.</p></div></noscript>
+
+
+<div id="borderWrapper"  >
+	<div id="wrapper">
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	<div id="monetatetrackingPixels" style="visibility:hidden">
+			<!-- Begin Monetate V5 tag, place in the header of document body. (helpdesk)  and viewPageMP is -->  
+			<script type="text/javascript">
+				var monetateQ = [];				
+			
+					
+			
+
+			
+			var monetateT = new Date().getTime();
+			(function(){
+				var p = document.location.protocol;
+				if (p == "http:" || p == "https:") {
+					var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true; m.src = (p == "https:" ? "https://s" : "http://") + "b.monetate.net/js/1/a-01c73498/p/zales.com/" + Math.floor(monetateT / 3600000) + "/g";
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);}})();
+			</script>
+
+		<!-- End Monetate tag. -->
+	</div>
+
+
+		<div id="header">
+		
+			<a class="branding" href="/">Zales &mdash; America's Diamond Store Since 1924</a>
+		
+			<ul id="headerUtils">
+				<li>
+					<a rel="nofollow" href="/cart/index.jsp?clickid=topnav_shoppingbag_txt">Shopping Bag</a>
+(0 items)
+				</li>
+				<li>
+					<a rel="nofollow" href="https://www.zales.com/coreg/index.jsp?step=register">My Account</a>
+
+				</li>
+				<li>
+					<a rel="nofollow" href="https://www.zales.com/coreg/index.jsp?step=ot">Order Status</a>
+				</li>
+				<li>
+					<a rel="nofollow" href="https://creditservices.zales.com/">Credit</a>
+				</li>
+				<li>
+					<a rel="nofollow" href="http://stores.zalecorp.com/StoreLocator.aspx?b=Zales">Store Locator</a>
+				</li>
+				<li>
+					Contact us 24/7 <a rel="nofollow" href="/helpdesk/index.jsp?display=store&subdisplay=contact">online</a> or call
+					<br />
+					<strong>1-800-311-JEWEL (5393)</strong>
+				</li>
+			</ul>
+
+<div id="headerTopOAS">
+
+</div>
+			
+			<div id="searchForm">
+			
+                <a id="shop-zales-more" href="/zales-outlet/category.jsp?categoryId=3720530">shop zales outlet</a>
+			
+			
+				<form name="search" action="/search/controller.jsp" method="get">
+					<select class="siteSelect" name="f" id="f">
+					
+						<option value="Taxonomy/ZALES/3740873" >Zales</option>
+						<option value="Taxonomy/ZALES/3720530" >Zales Outlet</option>
+					</select>
+					<input type="hidden" name="fbc" value="0" />
+					<input type="text" class="kw" name="kw" value="Keyword or item #" onfocus="if(this.value == 'Keyword or item #') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Keyword or item #'; }" />
+					
+					
+						<input type="image" class="submit" src="http://ZALES.imageg.net/images/header_search.gif" width="56" height="17" />
+					
+				</form>
+			</div>
+
+
+			
+
+			<ul id="mainNav" class="primary-nav">
+				<script>
+					// Immediately hide before rendering elements to do width calculations hidden
+				if (!jQuery("#mainNav").hasClass("outlet-nav")) {
+					jQuery("#mainNav").css("visibility", "hidden")
+				}
+				</script>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li class="mainNavItem mainNav13337262">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/wedding/category.jsp?categoryId=13337262&amp;ab=MM:Wedding:Tab"  title="Wedding">
+							
+							
+							
+				        
+				        	Wedding</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>SHOP</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/category.jsp?categoryId=3737583&amp;cp=13337262&amp;ab=MM:Wedding:Design Your Own"  title="Design Your Own">
+						
+						
+						
+
+
+						Design Your Own</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/engagement/family.jsp?categoryId=3045659&amp;cp=13337262&amp;ab=MM:Wedding:Engagement"  title="Engagement">
+						
+						
+						
+
+
+						Engagement</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/bridal-sets/family.jsp?categoryId=2137035&amp;cp=13337262&amp;ab=MM:Wedding:Bridal Sets"  title="Bridal Sets">
+						
+						
+						
+
+
+						Bridal Sets</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/wedding-bands/family.jsp?categoryId=3280879&amp;cp=13337262&amp;ab=MM:Wedding:Wedding Bands"  title="Wedding Bands">
+						
+						
+						
+
+
+						Wedding Bands</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/anniversary/family.jsp?categoryId=3096958&amp;cp=13337262&amp;ab=MM:Wedding:Anniversary"  title="Anniversary">
+						
+						
+						
+
+
+						Anniversary</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/promise-rings/family.jsp?categoryId=2109181&amp;cp=13337262&amp;ab=MM:Wedding:Promise Rings"  title="Promise Rings">
+						
+						
+						
+
+
+						Promise Rings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/wedding-gifts/family.jsp?categoryId=12942218&amp;cp=13337262&amp;ab=MM:Wedding:Wedding Gifts"  title="Wedding Gifts">
+						
+						
+						
+
+
+						Wedding Gifts</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/settings/shop.jsp?categoryId=12942223&amp;cp=13337262&amp;ab=MM:Wedding:Settings"  title="Settings">
+						
+						
+						
+
+
+						Settings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/loose-diamonds/shop.jsp?categoryId=3261689&amp;cp=13337262&amp;ab=MM:Wedding:Loose Diamonds"  title="Loose Diamonds">
+						
+						
+						
+
+
+						Loose Diamonds</a></li></ul></li><li class="subNavGroup catman"><h2>EXCLUSIVE COLLECTIONS</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/vera-wang-love/category.jsp?categoryId=12134615&amp;cp=13337262&amp;ab=MM:Wedding:Vera Wang LOVE"  title="Vera Wang LOVE">
+						
+						
+						
+
+
+						Vera Wang LOVE</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/celebration-diamond/category.jsp?categoryId=3280798&amp;cp=13337262&amp;ab=MM:Wedding:Celebration Diamond"  title="Celebration Diamond">
+						
+						
+						
+
+
+						Celebration Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/neil-lane/family.jsp?categoryId=67699806&amp;cp=13337262&amp;ab=MM:Wedding:Neil Lane"  title="Neil Lane">
+						
+						
+						
+
+
+						Neil Lane</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/wedding/arctic-brilliance/family.jsp?categoryId=12361058&amp;cp=13337262&amp;ab=MM:Wedding:Arctic Brilliance"  title="Arctic Brilliance">
+						
+						
+						
+
+
+						Arctic Brilliance</a></li></ul></li><li class="subNavGroup catman"><h2>EDUCATION</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/education/diamond-buying-guide/category.jsp?categoryId=3334564&amp;cp=13337262&amp;ab=MM:Wedding:Diamond Buying Guide"  title="Diamond Buying Guide">
+						
+						
+						
+
+
+						Diamond Buying Guide</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/education/learn-about-ring-styles/category.jsp?categoryId=3334565&amp;cp=13337262&amp;ab=MM:Wedding:Learn About Ring Styles"  title="Learn About Ring Styles">
+						
+						
+						
+
+
+						Ring Styles</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/education/learn-about-band-styles/category.jsp?categoryId=3334566&amp;cp=13337262&amp;ab=MM:Wedding:Learn About Band Styles"  title="Learn About Band Styles">
+						
+						
+						
+
+
+						Band Styles</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/education/wedding-party-gifts/category.jsp?categoryId=3334567&amp;cp=13337262&amp;ab=MM:Wedding:Wedding Party Gifts"  title="Wedding Party Gifts">
+						
+						
+						
+
+
+						Wedding Party Gifts</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/education/anniversary-gifts-by-year/category.jsp?categoryId=3280898&amp;cp=13337262&amp;ab=MM:Wedding:Anniversary Gifts by Year"  title="Anniversary Gifts by Year">
+						
+						
+						
+
+
+						Anniversary Gifts</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/the-zales-difference/category.jsp?categoryId=3730129&amp;cp=13337262&amp;ab=MM:Wedding:The Zales Difference"  title="The Zales Difference">
+						
+						
+						
+
+
+						The Zales Difference</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/wedding/love-stories/category.jsp?categoryId=12942239&amp;cp=13337262&amp;ab=MM:Wedding:Love Stories"  title="Love Stories">
+						
+						
+						
+
+
+						Love Stories</a></li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/wedding/view-all-wedding/family.jsp?categoryId=3895375&amp;cp=13337262&amp;ab=MM:Wedding:View All Wedding"  title="Wedding">
+											
+											
+											
+
+
+										View All Wedding &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598389   -->
+<!-- === Page Name:  z_mega1_wedding_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_1.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_1.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550170   -->
+<!-- === Widget Name:  zales_2528_nav_1   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_1" style="width:500px;border:0px;overflow:hidden;">
+
+
+<script type="text/javascript">
+function invokeAnchor(id)
+{
+var anchor = document.getElementById(id);
+window.location = anchor.href;
+}
+</script>
+<a id="linkURL0" href="http://www.zales.com/family/index.jsp?categoryId=3895375&amp;ab=MEGA:WEDDING" style="display:none"></a><img border="0" name="cms_image348814908_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550170_assets/z_megasTUTAE15_wedding1a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL0');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337264">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/rings/category.jsp?categoryId=13337264&amp;ab=MM:Rings:Tab"  title="Rings">
+							
+							
+							
+				        
+				        	Rings</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>SHOP BY MATERIAL</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/diamond/shop.jsp?categoryId=3261685&amp;cp=13337264&amp;ab=MM:Rings:Diamond Rings"  title="Diamond Rings">
+						
+						
+						
+
+
+						Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/gemstone/shop.jsp?categoryId=3261687&amp;cp=13337264&amp;ab=MM:Rings:Gemstone Rings"  title="Gemstone Rings">
+						
+						
+						
+
+
+						Gemstone</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/pearl/shop.jsp?categoryId=3261688&amp;cp=13337264&amp;ab=MM:Rings:Pearl Rings"  title="Pearl Rings">
+						
+						
+						
+
+
+						Pearl</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/gold/shop.jsp?categoryId=13339987&amp;cp=13337264&amp;ab=MM:Rings:Gold Rings"  title="Gold Rings">
+						
+						
+						
+
+
+						Gold</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/silver/shop.jsp?categoryId=13339988&amp;cp=13337264&amp;ab=MM:Rings:Sterling Silver Rings"  title="Sterling Silver Rings">
+						
+						
+						
+
+
+						Silver</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/stainless-steel/shop.jsp?categoryId=13339989&amp;cp=13337264&amp;ab=MM:Rings:Stainless Steel Rings"  title="Stainless Steel Rings">
+						
+						
+						
+
+
+						Stainless Steel</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/titanium/shop.jsp?categoryId=13339991&amp;cp=13337264&amp;ab=MM:Rings:Titanium Rings"  title="Titanium Rings">
+						
+						
+						
+
+
+						Titanium</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/tungsten/shop.jsp?categoryId=13339992&amp;cp=13337264&amp;ab=MM:Rings:Tungsten Rings"  title="Tungsten Rings">
+						
+						
+						
+
+
+						Tungsten</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/rings/shop-by-material/cobalt/shop.jsp?categoryId=13339972&amp;cp=13337264&amp;ab=MM:Rings:Cobalt Rings"  title="Cobalt Rings">
+						
+						
+						
+
+
+						Cobalt</a></li></ul></li><li class="subNavGroup parametric"><h2>Gender</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FChild%27s&amp;fd=Child%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Child&#039;s&amp;ab=MM:Rings:Child&#039;s">
+										
+										
+										
+												Child's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FLadies%27&amp;fd=Ladies%27&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Ladies&#039;&amp;ab=MM:Rings:Ladies&#039;">
+										
+										
+										
+												Ladies'
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FMen%27s&amp;fd=Men%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Men&#039;s&amp;ab=MM:Rings:Men&#039;s">
+										
+										
+										
+												Men's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FUnisex&amp;fd=Unisex&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Unisex&amp;ab=MM:Rings:Unisex">
+										
+										
+										
+												Unisex
+											</a></li></ul></li><li class="subNavGroup parametric"><h2>Price</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00000000%7E-%7E00004999&amp;fd=Under+%2450&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Under $50&amp;ab=MM:Rings:Under $50">
+										
+										
+										
+												Under $50
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00005000%7E-%7E00009999&amp;fd=%2450.00+-+%2499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$50.00 - $99.00&amp;ab=MM:Rings:$50.00 - $99.00">
+										
+										
+										
+												$50 - $99
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00010000%7E-%7E00024999&amp;fd=%24100.00+-+%24249.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$100.00 - $249.00&amp;ab=MM:Rings:$100.00 - $249.00">
+										
+										
+										
+												$100 - $249
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00025000%7E-%7E00049999&amp;fd=%24250.00+-+%24499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$250.00 - $499.00&amp;ab=MM:Rings:$250.00 - $499.00">
+										
+										
+										
+												$250 - $499
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00050000%7E-%7E00074999&amp;fd=%24500.00+-+%24749.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$500.00 - $749.00&amp;ab=MM:Rings:$500.00 - $749.00">
+										
+										
+										
+												$500 - $749
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00075000%7E-%7E00099999&amp;fd=%24750.00+-+%24999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$750.00 - $999.00&amp;ab=MM:Rings:$750.00 - $999.00">
+										
+										
+										
+												$750 - $999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00100000%7E-%7E00199999&amp;fd=%241%2C000.00+-+%241%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$1,000.00 - $1,999.00&amp;ab=MM:Rings:$1,000.00 - $1,999.00">
+										
+										
+										
+												$1,000 - $1,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00200000%7E-%7E00299999&amp;fd=%242%2C000.00+-+%242%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$2,000.00 - $2,999.00&amp;ab=MM:Rings:$2,000.00 - $2,999.00">
+										
+										
+										
+
+									$2,000 - $2,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00300000%7E-%7E00499999&amp;fd=%243%2C000.00+-+%244%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$3,000.00 - $4,999.00&amp;ab=MM:Rings:$3,000.00 - $4,999.00">
+										
+										
+										
+
+									$3,000 - $4,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;categoryId=2109136&amp;fg=Price&amp;ff=StorePrice&amp;fv=00500000%7E-%7E999999999999&amp;fd=Over+%245%2C000.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Over $5,000.00&amp;ab=MM:Rings:Over $5,000.00">
+										
+										
+										
+
+									Over $5,000
+									</a>
+									</li></ul></li><li class="subNavGroup catman"><h2>POPULAR STYLES</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/category.jsp?categoryId=3737583&amp;cp=13337264&amp;ab=MM:Rings:Design Your Own"  title="Design Your Own">
+						
+						
+						
+
+
+						Design Your Own</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/engagement/family.jsp?categoryId=3045659&amp;cp=13337264&amp;ab=MM:Rings:Engagement"  title="Engagement">
+						
+						
+						
+
+
+						Engagement</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/bridal-sets/family.jsp?categoryId=2137035&amp;cp=13337264&amp;ab=MM:Rings:Bridal Sets"  title="Bridal Sets">
+						
+						
+						
+
+
+						Bridal Sets</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/wedding-bands/family.jsp?categoryId=3280879&amp;cp=13337264&amp;ab=MM:Rings:Wedding Bands"  title="Wedding Bands">
+						
+						
+						
+
+
+						Wedding Bands</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/trio-collection/family.jsp?categoryId=3637056&amp;cp=13337264&amp;ab=MM:Rings:Trios"  title="Trios">
+						
+						
+						
+
+
+						Trio Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/solitaire-enhancers/shop.jsp?categoryId=3280878&amp;cp=13337264&amp;ab=MM:Rings:Solitaire Enhancers"  title="Solitaire Enhancers">
+						
+						
+						
+
+
+						Solitaire Enhancers</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/promise-rings/family.jsp?categoryId=2109181&amp;cp=13337264&amp;ab=MM:Rings:Promise Rings"  title="Promise Rings">
+						
+						
+						
+
+
+						Promise Rings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/three-stone/shop.jsp?categoryId=2109182&amp;cp=13337264&amp;ab=MM:Rings:Three Stone Rings"  title="Three Stone Rings">
+						
+						
+						
+
+
+						Three Stone</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/fashion/shop.jsp?categoryId=3261684&amp;cp=13337264&amp;ab=MM:Rings:Fashion Rings"  title="Fashion Rings">
+						
+						
+						
+
+
+						Fashion</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/popular-styles/mothers-family/shop.jsp?categoryId=30078696&amp;cp=13337264&amp;ab=MM:Rings:Mother&#039;s &amp; Family"  title="Mother&#039;s &amp; Family">
+						
+						
+						
+
+
+						Mother&#039;s &amp; Family</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/rings/class-rings/family.jsp?categoryId=2073098&amp;cp=13337264&amp;ab=MM:Rings:Class Rings"  title="Class Rings">
+						
+						
+						
+
+
+						Class Rings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/rings/personalized/family.jsp?categoryId=3261690&amp;cp=13337264&amp;ab=MM:Rings:Personalized Rings"  title="Personalized Rings">
+						
+						
+						
+
+
+						Personalized</a></li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/rings/view-all-rings/family.jsp?categoryId=2109136&amp;cp=13337264&amp;ab=MM:Rings:View All Rings"  title="Rings">
+											
+											
+											
+
+
+										View All Rings &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598390   -->
+<!-- === Page Name:  z_mega2_rings_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_2.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_2.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550171   -->
+<!-- === Widget Name:  zales_2528_nav_2   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_2" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL1" href="http://www.zales.com/family/index.jsp?categoryId=2109136&amp;ab=MEGA:RINGS" style="display:none"></a><img border="0" name="cms_image247474898_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550171_assets/z_megasTUTAE15_rings2a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL1');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337268">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/necklaces/category.jsp?categoryId=13337268&amp;ab=MM:Necklaces:Tab"  title="Necklaces">
+							
+							
+							
+				        
+				        	Necklaces</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>SHOP BY MATERIAL</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/diamond/shop.jsp?categoryId=3263544&amp;cp=13337268&amp;ab=MM:Necklaces:Diamond Necklaces &amp; Pendants"  title="Diamond Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/gemstone/shop.jsp?categoryId=3263546&amp;cp=13337268&amp;ab=MM:Necklaces:Gemstone Necklaces &amp; Pendants"  title="Gemstone Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Gemstone</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/pearl/shop.jsp?categoryId=3263547&amp;cp=13337268&amp;ab=MM:Necklaces:Pearl Necklaces &amp; Pendants"  title="Pearl Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Pearl</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/gold/shop.jsp?categoryId=3263548&amp;cp=13337268&amp;ab=MM:Necklaces:Gold Necklaces &amp; Pendants"  title="Gold Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Gold</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/silver/shop.jsp?categoryId=3263549&amp;cp=13337268&amp;ab=MM:Necklaces:Sterling Silver Necklaces &amp; Pendants"  title="Sterling Silver Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Silver</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/necklaces/shop-by-material/stainless-steel/shop.jsp?categoryId=13339997&amp;cp=13337268&amp;ab=MM:Necklaces:Stainless Steel Necklaces &amp; Pendants "  title="Stainless Steel Necklaces &amp; Pendants ">
+						
+						
+						
+
+
+						Stainless Steel</a></li></ul></li><li class="subNavGroup parametric"><h2>Gender</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FChild%27s&amp;fd=Child%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Child&#039;s&amp;ab=MM:Necklaces:Child&#039;s">
+										
+										
+										
+												Child's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FLadies%27&amp;fd=Ladies%27&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Ladies&#039;&amp;ab=MM:Necklaces:Ladies&#039;">
+										
+										
+										
+												Ladies'
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FMen%27s&amp;fd=Men%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Men&#039;s&amp;ab=MM:Necklaces:Men&#039;s">
+										
+										
+										
+												Men's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FUnisex&amp;fd=Unisex&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Unisex&amp;ab=MM:Necklaces:Unisex">
+										
+										
+										
+												Unisex
+											</a></li></ul></li><li class="subNavGroup parametric"><h2>Price</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00000000%7E-%7E00004999&amp;fd=Under+%2450&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Under $50&amp;ab=MM:Necklaces:Under $50">
+										
+										
+										
+												Under $50
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00005000%7E-%7E00009999&amp;fd=%2450.00+-+%2499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$50.00 - $99.00&amp;ab=MM:Necklaces:$50.00 - $99.00">
+										
+										
+										
+												$50 - $99
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00010000%7E-%7E00024999&amp;fd=%24100.00+-+%24249.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$100.00 - $249.00&amp;ab=MM:Necklaces:$100.00 - $249.00">
+										
+										
+										
+												$100 - $249
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00025000%7E-%7E00049999&amp;fd=%24250.00+-+%24499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$250.00 - $499.00&amp;ab=MM:Necklaces:$250.00 - $499.00">
+										
+										
+										
+												$250 - $499
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00050000%7E-%7E00074999&amp;fd=%24500.00+-+%24749.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$500.00 - $749.00&amp;ab=MM:Necklaces:$500.00 - $749.00">
+										
+										
+										
+												$500 - $749
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00075000%7E-%7E00099999&amp;fd=%24750.00+-+%24999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$750.00 - $999.00&amp;ab=MM:Necklaces:$750.00 - $999.00">
+										
+										
+										
+												$750 - $999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00100000%7E-%7E00199999&amp;fd=%241%2C000.00+-+%241%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$1,000.00 - $1,999.00&amp;ab=MM:Necklaces:$1,000.00 - $1,999.00">
+										
+										
+										
+												$1,000 - $1,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00200000%7E-%7E00299999&amp;fd=%242%2C000.00+-+%242%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$2,000.00 - $2,999.00&amp;ab=MM:Necklaces:$2,000.00 - $2,999.00">
+										
+										
+										
+
+									$2,000 - $2,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00300000%7E-%7E00499999&amp;fd=%243%2C000.00+-+%244%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$3,000.00 - $4,999.00&amp;ab=MM:Necklaces:$3,000.00 - $4,999.00">
+										
+										
+										
+
+									$3,000 - $4,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;categoryId=2109139&amp;fg=Price&amp;ff=StorePrice&amp;fv=00500000%7E-%7E999999999999&amp;fd=Over+%245%2C000.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Over $5,000.00&amp;ab=MM:Necklaces:Over $5,000.00">
+										
+										
+										
+
+									Over $5,000
+									</a>
+									</li></ul></li><li class="subNavGroup catman"><h2>POPULAR STYLES</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/design-your-own/shop.jsp?categoryId=12109885&amp;cp=13337268&amp;ab=MM:Necklaces:Design Your Own"  title="Design Your Own">
+						
+						
+						
+
+
+						Design Your Own</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/chains/shop.jsp?categoryId=3263550&amp;cp=13337268&amp;ab=MM:Necklaces:Chain Necklaces"  title="Chain Necklaces">
+						
+						
+						
+
+
+						Chains</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/lockets/shop.jsp?categoryId=3263551&amp;cp=13337268&amp;ab=MM:Necklaces:Lockets"  title="Lockets">
+						
+						
+						
+
+
+						Lockets</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/hearts/shop.jsp?categoryId=3263553&amp;cp=13337268&amp;ab=MM:Necklaces:Hearts"  title="Hearts">
+						
+						
+						
+
+
+						Hearts</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/crosses/shop.jsp?categoryId=3263554&amp;cp=13337268&amp;ab=MM:Necklaces:Crosses"  title="Crosses">
+						
+						
+						
+
+
+						Crosses</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/whimsical/shop.jsp?categoryId=3556446&amp;cp=13337268&amp;ab=MM:Necklaces:Whimsical"  title="Whimsical">
+						
+						
+						
+
+
+						Whimsical</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/necklaces/journey-pendants/family.jsp?categoryId=3263552&amp;cp=13337268&amp;ab=MM:Necklaces:Journey Pendants"  title="Journey Pendants">
+						
+						
+						
+
+
+						Journey</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/necklaces/personalized/family.jsp?categoryId=3263557&amp;cp=13337268&amp;ab=MM:Necklaces:Personalized Necklaces &amp; Pendants"  title="Personalized Necklaces &amp; Pendants">
+						
+						
+						
+
+
+						Personalized</a></li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/necklaces/view-all-necklaces/family.jsp?categoryId=2109139&amp;cp=13337268&amp;ab=MM:Necklaces:View All Necklaces"  title="Necklaces">
+											
+											
+											
+
+
+										View All Necklaces &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598412   -->
+<!-- === Page Name:  z_mega3_necklaces_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_3.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_3.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550169   -->
+<!-- === Widget Name:  zales_2528_nav_3   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_3" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL2" href="http://www.zales.com/family/index.jsp?categoryId=2109139&amp;ab=MEGA:NECKLACES" style="display:none"></a><img border="0" name="cms_image252550998_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550169_assets/z_megasTUTAE15_necklaces3a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL2');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337270">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/earrings/category.jsp?categoryId=13337270&amp;ab=MM:Earrings:Tab"  title="Earrings">
+							
+							
+							
+				        
+				        	Earrings</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>SHOP BY MATERIAL</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/diamond/shop.jsp?categoryId=3263622&amp;cp=13337270&amp;ab=MM:Earrings:Diamond Earrings"  title="Diamond Earrings">
+						
+						
+						
+
+
+						Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/gemstone/shop.jsp?categoryId=3263623&amp;cp=13337270&amp;ab=MM:Earrings:Gemstone Earrings"  title="Gemstone Earrings">
+						
+						
+						
+
+
+						Gemstone</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/pearl/shop.jsp?categoryId=3263624&amp;cp=13337270&amp;ab=MM:Earrings:Pearl Earrings"  title="Pearl Earrings">
+						
+						
+						
+
+
+						Pearl</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/gold/shop.jsp?categoryId=3263625&amp;cp=13337270&amp;ab=MM:Earrings:Gold Earrings"  title="Gold Earrings">
+						
+						
+						
+
+
+						Gold</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/earrings/silver/shop.jsp?categoryId=3263630&amp;cp=13337270&amp;ab=MM:Earrings:Sterling Silver Earrings"  title="Sterling Silver Earrings">
+						
+						
+						
+
+
+						Silver</a></li></ul></li><li class="subNavGroup parametric"><h2>Gender</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FChild%27s&amp;fd=Child%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Child&#039;s&amp;ab=MM:Earrings:Child&#039;s">
+										
+										
+										
+												Child's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FLadies%27&amp;fd=Ladies%27&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Ladies&#039;&amp;ab=MM:Earrings:Ladies&#039;">
+										
+										
+										
+												Ladies'
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FMen%27s&amp;fd=Men%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Men&#039;s&amp;ab=MM:Earrings:Men&#039;s">
+										
+										
+										
+												Men's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FUnisex&amp;fd=Unisex&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Unisex&amp;ab=MM:Earrings:Unisex">
+										
+										
+										
+												Unisex
+											</a></li></ul></li><li class="subNavGroup parametric"><h2>Price</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00000000%7E-%7E00004999&amp;fd=Under+%2450&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Under $50&amp;ab=MM:Earrings:Under $50">
+										
+										
+										
+												Under $50
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00005000%7E-%7E00009999&amp;fd=%2450.00+-+%2499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$50.00 - $99.00&amp;ab=MM:Earrings:$50.00 - $99.00">
+										
+										
+										
+												$50 - $99
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00010000%7E-%7E00024999&amp;fd=%24100.00+-+%24249.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$100.00 - $249.00&amp;ab=MM:Earrings:$100.00 - $249.00">
+										
+										
+										
+												$100 - $249
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00025000%7E-%7E00049999&amp;fd=%24250.00+-+%24499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$250.00 - $499.00&amp;ab=MM:Earrings:$250.00 - $499.00">
+										
+										
+										
+												$250 - $499
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00050000%7E-%7E00074999&amp;fd=%24500.00+-+%24749.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$500.00 - $749.00&amp;ab=MM:Earrings:$500.00 - $749.00">
+										
+										
+										
+												$500 - $749
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00075000%7E-%7E00099999&amp;fd=%24750.00+-+%24999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$750.00 - $999.00&amp;ab=MM:Earrings:$750.00 - $999.00">
+										
+										
+										
+												$750 - $999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00100000%7E-%7E00199999&amp;fd=%241%2C000.00+-+%241%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$1,000.00 - $1,999.00&amp;ab=MM:Earrings:$1,000.00 - $1,999.00">
+										
+										
+										
+												$1,000 - $1,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00200000%7E-%7E00299999&amp;fd=%242%2C000.00+-+%242%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$2,000.00 - $2,999.00&amp;ab=MM:Earrings:$2,000.00 - $2,999.00">
+										
+										
+										
+
+									$2,000 - $2,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00300000%7E-%7E00499999&amp;fd=%243%2C000.00+-+%244%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$3,000.00 - $4,999.00&amp;ab=MM:Earrings:$3,000.00 - $4,999.00">
+										
+										
+										
+
+									$3,000 - $4,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;categoryId=2109138&amp;fg=Price&amp;ff=StorePrice&amp;fv=00500000%7E-%7E999999999999&amp;fd=Over+%245%2C000.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Over $5,000.00&amp;ab=MM:Earrings:Over $5,000.00">
+										
+										
+										
+
+									Over $5,000
+									</a>
+									</li></ul></li><li class="subNavGroup catman"><h2>POPULAR STYLES</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/diamond-studs/shop.jsp?categoryId=4404395&amp;cp=13337270&amp;ab=MM:Earrings:Design Your Own"  title="Design Your Own">
+						
+						
+						
+
+
+						Design Your Own</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/solitaire-studs/shop.jsp?categoryId=3263627&amp;cp=13337270&amp;ab=MM:Earrings:Solitaire Studs"  title="Solitaire Studs">
+						
+						
+						
+
+
+						Solitaire Studs</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/fashion-studs/shop.jsp?categoryId=3263629&amp;cp=13337270&amp;ab=MM:Earrings:Fashion Studs"  title="Fashion Studs">
+						
+						
+						
+
+
+						Fashion Studs</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/hoop/shop.jsp?categoryId=3263631&amp;cp=13337270&amp;ab=MM:Earrings:Hoop Earrings"  title="Hoop Earrings">
+						
+						
+						
+
+
+						Hoop</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/earrings/drop/shop.jsp?categoryId=3263632&amp;cp=13337270&amp;ab=MM:Earrings:Drop Earrings"  title="Drop Earrings">
+						
+						
+						
+
+
+						Drop</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/earrings/personalized/family.jsp?categoryId=3263634&amp;cp=13337270&amp;ab=MM:Earrings:Personalized Earrings"  title="Personalized Earrings">
+						
+						
+						
+
+
+						Personalized</a></li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/earrings/view-all-earrings/family.jsp?categoryId=2109138&amp;cp=13337270&amp;ab=MM:Earrings:View All Earrings"  title="Earrings">
+											
+											
+											
+
+
+										View All Earrings &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598401   -->
+<!-- === Page Name:  z_mega4_earrings_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_4.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_4.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550126   -->
+<!-- === Widget Name:  zales_2528_nav_4   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_4=2550126, zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_4" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL3" href="http://www.zales.com/family/index.jsp?categoryId=2109138&amp;ab=MEGA:EARRINGS" style="display:none"></a><img border="0" name="cms_image370996568_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550126_assets/z_megasTUTAE15_earrings4a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL3');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337271">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/bracelets/category.jsp?categoryId=13337271&amp;ab=MM:Bracelets:Tab"  title="Bracelets">
+							
+							
+							
+				        
+				        	Bracelets</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>SHOP BY MATERIAL</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/diamond/shop.jsp?categoryId=3263652&amp;cp=13337271&amp;ab=MM:Bracelets:Diamond Bracelets"  title="Diamond Bracelets">
+						
+						
+						
+
+
+						Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/gemstone/shop.jsp?categoryId=3263653&amp;cp=13337271&amp;ab=MM:Bracelets:Gemstone Bracelets"  title="Gemstone Bracelets">
+						
+						
+						
+
+
+						Gemstone</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/pearl/shop.jsp?categoryId=3263654&amp;cp=13337271&amp;ab=MM:Bracelets:Pearl Bracelets"  title="Pearl Bracelets">
+						
+						
+						
+
+
+						Pearl</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/gold/shop.jsp?categoryId=3263655&amp;cp=13337271&amp;ab=MM:Bracelets: Gold Bracelets"  title=" Gold Bracelets">
+						
+						
+						
+
+
+						Gold</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/silver/shop.jsp?categoryId=3263657&amp;cp=13337271&amp;ab=MM:Bracelets:Sterling Silver Bracelets"  title="Sterling Silver Bracelets">
+						
+						
+						
+
+
+						Silver</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/bracelets/shop-by-material/stainless-steel/shop.jsp?categoryId=13340000&amp;cp=13337271&amp;ab=MM:Bracelets:Stainless Steel Bracelets"  title="Stainless Steel Bracelets">
+						
+						
+						
+
+
+						Stainless Steel</a></li></ul></li><li class="subNavGroup parametric"><h2>Gender</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FChild%27s&amp;fd=Child%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Child&#039;s&amp;ab=MM:Bracelets:Child&#039;s">
+										
+										
+										
+												Child's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FLadies%27&amp;fd=Ladies%27&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Ladies&#039;&amp;ab=MM:Bracelets:Ladies&#039;">
+										
+										
+										
+												Ladies'
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FMen%27s&amp;fd=Men%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Men&#039;s&amp;ab=MM:Bracelets:Men&#039;s">
+										
+										
+										
+												Men's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FUnisex&amp;fd=Unisex&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Unisex&amp;ab=MM:Bracelets:Unisex">
+										
+										
+										
+												Unisex
+											</a></li></ul></li><li class="subNavGroup parametric"><h2>Price</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00000000%7E-%7E00004999&amp;fd=Under+%2450&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Under $50&amp;ab=MM:Bracelets:Under $50">
+										
+										
+										
+												Under $50
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00005000%7E-%7E00009999&amp;fd=%2450.00+-+%2499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$50.00 - $99.00&amp;ab=MM:Bracelets:$50.00 - $99.00">
+										
+										
+										
+												$50 - $99
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00010000%7E-%7E00024999&amp;fd=%24100.00+-+%24249.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$100.00 - $249.00&amp;ab=MM:Bracelets:$100.00 - $249.00">
+										
+										
+										
+												$100 - $249
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00025000%7E-%7E00049999&amp;fd=%24250.00+-+%24499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$250.00 - $499.00&amp;ab=MM:Bracelets:$250.00 - $499.00">
+										
+										
+										
+												$250 - $499
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00050000%7E-%7E00074999&amp;fd=%24500.00+-+%24749.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$500.00 - $749.00&amp;ab=MM:Bracelets:$500.00 - $749.00">
+										
+										
+										
+												$500 - $749
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00075000%7E-%7E00099999&amp;fd=%24750.00+-+%24999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$750.00 - $999.00&amp;ab=MM:Bracelets:$750.00 - $999.00">
+										
+										
+										
+												$750 - $999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00100000%7E-%7E00199999&amp;fd=%241%2C000.00+-+%241%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$1,000.00 - $1,999.00&amp;ab=MM:Bracelets:$1,000.00 - $1,999.00">
+										
+										
+										
+												$1,000 - $1,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00200000%7E-%7E00299999&amp;fd=%242%2C000.00+-+%242%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$2,000.00 - $2,999.00&amp;ab=MM:Bracelets:$2,000.00 - $2,999.00">
+										
+										
+										
+
+									$2,000 - $2,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00300000%7E-%7E00499999&amp;fd=%243%2C000.00+-+%244%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$3,000.00 - $4,999.00&amp;ab=MM:Bracelets:$3,000.00 - $4,999.00">
+										
+										
+										
+
+									$3,000 - $4,999
+									</a>
+									</li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;categoryId=2109140&amp;fg=Price&amp;ff=StorePrice&amp;fv=00500000%7E-%7E999999999999&amp;fd=Over+%245%2C000.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|Over $5,000.00&amp;ab=MM:Bracelets:Over $5,000.00">
+										
+										
+										
+
+									Over $5,000
+									</a>
+									</li></ul></li><li class="subNavGroup catman"><h2>POPULAR STYLES</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/persona-bead-collection/category.jsp?categoryId=11526501&amp;cp=13337271&amp;ab=MM:Bracelets:Persona Bead Collection"  title="Persona Bead Collection">
+						
+						
+						
+
+
+						Persona Beads</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/bangles-cuffs/family.jsp?categoryId=3263670&amp;cp=13337271&amp;ab=MM:Bracelets:Bangle &amp; Cuff Bracelets"  title="Bangle &amp; Cuff Bracelets">
+						
+						
+						
+
+
+						Bangles &amp; Cuffs</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/charm/shop.jsp?categoryId=3263659&amp;cp=13337271&amp;ab=MM:Bracelets:Charm Bracelets"  title="Charm Bracelets">
+						
+						
+						
+
+
+						Charm Bracelets</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/anklets/shop.jsp?categoryId=3263662&amp;cp=13337271&amp;ab=MM:Bracelets:Anklets"  title="Anklets">
+						
+						
+						
+
+
+						Anklets</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/bracelets/personalized/family.jsp?categoryId=3263665&amp;cp=13337271&amp;ab=MM:Bracelets:Personalized Bracelets"  title="Personalized Bracelets">
+						
+						
+						
+
+
+						Personalized</a></li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/bracelets/view-all-bracelets/family.jsp?categoryId=2109140&amp;cp=13337271&amp;ab=MM:Bracelets:View All Bracelets"  title="Bracelets">
+											
+											
+											
+
+
+										View All Bracelets &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598431   -->
+<!-- === Page Name:  z_mega5_bracelets_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_5.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_5.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550172   -->
+<!-- === Widget Name:  zales_2528_nav_5   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_5=2550172, zales_2528_nav_4=2550126, zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_5" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL4" href="http://www.zales.com/family/index.jsp?categoryId=2109140&amp;ab=MEGA:BRACELETS" style="display:none"></a><img border="0" name="cms_image259821432_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550172_assets/z_megasTUTAE15_bracelets5a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL4');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337272">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/watches/category.jsp?categoryId=13337272&amp;ab=MM:Watches:Tab"  title="Watches">
+							
+							
+							
+				        
+				        	Watches</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>FEATURED BRANDS</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/bulova/family.jsp?categoryId=3079641&amp;cp=13337272&amp;ab=MM:Watches:Bulova"  title="Bulova">
+						
+						
+						
+
+
+						Bulova</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/citizen/family.jsp?categoryId=3079643&amp;cp=13337272&amp;ab=MM:Watches:Citizen"  title="Citizen">
+						
+						
+						
+
+
+						Citizen</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/drive-from-citizen-drive/family.jsp?categoryId=66651176&amp;cp=13337272&amp;ab=MM:Watches:Citizen Drive"  title="Citizen Drive">
+						
+						
+						
+
+
+						Drive from Citizen Drive</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/citizen-the-signature-collection/family.jsp?categoryId=66651186&amp;cp=13337272&amp;ab=MM:Watches:Citizen Signature"  title="Citizen Signature">
+						
+						
+						
+
+
+						Citizen: The Signature Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/invicta/family.jsp?categoryId=3451400&amp;cp=13337272&amp;ab=MM:Watches:Invicta"  title="Invicta">
+						
+						
+						
+
+
+						Invicta</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/movado/family.jsp?categoryId=2071111&amp;cp=13337272&amp;ab=MM:Watches:Watches Movado"  title="Watches Movado">
+						
+						
+						
+
+
+						Movado</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/movado-bold/family.jsp?categoryId=42237646&amp;cp=13337272&amp;ab=MM:Watches:Watches Movado Bold"  title="Watches Movado Bold">
+						
+						
+						
+
+
+						Movado Bold</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/seiko/family.jsp?categoryId=3079642&amp;cp=13337272&amp;ab=MM:Watches:Seiko"  title="Seiko">
+						
+						
+						
+
+
+						Seiko</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/watches/tissot/family.jsp?categoryId=15843056&amp;cp=13337272&amp;ab=MM:Watches:Watches Tissot"  title="Watches Tissot">
+						
+						
+						
+
+
+						Tissot</a></li></ul></li><li class="subNavGroup catman"><h2>ONLINE ONLY</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/caravelle-new-york/family.jsp?categoryId=3007182&amp;cp=13337272&amp;ab=MM:Watches:Watches Caravelle by Bulova"  title="Watches Caravelle by Bulova">
+						
+						
+						
+
+
+						Caravelle New York</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/pulsar/family.jsp?categoryId=11790079&amp;cp=13337272&amp;ab=MM:Watches:Watches - Pulsar"  title="Watches - Pulsar">
+						
+						
+						
+
+
+						Pulsar</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/watches/skagen/family.jsp?categoryId=4041066&amp;cp=13337272&amp;ab=MM:Watches:Watches Skagen"  title="Watches Skagen">
+						
+						
+						
+
+
+						Skagen</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/design-your-own/personalized-jewelry/view-all-personalized-jewelry/personalized-watches/family.jsp?categoryId=2146785&amp;cp=13337272&amp;ab=MM:Watches:Personalized Watch"  title="Personalized Watch">
+						
+						
+						
+
+
+						Personalized</a></li></ul></li><li class="subNavGroup parametric"><h2>Gender</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FLadies%27&amp;fd=Ladies%27&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Ladies&#039;&amp;ab=MM:Watches:Ladies&#039;">
+										
+										
+										
+												Ladies'
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FMen%27s&amp;fd=Men%27s&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Men&#039;s&amp;ab=MM:Watches:Men&#039;s">
+										
+										
+										
+												Men's
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Gender&amp;ff=PAD&amp;fv=Gender%2FUnisex&amp;fd=Unisex&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=Gender|Unisex&amp;ab=MM:Watches:Unisex">
+										
+										
+										
+												Unisex
+											</a></li></ul></li><li class="subNavGroup parametric"><h2>Price</h2><ul>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00005000%7E-%7E00009999&amp;fd=%2450.00+-+%2499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$50.00 - $99.00&amp;ab=MM:Watches:$50.00 - $99.00">
+										
+										
+										
+												$50 - $99
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00010000%7E-%7E00024999&amp;fd=%24100.00+-+%24249.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$100.00 - $249.00&amp;ab=MM:Watches:$100.00 - $249.00">
+										
+										
+										
+												$100 - $249
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00025000%7E-%7E00049999&amp;fd=%24250.00+-+%24499.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$250.00 - $499.00&amp;ab=MM:Watches:$250.00 - $499.00">
+										
+										
+										
+												$250 - $499
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00050000%7E-%7E00074999&amp;fd=%24500.00+-+%24749.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$500.00 - $749.00&amp;ab=MM:Watches:$500.00 - $749.00">
+										
+										
+										
+												$500 - $749
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00075000%7E-%7E00099999&amp;fd=%24750.00+-+%24999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$750.00 - $999.00&amp;ab=MM:Watches:$750.00 - $999.00">
+										
+										
+										
+												$750 - $999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00100000%7E-%7E00199999&amp;fd=%241%2C000.00+-+%241%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$1,000.00 - $1,999.00&amp;ab=MM:Watches:$1,000.00 - $1,999.00">
+										
+										
+										
+												$1,000 - $1,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li>
+										
+										
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00200000%7E-%7E00299999&amp;fd=%242%2C000.00+-+%242%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$2,000.00 - $2,999.00&amp;ab=MM:Watches:$2,000.00 - $2,999.00">
+										
+										
+										
+												$2,000 - $2,999
+											</a></li>
+								
+								
+								
+						        
+						        
+								
+
+
+								<li class="hide more">
+
+									
+										
+											<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;categoryId=2135336&amp;fg=Price&amp;ff=StorePrice&amp;fv=00300000%7E-%7E00499999&amp;fd=%243%2C000.00+-+%244%2C999.00&amp;page=1&amp;size=15&amp;&amp;fbc=1&amp;fbn=StorePrice|$3,000.00 - $4,999.00&amp;ab=MM:Watches:$3,000.00 - $4,999.00">
+										
+										
+										
+
+									$3,000 - $4,999
+									</a>
+									</li></ul></li><li class="sub-nav-view-all view-all">
+
+										
+										
+										
+
+										
+
+
+							        	
+									        
+												<a href="/watches/view-all-watches/category.jsp?categoryId=2135336&amp;cp=13337272&amp;ab=MM:Watches:View All Watches"  title="Watches">
+											
+											
+											
+
+
+										View All Watches &gt;</a></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1599343   -->
+<!-- === Page Name:  z_mega6_sept_citizen   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_6.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1270413   -->
+<!-- === Campaign Name:  z_citizen_september_mega6_13337272   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-09-01 11:38:00.0   -->
+<!-- === Campaign End Time:  2015-10-15 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_6.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2552801   -->
+<!-- === Widget Name:  zales_2528_nav_6   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_6=2552801, zales_2528_nav_5=2550172, zales_2528_nav_4=2550126, zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_6" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL5" href="http://www.zales.com/watches/citizen/family.jsp?categoryId=3079643&amp;ab=HMP:MEGA:WATCHES:CITIZEN" title="Satellite Wave - World Time GPS - Citizen - Better Starts Now" style="display:none"></a><img border="0" name="cms_image278958927" src="http://ZALES.imageg.net/cms_widgets/25/52/2552801_assets/ZALE_CITIZEN_MEGA_CC3005-85E.jpg" height="120" width="500" alt="Satellite Wave - World Time GPS - Citizen - Better Starts Now" align="Default" valign="Default" style="cursor:pointer" title="Satellite Wave - World Time GPS - Citizen - Better Starts Now" onClick="javascript:invokeAnchor('linkURL5');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337273">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/collections/category.jsp?categoryId=13337273&amp;ab=MM:Collections:Tab"  title="Collections">
+							
+							
+							
+				        
+				        	Collections</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>EXCLUSIVE COLLECTIONS</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/vera-wang-love/category.jsp?categoryId=12134615&amp;cp=13337273&amp;ab=MM:Collections:Vera Wang LOVE"  title="Vera Wang LOVE">
+						
+						
+						
+
+
+						Vera Wang LOVE</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/celebration-diamond/category.jsp?categoryId=3280798&amp;cp=13337273&amp;ab=MM:Collections:Celebration Diamond"  title="Celebration Diamond">
+						
+						
+						
+
+
+						Celebration Diamond</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/neil-lane/family.jsp?categoryId=67699806&amp;cp=13337273&amp;ab=MM:Collections:Neil Lane"  title="Neil Lane">
+						
+						
+						
+
+
+						Neil Lane</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/candy-colored-jewelry/family.jsp?categoryId=16037176&amp;cp=13337273&amp;ab=MM:Collections:Candy Colored Diamonds &amp; Gemstones"  title="Candy Colored Diamonds &amp; Gemstones">
+						
+						
+						
+
+
+						Candy Colored Jewelry</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/unstoppable-love/family.jsp?categoryId=34683636&amp;cp=13337273&amp;ab=MM:Collections:Unstoppable Love"  title="Unstoppable Love">
+						
+						
+						
+
+
+						Unstoppable Love</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/endless-brilliance/family.jsp?categoryId=60911986&amp;cp=13337273&amp;ab=MM:Collections:Endless Brilliance"  title="Endless Brilliance">
+						
+						
+						
+
+
+						Endless Brilliance</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/open-hearts-by-jane-seymour/family.jsp?categoryId=67717766&amp;cp=13337273&amp;ab=MM:Collections:Open Hearts By Jane Seymour"  title="Open Hearts By Jane Seymour">
+						
+						
+						
+
+
+						Open Hearts By Jane Seymour</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/le-vian/family.jsp?categoryId=67699336&amp;cp=13337273&amp;ab=MM:Collections:Le Vian"  title="Le Vian">
+						
+						
+						
+
+
+						Le Vian</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/past-present-future/family.jsp?categoryId=21355206&amp;cp=13337273&amp;ab=MM:Collections:Past Present Future"  title="Past Present Future">
+						
+						
+						
+
+
+						Past Present Future</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/bracelets/persona-bead-collection/category.jsp?categoryId=11526501&amp;cp=13337273&amp;ab=MM:Collections:Persona Bead Collection"  title="Persona Bead Collection">
+						
+						
+						
+
+
+						Persona Beads</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/the-heart-within/family.jsp?categoryId=28474626&amp;cp=13337273&amp;ab=MM:Collections:The Heart Within"  title="The Heart Within">
+						
+						
+						
+
+
+						The Heart Within</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/ava-nadri/family.jsp?categoryId=16143546&amp;cp=13337273&amp;ab=MM:Collections:AVA Nadri"  title="AVA Nadri">
+						
+						
+						
+
+
+						AVA Nadri</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/elegant-reflections/family.jsp?categoryId=67717966&amp;cp=13337273&amp;ab=MM:Collections:Elegant Reflections"  title="Elegant Reflections">
+						
+						
+						
+
+
+						Elegant Reflections</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/sirena/family.jsp?categoryId=10796801&amp;cp=13337273&amp;ab=MM:Collections:Sirena"  title="Sirena">
+						
+						
+						
+
+
+						Sirena</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/arctic-brilliance/family.jsp?categoryId=12361058&amp;cp=13337273&amp;ab=MM:Collections:Arctic Brilliance"  title="Arctic Brilliance">
+						
+						
+						
+
+
+						Arctic Brilliance</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/cherished-promise/family.jsp?categoryId=4484537&amp;cp=13337273&amp;ab=MM:Collections:Cherished Promise"  title="Cherished Promise">
+						
+						
+						
+
+
+						Cherished Promise</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/legendary/family.jsp?categoryId=50676516&amp;cp=13337273&amp;ab=MM:Collections:Legendary"  title="Legendary">
+						
+						
+						
+
+
+						Legendary</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/shaquille-oneal/family.jsp?categoryId=16143206&amp;cp=13337273&amp;ab=MM:Collections:Shaquille O&#039;Neal"  title="Shaquille O&#039;Neal">
+						
+						
+						
+
+
+						Shaquille O&#039;Neal</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/aspca-collection/family.jsp?categoryId=13264161&amp;cp=13337273&amp;ab=MM:Collections:ASPCA Collection"  title="ASPCA Collection">
+						
+						
+						
+
+
+						ASPCA Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/personalized-charms/family.jsp?categoryId=41785136&amp;cp=13337273&amp;ab=MM:Collections:Personality Charms"  title="Personality Charms">
+						
+						
+						
+
+
+						Personality Charms</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/collections/triton/family.jsp?categoryId=3900398&amp;cp=13337273&amp;ab=MM:Collections:Triton"  title="Triton">
+						
+						
+						
+
+
+						Triton</a></li></ul></li><li class="subNavGroup catman"><h2>ONLINE COLLECTIONS</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/online-exclusives/family.jsp?categoryId=3900663&amp;cp=13337273&amp;ab=MM:Collections:Online Exclusives"  title="Online Exclusives">
+						
+						
+						
+
+
+						Online Exclusives</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/design-your-own/personalized-jewelry/view-all-personalized-jewelry/family.jsp?categoryId=3261692&amp;cp=13337273&amp;ab=MM:Collections:Personalized Jewelry"  title="Personalized Jewelry">
+						
+						
+						
+
+
+						Personalized Jewelry</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/infinity-collection/family.jsp?categoryId=18115156&amp;cp=13337273&amp;ab=MM:Collections:Infinity Collection"  title="Infinity Collection">
+						
+						
+						
+
+
+						Infinity Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/sideways-collection/family.jsp?categoryId=24968006&amp;cp=13337273&amp;ab=MM:Collections:Sideways Collection"  title="Sideways Collection">
+						
+						
+						
+
+
+						Sideways Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/monogram-shop/family.jsp?categoryId=33810256&amp;cp=13337273&amp;ab=MM:Collections:Monogram Shop"  title="Monogram Shop">
+						
+						
+						
+
+
+						Monogram Shop</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/tween-collection/family.jsp?categoryId=33810266&amp;cp=13337273&amp;ab=MM:Collections:Tween Collection"  title="Tween Collection">
+						
+						
+						
+
+
+						Tween Collection</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/stackable-expressions/family.jsp?categoryId=11855568&amp;cp=13337273&amp;ab=MM:Collections:Stackable Expressions"  title="Stackable Expressions">
+						
+						
+						
+
+
+						Stackable Expressions</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/edward-mirell/family.jsp?categoryId=3341209&amp;cp=13337273&amp;ab=MM:Collections:Edward Mirell"  title="Edward Mirell">
+						
+						
+						
+
+
+						Edward Mirell</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/goodman/family.jsp?categoryId=3728715&amp;cp=13337273&amp;ab=MM:Collections:J Goodman"  title="J Goodman">
+						
+						
+						
+
+
+						J Goodman</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/amore-la-vita/family.jsp?categoryId=4410526&amp;cp=13337273&amp;ab=MM:Collections:Amore La Vita"  title="Amore La Vita">
+						
+						
+						
+
+
+						Amore La Vita</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/platinaire/family.jsp?categoryId=13085646&amp;cp=13337273&amp;ab=MM:Collections:Platinaire Collection"  title="Platinaire Collection">
+						
+						
+						
+
+
+						Platinaire</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/collections/hero-hearts/family.jsp?categoryId=12277573&amp;cp=13337273&amp;ab=MM:Collections:Hero Hearts"  title="Hero Hearts">
+						
+						
+						
+
+
+						Hero Hearts</a></li></ul></li><li class="subNavGroup catman"><h2>POPULAR CATEGORIES</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/brilliant-values/family.jsp?categoryId=2549930&amp;cp=13337273&amp;ab=MM:Collections:Brilliant Values"  title="Brilliant Values">
+						
+						
+						
+
+
+						Brilliant Values</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/new-arrivals/family.jsp?categoryId=3103754&amp;cp=13337273&amp;ab=MM:Collections:New Arrivals"  title="New Arrivals">
+						
+						
+						
+
+
+						New Arrivals</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/top-rated-products/family.jsp?categoryId=3004464&amp;cp=13337273&amp;ab=MM:Collections:Top Rated Products"  title="Top Rated Products">
+						
+						
+						
+
+
+						Top Rated Products</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/top-pinned-on-pinterest/family.jsp?categoryId=41783616&amp;cp=13337273&amp;ab=MM:Collections:Top Pinned on Pinterest"  title="Top Pinned on Pinterest">
+						
+						
+						
+
+
+						Top Pinned on Pinterest</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/promise-rings/family.jsp?categoryId=2109181&amp;cp=13337273&amp;ab=MM:Collections:Promise Rings"  title="Promise Rings">
+						
+						
+						
+
+
+						Promise Rings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/right-hand-rings/family.jsp?categoryId=11377285&amp;cp=13337273&amp;ab=MM:Collections:Right Hand Rings"  title="Right Hand Rings">
+						
+						
+						
+
+
+						Right Hand Rings</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/colored-diamonds/family.jsp?categoryId=4450794&amp;cp=13337273&amp;ab=MM:Collections:Colored Diamonds"  title="Colored Diamonds">
+						
+						
+						
+
+
+						Colored Diamonds</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/silver-diamonds/family.jsp?categoryId=3373009&amp;cp=13337273&amp;ab=MM:Collections:Silver &amp; Diamonds"  title="Silver &amp; Diamonds">
+						
+						
+						
+
+
+						Silver &amp; Diamonds</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/whimsical/family.jsp?categoryId=3136118&amp;cp=13337273&amp;ab=MM:Collections:Whimsical"  title="Whimsical">
+						
+						
+						
+
+
+						Whimsical</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/birthstones/category.jsp?categoryId=2251087&amp;cp=13337273&amp;ab=MM:Collections:Birthstones"  title="Birthstones">
+						
+						
+						
+
+
+						Birthstones</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/giftware/family.jsp?categoryId=3611994&amp;cp=13337273&amp;ab=MM:Collections:Giftware"  title="Giftware">
+						
+						
+						
+
+
+						Giftware</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/accessories/family.jsp?categoryId=2261884&amp;cp=13337273&amp;ab=MM:Collections:Accessories"  title="Accessories">
+						
+						
+						
+
+
+						Accessories</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/collections/childrens/shop.jsp?categoryId=13340011&amp;cp=13337273&amp;ab=MM:Collections:Children&#039;s Jewelry"  title="Children&#039;s Jewelry">
+						
+						
+						
+
+
+						Children&#039;s</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/collections/mens/shop.jsp?categoryId=13340012&amp;cp=13337273&amp;ab=MM:Collections:Men&#039;s Jewelry"  title="Men&#039;s Jewelry">
+						
+						
+						
+
+
+						Men&#039;s</a></li></ul></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1583129   -->
+<!-- === Page Name:  z_mega7_vera_1   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_7.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1260800   -->
+<!-- === Campaign Name:  z_megas_standard   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-07-07 07:00:00.0   -->
+<!-- === Campaign End Time:  null   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_7.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2504966   -->
+<!-- === Widget Name:  zales_2528_nav_7   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_7=2504966, zales_2528_nav_6=2552801, zales_2528_nav_5=2550172, zales_2528_nav_4=2550126, zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_7" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL6" href="http://www.zales.com/wedding/vera-wang-love/category.jsp?categoryId=12134615&amp;ab=HMP:MEGA:COLLECTION" title="Shop The Vera Wang LOVE Collection" style="display:none"></a><img border="0" name="cms_image330342497_2" src="http://ZALES.imageg.net/cms_widgets/25/04/2504966_assets/mega7_vera_collections_v2.jpg" height="120" width="500" alt="Shop The Vera Wang LOVE Collection" align="Default" valign="Default" style="cursor:pointer" title="Shop The Vera Wang LOVE Collection" onClick="javascript:invokeAnchor('linkURL6');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav13337274">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/design-your-own/category.jsp?categoryId=13337274&amp;ab=MM:Design Your Own:Tab"  title="Design Your Own">
+							
+							
+							
+				        
+				        	Design Your Own</a><ul class="sub-nav">
+								
+								
+<li class="subNavGroup catman"><h2>ENGAGEMENT</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/engagement-ring-setting-first/shop.jsp?categoryId=4404396&amp;cp=13337274&amp;ab=MM:Design Your Own:Engagement Ring - Setting First"  title="Engagement Ring - Setting First">
+						
+						
+						
+
+
+						Start with a Setting</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/engagement-ring-quick-ship/shop.jsp?categoryId=12837341&amp;cp=13337274&amp;ab=MM:Design Your Own:Engagement Ring - Quick Ship"  title="Engagement Ring - Quick Ship">
+						
+						
+						
+
+
+						Quick Ship</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/setting-only/shop.jsp?categoryId=12837344&amp;cp=13337274&amp;ab=MM:Design Your Own:Setting Only"  title="Setting Only">
+						
+						
+						
+
+
+						Setting Only</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/loose-diamonds/shop.jsp?categoryId=3261689&amp;cp=13337274&amp;ab=MM:Design Your Own:Loose Diamonds"  title="Loose Diamonds">
+						
+						
+						
+
+
+						Loose Diamonds</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/three-stone-rings/shop.jsp?categoryId=12837346&amp;cp=13337274&amp;ab=MM:Design Your Own:Three Stone Rings"  title="Three Stone Rings">
+						
+						
+						
+
+
+						Three Stone Rings</a></li></ul></li><li class="subNavGroup catman"><h2>BANDS</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/anniversary-bands/shop.jsp?categoryId=12837348&amp;cp=13337274&amp;ab=MM:Design Your Own:Anniversary Bands"  title="Anniversary Bands">
+						
+						
+						
+
+
+						Anniversary Bands</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/eternity-bands/shop.jsp?categoryId=12837350&amp;cp=13337274&amp;ab=MM:Design Your Own:Eternity Bands"  title="Eternity Bands">
+						
+						
+						
+
+
+						Eternity Bands</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/mens-diamond-bands/shop.jsp?categoryId=12837351&amp;cp=13337274&amp;ab=MM:Design Your Own:Men&#039;s Diamond Bands"  title="Men&#039;s Diamond Bands">
+						
+						
+						
+
+
+						Men&#039;s Diamond Bands</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/metal-wedding-bands/shop.jsp?categoryId=12837353&amp;cp=13337274&amp;ab=MM:Design Your Own:Metal Wedding Bands"  title="Metal Wedding Bands">
+						
+						
+						
+
+
+						Metal Wedding Bands</a></li></ul></li><li class="subNavGroup catman"><h2>FASHION</h2><ul>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/diamond-studs/shop.jsp?categoryId=4404395&amp;cp=13337274&amp;ab=MM:Design Your Own:Design Your Own"  title="Design Your Own">
+						
+						
+						
+
+
+						Diamond Studs</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/wedding/design-your-own/diamond-pendants/shop.jsp?categoryId=4404402&amp;cp=13337274&amp;ab=MM:Design Your Own:Diamond Pendants"  title="Diamond Pendants">
+						
+						
+						
+
+
+						Diamond Pendants</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell "  >
+
+
+						
+						
+							<a href="/design-your-own/personalized-jewelry/category.jsp?categoryId=2071134&amp;cp=13337274&amp;ab=MM:Design Your Own:Personalized"  title="Personalized">
+						
+						
+						
+
+
+						Personalized Jewelry</a></li>
+
+
+
+					
+					
+			        
+			        
+					<li class="collapsedCell  last"  >
+
+
+						
+						
+							<a href="/bracelets/persona-bead-collection/category.jsp?categoryId=11526501&amp;cp=13337274&amp;ab=MM:Design Your Own:Persona Bead Collection"  title="Persona Bead Collection">
+						
+						
+						
+
+
+						Persona Beads</a></li></ul></li><li class="sub-nav-cms">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Preview TimeZone = 'null' -->
+<!--Preview TimeZone = 'America/New_York' -->
+<!-- Checking storemanPD -->
+<!-- Checking productPreviewAllowed -->
+
+
+
+
+
+<script type="text/javascript" src="http://ZALES.imageg.net/include/swfobject.js"></script>
+
+
+	
+<!-- BEGIN CMS SLOT --><!-- =========================== CMS Page and Campaign info ========================== -->
+<!-- === Page ID:  1598413   -->
+<!-- === Page Name:  z_mega8_dyo_TUTAE15_red_831   -->
+<!-- === Page URI:  /gsi/zales/cmsTemplates/zales_2528_nav_8.jsp   -->
+<!-- === -->
+<!-- === Campaign ID:  1269827   -->
+<!-- === Campaign Name:  z_hp_ss_20150831   -->
+<!-- === Campaign Tracking Code:  null   -->
+<!-- === Campaign Start Time:  2015-08-31 07:00:00.0   -->
+<!-- === Campaign End Time:  2015-09-08 06:59:00.0   -->
+<!-- === -->
+<!-- ================================================================================= -->
+<!-- =========================== Request info ========================== -->
+<!-- === Request URI:  /gsi/zales/helpdesk/index.jsp   -->
+<!-- === Include URI:  /gsi/zales/cmsTemplates/zales_2528_nav_8.jsp   -->
+<!-- ================================================================================= -->
+<!-- =========================== CMS Slot and Widget info ========================== -->
+<!-- === Widget ID:  2550190   -->
+<!-- === Widget Name:  zales_2528_nav_8   -->
+<!-- === Slot Name:  null   -->
+<!-- === Slot Data Map:  {zales_2528_nav_8=2550190, zales_2528_nav_7=2504966, zales_2528_nav_6=2552801, zales_2528_nav_5=2550172, zales_2528_nav_4=2550126, zales_2528_nav_3=2550169, zales_2528_nav_2=2550171, zales_2528_nav_1=2550170}   -->
+<!-- ================================================================================= -->
+<div id="zales_2528_nav_8" style="width:500px;border:0px;overflow:hidden;">
+
+
+<a id="linkURL7" href="http://www.zales.com/family/index.jsp?categoryId=13337274&amp;ab=MEGA:DYO" style="display:none"></a><img border="0" name="cms_image366200674_1" src="http://ZALES.imageg.net/cms_widgets/25/50/2550190_assets/z_megasTUTAE15_DYO8a.jpg" height="120" width="500" align="Default" valign="Default" style="cursor:pointer" onClick="javascript:invokeAnchor('linkURL7');" /></div><!-- END CMS SLOT -->
+
+</li></ul></li><li class="mainNavItem mainNav2059712">
+
+			        	
+			        	
+			        	
+			        	
+					        
+					        
+								<a href="/clearance/family.jsp?categoryId=2059712&amp;ab=MM:Clearance:Tab"  title="Clearance">
+							
+							
+							
+				        
+				        	Clearance</a></li>
+            
+			</ul>
+			<script>
+			if (!jQuery("#mainNav").hasClass("outlet-nav")) {
+				// Loop through main navigation elements for treatment
+				var mainNavElement = document.getElementById("mainNav");
+				var mainNavElements = jQuery("#mainNav > li");
+				var mainNavWidth = 0;
+				// Zero out main nav link padding to get correct width measurement
+				//jQuery("#mainNav li.mainNavItem > a").attr("style", "padding : 0")
+				for (var i = 0; i < mainNavElements.length; i++) {
+					// Get width of main navigation elements except for clearance (assumed last element)
+					mainNavWidth += jQuery(mainNavElements[i])[0].offsetWidth;
+					// Reposition drop nav if too far right
+					if ((jQuery(mainNavElements[i]).position().left + 502) > jQuery(".primary-nav").width()) {
+						jQuery(mainNavElements[i]).find(".sub-nav").addClass("sub-nav-right");
+						//$(mainNavElements[i]).find(".sub-nav").css("left", ($(".primary-nav").width() - ($(mainNavElements[i]).position().left + 502)) + "px");
+					}
+				}
+
+				// Navigation: Using total width of prior nav elements, calculate width of clearance to make any fine adjustments to fit nav width properly.	
+				jQuery("#mainNav li.mainNavItem > a").each(function() {
+					jQuery(this).attr("style", "width : " + (Math.floor((jQuery(".primary-nav")[0].offsetWidth - mainNavWidth)/(mainNavElements.length)) + jQuery(this).width()) + "px;");
+				});
+
+				var mainNavWidth2 = 0;
+				for (var i = 0; i < mainNavElements.length; i++) {
+					// Get width of main navigation elements except for clearance (assumed last element)
+					mainNavWidth2 += jQuery(mainNavElements[i])[0].offsetWidth;
+					// Reposition drop nav if too far right
+					if ((jQuery(mainNavElements[i]).position().left + 502) > jQuery(".primary-nav").width()) {
+						jQuery(mainNavElements[i]).find(".sub-nav").addClass("sub-nav-right");
+					}
+				}
+
+				jQuery(".primary-nav").find('[title="Clearance"]').parent().addClass("clearanceNav");
+				jQuery(".primary-nav").find('[title="Clearance"]').attr("style", "width : " + (jQuery(".primary-nav").find('[title="Clearance"]').width() + jQuery(".primary-nav")[0].offsetWidth - mainNavWidth2) + "px");
+
+				// Split price ranges
+				var mainNavElementLink = mainNavElement.getElementsByTagName("a");
+				for (var i=0; i<mainNavElementLink.length; i++) {
+					if (mainNavElementLink[i].innerHTML.indexOf(" - ") > -1) {
+						zales.splitPriceRange(mainNavElementLink[i]);
+						var priceWrap = jQuery(mainNavElementLink[i]).find('.price-range');
+						priceWrap.formatCurrency();
+					}
+				}
+				for (var i=0; i<mainNavElementLink.length; i++) {
+					if (mainNavElementLink[i].innerHTML.indexOf("Over ") > -1) {
+						zales.splitPriceRange(mainNavElementLink[i]);
+						var priceWrap = jQuery(mainNavElementLink[i]).find('.price-range');
+						priceWrap.formatCurrency();
+					}
+				}
+				var mainNavElementItem = mainNavElement.getElementsByTagName("li");
+				for (var i=0; i<mainNavElementItem.length; i++) {
+					if (mainNavElementItem[i].className.indexOf("mainNavItem") > -1) {
+						jQuery(mainNavElementItem[i]).find(".subNavGroup:nth-child(4)").addClass("subNavGroupLast");
+					}
+				}
+
+				//strip zeros from price range in drop downs
+				var mainNavPriceRanges = jQuery('#mainNav span.price-range');
+				zales.stripZeros(mainNavPriceRanges);
+
+				// Drop navigation
+				jQuery("#mainNav > li").live("mouseover", function () {
+					clearTimeout(jQuery.data(this, 'delayDrop'));
+					var currDrop = jQuery(this);
+					var showDrop = setTimeout(function () {
+						if (!jQuery(currDrop).hasClass("active")) {
+							jQuery(currDrop).addClass("active");
+						}
+					}, 300);
+					jQuery(this).data('delayDrop', showDrop);
+				});
+				jQuery("#mainNav > li").live("mouseout", function () {
+					clearTimeout(jQuery.data(this, 'delayDrop'));
+					var currDrop = jQuery(this);
+					var showDrop = setTimeout(function () {
+						if (jQuery(currDrop).hasClass("active")) {
+							jQuery(currDrop).removeClass("active");
+						}
+					}, 200);
+					jQuery(this).data('delayDrop', showDrop);
+				});
+
+				
+				if ((typeof browser != 'undefined') && (browser != null && browser.mobilesafari)) {
+					jQuery('body:first').addClass('mobile-safari');
+					// remove desktop browser events
+					jQuery("#mainNav > li").die('mouseover').die('mouseout');
+	                // hide nav dropdowns when body element is touched
+					jQuery("#borderWrapper").bind("mouseup", function(){return;});
+				} 
+
+				// Now widths are calculated and behaviors are set, show main nav
+				jQuery("#mainNav").css("visibility", "visible");
+			}
+			</script>
+
+		</div>   	
+
+	
+	<div style="display: none;">
+	
+ <!-- Start of SearchMarketing.com Natural Pixel Tag: Please do not remove-->
+ <script language="JavaScript"><!--
+ {
+	document.write("<img src=http://tracking.searchmarketing.com/gsic_welcome.asp?SMCID=245&x=" +escape(document.referrer) +  " width=1 height=1>");
+  }
+  //-->
+ </script>
+ <!-- End SearchMarketing.com Natural Pixel Tag -->
+
+
+</div>
+	
+   
+
+<div id="hdContent">
+	<div class="clearfloat"></div>
+	<div id="breadCrumbs">
+		<a href="/home/index.jsp" class="breadcrumb">Home</a>
+		&nbsp;<img src="http://ZALES.imageg.net/images/breadcrumb_bullet.gif" alt="" width="4" height="4" border="0" align="absmiddle" />&nbsp;
+		<a href="/helpdesk/index.jsp" class="breadcrumb">Customer Service</a>
+		&nbsp;&nbsp;<img src="http://ZALES.imageg.net/images/breadcrumb_bullet.gif" alt="" width="4" height="4" border="0" align="absmiddle">&nbsp;&nbsp;<b style="color:black">Safety, Security and Privacy</b>
+
+	</div>
+	<div class="clearfloat"></div>
+	
+
+
+<!-- *********************************** STOREMAN HELPDESK STARTS************************************** -->
+				
+				       
+							
+	<div id="leftNav">
+					<h2>Safety, Security and Privacy</h2>
+					<ul id="hd_leftnavUL">
+				
+							
+							<li><a href="/helpdesk/index.jsp?display=safety&subdisplay=secure" class="hd_pagelink">Secure Shopping Guarantee</a></li>
+
+					
+				
+							
+							<li><a href="/helpdesk/index.jsp?display=safety&subdisplay=terms" class="hd_pagelink">Terms and Conditions</a></li>
+
+					
+				
+							
+							<li><a href="/helpdesk/index.jsp?display=safety&subdisplay=privacy" class="hd_pagelink">Shop with Confidence</a></li>
+
+					
+				
+							
+									<li><a href="/helpdesk/index.jsp?display=safety&subdisplay=vbv" class="hd_pagelink">Verified by Visa</a></li>
+									
+					
+				
+							
+									<li><a href="/helpdesk/index.jsp?display=safety&subdisplay=mastercard&topic=securecode" class="hd_pagelink">MasterCard SecureCode</a></li>
+								
+					
+				
+				
+
+					</ul>
+		</div>
+		<div id="helpdeskText">
+						<!-- panel -->
+						<!--here is panelId::2117264-->
+<!--here is pd::null-->
+<!--STOREMAN GENERATION - 1 panel(s) found for slot: HelpSlot entryId: 2117264 with pd:null-->
+<!--STOREMAN PANEL: helpdesk/ZALES_Safety_9-3.47855.jsp-->
+
+								<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE smPanel PUBLIC "-//GSI//DTD smPanel 1.0 //EN" 
+"http://engineering.gspt.net/storeman/smPanel.dtd">
+<smPanel xmlns:SM="http://engineering.gspt.net/storeman/sm-DTDinfo.html">
+
+<p class="footerlink2"><b>Shop With Confidence</b></p>
+	
+<p>Zales.com is committed to protecting our customers' personal information. All orders are transmitted in an encrypted format. To be sure that your order is secure, simply check your Web browser while you are in the ordering section. Most browsers use some sort of symbol to alert you to the fact that you are on a secured Web site. For example, Netscape and Internet Explorer use icons - either a padlock or a key - in the bottom left hand corner that appear when the site is secured. 
+</p>
+
+<p>We will store your shipping and billing information if you create an account with us, but this information will not be used by anyone but Zales and the third parties who provide services related to Zales.com as described below in our privacy policy. 
+</p>
+
+<p>At checkout, we require the credit card customer identification number (CIN) with every online purchase made with American Express, MasterCard and Visa Cards. The CIN is a 3 or 4 digit, numeric value that provides a cryptographic check of the information embossed on the card. This security feature is designed to protect you against consumer fraud. Your CIN will not be stored or maintained on any of our systems and you will need to provide the number every time a purchase is made on Zales.com. Click here to learn more about <a href="/helpdesk/index.jsp?subdisplay=ccv&display=payment" class="hdNav">CIN</a>.  
+</p>
+
+<p><b>Privacy Policy</b></p>
+
+<p>At Zales.com, we are committed to providing excellent customer service and outstanding value in fine jewelry while respecting and protecting the privacy of our customers. To better serve you, we may collect and maintain certain information regarding, for example, your product and service preferences, dates of special occasions related to people you buy gifts for (e.g., birthdays), and billing and shipping information. Under no circumstances do we sell or rent this information to other businesses, and we protect and enforce the confidentiality of this information. We respect your privacy and seek to protect the trust you place in Zales. Our Privacy Policy is explained in more detail below.
+</p>
+
+<p><b>1. What information does Zales.com collect from our online customers?</b></p> 
+
+<p>For those individuals who visit our site but do not make a purchase, we collect and store IP ("Internet Protocol") addresses during the visit. No individualized information is collected, and the IP address is not traced to a particular individual. Similarly, we collect information, using that IP address, about the navigational or browsing activities of our visitors. Again, that information is not tied to any name or other personally identifying information but is used solely to provide generalized demographic data, such as what geographic areas our visitors are from and visitor browsing patterns. For those who make a purchase on Zales.com, in order to fulfill the order, we collect and store your name, address, shipping information, e-mail address, telephone number, purchase data, and billing information.
+</p>
+
+<p><b>2. Does Zales.com use "cookies"?</b></p>
+
+<p>"Cookies" are small pieces of information that are stored by your browser on your computer's hard drive. Currently, if you place an item in a shopping basket during your visit to Zales.com, we will create a cookie containing a unique customer number on your computer. This function enables us to store items in your shopping cart until you make a purchase. Most web browsers automatically accept cookies, but you can usually change your browser to prevent such acceptance, which will result in your inability to purchase online from us. We do not retain any individualized information as a result of our use of cookies. 
+</p>
+
+<p><b>3. How does Zales.com use the individualized information that we collect?</b></p>
+
+<p>We and the third parties who provide services related to Zales.com will use the information referenced above to fulfill your order and provide services related to Zales.com or the operation of our business. Examples of these services include payment processing and authorization, fraud protection and credit risk reduction, product customization, order fulfillment and shipping, Web site evaluation, data analysis and, where applicable, data cleansing. The third parties who provide any of these services are authorized to use this information only in connection with the services they are engaged to perform.
+</p>
+
+<p>In addition to using the information referenced above to fulfill your purchase order, we also retain some of that information in our customer database. We use that information to track your order, to respond to your inquiries and to make subsequent purchases you wish to make easier and faster. We also may use that information, from time to time, to contact you and allow third parties to contact you with our consent concerning products, services, sales or special promotions of Zales.com or our corporate affiliates, including Zales Jewelers, as well as third-party products and services [branded with the name Zales Jewelers or with the name of another of our affiliate(s)]  that  Zales Jewelers believes will be of interest to you. We try to limit those contacts to ones that might be of interest to you. If you would prefer not to be contacted about our special offers, products or services, please notify us at the mailing address, e-mail address or phone number provided below: 
+</p>
+
+<b>Zales Jewelers</b><br/>
+<b>Customer Service</b><br/>
+<b>P.O. Box 152777</b><br/>
+<b>Irving, Texas 75015</b>
+<br/><br/>
+or
+<br/><br/>
+<b>1-800-311-JEWEL</b>
+<br/><br/>
+or
+<b><a href="/helpdesk/index.jsp?subdisplay=contact&display=store" class="hdNav">Contact Us</a></b>
+<br/><br/>
+
+<p>We currently send e-mails only to those Zales.com customers who are interested in receiving information about our products and services. If you have previously received such e-mails, but no longer want to, contact us by one of the methods referenced above or by unsubscribing to an e-mail you receive from us or to the Zales.com Newsletter, as the case may be. 
+</p>
+
+<p>Please be advised that since promotions may already be in process at the time of your request, it may take up to ten days before electronic contacts cease. As a result, you may receive mail or other solicitations from Zales for a brief period of time after you make your request. You may also use the above addresses and phone number to correct or update any of the individual information we have stored. 
+</p>
+
+<p><b>4. How is the information Zales.com collects stored and what security procedures do we have in place to protect the confidentiality of that information?</b></p>
+
+<p>Currently, the Zales.com customer information that we maintain is stored in our internet database and in our corporate customer database. We limit access to that information to those within our organization with a business need to know. Most of our employees do not have access to that information. In addition, we enforce a policy against unauthorized disclosure or use of the information you share with us, and we instruct our employees concerning that policy. Those employees that do have access are required to abide by our privacy policy. We also require that those third parties who provide services to us and may have access to customer information (such as the third parties who provide Web site, customer service, data collection, storage and reporting services and mail vendors) share our commitment to maintaining your privacy and adhere to our company's nondisclosure requirements. As stated above, we do not under any circumstances sell or rent customer information to any outside company or organization nor do we permit any such organization to use customer information for its own business purposes.
+</p>
+
+<p>In fact, we will release specific information about you only if we are compelled to do so to comply with valid legal processes such as a search warrant, subpoena or court order, or a valid administrative request from a law enforcement agency, or in the unlikely situation where we, in good faith, believe such information is necessary to prevent harm to you or others. As with any business, it is possible that as our business develops, we might sell or buy online businesses or other assets. In such transactions, information about customers often is among the transferred assets. Accordingly, in the unlikely event that Zales, or substantially all of its assets related to this Web site, is acquired by a third party, such information may be one of the transferred assets. Under these circumstances Zales would to the extent possible require the acquiring party to follow the practices described in this privacy policy. We use secure server technology to keep your personal information - including your billing and account information - as secure as possible. Your ordering information is encrypted using Verisign software. Once your information is stored on our database, we have database security technologies and procedures in place to protect it from access by unauthorized employees or third parties. 
+</p>
+
+<p><b>5. How does Zales.com protect the safety and privacy of children?</b></p>
+
+<p>Our site is not directed or marketed to children under the age of 18. We do not intentionally collect or store information on children. If we learn that a child has made a purchase from Zales.com without his or her parent's consent, we immediately, upon parental request, void the sale and refund any monies collected on the return of the merchandise. 
+</p>
+
+<p><b>6. Will the Zales.com privacy policy change?</b></p>
+
+<p>We may change or enhance our policy to improve our service to you. If we do change our policy, we will note those changes on our Web site. A message will be displayed on our home page for a period of time that a change has been made. We also may send an e-mail describing the changes. You are welcome to refer to this policy each time you are considering making a purchase.
+</p>
+
+<p><b>If you have any questions or concerns about our Privacy Policy, please <a href="/helpdesk/index.jsp?subdisplay=contact&display=store" class="hdNav">Contact Us</a>.</b></p>
+
+<p>Last updated:  5/1/2011</p>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+	
+		<td valign="top"><a href="javascript: void(window.open('https://www.geotrust.com','',''));"><img src="http://ZALES.imageg.net/graphics/storeman/zgor/zgor_geotrust.gif" width="115" height="55" alt="" border="0"></a></td>
+	</tr>
+</table>
+<br /><br />
+
+
+
+
+</smPanel>
+
+<!--END STOREMAN PANEL helpdesk/ZALES_Safety_9-3.47855.jsp-->
+<!--END STOREMAN GENERATION-->
+
+							
+		</div>
+
+				
+
+
+				<!-- display is safety -->
+				<!-- section is privacy -->
+			 	<br /><br />
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+	<div id="footerBar">
+
+        
+        <form name="emailForm" action="http://em.zales.com/pub/rf" method="post">
+            <input type="hidden" name="datetime" value="September 2, 2015 3:10:18 PM EDT" />
+            <input type="hidden" name="contest" value="zales_nocontest" />
+            <input type="hidden" name="emailPref" value="y" />
+            
+            
+            <input type="hidden" name="_ri_" value="X0Gzc2X%3DWQpglLjHJlYQGh7tNMzgzfMJkEIzbzcwWYWtmL9PPnVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlYQGsyNkzbFCsbWHmgSl7u6nITKzaBO">
+            <input type="hidden" name="Z_OPTIN_SRC" value="FOOTER">
+
+            <label for="EMAIL_ADDRESS_">Special offer when you join our email list</label>
+            <input type="text" name="EMAIL_ADDRESS_" id="emailAddress" value="Enter email address" onfocus="if (this.value == 'Enter email address') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Enter email address'; }" />
+            
+                <input type="image" class="submit" src="http://ZALES.imageg.net/images/footer_signup.gif" width="56" height="17" />
+            
+        </form>
+    
+        
+        
+	</div>
+
+	<div id="footer-nav">
+		<dl>
+			<dt><a href="/helpdesk/index.jsp" title="Customer Service">Customer Service</a></dt>
+			<dd><a href="/helpdesk/index.jsp?display=store&subdisplay=contact" title="Contact Us">Contact Us</a></dd>
+			<dd><a href="/helpdesk/index.jsp?display=returns&subdisplay=returns" title="Return and Exchange Policy">Return and Exchange Policy</a></dd>
+			<dd><a href="/helpdesk/index.jsp?display=ship&subdisplay=shipping" title="Shipping Information">Shipping Information</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=inStoreServices" title="In-Store Services">In-Store Services</a></dd>
+			<dd><a href="https://www.zales.com/coreg/index.jsp?step=register" title="My Account">My Account</a></dd>
+			<dd><a href="https://www.zales.com/coreg/index.jsp?step=ot" title="Order Status">Order Status</a></dd>
+			<dd><a href="/giftcards/index.jsp" title="Gift Cards">Gift Cards</a></dd>
+			<dd><a href="/corporate-gifts/category.jsp?categoryId=3119627" title="Corporate Gifts">Corporate Gifts</a></dd>
+			<dd><a href="/helpdesk/index.jsp?display=safety&subdisplay=terms" title="Terms and Conditions">Terms &amp; Conditions</a></dd>
+			<dd><a href="/helpdesk/index.jsp?display=safety&subdisplay=privacy" title="Privacy Policy">Privacy Policy</a></dd>
+
+		</dl>
+		
+		<dl>
+			<dt><a href="https://creditservices.zales.com/" title="Zales Credit Card">Zales Credit Card</a></dt>
+	
+			<dd><a href="https://creditservices.zales.com/" title="Apply">Apply</a></dd>
+			<dd><a href="javascript:void(window.open('https://www.accountonline.com/webdepot/pl/PLCN_ZALES/REQUEST_SIGNON','promo','width=800,height=600,scrollbars=yes,resizable=yes'))" title="Pay Bill">Pay Bill</a></dd>
+			<dd><a href="javascript:void(window.open('https://www.accountonline.com/webdepot/pl/PLCN_ZALES/REQUEST_SIGNON','promo','width=800,height=600,scrollbars=yes,resizable=yes'))" title="Manage Account">Manage Account</a></dd>
+			<dt class="zalesgold_exchange"><a class="goldExchange" href="http://www.zalesgoldexchange.com/" title="Zales Gold Exchange">Zales Gold Exchange</a></dt>
+		</dl>
+		
+		
+		<dl>
+			<dt>Our Company</dt>
+	
+			<dd><a href="/the-zales-difference/category.jsp?categoryId=3730129" title="The Zales Difference">The Zales Difference</a></dd>
+			<dd><a href="/corp/index.jsp?page=aboutus" title="About Zales">About Zales</a></dd>
+			<dd><a href="/corp/index.jsp?page=outlet" title="About Zales Outlet">About Zales Outlet</a></dd>
+			<dd><a href="http://www.zalecorp.com/" title="Zale Corporation">Zale Corporation</a></dd>
+			<dd><a href="http://www.zalecorp.com/OurBrands.aspx" title="Our Brands">Our Brands</a></dd>
+			<dd><a href="http://www.zalecorp.com/StoreLocator.aspx" title="Store Locator">Store Locator</a></dd>
+			<dd><a href="/restyle-event/shop.jsp?categoryId=3739912" title="Store Events">Store Events</a></dd>
+			<dd><a href="http://www.zalecorp.com/Careers.aspx" title="Careers">Careers</a></dd>
+			<dd><a href="/corp/index.jsp?page=conflictdiamonds" title="Conflict-Free Diamonds">Conflict-Free Diamonds</a></dd>
+			<dd><a href="/helpdesk/index.jsp?display=store&subdisplay=affiliate" title="Affiliate Program">Affiliate Program</a></dd>
+			<dd><a href="/sitemap/map.jsp" title="Site Map">Site Map</a></dd>
+		</dl>
+		
+		
+		<dl>
+			<dt><a href="/jewelry101/index.jsp" title="Education">Education</a></dt>
+	
+			<dd><a href="/wedding/education/diamond-buying-guide/category.jsp?categoryId=3334564" title="The 4Cs">The 4Cs</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=diamonds" title="Diamond Jewelry">Diamond Jewelry</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=culturedPearls" title="Pearl Jewelry">Pearl Jewelry</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=birthstones" title="Birthstone Jewelry">Birthstone Jewelry</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=coloredGemstones" title="Gemstone Jewelry">Gemstone Jewelry</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=watches" title="Watches">Watches</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=preciousMetals" title="Metals">Metals</a></dd>
+			<dd><a href="/jewelry101/index.jsp?page=basicJewelryCare" title="Jewelry Care">Jewelry Care</a></dd>
+		</dl>
+		
+		<dl>
+			<dt>Stay Connected</dt>
+	
+			<dd><a href="/review-rate-win/category.jsp?categoryId=3420088" title="Write a Product Review">Write a Product Review</a></dd>
+			<dd><a href="http://lovestories.zales.com/" title="Share Your Story">Share Your Story</a></dd>
+			<dd><a href="javascript:void%20window.open('http://www.zales.com/home/survey.jsp'%20,'oaswin','toolbar=no,location=0,directories=0,status=no,menubar=0,scrollbars=yes,resizable=yes,width=475,height=600,screenY=100,screenX=100,left=100,top=100');" title="Customer Feedback Form">Customer Feedback Form</a></dd>
+			<dd><a href="https://em.zales.com/pub/rf?_ri_=X0Gzc2X%3DWQpglLjHJlYQGl7Gv5nMs9MtCKJ09k9UYmBw6OVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlYQGp95fMchJvdd6uAKvImdKyXSCf" title="Send Him a Hint">Send Him a Hint</a></dd>
+			<dd><a href="/sweepstakes/index.jsp" title="Sweepstakes">Sweepstakes</a></dd>
+		</dl>
+         <!-- SMP 17817  -->
+		<div class="social">
+			<ul class="social-left">
+				
+				<li>
+					
+<a id="fb"   href="https://www.facebook.com/Zales"       target="_blank" title="Facebook">Facebook</a>
+
+				</li>
+				<li>
+					
+<a id="twit" href="https://twitter.com/ZalesJewelers"    target="_blank" title="Twitter">Twitter</a>
+
+				</li>
+				<li>
+					
+<a id="gp"   href="https://plus.google.com/+zales/posts" target="_blank" title="Google+">Google+</a>
+
+				</li>
+				<li>
+					
+<a id="inst" href="http://instagram.com/zalesjewelers"   target="_blank" title="Instagram">Instagram</a>
+
+				</li>
+				<li>
+					
+<a id="yt"   href="http://www.youtube.com/zales"         target="_blank" title="YouTube">YouTube</a>
+
+				</li>
+				<li>
+					
+<a id="pin"  href="http://pinterest.com/zalesjewelers/"  target="_blank" title="Pinterest">Pinterest</a>
+
+				</li>
+			</ul>
+		</div>
+		 
+	</div>
+	<span id="copyright">&copy; 2015 <a href="http://www.zalecorp.com" target="_blank">Zale Corporation</a>.</span>
+	
+</div>
+
+
+
+<!-- Start of New Pixel File -->
+
+
+<!-- End of New Pixel File -->
+
+
+	
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+
+
+
+
+
+<!-- pageOrprocessName getRequestURI() /gsi/zales/helpdesk/index.jsp  --><!-- pageOrprocessName finalPage() helpdesk  -->
+
+<div id="trackingPixels" style="visibility:hidden">
+
+        <script language="JavaScript">
  
+var CI_PageType = 'helpdesk';
+var CI_ItemID = '';
+var CI_CatID = '';
+var CI_Campaign = '';
+var CI_CustomerEmail = '';		
+	 	 
+</script> 
+
+<script src="https://cts-secure.channelintelligence.com/16481822_landing.js">
+</script> 
+    
+</div>
+
+<!-- Resonance code resxclsa.js v2.x Copyright 2004-2006 Certona Corporation www.certona.com -->
+
+
+
+
+<script type="text/javascript">
+	//variables for all pages
+ 	var resx = new Object();
+	resx.appid = "ZALES01";
+	resx.top1 = 100000;
+	resx.top2 = 100000;
+
+  	
+
+	
+
+
+
+
+
+
+
+
+	
+	
+
+
+</script>
+<script type="text/javascript" src="http://ZALES.imageg.net/js/resxclsa.js"></script>
+<!-- Resonance -->
+
+
+
+
+
+
+<!-- Real User Monitoring start -->
+
+
+<SCRIPT type="text/javascript" LANGUAGE="JavaScript">
+    <!--
+    var rum = {
+        pgId: 'ZALES Helpdesk Page',
+        grpId: 'prd',
+        grpId1: 'slc' // fix for CIQ 85303
+    };
+    //-->
+</SCRIPT>
+
+
+<!-- Blue Traingle Real user monitoring start-->
+
+
+<script async='true' type="text/javascript" src="//zales.btttag.com/btt.js"></script>
+
+<!-- Blue Traingle Real user monitoring End-->
+
+
+<!-- SOASTA Real user monitoring start -->
+
+
+<SCRIPT type="text/javascript" LANGUAGE="JavaScript">
+    (function () {
+        if (window.BOOMR && window.BOOMR.version) {
+            return;
+        }
+        var dom, doc, where, iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = "";
+        iframe.role = "presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+
+        try {
+            doc = iframe.contentWindow.document;
+        } catch (e) {
+            dom = document.domain;
+            iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+            doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function () {
+            var js = this.createElement("script");
+            if (dom) this.domain = dom;
+            js.id = "boomr-if-as";
+            js.src = '//c.go-mpulse.net/boomerang/' +
+                    'DEWEL-AEU3F-VA7F6-JETJ4-8NJAW';
+            BOOMR_lstart = new Date().getTime();
+            this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+    })();
+</SCRIPT>
+
+<!-- SOASTA Real user monitoring end -->
+
+
+<!-- dynaTrace Real User Monitoring start -->
+
+
+<!-- dynaTrace Real User Monitoring end -->
+
+<!-- Real User Monitoring end -->
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+
+
+
+
+ 
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+</script>
+<script language='javascript' src='https://dsa.csdata1.com/data/js/10040032/csgather.js'></script>
+
+
+
+<script type="text/javascript">
+var date = new Date();
+date.setTime(date.getTime()+(24*60*60*1000*10000));
+var expires = date.toGMTString();
+var enableWishlist="";
+var userId="";
+var username="ZALES";
+var userValue=""+",";
+var rewardsUserValue=""+",";
+var flagPage="0";
+if(enableWishlist ==1 && flagPage==1){
+	document.cookie = username+'_Wishlist_clearSaleing='+ userValue+userId +'; expires=' + expires + ';path=/';
+}
+
+var rewardsflagPage="0";
+if(rewardsflagPage==1){
+	document.cookie = 'AceRewards_clearSaleing='+ rewardsUserValue+userId +'; expires=' + expires + ';path=/';
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+
+<!-- trackingPageType getRequestURI() /gsi/zales/helpdesk/index.jsp  --><!-- trackingPageType finalPage() helpdesk  -->
+						<!-- No Tracking Pixel defined via allTrackingPixelFile -->
+						<!-- No Tracking Pixel defined via allTrackingPixelFile -->
+
+
+  
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+function storeSREDID() {
+    var thirtyDays = (60*60*1000*24)*30;
+    var vals = document.location.search;
+    start = vals.indexOf("SREDID=");
+    if (start != -1) {
+        var end = vals.indexOf("&", start);
+        if (end == -1){ end = vals.length }
+        var date = new Date();date.setTime(date.getTime()+ thirtyDays);
+        document.cookie= vals.substring(start,end) + "; expires=" + date.toGMTString() + "; path=/";
+    }
+}
+function getSREDID(){
+   var n = "SREDID=";
+   var cookies = document.cookie;
+   var start = cookies.indexOf(n);
+   if (start == -1){ return null; }
+   start += n.length ;
+   var end = cookies.indexOf(";", start);
+   if (end == -1){ end = cookies.length }
+   return cookies.substring(start, end);
+}
+</script>
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+<!--You are running on slcprd1_ws_47_7-->
+
+
+
+<!-- // End of code of PMO 52759 -->
+
+
+<!-- Below block is included under PMO 414 to capture visitorId -->
+<script language="JavaScript">
+    var visitorId;
+    
+</script>
+
+
+
+         
+		<!-- not synchronized -->
+		<script language='JavaScript'>
+var s_account='gsiczales';
+</script>
+<script language='JavaScript' src='http://ZALES.imageg.net/include/omniture-h.js'></script>
+<script language='JavaScript'>
+s.server='www.zales.com';
+s.hier1='';
+s.eVar19='286434056926';
+s.channel='Home';
+s.pageName='Help Desk: safety | privacy';
+s.products;
+s.setLinkInternalFilters(',zales.com, imageg.net, gspt.net, gsipartners.com');
+var s_code=s.t(); if (s_code)document.write(s_code);
+</script>
+<!-- End SiteCatalyst code version: H.0. -->
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://ZALES.imageg.net/min-cat/site-foot-js.xml.min.js"></script>
+
+<script type= "text/javascript">
+/* Added code in footer because not getting fire on window.onload in other javascript file */
+for (var c = document.getElementById("mainNav").getElementsByTagName("a"), b = 0; b < c.length; b++) if (0 < c[b].className.indexOf("arrow-wth")) {
+var e = c[b].firstChild.nodeValue, d = document.createElement("span");
+c[b].firstChild.parentNode.removeChild(c[b].firstChild);
+d.appendChild(document.createTextNode(e)), c[b].appendChild(d)
+}
+</script>
+
+
+
+
+</body>
+</html>
