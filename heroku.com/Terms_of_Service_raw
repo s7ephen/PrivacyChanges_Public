@@ -1,1 +1,520 @@
- 
+
+<!DOCTYPE html>
+<html lang="en" data-form-id="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caf7511827","applicationID":"2121548","transactionName":"IAxWFxZYWg8GRk1AAgQGS0wXX1kUPEQNXAoAGg==","queueTime":7,"applicationTime":169,"agentToken":null,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Heroku | Tos</title>
+
+
+      <meta property="og:image" content="//d3k90kvix375hb.cloudfront.net/assets/heroku-og-750ddc8a1b1f6974d7146975b4c53d9f.png">
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="//d3k90kvix375hb.cloudfront.net/assets/favicon-ced636c9f1fa1bfad46fd2cf89e60fd3.ico" />
+
+    <script src="//d3k90kvix375hb.cloudfront.net/assets/modernizr-98bfbaa6e2e795248224c1eb7ebf7047.js"></script>
+
+    <link rel="stylesheet" media="all" href="//d3k90kvix375hb.cloudfront.net/assets/application-8039457d06c384a7a04414829942ec3f.css" />
+
+    <link rel="canonical" href="https://www.heroku.com/policy/tos" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ZUNyeb4Dr93DHPdU4PZYUaZ634caFRewec1IN+4yLyx9bHJo5ah516Gd0SkNyEJs6Jyqy2FrukENfhr1/mNxBA==" />
+  </head>
+
+  <body class="policy-page">
+      <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-JD26"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-JD26');</script>
+  <!-- End Google Tag Manager -->
+
+
+    <div class="page">
+      <header id="header">
+  <nav id="navigation" role="navigation">
+    <div class="wrapper">
+      <h1 id="logo">
+        <a href="/home">Heroku</a>
+      </h1>
+
+      <span class="mobile-nav">Show nav</span>
+
+      <ul>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="https://elements.heroku.com">Elements</a></li>
+        <li><a href="https://blog.heroku.com">Blog</a></li>
+        <li><a href="https://devcenter.heroku.com">Documentation</a></li>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/contact">Contact</a></li>
+
+        <li>
+          <a href="#" class="show-site-search"><span class="icon-search"></span></a>
+          <form action="/search" class="site-search" method="get">
+            <div class="search-input">
+              <gcse:searchbox-only resultsUrl='/search'></gcse:searchbox-only>
+            </div>
+          </form>
+        </li>
+
+          <li class="user sign-up">
+            <a href="https://id.heroku.com">Log in</a>
+            <span>or</span>
+
+            <a class="sign-up highlight" data-trackable="{&quot;category&quot;:&quot;Sign Up Links&quot;,&quot;action&quot;:&quot;Clicked&quot;,&quot;label&quot;:&quot;www-header&quot;}" href="https://signup.heroku.com/www-header">Sign up</a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+</header>
+
+
+
+
+      <div class="page-content">
+        <div class="wrapper">
+              <aside class='policy-nav sidebar topic-list'>
+      <ul>
+        <li><h3>Policies</h3></li>
+        <li><a href="promise">Customer Promises</a></li>
+        <li><a href="privacy">Privacy Statement</a></li>
+        <li><a href="aup">Acceptable Use Policy</a></li>
+        <li><a href="support">Support Policy</a></li>
+        <li><a href="events">Conferences and Events</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Legal</h3></li>
+        <li><a class="active" href="tos">Terms of Service</a></li>
+        <li><a href="security">Heroku Security</a></li>
+        <li><a href="trademark">Trademark Usage Guidelines</a></li>
+        <li><a href="dmca">DMCA Notices</a></li>
+      </ul>
+    </aside>
+
+    <article class='policy main with-sidebar'>
+      <h1>Terms of Service</h1>
+
+<p>Effective January 12, 2011</p>
+
+<div id="agreement"></div>
+
+<h2>1. Your Agreement with Heroku</h2>
+
+<div id="governed_by"></div>
+
+<p><strong>1.1</strong> Your use of the Heroku service is governed by this agreement (the &quot;Terms&quot;). &quot;Heroku&quot; means Heroku Inc., located at 650 7th St, San Francisco, CA, 94103, United States, and its subsidiaries or affiliates involved in providing the Heroku Service.  The “Heroku Services” means the services Heroku makes available through this website, including this website, the Heroku cloud computing platform, the Heroku API, the Heroku Add-ons, and any other software or services offered by Heroku in connection to any of those.</p>
+
+<div id="agree_to_terms"></div>
+
+<p><strong>1.2</strong> In order to use the Heroku Services, you must first agree to the Terms. You can agree to the Terms by actually using the Heroku Services. You understand and agree that Heroku will treat your use of the Heroku Services as acceptance of the Terms from that point onwards.</p>
+
+<div id="sfdc_msa"></div>
+
+<p><strong>1.3</strong> If you have entered into or enter into a master subscription agreement with salesforce.com, that master subscription agreement shall not apply to Heroku Services, and Heroku Services shall not be considered a service or product or part of any service or product under such master subscription agreement, unless otherwise expressly agreed in writing by salesforce.com.  The Heroku Services are delivered from an infrastructure different from the infrastructure underlying other salesforce.com services, and any representations or commitments by salesforce.com regarding the security or availability of its services or products do not apply to Heroku Services.</p>
+
+<div id="over_13"></div>
+
+<p><strong>1.4</strong> You may not use the Heroku Services if you are a person barred from receiving the Heroku Services under the laws of the United States or other countries, including the country in which you are resident or from which you use the Heroku Services. You affirm that you are over the age of 13, as the Heroku Services are not intended for children under 13.</p>
+
+<div id="future_not_guaranteed"></div>
+
+<p><strong>1.5</strong> You agree your purchases of Heroku Services are not contingent on the delivery of any future functionality or features or dependent on any oral or written public comments made by Heroku or any of its affiliates regarding future functionality or features.</p>
+
+<div id="your_account"></div>
+
+<h2>2. Your Account and Use of the Heroku Services</h2>
+
+<div id="accurate_registration_info"></div>
+
+<p><strong>2.1</strong> You must provide accurate and complete registration information any time you register to use the Heroku Services. You are responsible for the security of your passwords and for any use of your account. If you become aware of any unauthorized use of your password or of your account, you agree to notify Heroku immediately.</p>
+
+<div id="obey_the_law"></div>
+
+<p><strong>2.2</strong> Your use of the Heroku Services must comply with all applicable laws, regulations and ordinances, including any laws regarding the export of data or software.</p>
+
+<div id="no_pw0n_no_DoS"></div>
+
+<p><strong>2.3</strong> You agree not to (a) access (or attempt to access) the administrative interface of the Heroku Services by any means other than through the interface that is provided by Heroku in connection with the Heroku Services, unless you have been specifically allowed to do so in a separate agreement with Heroku, or (b) engage in any activity that interferes with or disrupts the Heroku Services (or the servers and networks which are connected to the Service).</p>
+
+<div id="resource_quotas"></div>
+
+<p><strong>2.4</strong> Your account has “hard” and “soft” usage limits, as further <a href="https://www.heroku.com/policy/aup#quota">explained here</a> (or such URL as Heroku may provide).  The Heroku Services does not permit you to exceed the hard usage limits.  Heroku reserves the right to enforce soft usage limits in its sole discretion, which may result in Heroku serving a “quota exceeded” page to you or users to whom you serve web pages via the Heroku Services (“End Users”). Repeated exceeding of the hard or soft usage limits may lead to termination of your account.</p>
+
+<div id="no_patent_trolls"></div>
+
+<p><strong>2.5</strong> You may use the Heroku Services only to develop and run applications on the Heroku infrastructure.   You may not access the Heroku Services for the purpose of bringing an intellectual property infringement claim against Heroku or for the purpose of creating a product or service competitive with the Heroku Services.</p>
+
+<div id="policies_and_privacy"></div>
+
+<h2>3. Service Policies and Privacy</h2>
+
+<div id="aup"></div>
+
+<p><strong>3.1</strong> You agree to comply with the Heroku Acceptable Use Policy available at <a href="https://www.heroku.com/policy/aup">acceptable use policy</a> (the &quot;Acceptable Use Policy&quot;) which is incorporated herein by this reference and which may be updated from time to time.</p>
+
+<div id="privacy"></div>
+
+<p><strong>3.2</strong> The Heroku Services shall be subject to the privacy policy for the Heroku Services available at <a href="https://www.heroku.com/policy/privacy">privacy policy</a>. You agree to the use of your data in accordance with Heroku&#39;s privacy policies.</p>
+
+<div id="protect_end_users"></div>
+
+<p><strong>3.3</strong> You agree that you will protect the privacy and legal rights of the End Users of your application. You must provide legally adequate privacy notice and protection for End Users. If End Users provide you with user names, passwords, or other login information or personal information, you must make the users aware that the information will be available to your application and to Heroku.</p>
+
+<div id="fees"></div>
+
+<h2>4. Fees for Use of the Heroku Services</h2>
+
+<div id="over_limit_pricing"></div>
+
+<p><strong>4.1</strong> Subject to the Terms, the Heroku Services is provided to you without charge up to certain limits. Usage over this limit requires your purchase of additional resources or services. The pricing for additional resources  and services can be found at <a href="http://heroku.com/pricing">http://heroku.com/pricing</a> (or such URL as Heroku may provide).</p>
+
+<div id="recurring_credit_card_charge"></div>
+
+<p><strong>4.2</strong> For all purchased resources and services, we will charge your credit card on a monthly basis or at the interval indicated in Heroku fees and payment policies, if different. Late payments may bear interest at the rate of 1.5% per month (or the highest rate permitted by law, if less). Charges are exclusive of taxes. You are responsible for paying all taxes and government charges, and all reasonable expenses and attorneys fees Heroku incurs collecting late amounts. To the fullest extent permitted by law, you waive all claims relating to charges unless claimed within 60 days after the charge (this does not affect your credit card issuer rights). Charges are solely based on Heroku&#39;s measurements of your use of the Heroku Services, unless otherwise agreed to in writing. To the fullest extent permitted by law, refunds (if any) are at the discretion of Heroku and only in the form of credit for the Heroku Services. Nothing in these Terms obligates Heroku to extend credit to any party. You acknowledge and agree that any credit card and related billing and payment information that you provide to Heroku may be shared by Heroku with companies who work on Heroku&#39;s behalf, such as payment processors and/or credit agencies, solely for the purposes of checking credit, effecting payment to Heroku and servicing your account. Heroku may also provide information in response to valid legal process, such as subpoenas, search warrants and court orders, or to establish or exercise its legal rights or defend against legal claims. Heroku shall not be liable for any use or disclosure of such information by such third parties. Heroku reserves the right to discontinue the provision of the Heroku Services to you for any late payments.</p>
+
+<div id="fee_change_notice"></div>
+
+<p><strong>4.3</strong> Heroku may change its fees and payment policies for the Heroku Services by notifying you at least fifteen (15) days before the beginning of the billing cycle in which such change will take effect. Changes to the fees or payment policies will be posted on the website (or such other URL Heroku may provide from time to time). Any outstanding balance becomes immediately due and payable upon termination of the Terms for any reason.</p>
+
+<div id="no_fee_dodging"></div>
+
+<p><strong>4.4</strong> You may not develop multiple Applications to simulate or act as a single Application or otherwise access the Heroku Services in a manner intended to avoid incurring fees.</p>
+
+<div id="content_and_takedown"></div>
+
+<h2>5. Content on the Heroku Services and Take Down Obligations</h2>
+
+<div id="content_responsibility"></div>
+
+<p><strong>5.1</strong> You understand that all information (such as data files, written text, computer software, music, audio files or other sounds, photographs, videos or other images) to which you may have access as part of, or through your use of, the Heroku Services are the sole responsibility of the person from which such content originated. All such information is referred to below as the &quot;Content.&quot; The term Content shall specifically exclude the web application that you create using the Heroku Services and any source code written by you to be used with the Heroku Services (collectively, &quot;Applications&quot;).</p>
+
+<div id="aup_takedown"></div>
+
+<p><strong>5.2</strong> Heroku reserves the right (but shall have no obligation) to remove any or all Content from the Heroku Services. You agree to immediately take down any Content that violates the Acceptable Use Policy, including pursuant to a take down request from Heroku. In the event that you elect not to comply with a request from Heroku to take down certain Content, Heroku reserves the right to directly take down such Content or to disable Applications.</p>
+
+<div id="end_user_takedown"></div>
+
+<p><strong>5.3</strong> In the event that you become aware of any violation of the Acceptable Use Policy by an End User of Applications, you shall immediately terminate such end user&#39;s account on your Application. Heroku reserves the right to disable Applications in response to a violation or suspected violation of the Acceptable Use Policy.</p>
+
+<div id="content_liability"></div>
+
+<p><strong>5.4</strong> You agree that you are solely responsible for (and that Heroku has no responsibility to you or to any third party for) the Application or any Content that you create, transmit or display while using the Heroku Services and for the consequences of your actions (including any loss or damage which Heroku may suffer) by doing so.</p>
+
+<div id="content_security"></div>
+
+<p><strong>5.5</strong> You agree that Heroku has no responsibility or liability for the deletion or failure to store any Content and other communications maintained or transmitted through use of the Service. You further acknowledge that you are solely responsible for securing and backing up your Applications and any Content.</p>
+
+<div id="proprietary_rights"></div>
+
+<h2>6. Proprietary Rights</h2>
+
+<div id="heroku_owns_service"></div>
+
+<p><strong>6.1</strong> You acknowledge and agree that Heroku (or Heroku&#39;s licensors) own all legal right, title and interest in and to the Heroku Services, including any intellectual property rights which subsist in the Heroku Services (whether those rights happen to be registered or not, and wherever in the world those rights may exist).</p>
+
+<div id="customer_content_ownership"></div>
+
+<p><strong>6.2</strong> Except as provided in Section 8, Heroku acknowledges and agrees that it obtains no right, title or interest from you (or your licensors) under these Terms in or to any Content or Applications that you create, submit, post, transmit or display on, or through, the Heroku Services, including any intellectual property rights which subsist in that Content and the Application (whether those rights happen to be registered or not, and wherever in the world those rights may exist). Unless you have agreed otherwise in writing with Heroku, you agree that you are responsible for protecting and enforcing those rights and that Heroku has no obligation to do so on your behalf.</p>
+
+<div id="license_from_heroku"></div>
+
+<h2>7. License from Heroku and Restrictions</h2>
+
+<div id="non_exclusive_license"></div>
+
+<p><strong>7.1</strong> Heroku gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software provided to you by Heroku as part of the Heroku Services as provided to you by Heroku. This license is for the sole purpose of enabling you to use and enjoy the benefit of the Heroku Services as provided by Heroku, in the manner permitted by the Terms.</p>
+
+<div id="do_not_reverse_engineer_heroku"></div>
+
+<p><strong>7.2</strong> You may not (and you may not permit anyone else to): (a) copy, modify, create a derivative work of, reverse engineer, decompile or otherwise attempt to extract the source code of the Heroku Services or any part thereof, unless this is expressly permitted or required by law, or unless you have been specifically told that you may do so by Heroku, in writing (e.g., through an open source software license); or (b) attempt to disable or circumvent any security mechanisms used by the Heroku Services or any applications running on the Heroku Services.</p>
+
+<div id="oss_license"></div>
+
+<p><strong>7.3</strong> Open source software licenses for components of the Heroku Services released under an open source license constitute separate written agreements. To the limited extent that the open source software licenses expressly supersede these Terms, the open source licenses govern your agreement with Heroku for the use of the components of the Heroku Services released under an open source license.</p>
+
+<div id="display_heroku_trademarks"></div>
+
+<p><strong>7.4</strong> Heroku hereby grants you a limited, non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to display the Heroku trademarks and/or logos as provided <a href="http://logos.heroku.com">here</a> (“Marks”) for the sole purpose of promoting or advertising that you use the Heroku Services and solely in accordance with Heroku’s then current Trademark Usage Guidelines, which may be found at <a href="https://www.heroku.com/policy/trademark">https://www.heroku.com/policy/trademark</a> (or such other URL Heroku may provide from time to time).  You agree that all goodwill generated through your use of the Heroku Marks shall inure to the benefit of Heroku.</p>
+
+<div id="license_from_customer"></div>
+
+<h2>8. License from You</h2>
+
+<div id="heroku_disclaims_ownership"></div>
+
+<p><strong>8.1</strong> Heroku claims no ownership or control over any Content or Application. You retain copyright and any other rights you already hold in the Content and/or Application, and you are responsible for protecting those rights, as appropriate. By submitting, posting or displaying the Content on or through the Heroku Services you give Heroku a worldwide, royalty-free, and non-exclusive license to reproduce, adapt, modify, translate, publish, publicly perform, publicly display and distribute such Content for the sole purpose of enabling Heroku to provide you with the Heroku Services. Furthermore, by creating an Application through use of the Heroku Services, you give Heroku a worldwide, royalty-free, and non-exclusive license to reproduce, adapt, modify, translate, publish, publicly perform, publicly display and distribute such Application for the sole purpose of enabling Heroku to provide you with the Heroku Services.</p>
+
+<div id="collaborator_licensing"></div>
+
+<p><strong>8.2</strong> By adding a collaborator to your Application, you hereby grant to that user a non-exclusive, royalty-free, non-transferable license, with no right to sub-license, to use, display, perform, reproduce, modify, publish, distribute, list information regarding, edit, translate and analyze such Application(s) and Content as permitted by the relevant Heroku Services functionality or features for the sole purpose of collaborating on development of the Application(s).</p>
+
+<div id="suggestion_box"></div>
+
+<p><strong>8.3</strong> You may choose to or we may invite you to submit comments or ideas about the Heroku Services, including without limitation about how to improve the Heroku Services or our products (“Ideas”).  By submitting any Idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place Heroku under any fiduciary or other obligation, and that we are free to use the Idea without any additional compensation to you, and/or to disclose the Idea on a non-confidential basis or otherwise to anyone.</p>
+
+<div id="heroku_using_customer_trademarks"></div>
+
+<p><strong>8.4</strong> You agree that Heroku, in its sole discretion, may use your trade names, trademarks, service marks, logos, domain names and other distinctive brand features in presentations, marketing materials, customer lists, financial reports and Web site listings (including links to your website) for the purpose of advertising or publicizing your use of the Heroku Services.</p>
+
+<div id="addons"></div>
+
+<h2>9. Add-ons</h2>
+
+<div id="addon_fees"></div>
+
+<p><strong>9.1</strong> Heroku may make available through the Heroku Services additional features, functionality, and services offered by its third-party partners (“Add-ons”).  Your use of Add-ons is subject to these Terms and to the <a href="http://addons.heroku.com">applicable fees</a>. You acknowledge for each Add-on you subscribe to or purchase through the Heroku Services, these Terms constitute a binding agreement between you and the third party licensor of that Add-on (“the Add-on Provider”) only. The Add-on Provider of each Add-on is solely responsible for that Add-on, the content therein, and any claims that you or any other party may have relating to that Add-on or your use of that Add-on. You acknowledge that you are purchasing the license to each Add-on from the Add-on Provider of that Add-on; Heroku is acting as agent for the Add-on Provider in providing each such Add-on to you; Heroku is not a party to the license between you and the Add-on Provider with respect to that Add-on; and Heroku is not responsible for that Add-on, the content therein, or any claims that you or any other party may have relating to that Add-on or your use of that Add-on.  You acknowledge and agree that Heroku, and Heroku’s subsidiaries, are third party beneficiaries of the agreement between you and the Add-on Provider for each Add-on, and that Heroku will have the right (and will be deemed to have accepted the right) to enforce such license against you as a third party beneficiary thereof.</p>
+
+<div id="addon_info_sharing"></div>
+
+<p><strong>9.2</strong> By subscribing to or purchasing an Add-on, you grant Heroku permission to share your Application, Content, and user information with the Add-on Provider as necessary in order to provide you the Add-on.</p>
+
+<div id="addon_license"></div>
+
+<p><strong>9.3</strong> The license granted to you to use any Add-on is personal to you, and is not sublicensable to your End Users.  You may not provide or resell Add-ons to others.</p>
+
+<div id="recommendations"></div>
+
+<h2>10. Recommendations</h2>
+
+<div id="heroku_makes_recommendations"></div>
+
+<p><strong>10.1</strong> Heroku may, and you grant us permission to, make recommendations via the Heroku Services for products or services we think may be of interest to you based on your Application(s), Content, and/or use of the Heroku Services.  We will never make recommendations directly to your End Users.</p>
+
+<div id="modification_of_services"></div>
+
+<h2>11. Modification and Termination of the Heroku Services</h2>
+
+<div id="services_do_change"></div>
+
+<p><strong>11.1</strong> Heroku is constantly innovating in order to provide the best possible experience for its users. You acknowledge and agree that the form and nature of the Heroku Services which Heroku provides may change from time to time without prior notice to you, subject to the terms in Section 4.3. Changes to the form and nature of the Heroku Services will be effective with respect to all versions of the Heroku Services; examples of changes to the form and nature of the Heroku Services include without limitation changes to fee and payment policies, security patches, added functionality, and other enhancements.</p>
+
+<div id="you_can_check_out_anytime_you_want"></div>
+
+<p><strong>11.2</strong> You may terminate these Terms at any time by canceling your account on the Heroku Services.  You will not receive any refunds if you cancel your account.</p>
+
+<div id="heroku_may_terminate_account"></div>
+
+<p><strong>11.3</strong> You agree that Heroku, in its sole discretion and for any or no reason, may terminate your account or any part thereof. You agree that any termination of your access to the Heroku Services may be without prior notice, and you agree that Heroku will not be liable to you or any third party for such termination.</p>
+
+<div id="data_export_for_account_termination"></div>
+
+<p><strong>11.4</strong> You are solely responsible for exporting your Content and Application(s) from the Heroku Services prior to termination of your account for any reason, provided that if we terminate your account, we will provide you a reasonable opportunity to retrieve your Content and Application(s).</p>
+
+<div id="post_account_termination_tos"></div>
+
+<p><strong>11.5</strong> Upon any termination of the Heroku Services or your account these Terms will also terminate, but Sections 6.1, 11, 12, 13, 14, and 18 shall continue to be effective after these Terms are terminated.</p>
+
+<div id="warranties"></div>
+
+<h2>12. EXCLUSION OF WARRANTIES</h2>
+
+<div id="heroku_liability_exclusion"></div>
+
+<p><strong>12.1</strong> NOTHING IN THESE TERMS, INCLUDING SECTIONS 12 AND 13, SHALL EXCLUDE OR LIMIT HEROKU&#39;S WARRANTY OR LIABILITY FOR LOSSES WHICH MAY NOT BE LAWFULLY EXCLUDED OR LIMITED BY APPLICABLE LAW.</p>
+
+<div id="service_as_is"></div>
+
+<p><strong>12.2</strong> YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE HEROKU SERVICE IS AT YOUR SOLE RISK AND THAT THE HEROKU SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot;</p>
+
+<div id="no_warranty"></div>
+
+<p><strong>12.3</strong> HEROKU, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS MAKE NO EXPRESS WARRANTIES AND DISCLAIM ALL IMPLIED WARRANTIES REGARDING THE HEROKU SERVICES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, HEROKU, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS DO NOT REPRESENT OR WARRANT TO YOU THAT: (A) YOUR USE OF THE HEROKU SERVICES WILL MEET YOUR REQUIREMENTS, (B) YOUR USE OF THE HEROKU SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR FREE FROM ERROR, AND (C) USAGE DATA PROVIDED THROUGH THE HEROKU SERVICES WILL BE ACCURATE.</p>
+
+<div id="limitation_of_liability"></div>
+
+<h2>13. LIMITATION OF LIABILITY</h2>
+
+<div id="heroku_not_liable"></div>
+
+<p><strong>13.1</strong> SUBJECT TO SECTION 12.1 ABOVE, YOU EXPRESSLY UNDERSTAND AND AGREE THAT HEROKU, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS SHALL NOT BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES WHICH MAY BE INCURRED BY YOU, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY. THIS SHALL INCLUDE, BUT NOT BE LIMITED TO, ANY LOSS OF PROFIT (WHETHER INCURRED DIRECTLY OR INDIRECTLY), ANY LOSS OF GOODWILL OR BUSINESS REPUTATION, ANY LOSS OF DATA SUFFERED, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSS.</p>
+
+<div id="notifications_on_liability"></div>
+
+<p><strong>13.2</strong> THE LIMITATIONS ON HEROKU&#39;S LIABILITY TO YOU IN PARAGRAPH 13.1 ABOVE SHALL APPLY WHETHER OR NOT HEROKU HAS BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.</p>
+
+<div id="indemnification"></div>
+
+<h2>14. Indemnification</h2>
+
+<div id="indemnify_heroku"></div>
+
+<p><strong>14.1</strong> You agree to hold harmless and indemnify Heroku, and its subsidiaries, affiliates, officers, agents, employees, advertisers, licensors, suppliers or partners (collectively &quot;Heroku and Partners&quot;) from and against any third party claim arising from or in any way related to (a) your breach of the Terms, (b) your use of the Heroku Services, (c) your violation of applicable laws, rules or regulations in connection with the Heroku Services, or (d) your Content or your Application, including any liability or expense arising from all claims, losses, damages (actual and consequential), suits, judgments, litigation costs and attorneys&#39; fees, of every kind and nature. In such a case, Heroku will provide you with written notice of such claim, suit or action.</p>
+
+<div id="copyright"></div>
+
+<h2>15. Copyright Policy</h2>
+
+<div id="customer_dmca_obligations"></div>
+
+<p><strong>15.1</strong> You agree to set up a process to respond to notices of alleged infringement that comply with the United States&#39; Digital Millennium Copyright Act (&quot;DMCA notices&quot;). It is Heroku&#39;s policy to respond to DMCA notices or other applicable copyright laws and to terminate the accounts of repeat infringers. We reserve the right to take down content in your Application or, if necessary, the Application itself upon receipt of a valid DMCA notice. For more information, please go to <a href="https://www.heroku.com/policy/dmca">https://www.heroku.com/policy/dmca</a>.</p>
+
+<div id="other_content"></div>
+
+<h2>16. Other Content</h2>
+
+<div id="heroku_does_not_own_the_web_quite_yet"></div>
+
+<p><strong>16.1</strong> The Heroku Services may include hyperlinks to other web sites or content or resources or email content. Heroku may have no control over any web sites or resources which are provided by companies or persons other than Heroku.</p>
+
+<div id="heroku_not_responsible_for_the_web"></div>
+
+<p><strong>16.2</strong> You acknowledge and agree that Heroku is not responsible for the availability of any such external sites or resources, and does not endorse any advertising, products or other materials on or available from such web sites or resources.</p>
+
+<div id="heroku_not_liable_for_the_web"></div>
+
+<p><strong>16.3</strong> You acknowledge and agree that Heroku is not liable for any loss or damage which may be incurred by you or your End Users as a result of the availability of those external sites or resources, or as a result of any reliance placed by you on the completeness, accuracy or existence of any advertising, products or other materials on, or available from, such web sites or resources.</p>
+
+<div id="change_to_tos"></div>
+
+<h2>17. Changes to the Terms</h2>
+
+<div id="tos_change_notification"></div>
+
+<p><strong>17.1</strong> Heroku may make changes to the Terms from time to time. If we change the Terms in any substantive way, we will give you at least seven (7) days notice  before the changes take effect, during which period of time you may reject the changes by terminating your account.</p>
+
+<div id="implicit_tos_acceptance"></div>
+
+<p><strong>17.2</strong> You understand and agree that if you use the Heroku Services after the date on which the Terms have changed, Heroku will treat your use as acceptance of the updated Terms.</p>
+
+<div id="general_legal_terms"></div>
+
+<h2>18. General Legal Terms</h2>
+
+<div id="tos_supremacy"></div>
+
+<p><strong>18.1</strong> The Terms constitute the whole legal agreement between you and Heroku and govern your use of the Heroku Services (but excluding any services which Heroku may provide to you under a separate written agreement), and completely replace any prior agreements between you and Heroku in relation to the Heroku Services.</p>
+
+<div id="3rd_party_beneficiaries"></div>
+
+<p><strong>18.2</strong> There are no third party beneficiaries to these Terms. The parties are independent contractors, and nothing in these Terms creates an agency, partnership or joint venture.</p>
+
+<div id="tos_translations"></div>
+
+<p><strong>18.3</strong> If Heroku provides you with a translation of the English language version of these Terms, the English language version of these Terms will control if there is any conflict.</p>
+
+<div id="tos_change_notification_modalities"></div>
+
+<p><strong>18.4</strong> You agree that Heroku may provide you with notices, including those regarding changes to the Terms, by email, regular mail, or postings on the Heroku Services.  By providing Heroku your email address, you consent to our using the email address to send you any notices required by law in lieu of communication by postal mail.</p>
+
+<div id="lax_enforcement_doesnt_constitute_waiver"></div>
+
+<p><strong>18.5</strong> You agree that if Heroku does not exercise or enforce any legal right or remedy which is contained in the Terms (or which Heroku has the benefit of under any applicable law), this will not be taken to be a formal waiver of Heroku&#39;s rights and that those rights or remedies will still be available to Heroku.</p>
+
+<div id="acts_of_god"></div>
+
+<p><strong>18.6</strong> Heroku shall not be liable for failing or delaying performance of its obligations resulting from any condition beyond its reasonable control, including but not limited to, governmental action, acts of terrorism, earthquake, fire, flood or other acts of God, labor conditions, power failures, and Internet disturbances.</p>
+
+<div id="california_jurisdiction"></div>
+
+<p><strong>18.7</strong> The Terms, and your relationship with Heroku under the Terms, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Heroku agree to submit to the exclusive jurisdiction of the courts located within the county of Santa Clara, California to resolve any legal matter arising from the Terms.</p>
+
+<div id="assignment_of_rights"></div>
+
+<p><strong>18.8</strong> Neither party may assign any of its rights or obligations under these Terms, whether by operation of law or otherwise, without the prior written consent of the other party (not to be unreasonably withheld).  Notwithstanding the foregoing, either party may assign the entirety of its rights and obligations under these Terms, without consent of the other party, to its affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets not involving a direct competitor of the other party.  A party’s sole remedy for any purported assignment by the other party in breach of this paragraph shall be, at the non-assigning party’s election, termination of your use of the Heroku Services upon written notice to the assigning party.</p>
+
+<p><br /></p>
+
+<div id="adaptation"></div>
+
+<p>This document is an adaptation of the <a href="http://code.google.com/appengine/terms.html">Google App Engine Terms of Service</a>.  The original work has been modified.  Google, Inc. is not connected with and does not sponsor or endorse Heroku or its use of the work.</p>
+
+    </article>
+
+        </div>
+      </div>
+    </div>
+
+    <footer id="heroku-footer">
+  <div class="wrapper">
+    <div class="col heroku-footer-links">
+      <nav class="col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/features">Platform Features</a></li>
+          <li><a href="/connect">Heroku Connect</a></li>
+          <li><a href="/postgres">Heroku Postgres</a></li>
+          <li><a href="/redis">Heroku Redis</a></li>
+          <li><a href="/enterprise">Heroku Enterprise</a></li>
+          <li><a href="https://elements.heroku.com/">Elements Marketplace</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <nav class="col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://devcenter.heroku.com/">Documentation</a></li>
+          <li><a href="https://blog.heroku.com/">Blog</a></li>
+          <li><a href="https://devcenter.heroku.com/start">Get Started</a></li>
+        </ul>
+      </nav>
+      <nav class="col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/what">What is Heroku</a></li>
+          <li><a href="/customers">Our Customers</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="https://partners.heroku.com/">Partners</a></li>
+        </ul>
+      </nav>
+      <nav class="col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="https://help.heroku.com/">Help</a></li>
+          <li><a href="https://status.heroku.com/">Status</a></li>
+          <li><a href="/critical">Critical Apps</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col heroku-footer-social">
+      <h3><span class="heroku-footer-icon-newsletter"></span>Subscribe to our monthly newsletter</h3>
+      <iframe src="https://go.pardot.com/l/36622/2015-07-20/5l8m8r" width="100%" height="80" type="text/html" frameborder="0" allowTransparency="true" scrolling="no"></iframe>
+      <ul class="social-list">
+        <li><a class="heroku-footer-icon-rss" href="http://feeds2.feedburner.com/heroku" target="_blank">RSS Feed</a></li>
+        <li><a class="heroku-footer-icon-twitter" href="https://twitter.com/heroku" target="_blank">Twitter</a></li>
+        <li><a class="heroku-footer-icon-facebook" href="https://facebook.com/heroku" target="_blank">Facebook</a></li>
+        <li><a class="heroku-footer-icon-github" href="https://github.com/heroku" target="_blank">Github</a></li>
+        <li><a class="heroku-footer-icon-linkedin" href="https://www.linkedin.com/company/heroku" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tertiary">
+    <div class="wrapper">
+      <div class="col">
+        <a href='/home' class="sfdc-heroku-logo">Salesfore Heroku</a>
+        <p>&copy; 2015 Salesforce.com</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li><a href="/home">heroku.com</a></li>
+          <li><a href="/policy/tos">Terms of Service</a></li>
+          <li><a href="/policy/privacy">Privacy</a></li>
+          <li><a href="/policy/privacy#web_site_navigational_information">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="//d3k90kvix375hb.cloudfront.net/assets/application-79a564591b6337de0fb994c45e499ee9.js"></script>
+  </body>
+</html>
+
