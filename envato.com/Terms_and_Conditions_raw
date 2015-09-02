@@ -1,1 +1,2233 @@
- 
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js fixed-layout" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fcf8d519de","applicationID":"13909","transactionName":"NTU0DRQNDwshOmIcFBE7NlYLAxEMITw=","queueTime":0,"applicationTime":158,"agent":"js-agent.newrelic.com/nr-686.min.js","atts":"DXgvW1wZQRQtPChSS1QOMhwLByUINi0+BFNaeCkKCkBZASUkPhVdVCg/CBMHEBMbOD8fBRk5NRVEWEEPMDw9Sl5ZeHZbFQsECSEsEhkfKS8pHBRAWUVndAMZHTU2OwoVXEFLZiE9UktUb2hXVExSU3ZmfEdCVHZ4DBUHETglLygeBVRgeCkfFgsIKmU4Ah0aMzhWVExURWhqPxUHHykzFghAWUVzLC9BEBdqBhdEHx4="}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcGQldQAQMJ"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<link rel="dns-prefetch" href="//res.cloudinary.com">
+<link rel="dns-prefetch" href="//d2mdw063ttlqtq.cloudfront.net" />
+<link rel="dns-prefetch" href="//jwpsrv.com" />
+
+
+<title>Envato Market Terms | ThemeForest</title>
+
+<meta content="The #1 marketplace for premium website templates, including themes for WordPress, Magento, Drupal, Joomla, and more.  Create a website, fast." name="description" />
+
+  <meta name="viewport" content="width=1024">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" href="/icons/themeforest.net/apple-touch-icon-precomposed.png" />
+
+  <link href="//dmypbau5frl9g.cloudfront.net/assets/market/core/index_static-f34604dcaaf13ac4c163e8e60cdf4cf2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="//dmypbau5frl9g.cloudfront.net/assets/market/pages/default/index_static-2fd573327aef1982f8a10f796ce08aef.css" media="all" rel="stylesheet" type="text/css" />
+
+
+<link rel="canonical" href="http://themeforest.net/legal/market" />
+
+      <meta content="Envato Market Terms | ThemeForest" property="og:title" />
+  <meta content="website" property="og:type" />
+  <meta content="http://themeforest.net/legal/market" property="og:url" />
+  <meta content="//dmypbau5frl9g.cloudfront.net/assets/images/logos/marketplaces/200px/ThemeForest.png?not_precompiled" property="og:image" />
+  <meta content="The #1 marketplace for premium website templates, including themes for WordPress, Magento, Drupal, Joomla, and more.  Create a website, fast." property="og:description" />
+  <meta content="ThemeForest" property="og:site_name" />
+  <meta content="580836304" property="fb:admins" />
+
+
+<link href="/feeds/new-themeforest-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new items feed" /><link href="/feeds/new-site-templates-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Site Templates items feed" /><link href="/feeds/new-wordpress-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new WordPress items feed" /><link href="/feeds/new-cms-themes-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new CMS Themes items feed" /><link href="/feeds/new-ecommerce-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new eCommerce items feed" /><link href="/feeds/new-blogging-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Blogging items feed" /><link href="/feeds/new-marketing-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Marketing items feed" /><link href="/feeds/new-forums-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Forums items feed" /><link href="/feeds/new-psd-templates-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new PSD Templates items feed" /><link href="/feeds/new-muse-templates-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Muse Templates items feed" /><link href="/feeds/new-typeengine-themes-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new TypeEngine Themes items feed" /><link href="/feeds/new-static-site-generators-items.atom" rel="alternate" type="application/atom+xml" title="ThemeForest new Static Site Generators items feed" />
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="sEU8yP8mgQWp4yl6U4XAL8Z48E+nf+YyYeRXXiAwO4Y=" name="csrf-token" />
+
+
+    <script src="//dmypbau5frl9g.cloudfront.net/assets/market/core/head-f0efac1d6976fdf77355672935951571.js" type="text/javascript"></script>
+  </head>
+  <body id="" class="" data-view="app" data-responsive="false" data-user-signed-in="false" >
+    
+    <!--[if lte IE 8]>
+  <div style="color:#fff;background:#f00;padding:20px;text-align:center;">
+    ThemeForest no longer actively supports this version of Internet Explorer. We suggest that you <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" style="color:#fff;text-decoration:underline;">upgrade to a newer version</a> or <a href="http://browsehappy.com/" style="color:#fff;text-decoration:underline;">try a different browser</a>.
+  </div>
+<![endif]-->
+
+
+    <div class="page">
+
+      <div class="page__canvas">
+        <div class="canvas">
+          <div class="canvas__header">
+            
+
+
+            
+
+            <header class="site-header">
+
+              <div class="site-header__logo-and-account ">
+                <div class="header-logo-account">
+  <div class="grid-container">
+    <div class="header-logo-account__container">
+      <a class="header-logo-account__logo" href="http://market.envato.com/">
+        <span>Envato Market</span>
+      </a>
+      <nav class="header-logo-account__right">
+          <ul class="header-logo-account__sundry">
+              <li class="header-logo-account__sundry-item">
+                  <a href="https://studio.envato.com/?utm_source=marketplaces&amp;utm_medium=themeforest&amp;utm_campaign=internal%20navigation&amp;utm_content=headernav" class="header-logo-account__sundry-main-link--brand-color -rounded-corners" target="_blank">Envato Studio</a>
+              </li>
+              <li class="header-logo-account__sundry-item">
+                  <a href="/become_an_author" class="header-logo-account__sundry-main-link -rounded-corners" target="_self">Start selling</a>
+              </li>
+              <li class="header-logo-account__sundry-item">
+                  <a href="https://forums.envato.com" class="header-logo-account__sundry-main-link -rounded-corners" target="_self">Forums</a>
+              </li>
+              <li class="header-logo-account__sundry-item">
+                  <a href="http://community.envato.com" class="header-logo-account__sundry-main-link" data-dropdown-target=".js-sundry-3-dropdown" data-view="touchOnlyDropdown">Community</a>
+
+                  <div class="header-logo-account__sundry-dropdown js-sundry-3-dropdown">
+                    <ul class="hub-header-dropdown">
+                        <li>
+                          <a href="http://community.envato.com" class="header-logo-account__sundry-sub-link">Home</a>
+                        </li>
+                        <li>
+                          <a href="https://forums.envato.com/tos" class="header-logo-account__sundry-sub-link">Rules</a>
+                        </li>
+                        <li>
+                          <a href="/page/file_updates" class="header-logo-account__sundry-sub-link">Social Media / RSS Feeds</a>
+                        </li>
+                        <li>
+                          <a href="/community/market" class="header-logo-account__sundry-sub-link">Envato Market</a>
+                        </li>
+                        <li>
+                          <a href="/community/badges" class="header-logo-account__sundry-sub-link">Community Badges</a>
+                        </li>
+                        <li>
+                          <a href="/community/research" class="header-logo-account__sundry-sub-link">Community Research</a>
+                        </li>
+                        <li>
+                          <a href="http://community.envato.com/#/events" class="header-logo-account__sundry-sub-link">Community Meetups</a>
+                        </li>
+                        <li>
+                          <a href="http://marketblog.envato.com/" class="header-logo-account__sundry-sub-link">Envato Market Blog</a>
+                        </li>
+                        <li>
+                          <a href="/collections" class="header-logo-account__sundry-sub-link">Public Collections</a>
+                        </li>
+                        <li>
+                          <a href="/feature" class="header-logo-account__sundry-sub-link">Featured Files</a>
+                        </li>
+                        <li>
+                          <a href="/page/top_sellers" class="header-logo-account__sundry-sub-link">Popular Files</a>
+                        </li>
+                        <li>
+                          <a href="/author/top_authors" class="header-logo-account__sundry-sub-link">Top Authors</a>
+                        </li>
+                        <li>
+                          <a href="/page/top_new_sellers" class="header-logo-account__sundry-sub-link">Top New Authors</a>
+                        </li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="header-logo-account__sundry-item">
+                  <a href="/affiliate_program" class="header-logo-account__sundry-main-link -rounded-corners" target="_self">Affiliates</a>
+              </li>
+              <li class="header-logo-account__sundry-item">
+                  <a href="https://help.market.envato.com" class="header-logo-account__sundry-main-link" data-dropdown-target=".js-sundry-5-dropdown" data-view="touchOnlyDropdown">Help</a>
+
+                  <div class="header-logo-account__sundry-dropdown js-sundry-5-dropdown">
+                    <ul class="hub-header-dropdown">
+                        <li>
+                          <a href="/help/getting_started" class="header-logo-account__sundry-sub-link">Getting Started</a>
+                        </li>
+                        <li>
+                          <a href="/buy" class="header-logo-account__sundry-sub-link">Why Buy With Us?</a>
+                        </li>
+                        <li>
+                          <a href="https://help.market.envato.com" class="header-logo-account__sundry-sub-link">Help Center</a>
+                        </li>
+                        <li>
+                          <a href="/licenses" class="header-logo-account__sundry-sub-link">Licenses</a>
+                        </li>
+                        <li>
+                          <a href="/legal/market" class="header-logo-account__sundry-sub-link">Legal Agreements</a>
+                        </li>
+                        <li>
+                          <a href="/page/item_support_policy" class="header-logo-account__sundry-sub-link">Item Support Policy</a>
+                        </li>
+                        <li>
+                          <a href="/help/api" class="header-logo-account__sundry-sub-link">API</a>
+                        </li>
+                        <li>
+                          <a href="/get_hosting" class="header-logo-account__sundry-sub-link">Get Hosting</a>
+                        </li>
+                        <li>
+                          <a href="/category" class="header-logo-account__sundry-sub-link">Sitemap</a>
+                        </li>
+                    </ul>
+                  </div>
+              </li>
+          </ul>
+
+        <div class="header-logo-account__user-nav">
+            <div class="header-logo-account__user-nav-item">
+  <strong>
+      <a href="/sign_up" class="header-logo-account__user-nav-main-link--alpha" data-view="modalAjax"><span>Create an Envato Account</span></a>
+  </strong>
+</div>
+
+  <div class="header-logo-account__user-nav-item">
+    <a href="/cart" class="header-logo-account__user-nav-main-link--cart">
+      <div class="shopping-cart-summary is-empty" data-view="cartCount">
+        <i class="e-icon -icon-cart"></i>
+        <span class="js-cart-summary-count shopping-cart-summary__count">0</span>
+      </div>
+</a>  </div>
+
+
+<div class="header-logo-account__user-nav-item">
+  <a href="/sign_in" class="header-logo-account__user-nav-main-link--omega" data-view="modalAjax" rel="nofollow">Sign In</a>
+</div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+              </div>
+
+              <div class="site-header__sites ">
+                <div class="header-sites">
+  <div class="grid-container">
+    <nav class="header-sites__container">
+          <a href="http://themeforest.net/?osr=tn" class="header-sites__site--themeforest is-active" title="Website Templates">ThemeForest</a>
+          <a href="http://codecanyon.net/?osr=tn" class="header-sites__site--codecanyon" title="Code, Plugins and Mobile">CodeCanyon</a>
+          <a href="http://videohive.net/?osr=tn" class="header-sites__site--videohive" title="Motion Graphics">VideoHive</a>
+          <a href="http://audiojungle.net/?osr=tn" class="header-sites__site--audiojungle" title="Stock Music and Audio">AudioJungle</a>
+          <a href="http://graphicriver.net/?osr=tn" class="header-sites__site--graphicriver" title="Graphics, Vectors and Print">GraphicRiver</a>
+          <a href="http://photodune.net/?osr=tn" class="header-sites__site--photodune" title="Stock Photography">PhotoDune</a>
+          <a href="http://3docean.net/?osr=tn" class="header-sites__site--3docean" title="3D Models and Materials">3DOcean</a>
+          <a href="http://activeden.net/?osr=tn" class="header-sites__site--activeden" title="Flash and Unity 3D">ActiveDen</a>
+    </nav>
+  </div>
+</div>
+
+              </div>
+
+              <div class="site-header__categories ">
+                <div class="header-categories">
+  <div class="grid-container">
+    <ul class="header-categories__links">
+  <li class="header-categories__links-item">
+    <a href="/category/all" class="header-categories__main-link" data-dropdown-target=".js-categories-all-files-dropdown" data-view="touchOnlyDropdown">All Items</a>
+
+    <div class="header-categories__links-dropdown js-categories-all-files-dropdown">
+      <ul class="hub-header-dropdown">
+          <li>
+            <a href="/page/top_sellers">Popular Files</a>
+          </li>
+          <li>
+            <a href="/feature">Featured Files</a>
+          </li>
+          <li>
+            <a href="/search?date=this-month&amp;length_max=&amp;length_min=&amp;price_max=&amp;price_min=&amp;rating_min=&amp;sales=&amp;sort=sales&amp;term=&amp;utf8=%E2%9C%93&amp;view=list">Top New Files</a>
+          </li>
+          <li>
+            <a href="/follow_feed">Follow Feed</a>
+          </li>
+          <li>
+            <a href="/author/top_authors">Top Authors</a>
+          </li>
+          <li>
+            <a href="/page/top_new_sellers">Top New Authors</a>
+          </li>
+          <li>
+            <a href="/category">View All Categories</a>
+          </li>
+      </ul>
+    </div>
+  </li>
+
+    <li class="header-categories__links-item">
+        <a href="/category/wordpress" class="header-categories__main-link" data-dropdown-target=".js-categories-0-dropdown" data-view="touchOnlyDropdown">
+          WordPress
+</a>        <div class="header-categories__links-dropdown js-categories-0-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=wordpress" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/wordpress">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/wordpress/blog-magazine">Blog / Magazine</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/buddypress">BuddyPress</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/corporate">Corporate</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/creative">Creative</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/corporate/directory-listings">Directory &amp; Listings</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/ecommerce">eCommerce</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/education">Education</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/entertainment">Entertainment</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/mobile">Mobile</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/nonprofit">Nonprofit</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/real-estate">Real Estate</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/retail">Retail</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/technology">Technology</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/wedding">Wedding</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/miscellaneous">Miscellaneous</a>
+              </li>
+
+              <li>
+                <a href="http://codecanyon.net/category/wordpress" class="hub-header-dropdown__bottom">WordPress Plugins <span class='is-visually-hidden'>on CodeCanyon</span></a>
+              </li>
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/site-templates" class="header-categories__main-link" data-dropdown-target=".js-categories-1-dropdown" data-view="touchOnlyDropdown">
+          HTML
+</a>        <div class="header-categories__links-dropdown js-categories-1-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=site-templates" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/site-templates">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/site-templates/admin-templates">Admin Templates</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/corporate">Corporate</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/creative">Creative</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/entertainment">Entertainment</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/mobile">Mobile</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/nonprofit">Nonprofit</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/personal">Personal</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/retail">Retail</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/specialty-pages">Specialty Pages</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/technology">Technology</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/wedding">Wedding</a>
+              </li>
+              <li>
+                <a href="/category/site-templates/miscellaneous">Miscellaneous</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/marketing" class="header-categories__main-link" data-dropdown-target=".js-categories-2-dropdown" data-view="touchOnlyDropdown">
+          Marketing
+</a>        <div class="header-categories__links-dropdown js-categories-2-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=marketing" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/marketing">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/marketing/email-templates">Email Templates</a>
+              </li>
+              <li>
+                <a href="/category/marketing/instapage">Instapage</a>
+              </li>
+              <li>
+                <a href="/category/marketing/landing-pages">Landing Pages</a>
+              </li>
+              <li>
+                <a href="/category/marketing/pagewiz">Pagewiz</a>
+              </li>
+              <li>
+                <a href="/category/marketing/unbounce-landing-pages">Unbounce Landing Pages</a>
+              </li>
+
+              <li>
+                <a href="http://codecanyon.net/category/html5/ad-templates?platform=Google+Web+Designer" class="hub-header-dropdown__bottom">Google Web Designer Ads <span class='is-visually-hidden'>on CodeCanyon</span></a>
+              </li>
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/cms-themes" class="header-categories__main-link" data-dropdown-target=".js-categories-3-dropdown" data-view="touchOnlyDropdown">
+          CMS
+</a>        <div class="header-categories__links-dropdown js-categories-3-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=cms-themes" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/cms-themes">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/cms-themes/concrete5">Concrete5</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/drupal">Drupal</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/joomla">Joomla</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/modx-themes">MODX Themes</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/moodle">Moodle</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/mura">Mura</a>
+              </li>
+              <li>
+                <a href="/category/cms-themes/miscellaneous">Miscellaneous</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/ecommerce" class="header-categories__main-link" data-dropdown-target=".js-categories-4-dropdown" data-view="touchOnlyDropdown">
+          eCommerce
+</a>        <div class="header-categories__links-dropdown js-categories-4-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=ecommerce" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/ecommerce">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/wordpress/ecommerce/cart66">Cart66</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/cs-cart">CS-Cart</a>
+              </li>
+              <li>
+                <a href="/attributes/compatible-with/Drupal Commerce?order_by=date">Drupal Commerce</a>
+              </li>
+              <li>
+                <a href="/search?compatible_with=Easy+Digital+Downloads">Easy Digital Downloads</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/ecommerce/jigoshop">Jigoshop</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/magento">Magento</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/opencart">OpenCart</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/oscommerce">osCommerce</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/prestashop">PrestaShop</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/shopify">Shopify</a>
+              </li>
+              <li>
+                <a href="/attributes/compatible-with/Ubercart?order_by=date">Ubercart</a>
+              </li>
+              <li>
+                <a href="/search?utf8=%E2%9C%93&amp;amp;term=virtuemart">VirtueMart</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/ecommerce/woocommerce">WooCommerce</a>
+              </li>
+              <li>
+                <a href="/category/wordpress/ecommerce/wp-e-commerce">WP e-Commerce</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/zen-cart">Zen Cart</a>
+              </li>
+              <li>
+                <a href="/category/ecommerce/miscellaneous">Miscellaneous</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/psd-templates" class="header-categories__main-link" data-dropdown-target=".js-categories-5-dropdown" data-view="touchOnlyDropdown">
+          PSD
+</a>        <div class="header-categories__links-dropdown js-categories-5-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=psd-templates" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/psd-templates">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/psd-templates/corporate">Corporate</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/creative">Creative</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/entertainment">Entertainment</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/nonprofit">Nonprofit</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/personal">Personal</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/retail">Retail</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/technology">Technology</a>
+              </li>
+              <li>
+                <a href="/category/psd-templates/miscellaneous">Miscellaneous</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/blogging/ghost-themes" class="header-categories__main-link--empty">Ghost Themes</a>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/attributes/framework/Layers%20WP" class="header-categories__main-link" data-dropdown-target=".js-categories-7-dropdown" data-view="touchOnlyDropdown">
+          Layers WP
+</a>        <div class="header-categories__links-dropdown js-categories-7-dropdown">
+          <ul class="hub-header-dropdown">
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/attributes/framework/Layers%20WP">All Items</a>
+              </li>
+
+              <li>
+                <a href="http://go.themeforest.net/layerswp">About Layers WP</a>
+              </li>
+              <li>
+                <a href="/attributes/framework/Layers%20WP">Layers WP Child Themes</a>
+              </li>
+              <li>
+                <a href="http://codecanyon.net/attributes/compatible-with/Layers%20WP">Layers WP Extensions</a>
+              </li>
+              <li>
+                <a href="http://codecanyon.net/category/skins/layers-wp-style-kits">Layers WP Style Kits</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="/category/muse-templates" class="header-categories__main-link" data-dropdown-target=".js-categories-8-dropdown" data-view="touchOnlyDropdown">
+          Muse
+</a>        <div class="header-categories__links-dropdown js-categories-8-dropdown">
+          <ul class="hub-header-dropdown">
+              <li>
+                <a href="/popular_item/by_category?category=muse-templates" class="hub-header-dropdown__top">Popular Items</a>
+              </li>
+
+              <li class="hub-header-dropdown__all-items">
+                <a href="/category/muse-templates">All Items</a>
+              </li>
+
+              <li>
+                <a href="/category/muse-templates/corporate">Corporate</a>
+              </li>
+              <li>
+                <a href="/category/muse-templates/creative">Creative</a>
+              </li>
+              <li>
+                <a href="/category/muse-templates/ecommerce">eCommerce</a>
+              </li>
+              <li>
+                <a href="/category/muse-templates/landing">Landing</a>
+              </li>
+              <li>
+                <a href="/category/muse-templates/personal">Personal</a>
+              </li>
+              <li>
+                <a href="/category/muse-templates/miscellaneous">Miscellaneous</a>
+              </li>
+
+          </ul>
+        </div>
+    </li>
+    <li class="header-categories__links-item">
+        <a href="http://codecanyon.net/category/wordpress" class="header-categories__main-link--empty">Plugins</a>
+    </li>
+
+    <li class="header-categories__links-item">
+      <a href="/category" class="header-categories__main-link" data-dropdown-target=".js-categories-more-links-dropdown" data-view="touchOnlyDropdown">More</a>
+
+      <div class="header-categories__links-dropdown js-categories-more-links-dropdown">
+        <ul class="hub-header-dropdown">
+            <li><a href="/category/blogging">Blogging</a></li>
+            <li><a href="/attributes/compatible-with/facebook">Facebook Templates</a></li>
+            <li><a href="/category/forums">Forums</a></li>
+            <li><a href="/category/static-site-generators/jekyll">Jekyll</a></li>
+            <li><a href="/category/blogging/tumblr">Tumblr</a></li>
+            <li><a href="/category/typeengine-themes">TypeEngine Themes</a></li>
+        </ul>
+      </div>
+    </li>
+</ul>
+
+
+      <div class="header-categories__search">
+  <form accept-charset="UTF-8" action="/search" data-view="searchField" id="search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <div class="search-field -border-light">
+      <div class="search-field__input">
+        <input class="js-term search-field__input-field" id="term" name="term" placeholder="Search" type="search" />
+      </div>
+      <button class="search-field__button" type="submit">
+        <i class="e-icon -icon-search"><span class="e-icon__alt">Search</span></i>
+      </button>
+    </div>
+</form></div>
+
+  </div>
+</div>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="js-canvas__body canvas__body">
+              <div class="grid-container">
+</div>
+
+
+                  <div class="context-header ">
+  <div class="grid-container">
+
+    <nav class="breadcrumbs ">
+  <a href="/">Home</a>
+
+
+    <a href="/legal/market">Legal</a>
+
+</nav>
+
+
+      <div class="context-header__heading h-pull-left">
+<h1 class="t-heading -color-inherit -size-l h-remove-margin">    Envato Market Terms
+</h1></div>
+
+<div class="page-title__result-count h-pull-left">
+  
+</div>
+
+
+
+<div class="h-clear"></div>
+
+
+    
+
+
+  </div>
+</div>
+
+
+            
+
+            <div class="content-main" id="content">
+              
+              <div class="grid-container">
+                
+<div class="sidebar-l">
+  <ul class="side-tabs">
+    <li>
+    <a href="/legal/market" class=" active">
+      <i class="e-icon -icon-document"></i>
+      Envato Market Terms
+    </a>
+    </li>
+    <li>
+    <a href="/legal/author" class="">
+      <i class="e-icon -icon-document"></i>
+      Author Terms
+    </a>
+    </li>
+    <li>
+    <a href="/legal/affiliate" class="">
+      <i class="e-icon -icon-document"></i>
+      Affiliate Program Terms
+    </a>
+    </li>
+    <li>
+    <a href="http://www.envato.com/privacy">
+      <i class="e-icon -icon-preview"></i>
+      Privacy Policy
+    </a>
+    </li>
+    <li>
+    <a href="/legal/api" class="">
+      <i class="e-icon -icon-bolt"></i>
+      Envato API Service Terms and Conditions
+    </a>
+    </li>
+  </ul>
+</div>
+
+<div class="content-s">
+  <ul class="t-list h-spacing-below--small" id="marketplacesterms">
+  <li class="t-body h-remove-margin"><a href="#welcome">Welcome to Envato Market</a></li>
+  <li class="t-body h-remove-margin"><a href="#browsing">How browsing and membership works</a></li>
+  <li class="t-body h-remove-margin"><a href="#buying">How buying items works</a></li>
+  <li class="t-body h-remove-margin"><a href="#becoming-an-author">Becoming an author</a></li>
+  <li class="t-body h-remove-margin"><a href="#intellectual-property">Intellectual property</a></li>
+  <li class="t-body h-remove-margin"><a href="#use-of-information">Our use of your information</a></li>
+  <li class="t-body h-remove-margin"><a href="#playing-fair">Playing fair</a></li>
+  <li class="t-body h-remove-margin"><a href="#linking">Linking; apps made by others</a></li>
+  <li class="t-body h-remove-margin"><a href="#housekeeping">Legal housekeeping</a></li>
+  <li class="t-body h-remove-margin"><a href="#definitions">Definitions</a></li>
+</ul>
+
+<h2 class="t-heading -size-m" id="welcome">Welcome to Envato Market</h2>
+
+<p class="t-body">1.
+  Hi, we&#8217;re <a href="http://envato.com/">Envato</a> and welcome!
+  We&#8217;re happy to have you here and we hope you enjoy your stay.
+  When we say &#8216;<strong>we</strong>&#8217;,
+  &#8216;<strong>us</strong>&#8217; or
+  &#8216;<strong>Envato</strong>&#8217; it&#8217;s because that&#8217;s
+  who we are and we own and run the <strong>Envato Market</strong> sites.
+</p>
+
+<p class="t-body">2.
+  Envato&#8217;s ecosystem of digital marketplaces helps millions of people
+  around the world get creative and earn online. When you create an account
+  and accept these terms you become a <strong>member</strong> of our
+  community. You will have an <strong>Envato Market account</strong> that
+  will allow you to buy and sell <strong>items</strong> like the ones found
+  on the Envato Market sites and make other related transactions.
+</p>
+
+<p class="t-body">3.
+  The Envato Market sites are platforms that allow members to buy and sell
+  licenses to use digital items like website themes, production music,
+  motion graphics project files, software code, vectors, images and much,
+  much more. Envato Market facilitates transactions between us, buyers and
+  authors via a <strong>payment method</strong>. Any transactions are
+  logged on your member&#8217;s statement, which records the payments
+  made by you to authors via Envato (as a <strong>buyer</strong>)
+  and by buyers via Envato to you (as an <strong>author</strong>).
+</p>
+
+<p class="t-body">4.
+  The items on Envato Market are owned by the authors, not by us. We
+  provide a platform; we do not take ownership of the items or get any
+  rights to use the items other than to make them available on and promote
+  our sites.
+</p>
+
+<p class="t-body">5.
+  During your time with us you agree to follow the ground rules outlined in
+  these terms so please read and understand them. If you don&#8217;t accept
+  the terms then we&#8217;ll be sad, but you will need to leave because
+  your presence on and use of the Envato Market sites is conditional on your
+  acceptance to be bound by these terms and the
+  <a href="http://www.envato.com/privacy">Privacy Policy</a> whether you become a member
+  or not.
+</p>
+
+<h2 class="t-heading -size-m" id="browsing">How browsing and membership works</h2>
+
+<p class="t-body">6.
+  <strong>Browsing</strong>: You need to be 13 years or over to browse the
+  Envato Market sites. We don&#8217;t knowingly collect any information from
+  anyone aged 13 or under. When browsing the sites you agree to
+  follow our guidelines or instructions and keep in mind that these terms
+  apply to any use of our sites whether or not you&#8217;re a
+  member.
+</p>
+
+<h3 class="t-heading -size-s" id="membership">Membership</h3>
+
+<p class="t-body">7.
+  <strong>Age</strong>: You need to be 18 years or over to become a member.
+  If you&#8217;re under 18 you will need to use the account of a
+  parent or legal guardian who is at least 18 years of age, with their permission and this adult
+  will be responsible for all your activities.
+</p>
+
+<p class="t-body">8.
+  <strong>Benefits</strong>: Membership is free. When you become a member
+  you get an Envato Market account that is accessible from any of our
+  Envato Market sites (and is also your Envato account for other Envato services).
+  Your membership will allow you to &#8216;buy&#8217; (license) items from
+  authors, participate in our online forums, and generally contribute to
+  our ecosystem of sites that help people get creative. Membership also
+  gives you the opportunity to become an author
+  (see <a href="#becoming-an-author"><strong>section 29 – Becoming an Author</strong></a>)
+  and earn referral income
+  (see <a href="#referrals"><strong>section 10 – Referrals</strong></a>).
+</p>
+
+<p class="t-body">9.
+  <strong>Your responsibility</strong>: You promise that information you
+  give us is true, accurate and complete and that you will keep your
+  account information up-to-date (including a working email address). Your
+  membership is not transferrable. You are responsible for any use of the
+  Envato Market sites that occurs in conjunction with your username and password
+  so keep your password secure and don&#8217;t let any other person use
+  your username or password. If you realise there&#8217;s
+  any unauthorized use of your password or any breach of security you need
+  to let us know immediately.</p>
+
+
+<div class="license-bubble--below">
+  It is important that you understand your responsibilities as a member of
+  our community so please take the time to review this section and the
+  Envato Market Terms carefully.
+</div>
+
+<p class="t-body" id="referrals">10.
+  <strong>Referrals</strong>: As a part of our Affiliate Program, if you
+  refer a new member to any of our Envato Market sites you will be eligible to
+  receive affiliate income. You can find out more about the Affiliate
+  Program and the terms applying to referrals <a href="/affiliate_program">here</a>.
+</p>
+
+<h2 class="t-heading -size-m" id="buying">How buying items works</h2>
+
+<div class="license-bubble">
+  This section will help you understand what you are buying when you
+  purchase an item and how that transaction takes place on Envato Market.
+</div>
+
+<p class="t-body">11.
+  <strong>What you're buying:</strong>
+</p>
+
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin" id="itemprice">
+      <strong>License</strong>: When you <strong>buy</strong> an item,
+      you acquire the right to use that item; you're not actually acquiring the item itself. What you get includes a
+      license directly from the author to use that item. Items are subject to
+      specific terms of use, and these terms are the &#8216;license&#8217; that
+      we set on Envato Market. Different license types are available for you
+      to choose when you have selected an item. You&#8217;ll need to think about
+      the way you want to use the item so that you can pick the right license to
+      allow that use. It&#8217;s your responsibility to choose the correct
+      license for your requirements.
+  </li>
+  <li class="t-body h-remove-margin">
+      <strong>Item support</strong>: Authors can choose whether or not to support certain items. If an author chooses to support an item, this will be identified on the item page.  All supported items include a support period. You can buy support extensions on these items.
+      <div class="license-bubble--below">
+        To learn more about item support, like what items are covered, what authors provide, the support period and support extension options, see the <a href="/page/item_support_policy">item support policy</a>.
+      </div>
+  </li>
+  <li class="t-body h-remove-margin">
+      <strong>Buyer services</strong>: When you &#8216;buy&#8217; an item you also receive services from Envato like 24/7 buyer support, fraud protection, item quality control and other related buyers services.
+      <div class="license-bubble--below">
+        You can read more about the awesome buyer services buyers get from us over
+        at <a href="/buy">Why Buy From Us</a> information page.
+      </div>
+  </li>
+</ol>
+
+<p class="t-body" id="price">12.
+  The total price for an item on Envato Market is made up of:
+</p>
+
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin">
+      <strong>Item price</strong>: The item price is made up of a license fee (for the license you choose for the item), and if relevant the item support fee (for supported items).
+  </li>
+  <li class="t-body h-remove-margin">
+      <strong>Buyer services fee</strong>: This is the fee for the buyer services you get from Envato.
+  </li>
+  <li class="t-body h-remove-margin">
+      <strong>Handling fee</strong>: In some transactions on Envato Market the total price may include a handling fee. See <a href="#section-17"><strong>section 17</strong></a> for the details about the handling fee.
+  </li>
+  <li class="t-body h-remove-margin">
+      <strong>Taxes</strong>: Some transactions on Envato Market may be subject
+      to tax that may be added to the list price or handling fee. See
+      <a href="#section-21"><strong>section 21</strong></a>
+      for details about taxes on Envato Market.
+  </li>
+</ol>
+
+<div class="license-bubble--below">
+  The <strong>list price</strong> is made up of the item price and buyer
+  services fee, and is the price you see on an item page.
+</div>
+
+<h3 class="t-heading -size-s" id="buyer">Transacting as a buyer:</h3>
+
+<p class="t-body">13.
+  You can make payments in one of two ways: you can &#8216;buy it now&#8217;
+  or you can buy Envato credits via your Envato Market account.
+</p>
+
+<p class="t-body">14.
+  <strong>Envato credits</strong>: When you deposit money into your
+  Envato Market account it is converted by your financial institution from
+  your currency to US Dollars. We then convert those US Dollars to Envato
+  credits. Envato credits are the virtual currency on Envato Market and
+  one (1) Envato Credit is equal to one (1) US Dollar.
+</p>
+
+<p class="t-body">15.
+  Envato credits can only be used to pay for Envato Market transactions. We do
+  not generally refund any monies deposited to your Envato Market account to buy
+  Envato credits (but you may have rights under an applicable consumer law,
+  which we don&#8217;t exclude).
+</p>
+
+<p class="t-body">16.
+  If you choose to buy using Envato credits, the total price will be
+  deducted from your Envato credits.
+</p>
+
+<p class="t-body" id="section-17">17.
+  If you choose to buy using a method that is not Envato credits you will
+  be redirected to a payment method provider (a &#8216;payment
+    agent&#8217;), and you may be required to pay a handling fee
+  charged over the item price.
+</p>
+
+<p class="t-body" id="currency-conversion-costs">18.
+  <strong>Currency conversion costs</strong>: You are responsible for all
+  costs of currency conversion relating to your Envato Market account. Your
+  financial institution does the currency conversion and may charge you
+  additional fees (we don&#8217;t control either the conversion rates or
+  your financial institution&#8217;s fees).
+</p>
+
+<div class="license-bubble--below">
+  This means that you may incur additional costs when purchasing
+  from Envato Market, which we have no control over.
+</div>
+
+<p class="t-body">19.
+  <strong>Terms of buying</strong>: When you buy an Envato Market item
+  you&#8217;re doing so on the following terms:
+</p>
+
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin">
+      you promise to us and the author that you have carefully considered the
+      suitability of your chosen license, and that you have chosen
+      appropriately;
+  </li>
+  <li class="t-body h-remove-margin">
+      you cannot cancel a completed purchase of an item;
+  </li>
+  <li class="t-body h-remove-margin">
+      we and the authors do not promise that any particular item will continue
+      to be available on Envato Market so you should download and save the item
+      as soon as you buy it;
+  </li>
+  <li class="t-body h-remove-margin">
+      once you buy an item and you pay the item price, you acquire a non-
+      exclusive license to use the item under the terms set out in the license
+      (non-exclusive means others might also license the same item);
+  </li>
+  <li class="t-body h-remove-margin">
+      the author retains ownership of the item;
+  </li>
+  <li class="t-body h-remove-margin">
+      your relevant details may be provided to the author of the item in order to
+      facilitate the transaction, for example for invoicing and item support
+      services;
+  </li>
+  <li class="t-body h-remove-margin">
+      we have the right to enforce against you the terms of the license that
+      you have acquired from an author.
+  </li>
+</ol>
+
+<div class="license-bubble--below">
+  It is important that you understand the terms on which you are making a
+  purchase. Please take the time to review this section carefully.
+</div>
+
+<p class="t-body" id="what-authors-promise">20.
+  <strong>What authors promise you about items</strong>: The author of an
+  item you buy promises you that:
+</p>
+
+
+<ol class="t-list -style-alpha">
+  <li class="t-body h-remove-margin">
+      they own or have rights to use the intellectual property rights in that
+      item and that item does not infringe the intellectual property rights
+      of a third party;
+  </li>
+  <li class="t-body h-remove-margin">
+      the item is not false, inaccurate, misleading, fraudulent, unlawful or
+      defamatory;
+  </li>
+  <li class="t-body h-remove-margin">
+      the item does not violate any applicable law or regulation (including
+      those governing export control, consumer protection, unfair
+      competition, criminal law, pornography, anti-discrimination, trade
+      practices or fair trading);
+  </li>
+  <li class="t-body h-remove-margin">
+      the item does not contain viruses or other computer codes, files or
+      programs which are designed to limit or destroy the functionality of
+      other computer software or hardware.
+  </li>
+</ol>
+
+<div class="license-bubble--below">
+  This is what authors are promising you when you buy an item.
+</div>
+
+<p class="t-body" id="section-21">21.
+  <strong>Taxes</strong>:
+</p>
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin">
+     Prices and fees are inclusive of transactional taxes where relevant (like
+     sales tax, VAT and GST), except for the following (which will be added as
+     part of the total price buyers see before finalising a purchase): (a) European
+     Union VAT (if applicable) and (b) any other transactional taxes we state on
+     the site will be added.
+  </li>
+  <li class="t-body h-remove-margin">
+      You are responsible for paying all other fees and taxes associated with your use
+      of Envato Market wherever levied (including withholding tax, if
+      applicable). We may collect geographical location information to determine
+      your location, which may be used for tax purposes (so location information
+      you give us must be accurate for tax residency purposes).
+  </li>
+</ol>
+
+<p class="t-body">22.
+  <strong>Envato credits expire</strong>: Envato credits expire if not used
+  within 12 months from the date of deposit, and will be forfeited on the
+  12 month anniversary of the deposit date. If you deposit money to your
+  Envato Market account at any time during that 12 month period before your
+  Envato credits expire, the total balance of your Envato credits (that is,
+  both the new deposit and the balance of any unused older Envato credits)
+  will become available for a further 12 months from the date of the new
+  deposit. If you don&#8217;t use your Envato credits within that further
+  12 months, the credits will be forfeited on the 12 month anniversary of
+  the new deposit. We generally try to tell you beforehand when Envato
+  credits are going to expire and be forfeited, but this is not always
+  possible and we&#8217;re not obliged to warn you. Check your
+  member&#8217;s statement regularly for details of expiry dates. If you
+  have different rights under an applicable consumer law, we don&#8217;t
+  exclude them.
+</p>
+
+<div class="license-bubble--below">
+  If you haven&#8217;t used your Envato credits within 12 months they may
+  expire.
+</div>
+
+<p class="t-body">23.
+  <strong>Items with an incorrect price or incorrect information</strong>: Despite our
+  reasonable efforts, items may occasionally be listed at an incorrect price
+  or with incorrect information. If this happens, we may cancel or reverse a
+  transaction, even after it is completed and a payment has been processed. If
+  we do this, we&#8217;ll promptly arrange for any payment to be credited or
+  refunded and you must not use the item.
+</p>
+
+<h3 class="t-heading -size-s" id="refunds">Refunds</h3>
+
+<p class="t-body">24.
+  Given the nature of downloadable digital items, we do not generally offer
+  a refund or credit on a purchase unless required under Australian
+  consumer law or other relevant consumer protection laws. If you would
+  like to request a refund or credit on a purchase, you should open a <a
+    href="https://help.market.envato.com">help request</a>.
+</p>
+
+<p class="t-body">25.
+  We will assess refund or credit requests on their merits, considering the
+  digital nature of Envato Market items and the type of item preview that was
+  available before purchase. There is no obligation to provide a refund or
+  credit in situations like the following:
+</p>
+
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin">
+      you have changed your mind about an item;
+  </li>
+  <li class="t-body h-remove-margin">
+      you bought an item by mistake;
+  </li>
+  <li class="t-body h-remove-margin">
+      you do not have sufficient expertise to use the item;
+  </li>
+  <li class="t-body h-remove-margin">
+      you ask for goodwill; or
+  </li>
+  <li class="t-body h-remove-margin">
+      you can no longer access the item because it has been removed by its
+      author from Envato Market (we advise you to download items as soon as you
+      buy them to avoid this situation).
+  </li>
+</ol>
+
+<p class="t-body">26.
+  If we decide to issue a refund or credit, this will be done using the same
+  manner used to make the purchase. So if the item was bought using Envato
+  credits, you will be given credit in Envato credits; if the item was bought
+  using a particular payment method you will be refunded using the same
+  payment method in reverse. Any payment made to you (not Envato credits) will
+  be made in US Dollars, under the rules of the payment method (see
+  <a href="#currency-conversion-costs"><strong>section 18 - Currency conversion costs</strong></a>
+  about currency conversion back to your local currency).
+</p>
+
+<div class="license-bubble--below">
+  It is important that you understand how refunds work on Envato Market.
+</div>
+
+<p class="t-body">27.
+  <strong>Disputes lodged with payment agents</strong>: If, as a buyer, you
+  lodge a dispute with a payment agent, this will result in a freezing of
+  your Envato Market account until the dispute raised with the payment agent
+  has been closed. This makes it very complex to resolve any related
+  issues, and means we cannot make payments or issue refunds out of your
+  Envato Market account, so we encourage buyers to contact us directly first
+  to see if we can help resolve any concerns.
+</p>
+
+<p class="t-body">
+  28.
+  <strong>Fine print</strong>: We are not a bank or licensed deposit taker in
+  Australia or elsewhere, your credits are not deposits under Australian law
+  about banks, and that means you don&#8217;t get the benefit of any deposit
+  insurance or guarantee under those laws. We don&#8217;t act as a fiduciary or
+  as a trustee for you, and we&#8217;re not a licensed financial service
+  provider.
+</p>
+
+<h2 class="t-heading -size-m" id="becoming-an-author">Becoming an author</h2>
+
+<p class="t-body">29.
+  Imagine creating what you want, when you want, from the comfort of your
+  own home, making passive income whether you&#8217;re working or not. Some
+  of our authors sell stock items in their free time as a hobby, some do it
+  to get their name out there, and some are able to make it their full time
+  profession. If you want to get involved in our community as an author
+  find out how <a href="/become_an_author">here</a>. Remember
+  that if you become an author these terms will continue to apply, along
+  with the Author Terms you&#8217;ll sign up to as an author.</p>
+
+
+<div class="license-bubble--below">
+  To find out more about how to become an Author visit the
+  &#8216;Become an Author&#8217;
+  guide
+  <a href="/become_an_author">here</a>.
+</div>
+
+<h2 class="t-heading -size-m" id="intellectual-property">Intellectual Property</h2>
+
+<p class="t-body">30.
+  <strong>What we own</strong>: We own all the <strong>Envato
+  content</strong> that we have put on Envato Market (unless otherwise
+  stated and excluding content owned by others). This includes the design,
+  compilation, and look and feel of the Envato Market sites, and copyright,
+  trademarks, designs and other intellectual property on Envato Market.
+  We own all the trademarks, logos, service marks and trade names on Envato Market
+  (unless otherwise stated and excluding these things owned by
+  others). You will not copy, distribute, modify or make derivative works
+  of any of our Envato Content or use any of our intellectual property in
+  any way not expressly stated in these terms.
+</p>
+
+<p class="t-body">31.
+  <strong>What we don&#8217;t own</strong>: We do not own the items on Envato Market;
+  our authors do. So we cannot take responsibility for the
+  quality, safety or legality of the items. We do not warrant that the
+  items or any member content, code, data or materials available on or via the
+  Envato Market do not infringe the intellectual property rights of a
+  third party. (Each author provides warranties to you directly when you
+  purchase their item – see
+  <a href="#what-authors-promise"><strong>section 20 - What authors promise you about items</strong></a>.)
+</p>
+
+<p class="t-body">32.
+  <strong>Copyright, trademark and intellectual property claims</strong>:
+  We respect the intellectual property rights of others and we require that
+  authors do the same. If you believe that an item or member content
+  infringes an intellectual property right (including copyright) please see
+  the information in our
+  <a href="https://help.market.envato.com/hc/en-us/articles/202500514">Content
+    Policy</a>.
+</p>
+
+<div class="license-bubble--below">
+  Our Content Policy is where you will find all the information relating to
+  how we treat intellectual property on Envato Market including
+  copyright and other rights.
+</div>
+
+
+<h2 class="t-heading -size-m" id="use-of-information">Our use of your information</h2>
+
+<p class="t-body">33.
+  <strong>Privacy</strong>: We respect your privacy. When you become a member you will be
+  asked to provide some information about yourself. This information may be
+  used by us and contractors in connection with providing the Envato Market sites and
+  their services, including marketing activities.</p>
+
+
+<div class="license-bubble--below">
+  Our <a href="http://www.envato.com/privacy">Privacy Policy</a> explains how we deal
+  with your information and it forms part of these terms.
+</div>
+
+<p class="t-body">34.
+  <strong>Confidential Information</strong>: We value your information and
+  take reasonable precautions to protect it. While we take reasonable steps
+  to preserve the security of your information, please be aware that we
+  can&#8217;t promise that your use of the Envato Market will be
+  confidential, and we can&#8217;t promise that any information you provide
+  to us is perfectly secure. While using the Envato Market, you may also
+  become aware of confidential information about us or another member. You
+  promise to not disclose any confidential information made available to
+  you through the Envato Market to any other person.
+</p>
+
+
+<h2 class="t-heading -size-m" id="playing-fair">Playing fair</h2>
+
+<p class="t-body" id="prohibited-conduct">35.
+  <strong>Prohibited Conduct</strong>: Envato is founded on the idea of
+  community and like any functioning and healthy community, some things are
+  not allowed and will not be tolerated. We aim to take a common sense
+  approach to the general code of conduct on Envato Market but you
+  promise that you will not:</p>
+
+
+<ol class="t-list -style-alpha h-spacing-below--small">
+  <li class="t-body h-remove-margin">
+      use a false email address, impersonate others, or misrepresent your
+      affiliation with others;
+  </li>
+  <li class="t-body h-remove-margin">
+      attempt to gain unauthorised access to computer systems or content
+      through the Envato Market;
+  </li>
+  <li class="t-body h-remove-margin" id="prohibited-conduct-c">
+      attempt to contact other members through the Envato Market or use any
+      information gained from the Envato Market with the intention to make a
+      private arrangement that would otherwise be made using the Envato Market;
+  </li>
+  <li class="t-body h-remove-margin">
+      enter any arrangements that are not consistent with, or are intended to apply in addition to, these terms or the
+      Author Terms;
+  </li>
+  <li class="t-body h-remove-margin">
+      use information gathered from or through the Envato Market in a way that
+      may confuse or mislead consumers (for example, automatically gathering
+      information to set up a site that looks like one of our sites);
+  </li>
+  <li class="t-body h-remove-margin">
+      attempt to or actually interrupt, negatively impact or alter the
+      Envato Market operation in any way;
+  </li>
+  <li class="t-body h-remove-margin">
+      use the Envato Market or any of the content in a way that violates
+      applicable law, that violates the intellectual property or other rights of
+      us or others, or that is fraudulent, obscene, unprofessional, offensive,
+      misleading or defamatory;
+  </li>
+  <li class="t-body h-remove-margin">
+      modify, reproduce, display, publish, distribute, copy, transmit, perform,
+      license, create derivative works from, transfer, or sell or re-sell any
+      information, content, software, or item obtained from or through the Envato
+      Market, other than in accordance with these terms or the license for
+      the item.
+  </li>
+
+</ol>
+
+<p class="t-body">36.
+  We strongly recommend that you don&#8217;t make your contact details
+  public on the Envato Market or in any communications via the Envato Market sites.
+  Contact details include your email address, street address, Skype name
+  and phone number (but not social network handles). If you do, it must not
+  be for any reason prohibited under
+   <a href="#prohibited-conduct-c"><strong>section 35(c) - Prohibited Conduct</strong></a>
+  and you do so at your risk!
+</p>
+
+<p class="t-body">37.
+  <strong>Content removal</strong>: We can look at or remove any of your
+  content for any reason at our discretion. Reasons might include quality
+  assurance, if we receive a valid copyright take-down notice, if we think
+  that the use of your content is unauthorised, misleading, incorrect,
+  offensive, or in breach of anyone else&#8217;s rights, or if we think
+  that your use of the Envato Market and any content might result in
+  liability to us or anyone else.
+</p>
+
+<p class="t-body">38.
+  <strong>Community participation</strong>: We take great pride in our
+  global and thriving community—it&#8217;s part of what makes the
+  Envato Market such a friendly place. We focus on transparency and mutual
+  respect and invite you to participate, give feedback and have your say.
+  Before participating on Envato Market, please read the
+   <a href="/community/community_guidelines">Community Guidelines</a>, as
+  you agree to follow them as part of these terms.
+</p>
+
+
+<h2 class="t-heading -size-m" id="linking">Linking; apps made by others</h2>
+
+<p class="t-body">39.
+  <strong>Linking to the Envato Market</strong>: We&#8217;d be delighted if
+  you decide to link to Envato Market from other sites but you have to
+  link to a full version of a page as seen by someone navigating directly
+  to the Envato Market sites and looks the way we&#8217;ve intended and
+  not link directly to an image hosted on Envato Market. That includes
+  no “in-line” linking methods resulting in images hosted on Envato Market
+  being displayed on other sites. You must not “frame” any Envato Market
+  pages by surrounding those pages with someone else&#8217;s content, materials
+  or branding. We reserve the right to insist that any link to the Envato Market
+  be discontinued, and to revoke your ability to link to the Envato Market.
+</p>
+
+<p class="t-body">40.
+  <strong>Links from the Envato Market</strong>: The Envato Market sites may
+  contain links to other non-Envato sites. We have no control or
+  responsibility over anything on those sites, and do not endorse or
+  sponsor those sites, even if they are affiliated to us.
+</p>
+
+<p class="t-body">41.
+  <strong>Third party developers</strong>: We welcome the contribution of
+  our members and broader community, who offer applications that work with
+  Envato Market. You will need to form your own view about these
+  applications and their developers; we&#8217;re not able to warrant or
+  endorse those applications and disclaim liability relating to these
+  applications.
+</p>
+
+
+<h2 class="t-heading -size-m" id="housekeeping">Legal Housekeeping</h2>
+
+<p class="t-body" id="eligibility">42.
+  <strong>Eligibility, suspension or termination</strong>: Membership is not an
+  automatic right, it is a benefit for community members who follow our
+  reasonable rules and treat other community members well. We hope that you
+  will be with us for a long time. But we do reserve the right, based on our
+  reasonable discretion, to determine whether or not your use of Envato
+  Market complies with these terms. We can suspend or terminate your
+  Envato Market account at any time for any reason (acting reasonably of
+  course), including if you don’t comply with these terms. If we do decide to
+  permanently terminate your Envato Market account you must not apply for a new
+  account as unfortunately you will no longer be welcome in our community.
+</p>
+
+<div class="box -color-yellow">
+  <h3 class="t-heading -size-s" id="ourindemnitytoyou">Our indemnity to you</h3>
+  <p class="t-body">43.
+    We provide Envato Market, not the items on Envato Market. We are
+    liable and responsible for:</p>
+
+  <ol class="t-list -style-alpha h-spacing-below--small">
+    <li class="t-body h-remove-margin">
+        our use of the Envato Market;
+    </li>
+    <li class="t-body h-remove-margin">
+        the services, messages, Envato Content, software or other information we
+        send through Envato Market;
+    </li>
+    <li class="t-body h-remove-margin">
+        Envato Content breaching of any intellectual property rights belonging to
+        others;
+    </li>
+    <li class="t-body h-remove-margin">
+        our breach of these terms;
+    </li>
+    <li class="t-body h-remove-margin">
+        our breach of any industry code, regulation or law that applies.
+    </li>
+  </ol>
+
+  <p class="t-body">44.
+    You have no responsibility to us for, and we agree to indemnify you
+    from, all liabilities, costs, expenses (including legal fees) and loss
+    arising from third party claims due to any of the matters set out in the
+    previous
+    <a href="#ourindemnitytoyou"><strong>section 43 – Our indemnity to you</strong></a>.
+  </p>
+
+  <h3 class="t-heading -size-s" id="yourindemnitytous">Your indemnity to us</h3>
+  <p class="t-body">45.
+    You are liable and responsible for:
+  </p>
+
+  <ol class="t-list -style-alpha h-spacing-below--small">
+    <li class="t-body h-remove-margin">
+        your use of the Envato Market;
+    </li>
+    <li class="t-body h-remove-margin">
+        the items, message, content, information, software or other materials you
+        send through Envato Market;
+    </li>
+    <li class="t-body h-remove-margin">
+        your content breaching any intellectual property rights belonging to
+        others;
+    </li>
+    <li class="t-body h-remove-margin">
+        your breach of these Envato Market Terms;
+    </li>
+    <li class="t-body h-remove-margin">
+        your breach of any license of an item;
+    </li>
+    <li class="t-body h-remove-margin">
+        your breach of any industry code, regulation or law that applies.
+    </li>
+  </ol>
+
+  <p class="t-body">46.
+    We have no responsibility to you or to any other person for all
+    liabilities, costs, expenses (including legal fees) and loss arising from
+    third party claims due to any of the matters set out in the previous
+    <a href="#yourindemnitytous"><strong>section 45 – Your indemnity to us</strong></a>
+    and you agree to indemnify us, our directors, officers, employees and agents
+    from all losses.
+  </p>
+
+  <div class="license-bubble--below">
+    This means that you protect us from costs and claims that happen because
+    of your actions on the site.
+  </div>
+
+  <p class="t-body">47.
+    We reserve the right, at our own expense, to assume the exclusive defence
+    and control of any matter otherwise subject to indemnification by you, and
+    in such case, you agree to cooperate with our defence of such claim.
+  </p>
+
+
+  <p class="t-body">48.
+    <strong>Availability</strong>: We strive to have the Envato Market available
+    to you 24 hours a day, seven days a week but you know how the internet
+    works: occasionally you might not be able to access the Envato Market, and
+    this might happen for any reason, at any time, with or without notice, or
+    at our absolute discretion. We might also change aspects of how Envato Market
+    works. We will not be liable to you for any loss you suffer as
+    a result of these things.
+  </p>
+</div>
+
+<p class="t-body">49.
+  <strong>Third party</strong>: If you&#8217;re agreeing to these terms on
+  behalf of someone else (like your employer), then you&#8217;re promising
+  to us that you have full legal authority to bind that third party.
+</p>
+
+<div class="box -color-yellow">
+  <p class="t-body" id="disclaimer">50.
+    <strong>Disclaimer</strong>:  In some places there may be consumer or fair
+    trading laws that apply and that may give you rights that we cannot
+    exclude, restrict or modify (&#8216;non-excludable law&#8217;).  We do not exclude or
+    modify any non-excludable law. Except as provided in a non-excludable law,
+    we are bound only by the express promises made in these terms and we are
+    not bound by implied terms. Except as provided in a non-excludable law, our
+    and each author&#8217;s liability for breach of any implied warranty or condition
+    which cannot be excluded is limited, at our or the author&#8217;s option, to
+    either replacement or paying the cost of replacement.
+  </p>
+</div>
+
+<p class="t-body">51.
+  <strong>Relationship between the parties</strong>: Nothing in these terms is to be
+  construed as constituting a partnership, joint venture, employment or
+  agency relationship between you and us, or between you and any other
+  member. Neither you nor us can bind each other in any way. We are,
+  however, an agent of the authors only for the limited purposes of the
+  authors&#8217; providing warranties to buyers in
+  <a href="#what-authors-promise"><strong>section 20 - What authors promise you about items</strong></a>
+  and the disclaimer of authors&#8217; liability to buyers in
+  <a href="#disclaimer"><strong>section 50 - Disclaimer</strong></a>.
+</p>
+
+<p class="t-body">52.
+  <strong>Notices</strong>: Any notice you send us must be submitted via a
+  <a href="https://help.market.envato.com">help request</a>. Any notice we send to
+  you will be emailed to your Envato Market account email address.
+</p>
+
+<p class="t-body">53.
+  <strong>Changes to Envato Market Terms</strong>: Although we can change
+  any of our terms at any time we will take reasonable steps to let you
+  know when we do so.
+</p>
+
+<p class="t-body">54.
+  <strong>Interpretation</strong>: Words like &#8216;include&#8217; and
+  &#8216;including&#8217; are not words of limitation and where anything is
+  within our discretion we mean our sole discretion.
+</p>
+
+<p class="t-body">55.
+  <strong>Applicable Laws</strong>: We control and operate the Envato Market
+  from our offices in Australia. The laws of Victoria, Australia govern
+  these user terms, and you submit to the jurisdiction of the courts there.
+</p>
+
+
+<h2 class="t-heading -size-m" id="definitions">Definitions</h2>
+
+<dl>
+  <dt class="t-heading -size-xxs h-remove-margin">Author:</dt>
+  <dd>
+    <p class="t-body">a member who makes items available for sale on Envato Market.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Buy:</dt>
+  <dd>
+    <p class="t-body">includes downloading an item that is made available for free on Envato Market or that is purchased for you by another member.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Buyer:</dt>
+  <dd>
+    <p class="t-body">a member who &#8216;buys&#8217; items on Envato Market.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Buyer services fee:</dt>
+  <dd>
+    <p class="t-body">the fee for the services buyers get from Envato like 24/7 support, fraud protection, item quality control and other related buyers
+    services. </p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Envato content:</dt>
+  <dd>
+    <p class="t-body">is all the content that we have put on Envato Market
+      and includes the design, compilation, and look and feel of the Envato Market,
+      and copyright, trademarks, designs and other intellectual property on the
+      Envato Market (unless otherwise stated and excluding content owned by
+      others like Author content).</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Envato Market:</dt>
+  <dd>
+    <p class="t-body">When we refer to the
+      &#8216;Envato Market&#8217; we&#8217;re talking about the Envato digital
+      marketplaces, which include these sites:</p>
+
+    <table class="table-general -striped -highlight-row">
+  <thead>
+    <tr>
+      <td>Site Name:</td>
+      <td>Accessible at:</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ActiveDen</td>
+      <td><a href="http://www.activeden.net/">www.activeden.net</a></td>
+    </tr>
+    <tr>
+      <td>AudioJungle</td>
+      <td><a href="http://www.audiojungle.net/">www.audiojungle.net</a></td>
+    </tr>
+    <tr>
+      <td>CodeCanyon</td>
+      <td><a href="http://www.codecanyon.net/">www.codecanyon.net</a></td>
+    </tr>
+    <tr>
+      <td>GraphicRiver</td>
+      <td><a href="http://www.graphicriver.net/">www.graphicriver.net</a></td>
+    </tr>
+    <tr>
+      <td>ThemeForest</td>
+      <td><a href="http://www.themeforest.net/">www.themeforest.net</a></td>
+    </tr>
+    <tr>
+      <td>VideoHive</td>
+      <td><a href="http://www.videohive.net/">www.videohive.net</a></td>
+    </tr>
+    <tr>
+      <td>3DOcean</td>
+      <td><a href="http://www.3docean.net/">www.3docean.net</a></td>
+    </tr>
+    <tr>
+      <td>PhotoDune</td>
+      <td><a class="switch" href="http://photodune.net">www.photodune.net</a></td>
+    </tr>
+  </tbody>
+</table>
+
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Envato Market account:</dt>
+  <dd>
+    <p class="t-body">what you receive when you become a Member which
+      gives you access to any of the Envato Market sites.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">EU Member State:</dt>
+  <dd>
+    <p class="t-body">the countries listed here:
+    <a href="http://europa.eu/about-eu/countries/index_en.htm">http://europa.eu/about-eu/countries/index_en.htm</a></p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Handling fee:</dt>
+  <dd>
+    <p class="t-body">the fee buyers may pay when using a payment method other than
+    Envato credits.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Item price:</dt>
+  <dd>
+    <p class="t-body">the price buyers pay for the license to use an item, as
+    detailed in <a href="#itemprice"><strong>section 11(a)</strong></a>.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Item support:</dt>
+  <dd>
+    <p class="t-body">the support an author agrees to provide for an item marked as ‘supported’ as detailed on the <a href="/page/item_support_policy">item support page</a>.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Items:</dt>
+  <dd>
+    <p class="t-body">digital goods found on Envato Market like WordPress themes,
+      background music, After Effects project files, photography and much, much
+      more.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">List price:</dt>
+  <dd>
+    <p class="t-body">the price you see on an item page on Envato Market, which
+    is made up of the item price and buyer services fee.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Member:</dt>
+  <dd>
+    <p class="t-body">a person who signs up by creating an account and accepting these terms.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Member&#8217;s statement:</dt>
+  <dd>
+    <p class="t-body">the record of payments by you to Envato (as a buyer)
+      and by Envato to you (as an author).</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Payment method:</dt>
+  <dd>
+    <p class="t-body">any payment agent or method we make available on the Envato Market.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Total price:</dt>
+  <dd>
+    <p class="t-body">the price the buyer will pay in total, which consists of
+    the item price, Envato's buyer services fee and handling fee (if applicable)
+    and any taxes that may be added, as detailed in <a href="#price"><strong>section 12</strong></a>.</p>
+  </dd>
+  <dt class="t-heading -size-xxs h-remove-margin">Your content:</dt>
+  <dd>
+    <p class="t-body">everything that you post on the Envato Market, or send via
+      the Envato Market to other members and to us including items, files,
+      communications and materials.</p>
+  </dd>
+</dl>
+
+<p class="t-body">
+    Version 4.0 - Effective date: September 1, 2015.
+</p>
+
+</div>
+
+              </div>
+            </div>
+
+            
+
+            <footer class="site-footer">
+  <div class="site-footer__primary">
+    <div class="footer-primary">
+  <div class="grid-container">
+
+    <div class="footer-top">
+
+  <div class="footer-top__left">
+    <a class="footer-top__market-logo" href="https://market.envato.com">Envato Market</a>
+  </div>
+
+  <div class="footer-top__right is-hidden-tablet-and-below">
+      <div class="market-stats">
+    <div class="market-stats__stat">
+      <p class="t-body -color-light h-remove-margin">
+        5,775,814
+        <span>community members</span>
+      </p>
+    </div>
+    <div class="market-stats__stat">
+      <p class="t-body -color-light h-remove-margin">
+        8,324,080
+        <span>items for sale</span>
+      </p>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+    <div class="footer-primary__columns">
+      <div class="footer-primary__group--first">
+        <div class="footer-box">
+          <div class="footer-box__header js-footer-expand-toggle" data-target="#footer-social">
+            <h4>Follow us</h4>
+          </div>
+          <div id="footer-social" class="footer-box__content">
+            <ul class="social-links">
+  <li><a class="social-link--facebook" href="https://www.facebook.com/envatomarket" rel="nofollow">Be a fan on Facebook</a></li>
+  <li><a class="social-link--twitter" href="https://twitter.com/envatomarket" rel="nofollow">Follow us on Twitter</a></li>
+  <li><a class="social-link--google-plus" href="https://plus.google.com/112592709425670873637" rel="publisher">Circle us on Google+</a></li>
+  <li><a class="social-link--rss" href="/page/file_updates/#rss" rel="nofollow">RSS Feed</a></li>
+</ul>
+
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-box__header js-footer-expand-toggle" data-target="#footer-meet">
+            <h4>Meet Envato</h4>
+          </div>
+          <div id="footer-meet" class="footer-box__content">
+            <div class="footer-box__list">
+  <ul class="t-list -style-none">
+    <li class="t-body h-remove-margin"><a href="http://envato.com">About Envato</a></li>
+    <li class="t-body h-remove-margin"><a href="http://www.envato.com/sites">Explore our Ecosystem</a></li>
+    <li class="t-body h-remove-margin"><a href="http://envato.com/careers">Careers</a></li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-box__header js-footer-expand-toggle" data-target="#footer-help">
+            <h4>Need Help?</h4>
+          </div>
+          <div id="footer-help" class="footer-box__content">
+            <div class="footer-box__list">
+  <ul class="t-list -style-none">
+    <li class="t-body h-remove-margin"><a href="https://help.market.envato.com" class="footer-box__link">Help Center</a></li>
+    <li class="t-body h-remove-margin"><a href="/legal/market" rel="nofollow">Envato Market Terms</a></li>
+    <li class="t-body h-remove-margin"><a href="/legal/author" rel="nofollow">Author Terms</a></li>
+    <li class="t-body h-remove-margin"><a href="/licenses" rel="nofollow">Envato Market Licenses</a></li>
+    <li class="t-body h-remove-margin"><a href="http://www.envato.com/contact" rel="nofollow">Contact Envato</a></li>
+  </ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-primary__group--second">
+        <div class="footer-box">
+          <div class="footer-box__header js-footer-expand-toggle" data-target="#footer-community">
+            <h4>
+              <span class="is-hidden-tablet-and-below">Join our</span> Community
+            </h4>
+          </div>
+          <div id="footer-community" class="footer-box__content">
+            <div class="footer-box__list">
+  <ul class="t-list -style-none">
+      <li class="t-body h-remove-margin"><a href="http://community.envato.com" rel="nofollow">Home</a></li>
+    <li class="t-body h-remove-margin"><a href="https://forums.envato.com" rel="nofollow">Forums</a></li>
+    <li class="t-body h-remove-margin"><a href="http://marketblog.envato.com/">Envato Market Blog</a></li>
+    <li class="t-body h-remove-margin"><a href="http://community.envato.com/#/events">Community Meetups</a></li>
+    <li class="t-body h-remove-margin"><a href="/affiliate_program" rel="nofollow">Become an Affiliate</a></li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-box__header js-footer-expand-toggle" data-target="#footer-subscribe">
+            <h4>
+              <span class="is-hidden-tablet-and-below">Email</span> Newsletters
+            </h4>
+          </div>
+          <div id="footer-subscribe" class="footer-box__content">
+            <p class="t-body h-remove-margin is-hidden-desktop">Subscribe to receive updates</p>
+<p class="t-body is-hidden-tablet-and-below">
+  Subscribe to receive inspiration, ideas, and news in your inbox.
+</p>
+<form action="https://Envato.us1.list-manage.com/subscribe/post?u=01a7104df9f31fd41e34ccbed&amp;amp;id=6f890803c2&amp;group[21][4]=true&amp;group[301][512]=true&amp;group[301][8192]=true&amp;group[301][16384]=true" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate footer-subscribe" target="_blank">
+  <input type="text" placeholder="Email Address" name="EMAIL" class="footer-subscribe__input" id="mce-EMAIL" />
+  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="footer-subscribe__submit btn--primary-full">Subscribe</button>
+</form>
+
+            <a href="http://www.envato.com/privacy" class="footer-box__external-link is-hidden-tablet-and-below">Privacy Policy</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-primary__group--third">
+        <div class="footer-box">
+          <div class="footer-box__content is-hidden-tablet-and-below">
+            <div class="media h-spacing-below">
+  <div class="media__item">
+    <a href="https://studio.envato.com/?utm_source=marketplaces&amp;utm_medium=themeforest&amp;utm_campaign=internal%20navigation&amp;utm_content=footernav" target="_blank">
+      <img alt="Open. New services!" height="112" src="//dmypbau5frl9g.cloudfront.net/assets/header-footer/envato-studio-7e47f0f38bfe5302824a99554d6d57ae.png" width="140" />
+</a>  </div>
+
+  <div class="media__body">
+    <p class="t-body">From logo design to website development, hand-picked designers and developers are ready to complete your custom jobs.</p>
+    <p class="t-body h-remove-margin">
+      <a href="https://studio.envato.com/?utm_source=marketplaces&amp;utm_medium=themeforest&amp;utm_campaign=internal%20navigation&amp;utm_content=footernav" class="t-link -color-light" target="_blank">Check out Envato Studio</a>
+    </p>
+  </div>
+</div>
+
+          </div>
+          <div class="footer-box__content is-hidden-tablet-and-below">
+              <div class="media">
+  <div class="media__item">
+    <a href="http://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-wordpress?utm_source=EnvatoMarket&amp;utm_medium=TF_Footer&amp;utm_campaign=Envato_TF_Footer_FreeWPCourse" target="_blank">
+      <img alt="Tuts+" height="112" src="//dmypbau5frl9g.cloudfront.net/assets/header-footer/tuts-wordpress-b47a9a8bb599898725ccc331a445cf15.jpg" width="140" />
+</a>  </div>
+
+  <div class="media__body">
+    <p class="t-body">Here's a free video course on how to install WordPress, add new content, use themes and plugins, customize your site, and more. Perfect for anyone new to WP.</p>
+    <p class="t-body h-remove-margin">
+      <a href="http://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-wordpress?utm_source=EnvatoMarket&amp;utm_medium=TF_Footer&amp;utm_campaign=Envato_TF_Footer_FreeWPCourse" class="t-link -color-light" target="_blank">Free Course: Beginner&#x27;s Guide to WordPress</a>
+    </p>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+  <p class="t-body h-remove-margin"><small>&copy; 2015 Envato Pty Ltd. Trademarks and brands are the property of their respective owners.</small></p>
+</div>
+
+
+  </div>
+</div>
+
+  </div>
+</footer>
+
+          </div>
+
+          <div class="is-hidden-phone">
+            <div id="tooltip-magnifier" class="magnifier">
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+            <div id="landscape-image-magnifier" class="magnifier">
+    <div class="size-limiter">
+    </div>
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+            <div id="portrait-image-magnifier" class="magnifier">
+    <div class="size-limiter">
+    </div>
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+            <div id="square-image-magnifier" class="magnifier">
+    <div class="size-limiter">
+    </div>
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+            <div id="smart-image-magnifier" class="magnifier">
+    <div class="size-limiter">
+    </div>
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+            <div id="video-magnifier" class="magnifier">
+    <div class="size-limiter">
+    </div>
+  <strong></strong>
+  <div class="info">
+    <div class="author-category">
+      by <span class="author"></span>
+      <span class="category"></span>
+    </div>
+    <div class="price">
+      <span class="cost"></span>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+
+        <div class="page__overlay" data-view="offCanvasNavToggle" data-off-canvas="close"></div>
+      </div>
+    </div>
+
+    
+
+    <script src="//dmypbau5frl9g.cloudfront.net/assets/market/core/index-eaa2a966a4822f1777f1dc601aae2760.js" type="text/javascript"></script>
+    <script src="//dmypbau5frl9g.cloudfront.net/assets/market/pages/default/index-08421c6fbec1e32e4de554ff7d6bcdde.js" type="text/javascript"></script>
+
+
+
+
+    <script>$(function(){viewloader.execute(Views);});</script>
+
+      <script>
+  // Google Analytics Tracking Code
+  (function () {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })
+
+      (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var ACCOUNTS = ["m"];
+    window._envGaTrackerNames = ACCOUNTS;
+
+    ga("create", "UA-11834194-7", {"name":"m","allowLinker":true});
+
+    for (var i = 0; i < ACCOUNTS.length; i++) {
+      t = ACCOUNTS[i];
+
+      ga(t+'.require', 'linker');
+      ga(t+'.linker:autoLink', ["activeden.net","audiojungle.net","themeforest.net","videohive.net","graphicriver.net","3docean.net","codecanyon.net","photodune.net","market.envato.com","market.styleguide.envato.com"]);
+
+      ga(t+'.require', 'ec');
+
+      ga(t+'.require', 'displayfeatures');
+
+      ga(t+'.require', 'linkid', 'linkid.js');
+
+
+
+      if ('') {
+        ga(t+'.send', {
+          hitType: 'pageview',
+          page: ''
+        });
+      } else if ('') {
+        // append the analytics_suffix to the page path so the flash alert/error type can be tracked
+        var analyticsSuffix = $.trim('').replace(/([A-Z])/g, '$1').replace(/[-_\s]+/g, '-').toLowerCase();
+        var uri = URI(window.location.pathname + window.location.search);
+        uri.path(uri.path() + '/' + analyticsSuffix);
+        var tracking_path = uri.path() + uri.search();
+        ga(t+'.send', {
+          hitType: 'pageview',
+          page: tracking_path,
+        });
+      } else {
+        ga(t+'.send', 'pageview');
+      }
+    }
+  }());
+
+  
+</script>
+
+
+  
+<script>
+// GA: universal analytics link wrapper
+(function(){
+    window._envTrkrs = [["m", "UA-11834194-7"]];
+
+    var debug = false;
+    var MAX_RETRIES = 10;
+
+    /*
+       The script needs to wait until the Analytics script
+       has been downloaded from Google before initializing
+    */
+    var waitForAnalytics = function(){
+        this.count = this.count || 0;
+
+        if (window.ga && ga.getByName) {
+            e.init();
+        } else {
+            if (count < MAX_RETRIES) { setTimeout(waitForAnalytics, 250); }
+            count++;
+        }
+    };
+
+    var e = {
+        _envArray: [],
+        _envTrkrs: (window._envTrkrsCust && window._envTrkrsCust.length) ? window._envTrkrs.concat(window._envTrkrsCust) : window._envTrkrs,
+        init: function() {
+            for (var i=0; i < _envTrkrs.length; i++) {
+              if(!ga.getByName(_envTrkrs[i][0])) {
+                ga("create", _envTrkrs[i][1], "auto", {name: _envTrkrs[i][0], allowLinker: true});
+              }
+            }
+
+            document.addEventListener('DOMContentLoaded', function(){
+                e.wrapperInit();
+            });
+
+            if (debug) {console.log('Initiated');}
+        },
+        wrapperInit: function() {
+            if (typeof window._envIsRunning != 'undefined' || window._envIsRunning == true) {
+                return
+            }
+            window._envIsRunning = true;
+
+            if (document.addEventListener) {
+                document.addEventListener('click', function(event){
+                    var target = event.target;
+                    if (target && target.tagName === 'A') {
+                        e._envLinksTracker(event);
+                    }
+                });
+            }
+        },
+        isInArray: function(e, t) {
+            for (var n = 0; n < t.length; n++) {
+                var r = new RegExp(t[n], 'i');
+                if (r.test(e)) {
+                    return n
+                }
+            }
+            return -1
+        },
+        _envTrackevent: function(e, t, n, r) {
+            for (var i = 0; i < this._envTrkrs.length; i++) {
+                var s = this._envTrkrs[i][0].length == 0 ? '' : this._envTrkrs[i][0] + '.';
+                r.length == 0 ? ga(s + 'send', 'event', e, t, n) : ga(s + 'send', 'event', e, t, n, r)
+            }
+        },
+        _envTrackpageview: function(e, t) {
+            t = t.charAt(0) == '/' ? t : '/' + t;
+            for (var n = 0; n < this._envTrkrs.length; n++) {
+                var r = this._envTrkrs[n][0].length == 0 ? '' : this._envTrkrs[n][0] + '.';
+                ga(r + 'send', 'pageview', e + t);
+            }
+        },
+        _envLinksTracker: function(t) {
+            var r = false;
+            var i = {
+                outbound: {
+                    run: true,
+                    useEvent: true
+                },
+                download: {
+                    run: true,
+                    useEvent: true,
+                    reg: ''
+                },
+                self: {
+                    run: false,
+                    useEvent: true
+                },
+                mail: {
+                    run: true,
+                    useEvent: true
+                },
+                ext: /\.(doc.?|xls.?|ppt.?|exe|zip|rar|gz|tar|tgz|dmg|csv|pdf|xpi|txt|mp3)$/i
+            };
+            var s = t.srcElement ? t.srcElement : this;
+            if (t.srcElement) {
+                r = true
+            }
+            while (s.tagName != 'A') {
+                s = s.parentNode
+            }
+            if (s.href == undefined || s.href == null) {
+                return true
+            }
+            var o = s.href;
+            if (o.length == 0) return;
+            var u = s.hostname.toLowerCase();
+            var a = s.pathname;
+            if (a.length == 0) {
+                a = '/'
+            } else if (a.substr(0, 1) != '/') {
+                a = '/' + a
+            }
+            var f = s.protocol;
+            var l = s.search;
+            var c = location.hostname;
+            c = c.replace(/^www\./i, '').toLowerCase();
+            u = u.replace(/^www\./i, '').toLowerCase();
+            if (o.match(/^#/)) {
+                if (i.self.run) {
+                    i.self.useEvent ? e._envTrackevent('self', 'click - ' + c, o, '') : e._envTrackpageview('/virtual/self', '/' + o);
+                    return true
+                }
+            } else if (f.match(/^mailto:/i)) {
+                if (i.mail.run) {
+                    o = o.replace(/^mailto:/i, '');
+                    i.mail.useEvent ? e._envTrackevent('mailto', 'click - ' + c, o, '') : e._envTrackpageview('/virtual/mailto', o);
+                    return true
+                }
+            } else if ((new RegExp(i.ext)).test(a)) {
+                if (i.download.run) {
+                    o = o.replace(/^https?:\/\//i, '');
+                    i.download.useEvent ? e._envTrackevent('download', 'click - ' + c, o, '') : e._envTrackpageview('/virtual/download', o);
+                    return true
+                }
+            } else if (u == undefined || u.length == 0 || f.match(/^javascript:/i)) {
+                return
+            } else if ((new RegExp(c + '$', 'i')).test(u) || (new RegExp(u + '$', 'i')).test(c)) {
+                if (i.download.run && i.download.reg.length != 0) {
+                    if ((new RegExp(i.download.reg, 'i')).test(a + l)) {
+                        o = o.replace(/^https?:\/\//i, '');
+                        i.download.useEvent ? e._envTrackevent('download', 'click - ' + c, o, '') : e._envTrackpageview('/virtual/download', o);
+                        return true
+                    }
+                }
+            } else if (u != c) {
+                if (e.isInArray(u, e._envArray) == -1) {
+                    if (i.outbound.run) {
+                        i.outbound.useEvent ? e._envTrackevent('outbound', 'click - ' + c, u + a + l, '') : e._envTrackpageview('/virtual/outbound', u + a);
+                        return true
+                    }
+                } else if (e.isInArray(u, e._envArray) != -1) {
+                    var h = s.target;
+                    if (h != null && h == '_blank') {
+                        if ((new RegExp(/_utma=/)).test(l)) {
+                            return true
+                        }
+                        var p = e._envTrkrs[0][0].length == 0 ? '' : _envTrkrs[0][0] + '.';
+                        return true
+                    } else {
+                        return false
+                    }
+                }
+            }
+        }
+    };
+
+    waitForAnalytics();
+})()
+</script>
+
+
+  <script type="text/javascript">
+  var $mcGoal = {'settings':{'uuid':'01a7104df9f31fd41e34ccbed','dc':'us1'}};
+  (function() {
+    var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+    sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+  })();
+</script>
+
+
+  <script type="text/javascript">
+  // Google AdWords Remarketing
+  /* <![CDATA[ */
+  var google_conversion_id = 1065398951;
+  var google_conversion_label = "u-J6CI3SqQMQp-WC_AM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065398951/?value=0&amp;amp;label=u-J6CI3SqQMQp-WC_AM&amp;amp;guid=ON&amp;amp;script=0"/>
+  </div>
+</noscript>
+
+
+
+  </body>
+</html>
