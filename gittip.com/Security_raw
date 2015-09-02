@@ -1,1 +1,393 @@
- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--[if lte IE 8]><meta http-equiv="refresh" content="0; url=/browser-not-supported.html"><![endif]-->
+
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:image" content="https://profile-photos.hackerone-user-content.com/production/000/001/868/e5ddff4e4c1ae83760e56638441a0d0e0ab77cef_xtralarge.?1432930247">
+    <meta name="description" class="spec-disclosure" content="Gratipay's vulnerability disclosure program that enlists the help of the hacker community to make Gratipay more secure.
+">
+
+
+    <title>Gratipay: Vulnerability Disclosure via HackerOne
+</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token" content="">
+  <link rel="stylesheet" media="all" href="/assets/application-d3dc0c0b.css" />
+  <link rel="stylesheet" media="all" href="/assets/vendor-3b47297caaa9fa37ef0fb85a01b3dac2.css" />
+  <script src="/assets/constants-241aa311ad8df971479f551f78ceeed9.js"></script>
+  <script src="/assets/frontend-76e9faf1.js"></script>
+  <script src="/assets/application-6afa4084d825fa72900020b36dae2dd6.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hackerone.com/blog" />
+</head>
+<body class="controller_teams action_show application_full_width_layout non-boxless" data-locale="en">
+  <div class="alerts">
+</div>
+
+
+  <noscript>
+  <div class="js-disabled">
+    It looks like your JavaScript is disabled. For a better experience on HackerOne, enable JavaScript in your browser.
+  </div>
+</noscript>
+
+
+  <div class="js-topbar"></div>
+
+    <div class="js-full-width-container full-width-container">
+
+    <div class="notice-banner-bar" data-team-handle="gratipay"></div>
+
+      <div class="profile-header">
+  <div class="profile-header__cover-photo__wrapper">
+      <img class="profile-header__cover-photo" src="https://cover-photos.hackerone-user-content.com/production/000/001/868/09e51f71e0f18fab948ae9a05425abd70207b14f_default.jpeg?1435192561" alt="09e51f71e0f18fab948ae9a05425abd70207b14f default" />
+  </div>
+
+  <div class="profile-header__overlay"></div>
+
+  <div class="profile-header__container">
+    <div class="profile-header__button">
+        
+    </div>
+    <div class="profile-header__picture">
+      <img class="avatar xtralarge " alt="gratipay" title="Gratipay" src="https://profile-photos.hackerone-user-content.com/production/000/001/868/e5ddff4e4c1ae83760e56638441a0d0e0ab77cef_xtralarge.?1432930247" />
+    </div>
+    <div class="profile-header__information__wrapper">
+      <h1 class="profile-header__title">Gratipay</h1>
+      <h2 class="profile-header__bio">Gratitude? Gratipay! Payments and payroll for open work.</h2>
+      <ul class="profile-header__information">
+          <li class="profile-header__information__item">
+            <a class="profile-header__link" href="https://gratipay.com">gratipay.com</a>
+          </li>
+          <li class="profile-header__information__item">
+            <a class="profile-header__link" href="https://twitter.com/gratipay">@gratipay</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+      <div class="sub-header">
+        <div class="inner-container">
+            <ul class="sub-header-menu">
+    <li class="sub-header-menu-item">
+      <a class="sub-header-menu-link active" href="/gratipay">Profile</a>
+    </li>
+      <li class="sub-header-menu-item">
+        <a class="sub-header-menu-link" href="/gratipay/thanks">Thanks</a>
+      </li>
+  </ul>
+
+  <div class="js-report-button-popover-region" data-team="gratipay" data-disabled="null" data-popover-type="null" data-external-url="" data-abuse="null"></div>
+
+        </div>
+      </div>
+
+
+    <div class="full-width-inner-container">
+      
+
+
+
+
+
+
+
+        <div class="full-width-main-column">
+              <article class="markdownable">
+      <h2>Guidelines</h2>
+
+<p>We ask that all researchers:</p>
+
+<ul>
+<li>  Make every effort to avoid privacy violations, degradation of user experience, disruption to production systems, and destruction of data during security testing;</li>
+<li>  Perform research only within the scope set out below;</li>
+<li>  Use the identified communication channels to report vulnerability information to us; and</li>
+<li>  Keep information about any vulnerabilities you’ve discovered confidential between yourself and Gratipay until we’ve had 90 days to resolve the issue.</li>
+</ul>
+
+<p>If you follow these guidelines when reporting an issue to us, we commit to:</p>
+
+<ul>
+<li>  Not pursue or support any legal action related to your research;</li>
+<li>  Work with you to understand and resolve the issue quickly (including an initial confirmation of your report within 72 hours of submission);</li>
+<li>  Recognize your contribution on HackerOne, if you are the first to report the issue and we make a code or configuration change based on the issue.</li>
+</ul>
+
+<h2>Scope</h2>
+
+<ul>
+<li><a href="https://gratipay.com" rel="nofollow">https://gratipay.com</a></li>
+<li><a href="https://grtp.co" rel="nofollow">https://grtp.co</a></li>
+<li>the <a href="http://aspen.io/" rel="nofollow">Aspen</a> web framework</li>
+<li>any other <a href="https://github.com/gratipay" rel="nofollow">software we publish</a>
+</li>
+</ul>
+
+<h2>Out of scope</h2>
+
+<p>Any services hosted by 3rd party providers and services are excluded from scope.</p>
+
+<p>In the interest of the safety of our users, staff, the Internet at large and you as a security researcher, the following test types are excluded from scope:</p>
+
+<ul>
+<li>  Findings from physical testing such as office access (e.g. open doors, tailgating)</li>
+<li>  Findings derived primarily from social engineering (e.g. phishing, vishing)</li>
+<li>  Findings from applications or systems not listed in the ‘Scope’ section</li>
+<li>  UI and UX bugs and spelling mistakes</li>
+<li>  Network level Denial of Service (DoS/DDoS) vulnerabilities</li>
+</ul>
+
+<p>Things we do not want to receive:</p>
+
+<ul>
+<li>  Personally identifiable information (PII)</li>
+<li>  Credit card holder data</li>
+</ul>
+
+<h2>How to Report a Security Vulnerability</h2>
+
+<p>If you believe you’ve found a security vulnerability in one of our products or platforms, please <a href="https://hackerone.com/gratipay/reports/new">send it to us on HackerOne</a>.</p>
+
+<h3>Email</h3>
+
+<p>We prefer that you file reports on HackerOne, but we also accept reports via email to <a title="security@gratipay.com" href="mailto:security@gratipay.com" rel="nofollow">security@gratipay.com</a>. Please include the following details with your report:</p>
+
+<ul>
+<li>  Description of the location and potential impact of the vulnerability;</li>
+<li>  A detailed description of the steps required to reproduce the vulnerability (POC scripts, screenshots, and compressed screen captures are all helpful to us); and</li>
+<li>  Your name/handle and a link for recognition in our <a href="https://gratipay.com/about/security/hall-of-fame" rel="nofollow">Hall of Fame</a>.</li>
+</ul>
+
+<p>To encrypt your message, you may use <a href="https://gratipay.com/about/security/pgp.asc" rel="nofollow">our PGP key</a>:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>curl https://gratipay.com/about/security/pgp.asc | gpg --import
+gpg: key 7A5F6B30: <span class="s2">"Gratipay Security &lt;security@gratipay.com&gt;"</span> imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+<span class="err">$</span>
+</code></pre>
+
+<p>We only use PGP to decrypt messages, never to encrypt messages or authenticate our identity. Instead, we'll create a ticket on HackerOne to track your report, which we'll invite you to join (see our <a href="http://inside.gratipay.com/howto/handle-security-issues" rel="nofollow">internal policy document</a> for more details). If you do not wish to join HackerOne, we can acknowledge you instead on our legacy <a href="https://gratipay.com/about/security/hall-of-fame" rel="nofollow">Hall of Fame</a> instead.</p>
+
+    </article>
+
+    <div class="separator"></div>
+
+    <div class="settings-section">
+      <h2>Domains</h2>
+      <ul class="inline-banner">
+          <li>gratipay.com</li>
+          <li>grtp.co</li>
+          <li>aspen.io</li>
+          <li>github.com/gratipay</li>
+      </ul>
+    </div>
+
+    <div class="separator"></div>
+
+      <div class="hacktivity">
+    <div class="hacktivity-item">
+      <div class="hacktivity-timeline"></div>
+      <div class="hacktivity-datetime-placeholder">
+        <div class="hacktivity-datetime">Now</div>
+      </div>
+    </div>
+      <div class="hacktivity-item">
+  <div class="hacktivity-jumptarget" id="activity-561112"></div>
+  <div class="hacktivity-timeline"></div>
+    <div class="hacktivity-indicator">
+      <div class="hacktivity-indicator-dot is-blue"></div>
+    </div>
+
+  <div class="hacktivity-container">
+    <div class="hacktivity-container-subject">
+      <div class="hacktivity-container-subject-entry">
+        <a href="/gratipay">Gratipay</a> resolved a report that was submitted by <a href="/ashesh">ashesh</a>.
+
+
+      </div>
+
+      <span class="hacktivity-timestamp">
+
+
+        <a class="hacktivity-timestamp-link" href="#activity-561112"><span title="August 24, 2015 19:52:07 +0000">9 days</span> ago</a>
+      </span>
+    </div>
+
+    <div class="hacktivity-container-content">
+    </div>
+
+
+  </div>
+</div>
+
+      <div class="hacktivity-item">
+  <div class="hacktivity-jumptarget" id="activity-548841"></div>
+  <div class="hacktivity-timeline"></div>
+    <div class="hacktivity-indicator">
+      <div class="hacktivity-indicator-dot is-blue"></div>
+    </div>
+
+  <div class="hacktivity-container">
+    <div class="hacktivity-container-subject">
+      <div class="hacktivity-container-subject-entry">
+        <a href="/gratipay">Gratipay</a> resolved a report that was submitted by <a href="/ashesh">ashesh</a>.
+
+
+      </div>
+
+      <span class="hacktivity-timestamp">
+
+
+        <a class="hacktivity-timestamp-link" href="#activity-548841"><span title="August 14, 2015 16:43:52 +0000">19 days</span> ago</a>
+      </span>
+    </div>
+
+    <div class="hacktivity-container-content">
+    </div>
+
+
+  </div>
+</div>
+
+      <div class="hacktivity-item">
+  <div class="hacktivity-jumptarget" id="activity-530362"></div>
+  <div class="hacktivity-timeline"></div>
+    <div class="hacktivity-indicator">
+      <div class="hacktivity-indicator-dot is-blue"></div>
+    </div>
+
+  <div class="hacktivity-container">
+    <div class="hacktivity-container-subject">
+      <div class="hacktivity-container-subject-entry">
+        <a href="/gratipay">Gratipay</a> resolved <a href="/reports/79552">[gratipay.com] CRLF Injection</a> that was submitted by <a href="/bobrov">bobrov</a>.
+
+
+      </div>
+
+      <span class="hacktivity-timestamp">
+
+
+        <a class="hacktivity-timestamp-link" href="#activity-530362"><span title="July 29, 2015 19:50:08 +0000">About 1 month</span> ago</a>
+      </span>
+    </div>
+
+    <div class="hacktivity-container-content">
+    </div>
+
+
+  </div>
+</div>
+
+      <div class="hacktivity-item">
+  <div class="hacktivity-jumptarget" id="activity-522498"></div>
+  <div class="hacktivity-timeline"></div>
+    <div class="hacktivity-indicator">
+      <div class="hacktivity-indicator-dot is-blue"></div>
+    </div>
+
+  <div class="hacktivity-container">
+    <div class="hacktivity-container-subject">
+      <div class="hacktivity-container-subject-entry">
+        <a href="/gratipay">Gratipay</a> resolved a report that was submitted by <a href="/hammad">hammad</a>.
+
+
+      </div>
+
+      <span class="hacktivity-timestamp">
+
+
+        <a class="hacktivity-timestamp-link" href="#activity-522498"><span title="July 23, 2015 14:40:01 +0000">About 1 month</span> ago</a>
+      </span>
+    </div>
+
+    <div class="hacktivity-container-content">
+    </div>
+
+
+  </div>
+</div>
+
+      <div class="hacktivity-item">
+  <div class="hacktivity-jumptarget" id="activity-513918"></div>
+  <div class="hacktivity-timeline"></div>
+    <div class="hacktivity-indicator">
+      <div class="hacktivity-indicator-dot is-blue"></div>
+    </div>
+
+  <div class="hacktivity-container">
+    <div class="hacktivity-container-subject">
+      <div class="hacktivity-container-subject-entry">
+          Gratipay published their program on HackerOne.
+
+
+      </div>
+
+      <span class="hacktivity-timestamp">
+
+
+        <a class="hacktivity-timestamp-link" href="#activity-513918"><span title="July 17, 2015 18:18:01 +0000">About 2 months</span> ago</a>
+      </span>
+    </div>
+
+    <div class="hacktivity-container-content">
+    </div>
+
+
+  </div>
+</div>
+
+  </div>
+
+
+    
+
+        </div>
+
+        <div class="full-width-right-column">
+            <ul class="profile-stats is-separated-and-muted">
+  <li class="profile-stats-item">
+    <div class="profile-stats-amount">3</div>
+    <div class="profile-stats-meta">Hackers thanked</div>
+  </li>
+  <li class="profile-stats-item">
+    <div class="profile-stats-amount">4</div>
+    <div class="profile-stats-meta">Reports closed</div>
+  </li>
+</ul>
+
+
+  <div data-team-handle="gratipay" class="js-top-researchers"></div>
+
+
+
+        </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="full-width-footer-wrapper">
+      <div class="inner-container">
+          <div id="js-footer"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  
+  <div class="js-chat-button"></div>
+
+  <div class='js-tutorials'></div>
+
+</body></html>
+
