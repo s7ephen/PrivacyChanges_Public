@@ -1,1 +1,994 @@
- 
+<!DOCTYPE html>
+<!--[if lt IE 8 ]>    <html class="lt-ie8 no-js"  lang="en" dir="ltr"> <![endif]-->
+<!--[if gte IE 8]><!--> <html class="no-js"  lang="en" dir="ltr" > <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAACWFVaGwEIXFBXBgA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<link rel="shortcut icon" href="http://www.nbc.com/sites/nbcunbc/themes/aurora_nbc/favicon.ico" />
+<meta name="viewport" content="width=1260" />
+<meta name="description" content="NBCUniversal TERMS OF SERVICE Effective date March 31, 2014 NBCUniversal Media, LLC, its subsidiary and affiliated companies maintain this and related websites, games, interactive TV and mobile apps." />
+<meta name="robots" content="noodp, noydir" />
+<link rel="canonical" href="http://www.nbc.com/terms" />
+<link rel="shortlink" href="http://www.nbc.com/terms" />
+<meta property="fb:app_id" content="653521154659171" />
+<meta property="og:site_name" content="NBC" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.nbc.com/terms" />
+<meta property="og:title" content="Terms" />
+<meta property="og:description" content="Terms NBCUniversal TERMS OF SERVICE Effective date March 31, 2014 NBCUniversal Media, LLC, its subsidiary and affiliated companies maintain this and related websites, games, interactive TV and mobile apps." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@nbc" />
+<meta name="twitter:site:id" content="26585095" />
+<meta name="twitter:url" content="http://www.nbc.com/terms" />
+<meta name="twitter:title" content="NBC" />
+    <title>Terms | NBC</title>
+
+    <link rel="stylesheet" href="http://www.nbc.com/sites/nbcunbc/files/files/css/css_FC31fL9Qutr7lAUmFbF7Acxz-41Hgy9BKl7JH9Rqwek.css" />
+<link rel="stylesheet" href="http://www.nbc.com/sites/nbcunbc/files/files/css/css_PrrINwkpIzhQog6CcWqDfQJH_a__0liIJ6tGlJfU0JA.css" />
+<link rel="stylesheet" href="http://www.nbc.com/sites/nbcunbc/files/files/css/css_141W_2rvTGfgVAU1bpkCOqmKZvyiG4P4sr5I_7p6BwM.css" />
+    <script src="http://www.nbc.com/sites/nbcunbc/libraries/modernizr/modernizr.min.js?nu0u5z"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_xM2zbJ-kuoZkwBwvwBOzXF4oSc0VmugUkt6y0iavKzo.js"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_M3YEd6rE_IG9kDyB1pM-oWSteeVR-p67lck5eZxgRNk.js"></script>
+<script>var mpscall = {"site":"nbc-web","path":"\/node\/142171","title":"Terms","content_id":"node142171","is_content":1,"type":"page","pubdate":"1388703284","cat":"terms"}
+var mpsopts = {"host":"mps.nbcuni.com"}
+var mps = mps || {};
+document.write('<scr'+'ipt id="mps-ext-load" src="//'+mpsopts.host+'/fetch/ext/load-'+mpscall.site+'.js"></scr'+'ipt>');</script>
+  </head>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-142171 node-type-page text-template" >
+    <div id="skip-link">
+      <a href="#main" class="element-invisible element-focusable" role="link">Skip to main content</a>
+    </div>
+    <div id="breaking-news-container" class="breaking-news-container breaking-news-empty"></div>
+    
+<div class="tabs admin-tabs"></div>
+  
+  <div id="header" role="banner" class="clearfix">
+
+    <div class="wrapper">
+        <div id="block-mps-topbanner" class="block block-mps">
+
+    
+  <div class="content">
+    <div id="topbanner"><script>typeof(mps.getAd)=='function' && document.write(mps.getAd('topbanner'));</script></div>  </div>
+</div>
+<div id="block-pub-ads-ad-728x90-1" class="block block-pub-ads">
+
+    
+  <div class="content">
+    <div id="ad_728x90_1" class="companion"></div>  </div>
+</div>
+    </div>
+
+    <div class="logo-panel">
+      <div class="wrapper">
+        <div class="header-main-menu-wrapper">
+
+                  <a href="/" title="Home" rel="home" id="logo">
+            <img src="http://www.nbc.com/sites/nbcunbc/themes/aurora_nbc/logo.png" alt="Home" />
+          </a>
+        
+        <ul id="main-menu"><li class="shows first"><a href="/shows" data-target="#dropdown-global-shows" data-parent="#dropdowns-global" class="dropdown-global-link">Shows</a></li>
+<li class="video"><a href="/video/full-episodes" data-target="#dropdown-global-video" data-parent="#dropdowns-global" class="dropdown-global-link">Full episodes</a></li>
+<li class="schedule"><a href="/schedule">Schedule</a></li>
+<li class="news-sports"><a href="/news-sports" data-target="#dropdown-global-news" data-parent="#dropdowns-global" class="dropdown-global-link">News &amp; Sports</a></li>
+<li class="shops"><a href="/shops" data-target="#dropdown-global-shops" data-parent="#dropdowns-global" class="dropdown-global-link">Shop</a></li>
+<li class="live last"><a href="/live">Live</a></li>
+</ul>
+        <div class="header-search search">
+          <form action="/search" method="GET">
+            <button type="submit" class="header-search-submit search-close"></button>
+            <input name="q" type="text" class="header-search-field" autocomplete="off" placeholder="Search NBC.com" id="header-search-field">
+          </form>
+          <div data-ramp-ac data-ramp-ac-input="header-search-field" data-ramp-ac-config="//embed.ramp.com/sites/nbc/ac.json"></div>
+        </div>
+
+                </div>
+      </div>
+      <div id="secondary-navigation"></div>
+    </div>
+
+    <div class="site-title-panel">
+      <div class="wrapper">
+
+                  <hgroup id="name-and-slogan">
+
+                      </hgroup>
+        
+          <div id="block-mps-logoad" class="block block-mps">
+
+    
+  <div class="content">
+    <div id="logoad"><script>typeof(mps.getAd)=='function' && document.write(mps.getAd('logoad'));</script></div>  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="navigation"></div>
+
+  </div>
+
+  <!-- #content-prefix -->
+  
+  <div id="main" role="main" class="clearfix page">
+
+      <div id="content" role="article" class="column">
+
+                    <a id="main-content"></a>
+          
+                                          <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div class="panel-display panel-1col clearfix" >
+
+  <div class="main-content-wrapper">
+
+    <div class="panel-panel panel-col">
+      <div><div class="panel-pane pane-entity-view pane-node"  >
+  
+      
+  
+  <div class="pane-content">
+    <article id="node-142171" class="node node-page clearfix" role="article">
+
+  <header>
+              </header>
+
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><p align="center"><strong>NBCUniversal TERMS OF SERVICE</strong></p>
+<p align="center"><strong>Effective date March 31, 2014<br /></strong></p>
+<div align="center"><hr align="center" size="2" width="100%" /></div>
+<p>NBCUniversal Media, LLC, its subsidiary and affiliated companies maintain this and related websites, games, interactive TV and mobile apps.</p>
+<p><strong>PLEASE READ THESE TERMS OF SERVICE CAREFULLY, THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS INCLUDING MANDATORY ARBITRATION, NO CLASS RELIEF, AND WAIVER OF YOUR RIGHT TO A JURY TRIAL. BY USING THE SITE OR ANY ONLINE SERVICES YOU AGREE TO THESE TERMS OF SERVICE. IF YOU DO NOT AGREE TO THESE TERMS OF SERVICE, PLEASE DO NOT USE THE SITE OR THE ONLINE SERVICES.</strong></p>
+<p><strong> </strong></p>
+<p align="center"><strong><span>TABLE OF CONTENTS<br /><br /></span></strong></p>
+<ol><li><a href="#1" rel="nofollow"><strong><span>Acceptance of Terms of Service</span></strong></a></li>
+</ol><p>Each time you access and/or use sites or services, you agree to be bound by these Terms of Service and any additional terms that will apply prospectively to you.  You agree to accept notice of posting the new terms via our site on which you accessed these terms. <a href="#1" rel="nofollow"><strong><span>More</span></strong></a></p>
+<ol start="2"><li><a href="#2" rel="nofollow"><strong><span>Permitted Uses</span></strong></a></li>
+</ol><p>We only grant you a limited revocable license to use the site or service for your own non-commercial use subject to rules and limitations. <a href="#2" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="3"><li><a href="#3" rel="nofollow"><strong><span>Access to the Site and Availability of Online Services</span></strong></a></li>
+</ol><p>Your use of our site and services is subject to various restrictions designed to protect the online services and our users.  We may change or discontinue our online service in whole or in part. <strong><a href="#3" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="4"><li><a href="#4" rel="nofollow"><strong><span>Registration, Passwords, Unauthorized Use of Your Account, and Sharing of Social Features</span></strong></a></li>
+</ol><p>The sites and services may include a social network.  You will provide true, accurate and current data if you establish an account.  Your activities on the online services (including interaction with other members, advertisers, video viewing and audio accessed) may be shared with others. <a href="#4" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="5"><li><a href="#5" rel="nofollow"><strong><span>Digital Items, Subscriptions and Credits</span></strong></a></li>
+</ol><p>Any digital items and credits are provided subject to a limited revocable license to only you for certain virtual goods and game play, and have no cash value. <a href="#5" rel="nofollow"><strong><span>More</span></strong></a><br /><br /></p>
+<ol start="6"><li><a href="#6" rel="nofollow"><strong><span>You Agree to Our Privacy Policy and Third Party Ads</span></strong></a></li>
+</ol><p>By accessing and using the online services, you consent to our <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a> and our practices detailed in it, including targeted advertising and the use of tracking technologies. <a href="#6" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="7"><li><a href="#7" rel="nofollow"><strong><span>Wireless Features; Social Media Plug-Ins</span></strong></a></li>
+</ol><p>Wireless carrier charges may apply to use of our online services via wireless networks or devices and geo-location details. <a href="#7" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="8"><li><a href="#8" rel="nofollow"><strong><span>Your Conduct and Acceptable Use</span></strong></a></li>
+</ol><p>Your use is subject to our rules regarding acceptable conduct and practices.<strong><a href="#8" rel="nofollow"> <span>More</span></a><br /><br /></strong></p>
+<ol start="9"><li><a href="#9" rel="nofollow"><strong><span>Monitoring</span></strong></a></li>
+</ol><p>NBCUniversal may, but has no obligation to, monitor your use of the online services. <strong><a href="#9" rel="nofollow"><span>More<br /></span></a> <br /></strong></p>
+<ol start="10"><li><a href="#10" rel="nofollow"><strong><span>User Content; Grant of Limited License</span></strong></a></li>
+</ol><p>You grant us a broad license to content you post on our online services and bear all responsibility for all such content.No confidential or fiduciary relationship is created by your posting on our online services.<strong><a href="#10" rel="nofollow"> <span>More</span></a><br /><br /></strong></p>
+<ol start="11"><li><a href="#11" rel="nofollow"><strong><span>Merchants</span></strong></a></li>
+</ol><p>NBCUniversal is not responsible for your business dealings with merchants found on the online services. <strong><a href="#11" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="12"><li><a href="#12" rel="nofollow"><strong><span>Children’s Online Privacy Protection Act Notification</span></strong></a></li>
+</ol><p>NBCUniversal’s online services are not designed or intended for use by children. <strong><a href="#12" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="13"><li><a href="#13" rel="nofollow"><strong><span>Disclaimer of Warranties</span></strong></a></li>
+</ol><p>We disclaim warranties and provide the online services “As Is.” <strong><a href="#13" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="14"><li><a href="#14" rel="nofollow"><strong><span>Exclusion of Damages</span></strong></a></li>
+</ol><p>You agree that you are entitled to no damages for any claims related to your use of the online services, except as set out below. <strong><a href="#14" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="15"><li><a href="#15" rel="nofollow"><strong><span>Limitation of Liability.  Applicability of Disclaimers, Exclusions and Limits</span></strong></a><strong>  </strong></li>
+</ol><p>Our liability to you is limited.<strong><a href="#15" rel="nofollow"> <span>More</span></a><br /><br /></strong></p>
+<ol start="16"><li><a href="#16" rel="nofollow"><strong><span>NBCUniversal Is Not Responsible For Third-Party Websites and Content</span></strong></a></li>
+</ol><p>We are not responsible for third parties or their content, advertisement(s), apps or sites, even if they are linked from or included within our online services. <a href="#16" rel="nofollow"><strong><span>More</span></strong><strong><br /></strong></a></p>
+<ol start="17"><li><a href="#17" rel="nofollow"><strong><span>Indemnification</span></strong></a></li>
+</ol><p>You agree to indemnify us for material posted by you or through your account. <strong><a href="#17" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="18"><li><a href="#18" rel="nofollow"><strong><span>Reservation of Rights</span></strong></a></li>
+</ol><p>NBCUniversal reserves the right to modify or discontinue the site or online services. <strong><a href="#18" rel="nofollow"><span>More</span></a></strong><br /><br /></p>
+<ol start="19"><li><a href="#19" rel="nofollow"><strong><span>Termination</span></strong></a></li>
+</ol><p>We may terminate your account, password or access in our sole discretion at any time and without prior notice. <strong><a href="#19" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="20"><li><a href="#20" rel="nofollow"><strong><span>Infringement Policy</span></strong></a></li>
+</ol><p>You may not post content you do not own or control or otherwise have the right to post, and we encourage you to report any infringing activity you identify on the online services.<a href="#20" rel="nofollow"><strong> <span>More</span> <br /></strong></a></p>
+<ol start="21"><li><a href="#21" rel="nofollow"><strong><span>Links By You To the Online Services</span></strong></a></li>
+</ol><p>You may link to our online services, subject to some basic rules. <a href="#21" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="22"><li><a href="#22" rel="nofollow"><strong><span>Responsible Use of Site</span></strong></a></li>
+</ol><p>Please act responsibly when using the online services. <a href="#22" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="23"><li><a href="#23" rel="nofollow"><strong><span>Investigations</span></strong></a></li>
+</ol><p>NBCUniversalWe reserve the right to investigate suspected violations of these Terms. <a href="#23" rel="nofollow"><strong><span>More</span></strong></a><br /><br /></p>
+<ol start="24"><li><a href="#24" rel="nofollow"><strong><span>Local Regulations</span></strong></a></li>
+</ol><p>If you choose to access the services from other locations you do so on your own initiative and at your own risk. <a href="#24" rel="nofollow"><strong><span>More</span></strong></a><br /><br /></p>
+<ol start="25"><li><a href="#25" rel="nofollow"><strong><span>Export Control</span></strong></a></li>
+</ol><p>There are restrictions on the online services for those countries subject to U.S. export controls. <strong><a href="#25" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="26"><li><a href="#26" rel="nofollow"><strong><span>Binding Arbitration of All Disputes.  No Class Relief</span></strong><strong><strong><span>.</span></strong></strong></a></li>
+</ol><p>You agree to arbitrate and waive jury trial and class actions. <strong><a href="#26" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="27"><li><a href="#27" rel="nofollow"><strong><span>Dispute Resolution for Non-US Residents Only if a Tribunal Has Ruled That Arbitration is Prohibited by Law</span></strong></a></li>
+</ol><p>Non-US citizens agree to an alternative procedure for dispute resolution if a tribunal rules that arbitration is prohibited by law. <strong><a href="#27" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="28"><li><a href="#28" rel="nofollow"><strong><span>Member Disputes</span></strong></a></li>
+</ol><p>You are solely responsible for your communications with members or visitors to the online services. <strong><a href="#28" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="29"><li><a href="#29" rel="nofollow"><strong><span>Notice for California Users</span></strong></a></li>
+</ol><p>Residents of California are entitled to specific consumer rights information. <strong><a href="#29" rel="nofollow"><span>More</span></a><br /><br /></strong></p>
+<ol start="30"><li><a href="#30" rel="nofollow"><strong><span>General</span></strong></a></li>
+</ol><p>By accessing and using the online services, you agree to certain terms regarding (a) to the applicable law and venue; (b) no waiver; (c) the enforcement and interpretation of these Terms of Service; (d) your limited time to file claims; (e) the manner in which you communications with us. You also agree not to assign or delegate your rights and obligations under these Terms of Service. <a href="#30" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="31"><li><a href="#31" rel="nofollow"><strong><span>Terms Applicable for Apple iOS</span></strong></a></li>
+</ol><p>There are some other things you should know if you are accessing or using the online services through an Apple device. <a href="#31" rel="nofollow"><strong><span>More<br /></span></strong></a></p>
+<ol start="32"><li> <strong><span>Content Limitations</span></strong></li>
+</ol><p>You may not post e-mails or submit to or publish through forums or otherwise make available on this Site certain content.</p>
+<hr /><p><a name="1" rel="nofollow" id="1"></a><strong>1. Acceptance of Terms of Service</strong></p>
+<p class="Standard1L1">If you do not agree with any of these Terms of Service (“Terms of Service” or “Terms”), including the <strong><a href="privacy-policy" rel="nofollow"><span>Privacy Policy</span></a> </strong>incorporated herein, please do not use this Site or our online services.  By using this Site you will be deemed to have irrevocably agreed to these Terms.  Some areas of this Site may be subject to additional terms and conditions, which you should read carefully before making any use of those areas. Such additional terms will not change or replace these Terms regarding use of this Site, unless otherwise expressly stated.</p>
+<p>These Terms of Service apply when you interact digitally with the Internet sites operated by NBCUniversal Media, LLC and its affiliates and subsidiaries (“NBCUniversal” or “We”, “Our” or “Us”), (the “Site” or “Sites”), games, interactive TV, and any other services, products and any related software or mobile and/or tablet applications offered by NBCUniversal (collectively “online services” or “services”).  Note that in some instances, both these Terms of Service and separate additional terms or licenses, guidelines, rules or terms of service will apply to your use of some online services offered and/or operated by NBCUniversal (in each such instance, and collectively, “Additional Terms”). These Additional Terms will be posted in connection with the applicable online services and will be in addition to these Terms of Service.  Where any direct conflict exists between these Terms of Service, or any Additional Terms, and the applicable <a href="privacy-policy" rel="nofollow">Privacy Policy</a>,<strong> </strong>the terms of the Privacy Policy shall take precedence; however provisions unique to these Terms of Service (e.g., arbitration) will remain in effect as outlined here.</p>
+<p>NBCUniversal may modify these Terms of Service prospectively from time to time in its sole discretion. Your continued use or accessing of the online services following the posting of any changes to the Terms of Service constitutes your acceptance of such changes. You agree to be notified of changes to the Terms of Service via posting of updates on the Site. </p>
+<p>This is a general audience Site for adults.  We will assume (and by using this Site you warrant that) you have legal capacity to enter into the agreement set out in these Terms of Service (i.e., that you are of sufficient age and mental capacity and are otherwise entitled to be legally bound in contract).</p>
+<p class="Standard1L1">To access this Site or some of the resources it has to offer, you may be asked to provide registration details.  It is a condition of use of these online services that all the details you provide be correct, current, and complete. If we at NBCUniversal believe the details are not correct, current, or complete, we have the right to refuse you access to the online services, or any of its resources, and to terminate or suspend your account.</p>
+<p class="Standard1L1">Please note that these Terms may be revised and reissued, prospectively by posting updated terms on this Site.  You consent and agree to receive notices of updates of these Terms through our posting of updated Terms on the Site. You should visit this page regularly to review the current terms.  Your continued use of the Site will be deemed as irrevocable acceptance of any revisions.</p>
+<p class="Standard1L2">EACH TIME YOU SIGN IN TO OR OTHERWISE USE THE ONLINE SERVICES YOU ARE ENTERING INTO A NEW AGREEMENT WITH US ON THE THEN APPLICABLE TERMS AND CONDITIONS AND YOU AGREE THAT WE MAY NOTIFY YOU OF OTHER TERMS BY POSTING THEM ON THE SITE OR ONLINE SERVICES (OR IN ANY OTHER REASONABLE MANNER OF NOTICE WHICH WE ELECT), AND THAT YOUR USE OF THE SERVICE AFTER SUCH NOTICE CONSTITUTES YOUR GOING FORWARD AGREEMENT TO THE OTHER TERMS FOR YOUR NEW USE AND TRANSACTIONS.  Therefore, you should review the posted Terms of Service and any applicable Additional Terms each time you use the online services (at least prior to each transaction or submission). The Additional Terms will be effective as to new use and transactions as of the time that we post them, or such later date as may be specified in them or in other notice to you. However, the Terms of Service (and any applicable Additional Terms) that applied when you previously used the online services will continue to apply to such prior use (i.e., changes and additions are prospective only) except as mutually agreed.  In the event any notice to you of new, revised or Additional Terms is determined by a tribunal to be insufficient, the prior agreement shall continue until sufficient notice to establish a new agreement occurs.  You should frequently check the home page, your message account (if applicable) and the e-mail you associated with your account for notices, all of which you agree are reasonable means of providing you notice. You can reject any new, revised or additional Terms of Service by discontinuing use of the Site and related online services.</p>
+<p class="Standard1L2"><a name="2" rel="nofollow" id="2"></a><strong><br />2. </strong><strong>Permitted Uses</strong></p>
+<p>Your use of the online services shall be limited solely to your personal and non-commercial use. The online services contain material that is derived in whole or in part from material supplied and owned by NBCUniversal as well as third parties (“Content”). As between NBCUniversal and You, NBCUniversal owns all right, title and interest in and to the copyrights, trademarks, service marks, trade names, and all other intellectual and proprietary rights throughout the world associated with the online services and Content. You acknowledge NBCUniversal’s valid intellectual and proprietary property rights in the online services and Content and that your use of the online services is limited to the access, viewing and downloading of Content, all solely as authorized by NBCUniversal.  Nothing in these Terms of Service shall be deemed to convey to you any right, title or interest in or to the online services or Content or to any portion thereof except for the limited rights expressly granted herein.</p>
+<p>You may use the online services solely for personal and non-commercial uses. You may not either directly or through the use of any personal computer, browser, laptop, tablet, mobile phone or other device (each a “device”) or other means remove, alter, bypass, avoid, interfere with, or circumvent (i) any copyright, trademark, or other proprietary notices marked on the online services or Content, (ii) any digital rights management mechanism, device, or other content protection or access control measure associated with the online services or Content, or (iii) any advertisement on the online services and/or within Content. You may not either directly or through the use of any device or other means copy, download, stream, reproduce, duplicate, archive, distribute, upload, publish, modify, translate, broadcast, perform, display, sell, transmit or retransmit the online services or Content unless expressly permitted by NBCUniversal in writing. You may not incorporate Content into, or stream or retransmit the Content via, any hardware or software application or make the online services or any Content available via frames or in-line links, and you may not otherwise surround or obfuscate the Content or online services with any third party content, materials or branding. You may also not use any software robots, spider, crawlers, or other data gathering or extraction tools, whether automated or manual, to access, acquire, copy, monitor, scrape or aggregate Content or any portion of the online services. See Section 21 for terms applicable to use of links to the online services. You may not knowingly or intentionally take any action that may impose an unreasonable burden or load on the online services or its servers and infrastructures. You may not build a business, in whole or in part, resell, redistribute or recirculate or make any other commercial use of, or create derivative works or materials utilizing any portion of the online services or Content, whether or not for profit.</p>
+<p>To the extent that NBCUniversal makes Content available to you via a widget, embedded player or other technology that allows you to embed or stream Content on or to another site, you may not modify, enhance, remove, interfere with, or otherwise alter in any way any portion of such technology, any digital rights management mechanism, device, or other content protection or access control measure associated with Content, or any advertisement delivered with Content.</p>
+<p>You are also prohibited from disabling, modifying, interfering with or otherwise circumventing any technology to allow users to view Content without: (i) displaying visibly both Content and all surrounding elements (including the graphical user interface, any advertising, copyright notices, and trademarks); and (ii) having full access to all functionality permitting viewing of Content, including, without limitation, all video quality and display functionality and all interactive, elective or click-through advertising functionality.</p>
+<p><a name="3" rel="nofollow" id="3"></a><strong><br />3. </strong><strong>Access to the Site and Availability of Services</strong></p>
+<p>The Site and online services are intended for use by users who are over the age of 13 and reside in the United States, its territories and possessions (“U.S.”) or those outside of the U.S. that consent to use the online services in accordance with U.S. laws, this Terms of Service and the <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a><strong>.</strong> By using or attempting to use the Site or online services, you certify that you meet any other eligibility and residency requirements of the Site.</p>
+<p>NBCUniversal may change, suspend or discontinue any aspect of the Site or online services at any time (and any elements and features of them), in whole or in part, for any reason, in our sole discretion, without notice or liability, including pursuant to Section 19 (Termination) below.</p>
+<p>You are responsible for any charges incurred in obtaining access to the Site and online services. The Site and online services are currently provided for free, although you may be given the opportunity to purchase products or services through the Site from NBCUniversal.  NBCUniversal reserves the right to change the nature of this relationship at any time.         </p>
+<p>You and we agree that the Convention on Contracts for the International Sale of Goods does not apply to your use of our online services or this Terms of Service.</p>
+<p><a name="4" rel="nofollow" id="4"></a><strong><br />4. </strong><strong>Registration, Passwords, Unauthorized Use of Your Account, and Sharing of Social Features</strong></p>
+<p>If you establish an account with NBCUniversal, you agree to provide true, accurate and current data in connection with that account. Any usernames and passwords used for this Site or services are for individual use only. You are solely responsible for maintaining the security and confidentiality of the password you use to access your account. You agree to immediately notify NBCUniversal of any unauthorized use of your password or account or any other breach of security. You understand and agree that the Site and/or online services may include a social network and your activities (e.g., video viewing, interactions with members and/or advertisers) may be shared with others both on and off the online services. If you don’t want your activities on such social network to be shared, your only option is to deactivate the related social network account.</p>
+<p><br /><a name="5" rel="nofollow" id="5"></a><strong>5. </strong><strong>Digital Items, Subscriptions and Credits</strong></p>
+<p class="Standard1L1">Purchases of usage subscriptions (including credits, points, and/or virtual currency) or any virtual items made available on the online services are nonrefundable, have no monetary value (i.e., are not a cash account or equivalent), and are purchases of only a limited, non-exclusive, revocable, non-assignable, personal, and non-transferable right to use, even if such came with a durational term (<em>e.g.</em>, a monthly subscription).  Accordingly, you have no property, proprietary, intellectual property, ownership, or monetary interest in your usage subscriptions or virtual items, which remain our Content.  We may also immediately suspended or terminate the rights we grant you to usage subscriptions and virtual items for any or no reason, in our sole discretion, and without advance notice or liability. We may modify usage subscriptions and virtual items at our sole discretion, and such modifications may make the usage subscriptions or virtual items more or less common, valuable, effective, or functional.</p>
+<p class="Standard1L1">We do not recognize the transfer of usage subscriptions or virtual items (including for “real” money or any other consideration or items of value whether inside our outside of the online services). Accordingly, you may not purchase, sell, barter, or trade any usage subscriptions or virtual items, or offer to purchase, sell, or trade any usage subscriptions or virtual items. Any such attempted transfer will be null and void.</p>
+<p class="Standard1L1">If we suspend or terminate any usage subscriptions or virtual items, then you will forfeit the suspended or terminated subscription or items, except as may be set forth in any Additional Terms (such as any refund policies that may apply to a subscription service).  Likewise, except as may be set forth in any Additional Terms or as required by applicable law, we are not responsible for repairing or replacing same, or providing you any credit or refund or any other sum, in the event of our modification of any usage subscriptions or virtual item, or for loss or damage due to error, or any other reason.</p>
+<p class="Standard1L1"><br /><a name="6" rel="nofollow" id="6"></a><strong>6. </strong><strong>You Agree to Our Privacy Policy and Third Party Ads</strong></p>
+<p class="Standard1L1">Your privacy is important to us.  To better protect your privacy, we provide a notice explaining our online information practices and the choices you can make about the way your information is collected and used at this Site and the online services.  <a href="privacy-policy" rel="nofollow"><strong><span>Click here</span></strong></a> to show this notice, which forms part of these Terms of Service.</p>
+<p>Any personal details and data acquired by NBCUniversal from your participation on the online services will be used in accordance with our <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a> and <strong><span>Tracking (Cookies) Technologies Policy</span></strong><strong>[LINK]</strong>, including targeted advertising and tracking information we collect automatically.  To learn more about how you can opt-out of targeted advertising, please click on the “Ad Choices” icon on the Site, as described more fully in the <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a><strong>. </strong></p>
+<p><strong><br /></strong><a name="7" rel="nofollow" id="7"></a><strong>7. </strong><strong><a name="7" rel="nofollow" id="7"></a>Wireless and Location-Based Features; Social Media Plug-ins </strong></p>
+<p class="Standard1L2">(a)            <strong><span>Wireless Features</span></strong>.  The online services may offer certain features and services that are available to you via your wireless device.  These features and services may include the ability to access the online services’ features and upload content to the online services, receive messages from the online services, and download applications to your wireless device (collectively, “<strong>Wireless Features</strong>”).  Your carrier may prohibit or restrict certain Wireless Features and certain Wireless Features may be incompatible with your carrier or wireless device. In addition, your carrier may charge you for standard messaging, data, and other fees to participate in Wireless Features.  Fees and charges may appear on your wireless bill or be deducted from your pre-paid balance.  We have no responsibility or liability for any fees or charges you incur when using Wireless Features. You should check with your carrier to find out whether any fees or charges will apply, what plans are available and how much they cost.  You should also contact your carrier with any other questions regarding these issues.</p>
+<p class="Standard1L2">(b)           <strong><span>Terms of Wireless Features</span></strong>.  If you register for any Wireless Features then you agree that, in connection with those Wireless Features, we may send communications to your wireless device regarding us or other parties.  Further, we may collect information related to your use of the Wireless Features in accordance with our Privacy Policy.  If you have registered via the online services for Wireless Features, then you agree to notify NBCUniversal of any changes to your wireless contact information (including phone number) and update your accounts on the online services to reflect the changes. </p>
+<p class="Standard1L2">(c)            <strong><span>Location-Based Features</span></strong>.  For online services on mobile devices (“Mobile Apps”) when you use one of our location-enabled services, we may collect and process information about your actual location. Some of the Mobile Apps or online services require your location information for the feature to work. If you have enabled GPS, geo-location or other location-based features on a device, you acknowledge that your device location will be tracked and may be shared with others consistent with the <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a>.</p>
+<p class="Standard1L2">In addition, where any NBCUniversal Mobile App collects precise information about the location of your devices, it will be used to provide requested location services, and, depending on the particular Mobile App it may be used, amongst other uses, to allow tagging or to check-in.</p>
+<p class="Standard1L2">Some Mobile App(s) or feature(s) allow for you to disable location-based features or manage preferences related to them. However, you can terminate device location tracking by us by uninstalling any Mobile App(s) or feature(s).  The location-based services offered in connection with our Mobile App(s) or feature(s) are for individual use only and should not be used or relied on as an emergency locator system, used while driving or operating vehicles, or used in connection with any hazardous environments requiring fail-safe performance, or any other situation in which the failure or inaccuracy of use of the location-based services could lead directly to death, personal injury, or severe physical or property damage.  The location-based services are not suited or intended for family finding purposes, fleet tracking, or any other type of business or enterprise use – other non-NBCUniversal products exist today that may be used specifically for these purposes.</p>
+<p class="Standard1L2">Please see our <a href="privacy-policy" rel="nofollow">Privacy Policy</a> to find out more about how to opt out of providing location information or contact <a href="mailto:privacy@nbcuni.com" rel="nofollow">privacy@nbcuni.com</a><strong>.</strong></p>
+<p class="Standard1L2">(d)           <strong><span>Social Media Plug-Ins.</span></strong> Social media plug-ins of social networks such as Facebook, Twitter and Google Plus (amongst others) are integrated on our Site and other online services.  Where our online services contain a plug-in to a social network, these are clearly marked (e.g. with a Facebook button).  If you chose to click on one of these buttons or links, your browser connects directly to the servers of the relevant social network. The social network directly transmits the content of the plugin to your browser. If you are registered on the relevant social network and logged into your respective account the social network receives the information that the web page was used by you.  If you interact with a social network plug-in (e.g. you press the Facebook “Like” feature, the Twitter “Tweet this” feature and Google Plus “1+” button or equivalent) or drop a comment on the appropriate web page, the corresponding information is directly transmitted to the relevant social network from your browser. If you are not registered with the social network or you are logged out before you visit our online services, there is the possibility that at least your IP address will be submitted to and stored by the social network. If you interact with us through a social media platform, plug-in etc., then you may be permitting us to have on-going access to certain information from your social network profile (such as name, social networking id page, email address, photo, gender, location, the people/sites you follow etc.).</p>
+<p class="Standard1L2">If you don’t want the social network to collect the information about you described above, or to share it with us and other third parties, please review the privacy policy of the relevant social network and/or log out of the relevant social network before you visit our online services. As with other sites, you may be able delete any existing cookies placed on your computer by the social network via your browser.  See Section 1 of our <a href="privacy-policy" rel="nofollow">Privacy Policy</a> to find out more about how our Sites contain plug-ins to social media networks.</p>
+<p class="Standard1L2"><br /><a name="8" rel="nofollow" id="8"></a><strong>8. </strong><strong>Your Conduct and Acceptable Use</strong></p>
+<p>The following rules are a condition of your use of and access to the online services.  You are responsible for the content of your communications (including User Content as defined in Section 10) via the online services.</p>
+<ul><li><strong>No Interference.  </strong>You may not interfere with any other user from using or enjoying the online services.</li>
+<li><strong>No Bullying.  </strong>You may not use the online services to threaten, abuse, harass, or invade the privacy of any third party.</li>
+<li><strong>Content Posted by You Must be Yours. </strong>You may not upload, post, transmit or otherwise distribute or facilitate the distribution of content that is fraudulent or infringes the rights of any third party, including without limitation, patent, trademark, copyright, right of publicity or other proprietary rights.</li>
+<li><strong>Your Materials Must be Lawful and Appropriate.  </strong>You may not upload, post or otherwise distribute or facilitate the distribution of any unlawful, threatening, abusive, libelous, defamatory, obscene, pornographic, profane, indecent or otherwise inappropriate information of any kind, including without limitation, any images or other material of a sexual nature.</li>
+<li><strong>Don’t Damage Our Site, Online Services or Servers.  </strong>You may not upload, post or otherwise distribute or facilitate the distribution of a software virus or any other computer code that is designed or intended to disrupt, damage, or limit the functioning of the Site, any other online services, or to obtain unauthorized access to the online services or Content or any data or other information of any third party.</li>
+<li><strong>No Unauthorized Access.  </strong>You may not attempt to gain unauthorized access to other computer systems or networks connected to the online services or use the online services, Content or any information contained therein for any unlawful purpose. NBCUniversal, in its sole and absolute discretion, shall determine whether any content you transmit or receive or your use of the online services violates this provision.</li>
+<li><strong>No Collection of Personal Information From Other Users and No Commercial Use.  </strong>You may not collect information about other users of the online services in violation of our Privacy Policy or use any such information for the purpose of transmitting or facilitating transmission of unauthorized or unsolicited advertising, junk or bulk email, chain letters, or any other form of unauthorized solicitation.</li>
+<li><strong>Be Yourself.  </strong>You may not impersonate or falsely state or otherwise misrepresent your professional or other affiliation NBCUniversal or with any other person or entity.</li>
+<li><strong>No Criminal or Unlawful Conduct.  </strong>You may not use the online services, Content or any information contained therein for any unlawful purpose, and you may not encourage conduct that would constitute a criminal offense or give rise to civil liability. You may not use any services in connection with any site or other use that contains or is associated with information or content prohibited by this section.</li>
+<li><strong>Follow These Terms of Service and Conduct Rules.  </strong>You may not take any action on the online services that violates any applicable law or these Terms of Service. </li>
+</ul><p>We may require, at any time, proof that you are following these rules.  We reserve the right to take, or refrain from taking, any and all steps available to us, including suspending or terminating your access to the online services or seeking other legal or equitable remedies, once we become aware of any violation of these provisions.</p>
+<p><br /><a name="9" rel="nofollow" id="9"></a><strong>9. </strong><strong>Monitoring</strong></p>
+<p>NBCUniversal may, but has no obligation to, monitor the use by you and other end users of the online services. During monitoring, any information relating to any user or their respective activities on the online services may be examined, recorded, copied, and used for authorized purposes in accordance with our Privacy Policy. Furthermore, NBCUniversal reserves the right at all times to disclose any information posted on any portion of the online services as necessary to satisfy any law, regulation or governmental request, or to refuse to post, or to remove, any information or materials, in whole or in part, that in NBCUniversal’s sole and absolute discretion are objectionable or in violation of these Terms of Service.</p>
+<p><strong><br /><a name="10" rel="nofollow" id="10"></a>10. </strong><a name="10" rel="nofollow" id="10"></a><strong>User Content; Grant of Limited License</strong></p>
+<p>Reviews, responses, profile entries, posts or questions may not be able to be deleted once uploaded.  For some of our features, other members may be able to request email notifications of your new public content or publish their own comments to your comments. We may use the public content to develop aggregate ratings, personalize site views, market products or identify or feature popular members. </p>
+<p>If you post or upload any content to the Services (“User Content”), you hereby acknowledge and agree that you are granting NBCUniversal (including without limitation, its licensees, affiliates, successors and assigns) a worldwide, royalty-free, perpetual, irrevocable, sub-licensable, non-exclusive right and license to use, reproduce, publicly display, publicly perform, modify, sublicense, and distribute such User Content, and incorporate it in other works, in whole or in part, in any manner and any media now known or hereafter developed. You represent and warrant that you own such content or otherwise have sufficient rights in the content to grant to NBCUniversal the foregoing license without infringing or violating the rights of any third party. Without in any way limiting the foregoing, you acknowledge and agree that NBCUniversal, its licensees, affiliates, successors and assigns, shall have the right to sell, license, assign and otherwise transfer any and all of the rights granted by you to NBCUniversal under these Terms of Service, and to display any advertising, publicity, promotional materials and distribution rights in connection with your User Content. You acknowledge and agree that NBCUniversal, its licensees, affiliates, successors and assigns, will be entitled to retain any and all revenue generated from any sales, licenses, assignments and other transfers of the rights granted by you hereunder, as well as any and all revenue generated by the display of any advertising, publicity, promotional materials or distribution rights in connection with your User Content. Nothing in these Terms of Service obligates or may be deemed to obligate NBCUniversal or any other person or entity to exercise any of the rights granted by you under these Terms of Service. You will not receive any compensation of any kind for your User Content or the use thereof, and you agree that there is no industry or other custom or practice that will vary these Terms of Service.  You agree that NBCUniversal, its licensees, successors and/or assigns, shall have no obligation to give you credit for your User Content, but in their sole discretion may elect to do so.</p>
+<p><strong>No Rights Created by Submission and No Payment for User Content:</strong> Your User Content will not be acknowledged or returned. You acknowledge and agree that your User Content is being sent voluntarily by you, and not in confidence, and that no confidential relationship is intended or created between NBCUniversal, and/or any other person or entity, on the one hand, and you, on the other hand, by your submission of the User Content.  You also agree that NBCUniversal does not intend and will not pay you for any User Content.  You understand that no industry custom or practice changes your agreement that you will not be paid for any User Content.</p>
+<p><strong>Use of Name and Likeness:</strong> By posting User Content on the online services, you consent to the recording, use and reuse by NBCUniversal, its licensees, successors and assigns, of your voice, actions, likeness, name, appearance, profile photograph, performance, biographical material, and any other identifying information, including, without limitation, any information contained in your User Content (collectively, “Personal Elements”), as used, edited, altered, fictionalized or modified by NBCUniversal, in its sole discretion, in any and all media now known or hereafter devised, throughout the world, in perpetuity, including, without limitation, in and in connection with NBCUniversal, or related Sites or online services, in and in connection with any television programs and other productions, and in and in connection with advertising, promotion and publicity.</p>
+<p><strong>Ownership:</strong> Except as expressly set forth in these Terms of Service, you shall continue to own all rights in and to the User Content. To the extent your User Content contains other materials or elements owned by NBCUniversal or any other affiliated company, such as characters or other elements protected by copyright, trademark or other laws, your rights to make any other use of the User Content will continue to be governed by and may be limited by other applicable laws, the rights of third parties and NBCUniversal.</p>
+<p><strong>Idea Submissions Prohibited: </strong>NBCUniversal does not accept unsolicited submissions for motion pictures, television programs, websites, articles, streaming video, e-books, or other products or services. Therefore, please do not make any such unsolicited submissions to NBCUniversal through the online services, including posts on any Site or any third party social network or website, or by e-mail, text message or any other means.  However, if you decide to make any such unsolicited submission, you hereby grant to NBCUniversal the right and license to the submission as if it were User Content as specifically set forth above. In addition, NBCUniversal retains all of the rights held by members of the general public with regard to your unsolicited ideas and materials. NBCUniversal’s receipt of your unsolicited ideas and materials is not an admission by NBCUniversal of their novelty, priority, or originality, and it does not impair NBCUniversal’s right to contest existing or future intellectual property rights relating to your unsolicited ideas and materials.</p>
+<p><strong>Public Nature of Online Services:</strong>  While we may offer you the ability to post User Content anonymously, please be aware that your account information relating to your User Content is still stored by us. User Content does not reflect the views of NBCUniversal. Notwithstanding anything else in these Terms of Service, NBCUniversal should not be seen as endorsing any User Content in any way. None of NBCUniversal or its officers, directors, and employees, subsidiaries and/or affiliates shall be liable for any User Content. You acknowledge that you have no expectation of privacy with regard to any User Content.</p>
+<p><strong>Liability for User Content:</strong>  User Content does not reflect the views of NBCUniversal. Notwithstanding anything else in these Terms of Service, NBCUniversal should not be seen as endorsing any User Content in any way. User Content posted through the online services are provided by users like you who are unaffiliated with NBCUniversal, and the user providing User Content is solely responsible for his/her own User Content. This means that you, and not NBCUniversal, are entirely responsible and liable for any claims, loss or damages relating to all User Content that you upload, post, email or otherwise transmit via the online services. None of NBCUniversal or its affiliates, or its or their officers, directors, and employees, subsidiaries and/or affiliates are responsible for User Content, accuracy or opinions expressed on the online services, nor shall they have any liability for any such User Content.  NBCUniversal does not investigate, monitor or check for accuracy or completeness of User Content. You understand that by using the Site or online services, you may be exposed to User Content that is offensive, indecent, or objectionable.</p>
+<p><br /><a name="11" rel="nofollow" id="11"></a><strong>11. </strong><strong>Merchants</strong></p>
+<p>Your correspondence or business dealings with, or participation in promotions of, merchants found on or through the online services, including payment and delivery of related goods or services, and any other terms, conditions, warranties, or representations associated with such dealings, are solely between you and such merchant. NBCUniversal will not be responsible or liable for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of such merchants on the online services.</p>
+<p><a name="12" rel="nofollow" id="12"></a><strong><br />12. </strong><strong>Children’s Online Privacy Protection Act Notification</strong></p>
+<p>NBCUniversal is not designed or intended for use by children under the age of 13.</p>
+<p>Pursuant to 47 U.S.C. Section 230(d) as amended, NBCUniversal hereby notifies you that parental control protections (such as computer hardware, software, or filtering services) are commercially available that may assist you in limiting access to material that is harmful to minors. Information identifying current providers of such protections is available at the Electronic Frontier Foundation website, <a href="http://www.eff.org">http://www.eff.org</a>.  To view information on our policy regarding the privacy of children under the age of 13, please see our <a href="privacy-policy" rel="nofollow"><strong><span>Privacy Policy</span></strong></a>.</p>
+<p><br /><a name="13" rel="nofollow" id="13"></a><strong>13. </strong><strong>Disclaimer of Warranties </strong></p>
+<p>While NBCUniversal uses reasonable efforts to include up to date information on the Site and online services, NBCUniversal makes no warranties or representations as to its accuracy, timeliness, reliability, completeness or otherwise.   </p>
+<p class="Standard1L1">NBCUNIVERSAL PROVIDES THE ONLINE SERVICES ON AN “AS IS” AND “AS AVAILABLE” BASIS. TO THE MAXIMUM EXTENT PERMITTED BY LAW,  NBCUNIVERSAL, ITS PARENT, ITS AFFILIATES, AGENTS AND LICENSORS (COLLECTIVELY, THE “NBCUNIVERSAL PARTIES”) DISCLAIM ANY AND ALL WARRANTIES AND CONDITIONS, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. WITHOUT LIMITING THE FOREGOING, NBCUNIVERSAL DOES NOT WARRANT THAT THE ONLINE SERVICES, OR YOUR ACCESS TO OR USE OF THE ONLINE SERVICES WILL (1) BE UNINTERRUPTED; (2) BE FREE FROM INACCURACIES, ERRORS, VIRUSES OR OTHER HARMFUL COMPONENTS; (3) MEET YOUR REQUIREMENTS; OR (4) OPERATE IN THE CONFIGURATION OR WITH THE HARDWARE OR SOFTWARE YOU USE.  NBCUNIVERSAL DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THIS SITE WILL BE AVAILABLE, UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SITE OR THE SERVERS THAT MAKE THE SITE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.  NBCUNIVERSAL DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE MATERIAL, INFORMATION, SOFTWARE, FACILITIES, SERVICES OR OTHER CONTENT ON THE SITE OR ANY WEB SITES LINKED TO THE SITE IN TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE.  NBCUNIVERSAL MAKES NO WARRANTIES THAT YOUR USE OF THE MATERIALS, INFORMATION, SOFTWARE, FACILITIES, SERVICE OR OTHER CONTENT IN THE SITE OR ANY WEB SITE WILL NOT INFRINGE THE RIGHTS OF OTHERS AND NBCUNIVERSAL ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ERRORS OR OMISSIONS IN SUCH MATERIALS, INFORMATION, SOFTWARE, FACILITIES, SERVICE OR OTHER CONTENT OF THE SITE OR ANY OTHER WEB SITE. IF APPLICABLE LAW DOES NOT ALLOW THE EXCLUSION OF SOME OR ALL OF THE ABOVE IMPLIED WARRANTIES TO APPLY TO YOU, THE ABOVE EXCLUSIONS WILL APPLY TO YOU ONLY TO THE EXTENT PERMITTED BY APPLICABLE LAW.<br /><br /><br /><a name="14" rel="nofollow" id="14"></a><strong>14. </strong><strong>Exclusion of Damages </strong></p>
+<p class="Standard1L1">IF YOU ARE ACCESSING A UNITED KINGDOM VERSION OF THE SITE, NOTHING IN THIS AGREEMENT SHALL EXCLUDE OR LIMIT LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM THE NEGLIGENCE OF EITHER PARTY OR THEIR SERVANTS, AGENTS OR EMPLOYEES.</p>
+<p>NONE OF THE NBCUNIVERSAL PARTIES WILL BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES RELATING TO LOST PROFITS, LOST DATA OR LOSS OF GOODWILL) OR ANY DAMAGES WHATSOEVER THAT RESULT FROM YOUR USE OF OR INABILITY TO USE THE SITE OR SERVICES. THIS LIMITATION APPLIES WHETHER THE ALLEGED LIABILITY IS BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, AND EVEN IF NBCUNIVERSAL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THIS WAIVER APPLIES, WITHOUT LIMITATION, TO ANY DAMAGES OR INJURY ARISING FROM ANY FAILURE OF PERFORMANCE, ERROR, OMISSION, INTERRUPTION, DELETION, DEFECT, DELAY IN OPERATION OR TRANSMISSION, COMPUTER VIRUS, FILE CORRUPTION, COMMUNICATION-LINE FAILURE, NETWORK OR SYSTEM OUTAGE, OR THEFT, DESTRUCTION, UNAUTHORIZED ACCESS TO, ALTERATION OF, OR USE OF ANY RECORD. YOU SPECIFICALLY ACKNOWLEDGE AND AGREE THAT EACH OF THE NBCUNIVERSAL PARTIES SHALL NOT BE LIABLE FOR ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY USER OF THE SITE OR OTHER SERVICE.  WITHOUT LIMITING THE FOREGOING, NBCUNIVERSAL WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE ARISING OUT OF (1) YOUR FAILURE TO COMPLY WITH SECTION 4 (REGISTRATION, PASSWORDS, UNAUTHORIZED USE OF YOUR ACCOUNT, AND SHARING OF SOCIAL FEATURES) OR (2) CONTENT POSTED TO THE SITE OR SERVICES BY YOU OR ANY THIRD PARTY.  <br /><br /><br /><a name="15" rel="nofollow" id="15"></a><strong>15. </strong><strong>Limitation of Liability.  Applicability of Disclaimers, Exclusions and Limits</strong></p>
+<p>IN NO EVENT WILL THE NBCUNIVERSAL PARTIES’ AGGREGATE LIABILITY TO YOU IN CONNECTION WITH THE SITE AND SERVICE OR THESE TERMS EXCEED  (A) THE AMOUNT (IF ANY) PAID BY YOU TO NBCUNIVERSAL IN THE SIX MONTHS IMMEDIATELY PRECEDING THE EVENT WHICH GAVE RISE TO THE LIABILITY; OR (B) ONE HUNDRED DOLLARS ($100), WHICHEVER IS LESS.</p>
+<p>BECAUSE SOME JURISDICTIONS DO NOT ALLOW FOR THE EXCLUSION OF DAMAGES, NBCUNIVERSAL PARTIES’ LIABILITY IN SUCH JURISDICTIONS SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY THE LAW OF SUCH JURISDICTION. IN ADDITION, BECAUSE SOME JURISDICTIONS DO NOT PERMIT THE DISCLAIMER OF CERTAIN WARRANTIES, THE DISCLAIMERS SET FORTH ABOVE MAY NOT APPLY TO YOU.  THIS PARAGRAPH WILL ONLY APPLY IF AN ARBITRATOR WITH APPLICABLE JURISDICTION FINDS EXCLUSIONS OF DAMAGES OR LIMITATIONS OF LIABILITY TO BE UNCONSCIONABLE. <br /><br /><br /><a name="16" rel="nofollow" id="16"></a><strong>16. </strong><strong>NBCUniversal is Not Responsible For Third-Party Websites and Content</strong></p>
+<p>For your convenience, the online services may provide links to websites of other persons or entities (“Third-Party Websites”). HOWEVER, THE THIRD-PARTY WEBSITES ARE NOT CONTROLLED BY NBCUNIVERSAL. ACCORDINGLY, NBCUNIVERSAL MAKES NO WARRANTIES OR CONDITIONS REGARDING SUCH THIRD-PARTY WEBSITES HAS NO RESPONSIBILITY FOR THE CONTENTS OF SUCH THIRD-PARTY WEBSITES, AND WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY YOUR USE OF OR RELIANCE ON SUCH THIRD-PARTY WEBSITES. YOUR USE OF THIRD-PARTY WEBSITES IS AT YOUR OWN RISK. THE INCLUSION ON THE SITE OR OTHER SERVICE OF A LINK TO A THIRD-PARTY WEBSITE DOES NOT IMPLY AN ENDORSEMENT BY NBCUNIVERSAL.  WHEN YOU ACCESS ANY OF THESE THIRD-PARTY SITES, PLEASE UNDERSTAND THAT IF YOU VISIT THIRD-PARTY WEBSITES THEN YOUR RIGHTS AND OBLIGATIONS WHILE ACCESSING AND USING THOSE SITES WILL BE GOVERNED BY THE AGREEMENTS AND POLICIES RELATING TO THE USE OF THOSE SITES.<br /><br /><br /><a name="17" rel="nofollow" id="17"></a><strong>17. </strong><strong>Indemnification</strong></p>
+<p>You agree to defend, indemnify and hold harmless NBCUniversal, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, demands, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable legal fees and costs) arising out of or accruing from (a) any breach of these terms, including any of the foregoing provisions, representations or warranties, and/or from your placement or transmission of any content onto NBCUniversal’s servers, and/or from any and all use of your account; (b) any material posted or otherwise provided by you (including without limitation User Content), or any other subscriber or user of your account that infringes any intellectual property right of any person or entity or defames any person or violates their rights of publicity or privacy; (c) any misrepresentation made by you in connection with your use of the online services; and (d) any breach of any of the representation, warranties or other terms or conditions relating to use of your User Content or the online services.<br /><br /><br /><a name="18" rel="nofollow" id="18"></a><strong>18. </strong><strong>Reservation of Rights</strong></p>
+<p class="Standard1L1">NBCUniversal reserves the right to modify or discontinue, temporarily or permanently, all or any part of this Site and/or any software, facilities and services on this Site, with or without notice, and/or to establish general guidelines and limitations on their use.<br /><br /><br /><a name="19" rel="nofollow" id="19"></a><strong>19. </strong><strong>Termination</strong></p>
+<p>NBCUniversal may, in its sole discretion, terminate your password, account (or any part thereof) or use of the online services, or remove and discard any User Content or information stored, sent, or received via the online services without prior notice and for any reason or no reason, including, but not limited to: (i) permitting another person or entity to use your identification to access the Site or online services, (ii) any unauthorized access or use of the online services, (iii) any violation of these Terms of Service, or (iv) tampering with or alteration of any of the software, data files, and/or Content contained in or accessed through, the online services. You may terminate your account for any reason or no reason. Termination, suspension, or cancellation of these Terms of Service or your access rights to the online services shall not affect any right or relief to which NBCUniversal may be entitled, at law or in equity. Upon such termination, suspension, or cancellation, all rights granted to you will automatically terminate and immediately revert to NBCUniversal and its licensors and all rights granted by you to NBCUniversal shall survive in perpetuity.<br /><br /><br /><a name="20" rel="nofollow" id="20"></a><strong>20. </strong><strong>Infringement Policy</strong></p>
+<p class="Standard1L1">NBCUniversal respects the intellectual property of others, and we ask our users to do the same. This Site and materials incorporated by NBCUniversal on this Site (“Material”) are protected by copyrights, patents, trade secrets or other proprietary rights (“Copyrights”). Some of the characters, logos or other images incorporated by NBCUniversal on this Site are also protected as registered or unregistered trademarks, trade names and/or service marks owned by NBCUniversal or others (“Trademarks”).</p>
+<p>NBCUniversal, pursuant to 17 U.S.C. Section 512 as amended by Title II of the Digital Millennium Copyright Act (the “Act”), reserves the right, but not the obligation, to terminate your license to use the online services if it determines in its sole and absolute discretion that you are involved in infringing activity, including alleged acts of first-time or repeat infringement, regardless of whether the material or activity is ultimately determined to be infringing. NBCUniversal accommodates and does not interfere with standard technical measures used by copyright owners to protect their materials. Therefore, in compliance with the Act, if you believe that any such third party materials infringe your intellectual property please send a written notice to the agent identified below to request a review of the alleged infringement:</p>
+<p>By mail:<br /> Gillian M. Lusins<br />NBC Universal Law Department<br />30 Rockefeller Plaza, Rm. 1087E<br />New York, New York 10112<br /><br />By e-mail: <a href="mailto:dmca.agent@nbcuni.com" rel="nofollow">dmca.agent@nbcuni.com</a>  </p>
+<p>In addition, any written notice regarding any defamatory or infringing activity, whether of a copyright, patent, trademark or other proprietary right must include the following information:</p>
+<ul><li>Your name, address, telephone number, and e-mail address;</li>
+<li>A physical or electronic signature of a person authorized to act on behalf of (1) the owner of an exclusive right that is allegedly infringed or (2) the person defamed;</li>
+<li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works on the online services are covered by a single notification, a representative list of such works. Similarly, for materials that are defamatory or infringe patent, trademark, or other proprietary rights of a third party, please submit a list of such materials;</li>
+<li>Identification of the material that is claimed to be infringing, to be the subject of infringing activity, or that is claimed to be defamatory and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit NBCUniversal to locate the material;</li>
+<li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright or other proprietary right owner, its agent, or the law; and</li>
+<li>A statement that the information in the notice is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed or on behalf of the person defamed.</li>
+</ul><p><strong><br /><a name="21" rel="nofollow" id="21"></a>21. </strong><a name="21" rel="nofollow" id="21"></a><strong>Links By You To the Online Services</strong></p>
+<p class="Standard1L1">We grant you a limited, non-exclusive, revocable, non-assignable, personal, and non-transferable license to create hyperlinks to the online services, so long as: (a) the links only incorporate text, and do not use any trademarks, (b) the links and the content on your website do not suggest any affiliation with or endorsement by NBCUniversal or cause any other confusion regarding your relationship to NBCUniversal or its affiliates or to the online services, (c) the link must open in a new browser window and link to the full version of applicable online services web page; and (d) the links and the content on your website do not portray NBCUniversal or its affiliates or its products or services in a false, misleading, derogatory, or otherwise offensive matter, and do not contain content that is unlawful, offensive, obscene, lewd, lascivious, filthy, violent, threatening, harassing, or abusive, or that violate any right of any third party or are otherwise objectionable to NBCUniversal.  NBCUniversal reserves the right to suspend or prohibit linking to the online services for any reason, in its sole discretion, without advance notice or any liability of any kind to you or any third party.<br /><br /><br /><a name="22" rel="nofollow" id="22"></a><strong>22. </strong><strong>Responsible Use of Site </strong></p>
+<p class="Standard1L1">Please act responsibly when using this Site and online services. You may only use this Site and its contents for lawful purposes and in accordance with applicable law and you are prohibited from storing, distributing or transmitting any unlawful material through this Site.  You may not collect or store personal information regarding other users.  You recognize that storing, distributing or transmitting unlawful material could expose you to criminal and/or civil liability. You agree that if a third party claims that material you have contributed to the online services is unlawful, you will bear the burden of establishing that it is lawful. You understand and agree that all materials publicly posted or privately transmitted on or through this Site or online services are the sole responsibility of the sender, not NBCUniversal, and that you are responsible for all material you upload, publicly post or otherwise transmit to or through this Site or online services.<br /><br /><br /><a name="23" rel="nofollow" id="23"></a><strong>23. </strong><strong>Investigations </strong></p>
+<p class="Standard1L1">NBCUniversal reserves the right to investigate suspected violations of these Terms, including without limitation any violation arising from any submission, posting or e-mails you make or send to any forum. NBCUniversal may seek to gather information from the user who is suspected of violating these Terms, and from any other user. NBCUniversal may suspend any users whose conduct or postings are under investigation and may remove such material from its servers as it deems appropriate and without notice. If NBCUniversal believes, in its sole discretion, that a violation of these Terms has occurred, it may edit or modify any submission, posting or e-mails, remove the material permanently, cancel postings, warn users, suspend users and passwords, terminate accounts or take other corrective action it deems appropriate. NBCUniversal will fully cooperate with any law enforcement authorities or court order requesting or directing NBCUniversal to disclose the identity of anyone posting any e-mails, or publishing or otherwise making available any materials that are believed to violate these Terms. BY ACCEPTING THIS AGREEMENT YOU WAIVE AND HOLD HARMLESS ALL MEMBERS OF NBCUNIVERSAL FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY MEMBER OF NBCUNIVERSAL DURING OR AS A RESULT OF ITS INVESTIGATIONS AND/OR FROM ANY ACTIONS TAKEN AS A CONSEQUNCE OF INVESTIGATIONS BY EITHER A MEMBER OF NBCUNIVERSAL  OR LAW ENFORCEMENT AUTHORITIES.<br /><br /><br /><a name="24" rel="nofollow" id="24"></a><strong>24. </strong><strong>Local Regulations</strong></p>
+<p class="Standard1L1">NBCUniversal makes no representation that content on the Site or online services are appropriate or available for use outside the United States, its territories, possessions and protectorates. If you choose to access the online services from other locations you do so on your own initiative and at your own risk.</p>
+<p class="Standard1L1">You are responsible for complying with local laws, if and to the extent local laws are applicable. You specifically agree to comply with all applicable laws concerning the transmission of technical data exported from the United States or the country in which you reside. <br /><br /><br /><a name="25" rel="nofollow" id="25"></a><strong>25. </strong><strong>Export Control</strong></p>
+<p>Unless otherwise specified, the materials on the online services are presented solely to provide information regarding and to promote NBCUniversal’s services and other products available in the U.S. The online services are controlled and operated by NBCUniversal from its offices within the State of New York. NBCUniversal makes no representation that materials on the online services are appropriate or available for use outside the U.S. Those who choose to access the online services from outside the U.S. do so on their own initiative and are responsible for compliance with local laws, if and to the extent that local laws are applicable. Software from the online services are further subject to U.S. export controls. No software may be downloaded or otherwise exported or re-exported (A) into (or to a national or resident of) Cuba, Iraq, Libya, North Korea, Iran, Syria, or any other country to which the U.S. has embargoed goods, or (B) to anyone on the U.S. Treasury Department list of Specially Designated Nationals or the U.S. Commerce Department’s Table of Deny Orders. By using the online service, you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list.</p>
+<p><br /><a name="26" rel="nofollow" id="26"></a><strong>26. </strong><strong>Binding Arbitration of All Disputes.  No Class Relief</strong></p>
+<p>This Section 26 is deemed to be a “written agreement to arbitrate” pursuant to the Federal Arbitration Act.  You and NBCUniversalagree that we intend that this Section 26 satisfies the “writing” requirement of the Federal Arbitration Act.  This Section 26 can only be amended by mutual agreement. For non-U.S. residents, if binding arbitration is adjudged by a tribunal to be unenforceable, the provisions of Section 27 shall apply to all relevant disputes between you and us.</p>
+<p>We believe that arbitration is a faster, more convenient and less expensive way to resolve any disputes or disagreements that you may have with us.  Therefore, pursuant to these Terms of Service, if you have any dispute or disagreement with us regarding (i) your use of or interaction with the Site or other online services, (ii) any purchases or other transactions or relationships with NBCUniversal, or (iii) any data or information you may provide to NBCUniversal or that NBCUniversal may gather in connection with such use, interaction or transaction (collectively, “NBCUniversal Transactions or Relationships”), you will not have the right to pursue a claim in court, or have a jury decide the claim and you will not have the right to bring or participate in any class action or similar proceeding in court or in arbitration.  By using or interacting with the Site or other online service, or engaging in any other NBCUniversal Transactions or Relationships with us, you agree to binding arbitration as provided below.</p>
+<p>We will make every reasonable effort to informally resolve any complaints, disputes, or disagreements that you may have with us.  If those efforts fail, by using our Site or other online service, you agree that any complaint, dispute, or disagreement you may have against NBCUniversal, and any claim that NBCUniversal may have against you, arising out of, relating to, or connected in any way with these Terms of Service, our Privacy Policy, or any NBCUniversal Transactions or Relationships shall be resolved exclusively by final and binding arbitration (“Arbitration”) administered by JAMS or its successor (“JAMS”) and conducted in accordance with the JAMS Streamlined Arbitration Rules And Procedures in effect at the time the Arbitration is initiated or, if the amount in controversy exceeds $100,000, in accordance with the JAMS Comprehensive Arbitration Rules And Procedures then in effect (respectively, the “Applicable Rules”).  The Applicable Rules can be found at <a href="http://www.jamsadr.com">www.jamsadr.com</a>.  If JAMS is no longer in existence, the Arbitration shall be administered by the American Arbitration Association or its successor (the “AAA”) instead, and conducted in accordance with the AAA Commercial Arbitration Rules in effect at that time (which shall be the “Applicable Rules” in such circumstances).  If JAMS (or, if applicable, AAA) at the time the arbitration is filed has Minimum Standards of Procedural Fairness for Consumer Arbitrations in effect which would be applicable to the matter in dispute, NBCUniversal agrees to provide the benefit of such Minimum Standards to you to the extent they are more favorable than the comparable arbitration provisions set forth in this Section 26, provided, however, that in no event may such Minimum Standards contravene or restrict the application of subpart (e) or (i) below.  Furthermore, this Section 26 shall not prevent any party from seeking provisional remedies in aid of arbitration from a court of appropriate jurisdiction.  You further agree that:</p>
+<p class="Standard1L2">(a)            <strong><span>Single Arbitrator.</span></strong>  The Arbitration shall be conducted before a single arbitrator selected in accordance with the Applicable Rules or by mutual agreement between you and NBCUniversal (the “Arbitrator”);</p>
+<p class="Standard1L2">(b)           <strong><span>Arbitrator Will Interpret This Agreement.</span></strong>  The Arbitrator, and not any federal, state or local court or agency, shall have the exclusive authority to resolve any dispute arising under or relating to the validity, interpretation, applicability, enforceability or formation of these Terms of Service and/or these arbitration provisions in Section 26 hereof, including but not limited to any claim that all or any part of these Terms of Service is void or voidable;</p>
+<p class="Standard1L2">(c)            <strong><span>Location of Arbitration.</span></strong>  The Arbitration shall be held either: (i) at a location determined by JAMS (or, if applicable, AAA) pursuant to the Applicable Rules (provided that such location is reasonably convenient for you and does not require travel in excess of 100 miles from your home or place of business); or (ii) at such other location as may be mutually agreed upon by you and NBCUniversal; or (iii) at your election, if the only claims in the arbitration are asserted by you and are for less than $10,000 in aggregate, by telephone or by written submission.</p>
+<p class="Standard1L2">(d)           <strong><span>Governing Law</span></strong><strong>.  </strong>The Arbitrator (i) shall apply internal laws of the State of New York consistent with the Federal Arbitration Act and applicable statutes of limitations, or, to the extent (if any) that federal law prevails, shall apply the law of the U.S., irrespective of any conflict of law principles; (ii) shall entertain any motion to dismiss, motion to strike, motion for judgment on the pleadings, motion for complete or partial summary judgment, motion for summary adjudication, or any other dispositive motion consistent with New York or federal rules of procedure, as applicable; (iii) shall honor claims of privilege recognized at law; and (iv) shall have authority to award any form of legal or equitable relief;</p>
+<p class="Standard1L2">(e)            <strong><span>No Class Relief</span></strong>.  The Arbitration can resolve only your and/or NBCUniversal’s individual claims, and the Arbitrator shall have no authority to entertain or arbitrate any claims on a class or representative basis, or to consolidate or join the claims of other persons or parties who may be similarly situated;</p>
+<p class="Standard1L2">(f)            <strong><span>Written Award</span></strong><span>.</span><strong>  </strong>The Arbitrator shall issue a written award supported by a statement of decision setting forth the Arbitrator’s complete determination of the dispute and the factual findings and legal conclusions relevant to it (an “Award”).  Judgment upon the Award may be entered by any court having jurisdiction thereof or having jurisdiction over the relevant party or its assets;</p>
+<p class="Standard1L2">(g)            <strong><span>Arbitration Costs.</span></strong>  In the event that you are able to demonstrate that the costs of Arbitration will be prohibitive as compared to the costs of litigation, NBCUniversal will pay as much of your filing and hearing fees in connection with the Arbitration as the Arbitrator deems necessary to prevent the arbitration from being cost-prohibitive, regardless of the outcome of the Arbitration, unless the Arbitrator determines that your claim(s) were frivolous or asserted in bad faith;</p>
+<p class="Standard1L2">(h)           <strong><span>Reasonable Attorney’s Fees</span></strong><strong>.  </strong>In the event you recover an Award greater than NBCUniversal’s last written settlement offer, the Arbitrator shall also have the right to include in the Award NBCUniversal’s reimbursement of your reasonable and actual out-of-pocket attorneys’ fees associated with the Arbitration, but NBCUniversal shall in all events bear its own attorneys’ fees; and</p>
+<p class="Standard1L2">(i)             <strong><span>Interpretation and Enforcement of Arbitration Clause</span></strong>.  With the exception of subpart (e) above, if any part of this arbitration provision is deemed to be invalid, unenforceable or illegal, or otherwise conflicts with the Applicable Rules, then the balance of this arbitration provision shall remain in effect and shall be construed in accordance with its terms as if the invalid, unenforceable, illegal or conflicting provision were not contained herein. If, however, subpart (e) is found to be invalid, unenforceable or illegal, then the entirety of this arbitration provision shall be null and void, and neither you nor NBCUniversal shall be entitled to arbitrate their dispute, and must instead bring any claims in a court of competent jurisdiction.</p>
+<p class="Standard1L2">(j)             <strong><span>Modification of Arbitration Clause With Notice</span></strong>.  NBCUniversal may modify these arbitration provisions, but such modifications shall only become effective thirty (30) days after NBCUniversal has given notice of such modifications and only on a prospective basis for claims arising from NBCUniversal Transactions and Relationships occurring after the effective date of such notification.</p>
+<p class="Standard1L2">(k)           <strong><span>Small Claims Matters are Excluded.  No Class Relief or Joinder of Claims.</span></strong>  Notwithstanding the foregoing arbitration provisions, at your option, you may bring any claim you have against NBCUniversal in your local small claims court within the U.S., if your claim is within such court’s jurisdictional limit; provided that such court does not have the authority to entertain any claims on a class or representative basis, or to consolidate or join the claims of other persons or parties who may be similarly situated in such proceeding.<br /><br /><br /><a name="27" rel="nofollow" id="27"></a><strong>27. </strong><strong>Dispute Resolution for Non-US Residents Only if a Tribunal has Ruled that Arbitration is Prohibited by Law</strong></p>
+<p class="Standard1L1">This Section 27 applies to non-US Residents, where applicable law prohibits arbitration of disputes in accordance with Section 26.</p>
+<p class="Standard1L2">(a)            <strong><span>Section 27 disputes</span></strong>.  If any controversy, allegation, or claim (including any non-contractual claim) arises out of or relates to the online services, the Content, these Terms of Service, whether heretofore or hereafter arising or to any of NBCUniversal’s actual or alleged intellectual property rights (collectively, a “Section 27 Dispute”), then you and we agree to send a written notice to the other providing a reasonable description of the Section 27 Dispute, along with a proposed resolution of it.  Our notice to you will be sent to you based on the most recent contact information that you provide us.  But if no such information exists or if such information is not current, then we have no obligation under this Section 27(a).  Your notice to us must be sent to: </p>
+<p class="Standard1L1">By mail:<br /> Gillian M. Lusins<br />NBC Universal Law Department<br />30 Rockefeller Plaza, Rm. 1087E<br />New York, New York 10112<br />By e-mail: <a href="mailto:dmca.agent@nbcuni.com" rel="nofollow">dmca.agent@nbcuni.com</a>  </p>
+<p class="Standard1L1">For a period of sixty (60) days from the date of receipt of notice from the other party, NBCUniversal and you will engage in a dialogue in order to attempt to resolve the Section 27 Dispute, though nothing will require either you or NBCUniversal to resolve the Section 27 Dispute on terms with respect to which you and NBCUniversal, in each of our sole discretion, are not comfortable.</p>
+<p class="Standard1L2">(b)           <strong><span>Jurisdiction</span></strong><strong>.</strong> The parties agree that the state or federal courts in New York shall have non-exclusive jurisdiction of any Section 27 Dispute.</p>
+<p class="Standard1L2">(c)            <strong><span>Governing Law</span></strong><strong>.</strong>  To the maximum extent permitted by the mandatory laws in your country of residence, these Terms of Service and any Section 27 Dispute arising out of or in connection with it or its subject matter or formation (including non-contractual disputes), will be governed by, and construed in accordance with, the laws of the U.S. and the State of New York without regard to its conflicts of law provisions, without regard to its conflicts of law provisions.</p>
+<p class="Standard1L2">(d)           <strong><span>Limited Time to File Claims</span></strong><strong>.</strong>  TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IF YOU OR WE WANT TO ASSERT A SECTION 27 DISPUTE AGAINST THE OTHER, THEN YOU OR WE MUST COMMENCE IT (BY DELIVERY OF WRITTEN NOTICE AS SET FORTH IN SECTION 27(a) WITHIN ONE (1) YEAR AFTER DISCOVERY OF THE SECTION 27 DISPUTE ARISES - OR IT WILL BE FOREVER BARRED.</p>
+<p class="Standard1L2">(e)            <strong><span>Injunctive Relief</span></strong><strong>.</strong>  The foregoing provisions of this Section 27 will not apply to any legal action taken by NBCUniversal to seek an injunction or other equitable relief in connection with, any loss, cost, or damage (or any potential loss, cost, or damage) relating to the online services, any Content, your User Content and/or NBCUniversal’s intellectual property rights (including such NBCUniversal may claim that may be in dispute), NBCUniversal’s operations, and/or NBCUniversal’s products or services. <br /><br /><br /><a name="28" rel="nofollow" id="28"></a><strong>28. </strong><strong>Member Disputes</strong></p>
+<p>You are solely responsible for any interaction with other members or visitors to the online services, and NBCUniversal reserves the right, but shall have no obligation, to monitor disputes between you and any other member of NBCUniversal.</p>
+<p><br /><a name="29" rel="nofollow" id="29"></a><strong>29. </strong><strong>Notice for California Users</strong></p>
+<p>Under California Civil Code Section 1789.3, California users of the online services are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 400 R Street, Suite 1080, Sacramento, California 95814, or by telephone at (916) 445-1254 or (800) 952-5210.</p>
+<p><br /><a name="30" rel="nofollow" id="30"></a><strong>30. </strong><strong>General</strong></p>
+<p class="Standard1L2">(a)            <strong><span>Applicable law</span></strong><strong>.  </strong>These Terms of Service, any Additional Terms and the relationship between you and NBCUniversal shall be governed by the laws of the U.S. and the State of New York without regard to its conflicts of law provisions.</p>
+<p class="Standard1L2">(b)           <strong><span>Venue.</span></strong>  Subject to the arbitration provisions above, and other than small claims actions as permitted therein, any action or proceeding arising from, relating to or in connection with these Terms of Service will be brought exclusively in the federal or state courts located in New York, New York, and you irrevocably consent to the personal jurisdiction of such courts and agree that it is a convenient forum and that you will not seek to transfer such action or proceeding to any other forum or jurisdiction, under the doctrine of <span>forum</span> <span>non</span> <span>conveniens</span> or otherwise.</p>
+<p class="Standard1L2">(c)            <strong><span>No Waiver</span></strong><strong>.  </strong>No failure or delay by NBCUniversal in exercising any right, power or privilege under these Terms of Service will operate as a waiver thereof, nor will any single or partial exercise of any right, power or privilege preclude any other or further exercise thereof or the exercise of any other right, power, or privilege under these Terms of Service.</p>
+<p class="Standard1L2">(d)           <strong><span>Severability</span></strong>.  Unless otherwise expressly provided herein, the invalidity or unenforceability of any provision of these Terms of Service will not affect the validity or enforceability of any other provision, all of which will remain in full force and effect.</p>
+<p class="Standard1L2">(e)            <strong><span>Limited Time to File Claims</span></strong>.  You agree that regardless of any statute or law which establishes a different statute of limitations, to the maximum extent permitted under applicable law, any claim or cause of action (including any arbitration) arising out of, related to or connected with the use of the Site or other online services, or these Terms of Service, our Privacy Policy, or other NBCUniversal Transactions or Relationships must be filed within one (1) year after such claim or cause of action arose or be forever barred.</p>
+<p class="Standard1L2">(f)            <strong><span>Paragraph and Section Titles are For Your Convenience</span></strong><strong>.  </strong>The paragraph or section titles in these Terms of Service are for convenience only and have no legal or contractual effect.</p>
+<p class="Standard1L2">(g)            <strong><span>This is the Entire Agreement</span></strong><strong>.  </strong>These Terms of Service represent the entire understanding of the parties regarding its subject matter, and supersede all prior and contemporaneous agreements and understandings between the parties regarding its subject matter, and may not be amended, altered or waived except in writing by the party to be charged.</p>
+<p class="Standard1L2">(h)           <strong><span>Assignment.</span></strong>  These Terms of Service are binding upon and shall ensure to the benefit of parties and their respective successors, heirs, executor, administrators, personal representatives and permitted assigns. You shall not assign your rights or obligations hereunder without NBCUniversal’s prior written consent.</p>
+<p class="Standard1L2">(i)             <strong><span>Connectivity</span></strong>.  You are responsible for obtaining and maintaining all devices and other equipment and software, and all internet service provider, mobile service, and other services needed for your access to and use of the online service and you will be responsible for all charges related to them.<br /><br /><br /><a name="31" rel="nofollow" id="31"></a><strong>31. </strong><strong>Terms Applicable For Apple iOS  </strong></p>
+<p class="Standard1L1">If you are accessing or using the online services through an Apple device, the following additional terms and conditions are applicable to you and are incorporated into the Terms of Service by this reference:</p>
+<p class="Standard1L2">(a)            To the extent that you are accessing the online services through an Apple device, you acknowledge that these Terms of Service are entered into between you and NBCUniversal and, that Apple, Inc. (“Apple”) is not a party to these Terms of Service other than as third-party beneficiary as contemplated below.</p>
+<p class="Standard1L2">(b)           The license granted to you in <a href="#2" rel="nofollow">Section 2</a> of these Terms of Service is subject to the permitted Usage Rules set forth in the App Store Terms (see: <a href="http://www.apple.com/legal/itunes/us/terms.html">http://www.apple.com/legal/itunes/us/terms.html</a>) and any third party terms of agreement applicable to the online services.</p>
+<p class="Standard1L2">(c)            You acknowledge that NBCUniversal, and not Apple, is responsible for providing the online services and Content thereof.</p>
+<p class="Standard1L2">(d)           You acknowledge that Apple has no obligation whatsoever to furnish any maintenance or support services to you with respect to the online services.</p>
+<p class="Standard1L2">(e)            To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the online services.</p>
+<p class="Standard1L2">(f)            Notwithstanding anything to the contrary herein, and subject to the terms in these Terms of Service, you acknowledge that, solely as between Apple and NBCUniversal, NBCUniversal and not Apple is responsible for addressing any claims you may have relating to the online services, or your possession and/or use thereof, including, but not limited, to: (i) product liability claims, (ii) any claim that the online services fail to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation.  As set forth under these Terms of Service in Sections <a href="#13" rel="nofollow">13</a>, <a href="#14" rel="nofollow">14</a> and <a href="#15" rel="nofollow">15</a>, NBCUniversal’s liability to you for use of the online services is greatly limited.</p>
+<p class="Standard1L2">(g)            Further, you agree that if the online services, or your possession and use of the online services, infringes on a third party’s intellectual property rights, you will not hold Apple responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claims.</p>
+<p class="Standard1L2">(h)           You acknowledge and agree that Apple, and Apple’s subsidiaries, are third-party beneficiaries of these Terms of Service, and that, upon your acceptance of the terms and conditions of these Terms of Service, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms of Service against you as a third-party beneficiary thereof.</p>
+<p class="Standard1L2">(i)             When using the online services, you agree to comply with any and all third-party terms that are applicable to any platform, website, technology or service that interacts with the online services.</p>
+<p> </p></div>
+      </div>
+</div>
+
+  <div class="field field-name-field-page-content-block field-type-field-collection field-label-hidden">
+    
+  <div class="field field-name-field-cblock-text field-type-text-long field-label-hidden">
+    <div class="stretchable"><style type="text/css">
+a {
+color: #00b2eb;
+}
+</style></div>  </div>
+  </div>
+  </div>
+
+    
+</article>
+  </div>
+
+  
+  </div>
+</div>
+    </div>
+
+  </div>
+
+</div>
+  </div>
+</div>
+          
+      </div>
+
+
+      
+
+      
+
+  </div><!-- #main -->
+
+
+
+<footer id="footer" role="contentinfo">
+
+  <header class="sub-header">
+    <div class="wrapper">
+
+      <div class="logo">
+        <a href="/">
+          <img src="/sites/nbcunbc/themes/aurora_nbc/Peacock-GlobalFooter.png" alt="Home" />
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="sub-footer">
+            <div id="block-panels-mini-nbc-footer-content" class="block block-panels-mini">
+
+    
+  <div class="content">
+    <div class="panel-display panel-4col clearfix" id="mini-panel-nbc_footer_content">
+  <div class="wrapper">
+    <div class="cols pane-row pane-row-middle footer-shows-list">
+              <div class="panel-panel panel-col global-footer block">
+          <div class="panel-pane pane-views-panes pane-nbc-global-shows-panel-pane-category" >
+  
+        <div class="pane-title">Current shows</div>
+    
+  
+  <div class="pane-content">
+    <div class="view view-nbc-global-shows view-id-nbc_global_shows view-display-id-panel_pane_category view-dom-id-14c99ea281d80fc2aabcc9bcf820a135">
+        
+  
+  
+      <div class="view-content">
+      <div class="nav nav-list"><ul>    <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div>        <div><a href="http://www.nbc.com/a-to-z">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    A to Z    </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-2 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/ad-the-bible-continues">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    A.D. The Bible Continues  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-3 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/about-a-boy">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    About a Boy  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-4 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/allegiance">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Allegiance  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-5 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/american-ninja-warrior">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    American Ninja Warrior  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-6 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/american-odyssey">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    American Odyssey  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-7 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/americas-got-talent">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    America&#039;s Got Talent  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-8 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/aquarius">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Aquarius   </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-9 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/bad-judge">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Bad Judge  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-10 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/beyond-ad">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Beyond A.D.  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-11 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/the-biggest-loser">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Biggest Loser  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-12 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-blacklist">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Blacklist  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-13 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/the-carmichael-show">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Carmichael Show  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-14 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-celebrity-apprentice">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Celebrity Apprentice  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-15 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/chicago-fire">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Chicago Fire  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-16 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/chicago-pd">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Chicago P.D.  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-17 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/dateline">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Dateline  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-18 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/days-of-our-lives">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Days of our Lives  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-19 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/ed-sheeran-live-at-wembley">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Ed Sheeran - Live at Wembley  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-20 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/food-fighters">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Food Fighters  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-21 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/grimm">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Grimm  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-22 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/hannibal">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Hannibal  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-23 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/hollywood-game-night">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Hollywood Game Night  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-24 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/i-can-do-that">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    I Can Do That  </div>
+</a></div>  </div></li>
+  </ul><ul>  <li class="views-row views-row-25 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/the-island">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Island  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-26 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/jay-lenos-garage">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Jay Leno&#039;s Garage  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-27 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/last-call-with-carson-daly">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Last Call: Carson Daly  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-28 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/last-comic-standing">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Last Comic Standing  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-29 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/late-night-with-seth-meyers">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Late Night: Seth Meyers  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-30 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/law-and-order-special-victims-unit">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Law &amp; Order: SVU  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-31 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/marry-me">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Marry Me  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-32 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/meet-the-press">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Meet the Press  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-33 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/mr-robinson">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Mr. Robinson  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-34 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-mysteries-of-laura">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Mysteries of Laura  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-35 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/nbc-nightly-news">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    NBC Nightly News  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-36 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-night-shift">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Night Shift  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-37 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/one-big-happy">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    One Big Happy  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-38 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/parenthood">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Parenthood  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-39 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/parks-and-recreation">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Parks and Recreation  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-40 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/running-wild-with-bear-grylls">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Running Wild with Bear Grylls  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-41 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/saturday-night-live">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Saturday Night Live  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-42 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-slap">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Slap  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-43 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/today">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    TODAY  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-44 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-tonight-show">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Tonight Show: Jimmy Fallon  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-45 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/undateable">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Undateable  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-46 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-voice">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Voice  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-47 views-row-odd views-row-last">  
+  <div>        <div><a href="http://www.nbc.com/welcome-to-sweden">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Welcome to Sweden  </div>
+</a></div>  </div></li>
+</ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+        </div>
+      
+            <div class="panel-panel panel-col global-footer block">
+        <div class="panel-pane pane-views-panes pane-nbc-global-shows-panel-pane-category" >
+  
+        <div class="pane-title">Upcoming shows</div>
+    
+  
+  <div class="pane-content">
+    <div class="view view-nbc-global-shows view-id-nbc_global_shows view-display-id-panel_pane_category view-dom-id-135a4e9b21c194b6555b1173b597a1fd">
+        
+  
+  
+      <div class="view-content">
+      <div class="nav nav-list"><ul>    <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div>        <div><a href="http://www.nbc.com/new-show-trailers-2015-2016">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    2015/2016 Season   </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-2 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/best-time-ever-with-neil-patrick-harris">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Best Time Ever  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-3 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/blindspot">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Blindspot  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-4 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/chicago-med">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Chicago Med  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-5 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/coat-of-many-colors">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Coat of Many Colors  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-6 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/heroes-reborn">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Heroes Reborn  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-7 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/mat-francos-got-magic">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Mat Franco&#039;s Got Magic  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-8 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-player">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Player  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-9 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/think-it-up">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Think It Up  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-10 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/truth-be-told">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Truth Be Told  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-11 views-row-odd views-row-last">  
+  <div>        <div><a href="http://www.nbc.com/the-wiz-live">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Wiz Live!  </div>
+</a></div>  </div></li>
+</ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/shows/upcoming">
+    more +  </a>
+</div>
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+      </div>
+      
+            <div class="panel-panel panel-col global-footer block">
+        <div class="panel-pane pane-views-panes pane-nbc-global-shows-panel-pane-category" >
+  
+        <div class="pane-title">Classics</div>
+    
+  
+  <div class="pane-content">
+    <div class="view view-nbc-global-shows view-id-nbc_global_shows view-display-id-panel_pane_category view-dom-id-9722f448e6fe66a6e562863d6329d158">
+        
+  
+  
+      <div class="view-content">
+      <div class="nav nav-list"><ul>    <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div>        <div><a href="http://www.nbc.com/30-rock">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    30 Rock  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-2 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/battlestar-galactica-classic">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Battlestar Galactica  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-3 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/charles-in-charge">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Charles in Charge  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-4 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/deception">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Deception  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-5 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/kings">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Kings  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-6 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/knight-rider">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Knight Rider  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-7 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/knight-rider-classic">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Knight Rider Classic  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-8 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/kojak">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Kojak  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-9 views-row-odd">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/miami-vice">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Miami Vice  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-10 views-row-even">  
+  <div>        <div><a href="http://www.nbc.com/the-office">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    The Office  </div>
+</a></div>  </div></li>
+    <li class="views-row views-row-11 views-row-odd views-row-last">  
+  <div>        <div><a href="http://www.nbc.com/classic-tv/quantum-leap">
+  <div class="field field-name-field-short-title field-type-text field-label-hidden">
+    Quantum Leap  </div>
+</a></div>  </div></li>
+</ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/shows/classics">
+    more +  </a>
+</div>
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+      </div>
+      
+              <div class="panel-panel panel-col global-footer block">
+          <div class="panel-pane pane-block pane-menu-menu-nbc-quick-links" >
+  
+        <div class="pane-title">NBC QUICK LINKS</div>
+    
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.nbc.com/nbc-app" title="">NBC Full Episode App</a></li>
+<li class="leaf"><a href="http://www.nbc.com/faq/3926" title="">Live Stream FAQ</a></li>
+<li class="leaf"><a href="http://www.nbcuniversalstore.com/" title="">NBC Store</a></li>
+<li class="leaf"><a href="https://www.nbcplayground.com/#/home" title="">NBC Playground</a></li>
+<li class="leaf"><a href="http://www.nbc.com/tickets-and-nbc-studio-tour" title="">Tickets and NBC Studio Tour</a></li>
+<li class="leaf"><a href="http://www.nbc.com/parental-guidelines-tv-ratings" title="">Parental Guidelines and TV Ratings</a></li>
+<li class="leaf"><a href="http://www.nbc.com/casting" title="">Casting</a></li>
+<li class="leaf"><a href="http://www.nbc.com/local-stations" title="">Local Stations</a></li>
+<li class="leaf"><a href="http://www.greenisuniversal.com/" title="">Green is Universal</a></li>
+<li class="leaf"><a href="http://www.nbc.com/nbc-kids" title="">NBC Kids: Saturday Mornings on NBC</a></li>
+<li class="last leaf"><a href="http://nbcpeacock.rresults.com/?s=1001" title="">We Want Your Opinion!</a></li>
+</ul>  </div>
+
+  
+  </div>
+        </div>
+          </div>
+  </div>
+
+  <div class="panel-panel pane-row pane-row-footer global-footer corporate-links-menu block">
+    <div class="wrapper">
+      <div class="panel-pane pane-block pane-menu-menu-nbc-global-corporate-links" >
+  
+      
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.nbc.com/contact/general" title="">Contact Us</a></li>
+<li class="leaf"><a href="http://www.nbcuni.com/" title="">Corporate Info</a></li>
+<li class="leaf"><a href="http://www.nbcunicareers.com/" title="">Jobs</a></li>
+<li class="leaf"><a href="http://www.nbcuni.com/privacy/" title="">Privacy</a></li>
+<li class="leaf"><a href="http://www.nbc.com/terms" title="">Terms</a></li>
+<li class="leaf"><a href="http://www.nbc.com/advertise" title="">Advertise</a></li>
+<li class="leaf"><a href="http://nbcpeacock.rresults.com/?s=1001" title="">Viewer Panel</a></li>
+<li class="leaf"><a href="http://www.nbc.com/closed-captioning" title="">Closed Captioning</a></li>
+<li class="last leaf"><a href="http://www.nbc.com/contact/general" title="">Technical Support</a></li>
+</ul>  </div>
+
+  
+  </div>
+
+<div class="panel-pane pane-global-footer-links" >
+  
+      
+  
+  <div class="pane-content">
+      <ul class="copyright">
+    <li>A Division of <strong>NBCUniversal</strong></li>
+    <li><a title="Independent Programming Report" href="http://www.comcast.com/independentprogramming" rel="nuWin" target="_new">Independent Programming Report</a></li>
+    <li><a id="_bapw-link" style="cursor:pointer !important;"><img id="_bapw-icon" style="vertical-align: middle;"/> <span style="vertical-align:middle !important">AdChoices</span></a><script>(function(){var e=document,b,a=(e.location.protocol=="https:"?"https":"http"),c=(a=="https"?"https://info.evidon.com/c/betrad/pub/":"http://cdn.betrad.com/pub/");e.getElementById("_bapw-icon").src=c+"icon1.png";e.getElementById("_bapw-link").onclick=function(){var f=this;function d(i,l){var j=e.getElementsByTagName("head")[0]||e.documentElement,h=false,g=e.createElement("script");function k(){g.onload=g.onreadystatechange=null;j.removeChild(g);l()}g.src=i;g.onreadystatechange=function(){if(!h&&(this.readyState=="loaded"||this.readyState=="complete")){h=true;k()}};g.onload=k;j.insertBefore(g,j.firstChild)}this.onclick="return false";d(a+"://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js",function(){d(c+"pub1.js",function(){BAPW.i(f,{pid:187,ocid:908},false)})});return false};b=new Image();b.src=a+"://l.betrad.com/pub/p.gif?pid=187&ocid=908&ii=1&r="+Math.random()}());  </script>
+    </li>
+    <li>&copy; 2015 NBC Universal</li>
+  </ul>  </div>
+
+  
+  </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+      </div>
+
+</footer>
+    <!-- SiteCatalyst code version: H 25
+Copyright 1996-2015 Adobe, Inc. -->
+<script type="text/javascript" language="JavaScript">var s_account="nbcuglobal,nbcunetworkbu";</script>
+<script type="text/javascript" src="/sites/nbcunbc/modules/custom/features/nbc_analytics/js/s_code_h25.js?nu0u5z"></script>
+<script type="text/javascript"><!--
+<!-- do not edit this code -->
+/*
+* Plugin: detectRIA v0.1 - detect and set Flash, Silverlight versions
+*/
+s.detectRIA=new Function("cn", "fp", "sp", "mfv", "msv", "sf", ""
++"cn=cn?cn:'s_ria';msv=msv?msv:2;mfv=mfv?mfv:10;var s=this,sv='',fv=-"
++"1,dwi=0,fr='',sr='',w,mt=s.n.mimeTypes,uk=s.c_r(cn),k=s.c_w('s_cc',"
++"'true',0)?'Y':'N';fk=uk.substring(0,uk.indexOf('|'));sk=uk.substrin"
++"g(uk.indexOf('|')+1,uk.length);if(k=='Y'&&s.p_fo('detectRIA')){if(u"
++"k&&!sf){if(fp){s[fp]=fk;}if(sp){s[sp]=sk;}return false;}if(!fk&&fp)"
++"{if(s.pl&&s.pl.length){if(s.pl['Shockwave Flash 2.0'])fv=2;x=s.pl['"
++"Shockwave Flash'];if(x){fv=0;z=x.description;if(z)fv=z.substring(16"
++",z.indexOf('.'));}}else if(navigator.plugins&&navigator.plugins.len"
++"gth){x=navigator.plugins['Shockwave Flash'];if(x){fv=0;z=x.descript"
++"ion;if(z)fv=z.substring(16,z.indexOf('.'));}}else if(mt&&mt.length)"
++"{x=mt['application/x-shockwave-flash'];if(x&&x.enabledPlugin)fv=0;}"
++"if(fv<=0)dwi=1;w=s.u.indexOf('Win')!=-1?1:0;if(dwi&&s.isie&&w&&exec"
++"Script){result=false;for(var i=mfv;i>=3&&result!=true;i--){execScri"
++"pt('on error resume next: result = IsObject(CreateObject(\"Shockwav"
++"eFlash.ShockwaveFlash.'+i+'\"))','VBScript');fv=i;}}fr=fv==-1?'flas"
++"h not detected':fv==0?'flash enabled (no version)':'flash '+fv;}if("
++"!sk&&sp&&s.apv>=4.1){var tc='try{x=new ActiveXObject(\"AgControl.A'"
++"+'gControl\");for(var i=msv;i>0;i--){for(var j=9;j>=0;j--){if(x.is'"
++"+'VersionSupported(i+\".\"+j)){sv=i+\".\"+j;break;}}if(sv){break;}'"
++"+'}}catch(e){try{x=navigator.plugins[\"Silverlight Plug-In\"];sv=x'"
++"+'.description.substring(0,x.description.indexOf(\".\")+2);}catch('"
++"+'e){}}';eval(tc);sr=sv==''?'silverlight not detected':'silverlight"
++" '+sv;}if((fr&&fp)||(sr&&sp)){s.c_w(cn,fr+'|'+sr,0);if(fr)s[fp]=fr;"
++"if(sr)s[sp]=sr;}}");
+s.p_fo=new Function("n",""
++"var s=this;if(!s.__fo){s.__fo=new Object;}if(!s.__fo[n]){s.__fo[n]="
++"new Object;return 1;}else {return 0;}");
+
+s.prop13 = s.getNewRepeat();
+s.detectRIA('s_ria','prop40');
+s.channel="web";
+s.prop6="http:\/\/www.nbc.com\/terms";
+s.prop8="TV Entertainment";
+s.prop9="NBC Network";
+s.event="event6";
+s.hier3="www.nbc.com | terms";
+s.linkInternalFilters="javascript:,nbcvoicelive.com,latenightwithjimmyfallon.com,nbc.com,prod-www.nbc.com,acc-www.nbc.com,9thwonders.com,startomorrow.com,studio60theseries.com,fridaynightlightstheseries.com,itsyourshowtv.com,jaylenosgarage.com,my.nbc.com,votenow.tv,heroeswiki.com,rentaswag.com,ronswansongrill.com,dundermifflin.com,pawneeindiana.com,areyouontheblacklist.com,millionsecondquiz.com,greendalecommunitycollege.com,universalmediastudios.com,nbcumv.com,30rock5nightsaweek.com,activatingevolution.org,buy-more.net,minionmail.com,stevewilkos.com,awesomesaucewedding.com,cozitv.com,dukesilver.com,entertainment720.com,halpertbeesly.com,kabletown.com,knope2012.com,primatechpaper.com,robertisbothered.com,scarecrowboat.com,snakeholelounge.com,standupnbc.com,threatlevelmidnight.com,wuphf.com,nbccomedyplayground.com,whoareyouinacrisis.com,believe-ability.com";
+s.pageName="global:terms:page:142171";
+s.prop2="";
+s.prop3="Page";
+s.prop10="Global";
+s.eVar32="Page";
+s.eVar36="Global";
+s.eVar40="";
+s.eVar43="http:\/\/www.nbc.com\/terms";
+s.eVar45="NBC Network";
+s.eVar49="";
+s.eVar50="";
+s.hier1="TV Entertainment | NBC Network | Global";
+s.hier2="Page | global:terms:page:142171 | Global";
+s.prop11="Global | global:terms:page:142171";
+s.prop12="NBC Network | Global";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H 25 -->
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_PdiuypZMI8o81AYEdTHwjRslVPEF69JFzr7Y9sMWt4s.js"></script>
+<script defer="defer" async="async" src="//embed.api.tv/lib/acomplete/1.1/build/ramp-ac-standalone.min.js"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_TQWnCLKbLQue175M_cAyJab6ljJmOD1if0DELG2ANQo.js"></script>
+<script>document.createElement( "picture" );</script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_6TAnF117heNLUe_NSA6QrMWPUlMbDthN85wxrI4UFUM.js" async="async"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_7Z4cjzfQTIvPpcpIWbxT4wI8xRGc84qZYCFKJhULUZo.js"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_uFgU7Yqt8zrWNFMf-YjNfA316RvbIml6-H1PKEPX53U.js"></script>
+<script src="http://www.nbc.com/sites/nbcunbc/files/files/js/js_pTFTAmKdj9MJdUrVnUskY6ofUThu70oRBXLs1USNeb8.js"></script>
+<script>typeof(mps.writeFooter)=='function' && mps.writeFooter();</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"aurora_nbc","theme_token":"b0Ndsk2t1ARLRO8eJBNyGC5TAY_REBWZhDy5dUgxsEk","js":{"sites\/nbcunbc\/libraries\/modernizr\/modernizr.min.js":1,"profiles\/publisher\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/drupal.js":1,"1":1}},"colorbox":{"transition":"elastic","speed":"350","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} | {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"maxWidth":"98%","maxHeight":"85%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":false,"loop":false},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"chartbeat":{"uid":57481,"domain":"nbc.com","useCanonical":true,"noCookies":false,"sections":"terms"},"TVEPreview":{"status":false},"adobePass":{"adobePassAccessEnablerLoc":"http:\/\/entitlement.auth.adobe.com\/entitlement\/AccessEnablerDebug.swf","adobePassTimeoutLength":"30000","adobePassFlashVer":"10.1.13","adobePassRequestorId":"nbcentertainment","adobePassResourceId":"nbcentertainment","errorMessages":{"authorized_err":"Your TV subscription does not include this channel. Please contact your TV Provider about upgrading your service to get access.","internal_err":"We had a problem reaching your TV provider. Please try again.","generic_err":"Your TV subscription does not include this channel."}},"dotdotdot":{".dotdotdot":true}});</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"fb1e76f207","applicationID":"2881511","transactionName":"bgdTMhRZWhcAAkZYWldNcAUSUVsKThFTVlBmD1AIB19RFj4PXVVQZhRYAxFnRAUGBA==","queueTime":0,"applicationTime":1784,"ttGuid":"","agentToken":"","atts":"QkBQRFxDSRk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
+</html>
