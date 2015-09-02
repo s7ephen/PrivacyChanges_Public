@@ -131,9 +131,8 @@ if (!window.mboxCreate) {
     <!-- BEGIN INCLUDE global/nfl-constants -->
     <script>/* SS_TYPE : REG */
 
+/* scoresStripSponsorshipTracking :  */
 
-
-/* scoresStripSponsorshipTracking : http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&c=19&mc=imp&pli=14555951&PluID=0&ord=%%CACHEBUSTER%%&rtu=-1 */
 
 
 
@@ -141,30 +140,8 @@ if (!window.mboxCreate) {
 if (window.location.href.search('nfl.com/scores') > -1){ window.useYUIQueryString = true; }
 
 
-/**REMOVE RICE AND SANDERS TEAMS**/
-(function(){
-  function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; ca.length > i; i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-  }
-  var teamCookie = readCookie('userId'),
-        expiration = new Date();
-  if ( teamCookie == null ) { return;}
-  if ( (teamCookie.indexOf('SAN') === -1) && (teamCookie.indexOf('RIC') === -1)) { return; }
-  teamCookie = teamCookie.replace('SAN', '%20');
-  teamCookie = teamCookie.replace('RIC', '%20');
-  expiration.setUTCFullYear(expiration.getUTCFullYear() + 1);
-  document.cookie = "userId=" + teamCookie + "; expires=" + expiration + "; path=/; domain=.nfl.com";
-})();
 
 
-/**USED FOR PHOTOGALLERY PRESBY -- ADDING HERE UNTIL WE CAN GET A CONSOLE OR SOMETHING**/
 <!-- begin /static/html/widgets/config-files/photogallery/presby-config.html -->
 
 <!-- end /static/html/widgets/config-files/photogallery/presby-config.html -->
@@ -1212,7 +1189,7 @@ nfl.use('cookie', 'node', function (Y) {
 	
 		
 	
-		<div class="adcontainer" id="ad1441214152230top-container">
+		<div class="adcontainer" id="ad1441227983379top-container">
 			
 			<script>
 				nfl.Y.use("ads-v3", function (Y) {
@@ -1226,12 +1203,12 @@ nfl.use('cookie', 'node', function (Y) {
 						Ads = Y.NFL.Ads,
 						Ad,
 						adConf = {
-							id: 'ad1441214152230top',
+							id: 'ad1441227983379top',
 							path: 'http://pubads.g.doubleclick.net/gampad/ads?sz=728x90&iu=/4595/nfl.other/help/privacy&t=slot%3Dtop%26url%3Dhelp_privacy%26s1%3Dhelp%26s2%3Dprivacy&c={correlator}',
 							width: w,
 							height: h,
 							sizes: sizes,
-							render: '#ad1441214152230top-container',
+							render: '#ad1441227983379top-container',
 							isSticky: 'false',
 							shouldRenderWhenViewable: '',
 							renderOnEvent: ''
