@@ -1,1 +1,719 @@
+<!DOCTYPE HTML>
+    <!--[if lt IE 7 ]> <html class='ie6 ie'> <![endif]-->                                                                         
+    <!--[if IE 7 ]> <html class='ie7 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 8 ]> <html class='ie8 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 9 ]> <html class='ie9 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if (gt IE 9)|!(IE)]><!-->                                                                                                                                                                          
+    <html>                                                                                                                                                                                                  
+    <!--<![endif]-->
+     <head>     
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title> PRIVACY - Privacy Policy </title>
+    
+<link rel="icon" href="/ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="/ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="/graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="/graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="/graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="/graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="/graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="/graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+    
+    <link href='/css/retina_about_pages.css?v=5' type='text/css' media="all"  rel='StyleSheet' />
+    <!--[if lt IE 9]><link href='/css/lt_ie9.css?v=5' type='text/css' media="all"  rel='StyleSheet' /><![endif]-->
+    <!--[if lt IE 9]><style>.closeArea a {background-image: none;} 
+                    .closeArea a{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/graphics/retina_bookmark_cross.png', sizingMethod='scale') !important;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/graphics/retina_bookmark_cross.png', sizingMethod='scale')" !important; }
+                    </style><![endif]-->
+    <script language='javascript' type='text/javascript' src='/js/retina_about_pages.js?v=5'></script>            
+    <!--[if lt IE 9]><script language='javascript' type='text/javascript' src='/js/less_than_ie9.js?v=5'></script><![endif]-->
+    <script>function setFocus() { var pageUrl = window.location.href; if (!pageUrl.match(/jump_to/)) { document.getElementById("query_top").focus(); } }</script>
+    
+	<script>
+   	jQuery(window).load(function() {
+		jQuery('.accordionButton').click(function(e){
+			e.preventDefault();
+            var div_display = jQuery(this).next('.accordionContent').css('display');
+            if (div_display == 'block') {
+                jQuery(this).next('.accordionContent').slideUp();
+            } else {
+                jQuery('div.accordionContent').slideUp();
+                jQuery(this).next('.accordionContent').slideToggle();
+            }
+    	});
+    });
+
+jQuery(window).load(function () {
+    jQuery('div[id^=tOoLtIp]').each(function() {
+        var obj = jQuery(this);
+        jQuery(this).addClass('sb-tooltip');
+        jQuery(this).find('*').removeAttr('bgcolor color face style');
+    });
+});
+
+function verifyChecked (form_obj) { 
+    var formname = form_obj.name; 
+    var orig_query = document[formname].query.value; 
+    if (orig_query == "") { 
+        return false; 
+    } 
+    form_obj.submit(); 
+
+    return false; 
+}
+      
+    </script>
+	
+    <script type='text/javascript'>
+    jQuery(window).load(function() {         
+                                    concatParamToAllUrls(); 
+jQuery('.external').click(function(){
+        var link = jQuery(this).attr('data-link');
+        var str;
+        if(link.match(/facebook/i)) {
+           str = "By clicking this, you will leave Ixquick.com and go to Facebook. Do you want to proceed?";
+        } else if(link.match(/twitter/i)) {
+           str = "By clicking this, you will leave Ixquick.com and go to Twitter. Do you want to proceed?";
+        }
+
+        r = confirm(str);
+        if(r==true) { 
+            document.location = link;
+        } 
+        return false;
+    });
+jQuery(window).load(function () {
+    var page_url = document.URL;
+    if( page_url.match("company-faq") || 
+        page_url.match("protect-privacy-qa") || 
+        page_url.match("preferences.pl") ) {
+        if (page_url.match(/.html#q/) || page_url.match("jump_to")) {
+        } else { 
+          document.getElementById('query_top').focus();
+        }
+    } else { 
+        document.getElementById('query_top').focus();
+    }
+});
+
+jQuery(function() {     
+//if(jQuery('.rightContent').height()<jQuery('.leftContent').height()){
+//jQuery('.leftContent').css("border-right","none");
+    //jQuery('#borderLR').hide();
+//}else{
+    //jQuery('.leftContent').css("border-right","none");
+//jQuery('#borderLR').show();
+//jQuery('#borderLR').height(jQuery('.bodyContent').height()-40);
+//}
+});
+});
+function newImage(arg) {
+  if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+  }
+}
+
+function loadImage() {
+    img1 = newImage("/graphics/selectedMenuBack.png");
+    img2 = newImage("/graphics/hoverMenuBack.png");
+    img2 = newImage("/graphics/separator.gif");
+}
+
+loadImage();
+		function concatParamToAllUrls (referenceUrlId) {
+			/* Get current url */
+			var currentUrl = window.location.href;
+			currentUrl = unescape(currentUrl);
+			var isParamPresentInFormField = false; /* flag to check if prf OR prfh param is present in form field */
+			var isParamPresentInUrl = false;  /* flag to check if prf OR prfh param is present in url */
+            var isValidParam = false;  /*flag to check if prf OR prfh parameter is valid or not.*/
+            var alreadyHiddenPrfBlankPresent = false;
+			var paramName = "";
+			var paramValue = "";
+
+			/* Loop through each input type element and check if prf OR prfh is present or not. If yes mark flag as true */
+			jQuery(":input").each(function(i){
+					
+				if( (jQuery(this).attr("name") == "prfh") || (jQuery(this).attr("name") == "prf") ){
+					//isParamPresentInFormField = true;
+					paramName  = jQuery(this).attr("name") + "=";
+					paramValue = jQuery(this).attr("value");
+                    if (paramValue != "") {
+                         isParamPresentInFormField = true;
+                    } else {
+                       alreadyHiddenPrfBlankPresent = true;
+
+                    }
+				}
+				
+			});
+
+			/* Is prf OR prfh present in Url. If yes then set flag as true */
+			if( (currentUrl.match(/(.*?)(&|\?)(prfh)(=)(.*?)($|&)/g)) || (currentUrl.match(/(.*?)(&|\?)(prf)(=)(.*?)($|&)/g)) ){
+				isParamPresentInUrl = true;
+			}
+
+            var param_name = RegExp.$3;
+            var parm_opt = RegExp.$4;
+            var prm_value = RegExp.$5;
+            if (/^[a-zA-Z0-9/_]+$/.test(prm_value)) {
+                isValidParam = true;
+            }
+
+			//alert('isParamPresentInFormField ' + isParamPresentInFormField + ' isParamPresentInUrl ' + isParamPresentInUrl);
+			if( isValidParam && ((isParamPresentInUrl) || (isParamPresentInFormField)) ){
+				var concatThisParam = "";
+
+				/* Prepare param to be concatenated */
+				if (isParamPresentInUrl) {
+					concatThisParam = param_name + parm_opt + prm_value;
+				} else if(isParamPresentInFormField){
+					concatThisParam = paramName + paramValue ;
+					
+				}
+
+				/* If advance search url is calling this method then concat prf OR prfh param to this url only. Else concat to all the urls */
+				if (typeof referenceUrlId != "undefined") {
+					jQuery('#' + referenceUrlId).attr('href', jQuery('#' + referenceUrlId).attr('href') + '&' + concatThisParam);
+					
+				} else {
+				   /* Add prf OR prfh as form field as well if not already present. */
+				   if (!isParamPresentInFormField) {
+                       if (alreadyHiddenPrfBlankPresent) {
+                           var myParam = concatThisParam;
+                           var param_elements = myParam.split('=');
+                          jQuery('input[name='+param_elements[0]+']').val(param_elements[1]);
+                       } else {
+					      jQuery("<input type='hidden' value='" + prm_value + "' name='" + param_name + "' id='" + param_name + "' />").prependTo(jQuery('#input_p'));
+                       }
+                   }
+				   jQuery('.addsettings').each(function(index){ 
+					   var originalUrl = jQuery(this).attr('href');
+                       if (originalUrl) {
+					   if ( originalUrl.match( /(.*?)(\?)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '&' + concatThisParam);
+					   } else if( originalUrl.match( /(.*?)(\/)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   } else if(originalUrl.match( /(.*)(\/)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   }
+                       }
+					   
+				   });
+			   }
+			}
+		} function eId(item) { 
+        return document.getElementById(item);                                                                                                                                                                    
+    }                                                                                                                                                                                                          
+    var allCats = new Array('web','pics','video');                                                                                                                                          
+                                                                                                                                                                                                               
+    function hasClass(ele,cls) {                                                                                                                                                                                
+        return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));                                                                                                                             
+    }                                                                                                                                                                                       
+                                                                                                                                                                                                     
+    function addClass(ele,cls) {                                                                                                                                                            
+        if (!this.hasClass(ele,cls)) {                                                                                                                                                       
+            ele.className += ' ' + cls;                                                                                                                                                   
+        }                                                                                                                                                                                           
+    }                                                                                                                                                                                            
+                                                                                                                                                                                                    
+    function removeClass(ele,cls) {                                                                                                                                               
+        if (hasClass(ele,cls)) {                                                                                                                                                          
+            var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');                                                                                                                                   
+            ele.className=ele.className.replace(reg," ");                                                                                                                                       
+        }                                                                                                                                                                                       
+    }                                                                                                                                                                                              
+                                                                                                                                                                                                         
+    function passQueryAdv(url) {                                                                                                                                                                                 
+        url += '?&cat=' + document.blah1.cat.value;                                                                                                                                                              
+        url += '&query=' + escape(document.blah1.query.value);
+        eId('xsearch').href = url; concatParamToAllUrls('xsearch');
+    }
+    
+    function setCat(catr) { 
+        document.blah1.cat.value = catr;
+        for(var i = 0; i < allCats.length; i++) {
+            removeClass(eId(allCats[i]), 'active');
+        }
+        addClass(eId(catr), 'active');
+        eId('query_top').focus();
+        if (catr != 'web') {
+            //eId('enhanced').style.visibility = 'hidden';
+            //eId('detail').style.visibility = 'hidden';
+        } else {
+            //eId('enhanced').style.visibility = 'visible';
+            //eId('detail').style.visibility = 'visible';
+        }
+        return false;
+    }
  
+    function trim(str) {
+       return str.replace(/^\s+|\s+$/g, '');
+    }
+
+    function get_value(c_name) {
+       var current_url = location.href;
+      if ( (current_url.indexOf('prfh') != -1) && (current_url.indexOf(c_name) != -1) ) {
+           c_start= current_url.indexOf(c_name + "EEE");
+           if (c_start!=-1)
+              {
+                c_start=c_start + c_name.length+3;
+                c_end=current_url.indexOf("N1N",c_start);
+                if (c_end==-1) c_end = current_url.length;
+                return unescape(current_url.substring(c_start,c_end));
+              }
+         } else {
+            if (document.cookie.length>0)
+               {
+                 c_start=document.cookie.indexOf(c_name + "EEE");
+                 if (c_start!=-1)
+                    {
+                      c_start=c_start + c_name.length+3;
+                      c_end=document.cookie.indexOf("N1N",c_start);
+                      if (c_end==-1) c_end=document.cookie.length;
+                      return unescape(document.cookie.substring(c_start,c_end));
+                     }
+                  }
+
+         }
+       return "";
+     }
+
+    function change_form_method() {
+       if(get_value('enable_post_method') == '0') {
+          document.blah1.method = 'GET';
+       }
+    }
+
+    function verifyChecked (form_obj) {
+        var formname = form_obj.name;
+        var orig_query = document[formname].query.value; 
+        if (orig_query == '') {
+           return false;
+        }
+        form_obj.submit();
+        return false;
+    } 
+
+
+        $(document).ready(function() {
+
+            if((BrowserDetect.OS.indexOf("BB10") != -1) && (navigator.userAgent.indexOf("Mobile Safari") != -1)) MY_BROWSER = "Browser";
+            if ( ((MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium')) && (MY_BROWSER_VERSION > 31) ) {
+
+            actionUrl = document.blah1.action;
+            document.blah1.action = actionUrl.replace(/\/search$/, '/metasearch.pl'); }
+ });
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    
+    
+    
+    function highlight () {                                                                                                                                                                                       
+        var question_count = 28;                                                                                                                                                                                
+        var url = location.href;                                                                                                                                                                                
+                                                                                                                                                                                                              
+        for (var i=1 ;i <= question_count ;i++)                                                                                                                                                                   
+        {                                                                                                                                                                                                       
+            var answer_id = 'q'+i+'ab'; 
+            if(document.getElementById(answer_id) != null) {                                                                                                                                                  
+                document.getElementById(answer_id).style.backgroundColor = '#FFFFFF';                                                                                                                            
+            }                                                                                                                                                                                                   
+        }                                                                                                                                                                                                        
+        if ( (url.indexOf('privacy') != -1) && (document.getElementById('qgoogle_cookieab'))) {                                                                                                                  
+            document.getElementById('qgoogle_cookieab').style.backgroundColor = '#FFFFFF' ;                                                                                                                       
+        }                                                                                                                                                                                                        
+                                                                                                                                                                                                               
+        var ie = (document.all)? true: false;                                                                                                                                                                 
+        if (url.indexOf('#') != -1) {                                                                                                                                                                         
+            var offset = url.indexOf('#');                                                                                                                                                                       
+            var tagname = url.substring(offset + 1);                                                                                                                                                            
+                                                                                                                                                                                                              
+            if (tagname != 'field') {                                                                                                                                                                            
+                if (tagname == 'lowestprice') {                                                                                                                                                                  
+                    tagname = 'phone';                                                                                                                                                                          
+                }                                                                                                                                                                                               
+                if (tagname == 'google_cookie') {                                                                                                                                                               
+                    tagname = 'q' + tagname;                                                                                                                                                                     
+                }                                                                                                                                                                                                
+                tagname += 'ab';                                                     
+                if (document.getElementById(tagname)) {                                                                                                                                                         
+                    document.getElementById(tagname).style.backgroundColor = '#EFF3FF'
+                }
+        //Added to color the question part as white on the privacy q-a page.
+/*
+            if(url.indexOf('protect-privacy') != -1) {
+                var question = url.substring(offset + 1) + 'q';
+                if (document.getElementById(question)) {
+                    document.getElementById(question).style.backgroundColor ='#FFFFFF';
+                }
+            }
+*/
+            } else {
+                for (var i=1; i < 10; i++) {
+                    var fieldname = tagname + i;
+                    if (document.getElementById(fieldname)) {
+                        document.getElementById(fieldname).style.backgroundColor = '#EFF3FF';
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+        setTimeout('highlight()',200);
+    }
+highlight();
+
+jQuery(document).ready(function () {
+ jQuery('#information-sharing-link').on('click',function () {
+         jQuery('#info-sharing-div').show();
+         jQuery('#loadingId').show();
+         blockPageScrolling('info-sharing-div');
+    });
+ jQuery('.closeArea a, #loadingId').on('click',function () {
+         jQuery('#info-sharing-div').hide();
+         jQuery('#loadingId').hide();
+         blockPageScrolling('info-sharing-div');
+    });
+ jQuery('#url_gen_link').on('click',function () {
+         jQuery('#url-generator-div').show();
+         jQuery('#loadingId').show();
+         blockPageScrolling('url-generator-div');
+    });
+ jQuery('.closeArea a, #loadingId').on('click',function () {
+         jQuery('#url-generator-div').hide();
+         jQuery('#loadingId').hide();
+         blockPageScrolling('url-generator-div');
+    });
+ jQuery(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+     jQuery('#url-generator-div').hide();
+     jQuery('#info-sharing-div').hide();
+     blockPageScrolling('url-generator-div');
+     blockPageScrolling('info-sharing-div');
+     jQuery('#loadingId').hide();
+  }
+    });
+jQuery('#loadingId').doubletap(
+         /** doubletap-dblclick callback */
+         function(event){
+             event.preventDefault();
+         },
+         /** touch-click callback (touch) */
+         function(event){
+             jQuery('#url-generator-div').hide();
+             jQuery('#info-sharing-div').hide();
+             blockPageScrolling('url-generator-div');
+             blockPageScrolling('info-sharing-div');
+             jQuery('#loadingId').hide();
+         },
+         /** doubletap-dblclick delay (default is 500 ms) */
+         250
+    );
+});
+
+    </script>
+    </head>
+
+    <body  >
+    
+    
+    <div id="wrapper" class="">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="/eng/?" target="_top"><img src="/graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="/do/preferences.pl?language=english&language_ui=english" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Settings</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">enter your search terms here</span>
+    <input type="hidden" value="english" name="language">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick Web Search'><input type="submit" value="GO" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="/eng/protect-privacy.html?" class="single right-arrow">Privacy</a></li><li><a href="/do/preferences.pl??language=english&language_ui=english&nj=0" class="single right-arrow">Settings</a></li><li><a href="https://support.ixquick.com/index.php?/Knowledgebase/List" class="single right-arrow">Support</a></li><li><a>Community</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick">Facebook</a></li><li><a href="https://twitter.com/#!/ixquick">Twitter</a></li><li><a href='https://blog.startpage.com'>Blog</a></li></ul></li><li><a href="/eng/aboutixquick/?" class="single right-arrow">About Us</a></li><li class="no-mobile"><a>Add Ixquick</a><ul class="slide-sub-menu"><li><a href="/eng/download-ixquick-plugin.html?" id="my-browser-name">Add to Browser</a></li><li><a href="/eng/make-ixquick-your-homepage.html?">Homepage</a></li><li><a href="/eng/mobile-app-qa.html?">Mobile Device</a></li><li><a href="/eng/download-ixquick-toolbar.html?">Toolbar</a></li></ul></li><li class="list-box-opener"><a class="single open-box">Language</a><div class="menu-list-box" id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='/dan/?'>Dansk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('deutsch', 'deu', 'ixquick.com'); return retina_set_language('deutsch', 'deu','ixquick.com');" href='/deu/?'>Deutsch</a></td>
+</tr>
+<tr>
+<td><strong>English</strong></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='/uk/?'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='/esp/?'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='/fra/?'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='/ita/?'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='/ned/?'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='/nor/?'>Norsk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('polski', 'pol', 'ixquick.com'); return retina_set_language('polski', 'pol','ixquick.com');" href='/pol/?'>Polski</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='/por/?'>Portugu&ecirc;s</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('suomi', 'suo', 'ixquick.com'); return retina_set_language('suomi', 'suo','ixquick.com');" href='/suo/?'>Suomi</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='/sve/?'>Svenska</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('turkce', 'tur', 'ixquick.com'); return retina_set_language('turkce', 'tur','ixquick.com');" href='/tur/?'>T&uuml;rk&ccedil;e</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='/jia/?'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='/nih/?'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='/fan/?'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='/han/?'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="/eng/spread-the-word.html?" class="single right-arrow">Share</a></li><li class="list-box-opener"><a class="single open-box">Theme</a><div class="menu-list-box theme-box" id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr><td><a onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>Air</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Night</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>White</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Black</a></td></tr><tr><td><a onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>Air (Classic)</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Night (Classic)</a></td></tr><tr><td><a onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Bubbles (Classic)</a></td></tr><tr><td><a onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>Daybreak (Classic)</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>White (Classic)</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Black (Classic)</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('/do', 'english', 'query_top', 'jquery.autocomplete.js', '');
+    }
+</script>
+
+
+    <div id="wrapper-inner" class="" style="max-width:999px">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id='inner_content'>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="bodyContent">
+            <tr>
+              <td class="left_column_td" nowrap="nowrap" valign="top">
+                <!--td class="left_column_td" nowrap="nowrap" style="padding-left:30px;"-->
+                <div class="leftContent" style="width:232px">
+    
+    <div class="sidebar">
+<div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>PRIVACY</span></a></div><div class="accordionContent" style="display: block;" ><ul><li><a href="/eng/protect-privacy.html" >How we protect you</a></li><li><a href="/eng/protect-privacy-qa.html" >Q&A</a></li><li class="selected"><a  href="/eng/privacy-policy.html">Our privacy policy</a><span class="menubg_right"></span></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="/do/preferences.pl?language_ui=english">SETTINGS</a></li><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="https://support.ixquick.com/index.php?/Knowledgebase/List">SUPPORT</a></li><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>COMMUNITY</span></a></div><div class="accordionContent"><ul><li><a href="https://www.facebook.com/ixquick" >Facebook</a></li><li><a href="https://twitter.com/#!/ixquick" >Twitter</a></li><li><a href="https://blog.startpage.com" >Blog</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>ABOUT</span></a></div><div class="accordionContent"><ul><li><a href="/eng/what-makes-ixquick-special.html" >How we're different</a></li><li><a href="/eng/company-background.html" >Our history</a></li><li><a href="/eng/company-management-bio.html" >Our people</a></li><li><a href="/eng/company.html" >Company</a></li><li><a href="/press/" >Press center</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>ADD IXQUICK</span></a></div><div class="accordionContent"><ul><li><a href="/eng/download-ixquick-plugin.html" id="sidebar_browser_name">Add to Browser</a></li><li><a href="/eng/make-ixquick-your-homepage.html" >Homepage</a></li><li><a href="/eng/mobile-app-qa.html" >Mobile Device</a></li><li><a href="/eng/download-ixquick-toolbar.html" >Toolbar</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="/eng/spread-the-word.html">SHARE</a></li></div><br><br><br><br><br><br>
+    </div></div></td>
+    <td>
+    <div class="rightContent" id="content">
+    <h1>Our privacy policy</h1><div class="pad_t20">
+    <h3 class="cont">
+    <table border="0" cellpadding="3" cellspacing="3" class="txt_18" width="100%">
+        <tbody>
+            <tr>
+                <td valign="top" width="25%">In short:</td>
+                <td width="75%">Ixquick does not collect or share any personal information!<br>Nada. Zilch. Nothing.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="25%">The longer version:</td>
+                <td width="75%">Ixquick is strongly committed to protecting the privacy of its user community. This privacy policy details the - very limited and non-personal - information Ixquick.com ("Ixquick") may gather and our disclosure policy.</td>
+            </tr>
+        </tbody>
+    </table></h3><div class="pad_t30"><h2>IP Addresses</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">The IP address that is associated with your search will NOT be recorded.</span><br>The only exception is for &#147;abusive&#148; (automated) queriers that rapidly submit many queries to Ixquick in a very short time.</h3><br><br><h2>Data Collection</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">We don't collect any personal information on our visitors. Nada. Zilch. Zero.</span><br>When you use Ixquick, we do not record your IP address, we do not record the browser connected with your search (Internet Explorer, Safari, Firefox, Chrome etc.), the computer platform (Windows, Mac, Linux, etc.) connected with your search, and we do not record your search words or phrases themselves.<br><br>This zero data collection policy protects your privacy, since your IP address, browser, and platform information can be combined with other data to <a class="blue_link" href="https://panopticlick.eff.org" target="_blank">uniquely identify</a> your computer, your location, or you. It is also important not to record search terms, since they can convey personal information as well. (Think of someone entering their own name and/or social security number.)<br><br>In fact, the only information we do record is an aggregate total of how many searches are performed on our website each day (a measure of overall traffic), and, from time to time, some other strictly non-personal statistics. Such statistics may include the number of times our service is accessed by a type of operating system, a type of browser, a language, etc.&#151;or a combination thereof.<br><br>We only count the <i>numbers</i> and are in no way able to know what <i>your</i> specific operating system, browser, language settings, etc may be, because we do not record that information.</h3><h2 class="pad_t30">Cookies</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Ixquick does not use identifying cookies.</span><br><div class="pri_preferences"><div class="pre_cont">Preferences</div></div><a class="blue_link" href="/eng/protect-privacy-qa.html#q11" target="_blank">Cookies</a> are small pieces of data that are sent and saved to your computer's hard drive when visiting sites. Ixquick uses only one anonymous cookie called "preferences". This cookie is to remember the search preferences you saved for your next visit. It expires after not visiting Ixquick for 90 days.<br><br>You can choose to accept or refuse cookies by changing the settings of your browser. It should be noted, however, that your Ixquick.com preferences will not work properly if your cookies are turned off. It is possible to accept cookies from selected sites only.<br><br>You can periodically delete cookies from your computer's hard drive, clearing out all historical data that may have been saved from your previous web surfing. If you delete cookies, you will not be recognized as a repeat visitor or viewer when returning to a site.<br><br>To promote a cookie-free internet, Ixquick has a <a class="blue_link" href="/eng/urlgenerator-details.html" target="_blank" onclick="return false;" id="url_gen_link">URL generator</a> which eradicates the need for setting a cookie. It remembers your settings in a privacy friendly manner. It can be found at the bottom of the <a class="blue_link" href="/do/preferences.pl?language_ui=english" target="_blank">SETTINGS</a> page.</h3><h2 class="pad_t30">External Links</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Ixquick offers a proxy function that allows the users to see the information on external sites without disclosing their IP address to these sites.</span><br>As a search engine, and as an advertising publisher, you will find various links on our site, including but not limited to search results and sponsored results. These sites are owned and maintained by independent companies, over which Ixquick has no control, and who are not covered by this privacy policy. Ixquick is not liable or responsible for the content of these sites, or their collection of information and its use. To fully protect our users from the privacy risks of the FB and Twitter social media plugins we have implemented a <a class='blue_link' href='https://support.ixquick.com/index.php?/Knowledgebase/Article/View/1169/0/does-ixquickcom-use-the-facebook-and-twitter-social-widgets' target='_blank'>unique two-step approach</a> to show these icons on our site. Please note that this privacy policy applies only to the Ixquick.com website. Ixquick offers a proxy function that allows the users to see the information on external sites without disclosing their IP address to these sites.  Further information on this great privacy tool can be found <a class="blue_link" href="/proxy/eng/help.html" target="blank">here</a>. </h3><h2 class="pad_t30">Email addresses</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">
+                         Ixquick will not sell or disclose your contact information to any third parties.</span><br>When you send comments, questions, suggestions, or feedback to Ixquick via email or through our support center, and include an email address and/or contact information, Ixquick may use this information to respond to you. By submitting feedback you also allow us to detect which browser and operating system you are using, information that will exclusively be used for helping to better understand and solve any reported issues better.   Ixquick will not sell or disclose your contact information to any third parties. We may, however, very occasionally send emails to our users regarding Ixquick company information. This service is opt-in and includes the option to unsubscribe.</h3><h2 class="pad_t30">Children Under 13 Years of Age</h2><h3 class="cont"><span style="display:inline-block;" class="txt_green txt_i mar_b10">Note that we do not collect any personal data at all.</span><br>As a consequence Ixquick does not knowingly request, collect, or share personally identifiable information from users under the age of 13 either. We feel protecting children's privacy online is very important.</h3><h2 class="pad_t30">Information Sharing</h2><h3 class="cont"><span style="display:inline-block;" class="txt_green txt_i mar_b10">Ixquick has no personal information to share.</span><br>Ixquick does not share personal information with any third party search engine or the provider of its sponsored results. Click <a class="blue_link" href="/eng/information-sharing.html" target='_blank' onclick='return false;' id="information-sharing-link">here</a> for details.</h3><h2 class="pad_t30">Governmental requests</h2><h3 class="cont">Ixquick is headquartered in The Netherlands, Europe. Any request or demand from any government (including the US) to deliver user data, will be thoroughly checked by our lawyers, and we will not comply unless the law which actually applies to us would undeniably require it from us. And even in that hypothetical situation, we would refer to the fact we have no personal user data to share. In the fourteen years we've been in business, we have never received such a request.<br><br>The only legitimate way that we see to make us start collecting personal information, is if there is a valid warrant or court order, obliging us to do so in relation to a specific user because that person is suspected to have committed a crime which is serious enough to warrant such a restriction of privacy.</h3><h2 class="pad_t30">The Right to be Forgotten</h2><h3 class="cont">Subject to certain conditions, citizens in the EU are given the right to request the deletion of their personal data when they are inaccurate, inadequate, or irrelevant or no longer relevant. More information can be found <a href='https://support.ixquick.com/index.php?/Knowledgebase/Article/View/1187/0/how-does-startpage-handle-search-removal-requests-under-data-protection-law-in-europe-the-right-to-be-forgotten' class='blue_link'>here</a>.</h3><h2 class="pad_t30">Your privacy, our future</h2><h3 class="cont">We strongly believe that we have the legal right to safeguard the privacy of our users by encrypting and not collecting their personal information, and to keep doing so.<br><br>Given the strong protection of the right to privacy in Europe, European governments cannot just start forcing service providers like us to implement a blanket spying program on their users. If that ever changed, we would fight this to the end.</h3><br><br style="clear:both;"></div></div><div class="quote_txt txt_center">Privacy<br>It's not just our Policy - it's our Mission!</div><br><br><h2>Operator</h2><h3 class="cont">Ixquick.com is owned and operated by Surfboard Holding BV, Postbus 1079,  3700 BB Zeist The Netherlands. Representative for the Privacy Policy is Robert E.G. Beens. <br/>(<img src='/graphics/startpage_robert_email_black.gif'>)</h3><div class="about-page-popup" id="info-sharing-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td><br/>
+<h1>Information Sharing</h1><br/><br/>
+Some results pages on Ixquick include a small number of clearly labeled sponsored links to cover operational costs. Those links are retrieved from platforms such as Google Adwords. The ads are NOT individually tailored to users, and Ixquick does NOT record any personal information or share personal information with the providers of sponsored links at any time. Clicking on any search result without the use of the proxy will take the user to the third-party website and away from the protection of Ixquick. This is the case with all external pages, including our sponsored links. Note: the proxy can help you visit all regular search results anonymously but as you can see, there is no such option for visiting the sponsored links, as the advertisers need means to detect click fraud scams.<br/><br/>
+Ixquick's top priority is protecting the privacy of our users, while providing a quality service.
+<br/><br/></td></tr></table></div>
+<div class="about-page-popup" id="url-generator-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1>The URL-generator</h1><div><div class="cont_nor pad_t10"><h3>Save settings without cookies</h3></div><div class="pad_t25"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5"><tr><td><ul class="check_green_l_17 url_gen"><li>You can save your Ixquick preferences by clicking on the "Save Setting" button on the "<a class="blue_link" target='_blank' href='/do/preferences.pl?language_ui=english'>Settings</a>" page.<li>This will save your settings on your computer in a 'cookie'- a small piece of data stored on your hard drive - called 'preferences'.</li><li>Ixquick's 'preferences' cookie is a non-identifiable cookie and safe to accept, but cookies in general can pose a threat to your privacy.</li><li>People who prefer not to accept cookies or delete them regularly would not be able to keep their preferences this way.</li><li>For those people, Ixquick has especially provided the "Generate URL" button at the bottom of the "<a class="blue_link" target='_blank' href='/do/preferences.pl?language_ui=english'>Settings</a>"  page.<li>Pushing that button a specific Ixquick URL containing your selected settings will be generated.</li><li>It can be generated in readable or obfuscated form.</li><li>The generated URL can now be be directly set as your homepage or copied and used as a bookmark.</li><li>Using this URL all of your preferences will be used the next time you visit Ixquick.</li><li id="customplugin" style="display:none;">For even more convenience you can hit 'Install Custom Plugin' after you created your URL.</li><li>This will install a search bar plugin that includes your settings.</li><li id="customplugin_ff" style="display:none;">You may need to delete previously saved versions first from the search bar's drop down list.</li><li id="customplugin_chrome" style="display:none;">Make sure the 'Keyword' you enter differs from the keyword you may have saved before.</li></ul><div class="cont_nor pad_t10"><b><b>Ixquick continues to offer you privacy-enhancing features for searching the web safely!</b></b></div></div><br/></td></tr></table>
+<script type='text/javascript'>
+    var agent = navigator.userAgent;
+    if ( (agent.indexOf('Firefox/') != -1) || (agent.indexOf('Chrome/') != -1) ||
+         (agent.indexOf('SeaMonkey/') != -1) || (agent.indexOf('MSIE 7') != -1) ||
+         (agent.indexOf('MSIE 8') != -1) ) {
+
+        document.getElementById('customplugin').style.display = '';
+        if (agent.indexOf('Firefox/') != -1) {
+            document.getElementById('customplugin_ff').style.display = '';
+        }
+        if (agent.indexOf('Chrome/') != -1) {
+            document.getElementById('customplugin_chrome').style.display = '';
+        }
+    }
+</script><input type="hidden" id="query_top" height="10"></div></div></div>
+<div id="loadingId"></div>
+</div></div><div id="toPopup"><div class="close"></div><div id="popup_content"><div id="sm-video" style="position: relative; display: block; width: 639px; height: 360px;">Jwplayer Loading<div style="display: none;" id="sm-video_aspect"></div><div id="sm-video_jwpsrv" style="position: absolute; top: 0px; z-index: 10;"></div></div></div></div>
+    </div></div>
+    <div class="clear"></div>
+    </td>
+    </tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://startmail.com/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="/eng/privacy-policy.html?">Privacy Policy</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+    <script type="text/javascript" charset="utf-8"> $(function() { $('body').hide().show(); });</script>
+    </body>
+    </html>
