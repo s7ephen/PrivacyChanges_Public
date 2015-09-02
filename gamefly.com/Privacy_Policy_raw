@@ -1,1 +1,60 @@
- 
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta http-equiv="PRAGMA" CONTENT="NO-CACHE">
+        <meta http-equiv="Expires" content="0">
+        <title ng-bind="seo.title">GameFly</title>
+        <meta name="description" content="{{seo.description}}">
+        <meta name="keywords" content="{{seo.keywords}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="fragment" content="!">
+        <meta name="google-site-verification" content="yBmJ-2BdM53Dx8mEqE-tDLbkjmLx3idOreRUTBy8zvc" />
+        <meta ng-if="preRenderStatusCode" name="prerender-status-code" content="{{preRenderStatusCode}}" />
+        <base href="/">
+        <link rel="canonical" href="{{seo.canonical}}" />
+        
+        <link theme="dark" href="//gamefly.gameflycdn.com/styles/fe60c74a.gamefly-bootstrap-dark.css">
+        <link theme="dark" href="//gamefly.gameflycdn.com/styles/e3229960.gamefly-dark.css">
+        <link theme="default" href="//gamefly.gameflycdn.com/styles/0110f5e9.gamefly-bootstrap.css" rel="stylesheet">
+        <link theme="default" href="//gamefly.gameflycdn.com/styles/b69aa78b.gamefly.css" rel="stylesheet">
+
+        <script type="application/ld+json">
+            { "@context": "http://schema.org", "@type": "Organization", "name": "GameFly", "url": "https://www.gamefly.com", "sameAs": ["http://www.facebook.com/gamefly", "http://www.twitter.com/gamefly", "http://plus.google.com/+GameFly"] }
+        </script>
+        <script type="application/ld+json" gf-structured-data></script>  
+    </head>
+    <body ng-controller="mainController">
+
+        <!--[if lte IE 8]>
+            <div class="alert alert-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to enjoy GameFly.</div>
+        <![endif]-->
+        
+        <!--[if IE]>
+            <script src="//gamefly.gameflycdn.com/bower_components/xdomain/dist/xdomain.js"></script>
+            <script src="//gamefly.gameflycdn.com/bower_components/placeholders/dist/placeholders.js"></script>
+        <![endif]-->
+        
+        <noscript>
+            <p class="alert alert-warning">To enjoy GameFly, you'll need to enable JavaScript in your web browser. Please <a href="http://enable-javascript.com/" target="_blank">click here</a> to learn how.</p>
+        </noscript>
+
+        <div class="main-content">
+            <div class="header hidden-print" gf-header ng-include="'/views/shared/header.html'"></div>
+            <div class="notification hidden-print" gf-notification></div>
+            <!-- update global.less if adding new elements before main container -->
+            <div class="main-container" ui-view autoscroll>
+                <div class="loading-container"></div>
+            </div>
+            <div class="footer hidden-print" ng-include="'/views/shared/footer.html'"></div>
+        </div>
+
+        <script src="//gamefly.gameflycdn.com/scripts/04ac797e.vendor.js"></script>
+
+        <script src="//gamefly.gameflycdn.com/scripts/a40be5d8.scripts.js"></script>
+		
+        <!--DO NOT DELETE: For Solar Winds, Succeeded=true-->
+    </body>
+</html>
