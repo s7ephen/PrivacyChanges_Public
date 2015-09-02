@@ -1,1 +1,1216 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAUEV1FACgQCVVVVBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+	<title>Spiceworks Terms of Use</title>
+	<meta name="description" content="Spiceworks is the first free IT management software designed to meet the unique needs of small and medium businesses. Spiceworks software helps IT professionals easily discover, manage and monitor the software and hardware assets in their networks.">
+	
+	<script>
+window['optimizely'] = window['optimizely'] || [];
+</script>
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="dcterms.rights" content="Copyright (c) 2006-2015 Spiceworks. All rights reserved." />
+<meta name="dcterms.rightsHolder" content="Spiceworks" />
+<meta name="dcterms.audience" content="global" />
+<meta property="og:image" content="http://www.spiceworks.com/images/icons/swoosh.png" />
+<link rel="shortcut icon" href="/favicon.gif" />
+<link href="https://plus.google.com/108660400379322656127" rel="publisher" />
+<link rel="home" title="Spiceworks" href="http://www.spiceworks.com" />
+<link href="//wwwstatic.spiceworks.com/css/all-styles_20150304.css?version=20150901" rel="stylesheet">
+<script>//document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>   
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="//wwwstatic.spiceworks.com/css/ie.css?version=20150106" />
+<![endif]-->
+<script>
+var SWUFR = SWUFR || {};
+SWUFR.cmd = SWUFR.cmd || [];
+SWUFR.cmd.push(function() { SWUFR.ufr.visit(); });
+</script>
+<script async src="//gekko.spiceworks.com/swufr.js"></script>
+  </head>
+
+  <body>   
+  
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PGLF8G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PGLF8G');</script>
+<!-- End Google Tag Manager -->        <div class="navbar navbar-inverse navbar-static-top navbar-dropdown">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-small btn-secondary btn-navbar btn-inverse collapsed" data-toggle="collapse" data-target=".nav-collapse" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Mobile Navigation Menu']);">Menu</a>
+          <a class="brand" href="/">Spiceworks</a>
+
+          <div class="nav-action pull-right">
+
+            
+              <a onclick="_gaq.push(['_trackEvent', 'Menu', 'Clicked', 'Features']);" href="/app/" class="btn btn-link " role="button" data-toggle="modal" data-tab="login">Products</a>
+              <a onclick="_gaq.push(['_trackEvent', 'Menu', 'Clicked', 'Downloads']);" href="/downloads/" class="btn btn-link " role="button" data-toggle="modal" data-tab="login">Downloads</a>
+
+        			                <a href="#join-login" class="btn btn-link" role="button" data-toggle="modal" data-tab="login" onClick="_gaq.push(['_trackEvent', 'Modals', 'Opened', 'Login']);">Login</a>
+        			
+
+            
+			    </div>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu']);">About <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/about/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Our Story']);">Our Story</a></li>
+                  <li><a href="/jobs/meet-the-team/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Meet the Team']);">Meet the Team</a></li>
+                  <li><a href="http://community.spiceworks.com/blog" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Blog']);">Blog</a></li>
+                  <li><a href="/press/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Press']);">Press</a></li>
+                  <li><a href="/jobs/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Jobs']);">Jobs</a></li>
+                  <li><a href="/contact/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'About Menu - Contact']);">Contact</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu']);">Apps <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/app/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Overview']);">Overview</a></li>
+                    <li><a href="/network-management/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Inventory Management']);">Inventory Management</a></li>
+					<li><a href="/free-mobile-device-management-mdm-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Mobile Device Management']);">Mobile Device Management</a></li>
+                    <li><a href="/free-help-desk-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - IT Help Desk']);">IT Help Desk</a></li>
+                    <li><a href="/free-network-monitoring-management-software/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Network Monitoring']);">Network Monitoring</a></li>
+                    <li><a href="/appcenter/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - App Center']);">App Center</a></li>
+                    <li class="divider"></li>
+                	<li><a href="/new-features/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - What\'s New']);">What's New</a></li>
+                	<li><a href="/downloads/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'App Menu - Downloads']);">Downloads</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu']);">IT Careers <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/it-careers/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Overview']);">Overview</a></li>
+                    <li><a href="/it-career-portfolio/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Portfolio']);">Portfolios</a></li>
+                    <li><a href="http://community.spiceworks.com/careers/jobs" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - IT Jobs']);">IT Jobs</a></li>
+                    <li><a href="http://community.spiceworks.com/careers" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'IT Careers Menu - Discussions']);">Discussions</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu']);">Community <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/free-it-community-network/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Overview']);">Overview</a></li>
+                    <li><a href="http://community.spiceworks.com/launch/see_all" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Discussion Groups']);">Discussion Groups</a></li>
+                    <li><a href="http://community.spiceworks.com/people" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - IT Profiles']);">IT Profiles</a></li>
+					<li><a href="http://community.spiceworks.com/how_to" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - How-Tos']);">How-Tos</a></li>
+					<li><a href="http://community.spiceworks.com/spiceworks-tv" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Videos']);">Videos</a></li>
+					<li><a href="http://community.spiceworks.com/product" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Ratings & Reviews']);">Ratings &amp; Reviews</a></li>
+					<li><a href="http://community.spiceworks.com/service_providers" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - IT Service Providers']);">IT Service Providers</a></li>
+					<li><a href="http://community.spiceworks.com/pages" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Community Menu - Vendor Pages']);">Vendor Pages</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu']);">Marketing <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Overview']);">Overview</a></li>
+                  <li><a href="/marketing/research-your-market/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Research Your Market']);">Research Your Market</a></li>
+                  <li><a href="/marketing/generate-demand/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Generate Demand']);">Generate Demand</a></li>
+                  <li><a href="/marketing/interact-with-buyers/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Connect with buyers']);">Connect with buyers</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/marketing/products/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Products']);">Products</a></li>
+                  <li><a href="/marketing/solutions/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Solutions']);">Solutions</a></li>
+                  <li><a href="/marketing/resources/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Resources']);">Resources</a></li>
+                  <li><a href="/marketing/success-story/" onClick="_gaq.push(['_trackEvent', 'Menus', 'Opened', 'Advertise Menu - Success Stories']);">Success Stories</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="hero">	
+		<div class="navbar navbar-static-top navbar-section hidden-phone">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li class="navbar-title">Privacy and Terms:</li>
+						<li><a href="/privacy/">Privacy Policy</a></li>
+						<li class="active"><a href="/terms/">Terms of Use</a></li>
+						<li><a href="/requirements/">System Requirements</a></li>
+						<li><a href="/privacy/cookies/">Cookie Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	 
+	<div class="container box"> 
+        
+        <div class="row-fluid"> 
+        	<div class="span4 pull-right hidden-phone">
+        		<div class="well">
+	        		<ul class="nav nav-list">
+  						<li class="nav-header">Table of Contents</li>
+						<li><a href="#terms">Spiceworks Terms of Use</a></li>
+						<li><a href="#revisions">Revisions</a></li>
+						<li><a href="#usage">Personal, Internal Business or Limited Commercial Use</a></li>
+						<li><a href="#children">Children</a></li>
+						<li><a href="#restrictions">Restrictions and Prohibited Actions</a></li>
+						<li><a href="#security">Account information and Security</a></li>
+						<li><a href="#ownership">Intellectual Property Ownership</a></li>
+						<li><a href="#user-content">User Content</a></li>
+						<li><a href="#no-implied-rights">No Implied Rights</a></li>
+						<li><a href="#dmca">Digital Millennium Copyright Act</a></li>
+						<li><a href="#desktop-terms">Desktop Terms</a></li>
+						<li><a href="#web-based-terms">Web-based Offering Terms</a></li>
+						<li><a href="#information-practices">Information Practices</a></li>
+						<li><a href="#fees">Fees and Payments</a></li>
+						<li><a href="#third-party">Third Party Interactions and Links to Other Sites</a></li>
+						<li><a href="#trademarks">Trademarks</a></li>
+						<li><a href="#advertisements">Advertisements</a></li>
+						<li><a href="#intl">International Use</a></li>
+						<li><a href="#delays">Internet Delays</a></li>
+						<li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+						<li><a href="#limitation">Limitation of Liability</a></li>
+						<li><a href="#governing-law">Governing Law; Disputes</a></li>
+						<li><a href="#misc">Miscellaneous Provisions</a></li>
+						<li><a href="#feedback">Feedback</a></li>
+					</ul>
+        		</div>
+        		<div class="text-center">
+        			<a href="http://privacy.truste.com/privacy-seal/SpiceWorks,-Inc-/validation?rid=1deeb790-936c-4e81-b77e-8105ecddb03d" target="_blank"><img src="/images/truste_seal.gif" width="50" height="70" border="0" alt="TRUSTe - Click to verify" style="margin:2px 10px 0 0;"></a>
+        		</div>
+        	</div>
+        	<div class="span8">
+				<h1>Spiceworks Terms of Use</h1>
+				
+				<p><em>Last Updated: July 15, 2015</em></p>
+				<hr>
+				
+				<h4 id="terms">Spiceworks Terms of Use</h4>
+				<p>Thank you for using the Spiceworks service! This page contains the Terms and Conditions of Use (the "Terms of Use") and a reference to Spiceworks’ Privacy Policy (the Terms of Use and <a href="/">Privacy Policy</a>, together are referred to as the “Agreement”) governing your use of (a) the Spiceworks website located at <a href="/">www.spiceworks.com</a> and <a href="http://community.spiceworks.com/">community.spiceworks.com</a>, and any subdomain of thereof (collectively, the "Site"), (b) any off-line software components made available to you by or on behalf of Spiceworks on or through the Site (collectively, the "Desktop"), (c) any web-based services made available to you by or on behalf of Spiceworks via the Site (each, a “Web-based Offering”), and (d) all data, text, graphics, sound or video clips, flash animations, user interfaces, visual interfaces, trademarks, logos, and computer code, whether on the Site, in the Desktop or in a Web-based Offering (collectively, the "Content"), including but not limited to the design, structure, selection, coordination, "look and feel" and arrangement of such Content. The Site, the Desktop, Web-based Offerings and the Content (collectively or any part thereof, the "Service") are the property of Spiceworks, Inc. ("Spiceworks") and our licensors, and are protected by applicable intellectual property rights.</p> 
+		
+				<p>By clicking the "I accept" or similar button and/or using, downloading or accessing the Service, you are unconditionally consenting to be bound by and are becoming a party to this agreement either for yourself or, if you are using, downloading, or accessing the service on behalf of your employer or another entity, you are accepting on behalf of your employer or another entity, and you represent and warrant that you have the full legal authority to bind your employer or such entity to these terms and conditions. If you do not have such legal authority, or you do not agree with this Agreement, you must press the "I do not accept" or similar button when prompted and you may not use or access the Service and you must remove any Spiceworks-provided software and content from your computer or other device.</p>
+				
+				<h4 id="revisions">Revisions</h4>
+				
+				<p>Spiceworks reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use and the Privacy Policy at any time. The most current version of the Terms of Use may be found at <a href="/terms/">www.spiceworks.com/terms/</a> (or such successor URL as Spiceworks may provide). You should visit this page periodically to review the most current Terms of Use, because you are bound by them. The most current version of the Privacy Policy may be found at www.spiceworks.com/privacy (or such successor URL as Spiceworks may provide). Your continued use of the Service indicates your acceptance and agreement to the changes. As long as you comply with this Agreement, Spiceworks grants you a personal, non-exclusive, non-transferable, limited privilege to enter the Site and use the Service.</p>
+				
+				<p>The terms of this Agreement will govern any updates provided to you by Spiceworks that replace and/or supplement the original Desktop, a Web-based Offering, or any other portion of the Service, unless such upgrade is accompanied by a separate license or revised agreement, in which case the terms of that license or revised agreement will govern.</p>
+		
+				<h4 id="usage">Personal, Internal Business or Limited Commercial Use Only</h4>
+				
+				<p>Except as otherwise set forth herein, the Service is made available to you for: a) your personal use; b) your internal business use; or c) if you are a Managed Service Provider ("MSP"), or Value Added Reseller (“VAR”), use in the commercial support of your customers, in compliance with all applicable laws, rules and regulations. If you want to make any other commercial use of the Service, including but not limited to selling, distributing or providing access to the Service for payment, you must enter into a written agreement with Spiceworks or obtain Spiceworks' written permission in advance.</p> 
+		
+				<p>If you are asked to register for the Service, you must provide complete and accurate identification, contact, and other information required as part of the registration process, and accurately and promptly update that information if it changes. Spiceworks reserves the right, in its sole discretion, to refuse or discontinue participation or access to any or all of the Service to any user or member at any time.</p>
+				
+				<p>Except as expressly provided in these Terms of Use, no part of the Service, no part of the Site and no Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, or distributed in any way (including "mirroring" and "framing") to any other computer, server, website or other medium for publication or distribution or for any commercial enterprise, without Spiceworks' express prior written consent.</p>
+				
+				<p>At Spiceworks we are constantly innovating to provide the best possible experience for our members. As part of this on-going innovation, we may from time-to-time stop (permanently or temporarily) providing the Service or any part thereof, without notice. You may stop using the Service at any time and are under no obligation to inform Spiceworks when you stop using the Service. You acknowledge and agree that if Spiceworks disables access to your account, you may be prevented from accessing the Service, your account details or any files or other content contained in your account.</p>
+				
+				<h4 id="children">Children</h4>
+
+				<p>No part of the Service is directed to persons under the age of 15. If you are under 15 years of age, you must not use or access the service at any time or in any manner. By using the Service, you represent and warrant you are at least 18 years of age, or, if you are under 18 years of age (but 15 years of age or older), then you affirm that you possess the legal consent of your parent or guardian to access and use the Service.</p>
+				
+				<h4 id="restrictions">Restrictions and Prohibited Actions</h4>
+				
+				<p>The Service is intended for the use described above and in any documentation provided by Spiceworks in connection with the applicable portion of the Service only and may not be used in connection with any other commercial endeavors except those that are specifically allowed, endorsed or approved by Spiceworks. Except for distributions for the use described above to your employees or independent contractors in compliance with these Terms of Use, you may not distribute or otherwise commercially exploit or make available to any third party the Service, or any part thereof, in any way (e.g., rent, lease, lend, sell, redistribute or sublicense the Service or access to the Service). You may not access the Service for purposes of monitoring its availability, performance or functionality, or for any other benchmarking or competitive purposes.</p>
+		
+				<p>You may not change, reorganize, modify, copy, reverse engineer, decompile, disassemble, attempt to derive the source code of, or create derivative works from the Service, any updates, or any part thereof for any purpose, including in order to (a) build a competitive product or service, (b) build a product using similar ideas, features, functions or graphics of the Service, (c) remove, change or replace any Spiceworks' trademarks, logos, copyrights or any other branding elements, (d) modify, hide, obscure, disable or otherwise render inoperable any portion of the user interface including, but not limited to, the display of advertisements and promotions within the Service, or (e) copy any ideas, features, functions or graphics of the Service. If you wish to request Spiceworks’ written approval to do any of the above, please contact Spiceworks by sending an email to <a href="mailto:partners@spiceworks.com">partners@spiceworks.com</a>.</p>
+				
+				<p>You may not use any "deep-link", "page-scrape", "robot", "spider" or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Service, or in any way reproduce or circumvent the navigational structure or presentation of the Service to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Service.</p>
+				
+				<p>You may not attempt to gain unauthorized access to any portion or feature of the Service, or any other systems or networks connected to the Service or to any Spiceworks server, or to any of the services offered on or through the Service, by hacking, password "mining" or any other illegitimate means. You may not harvest or collect user names, email addresses or any other member identifying information by electronic or other means for the purpose of sending unsolicited email or other communications. Unauthorized commercial advertisements, affiliate links, and other forms of solicitation may be removed from member profiles and or community postings without notice and may result in termination of member privileges.</p>
+				
+				<p>You may not probe, scan or test the vulnerability of the Service or any network connected to the Service, nor breach the security or authentication measures of the Service or any network connected to the Service. You may not reverse look-up, trace or seek to trace any information on any other user of or visitor of the Service, or any other customer of Spiceworks, including any Spiceworks account not owned by you, to its source, or exploit the Service or any service or information made available or offered by or through the Service, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Service.</p>
+				
+				<p>You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Service or any transaction being conducted on the Service, or with any other person's use of the Service. You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Spiceworks on or through the Service or any service offered on or through the Service. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity. You may not use the Service or any Content for any purpose that is unlawful or prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Spiceworks or others.</p>
+				
+				<p>If you breach these restrictions, or otherwise exceed the scope of the licenses or other rights granted herein, then you may be subject to prosecution and damages, as well as liability for infringement of intellectual property rights.</p>
+				
+				<h4 id="security">Account information and Security</h4>
+				
+				<p>Access to and use of portions of the Service may require you to open an account (including setting up a Spiceworks ID and password). To register, you must provide a valid email address as a Spiceworks ID. You are entirely responsible for maintaining the confidentiality of your account information, including your password, and for any and all activity that occurs under your account. You agree to notify Spiceworks immediately of any unauthorized use of your account or password, or any other breach of security. However, you will be responsible for losses incurred by Spiceworks or any other user of the Service due to someone else using your Spiceworks ID, password or account.</p>
+				
+				<p>You, not Spiceworks, shall have sole responsibility for the accuracy, quality, integrity, legality, reliability, appropriateness, and intellectual property ownership or right to use of all your data, and Spiceworks shall not be responsible or liable for the deletion, correction, destruction, damage, loss or failure to store any of this data. You shall not knowingly send or store spam, unlawful, infringing, obscene, or libelous material, or viruses, worms, Trojan horses and other harmful code.</p>
+				
+				<p>You may not use anyone else's Spiceworks ID, password or account at any time without the express permission and consent of the holder of that Spiceworks ID, password or account. Spiceworks cannot and will not be liable for any loss or damage arising from your failure to comply with these obligations.</p>
+				
+				<p>By providing us with your email address, you agree to receive all required notices electronically, to that email address. Spiceworks will use this email address in accordance with our Privacy Policy which can be found at <a href="/privacy/">www.spiceworks.com/privacy</a>. You agree that any notices, agreements, disclosures, or other communications that we send to you electronically will satisfy any legal communication requirements, including that such communications be in writing.</p>
+				
+				<p>If you chose to complete a Spiceworks user profile, a project page or a profile page, you agree to accurately represent yourself, your background and experience, your work history and company affiliation, your certifications and areas of expertise, and any other personal or company information you chose to share. You also agree not to impersonate any person, company or entity, or falsely state or otherwise misrepresent yourself, your age or your affiliation with any person, company or entity.</p>
+				
+				<h4 id="ownership">Intellectual Property Ownership</h4>
+				
+				<p>You acknowledge that Spiceworks (and its licensors, where applicable) own all right, title and interest in and to the Service, portions thereof, or software or content provided through or in conjunction with the Service, including without limitation, all Intellectual Property Rights in and to the Service and any protectable suggestions, ideas, enhancements, requests, feedback and recommendations or other information provided by you or any other party relating to the Service. "Intellectual Property Rights" means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights, and any and all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect worldwide. You agree not to (and agree not to allow third parties to) modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from the Service, or to extract significant portions of Service's files for use in other applications. You also agree to (and will require third parties to) not remove, obscure, or alter Spiceworks' or any third party's copyright notice, trademarks, or other proprietary rights notices affixed to or contained within or accessed in conjunction with or through the Service.</p>
+				
+				<h4 id="user-content">User Content</h4>
+				
+				<p>You are solely responsible for the photos, profiles, messages, notes, text, information, music, video, plugins, source code, computer software, and other content that you upload, publish, submit, share or display (hereinafter, "post") on or through the Service, or transmit to or share with other members (collectively the "User Content"). You understand and agree that Spiceworks may, but is not obligated to, review and delete or remove (without notice) any User Content in its sole discretion, including without limitation User Content that in Spiceworks' sole judgment violates this Agreement or which might be offensive, illegal, or that might violate the rights, harm, or threaten the safety of members, users or others.</p>
+				
+				<p>By posting User Content to any part of the Service, you automatically hereby grant, and you represent and warrant that you have the right to grant, to Spiceworks an irrevocable, perpetual, non-exclusive, transferable, royalty-free, worldwide license (with the right to sublicense) to use, copy, publicly perform, publicly display, reformat, translate, excerpt (in whole or in part) and distribute such User Content for any purpose on or in connection with the Service or the promotion thereof, to prepare derivative works of, or incorporate into other works, such User Content, and to grant and authorize sublicenses of the foregoing.</p>
+				
+				<p>You also hereby grant each member or user a non-exclusive license to access the User Content you post through the Service, and to use, reproduce, distribute, prepare derivative works of, display and perform such content as permitted through the functionality of the Service and the Site and under this Agreement.</p>
+				
+				<p>Notwithstanding the foregoing, to the extent your User Content consists of data inputted by you or your users into the Web-based Offering or the Desktop for the purpose of facilitating your use of the Web-based Offering or the Desktop, the licenses set forth above are limited to Spiceworks’ use of such data for your benefit (e.g., to make available or support your use of the Web-based Offering or Desktop), in aggregated or anonymized form that does not identify you or your company individually. and for other uses required by law.</p>
+				
+				<p>You may remove your User Content from the Site at any time but you acknowledge that once you have posted any User Content to the Site, other users may have retained a copy of your User Content and may still have access to those copies despite your removal of the User Content from the Site. You acknowledge that this User Content may persist in backup copies, derivative works or aggregate form for a period of time.</p>
+				
+				<p>The Service contains content created by us, by third parties, and by our users and members. This content includes, among other things, reports, comments, opinions from other IT professionals, scripts, plugins, wikis, widgets, how-to projects, product reviews, white papers, webinars and software downloads. It also includes information about products and services offered by parties other than Spiceworks, such as product descriptions, specifications, pricing, availability, and performance. We do not guarantee the accuracy, the integrity, or the quality of the content on the Service, and you may not rely on any of this content. Without limitation, we are not responsible for postings by users in the reports, scripts, plugins, widgets, product rating, product review, user opinion, message board, feedback or any other sections of the Service. You should not rely on such information in situations where its inaccuracy would cause you to suffer any loss (see Disclaimer of Warranties and Limitation of Liability sections below).</p>
+				
+				<p>You may not post or transmit any message which is libelous or defamatory, or which discloses private or personal matters concerning any person. You may not post or transmit any message, data, image or program that is indecent, obscene, pornographic, harassing, threatening, abusive, hateful, racially or ethnically offensive; that encourages conduct that would be considered a criminal offense, give rise to civil liability or violate any law; or that is otherwise inappropriate.</p>
+				
+				<p>Except where expressly permitted, you may not post or transmit charity requests; petitions for signatures; franchise, distributorship, sales representative agency arrangements, or other business opportunities (including offers of employment or contracting arrangements); club memberships, chain letters, or letters relating to pyramid schemes. You may not post or transmit any advertising, promotional materials or any other solicitation of other users or members to use or buy products, goods or services except in those areas (e.g., a classified bulletin board) that are designated for such purpose and as expressly permitted.</p>
+				
+				<p>You agree that any employment or other relationship you form or attempt to form with an employer, employee, or contractor whom you contact through the Service or the Site that may be designated for that purpose is between you and that employer, employee, or contractor alone, and not with us.</p>
+				
+				<p>You may not copy or use personal identifying or business contact information about other users or members without their permission. Unsolicited e-mails, mailings, telephone calls, or other communications to individuals or companies whose contact details you obtain through the Service are prohibited.</p>
+				
+				<p>You represent, warrant and agree that no materials of any kind submitted through your account or otherwise posted or shared by you through the Service will violate or infringe upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary rights; or contain libelous, defamatory or otherwise unlawful material.</p>
+				
+				<h4 id="no-implied-rights">No Implied Rights</h4>
+				
+				<p>There are no implied licenses granted in these Terms of Use. All rights not granted herein are expressly reserved by Spiceworks, our licensors or the copyright owner of any User Content.</p>
+				
+				<h4 id="dmca">Digital Millennium Copyright Act</h4>
+				
+				<p>Spiceworks respects the intellectual property rights of others. Infringing Content may not be posted to the Service. If you post any content that contains any intellectual property, including code, photos, literary works, musical works, and/or sound recordings, you must be the owner of such intellectual property or have all required rights, licenses, consents, and permissions to use such intellectual property on the Service. In addition to being grounds for removal of your posting, termination of your user account, termination of your membership, and any other remedy Spiceworks may have against you, your failure to own or obtain such rights may subject you to civil and/or criminal liability.</p>
+				
+				<p>If you are a copyright owner or an agent thereof, and you believe any content submitted to and hosted on the Service infringes your copyrights, then you may submit a notification pursuant to the Digital Millennium Copyright Act (“DMCA”). More details regarding such notification may be found <a href="/terms/dmca-counter-notification-requirements/">here</a>. In addition, click <a href="/terms/dmca-counter-notification-requirements/">here</a> to find more information about how to file a counter notification if you believe your posting was removed in error.</p>
+				
+				<h4 id="desktop-terms">Desktop Terms</h4>
+				
+				<p>If you download, install or access the Desktop, the following provisions apply to you.</p>
+				
+				<p><strong>License.</strong> The Desktop is licensed, not sold, to you for use only under the terms of this Agreement. Subject to the terms and conditions of and your ongoing compliance with this Agreement, including without limitation payment of the applicable fees (if any), Spiceworks hereby grants you a personal, limited, revocable, non-exclusive, non-transferable license to install and use the Desktop solely for your personal, non-commercial use, or, if you are an entity rather than an individual, to allow your employees and contractors to use the Desktop for the sole benefit of you, provided each such employee or contractor has agreed to and is bound by this Agreement.</p>
+				
+				<p><strong>Automatic Updates.</strong> The Desktop may communicate with Spiceworks' servers to check for available updates to the software, such as bug fixes, patches, enhanced functions, missing plugins and new versions. During this process, the Desktop sends Spiceworks a request for the latest version information. By installing the Desktop you hereby agree to automatically request and receive updates from Spiceworks' servers.</p>
+				
+				<p>Some personal firewall programs may be configured in such a way as to prevent the Desktop from receiving these updates. If the computer on which you install Spiceworks is so configured, it may be necessary for you to make an exception entry in the configuration of the personal firewall program to allow the Desktop to successfully install and receive these updates.</p>
+				
+				<p><strong>Third Party Software.</strong> The software you download for the Desktop consists of a package of components, including certain third party software provided under separate license terms, which can be found in the documentation for the Desktop or the applicable help, notices, about or source files or will be provided to you by Spiceworks on request. You are permitted to use such third party software in conjunction with the Desktop in a manner consistent with the terms of this Agreement, however, you may have broader rights under the applicable separate license terms and nothing in this Agreement is intended to impose further restrictions on your use of such third party software.</p>
+				
+				<h4 id="web-based-terms">Web-based Offering Terms</h4>
+				
+				<p>If you subscribe to or access a Web-based Offering, the following provisions apply to you.</p>
+				
+				<p><strong>Grant of Right to Use Web-based Offering.</strong> Subject to the terms and conditions of and your ongoing compliance with this Agreement, including without limitation payment of the applicable fees, Spiceworks hereby grants you a personal, limited, non-exclusive, revocable, non-transferable, non-sublicensable right during the period for which you have paid all applicable fees to permit each user for whom you have purchased a user subscription to access the applicable Web-based Offering solely for your internal business purposes. You must ensure that each of your users has agreed to and is bound by this Agreement.</p>
+								
+				<h4 id="information-practices">Information Practices</h4>
+				
+				<p>Protecting our users’ privacy is very important to Spiceworks. As a condition of downloading and using the Service, you agree to the terms of the Spiceworks Privacy Policy, which may be updated from time to time, as expressed in the most recent version that exists at the time of your use. The most current version of the <a href="/privacy/">Spiceworks Privacy Policy</a> may be found at <a href="/privacy/">www.spiceworks.com/privacy/</a>. Information collected by Spiceworks may be stored and processed in the United States or any other country in which Spiceworks, Inc. or its agents maintain facilities. By using the Service you consent to any such transfer of information outside of your country.</p>
+				
+				<p>Additionally, by using the Service, you acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information you send to the Service may be read or intercepted by others, even if there is a special notice that a particular transmission (for example, credit card information) is encrypted.</p>
+				
+				<h4 id="fees">Fees and Payments</h4>
+				
+				<p>Signing up for a Spiceworks account is free. Access and use of portions of the Site and certain other portions of the Service may be provided at no charge. However, Spiceworks reserves the right to charge for the Service or any portion thereof, modify the pricing of, add to, or discontinue the Service or any portion thereof without prior notice.</p>
+				
+				<p>From time to time Spiceworks makes available certain value-added services for a fee, such as a Web-based Offering. Should you elect to use such services, you agree to pay the required fee as specified in the services registration and purchase pages. If you elect not to pay any fees charged by Spiceworks, Spiceworks shall have the right to cease providing those services to you. Spiceworks reserves the right to modify the pricing of these services at any time without prior notice.</p>
+				
+				<p>If you use a portion of the Service requires a subscription fee, your right to access and obligation to pay for access to that portion of the service will automatically renew, unless we terminate it, or you notify us by telephone or email (<a href="mailto:customerservice@spiceworks.com">customerservice@spiceworks.com</a>) to Customer Service of your decision to terminate the service. You must cancel any such subscription before it renews in order to avoid billing of the subscription fee for the renewal term to your credit card. All fees and charges are nonrefundable and there are no refunds or credits for partially used periods. If payment is made via a purchase order or check, you agree to remit the payment before the date specified on the invoice.</p>
+				
+				<p>All monetary transactions on the Service take place in U.S. currency unless otherwise indicated.</p>
+				
+				<p>The Service may use third parties to process payments. Our third-party payment processors accept payments through methods detailed on the applicable payment screen, which may include various credit cards. You agree to pay for all products and services that you purchase through the Service, and you agree that we may charge your selected payment method, either directly or through the services of a third-party payment processor, for any such payments. Only those payment methods accepted by our third-party payment processor can be used to purchase products, goods, or services through the Service.</p>
+				
+				<p>You are responsible for determining and paying the appropriate government taxes, fees, and service charges resulting from a transaction occurring through or arising as a result of use of the Service. We are not responsible for collecting, reporting, paying, or remitting to you any such taxes, fees, or service charges, except as may otherwise be required by law.</p>
+				
+				<h4 id="third-party">Third Party Interactions and Links to Other Sites</h4>
+				
+				<p>This Service may contain certain third-party content, products or services and links to independent third-party websites ("Third-Party Materials"). These Third-Party Materials are provided solely as a convenience to users of the Service. Such Third-Party Materials are not under Spiceworks' control, and Spiceworks is not responsible for and does not endorse such Third-Party Materials, including any information or materials contained on such Third-Party Materials. You will need to make your own independent judgment regarding your interaction with these Third-Party Materials. Spiceworks' privacy policy is applicable only when you are using the Service. Once you choose to link to another website or use a third-party’s products or services, you should read that third-party’s terms of service and privacy statement before using the products or services or disclosing any personal information.</p>
+				
+				<p>During use of the Service, you may enter into correspondence with, submit a request for quote (pricing and availability), purchase goods and/or services from, follow a vendor or user, or participate in promotions, sweepstakes or contests of advertisers or sponsors showing their goods and/or services through the Service. Any such activity, and any terms, conditions, warranties or representations associated with such activity, is solely between you and the applicable third party. Spiceworks and its licensors shall have no liability, obligation or responsibility for any such correspondence, purchase, request for quote (pricing and availability), promotions, sweepstakes or contests between you and any such third party. Spiceworks does not endorse any sites on the Internet that are linked through the Service. Spiceworks provides these links to you only as a matter of convenience, and in no event shall Spiceworks or its licensors be responsible for any content, products, or other materials on or available from such third-party sites. Spiceworks provides the Service to you pursuant to the terms and conditions of this Agreement. You recognize, however, that certain third-party providers of ancillary software, hardware or services may require your agreement to additional or different licenses or other terms prior to your use of or access to such software, hardware or services.</p>
+				
+				<h4 id="trademarks">Trademarks</h4>
+				
+				<p>SPICEWORKS, the Spiceworks Logo, "Powered by Spiceworks", the powered by Spiceworks Logo, SpiceCorps, "It's Everything IT", “Where IT Goes to Work”, “SpiceHead”, Spiceworks Reach, spreadspiceworks.com, and other Spiceworks' graphics, logos, tag lines, designs, page headers, button icons, scripts and service names are registered trademarks, trademarks or trade dress of Spiceworks in the U.S. and/or other countries. Spiceworks' trademarks and trade dress may not be used, including as part of trademarks and/or as part of domain names, in connection with any product or service in any manner that is likely to cause confusion and may not be copied, imitated, or used, in whole or in part, without Spiceworks' prior written permission.</p>
+				
+				<h4 id="advertisements">Advertisements</h4>
+				
+				<p>Some of the Service is supported by advertising revenue and may display advertisements and promotions. These advertisements may be targeted to the content of information stored on the Service, queries made through the Service or other information. The manner, mode and extent of advertising by Spiceworks on the Service are subject to change without notice. In consideration for Spiceworks granting you access to and use of the Service, you agree that Spiceworks may place such advertising on the Service.</p>
+				
+				<h4 id="intl">International Use</h4>
+				
+				<p>You shall abide by all applicable laws and regulations regarding use of the Service. Spiceworks and its licensors make no representation that the Service is appropriate or available for use in any location. The Service is controlled and operated from within the United States. Spiceworks makes no representations that materials contained within the Service are appropriate or available for use in other locations, and access to the Service from locations where such activity is illegal is prohibited. Those who choose to use the Service from other locations do so on their own initiative and are solely responsible for compliance with all applicable laws.</p>
+
+				<p>By accessing the Service, you agree that you are responsible for complying with all applicable laws export and trade and economic sanctions regulations, including the U.S. Export Administration Regulations ("EAR"), 15 CFR Parts 730-799,  and economic sanctions regulations administered by the U.S. Treasury Department's Office of Foreign Assets Controls ("OFAC"), 15 CFR Parts 500-599.  As such you agree that you will not download or use the Service without all required approvals in any proscribed destination (including Cuba, Iran, North Korea, Sudan, and Syria), on behalf of any proscribed entity or person, including those listed on the Treasury Department’s List of Specially Designated Nationals and the Commerce Department’s List of Denied Persons and/or Entity List,  for any proscribed end use, including weapons of mass destruction or any proliferation related activity, or in any other manner contrary to these export regulations and sanctions programs.  For further information on these restrictions, see <a href="http://www.bis.doc.gov/" target="_blank">http://www.bis.doc.gov/</a> and <a href="http://www.treasury.gov/about/organizational-structure/offices/Pages/Office-of-Foreign-Assets-Control.aspx" target="_blank">http://www.treasury.gov/about/organizational-structure/offices/Pages/Office-of-Foreign-Assets-Control.aspx</a>. You further certify that you are not a proscribed end-user or the Service for a proscribed end use or other unauthorized end use under the regulations, as described above.</p>
+				
+				<h4 id="delays">Internet Delays and Problems</h4>
+				
+				<p>SPICEWORKS' SERVICES MAY BE SUBJECT TO LIMITATIONS, DELAYS, AND OTHER PROBLEMS INHERENT IN THE USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS. SPICEWORKS IS NOT RESPONSIBLE FOR ANY DELAYS, DELIVERY FAILURES, DATA LOSS OR OTHER DAMAGE RESULTING FROM SUCH PROBLEMS.</p>
+				 
+				<h4 id="disclaimer">Disclaimer of Warranties</h4>
+				
+				<p>Spiceworks and any third party who makes its software or content available in conjunction with or through Spiceworks disclaim any responsibility for any harm resulting from your use (or use by your employees, agents or contractors) of the Service and/or any third-party software or content accessed in conjunction with or through the Service.</p>
+				
+				<p>SPICEWORKS DOES NOT PROMISE THAT THE SERVICE OR ANY CONTENT, COMPONENT, SITE OR FEATURE OF THE SERVICE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS WILL BE CORRECTED, OR THAT YOUR USE OF THE SERVICE WILL PROVIDE SPECIFIC RESULTS. THE SITE, ITS CONTENT AND COMPONENTS, AND THE SERVICE ARE DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. ALL INFORMATION PROVIDED ON OR VIA THE SERVICE IS SUBJECT TO CHANGE WITHOUT NOTICE. SPICEWORKS CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM THE SERVICE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES. SPICEWORKS AND SUCH THIRD PARTIES EXPRESSLY DISCLAIM TO THE FULLEST EXTENT PERMITTED BY LAW ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF ACCURACY, MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE. SPICEWORKS AND ANY THIRD PARTY WHO MAKES ITS SOFTWARE OR CONTENT AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE DISCLAIM ANY WARRANTIES REGARDING THE SECURITY, RELIABILITY, TIMELINESS, AND PERFORMANCE OF THE SERVICE AND SUCH THIRD-PARTY SOFTWARE OR CONTENT. SPICEWORKS DISCLAIMS ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE SERVICE.</p>
+				
+				<p>YOU ASSUME TOTAL RESPONSIBILITY FOR YOUR USE OF THE SERVICE AND ANY LINKED SITES. YOUR SOLE REMEDY AGAINST SPICEWORKS FOR DISSATISFACTION WITH THE SERVICE IS TO STOP USING THE SERVICE. THIS LIMITATION OF REMEDY IS A PART OF THE BARGAIN BETWEEN THE PARTIES. YOU UNDERSTAND AND AGREE THAT YOU DOWNLOAD AND/OR USE THE SERVICE AND ALL THIRD-PARTY SOFTWARE OR CONTENT MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE AT YOUR OWN DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OR USE OF THE SERVICE AND SUCH THIRD-PARTY SOFTWARE AND CONTENT. SOME STATES OR OTHER JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER RIGHTS THAT VARY FROM STATE TO STATE AND JURISDICTION TO JURISDICTION.</p>
+				
+				<h4 id="limitation">Limitation of Liability</h4>
+				
+				<p>UNDER NO CIRCUMSTANCES SHALL SPICEWORKS OR ANY THIRD PARTY WHO MAKES ITS SOFTWARE OR CONTENT AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE BE LIABLE TO YOU OR ANY OTHER USER ON ACCOUNT OF ANY USE OR MISUSE OF THE SERVICE OR SUCH THIRD-PARTY SOFTWARE OR CONTENT. NEITHER SPICEWORKS NOR ANY THIRD-PARTY SOFTWARE OR CONTENT PROVIDER SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE (EVEN IF SPICEWORKS AND/OR A THIRD-PARTY SOFTWARE OR CONTENT PROVIDER HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES).</p>
+		
+				<p>SUCH LIMITATION OF LIABILITY SHALL APPLY WHETHER THE DAMAGES ARISE FROM USE OR MISUSE OF AND RELIANCE ON THE SERVICE AND ALL THIRD-PARTY SOFTWARE OR CONTENT MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE, FROM INABILITY TO USE THE SERVICE AND ALL THIRD-PARTY SOFTWARE OR CONTENT MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE, OR FROM THE INTERRUPTION, SUSPENSION, OR TERMINATION OF THE SERVICE AND ALL THIRD-PARTY SOFTWARE AND CONTENT MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE (INCLUDING SUCH DAMAGES INCURRED BY THIRD PARTIES), OR ANY RELIANCE BY YOU ON THE COMPLETENESS, ACCURACY OR EXISTENCE OF ANY ADVERTISING, OR AS A RESULT OF ANY RELATIONSHIP OR TRANSACTION BETWEEN YOU AND ANY ADVERTISER OR SPONSOR WHOSE ADVERTISING APPEARS ON THE SERVICES, THE DELETION OF, CORRUPTION OF, OR FAILURE TO STORE, ANY CONTENT AND OTHER COMMUNICATIONS DATA MAINTAINED OR TRANSMITTED BY OR THROUGH YOUR USE OF THE SERVICES.</p>
+				
+				<p>Without limiting the generality of the foregoing, you agree that Spiceworks is not responsible for any loss arising out of, or in any way connected with (a) delay or inability to access or use the Service; (b) reliance on any Content or User Content; (c) the transmission of any computer virus, however occurring; (d) any unauthorized access to, modification or alteration of Content or User Content; (e) any Content or User Content sent or received or not sent or received; (f) any transaction entered into through the Service; (g) any infringement of rights, including Intellectual Property Rights; (h) any threatening, defamatory, obscene, offensive, harmful, inappropriate or illegal Content or User Content or conduct of any party; (i) any User Content sent by any third party using and/or included in the Service; (j) termination of your user account or membership; or (k) any delays, interruptions, inaccuracies, errors, omissions or cessation of the Service.</p>
+				
+				<p>For the avoidance of doubt, you acknowledge that Spiceworks is a provider of an interactive computer service and not a publisher under Section 230 of the Communications Decency Act of 1996, and therefore not responsible for any of the User Content or other third-party postings.</p>
+				
+				<p>If, notwithstanding the provisions of this section, a court of competent jurisdiction holds Spiceworks liable in respect of any matters arising under or incidental to this Agreement, SPICEWORKS’ TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THIS AGREEMENT OR YOUR USE OF THE SERVICE (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE), INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SERVICE, WILL IN NO EVENT EXCEED THE AMOUNT PAID BY YOU FOR USING THE SERVICE DURING THE 12 MONTHS PRECEDING YOUR CLAIM, OR, IF NO AMOUNT WAS PAID, SUCH LIABILITY WILL BE LIMITED TO $500.</p>
+
+				<p>THE FOREGOING LIMITATIONS OF LIABILITY SHALL APPLY NOTWITHSTANDING A FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY AND TO THE FULLEST EXTENT PERMITTED BY LAW. SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CERTAIN DAMAGES, SO SOME OF THE ABOVE LIMITATIONS AND EXCLUSIONS MAY NOT APPLY TO YOU.</p>	
+				
+				<h4 id="governing-law">Governing Law; Disputes</h4>		
+				
+				<p><strong>This Agreement and any dispute that may arise related to this Agreement are governed by Texas law. All claims arising out of or relating to this Agreement must be litigated exclusively in the federal or state courts of Travis County, Texas and you consent to venue and personal jurisdiction there for the purposes of litigating all claims related to this Agreement. If for any reason a court of competent jurisdiction finds any provision or portion of this Agreement to be unenforceable, the remainder of the Agreement will continue in full force and effect.</strong></p>	
+				
+				<h4 id="misc">Miscellaneous Provisions</h4>
+				
+				<p>This Agreement constitutes the entire agreement between the parties with respect to the subject matter hereof and supersede and replace all prior or contemporaneous understandings or agreements, written or oral, regarding such subject matter. Any waiver of any provision of this Agreement will be effective only if in writing and signed by Spiceworks.</p>
+				
+				<h4 id="feedback">Feedback</h4>
+				
+				<p>If you have comments on the Service or ideas on how to improve it, please send email to <a href="mailto:feedback@spiceworks.com">feedback@spiceworks.com</a>. Please note that by doing so, you also grant Spiceworks and third parties permission to use and incorporate your ideas or comments into the Service (or third-party software or content) without further compensation or approval.</p>
+				
+				<p>
+					The information contained in this web site is subject to change without notice.<br />
+					Copyright &copy; 2006-2015 Spiceworks, Inc. All rights reserved.<br />
+					Spiceworks, Inc. 3700 North Capital of Texas Highway #100, Austin, TX 78746, USA
+				</p>
+			</div>
+		</div>
+    	
+    </div>
+        
+       <footer id="footer" class="footer-jumbo">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<ul class="inline center separator-bar blue-links">
+						<li><a href="/app/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - App']);">App</a></li>
+						<li><a href="/downloads/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Downloads']);">Downloads</a></li>
+						<li><a href="http://community.spiceworks.com/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Community']);">Community</a></li>
+						<li><a href="http://community.spiceworks.com/support" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Support']);">Support</a></li>
+						<li><a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Advertise']);">Advertise</a></li>
+						<li><a href="http://community.spiceworks.com/spiceworks-tv" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Videos']);">Videos</a></li>
+					</ul>
+					<ul class="inline center separator-bar">
+						<li><a href="/about/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - About Us']);">About Us</a></li>
+						<li><a href="/story/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Our Story']);">Our Story</a></li>
+						<li><a href="/partner-program/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Affiliate Program']);">Partner Referral Program</a></li>
+						<li><a href="http://community.spiceworks.com/blog" ="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Blog']);">Blog</a></li>
+						<li><a href="/press/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Press']);">Press</a></li>
+						<li><a href="/jobs/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Jobs']);">Jobs</a></li>
+						<li><a href="/contact/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Contact']);">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr class="divider">			
+			<div class="footer-share row-fluid">
+				<div class="span12">
+					<ul class="inline footer-social pull-right">
+						<li><a href="http://community.spiceworks.com/pages/Spiceworks/follow" id="spiceworks_follow" target="_blank" title="Follow us in Spiceworks" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Spiceworks']);">Spiceworks</a></li>
+						<li><a href="http://www.facebook.com/pages/Spiceworks/15382903707" id="facebook" target="_blank" rel="nofollow" title="Follow us on Facebook" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Facebook']);">Facebook</a></li>
+						<li><a href="http://www.twitter.com/spiceworks" id="twitter" target="_blank" rel="nofollow" title="Follow us on Twitter"  onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Twitter']);">Twitter</a></li>
+						<li><a href="https://plus.google.com/+spiceworks" id="google" target="_blank" rel="nofollow" title="Connnect with us on Google+" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Google+']);">Google+</a></li>
+						<li><a href="http://www.linkedin.com/companies/spiceworks" id="linkedin" target="_blank" rel="nofollow" title="Connnect with us on LinkedIn" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on LinkedIn']);">LinkedIn</a></li>
+						<li><a href="http://www.flickr.com/photos/spiceworks" id="flickr" target="_blank" rel="nofollow" title="View our Flickr photostream" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Follow us on Flickr']);">Flickr</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="legal" class="row-fluid">
+				<div class="span6 pull-right text-right">
+					<small class="muted">
+						<a href="/sitemap/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Sitemap']);">Sitemap</a> &nbsp; &bull; &nbsp; 
+						<a href="/terms-and-privacy/" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Privacy Policy']);">Privacy Policy</a> &nbsp; &bull; &nbsp;  
+						<a href="/terms-and-privacy/#terms" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - Terms of Use']);">Terms of Use</a> &nbsp; &bull; &nbsp; 
+						<a href="/terms-and-privacy/#system-requirements" onClick="_gaq.push(['_trackEvent', 'Links', 'Clicked', 'Footer - System Requirements']);">System Requirements</a>
+					</small>
+				</div>
+				
+				<div class="span6 footer-legal">
+					<small class="muted">
+						&copy; Copyright 2006-2015 Spiceworks Inc. 
+					</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script>
+(function () {
+
+	// should be moved into JS library
+	window.SW_DOWNLOAD_WAIT = true;
+	var anchors = document.getElementsByTagName('a'),
+		anchor, anchordata,
+		noLogin,
+		alen = anchors.length,
+		i = 0,
+		reg = /\/download\//,
+		timeout, scheduleClick,
+		iters = 0;
+
+	scheduleClick = function (a) {
+		clearTimeout(timeout);
+		if (window.SW_DOWNLOAD_WAIT) {
+			timeout = setTimeout(function () {
+				iters++;
+				if (iters > 40) window.SW_DOWNLOAD_WAIT = false;
+				a.click();
+			}, 200);
+		}
+	};
+
+	for (; i < alen; i++) {
+		anchor = anchors[i];
+		anchordata = anchor.data || anchor.dataset;
+		noLogin = anchor.dataset ? anchor.dataset.noLogin : false;
+		if (anchordata.href && anchordata.href.match(reg) ||
+			anchor.href && anchor.href.match(reg) && !noLogin) {
+			if (anchor.addEventListener) {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					scheduleClick(this);
+				}, false);
+			}
+			else {
+				anchor.attachEvent("onclick", function (e) {
+					e.preventDefault();
+					scheduleClick(this);
+				});
+			}
+		}
+	}
+
+})();
+</script>
+
+<script src="//wwwstatic.spiceworks.com/js/global.js?version=20150603"></script>
+	<aside>
+    <div id="join-login" class="modal modal-join-login join-login fade hide" tabindex="-1" role="dialog" aria-labelledby="login_label" aria-hidden="true">
+    		    <div class="tab-content">
+	    	<div id="join" class="tab-pane active">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3 id="login_label">Get free apps and a community of millions of IT pros.</h3>
+		        </div>
+		        <div class="modal-body">
+			        <div class="social-register text-center">
+						<h4>Connect with</h4>
+
+						<a href="#" data-social-join="facebook" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join with Facebook']);"><img alt="Login with Facebook" src="//static.spiceworks.com/assets/community/icons/social/facebook_thin.png"></a>
+						<a href="#" data-social-join="linkedin" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join with LinkedIn']);"><img alt="Login with LinkedIn" src="//static.spiceworks.com/assets/community/icons/social/linkedin_thin.png"></a>
+
+					</div>
+					<div class="or-divider"><div>Or</div></div>
+					<h4 class="sign-up-header">Sign up with your email address</h4>
+
+		      		<form accept-charset="UTF-8" action="https://community.spiceworks.com/join/register" class="form-horizontal register-form" data-remote-json="true" id="new_registration" method="post" target="_parent">
+
+						<input name="utf8" type="hidden" value="&#x2713;" />
+						<input name="registration[terms]" type="hidden" value="1" />
+
+												<input id="new_registration_referer" name="registration[referer]" type="hidden" value="http://www.spiceworks.com/terms/" />
+						
+						<div class="sui-alert no-controls generic-error"></div>
+
+						<div class="control-group">
+							<label class="control-label" for="new_registration_first_name" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'First Name Label']);">First Name</label>
+							<div class="controls">
+								<input id="new_registration_first_name" name="registration[first_name]" size="30" type="text" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'First Name Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="new_registration_last_name" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Last Name Label']);">Last Name</label>
+							<div class="controls">
+								<input id="new_registration_last_name" name="registration[last_name]" size="30" type="text" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Last Name Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="new_registration_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Email Label']);">Email</label>
+							<div class="controls">
+								<input id="new_registration_email" name="registration[email]" size="30" type="email" value="" required onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'Email Field']);" />
+							</div>
+						</div>
+						<div class="control-group">
+    						<div class="controls">
+								<button class="btn btn-primary" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join Now']);">Join Now</button>
+							</div>
+						</div>
+						<input name="registration[terms]" type="hidden" value="1" />								
+					</form>
+
+					<p class="text-center join-form-copy">Already have an account? <a href="#login" class="iframe join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In from Join']);">Sign In</a></p>
+					<p class="text-center terms-disclaimer">By creating your account, you are agreeing to our <a href="http://www.spiceworks.com/terms-and-privacy/#terms" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Terms of Use']);">Terms of Use</a> and our <a href="http://www.spiceworks.com/terms-and-privacy/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Privacy Policy']);">Privacy Policy</a>.</p>
+		        </div>
+		        <div class="modal-footer">
+					<strong>Are you a tech marketer?</strong> <a href="/marketing/" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join - Marketer Link']);">Join Here</a>
+		        </div>
+			</div>
+
+			<div id="join_download" class="tab-pane ">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	            <h2 class="text-center">Create your FREE Spiceworks Account.</h2>
+	            	            	<h4 class="text-center">Once that's done, your download will begin immediately.</h4>
+	            	          </div>
+	          <div class="modal-body">
+              <div class="social-register text-center">
+                <h4>Connect with</h4>
+                <div class="social_links text-center">
+
+                </div>
+                <div class="or-divider"><div>Or</div></div>
+              </div>
+	            <form accept-charset="UTF-8" action="javascript:void(0);" class="form-horizontal register-form" id="join_download_form" method="post" target="_parent">
+	              <input name="utf8" type="hidden" value="&#x2713;" />
+
+	              <a href="#password-reset" role="button" data-toggle="tab" style="display:none;"></a>
+	              <div class="alert alert-error generic-error" style="display:none"></div>
+	              <div class="alert alert-error email-use-error" style="display:none">An account already exists for this email but the password was wrong.<br>Try correcting the password or use a different email.</div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="registration_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email Label']);">Username (Email)</label>
+	                <div class="controls">
+	                  <input id="registration_email" name="registration[email]" size="30" type="email" value="" placeholder="Use your email for verification" required onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email Field']);" />
+	    			  <span id="registration_email_success" class="help-inline success" style="display:none;"><i class="fa fa-check"></i> Looks good!</span>
+	    			  <span id="registration_email_error" class="help-inline error" style="display:none;"><i class="fa fa-times"></i> Oops</span>
+	                  <span id="registration_email_help" class="help-block">A valid email is required to verify<br>your Spiceworks account.</span>
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="registration_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Password Label']);">Password</label>
+	                <div class="controls">
+	                  <input id="registration_password" name="registration[password]" size="30" type="password" value="" placeholder="Create a strong password" required onclick="_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Password Field']);" />
+	    			  <span id="registration_password_success" class="help-inline success" style="display:none;"><i class="fa fa-check"></i> Perfect!</span>
+	    			  <span id="registration_password_error" class="help-inline error" style="display:none;"><i class="fa fa-times"></i> Not quite</span>
+	                  <span id="registration_password_help" class="help-block" style="display:none;">No spaces. Must include at least<br><strong>8 characters</strong> and <strong>1 upper case letter</strong>.</span>
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <div class="controls">
+	                  	                  	<button class="btn btn-primary btn-large btn-form disabled" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Start Download in Upfront Reg Modal']);" disabled>Start Download</button>
+	                  	                </div>
+	              </div>
+	              <input name="registration[terms]" type="hidden" value="1" />
+	  			</form>
+
+	  			<p class="text-center join-form-copy">Already have an account?  <a href="#login_download" class="iframe join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In from Join-Download']);">Sign In</a></p>
+	  			<p class="text-center terms-disclaimer">By creating your account, you are agreeing to our <a href="http://www.spiceworks.com/terms-and-privacy/#terms" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Terms of Use']);">Terms of Use</a> and our <a href="http://www.spiceworks.com/terms-and-privacy/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Form', 'Join', 'View Privacy Policy']);">Privacy Policy</a>.</p>
+
+	          </div>
+			</div>
+
+		    <div id="login_download" class="tab-pane">
+	          <div class="modal-header">
+	            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	            <h3>Log in to download Spiceworks.</h3>
+	          </div>
+            <div class="social_links text-center">
+
+            </div>
+            <div class="or-divider"><div>Or</div></div>
+
+	          <div class="modal-body">
+	            <form method="post" action="javascript:void(0);" id="login_download_form" class="simple form-horizontal" >
+	              <input name="utf8" type="hidden" value="&#x2713;" />
+
+	              <div class="alert alert-error generic-error" style="display:none"></div>
+
+	              <div class="mbs control-group">
+	                <label class="control-label" for="login_download_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Email Label']);">Email</label>
+	                <div class="controls">
+	                  <input type="email" size="40" name="login[email]" id="login_download_email" class="text email" required onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Email Field']);" />
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <label class="control-label" for="login_download_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Password Label']);">Password</label>
+	                <div class="controls">
+	                  <input type="password" size="40" name="login[password]" id="login_download_password" class="text password" required onclick="_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Password Field']);" />
+	                </div>
+	              </div>
+
+	              <div class="control-group">
+	                <div class="controls">
+	                  <button class="btn btn-primary btn-large btn-form disabled" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Start Download with login in Upfront Reg Modal']);">Start Download</button>
+	                </div>
+	              </div>
+	            </form>
+	            <p class="join-form-copy text-center">
+	            	<a href="#password-reset" class="forgot-password btn-forgot-password from-log-in-download" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Forgot Password from Log In-Download']);">Forgot your password?</a><br /><br />
+	              Not a member?
+	              <a href="#join_download" class="join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Log In-Download']);">Join Now</a>
+	              </p>
+	          </div>
+		    </div>
+
+	    	<div id="login" class="tab-pane">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3>Log in to Spiceworks.</h3>
+		        </div>
+		        <div class="modal-body">
+					<div class="social-register text-center">
+						<h4>Connect with</h4>
+
+						<a href="#" data-social-join="facebook" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Login with Facebook']);"><img alt="Login with Facebook" src="//static.spiceworks.com/assets/community/icons/social/facebook_thin.png"></a>
+						<a href="#" data-social-join="linkedin" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Login with LinkedIn']);"><img alt="Login with LinkedIn" src="//static.spiceworks.com/assets/community/icons/social/linkedin_thin.png"></a>
+					</div>
+					<div class="or-divider"><div>Or</div></div>
+
+												<form method="post" id="login_form" class="simple form-horizontal" action="https://community.spiceworks.com/login/login/">
+						
+		                <input type="hidden" value="/" name="referer" id="referer" class="hidden">
+		                <input type="hidden" value="true" name="from_overlay" id="from_overlay" class="hidden">
+		                <div class="mbs control-group">
+		                    <label class="control-label" for="login_email" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Email Label']);">Email</label>
+		    				<div class="controls">
+		                    	<input type="email" size="40" name="email" id="login_email" class="text email" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Email Field']);">
+		                    </div>
+		                </div>
+		                <div class="control-group">
+		                    <label class="control-label" for="login_password" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Password Label']);">Password</label>
+		    				<div class="controls">
+		                   		<input type="password" size="40" name="password" id="login_password" class="text password" onclick="_gaq.push(['_trackEvent', 'Form', 'Log In', 'Password Field']);">
+		                   	</div>
+		                </div>
+
+		                <div class="control-group">
+		    				<div class="controls">
+		                    	<button type="submit" name="commit" id="register_button" class="btn btn-primary" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Log In']);">Log In</button>
+		                    </div>
+		                </div>
+		            </form>
+		            <p class="join-form-copy text-center">
+		            	<a href="#password-reset" class="forgot-password btn-forgot-password from-login-in" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Forgot Password from Log In']);">Forgot your password?</a><br /><br />
+		            Not a member?
+		            		            <a href="#join" class="join_community btn-join-community" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Log In']);">Join Now</a>
+		            		            </p>
+		        </div>
+	    	</div>
+
+	    	<div id="password-reset" class="tab-pane">
+		        <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		            <h3>Reset your Spiceworks Account password.</h3>
+		        </div>
+		        <div class="modal-body">
+				    <form id="password-reset-form" accept-charset="UTF-8" action="javascript:void(0);" class="form-horizontal reset-form" data-remote-json="true" method="post" style="">
+						<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓" class="hidden"></div>
+
+						<div class="alert alert-error generic-error" style="display:none"></div>
+						<div class="alert alert-success generic-success" style="display:none">We've sent you an email with instructions for resetting your Spiceworks password.</div>
+
+						<div class="control-group">
+		                    <label class="control-label" for="reset-form_email">Email</label>
+							<div class="controls">
+								<input id="reset-form_email" name="login[email]" size="30" type="email" value="" class="email">
+							</div>
+						</div>
+
+						<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-primary btn-large btn-form password-reset-submit" data-button-type="submit" data-primary="true" type="submit" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Reset Passord']);">Reset Password</button>
+						</div>
+						</div>
+					</form>
+
+			        <p class="join-form-copy text-center">
+			        	Not a member?
+		              <a href="#join_download" class="join_community btn-join-community" id="joinFromReset" role="button" data-toggle="tab" onClick="_gaq.push(['_trackEvent', 'Buttons', 'Clicked', 'Join from Reset Password']);">Join Now</a>
+			            <div class="desktop-password-reset text-center">Need to recover your <a href="http://community.spiceworks.com/help/Resetting_Your_Password_Outside_The_Spiceworks_Desktop">Spiceworks IT Desktop password</a>?</div>
+			        </p>
+				</div>
+			</div>
+
+	    </div>
+		    </div>
+</aside>
+
+
+
+<script src="//wwwstatic.spiceworks.com/js/underscore.min.js"></script>
+
+<script type="text/javascript">
+
+  var getDownloadTrackingData = function(){
+    var tracking = {'download_tracking': {"landing_category":"","landing_page":""}};
+    if (typeof tracking.download_tracking.landing_page != "undefined") // need to encode urls like landing_page (fixes referrer)
+      tracking.download_tracking.landing_page = encodeURI(tracking.download_tracking.landing_page);
+    tracking.download_tracking.download_page = encodeURI("\/terms\/");
+    return tracking;
+  };
+
+  $(function(){
+    var i,
+    policy = 'www',
+    success = '//www.spiceworks.com/social-success',
+    socialContainer = $('.social_links');
+
+    $.ajax({
+      url: 'http://accounts.spiceworks.com/auth/spiceworks/providers.js',
+        dataType: 'jsonp',
+        data: { 'client_version': 'www' }
+    })
+    .success(function(links){
+		var i, link, successLink, numProviders = 0;
+		for (provider in links){
+			link = links[provider];
+	        (function(provider){
+	        	var properName;
+	        	if (provider == 'facebook') properName = 'Facebook';
+	        	if (provider == 'linkedin') properName = 'LinkedIn';
+	        	numProviders++;
+	          $('<a href="#" style="margin:0 8px;" onclick="_gaq.push([\'_trackEvent\', \'Buttons\', \'Clicked\', \'Join with ' + properName + ' - Download\']);" data-social-join="'+provider+'">'+'<img alt="'+link.img_alt+'" src="'+link.img_src+'"></a>')
+	            .appendTo(socialContainer)
+	            .on("click", function(e) {
+	              var params = jQuery.param(getDownloadTrackingData()),
+	                  where = document.location,
+	                  social_network = $(this).attr('data-social-join'),
+	                  window_opts = "width="+link.width+",height="+link.height,
+	                  newUser = $(this).parents(".social_links").next("#join_download_form").length > 0;
+
+	              successLink = success + "?provider=" + provider + "&newuser=" + "false"
+	              _gaq.push(['_trackEvent', 'Buttons', 'Using '+ provider +' to Download', 'Clicked for ' + (newUser ? 'new user' : 'existing_user')]);
+
+	              Cookie.set('social_auth_referer_url', where, {path: '/'});
+	              query = "?policy=" + policy + "&success=" + success + "&" + params;
+	              window.open("http://accounts.spiceworks.com/auth/" + provider + "/start" + query, "sw_social_join", window_opts);
+	              e.preventDefault();
+	            });
+	        })(provider);
+	    }
+      if (!numProviders) {
+      	$('#join-login .social-register, #join-login .or-divider').hide();
+      }
+    });
+  });
+
+
+$(document).on('click.modal.data-api', '[data-tab]', function (tab) {
+	tab = $(this).data('tab');
+	$(".tab-pane").removeClass("active");
+	$("#" + tab).addClass("active in");
+});
+
+$('#join-login').on('hidden', function () {
+	if ( $('#join_download').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Closed']);
+		if (typeof email !== "undefined") {
+			SWUFR.cmd.push(function() { SWUFR.ufr.modalClose(email); });
+		}
+	} else if ( $('#login_download').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Closed']);
+	} else if ( $('#join').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Join Spiceworks', 'Closed']);
+	} else if ( $('#login').hasClass('active') ) {
+		_gaq.push(['_trackEvent', 'Form', 'Login to Spiceworks', 'Closed']);
+	}
+});
+
+//$('.password-reset-link').bind("click",function() {
+    //$('a[href="#password-reset"]').tab('show');
+//});
+
+$('#join-login').on('shown', function () {
+	var $join_download = $('#join_download');
+	if ($join_download.hasClass('active')) {
+
+		var openedMessage = 'Opened';
+		_gaq.push(['_trackEvent', 'Form', 'Register to Download', openedMessage]);
+		window.optimizely.push(["trackEvent", "Register to Download - Opened"]);
+		SWUFR.cmd.push(function() {
+			SWUFR.ufr.modalOpen();
+		});
+		$join_download.find('#registration_email').focus();
+	}
+});
+
+(function() {
+    $('#join_download_form input').bind("change keyup",function() {
+        var form_empty = false;
+        $('#join_download_form input').each(function() {
+            if ( $(this).val() == '' ) {
+                form_empty = true;
+            }
+        });
+
+        if (form_empty == false) {
+            $('#join_download_form .btn-form').removeAttr('disabled');
+            $('#join_download_form .btn-form').removeClass('disabled');
+        } else {
+            $('#join_download_form .btn-form').attr('disabled');
+            $('#join_download_form .btn-form').addClass('disabled');
+        }
+    });
+
+    $('input#registration_password').bind("focus",function() {
+    	$('#registration_password_help').show();
+    });
+
+    function validateEmail(email){
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(re.test(email)){
+        return true;
+      }else{
+        return false;
+      }
+    };
+
+    function validatePassword(password){
+      var re = /^(?=.*[A-Z])[A-Za-z\d$@$!%*#?&^()-_+=`~|]{8,}$/;
+      if(re.test(password)){
+        return true;
+      }else{
+        return false;
+      }
+    };
+
+    $('input#registration_email').bind("change",function() {
+	    if ( validateEmail($(this).val()) ) {
+        	$(this).removeClass('error');
+        	$('#registration_email_success').show();
+        	$('#registration_email_error').hide();
+        	$('#registration_email_help').slideUp(500);
+    		email = $(this).val();
+	    } else {
+        	$(this).addClass('error');
+        	$('#registration_email_success').hide();
+        	$('#registration_email_error').show();
+        	$('#registration_email_help').slideDown(500);
+	    }
+    });
+
+    $('input#registration_password').bind("change",function() {
+	    if ( validatePassword($(this).val()) ) {
+        	$(this).removeClass('error');
+        	$('#registration_password_success').show();
+        	$('#registration_password_error').hide();
+        	$('#registration_password_help').slideUp(500);
+	    } else {
+        	$(this).addClass('error');
+        	$('#registration_password_success').hide();
+        	$('#registration_password_error').show();
+	    }
+    });
+})();
+
+(function() {
+    $('#login_download_form input').bind("change keyup",function() {
+        var form_empty = false;
+        $('#login_download_form input').each(function() {
+            if ( $(this).val() == '' ) {
+                form_empty = true;
+            }
+        });
+
+        if (form_empty == false) {
+            $('#login_download_form .btn-form').removeAttr('disabled');
+            $('#login_download_form .btn-form').removeClass('disabled');
+        } else {
+            $('#login_download_form .btn-form').attr('disabled');
+            $('#login_download_form .btn-form').addClass('disabled');
+        }
+    });
+})();
+
+(function(){
+
+  var joinDownloadCloseModal = false;
+
+  var getDownloadTrackingData = function() {
+    var tracking = {'download_tracking': {"landing_category":"","landing_page":""}};
+    tracking.download_tracking.download_page = "\/terms\/";
+    return tracking;
+  };
+
+  var parseErrorResponse = function(responseText) {
+    try { return jQuery.parseJSON(responseText); } catch(err) { return {errors: {}}; }
+  };
+
+  var formatErrorMessage = function(key, error) {
+    var fragment = key + ' ' + error;
+    return fragment.charAt(0).toUpperCase() + fragment.slice(1);
+  };
+
+  var handleErrors = function(form, jqxhr) {
+    var errorMessages = [];
+    var response = parseErrorResponse(jqxhr.responseText);
+    if (response.errors) {
+      _.each(response.errors, function(errors, key) {
+        if (key == 'base') {
+          errorMessages = errorMessages.concat(errors);
+        }
+        else {
+          errors.forEach(function(error){ errorMessages.push(formatErrorMessage(key, error));});
+          var inputSelector = 'input[name*="[' + key + ']"]';
+          form.find(inputSelector).parents('.control-group').addClass('error');
+          $('#registration_email_error').hide();
+          $('#registration_password_error').hide();
+        }
+      });
+    }
+    if (errorMessages.length == 0) {
+      errorMessages.push("Yikes, that didn't work. Please try again or <a href=\"mailto:support@spiceworks.com\" onClick=\"_gaq.push([\'_trackEvent\', \'Form\', \'Links\', \'Contact Support\']);\">contact support</a>.");
+      $('#registration_email_error').hide();
+      $('#registration_email_success').hide();
+      $('#registration_password_error').hide();
+      $('#registration_password_success').hide();
+    }
+    form.find('.generic-error').html(errorMessages.join("<br />")).slideDown(250);
+  };
+
+  var hideErrors = function(form) {
+    form.find('.control-group').removeClass('error');
+    form.find('.generic-error').slideUp(250);
+  };
+
+  $('#join_download_form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this);
+
+    // Success tracking message
+    var successMessage = 'Successful Download';
+    if (joinDownloadCloseModal) {
+      successMessage += ' - Direct';
+    }
+    
+    hideErrors(self);
+    self.find('button').prop('disabled','disabled');
+    var formDataString = self.serialize();
+    formDataString += '&' + $.param({'registration': getDownloadTrackingData()});
+    $.post('/community/join/register_for_download', formDataString,
+      function(data){
+        if (data.login) {
+          _gaq.push(['_trackEvent', 'Form', 'Login to Download', successMessage]);
+		  window.optimizely.push(["trackEvent", "Login to Download - Successful Download"]);
+    	  if (joinDownloadCloseModal) {
+  	   	    $('#join-login').modal('hide');
+  	      } else {
+  	   	    setTimeout(function(){window.location.href = downloadDestination + 'app/'}, 150);
+  	      }
+        } else {
+      	  _gaq.push(['_trackEvent', 'Form', 'Register to Download', successMessage]);
+		  window.optimizely.push(["trackEvent", "Register to Download - Successful Download"]);
+  		    SWUFR.cmd.push(function() {
+  		      SWUFR.ufr.download(function(){
+  		      	if (joinDownloadCloseModal) {
+  		      	  $('#join-login').modal('hide');
+  		      	} else {
+  		      	  window.location.href = downloadDestination;
+  		      	}
+  		      });
+  		    });
+  	   }
+  	   if (joinDownloadCloseModal) {
+  	   	 $('#join-login').modal('hide');
+  	   } else {
+  	     setTimeout(function(){window.location.href = downloadDestination}, 150);
+  	   }
+      }, 'json'
+    )
+      .fail(function(jqxhr){
+      	if (jqxhr.status == 401) {
+        	_gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Email In Use']);
+          	$('.email-use-error').slideDown(250);
+      	} else {
+	        _gaq.push(['_trackEvent', 'Form', 'Register to Download', 'Error']);
+	        handleErrors(self, jqxhr);
+      	}
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+  $('#login_download_form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this);
+
+    // Success tracking message
+    var successMessage = 'Successful Download';
+    if (joinDownloadCloseModal) {
+      successMessage += ' - Direct';
+    }
+    
+    hideErrors(self);
+    self.find('button').prop('disabled','disabled');
+    var formDataString = self.serialize();
+    formDataString += '&' + $.param({'login': getDownloadTrackingData()});
+    $.post('/community/login/login_for_download', formDataString, function(){
+    	_gaq.push(['_trackEvent', 'Form', 'Login to Download', successMessage]);
+		window.optimizely.push(["trackEvent", "Login to Download - Successful Download"]);
+		if (joinDownloadCloseModal) {
+  	   	  $('#join-login').modal('hide');
+  	    } else {
+          setTimeout(function(){window.location.href = downloadDestination + 'app/'}, 150);
+        }
+      }, 'json')
+      .fail(function(jqxhr){
+        _gaq.push(['_trackEvent', 'Form', 'Login to Download', 'Error']);
+        handleErrors(self, jqxhr);
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+  $('.btn-forgot-password').click(function(e) {
+    var href = '#join';
+    if ($(this).hasClass('from-log-in-download')) {
+      href += '_download';
+    }
+    $('#joinFromReset').attr('href', href);
+  });
+
+  $('#password-reset-form').submit(function(evt) {
+    evt.preventDefault();
+    var self = $(this),
+    	endpoint = window.location.protocol + '//' + window.location.host + '/library/includes/identity/reset_password/',
+    	email = $('#reset-form_email').val(),
+    	callbackURL = window.location.toString();
+    hideErrors(self);
+    self.find('.generic-error').hide();
+    self.find('.generic-success').hide();
+    self.find('button').prop('disabled','disabled');
+    $.post(endpoint, {'email': email, 'url': callbackURL}, function(data) {
+    	if (data && data.status == 'success') {
+    		_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Email Sent']);
+    		self.find('.generic-success').slideDown(250);
+    	} else if (data && data.status == 'error' && data.message) {
+        	_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+    		self.find('.generic-error').text(data.message).slideDown(250);
+    	} else {
+        	_gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+    		self.find('.generic-error').text('Something went wrong. Please check your email and try again.').slideDown(250);
+    	}
+      }, 'json')
+      .fail(function(jqxhr){
+        _gaq.push(['_trackEvent', 'Form', 'Reset Password', 'Error']);
+        self.find('.generic-error').text('Something went wrong. Please check your email and try again.').slideDown(250);
+      })
+      .always(function(){
+        self.find('button').prop('disabled',false);
+      });
+  });
+
+})();
+
+</script>
+
+
+<script type="text/javascript">
+  $(function() {
+
+  	var $specialDest = $('meta[name=specialdownloaddest]');
+  	var specialDest = false;
+  	if ($specialDest.length) {
+  		specialDest = $specialDest.attr('content');
+  	}
+    var monitorRE = /monitor/;
+    if ($("#join-login.modal #join_download").length) {
+      $(document).on('click', 'a[href^="/download/"]', function(evt) {
+      	if ($(this).hasClass('skip-modal')) {
+      		window.location = this.href;
+      		return;
+      	}
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = this.href;
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+
+      // Add temp support for GNS3
+      $(document).on('click', 'a[href^="/gns3/download/"]', function(evt) {
+      	if ($(this).hasClass('skip-modal')) {
+      		window.location = this.href;
+      		return;
+      	}
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = this.href;
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+
+      // Add support for data-attr.
+      $(document).on('click', 'a[data-href^="/download/"]', function(evt) {
+      	evt.preventDefault();
+        $('.video-modal').modal('hide');
+		    downloadDestination = $(this).attr('data-href');
+		    if (specialDest) {
+		    	downloadDestination = specialDest;
+		    }
+
+        if (monitorRE.test(downloadDestination)) //network monitoring does not support social signup
+          $("#join_download .social-register").hide();
+
+        $('#join-login.modal').modal('show');
+        $('#join-login.modal .tab-pane').removeClass("active");
+        $('#join-login.modal #join_download').addClass("active in");
+        return false;
+      });
+    }
+    window.SW_DOWNLOAD_WAIT = false;
+  });
+</script>
+
+
+<script async src="//cdn.optimizely.com/js/168363181.js"></script>
+    
+    <script type="text/javascript">
+	    $(window).load(function() {	
+			$('.nav-list li a').click(function(event) {
+			
+				var el = $(this).attr('href');
+				var elWrapped = $(el);
+				scrollToDiv(elWrapped,40);
+				return false;
+			
+			});
+			
+			var navHeight = 80;
+			function scrollToDiv(element,navheight){
+				var offset = element.offset();
+				var offsetTop = offset.top;
+				var totalScroll = offsetTop-navHeight;
+				$('body,html').animate({
+						scrollTop: totalScroll
+				}, 500);
+			}
+		
+		});
+    </script>
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"16b4f0abc5","applicationID":"2721470","transactionName":"ZwMGZ0BQVkFWB0QNWV5JMUFbHkxXRQlDS19eAgFLHEFQQg==","queueTime":0,"applicationTime":185,"atts":"S0QFEQhKRU8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>	
