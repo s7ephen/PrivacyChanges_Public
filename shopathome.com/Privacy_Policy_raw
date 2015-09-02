@@ -1,1 +1,755 @@
- 
+<!DOCTYPE html>
+<!--[if IE 8]>
+    <html class="lt-ie9 eq-ie9">
+<![endif]-->
+<!--[if IE 9]>
+    <html class="eq-ie9">
+<![endif]-->
+<!--[if !IE]>
+    <html>
+<![endif]-->
+<html>
+<head>
+    
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">    
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<title>Privacy Policy | ShopAtHome.com</title>
+
+<link href="//c2.sahcdn.com/Content/SiteCssBundle?v=65" type="text/css" rel="stylesheet"/>
+
+<link href="//assets.resultspage.com/js/rac/sli-rac.1.3.css" rel='stylesheet' type='text/css' />
+<link href='//shopathome.resultspage.com/rac/sli-rac.css?rev=148249' rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500|Fjalla+One" rel="stylesheet" type="text/css" />
+    <script src="//cdn.optimizely.com/js/91114986.js"></script>
+
+    
+    <meta name="robots" content="noindex, nofollow" />
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"eabd37c669","applicationID":"442317","transactionName":"YlVRZxFXX0VWVkMPDVsfclAXX15YGHRVCRdBc1xdF0ReWltQRUk3W1tdXBRYEXdUQV4JDA==","queueTime":0,"applicationTime":131,"ttGuid":"E92F2230974688BB","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIEVFJXGwcEVlJTAA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+        <script src="//www.shopathome.com/datalayer.min.js"></script>
+    <script src="//www.shopathome.com/dlhelpers.js"></script>
+    <script src="//www.shopathome.com/datalayerconfig.js?u=http%3a%2f%2fwww.shopathome.com%3a80%2fprivacy-policy"></script>
+
+</head>
+<body>
+    
+        <div id="gtm_loader" style="display: none">
+            <script>if (window.dataLayer && !document.getElementById("gtm_tags") && !window.dataLayer.gtm_loaded) { var s = document.createElement("script"); s.src = "//www.googletagmanager.com/gtm.js?id=GTM-TWR3HX&l=gtm"; s.id = "gtm_tags"; document.getElementById("gtm_loader").appendChild(s) } window.dataLayer.gtm_loaded = !0;</script>
+            <noscript><img src="//www.googletagmanager.com/ns.html?id=GTM-TWR3HX" height="1" width="1" style="display:none;visibility:hidden" /></noscript>
+        </div>
+        <div class="row-offcanvas row-offcanvas-right canvas-container">
+        <div id="fb-root"></div>
+        
+
+<script type="text/javascript">
+    var isIe8 = false;
+</script>
+<!--[if IE 8]>
+    <script src="http://j2.sahcdn.com/js/jquery-1.11.1.min.js">isIe8 = true;</script>
+<![endif]-->
+<script src="http://j2.sahcdn.com/js/require.min.js"></script>
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: '/js',
+        urlArgs: "v="+65,
+        paths: {
+            "JqueryValidate": "/js/jquery.validate.min",
+            "CouponPrintControl": "//cdn.cpnscdn.com/static/libraries/js/printcontrol_v3.min",
+            "Global": isIe8 ? "//j2.sahcdn.com/js/GlobalJsBundleIe8" : "//j2.sahcdn.com/js/GlobalJsBundle",
+            "MyShopGold": "//j2.sahcdn.com/js/MyShopGoldJsBundle",
+            "StorePage2015": "//j2.sahcdn.com/js/StorePage2015JsBundle",
+            "StorePage": "//j2.sahcdn.com/js/StorePageJsBundle",
+            "ReviewsPage": "//j2.sahcdn.com/js/ReviewsPageJsBundle",
+            "RatingScore": "//j2.sahcdn.com/js/RatingScoreJsBundle",
+            "Search": "//shopathome.resultspage.com/rac/sli-rac.config.js?rev=148249",
+            "IndexPage": "//j2.sahcdn.com/js/IndexPageJsBundle",
+            "EcbPage": "//j2.sahcdn.com/js/EcbPageJsBundle",
+            "BrandingPage": "//j2.sahcdn.com/js/BrandingPageJsBundle",
+            "MyAccountPage": "//j2.sahcdn.com/js/MyAccountPageJsBundle",
+            "FancyBox": "//j2.sahcdn.com/js/FancyBoxJsBundle",
+            "Flickity": "//j2.sahcdn.com/js/FlickityJsBundle",
+            "Home2015": "//j2.sahcdn.com/js/Home2015JsBundle",
+            "DesignPage": "//j2.sahcdn.com/js/DesignPageJsBundle",
+            "Unobtrusive": "//j2.sahcdn.com/js/UnobtrusiveJsBundle",
+            "LoginJoin": "//j2.sahcdn.com/js/LoginJoinJsBundle",
+            "GroceryPage": "//j2.sahcdn.com/js/GroceryPageJsBundle",
+            "ShopGoldRewards": "//j2.sahcdn.com/js/ShopGoldRewardsJsBundle",
+            "ShopGoldRewards2015": "//j2.sahcdn.com/js/ShopGoldRewards2015JsBundle",
+            "datatables": "//j2.sahcdn.com/js/StoreDirectoryJsBundle",
+            "ExclusiveProductDeals":"//j2.sahcdn.com/js/ExclusiveProductDealsJsBundle"
+        },
+        shim: {
+            "JqueryValidate" : ["Global"],
+            "Unobtrusive" : ["Global", "JqueryValidate"],
+            "MyAccountPage": ["Global", "JqueryValidate", "Unobtrusive"],
+            "CouponPrintControl": ["Global"],
+            "GroceryPage" : ["Global", "CouponPrintControl"],
+            "StorePage" : ["Global"],
+            "StorePage2015" : ["Global"]
+        }
+
+    });
+</script>
+<!--[if IE 8]>
+<script type="text/javascript">
+    define('jquery', [], function () {
+        return jQuery;
+    });
+</script>
+<![endif]-->
+<script type="text/javascript">
+    define('jquery', [], function () {
+        return jQuery;
+    });
+
+</script>
+<script></script>
+
+        
+    
+<div class="navbar navbar-default" role="navigation" style="border: none;">
+    <div class="container-fluid">
+        <div class="row navbar-top-container">
+            <div class="navbar-top-content">
+
+                    <div class="pull-left">
+                        <h5 class="">Coupons + Cash Back + ShopGold <small class="hidden-xs">exclusively at ShopAtHome.com</small></h5>
+                    </div>
+
+                    <div class="clearfix pull-right">
+                        <ul class="nav navbar-nav pull-right">
+                            <li style="border-right: none; padding-right: 0;"><a class="showSahLoginPopup" href="#" data-url='/sah-login.html' data-datalayer="Drop Down Sign In|null|[&quot;attachListener&quot;]|false|false">Sign In</a></li>
+                            <li>or</li>
+                            <li style="border-right: 1px solid #999; padding-right: 0;"><a class="showSahJoinPopup" href="#" data-url='/sah-join.html' data-datalayer="Drop Down Sign Up|null|[&quot;attachListener&quot;]|false|false" >Sign Up</a></li>
+                            <li></li>
+                            <li><a data-datalayer="Drop Down How It Works|null|[&quot;attachListener&quot;]|false|false" class="showHowItWorksPopup" data-size='test' data-url='/popup/showhowitworkspopup' href="#">How it Works</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <button data-datalayer="Nav Menu Button|null|[&quot;attachListener&quot;]|false|false" type="button" class="navbar-toggle menu-btn" data-toggle="collapse" data-target="#site-nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span>MENU</span>
+        </button>
+        
+        <div class="primary-nav-alt hidden-md hidden-lg">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="http://www.shopathome.com/online-coupons.aspx" data-datalayer="Nav Link For Shopping|null|[&quot;attachListener&quot;]|false|false">
+                        Shopping
+                    </a>
+                    <span style="font-size: 12px; color: #999;">Earn Loyalty Rewards</span>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/grocery-coupons.html" data-datalayer="Nav Link Grocery|null|[&quot;attachListener&quot;]|false|false">Grocery</a>
+                    <span style="font-size: 12px; color: #999;">Printable Deals</span>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/labor-day-savings" data-datalayer="Nav Link Promotion|null|[&quot;attachListener&quot;]|false|false">Labor Day</a>
+                    <span style="font-size: 12px; color: #999;">Shop Labor Day deals  </span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="navbar-header">
+            <div class="header-brand">
+                <a class="navbar-brand" href="http://www.shopathome.com/" style="padding: 0;">
+                    <img xlink:href="http://images.sahcdn.com/images/sah-nav-logo.svg"
+                         src="http://images.sahcdn.com/images/sah-nav-logo.png" alt="ShopAtHome.com" width="296" height="75" />
+                </a>
+                <div class="cat-dropdown">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                                <li class="dropdown-sign-in"><a class="showSahLoginPopup" href="#" data-url='/sah-login.html' data-datalayer="Drop Down 2 Log In|null|[&quot;attachListener&quot;]|false|false">Sign In for Savings!</a></li>
+                            <li class="dropdown-header">Shop By Sales Events</li>
+                            <li><a href="http://www.shopathome.com/labor-day-savings" data-datalayer="Drop Down 2 Promo|null|[&quot;attachListener&quot;]|false|false">Labor Day</a></li>
+                            <li><a href="http://www.shopathome.com/travel-zone-deals" data-datalayer="Drop Down 2 Travel Deals|null|[&quot;attachListener&quot;]|false|false">Travel Deals</a></li>
+                            <li class="dropdown-header">Shop By Department</li>
+                            <li><a href="http://www.shopathome.com/savings/automotive-coupons/" data-datalayer="Drop Down 2 Automotive Deals|null|[&quot;attachListener&quot;]|false|false">Automobile</a></li>
+                            <li><a href="http://www.shopathome.com/savings/babies-and-kids-coupons/" data-datalayer="Drop Down 2 Babies and Kids Deals|null|[&quot;attachListener&quot;]|false|false">Babies & Kids</a></li>
+                            <li><a href="http://www.shopathome.com/savings/clothing-coupons/" data-datalayer="Drop Down 2 Clothing Deals|null|[&quot;attachListener&quot;]|false|false">Clothing</a></li>
+                            <li><a href="http://www.shopathome.com/savings/hobbies-and-crafts-coupons/" data-datalayer="Drop Down 2 Hobby Deals|null|[&quot;attachListener&quot;]|false|false">Hobbies</a></li>
+                            <li><a href="http://www.shopathome.com/savings/home-and-garden-coupons/" data-datalayer="Drop Down Home and Garden Deals|null|[&quot;attachListener&quot;]|false|false">Home & Garden</a></li>
+                            <li><a href="http://www.shopathome.com/savings/jewelry-coupons/" data-datalayer="Drop Down 2 Jewelry Deals|null|[&quot;attachListener&quot;]|false|false">Jewelry</a></li>
+                            <li><a href="http://www.shopathome.com/savings/sports-and-outdoor-coupons/" data-datalayer="Drop Down 2 Sports and Outdoors Deals|null|[&quot;attachListener&quot;]|false|false">Sports & Outdoors</a></li>
+                            <li><a href="http://www.shopathome.com/category.aspx" data-datalayer="Drop Down 2 View All Departments|null|[&quot;attachListener&quot;]|false|false">View All Departments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="collapse navbar-collapse primary-nav-collapsible hidden-md hidden-lg" id="site-nav">
+            <ul class="nav navbar-nav">
+                    <li style="border-right: none; padding-right: 0;"><a class="showSahLoginPopup" href="#" data-url='/sah-login.html' data-datalayer="Nav 3 Log In|null|[&quot;attachListener&quot;]|false|false">Sign In</a></li>
+                    <li><a class="showSahJoinPopup" href="#" data-url='/sah-join.html' data-datalayer="Nav 3 Sign Up|null|[&quot;attachListener&quot;]|false|false">Sign Up</a></li>
+                    <li><a class="showHowItWorksPopup" data-title='Email Signup' data-size='test' data-url='/popup/showhowitworkspopup' href="#" data-datalayer="Drop Down 3 How It Works|null|[&quot;attachListener&quot;]|false|false">How it Works</a></li>
+
+                <li class="dropdown hidden-md hidden-lg">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li style="margin-left: 10px;">Shop By Sales Events</li>
+                        <li><a href="http://www.shopathome.com/labor-day-savings">Labor Day</a></li>
+                        <li><a href="http://www.shopathome.com/travel-zone" data-datalayer="Drop Down 3 Travel Deals|null|[&quot;attachListener&quot;]|false|false">Travel Deals</a></li>
+                        <li style="margin-left: 10px;">Shop By Department</li>
+                        <li><a href="http://www.shopathome.com/savings/automotive-coupons/" data-datalayer="Drop Down 3 Automotive Deals|null|[&quot;attachListener&quot;]|false|false">Automobile</a></li>
+                        <li><a href="http://www.shopathome.com/savings/babies-and-kids-coupons/" data-datalayer="Drop Down 3 Babies and Kids Deals|null|[&quot;attachListener&quot;]|false|false">Babies & Kids</a></li>
+                        <li><a href="http://www.shopathome.com/savings/clothing-coupons/" data-datalayer="Drop Down 3 Clothing Deals|null|[&quot;attachListener&quot;]|false|false">Clothing</a></li>
+                        <li><a href="http://www.shopathome.com/savings/hobbies-and-crafts-coupons/" data-datalayer="Drop Down 3 Hobby Deals|null|[&quot;attachListener&quot;]|false|false">Hobbies</a></li>
+                        <li><a href="http://www.shopathome.com/savings/home-and-garden-coupons/" data-datalayer="Drop Down 3 Home and Garden Deals|null|[&quot;attachListener&quot;]|false|false">Home & Garden</a></li>
+                        <li><a href="http://www.shopathome.com/savings/jewelry-coupons/" data-datalayer="Drop Down 3 Jewelry Deals|null|[&quot;attachListener&quot;]|false|false">Jewelry</a></li>
+                        <li><a href="http://www.shopathome.com/savings/sports-and-outdoor-coupons/" data-datalayer="Drop Down 3 Sports and Outdoors Deals|null|[&quot;attachListener&quot;]|false|false">Sports & Outdoors</a></li>
+                        <li><a href="http://www.shopathome.com/category.aspx" data-datalayer="Drop Down 3 All Categories|null|[&quot;attachListener&quot;]|false|false">All Categories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/online-coupons.aspx" data-datalayer="Nav Link For Shopping|null|[&quot;attachListener&quot;]|false|false">
+                        Shopping
+                    </a>
+                    <span style="font-size: 12px; color: #999;">Online and In-Store</span>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/grocery-coupons.html" data-datalayer="Nav Link 2 Grocery|null|[&quot;attachListener&quot;]|false|false">Grocery</a>
+                    <span style="font-size: 12px; color: #999;">Printable Deals</span>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/labor-day-savings" data-datalayer="Nav Link 2 Promo|null|[&quot;attachListener&quot;]|false|false">Labor Day</a>
+                    <span style="font-size: 12px; color: #999;">Shop Labor Day deals  </span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="navbar-collapse navbar-left" id="search">
+            <div id="sliAutoCompleteContainer"></div>
+<div class="navbar-search-outer" id="searchOuter">
+    <form class="navbar-form" role="search" action="http://search.shopathome.com/search" enctype="multipart/form-data"
+            method="get" id="SearchForm" onsubmit="if (document.getElementById('sf').value == '' || document.getElementById('sf').value == 'Type in a store name to find coupons & deals') { return false; };">
+        <div class="form-group">
+            <div class="site-search-btn pull-right">
+                <input id="SearchIcon" type="image" src="http://images.sahcdn.com/images/search-icon.png" alt="ShopAtHome.com" />
+            </div>
+            <input class="searchinput form-control" type="text" id='sf' name="w" placeholder="Search 55,000+ Stores and Brands" autocomplete="off" data-provide="rac" />
+            <input class="searchinput form-control" type="hidden" id='src' name="src" value="REBATE" />
+        </div>
+    </form>
+</div>
+
+            <div class="example-search-terms">
+                <small>
+                    ex:&nbsp;<a href="http://www.shopathome.com/walmart-coupons.html" data-datalayer="Drop Down 4 Walmart|null|[&quot;attachListener&quot;]|false|false">walmart</a>&nbsp;<a href="http://www.shopathome.com/grocery-coupons.html" data-datalayer="Drop Down 4 Grocery|null|[&quot;attachListener&quot;]|false|false">grocery</a>&nbsp;<a href="http://www.shopathome.com/cabelas-coupons.html" data-datalayer="Drop Down 4 Cabelas|null|[&quot;attachListener&quot;]|false|false">cabelas</a>&nbsp;<a href="http://www.shopathome.com/kohls-coupons.html" data-datalayer="Drop Down 4 Kohls|null|[&quot;attachListener&quot;]|false|false">kohl's</a>&nbsp;<a href="http://www.shopathome.com/priceline-coupons.html" data-datalayer="Drop Down 4 Priceline|null|[&quot;attachListener&quot;]|false|false">priceline</a>&nbsp;<span class="hidden-md"><a href="http://www.shopathome.com/pampers-coupons.html" data-datalayer="Drop Down 4 Pampers|null|[&quot;attachListener&quot;]|false|false">pampers</a>&nbsp;<a href="http://www.shopathome.com/staples-coupons.html" data-datalayer="Drop Down 4 Staples|null|[&quot;attachListener&quot;]|false|false">staples</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </span>
+                </small>
+            </div>
+        </div>
+
+
+        <div class="nav navbar-nav navbar-right"></div>
+        
+        <div class="primary-nav hidden-xs hidden-sm" id="site-nav">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="http://www.shopathome.com/online-coupons.aspx" data-datalayer="Nav Link For Shopping|null|[&quot;attachListener&quot;]|false|false">
+                        Shopping
+                    </a>
+                    <span style="font-size: 12px; color: #999;">Online and In-Store</span>
+                </li>
+                <li class="dropdown hidden-md hidden-lg">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li>Shop By Sales Events</li>
+                        <li><a href="http://www.shopathome.com/labor-day-savings" data-datalayer="Nav 4 Promo|null|[&quot;attachListener&quot;]|false|false">Labor Day</a></li>
+                        <li><a href="http://www.shopathome.com/travel-zone" data-datalayer="Nav 4 Travel Deals|null|[&quot;attachListener&quot;]|false|false">Travel Deals</a></li>
+                        <li>Shop By Department</li>
+                        <li><a href="http://www.shopathome.com/savings/automotive-coupons/" data-datalayer="Nav 4 Automotive Deals|null|[&quot;attachListener&quot;]|false|false">Automobile</a></li>
+                        <li><a href="http://www.shopathome.com/savings/babies-and-kids-coupons/" data-datalayer="Nav 4 Babies and Kids Deals|null|[&quot;attachListener&quot;]|false|false">Babies & Kids</a></li>
+                        <li><a href="http://www.shopathome.com/savings/clothing-coupons/" data-datalayer="Nav 4 Clothing Deals|null|[&quot;attachListener&quot;]|false|false">Clothing</a></li>
+                        <li><a href="http://www.shopathome.com/savings/hobbies-and-crafts-coupons/" data-datalayer="Nav 4 Hobby Deals|null|[&quot;attachListener&quot;]|false|false">Hobbies</a></li>
+                        <li><a href="http://www.shopathome.com/savings/home-and-garden-coupons/" data-datalayer="Nav 4 Home and Garden Deals|null|[&quot;attachListener&quot;]|false|false">Home & Garden</a></li>
+                        <li><a href="http://www.shopathome.com/savings/jewelry-coupons/" data-datalayer="Nav 4 Jewelry Deals|null|[&quot;attachListener&quot;]|false|false">Jewelry</a></li>
+                        <li><a href="http://www.shopathome.com/savings/sports-and-outdoor-coupons/" data-datalayer="Nav 4 Sports and Outdoors Deals|null|[&quot;attachListener&quot;]|false|false">Sports & Outdoors</a></li>
+                        <li><a href="http://www.shopathome.com/category.aspx" data-datalayer="Nav 4 All Categories|null|[&quot;attachListener&quot;]|false|false">All Categories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/grocery-coupons.html" data-datalayer="Nav 4 Link Gocery|null|[&quot;attachListener&quot;]|false|false">Grocery</a>
+                    <span style="font-size: 12px; color: #999;">Printable Deals</span>
+                </li>
+                <li>
+                    <a href="http://www.shopathome.com/labor-day-savings" data-datalayer="Nav 4 Link Promo|null|[&quot;attachListener&quot;]|false|false">Labor Day</a>
+                    <span style="font-size: 12px; color: #999;">Shop Labor Day deals  </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<a class="sahResetPasswordPopup" style="display: none" data-size='test' data-url='/sahresetpassword'></a>
+<a class="sahChangePasswordPopup" style="display: none" data-size='test' data-url='/sahchangepassword'></a>
+<a class="showSahJoinPopup" style="display: none" data-size='test' data-url='/sah-join.html'></a>
+<a class="showSahLoginPopup" style="display: none" data-url='/sah-login.html'></a>
+
+
+
+
+<div id="sahPopUp" class="modal fade">
+    <div id="sahModalDialog" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <button type="button" class="close" data-dismiss="modal" id="closeButton">&times;</button>
+                <div class="modal-logo-small">
+                    <img xlink:href="http://images.sahcdn.com/images/sah-nav-logo.svg" data-datalayer="Shop At Home Modal Icon|null|[&quot;attachListener&quot;]|false|false"
+                         src="http://images.sahcdn.com/images/sah-nav-logo.png" alt="ShopAtHome.com" width="296" height="75" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="popupContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<a style="display: none" id="promotionalPopupLink" class="promotionalPopupLink"></a>
+
+
+<script type="text/javascript">
+    var isIe8 = false;
+</script>
+<!--[if IE 8]>
+    <script src="http://j2.sahcdn.com/js/jquery-1.11.1.min.js">isIe8 = true;</script>
+<![endif]-->
+<script src="http://j2.sahcdn.com/js/require.min.js"></script>
+<script type="text/javascript">
+    requirejs.config({
+        baseUrl: '/js',
+        urlArgs: "v="+65,
+        paths: {
+            "JqueryValidate": "/js/jquery.validate.min",
+            "CouponPrintControl": "//cdn.cpnscdn.com/static/libraries/js/printcontrol_v3.min",
+            "Global": isIe8 ? "//j2.sahcdn.com/js/GlobalJsBundleIe8" : "//j2.sahcdn.com/js/GlobalJsBundle",
+            "MyShopGold": "//j2.sahcdn.com/js/MyShopGoldJsBundle",
+            "StorePage2015": "//j2.sahcdn.com/js/StorePage2015JsBundle",
+            "StorePage": "//j2.sahcdn.com/js/StorePageJsBundle",
+            "ReviewsPage": "//j2.sahcdn.com/js/ReviewsPageJsBundle",
+            "RatingScore": "//j2.sahcdn.com/js/RatingScoreJsBundle",
+            "Search": "//shopathome.resultspage.com/rac/sli-rac.config.js?rev=148249",
+            "IndexPage": "//j2.sahcdn.com/js/IndexPageJsBundle",
+            "EcbPage": "//j2.sahcdn.com/js/EcbPageJsBundle",
+            "BrandingPage": "//j2.sahcdn.com/js/BrandingPageJsBundle",
+            "MyAccountPage": "//j2.sahcdn.com/js/MyAccountPageJsBundle",
+            "FancyBox": "//j2.sahcdn.com/js/FancyBoxJsBundle",
+            "Flickity": "//j2.sahcdn.com/js/FlickityJsBundle",
+            "Home2015": "//j2.sahcdn.com/js/Home2015JsBundle",
+            "DesignPage": "//j2.sahcdn.com/js/DesignPageJsBundle",
+            "Unobtrusive": "//j2.sahcdn.com/js/UnobtrusiveJsBundle",
+            "LoginJoin": "//j2.sahcdn.com/js/LoginJoinJsBundle",
+            "GroceryPage": "//j2.sahcdn.com/js/GroceryPageJsBundle",
+            "ShopGoldRewards": "//j2.sahcdn.com/js/ShopGoldRewardsJsBundle",
+            "ShopGoldRewards2015": "//j2.sahcdn.com/js/ShopGoldRewards2015JsBundle",
+            "datatables": "//j2.sahcdn.com/js/StoreDirectoryJsBundle",
+            "ExclusiveProductDeals":"//j2.sahcdn.com/js/ExclusiveProductDealsJsBundle"
+        },
+        shim: {
+            "JqueryValidate" : ["Global"],
+            "Unobtrusive" : ["Global", "JqueryValidate"],
+            "MyAccountPage": ["Global", "JqueryValidate", "Unobtrusive"],
+            "CouponPrintControl": ["Global"],
+            "GroceryPage" : ["Global", "CouponPrintControl"],
+            "StorePage" : ["Global"],
+            "StorePage2015" : ["Global"]
+        }
+
+    });
+</script>
+<!--[if IE 8]>
+<script type="text/javascript">
+    define('jquery', [], function () {
+        return jQuery;
+    });
+</script>
+<![endif]-->
+<script type="text/javascript">
+    define('jquery', [], function () {
+        return jQuery;
+    });
+
+</script>
+<script>require( [ "Global" ], function() {
+    require( [ "views/ShopGold/promotionallink.min"] );
+});
+</script>
+
+<input id="promotionalLinkParameters" name="promotionalLinkParameters" type="hidden" value="{&quot;SiteBaseUrl&quot;:&quot;http://www.shopathome.com/&quot;,&quot;ContextUrl&quot;:&quot;http://www.shopathome.com/shopgold-promotionalcontext&quot;}" />
+
+
+
+<script>
+    if (typeof require !== 'undefined') {
+        require(["Global"], function () {
+            ShopAtHome.PopUp.ShowPopUp('showHowItWorksPopup', true);
+            ShopAtHome.PopUp.ShowPopUp('showSahLoginPopup', false, "main-join-pop-modal-width");
+            ShopAtHome.PopUp.ShowPopUp('showSahJoinPopup', false, "main-join-pop-modal-width");
+            ShopAtHome.PopUp.ShowPopUp('sahResetPasswordPopup', false, "main-join-pop-modal-width");
+            ShopAtHome.PopUp.ShowPopUp('sahChangePasswordPopup', false, "main-join-pop-modal-width");
+        });
+    }
+</script>
+
+
+        <!--/ Main Content area -->
+        <div>
+            
+<div class="container-fluid">
+    <div class="row">
+        <div class="banner-container">
+            <img src="http://images.sahcdn.com/images/privacy-policy-banner-lg.jpg" alt="ShopAtHome.com Privacy Policy">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="section-titleContainer">
+            <div class="section-title">
+                <h3>Privacy Policy</h3>
+            </div>
+        </div>
+        <p>
+            Last updated: 2/11/2014
+        </p>
+        <h4>This Privacy Policy applies to our sites and apps.</h4>
+        <p>
+            This Policy describes how we treat personal information. This includes on the websites and apps where it is located. It also applies to our information collection and tracking practices for our Savings Browser App ("<a href="http://www.shopathome.com/sahpages/terms-and-conditions.aspx?#4">Browser App</a>"). Any capitalized terms we don't define in this policy are defined in our <a href="http://www.shopathome.com/sahpages/terms-and-conditions.aspx">Terms and Conditions</a>.
+        </p>
+        <div class="pp-container">
+            <section>
+                <h4>
+                    We collect information from you and about you.
+                </h4>
+                <p>
+                    <b>Contact Information.</b> For example, we collect your name and email address if you register on our site. We might collect your phone number or zip code. We might also collect your mailing address.
+                </p>
+                <p>
+                    <b>Payment Information.</b> For example, we may collect your credit card number if you make a purchase from ShopAtHome.com.
+                </p>
+                <p>
+                    <b>Information You Submit or Post.</b> We collect the information you post in a public space on our site. We also collect information when you contact us. We may also collect information you share about a friend if you use our Tell-a-Friend feature.
+                </p>
+                <p>
+                    <b>Purchases You Make with Others.</b> If you participate in our programs, we get information when you make a purchase from an <a href="http://www.shopathome.com/sahpages/terms-and-conditions.aspx?#AffiliateStores">Affiliate Store</a>. We may also collect purchase information about you from other third parties.
+                </p>
+                <p>
+                    <b>Demographic Information.</b> We may collect information like your gender and age. We may also collect your zip code. We might collect this when you contact us or enter a promotion.
+                </p>
+                <p>
+                    <b>Other Information.</b> If you use our sites, we may collect information about the browser you're using. We might look at what site you came from, or what site you visit when you leave us. If you use the Browser App, we may also collect information about your search history. We may also look at clickstream data. We may combine this information with other information we collect from you. This includes anything we collect from third parties. If you use our mobile app or mobile website, we may collect your GPS location and your unique device identifier. We might look at how often you use the app, where you use it, and where you downloaded it.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We collect information in different ways.
+                </h4>
+                <p>
+                    <b>We collect information directly from you.</b> For example, if you sign up for our emails or when you use our Browser App, we collect information. We also collect information if you contact us. We collect information about you through our websites, mobile apps and our Browser App. Please note that if you wish to stop all tracking by the Browser App, you must uninstall it. If you only disable the Browser App, it will continue to track your activity.
+                </p>
+                <p>
+                    <b>We collect information from you passively.</b> On our platforms, which include our sites, browser app and mobile apps, we collect information passively. We might also collect information passively in our emails or through our apps. We may also collect information passively in connection with third parties. For example, to get purchase information from Affiliates we may gather information passively on their platforms. Tools we use include browser cookies and web beacons. Learn more about what we collect and how you can control it <a href="http://www.shopathome.com/ad-tracking-policy">here</a>.
+                </p>
+                <p>
+                    <b>We get information about you from third parties.</b> For example, social media platforms may also give us information about you. This might include getting information from social media plugins. Affiliates or other business partners may also give us information. This might include information they gathered passively.
+                </p>
+                <p>
+                    Notwithstanding any other provision, we may also engage a data provider who may collect web log data from you (including IP address and information about your browser or operating system), or place or recognize a unique cookie on your browser to enable you to receive customized ads or content. These cookies contain no personally identifiable information. The cookies may reflect de-identified demographic or other data linked to data you voluntarily have submitted to us, e.g., your email address, that we may share with a data provider solely in hashed, non-human readable form. To opt-out of these data provider cookies, please go to <a href="http://www.aboutads.info/choices">http://www.aboutads.info/choices</a>.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We use information as disclosed and described here.
+                </h4>
+                <p>
+                    <b>We use information to respond to your requests or questions.</b> For example, we might use your information to respond to your customer feedback. Or, we might use your information to process Cash Back Rewards if you participate in that program. We may use your information to notify you if you complete a <a href="http://www.shopathome.com/sahpages/terms-and-conditions.aspx?#Qualified">Qualified Transaction</a>.
+                </p>
+                <p>
+                    <b>We use information to improve our products and services.</b> We may use your information to make our Sites and Browser App better. We might use your information to customize your experience with us or understand your preferences. We may combine information we get from you with information about you we get from third parties. This includes using your information as described <a href="http://www.shopathome.com/ad-tracking-policy">here</a>.
+                </p>
+                <p>
+                    <b>We use information for security purposes.</b> We may use information to protect our company, our customers, and our websites.
+                </p>
+                <p>
+                    <b>We use information for marketing purposes.</b> For example, when you register with our sites we might send you information about special offers. We might tell you about new features or updates. These might be third party offers or products we think you might find interesting. If you register with us, we'll enroll you to receive our emails. We may send this information by email or text. We may also send through push notifications in apps or notifications by regular mail. To manage this, read the <a href="#choices">choices</a> section below. We also use information to customize offers you receive. This includes using your shopping history on Affiliates or other third-party platforms. To learn more about what we do and your choices, <a href="#choices">see choices below</a>.
+                </p>
+                <p>
+                    If you use our Browser App, we may use features on the Browser App alert you to special offers from merchants whose sites you are browsing or we think you may be interested in. The frequency of these alerts will depend on how actively you shop.
+                </p>
+                <p>
+                    <b>We use information to communicate with you about your account or our relationship.</b> We may contact you about your account or feedback. We might also contact you about this Policy or our website Terms.
+                </p>
+                <p>
+                    <b>We use information as otherwise permitted by law.</b>
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We may share information with third parties.
+                </h4>
+                <p>
+                    <b>We will share information within the ShopAtHome.com family of companies.</b>
+                </p>
+                <p>
+                    <b>We will share information with third parties who perform services on our behalf.</b> For example, we share information with vendors who send emails for us. We may also share information with companies that operate our websites or run a promotion.
+                </p>
+                <p>
+                    <b>We will share information with our business partners.</b> This includes sharing for marketing or advertising purposes. For example, we will share information with Affiliate Stores to process orders or understand preferences. Or we might share information that third parties can use to serve you with ads they think you will like. This could include sharing with our partners what ads you look at. Third parties may use information for their own marketing or advertising purposes. Please click here to learn more.
+                </p>
+                <p>
+                    <b>We will share information if we think we have to in order to comply with the law or to protect ourselves.</b> For example, we will share information to respond to a court order or subpoena. We may share it if a government agency or investigatory body requests. We might share information when we are investigating potential fraud.
+                </p>
+                <p>
+                    <b>We may share information with any successor to all or part of our business.</b> For example, if part of our business was sold we may give our customer list as part of that transaction.
+                </p>
+                <p>
+                    <b>We may share information for other reasons we may describe to you.</b>
+                </p>
+            </section>
+            <section id="choices">
+                <h4>
+                    You have certain choices about sharing and marketing practices.
+                </h4>
+                <p>
+                    <b>You can opt out of receiving our marketing emails.</b> To stop receiving our promotional emails, log into your Account and update your "Account Preferences." You can also follow the instructions in any promotional message you get from us. Even if you opt out of getting marketing messages, we will still send you transactional messages. These include responses to your questions. If you receive promotional emails from a third party, you will need to separately opt-out with them.
+                </p>
+                <p>
+                    <b>You can control cookies and tracking tools.</b> To learn how to manage how we – and our vendors – use cookies and other tracking tools, please <a href="http://www.shopathome.com/ad-tracking-policy">visit here to learn more</a>. If you disable cookies, we may not be able to offer Cash Back to you. If you no longer want the Browser App to track you as described in this Policy, you can uninstall it. Follow the directions <a href="http://www.shopathome.com/toolbar-info#uninstall">here</a> to uninstall the Browser App.
+                </p>
+                <p>
+                    <b>You can control tools on your mobile devices.</b> For example, you can turn off the GPS locator or push notifications on your phone. You can also control these settings in our apps.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    Your California privacy rights.
+                </h4>
+                <p>
+                    If you reside in California, you have the right to ask us one time each year if we have shared personal information with third parties for their direct marketing purposes. To make a request, please send us an <a href="mailto:privacy@shopathome.com">email</a>, or write to us at the address listed below. Indicate in your letter that you are a California resident making a “Shine the Light" inquiry.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    These Sites and children.
+                </h4>
+                <p>
+                    Our sites, apps and Browser App are meant for people at least 18 years old. We do not knowingly collect personally identifiable information from children under 13 without permission from a parent or guardian. If you are a parent or legal guardian and think your child under 13 has given us information, you can email us. You can also write to us at the address listed at the end of this policy. Please mark your inquiries “COPPA Information Request." Parents, you can learn more about how to protect children's privacy on-line <a href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy" target="_blank">here</a>.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We store information in the United States.
+                </h4>
+                <p>
+                    Information we maintain is stored within the United States. If you live outside of the United States, you understand and agree that we may transfer your information to the United States. This site is subject to U.S. laws, which may not afford the same level of protection as those in your country.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We use standard security measures.
+                </h4>
+                <p>
+                    We use reasonable measures to protect the information you share with us. This includes physical measures. It also includes technical and administrative measures. We use firewall encryption where appropriate. We may also use Secure Socket Layer encryption. Please remember that no data security measures are 100% secure all of the time.
+                </p>
+                <p>
+                    We keep personal information as long as it is necessary or relevant for the practices described in this Policy. We also keep information as otherwise required by law.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    You can update your information.
+                </h4>
+                <p>
+                    To update your information, log into the site and click the "My Account" link under the Community tab. You can also update it by visiting your <a href="http://www.shopathome.com/myaccount/preferences">Preferences</a>. It may take us up to 10 business days to process account changes.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    We may link to other sites or have third party services on our site we don't control.
+                </h4>
+                <p>
+                    If you click on a link to a third party site, you will be taken to websites we do not control. This policy does not apply to the privacy practices of that website. Read the privacy policy of other websites carefully. We are not responsible for these third party sites. Our site may also serve third party content that contains their own cookies or tracking technologies. Learn more <a href="http://www.shopathome.com/ad-tracking-policy">here</a>. We do not control the use of those technologies. We also do not control the privacy practices of our Affiliate Stores. This includes their use of cookies and other tracking technologies.
+                </p>
+            </section>
+            <section>
+                <h4>
+                    Feel free to contact us if you have more questions.
+                </h4>
+                <p>
+                    If you have any questions or concerns about this Privacy Policy, you may contact us at:
+                </p>
+                <ul>
+                    <li>ShopAtHome.com</li>
+                    <li>Attn: Privacy
+                    </li>
+                    <li>5575 DTC Parkway, Suite 300</li>
+                    <li>Greenwood Village, CO 80111</li>
+                    <li>Email: privacy@shopathome.com</li>
+                    <li>Or via our Customer Service link at <a href="http://www.shopathome.com/contact.aspx">http://www.shopathome.com/contact.aspx</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>
+                    We may update this Policy.
+                </h4>
+                <p>
+                    From time to time we may change our privacy policies. We will notify you of any material changes to our Policy as required by law, but in any event of material change, we will send an e-mail notifying you of the material change. We will also post an updated copy on our website. Please check our site periodically for updates.
+                </p>
+            </section>
+        </div>
+    </div>
+</div>
+            
+
+<div id="footer">
+    <div class="clearfix">
+        <div class="container">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="social-icons row">
+                    <a href="https://plus.google.com/+shopathome/posts" target="_blank"><div class="social-icons-g pull-left"></div></a>
+                    <a href="https://www.facebook.com/ShopAtHome" target="_blank"><div class="social-icons-fb pull-left"></div></a>
+                    <a href="https://twitter.com/shopathome" target="_blank"><div class="social-icons-tw pull-left"></div></a>
+                    <a href="http://instagram.com/shopathome#" target="_blank"><div class="social-icons-ig pull-left"></div></a>
+                    <a href="http://www.pinterest.com/shopathome" target="_blank"><div class="social-icons-p pull-left"></div></a>
+                    <a href="https://www.linkedin.com/company/shopathome-com" target="_blank"><div class="social-icons-li pull-left"></div></a>
+                    
+                </div>
+                <div class="row sah-footer-nav">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4>
+                            <span class="hidden-xs">More Savings</span>
+                            <a class="footer-savings-toggle visible-xs" data-toggle="collapse" data-parent="#accordion" href="#footer-savings">
+                                More Savings <span class="caret"></span>
+                            </a>
+                        </h4>
+                        <ul id="footer-savings" class="list-unstyled collapse">
+                            <li><a href="http://www.shopathome.com/sahpages/local-coupons.aspx">Local Coupons</a></li>
+                            <li><a href="http://www.shopathome.com/restaurant-coupons.html">Restaurant Coupons</a></li>
+                            <li><a href="http://www.shopathome.com/printable-coupons.html">Printable Coupons</a></li>
+                            <li><a href="http://www.shopathome.com/shopgold-rewards.html">ShopGold Rewards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4>
+                            <span class="hidden-xs">Let Us Help</span>
+                            <a class="footer-savings-toggle visible-xs" data-toggle="collapse" data-parent="#accordion" href="#footer-help">
+                                Let Us Help <span class="caret"></span>
+                            </a>
+                        </h4>
+                        <ul id="footer-help" class="list-unstyled collapse">
+                            <li><a href="http://www.shopathome.com/faqs">FAQs</a></li>
+                            <li><a href="http://www.shopathome.com/sahpages/contact.aspx?PID=11">Email Preferences</a></li>
+                            <li class="hidden-xs hidden-sm"><a href="http://www.shopathome.com/toolbar-info">Savings App Help</a></li>
+                            <li><a href="http://www.shopathome.com/sahpages/contact.aspx">Contact Us</a></li>
+                            <li><a href="http://www.shopathome.com/sitemap">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4>
+                            <span class="hidden-xs">Work With Us</span>
+                            <a class="footer-savings-toggle visible-xs" data-toggle="collapse" data-parent="#accordion" href="#footer-work-with-us">
+                                Work With Us <span class="caret"></span>
+                            </a>
+                        </h4>
+                        <ul id="footer-work-with-us" class="list-unstyled collapse">
+                            <li><a href="http://www.shopathome.com/affiliate-blogger">Affiliate Bloggers</a></li>
+                            <li><a href="http://www.shopathome.com/advertise/">Advertise With Us</a></li>
+                            <li><a href="http://www.shopathome.com/careers">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4>
+
+                            <span class="hidden-xs">Learn About Us</span>
+                            <a class="footer-savings-toggle visible-xs" data-toggle="collapse" data-parent="#accordion" href="#footer-learn">
+                                Learn About Us <span class="caret"></span>
+                            </a>
+                        </h4>
+                        <ul id="footer-learn" class="list-unstyled collapse">
+                            <li><a href="http://www.shopathome.com/sahpages/about.aspx">About Us</a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row sah-footer-norton-mcafee-icons">
+                    <div style="display:inline-block; float:right; padding: 5px;">
+                        <a href="http://www.bbb.org/denver/business-reviews/internet-shopping/belcaro-group-in-greenwood-village-co-3102#sealclick" target="_blank">
+                            <img src="http://images.sahcdn.com/images/email/black-seal-96-50-belcarogroupinc-3102.gif" alt="BBBOnline" width="96" height="50" />
+                        </a>
+                    </div>
+                    <div style="display:inline-block; float:right; padding:10px 0;">
+                        <!-- START SCANALERT CODE -->
+                        <a target="_blank" href="https://www.mcafeesecure.com/RatingVerify?ref=www.shopathome.com"><img width="115" height="30" border="0" src="//images.scanalert.com/meter/www.shopathome.com/32.gif" alt="McAfee SECURE sites help keep you safe from identity theft, credit card fraud, spyware, spam, viruses and online scams" oncontextmenu="alert('Copying Prohibited by Law - McAfee Secure is a Trademark of McAfee, Inc.'); return false;"></a>
+                        <!-- END SCANALERT CODE -->
+                    </div>
+                    <div style="float:right; display:inline-block;">
+                        <table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
+                            <tr>
+                                <td width="135" align="center" valign="top">
+                                    <script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=www.shopathome.com&amp;size=XS&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script><br />
+                                    <a href="http://www.symantec.com/ssl-certificates" target="_blank" style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copy-legal-links">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 sah-copyright-text">
+                    &copy; Copyright Belcaro Group Inc. 1999-2015, All Rights Reserved
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <ul class="sah-footer-disclaimer">
+                        <li>
+                            <a href="http://www.shopathome.com/end-user-license-agreement">EULA</a>
+                        </li>
+                        <li>
+                            <a href="http://www.shopathome.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="http://www.shopathome.com/sahpages/terms-and-conditions.aspx">Terms and Conditions</a>
+                        </li>
+                        <li class="no-border">
+                            <a href="http://www.shopathome.com/ad-tracking-policy">Ad Tracking Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        <div id="trackingpixels" style="height: 0; width: 0;">
+            <div id="sahsaaglog" data-pagecode="9361"></div>
+            
+
+            
+        </div>
+        
+        
+        
+            <script>if (window.handler) { handler.raiseEvent("before_load"); }</script>
+    </div>
+</body>
+
+</html>
