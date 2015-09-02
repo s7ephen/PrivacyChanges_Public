@@ -1,1 +1,770 @@
- 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:media="http://search.yahoo.com/searchmonkey/media/"  xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head id="ctl00_Head1" prefix="og: http://ogp.me/ns# docstoc-com: http://ogp.me/ns/apps/docstoc-com#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="image" property="og:image" content="http://i.docstoccdn.com/docstoc_logo-200x200.png" />
+
+<meta name="description" property="dc:description" content="Docstoc provides the best quality and largest library of documents, videos and resources to start and grow small businesses." />
+<meta name="keywords" content="documents, free legal documents, free business documents, technology documents, educational documents, creative documents, document sharing, document publishing, web 2.0, embedded documents, document conversions, word to pdf, free docs, document sharing" />
+<meta name="robots" content="noindex" />
+<link rel="shortcut icon" type="image/x-icon" href="http://css.docstoc.com/i/ico/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="http://css.docstoccdn.com/css/master_bundle.css?build=05446" />
+<link type="text/css" rel="stylesheet" href="http://css.docstoccdn.com/css/error-pages.css?build=05446" />
+<script type="text/javascript">
+var pageName='/Errors/Errors.aspx';
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1289929-1']);
+_gaq.push(['_trackPageview']);
+
+			var mpq = [];
+			var mpg = {};
+			mpq.init={};
+			mpq.track = function (arg1, arg2, arg3)
+			{
+
+				if (arg3 != undefined) arg3();
+			};
+			mpq.name_tag = { };
+			var mixpanel = {};
+mixpanel.init={};
+			mixpanel.track = function (arg1, arg2, arg3)
+			{
+
+				if (arg3 != undefined) arg3();
+			};
+			var mpmetrics = {};
+mpmetrics.init={};
+			mpmetrics.track = function (arg1, arg2, arg3)
+			{
+
+				if (arg3 != undefined) arg3();
+			};
+var MixPanel = {};
+var MixPanelLib ={};
+		</script>
+<script type="text/javascript" src="http://js.docstoccdn.com/js/master_bundle.js?build=05446"></script>
+<script type="text/javascript" src="http://js.docstoccdn.com/js/error-pages.js?build=05446"></script>
+<script type="text/javascript">var CurrentUsername = '';
+var CurrentUserID = '-10';
+var CurrentGroupID = '0';
+var CurrentCampaignID = '0';
+</script>
+<link href="//www.docstoc.com/Content/docstoc71104/style.css" rel="stylesheet" /><link href="/css/Header.css" rel="stylesheet" /><title>
+	Errors page
+</title></head>
+<body id="body">
+<div id="homepage-blackout" style="display:none;"></div>
+<div id="homepage-video" style="display:none;">
+<div id="homepage-video-close"></div>
+
+<div id="vidContainer">
+
+</div>
+
+--%>
+</div>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+	var fbHandleLogin = function () {
+		setTimeout(function () {
+			window.location = redirectUrl;
+		}, 1000);
+
+	};
+	window.fbAsyncInit = function () {
+		FB.init({
+			appId: 127594755061,
+			//channelUrl: '//www.docstoc.com/channel.html',
+			status: true,
+			cookie: true,
+			xfbml: true
+		});
+		FB.XFBML.parse();
+		FB.getLoginStatus(function (response) {
+			if (response.status === 'connected') {
+				if (CurrentUserID < 0) {
+					fbHandleLogin();
+				}
+
+			} else {
+				FB.Event.subscribe('auth.authResponseChange', function (response) {
+					if (response.authResponse) {
+						fbHandleLogin();
+					} else {
+						window.location = "/logout.ashx";
+					}
+				});
+			}
+		});
+
+		FB.Event.subscribe('edge.create', function (href, widget) {
+			var id = -10;
+			var session = FB.getSession();
+			if (session) {
+				id = session.uid;
+			}
+			$j.post("/docs/savelike.ashx?fb_id=" + id + "&url=" + href);
+		});
+
+
+
+	};
+	// Load the SDK Asynchronously
+	(function (d) {
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) { return; }
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+	} (document));
+</script>
+
+<form name="aspnetForm" method="post" action="Errors.aspx?aspxerrorpath=%2fPages%2fStatic.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTkyNDY1NzA5NA9kFgJmD2QWAgIBD2QWAgICD2QWAmYPDxYCHgdWaXNpYmxlaGQWAmYPFgIfAGhkZODK0reX1jRjy9CDSnBYHAGqSsWM" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CC01789B" />
+</div>
+
+ <div id="site-container">
+
+		<!-- google_ad_section_start(weight=ignore) -->
+        
+
+        <div>
+        </div>
+<!--
+		<div id="header">
+			<div id="logo" style="float: left;"><a href="/" title="docstoc: Documents for Small Business & Professionals" class="fleft nnav sp-logo" style="padding: 5px 5px 0px 5px; margin: 5px 5px 0px 5px;"></a><div class="nnav_logo_helper"><span class="nnav sp-logo_helper"></span></div><div class="fclear"></div></div><div id="login" style="float: right;"><div class="nnav_login_links" style="padding: 15px 5px 10px 10px; width: 400px; float: right; display: inline-block;"><a onclick="dsmetrics.track(new DSMActivity('user-nav-cart', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));" style="position: relative; display: block; float: right;" href="https://www.docstoc.com/cart/"><span class="nnav sp-cart_icon"></span><div style="font-size: 10px; position: absolute; top: -10px; left: 18px;"></div></a><a onclick="dsmetrics.track(new DSMActivity('user-nav-register', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));" class="rglnk" style="position: relative; display: block; float: right;" href="/login/?ref=header-reg&pt=39&register=1&ft=19" rel="nofollow">Register</a><a onclick="dsmetrics.track(new DSMActivity('user-nav-sign-in', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));" style="position: relative; display: block; float: right;" href="/login/?ref=header-login&pt=39&ft=1&login=1&returnURL=http%3a%2f%2fwww.docstoc.com%2fErrors%2fErrors.aspx%3faspxerrorpath%3d%2fPages%2fStatic.aspx" rel="nofollow"> Sign In</a><a style="position: relative; display: block; float: right; color: #3B5999;" href="javascript:void(0);" onclick="dsmetrics.track(new DSMActivity('user-nav-fb-login', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));FB.login(function(response){},{scope:'email,publish_stream,offline_access,user_work_history,user_education_history,user_interests'})"><span class="nnav sp-facebook_icon" style="display: inline-block;"></span> login</a></div></div><div class="fclear"></div>	
+		</div>
+		<div class="nav-container">
+			<div class="nav-inner">
+				<div class="fleft nnav sp-nav_left"></div><div class="nnav_repeating" style="float: left; width: 98%;"><div style="padding: 5px;"><div style="float: left; position: relative; left: -5px;" class="nnav_links"><a class="fleft hvr" href="/" onclick="dsmetrics.track(new DSMActivity('home-tab', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));">Home</a><div class="nnav sp-tab_seperator fleft"></div><div id="popnav_documents" style="position: relative;" class="fleft"><a class="fleft hvr" href="/documents/" onclick="dsmetrics.track(new DSMActivity('documents-tab', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));">Documents</a><div class="nnav_popup" id="popnav_documents_extra"><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'browse-all')]));" class="sas" href="/documents/">Browse All &#187;</a><div style="float: left; width: 150px;"><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'all docs')]));" href="/documents">All Docs</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'DocStore')]));" href="/documents/store">Docstore</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Legal')]));" href="/documents/legal">Legal</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Business')]));" href="/documents/business">Business</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Personal Finance')]));" href="/documents/personal-finance">Personal Finance</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Technology')]));" href="/documents/technology">Technology</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Education')]));" href="/documents/education">Education</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Jobs & Careers')]));" href="/documents/jobs-and-careers">Jobs & Careers</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Tax')]));" href="/documents/tax">Tax</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Real Estate')]));" href="/documents/real-estate">Real Estate</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Current Events')]));" href="/documents/current-events">Current Events</a></div><div style="float: left; width: 150px;"><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Politics & History')]));" href="/documents/politics-and-history">Politics & History</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Guides')]));" href="/documents/guides">Guides</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Science')]));" href="/documents/science">Science</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Entertainment')]));" href="/documents/entertainment">Entertainment</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Health & Fitness')]));" href="/documents/health-and-fitness">Health & Fitness</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Medicine')]));" href="/documents/medicine">Medicine</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Conferences')]));" href="/documents/conferences">Conferences</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Art & Literature')]));" href="/documents/art-and-literature">Art & Literature</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Lifestyle')]));" href="/documents/lifestyle">Lifestyle</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Travel')]));" href="/documents/travel">Travel</a><a onclick="dsmetrics.track(new DSMActivity('documents-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'Templates')]));" href="/documents/templates">Templates</a></div><div style="clear: both;"></div></div><div class="nnav sp-tab_seperator fleft"></div></div><div id="popnav_resources" style="position: relative;" class="fleft"><a class="fleft hvr" href="/resources/" onclick="dsmetrics.track(new DSMActivity('resources-tab', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));">Resources</a><div class="nnav_popup" id="popnav_resources_extra"><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'browse-all')]));" class="sas" href="/resources/">Browse All &#187;</a><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'premium-documents')]));" href="http://premium.docstoc.com/documents">Premium Documents</a><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'document-packages')]));" href="/resources/document-packages">Document Packages</a><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'document-packages')]));" href="/courses">Courses</a><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'videos')]));" href="/resources/videos/all">Videos</a><a onclick="dsmetrics.track(new DSMActivity('resources-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'videos')]));" href="http://www.license123.com">Licenses & DBAs</a></div><div class="nnav sp-tab_seperator fleft"></div></div><div id="popnav_upload" style="position: relative;" class="fleft"><a class="fleft hvr" href="/upload/" onclick="dsmetrics.track(new DSMActivity('upload-tab', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));">Upload</a><div class="nnav_popup" id="popnav_upload_extra"><a href="/upload" onclick="dsmetrics.track(new DSMActivity('upload-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'share-documents')]));">Share Documents</a><a href="/sell" onclick="dsmetrics.track(new DSMActivity('upload-tab-dropdown', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', 'sell-documents')]));">Sell Documents</a></div><div class="nnav sp-tab_seperator fleft"></div></div><div id="popnav_premium" style="position: relative;" class="fleft nnav_repeating_blue"><a class="fleft" href="//premium.docstoc.com/subscribe" onclick="dsmetrics.track(new DSMActivity('premium-tab', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, []));">Premium</a><div class="newText">NEW</div></div></div><div style="float: right; margin-top: 4px;"><a class="nnav_search_button" style="float: right; margin-left: 3px; " href="javascript:void(0);" onclick="newNavDoSearch();" alt="Search"></a><input id="txtSearch" type="text" onkeypress="return handleEnter(event, newNavDoSearch);" class="nnav_search_input" value="search all documents" /><div id="popnav_searchcat" style="position: relative; " class="fright"><div id="nnav_search_label"><table style="width: 100%;" cellspacing="0" cellpadding="0"><tr><td>All Documents</td><td style="vertical-align: middle;" valign="middle" align="right"><span id="nnav_search_arrow" class="nnav sp-down_arrow_blue"></span></td></tr></table></div><div class="nnav_search_popup" id="popnav_searchcat_extra"><a href="javascript:void(0);" id="nnav_cat_0" onclick="newNavSelectCat(0);">All Documents</a><a href="javascript:void(0);" id="nnav_cat_24" onclick="newNavSelectCat(24);">DocStore</a><a href="javascript:void(0);" id="nnav_cat_1" onclick="newNavSelectCat(1);">Legal</a><a href="javascript:void(0);" id="nnav_cat_2" onclick="newNavSelectCat(2);">Business</a><a href="javascript:void(0);" id="nnav_cat_3" onclick="newNavSelectCat(3);">Personal Finance</a><a href="javascript:void(0);" id="nnav_cat_4" onclick="newNavSelectCat(4);">Technology</a><a href="javascript:void(0);" id="nnav_cat_5" onclick="newNavSelectCat(5);">Education</a><a href="javascript:void(0);" id="nnav_cat_9" onclick="newNavSelectCat(9);">Jobs & Careers</a><a href="javascript:void(0);" id="nnav_cat_10" onclick="newNavSelectCat(10);">Tax</a><a href="javascript:void(0);" id="nnav_cat_11" onclick="newNavSelectCat(11);">Real Estate</a><a href="javascript:void(0);" id="nnav_cat_12" onclick="newNavSelectCat(12);">Current Events</a><a href="javascript:void(0);" id="nnav_cat_13" onclick="newNavSelectCat(13);">Politics & History</a><a href="javascript:void(0);" id="nnav_cat_14" onclick="newNavSelectCat(14);">Guides</a><a href="javascript:void(0);" id="nnav_cat_15" onclick="newNavSelectCat(15);">Science</a><a href="javascript:void(0);" id="nnav_cat_16" onclick="newNavSelectCat(16);">Entertainment</a><a href="javascript:void(0);" id="nnav_cat_17" onclick="newNavSelectCat(17);">Health & Fitness</a><a href="javascript:void(0);" id="nnav_cat_18" onclick="newNavSelectCat(18);">Medicine</a><a href="javascript:void(0);" id="nnav_cat_19" onclick="newNavSelectCat(19);">Conferences</a><a href="javascript:void(0);" id="nnav_cat_20" onclick="newNavSelectCat(20);">Art & Literature</a><a href="javascript:void(0);" id="nnav_cat_21" onclick="newNavSelectCat(21);">Lifestyle</a><a href="javascript:void(0);" id="nnav_cat_22" onclick="newNavSelectCat(22);">Travel</a><a href="javascript:void(0);" id="nnav_cat_23" onclick="newNavSelectCat(23);">Templates</a></div></div><div class="fclear"></div></div></div></div><div class="fleft nnav sp-nav_right"></div><div class="fclear"></div>
+<script type="text/javascript">
+
+var newSearchCategory = 0;
+var newSearchShow = 0;
+function newNavSelectCat(id){
+	newSearchCategory = id;
+	var txt = jQuery('#nnav_cat_' + id).html();
+	jQuery('#nnav_search_label').html('<' + 'table style="width: 100%;" cellspacing="0" cellpadding="0"' + '><' + 'tr><' + 'td>' + txt + '<' + '/td' + '><' + 'td ' + 'style="vertical-align: middle;" valign="middle" align="right"' + '><' + 'span class="nnav sp-down_arrow_blue" id="nnav_search_arrow"><' + '/span' + '><' + '/td><' + '/tr><' + '/table>');
+	dsmetrics.track(new DSMActivity('search-nav-change-category', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('cat_name', txt)]));
+}
+
+
+function newNavDoSearch(){
+	if($j('.nnav_search_input').val() == ''){
+		alert('You need to enter a Search Term first.');
+ $j('.nnav_search_input').val('').focus();
+}
+else
+{
+    var sto  = $j('.nnav_search_input').val();
+    if('search all documents' !=sto)
+    {
+        var stM  = sto.replace('-','~');
+        stM = $j.trim(stM);
+	    var url = '/search/' + stM + '?catid=' + newSearchCategory;
+
+
+
+    url += '';
+
+
+	    dsmetrics.track(new DSMActivity('search-nav-do-search', '', dsmetrics.ActivityObjType.NotSet, 0, dsmetrics.ActivityActionType.Click, [new DSMOtherInfo('search_term', stM )]));
+	    window.location = url;
+    }
+    else
+    {
+        $j('.nnav_search_input').val('').focus();
+        $j('.nnav_search_input').css({color:'#444'});
+    }
+}
+}
+
+    jQuery(document).ready(function() {
+
+    var nWidth = jQuery('.nav-inner').width();
+nWidth = nWidth * 1;
+jQuery('.nnav_repeating').width(nWidth - 11);
+//autocomplete
+$j('.nnav_search_input').autocomplete('/search/AutoComplete.ashx', { 
+			minChars    : 4,
+			max         : 8,
+			delay       : 50,
+			width       : '325px',
+			selectFirst : false,
+			cacheLength : 0
+		});
+
+//label on textbox
+jQuery('#txtSearch').click( function() {
+		if(jQuery('#txtSearch').val() == 'search all documents'){
+			jQuery('#txtSearch').val('');
+            $j('.nnav_search_input').css({color:'#444'});
+		}
+	});
+if($j('.nnav_search_input').val() =='search all documents')
+{
+    $j('.nnav_search_input').css({color:'#cccccc'});
+}
+
+//search category  
+jQuery('#popnav_searchcat').click( function() {
+		if(newSearchShow == 1){
+			jQuery('#popnav_searchcat_extra').slideUp();
+			newSearchShow = 0;
+			jQuery('#nnav_search_arrow').removeClass('sp-up_arrow_blue');
+			jQuery('#nnav_search_arrow').addClass('sp-down_arrow_blue');
+		}
+		else{
+			jQuery('#popnav_searchcat_extra').slideDown();
+			newSearchShow = 1;
+			jQuery('#nnav_search_arrow').removeClass('sp-down_arrow_blue');
+			jQuery('#nnav_search_arrow').addClass('sp-up_arrow_blue');
+		}
+	});
+$j(document).click(function(event) {
+    var target = $j(event.target);
+    if (target.parents('#popnav_searchcat').length == 0) {
+			jQuery('#popnav_searchcat_extra').slideUp();
+			newSearchShow = 0;
+			jQuery('#nnav_search_arrow').removeClass('sp-up_arrow_blue');
+			jQuery('#nnav_search_arrow').addClass('sp-down_arrow_blue');
+    }
+});
+
+//docstore  
+//document.getElementById('popnav_docstore').onmouseover=function() {
+//		this.className='nnav_hover fleft';
+//		document.getElementById('popnav_docstore_extra').style.display = 'block';
+//	};
+//document.getElementById('popnav_docstore').onmouseout=function() {
+//		this.className='fleft';
+//		document.getElementById('popnav_docstore_extra').style.display = 'none';
+//	};
+            
+
+//documents  
+document.getElementById('popnav_documents').onmouseover=function() {
+		this.className='nnav_hover fleft';
+		document.getElementById('popnav_documents_extra').style.display = 'block';
+	};
+document.getElementById('popnav_documents').onmouseout=function() {
+		this.className='fleft';
+		document.getElementById('popnav_documents_extra').style.display = 'none';
+	};
+
+//resources  
+document.getElementById('popnav_resources').onmouseover=function() {
+		this.className='nnav_hover fleft';
+		document.getElementById('popnav_resources_extra').style.display = 'block';
+	};
+document.getElementById('popnav_resources').onmouseout=function() {
+		this.className='fleft';
+		document.getElementById('popnav_resources_extra').style.display = 'none';
+	};
+
+//upload  
+document.getElementById('popnav_upload').onmouseover=function() {
+		this.className='nnav_hover fleft';
+		document.getElementById('popnav_upload_extra').style.display = 'block';
+	};
+document.getElementById('popnav_upload').onmouseout=function() {
+		this.className='fleft';
+		document.getElementById('popnav_upload_extra').style.display = 'none';
+	};
+
+    });
+</script>
+
+
+				
+			</div>
+		</div>
+-->
+		
+		<!-- google_ad_section_end -->
+
+
+		<div id="content-body">
+			<div id="content-padding">
+			
+	
+	
+
+<style type="text/css">
+.leftMenuSortItem, .leftMenuSortItemActive {
+    font: bold 12px Verdana, Arial, Helvetica, sans-serif; 
+    color: #BC8127;
+    /*display:block;*/
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.leftMenuSortItemActive {
+    background-color:#EBF5FA;
+}
+.leftMenuSortItem:hover, .leftMenuSortItemActive:hover {
+    background-color:#EBF5FA;
+    text-decoration: underline;
+    color:#BD8027;
+}
+
+.headerFriends{
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    color: #39C;
+    vertical-align:bottom; 
+    padding-left: 12px;
+    padding-right: 20px;
+    padding-top:35px;
+    padding-bottom:2px; 
+    border-bottom:1px solid #85C6E6;
+    border-left: solid 0px #85C6E6;
+    font-weight:bold;
+}
+.friendsLineLeft{
+    border-left: solid 1px #85C6E6; 
+}
+.friendsItem{
+    padding-top:10px; 
+    padding-bottom:9px; 
+    padding-left:10px; 
+}
+
+.profileMainTbl{ 
+    width:860px; 
+    margin-top:15px;
+}
+
+.lblMyProfileStats, .lblMyComments, .lblMyLinks,.lblMyDocuments, .lblMyFriends,.lblMyBlogNew, .lblMyBlog{
+    font: bold 11px Arial,Helvetica,sans-serif,"Brush Script MT";
+    
+}
+
+.lblProfileName{
+    font: bold 22px Arial,Helvetica,sans-serif,"Brush Script MT";
+    color:#39C;
+    vertical-align: bottom; 
+    padding: 0px 0px 2px 12px;
+}
+
+.lblMyProfileStats, .lblMyComments,.lblMyBlogNew, .lblMyDocuments, .lblMyFriends, .lblMyBlog{
+    vertical-align: bottom;   
+    padding: 3px 0px 2px 12px;
+    font-size:12px;
+}
+
+.lblMyDocuments{width:100px;}
+.lblMyFriends{padding-top:30px;}
+.lblMyBlog{padding-top:35px;}
+.lblMyBlogNew{padding-top:12px;}
+
+.lblProfileItem, .lblProfileItemFirst, .lblNameOfBlog, .lblProfileItemLast{
+    padding-left: 12px; 
+    height:20px; 
+    vertical-align:middle;
+    color: #8D8D8D;
+}
+
+.lblCmtDocster{
+    color: #3599CD;
+}
+
+.lblCmtText{
+    color: #58595B; 
+}
+
+.lblCmtDocName{
+    color: #000000;
+}
+
+.lblCmtDocster{
+    color: #3599CD;
+}
+
+.profileBlueColor {
+    font-size:10px;
+}
+
+.lblProfileItemFirst, .lblNameOfBlog{padding-top:5px;}
+
+.lblMyLinks{
+    text-align:left;
+    vertical-align:middle;
+}
+
+.lblCode{padding-left:84px; vertical-align: middle;}
+.lblAboutMe{padding: 10px 0px 0px 12px;}
+
+.lblSearch{
+    vertical-align:middle; 
+    text-align:center; 
+    padding-right:100px;
+}
+
+.editCode, .editSearch, .btnAdd, .btnGo{
+    background-color:#FFFFFF; 
+    border:1px #A4D1E8 solid;
+    margin:0px 0px 0px 0px;
+    text-align: center; 
+    vertical-align: middle;
+    font-family: 'Microsoft Sans Serif';
+    font-size:7pt;
+}
+
+.editCode, .editSearch{   
+    height: 14px; 
+    padding:0px 0px 0px 0px;                                            
+}
+
+.btnAdd, .btnGo{
+    height:16px;
+    padding-bottom: 1px;
+}
+
+.editCode{width:65px;} 
+.editSearch{width:170px;}
+
+.btnAdd{width:30px;}
+.btnGo{width:20px;}
+
+.profiletxtarea{padding: 0px 0px 10px 10px;}
+
+.profiletxtareafield{
+    border: 1px solid #A4D1E8;
+    width:695px;
+    height:80px;
+}
+
+.profileImgEdit{
+    padding: 10px 0px 0px 12px;
+    vertical-align:top;
+    width:175px;
+}
+
+.linksMyComments{text-align:right; padding-right:10px;}
+.pnlComments{padding:0px 0px 0px 0px;}
+.pnlMyFriends{padding: 0px 0px 30px 10px;}
+
+.pnlFlesh{
+    height:465px;
+    padding: 10px 5px 10px 5px; 
+}
+
+.tblBorderleft, .profileMainTbl{
+    border-left:1px solid #A4D1E8;
+}
+
+.linksMyComments, .pnlMyFriends, .pnlComments, .profiletxtareafield, .profiletxtarea, .lblSearch, .lblMyProfileStats, .lblMyComments, .lblProfileName, .lblMyDocuments, .lblMyFriends, .lblMyBlog,.lblMyBlogNew, .pnlFlesh{
+    border-bottom: 1px solid #A4D1E8; 
+}
+
+.lblMyProfileStats {
+    padding-top:12px;
+}
+.profileBlueColor, .lblMyLinks, .lblMyProfileStats, .lblMyComments, .lblMyDocuments, .lblMyFriends,.lblMyBlogNew, .lblMyBlog{
+    color:#39C;
+    font-size:12px;
+}
+
+.profileYellowColor, .lblNameOfBlog, linksMyComments{
+    color:#BC8127;
+}
+
+.btnAdd, .btnGo{
+    color:#8C8C8C;
+}
+
+.profileGrayColor, .editCode, .editSearch{
+    color:#111111;
+}
+
+</style>
+	<div class="error-page error-spr spr-zz-gradient">
+		<div class="toll-free-support">
+			<div class="fl">
+				<span class="error-spr spr-orange-man"></span>
+			</div>
+			<div class="fr">
+				<div class="toll-free-text">
+					Toll Free Customer Support
+				</div>
+				<div class="have-questions">
+					Have Questions, or Technical Problems?
+					<div>
+						LET US KNOW</div>
+				</div>
+				<div class="ac have-questioans" style="font-size: larger">
+					<strong>Call us (888)&nbsp;412-3627</strong>
+				</div>
+			</div>
+			<div class="clear:both;">
+			</div>
+		</div>
+		<div class="error-head">
+			<div class="error-type">
+				Oops
+			</div>
+			<div class="error-msg">
+				<div>
+					There is currently an error on this page.</div>
+				<div class="error-sub-msg">
+					We apologize for this inconvenience. We are working on fixing the issue, and this
+					page will be live again shortly.
+				</div>
+			</div>
+			<div class="error-questions oops-support">
+				<strong>Support is Available:</strong> Mon.-Fri 8am - 6pm PST<br />
+				or email at <a href="mailto:support@docstoc.com">support@docstoc.com</a>
+			</div>
+		</div>
+		<div class="error-3-options">
+			<div class="fl w3">
+				<div class="pad1 npl">
+					<div class="bg1 pad2 b1 curve h1">
+						<div class="fl pr">
+							<span class="error-spr spr-search-documents"></span>
+						</div>
+						<div class="fr">
+							<h4>
+								Browse More Documents</h4>
+							<p>
+								Access and Download millions of documents on Docstoc with your new subscription.</p>
+							<div class="ar pt">
+								<a href="../documents/" class="error-spr spr-browse-now"></a>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fl w3">
+				<div class="pad1">
+					<div class="bg1 pad2 b1 curve h1">
+						<h4>
+							Search Specific Documents</h4>
+						<div class="error-spr spr-search-bar-left">
+							<div class="error-search-box-pad">
+								<input id="txtSearchError" type="text" title="Search Documents" size="14" class="ghost_input" style="color: rgb(102, 102, 102);">
+							</div>
+						</div>
+						<div class="error-spr spr-search-bar-right">
+							<a class="error-spr spr-search-btn" href="javascript:doSearch('cat','txtSearchError')">&nbsp;</a>
+						</div>
+						<div style="clear: both;">
+						</div>
+						<div class="ar pt">
+							<a href="../documents/" class="error-spr spr-search-all"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fl w3">
+				<div class="pad1 npr">
+					<div class="bg1 pad2 b1 curve h1">
+						<div class="fl pr">
+							<span class="error-spr spr-question-mark-document"></span>
+						</div>
+						<div class="fr">
+							<h4>
+								Check Out FAQs</h4>
+							<p>
+								If you have questions, we have answers. Visit the FAQ page for general issues.</p>
+							<div class="ar pt">
+								<a href="../faq/" class="error-spr spr-see-faq"></a>
+							</div>
+						</div>
+						<div style="clear: both;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;">
+			</div>
+		</div>
+	</div>
+			
+			</div>
+		</div>
+		<div class="cls"></div><br />
+	
+	
+		<!-- google_ad_section_start(weight=ignore) -->
+			
+		<div id="footer-wrap2">
+				<div id="footer2">
+					<div id="foot-head"></div>
+					<div id="foot-main">
+						<div class="foot-corner spr-footer spr-footer-corner">
+						<div class="foot-social">
+
+							<a href="http://www.facebook.com/DocstocFB" title="Docstoc on Facebook"  rel="nofollow" class="spr-footer  spr-footer-fb"> </a>
+							<a href="http://twitter.com/docstoc" rel="nofollow" title="Docstoc on Twitter"  class="spr-footer  spr-footer-tw"> </a>
+							<a href="http://www.youtube.com/docstoctv" title="docstocTV Channel" rel="nofollow" class="spr-footer  spr-footer-yt"> </a>   
+							<a href="https://plus.google.com/103801755756812961700/posts" title="Docstoc on Google+"  rel="nofollow" class="spr-footer-gp"> </a>
+						</div>
+						</div>
+						<div class="foot-section">
+							<div class="foot-section-title">
+							About Us
+							</div>
+							<div class="foot-spacer"></div>
+							<ul class="foot-list">
+								<li><a cr-nf="/about/" rel="nofollow">What is Docstoc?</a></li>
+								<li><a cr-nf="/FAQ/" rel="nofollow">FAQs</a></li>
+								<li><a cr-nf="/contact/" rel="nofollow">Contact Us</a></li>
+								<li><a cr-nf="http://blog.docstoc.com/" rel="nofollow">Blog</a></li>
+								<li><a cr-nf="/jobs/" rel="nofollow">Join Our Team</a></li>
+								<li><a cr-nf="/feeds/rssfeed.aspx" rel="nofollow">RSS Feeds</a></li>							
+							</ul>
+						</div>
+						<div class="foot-section">
+							<div class="foot-section-title">
+							Products
+							</div>
+							<div class="foot-spacer"></div>
+							<ul class="foot-list">
+								<li><a cr-nf="http://premium.docstoc.com/subscribe" rel="nofollow">Docstoc Premium</a></li>
+								<li><a cr-nf="http://www.license123.com" rel="nofollow">License123&trade;</a></li>
+								<li><a cr-nf="/customize/" rel="nofollow">Custom Docs</a></li>
+								<li><a cr-nf="/apps/" rel="nofollow">Mobile Apps</a></li>
+								<li><a cr-nf="/ipad/" rel="nofollow">Docstoc iPad</a></li>
+								<li><a cr-nf="/store/" rel="nofollow">Docstore</a></li>
+
+								
+							</ul>
+						</div>
+						<div class="foot-section">
+							<div class="foot-section-title">
+							Upload and Share
+							</div>
+							<div class="foot-spacer"></div>
+							<ul class="foot-list">
+								<li><a cr-nf="/publish-documents/" rel="nofollow">Why Upload?</a></li>
+								<li><a href="/embed-documents/">Embed Documents</a></li>
+								<li><a href="/oneclick/">Docstoc OneClick</a></li>
+								<li><a href="/sync/">Docstoc Sync</a></li>
+								<li><a cr-nf="http://platform.docstoc.com/" rel="nofollow">Docstoc API</a></li>	
+							</ul>
+						</div>
+						<div class="foot-section">
+							<div class="foot-section-title">
+							Legal
+							</div>
+							<div class="foot-spacer"></div>
+							<ul class="foot-list">
+								<li><a cr-nf="/Pages/Static.aspx?page_id=15" rel="nofollow">Docstoc Terms of Service</a></li>
+								<li><a cr-nf="/Pages/Static.aspx?page_id=102" rel="nofollow">DocStore Terms of Service</a></li>
+								<li><a cr-nf="/dmca/" rel="nofollow">Copyright</a></li>
+								<li><a cr-nf="/user/cmsstatic.aspx?page_id=100" rel="nofollow">DMCA Guidelines</a></li>
+								<li><a cr-nf="/Pages/Static.aspx?page_id=22" rel="nofollow">Privacy Policy</a></li>
+							</ul>
+						</div>
+						
+						<div style="clear:both;"></div>
+					</div>
+					<div id="foot-bottom">
+					<div class="foot-bottom-left">
+						<span>&copy; Docstoc<span style="font-size:11px">&reg;</span>  2015. All rights reserved. |  "Disclaimer: Legal information is not legal advice. " </span>
+                        <a href="javascript:void%20window.open('/Pages/Static.aspx?page_id=114&popup=true','TC','width=860,height=580,menubar=0,location=0,resizable=1,scrollbars=1,status=0')">Read More</a>
+					</div>
+					<div class="foot-bottom-right">
+						<a href="/">Home</a>
+						<a  href="/contact/" rel="nofollow">Contact</a>
+                        <a href="/Pages/Static.aspx?page_id=22">Privacy Policy</a>
+						<a href="/Pages/Static.aspx?page_id=15">Docstoc Terms of Service</a>
+					</div>
+					<div style="clear:both;"></div>
+					</div>
+				</div>
+			</div>
+			
+
+	
+		<!-- google_ad_section_end -->
+		
+	<br />
+</div>
+<script type="text/javascript">
+$j(function() 
+{
+$j('a[cr-nf]').each(function() 
+{
+$j(this).attr("href",$j(this).attr("cr-nf")); 
+$j(this).removeAttr("cr-nf"); 
+});
+});
+</script>
+
+<script type="text/javascript">
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+var redirectUrl='/login/FacebookLogin.aspx?returnURL=http%3a%2f%2fwww.docstoc.com%2fErrors%2fErrors.aspx%3faspxerrorpath%3d%2fPages%2fStatic.aspx';
+_qoptions={qacct:"p-07Zpl6-aPXQAI"};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript><img src="http://pixel.quantserve.com/pixel/p-07Zpl6-aPXQAI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></noscript>
+
+<script type="text/javascript">    recordEndTime(); makeDD('ddTarget', 'ddDocuments', 'top'); makeDD('ddTargetMyDocs', 'ddMyDocs', 'top'); makeDD('ddTargetMyColl', 'ddMyColls', 'top');
+</script>
+<!--104 CurrentTime:9/2/2015 12:21:07 PM TimeSpan:00:00:00.0030003 -->
+</form>
+
+
+
+
+
+
+<script type="text/javascript">
+    function toggleNewNavDisplay(input, toDo) {
+        var elem = document.getElementById(input);
+
+        if (elem != null) {
+            switch (toDo) {
+                case 'close':
+                    elem.style.display = 'none';
+                    break;
+                case 'open':
+                    elem.style.display = 'block';
+                    break;
+                default:
+                    elem.style.display = 'block';
+                    break;
+            } 
+        }
+    }
+
+    function checkInputState() {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            gitUrDun();
+        }
+    }
+
+    function gitUrDun() {
+        var headerSearchForm = document.getElementById('headerSearchForm');
+        var dataAction;
+        var searchVal = document.getElementById('appendedPrependedInputSearch');
+
+        if (headerSearchForm != null) {
+            dataAction = headerSearchForm.getAttribute('data-action');
+        }
+
+        if (searchVal.value.length > 0 && dataAction.length > 0) {
+            window.location = dataAction + searchVal.value; 
+        }
+
+    }
+</script>
+
+</body>
+</html>
