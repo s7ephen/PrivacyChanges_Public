@@ -1,1 +1,3243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PrivacyFix - Lock down your privacy</title>    
+        <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+        <script src="/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="/js/jquery.cookie.js"></script>
+        <script src="/js/md5.js"></script>  
+        <script src="/js/dashboard_content_analytics.js" type="text/javascript"></script>    
+        <script src="/js/function_bind_shim.js" type="text/javascript"></script>    
+        
+        <script type="text/javascript">
+            // IE fixes
+            if (!window.console) window.console = {};
+            if (!window.console.log) window.console.log = function () { };
+        </script>
+        
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pmejhjjecaldkllonlokhkglbdbkdcni" />
+    
+
+        <!-- bxSlider  -->
+       
+
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <link rel="image_src" type="image/jpeg" href="" />
+
+
+        <meta name="twitter:card" content="app">
+        <meta name="twitter:app:id:iphone" content="id688795921">
+        <meta name="twitter:app:id:ipad" content="688795921">
+        <meta name="twitter:app:id:googleplay" content="com.avg.privacyfix">
+        <meta name="twitter:app:country" content="us">
+
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+    
+<style type="text/css">
+
+    /* JL NOTE ~ New styles! lol ------------------------------------------------ */
+    /* -------------------------------------------------------------------------- */
+    .clearMe {display: block; height: 0; clear: both; font-size: 0;}
+    .clear:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+    
+    
+    /* hide IE mac \*/
+    /*
+    * html .clear {height: 1%;}
+    .clear {display: block;}
+    */
+    html {
+        
+        
+        overflow-y: scroll;
+    }
+    body {
+        background: #3c3d42 url(/images/avgprivacyfix/background.png) center center;
+        background-size: auto 100%;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+
+    }
+    :focus {
+        -moz-outline-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    div.header {
+        background: #0b1126;
+    }
+    div.header .gutter {
+        width: 1200px;
+        margin: 0px auto;
+        padding: 20px 0px;
+        position: relative;
+    }
+
+    div.header .beta { display: inline; color: white; font-size: 13px; color: #fff; }
+    div.header ul {
+
+        position: absolute;
+        right: 0px;
+        top: 25px;
+    }
+    div.header ul li {
+        display: inline;
+        padding: 0 20px 0 20px;
+        border-left: 1px solid #78797d;
+        vertical-align: middle;
+    }
+    div.header ul li:first-child {
+        border-left: 0px none transparent;
+    }
+    div.header ul li:last-child {
+        padding-right: 0px;
+    }
+    div.header ul li a {
+        color: white;
+        opacity: 1;
+    }
+    div.header ul li a:hover {
+        opacity: 1;
+    }
+    div.header ul li img {
+        vertical-align: middle;
+    }
+    div.header ul li a img {
+        margin-left: 15px;
+    }
+    div.header ul li a:first-child img {
+        margin-left: 0px;
+    }
+
+    sup {
+        vertical-align: super;
+        font-size: 60%;
+    }
+
+    div.content {
+        width: 1200px;
+        margin: 0px auto;
+        padding-bottom: 40px;
+    }
+
+    /* It's an area. For sharing. So it's a _sharea!_ Get it? LOL. I'm funny. */
+    div.sharea {
+        padding: 50px 0px;
+        background-color: rgba(255, 255, 255, .1);
+    }
+    div.sharea .gutter {
+        margin: 0px auto;
+        width: 860px;
+        height: 74px;
+        font-family: "Roboto", sans-serif;
+        font-size: 42px;
+        font-weight: 100;
+        color: white;
+        line-height: 48px;
+    }
+    div.sharea .gutter ul {
+        float: right;
+    }
+    div.sharea .gutter ul li {
+        float: left;
+        margin-right: 30px;
+        width: 74px;
+        height: 74px;
+        position: relative;
+    }
+    div.sharea .gutter ul li a {
+        display: block;
+        width: 74px;
+        height: 74px;
+        position: absolute;
+        z-index: 9001;
+    }
+    div.sharea .gutter ul li:last-child {
+        margin-right: 0px;
+    }
+    div.footer {
+        padding: 35px 0px 125px 0px;
+        background-color: rgba(0, 0, 0, .1);
+    }
+    div.footer .gutter {
+        width: 1200px;
+        margin: 0px auto;
+        position: relative;
+    }
+    div.footer .gutter .affiliation {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        font-size: 13px;
+        color: white;
+    }
+    div.footer ul.apps {
+        float: left;
+    }
+    div.footer ul.apps li {
+        float: left;
+        margin-right: 25px;
+    }
+    div.footer ul.nav {
+        margin-top: 20px;
+        float: right;
+    }
+    div.footer ul.nav li {
+        float: left;
+        padding: 0px 20px;
+        border-left: 1px solid #78777c;
+    }
+    div.footer ul.nav li a {
+        color: white;
+    }
+    div.footer ul.nav li:first-child {
+        border-left: 0px none transparent;
+    }
+
+    div.footer .copyright {
+        text-align: center;
+        margin-top: 40px;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        color: #bbb;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+
+    .completion
+    {
+        position: absolute;
+        left: 0px;
+        top: 87px;
+        height: 77px;
+        width: 100%;
+        font-family: Roboto;
+        background-color: black;
+        line-height: 70px;
+        font-size: 24px;
+        font-weight: 100;
+        padding-left: 0px;
+        color: white;
+        margin-bottom: 32px;
+        z-index: 9001;
+        -webkit-transition: box-shadow .5s linear;
+        -moz-transition: box-shadow .5s linear;
+        transition: box-shadow .5s linear;
+        display: none;
+    }
+    .completion.fixed
+    {
+        top: 0px;
+        position: fixed;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, .6);
+    }
+
+    .completion .interior
+    {
+        width: 1200px;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .completion .progress_text {
+        display: inline-block;
+        margin-right: 19px;
+        vertical-align: middle;
+        max-width: 260px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .completion .bar_container
+    {
+        display: inline-block;
+        background: #e3e3e3;
+        width: 470px;
+        height: 18px;
+        vertical-align: middle;
+    }
+
+    .completion .bar_container .bar
+    {
+        width: 0px;
+        height: 18px;
+        background: #2fab43;
+        transition: width 1s ease-out;
+    }
+
+    .completion .bar_right { 
+        position: absolute;
+        top: 0px; 
+        right: 0px;
+    }
+
+    .completion .includes
+    {
+        display: inline-block;
+        margin-right: 19px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-transform: none;
+        display: none;
+        vertical-align: top;
+        padding-top: 3px;
+    }
+
+    .completion ul.icons
+    {
+        padding-top: 15px;
+        display: inline-block;
+        width: 281px;
+        height: 40px;
+        list-style-type: none;
+    }
+
+    .completion ul.icons li
+    {
+        display: none;
+        margin-right: 14px;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+    }
+    .completion ul.icons li:last-child, .completion ul.icons li.last
+    {
+        margin-right: 0px;
+    }
+
+    .completion ul.icons li img
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .box#friendExposed
+    {
+
+    }
+        
+    #logo
+    {
+        cursor: pointer;
+    }
+
+    .no_selection {
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+    }
+    
+    
+    
+    
+    .launchbutton
+    {
+        background-color: #C60000;
+        color: White;
+        text-align:center;
+        padding: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 10px;
+        text-transform:capitalize;
+    }
+    
+    #wrap
+    {
+        display:none;
+        position:relative;
+        margin:auto;
+        margin-top: 50px;
+    }
+    #wrap.margin {
+        margin-top: 115px;
+    }
+    span
+    {
+        font-weight: bold;
+    }
+    
+    .roundcorners
+    {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    .caution
+    {
+        background-color: #F2C2C0;
+    }
+    .concern
+    {
+        background-color: #FCDBBE;
+    }
+    .comfort
+    {
+        background-color: #D7E8C6;
+    }
+    .na
+    {
+        background-color:Silver;
+    }
+    
+   
+    
+    .bgLightgrey
+    {
+        background-color: #B5B5B6;
+    }
+    .bgBlueFade
+    {
+       background-color: #F6F7F8;
+    }
+    .theorange
+    {
+       background-color: #FAA657;
+    }
+    .thegreen
+    {
+        background-color: #7BA34A;
+    }
+    
+    .sectionbar .help {
+        float: right;
+
+    }
+    .sectionbar .help a {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    
+    .sectionbar
+    {
+        position: relative;
+        margin-top: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 36px;
+        padding:0px 0px;
+        
+        color:White;
+        width: 1200px;
+    }
+    .sectionbar:first-child
+    {
+        margin-top: 0px;
+    }
+
+    .sectionbar .issues_count
+    {
+        color: #f48720;
+        padding-left: 5px;
+    }
+
+    .sectionbar .center;
+    {
+        width:920px;
+        margin:auto;
+    }
+
+    .login_prompt
+    {
+        margin-top: 20px;
+        display: none;
+        padding: 15px 0px;
+        border-top: 1px solid rgba(255, 255, 255, .2);
+        background: rgba(255, 255, 255, .1);
+        color: white;
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 62px;
+    }
+    .login_prompt .text
+    {
+        display: inline-block;
+        min-width: 360px;
+        padding: 0px 40px;
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .login_prompt .loginbtn
+    {
+        display: inline-block;
+        width: 270px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        background: #36b34b;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+
+    .section
+    {
+        position: relative;
+        display:none;
+        margin:auto;
+        width: 1200px;               
+        margin-top: 15px;
+        margin-bottom: 62px;  
+    }
+   
+    .sectionheader
+    {      
+        padding: 5px;
+        min-height: 40px;
+    }  
+    .sectionheader img
+    {
+        float:left;
+        margin: 5px 10px 5px 5px;
+    }  
+    .subheader
+    {        
+        min-height: 36px;
+        padding-left: 10px;
+        color: white;                
+    }            
+        
+    .section .internal_header
+    {
+        height: 77px;
+        font-family: Roboto;
+        background-color: rgba(255, 255, 255, .1);
+        line-height: 77px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 100;
+        padding-left: 75px;
+        color: white;
+
+    }
+    .section .internal_header.tracking {
+        background-image: url(/images/avgprivacyfix/icon_tr.png);
+        background-position: 15px center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+    .section .internal_header.google {
+        background-image: url(/images/avgprivacyfix/icon_gl.png);
+        background-position: 15px center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+    .section .internal_header.facebook {
+        background-image: url(/images/avgprivacyfix/icon_fb.png);
+        background-position: 15px center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+    .section .internal_header.twitter {
+        background-image: url(/images/avgprivacyfix/icon_tw.png);
+        background-position: 15px center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+    .section .internal_header.linkedin {
+        background-image: url(/images/avgprivacyfix/icon_li.png);
+        background-position: 15px center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+    }
+        
+    .section .row
+    {
+        clear:both;
+        
+    }
+    .section .row:first-child
+    {
+        
+        
+    }
+    
+    .section .rowNull
+    {
+        clear:both;
+        border-top: solid #BBB 1px;
+        padding-top: 0px;
+    }
+    
+    .section .row .rowlabel
+    {
+        text-transform: uppercase;
+        /*background-color: #46474c;*/
+        background: rgba(255,255,255,.1);
+        padding: 0px 12px;
+        font-size: 13px;
+        line-height: 35px;
+        height: 35px;
+        
+        color: #a7a8ac;   
+    }
+    .section .row .rowlabel img
+    {
+    
+    }
+    .section .row .rowlabel .words
+    {
+
+    }
+    .section.support .row .rowlabel .words 
+    {
+    }
+    
+    .section.tracking .row .rowlabel .words
+    {
+    }
+    .section.publisher .row .rowlabel .words
+    {
+    }
+    .section .row .rowcontent
+    {
+        
+    }
+
+    .section.tracking .infoarea {
+        min-height: 269px;
+    }
+    .section.tracking p strong {
+        font-weight: 400;
+        color: #444;
+    }
+
+    .section.tracking p a {
+        color: #008ecc;
+    }
+    .section.tracking p a:hover {
+    }
+
+    .section.tracking ul.tri_pane
+    {
+        text-align: center;
+        margin-bottom: 39px;
+    }
+    .section.tracking img.protected {
+        margin-top: 20px;
+    }
+    .section.tracking h4.block_count {
+        font-weight: 300;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .section.tracking h4.block_count strong {
+        font-weight: 400;
+    }
+    .section.tracking ul.tri_pane li {
+        display: inline-block;
+        width: 31%;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 300;
+    }
+    .section.tracking ul.tri_pane li em {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 34px;
+        font-weight: 300;
+        color: #444;
+        line-height: 34px;
+    }
+
+    .bubbleQuick.orange {
+        background: #f38621;
+        border: 1px solid #f38621;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    }
+    .bubbleQuick.orange h4 {
+        color: white;
+    }
+    
+    .actionArea 
+    {
+
+    }
+    .infoarea
+    {
+        float:right;
+        width: 350px;
+        padding: 30px;
+        min-height: 20px;   
+        background-color: white;
+    }
+    .infoarea.facebook {
+        background-color: white;
+        color: #666666;
+        position: relative;
+    }
+    .infoarea .sectioninstruct
+    {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 15px;
+        color: #555;
+    }
+    
+    .infoarea .stats_area {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        position: relative;
+    }
+    .infoarea .stats_area h3 {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #666;
+        -webkit-transition: color .5s linear;
+        -moz-transition: color .5s linear;
+        transition: color .5s linear;
+    }
+    .infoarea.facebook .stats_area h3,
+	.infoarea.facebook .family h3 {
+        /* background: url(/images/avgprivacyfix/sidebar_heading_back.png) left center repeat-x; */
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .infoarea.facebook .stats_area h3 em,
+	.infoarea.facebook .family h3 em {
+        display: inline-block;
+        color: #666666;
+        font-size: 17px;
+        text-transform: uppercase;
+        background-color: white;
+        padding: 0px 10px;
+    }
+
+	.infoarea.facebook .family h3 { margin-top: 25px; text-align: center;}
+	.infoarea.facebook .family h3 em {}
+	.infoarea.facebook .family .members ul {list-style: none; margin: 0; padding: 0; text-align: center;}
+	.infoarea.facebook .family .members ul li {display: inline-block; width: 94px; margin: 0 10px; vertical-align: top;}
+	.infoarea.facebook .family .members ul li img {border-radius: 40px;}
+	.infoarea.facebook .family .members ul li p {padding: 7px 0; font-size: .7em; color: #666;}
+
+    .infoarea.facebook div.get_100 {
+        opacity: .75;
+        margin-top: 8px;
+        text-align: right;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 23px;
+        background: url(/images/avgprivacyfix/arrow_down_black.png) 153px center no-repeat;
+        background-size: 16px 9px;
+        cursor: pointer;
+    }
+    .infoarea.facebook div.get_100:hover {
+        opacity: 1;
+    }
+    .infoarea.facebook div.get_100.toggled {
+        opacity: 1;
+        background: url(/images/avgprivacyfix/arrow_up_black.png) 153px center no-repeat;
+        background-size: 16px 9px;
+    }
+
+    .infoarea.facebook ul.remaining_fixes {
+        display: none;
+        left: 0px;
+        top: 200px;
+        position: absolute;
+        width: 410px;
+        padding: 0px 0px;
+        background-color: #e5e5e5;
+        z-index: 2;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: black;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    }
+    .infoarea.facebook ul.remaining_fixes li {
+        padding: 15px 30px;
+        border-bottom: 1px solid #d3d3d3;
+        cursor: pointer;
+    }
+    .infoarea.facebook ul.remaining_fixes li:hover {
+        background: #d3d3d3;
+    }
+    .infoarea.facebook ul.remaining_fixes li span.percentage {
+        display: block;
+        margin-left: 20px;
+        width: 60px;
+        float: left;
+        font-weight: 400;
+    }
+    .infoarea.facebook ul.remaining_fixes li span.goodtext {
+        display: block;
+        width: 200px;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .infoarea.facebook ul.remaining_fixes li span.fix {
+        display block;
+        float: right;
+        padding-right: 30px;
+        font-weight: 400;
+    }
+
+    .infoarea .stats_area.dark h3 {
+        color: #1c1c1c;
+    }
+
+    .infoarea .protection_level {
+        min-height: 120px;
+        padding-left: 120px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .infoarea .protection_level h3 {
+        color: #666666;
+        width: 150px;
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+    .infoarea .protection_level strong {
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-weight: 100;
+        color: #2fac43;
+        font-size: 60px;
+    }
+    .infoarea .protection_level .progress {
+        margin-top: 5px;
+        width: 170px;
+        height: 20px;
+        background-color: #e5e5e5;
+    }
+    .infoarea .protection_level .progress .bar {
+        -webkit-transition: width 1s ease-out;
+        width: 0%;
+        height: 20px;
+        background-color: #2fac43;
+    }
+    .infoarea .protection_level .privacy_status {
+        min-height: 30px;
+        background: url(/images/avgprivacyfix/icon_lock.png) left center no-repeat;
+        background-size: 30px 30px;
+        padding-left: 40px;
+        margin-top: 15px;
+    }
+    .infoarea .protection_level .privacy_status span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        color: black;
+        font-size: 16px;
+    }
+    .infoarea .protection_level .avatar {
+        width: 120px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .infoarea .protection_level .avatar .pic {
+        width: 110px;
+        height: 110px;
+        border-radius: 75px;
+        background: url(/images/avgprivacyfix/fb_pf.png) left top no-repeat;
+        background-size: 150px 150px;
+    }
+    .infoarea .protection_level .avatar .name {
+        margin-top: 15px;
+        width: 150px;
+        height: 20px;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+    }
+    
+    .infoarea hr {
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 0px none transparent;
+        border-left: 0px none transparent;
+        border-right: 0px none transparent;
+        margin: 20px 0px;
+    }
+
+    .infoarea .stats_area .facebook_worth {
+        font-size: 13px;
+        line-height: 25px;
+        color: #666666;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+    }
+    .infoarea .stats_area .facebook_worth strong {
+        font-weight: bold;
+    }
+    .infoarea .stats_area .facebook_worth .indicator {
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 29px;
+        vertical-align: top;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .infoarea .stats_area .facebook_worth .indicator div {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        left: 0px;
+        top: 11px;
+        background-color: white;
+        border: 1px solid #6f6f6f;
+        border-radius: 7px;
+        -webkit-transition: background-color 1s linear;
+        -moz-transition: background-color 1s linear;
+        transition: background-color 1s linear;
+    }
+    .infoarea .stats_area .facebook_worth .indicator div.i1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .infoarea .stats_area .facebook_worth .indicator div.i3 {
+        left: 0px;
+        top: 22px;
+    }
+
+    .infoarea .stats_area .facebook_worth .indicator.normal div.i1{
+        background-color: #fff;
+        border: 1px solid #6f6f6f;
+    }
+    .infoarea .stats_area .facebook_worth .indicator.normal div, .infoarea .stats_area .facebook_worth .indicator.normal div.i3 {
+        background-color: #3cae4c;
+        border: 1px solid #3cae4c;
+    }
+    .infoarea .stats_area .facebook_worth .indicator.low div.i3 {
+        background-color: #3cae4c;
+        border: 1px solid #3cae4c;
+    }
+    .infoarea .stats_area .facebook_worth .indicator.high div.i1, .infoarea .stats_area .facebook_worth .indicator.high div, .infoarea .stats_area .facebook_worth .indicator.high div.i3 {
+        background-color: #3cae4c;
+        border: 1px solid #3cae4c;
+    }
+
+
+    .infoarea .stats_area .facebook_worth .worth {
+        display: inline-block;
+        font-size: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: 100;
+        color: #2fad43;
+        vertical-align: top;
+        padding-top: 10px;
+    }
+    .infoarea .stats_area .facebook_worth a.fbworthlink {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 2px 30px 2px 20px;
+        background: #3c5698;
+        color: white;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+    .infoarea .stats_area .facebook_worth a.fbworthlink img {
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        margin-bottom: -2px;
+        vertical-align: bottom;
+    }
+
+    .infoarea .stats_area .facebook_worth p {
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 25px;
+
+        margin: 0px auto;
+        width: 350px;
+        
+
+    }
+    .infoarea .stats_area .facebook_worth p strong {
+    }
+
+    .infoarea .stats_area .facebook_worth .expanded .worth_detail_container {
+        margin-top: 20px;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+        border-top: 1px solid #f1f1f1;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+
+    .infoarea .stats_area .facebook_worth .expanded .details {
+        position: relative;
+        margin: 0px 0 0px 0;
+        padding: 0px 0px 0px 0px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div {
+        border-bottom: 1px solid #f1f1f1;
+        padding: 13px 0px 23px 0px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div.arrow {
+        opacity: 0; /* omg hax */
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul {
+        width: 100%;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .heading { 
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #666;
+        margin-bottom: 12px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .heading img {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -3px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.activity .arrow {
+        left: 53px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.profile .arrow {
+        left: 165px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.location .arrow {
+        left: 280px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.activity > div.activity {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.profile > div.profile {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details.location > div.location {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li {
+        float: left;
+        font-size: 13px;
+        text-transform: uppercase;
+        line-height: 15px;
+        color: black;
+        position: relative;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .activity > ul > li {
+        width: 116px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .profile > ul > li {
+        width: 50%;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li:first-child {
+        width: 116px;
+        display: block;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li:last-child {
+        width: 232px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat {
+        top: 0px;
+        margin-top: -5px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li .region_users {
+        border-right: 0px none transparent;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li .region_users strong {
+        display: inline;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li:first-child {
+        float: none;
+        width: 100%;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li:last-child {
+        width: 100%;
+        float: none;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li > ul {
+        margin-top: 7px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li > ul > li { /* omgomg */
+        padding-left: 20px;
+        text-align: left;
+        font-size: 12px;
+        margin: 5px 0px 5px 0px;
+        color: black;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location.nofloat > ul > li > ul > li strong {
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 5px;
+        margin-left: 10px;
+        color: #2fad43;
+        text-transform: none;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li h4 {
+        height: 48px;
+        margin: 0px;
+        line-height: 36px;
+        border-right: 1px solid white;
+        font-size: 36px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        color: black;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li:last-child h4 {
+        border-right: 0px none transparent;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li .indicator {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 33px;
+        top: -5px;
+        left: 15px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li .indicator div {
+        position: absolute;
+        left: 0px;
+        top: 11px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li .indicator div.i1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details > div > ul > li .indicator div.i3 {
+        left: 0px;
+        top: 22px;
+    }
+    
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li .region_users {
+        display: block;
+        border-right: 1px solid #eee;
+        font-size: 18px;
+        font-weight: 100;
+        text-transform: none;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li .region_users strong {
+        display: block;
+        color: #2fad43;
+        font-weight: 400;
+    }
+
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li > ul > li { /* omgomg */
+        padding-left: 20px;
+        text-align: left;
+        font-size: 14px;
+        margin: 5px 0px 10px 0px;
+        color: black;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li > ul > li:last-child {
+        margin-bottom: 0px;
+    }
+    .infoarea .stats_area .facebook_worth .expanded .details .location > ul > li > ul > li strong {
+        font-weight: 400;
+        font-size: 18px;
+        margin-right: 5px;
+        color: #2fad43;
+        text-transform: none;
+    }
+
+
+
+
+
+    .infoarea .stats_area .facebook_worth .collapsed .worth_detail_container {
+        margin-top: 15px;
+        border: 1px solid #f1f1f1;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .infoarea .stats_area .facebook_worth .collapsed .worth_detail_container > ul {
+        margin-top: 10px;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .worth_detail_container > ul li {
+        display: inline-block;
+        font-weight: 400;
+        padding-top: 30px;
+        border-right: 1px solid #e5e5e5;
+        width: 115px;
+        font-size: 13px;
+        color: #cbcbcb;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: default;
+        -webkit-transition: color .3s linear;
+        -moz-transition: color .3s linear;
+        transition: color .3s linear;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .worth_detail_container > ul li:last-child {
+        border-right: 0px none transparent;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .worth_detail_container > ul li:hover {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.activity {
+        background: url(/images/avgprivacyfix/activity-gray.png) center 5px no-repeat;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.activity:hover, .infoarea .stats_area .facebook_worth ul li.activity.sel {
+        background: url(/images/avgprivacyfix/activity-green.png) center 5px no-repeat;
+        color: #2fad43;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.profile {
+        background: url(/images/avgprivacyfix/profile-gray.png) center 5px no-repeat;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.profile:hover, .infoarea .stats_area .facebook_worth ul li.profile.sel {
+        background: url(/images/avgprivacyfix/profile-green.png) center 5px no-repeat;
+        color: #2fad43;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.location {
+        background: url(/images/avgprivacyfix/location-gray.png) center 5px no-repeat;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed ul li.location:hover, .infoarea .stats_area .facebook_worth ul li.location.sel {
+        background: url(/images/avgprivacyfix/location-green.png) center 5px no-repeat;
+        color: #2fad43;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details {
+        position: relative;
+        margin: 0px 0 0px 0;
+        padding: 15px 0px 0px 0px;
+        height: 85px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div {
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        width: 350px;
+        opacity: 0;
+        -webkit-transition: opacity .3s linear;
+        -moz-transition: opacity .3s linear;
+        transition: opacity .3s linear;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div.arrow {
+        opacity: 0; /* omg hax */
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul {
+        width: 100%;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.activity .arrow {
+        left: 53px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.profile .arrow {
+        left: 165px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.location .arrow {
+        left: 280px;
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.activity > div.activity {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.profile > div.profile {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details.location > div.location {
+        opacity: 1;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li {
+        float: left;
+        font-size: 13px;
+        text-transform: uppercase;
+        line-height: 15px;
+        color: black;
+        position: relative;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .activity > ul > li {
+        width: 116px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .profile > ul > li {
+        width: 50%;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li:first-child {
+        width: 116px;
+        display: block;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li:last-child {
+        width: 232px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat {
+        top: 0px;
+        margin-top: -5px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li .region_users {
+        border-right: 0px none transparent;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li .region_users strong {
+        display: inline;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li:first-child {
+        float: none;
+        width: 100%;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li:last-child {
+        width: 100%;
+        float: none;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li > ul {
+        margin-top: 7px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li > ul > li { /* omgomg */
+        padding-left: 20px;
+        text-align: left;
+        font-size: 12px;
+        margin: 5px 0px 5px 0px;
+        color: black;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location.nofloat > ul > li > ul > li strong {
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 5px;
+        margin-left: 10px;
+        color: #2fad43;
+        text-transform: none;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li h4 {
+        height: 48px;
+        margin: 0px;
+        line-height: 36px;
+        border-right: 1px solid white;
+        font-size: 36px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        color: black;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li:last-child h4 {
+        border-right: 0px none transparent;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li .indicator {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 33px;
+        top: -5px;
+        left: 15px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li .indicator div {
+        position: absolute;
+        left: 0px;
+        top: 11px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li .indicator div.i1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details > div > ul > li .indicator div.i3 {
+        left: 0px;
+        top: 22px;
+    }
+    
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li .region_users {
+        display: block;
+        border-right: 1px solid #aaa;
+        font-size: 18px;
+        font-weight: 100;
+        text-transform: none;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li .region_users strong {
+        display: block;
+        color: #2fad43;
+        font-weight: 400;
+    }
+
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li > ul > li { /* omgomg */
+        padding-left: 20px;
+        text-align: left;
+        font-size: 14px;
+        margin: 5px 0px 10px 0px;
+        color: black;
+    }
+    .infoarea .stats_area .facebook_worth .collapsed .details .location > ul > li > ul > li strong {
+        font-weight: 400;
+        font-size: 18px;
+        margin-right: 5px;
+        color: #2fad43;
+        text-transform: none;
+    }
+
+
+
+
+
+
+
+
+    .infoarea.facebook .stats_area .faq_link {
+        display: block;
+        margin: 0px 0px 10px 0px;
+    }
+    .infoarea.facebook .stats_area .faq_link:hover {
+        color: black;
+    }
+    .infoarea .stats_area .faq_link {
+        color: #999999;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    .infoarea .stats_area .faq_link:hover {
+        color: white;
+    }
+
+
+
+    .infoarea .stats_area .google_worth, .infoarea .stats_area .twitter_worth {
+        
+    }
+    .infoarea .stats_area .google_worth strong, .infoarea .stats_area .twitter_worth strong {
+        font-weight: bold;
+    }
+    .infoarea .google_worth .worth, .infoarea .twitter_worth .worth {
+        display: inline-block;
+        font-size: 50px;
+        font-weight: 100;
+        color: #2fb345;
+    }
+    
+    .infoarea .stats_area a.glworthlink {
+        display: block;
+        float: right;
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 2px 30px 2px 20px;
+        background: #3c5698;
+        color: white;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 16px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    .infoarea .stats_area a.glworthlink img {
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        margin-bottom: -2px;
+        vertical-align: bottom;
+    }
+
+    .infoarea.google .stats_area h3, .infoarea.twitter .stats_area h3 {
+        /* background: url(/images/avgprivacyfix/sidebar_heading_back.png) left center repeat-x; */
+        margin-bottom: 20px;
+    }
+    .infoarea.google .stats_area h3 em, .infoarea.twitter .stats_area h3 em {
+        display: inline-block;
+        color: #666666;
+        font-size: 17px;
+        text-transform: uppercase;
+        background-color: white;
+        padding: 0px 10px;
+    }
+
+    .infoarea .google_worth p, .infoarea .twitter_worth p {
+        line-height: 25px;
+        color: #666;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        /* font-size: 14px; */
+    }
+
+    .infoarea .stats_area a.twworthlink {
+        display: block;
+        float: right;
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 2px 30px 2px 20px;
+        background: #00acee;
+        color: white;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 16px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    .infoarea .stats_area a.twworthlink img {
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+        vertical-align: bottom;
+    }
+
+    .infoarea .twitter_worth .userstats {
+        text-align: center;
+    }
+    .infoarea .twitter_worth .userstats > div {
+        display: inline-block;
+        width: 45%;
+        font-weight: 300;
+        color: gray;
+        margin-top: 20px;
+    }
+    .infoarea .twitter_worth .userstats > div span {
+        font-weight: 400;
+        color: black;
+    }
+
+    .infoarea .twitter_worth .controls {
+        margin: 25px 0 0 0;
+    }
+    .infoarea .twitter_worth .controls > div {
+        float: left;
+        background: #f1f1f1;
+        padding: 10px;
+        height: 80px;
+    }
+    .infoarea .twitter_worth .controls > div h4, .infoarea .twitter_worth .controls > div h5 {
+        color: #2fb345;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        font-weight: 300;
+
+    }
+    .infoarea .twitter_worth .controls > div h5 { margin-bottom: 0px; margin-top: 8px; font-weight: 400;}
+    .infoarea .twitter_worth .controls div.loc {
+        width: 110px;
+        margin-right: 15px;
+    }
+    .infoarea .twitter_worth .controls div.views {
+        width: 185px;
+    }
+    
+
+    .infoarea .twitter_worth .controls label {
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-weight: 100;
+        font-size: 14px; 
+        margin-top: 10px;
+    }
+
+    .infoarea .twitter_worth .controls input[type="radio"] {
+        display:none;
+    }
+    .infoarea .twitter_worth .controls input[type="radio"] + label span {
+        display:inline-block;
+        width:14px;
+        height:14px;
+        margin:-5px 8px 0 0;
+        vertical-align:middle;
+        background:url(/images/avgprivacyfix/radio_sprite.png) -16px 1px no-repeat;
+        cursor:pointer;
+    }
+    .infoarea .twitter_worth .controls input[type="radio"]:checked + label span {
+        background:url(/images/avgprivacyfix/radio_sprite.png) -1px 1px no-repeat;
+    }
+
+    .infoarea .stats_area .tracks_on {
+        color: #2fb345;
+        position: relative;
+        transition: opacity .5s linear;
+    }
+    
+    .infoarea .stats_area .tracks_on strong {
+        display: inline-block;
+        height: 50px;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 100;
+        vertical-align: middle;
+    }
+    .infoarea.facebook .stats_area .tracks_on {
+        color: #2fb345;
+    }
+
+    .infoarea .stats_area .tracks_on em {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 0px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: #666;
+    }
+    .infoarea .stats_area .not_enough_data {
+        position: absolute;
+        top: 50px;
+        width: 350px;
+        transition: opacity .5s linear;
+        opacity: 0;
+    }
+    .infoarea .stats_area .not_enough_data > div {
+        display: inline-block;
+        margin: 0px auto;
+        height: 40px;
+        background: url(/images/avgprivacyfix/clock.png) left top no-repeat;
+        padding-left: 54px;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 40px;
+        color: #aaa;
+    }
+
+    .infoarea.linkedin .stats_area ul {
+        list-style-type: none;
+    }
+    .infoarea.linkedin .stats_area li {
+        list-style: none;
+        padding: 10px 20px 10px 70px;
+        font-size: 17px;
+        text-align: left;
+        font-weight: 300;
+        line-height: 25px;
+        color: #666;
+        background-image: url(/images/avgprivacyfix/li_01.png);
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        margin-bottom: 32px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .infoarea.linkedin .stats_area li:hover {
+        background-color: #eee;
+        
+        color: black\9; /* IE 8 yay */
+    }
+    .infoarea.linkedin .stats_area li.lurk {
+        background-image: url(/images/avgprivacyfix/li_02.png);
+    }
+    .infoarea.linkedin .stats_area li.visibility {
+        background-image: url(/images/avgprivacyfix/li_03.png);
+    }
+
+    .infoarea h4 {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 100;
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    .infoarea.publisher .btn_alerts {
+        margin: 0px 0px 30px 0px;
+        padding: 15px 0px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        background: #f48720;
+        border-radius: 10px;
+        font-weight: 400;
+    }
+    .infoarea.publisher .btn_alerts.isactive {
+        background: #36b34b;
+    }
+    .infoarea.publisher img {
+        margin-bottom: 15px;
+    }
+    .infoarea p.content {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        color: #888;
+    }
+    .infoarea.publisher .btn_alerts .inactive {
+        display: none;
+    }
+    .infoarea.publisher .btn_alerts .active {
+        display: none;
+    }
+    .infoarea.publisher .btn_alerts.isinactive .inactive {
+        display: block;
+    }
+    .infoarea.publisher .btn_alerts.isactive .active {
+        display: block;
+    }
+
+
+    .iconbox
+    {
+
+    }
+    .iconbox .icons
+    {
+        padding: 0px 10px 0px 20px;
+        margin-top: 20px;
+    }
+    .iconbox .icons:empty
+    {
+        display: none;
+    }
+    
+    .iconbox .foot
+    {
+        color:White;
+        text-align: center;
+        height: 20px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .iconbox .logo
+    {
+        position:relative;
+        float: left; 
+        width: 20px;
+        margin: 10px 12px 0px 0px;
+    }
+    .iconbox .logo:last-child
+    {
+        margin-bottom: 10px;
+    }
+
+    
+          
+         
+          
+    .box
+    {
+        position: relative;
+        height: 74px;
+        color: white;
+        font-weight: normal;
+        cursor: pointer;
+        margin: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        display: table;
+        width: 100%;
+        padding-right: 175px;
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    .box.only_child
+    {
+        border-bottom: 0px none transparent;
+    }
+    .box:last-child
+    {
+        /*
+        border-bottom: 0px none transparent;
+        */
+    }
+    .box:hover
+    {
+    }
+    
+    .box.istrue
+    {
+        
+    }
+    .box.istrue .icon
+    {
+        background: url(/images/avgprivacyfix/explanation_point_orange.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    .box.istrue .btn.btnfix
+    {
+        display: table;
+        font-weight: 400;
+    }
+    .box.istrue .text.norm
+    {
+        display: table-cell;
+    }
+    .box.istrue:hover, .box.istrue.hover
+    {
+        background-color: #f48720;
+    }
+    .box.isfalse:hover .text.alt, .box.isfalse.hover .text.alt
+    {
+        color: white;
+    }
+    .box.istrue:hover .btn.btnfix, .box.istrue.hover .btn.btnfix
+    {
+        color: white;
+        min-width: 83px;
+        height: 35px;
+        border: 1px solid white;
+    }
+    .box.istrue:hover .icon, .box.istrue.hover .icon
+    {                
+        background: url(/images/avgprivacyfix/explanation_point_hover.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+
+    .box.isfalse .icon
+    {                
+        background: url(/images/avgprivacyfix/icon-lock.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    .box.isfalse:hover, .box.isfalse.hover
+    {                
+        background-color: #36b34b;
+    }
+    .box.isfalse:hover .text.alt, .box.isfalse.hover .text.alt
+    {
+        color: white;
+    }
+    .box.isfalse:hover .btn.fixed, .box.isfalse.hover .btn.fixed
+    {
+        color: white;
+    }
+    .box.isfalse:hover .icon, .box.isfalse.hover .icon
+    {                
+        background: url(/images/avgprivacyfix/icon-lock_hover.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    .box.isfalse .btn.undo
+    {
+        display: table;
+        background-color: rgba(255, 255, 255, .3);
+    }
+    .box.isfalse:hover .btn.undo, .box.isfalse.hover .btn.undo
+    {
+        background-color: rgba(0, 0, 0, .3);
+        min-width: 83px;
+        height: 35px;
+        border: 1px solid white;
+    }    
+     .box.isfalse .btn.fixed
+    {
+        display: table;
+        background-color: transparent;
+        text-align: center;
+        color: #31b440;
+    }
+    .box.isfalse .text.alt
+    {
+        display: table-cell;
+        color: #939499;
+    }
+
+    .box.isundefined .icon
+    {                
+        background: url(/images/avgprivacyfix/question_mark.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    .box.isundefined .btn.login
+    {
+        display: table;
+        opacity: 0;
+        -webkit-transition: opacity .5s linear;  -moz-transition: opacity .5s linear;  transition: opacity .5s linear;
+        background-color: rgba(255, 255, 255, .3);
+    }
+    .box.isundefined .btn.login.show
+    {
+        opacity: 1;
+    }
+    .box.isundefined .text.undef
+    {
+        display: table-cell;
+        color: #939499;
+    }
+    .box.isundefined:hover, .box.isundefined.hover, .box.isallowed:hover, .box.isallowed.hover
+    {                
+        background-color: #323337;
+    }
+    .box.isundefined:hover .text.undef, .box.isundefined.hover .text.undef
+    {
+        color: white;
+    }
+    .box.isallowed:hover .text.norm, .box.isallowed.hover .text.norm
+    {
+        color: white;
+    }
+    .box.isundefined:hover .btn.login, .box.isundefined.hover .btn.login
+    {
+        color: white;
+        min-width: 83px;
+        height: 35px;
+        border: 1px solid white;
+    }
+    .box.isundefined:hover .icon, .box.isundefined.hover .icon
+    {                
+        background: url(/images/avgprivacyfix/question_mark_hover.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    
+    .box.isallowed
+    {
+        
+    }
+    
+     .box .icon
+    {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    
+       
+    .box.isallowed .icon
+    {                
+        background: url(/images/avgprivacyfix/icon_graybang.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+    .box.isallowed:hover .icon
+    {
+        background: url(/images/avgprivacyfix/explanation_point_hover.png) no-repeat bottom left;
+        background-size: 40px 40px;
+    }
+       
+    
+    
+    .box .btn
+    {
+        display: none;
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-align: center;
+        min-width: 85px;
+        height: 37px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        background-color: rgba(255, 255, 255, .2);
+        padding: 0px 5px;
+        text-transform: uppercase;
+        
+    }
+    .box.isundefined .btn.login.wide {
+        width: auto;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        background-color: black;
+    }
+    .box.isundefined:hover .btn.login.wide, .box.isundefined.hover .btn.login.wide
+    {
+        width: auto;
+        padding-left: 9px;
+        padding-right: 9px;
+        background-color: white;
+        color: black;
+    }
+    .box .btn p
+    {
+        display: table-cell;
+        vertical-align: middle;
+    }
+     
+
+    
+     
+    /* hack because these buttons share html so they both have undo and fix elements */
+    .box#instantPersonalization .btn.undo
+    {
+        display:none;
+    }
+    .box#setBlockFacebook .btn.fixed 
+    {
+        display:none;   
+    }
+    .box#trackingBlockedOffOfGoogle .btn.undo
+    {
+        display:none;
+    }
+    .box#setBlockGoogle .btn.fixed 
+    {
+        display:none;   
+    }
+    /* END: hack because these buttons share html so they both have undo and fix elements */
+    .box.isallowed .btn.allowed
+    {
+        display: table;
+        background-color: transparent;
+        border:none;
+        text-align: center;
+        color: #31b440;
+    }
+    
+    
+    .box .text
+    {   
+        display: none;    
+        margin: 0px 10px 0px 50px;
+        font-size: 25px;
+        padding-bottom: 2px;
+        vertical-align: middle;
+        padding-left: 75px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+    }
+      
+    .box.isallowed .text.norm
+    {
+        display: table-cell;
+        color: #939499;
+    }    
+     
+    
+
+    
+    .issuebuttonswrap 
+    {
+        position:relative; 
+        float:left; 
+        width: 770px;
+        min-height: 20px;
+    }
+            
+    
+    
+    
  
+    
+      
+    .imageset
+    {
+        position: relative;
+        height: 200px;
+        width: 400px;
+        border: solid silver 1px;
+    }  
+    .imageset div{
+        position: absolute;
+        top:0px;
+        left: 0px;        
+    } 
+    .imageset div.image1
+    {
+        z-index: 10;
+    }
+
+    .imageset img 
+    {
+        width: 400px;
+    }
+    
+    
+    .emailmsg
+    {
+        clear:both;
+        text-align:left;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .emailmsg .button
+    {
+        background: #F99746;
+        color: White;
+        padding: 5px;
+        border: solid white 1px;
+        width: 100px;
+        margin: auto;
+        margin-top: 10px;
+        text-align:center;
+        font-weight: bold;
+    }
+    .deletemsg
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .delallcookies 
+    {
+        cursor: pointer;
+    }
+   
+   
+   .naMsgBox
+   {
+       margin-top: 6px;
+       padding: 10px;   
+       color: #555;    
+   }
+   
+   .borderRtBt
+   {
+        border-right: solid silver 1px;
+        border-bottom: solid silver 1px;   
+   }
+   
+   .pointer
+   {
+       cursor:pointer;
+   }            
+   
+   
+   
+   
+   
+   .actionarea
+   {
+       display:none;
+       margin-top: 20px;       
+   }
+   .actionarea.installedNo
+   {
+       display:block;
+   }
+   
+
+
+
+
+
+
+
+    .trackingstats
+    {
+        font-size: 16px;
+        line-height: 18px;
+    }    
+    .trackingstats .statsection
+    {
+        position:relative;
+        border-top: solid #bbb 1px;
+        padding-top: 20px;
+        margin-top: 20px;
+        
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .statsection .spinstat 
+    {
+        position: absolute;
+        left: 110px;
+        top: 60px;
+    }
+    .statsection.money
+    {
+        position:relative;
+        opacity: 0.1;
+    }
+    .statsection.pieblock
+    {
+        opacity: 0.1;
+    }
+    
+    .trackingstats .statsection:first-child
+    {
+        border-top: none;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .trackingstats .side
+    {
+        float:left;
+    }  
+    .trackingstats .side.leftside
+    {
+        float:left;
+        width:80px;
+    } 
+    .trackingstats .pieblock .side.leftside
+    {
+        width:90px;
+        padding-top: 8px;
+    } 
+    .trackingstats .side.rightside
+    {
+        float:right;
+        width:80px;
+    }    
+    .trackingstats .sidecenter
+    {
+        margin:auto;
+        width: 200px;
+    }         
+    .facebook .trackingstats .pieblock .sidecenter
+    {
+        width: 170px;
+    }
+    .google .trackingstats .pieblock .sidecenter
+    {
+        width: 170px;
+    }
+    
+    .trackingstats h6
+    {
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 24px;
+        text-align: center;  
+    }    
+    .trackingstats .amount
+    {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        margin-right: 10px;
+    }
+
+    .trackingstats .launchbutton
+    {
+        font-size: 24px;
+        margin: 0 0 0 0;
+        padding: 7px;
+        line-height: 24px;
+        background-color: #D45955;
+        
+    }
+    .section .launchbutton
+    {
+        background-color: #D45955;
+    }
+    .trackingstats .blurb
+    {
+        clear:both;
+        padding-top: 10px;
+    } 
+    .trackingstats .estimate
+    {
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    
+    .trackingstats .statsection.graph
+    {
+    }
+    .trackingstats .statsection.graph h6
+    {
+        font-size: 22px;
+        float: left;
+        width: 140px;
+        text-align: left;
+    }
+    .trackingstats .statsection.graph h6 span
+    {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }    
+    .trackingstats .statsection.graph .item
+    {
+        clear: both;
+        padding: 8px 0px 8px 35px;
+        font-size: 18px;
+        line-height: 16px;
+        background: url(/images/Start/bang-orange-fill-32.png) no-repeat left;
+        cursor:pointer;
+    }
+    .trackingstats .statsection.graph .item.good
+    {
+        background: url(/images/Start/check-green-fill-32.png) no-repeat left;
+    } 
+    .trackingstats .statsection.graph .item .text
+    {
+        display:none;
+    }
+    .trackingstats .statsection.graph .item.good .text.good
+    {
+        display:block;
+    }
+    .trackingstats .statsection.graph .item.bad .text.bad
+    {
+        display:block;
+    }    
+    
+    .trackingstats .statsection.graph .degree
+    {
+        float: right;
+        padding: 10px;
+        background-color: #FAA657;
+        color: white;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }  
+    .trackingstats .statsection.graph .num
+    {
+        display:none;        
+    }  
+    
+    .trackingstats .statsection.graph.high .degree
+    {
+        background-color:#FAA657;
+    }
+    .trackingstats .statsection.graph.high .num.high
+    {        
+        display:block;
+    }
+    .trackingstats .statsection.graph.low .degree
+    {
+        background-color:#7BA34A;
+    }
+    .trackingstats .statsection.graph.low .num.low
+    {        
+        display:block;
+    }
+        
+        
+    
+
+        
+        
+    .section.misc 
+    {
+        display:none;
+    }   
+    
+    
+    .issueBtnBubble
+    {
+        width: 750px;
+        background-color: white;
+        text-align: left;
+        font-size: 14px;
+        line-height: 22px; 
+        padding: 15px 10px;
+        border: 0px solid #f2f9f1;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300;
+        color: black;
+    }
+
+    .issueBtnBubble img.toolbar_icon {
+        width: 22px;
+        height: 22px;
+        margin-bottom: -3px;
+    }
+
+    .issueBtnBubble .fixed_by {
+        display: none;
+        float: right;
+        width: 275px;
+        padding-left: 20px;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-left: 1px solid #ddd;
+    }
+    .issueBtnBubble.family_fixed .fixed_by {
+        display: block;
+    }
+    .issueBtnBubble.family_fixed .instruction {
+        width: 435px;
+        font-size: 16px;
+        line-height: 19px;
+        padding-right: 25px;
+        padding-left: 5px;
+    }
+    .issueBtnBubble.family_fixed .fixed_by ul {
+        width: 285px;
+        height: 47px;
+    }
+    .issueBtnBubble.family_fixed .fixed_by ul li {
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+    .issueBtnBubble.family_fixed .fixed_by ul li:last-child {
+        margin-right: 0px;
+    }
+    .issueBtnBubble.family_fixed .fixed_by ul li.remaining {
+        width: 47px;
+        height: 47px;
+        background-color: #ddd;
+        border-radius: 50px;
+        line-height: 47px;
+        margin-top: 0px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .issueBtnBubble.family_fixed .fixed_by ul li img {
+        border-radius: 50px;
+    }
+    
+    .spinner
+    {
+        position: relative;
+        left: 15px;
+        bottom: -6px; 
+    }
+    
+    .canvasloader
+    {
+        position: absolute;
+        left: -25px;
+        top: 27px;
+        z-index: 10000;
+        height: 16px;
+        width: 16px;
+    }
+    
+    .videoPanel
+    {
+        margin:10px 0 10px 0;        	   	
+    }
+    .videoPanel video 
+    {
+        border:1px solid #CCCCCC;  
+        width: 530;   
+    }
+     
+     
+    .confirmbox 
+    {
+        display:none;
+        position: absolute;
+        top: 0px;
+        left: 100px;
+        background-color:#265D90;
+        color:White;   
+        font-size: 20px;
+        line-height: 24px;
+        z-index: 65000;
+        width: 450px;
+        padding: 20px;
+    } 
+    .confirmbox h2
+    {
+        float:none;
+        margin:  0px 0px 20px 0px;
+        padding: 0px;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight:bold;
+        color:White;
+    }
+    .confirmbox h3
+    {
+        float:none;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight:bold;
+        color:White;
+    }
+    .confirmbox .special
+    {
+        font-style:italic;
+    }
+    .confirmbox .text 
+    {
+        margin: 10px 0px 0px 0px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .confirmbox .launchbutton 
+    {
+        float:left;
+        width: 180px;
+        margin: 20px 0px 10px 25px;
+        
+    }
+    
+    
+    .sectionprogress 
+    {
+        float: left;
+        width: 500px;
+        margin-left: 20px;
+
+    }
+    .sectionprogress .loginmsg
+    {
+        display:none;        
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top:4px;
+        float:left;
+    }
+    .sectionprogress .loginmsg .text
+    {
+        float: left;
+        font-size: 18px;
+        line-height: 28px;
+        margin-left: 10px;
+    }    
+    .sectionprogress .loginmsg .loginbtn
+    {
+        float: left;
+        background-color: #D45955;
+        color: White;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0 5px;
+        
+    }
+    .sectionspinner
+    {
+        position: absolute;
+        left: -20px;
+        top: 3px; 
+    }
+
+                
+    
+    #googleProfileBlockedInSearch 
+    {
+        display:none;
+    }    
+    #trackingBlockedOffOfGoogle
+    {
+        display:none;
+    }
+
+
+
+        .btnHelp
+    {
+        float: right;
+        padding: 0px;
+        width: 200px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+        text-align: right;
+        cursor: pointer;
+        margin-top: 8px;
+    }   
+    .appbubble 
+    {
+        text-align:left;
+        
+        padding: 7px 10px 1px 10px;
+    }
+    .appbubble h4
+    {
+        float:none;
+        font-size: 22px;
+        font-weight: 300;
+        color: #393939;
+        margin-bottom: 0px;
+        font-family: "Roboto", sans-serif;
+    }
+    .appbubble ul
+    {
+        margin: 10px 0 0 0;
+    }
+    .appbubble ul li
+    {
+        list-style: none;
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 40px;
+        height: 35px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #000000;
+    }
+    .appbubble ul li.is0
+    {
+        background: url(/images/avgprivacyfix/check_mark.png) no-repeat top left;
+        background-size: 25px 25px;
+    }
+    .appbubble ul li.is1
+    {
+        background: url(/images/avgprivacyfix/explanation_point_orange.png) no-repeat top left;
+        background-size: 25px 25px;
+    }
+    .appbubble ul.tracker
+    {
+        margin: 10px 0 10px 0;
+        padding: 0px;
+    }
+    .appbubble ul.tracker li
+    {
+        height: auto;
+        padding-left: 20px;
+        line-height: 20px;
+    }
+    .appbubble .rating
+    {
+        text-align: right;
+        margin: 10px 0px 5px 0px;
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+    .appbubble .rating strong
+    {
+        font-weight: 400;
+    }
+    .removedAppsBubble 
+    {
+        display:none;
+    }
+    .removedAppsBubble.bubble
+    {
+        
+    }
+    
+    .facebookEmailBubble 
+    {
+        display:none;
+    }
+
+    /* --------------------------------------------------------------------------------------------------- */
+    #modal {
+        z-index: 65009;
+        position: fixed;
+        display: table;
+        height: 100%;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+
+        display: none;
+    }
+    #modal .gutter {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #modal .gutter #modal_interior {
+        margin: 0px auto;
+        width: 1120px;
+        overflow: auto;
+        padding: 40px;
+        background-color: white;
+        position: relative;
+        opacity: 0;
+        -webkit-transition: opacity .5s linear;
+        -moz-transition: opacity .5s linear;
+        transition: opacity .5s linear;
+    }
+    #modal .gutter #modal_interior #modal_close_link {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 35px;
+        color: #1a1a1a;
+    }
+
+    #modal h1 {
+        color: #3ab24e;
+        font-weight: 300;
+        font-size: 41px;
+        line-height: 50px;
+    }
+    #modal p {
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #1a1a1a;
+        font-weight: 300;
+    }
+    #modal p em {
+        font-style: italic;
+    }
+
+
+    #modal hr {
+        margin: 40px 0px;
+        border-top: 1px solid #bababa;
+        border-bottom: 0px none transparent;
+        border-right: 0px none transparent;
+        border-left: 0px none transparent;
+    }
+    #modal ul.columns {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+    #modal ul.columns li {
+        margin: 0px;
+        padding: 0px 63px 0px 0px;
+        list-style: none;
+        width: 305px;
+        float: left;
+    }
+    #modal ul.columns li h2 {
+        font-size: 24px;
+        font-weight: 100;
+        color: #1a1a1a;
+        margin-bottom: 20px;
+    }
+    
+    #modal ul.columns li a {
+        font-weight: 400;
+        color: #1a1a1a;
+        text-decoration: underline;
+    }
+
+    #modal .help h1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 310px;
+        padding-right: 63px;
+    }
+    #modal .help .top_part {
+        position: relative;
+        padding-left: 368px;
+        padding-right: 100px;
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: 100;
+        color: #1a1a1a;
+        height: 160px;
+    }
+    #modal .help .top_part.foreign {
+        height: 200px;
+        padding-left: 468px;
+    }
+    #modal .help .top_part.foreign h1 {
+        width: 400px;
+    }
+
+    #modal .email_bubble {
+        padding-top: 50px;
+    }
+    #modal .email_bubble h1 {
+        position: absolute;
+        left: 40px;
+        top: 30px;
+    }
+    #modal .email_bubble p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #modal .email_bubble .check_all {
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 0px 15px 0px 5px;
+        margin: 20px 0px 0px 25px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+    }
+    #modal .email_bubble .check_all label {
+        cursor: pointer;
+    }
+    #modal .email_bubble .check_all:hover {
+        background: #eee;
+    }
+    #modal .email_bubble .check_all input {
+        width: 20px;
+        margin-right: 5px;
+    }
+    #modal .email_bubble ul {
+        margin: 0px 0px 10px 0px;
+        border: 1px solid black;
+        padding: 40px 30px 30px 30px;
+    }
+    #modal .email_bubble ul li {
+        font-family: "Roboto", sans-serif;
+        color: #1c1c1c;
+        float: left;
+        width: 325px;
+        margin: 0px 20px 10px 0px;
+    }
+    #modal .email_bubble ul li input {
+        width: 20px;
+        margin-right: 5px;
+        padding: 0px;
+    }
+    #modal .email_bubble ul li label {
+        cursor: pointer;
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        width: 295px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #modal .email_bubble p.buttonblurb {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }   
+    #modal .email_bubble .removalrequest {
+        background: #36b34b;
+        width: 350px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        float: right;
+        border-radius: 5px;
+    }
+    #modal .email_bubble .btnAllow, #modal .widget_box .btnAllow, #modal .tracking_bubble .btnAllow {
+        float: right;
+        margin-right: 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: #555555;
+        cursor: pointer;
+        line-height: 55px;
+        font-weight: 100;
+    }
+    #modal .email_bubble .btnAllow:hover {
+        color: black;
+    }
+
+    #modal .widget_box h1 {
+        
+    }
+    #modal .widget_box .actuallyBlock, #modal .widget_box .darnItAll {
+        background: #36b34b;
+        width: 150px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        float: right;
+    }
+    #modal .widget_box .action_buttons, #modal .tracking_bubble .action_buttons {
+        margin-top: 20px;
+    }
+    #modal .widget_box.alerts h1 {
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        width: 200px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    #modal .widget_box.alerts p {
+        padding-left: 250px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 300;
+        min-height: 140px;
+    }
+    #modal .widget_box.alerts .actuallyBlock {
+        width: 350px;
+    }
+    #modal .widget_box.alerts div.understanding {
+        position: absolute;
+        left: 492px;
+        bottom: 343px;
+        width: 667px;
+        font-size: 24px;
+        font-weight: 100;
+        text-align: center;
+    }
+    #modal .widget_box.alerts div.ratings_disclosure {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        width: 550px;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 300;
+        color: #666;
+        line-height: 18px;
+    }
+    #modal .widget_box img.arrow {
+        position: absolute;
+        bottom: 235px;
+        left: 433px;
+    }
+    #modal .widget_box.alerts ul.tutorial {
+        height: 230px;
+        padding-left: 480px;
+        background: url(/images/avgprivacyfix/alerts/browser-sample.png) left top no-repeat;
+        padding-bottom: 20px;
+    }
+    #modal .widget_box.alerts ul.tutorial li {
+        display: inline-block;
+        margin-top: 45px;
+        padding: 0px 25px;
+        width: 160px;
+        border-right: 1px solid #bababa;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    #modal .widget_box.alerts ul.tutorial li.first {
+        width: 180px;
+        padding: 0px 15px;
+    }
+    #modal .widget_box.alerts ul.tutorial li img {
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+    #modal .widget_box.alerts ul.tutorial li.last {
+        border-right: 0px none transparent;
+    }
+
+    #modal .tracking_bubble p {
+        margin-top: 5px;
+    }
+    #modal .tracking_bubble span {
+        font-weight: 300;
+    }
+
+    #modal .tracking_bubble .actually_block, #modal .tracking_bubble .drat {
+        background: #36b34b;
+        width: 300px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        float: right;
+    }
+
+</style>
+
+<style>    
+
+    @-moz-document url-prefix() {
+        
+       
+    }
+    
+    
+</style>
+<!--[if IE 8]>
+    <style type="text/css">
+        body {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='/images/avgprivacyfix/background.png',
+            sizingMethod='scale');
+
+            -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src='/images/avgprivacyfix/background.png',
+            sizingMethod='scale')";
+        }
+        .section .row .rowlabel {
+            background: #555659; 
+        }
+        .login_prompt {
+            border-top: 1px solid #747579;
+            background: #555659;
+        }
+        .infoarea .stats_area .facebook_worth .details > div {
+            visibility: hidden;
+        }
+        .infoarea .stats_area .facebook_worth .details > div.arrow {
+            visibility: hidden;
+        }
+        .infoarea .stats_area .facebook_worth .details.activity .arrow {
+            visibility: visible;
+        }
+        .infoarea .stats_area .facebook_worth .details.profile .arrow {
+            visibility: visible;
+        }
+        .infoarea .stats_area .facebook_worth .details.location .arrow {
+            visibility: visible;
+        }
+        .infoarea .stats_area .facebook_worth .details.activity > div.activity {
+            visibility: visible;
+        }
+        .infoarea .stats_area .facebook_worth .details.profile > div.profile {
+            visibility: visible;
+        }
+        .infoarea .stats_area .facebook_worth .details.location > div.location {
+            visibility: visible;
+        }
+        .box.isfalse .icon
+        {                
+            background: url(/images/avgprivacyfix/icon-lock-lowdpi.png) no-repeat bottom left;
+        }
+        .box.isfalse:hover .icon, .box.isfalse.hover .icon
+        {                
+            background: url(/images/avgprivacyfix/icon-lock-lowdpi_hover.png) no-repeat bottom left;
+        }
+        .box.istrue .icon
+        {
+            background: url(/images/avgprivacyfix/explanation_point_orange_lowdpi.png) no-repeat bottom left;
+        }
+        .box.istrue:hover .icon, .box.istrue.hover .icon
+        {                
+            background: url(/images/avgprivacyfix/explanation_point_hover_lowdpi.png) no-repeat bottom left;
+        }
+        .box.isundefined .icon
+        {                
+            background: url(/images/avgprivacyfix/question_mark_lowdpi.png) no-repeat bottom left;
+        }
+        .box.isundefined:hover .icon, .box.isundefined.hover .icon
+        {                
+            background: url(/images/avgprivacyfix/question_mark_hover_lowdpi.png) no-repeat bottom left;
+        }
+        .box.isallowed .icon
+        {                
+            background: url(/images/avgprivacyfix/icon_graybang_lowdpi.png) no-repeat bottom left;
+        }
+        .box.isallowed:hover .icon
+        {
+            background: url(/images/avgprivacyfix/explanation_point_hover_lowdpi.png) no-repeat bottom left;
+        }
+        .appbubble ul li.is1
+        {
+            background: url(/images/avgprivacyfix/explanation_point_orange_lowdpi_small.png) no-repeat top left;
+        }
+        div.sharea .gutter {
+            font-size: 36px;
+        }
+        .infoarea.publisher h4 {
+            background: url(/images/avgprivacyfix/protected_lowdpi.png) left 6px no-repeat;
+        }
+        .infoarea hr {
+            border-top: 1px solid #ddd;
+        }
+        .iconbox .icons {
+            background-color: #2e2e32;
+        }
+    </style>
+<![endif]-->
+<script type="text/javascript">
+
+if (!Function.prototype.bind) {
+  Function.prototype.bind = function (oThis) {
+    if (typeof this !== "function") {
+      // closest thing possible to the ECMAScript 5 internal IsCallable function
+      throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+    }
+
+    var aArgs = Array.prototype.slice.call(arguments, 1), 
+        fToBind = this, 
+        fNOP = function () {},
+        fBound = function () {
+          return fToBind.apply(this instanceof fNOP && oThis
+                                 ? this
+                                 : oThis,
+                               aArgs.concat(Array.prototype.slice.call(arguments)));
+        };
+
+    fNOP.prototype = this.prototype;
+    fBound.prototype = new fNOP();
+
+    return fBound;
+  };
+}
+
+var modal = {
+
+    trigger: function(el)
+    {
+        $('#dimlights').fadeIn(500);
+        $('#modal').css('display', 'table');
+        $('#modal_interior').html(el.html() + '<div id="modal_close_link">&times;</div>');
+        window.setTimeout(function() {
+            $('#modal_interior').css('opacity', 1);
+        }, 50);
+        $('#modal_close_link').unbind();
+        $('#modal_close_link').click(this.hide.bind(this));
+
+        var window_height   = $(window).height();
+        var content_height  = $('#modal_interior')[0].scrollHeight;
+        var padding         = 80;
+
+        console.log('window height: ', window_height, '; content_height: ', content_height);
+
+        if (content_height > window_height)
+            $('#modal_interior').css('height', (window_height - padding)+'px');
+        else
+            $('#modal_interior').css('height', 'auto');
+    },
+
+    hide: function()
+    {
+        $('#modal_interior').css('opacity', 0);
+        $('#dimlights').fadeOut(500, function() {
+            $('#modal').css('display', 'none');
+        });
+    }
+}
+
+$(document).ready(function () {
+    $('#modal .gutter').click(function(e) { 
+        if (e.target != this)
+            return;
+        
+        modal.hide();
+    });
+});
+
+    
+</script>
+
+    
+        <link href="/css/avgdashboardcontent.css" rel="stylesheet" type="text/css" />
+
+        <!-- Header Code PRODUCTION -->
+        <script src="//assets.adobedtm.com/cb442236e8fbb669a07de6df8af5f191b2203455/satelliteLib-901e205d824026ee55f0c4bc626aa4656813f23e.js"></script>
+    
+    </head>
+
+    <body>
+
+<div id="dimlights" style="display:none; z-index: 65005; background-color:Black; position: fixed; height: 100%; width: 100%;  opacity: .7;" ></div>
+<div id="modal">
+    <div class="gutter">
+        <div id="modal_interior">
+        
+        </div>
+    </div>
+</div>
+
+
+<div class="header">
+    <div class="gutter">
+        <a href="/start"><img src="/images/avgprivacyfix/privacyfix_logo.png" width="290" height="44" /></a>
+        <ul>                                                         
+            <li><a target="_blank" href="/start/faq" target='_blank'>FAQ</a></li>   
+            <li><a target="_blank" href="/start/privacy" target="_blank">Privacy Policy</a></li>
+            <li>
+                <a target="_blank" class="top_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprivacyfix.com%2Fstart"><img src="/images/avgprivacyfix/facebook.png" width="40" height="40"/></a>
+
+                <a target="_blank" class="top_twitter" href="https://twitter.com/intent/tweet?source=webclient&amp;text=I just used Privacyfix to lock down my privacy and get ready for Facebook Graph Search. http://www.privacyfix.com"><img src="/images/avgprivacyfix/twitter.png" width="40" height="40"/></a>
+                <a target="_blank" class="top_email" href="/start/mailtoPF?addrs=&amp;subject=Lock down your privacy settings with PrivacyFix&amp;msg=Lock down your online privacy settings on Facebook, Google, LinkedIn, and more with AVG PrivacyFix. It's simple and free. https://www.privacyfix.com"><img src="/images/avgprivacyfix/email.png" width="40" height="40"/></a>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        
+        <script src="/start/masterLanguage" type="text/javascript"></script>
+
+<div class="content">
+
+<div id="wrap" class="clear" style="display: block;">
+    <div class="sectionbar facebook clear">
+                
+        Our Privacy Policy
+        
+    </div>
+    <div id="wrapsites" class="section facebook dynamic" section="facebook" style="display: block;">
+        <div class="actionArea">
+            <div class="infoarea">
+            </div>
+            <div class="right issuebuttonswrap faq_text">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        render_faq();
+    });
+    function render_faq() {
+        for (var i = 0; i < masterLanguage.privacy.length; i++) {
+            $('.infoarea').append('<a href="#'+masterLanguage.privacy[i].keyname+'"><div class="infolinks">'+masterLanguage.privacy[i].q+'</div></a>');
+            $('.faq_text').append('<div class="row"><div class="rowlabel"><div class="words" id="'+masterLanguage.privacy[i].keyname+'">'+masterLanguage.privacy[i].q+'</div></div><div class="rowcontent staticpage">'+masterLanguage.privacy[i].a+'</div></div>');
+        }
+    }
+</script>
+
+</div>
+        
+<div class="sharea">
+    <div class="gutter">
+        <ul>
+            <li><a target="_blank" class="bottom_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprivacyfix.com%2Fstart"><img src="/images/avgprivacyfix/facebook.png" width="74" height="74"/></a></li>
+            <li><a target="_blank" class="bottom_twitter" href="https://twitter.com/intent/tweet?source=webclient&amp;text=I just used Privacyfix to lock down my privacy and get ready for Facebook Graph Search. http://www.privacyfix.com"><img src="/images/avgprivacyfix/twitter.png" width="74" height="74"/></a></li>
+            <li><a target="_blank" class="bottom_email" href="/start/mailtoPF?addrs=&amp;subject=Lock down your privacy settings with PrivacyFix&amp;msg=Lock down your online privacy settings on Facebook, Google, LinkedIn, and more with AVG PrivacyFix. It's simple and free. https://www.privacyfix.com"><img src="/images/avgprivacyfix/email.png" width="74" height="74"/></a></li>
+        </ul>
+        Privacy is something to share
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="gutter">
+        <div class="clear">
+            <div class="affiliation">PrivacyFix is not affiliated with Facebook, Twitter, LinkedIn or Google.</div>
+            <ul class="apps">
+                <li><a target="_blank" class="install_ios" href="https://itunes.apple.com/us/app/avg-privacyfix/id688795921?ls=1&mt=8"><img src="/images/avgprivacyfix/app_store.png" width="223" height="64"/></a></li>
+                <li><a target="_blank" class="install_android" href="https://play.google.com/store/apps/details?id=com.avg.privacyfix"><img src="/images/avgprivacyfix/google_play.png" width="187" height="64"/></a></li>
+            </ul>
+            <ul class="nav">
+                <li><a target="_blank" href="/start/faq">FAQ</a></li>
+                <li><a target="_blank" href="http://support.avg.com">Support</a></li>
+                <li><a target="_blank" href="http://www.avg.com/policies">Terms</a></li>
+                <li><a target="_blank" href="http://www.avg.com/cookies">Cookies</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Android&trade; is a trademark of Google, Inc. Facebook&reg; is a trademark of Facebook, Inc., registered in the United States and in other countries. Chrome&reg; is a trademark of Google, Inc. LinkedIn&reg; is a registered trademark of LinkedIn corporation and its affiliates in the US and other countries. Twitter&reg; is a trademark of Twitter, Inc., registered in the United States and in other countries. Firefox&reg; is a trademark of the Mozilla Foundation. iOS&reg; is a trademark of Cisco in the US and is used by Apple under license. Internet Explorer is a trademark of Microsoft.
+        </div>
+        <em id="glworth_image_placeholder"></em><em id="fbworth_image_placeholder"></em>
+    </div>
+</div>
+
+        <!-- Footer Code PRODUCTION -->
+        <script type="text/javascript">_satellite.pageBottom();</script>
+
+        <!-- Google Analytics -->
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36825151-26']);
+        _gaq.push(['_trackPageview']);
+        (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+        </script>
+
+    </body>
+</html>
