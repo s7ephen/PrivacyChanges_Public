@@ -1,1 +1,375 @@
- 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgQGU19VGwAFVVhXAAE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:21,2:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,2:21,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,2:21,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),u=c.document,f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+<title>Christian news, Christian Post</title>
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Questrial">
+<link href="http://graphic.christianpost.com/css/common.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/templates.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/contents/aboutus.css" rel="stylesheet" type="text/css" />
+<link href="http://graphic.christianpost.com/css/mediaquery.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://graphic.christianpost.com/js/jquery.js"></script>
+<style type="text/css">
+  .contents_rightbar ul { margin-left: 40px; }
+  .contents_rightbar li {
+    list-style-type: disc;
+    margin-bottom: 1em;
+  }
+  .contents_rightbar .indent { margin-left: 30px; }
+  .contents_rightbar h4 { margin-top: 30px; }
+</style>
+</head>
+<body>
+	<script>
+$(document).ready(function() {
+	// more button on menu
+	$("#btn_more").click(function() {
+		$(".more").toggle();
+//		return false;
+	});
+	// sidebar top right
+	$("#newsletter .bt").click(function(){
+		$("#newsletter form").submit();	
+	});
+});
+</script>
+<!--TopBar Black Start-->
+<div id="topBarBlack">
+	<div class="wrapper">
+        <div class="left">
+          <a href=""><h1><img src="http://graphic.christianpost.com/images/2013/logo_black_top.gif" align="absmiddle"/></h1></a>
+          <ul class="navHome">
+          	  <li><a href="/church-ministries/">Church & Ministry</a></li>
+              <li><a href="/us/">U.S.</a></li>
+              <li><a href="/world/">World</a></li>
+              <li><a href="/politics/">Politics</a></li>
+              <li><a href="/entertainment/">Entertainment</a></li>
+              <li><a href="/tech/">Tech & Biz</a></li>
+              <li><a href="/opinion/">Opinion</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Video</a></li>
+              <li><a href="/gallery/">Photo</a></li>
+              <li id="btn_more"><a href="#">More</a>
+              	<ul class="more" style="display:none;">
+                    <li><a href="">Audio Bible</a></li>
+					<li><a href="">CP Blog</a></li>
+					<li><a href="">iPost</a></li>
+					<li><a href="/mypost/">My Post</a></li>
+					
+                </ul>
+              </li>
+          </ul>
+        </div>
+        <div class="right">
+        	<div><!--input name="" type="text" placeholder="Search" /-->
+			<form action="/search/" id="cse-search-box" class="topSearch" name="srch">
+									<input type="hidden" name="cx" value="012079842137319898121:kryavccayfo" />
+									<input type="hidden" name="cof" value="FORID:9" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="text" name="q" class="term" placeholder="Search" value="" />
+					<img src="http://graphic.christianpost.com/images/2013/ic_search.gif" width="23" height="17" alt="Search" onclick="document.srch.submit();" />
+				</form>
+			</div>
+        </div>
+    </div>
+  </div>
+<!--TopBar Black End-->
+<style>
+#iFrame{z-index:9999;}
+</style>    <h1 class="branding" style="display:none;">
+        <a href="/"></a>
+    </h1>
+        <div id="aboutImg" class="aboutImg3">
+    </div>
+    <div id="wrap">
+  		<div id="contents">
+          <div class="contents_leftbar">
+                <h3>About Us</h3>
+                    <ul id="lMenu">
+                        <li><a href="aboutus.html#ginfo">General Information <span class="vh">»</span> </a> </li>
+                        <li><a href="aboutus.html#sFaith">Statement of Faith <span class="vh">»</span> </a></li>
+                        <li><a href="aboutus.html#cInfo">Contact Information <span class="vh">»</span> </a></li>
+                        <li class="border"><a href="board.html">Leadership  </a></li>
+                        <li><a href="disclaimer.html">General Disclaimer  </a></li>
+                        <li><a href="policy.html">Editorial Policy  </a></li>
+                        <li class="selected"><a href="copyright.html">Terms And Conditions » </a></li>
+                        <li><a href="permissionspolicy.html">Permissions Policy  </a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy  </a></li>
+                        <li><a href="contactus.html">Contact Us  </a></li>
+                    </ul>  
+            
+                <h3 class="Spad">Site Services</h3>
+                    <ul> 
+                        <!--li><a href="http://www.christianpost.com/services/user/registration/register.htm">Registration</a> </li>
+                        <li><a href="http://www.christianpost.com/services/user/login/">Login</a></li-->
+                        <li><a href="http://www.christianpost.com/search/">Finding Article</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="http://www.christianpost.com/services/newsletter/subscribe/">Newsletter</a></li>
+                        <li><a href="http://www.christianpost.com/services/rss/">RSS Feed</a></li>
+                        <li><a href="http://www.christianpost.com/corrections.htm">Corrections</a></li>
+                        <li><a href="http://www.christianpost.com/services/banners/">Banners</a></li>
+                   	</ul>
+            </div>
+			
+    
+            <div class="contents_rightbar">
+                <h2>Terms and Conditions of Use</h2>
+                <p>Last updated on April 15 2015</p> 
+                <p>This page describes the terms and conditions that govern your use of The Christian Post digital properties, including <a href="http://www.christianpost.com/">www.ChristianPost.com</a>,  mobile sites and applications, offered by The Christian Post and certain of its subsidiaries (“CP”, “us” or “we”).</p>
+                <h4>GENERAL RULES AND DEFINITIONS</h4> 
+                <p>Welcome to The Christian Post!  As used in these Terms and Conditions, the term "Website" refers to the Website located at www.ChristianPost.com as well as online services that include, but are not limited to, our E-mail newsletters, our archives, our premium online content, our mobile sites and applications, RSS, API, software, other downloads, and our online discussion forums. The Christian Post does not control, and is not responsible for, any third-party site to which the Website links.</p>
+                <p>You agree that your use of the Website is subject to the following Terms and Conditions. These Terms and Conditions may be changed, added, removed or modified at any time and from time to time, which shall become effective immediately upon posting; the date of the most recent changes or revisions will appear on this page.  Continued access to the Website by you will constitute your acceptance of any changes or revisions to the Terms and Conditions. <span class="bold">If you do not agree with the Terms and Conditions, please do not use this Website.</span></p>
+                <p>We may also change, suspend or discontinue any aspect of the Services at any time, including the availability of any Services feature, database, or content.  We may also impose limits on certain features and services or restrict your access to parts or all of the Services without notice or liability.</p>
+                <h4>CONTENT OF THE SERVICES</h4>
+                <p>The materials contained on the Website are provided by The Christian Post as a service to you for your noncommercial, personal use on an "as is, as available" basis and may be used by you for information purposes only.  The materials published on the Website (including, but not limited to news articles, photographs, images, illustrations, audio clips and video clips, also known as the “Content”) are protected by copyright, and owned or controlled by The Christian Post or the party credited as the provider of the Content.  You shall abide by all additional copyright notices, information, or restrictions contained in any Content accessed through the Website.</p>
+                <h4>COPYRIGHT</h4>
+                <p>All materials published on the Website are protected by U.S. and international copyright laws, and may not be reproduced, republished, distributed, transmitted, resold, displayed, broadcast, or otherwise exploited in any manner without the express written permission of either The Christian Post or, in the case of content licensed by The Christian Post from third parties, the entity that is credited as the copyright holder of such licensed content.</p>
+                <p>You may download freely accessible material (one copy per page) from this Website for your personal and noncommercial use; or for ministerial or educational purposes only, without altering or removing any trademark, copyright, or other notice from such material.  For commercial use, you must pay a fee to access articles from our archives and our premium online content.</p>
+                <p>Permission from The Christian Post for its articles to appear on a non-Christian Post online site is required.  You may however use a two-paragraph summary that is no longer than 150 words with a direct link to the full article available on <a href="http://www.christianpost.com/">www.ChristianPost.com</a> or the URL that is visible in the browser location/address bar.</p>
+                <p>For any other use, advance permission must be obtained from The Christian Post. Please contact the general administrator for copyright permission via our <a href="contactus.html">Contact Us</a> page or by sending a letter and self-addressed envelope to 
+the address below:</p>
+                <p class="indent">The Christian Post
+                1400 Eye St NW<br />
+                Suite 375<br />
+                Washington, DC 20005<br />
+                Fax: (202) 280-1313</p>
+                <h4>DIGITAL MILLENNIUM COPYRIGHT ACT</h4>
+                <p>If you are a copyright owner or an agent thereof and believe that any Content infringes upon your copyrights, you may submit a notification pursuant to the Digital Millennium Copyright Act ("DMCA") by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):</p>
+                <ul>
+                  <li>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;</li>
+                  <li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;</li>
+                  <li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled and information reasonably sufficient to permit the service provider to locate the material;</li>
+                  <li>Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and, if available, an electronic mail;</li>
+                  <li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and </li>
+                  <li>A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.</li>
+                </ul>
+                <p>The Christian Post's designated Copyright Agent to receive notifications of claimed infringement is</p>
+                <p class="indent">Yen-Yi Anderson, Esq. <br />
+                Address: 22 Cortlandt St., 21st Floor, New York NY 10007 <br />
+                Email: legal@cmcigroup.com <br />
+                Fax: 202 280 1313.</p>
+                <p>For clarity, only DMCA notices should go to the Copyright Agent; any other feedback, comments, requests for technical support, and other communications should be directed to The Christian Post customer service through  The Christian Post Contact Us page.  You acknowledge that if you fail to comply with all of the requirements of this Section 5(D), your DMCA notice may not be valid.</p>
+                <p>Counter-Notice: If you believe that your Content that was removed (or to which access was disabled) is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use the material in your Content, you may send a counter-notice containing the following information to the Copyright Agent:</p>
+                <ul>
+                  <li>Your physical or electronic signature;</li>
+                  <li>Identification of the Content that has been removed or to which access has been disabled and the location at which the Content appeared before it was removed or disabled;</li>
+                  <li>A statement that you have a good faith belief that the Content was removed or disabled as a result of mistake or a misidentification of the Content; and</li>
+                  <li>Your name, address, telephone number, and e-mail address, a statement that you consent to the jurisdiction of the federal court in New York, New York, and a statement that you will accept service of process from the person who provided notification of the alleged infringement.</li>
+                </ul>
+                <p>If a counter-notice is received by the Copyright Agent, The Christian Post may send a copy of the counter-notice to the original complaining party informing that person that it may replace the removed Content or cease disabling it in 10 business days. Unless the copyright owner files an action seeking a court order against the Content provider, member or user, the removed Content may be replaced, or access to it restored, in 10 to 14 business days or more after receipt of the counter-notice, at The Christian Post 's sole discretion.</p>
+                <p class="indent">The Christian Post
+                1400 Eye St NW <br />
+                Suite 375 <br />
+                Washington, DC 20005</p>
+                <h4>USER GENERATED CONTENT</h4>
+                <p>The Christian Post, through its blogs, discussion boards and forums, provides users an opportunity to post content to the Website.  The Christian Post does not endorse, support, sanction, encourage, or agree with content posted by users. You shall not post or transmit any unlawful threatening, abusive, libelous, defamatory, obscene, vulgar, pornographic, profane, or indecent information of any kind, including without limitation any transmissions constituting or encouraging conduct that would constitute a criminal offense, give rise to civil liability, or otherwise violate and local, state, national, or international law, or infringe upon another's copyright or trademark. You understand that all information, data, text, software, music, sound, photographs, video, messages, or other materials posted or transmitted in a The Christian Post forum, whether publicly posted or privately transmitted, is the sole responsibility of the person from whom such content originated. This means that you, and not The Christian Post, are entirely and solely responsible for all content that you upload, post, or otherwise transmit via the Website. The Christian Post does not and cannot review the content posted by users and is not responsible for such content. However, The Christian Post shall have the right, but not the obligation, to delete, move, or edit any content that violates this agreement or is otherwise objectionable as determined by The Christian Post in its sole discretion and without notice.</p>
+                <p>Furthermore, The Christian Post reserves the right to terminate, without notice, subscriber's access for any activity related to threatening to injure, intimidate, interfere with, oppress or otherwise coerce any other person in connection with the free exercise or enjoyment of any right or privilege guaranteed to him or her under the United States or any national or state constitution on account of race, color, religion, ancestry, national origin, disability, gender or sexual orientation or because the subscriber perceives that another has one or more of these characteristics. This includes, but is not limited to, threats to inflict evil, injury or damage on another individual.</p>
+                <p>If you upload, post, or otherwise transmit content to the Website, you acknowledge that any such submissions may be edited, removed, modified, published, transmitted, and displayed by The Christian Post in any medium now existing or hereinafter invented, and for any purpose, including commercial uses. You waive any moral rights you may have in having the material edited, removed, modified, published, transmitted, or displayed in a manner not agreeable to you.</p>
+                <p>The Website shall be used only in a noncommercial manner.  You shall not, without express written approval of The Christian Post, distribute or otherwise publish any material containing any solicitation of funds, advertising or solicitation for goods or services.</p>
+                <p>You grant The Christian Post a perpetual, nonexclusive, world-wide, loyalty-free, sub-licensable license to the submissions, which includes without limitation the right for The Christian Post and any third party it designates, to use, copy, transmit, excerpt, publish, distribute, publicly display, publicly perform, create derivative works of, host, index, cache, tag, encode, modify and adapt (to streaming, downloading, broadcast, mobile, digital, thumbnail, scanning or other technologies) in any form or media now known or hereinafter developed, any submission posted by you on or to the Website or any other Websites owned by The Christian Post, including any submission posted on or to the Website through a third party.</p>
+                <p>By making the submission, you also consent to its display and publication on the Website and for related online and offline promotional uses.</p>
+                <h4>PRESENTATIONS AND WARRANTIES</h4>
+                <p>You agree to indemnify The Christian Post and its parents, subsidiaries, and affiliates, and each of their respective partners, officers, directors, employees, and agents, against, and to hold each of them harmless from, any and all claims and liabilities (including attorney's fees) that may arise from your submissions, from your unauthorized use of material obtained from the Website, from your breach of these Terms and Conditions, and from any such acts arising through your use of the Website.</p>
+                <p>The Christian Post reserves the right to release subscriber information to comply with an investigation into any activity which violates these terms, and may report such activity to the appropriate authorities.  </p>
+                <p>You acknowledge that you are using the Website at your own risk. The Christian Post assumes no responsibility for error or omissions in these materials. The Christian Post makes no commitment to update the information contained herein. The Christian Post makes no, and expressly disclaims any and all, representations or warranties, express or implied, regarding The Christian Post Website, including without limitation the accuracy, completeness, or reliability of text, graphics, links, products and services, and other items accessed from or via the Website, or that the Website will be uninterrupted, error-free, or free of viruses or other harmful components. No advice or information given by The Christian Post or any other party on the Website shall create any warranty or liability.</p>
+                <p>The Christian Post does not warrant or make any representations regarding the use or the results of the use of the materials at the Website in terms of their correctness, accuracy, timeliness, reliability, or otherwise. Under no circumstances shall The Christian Post or any of its parents, subsidiaries, affiliates, or their respective partners, officers, directors, employees, or agents be held liable for any damages, whether direct, incidental, indirect, special, or consequential, and including, without limitation, lost revenues or lost profits, arising from or in connection with your use, reliance on, or performance of the information on the Website.</p>
+                <p>The Christian Post periodically schedules system downtime for maintenance and other purposes. Unplanned outages also may occur. The Christian Post shall have no liability for the resulting unavailability of the Website or for any loss of data or transactions caused by planned or unplanned system outages, or any outages of webhost providers or the Internet infrastructure and network external to the Website.</p>
+                <h4>ACCESS AND AVAILABILITY OF SERVICES AND LINKS</h4>
+                <p>The Website contain links to other related internet sites, resources and advertisers.  The Christian Post is not responsible for the availability of these third party resources or contents.  If you have any concerns regarding any external links on The Christian Post, please direct them to the site administrator or webmaster of such site.</p>
+                <h4>REGISTRATION AND SECURITY</h4>
+                <p>As part of the registration or account creation process, you will create login credentials by selecting a password and providing an e-mail address.  You also have to provide us certain registration information, all of which must be accurate and updated.</p>
+                <p>Each registration is for a single user only.  Please do not share your registration login credentials, or The Christian Post may cancel or suspend your access to the Website.  You may not (i) select or use the login credentials of another person with the intent to impersonate that person; or (ii) use login credentials that belong to another person without such person’s authorization.  Failure to comply with the foregoing shall constitute a breach of the Terms and Conditions and may result in immediate suspension or termination of your account.  </p>
+                <p>Please notify The Christian Post of any known or suspected unauthorized use(s) of your account, or any known or suspected breach of security, including loss, theft, or unauthorized disclosure of your login credentials.  </p>
+                <p>You are responsible for all usage or activity on your The Christian Post account, including use of the account by any third party authorized by you to use your login credentials.  Any fraudulent, abusive, or otherwise illegal activity may be grounds of termination of your account, at our sole discretion, and we may refer you to appropriate law enforcement agencies.</p>
+                <h4>FEES AND PAYMENTS</h4>
+                <p>The Christian Post reserves the right at any time to charge fees for access to portions of the Website.  You will only be charged for access to the Website after we obtain your prior agreement to pay such charges.  Thus, if at any time we require a fee for portions of the Website that is now free, we will give you advance notice of such fees.  You may cancel your account at any time.  All new fees will be posted prominently on the Website and in other appropriate locations.  You agree to pay all fees and charges incurred through your account at the rates in effect for the billing period.  You also agree to pay all applicable taxes relating to the user of the Website through your account.</p>
+                <h4>CANCELLATION AND REFUND POLICY</h4>
+                <p>
+                <strong>1.1. Cancellation and Refunds of Digital Subscriptions</strong><Br />
+                You can change or cancel your digital subscription at any time by emailing Customer Care at cancellation@christianpost.com.<Br />
+                <Br />
+
+When you cancel a subscription, you cancel only future charges associated with your subscription. You may notify us of your intent to cancel at any time, but the cancellation will become effective at the end of your current billing period.<Br /><Br />
+Cancellations are effective the following billing cycle. You will not receive a refund for the current billing cycle. You will continue to have the same access and benefits of your product for the remainder of the current billing period.<Br /><Br />
+We reserve the right to issue refunds or credits at our sole discretion. If we issue a refund or credit, we are under no obligation to issue the same or similar refund in the future.</p>
+
+                <p><strong>1.2. Changes to Content or Access</strong><Br />
+                We reserve the right to make changes to our digital products at any time. If we temporarily reduce or eliminate the charge for content or access that you are currently paying for under different terms, you will not receive a refund.</p>
+
+                <p><strong>1.3. Cancellations by Us</strong><Br />
+                We reserve the right to suspend or terminate your subscription or product for any reason, with or without notice and without further obligation. You will not be entitled to a refund in these circumstances. If the subscription is temporarily unavailable, you will not receive a refund. We reserve the right to issue refunds or credits at our sole discretion. If we issue a refund or credit, we are under no obligation to issue the same or similar refund in the future.</p>
+
+                <p><strong>1.4. Changes to Content or Access</strong><Br />
+                We reserve the right to make changes to our subscription products at any time. If we temporarily reduce or eliminate the charge for content or access that you are currently paying for under different terms, you will not receive a refund.</p>
+                <h4>FEATURED SERVICES</h4>
+                <p>The Christian Post is committed to providing visitors to its site with as many features as possible. The companies that The Christian Post selects as featured services providers offer products and services that site visitors may find useful.  The Christian Post in certain cases may have a business relationship with certain third parties that it selects as a featured service provider. The Christian Post is not responsible for the accuracy or reliability of any advice or information given, or of any statement made, by the companies providing featured services, or for the content, services, products, or advertising on or available from their Websites, or for the availability and operations of their Websites. Jurisdiction</p>
+                <h4>COMMUNICATIONS BETWEEN THE CHRISTIAN POST AND USERS</h4>
+                <p>If you agree on your registration form that you want to receive such information, The Christian Post, our owners and assigns, will allow certain third party vendors to provide you with information about products and services.  The Christian Post reserves the right to send electronic mail to you for the purpose of informing you of changes or additions to the Website.  The Christian Post reserves the right to disclose information about your usage and demographics, provided that it will not reveal your personal identity in connection with the disclosure of such information.  Advertisers and/or Licensees on our Website may collect and share personal information about you only if you indicate your acceptance.  The Christian Post may also contact you via e-mail regarding your participation in user surveys, asking for feedback on current Websites or prospective products and services.  This information will be used to improve the Website and better understand our users, and any information gathered in such surveys will not be shared with third parties, except in aggregated form.</p>
+                <h4>TERMINATION</h4>
+                <p>You may terminate your account at any time.  Upon termination, you will receive an automated confirmation via e-mail that the cancellation was processed, and your access will be suspended within 24 hours.</p>
+                <p>The Christian Post may, in its sole discretion, terminate or suspend your access to all or part of the Website for any reason, including but not limited to, breach or assignment of these Terms and Conditions.</p>
+                <h4>JURISDICTION</h4>
+                <p>You agree that any claim, action, or proceeding arising out of these Terms and Conditions, or your use of the Website, shall be governed by and construed in accordance with the laws of New York applicable to contracts to be wholly performed therein, and any action based on or alleging a breach of this Terms and Conditions must be brought in a state or federal court in New York. In addition, you agree to submit to the personal jurisdiction of such courts.</p>
+
+            </div>
+        </div>
+    </div>
+	<!--Footer Start-->
+      <div id="footer">
+        <ul id="pageLink">
+              <li><a href="/aboutus/aboutus.html">About Us</a></li>
+              <li><a href="/aboutus/contactus.html" rel="nofollow">Contact Us</a></li>
+              <li><a href="/services/advertise/" rel="nofollow">Media Kit</a></li>
+              <li><a href="/archive/">Archives</a></li>
+              <li><a href="/fan-faves/">Fan Faves</a></li>
+              <li><a href="/corrections.htm" rel="nofollow">Corrections</a></li>
+              <li><a href="/aboutus/disclaimer.htm" rel="nofollow">Disclaimer</a></li>
+              <li><a href="/services/banners/" rel="nofollow">Banners</a></li>
+              <li><a href="/aboutus/jobs.html" rel="nofollow">Careers</a></li>
+              <li><a href="/qna/">Q&A</a></li>
+              
+            </ul>
+        <!--  
+        <div id="partners">
+            Media Partners
+            <a href="http://breathecast.christianpost.com"><img src="images/partners_bc.gif" alt="Breathecast" align="absmiddle" /><span>Breathecast.com</span></a>
+             <a href="http://goodnewsline.christianpost.com"><img src="images/partners_gnl.gif" alt="Goodnewsline" align="absmiddle" /><span>Gnli.com</span></a>
+             <a href="http://bibleportal.christianpost.com"><img src="images/partners_bp.gif" alt="Bibleportal" align="absmiddle" /><span>Bibleportal.com</span></a>
+            
+    </div>
+    	-->
+        <ul id="sections">
+          <li><a href="/church-ministries/">Church & Ministries</a></li>
+          <li><a href="/us/">U.S.</a></li>
+          <li><a href="/world/">World</a></li>
+          <li><a href="/politics/">Politics</a></li>
+          <li><a href="/entertainment/">Entertainment</a></li>
+          <li><a href="/tech/">Tech & Biz</a></li>
+          <li><a href="/opinion/">Opinion</a></li>
+          <li><a href="/">Blogs</a></li>
+          <li><a href="/">Video</a></li>
+          <li><a href="/gallery/">Photo</a></li>
+          <li><a href="/">Audio Bible</a></li>
+          <li><a href="/">iPost</a></li>
+         
+        </ul>
+        <div id="footerBottom">
+          <a href="/"><img src="http://graphic.christianpost.com/images/2013/logo_footer.gif" alt="The Christian Post | Home" align="absmiddle" /></a> <span>Copyright © 2015 The Christian Post , INC. All Rights Reserved.  <a href="/aboutus/copyright.html">Terms</a> under which this service is provided to you. <a href="/aboutus/copyright.html">Privacy Policy</a>. Ad choices. <a href="#"><img src="http://graphic.christianpost.com/images/2013/adchoice.gif" alt="Ad choices" align="absmiddle" /></a></span>
+        </div>
+    </div>
+	<script type="text/javascript">$(document).ready(function() {if($('a[href*="postrelease.com/"]').toArray().length>0)$.ajax({url:'/client/postrelease/counter.php',cache: false});});</script>
+	  <!--Footer End-->	<!-- Begin comScore Tag --><script>var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "7918809" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=7918809&cv=2.0&cj=1" /></noscript><!-- End comScore Tag -->    
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+_qevents.push({
+qacct:"p-f3_tFTzTnk8n2"
+});
+</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-f3_tFTzTnk8n2.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!--google-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8906135-2']);
+  _gaq.push(['_setDomainName', '.christianpost.com']);
+  _gaq.push(['_setCustomVar',1,'Section','www.christianpost.com:',3]);
+   
+  _gaq.push(['_setCustomVar',3,'Edition','www.christianpost.com',3]);
+  
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--google-->
+<!--chartbeat-->
+<script type="text/javascript">
+var _sf_async_config={uid:24907,domain:"christianpost.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+<!--chartbeat-->
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-305490h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-305490h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+	    <!-- stcode start--> 
+    <script type="text/javascript">sc_project=2124700; sc_invisible=1; sc_partition=19; sc_security="e1c37b2d"; </script> 
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js" async="true"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c20.statcounter.com/2124700/0/e1c37b2d/1/" alt="web hit counter" /></a></div></noscript> 
+    <!-- stcode end-->
+        <!-- bizo start-->
+	<script type="text/javascript">_bizo_data_partner_id = "2930";</script>
+	<script type="text/javascript">(function(){var b,a,u;a=document.createElement("script");a.type="text/javascript";a.async=true;u=(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js";a.src=u;b=document.getElementsByTagName("script")[0];return b.parentNode.insertBefore(a,b)})();</script>
+	<noscript><img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=2930&fmt=gif" /></noscript>
+	<!-- bizo end-->
+<!-- Compete CrossPoint Tag for christianpost.com -->
+<script type="text/javascript">
+__compete_code = '38b2a4c235cab155c1b33cb5b22f278c';
+/* Set control variables below this line. */ 
+</script>
+<script type="text/javascript" src="//c.compete.com/bootstrap/s/38b2a4c235cab155c1b33cb5b22f278c/christianpost-com/bootstrap.js"></script>
+<noscript>
+    <img width="1" height="1" src="https://ssl-christianpost-com-38b2a4.c-col.com"/>
+</noscript>
+
+<!-- google true view check -->
+<script type="text/javascript">
+(function() {
+   var gvn = document.createElement('script');
+   gvn.src = document.location.protocol + '//s0.2mdn.net/instream/video/client.js';
+   gvn.async = true;
+   gvn.type = 'text/javascript';
+   var s = document.getElementsByTagName('script')[0];
+   s.parentNode.insertBefore(gvn, s);
+})();
+</script>
+
+<!-- sonobi -->
+<script type="text/javascript">
+    googletag.cmd.push(function(){sbi_morpheus.callOperator();});
+</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8c3b2373fb","applicationID":"3519570","transactionName":"NFJbZEsHVhAAU0JdCg0YbEJQSVkBDkVCQRZMVFZAQBRRBAlEGFwRDls=","queueTime":0,"applicationTime":1,"atts":"GBVYEgMdRR4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
