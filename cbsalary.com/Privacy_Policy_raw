@@ -1,1 +1,1145 @@
- 
+<!DOCTYPE html>
+<html lang='en'>
+<head itemscope itemtype='http://schema.org/WebSite'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="YWVk5oij9nBelXSQxkhOc7os4pbxZuvGWiEJKFvA4s1fs1rziekg0KBmOK6+Uj5YVNqgEW78WnHbMqIopVBDCQ==" />
+<meta charset='UTF-8'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"42096352b4","applicationID":"7405257","transactionName":"el1YEUVZXlRRSxgKXlRXGQxZUldA","queueTime":0,"applicationTime":155,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Uw4HVFNbGwQEVFRQAgY="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
+<meta content='Coach By CareerBuilder' property='og:title'>
+<meta content='Salary, skills and job demand insights, helping you make better career choices' property='og:description'>
+<meta content='Coach By CareerBuilder' itemprop='name' name='title'>
+<meta content='Salary, skills and job demand insights, helping you make better career choices' name='description'>
+<link href='http://coach.careerbuilder.com/' itemprop='url' rel='canonical'>
+<title>
+Coach By CareerBuilder
+</title>
+
+<meta content='http://coach.careerbuilder.com/assets/home.png' property='og:image'>
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
+<link rel="stylesheet" media="all" href="/assets/home/base_home-e65b973b546508ee2de23a4ea65a2930.css" />
+<!--[if IE]>
+<link rel="stylesheet" media="all" href="/assets/report/ie-154b44e658c4b004385d9746544e21c2.css" />
+<link rel="stylesheet" media="all" href="/assets/google_fonts/ie_fonts-739e8cd14dc1b42d91ca47009d8d61a2.css" />
+<![endif]-->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places&amp;language=en"></script>
+<script src="//www.google-analytics.com/analytics.js" async="async"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-58092368-1','auto');ga('send','pageview');
+</script>
+
+<script>
+  var availableTags = []
+</script>
+
+<script>
+  dataLayer = [{
+    "is_internal":false
+  }]
+</script>
+
+<script>
+  // Start Visual Website Optimizer Asynchronous Code
+  var _vwo_code=(function(){
+  var account_id=61602,
+  settings_tolerance=2000,
+  library_tolerance=2500,
+  use_existing_jquery=false,
+  // DO NOT EDIT BELOW THIS LINE
+  f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  // End Visual Website Optimizer Asynchronous Code
+</script>
+
+<script src="/assets/home/home_includes-e24e42654147b005519a34140f4ce577.js"></script>
+</head>
+<body id='body'>
+<!-- / Google Tag Manager -->
+<noscript>
+<iframe frameborder='0' height='0' src='//www.googletagmanager.com/ns.html?id=GTM-KGX562' style='display:none;visibility:hidden;' width='0'></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KGX562');
+</script>
+<!-- / End Google Tag Manager -->
+
+<div id='landing-onboarding'>
+<div id='on-boarding'>
+<div class='scrollable'>
+<div class='spin'></div>
+<div class='close'>
+<i class='fa fa-times'></i>
+</div>
+<h3>Your Profile</h3>
+<p>Your data is confidential and will not be permanently stored or shared with anyone.</p>
+<form id="new_document" class="new_document" enctype="multipart/form-data" action="/on_boarding/parse" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='bloc'>
+<h4>Auto-Complete Using Resume</h4>
+</div>
+<div class='margin-over'>
+<label for="file">Accepted File Types: DOC, DOCX or PDF</label>
+<div class='fileUpload button'>
+<span>Use a resume</span>
+<i class='fa fa-spinner fa-spin fa-poa'></i>
+<input type="file" name="file" id="uploadBtn" class="upload" />
+<input type="hidden" name="origin" id="origin" value="{:value=&gt;&quot;home&quot;}" />
+</div>
+<div class='bloc'>
+<div id='text-form-error'>
+Error on upload. Please check file format and try to upload again
+</div>
+</div>
+</div>
+</form>
+
+<h3 class='title-line margin-over'>or</h3>
+<div class='bloc'>
+<h4>Manually Add</h4>
+</div>
+<div id='form_user'>
+<form id="new_users" class="new_users" enctype="multipart/form-data" action="/on_boarding/form" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div class='field margin-over'>
+<label for="users_jobtitle">Job title / desired job title</label>
+<select name="jobtitle_onboarding_home" id="jobtitle-onboarding-home" class="jobtitle"><option value="/sales/account-executive">Account Executive</option>
+<option value="/management/account-manager">Account Manager</option>
+<option value="/business-and-finance/accountant">Accountant</option>
+<option value="/business-and-finance/accounting-assistant">Accounting Assistant</option>
+<option value="/business-and-finance/accounts-payable-analyst">Accounts Payable Analyst</option>
+<option value="/business-and-finance/accounts-payable-supervisor">Accounts Payable Supervisor</option>
+<option value="/office-and-administration/administrative-assistant">Administrative Assistant</option>
+<option value="/office-and-administration/administrative-clerk">Administrative Clerk</option>
+<option value="/office-and-administration/administrative-coordinator">Administrative Coordinator</option>
+<option value="/sales/advertising-sales-executive">Advertising Sales Executive</option>
+<option value="/business-and-finance/assistant-controller">Assistant Controller</option>
+<option value="/management/assistant-director">Assistant Director</option>
+<option value="/business-and-finance/auditor">Auditor</option>
+<option value="/food-service/bartender">Bartender</option>
+<option value="/business-and-finance/billing-specialist">Billing Specialist</option>
+<option value="/business-and-finance/book-keeper">Book Keeper</option>
+<option value="/management/branch-manager">Branch Manager</option>
+<option value="/business-and-finance/business-analyst">Business Analyst</option>
+<option value="/business-and-finance/business-consultant">Business Consultant</option>
+<option value="/management/business-development-director">Business Development Director</option>
+<option value="/management/business-development-manager">Business Development Manager</option>
+<option value="/office-and-administration/call-center-agent">Call Center Agent</option>
+<option value="/healthcare/case-manager">Case Manager</option>
+<option value="/healthcare/certified-nursing-assistant">Certified Nursing Assistant</option>
+<option value="/business-and-finance/certified-public-accountant">Certified Public Accountant</option>
+<option value="/food-service/chef">Chef</option>
+<option value="/office-and-administration/clerk">Clerk</option>
+<option value="/technology/client-support-specialist">Client Support Specialist</option>
+<option value="/business-and-finance/collections-specialist">Collections Specialist</option>
+<option value="/marketing-media-and-design/communications-coordinator">Communications Coordinator</option>
+<option value="/marketing-media-and-design/communications-manager">Communications Manager</option>
+<option value="/marketing-media-and-design/communications-specialist">Communications Specialist</option>
+<option value="/technology/computer-scientist">Computer Scientist</option>
+<option value="/technology/computer-systems-specialist">Computer Systems Specialist</option>
+<option value="/food-service/cook">Cook</option>
+<option value="/marketing-media-and-design/copy-writer">Copy Writer</option>
+<option value="/sales/counter-sales-representative">Counter Sales Representative</option>
+<option value="/office-and-administration/customer-care-representative">Customer Care Representative</option>
+<option value="/office-and-administration/customer-service-advisor">Customer Service Advisor</option>
+<option value="/sales/customer-service-associate">Customer Service Associate</option>
+<option value="/office-and-administration/customer-service-manager">Customer Service Manager</option>
+<option value="/office-and-administration/customer-service-representative">Customer Service Representative</option>
+<option value="/office-and-administration/customer-service-specialist">Customer Service Specialist</option>
+<option value="/office-and-administration/customer-service-supervisor">Customer Service Supervisor</option>
+<option value="/office-and-administration/data-entry-clerk">Data Entry Clerk</option>
+<option value="/technology/database-administrator">Database Administrator</option>
+<option value="/architecture-and-engineering/design-engineer">Design Engineer</option>
+<option value="/management/director-of-operations">Director of Operations</option>
+<option value="/office-and-administration/dispatcher">Dispatcher</option>
+<option value="/management/district-manager">District Manager</option>
+<option value="/architecture-and-engineering/engineering-technician">Engineering Technician</option>
+<option value="/office-and-administration/executive-assistant">Executive Assistant</option>
+<option value="/food-service/executive-chef">Executive Chef</option>
+<option value="/management/executive-director">Executive Director</option>
+<option value="/office-and-administration/file-clerk">File Clerk</option>
+<option value="/business-and-finance/financial-analyst">Financial Analyst</option>
+<option value="/food-service/food-service-manager">Food Service Manager</option>
+<option value="/food-service/food-service-worker">Food Service Worker</option>
+<option value="/office-and-administration/front-desk-clerk">Front Desk Clerk</option>
+<option value="/office-and-administration/front-desk-coordinator">Front Desk Coordinator</option>
+<option value="/business-and-finance/general-ledger-accountant">General Ledger Accountant</option>
+<option value="/management/general-manager">General Manager</option>
+<option value="/office-and-administration/general-office-clerk">General Office Clerk</option>
+<option value="/marketing-media-and-design/graphic-designer">Graphic Designer</option>
+<option value="/healthcare/health-services-director">Health Services Director</option>
+<option value="/healthcare/home-health-aide">Home Health Aide</option>
+<option value="/office-and-administration/human-resources-assistant">Human Resources Assistant</option>
+<option value="/management/human-resources-manager">Human Resources Manager</option>
+<option value="/technology/it-network-administrator">IT Network Administrator</option>
+<option value="/technology/it-project-coordinator">IT Project Coordinator</option>
+<option value="/technology/it-support-analyst">IT Support Analyst</option>
+<option value="/technology/it-support-engineer">IT Support Engineer</option>
+<option value="/technology/it-systems-analyst">IT Systems Analyst</option>
+<option value="/architecture-and-engineering/industrial-engineer">Industrial Engineer</option>
+<option value="/sales/inside-sales-representative">Inside Sales Representative</option>
+<option value="/healthcare/intensive-care-unit-nurse">Intensive Care Unit Nurse</option>
+<option value="/marketing-media-and-design/interactive-designer">Interactive Designer</option>
+<option value="/technology/java-developer">Java Developer</option>
+<option value="/technology/junior-software-engineer">Junior Software Engineer</option>
+<option value="/food-service/kitchen-manager">Kitchen Manager</option>
+<option value="/healthcare/licensed-practical-nurse">Licensed Practical Nurse</option>
+<option value="/healthcare/licensed-vocational-nurse">Licensed Vocational Nurse</option>
+<option value="/business-and-finance/loan-officer">Loan Officer</option>
+<option value="/office-and-administration/mail-clerk">Mail Clerk</option>
+<option value="/business-and-finance/managing-consultant">Managing Consultant</option>
+<option value="/architecture-and-engineering/manufacturing-engineer">Manufacturing Engineer</option>
+<option value="/marketing-media-and-design/marketing-coordinator">Marketing Coordinator</option>
+<option value="/marketing-media-and-design/marketing-director">Marketing Director</option>
+<option value="/marketing-media-and-design/marketing-manager">Marketing Manager</option>
+<option value="/architecture-and-engineering/mechanical-engineer">Mechanical Engineer</option>
+<option value="/marketing-media-and-design/media-planner">Media Planner</option>
+<option value="/healthcare/medical-assistant">Medical Assistant</option>
+<option value="/office-and-administration/member-service-representative">Member Service Representative</option>
+<option value="/business-and-finance/mortgage-underwriter">Mortgage Underwriter</option>
+<option value="/technology/network-engineer">Network Engineer</option>
+<option value="/healthcare/nurse-manager">Nurse Manager</option>
+<option value="/healthcare/nurse-practitioner">Nurse Practitioner</option>
+<option value="/healthcare/nurse-supervisor">Nurse Supervisor</option>
+<option value="/office-and-administration/office-administrator">Office Administrator</option>
+<option value="/office-and-administration/office-assistant">Office Assistant</option>
+<option value="/office-and-administration/office-coordinator">Office Coordinator</option>
+<option value="/management/office-manager">Office Manager</option>
+<option value="/management/operations-manager">Operations Manager</option>
+<option value="/healthcare/pharmacy-technician">Pharmacy Technician</option>
+<option value="/architecture-and-engineering/process-engineer">Process Engineer</option>
+<option value="/architecture-and-engineering/product-engineer">Product Engineer</option>
+<option value="/marketing-media-and-design/product-manager">Product Manager</option>
+<option value="/sales/product-sales-specialist">Product Sales Specialist</option>
+<option value="/management/program-manager">Program Manager</option>
+<option value="/technology/programmer">Programmer</option>
+<option value="/management/programming-manager">Programming Manager</option>
+<option value="/architecture-and-engineering/project-engineer">Project Engineer</option>
+<option value="/management/project-manager">Project Manager</option>
+<option value="/management/property-manager">Property Manager</option>
+<option value="/architecture-and-engineering/quality-assurance-engineer">Quality Assurance Engineer</option>
+<option value="/architecture-and-engineering/quality-engineer">Quality Engineer</option>
+<option value="/office-and-administration/receptionist">Receptionist</option>
+<option value="/business-and-finance/recruiter">Recruiter</option>
+<option value="/healthcare/registered-nurse">Registered Nurse</option>
+<option value="/marketing-media-and-design/relations-consultant">Relations Consultant</option>
+<option value="/food-service/restaurant-crew-team-member">Restaurant Crew Team Member</option>
+<option value="/food-service/restaurant-manager">Restaurant Manager</option>
+<option value="/sales/retail-sales-associate">Retail Sales Associate</option>
+<option value="/sales/retail-sales-consultant">Retail Sales Consultant</option>
+<option value="/business-and-finance/risk-management-analyst">Risk Management Analyst</option>
+<option value="/technology/sql-developer">SQL Developer</option>
+<option value="/sales/sales-assistant">Sales Assistant</option>
+<option value="/sales/sales-associate">Sales Associate</option>
+<option value="/management/sales-director">Sales Director</option>
+<option value="/management/sales-manager">Sales Manager</option>
+<option value="/sales/sales-representative">Sales Representative</option>
+<option value="/sales/sales-specialist">Sales Specialist</option>
+<option value="/sales/sales-supervisor">Sales Supervisor</option>
+<option value="/office-and-administration/scheduler">Scheduler</option>
+<option value="/office-and-administration/secretary">Secretary</option>
+<option value="/business-and-finance/senior-buyer">Senior Buyer</option>
+<option value="/technology/senior-it-consultant">Senior IT Consultant</option>
+<option value="/food-service/server">Server</option>
+<option value="/marketing-media-and-design/social-media-coordinator">Social Media Coordinator</option>
+<option value="/marketing-media-and-design/social-media-specialist">Social Media Specialist</option>
+<option value="/technology/software-engineer">Software Engineer</option>
+<option value="/technology/software-tester">Software Tester</option>
+<option value="/food-service/sous-chef">Sous Chef</option>
+<option value="/business-and-finance/staff-accountant">Staff Accountant</option>
+<option value="/healthcare/staff-nurse">Staff Nurse</option>
+<option value="/sales/store-manager">Store Manager</option>
+<option value="/technology/systems-administrator">Systems Administrator</option>
+<option value="/technology/systems-analyst">Systems Analyst</option>
+<option value="/technology/systems-engineer">Systems Engineer</option>
+<option value="/technology/technical-lead">Technical Lead</option>
+<option value="/office-and-administration/teller">Teller</option>
+<option value="/management/training-manager">Training Manager</option>
+<option value="/business-and-finance/training-and-development-specialist">Training and Development Specialist</option>
+<option value="/marketing-media-and-design/user-interface-designer">User Interface Designer</option>
+<option value="/management/vice-president">Vice President</option>
+<option value="/marketing-media-and-design/web-designer">Web Designer</option>
+<option value="/technology/web-developer">Web Developer</option></select>
+<input type="hidden" name="users[jobtitle]" id="users_jobtitle" />
+<input type="hidden" name="jobtitle_url" id="jobtitle_url" />
+<div class='hide-data bloc' id='jobtitle-not-found-error'>
+Oops! This job title is not yet available. Please select a similar job title from the list.
+</div>
+</div>
+<div class='field'>
+<label for="users_location_city">Your City and State</label>
+<input placeholder="Chicago, IL" type="text" name="users[location_city]" id="users_location_city" />
+<input type="hidden" name="users_current_location_city" id="users_current_location_city" />
+</div>
+<div class='field'>
+<label for="users_salary"><span>Your Salary</span>
+<div class='fl-r'>
+<label class='inline' for='salary-checkbox'>don’t specify</label>
+<input checked='checked' id='salary-checkbox' name='salary-checkbox' type='checkbox'>
+</div>
+</label><input type="text" name="users[salary]" id="users_salary" />
+$
+<input class='input_value' id='users_salary_value' type='text'>
+per year
+</div>
+<div class='field'>
+<label for="users_experience"><span>Years of experience</span>
+<div class='fl-r'>
+<label class='inline' for='exp-checkbox'>don’t specify</label>
+<input checked='checked' id='xp-checkbox' name='xp-checkbox' type='checkbox'>
+</div>
+</label><input type="text" name="users[experience]" id="users_experience" />
+<input class='input_value w20' id='users_experience_value' type='text'>
+years experience
+</div>
+<div class='field' id='skills_field'>
+<label for="users_skills">Your skills. Click field for suggestions</label>
+<input value="" type="text" name="users[skills]" id="users_skills" />
+</div>
+</form>
+</div>
+<div id='sticky'>
+<i class='fa fa-spinner fa-spin fa-poa'></i>
+<input class='button' id='update_graph' type='submit' value='Update Graphs'>
+</div>
+
+</div>
+</div>
+
+</div>
+<div id='landing'>
+<div class='landing-header'>
+<div class='mask'></div>
+<div class='landing-logo'></div>
+<div class='wrap'>
+<h1>
+<span class='hide-for-mobile'>Welcome to</span>
+<span class='sub-title'>
+<span class='dib sub-title-1'>Coach</span>
+<span class='dib sub-title-2'>
+by
+<img alt="CareerBuilder" src="/assets/cb-logo-a558d5da8ccb0025115afb4e4a6e787c.png" />
+</span>
+</span>
+</h1>
+<div class='accroche'>Guiding you towards a better career</div>
+</div>
+<div class='landing-header-search bg-trans'>
+<div class='wrap'>
+<form class="landing-form dib" action="/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VsT5HfUwnz9U3ekDE4paeLVQz02i6uepJOVl+s3EVVVoEscI9HpJn6oupT1rkCpTW6aNyj1wVh6l9s76M1T0kQ==" />
+<label for="Search_by_job_title_and_get_career_insights">Search by job title and get career insights</label>
+<select name="name" id="name" class="dib chosen-no-mobile"><option value="/sales/account-executive">Account Executive</option>
+<option value="/management/account-manager">Account Manager</option>
+<option value="/business-and-finance/accountant">Accountant</option>
+<option value="/business-and-finance/accounting-assistant">Accounting Assistant</option>
+<option value="/business-and-finance/accounts-payable-analyst">Accounts Payable Analyst</option>
+<option value="/business-and-finance/accounts-payable-supervisor">Accounts Payable Supervisor</option>
+<option value="/office-and-administration/administrative-assistant">Administrative Assistant</option>
+<option value="/office-and-administration/administrative-clerk">Administrative Clerk</option>
+<option value="/office-and-administration/administrative-coordinator">Administrative Coordinator</option>
+<option value="/sales/advertising-sales-executive">Advertising Sales Executive</option>
+<option value="/business-and-finance/assistant-controller">Assistant Controller</option>
+<option value="/management/assistant-director">Assistant Director</option>
+<option value="/business-and-finance/auditor">Auditor</option>
+<option value="/food-service/bartender">Bartender</option>
+<option value="/business-and-finance/billing-specialist">Billing Specialist</option>
+<option value="/business-and-finance/book-keeper">Book Keeper</option>
+<option value="/management/branch-manager">Branch Manager</option>
+<option value="/business-and-finance/business-analyst">Business Analyst</option>
+<option value="/business-and-finance/business-consultant">Business Consultant</option>
+<option value="/management/business-development-director">Business Development Director</option>
+<option value="/management/business-development-manager">Business Development Manager</option>
+<option value="/office-and-administration/call-center-agent">Call Center Agent</option>
+<option value="/healthcare/case-manager">Case Manager</option>
+<option value="/healthcare/certified-nursing-assistant">Certified Nursing Assistant</option>
+<option value="/business-and-finance/certified-public-accountant">Certified Public Accountant</option>
+<option value="/food-service/chef">Chef</option>
+<option value="/office-and-administration/clerk">Clerk</option>
+<option value="/technology/client-support-specialist">Client Support Specialist</option>
+<option value="/business-and-finance/collections-specialist">Collections Specialist</option>
+<option value="/marketing-media-and-design/communications-coordinator">Communications Coordinator</option>
+<option value="/marketing-media-and-design/communications-manager">Communications Manager</option>
+<option value="/marketing-media-and-design/communications-specialist">Communications Specialist</option>
+<option value="/technology/computer-scientist">Computer Scientist</option>
+<option value="/technology/computer-systems-specialist">Computer Systems Specialist</option>
+<option value="/food-service/cook">Cook</option>
+<option value="/marketing-media-and-design/copy-writer">Copy Writer</option>
+<option value="/sales/counter-sales-representative">Counter Sales Representative</option>
+<option value="/office-and-administration/customer-care-representative">Customer Care Representative</option>
+<option value="/office-and-administration/customer-service-advisor">Customer Service Advisor</option>
+<option value="/sales/customer-service-associate">Customer Service Associate</option>
+<option value="/office-and-administration/customer-service-manager">Customer Service Manager</option>
+<option value="/office-and-administration/customer-service-representative">Customer Service Representative</option>
+<option value="/office-and-administration/customer-service-specialist">Customer Service Specialist</option>
+<option value="/office-and-administration/customer-service-supervisor">Customer Service Supervisor</option>
+<option value="/office-and-administration/data-entry-clerk">Data Entry Clerk</option>
+<option value="/technology/database-administrator">Database Administrator</option>
+<option value="/architecture-and-engineering/design-engineer">Design Engineer</option>
+<option value="/management/director-of-operations">Director of Operations</option>
+<option value="/office-and-administration/dispatcher">Dispatcher</option>
+<option value="/management/district-manager">District Manager</option>
+<option value="/architecture-and-engineering/engineering-technician">Engineering Technician</option>
+<option value="/office-and-administration/executive-assistant">Executive Assistant</option>
+<option value="/food-service/executive-chef">Executive Chef</option>
+<option value="/management/executive-director">Executive Director</option>
+<option value="/office-and-administration/file-clerk">File Clerk</option>
+<option value="/business-and-finance/financial-analyst">Financial Analyst</option>
+<option value="/food-service/food-service-manager">Food Service Manager</option>
+<option value="/food-service/food-service-worker">Food Service Worker</option>
+<option value="/office-and-administration/front-desk-clerk">Front Desk Clerk</option>
+<option value="/office-and-administration/front-desk-coordinator">Front Desk Coordinator</option>
+<option value="/business-and-finance/general-ledger-accountant">General Ledger Accountant</option>
+<option value="/management/general-manager">General Manager</option>
+<option value="/office-and-administration/general-office-clerk">General Office Clerk</option>
+<option value="/marketing-media-and-design/graphic-designer">Graphic Designer</option>
+<option value="/healthcare/health-services-director">Health Services Director</option>
+<option value="/healthcare/home-health-aide">Home Health Aide</option>
+<option value="/office-and-administration/human-resources-assistant">Human Resources Assistant</option>
+<option value="/management/human-resources-manager">Human Resources Manager</option>
+<option value="/technology/it-network-administrator">IT Network Administrator</option>
+<option value="/technology/it-project-coordinator">IT Project Coordinator</option>
+<option value="/technology/it-support-analyst">IT Support Analyst</option>
+<option value="/technology/it-support-engineer">IT Support Engineer</option>
+<option value="/technology/it-systems-analyst">IT Systems Analyst</option>
+<option value="/architecture-and-engineering/industrial-engineer">Industrial Engineer</option>
+<option value="/sales/inside-sales-representative">Inside Sales Representative</option>
+<option value="/healthcare/intensive-care-unit-nurse">Intensive Care Unit Nurse</option>
+<option value="/marketing-media-and-design/interactive-designer">Interactive Designer</option>
+<option value="/technology/java-developer">Java Developer</option>
+<option value="/technology/junior-software-engineer">Junior Software Engineer</option>
+<option value="/food-service/kitchen-manager">Kitchen Manager</option>
+<option value="/healthcare/licensed-practical-nurse">Licensed Practical Nurse</option>
+<option value="/healthcare/licensed-vocational-nurse">Licensed Vocational Nurse</option>
+<option value="/business-and-finance/loan-officer">Loan Officer</option>
+<option value="/office-and-administration/mail-clerk">Mail Clerk</option>
+<option value="/business-and-finance/managing-consultant">Managing Consultant</option>
+<option value="/architecture-and-engineering/manufacturing-engineer">Manufacturing Engineer</option>
+<option value="/marketing-media-and-design/marketing-coordinator">Marketing Coordinator</option>
+<option value="/marketing-media-and-design/marketing-director">Marketing Director</option>
+<option value="/marketing-media-and-design/marketing-manager">Marketing Manager</option>
+<option value="/architecture-and-engineering/mechanical-engineer">Mechanical Engineer</option>
+<option value="/marketing-media-and-design/media-planner">Media Planner</option>
+<option value="/healthcare/medical-assistant">Medical Assistant</option>
+<option value="/office-and-administration/member-service-representative">Member Service Representative</option>
+<option value="/business-and-finance/mortgage-underwriter">Mortgage Underwriter</option>
+<option value="/technology/network-engineer">Network Engineer</option>
+<option value="/healthcare/nurse-manager">Nurse Manager</option>
+<option value="/healthcare/nurse-practitioner">Nurse Practitioner</option>
+<option value="/healthcare/nurse-supervisor">Nurse Supervisor</option>
+<option value="/office-and-administration/office-administrator">Office Administrator</option>
+<option value="/office-and-administration/office-assistant">Office Assistant</option>
+<option value="/office-and-administration/office-coordinator">Office Coordinator</option>
+<option value="/management/office-manager">Office Manager</option>
+<option value="/management/operations-manager">Operations Manager</option>
+<option value="/healthcare/pharmacy-technician">Pharmacy Technician</option>
+<option value="/architecture-and-engineering/process-engineer">Process Engineer</option>
+<option value="/architecture-and-engineering/product-engineer">Product Engineer</option>
+<option value="/marketing-media-and-design/product-manager">Product Manager</option>
+<option value="/sales/product-sales-specialist">Product Sales Specialist</option>
+<option value="/management/program-manager">Program Manager</option>
+<option value="/technology/programmer">Programmer</option>
+<option value="/management/programming-manager">Programming Manager</option>
+<option value="/architecture-and-engineering/project-engineer">Project Engineer</option>
+<option value="/management/project-manager">Project Manager</option>
+<option value="/management/property-manager">Property Manager</option>
+<option value="/architecture-and-engineering/quality-assurance-engineer">Quality Assurance Engineer</option>
+<option value="/architecture-and-engineering/quality-engineer">Quality Engineer</option>
+<option value="/office-and-administration/receptionist">Receptionist</option>
+<option value="/business-and-finance/recruiter">Recruiter</option>
+<option value="/healthcare/registered-nurse">Registered Nurse</option>
+<option value="/marketing-media-and-design/relations-consultant">Relations Consultant</option>
+<option value="/food-service/restaurant-crew-team-member">Restaurant Crew Team Member</option>
+<option value="/food-service/restaurant-manager">Restaurant Manager</option>
+<option value="/sales/retail-sales-associate">Retail Sales Associate</option>
+<option value="/sales/retail-sales-consultant">Retail Sales Consultant</option>
+<option value="/business-and-finance/risk-management-analyst">Risk Management Analyst</option>
+<option value="/technology/sql-developer">SQL Developer</option>
+<option value="/sales/sales-assistant">Sales Assistant</option>
+<option value="/sales/sales-associate">Sales Associate</option>
+<option value="/management/sales-director">Sales Director</option>
+<option value="/management/sales-manager">Sales Manager</option>
+<option value="/sales/sales-representative">Sales Representative</option>
+<option value="/sales/sales-specialist">Sales Specialist</option>
+<option value="/sales/sales-supervisor">Sales Supervisor</option>
+<option value="/office-and-administration/scheduler">Scheduler</option>
+<option value="/office-and-administration/secretary">Secretary</option>
+<option value="/business-and-finance/senior-buyer">Senior Buyer</option>
+<option value="/technology/senior-it-consultant">Senior IT Consultant</option>
+<option value="/food-service/server">Server</option>
+<option value="/marketing-media-and-design/social-media-coordinator">Social Media Coordinator</option>
+<option value="/marketing-media-and-design/social-media-specialist">Social Media Specialist</option>
+<option value="/technology/software-engineer">Software Engineer</option>
+<option value="/technology/software-tester">Software Tester</option>
+<option value="/food-service/sous-chef">Sous Chef</option>
+<option value="/business-and-finance/staff-accountant">Staff Accountant</option>
+<option value="/healthcare/staff-nurse">Staff Nurse</option>
+<option value="/sales/store-manager">Store Manager</option>
+<option value="/technology/systems-administrator">Systems Administrator</option>
+<option value="/technology/systems-analyst">Systems Analyst</option>
+<option value="/technology/systems-engineer">Systems Engineer</option>
+<option value="/technology/technical-lead">Technical Lead</option>
+<option value="/office-and-administration/teller">Teller</option>
+<option value="/management/training-manager">Training Manager</option>
+<option value="/business-and-finance/training-and-development-specialist">Training and Development Specialist</option>
+<option value="/marketing-media-and-design/user-interface-designer">User Interface Designer</option>
+<option value="/management/vice-president">Vice President</option>
+<option value="/marketing-media-and-design/web-designer">Web Designer</option>
+<option value="/technology/web-developer">Web Developer</option></select>
+<button name="button" type="submit" class="dib submit-blue" id="landing-submit">Show Me Insights</button>
+</form>
+
+<div class='dib landing-header-search-right'>
+<div class='dib or'>
+Or
+</div>
+<div class='dib upload-resume'>
+<div class='dib upload-resume-text'>
+See where you stand by uploading your resume
+</div>
+<div class='dib upload-resume-button'>
+<a class="compare-to-me" id="upload-resume" href="">Upload Resume</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bg-trans'>
+<div class='wrap link-center'>
+<a href="/browse">Browse all jobs (by industry)</a>
+</div>
+</div>
+</div>
+
+<div class='quick-insight'>
+<div class='wrap grid-space z-i1'>
+<h2>Quick Insights</h2>
+<a class="fl-1-3 quick-insight-bloc" id="salary-quick-insight" href="#salary-bloc"><div class='quick-insight-icon'>
+<i class='fa fa-money'></i>
+</div>
+<div class='quick-insight-text'>
+<h3>Salary</h3>
+<p>Find out how much you could be earning</p>
+</div>
+</a><a class="fl-1-3 quick-insight-bloc" id="skills-quick-insight" href="#skills-bloc"><div class='quick-insight-icon'>
+<i class='fa fa-cube'></i>
+</div>
+<div class='quick-insight-text'>
+<h3>Skills</h3>
+<p>See which skills employers are looking for</p>
+</div>
+</a><a class="fl-1-3 quick-insight-bloc" id="opport-quick-insight" href="#opport-bloc"><div class='quick-insight-icon'>
+<i class='fa fa-eye'></i>
+</div>
+<div class='quick-insight-text'>
+<h3>Opportunity</h3>
+<p>Discover your chances of finding a job in your area and across the country</p>
+</div>
+</a></div>
+
+<div class='quick-insight-content'>
+<div class='wrap'>
+<div id='salary-bloc'>
+<form class="landing-form quick-insight-form grid-space" action="/mini_onboarding/salary" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='fl-1-3 big' id='tooltip-salary'>
+<label class="mb" for="Search_by_job_title_and_get_career_insights">Search by job title and get career insights</label>
+<select name="jobtitle" id="salary-jobtitle" class="jobtitle"><option value="/sales/account-executive">Account Executive</option>
+<option value="/management/account-manager">Account Manager</option>
+<option value="/business-and-finance/accountant">Accountant</option>
+<option value="/business-and-finance/accounting-assistant">Accounting Assistant</option>
+<option value="/business-and-finance/accounts-payable-analyst">Accounts Payable Analyst</option>
+<option value="/business-and-finance/accounts-payable-supervisor">Accounts Payable Supervisor</option>
+<option value="/office-and-administration/administrative-assistant">Administrative Assistant</option>
+<option value="/office-and-administration/administrative-clerk">Administrative Clerk</option>
+<option value="/office-and-administration/administrative-coordinator">Administrative Coordinator</option>
+<option value="/sales/advertising-sales-executive">Advertising Sales Executive</option>
+<option value="/business-and-finance/assistant-controller">Assistant Controller</option>
+<option value="/management/assistant-director">Assistant Director</option>
+<option value="/business-and-finance/auditor">Auditor</option>
+<option value="/food-service/bartender">Bartender</option>
+<option value="/business-and-finance/billing-specialist">Billing Specialist</option>
+<option value="/business-and-finance/book-keeper">Book Keeper</option>
+<option value="/management/branch-manager">Branch Manager</option>
+<option value="/business-and-finance/business-analyst">Business Analyst</option>
+<option value="/business-and-finance/business-consultant">Business Consultant</option>
+<option value="/management/business-development-director">Business Development Director</option>
+<option value="/management/business-development-manager">Business Development Manager</option>
+<option value="/office-and-administration/call-center-agent">Call Center Agent</option>
+<option value="/healthcare/case-manager">Case Manager</option>
+<option value="/healthcare/certified-nursing-assistant">Certified Nursing Assistant</option>
+<option value="/business-and-finance/certified-public-accountant">Certified Public Accountant</option>
+<option value="/food-service/chef">Chef</option>
+<option value="/office-and-administration/clerk">Clerk</option>
+<option value="/technology/client-support-specialist">Client Support Specialist</option>
+<option value="/business-and-finance/collections-specialist">Collections Specialist</option>
+<option value="/marketing-media-and-design/communications-coordinator">Communications Coordinator</option>
+<option value="/marketing-media-and-design/communications-manager">Communications Manager</option>
+<option value="/marketing-media-and-design/communications-specialist">Communications Specialist</option>
+<option value="/technology/computer-scientist">Computer Scientist</option>
+<option value="/technology/computer-systems-specialist">Computer Systems Specialist</option>
+<option value="/food-service/cook">Cook</option>
+<option value="/marketing-media-and-design/copy-writer">Copy Writer</option>
+<option value="/sales/counter-sales-representative">Counter Sales Representative</option>
+<option value="/office-and-administration/customer-care-representative">Customer Care Representative</option>
+<option value="/office-and-administration/customer-service-advisor">Customer Service Advisor</option>
+<option value="/sales/customer-service-associate">Customer Service Associate</option>
+<option value="/office-and-administration/customer-service-manager">Customer Service Manager</option>
+<option value="/office-and-administration/customer-service-representative">Customer Service Representative</option>
+<option value="/office-and-administration/customer-service-specialist">Customer Service Specialist</option>
+<option value="/office-and-administration/customer-service-supervisor">Customer Service Supervisor</option>
+<option value="/office-and-administration/data-entry-clerk">Data Entry Clerk</option>
+<option value="/technology/database-administrator">Database Administrator</option>
+<option value="/architecture-and-engineering/design-engineer">Design Engineer</option>
+<option value="/management/director-of-operations">Director of Operations</option>
+<option value="/office-and-administration/dispatcher">Dispatcher</option>
+<option value="/management/district-manager">District Manager</option>
+<option value="/architecture-and-engineering/engineering-technician">Engineering Technician</option>
+<option value="/office-and-administration/executive-assistant">Executive Assistant</option>
+<option value="/food-service/executive-chef">Executive Chef</option>
+<option value="/management/executive-director">Executive Director</option>
+<option value="/office-and-administration/file-clerk">File Clerk</option>
+<option value="/business-and-finance/financial-analyst">Financial Analyst</option>
+<option value="/food-service/food-service-manager">Food Service Manager</option>
+<option value="/food-service/food-service-worker">Food Service Worker</option>
+<option value="/office-and-administration/front-desk-clerk">Front Desk Clerk</option>
+<option value="/office-and-administration/front-desk-coordinator">Front Desk Coordinator</option>
+<option value="/business-and-finance/general-ledger-accountant">General Ledger Accountant</option>
+<option value="/management/general-manager">General Manager</option>
+<option value="/office-and-administration/general-office-clerk">General Office Clerk</option>
+<option value="/marketing-media-and-design/graphic-designer">Graphic Designer</option>
+<option value="/healthcare/health-services-director">Health Services Director</option>
+<option value="/healthcare/home-health-aide">Home Health Aide</option>
+<option value="/office-and-administration/human-resources-assistant">Human Resources Assistant</option>
+<option value="/management/human-resources-manager">Human Resources Manager</option>
+<option value="/technology/it-network-administrator">IT Network Administrator</option>
+<option value="/technology/it-project-coordinator">IT Project Coordinator</option>
+<option value="/technology/it-support-analyst">IT Support Analyst</option>
+<option value="/technology/it-support-engineer">IT Support Engineer</option>
+<option value="/technology/it-systems-analyst">IT Systems Analyst</option>
+<option value="/architecture-and-engineering/industrial-engineer">Industrial Engineer</option>
+<option value="/sales/inside-sales-representative">Inside Sales Representative</option>
+<option value="/healthcare/intensive-care-unit-nurse">Intensive Care Unit Nurse</option>
+<option value="/marketing-media-and-design/interactive-designer">Interactive Designer</option>
+<option value="/technology/java-developer">Java Developer</option>
+<option value="/technology/junior-software-engineer">Junior Software Engineer</option>
+<option value="/food-service/kitchen-manager">Kitchen Manager</option>
+<option value="/healthcare/licensed-practical-nurse">Licensed Practical Nurse</option>
+<option value="/healthcare/licensed-vocational-nurse">Licensed Vocational Nurse</option>
+<option value="/business-and-finance/loan-officer">Loan Officer</option>
+<option value="/office-and-administration/mail-clerk">Mail Clerk</option>
+<option value="/business-and-finance/managing-consultant">Managing Consultant</option>
+<option value="/architecture-and-engineering/manufacturing-engineer">Manufacturing Engineer</option>
+<option value="/marketing-media-and-design/marketing-coordinator">Marketing Coordinator</option>
+<option value="/marketing-media-and-design/marketing-director">Marketing Director</option>
+<option value="/marketing-media-and-design/marketing-manager">Marketing Manager</option>
+<option value="/architecture-and-engineering/mechanical-engineer">Mechanical Engineer</option>
+<option value="/marketing-media-and-design/media-planner">Media Planner</option>
+<option value="/healthcare/medical-assistant">Medical Assistant</option>
+<option value="/office-and-administration/member-service-representative">Member Service Representative</option>
+<option value="/business-and-finance/mortgage-underwriter">Mortgage Underwriter</option>
+<option value="/technology/network-engineer">Network Engineer</option>
+<option value="/healthcare/nurse-manager">Nurse Manager</option>
+<option value="/healthcare/nurse-practitioner">Nurse Practitioner</option>
+<option value="/healthcare/nurse-supervisor">Nurse Supervisor</option>
+<option value="/office-and-administration/office-administrator">Office Administrator</option>
+<option value="/office-and-administration/office-assistant">Office Assistant</option>
+<option value="/office-and-administration/office-coordinator">Office Coordinator</option>
+<option value="/management/office-manager">Office Manager</option>
+<option value="/management/operations-manager">Operations Manager</option>
+<option value="/healthcare/pharmacy-technician">Pharmacy Technician</option>
+<option value="/architecture-and-engineering/process-engineer">Process Engineer</option>
+<option value="/architecture-and-engineering/product-engineer">Product Engineer</option>
+<option value="/marketing-media-and-design/product-manager">Product Manager</option>
+<option value="/sales/product-sales-specialist">Product Sales Specialist</option>
+<option value="/management/program-manager">Program Manager</option>
+<option value="/technology/programmer">Programmer</option>
+<option value="/management/programming-manager">Programming Manager</option>
+<option value="/architecture-and-engineering/project-engineer">Project Engineer</option>
+<option value="/management/project-manager">Project Manager</option>
+<option value="/management/property-manager">Property Manager</option>
+<option value="/architecture-and-engineering/quality-assurance-engineer">Quality Assurance Engineer</option>
+<option value="/architecture-and-engineering/quality-engineer">Quality Engineer</option>
+<option value="/office-and-administration/receptionist">Receptionist</option>
+<option value="/business-and-finance/recruiter">Recruiter</option>
+<option value="/healthcare/registered-nurse">Registered Nurse</option>
+<option value="/marketing-media-and-design/relations-consultant">Relations Consultant</option>
+<option value="/food-service/restaurant-crew-team-member">Restaurant Crew Team Member</option>
+<option value="/food-service/restaurant-manager">Restaurant Manager</option>
+<option value="/sales/retail-sales-associate">Retail Sales Associate</option>
+<option value="/sales/retail-sales-consultant">Retail Sales Consultant</option>
+<option value="/business-and-finance/risk-management-analyst">Risk Management Analyst</option>
+<option value="/technology/sql-developer">SQL Developer</option>
+<option value="/sales/sales-assistant">Sales Assistant</option>
+<option value="/sales/sales-associate">Sales Associate</option>
+<option value="/management/sales-director">Sales Director</option>
+<option value="/management/sales-manager">Sales Manager</option>
+<option value="/sales/sales-representative">Sales Representative</option>
+<option value="/sales/sales-specialist">Sales Specialist</option>
+<option value="/sales/sales-supervisor">Sales Supervisor</option>
+<option value="/office-and-administration/scheduler">Scheduler</option>
+<option value="/office-and-administration/secretary">Secretary</option>
+<option value="/business-and-finance/senior-buyer">Senior Buyer</option>
+<option value="/technology/senior-it-consultant">Senior IT Consultant</option>
+<option value="/food-service/server">Server</option>
+<option value="/marketing-media-and-design/social-media-coordinator">Social Media Coordinator</option>
+<option value="/marketing-media-and-design/social-media-specialist">Social Media Specialist</option>
+<option value="/technology/software-engineer">Software Engineer</option>
+<option value="/technology/software-tester">Software Tester</option>
+<option value="/food-service/sous-chef">Sous Chef</option>
+<option value="/business-and-finance/staff-accountant">Staff Accountant</option>
+<option value="/healthcare/staff-nurse">Staff Nurse</option>
+<option value="/sales/store-manager">Store Manager</option>
+<option value="/technology/systems-administrator">Systems Administrator</option>
+<option value="/technology/systems-analyst">Systems Analyst</option>
+<option value="/technology/systems-engineer">Systems Engineer</option>
+<option value="/technology/technical-lead">Technical Lead</option>
+<option value="/office-and-administration/teller">Teller</option>
+<option value="/management/training-manager">Training Manager</option>
+<option value="/business-and-finance/training-and-development-specialist">Training and Development Specialist</option>
+<option value="/marketing-media-and-design/user-interface-designer">User Interface Designer</option>
+<option value="/management/vice-president">Vice President</option>
+<option value="/marketing-media-and-design/web-designer">Web Designer</option>
+<option value="/technology/web-developer">Web Developer</option></select>
+</div>
+<div class='fl-1-3 big'>
+<label class="mb0"><span>Your Salary</span>
+<div class='fl-r'>
+<label class='inline' for='mini-salary-checkbox'>don’t specify</label>
+<input checked='checked' class='checkbox' id='mini-salary-checkbox' name='mini-salary-checkbox' type='checkbox'>
+</div>
+</label><input id="mini_form_salary" type="text" name="users[salary]" />
+</div>
+<div class='fl-1-3 small'>
+<button name="button" type="submit" class="btn-standard green" id="salary-submit">Show Me Salary</button>
+</div>
+</form>
+
+</div>
+
+<div id='skills-bloc'>
+<form class="landing-form quick-insight-form grid-space" action="/mini_onboarding/skills" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='fl-1-3 big' id='tooltip-skills'>
+<label for="Job_title___desired_job_title">Job title / desired job title</label>
+<select name="jobtitle" id="skills-jobtitle" class="jobtitle"><option value="/sales/account-executive">Account Executive</option>
+<option value="/management/account-manager">Account Manager</option>
+<option value="/business-and-finance/accountant">Accountant</option>
+<option value="/business-and-finance/accounting-assistant">Accounting Assistant</option>
+<option value="/business-and-finance/accounts-payable-analyst">Accounts Payable Analyst</option>
+<option value="/business-and-finance/accounts-payable-supervisor">Accounts Payable Supervisor</option>
+<option value="/office-and-administration/administrative-assistant">Administrative Assistant</option>
+<option value="/office-and-administration/administrative-clerk">Administrative Clerk</option>
+<option value="/office-and-administration/administrative-coordinator">Administrative Coordinator</option>
+<option value="/sales/advertising-sales-executive">Advertising Sales Executive</option>
+<option value="/business-and-finance/assistant-controller">Assistant Controller</option>
+<option value="/management/assistant-director">Assistant Director</option>
+<option value="/business-and-finance/auditor">Auditor</option>
+<option value="/food-service/bartender">Bartender</option>
+<option value="/business-and-finance/billing-specialist">Billing Specialist</option>
+<option value="/business-and-finance/book-keeper">Book Keeper</option>
+<option value="/management/branch-manager">Branch Manager</option>
+<option value="/business-and-finance/business-analyst">Business Analyst</option>
+<option value="/business-and-finance/business-consultant">Business Consultant</option>
+<option value="/management/business-development-director">Business Development Director</option>
+<option value="/management/business-development-manager">Business Development Manager</option>
+<option value="/office-and-administration/call-center-agent">Call Center Agent</option>
+<option value="/healthcare/case-manager">Case Manager</option>
+<option value="/healthcare/certified-nursing-assistant">Certified Nursing Assistant</option>
+<option value="/business-and-finance/certified-public-accountant">Certified Public Accountant</option>
+<option value="/food-service/chef">Chef</option>
+<option value="/office-and-administration/clerk">Clerk</option>
+<option value="/technology/client-support-specialist">Client Support Specialist</option>
+<option value="/business-and-finance/collections-specialist">Collections Specialist</option>
+<option value="/marketing-media-and-design/communications-coordinator">Communications Coordinator</option>
+<option value="/marketing-media-and-design/communications-manager">Communications Manager</option>
+<option value="/marketing-media-and-design/communications-specialist">Communications Specialist</option>
+<option value="/technology/computer-scientist">Computer Scientist</option>
+<option value="/technology/computer-systems-specialist">Computer Systems Specialist</option>
+<option value="/food-service/cook">Cook</option>
+<option value="/marketing-media-and-design/copy-writer">Copy Writer</option>
+<option value="/sales/counter-sales-representative">Counter Sales Representative</option>
+<option value="/office-and-administration/customer-care-representative">Customer Care Representative</option>
+<option value="/office-and-administration/customer-service-advisor">Customer Service Advisor</option>
+<option value="/sales/customer-service-associate">Customer Service Associate</option>
+<option value="/office-and-administration/customer-service-manager">Customer Service Manager</option>
+<option value="/office-and-administration/customer-service-representative">Customer Service Representative</option>
+<option value="/office-and-administration/customer-service-specialist">Customer Service Specialist</option>
+<option value="/office-and-administration/customer-service-supervisor">Customer Service Supervisor</option>
+<option value="/office-and-administration/data-entry-clerk">Data Entry Clerk</option>
+<option value="/technology/database-administrator">Database Administrator</option>
+<option value="/architecture-and-engineering/design-engineer">Design Engineer</option>
+<option value="/management/director-of-operations">Director of Operations</option>
+<option value="/office-and-administration/dispatcher">Dispatcher</option>
+<option value="/management/district-manager">District Manager</option>
+<option value="/architecture-and-engineering/engineering-technician">Engineering Technician</option>
+<option value="/office-and-administration/executive-assistant">Executive Assistant</option>
+<option value="/food-service/executive-chef">Executive Chef</option>
+<option value="/management/executive-director">Executive Director</option>
+<option value="/office-and-administration/file-clerk">File Clerk</option>
+<option value="/business-and-finance/financial-analyst">Financial Analyst</option>
+<option value="/food-service/food-service-manager">Food Service Manager</option>
+<option value="/food-service/food-service-worker">Food Service Worker</option>
+<option value="/office-and-administration/front-desk-clerk">Front Desk Clerk</option>
+<option value="/office-and-administration/front-desk-coordinator">Front Desk Coordinator</option>
+<option value="/business-and-finance/general-ledger-accountant">General Ledger Accountant</option>
+<option value="/management/general-manager">General Manager</option>
+<option value="/office-and-administration/general-office-clerk">General Office Clerk</option>
+<option value="/marketing-media-and-design/graphic-designer">Graphic Designer</option>
+<option value="/healthcare/health-services-director">Health Services Director</option>
+<option value="/healthcare/home-health-aide">Home Health Aide</option>
+<option value="/office-and-administration/human-resources-assistant">Human Resources Assistant</option>
+<option value="/management/human-resources-manager">Human Resources Manager</option>
+<option value="/technology/it-network-administrator">IT Network Administrator</option>
+<option value="/technology/it-project-coordinator">IT Project Coordinator</option>
+<option value="/technology/it-support-analyst">IT Support Analyst</option>
+<option value="/technology/it-support-engineer">IT Support Engineer</option>
+<option value="/technology/it-systems-analyst">IT Systems Analyst</option>
+<option value="/architecture-and-engineering/industrial-engineer">Industrial Engineer</option>
+<option value="/sales/inside-sales-representative">Inside Sales Representative</option>
+<option value="/healthcare/intensive-care-unit-nurse">Intensive Care Unit Nurse</option>
+<option value="/marketing-media-and-design/interactive-designer">Interactive Designer</option>
+<option value="/technology/java-developer">Java Developer</option>
+<option value="/technology/junior-software-engineer">Junior Software Engineer</option>
+<option value="/food-service/kitchen-manager">Kitchen Manager</option>
+<option value="/healthcare/licensed-practical-nurse">Licensed Practical Nurse</option>
+<option value="/healthcare/licensed-vocational-nurse">Licensed Vocational Nurse</option>
+<option value="/business-and-finance/loan-officer">Loan Officer</option>
+<option value="/office-and-administration/mail-clerk">Mail Clerk</option>
+<option value="/business-and-finance/managing-consultant">Managing Consultant</option>
+<option value="/architecture-and-engineering/manufacturing-engineer">Manufacturing Engineer</option>
+<option value="/marketing-media-and-design/marketing-coordinator">Marketing Coordinator</option>
+<option value="/marketing-media-and-design/marketing-director">Marketing Director</option>
+<option value="/marketing-media-and-design/marketing-manager">Marketing Manager</option>
+<option value="/architecture-and-engineering/mechanical-engineer">Mechanical Engineer</option>
+<option value="/marketing-media-and-design/media-planner">Media Planner</option>
+<option value="/healthcare/medical-assistant">Medical Assistant</option>
+<option value="/office-and-administration/member-service-representative">Member Service Representative</option>
+<option value="/business-and-finance/mortgage-underwriter">Mortgage Underwriter</option>
+<option value="/technology/network-engineer">Network Engineer</option>
+<option value="/healthcare/nurse-manager">Nurse Manager</option>
+<option value="/healthcare/nurse-practitioner">Nurse Practitioner</option>
+<option value="/healthcare/nurse-supervisor">Nurse Supervisor</option>
+<option value="/office-and-administration/office-administrator">Office Administrator</option>
+<option value="/office-and-administration/office-assistant">Office Assistant</option>
+<option value="/office-and-administration/office-coordinator">Office Coordinator</option>
+<option value="/management/office-manager">Office Manager</option>
+<option value="/management/operations-manager">Operations Manager</option>
+<option value="/healthcare/pharmacy-technician">Pharmacy Technician</option>
+<option value="/architecture-and-engineering/process-engineer">Process Engineer</option>
+<option value="/architecture-and-engineering/product-engineer">Product Engineer</option>
+<option value="/marketing-media-and-design/product-manager">Product Manager</option>
+<option value="/sales/product-sales-specialist">Product Sales Specialist</option>
+<option value="/management/program-manager">Program Manager</option>
+<option value="/technology/programmer">Programmer</option>
+<option value="/management/programming-manager">Programming Manager</option>
+<option value="/architecture-and-engineering/project-engineer">Project Engineer</option>
+<option value="/management/project-manager">Project Manager</option>
+<option value="/management/property-manager">Property Manager</option>
+<option value="/architecture-and-engineering/quality-assurance-engineer">Quality Assurance Engineer</option>
+<option value="/architecture-and-engineering/quality-engineer">Quality Engineer</option>
+<option value="/office-and-administration/receptionist">Receptionist</option>
+<option value="/business-and-finance/recruiter">Recruiter</option>
+<option value="/healthcare/registered-nurse">Registered Nurse</option>
+<option value="/marketing-media-and-design/relations-consultant">Relations Consultant</option>
+<option value="/food-service/restaurant-crew-team-member">Restaurant Crew Team Member</option>
+<option value="/food-service/restaurant-manager">Restaurant Manager</option>
+<option value="/sales/retail-sales-associate">Retail Sales Associate</option>
+<option value="/sales/retail-sales-consultant">Retail Sales Consultant</option>
+<option value="/business-and-finance/risk-management-analyst">Risk Management Analyst</option>
+<option value="/technology/sql-developer">SQL Developer</option>
+<option value="/sales/sales-assistant">Sales Assistant</option>
+<option value="/sales/sales-associate">Sales Associate</option>
+<option value="/management/sales-director">Sales Director</option>
+<option value="/management/sales-manager">Sales Manager</option>
+<option value="/sales/sales-representative">Sales Representative</option>
+<option value="/sales/sales-specialist">Sales Specialist</option>
+<option value="/sales/sales-supervisor">Sales Supervisor</option>
+<option value="/office-and-administration/scheduler">Scheduler</option>
+<option value="/office-and-administration/secretary">Secretary</option>
+<option value="/business-and-finance/senior-buyer">Senior Buyer</option>
+<option value="/technology/senior-it-consultant">Senior IT Consultant</option>
+<option value="/food-service/server">Server</option>
+<option value="/marketing-media-and-design/social-media-coordinator">Social Media Coordinator</option>
+<option value="/marketing-media-and-design/social-media-specialist">Social Media Specialist</option>
+<option value="/technology/software-engineer">Software Engineer</option>
+<option value="/technology/software-tester">Software Tester</option>
+<option value="/food-service/sous-chef">Sous Chef</option>
+<option value="/business-and-finance/staff-accountant">Staff Accountant</option>
+<option value="/healthcare/staff-nurse">Staff Nurse</option>
+<option value="/sales/store-manager">Store Manager</option>
+<option value="/technology/systems-administrator">Systems Administrator</option>
+<option value="/technology/systems-analyst">Systems Analyst</option>
+<option value="/technology/systems-engineer">Systems Engineer</option>
+<option value="/technology/technical-lead">Technical Lead</option>
+<option value="/office-and-administration/teller">Teller</option>
+<option value="/management/training-manager">Training Manager</option>
+<option value="/business-and-finance/training-and-development-specialist">Training and Development Specialist</option>
+<option value="/marketing-media-and-design/user-interface-designer">User Interface Designer</option>
+<option value="/management/vice-president">Vice President</option>
+<option value="/marketing-media-and-design/web-designer">Web Designer</option>
+<option value="/technology/web-developer">Web Developer</option></select>
+</div>
+<div class='fl-1-3 big' id='skills_mini_field'>
+<label for="Skills_you_have">Skills you have</label>
+<input type="text" name="users[skills]" id="users_skills" />
+</div>
+<div class='fl-1-3 small'>
+<button name="button" type="submit" class="btn-standard green" id="skills-submit">Show Me Skills</button>
+</div>
+</form>
+
+</div>
+
+<div id='opport-bloc'>
+<form class="landing-form quick-insight-form grid-space" action="/mini_onboarding/demand" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='fl-1-3 big' id='tooltip-opport'>
+<label for="Job_title___desired_job_title">Job title / desired job title</label>
+<select name="jobtitle" id="opportunity-jobtitle" class="jobtitle"><option value="/sales/account-executive">Account Executive</option>
+<option value="/management/account-manager">Account Manager</option>
+<option value="/business-and-finance/accountant">Accountant</option>
+<option value="/business-and-finance/accounting-assistant">Accounting Assistant</option>
+<option value="/business-and-finance/accounts-payable-analyst">Accounts Payable Analyst</option>
+<option value="/business-and-finance/accounts-payable-supervisor">Accounts Payable Supervisor</option>
+<option value="/office-and-administration/administrative-assistant">Administrative Assistant</option>
+<option value="/office-and-administration/administrative-clerk">Administrative Clerk</option>
+<option value="/office-and-administration/administrative-coordinator">Administrative Coordinator</option>
+<option value="/sales/advertising-sales-executive">Advertising Sales Executive</option>
+<option value="/business-and-finance/assistant-controller">Assistant Controller</option>
+<option value="/management/assistant-director">Assistant Director</option>
+<option value="/business-and-finance/auditor">Auditor</option>
+<option value="/food-service/bartender">Bartender</option>
+<option value="/business-and-finance/billing-specialist">Billing Specialist</option>
+<option value="/business-and-finance/book-keeper">Book Keeper</option>
+<option value="/management/branch-manager">Branch Manager</option>
+<option value="/business-and-finance/business-analyst">Business Analyst</option>
+<option value="/business-and-finance/business-consultant">Business Consultant</option>
+<option value="/management/business-development-director">Business Development Director</option>
+<option value="/management/business-development-manager">Business Development Manager</option>
+<option value="/office-and-administration/call-center-agent">Call Center Agent</option>
+<option value="/healthcare/case-manager">Case Manager</option>
+<option value="/healthcare/certified-nursing-assistant">Certified Nursing Assistant</option>
+<option value="/business-and-finance/certified-public-accountant">Certified Public Accountant</option>
+<option value="/food-service/chef">Chef</option>
+<option value="/office-and-administration/clerk">Clerk</option>
+<option value="/technology/client-support-specialist">Client Support Specialist</option>
+<option value="/business-and-finance/collections-specialist">Collections Specialist</option>
+<option value="/marketing-media-and-design/communications-coordinator">Communications Coordinator</option>
+<option value="/marketing-media-and-design/communications-manager">Communications Manager</option>
+<option value="/marketing-media-and-design/communications-specialist">Communications Specialist</option>
+<option value="/technology/computer-scientist">Computer Scientist</option>
+<option value="/technology/computer-systems-specialist">Computer Systems Specialist</option>
+<option value="/food-service/cook">Cook</option>
+<option value="/marketing-media-and-design/copy-writer">Copy Writer</option>
+<option value="/sales/counter-sales-representative">Counter Sales Representative</option>
+<option value="/office-and-administration/customer-care-representative">Customer Care Representative</option>
+<option value="/office-and-administration/customer-service-advisor">Customer Service Advisor</option>
+<option value="/sales/customer-service-associate">Customer Service Associate</option>
+<option value="/office-and-administration/customer-service-manager">Customer Service Manager</option>
+<option value="/office-and-administration/customer-service-representative">Customer Service Representative</option>
+<option value="/office-and-administration/customer-service-specialist">Customer Service Specialist</option>
+<option value="/office-and-administration/customer-service-supervisor">Customer Service Supervisor</option>
+<option value="/office-and-administration/data-entry-clerk">Data Entry Clerk</option>
+<option value="/technology/database-administrator">Database Administrator</option>
+<option value="/architecture-and-engineering/design-engineer">Design Engineer</option>
+<option value="/management/director-of-operations">Director of Operations</option>
+<option value="/office-and-administration/dispatcher">Dispatcher</option>
+<option value="/management/district-manager">District Manager</option>
+<option value="/architecture-and-engineering/engineering-technician">Engineering Technician</option>
+<option value="/office-and-administration/executive-assistant">Executive Assistant</option>
+<option value="/food-service/executive-chef">Executive Chef</option>
+<option value="/management/executive-director">Executive Director</option>
+<option value="/office-and-administration/file-clerk">File Clerk</option>
+<option value="/business-and-finance/financial-analyst">Financial Analyst</option>
+<option value="/food-service/food-service-manager">Food Service Manager</option>
+<option value="/food-service/food-service-worker">Food Service Worker</option>
+<option value="/office-and-administration/front-desk-clerk">Front Desk Clerk</option>
+<option value="/office-and-administration/front-desk-coordinator">Front Desk Coordinator</option>
+<option value="/business-and-finance/general-ledger-accountant">General Ledger Accountant</option>
+<option value="/management/general-manager">General Manager</option>
+<option value="/office-and-administration/general-office-clerk">General Office Clerk</option>
+<option value="/marketing-media-and-design/graphic-designer">Graphic Designer</option>
+<option value="/healthcare/health-services-director">Health Services Director</option>
+<option value="/healthcare/home-health-aide">Home Health Aide</option>
+<option value="/office-and-administration/human-resources-assistant">Human Resources Assistant</option>
+<option value="/management/human-resources-manager">Human Resources Manager</option>
+<option value="/technology/it-network-administrator">IT Network Administrator</option>
+<option value="/technology/it-project-coordinator">IT Project Coordinator</option>
+<option value="/technology/it-support-analyst">IT Support Analyst</option>
+<option value="/technology/it-support-engineer">IT Support Engineer</option>
+<option value="/technology/it-systems-analyst">IT Systems Analyst</option>
+<option value="/architecture-and-engineering/industrial-engineer">Industrial Engineer</option>
+<option value="/sales/inside-sales-representative">Inside Sales Representative</option>
+<option value="/healthcare/intensive-care-unit-nurse">Intensive Care Unit Nurse</option>
+<option value="/marketing-media-and-design/interactive-designer">Interactive Designer</option>
+<option value="/technology/java-developer">Java Developer</option>
+<option value="/technology/junior-software-engineer">Junior Software Engineer</option>
+<option value="/food-service/kitchen-manager">Kitchen Manager</option>
+<option value="/healthcare/licensed-practical-nurse">Licensed Practical Nurse</option>
+<option value="/healthcare/licensed-vocational-nurse">Licensed Vocational Nurse</option>
+<option value="/business-and-finance/loan-officer">Loan Officer</option>
+<option value="/office-and-administration/mail-clerk">Mail Clerk</option>
+<option value="/business-and-finance/managing-consultant">Managing Consultant</option>
+<option value="/architecture-and-engineering/manufacturing-engineer">Manufacturing Engineer</option>
+<option value="/marketing-media-and-design/marketing-coordinator">Marketing Coordinator</option>
+<option value="/marketing-media-and-design/marketing-director">Marketing Director</option>
+<option value="/marketing-media-and-design/marketing-manager">Marketing Manager</option>
+<option value="/architecture-and-engineering/mechanical-engineer">Mechanical Engineer</option>
+<option value="/marketing-media-and-design/media-planner">Media Planner</option>
+<option value="/healthcare/medical-assistant">Medical Assistant</option>
+<option value="/office-and-administration/member-service-representative">Member Service Representative</option>
+<option value="/business-and-finance/mortgage-underwriter">Mortgage Underwriter</option>
+<option value="/technology/network-engineer">Network Engineer</option>
+<option value="/healthcare/nurse-manager">Nurse Manager</option>
+<option value="/healthcare/nurse-practitioner">Nurse Practitioner</option>
+<option value="/healthcare/nurse-supervisor">Nurse Supervisor</option>
+<option value="/office-and-administration/office-administrator">Office Administrator</option>
+<option value="/office-and-administration/office-assistant">Office Assistant</option>
+<option value="/office-and-administration/office-coordinator">Office Coordinator</option>
+<option value="/management/office-manager">Office Manager</option>
+<option value="/management/operations-manager">Operations Manager</option>
+<option value="/healthcare/pharmacy-technician">Pharmacy Technician</option>
+<option value="/architecture-and-engineering/process-engineer">Process Engineer</option>
+<option value="/architecture-and-engineering/product-engineer">Product Engineer</option>
+<option value="/marketing-media-and-design/product-manager">Product Manager</option>
+<option value="/sales/product-sales-specialist">Product Sales Specialist</option>
+<option value="/management/program-manager">Program Manager</option>
+<option value="/technology/programmer">Programmer</option>
+<option value="/management/programming-manager">Programming Manager</option>
+<option value="/architecture-and-engineering/project-engineer">Project Engineer</option>
+<option value="/management/project-manager">Project Manager</option>
+<option value="/management/property-manager">Property Manager</option>
+<option value="/architecture-and-engineering/quality-assurance-engineer">Quality Assurance Engineer</option>
+<option value="/architecture-and-engineering/quality-engineer">Quality Engineer</option>
+<option value="/office-and-administration/receptionist">Receptionist</option>
+<option value="/business-and-finance/recruiter">Recruiter</option>
+<option value="/healthcare/registered-nurse">Registered Nurse</option>
+<option value="/marketing-media-and-design/relations-consultant">Relations Consultant</option>
+<option value="/food-service/restaurant-crew-team-member">Restaurant Crew Team Member</option>
+<option value="/food-service/restaurant-manager">Restaurant Manager</option>
+<option value="/sales/retail-sales-associate">Retail Sales Associate</option>
+<option value="/sales/retail-sales-consultant">Retail Sales Consultant</option>
+<option value="/business-and-finance/risk-management-analyst">Risk Management Analyst</option>
+<option value="/technology/sql-developer">SQL Developer</option>
+<option value="/sales/sales-assistant">Sales Assistant</option>
+<option value="/sales/sales-associate">Sales Associate</option>
+<option value="/management/sales-director">Sales Director</option>
+<option value="/management/sales-manager">Sales Manager</option>
+<option value="/sales/sales-representative">Sales Representative</option>
+<option value="/sales/sales-specialist">Sales Specialist</option>
+<option value="/sales/sales-supervisor">Sales Supervisor</option>
+<option value="/office-and-administration/scheduler">Scheduler</option>
+<option value="/office-and-administration/secretary">Secretary</option>
+<option value="/business-and-finance/senior-buyer">Senior Buyer</option>
+<option value="/technology/senior-it-consultant">Senior IT Consultant</option>
+<option value="/food-service/server">Server</option>
+<option value="/marketing-media-and-design/social-media-coordinator">Social Media Coordinator</option>
+<option value="/marketing-media-and-design/social-media-specialist">Social Media Specialist</option>
+<option value="/technology/software-engineer">Software Engineer</option>
+<option value="/technology/software-tester">Software Tester</option>
+<option value="/food-service/sous-chef">Sous Chef</option>
+<option value="/business-and-finance/staff-accountant">Staff Accountant</option>
+<option value="/healthcare/staff-nurse">Staff Nurse</option>
+<option value="/sales/store-manager">Store Manager</option>
+<option value="/technology/systems-administrator">Systems Administrator</option>
+<option value="/technology/systems-analyst">Systems Analyst</option>
+<option value="/technology/systems-engineer">Systems Engineer</option>
+<option value="/technology/technical-lead">Technical Lead</option>
+<option value="/office-and-administration/teller">Teller</option>
+<option value="/management/training-manager">Training Manager</option>
+<option value="/business-and-finance/training-and-development-specialist">Training and Development Specialist</option>
+<option value="/marketing-media-and-design/user-interface-designer">User Interface Designer</option>
+<option value="/management/vice-president">Vice President</option>
+<option value="/marketing-media-and-design/web-designer">Web Designer</option>
+<option value="/technology/web-developer">Web Developer</option></select>
+</div>
+<div class='fl-1-3 big'>
+<label for="Location">Location</label>
+<input id="mini_form_location" type="text" name="users[location_city]" />
+</div>
+<div class='fl-1-3 small'>
+<button name="button" type="submit" class="btn-standard green" id="opportunity-submit">Show Me Opportunity</button>
+</div>
+</form>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class='wrap z-i1'>
+<h2>Featured Jobs</h2>
+<div class='owl-theme'>
+<a class="item-feature" href="/office-and-administration/human-resources-assistant"><div class='item-feature-bg' style='background-image: url(/assets/home/officeandadministration-84a09e11de5af1e58805d46a830807c5.jpg)'></div>
+<div class='item-feature-title'>
+<span>Human Resources Assistant</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/marketing-media-and-design/media-planner"><div class='item-feature-bg' style='background-image: url(/assets/home/marketingmediaanddesign-952de8b139dc2e8f70f4003c32820cc1.jpg)'></div>
+<div class='item-feature-title'>
+<span>Media Planner</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/architecture-and-engineering/process-engineer"><div class='item-feature-bg' style='background-image: url(/assets/home/architectureandengineering-defbb04d00aab4e8f9f81aa0ac3a5e70.jpg)'></div>
+<div class='item-feature-title'>
+<span>Process Engineer</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/management/programming-manager"><div class='item-feature-bg' style='background-image: url(/assets/home/management-f506f2b405eba1dd2b626b2e1a3665fe.jpg)'></div>
+<div class='item-feature-title'>
+<span>Programming Manager</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/healthcare/case-manager"><div class='item-feature-bg' style='background-image: url(/assets/home/healthcare-446f48088239fe58b5ac64fe7733ed2b.jpg)'></div>
+<div class='item-feature-title'>
+<span>Case Manager</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/food-service/server"><div class='item-feature-bg' style='background-image: url(/assets/home/foodservice-6ebcce829aebf03d0c7020f251421109.jpg)'></div>
+<div class='item-feature-title'>
+<span>Server</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/business-and-finance/accountant"><div class='item-feature-bg' style='background-image: url(/assets/home/businessandfinance-a20cf507d4dc5a748b48d7143b4bf9be.jpg)'></div>
+<div class='item-feature-title'>
+<span>Accountant</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/sales/sales-assistant"><div class='item-feature-bg' style='background-image: url(/assets/home/sales-42929884413572d2390ce490773c833f.jpg)'></div>
+<div class='item-feature-title'>
+<span>Sales Assistant</span>
+<div class='fl-r'>read more</div>
+</div>
+</a><a class="item-feature" href="/technology/it-support-engineer"><div class='item-feature-bg' style='background-image: url(/assets/home/technology-94bbb36add0cdc06879664cccd5e78d2.jpg)'></div>
+<div class='item-feature-title'>
+<span>IT Support Engineer</span>
+<div class='fl-r'>read more</div>
+</div>
+</a></div>
+<a class="big-link hide" id="browse-link" href="#">Browse All Jobs (by Industry)</a>
+</div>
+
+<div class='wrap'>
+<div id='footer'>
+<div class='row'>
+<div class='col-1-3'>
+&copy; careerbuilder
+</div>
+<div class='col-1-3'>
+<a target="_blank" id="terms-link" href="http://www.careerbuilder.com/jobseeker/info/hhterms.aspx">terms</a>
+<span>-</span>
+<a target="_blank" id="privacy-link" href="http://www.careerbuilder.com/jobseeker/info/privacy.aspx">privacy policy</a>
+</div>
+<div class='col-1-3'>
+<div class='social_menu'>
+<a class="fb" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://coach.careerbuilder.com/"><i class='fa fa-facebook'></i>
+</a><a class="tw mid" target="_blank" href="https://twitter.com/share?url=http://coach.careerbuilder.com/&amp;text=How do your salary and skills compare?"><i class='fa fa-twitter'></i>
+</a><a class="gp" target="_blank" href="https://plus.google.com/share?url=http://coach.careerbuilder.com/"><i class='fa fa-google-plus'></i>
+</a></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+  /*{literal}*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({}); window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/3f16111ee75c.js"); /*{/literal}*/
+</script>
+
+</body>
+</html>
