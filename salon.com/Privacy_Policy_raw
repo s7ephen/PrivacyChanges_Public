@@ -1,1 +1,1176 @@
- 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:og="http://ogp.me/ns#" 
+	xmlns:fb="http://www.facebook.com/2008/fbml">
+<head profile="http://gmpg.org/xfn/11">
+<title>  Privacy Policy - Salon.com</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIAWVFSGwIDVFZWAAk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=549374205, app-argument=http://www.salon.com/">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Optimizely and Adobe DTM JS snippet, hosted by us -->
+
+    <script src="//media.salon.com/optimizely/698985673.js"></script><script src="//media.salon.com/Adobe-DTM/adobe-dtm-header.js"></script><script src="//media.salon.com/jwplayer/salon-jwplayer.js"></script>
+    <!-- Meta Info from Old Site -->
+    	<meta name="title" content="Privacy Policy - Salon.com" >
+	<meta name="description" content="Salon, the award-winning online news and entertainment Web site, combines original investigative stories, breaking news, provocative personal essays and highly respected criticism along with popular staff-written blogs about politics, technology and culture." />
+	<meta name="keywords" content="About Salon.com, Privacy Policy" />
+	<link rel="canonical" href="http://www.salon.com/about/policy/" />
+
+	<meta property="og:title" content="Privacy Policy - Salon.com" />
+	<meta property="og:url" content="http://www.salon.com/about/policy/" />
+	<meta property="og:image" content="http://www.salon.com/content/themes/salon/images/ui/ID_salonTile.gif" />
+	<meta property="og:description" content="Salon, the award-winning online news and entertainment Web site, combines original investigative stories, breaking news, provocative personal essays and highly respected criticism along with popular staff-written blogs about politics, technology and culture." />
+	<meta property="og:type" content="article" />
+	<meta property="fb:admins" content="21500228" />
+	<meta property="fb:app_id" content="114477658586677" />
+	
+    <link rel='index' title='Salon.com' href='http://www.salon.com/' />
+    <link rel="alternate" type="application/rss+xml" title="Salon.com RSS Feed" href="http://www.salon.com/feed/" />
+    <!-- End Meta Info from Old Site -->
+    <link rel='stylesheet' href='/combo/css?fonts/Didot/didot.css&typography.css&resets.css&left-sidebars.css&right-sidebars.css&ads.css&livefyre.css&compiled-sass.css&overrides.css&ver=349' /><script type='text/javascript' src='/combo/js?yui/yui-min.js&oop/oop-min.js&event-custom-base/event-custom-base-min.js&dom-core/dom-core-min.js&dom-base/dom-base-min.js&selector-native/selector-native-min.js&selector/selector-min.js&node-core/node-core-min.js&node-base/node-base-min.js&event-base/event-base-min.js&event-base-ie/event-base-ie-min.js&dom-style-ie/dom-style-ie-min.js&event-delegate/event-delegate-min.js&node-event-delegate/node-event-delegate-min.js&pluginhost-base/pluginhost-base-min.js&pluginhost-config/pluginhost-config-min.js&node-pluginhost/node-pluginhost-min.js&color-base/color-base-min.js&dom-style/dom-style-min.js&dom-screen/dom-screen-min.js&node-screen/node-screen-min.js&node-style/node-style-min.js&slnm/utils/set-browser-css.js&plugins/salon-login/js/salon-user.js&slnm/apps/salon-ads.js&slnm/slnm.js&slnm/modules/salon-modules.js&ver=349' ></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="header-container">
+	<div class="whole-header row dark">
+		<header class="header-wrap-mobile">
+			<div class="inner-wrap-mobile row">
+				<div class="menu-button-wrap hideOnDesktop medium-3 small-3 column top-bar-cell">
+					<div
+						class="menuButton sprite menu-icon"
+			            data-yab-app="slide-out"
+			            data-slide-out-id="primary-menu">
+					</div>
+				</div>
+				<div class="top-bar-cell salon-logo-wrap">
+					    <h1>
+	                        <a
+	                        	class="sprite salon-logo-slim gaTrackLinkEvent"
+	                    		data-ga-track-json='["navigation", "click", "logo"]'
+	                    		href="/"
+	                    	>
+	                            Salon
+	                        </a>
+	                    </h1>
+	            </div>
+	            <div class="mobile-social-wrap medium-4 small-4 column hideOnDesktop top-bar-cell">
+	            	<ul class="mobileSocial row">
+	            		<li class="shareButton twitter count small-6 column"
+	                            data-service="twitterFollowers"
+	                            data-screen-name="salon"
+	                    >
+	                    	<a class="sprite twitter-white-22" href="http://www.twitter.com/salon"></a>
+	                    </li>
+	                    <li class="shareButton fb count small-6 column"
+	                            data-service="facebookFollowers"
+	                            data-screen-name="salon"
+	                    >
+	                        <a class="sprite facebook-white-22" href="http://www.facebook.com/salon"></a>
+	                    </li>
+	                </ul>
+	            </div>
+
+			</div>
+			<div class="ie8-header">
+	                    <img src="/content/themes/salon/css/images/header-ie8.png" width="980" border="0" usemap="#ie8-header-map" >
+	                    <map id="ie8-header-map" name="ie8-header-map" >
+	                        <area shape="rect" coords="142,136,250,224" alt="" title="" href="/">
+	                        <area shape="rect" coords="0,0,200,57" alt="" title="" href="/">
+	                        <area shape="rect" coords="199,0,256,58" alt="" title="" href="/category/news/">
+	                        <area shape="rect" coords="255,0,329,58" alt="" title="" href="/category/politics/">
+	                        <area shape="rect" coords="328,0,453,58" alt="" title="" href="/category/entertainment/">
+	                        <area shape="rect" coords="453,0,496,58" alt="" title="" href="/category/life/">
+	                        <area shape="rect" coords="495,0,544,58" alt="" title="" href="/category/technology/">
+	                        <area shape="rect" coords="543,0,625,58" alt="" title="" href="/category/business/">
+	                        <area shape="rect" coords="624,0,751,58" alt="" title="" href="/category/sustainability/">
+	                        <area shape="rect" coords="750,0,803,58" alt="" title="" href="/search/">
+	                        <area shape="rect" coords="802,0,843,58" alt="" title="" href="https://www.facebook.com/salon">
+	                        <area shape="rect" coords="843,0,878,58" alt="" title="" href="https://twitter.com/salon">
+	                    </map>
+	        </div>
+		</header>
+		<div class="large-10 small-12 small-12 column nav-wrap show-for-large-up">
+			<nav class="row slide-out primary-menu">
+	                <div class="large-12 column">
+	                	<div class="search hide-for-large-up">
+		                    <form action="/search/">
+		                        <input type="text" name="q" placeholder="Enter search term">
+		                        <input class="override" type="submit" value="search">
+		                    </form>
+	                	</div>
+			            <div class="nav-section-wrap">
+			                <ul class="sections inline-list left nav-section-cell">
+			                	<li class="hide-for-large-up">
+			                		<a href="/" class="dropdown-home-click gaTrackLinkEvent"
+			                		data-ga-track-json='["navigation", "click", "dropdown-home"]'
+			                		>
+			                			Home
+			                		</a>
+			                	</li>
+			                				                <li class="news flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/news/"
+                        data-ga-track-json='["navigation", "click", "News"]'
+                    >
+                        News                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                news                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/education/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "education"]'
+                                    >
+                                        Education                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/labor/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "labor"]'
+                                    >
+                                        Labor                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/health_care_2/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "health care"]'
+                                    >
+                                        Health Care                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/reproductive_rights/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "reproductive rights"]'
+                                    >
+                                        Reproductive Rights                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/this_incoherent_donald_trump_interview_proves_one_thing_sarah_palins_descent_into_obscurity_is_complete/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This incoherent Donald Trump interview proves one thing: Sarah Palin&#039;s descent into obscurity is complete'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/Screen-Shot-2015-08-31-at-7.38.48-AM-90x60.png'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/this_incoherent_donald_trump_interview_proves_one_thing_sarah_palins_descent_into_obscurity_is_complete/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This incoherent Donald Trump interview proves one thing: Sarah Palin&#039;s descent into obscurity is complete'>
+                    This incoherent Donald Trump interview proves one thing: Sarah Palin's descent into obscurity is complete
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/bob_cesca_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Bob Cesca&quot;]" >Bob Cesca</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/paul_krugman7-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                    Paul Krugman: There's a reason the 23 "Katrinas" the GOP's tried to pin on Obama haven't stuck
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/01/new_poll_indicates_exactly_whos_supporting_donald_trump_and_the_gop_should_be_worried/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='New poll indicates exactly who&#039;s supporting Donald Trump — and the GOP should be worried'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/donald_trump19-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/01/new_poll_indicates_exactly_whos_supporting_donald_trump_and_the_gop_should_be_worried/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='New poll indicates exactly who&#039;s supporting Donald Trump — and the GOP should be worried'>
+                    New poll indicates exactly who's supporting Donald Trump — and the GOP should be worried
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="politics flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/politics/"
+                        data-ga-track-json='["navigation", "click", "Politics"]'
+                    >
+                        Politics                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                politics                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/2014_elections/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "2014 elections"]'
+                                    >
+                                        2014 elections                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/obamacare/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "obamacare"]'
+                                    >
+                                        Obamacare                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/the_right/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "the right"]'
+                                    >
+                                        The Right                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/2016_elections/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "2016 elections"]'
+                                    >
+                                        2016 Elections                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/this_incoherent_donald_trump_interview_proves_one_thing_sarah_palins_descent_into_obscurity_is_complete/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This incoherent Donald Trump interview proves one thing: Sarah Palin&#039;s descent into obscurity is complete'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/Screen-Shot-2015-08-31-at-7.38.48-AM-90x60.png'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/this_incoherent_donald_trump_interview_proves_one_thing_sarah_palins_descent_into_obscurity_is_complete/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This incoherent Donald Trump interview proves one thing: Sarah Palin&#039;s descent into obscurity is complete'>
+                    This incoherent Donald Trump interview proves one thing: Sarah Palin's descent into obscurity is complete
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/bob_cesca_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Bob Cesca&quot;]" >Bob Cesca</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/paul_krugman7-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                    Paul Krugman: There's a reason the 23 "Katrinas" the GOP's tried to pin on Obama haven't stuck
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/01/new_poll_indicates_exactly_whos_supporting_donald_trump_and_the_gop_should_be_worried/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='New poll indicates exactly who&#039;s supporting Donald Trump — and the GOP should be worried'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/donald_trump19-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/01/new_poll_indicates_exactly_whos_supporting_donald_trump_and_the_gop_should_be_worried/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='New poll indicates exactly who&#039;s supporting Donald Trump — and the GOP should be worried'>
+                    New poll indicates exactly who's supporting Donald Trump — and the GOP should be worried
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="entertainment flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/entertainment/"
+                        data-ga-track-json='["navigation", "click", "Entertainment"]'
+                    >
+                        Entertainment                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                entertainment                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/books/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "books"]'
+                                    >
+                                        Books                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/movies/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "movies"]'
+                                    >
+                                        Movies                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/music/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "music"]'
+                                    >
+                                        Music                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/tv/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "tv"]'
+                                    >
+                                        TV                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/28/miley_cyrus_has_learned_nothing_why_her_shots_at_nicki_minaj_were_so_tone_deaf_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Miley Cyrus has learned nothing: Why her shots at Nicki Minaj were so tone-deaf'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2013/10/miley_cyrus2-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/28/miley_cyrus_has_learned_nothing_why_her_shots_at_nicki_minaj_were_so_tone_deaf_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Miley Cyrus has learned nothing: Why her shots at Nicki Minaj were so tone-deaf'>
+                    Miley Cyrus has learned nothing: Why her shots at Nicki Minaj were so tone-deaf
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/morgan_jerkins/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Morgan Jerkins&quot;]" >Morgan Jerkins</a>, The Daily Dot
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/watch_nicki_minaj_call_miley_cyrus_a_btch_onstage_at_the_vmas/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Watch Nicki Minaj call Miley Cyrus a b*tch onstage at the VMAs'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/Screen-Shot-2015-08-31-at-9.11.59-AM-90x60.png'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/watch_nicki_minaj_call_miley_cyrus_a_btch_onstage_at_the_vmas/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Watch Nicki Minaj call Miley Cyrus a b*tch onstage at the VMAs'>
+                    Watch Nicki Minaj call Miley Cyrus a b*tch onstage at the VMAs
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/anna_silman_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Anna Silman&quot;]" >Anna Silman</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/the_very_human_secret_of_ashley_madisons_fembot_success/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The (very human) secret of Ashley Madison&#039;s fembot success'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/ex_machina2-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/the_very_human_secret_of_ashley_madisons_fembot_success/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The (very human) secret of Ashley Madison&#039;s fembot success'>
+                    The (very human) secret of Ashley Madison's fembot success
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_timberg/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Timberg&quot;]" >Scott Timberg</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="life flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/life/"
+                        data-ga-track-json='["navigation", "click", "Life"]'
+                    >
+                        Life                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                life                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/life_stories/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "life stories"]'
+                                    >
+                                        Life Stories                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/love_and_sex/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "love &amp; sex"]'
+                                    >
+                                        Love & Sex                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/parenting/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "parenting"]'
+                                    >
+                                        Parenting                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/30/a_burka_in_a_christian_town_how_fox_news_and_right_wing_media_turned_a_lesson_in_tolerance_into_an_excuse_for_hate/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='A burka in a Christian town: How Fox News and right-wing media turned a lesson in tolerance into an excuse for hate'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/woman_burka-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/30/a_burka_in_a_christian_town_how_fox_news_and_right_wing_media_turned_a_lesson_in_tolerance_into_an_excuse_for_hate/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='A burka in a Christian town: How Fox News and right-wing media turned a lesson in tolerance into an excuse for hate'>
+                    A burka in a Christian town: How Fox News and right-wing media turned a lesson in tolerance into an excuse for hate
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/linda_k_wertheimer/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Linda K. Wertheimer&quot;]" >Linda K. Wertheimer</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/the_very_human_secret_of_ashley_madisons_fembot_success/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The (very human) secret of Ashley Madison&#039;s fembot success'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/ex_machina2-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/the_very_human_secret_of_ashley_madisons_fembot_success/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The (very human) secret of Ashley Madison&#039;s fembot success'>
+                    The (very human) secret of Ashley Madison's fembot success
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_timberg/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Timberg&quot;]" >Scott Timberg</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/john_oliver_improves_history_by_peppering_it_with_incredibly_elaborate_and_totally_ridiculous_lies/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='John Oliver improves history by peppering it with incredibly elaborate and totally ridiculous lies'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/Screen-Shot-2015-08-31-at-9.07.00-AM-90x60.png'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/john_oliver_improves_history_by_peppering_it_with_incredibly_elaborate_and_totally_ridiculous_lies/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='John Oliver improves history by peppering it with incredibly elaborate and totally ridiculous lies'>
+                    John Oliver improves history by peppering it with incredibly elaborate and totally ridiculous lies
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/colin_gorenstein/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Colin Gorenstein&quot;]" >Colin Gorenstein</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="tech flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/technology/"
+                        data-ga-track-json='["navigation", "click", "Tech"]'
+                    >
+                        Tech                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                tech                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/privacy/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "privacy"]'
+                                    >
+                                        Privacy                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/social_media/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "social media"]'
+                                    >
+                                        Social Media                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/gadgets/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "gadgets"]'
+                                    >
+                                        Gadgets                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/drones/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "drones"]'
+                                    >
+                                        Drones                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/30/amazon_facebook_and_google_have_the_same_secret/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Amazon, Facebook and Google have the same secret'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/brin_zuckerberg_bezos_code-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/30/amazon_facebook_and_google_have_the_same_secret/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Amazon, Facebook and Google have the same secret'>
+                    Amazon, Facebook and Google have the same secret
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/sam_wilkin/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sam Wilkin&quot;]" >Sam Wilkin</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/28/stephen_hawking_hasnt_solved_the_black_hole_paradox_just_yet_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Stephen Hawking hasn&#039;t solved the black hole paradox just yet'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2014/05/stephen_hawking-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/28/stephen_hawking_hasnt_solved_the_black_hole_paradox_just_yet_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Stephen Hawking hasn&#039;t solved the black hole paradox just yet'>
+                    Stephen Hawking hasn't solved the black hole paradox just yet
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/clara_moskowitz/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Clara Moskowitz&quot;]" >Clara Moskowitz</a>, Scientific American
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="business flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/business/"
+                        data-ga-track-json='["navigation", "click", "Business"]'
+                    >
+                        Business                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                business                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/wall_street/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "wall street"]'
+                                    >
+                                        Wall Street                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/finance/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "finance"]'
+                                    >
+                                        Finance                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/labor/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "labor"]'
+                                    >
+                                        Labor                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/paul_krugman7-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/31/paul_krugman_theres_a_reason_the_23_katrinas_the_gops_tried_to_pin_on_obama_havent_stuck/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: There&#039;s a reason the 23 &quot;Katrinas&quot; the GOP&#039;s tried to pin on Obama haven&#039;t stuck'>
+                    Paul Krugman: There's a reason the 23 "Katrinas" the GOP's tried to pin on Obama haven't stuck
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/30/billionaire_ceos_come_to_jesus_we_are_creating_a_caste_system_from_which_its_almost_impossible_to_escape_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Billionaire CEOs come to Jesus: &quot;We are creating a caste system from which it&#039;s almost impossible to escape&quot;'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/AP_080617023256-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/30/billionaire_ceos_come_to_jesus_we_are_creating_a_caste_system_from_which_its_almost_impossible_to_escape_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Billionaire CEOs come to Jesus: &quot;We are creating a caste system from which it&#039;s almost impossible to escape&quot;'>
+                    Billionaire CEOs come to Jesus: "We are creating a caste system from which it's almost impossible to escape"
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/jim_hightower_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Jim Hightower&quot;]" >Jim Hightower</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/30/amazon_facebook_and_google_have_the_same_secret/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Amazon, Facebook and Google have the same secret'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/brin_zuckerberg_bezos_code-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/30/amazon_facebook_and_google_have_the_same_secret/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Amazon, Facebook and Google have the same secret'>
+                    Amazon, Facebook and Google have the same secret
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/sam_wilkin/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sam Wilkin&quot;]" >Sam Wilkin</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="sustainability flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/sustainability/"
+                        data-ga-track-json='["navigation", "click", "Sustainability"]'
+                    >
+                        Sustainability                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                sustainability                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/climate_change/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "climate change"]'
+                                    >
+                                        Climate Change                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/dream_city/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "dream city"]'
+                                    >
+                                        Dream City                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/organic_food/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "organic food"]'
+                                    >
+                                        organic food                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/01/watch_blue_whale_interrupts_interview_bbc_reporter_promptly_loses_his_mind/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Watch: Blue whale interrupts interview, BBC reporter promptly loses his mind'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Screen-Shot-2015-09-01-at-2.18.02-PM-90x60.png'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/01/watch_blue_whale_interrupts_interview_bbc_reporter_promptly_loses_his_mind/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Watch: Blue whale interrupts interview, BBC reporter promptly loses his mind'>
+                    Watch: Blue whale interrupts interview, BBC reporter promptly loses his mind
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/lindsay_abrams/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Lindsay Abrams&quot;]" >Lindsay Abrams</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/01/theres_no_way_to_stop_the_water_and_no_time_to_waste_the_science_behind_rising_sea_tides_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;There’s no way to stop the water, and no time to waste&quot;: The science behind rising sea tides'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/shutterstock_103777838-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/01/theres_no_way_to_stop_the_water_and_no_time_to_waste_the_science_behind_rising_sea_tides_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;There’s no way to stop the water, and no time to waste&quot;: The science behind rising sea tides'>
+                    "There’s no way to stop the water, and no time to waste": The science behind rising sea tides
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/jeff_inglis/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Jeff Inglis&quot;]" >Jeff Inglis</a>, GlobalPost
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/30/whales_otters_sharks_and_seals_are_all_turning_out_for_the_superbowl_of_nature/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Whales, otters, sharks and seals are all turning out for the &quot;Superbowl of nature&quot;'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2014/05/whale_tail-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/30/whales_otters_sharks_and_seals_are_all_turning_out_for_the_superbowl_of_nature/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Whales, otters, sharks and seals are all turning out for the &quot;Superbowl of nature&quot;'>
+                    Whales, otters, sharks and seals are all turning out for the "Superbowl of nature"
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/lindsay_abrams/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Lindsay Abrams&quot;]" >Lindsay Abrams</a>
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+			                <li class="innovation flyout-wrap">
+					<a
+                        class="not-b text-small text-caps gaTrackLinkEvent"
+                        href="http://www.salon.com/category/innovation/"
+                        data-ga-track-json='["navigation", "click", "Innovation"]'
+                    >
+                        Innovation                    </a>
+                                        					<ul class="nav first flyout">
+                        <li class="arrow-box top light p-4 p-top-2 text-left">
+                            <h2 class="text-huge m-bottom-1 text-fancy">
+                                innovation                            </h2>
+                            							<ul class="inline-list stroke-bottom p-bottom-1 text-caps text-small b">
+                                                                <li>
+									<a
+                                        href="http://www.salon.com/topic/science/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "science"]'
+                                    >
+                                        Science                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/ideas/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "ideas"]'
+                                    >
+                                        ideas                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/silicon_valley/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "silicon valley"]'
+                                    >
+                                        Silicon Valley                                    </a>
+                                </li>
+								                                <li>
+									<a
+                                        href="http://www.salon.com/topic/cool_culture/"
+                                        class="gaTrackLinkEvent text-highlight"
+                                        data-ga-track-json='["navigation", "click", "cool culture"]'
+                                    >
+                                        cool culture                                    </a>
+                                </li>
+								                            </ul>
+														                            <div class="smr-widget p-top-2">
+                                <ul>
+                                    
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/08/29/there_will_never_be_another_einstein_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Even Einstein thought he was &quot;no Einstein&quot;: The enduring mystique of world&#039;s most famous physicist'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2013/06/befuddled_einstein-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/08/29/there_will_never_be_another_einstein_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Even Einstein thought he was &quot;no Einstein&quot;: The enduring mystique of world&#039;s most famous physicist'>
+                    Even Einstein thought he was "no Einstein": The enduring mystique of world's most famous physicist
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/john_horgan/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;John Horgan&quot;]" >John Horgan</a>, Scientific American
+                </span>
+            </div>
+        </li>								</ul>
+                            </div>
+							                        </li>
+                    </ul>
+                					</li>
+								                </ul>
+			                <ul class="inline-list left buttons nav-section-cell desktopOnly">
+					            <li class="flyout-wrap">
+					                <span class="sprite magnifying-glass-white-22">
+					                </span>
+					                <div class="search flyout">
+					                    <div class="arrow-box top light p-2">
+					                        <form action="/search/">
+					                            <input type="text" name="q" placeholder="Enter search term">
+					                            <input class="override" type="submit" value="search">
+					                        </form>
+					                    </div>
+					                </div>
+					            </li>
+					            <li class="text-center flyout-wrap">
+					                <div class="shareButton left m-right-1p5"
+					                    data-service="facebookFollowers"
+					                    data-screen-name="salon"
+					                >
+					                    <span class="sprite facebook-white-22">
+					                    </span>
+					                </div>
+					                <div class="shareButton left"
+					                    data-service="twitterFollowers"
+					                    data-screen-name="salon"
+					                >
+					                    <span class="sprite twitter-white-22">
+					                    </span>
+					                </div>
+					                <div class="nav-social share flyout">
+					                    <div class="arrow-box top light p-1">
+					                        <ul class=" inline-list m-bottom-1-hard m-top-1">
+					                            <li  class="facebook-site-link m-bottom-0-hard m-right-1-hard">
+					                                <div class='fb_like'>
+                    <fb:like
+                        href='http://www.facebook.com/salon'
+                        layout='button'
+                        action='like'
+                        show_faces='false'
+                        share='false'></fb:like>
+                    </div>					                            </li>
+					                            <li class="twitter-site-link">
+					                                <a
+					                                    data-service="twitterFollowers"
+					                                    data-screen-name="salon"
+					                                    href="http://www.twitter.com/salon"
+					                                    data-share-url="http://www.twitter.com/salon"
+					                                    class="shareButton twitterFollowers"
+					                                 >
+					                                    <span class="shareButtonBox">
+					                                        <span class="shareIcon"></span>
+					                                    </span>
+					                                </a>
+					                            </li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </li>
+					          </ul>
+
+					          <div class="inline-list dark login nav-section-cell">
+					            <div class="user normal-color">
+
+					              <p class="m-0 text-caps desktopOnly">
+					                <span class="salonUserName"></span>
+					              </p>
+
+					              <div class="m-0 login-tools">
+
+					                <a
+					                    href="#"
+					                    class="salonLogout log-toggle hide gaTrackLinkEvent"
+					                    data-ga-track-json='["navigation", "click", "signout"]'
+					                >
+					                  Log out
+					                </a>
+
+					                <a
+					                    href="#"
+					                    class="salonLogin log-toggle gaTrackLinkEvent"
+					                    data-ga-track-json='["navigation", "click", "signin"]'
+					                >
+					                  Sign in
+					                </a>
+
+					              </div>
+
+					            </div>
+					          </div>
+	 					</div>
+	            	</div>
+
+			</nav>
+		</div>
+	</div>
+</div>
+<div data-position-name='oop' class='adPosition hide ad-oop outOfPage'></div><div data-position-name='extra' class='adPosition hide ad-extra outOfPage'></div><div data-position-name='spotlight-1' class='adPosition hide ad-spotlight-1 outOfPage'></div><div data-position-name='spotlight-2' class='adPosition hide ad-spotlight-2 outOfPage'></div><div data-position-name='promo-1' class='adPosition hide ad-promo-1 outOfPage'></div><div data-position-name='promo-2' class='adPosition hide ad-promo-2 outOfPage'></div><div data-position-name='skin' class='adPosition hide ad-skin outOfPage'></div><div data-position-name='overlay' class='adPosition hide ad-overlay outOfPage'></div><!-- postition interstitial not known --><div class="p-top-2 p-bottom-2">
+    </div>
+<div class="container_12 pageContents">
+
+    <section class="omega mainContent">
+        <div class="mainInner pages">
+                        <div class="topicTop">
+                <h1 class="topicHead">
+                    Privacy Policy                </h1>
+            </div>
+            <div class="innerInner">
+                <div class="medium-7 grid_8 column alpha omega">
+                    <div class="inner">
+                        
+
+                        <div class="grid_7 alpha post-11 page type-page status-publish hentry">
+                            <div id="post-11" class="staticContent">
+                                <h2>Salon.com Privacy Policy</h2>
+<p>Last Revised July 1, 2013.</p>
+<p>We respect your privacy, and we want you to know how we use the information you provide to us. This privacy policy (“Privacy Policy”) applies to your use of our website located at www.salon.com, as well as to all other online websites (collectively, the “Site”) and mobile applications  (the “Application”), blogs and interactive applications operated by Salon Media Group Inc. (“Salon,” “us” or “we”), collectively our “Services,” unless a different policy is provided on a particular website or application. In this Privacy Policy, we describe the information we collect, how Salon uses and discloses the information, and your choices regarding our information collection practices.  </p>
+<p>Please read this Privacy Policy carefully. By visiting our Site and Application and using our Services, you agree that your information, including your personal information, will be handled as described in this Privacy Policy, which is incorporated by reference into this <a href="http://www.salon.com/about/tos/">Terms of Service.</a>  </p>
+<h2>Information We Collect</h2>
+<p>We collect information from and about you, including personal information and information about your use of the Site, the Application, and our Services. Specifically, we collect information:  (1) directly from you, such as when you register to use our Site, request our newsletter, or participate in contests, sweepstakes, or other offers; (2) from third parties, such as when you log in through a social networking site or our Refer a Friend program; and (3) automatically, as you move through our Site and our Application, such as Site usage, browser types, IP addresses or device IDs, and other data, as discussed below. </p>
+<p><strong><em>Information We Collect Directly From You.</em></strong> We request information from you when you register for an account for our Site (our legacy “Salon Core” members), request our newsletter, participate in our contests, sweepstakes, and other promotions, and contact us. Depending upon the particular activity, we may request the following information from you:  your name, email address, zip code, gender, age range, income range, username, password, and, for Salon Core members, credit card information.  </p>
+<p><strong><em>Information We Collect About You From Third Parties.</em></strong></p>
+<ul>
+<li><em>Refer a Friend.</em> The Site offers an “email a friend about this story” feature, allowing Site visitors to send email to friends to inform them about an article that might be of interest. For this feature to function, we ask for email addresses for the recipient (so we know who to mail the message to) and from the sender (so we can tell the recipient who sent the email). We do not store or save these addresses and neither you nor your friend will receive email or other communications from Salon or its partners as a result of having used this feature. While this tool should not be used to send mass “spam” mailings, Salon has no control over how our visitors use it, and any email sent through it originates with, and is the responsibility of, the sender, not Salon.</li>
+<li><em>Social Networking Sites.</em> You may log onto our Site through social networking applications, such as Facebook and Twitter. From time to time, we may add the capability to log into our Site through different social networking sites. If you log into our Services through a social networking site, we will request your name and certain basic information. We also may request certain permissions from you, which vary based on the social networking site. For information about how the particular social networking site may disclose your information, including any information you make public, please consult their privacy policy. We have no control over how a third party social networking site uses or discloses the personal information that you provide to it. We store the information that we receive from the social networking site along with other information that we collect from you or receive about you.</li>
+</ul>
+<p><strong><em>Information We Collect Automatically.</strong></em> We use cookies, web beacons, Flash, and other automated devices to collect information about you when you visit our Site and our Application.  Specifically, we collect the following information about your use of our Site via these technologies:  your browser type and operating system; web pages you view; links you click; your IP address; your interaction with the Site; length of time you are logged in to our Site; and websites visited before our Site. With regard to the Application, we may collect your mobile device ID; location and language information; device name and model; operating system type, name and version; your activities within the Application; and the length of time that you are logged into our Application. We will request your information before we collect your location. Please see the section “Use of Cookies, Flash Cookies, HTML5, Web Beacons, and Other Tracking Devices” below for more information about our use of these tracking devices. We may use the information gathered through these methods in anonymous or aggregated form to analyze ways to improve our Services. This information may be associated with your username and may be combined with other information, including personal information that we collect about you. </p>
+<p><strong><em>Location Information.</em></strong> If you are using our Application, we also may collect your location. We will request your permission prior to doing so. We may combine your location information with other information that we have collected about you.</p>
+<h2>Use of Cookies, Flash Cookies, HTML5, Web Beacons, and Other Tracking Devices</h2>
+<p>When you interact with our Services, we strive to make your experience easy and meaningful.  We or our third party service providers use cookies, web beacons (including clear GIFs), Flash LSOs, and similar technologies to track user activity and collect data about our Site, Services, and our users. As stated above, we may combine this data with the personal information we have collected from or about you. </p>
+<p><strong><em>Cookies.</em></strong> We use browser “cookies” on our Site. Cookies are a website’s way of remembering who you are. A cookie is a small text file that is stored on your computer’s hard drive or stored temporarily in your computer’s memory. There are two kinds of cookies, and we use both types of cookies on our Site: “session” cookies and “persistent” cookies. Session cookies are deleted when you close your browser. Persistent cookies remain on your computer and retain information for later use tomorrow, next month or whenever they are set to expire. We use cookies to help us to identify account holders and to optimize their experience on our Site. Also, we will use cookies to monitor and maintain information about your use of this Site. </p>
+<p>Most Web browsers accept cookies automatically. You can delete cookies manually or set your browser to automatically delete cookies on a pre-determined schedule. If you decline to accept cookies, you may not be able to take advantage of or participate in certain features of this Site.</p>
+<p>Other companies that place advertising on our Site also have the ability to assign their cookies to you. You can opt out of the collection of certain information about you by many online advertisers. Please see the section below entitled “Advertising” for additional information. </p>
+<p><strong><em>Use of Flash Cookies and HTML5.</em></strong> Our Services enable the use of the Adobe Flash Player. Your use of the Adobe Flash Player generates “flash cookies” (also known as “persistent identification elements” or “local shared objects”). The Adobe Flash Player (and similar applications) uses flash cookies to remember user settings, preferences and usage in a manner similar to the browser cookies referenced above. Flash cookies can store more information than browser cookies and are managed through a different interface than the one provided by your Web browser. You can control the degree to which you accept flash cookies by accessing your Adobe Flash Player management tools directly through the settings manager for Adobe Flash, located at http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html. (Users running the Windows operating system can generally view flash cookie files in this folder: \Documents and Settings\[username]\Application Data\Macromedia\Flash Player. Users running the Apple operating system can generally view flash cookie files in this folder: /users/[username]/Library/Preferences/macromedia/Flash Player. Flash cookies, or LSO files are stored typically with an “.SOL” extension. If you do not allow flash cookies on your computer, you may not be able to take advantage of or participate in certain features of our Services.</p>
+<p>HTML is the software language used for building most of the sites on the internet. Some HTML5 code may allow your responses to advertising and other activities to be monitored across websites, and for such information to be stored on your computer or mobile device and accessed by others you do or have done business with. Salon accesses user activity information stored through this feature of HTML5. As with cookies, other companies that place advertising on our Site may have the ability to access information using this feature of HTML5. Salon does not control and is not responsible for any such access or for their use of information obtained. </p>
+<p><strong><em>Web Beacons.</em></strong> Our Web pages or e-mail messages may contain a small graphic image called a Web beacon, which is sometimes also called a “clear gif,” that allows us to monitor and collect certain information about our users, such as the type of browser requesting the Web beacon, the IP address of the computer that the Web beacon is sent to and the time the Web beacon was viewed. Web beacons can be very small or invisible to the user, but, in general, any electronic image viewed as part of a Web page or email, including HTML-based content, can act as a Web beacon. We may use Web beacons to count visitors to our Web pages or to monitor how our users navigate our Site, and we may include Web beacons in email messages in order to count how many of the messages we sent were actually opened or acted upon. We use Web beacons to compile aggregate statistics about our Site and our marketing campaigns.</p>
+<p><strong><em>Analytics.</em></strong>  Each time a visitor comes to the Site or uses our Application, our servers collect information, including, for example, the visitor’s domain name (e.g., the website that you came from), referral data (e.g., depending on your browser, the address of the last page or series of pages you visited prior to clicking through to our Site), and browser and platform type. We also count, track and aggregate each visitor’s activity as part of our analysis of general traffic flows at our Site and on our Application (e.g., tracking where traffic comes from, how traffic flows within the Site and our Application, etc.). We collect some of this data directly, and we also engage third party service providers (e.g., Google Analytics) who use the technologies described in this section, to collect this information and to assist us with our analytics.  </p>
+<h2>Security of Information</h2>
+<p>Salon makes efforts to protect your information. However, no website, Internet transmission, computer system or wireless connection is completely secure. Salon cannot guarantee that unauthorized access or disclosure, hacking, data loss or other breaches will not occur. Your use of the Site and our Services is at your own risk. Salon urges you to take steps to keep your information safe by memorizing your password or keeping it in a safe place (separate from your account information), logging out of your account, and closing your Web browser. In addition, you should not provide your password to others. By registering for or using our Services, you are responsible for any use of the our Services accomplished through the use of your password.</p>
+<p>We cannot and do not ensure or warrant the security of any information you transmit to Salon and you do so at your own risk. </p>
+<h2>Use of Your Information</h2>
+<p>We use your information, including your personal information, to provide our Services to you and for the following purposes:</p>
+<ul>
+<li>To communicate with you, to respond to your inquiries, and for other customer services purposes;</li>
+<li>To provide information that you have requested to receive from us;</li>
+<li>To tailor the content and information that we may send or display to you, and to otherwise personalize your experiences while using our Services;</li>
+<li>To improve our Services;</li>
+<li>For research purposes;</li>
+<li>For marketing and advertising purposes; for example, we may send you emails about new features of our Site and our Application as well as about our products and services, as well as products and services of third parties, that we believe would be of interest to you;</li>
+<li>To better understand how users access and use our Services, both on an aggregated and individualized basis.</li>
+</ul>
+<h2>Sharing Information</h2>
+<p>We may provide information, including your personal information (collectively, “information”), to non-affiliated and affiliated parties for a variety of purposes as described in this section and throughout this Privacy Policy.</p>
+<p><strong><em>Affiliates and Non-Affiliated Third Parties.</em></strong> We may disclose your information to affiliates and non-affiliated companies when we believe their products or services may be of interest to you, so that they can contact you with offers. If you are a California resident, you have a right to obtain information about this sharing; please see the Special Notice to California Consumers below. If you respond to an offer and provide information directly to another company, that information will be subject to their privacy policy, not this Privacy Policy. If you later decide that you do not want that third party to use your information, you will need to contact the third party directly. Salon is not responsible for the manner in which other businesses collect or use your personal information.</p>
+<p><strong><em>Joint Marketing Events/Partners.</em></strong> We also may partner with third parties for joint marketing events. If you participate in such as an event, including a promotion as discussed below, we may share your information with the third party. </p>
+<p><em><strong>Third parties providing services on our behalf.</em></strong> We may engage third parties to perform services in connection with the operation of our business. Examples of these services include: (a) distribution of marketing and promotional material; (b) website evaluation and analytics; (c) fulfilling magazine, newsletter or other subscriptions; (d) data collection, storage, management, analysis and, where applicable, cleansing, and (e) any other services designed to assist us in maximizing our business potential. These third parties may have access to information about visitors to our Site and our Application, including personal information, for the purpose of performing their duties and functions. Investigations and security. We may release information about you when legally required to do so, at the request of governmental authorities conducting an investigation, in response to a subpoena or other legal process, or to verify or enforce compliance with the policies governing our Site, Application, and applicable laws. We may also disclose such user information whenever we believe disclosure is necessary to protect the rights, property or safety of Salon, or any of our respective affiliates, business partners, customers or others. </p>
+<p><em><strong>Aggregate Information.</em></strong> We may disclose aggregated user statistics to third parties for a variety of purposes, including describing our services to prospective partners and other third parties, such as advertisers, and as otherwise described in this Privacy Policy. Examples of such non-personal information include the number of users who visited this Site or Application during a specific time period or purchased a specific product through this Site or Application. </p>
+<p><em><strong>Promotions.</em></strong> If you choose to enter a contest, sweepstakes or promotion offered by Salon, your information may be disclosed to third parties for purposes of posting your entry with attribution or otherwise as permitted in the official rules for the contest, sweepstakes or promotion in question, fulfilling your prize or including your name on a winners list, or as otherwise necessary for purposes of the contest, sweepstakes or promotion. We may also require you to consent to the use of your information, such as name, voice or likeness, in advertising, promotional and marketing materials, in which case the rules will so state. In addition, we may offer promotional content, including sweepstakes and promotions, sponsored by or co-branded with a third party, who may obtain the personal information that you submit. Please refer to the rules of the particular contest, sweepstakes or promotion for additional information.</p>
+<p><em><strong>Surveys.</em></strong> Salon may from time to time conduct voluntary surveys of visitors to the Site to obtain aggregate demographic information about them. Such information may be compiled and shared in the aggregate with advertisers and other third parties.</p>
+<p><em><strong>Business Transfers/Bankruptcy.</em></strong> If we are acquired by or merged with another company, if substantially all of our assets are transferred to another company, or as part of a bankruptcy proceeding, we may transfer the information we have collected from you to the acquiring company.  </p>
+<h2>User Generated Content</h2>
+<p>Certain portions of our Services permit registered users to post content, including, for example, commenting on an article, posting a picture, etc. Any information that you post to our Services may be viewable by other visitors to our Services. We are not responsible for the privacy of your submissions, or for the accuracy of any information contained in those submissions. Any information that you disclose becomes public information. We cannot prevent such information from being used in a manner that may violate this Policy, the law or your personal privacy.</p>
+<h2>Advertising</h2>
+<p>We use third parties such as network advertisers to serve advertisements on our Site. Network advertisers are third parties that display advertisements based on your visits to our Site and other websites you have visited. This enables us and these third parties to target advertisements to you for products and services in which you might be interested. Third party ad network providers, advertisers, sponsors and/or traffic measurement services may use cookies, JavaScript, web beacons (including clear GIFs), Flash LSOs and other technologies to measure the effectiveness of their ads and to personalize advertising content to you.  These third party cookies and other technologies are governed by each third party’s specific privacy policy, not this one. We may provide these third-party advertisers with information about your usage of our Site and our Services on an aggregated basis.</p>
+<p><strong>You may opt-out of many third-party ad networks.</strong> The website http://www.networkadvertising.org/optout_nonppii.asp provides information regarding this practice by Network Advertising Initiative (“NAI”) members, and your choices regarding having this information used by these companies, including how to “opt-out” of third-party ad networks operated by NAI members. You also may contact the Digital Advertising Alliance at http://www.aboutads.info/choices/ for information about opting out of targeted advertising and your choices regarding having information used by About Ads member companies, including how to “opt-out” of third-party ad networks operated by About Ads members. Opting out of one or more NAI members or DAI members (many of which will be the same) only means that those members no longer will deliver targeted content or ads to you, but it does not mean you will no longer receive any targeted content or ads on our Site or other websites. You may continue to receive advertisements, for example, based on the particular website that you are viewing. Also, if your browsers are configured to reject cookies when you visit this opt-out page, or you subsequently erase your cookies, use a different computer or change web browsers, your NAI or DAI opt-out may no longer, be effective. Additional information is available on NAI’s and DAI’s websites accessible by the above links.</p>
+<h2>Special Information for California Consumers</h2>
+<p>California residents may request a list of all third parties to which Salon has disclosed certain personal information about you for the third party’s marketing purposes. You may make one request per calendar year. In your request, please attest that you are a California resident and provide a current California address for our response to you. </p>
+<h2>Our Commitment to Children’s Privacy</h2>
+<p>Protecting the privacy of children is important to us. We do not collect or maintain information from those we actually know are under 13, and no part of our Services is structured to attract anyone under 13. If you are under the age of 13, you are not permitted to use our Services. If you are aware of anyone under the age of 13 using our Site, please notify us. Upon confirmation, we will terminate any account that user may have, and we will eliminate any personal information we may have obtained from that user.</p>
+<h2>Unsubscribe and Data Removal Policies</h2>
+<p>If you would like to remove your name and e-mail address from our Core registration database, you can send an email requesting removal to &#x63;&#x6f;&#x72;&#x65;&#x68;&#x65;&#x6c;&#x70;&#x40;&#x73;&#x61;&#x6c;&#x6f;&#x6e;.com.</p>
+<p>If you no longer wish to receive promotional emails from us, please follow the opt-out instructions in the text of the email. Please note that it may take up to ten days to process your request. Please also note that if you opt-out of receiving promotional emails from us, we may continue to contact you with via email with service related communications.</p>
+<h2>Other Sites and Services</h2>
+<p>Salon may contain links to, or advertisements about, non-Salon websites. Other sites may also reference, advertise or link to the Site. Salon does not endorse or sponsor other websites, is not responsible for their privacy practices or content, expressly disclaims any statements or assertions made on such websites, and denies all liability associated with your use of, and the content on, such other websites and advertisements. Please be advised that the practices described in this Privacy Policy do not apply to information gathered through other websites. We encourage you to be aware of when you leave our Services  and to read the privacy policies of each website that you use.</p>
+<h2>Consent to Processing in the United States</h2>
+<p>Our Services are operated in the United States. By providing any information to Salon, all users, including, without limitation, users in the member states of the European Union, Canada or elsewhere outside of the United States, fully understand and consent to this Privacy Policy. By using our Site, participating in any of our services and/or providing us with your information, you consent to the collection, transfer, storage and processing of your information to and in the United States. In addition, you waive any restrictions on such collection, transfer or storage of your information imposed by the laws of any country other than the United States.</p>
+<h2>Revisions to Privacy Policy</h2>
+<p>We reserve the right, in our sole discretion, to modify, update, add to, discontinue, remove or otherwise change any portion of this Privacy Policy, in whole or in part, at any time. When we amend this Privacy Policy, we will revise the “last updated” date located at the top of this Privacy Policy. For changes to this Privacy Policy that we consider to be material, we will place a notice on the Salon website located at www.salon.com by revising the link to read as “Updated Privacy Policy” for a reasonable amount of time. By providing information to us or using our Services in any way after this Privacy Policy has been revised, you consent and agree to the revised Privacy Policy. The most current version of this Privacy Policy will be available on the Site and will supersede all previous versions of this Privacy Policy.</p>
+<h2>Choice of Law</h2>
+<p>This Privacy Policy, including all revisions and amendments thereto, and any disputes arising from or relating to this Privacy Policy or your use of our Services, is governed by the laws of the State of California, without regard to any conflict or choice of law principles that would require application of the laws of another jurisdiction.</p>
+<h2>Questions about our Privacy Policy</h2>
+<p>If you have any further questions or concerns about Salon’s privacy policies and use of personal information, please send them to &#x70;&#x72;&#x69;&#x76;&#x61;&#x63;&#x79;&#x40;&#x73;&#x61;&#x6c;&#x6f;&#x6e;.com.</p>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+
+                <aside class="medium-5 grid_4 column rightSidebar">
+                    <div class="inner">
+                        <div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-about_pages_custom_menu-container"><ul id="menu-about_pages_custom_menu" class="menu"><li id="menu-item-10069988" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-10069988"><a href="http://www.salon.com/about/">About Salon</a></li>
+<li id="menu-item-13762222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13762222"><a href="http://www.salon.com/about/press/">PRESS</a></li>
+<li id="menu-item-10070331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10070331"><a href="http://www.salon.com/about/ways_to_get_salon/">Ways to Get Salon</a></li>
+<li id="menu-item-10069986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10069986"><a href="http://www.salon.com/about/contact/">Contact and Help</a></li>
+<li id="menu-item-10070401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10070401"><a href="http://www.salon.com/about/staff/">Staff</a></li>
+<li id="menu-item-10069985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10069985"><a href="http://www.salon.com/about/hiring/">Jobs</a></li>
+<li id="menu-item-10069982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10069982"><a href="http://www.salon.com/about/submissions/">Submissions</a></li>
+<li id="menu-item-10070715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10070715"><a href="http://www.salon.com/about/advertise/">Advertise on Salon</a></li>
+<li id="menu-item-10071188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10071188"><a href="http://www.salon.com/about/awards/">Awards</a></li>
+<li id="menu-item-10071229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10071229"><a href="http://www.salon.com/about/ir/">Investor Relations</a></li>
+<li id="menu-item-10084075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10084075"><a href="http://www.salon.com/about/comments/">Salon Comments</a></li>
+<li id="menu-item-10069984" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11 current_page_item menu-item-10069984"><a href="http://www.salon.com/about/policy/">Privacy Policy</a></li>
+<li id="menu-item-10069961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10069961"><a href="http://www.salon.com/about/tos/">Terms of Service</a></li>
+<li id="menu-item-10071275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10071275"><a href="http://www.salon.com/about/corrections/">Corrections</a></li>
+<li id="menu-item-10071285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10071285"><a href="http://www.salon.com/about/dmca/">DMCA Policy</a></li>
+<li id="menu-item-13769636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13769636"><a href="http://www.salon.com/about/ir/earnings/">Earnings</a></li>
+<li id="menu-item-13769637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13769637"><a href="http://www.salon.com/about/ir/press_releases_and_news/">Press Releases and News</a></li>
+<li id="menu-item-13769639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13769639"><a href="http://www.salon.com/about/ir/corporate_governance/">Corporate Governance</a></li>
+</ul></div></div>                    </div>
+                </aside>
+            </div>
+            <div class="clear"></div>
+
+            <div class="contentFootContainer">
+    <div class="bannerWrapper flatBottom">
+        <div data-position-name='728-btf' class='adPosition leaderBoard ad-728-btf '></div>    </div>
+    		<nav>
+			<a
+                                href="http://www.salon.com/about/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "about"]'
+                            >
+                                About
+                            </a>|<a
+                                href="http://www.salon.com/about/advertise/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "advertising"]'
+                            >
+                                Advertising
+                            </a>|<a
+                                href="http://www.salon.com/about/contact/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "contact"]'
+                            >
+                                Contact
+                            </a>|<a
+                                href="http://www.salon.com/about/corrections/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "corrections"]'
+                            >
+                                Corrections
+                            </a>|<a
+                                href="http://www.salon.com/about/contact/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "help"]'
+                            >
+                                Help
+                            </a>|<a
+                                href="http://www.salon.com/about/ir/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "investor relations"]'
+                            >
+                                Investor Relations
+                            </a>|<a
+                                href="http://www.salon.com/about/policy/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "privacy"]'
+                            >
+                                Privacy
+                            </a>|<a
+                                href="http://www.salon.com/about/tos/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "terms of service"]'
+                            >
+                                Terms of Service
+                            </a>|<a
+                                href="http://www.salon.com/deals/"
+                                class="gaTrackLinkEvent"
+                                data-ga-track-json='["footer", "click", "deals"]'
+                            >
+                                Deals
+                            </a>		</nav>
+		</div>
+        </div>
+    </section>
+
+</div>
+	<div id="footer" class="container_12">
+
+		Copyright &copy; 2015 Salon Media Group, Inc. Reproduction of material from any Salon pages without written permission is strictly prohibited.<br /><br />
+
+		SALON &reg; is registered in the U.S. Patent and Trademark Office as a trademark of Salon Media Group Inc.<br /><br />
+
+		Associated Press articles: Copyright © 2015 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.<br /><br />
+
+	</div>
+           <div class="trackingCode hide">
+
+                    <script type="json/config" class="gaTrackingConfig">
+            {"slots":{"1":["pageTitle","Privacy Policy",3],"2":["pageType","about",3]},"events":[]}
+        </script>            <!-- comScore Tag -->
+            <noscript>
+                <img src="http://b.scorecardresearch.com/p?c1=2&c2=6662697&c3=&c4=&c5=&c6=&c15=&cj=1" style="display: none;" border="0" height="1" width="1" />
+            </noscript>
+                <!-- End comScore Tag -->
+
+            <!-- Quantcast Tag -->
+            <noscript>
+                <div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-88O9JRUYuy_46.gif" height="1" width="1" alt="Quantcast"/></div>
+            </noscript>
+            <!-- End Quantcast tag -->
+
+        </div>
+            <div
+        class="adContainer"
+        data-tags="[]"
+        data-keywords="[]"
+        data-page-path="/10721600/Salon/about"
+    >
+        <script>
+            if(window.slnm && slnm.groups){
+                slnm.groups.initAll();
+            }
+        </script>
+    </div>
+</div>
+<script>
+console.log("adobe");
+</script>
+    <script src="//media.salon.com/optimizely/optimizely-adobe-integration.js"></script><script src="//media.salon.com/Adobe-DTM/adobe-dtm-footer.js"></script>		<script type="text/javascript">
+		  var sectionCode = sectionCode || [];
+
+		  sectionCode.push("7a3c05b0-ded1-471f-a404-330d8b6223de");
+
+		  (function(){
+		    var script = document.createElement("script");
+		    script.async = true;
+		    script.src = "https://s.yimg.com/av/gemini/ga/gemini.js";
+		    document.body.appendChild(script);
+		  })();
+		</script>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"83bbceb499","applicationID":"1307478","transactionName":"ZABWYRBYCBBZVkNeXl1KdVYWUAkNF0VWUFQ=","queueTime":0,"applicationTime":264,"atts":"SEdVF1hCGx4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
+</html>
