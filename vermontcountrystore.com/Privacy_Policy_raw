@@ -1,1 +1,888 @@
- 
+<!doctype html>
+
+<!-- Begin /views/common/header/head.jsp -->
+<!--[if lte IE 8]><html class="ie8 " lang="en"><![endif]-->
+<!--[if gt IE 8]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Privacy and Security - The Vermont Country Store</title>
+    <meta name="description" content="Privacy and Security - The Vermont Country Store" />
+    <meta name="author" content="customerservice@vermontcountrystore.com"/>
+    <meta name="Copyright" content="Copyright, 2000-2008, The Vermont Country Store"/>
+    <meta name="Publisher" content="The Vermont Country Store"/>
+
+    
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMDVlFbGwYHVVRUBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><script type="text/javascript">
+        var api_key = "to5t89h0l347z60f9yxh0qsw1";
+        var api_server = "http://reviews.vermontcountrystore.com/data";
+    </script>
+
+    <meta name="viewport" content="width=1024" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Baskerville:700|Oswald">
+    <link rel="stylesheet" type="text/css" href="/store/resources/css/style.css"/>
+    <script src="/store/resources/js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/store/resources/js/getStatus.js" type="text/javascript"></script>
+    <script src="/store/resources/js/plugins.js" type="text/javascript"></script>
+    <script src="/store/resources/js/app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//service.maxymiser.net/cdn/vermontcountrystore/js/mmcore.js"></script>
+    <script src="/store/resources/js/s_code.js" type="text/javascript"></script>
+    <script src="/store/resources/js/re_omniture_track.js" type="text/javascript"></script>
+    <script src="/store/resources/js/imail_conv_landing.js" type="text/javascript"></script>
+    <!--  TODO Move it to cart page. -->
+    <script src="/store/resources/js/lib/jquery.form.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var g_sourceCode = '';
+        var pageDepth = 1;
+        var emailDelay = 60;
+        var showEmailModal = true;
+        //Set evar30 once.
+        if(Util.cookie.readCookie("emailModalUserAction")){
+            s.eVar30 = Util.cookie.readCookie("emailModalUserAction");
+            Util.cookie.removeCookie("emailModalUserAction");
+        }
+        //Set eVar13 if user signed up via email modal popup.
+        if(Util.cookie.readCookie("emailSignupEmailAddress")){
+            s.eVar13 = Util.cookie.readCookie("emailSignupEmailAddress");
+            Util.cookie.removeCookie("emailSignupEmailAddress");
+        }
+    </script>
+
+    <script type="text/javascript"> 
+        var _gaq = _gaq || []; 
+        _gaq.push(['_setAccount', 'UA-17455136-1']); 
+        _gaq.push(['_setDomainName', 'vermontcountrystore.com']); 
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js'; 
+        _gaq.push(['_require', 'inpage_linkid', pluginUrl]); 
+    </script> 
+
+    <script src="/store/resources/js/ganalytics.js" type="text/javascript"></script>
+        <script type="text/javascript"> 
+        if (typeof AlternateTrackPageview == "undefined") { 
+            _gaq.push(['_trackPageview']); 
+        } else { 
+            _gaq.push(['_trackPageview', AlternateTrackPageview]); 
+        } 
+        (function() { 
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+        })(); 
+    </script> 
+
+    <script type="text/javascript">
+        var triggermail=triggermail||[];triggermail.load=function(a){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===document.location.protocol?"https://":"http://")+"triggeredmail.appspot.com/triggermail.js/"+a+".js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)};triggermail.load("vermont_country_store");window.triggermail=triggermail;
+    </script>
+
+    <meta property="og:title" content="Privacy and Security - The Vermont Country Store"/>
+    <meta property="og:url" content="http://www.vermontcountrystore.com:80/store"/>
+    <meta property="fb:admins" content="100000202418956"/>
+    <meta property="og:site_name" content="The Vermont Country Store"/>
+    <!-- Bazaar voice code starts -->
+    <!-- Bazaar voice code ends -->
+    <script src="/store/resources/js/swfobject.js" type="text/javascript"></script>
+</head>
+
+
+<body data-context="/store"
+      data-controller="staticContent"
+      data-action=""
+      data-productid=""
+      data-count=""
+      id="home"
+      class="">
+    <!-- Begin /views/common/nav/accessibility.jsp -->
+
+<div id="accessibility">
+    <a href="#primary-nav">Skip to Navigation</a>
+    <a href="#main">Skip to Main Content</a>
+</div>
+
+<!-- End /views/common/nav/accessibility.jsp -->
+<div id="container" >
+
+    <!-- Begin /views/common/header/header.jsp -->
+
+<div id="hdr" class="site-header" role="banner">
+        <div id="hdr_cs">
+            <div id="hdr_cs_cont">
+                <span class="left"><a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service">Customer Service</a> | <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Email-Signup">Email Sign Up</a> | <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Request-a-Catalog">Request a Catalog</a></span>
+                <span class="hdr_phone">1-800-547-7849 | <a href="#" rel="nofollow" onclick="window.open('https://service.liveperson.net/hc/88287119/?cmd=file&file=visitorWantsToChat&site=88287119&imageUrl=http://service.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a&referrer=http://origin-www.vermontcountrystore.com/store/views/static/content/displayHFMC.jsp','liveHelp','height=320,width=472')">Live Help</a></span>
+
+                <span class="right bold" id="loginState"> </span>
+                    </div>
+        </div>
+            
+        <div class="masthead">
+            <a id="site-logo" href="http://www.vermontcountrystore.com/store/"><img src="/store/resources/images/common/header/vcs_logo.jpg" alt="The Vermont Country Store" /></a>
+            <div id="header-tools">
+                <img class="paypal_header" src="/store/resources/images/common/header/Now_Accepting_122x42_1x.png" alt=""/>
+                <span id="shopping-bag-text" class="shopping-bag-text">
+                    SHOPPING BAG
+                    <span class="cartcount">0</span>
+                </span>
+                <a href="http://www.vermontcountrystore.com/store/checkout/cart.jsp" rel="nofollow" class="Button Checkout">Checkout</a>
+            </div>
+            <div id="head-search">
+                <form action="http://www.vermontcountrystore.com/store/search/search_result.jsp" onsubmit="return VCS.submitSearchRequestFrmHead()">
+                    <input type="text" autocomplete="false" size="10" name="q" id="question_frmHd" placeholder="Enter Keyword, product name or item# here"><input type="submit" id="searchSubmit_frmHd" value=""/>
+                </form>
+            </div>
+            <!-- Begin /views/common/nav/primary.jsp -->
+<span id="secondary_nav">
+        <!-- Begin /views/common/nav/secondaryNav.jsp -->
+<ul>
+        <li><a href="http://www.vermontcountrystore.com/store/jump/Special_Collections/cat940002">Special Collections</a></li>
+                    <li><a href="http://www.vermontcountrystore.com/blog/" target="_blank">Blog</a></li>
+        <li><a href="http://www.vermontcountrystore.com/store/company/static/Visit-Us">Visit Us</a></li>
+    </ul>
+
+<!-- End /views/common/nav/secondaryNav.jsp --></span>
+
+	<div id="mgmenu1" class="mgmenu_container">
+        <ul class="mgmenu">
+            <li class="mgmenu_button">Category</li><!-- Button (Mobile Devices) -->
+            
+            <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/cat660001"><span>Women&#039;s</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Sleepwear/20870">Sleepwear</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Women&aposs_Plus_Sizes/cat940018">Women&#039;s Plus Sizes</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Dresses_and_Skirts/cat520002">Dresses and Skirts</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Sweaters_and_Jackets/10724">Sweaters and Jackets</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Intimates/cat660003">Intimates</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Footwear/10725">Footwear</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Swimwear/10717">Swimwear</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Collections/cat940017">Collections</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/New_Women&aposs/10702">New Women&#039;s</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Muumuus/10714">Muumuus</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Pants_and_Shorts/10709">Pants and Shorts</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Tops/10705">Tops</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Watches_&_Sunglasses/cat900004">Watches &amp; Sunglasses</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Totes_and_Handbags/cat900003">Totes and Handbags</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Jewelry/cat660009">Jewelry</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Hats,_Gloves,_and_Scarves/cat660008">Hats, Gloves, and Scarves</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Women&aposs/Accessories/10726">Accessories</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/cat660010"><span>Men&#039;s</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Sleepwear/20875">Sleepwear</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Underwear/cat660011">Underwear</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Collections/cat940021">Collections</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/New_Men&aposs/cat660016">New Men&#039;s</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Shirts_and_Sweaters/cat800014">Shirts and Sweaters</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Pants_&_Shorts/cat800015">Pants &amp; Shorts</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Essential_Accessories/10736">Essential Accessories</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Watches_&_Wallets/cat880020">Watches &amp; Wallets</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Men&aposs/Hats,_Gloves_and_Scarves/cat880019">Hats, Gloves and Scarves</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Home/1031"><span>Home</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Bed_&_Bath/cat840036">Bed &amp; Bath</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Kitchen_&_Dining/10292">Kitchen &amp; Dining</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Home_Furnishings/10293">Home Furnishings</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Cleaning_&_Laundry/cat860005">Cleaning &amp; Laundry</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Special_Collections/cat940024">Special Collections</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/New_Home/10289">New Home</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Home_Office/100871">Home Office</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Problem_Solvers/cat810012">Problem Solvers</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Home/Lawn_&_Garden/cat810009">Lawn &amp; Garden</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/1001"><span>Health &amp; Beauty</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Fragrance/100060">Fragrance</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Collections/cat940022">Collections</a>
+                            </li>
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/New_Health_and_Beauty/10129">New Health and Beauty</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Eye_and_Ear_Care/cat940010">Eye and Ear Care</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Diabetic_Aids/cat540015">Diabetic Aids</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Incontinence_Aids/cat940011">Incontinence Aids</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Joint_&_Arthritis_Relief/cat450005">Joint &amp; Arthritis Relief</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Remedies/10130">Remedies</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Hair_Care/10070">Hair Care</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Nail_Care/10013">Nail Care</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Lotions/100030">Lotions</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Facial_Care/cat940013">Facial Care</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Foot_Care/cat940014">Foot Care</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Soaps_and_Soaks/100050">Soaps and Soaks</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Makeup/cat660021">Makeup</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Shaving_Supplies/cat660015">Shaving Supplies</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Health_&_Beauty/Sexual_Wellness/10120">Sexual Wellness</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/1021"><span>Food &amp; Candy</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/New_Food_and_Candy/10259">New Food and Candy</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Vermont_Maple_Syrup/10272">Vermont Maple Syrup</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Vermont_Cheese/10269">Vermont Cheese</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Chocolates/100618">Chocolates</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Cakes_and_Pastries/100609">Cakes and Pastries</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Cookies_and_Crackers/100608">Cookies and Crackers</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Classic_Candy/100622">Classic Candy</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Spirited_Treats/cat850006">Spirited Treats</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Sugar-Free/100624">Sugar-Free</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Jams_&_Jellies/100606">Jams &amp; Jellies</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Fruit_and_Pie_Fillings/cat940025">Fruit and Pie Fillings</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Breakfast/cat880021">Breakfast</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Snacks/cat830009">Snacks</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Pickles_and_Condiments/cat820006">Pickles and Condiments</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Soups__Sauces_&_Sides/100607">Soups  Sauces &amp; Sides</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Meat_and_Seafood/cat820005">Meat and Seafood</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Top_Rated_Food_&_Candy/cat930006">Top Rated Food &amp; Candy</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Food_&_Candy/Food_&_Candy_Best_Sellers/cat930016">Food &amp; Candy Best Sellers</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           <li>
+	                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/1060"><span>Clearance</span></a>
+	                                <!-- Begin /views/common/nav/fragments/sub_category_nav.jsp -->
+<div class="dropdown_container dropdown_fullwidth"><div class="col_3"><ul>
+
+        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Women&aposs_Sale/10700">Women&#039;s Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Men&aposs_Sale/cat660017">Men&#039;s Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Sleepwear_Sale/cat910002">Sleepwear Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Home_Sale/10710">Home Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Health_&_Beauty_Sale/10660">Health &amp; Beauty Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Food_Sale/10670">Food Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/View_All_Sale/cat830006">View All Sale</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/New_Markdowns/cat560002">New Markdowns</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Further_Reductions/cat930019">Further Reductions</a>
+                            </li>  
+                        <li class="list-head">
+                                <a href="http://www.vermontcountrystore.com/store/jump/Clearance/Almost_Gone/cat930011">Almost Gone</a>
+                            </li>  
+                        </ul></div>
+    <div class="col_9 megamenufeature"></div>
+    </div>
+
+<!-- End /views/common/nav/fragments/sub_category_nav.jsp --></li>
+                           </ul>
+    </div>
+    
+<!-- End /views/common/nav/primary.jsp -->
+</div>
+        <!-- slot content fetched using /atg/registry/RepositoryTargeters/ProductCatalog/HeaderPageBannerTargeter -->
+         <style type="text/css">
+      #header_banner {
+          display: inline;
+          float: left;
+          height: 55px;
+          left: 430px;
+          position: absolute;
+          top: 25px;
+          width: 250px;
+      }
+ </style><!--
+   <a href="#" onclick="window.open('/static/Free-Shipping-15-Percent-Off-Details.html', 'Disclaimer', 'width=650, height=360, resizable=no, scrollbars=no, top=250, left=300'); return false;"><img id="header_banner" src="/static/images/categoryBanners/header_banner.gif" border=0></a>-->
+</div>
+
+    <script>
+        $(document).ready(function(){
+            VCS.placeHolder();
+            try{getProfileStatus('/store');}catch(e){}
+            $("#question_frmHd").multicomplete(Search.MultiComplete);
+        });
+    </script>
+<!-- End /views/common/header/header.jsp -->
+<div class="filter-main">
+<!-- End /views/common/header/head.jsp -->
+<div class="aside">
+    
+    <ul class="filter-list">
+	     <li> 
+				      <a href="http://www.vermontcountrystore.com/store/company/static/Visit-Us" class="parent-menu" >
+		  Visit Us</a>
+	  </li>
+		      <li> 
+				      <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service" class="parent-menu active" >
+		  Customer Service</a>
+	  <ul class="sub-filter-list active">
+		                  <li>				        		    
+						    		<a href="/store/views/product/modal/email_us_modal.jsp" class="modal-link" data-settings='{"width":415,"title":"Contact Us:"}'>Contact Us</a>
+      </li>
+			                 <li>				        		    
+						    		<a href="#" class="child-menu" onclick="window.open('http://service.liveperson.net/hc/88287119/?cmd=file&file=visitorWantsToChat&site=88287119&byhref=1&imageUrl=http://service.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a','liveHelp','height=320,width=472')">
+      Live Help</a>
+  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Order-Status" class="child-menu" >
+		  Order Status</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Returns-&-Exchanges" class="child-menu" >
+		  Returns &amp; Exchanges</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Shipping-Information" class="child-menu" >
+		  Shipping Information</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Request-a-Catalog" class="child-menu" >
+		  Request a Catalog</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/100-Guarantee" class="child-menu" >
+		  100% Guarantee</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Customer-Bill-of-Rights" class="child-menu" >
+		  Customer Bill of Rights</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Suggest-a-Product" class="child-menu" >
+		  Suggest a Product</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Email-Signup" class="child-menu" >
+		  Email Signup</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Questions-&-FAQs" class="child-menu" >
+		  Questions &amp; FAQs</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Privacy-&-Security" class="child-menu active" >
+		  Privacy &amp; Security</a>
+	  <ul class="sub-filter-list active">
+			                  		   </ul>
+			               			</li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Fit-Guide" class="child-menu" >
+		  Fit Guide</a>
+	  </li>
+			                 <li>				        		    
+						    		<a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Site-Map" class="child-menu" >
+		  Site Map</a>
+	  </li>
+			                 </ul>
+		               </li>
+		      <li> 
+				      <a href="http://www.vermontcountrystore.com/store/company/static/Careers" class="parent-menu" >
+		  Careers</a>
+	  </li>
+		      </ul>  
+	    </div>
+<div class="content Privacy and Security - The Vermont Country Store">
+    <div id="main" class="main-content" role="main">
+        <h1>Privacy Policy</h1>
+
+<h2>Introduction</h2>
+
+<p>This website, http://www.vermontcountrystore.com, is owned and operated by The Vermont
+Country Store. This Privacy Policy pertains to information collected online via this website,
+and does not apply to information collected from other sources. The Vermont Country Store may
+be contacted by email at customerservice@vermontcountrystore.com, by phone at 800-547-7849, or
+by mail at:</p>
+
+<p>The Vermont Country Store 5650 Main Street Manchester Center, VT 05255</p>
+
+<h2>Information Collected</h2>
+
+<p>Certain anonymous information is collected automatically by our site. This information may
+include visitor domain name, IP address, and referring domain. This information is tracked in
+server logs, and may be used for troubleshooting purposes. Our website also collects aggregate
+information, such as page views and visits, in an effort to keep our content relevant to our
+customers. This information is not customer-specific.</p>
+
+<p>Personal information collected by our site is used for transactional and/or promotional and
+marketing purposes, and is encrypted using the Secure Socket Layer (SSL) protocol before
+transmission and storage. Personal information may include your name, address, and credit card
+number. We collect and use such information to better enhance your shopping experience, and for
+other transactional and promotional purposes, such as to:</p>
+
+<ul>
+<li>Process, track, and fulfill your orders</li>
+
+<li>Market our products and services</li>
+
+<li>Inform you of special offers and promotions</li>
+
+<li>Include you in surveys and contests</li>
+
+<li>Manage and develop The Vermont Country Store's business and operations</li>
+
+<li>Contact you for any other legitimate business purpose</li>
+</ul>
+
+<p>We may share your name and address information with certain trusted resources unless you
+choose to be put on our do-not-share list. To be put on our do-not-share list, please contact
+our Customer Service department.</p>
+
+<h2>Cookies and Tracking Pixels</h2>
+
+<p>A Cookie is a small data file stored by your Web browser on your computer's hard drive.
+Cookies allow The Vermont Country Store website to keep track of your order information, such
+as items placed in your Shopping Bag. Cookies also allow us to provide customers with a more
+personalized experience.</p>
+
+<p>Tracking Pixels are small images that are used by the website to identify pages that are
+being viewed by customers. No personal data is collected when these images are viewed.
+Aggregate data from Tracking Pixels is used to improve the customer experience. Cookies and
+Tracking Pixels may be disabled in your browser. If disabled, however, certain portions of The
+Vermont Country Store website may not function.</p>
+
+<p>The Vermont Country Store may contract with third parties who may also use Cookies and
+Tracking Pixels to collect data on our behalf, or to provide services such as credit card
+processing, shipping, promotional services or data management. These third parties are
+prohibited from sharing that information with anyone other than The Vermont Country Store or
+our partners.</p>
+
+<p>&#160;</p>
+
+<p>Our company and our trusted third parties may share with one another anonymous versions of
+user information collected at this site. We may use that information to link to and issue
+anonymous cookies containing demographic or intent-based data for online behavioral advertising
+purposes.&#160; Such cookies do not contain personally identifiable information.&#160; If you
+would like to opt out of online behavioral advertising, click on one of these links:&#160;</p>
+
+<p><a
+href="http://www.aboutads.info/choices">http://www.aboutads.info/choices</a>&#160;or&#160;<a
+href="http://networkadvertising.org/choices">http://networkadvertising.org/choices</a>.&#160;</p>
+
+<h2>Account Registration</h2>
+
+<p>To make online shopping easier, you may register for an account on our website. Information
+provided by you, such as name and billing address, will be stored securely for future use. You
+may access and update this information at any time. By creating an account and sharing you
+billing or email address, you will be added to our customer mailing list, and may receive
+periodic mailings from us. You may opt out of these mailings at the time of account
+registration, or by contacting our Customer Service department.</p>
+
+<h2>Children’s Privacy</h2>
+
+<p>Our Web site is not intended for use by children under the age of 13, and we do not
+knowingly collect personal information from children under the age of 13.</p>
+
+<h2>California Privacy Rights</h2>
+
+<p>The Vermont Country Store may from time to time share your personal information with third
+parties for their direct marketing purposes. California residents who provide personal
+information when purchasing products may request information about the customer information
+shared with other businesses for their own direct marketing uses. Each consumer may request our
+direct marketing information once per year, and our response will cover the immediately
+preceding calendar year. This information would include the categories of shared customer
+information and the names and addresses of those businesses with which we shared customer
+information.</p>
+
+<h2>Policy Changes</h2>
+
+<p>Changes to this policy may occur in the future. Changes to our Privacy Policy will be posted
+to The Vermont Country Store website. We encourage you to review this Privacy Policy
+periodically.</p>
+
+<p><!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com --> <script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName="privacy policy"
+s.server="www.vermontcountrystore.com"
+s.channel="service page"
+s.pageType=""
+s.prop1="service page"
+s.prop2=""
+s.prop3="service page"
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3="BROWSE"
+s.eVar4=""
+s.eVar5=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script> <script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://metrics.vermontcountrystore.com/b/ss/vermontcountrystorecomstage/1/H.15.1--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/--> 
+<!-- End SiteCatalyst code version: H.15.1. --></p></div>
+</div>
+
+<!-- Begin /views/common/footer/foot.jsp -->
+    </div>
+    <!--! end of #main -->
+
+    <!-- Begin /views/common/footer/footer.jsp -->
+
+<div class="footer" id="ftr">
+	<div class="emailLoader"></div>
+	<p class="emailModal"></p>
+    <span class="emailsignup">Receive Our Emails </span>
+    <span>
+       <form name="emailSignUp" action="/store/company/static/Customer-Service/Email-Signup?_DARGS=/store/views/static/page/customerservice/emailSignUpForm.jsp" method="post">
+       		<input id="ftrEmail" maxlength="255" name="email" value="" type="text" placeholder="username@example.com">
+        	<input id="ftrEmailSignUpBtn" name="vcs/formHandler/EmailSignUpFormhandler.submit" value="SIGN UP" type="submit">
+        </form>
+    </span>
+    <span class="socialmedia">
+        <a href="https://www.facebook.com/TheVermontCountryStore" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/facebook20x20.gif" alt="Join the conversation on Facebook"></a>
+        <a href="http://www.pinterest.com/vtcountrystore/" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/pinterest20x20.gif" alt="Follow Us on Pinterest"></a>
+        <a href="https://twitter.com/VTStore" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/twitter20x20.gif" alt="Follow us on Twitter"></a>
+        <a href="https://www.youtube.com/user/vermontcountrystore" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/youtube20x20.gif" alt="Subscribe to our YouTube Channel"></a>
+        <a href="http://www.google.com/+VermontCountryStore" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/google20x20.gif" alt="Follow Us on Google+"></a>
+        <a href="http://instagram.com/vermontcountrystore?ref=badge" onclick="javascript:window.open(this.href,  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img src="/store/resources/images/common/social_networks/ig20x20.png" alt="Instagram"></a>
+    </span>
+
+    <br><br>
+    
+    <div class="row2 callus">
+        CALL US IN VERMONT<br>
+        1 (800) 547-7849<br><br>
+        <a href="#" rel="nofollow" onclick="window.open('https://service.liveperson.net/hc/88287119/?cmd=file&file=visitorWantsToChat&site=88287119&imageUrl=http://service.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a&referrer=http://origin-www.vermontcountrystore.com/store/views/static/content/displayHFMC.jsp','liveHelp','height=320,width=472')" id="helplink">LIVE HELP <div class="arrowr"> </div></a><br><br>
+        <a href="/store/views/product/modal/email_us_modal.jsp" class="modal-link" data-settings='{"width":415,"title":"Contact Us:"}'>CONTACT US <div class="arrowr"> </div></a><br><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Questions-&amp;-FAQs">FAQ <div class="arrowr"> </div></a><br>
+    </div>
+    <div class="row2"><h2>The Vermont Country Store</h2>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Visit-Us/The-Orton-Family">Our Story - Meet the Ortons!</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Customer-Bill-of-Rights">Customer Bill of Rights</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/100-Guarantee">Guaranteed Forever</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Visit-Us/In-The-News">In The News</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Careers">Careers</a>
+    </div>
+    <div class="row2"><h2>Services</h2>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service">Customer Service</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Order-Status">Order Status</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Privacy-&amp;-Security">Privacy &amp; Security</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Site-Map">Site Map</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Shipping-Information">Shipping Information</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Returns-&amp;-Exchanges">Returns &amp; Exchanges</a>
+    </div>
+    <div class="row2"><h2>Specialty</h2>
+        <a href="http://www.vermontcountrystore.com/store/jump/Gifts/Gift_Cards/2110">Gift Cards</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Suggest-a-Product">Suggest a Product</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Request-a-Catalog">Request a Catalog</a><br>
+        <a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/Email-Signup">Receive Emails</a>
+    </div>
+    <div class="row2 row2_last"><h2>Family Owned</h2><img class="family" src="/store/resources/images/common/footer/family.jpg"><br><p class="ftrcaption">Gardner, Lyman, Eliot, and Cabot Orton - Proprietors</p></div>
+    
+    <br>
+
+    <div class="footer">
+        <div class="row3"><img src="/store/resources/images/common/footer/house.jpg"><h2>Visit Our Stores</h2><a href="http://www.vermontcountrystore.com/store/company/static/Visit-Us">Find out more about us, our history, our stores in Vermont, and much <nobr>more <div class="arrowrsm"> </div></nobr></a></div>
+        <div class="row3"><img src="/store/resources/images/common/footer/ortonfoundation.png"><h2>Orton Family Foundation</h2><a href="http://www.orton.org" target="_blank">Empowering people to shape the future of their communities. <nobr>Learn more <div class="arrowrsm"> </div></nobr></a></div>
+        <div class="row3"><img src="/store/resources/images/common/footer/guaranteed.png"><h2>Guaranteed Forever</h2><a href="http://www.vermontcountrystore.com/store/company/static/Customer-Service/100-Guarantee">We will exchange any item or refund your money without hassle. If you are dissatisfied for any reason, please call us at <b>800-211-4741</b></a></div>
+    </div>
+
+    <br>
+
+</div>
+
+
+<!-- End /views/common/footer/footer.jsp --><div class="footer trustlogo">
+            <a class="stella-seal"></a>
+            <script defer src="//seal.stellaservice.com/public/js/seal.js"></script>
+
+            <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.vermontcountrystore.com&amp;size=XS&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script>
+
+            <a target="_blank" href="http://www.bbb.org/boston/business-reviews/mail-order-and-catalog-shopping/the-vermont-country-store-inc-in-manchester-center-vt-89760/#bbbonlineclick">
+                <img src="/store/resources/images/common/footer/bbb.png" alt="Click to verify BBB accreditation and to see a BBB report."/>
+            </a>
+
+            <img class="credit-cards" src="/store/resources/images/common/footer/credit_cards.jpg" alt="American Express, Visa, Mastercard, Discover"/>
+
+            <a class="paypal_text" href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank">
+            <img class="paypal" src="/store/resources/images/common/footer/PP_acceptancemark_50x34.png" alt="PayPal"/>
+            </a>
+
+            <br/>
+
+            &copy;2015&nbsp;<a href="http://www.vermontcountrystore.com/store/">The Vermont Country Store</a>
+        </div>
+    </div>
+    <!--! end of #container -->
+    <script>(function() {
+      var _fbq = window._fbq || (window._fbq = []);
+      if (!_fbq.loaded) {
+        var fbds = document.createElement('script');
+        fbds.async = true;
+        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fbds, s);
+        _fbq.loaded = true;
+      }
+      _fbq.push(['addPixelId', '739754349396160']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+
+    <script src="//tags.wdsvc.net/controller.js?id=3382" defer></script>
+
+    <script type='text/javascript'>
+        var prefix = (("https:" == document.location.protocol) ? "https://"	: "http://");
+        document.write(unescape("%3Cscript src='" + prefix + "app.ubertags.com/javascripts/ubertags.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        ubertags_init("UT-130537483"); //version:0.2
+    </script>
+    <!-- PLEASE INCLUDE THIS COMMENT ON THE WEB PAGE WITH THE TAG
+Remarketing tags may not be associated with personally identifiable information
+or placed on pages related to sensitive categories. For more information on
+this, see http://google.com/ads/remarketingsetup -->
+<!-- begin google smart pixel -->
+<script type="text/javascript">
+	prodid = [], prodName = [],	price = [],	catId = [];
+	function addslashes(str) {
+		return (str + '').replace(/[\\"']/g, '\$&').replace(/\u0000/g, '\\0');
+	}
+	var array_elements = (''.replace('[', '').replace(']', '')).split(",");
+	var pageType = ('' != "") ? '' : 'staticContent';
+	if(pageType == 'cart'){
+		$('td.info').each(function(){
+			prodName.push(addslashes($(this).find('a.item-name').html().replace(/^\s+|\s+$/g, '')));
+			prodid.push(($(this).find('span.item-number').html().replace(/^\s+|\s+$/g, '')) + '-' + $(this).find('input.cart-sku-id').val());
+			catId.push($(this).find('input.cart-item-id').val());
+		});
+		$('td.col-price').each(function(){
+			price.push(parseFloat($(this).find('div.cell-inner').html().replace(/^\s+|\s+$/g, '').replace('$','')));
+		});
+		$('span.item-number').each(function(){
+			
+		});
+	}
+	else if(pageType == "review checkout-process"){
+		$('p.product-name').each(function(){
+			prodName.push(addslashes($(this).html()));
+		});
+		$('td.col-price').each(function(){
+			price.push(parseFloat($(this).find('div.cell-inner').html().replace(/^\s+|\s+$/g, '').replace('$','')));
+		});
+		$('td.col-item-num').each(function(){
+			prodid.push(($(this).find('div.cell-inner').html().replace(/^\s+|\s+$/g, '')) + '-' + $(this).find('input.review-sku-id').val());
+			catId.push($(this).find('input.removal-item-id').val());
+		});
+	}else{
+		for ( var intt = 0; intt < array_elements.length; intt++) {
+			prodid[intt] = (array_elements[intt].replace(/^\s+|\s+$/g, '')).replace('sku:', '' + '-');
+		}
+		prodName.push(addslashes(""));
+	}
+	var google_tag_params = {
+		pagetype : pageType,
+		prodid : prodid,
+		pvalue : ('' != "") ? parseFloat('') : price,
+		pcat : ('' != "") ? '' : catId,
+		pname : prodName,
+		use_case : 'retail'
+	};
+</script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1071431512;
+	var google_conversion_label = "MCkTCJrv9wQQ2P7y_gM";
+	var google_custom_params = window.google_tag_params;
+	//console.log('window.google_tag_params',window.google_tag_params);
+	var google_remarketing_only = true;
+	/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+	<div style="display: inline;">
+		<img height="1" width="1" style="border-style: none;" alt=""
+			src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1071431512/?value=0&amp;label=MCkTCJrv9wQQ2P7y_gM&amp;guid=ON&amp;script=0" />
+	</div>
+</noscript>
+<!-- end google smart pixel -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"571560","applicationTime":41,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"5ec0cb8f60","transactionName":"MQZWZkBVDUECVEQMWAhMfmFiGxVbBkBDSkQSAkBbUWtMUQxZRABZEkxQW0FED1Maf3YodEgJR0I=","agent":"js-agent.newrelic.com\/nr-632.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+    </html>
+<!-- End /views/common/footer/foot.jsp -->
