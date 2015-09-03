@@ -93,7 +93,7 @@
    .common-nav-main ul table.old, .common-nav-main .cat-CatGroups div.navWrap{top:29px!important;}
 
    /* GLOBAL NAV BANNER */ 
-   div#globalBanner{margin-top:4px;height:0px;}
+   div#globalBanner{margin-top:4px;height:78px;}
 
    div.email-signup-contianer{bottom:auto!important;margin-top:13px;}
 
@@ -137,11 +137,8 @@
     }else{
       ////// make sure to check that the global banner image height matches the height of the #globalBanner div defined in CSS above
 
-      $('.common-header').append('<div id="globalBanner"></div>');
 
-      //When NO Global banner is running, we still need the DIV tags present. The banner below is in a comment tag for future use when a banner is running.
-
-      //$('.common-header').append('<div id="globalBanner"><a href="/content.jsp?pageName=SaveMore&int=Global_BMSM"><img src="/assets/cms/images/homepage_headers_large/BMSM_GlobalBanner_082715.jpg" width="970" height="56" ></a></div>');
+      $('.common-header').append('<div id="globalBanner"><a href="/content.jsp?pageName=5daysale&int=Global_BOGO"><img src="/assets/cms/images/homepage_headers_large/Global_5DaySale_090315_V2.jpg" width="970" height="78" ></a></div>');
     }
 
    });
@@ -213,7 +210,7 @@
   </a>
 
 </div><div class="email-signup-contianer">
-	<form id="subscribeForm" action="/user/preferences.cmd" method="post" name="subscribeForm" target="_blank"><input type='hidden' name='form_state' value='subscribeForm'/><input type='hidden' name='CSRF_TOKEN' value='y92kYg2FVtcSlOkZA2e/KYcCPQWIo9mJA3AzLSG/TR4=Lrc7CELpYfc='/><input id="userEmail" name="userEmail" type="hidden"/><input class="user-email forceStatic" id="userEmailFooter" name="userEmailFooter" type="text" value="" size="20" maxlength="60"/><div class="signup-button-container">
+	<form id="subscribeForm" action="/user/preferences.cmd" method="post" name="subscribeForm" target="_blank"><input type='hidden' name='form_state' value='subscribeForm'/><input type='hidden' name='CSRF_TOKEN' value='/jfLlY3diu6UvmHJDwvinmFwqdBpss29ICa6o0TwTYM=td1EV6G5QG0='/><input id="userEmail" name="userEmail" type="hidden"/><input class="user-email forceStatic" id="userEmailFooter" name="userEmailFooter" type="text" value="" size="20" maxlength="60"/><div class="signup-button-container">
 		<div class="signup-button-cheetah button">
 			<span class="signup-text-cheetah">Sign Up Now</span>
 		</div>
