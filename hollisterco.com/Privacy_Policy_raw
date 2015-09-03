@@ -205,37 +205,49 @@ FREE SHIPPING ON ORDERS OVER $50!
 
     <div class="genericESpot" data-espotname="hol-EspotFixEMS">
     <style>
+/* Email Modal Fix */
+article.email-sign-up-modal.simplemodal-data#simplemodal-data {
+    padding: 0px 20px 26px 30px;
+}
 /* Andy RAD Quailman */
+#account-social-sign-on-v2 .welcomeMessage:after  {
+    content: "Continue below to access all of your account benefits.";
+    color: #394448;
+}
+
+#account-social-login-v2 .welcomeMessage:after  {
+    content: "Just one more step! Please provide the information below";
+    color: #394448;
+}
 #account-social-sign-on-v2 #sso-step-2 .actions.create-account-button,
 #account-social-login-v2  #sso-step-2 .actions.create-account-button {
-	margin: 0;
+    margin: 0;
 }
 
 #account-social-sign-on-v2 .phone-tooltip-trigger,
 #account-social-login-v2 .phone-tooltip-trigger {
-	display: none;
+    display: none;
 }
 
 #account-social-sign-on-v2 .social-signon__error-message,
 #account-social-login-v2 .social-signon__error-message {
-	display:none;
+    display:none;
 }
 
 
 #account-social-sign-on-v2 .welcomeMessage p,
 #account-social-login-v2 .welcomeMessage p {
-	display: none;
+    display: none;
 }
+
 #account-social-sign-on-v2 .welcomeMessage:after,
-#account-social-login-v2 .welcomeMessage:after  {
-	content: "Sign in or register using Facebook for a faster more secure way to 	access your account.";
-	font-family: "Arial";
-	color: #696761;
-	font-size: 13px;
-	display: block;
-	width: 60%;
-	margin: 45px auto -145px;
-	text-transform: none;
+#account-social-login-v2 .welcomeMessage:after {
+    font-family: "Arial";
+    font-size: 13px;
+    display: block;
+    width: 60%;
+    margin: 45px auto -145px;
+    text-transform: none;
 }
 /* ECOMM-14041 */
 body#help .content ul.primary li.about-us ul.about-us-items li.about-us-content {
@@ -311,34 +323,33 @@ display: none!important;
 .speed-exchange .form-wrap {display: none;}
 .global-header #promo-nav {display:none;}
 .header__gms .header__gms-wrapper a:link {
-  color: #f3f1e8 ;
+	color: #f3f1e8 ;
 }
 .header__gms .header__gms-wrapper a:visited {
-  color: #f3f1e8 ;
+	color: #f3f1e8 ;
 }
 .header__gms-blue {
-  background-color: #34363d !important;
+	background-color: #34363d !important;
 }
 .header-b--blue .header__gms-blue {
-  background-color: #f0eddf !important;
+	background-color: #f0eddf !important;
 }
 .header-b--blue .header__gms .header__gms-wrapper {
-  color: #22242e;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
+	color: #22242e;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
 }
 .header-b--blue .header__gms .header__gms-wrapper a {
-  color: #8e8678;
-  font-size: 1.3rem;
+	color: #8e8678;
+	font-size: 1.3rem;
 }
 </style>
 <div class="header__gms header__gms-blue">
-  <div class="header__gms-wrapper">
-TODAY ONLY: 200 STYLES ARE UNDER $12 + FREE SHIPPING ON ORDERS OVER $50!
-    <a href="/hol/media/legalText/viewDetailsText20150902Banner_US.html" class="legal promo-detail">See Details</a> <a href="#" class="header__gms-close"></a>
-  </div>
+	<div class="header__gms-wrapper">
+FREE SHIPPING ON ORDERS OVER $50!
+		<a href="/hol/media/legalText/viewDetailsText20150527FreeShip50_USCA.html" class="legal promo-detail">See Details</a> <a href="#" class="header__gms-close"></a>
+	</div>
 </div>
-
 </div>
 
 			</div>
@@ -744,12 +755,6 @@ TODAY ONLY: 200 STYLES ARE UNDER $12 + FREE SHIPPING ON ORDERS OVER $50!
 																			<a class="nav-link nav-link--major" href="/shop/us/guys-body-and-cologne">Cologne & Body</a>
 																		</li>
 																		
-																		<li class="nav-item" id="cat-86658" data-level="2" data-catid="86658">
-																			
-
-																			<a class="nav-link nav-link--major nav-link--alt-color" href="/shop/us/guys-secret-sale">Secret Sale</a>
-																		</li>
-																		
 																		<li class="nav-item" id="cat-12634" data-level="2" data-catid="12634">
 																			
 
@@ -1080,12 +1085,6 @@ TODAY ONLY: 200 STYLES ARE UNDER $12 + FREE SHIPPING ON ORDERS OVER $50!
 																			
 
 																			<a class="nav-link nav-link--major" href="/shop/us/girls-fragrance-and-body">Fragrance</a>
-																		</li>
-																		
-																		<li class="nav-item" id="cat-86657" data-level="2" data-catid="86657">
-																			
-
-																			<a class="nav-link nav-link--major nav-link--alt-color" href="/shop/us/girls-secret-sale">Secret Sale</a>
 																		</li>
 																		
 																		<li class="nav-item" id="cat-12635" data-level="2" data-catid="12635">
@@ -1495,8 +1494,51 @@ TODAY ONLY: 200 STYLES ARE UNDER $12 + FREE SHIPPING ON ORDERS OVER $50!
 								<div class="utility-item__contents utility-item__contents--JYS">
 									
 
-    <div class="genericESpot genericESpot--empty" data-espotname="hol-JustYourStyleHeaderContent">
-    
+    <div class="genericESpot" data-espotname="hol-JustYourStyleHeaderContent">
+    <style type="text/css">
+.utility-item__contents.utility-item__contents--JYS {
+	width: 458px !important;
+}
+.JYSnavContent {
+	width: 460px;
+    height: 330px;
+    position: relative;
+}
+.JYSnavContent img {
+	margin: 0 auto;
+    padding-top: 32px;
+}
+.JYSnavContent a.button {
+    position: absolute;
+    top: 55%;
+    left: 12.8%;
+    height: 40px;
+    line-height: 42px;
+    font-family: pfdin-semibold,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    margin: 30px 0 25px;
+    display: inline-block;
+    padding: 0 48px;
+    background: #292a33;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+	.JYSnavContent a.button:hover {
+	    background: #3f4048;
+	}
+</style>
+<div class="JYSnavContent">
+	<img src="//anf.scene7.com/is/image/anf/hol-D-20150819-nav-JYS?$marketing$">
+	<a href="/shop/us/just-for-you?icmp=ICT:LBR15:D:NAV:JYS:O:x:X:x" class="button">CHECK IT OUT</a>
+</div>
+
 </div>
 
 								</div>
@@ -1550,34 +1592,33 @@ display: none!important;
 .speed-exchange .form-wrap {display: none;}
 .global-header #promo-nav {display:none;}
 .header__gms .header__gms-wrapper a:link {
-  color: #f3f1e8 ;
+	color: #f3f1e8 ;
 }
 .header__gms .header__gms-wrapper a:visited {
-  color: #f3f1e8 ;
+	color: #f3f1e8 ;
 }
 .header__gms-blue {
-  background-color: #34363d !important;
+	background-color: #34363d !important;
 }
 .header-b--blue .header__gms-blue {
-  background-color: #f0eddf !important;
+	background-color: #f0eddf !important;
 }
 .header-b--blue .header__gms .header__gms-wrapper {
-  color: #22242e;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
+	color: #22242e;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
 }
 .header-b--blue .header__gms .header__gms-wrapper a {
-  color: #8e8678;
-  font-size: 1.3rem;
+	color: #8e8678;
+	font-size: 1.3rem;
 }
 </style>
 <div class="header__gms header__gms-blue">
-  <div class="header__gms-wrapper">
-TODAY ONLY: 200 STYLES ARE UNDER $12 + FREE SHIPPING ON ORDERS OVER $50!
-    <a href="/hol/media/legalText/viewDetailsText20150902Banner_US.html" class="legal promo-detail">See Details</a> <a href="#" class="header__gms-close"></a>
-  </div>
+	<div class="header__gms-wrapper">
+FREE SHIPPING ON ORDERS OVER $50!
+		<a href="/hol/media/legalText/viewDetailsText20150527FreeShip50_USCA.html" class="legal promo-detail">See Details</a> <a href="#" class="header__gms-close"></a>
+	</div>
 </div>
-
 </div>
 
 			</div>
