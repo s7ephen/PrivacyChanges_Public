@@ -56,7 +56,7 @@
 		<li class="hide"><a href="/winter-storm/" title="Winter Storms">Winter Storms</a></li>
 		<li><a href="/fire/" title="Wildfires">Wildfires</a></li>
 		<li><a href="/prepare/" title="Preparedness">Preparedness</a></li>
-		<li><a href="/email/emailsettings.asp" title="Weather Alerts">Weather Alerts</a></li>
+		<li><a href="/weather-alerts/" title="Weather Alerts">Get Email/Text Alerts</a></li>
 		</ul>
 		</li>
 		<li class="gotMore">
@@ -133,7 +133,7 @@
 		<li class="hide"><a href="/winter-storm/" title="Winter Storms">Winter Storms</a></li>
 		<li><a href="/fire/" title="Wildfires">Wildfires</a></li>
 		<li><a href="/prepare/" title="Preparedness">Preparedness</a></li>
-		<li><a href="/email/emailsettings.asp" title="Weather Alerts">Weather Alerts</a></li>
+		<li><a href="/weather-alerts/" title="Weather Alerts">Text/Email Alerts</a></li>
 		</ul>
 	 </li>
 	 <li>
@@ -201,6 +201,7 @@
 		<div class="small-12 large-6 large-push-6 columns sign-in">
 		<h2>Member Sign In</h2>
 		<form id="sign-in-form" action="/member/signin" name="login" method="post">
+		<input type="hidden" name="redirect_url" value="" id="redirect_url"></input>
 		<div class="input-wrap">
 		<label for="sign-in-email">Email <small class="error status-message"></small></label>
 		<input id="sign-in-email" type="email" name="email">
@@ -867,7 +868,7 @@ e-mail and will be given the opportunity to opt-out.</p>
 		<ul class="no-bullet">
 		<li><a href="/severe.asp">US Severe Weather Map</a></li>
 		<li><a href="/hurricane/">Hurricane &amp; Tropical Cyclones</a></li>
-		<li><a href="/email/emailsettings.asp">Weather Alerts</a></li>
+		<li><a href="/email/emailsettings.asp">Text/Email Alerts</a></li>
 		</ul>
 		</div>
 		<div class="small-2 columns hide-for-small-only news">
@@ -1000,22 +1001,22 @@ e-mail and will be given the opportunity to opt-out.</p>
   "tz_offset_hours": null
 },
 		"usertime": {
-  "epoch": 1441235088,
-  "pretty": "11:04 PM GMT on September 02, 2015",
-  "rfc822": "Wed, 02 Sep 2015 23:04:48 +0000",
-  "iso8601": "2015-09-02T23:04:48+0000",
+  "epoch": 1441242406,
+  "pretty": "1:06 AM GMT on September 03, 2015",
+  "rfc822": "Thu, 03 Sep 2015 01:06:46 +0000",
+  "iso8601": "2015-09-03T01:06:46+0000",
   "year": 2015,
   "month": 9,
-  "day": 2,
-  "yday": 244,
-  "hour": 23,
-  "min": "04",
-  "sec": 48,
+  "day": 3,
+  "yday": 245,
+  "hour": 1,
+  "min": "06",
+  "sec": 46,
   "monthname": "September",
   "monthname_short": "Sep",
-  "weekday": "Wednesday",
-  "weekday_short": "Wed",
-  "ampm": "PM",
+  "weekday": "Thursday",
+  "weekday_short": "Thu",
+  "ampm": "AM",
   "tz_short": "GMT",
   "tz_long": "UTC",
   "tz_offset_text": "+0000",
@@ -1092,7 +1093,7 @@ e-mail and will be given the opportunity to opt-out.</p>
 <script src="//icons.wxug.com/scripts/responsive-tables.js?v=2"></script>
 	<script src="//icons.wxug.com/scripts/pubnation.js"></script>
 	<script src="//icons.wxug.com/scripts/wui-sitewide/1.1.4/wui.sitewide.min.js"></script>
-	<script src="//icons.wxug.com/scripts/wui-backbone/1.0.2/wui.backbone.min.js"></script>
+	<script src="//icons.wxug.com/scripts/wui-backbone/1.0.3/wui.backbone.min.js"></script>
 <script>
 wui.bootstrapped.prefs = {
 	'selected_pws': "",
