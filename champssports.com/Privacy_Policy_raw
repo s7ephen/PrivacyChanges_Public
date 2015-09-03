@@ -39,7 +39,7 @@
 
 <script language="javascript1.1" src="//libs.coremetrics.com/eluminate.js" type="text/javascript"></script>
 <script type="text/javascript" src="/combine.cfm?type=js&files=shared/coremetrics/cmcustom.js,/images/common/jquery/jquery.latest.js,/images/common/mobile/js/infotip.js"></script>
-<script src="/ns/common/jquery/jquery.lib.1.4.1.js?cd=0"></script>
+<script type="text/javascript" src="/ns/common/jquery/jquery.lib.latest.js?ver=15_9_20150902_2"></script>
 <script src="//cdn.optimizely.com/js/652482714.js"></script>
 <script src="/ns/common/js/isaFunctions.js"></script>
 <!--[if lt IE 9]>
@@ -77,7 +77,7 @@
                                 <script type="text/javascript" src="//t.p.mybuys.com/clients/CHAMPSSPORTS/js/setup.js"></script>
                         
 			<style type="text/css">
-				@import "/combine?type=css&files=shared/tipped/tipped.css&locale=en_US&ver=1507f&cd=1d";
+				@import "/combine?type=css&files=shared/tipped/tipped.css&locale=en_US&ver=1508&cd=1d";
 			</style>
 
 			<script>
@@ -109,7 +109,7 @@
 						rbObjectify(to[next], from, value);
 					}
 				}
-				
+
 				function fitToViewport(maxWidth, marginToAdjust) {
 					if (typeof marginToAdjust === 'undefined') {
 						var marginToAdjust = 32;
@@ -189,7 +189,7 @@
 </div>
 <!-- END MENU HEADER -->
 					</div>
-	
+
 					<div id="header_nav">
 						<div id="flyout-navigation">
 	<div class="inner">
@@ -752,7 +752,7 @@
 <script type="text/javascript">
     $('#footer_chat').chat({ offlineLink: '#" dialog="footer_chat_hours', onlineLink: 'https://m.champssports.com/?uri=promo&id=5003447#app' });
 </script>
-<script type="text/javascript" src="/combine.cfm?type=js&files=shared/mobile/js/main.js,shared/scripts/common.js,/images/common/mobile/js/global.js,/images/common/iscroll/src/iscroll.js,/images/common/mobile/js/scode.js,/images/common/mobile/js/jquery/jquery.lazyload.min.js,/images/common/mobile/minicart/minicart.js"></script>
+<script type="text/javascript" src="/combine.cfm?type=js&files=shared/mobile/js/main.js,shared/scripts/common.js,/images/common/mobile/js/global.js,/images/common/iscroll/src/iscroll.js,/images/common/mobile/js/scode.js,/images/common/mobile/js/jquery/jquery.lazyload.min.js,/images/common/mobile/minicart/minicart.js&ver=20150903"></script>
 <script src="/ns/common/js/backtofull.js"></script>
 <script type="text/javascript" src="/ns/common/js/keyword-search.js"></script>
 <script type="text/javascript" src="/ns/common/mobile/menu.min.js"></script>
@@ -792,26 +792,14 @@
     }, 1);
 </script>
 <!--End Crazy Egg -->
-<!--BEGIN QUALTRICS SITE INTERCEPT-->
-<script type='text/javascript'>
-    (function () {
-        var g = function (e, h, f, g) {
-            this.get = function (a) { for (var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length; b < e; b++) { for (var d = c[b]; " " == d.charAt(0) ;) d = d.substring(1, d.length); if (0 == d.indexOf(a)) return d.substring(a.length, d.length) } return null };
-            this.set = function (a, c) { var b = "", b = new Date; b.setTime(b.getTime() + 6048E5); b = "; expires=" + b.toGMTString(); document.cookie = a + "=" + c + b + "; path=/; " };
-            this.check = function () { var a = this.get(f); if (a) a = a.split(":"); else if (100 != e) "v" == h && (e = Math.random() >= e / 100 ? 0 : 100), a = [h, e, 0], this.set(f, a.join(":")); else return !0; var c = a[1]; if (100 == c) return !0; switch (a[0]) { case "v": return !1; case "r": return c = a[2] % Math.floor(100 / c), a[2]++, this.set(f, a.join(":")), !c } return !0 };
-            this.go = function () { if (this.check()) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g + "&t=" + (new Date()).getTime(); document.body && document.body.appendChild(a) } };
-            this.start = function () { var a = this; window.addEventListener ? window.addEventListener("load", function () { a.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { a.go() }) }
-        };
-        try { (new g(28, "v", "QSI_S_ZN_1HvqgkxfiR7YmJD", "//zn1hvqgkxfir7ymjd-footlocker.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_1HvqgkxfiR7YmJD&Q_LOC=" + encodeURIComponent(window.location.href))).start() } catch (i) { }
-    })();
-</script><div id='ZN_1HvqgkxfiR7YmJD'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
-<!--END SITE INTERCEPT-->
+
+<script src="/ns/common/js/flcom.lib.min.js?ver=15_08_20150902"></script>
 			<script src="/shared/mobile/js/dialog.js"></script>
 			
 					</div>
 				
 			</div>
-			<script type="text/javascript" src="/combine?type=js&files=shared/scripts/jquery.inputmask.min.js,shared/scripts/jquery.mask.min.js,shared/tipped/tipped.js&locale=en_US&ver=1507f&cd=1d"></script>
+			<script type="text/javascript" src="/combine?type=js&files=shared/scripts/jquery.inputmask.min.js,shared/scripts/jquery.mask.min.js,shared/tipped/tipped.js&locale=en_US&ver=1508&cd=1d"></script>
 			<script>
 				var premierBogoEnabled = true;
 				var premierBogoCalloutsEnabled = true;
