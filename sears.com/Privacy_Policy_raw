@@ -1801,7 +1801,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
                             <dt class="navItems-heading">Get Rewarded</dt>
                             <dd class="footer-membership has-shop-your-way">
                                 <div class="footer-membership-left">
-                                    <a href="/shopyourway" class="footer-sprite shop-your-way" rel="nofollow">shop your way</a>
+                                    <a href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" class="footer-sprite shop-your-way" rel="nofollow">shop your way</a>
                                 </div>
                                 <div class="footer-membership-right">
                                     <p>Not a member?</p>
@@ -1846,7 +1846,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
 <div class="footer-middle-top">
         <ul class="footer-content">
             <li class="footer-left">
-                <a class="footer-sprite shop-your-way" href="/shopyourway" rel="nofollow">shop your way</a>
+                <a class="footer-sprite shop-your-way" href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow">shop your way</a>
             </li>
             <li class="footer-right">
                 <ul class="logos">
@@ -1912,7 +1912,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
             <li class="copyright">&copy; 2015 Sears Brands, LLC. All Rights Reserved</li>
             <li class="footer-right">
                 <ul>
-                    <li><a class="footer-sprite shop-your-way" href="//www.shopyourway.com/tag/sears-com/414208" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow" target="_blank">shop your way</a></li>
+                    <li><a class="footer-sprite shop-your-way" href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow" target="_blank">shop your way</a></li>
                     <li><a class="footer-sprite facebook" href="//www.facebook.com/sears" rel="nofollow" target="_blank">Facebook</a></li>
                     <li><a class="footer-sprite twitter" href="//twitter.com/#!/searsdeals" rel="nofollow" target="_blank">Twitter</a></li>
                     <li><a class="footer-sprite google-plus" href="//plus.google.com/+Sears" rel="nofollow" target="_blank">Google Plus</a></li>
@@ -2007,14 +2007,13 @@ $(window).on('load', function() {
  if (!!$.cookie('irp-preview')){
   FED.Util.addJsFile(shc.URLs.staticAssets + 'js/previewHeader');
  }
-/* pending UHF-405
+ //UHF-405 - flip URL based on signin vs guest
  if ($('#profileArea.loggedIn').length) {
   $('#gnf_header, #gnf_footer').find('a[data-alt-href]').each(function() {
    var el = $(this), alt = el.attr('data-alt-href');
    if (!!alt) {el.attr('href', alt);}
   })
  }
-*/
 });
 </script>
 
@@ -2087,7 +2086,7 @@ var omtitle= "Customer Service > Policies > Privacy Policy";var omcategory= "Cus
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '408p' -->
+<!-- Publish Server: '304p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
