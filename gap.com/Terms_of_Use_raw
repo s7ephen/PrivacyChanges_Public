@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/02/2015 10:57 PM",
+            DATE_IN_USE: "09/03/2015 12:27 AM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -2808,7 +2808,7 @@ jQuery(document).on('personalizationData:ready', function() {
 <!-- END - WCD Sitewide Container 1 -->
 
 <!-- BEGIN - WCD Sitewide Container 2 -->
-<!-- BEGIN Content Item File: /content/0010/095/614/cn10095614.html -->
+<!-- BEGIN Content Item File: /content/0010/146/929/cn10146929.html -->
 
 
 <!-- WCD Brand Code - Gap -->
@@ -2922,10 +2922,6 @@ li.categoryActive  #categoryNav26637 {padding:0px 0px 0px 6px;}
 /* Shop By Size Text in Left Hand Nav for G, B, TG, TB css overide */
 #sideNavCategories #categoryNav98252, #sideNavCategories #categoryNav98255, #sideNavCategories #categoryNav98248, #sideNavCategories #categoryNav98250  {border-top: 1px solid #000; padding: 10px 0px 0px 10px; font-weight: bold; margin: 10px 3px 0 0; font-size: 11px;}
 
-
-/* Baby Gifting Division leftnav */
-#sideNav #categoryNav1027011 { font-size:10px; font-weight:bold; color:#000d42; border-top:1px solid #000; border-bottom:1px solid #000; margin-bottom:4px; margin-top:10px }
-#sideNav #categoryNav1029391 { padding-bottom:4px; border-bottom:1px solid #000 }
 
 
 
@@ -3242,13 +3238,6 @@ if( location.pathname != '/checkout/order.do' ) {
 </script>
 <!-- END force launch of EDFS popup -->
 
-<!-- BEGIN Redirect Baby Boy Division to Baby -->
-<script type="text/javascript">
-if( location.href.indexOf('/browse/subDivision.do?cid=42022') > -1 ) {
-	window.location = '/browse/subDivision.do?cid=6487';
-} 
-</script>
-<!-- END Redirect Baby Boy Division to Baby -->
 
 <!-- BEGIN Banner Insert on VIs -->
 <script type="text/javascript">
@@ -3364,7 +3353,7 @@ wcdEmailPopupGOL.init();
 }
 </script>
 
-<!-- END Content Item File: /content/0010/095/614/cn10095614.html -->
+<!-- END Content Item File: /content/0010/146/929/cn10146929.html -->
 
 <!-- END - WCD Sitewide Container 2 -->
 
@@ -7016,7 +7005,7 @@ var GOLNAVS;
 <!-- END - WCD Sitewide Container 9 -->
 
 <!-- BEGIN - WCD Sitewide Container 10 -->
-<!-- BEGIN Content Item File: /content/0009/889/018/cn9889018.html -->
+<!-- BEGIN Content Item File: /content/0010/162/305/cn10162305.html -->
 
 
 <!-- Begin BRFS AB test -->
@@ -7346,8 +7335,8 @@ var testGFOLView = {
 			jQuery('#promoBannerContainer').hide();
 	
 			//hide gap footer
-			jQuery('#footer').hide();
-			jQuery('#gfol-footer').hide();
+			jQuery('#brandFooter_Region1').hide();
+			jQuery('#gfol-brandFooter_Region1').hide();
 			
 			//MARKETING
 			if (modeToShow=='Marketing'){
@@ -7355,11 +7344,11 @@ var testGFOLView = {
 
 				if (window.location.href.indexOf("cid=48620") > 0){
 						// show MARKETING HP
-						jQuery('#gfol-marketing').show();
-						jQuery('#footer').hide();
+						//jQuery('#gfol-marketing').show();
+						//jQuery('#footer').hide();
 				}
 				else {
-					jQuery('#footer').show();
+					//jQuery('#footer').show();
 				}
 				
 			}
@@ -7379,9 +7368,11 @@ var testGFOLView = {
 
 				//hide top header
 				jQuery('#infoBar').hide();
+				jQuery('.brand-bar--top-links').hide(); /*added 9/3/15 to hide onesite bar */
 
 
 				//footer link update
+				jQuery('#gfol-brandFooter_Region1').show();
 				jQuery('#gfol-footer').show();
 					
 				
@@ -7404,7 +7395,7 @@ var testGFOLView = {
 			if (window.location.href.indexOf("cid=48620") > 0){
 				// show MARKETING HP
 				jQuery('#gfol-marketing').show();
-				jQuery('#footer').hide();
+				jQuery('#brandFooter_Region1').hide();
 			}
 			
 			//hide gfol footer
@@ -7474,10 +7465,10 @@ var testGFOLShowHideMarketing = function() {
 	else {
 
 		//hide gfol footer
-		jQuery('#gfol-footer').hide();
+		//jQuery('#gfol-footer').hide();
 
 		// show MARKETING HP
-		jQuery('#gfol-marketing').show();
+		//jQuery('#gfol-marketing').show();
 	}
 
 
@@ -7515,7 +7506,7 @@ if( window['siteNavigation'] ) {
 </script>
 <!-- END BRFS AB TEST -->
 
-<!-- END Content Item File: /content/0009/889/018/cn9889018.html -->
+<!-- END Content Item File: /content/0010/162/305/cn10162305.html -->
 
 <!-- END - WCD Sitewide Container 10 -->
 
@@ -7524,10 +7515,6 @@ if( window['siteNavigation'] ) {
 <!-- END - WCD Sitewide Container 11 -->
 
 <!-- BEGIN - WCD Sitewide Container 12 -->
-<!-- BEGIN Content Item File: /content/0010/056/632/cn10056632.html -->
-
-
-<!-- END Content Item File: /content/0010/056/632/cn10056632.html -->
 
 <!-- END - WCD Sitewide Container 12 -->
 
@@ -9141,7 +9128,9 @@ jQuery(function($) {
 	/* GFOL SITE ELEMENT OVERRIDES */
 	if (location.pathname == "/browse/category.do" || location.pathname == "/browse/categorySearch.do" || location.pathname == "/browse/subDivision.do"  || location.pathname == "/browse/division.do" || location.pathname == "/browse/search.do" || location.pathname == "/browse/outfit.do" || location.pathname == "/browse/product.do"){
 
-        if (omni.strCurrentPageName.indexOf("Factory") > 0){
+        //if (omni.strCurrentPageName.indexOf("Factory") > 0){
+        if ((omni.strCurrentPageName && omni.strCurrentPageName.indexOf("Factory") > -1) || (window.location.href.indexOf("cid=48620") > -1)){ //show only on Factory pages
+
             Event.observe(window, "load", function() {
                 //change HTML category header CSS background color
                 if( $('#categoryNameHeader') ) {
@@ -9159,9 +9148,12 @@ jQuery(function($) {
 
                 //hide top header
                 jQuery('#infoBar').hide();
+                
+                /*more GFOL overrides in AB Code CIID 10162305 */
 
                 //footer link update
-                jQuery('#footer').hide();
+                jQuery('#brandFooter_Region1').hide();
+                jQuery('#gfol-brandFooter_Region1').show();
                 jQuery('#gfol-footer').show();
 
             });
@@ -9342,8 +9334,45 @@ jQuery(function($) {
 	
 <div id="footer_BrandContainer">
 	<div id="footer_brand_region1"><!-- @TemplateContentLayout(templateRegionName:"gid.common.siteWide.brand.footers.region1") -->
-<link rel="stylesheet" type="text/css" href="/Asset_Archive/GPWeb/content/0010/130/936/assets/regionFooter.css" />
+<style type="text/css">
+/*FOOTER OVERRIDES: overrides to globalOptimized.css*/
+#footer {width:100% !important;}
 
+#footer #footer_BrandContainer, #footer #footer_GID_marketing, #footer #footer_TextLinkNavigation {
+    border: 0 none;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*max-width: 1280px;*/
+    min-width: 990px;
+    margin: 0 auto !important;
+    color: #000d42;
+    overflow: hidden;
+}
+
+/*copywrite footer*/
+#copyRightFooter {width: 100%; margin-top: 10px; text-align: center; margin-bottom: 10px;float:left;position: relative;border-top: 1px solid #000;}
+#copyRightFooter p {padding: 5px;}
+
+/* Responsive Shopping Bag CSS  CHECK WITH BEN IF STILL NEEDED*/
+
+/*mobile */
+#footer_BrandContainer #brandFooter_mobile { display:none; padding-left:10px; color:#000 }
+#footer_BrandContainer #brandFooter_mobile a { color:#000; font-size:14px }
+html.breakpoint-small .responsiveShoppingBag #brandFooter_mobile { display:block }
+html.breakpoint-medium .responsiveShoppingBag #brandFooter_mobile { display:block }
+
+html.breakpoint-small .responsiveShoppingBag #brandftr1_10000512 { display:none }
+html.breakpoint-small .responsiveShoppingBag #brandftr3_10000513 { display:none }
+html.breakpoint-small .responsiveShoppingBag #brandftr2_10000514 { display:none }
+html.breakpoint-small .responsiveShoppingBag #textFooterLinks1_10000515 { display:none }
+
+html.breakpoint-medium .responsiveShoppingBag #brandftr1_10000512 { display:none }
+html.breakpoint-medium .responsiveShoppingBag #brandftr3_10000513 { display:none }
+html.breakpoint-medium .responsiveShoppingBag #brandftr2_10000514 { display:none }
+html.breakpoint-small .responsiveShoppingBag #textFooterLinks1_10000515 { display:none }
+</style>
 
 <div id="brandFooter_Region1">
 	<div id="brandftr1_10000512" class="clearfix"></div>
@@ -9610,22 +9639,8 @@ function validateFormGapFooter()
 <!-- END Content Item File: /content/0010/130/957/cn10130957.html -->
 </div>
 </div>
-
-<div id="brandFooter_mobile"><a href="/customerService/info.do?cid=81264">Return Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/buy/info.do?cid=2020">Credit Card Safeguard</a></div>
-
-
-</div>
-</div>
-
-<!-- Future Story Place holder #209 & #210-->
-<div id="footer_GID_marketing">
-	
-</div>
-
-<div id="footer_TextLinkNavigation">
-	<div id="footer_brand_region2"><!-- @TemplateContentLayout(templateRegionName:"gid.common.siteWide.brand.footers.region2") -->
-<div id="brandFooter_Region2">
-	<div id="brandftr4_10000510" class="clearfix"><!-- BEGIN Content Item File: /content/0009/938/486/cn9938486.html -->
+<div id="gfol-brandFooter_Region1">
+    <div id="brandftr4_10000510" class="clearfix"><!-- BEGIN Content Item File: /content/0009/938/486/cn9938486.html -->
 <div id="contentItemContainer10000510" class="9938486" >
 
 <style type="text/css">
@@ -9867,9 +9882,22 @@ function validateFormGFOL()
 </div>
 <!-- END Content Item File: /content/0009/938/486/cn9938486.html -->
 </div>
-	<div id="brandftr5_10000511" class="clearfix"></div>
+    <div id="brandftr5_10000511" class="clearfix"></div>
+</div>
+
+<div id="brandFooter_mobile"><a href="/customerService/info.do?cid=81264">Return Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/buy/info.do?cid=2020">Credit Card Safeguard</a></div>
+
+
 </div>
 </div>
+
+<!-- Future Story Place holder #209 & #210-->
+<div id="footer_GID_marketing">
+	
+</div>
+
+<div id="footer_TextLinkNavigation">
+	<div id="footer_brand_region2"></div>
 </div>
 <div id="footer_languageToggle">
 	
@@ -9997,7 +10025,7 @@ function validateFormGFOL()
 	
 	<script type="text/javascript" src="/gid/js/common/layouts/en/reporting/sCode.js"></script>
 	 <script type="text/javascript">
-	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "9712387,10131063,9712387,9058692,9712385,9894771,9894937,9938486,10095841,10130952,10130955,10130957";
+	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "9712387,9058692,9712385,9894771,9894937,10131655,9712387,10130952,10130955,10130957,9938486";
 	 </script>
 	
 	<noscript>
