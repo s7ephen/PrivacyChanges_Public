@@ -67,6 +67,8 @@
 
 
 
+
+
 <!-- macro to display the generic warning about the content object being in moderation, abuse hidden, or rejected -->
 
 <!--acclaim macro for new helpful button for JIRA story: RRP-53 CRS: Post Voting Features - Like RRP-79-->
@@ -115,7 +117,7 @@
         var _jive_auth_token ="no-user";
         var _jive_locale = "en_US";
         var _jive_translation_language = "en"
-        var _jive_browser_event = {"providers":["activityStream.poll","appAlert.create"],"since":1441213612790};
+        var _jive_browser_event = {"providers":["activityStream.poll","appAlert.create"],"since":1441267338997};
         var _jive_browser_event_polling_delay = 300000;
         var _jive_timezoneoffset = -7;
 
@@ -211,6 +213,7 @@ reg(["Zapatec.Calendar"], ["/6.0.3.0/resources/scripts/gen/c70d12e1db2925cb5b6fb
 
 <script type="text/javascript">
     var profileShortUrl = "/profile-short.jspa";
+    var profileShortGamifyUrl = "/profile-gamify-short.jspa";
     var profileLoadingTooltip = "Loading user profile";
     var profileErrorTooltip = "There was an error loading that profile information.";
 
@@ -249,6 +252,7 @@ reg(["Zapatec.Calendar"], ["/6.0.3.0/resources/scripts/gen/c70d12e1db2925cb5b6fb
         window.__JAF_DEBUG = 0;
     </script>
 
+
 <!--[if lt IE 9]>
 <script src="/resources/scripts/vendor/html5shiv.min.js"></script>
 <![endif]-->
@@ -270,7 +274,7 @@ if (dwr == null) var dwr = {};
 if (dwr.engine == null) dwr.engine = {};
 if (DWREngine == null) var DWREngine = dwr.engine;
 
-DWREngine._origScriptSessionId = "8B6F9DF5E8C4D872F34EA280CC82B8EB";
+DWREngine._origScriptSessionId = "36C6744406A576F5D3A5069C44A61BFA";
 DWREngine._sessionCookieName = "JSESSIONID"; // JSESSIONID
 DWREngine._allowGetForSafariButMakeForgeryEasier = "true";
 DWREngine._scriptTagProtection = "throw 'allowScriptTagRemoting is false.';";
@@ -450,16 +454,6 @@ reg(["jive.rte"], ["/6.0.3.0/resources/scripts/gen/a813c0cc2a527141b2264b4fae6a9
                     "unused.jive.key" : "nothing."
         });
     }
-    if(typeof(tinyMCE) != "undefined"){ // could be Safari 2, which dies with tinyMCE
-        tinyMCE.addI18n('en.jivemacros',{
-                    "unused.jive.key" : "nothing."
-        });
-    }
-    if(typeof(tinyMCE) != "undefined"){ // could be Safari 2, which dies with tinyMCE
-        tinyMCE.addI18n('en.jivemacros',{
-                    "unused.jive.key" : "nothing."
-        });
-    }
 
 
         window.RawHTMLSaveFunction = function(element_id, html, body){
@@ -540,6 +534,8 @@ jive.rte.macros.push(new jive.rte.Macro("appEmbeddedView","","INLINE", true, fal
 });
 </script>
 
+
+
         <script>
             define('coreApiPrereqs', {});
         </script>
@@ -598,7 +594,8 @@ jive.rte.macros.push(new jive.rte.Macro("appEmbeddedView","","INLINE", true, fal
     <!-- END: PS Customization to add Apple Implementation of featured topics -->
 
 
-
+    
+    
     
 
 
@@ -636,7 +633,7 @@ display:none !important;
 }
 
 #apple-manage-subscripitons {
-    background-image: url("../plugins/mvp-plugin/resources/styles/images/manage_subscriptions.png");
+    background-image: url("/plugins/mvp-plugin/resources/styles/images/manage_subscriptions.png");
     background-repeat: no-repeat;
     left: 0;
     margin: -1px 5px 0 0 !important;
@@ -661,6 +658,7 @@ opacity:1;
  }
 </style>
     <style type="text/css">/* custom-css-container */</style>
+
 
 </head>
 
@@ -790,16 +788,17 @@ opacity:1;
                 role="banner" aria-label="Jive"
                 >
 
+
 <!-- Basic header (no custom HTML) --><header id="j-header" class="clearfix"><!-- Navigational buttons/links --><nav id="j-globalNav-bg" role="navigation" aria-label="Jive"><div id="apple-site-title"><a href="/">Apple Support Communities</a></div><ul id="j-globalNav" class="j-globalNav"><!-- This is the create menu item--><li id="apple-nav-link-activity" class="j-ui-elem"><a href="/activity" class="j-globalNavLink j-ui-elem"><span class="nav-link">Activity</span></a></li><li id="jive-nav-link-work" class="   j-ui-elem"><a href="/content"  class="j-globalNavLink j-ui-elem "><span class="nav-link ">Content</span></a></li><li id="jive-nav-link-conx" class="   j-ui-elem"><a href="/people"  class="j-globalNavLink j-ui-elem "><span class="nav-link ">People</span></a></li><li id="jive-nav-link-places" class="   j-ui-elem"><a href="/places"  class="j-globalNavLink j-ui-elem "><span class="nav-link ">Communities</span></a></li><li id="jive-nav-link-search" class="j-ui-elem"><a href="/search" class="j-globalNavLink j-ui-elem"><span class="nav-link">Search</span></a><form id="apple-search-form" action="/search.jspa"><div id="j-spotlight-search" role="search"><h3>Search Communities</h3><span><label for="apple-search-field" class="j-508-label">Search</label><input id="apple-search-field" class="j-ui-elem" data-component="autosearch" placeholder="Search or ask a question" type="text" role="combobox" autocomplete="off" /></span><div id="apple-search-spinner"><div><img src="/themes/apple/img/spinwheel.gif">Searching for similar questions</div></div><div id="apple-search-results"></div></div><span class="belowArrow"></span></form></li></ul><div id="j-links"><ul class="j-globalNav"></ul></div></nav><ul id="j-satNav-wrap"><li><ul id="j-satNav"><li class="welcome-guest">Welcome Guest</li><li class="login">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/login.jspa" title="Login">Login</a></li></ul><div id="j-satNav-menu" class="clearfix" style="display:none;"></div></li></ul></header>            </div>
 
 
             <section id="j-main" class="clearfix">
                         <span>
-<script src="/6.0.3.0/resources/scripts/gen/a0a5451b3e9de7251f23b1b49d7ac049.js"></script>
+<script src="/6.0.3.0/resources/scripts/gen/0626a4533036128178ae8c7f020e2be9.js"></script>
 <script>
 jive.i18n.addMsgs({'global.home':'Home','browse.breadcrumb.place.link':'Apple Support Communities','community.list.spaces.unauthorized.tooltip':'You are not authorized to view this space.','browse.breadcrumb.people.link':'All People'});
 
-jive.i18n.addMsgs({'share.email.remove.link':'Invite the user','share.attachment.send.link':'Send a PDF','user.autocomplete.limit':'No more than {0} people can be selected at a time.','share.user.nopermission.attachment':'This user does not have access to the item you\'re trying to share.  An email with a PDF attachment will be sent to this user.','user.picker.title.singular':'Select Person','user.picker.tab.change.label':'Change','share.guest.nopermission.attachment':'This person is not a member of the community. We\'ll send them a PDF of this content.','partner.browse.external.contributor':'External Contributor','user.picker.tab.add.label':'Add','share.list.nopermission.noattachment':'These users do not have access to the item you\'re trying to share.  An email linking to this content will be sent to these users.','global.group.member_only':'Member only group','error.rest.error_finding':'The content that you requested could not be displayed due to an error. You may have been logged out. If this problem persists please contact your system administrator.','share.private.access':'This content is currently private to you.','user.autocomplete.email':'Please continue entering an email address.','a11y.boundary.dialog.start':'Dialog begins','user.autocomplete.email.none':'No matching users found.  If you\'re entering an email address, please continue typing.','user.autocomplete.none':'No matching users found.','user.picker.adding_users':'Adding Users','tips.onboarding.tip5.body3':'Examples:','share.list.nopermission.attachment':'These users do not have access to the item you\'re trying to share.  An email with a PDF attachment will be sent to these users.','global.loading':'Loading...','user.autocomplete.domains':'Valid domains: <em>{0}</em>','global.bookmark':'Bookmark','global.close':'Close','user.autocomplete.placeholder.emailprefix':'john.smith@','send.invite.nonusers.noimport.label':'Type or paste email addresses.','share.notrelated':'You can only send messages to your Friends / Connections (people following you). You must remove users marked with an exclamation point before your message can be sent.','a11y.boundary.menu.end':'Menu ends','profile.friends.labels.title':'Labels','share.guest.nopermission.invite.private':'This person is not a member of the community. We\'ll send them an invitation and grant them access to this user tip.  If you don\'t want to send an invite, you can send a PDF of this user tip instead.','global.cancel':'Cancel','user.autocomplete.emptyemail':'Only domains within your company are allowed.','user.autocomplete.placeholder.domain':'example.com','share.guest.nopermission.invite.attachment':'This person is not a member of the community. We\'ll send them an invitation.  If you don\'t want to send an invite, you can send a PDF of this user tip instead.','send.invite.nonusers.noimport.explanation':'Separate multiple entries with a space, comma, or semi-colon, or hit <strong class="font-color-meta">Enter</strong> after each one.','user.autocomplete.note':'Note:','global.close.modal':'Close Popup','user.autocomplete.placeholder.anotheremailprefix':'kim.wood@','global.comment':'Reply','error.general':'An error occurred processing your request. If this problem persists, please contact the webmaster or administrator of this site.','global.discussion':'Discussion','user.picker.title':'Select People','user.autocomplete.placeholder.user':'Jane Doe','global.people':'People','global.externalUrl':'External URL','share.link.title':'Quickly share this content with a person or group of people','global.status':'Status Updates','share.guest.nopermission.noattachment':'This person is not a member of the community. We\'ll send them an email linking to this content.','share.link':'Share','global.group.open':'Group','global.blogPost':'Announcement','share.user.nopermission.private':'This user will be granted access to the item you\'re trying to share.','error.rest.error_destroying':'Your content could not be removed due to an error. You may have been logged out. If this problem persists please contact your system administrator.','share.secretgroup':'You cannot share a secret group. Users must be invited to join.','activity.in_user_container2.we':'{0}\'s update','user.autocomplete.notemail':'Please enter a valid email address.','share.guest.nopermission.invite.noattachment':'This person is not a member of the community. We\'ll send them an invitation.  If you don\'t want to send an invite, you can send an email about this content instead.','share.email.send.link':'Send an email','global.searching':'Searching','error.rest.error_updating':'Your content could not be saved due to an error. You may have been logged out. If this problem persists please contact your system administrator.','user.picker.close':'Close','share.submit.button':'Share','a11y.boundary.menu.start':'Menu begins','send.private.autoaccess':'','error.rest.refresh_page':'Click here to refresh this page.','user.autocomplete.domains.trial':'Only domains within {0} are allowed for this trial.','share.user.nopermission.noattachment':'This user does not have access to the item you\'re trying to share.  An email linking to this content will be sent to this user.','share.message.label':'Message','a11y.boundary.dialog.end':'Dialog ends','share.title':'Share this {0}','global.group.secret':'Secret group','global.group.private':'Private group','share.confirm':'Share successful','customize.loading':'Loading...','share.list.nopermission.private':'These users will be granted access to the item you\'re trying to share.','global.guest':'Guest','global.group.bookmark':'Bookmark group','share.attachment.remove.link':'Invite the user','error.rest.error_saving':'Your content could not be saved due to an error. You may have been logged out. If this problem persists please contact your system administrator.','share.people.label':'Share with','global.message':'Message','user.picker.tab.remove.label':'Remove'});
+jive.i18n.addMsgs({'share.email.remove.link':'Invite the user','share.attachment.send.link':'Send a PDF','user.autocomplete.limit':'No more than {0} people can be selected at a time.','share.user.nopermission.attachment':'This user does not have access to the item you\'re trying to share.  An email with a PDF attachment will be sent to this user.','user.picker.title.singular':'Select Person','user.picker.tab.change.label':'Change','share.guest.nopermission.attachment':'This person is not a member of the community. We\'ll send them a PDF of this content.','partner.browse.external.contributor':'External Contributor','user.picker.tab.add.label':'Add','share.list.nopermission.noattachment':'These users do not have access to the item you\'re trying to share.  An email linking to this content will be sent to these users.','global.group.member_only':'Member only group','error.rest.error_finding':'The content that you requested could not be displayed. Please try again in a few moments.','share.private.access':'This content is currently private to you.','user.autocomplete.email':'Please continue entering an email address.','a11y.boundary.dialog.start':'Dialog begins','user.autocomplete.email.none':'No matching users found.  If you\'re entering an email address, please continue typing.','user.autocomplete.none':'No matching users found.','user.picker.adding_users':'Adding Users','tips.onboarding.tip5.body3':'Examples:','share.list.nopermission.attachment':'These users do not have access to the item you\'re trying to share.  An email with a PDF attachment will be sent to these users.','global.loading':'Loading...','user.autocomplete.domains':'Valid domains: <em>{0}</em>','global.bookmark':'Bookmark','global.close':'Close','user.autocomplete.placeholder.emailprefix':'john.smith@','send.invite.nonusers.noimport.label':'Type or paste email addresses.','share.notrelated':'You can only send messages to your Friends / Connections (people following you). You must remove users marked with an exclamation point before your message can be sent.','a11y.boundary.menu.end':'Menu ends','profile.friends.labels.title':'Labels','share.guest.nopermission.invite.private':'This person is not a member of the community. We\'ll send them an invitation and grant them access to this user tip.  If you don\'t want to send an invite, you can send a PDF of this user tip instead.','global.cancel':'Cancel','user.autocomplete.emptyemail':'Only domains within your company are allowed.','user.autocomplete.placeholder.domain':'example.com','share.guest.nopermission.invite.attachment':'This person is not a member of the community. We\'ll send them an invitation.  If you don\'t want to send an invite, you can send a PDF of this user tip instead.','send.invite.nonusers.noimport.explanation':'Separate multiple entries with a space, comma, or semi-colon, or hit <strong class="font-color-meta">Enter</strong> after each one.','user.autocomplete.note':'Note:','global.close.modal':'Close Popup','user.autocomplete.placeholder.anotheremailprefix':'kim.wood@','global.comment':'Reply','error.general':'An error occurred processing your request. If this problem persists, please contact the webmaster or administrator of this site.','global.discussion':'Discussion','user.picker.title':'Select People','user.autocomplete.placeholder.user':'Jane Doe','global.people':'People','global.externalUrl':'External URL','share.link.title':'Quickly share this content with a person or group of people','global.status':'Status Updates','share.guest.nopermission.noattachment':'This person is not a member of the community. We\'ll send them an email linking to this content.','share.link':'Share','global.group.open':'Group','global.blogPost':'Announcement','share.user.nopermission.private':'This user will be granted access to the item you\'re trying to share.','error.rest.error_destroying':'Your content could not be removed. Please try again in a few moments.','share.secretgroup':'You cannot share a secret group. Users must be invited to join.','activity.in_user_container2.we':'{0}\'s update','user.autocomplete.notemail':'Please enter a valid email address.','share.guest.nopermission.invite.noattachment':'This person is not a member of the community. We\'ll send them an invitation.  If you don\'t want to send an invite, you can send an email about this content instead.','share.email.send.link':'Send an email','global.searching':'Searching','error.rest.error_updating':'Your content could not be saved. Please try again in a few moments.','user.picker.close':'Close','share.submit.button':'Share','a11y.boundary.menu.start':'Menu begins','send.private.autoaccess':'','error.rest.refresh_page':'Click here to refresh this page.','user.autocomplete.domains.trial':'Only domains within {0} are allowed for this trial.','share.user.nopermission.noattachment':'This user does not have access to the item you\'re trying to share.  An email linking to this content will be sent to this user.','share.message.label':'Message','a11y.boundary.dialog.end':'Dialog ends','share.title':'Share this {0}','global.group.secret':'Secret group','global.group.private':'Private group','share.confirm':'Share successful','customize.loading':'Loading...','share.list.nopermission.private':'These users will be granted access to the item you\'re trying to share.','global.guest':'Guest','global.group.bookmark':'Bookmark group','share.attachment.remove.link':'Invite the user','error.rest.error_saving':'Your post could not be saved. Please try again in a few moments.','share.people.label':'Share with','global.message':'Message','user.picker.tab.remove.label':'Remove'});
 
 jive.i18n.addMsgs({'sgroup.not.found':'Error joining or leaving the group. The group was not found.','sgroup.join.cancel':'Cancel request to join','sgroup.leave.accept':'Yes - leave this group','sgroup.leave.title':'Leave Group','sgroup.banned_member.msg':'You have been banned from the group and are not allowed to join.','sgroup.leave.canceljoin':'Are you sure you want to cancel your request to join {0}?','sgroup.leave.already.gone':'You have already left this group.','sgroup.cancel.message':'Your request to join this group has been removed.','sgroup.leave.follow.remove':'You will also stop following all group content when leaving this group.','global.colon':':','sgroup.leave.onlyowner':'You can\'t leave this group because you are the only owner.','sgroup.join.confirm':'You have successfully joined this group and are now following it.','sgroup.join.notallowed':'You are not allowed to join this group.','sgroup.leave.message':'You are no longer a member of this group, and are no longer following content in this group.','sgroup.leave.onlyowner.info':'You must either delete this group or make another user an owner.','sgroup.join.apprvl.info':'This group\'s owner will need to approve your membership request before you gain access to group content.','sgroup.leave.confirm':'Are you sure you want to leave {0}?'});
 
@@ -1046,6 +1045,7 @@ $j(function(){jive.Navbar.Menu.Home.GlobalController = new jive.Navbar.Menu.Home
     //--></script>
     <script type="text/javascript" src="https://ssl.apple.com/metrics/scripts/s_code_h.js"></script>
     <script type="text/javascript">
+
     <!--
         s.campaign=s.getQueryParam('ac_cid');
         
@@ -1110,12 +1110,30 @@ $j(function(){jive.Navbar.Menu.Home.GlobalController = new jive.Navbar.Menu.Home
         s.eVar6="doc-5952";
         s.useForcedLinkTracking=false;
 
+        var acs_evar5 ="acs_evar5";
+        var acs_prop7 ="acs_prop7";
+
 
         s.eVar5 =  decodeURIComponent('');
         
+        delete_cookie(acs_evar5, '', -1);
 
         s.prop7 =  decodeURIComponent('');
         
+        delete_cookie(acs_prop7, '', -1);
+
+        /* Remove function from OmnitureUtil.java is not removing the Cookie value, so */
+        /* added Delete function to remove the acs_evar5 value from Cookie, as part of the <radar:19788270>Update Omniture Cookie Javascript to support new evar values */
+        function delete_cookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString();
+            }
+            else var expires = "";
+            document.cookie = name + "=" + value + expires + "; domain=.apple.com; path=/";
+        }
 
         /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
         var s_code=s.t();if(s_code)document.write(s_code)//-->
@@ -1199,22 +1217,22 @@ By <a href="/people/Matt%20K."
 data-externalId=""
 data-username="Matt%20K."
 data-avatarId="1259"
-id="jive-250010429493883246118390"
+id="jive-250010436429714827887421"
 data-userId="2500104"
 data-presence="null"
 class="jiveTT-hover-user jive-username-link"
 >Matt K.</a>                </div>
                 <div class="apple-doc-byline-location">Cupertino, CA</div>
-                    <div class="apple-doc-byline-level">
-<span class="j-status-levels"><img src="/6.0.3.0/resources/images/status/ph-userlevel04.png"
-           alt="Level 4" title="Level 4"/> Level 4 <span>(2,380 points)</span></span>
-                    </div>
+                <span class="j-status-levels"><img src="/6.0.3.0/resources/images/status/ph-userlevel04.png"
+                       alt="Level 4" title="Level 4"/> Level 4 <span>(2,380 points)</span></span>
+
+
                 <!--
 created by <a href="/people/Matt%20K."
 data-externalId=""
 data-username="Matt%20K."
 data-avatarId="1259"
-id="jive-250010429493883249274124"
+id="jive-250010436429714830364001"
 data-userId="2500104"
 data-presence="null"
 class="jiveTT-hover-user jive-username-link"
@@ -1222,7 +1240,7 @@ class="jiveTT-hover-user jive-username-link"
 data-externalId=""
 data-username="Mandy_S."
 data-avatarId="1225"
-id="jive-28883829493883249706135"
+id="jive-28883836429714830689515"
 data-userId="288838"
 data-presence="null"
 class="jiveTT-hover-user jive-username-link"
@@ -1235,7 +1253,7 @@ class="jiveTT-hover-user jive-username-link"
 
      
         <span class="jive-content-footer-item">
-            214553&nbsp;Views
+            214840&nbsp;Views
         </span>
 
             
@@ -1250,7 +1268,7 @@ Last Modified: Jul 13, 2015 4:13 PM            </div>
     <section class="jive-content-body">
 
 
-<!-- [DocumentBodyStart:9e2a3708-d83e-413e-a2c6-2a443e4c5974] --><div class="jive-rendered-content"><p><strong>Apple Support Communities Use Agreement</strong></p><p>(revised 13 July 2015)</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p>This Apple Support Communities Use Agreement (the "Agreement") provides important information about your use of the Apple Support Communities site (the "Site").</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p><strong>IMPORTANT: IF YOU CHOOSE TO ACCEPT THIS AGREEMENT, YOU MUST ACCEPT IT AS PRESENTED TO YOU, WITHOUT CHANGES. APPLE WILL ACCEPT NO ADDITIONS OR DELETIONS. At any time Apple may change, add, or remove any part of this Agreement or any part of the services and features provided at the Site. If it does so, Apple will update the Agreement here (<a class="jive-link-wiki-small" data-containerId="2997" data-containerType="14" data-objectId="5952" data-objectType="102" href="https://discussions.apple.com/docs/DOC-5952">Terms of Use</a>) and may also post such changes elsewhere on the Site.</strong></p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p><strong>IF ANY FUTURE CHANGE IS UNACCEPTABLE TO YOU, YOU SHOULD DISCONTINUE USING THE SITE. YOUR CONTINUED USE OF THE SITE WILL ALWAYS INDICATE YOUR ACCEPTANCE OF THIS AGREEMENT AND ANY CHANGES TO IT.</strong></p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><ol><li><strong>General</strong><ol><li>As long as you comply with the Agreement, Apple grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.</li><li><span style="font-size: 10pt;"><span>In addition to the terms and conditions in the Agreement, all use of the Site is governed by the Apple.com Terms of Use (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/terms/site.html">http://www.apple.com/legal/terms/site.html</a><span>).</span></span></li><li>In the event of any conflict between this Agreement and Apple.com Terms of Use, the terms of this Agreement will govern.</li><li><span style="font-size: 10pt;">Views expressed on the Site are not endorsed by Apple.</span></li><li><span style="font-size: 10pt;">Apple does not prescreen information submitted by users of the Site ("Submissions"). Apple retains the right, but not the responsibility, to edit or remove any Submission, including those deemed by Apple to violate the Agreement. Apple will make good faith efforts to investigate allegations that Submissions violate the Agreement but (a) makes no warranty to you that it will edit, remove, or continue to permit the display of any specific Submission, whether or not subject to such allegations, and (b) will have no liability whatsoever for editing, removing, or continuing to permit the display of any Submission whatsoever.</span></li><li><span style="font-size: 10pt;">Apple involvement. Apple may respond to questions but does not formally provide technical support on the Site. Any information that is provided by Apple or Apple employees is offered on an "AS IS" basis without warranties of any kind.</span></li><li><span style="font-size: 10pt;">Apple may offer you benefits and award privileges for your participation in the Site. The benefits and privileges provided do not create an employee, agency or independent contractor relationship between you and Apple, and you may not present yourself as a spokesperson for Apple.</span></li><li><span style="font-size: 10pt;"><span>Apple may use "cookies" and other technologies to track user activity within the Apple Support Communities. These technologies help us improve your experience and our products and services. Apple's use of this tracking information will conform to Apple's Privacy Policy (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/privacy">http://www.apple.com/legal/privacy</a><span>)</span></span></li><li><span style="font-size: 10pt;">Apple Support Communities includes a "connections" feature which allows an Apple Support Communities user to receive email notifications when another user submits a post. This feature requires an approval process where a user can deny connection requests and remove connections at anytime.</span></li><li><span style="font-size: 10pt;"><span>To submit information to the Site, each user must have a unique user name and password combination, known as an Apple ID. Please review Apple's Privacy Policy (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/privacy">http://www.apple.com/legal/privacy</a><span>), which describes how Apple collects, uses and protects your personal information. Apple cannot and will not be responsible for any problems or liability that may arise if you do not provide accurate, truthful and complete information.</span></span></li><li><span style="font-size: 10pt;"><span>If you provide any ideas, suggestions, or recommendations on this site regarding Apple&#8217;s products, technologies or services (&#8220;Feedback&rdquo;), Apple may use such Feedback and incorporate it in Apple products, technologies, and services without paying royalties and without any other obligations or restrictions</span><span>.</span></span></li><li><span>By using the Site, you agree to receive certain communications from Apple in connection with Apple Support Communities. Apple may respond to your post directly in the Apple Support Communities or may attempt to contact you outside the site via telephone, email or other method of communication. For example, you may receive reminder emails for posts if you have not visited Apple Support Communities for a certain period of time, a reminder to respond to answers that have helped you or solved your question, or a survey on improving the services offered at the Site. You can opt-out of communications here (</span><a class="jive-link-external-small" href="http://appleid.apple.com" rel="nofollow">http://appleid.apple.com</a><span>).</span></li><li>For questions or problems regarding your Apple Support Communities account, please post a question in the <a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="1" data-containerType="14" data-objectId="2148" data-objectType="14" href="https://discussions.apple.com/community/using_apple_support_communities">Using Apple Support Communities</a> site, or email <strong><a class="jive-link-email-small" href="mailto:communityaccounts@apple.com">communityaccounts@apple.com</a></strong><span style="font-size: 10pt;"><span><br/></span></span></li></ol></li><li><span style="font-size: 10pt;">Submissions</span><ol><li>Stay on topic. Apple Support Communities is here to help people use Apple products and technologies more effectively. Unless otherwise noted, do not add Submissions about nontechnical topics, including:<ol><li><span style="font-size: 10pt;">Speculations or rumors about unannounced products.</span></li><li><span style="font-size: 10pt;">Discussions of Apple policies or procedures or speculation on Apple decisions.</span></li></ol></li><li><span style="font-size: 10pt;">Be polite. Everyone should feel comfortable reading Submissions and participating in discussions. Apple will not tolerate flames or other inappropriate statements, material, or links. Most often, a "flame" is simply a statement that is taunting and thus arbitrarily inflammatory. However, this also includes those which are libelous, defamatory, indecent, harmful, harassing, intimidating, threatening, hateful, objectionable, discriminatory, abusive, vulgar, obscene, pornographic, sexually explicit, or offensive in a sexual, racial, cultural, or ethnic context.</span></li><li><span style="font-size: 10pt;">Post constructive comments and questions. Unless otherwise noted, your Submission should either be a technical support question or a technical support answer. Constructive feedback about product features is welcome as well. If your Submission contains the phrase "I'm sorry for the rant, but&hellip;" you are likely in violation of this policy.</span></li><li><span style="font-size: 10pt;">Do not post polls or petitions or links to same.</span></li><li><span style="font-size: 10pt;">Test your answer. When possible, make sure your Submission works on your own computer before you post it.</span></li><li><span style="font-size: 10pt;">No advertising. Do not use the Site to sell or market your products to others and do not post a URL unless it directly answers a user's question. If any portion of your Submission, including any posted URL, results in any accrual of compensation or benefit to you, you must note this in your post by stating, "I may receive some form of compensation, financial or otherwise, from my recommendation or link." As well, the following are not allowed:</span><ol><li><span style="font-size: 10pt;">A submission created solely to advertise a book, service, software or some other item for sale.</span></li><li><span style="font-size: 10pt;">Any reference, including a link, to a commercial item that is not directly related to a relevant technical support question or answer. For example: "This post created by Super Post Creator."</span></li><li><span style="font-size: 10pt;">You may sign your Submissions with information about yourself. However, this should not include a link to a website. An example of an acceptable signature: </span><span style="font-size: 10pt;">Justine R. </span><span style="font-size: 10pt;">Author, "Apple Lisa Communities: Tips and Tricks"</span></li></ol></li><li><span style="font-size: 10pt;">No inappropriate user names ("Aliases") or impersonations. Inappropriate or offensive user names or aliases will be removed and persons attempting to impersonate another user will be removed. User names may not contain website, email addresses or other contact information.</span></li><li><span style="font-size: 10pt;">Keep within the Law</span><ol><li><span style="font-size: 10pt;">No material may be submitted that is intended to promote or commit an illegal act.</span></li><li><span style="font-size: 10pt;">Do not submit software or descriptions of processes that break or otherwise 'work around' digital rights management software or hardware. This includes conversations about 'ripping' DVDs or working around FairPlay software used on the iTunes Store.</span></li><li><span style="font-size: 10pt;">Do not post defamatory material.</span></li></ol></li><li><span style="font-size: 10pt;">Material submitted must be your own work or work to which you have a license. You warrant and represent that you own or otherwise control all of the rights to the information contained in your Submission.</span></li><li><span style="font-size: 10pt;">License to Use Submission. By sending a Submission to the Site you agree to grant Apple a perpetual, royalty-free, non-exclusive worldwide right and license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform, play, make available to the public, and exercise all copyright and publicity rights with respect to the Submission. If you do not want to grant to Apple the rights set out above, do not send your Submission to the Site.</span></li><li><span style="font-size: 10pt;">Never reveal any personal information.</span></li></ol></li><li><span style="font-size: 10pt;">Minors</span><ol><li><span style="font-size: 10pt;">You must be at least 13 years old to post to the Site. If you are over 13 years old but have not yet reached the age of majority, you must have your parent or guardian's permissions to post to the Site.</span></li></ol></li><li><span style="font-size: 10pt;">Interference with the Site</span><ol><li><span style="font-size: 10pt;">You agree to not interfere with or disrupt the Site.</span></li><li><span style="font-size: 10pt;">Apple may provide a system whereby users acquire points for various activities.</span><ol><li><span style="font-size: 10pt;">Do not 'game' the system. You agree to not create multiple IDs or otherwise manipulate the points system.</span></li><li><span style="font-size: 10pt;">Do not ask for points. If you feel the system is not clear to users, please provide feedback to Apple; do not instruct other users unless they ask.</span></li></ol></li></ol></li><li><span style="font-size: 10pt;">Breach of the Agreement</span><ol><li><span style="font-size: 10pt;">If you fail to abide by these terms Apple may remove your submission. Apple may also send an email that informs you that your Submission has been deleted or edited. Repeated inappropriate Submissions may result in your relevant account or accounts being placed into temporary or permanent suspension of your ability to participate in any or all of the areas on the Site.</span></li><li><span style="font-size: 10pt;">If you post or send offensive or inappropriate content anywhere on or to the Site or otherwise engage in any disruptive behavior which Apple considers to be serious and/or repeated, Apple may use all available information about you to stop any further infringements. This may include informing relevant third parties such as your employer, school, Internet service provider, or law enforcement authorities of the infringement.</span></li><li><span style="font-size: 10pt;">Apple reserves the right to delete any Submission, or take action against any account, at any time, for any reason.</span></li></ol></li></ol><h2 style="padding: 15px 0; font-size: 35px; font-weight: normal; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; background-color: #ffffff;"></h2></div><!-- [DocumentBodyEnd:9e2a3708-d83e-413e-a2c6-2a443e4c5974] -->
+<!-- [DocumentBodyStart:3b0a1ab1-fc53-4d86-890a-98199a42cf5b] --><div class="jive-rendered-content"><p><strong>Apple Support Communities Use Agreement</strong></p><p>(revised 13 July 2015)</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p>This Apple Support Communities Use Agreement (the "Agreement") provides important information about your use of the Apple Support Communities site (the "Site").</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p><strong>IMPORTANT: IF YOU CHOOSE TO ACCEPT THIS AGREEMENT, YOU MUST ACCEPT IT AS PRESENTED TO YOU, WITHOUT CHANGES. APPLE WILL ACCEPT NO ADDITIONS OR DELETIONS. At any time Apple may change, add, or remove any part of this Agreement or any part of the services and features provided at the Site. If it does so, Apple will update the Agreement here (<a class="jive-link-wiki-small" data-containerId="2997" data-containerType="14" data-objectId="5952" data-objectType="102" href="https://discussions.apple.com/docs/DOC-5952">Terms of Use</a>) and may also post such changes elsewhere on the Site.</strong></p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p><strong>IF ANY FUTURE CHANGE IS UNACCEPTABLE TO YOU, YOU SHOULD DISCONTINUE USING THE SITE. YOUR CONTINUED USE OF THE SITE WILL ALWAYS INDICATE YOUR ACCEPTANCE OF THIS AGREEMENT AND ANY CHANGES TO IT.</strong></p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><p style="min-height: 8pt; height: 8pt; padding: 0px;">&nbsp;</p><ol><li><strong>General</strong><ol><li>As long as you comply with the Agreement, Apple grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.</li><li><span style="font-size: 10pt;"><span>In addition to the terms and conditions in the Agreement, all use of the Site is governed by the Apple.com Terms of Use (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/terms/site.html">http://www.apple.com/legal/terms/site.html</a><span>).</span></span></li><li>In the event of any conflict between this Agreement and Apple.com Terms of Use, the terms of this Agreement will govern.</li><li><span style="font-size: 10pt;">Views expressed on the Site are not endorsed by Apple.</span></li><li><span style="font-size: 10pt;">Apple does not prescreen information submitted by users of the Site ("Submissions"). Apple retains the right, but not the responsibility, to edit or remove any Submission, including those deemed by Apple to violate the Agreement. Apple will make good faith efforts to investigate allegations that Submissions violate the Agreement but (a) makes no warranty to you that it will edit, remove, or continue to permit the display of any specific Submission, whether or not subject to such allegations, and (b) will have no liability whatsoever for editing, removing, or continuing to permit the display of any Submission whatsoever.</span></li><li><span style="font-size: 10pt;">Apple involvement. Apple may respond to questions but does not formally provide technical support on the Site. Any information that is provided by Apple or Apple employees is offered on an "AS IS" basis without warranties of any kind.</span></li><li><span style="font-size: 10pt;">Apple may offer you benefits and award privileges for your participation in the Site. The benefits and privileges provided do not create an employee, agency or independent contractor relationship between you and Apple, and you may not present yourself as a spokesperson for Apple.</span></li><li><span style="font-size: 10pt;"><span>Apple may use "cookies" and other technologies to track user activity within the Apple Support Communities. These technologies help us improve your experience and our products and services. Apple's use of this tracking information will conform to Apple's Privacy Policy (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/privacy">http://www.apple.com/legal/privacy</a><span>)</span></span></li><li><span style="font-size: 10pt;">Apple Support Communities includes a "connections" feature which allows an Apple Support Communities user to receive email notifications when another user submits a post. This feature requires an approval process where a user can deny connection requests and remove connections at anytime.</span></li><li><span style="font-size: 10pt;"><span>To submit information to the Site, each user must have a unique user name and password combination, known as an Apple ID. Please review Apple's Privacy Policy (</span><a class="jive-link-external-small" href="http://www.apple.com/legal/privacy">http://www.apple.com/legal/privacy</a><span>), which describes how Apple collects, uses and protects your personal information. Apple cannot and will not be responsible for any problems or liability that may arise if you do not provide accurate, truthful and complete information.</span></span></li><li><span style="font-size: 10pt;"><span>If you provide any ideas, suggestions, or recommendations on this site regarding Apple&#8217;s products, technologies or services (&#8220;Feedback&rdquo;), Apple may use such Feedback and incorporate it in Apple products, technologies, and services without paying royalties and without any other obligations or restrictions</span><span>.</span></span></li><li><span>By using the Site, you agree to receive certain communications from Apple in connection with Apple Support Communities. Apple may respond to your post directly in the Apple Support Communities or may attempt to contact you outside the site via telephone, email or other method of communication. For example, you may receive reminder emails for posts if you have not visited Apple Support Communities for a certain period of time, a reminder to respond to answers that have helped you or solved your question, or a survey on improving the services offered at the Site. You can opt-out of communications here (</span><a class="jive-link-external-small" href="http://appleid.apple.com" rel="nofollow">http://appleid.apple.com</a><span>).</span></li><li>For questions or problems regarding your Apple Support Communities account, please post a question in the <a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="1" data-containerType="14" data-objectId="2148" data-objectType="14" href="https://discussions.apple.com/community/using_apple_support_communities">Using Apple Support Communities</a> site, or email <strong><a class="jive-link-email-small" href="mailto:communityaccounts@apple.com">communityaccounts@apple.com</a></strong><span style="font-size: 10pt;"><span><br/></span></span></li></ol></li><li><span style="font-size: 10pt;">Submissions</span><ol><li>Stay on topic. Apple Support Communities is here to help people use Apple products and technologies more effectively. Unless otherwise noted, do not add Submissions about nontechnical topics, including:<ol><li><span style="font-size: 10pt;">Speculations or rumors about unannounced products.</span></li><li><span style="font-size: 10pt;">Discussions of Apple policies or procedures or speculation on Apple decisions.</span></li></ol></li><li><span style="font-size: 10pt;">Be polite. Everyone should feel comfortable reading Submissions and participating in discussions. Apple will not tolerate flames or other inappropriate statements, material, or links. Most often, a "flame" is simply a statement that is taunting and thus arbitrarily inflammatory. However, this also includes those which are libelous, defamatory, indecent, harmful, harassing, intimidating, threatening, hateful, objectionable, discriminatory, abusive, vulgar, obscene, pornographic, sexually explicit, or offensive in a sexual, racial, cultural, or ethnic context.</span></li><li><span style="font-size: 10pt;">Post constructive comments and questions. Unless otherwise noted, your Submission should either be a technical support question or a technical support answer. Constructive feedback about product features is welcome as well. If your Submission contains the phrase "I'm sorry for the rant, but&hellip;" you are likely in violation of this policy.</span></li><li><span style="font-size: 10pt;">Do not post polls or petitions or links to same.</span></li><li><span style="font-size: 10pt;">Test your answer. When possible, make sure your Submission works on your own computer before you post it.</span></li><li><span style="font-size: 10pt;">No advertising. Do not use the Site to sell or market your products to others and do not post a URL unless it directly answers a user's question. If any portion of your Submission, including any posted URL, results in any accrual of compensation or benefit to you, you must note this in your post by stating, "I may receive some form of compensation, financial or otherwise, from my recommendation or link." As well, the following are not allowed:</span><ol><li><span style="font-size: 10pt;">A submission created solely to advertise a book, service, software or some other item for sale.</span></li><li><span style="font-size: 10pt;">Any reference, including a link, to a commercial item that is not directly related to a relevant technical support question or answer. For example: "This post created by Super Post Creator."</span></li><li><span style="font-size: 10pt;">You may sign your Submissions with information about yourself. However, this should not include a link to a website. An example of an acceptable signature: </span><span style="font-size: 10pt;">Justine R. </span><span style="font-size: 10pt;">Author, "Apple Lisa Communities: Tips and Tricks"</span></li></ol></li><li><span style="font-size: 10pt;">No inappropriate user names ("Aliases") or impersonations. Inappropriate or offensive user names or aliases will be removed and persons attempting to impersonate another user will be removed. User names may not contain website, email addresses or other contact information.</span></li><li><span style="font-size: 10pt;">Keep within the Law</span><ol><li><span style="font-size: 10pt;">No material may be submitted that is intended to promote or commit an illegal act.</span></li><li><span style="font-size: 10pt;">Do not submit software or descriptions of processes that break or otherwise 'work around' digital rights management software or hardware. This includes conversations about 'ripping' DVDs or working around FairPlay software used on the iTunes Store.</span></li><li><span style="font-size: 10pt;">Do not post defamatory material.</span></li></ol></li><li><span style="font-size: 10pt;">Material submitted must be your own work or work to which you have a license. You warrant and represent that you own or otherwise control all of the rights to the information contained in your Submission.</span></li><li><span style="font-size: 10pt;">License to Use Submission. By sending a Submission to the Site you agree to grant Apple a perpetual, royalty-free, non-exclusive worldwide right and license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform, play, make available to the public, and exercise all copyright and publicity rights with respect to the Submission. If you do not want to grant to Apple the rights set out above, do not send your Submission to the Site.</span></li><li><span style="font-size: 10pt;">Never reveal any personal information.</span></li></ol></li><li><span style="font-size: 10pt;">Minors</span><ol><li><span style="font-size: 10pt;">You must be at least 13 years old to post to the Site. If you are over 13 years old but have not yet reached the age of majority, you must have your parent or guardian's permissions to post to the Site.</span></li></ol></li><li><span style="font-size: 10pt;">Interference with the Site</span><ol><li><span style="font-size: 10pt;">You agree to not interfere with or disrupt the Site.</span></li><li><span style="font-size: 10pt;">Apple may provide a system whereby users acquire points for various activities.</span><ol><li><span style="font-size: 10pt;">Do not 'game' the system. You agree to not create multiple IDs or otherwise manipulate the points system.</span></li><li><span style="font-size: 10pt;">Do not ask for points. If you feel the system is not clear to users, please provide feedback to Apple; do not instruct other users unless they ask.</span></li></ol></li></ol></li><li><span style="font-size: 10pt;">Breach of the Agreement</span><ol><li><span style="font-size: 10pt;">If you fail to abide by these terms Apple may remove your submission. Apple may also send an email that informs you that your Submission has been deleted or edited. Repeated inappropriate Submissions may result in your relevant account or accounts being placed into temporary or permanent suspension of your ability to participate in any or all of the areas on the Site.</span></li><li><span style="font-size: 10pt;">If you post or send offensive or inappropriate content anywhere on or to the Site or otherwise engage in any disruptive behavior which Apple considers to be serious and/or repeated, Apple may use all available information about you to stop any further infringements. This may include informing relevant third parties such as your employer, school, Internet service provider, or law enforcement authorities of the infringement.</span></li><li><span style="font-size: 10pt;">Apple reserves the right to delete any Submission, or take action against any account, at any time, for any reason.</span></li></ol></li></ol><h2 style="padding: 15px 0; font-size: 35px; font-weight: normal; color: #444444; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif; background-color: #ffffff;"></h2></div><!-- [DocumentBodyEnd:3b0a1ab1-fc53-4d86-890a-98199a42cf5b] -->
 
 <!-- BEGIN attachments -->
 <!-- END attachments -->
@@ -1260,7 +1278,7 @@ Last Modified: Jul 13, 2015 4:13 PM            </div>
 
     <footer class="jive-content-footer clearfix font-color-meta">
         <div class="apple-footer-like">
-    <span data-type="small" data-can-like="false" data-ratingType="like" data-likes="463" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+    <span data-type="small" data-can-like="false" data-ratingType="like" data-likes="462" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
         <span>
             <span class="j-social-action">
             <span class="jive-icon-sml jive-icon-like"></span>
@@ -1268,10 +1286,10 @@ Last Modified: Jul 13, 2015 4:13 PM            </div>
 Like
             </span>
             <label class="j-508-label" id="showLikes-5952-102-count-label">
-Show 463 Likes            </label>
+Show 462 Likes            </label>
                 (<a href="#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-5952-102-count-label"
-                    data-command="showLikes" data-object-id="5952" data-object-type="102" data-count="463"
-                    >463</a>)
+                    data-command="showLikes" data-object-id="5952" data-object-type="102" data-count="462"
+                    >462</a>)
         </span>
     </span>
         </div>
@@ -1291,7 +1309,7 @@ Categories:
 
 <!-- END document -->
 
-        <div class="jive-content-rating j-rc4 clearfix" data-guid="BO6EK4S2VQDNE80ENHS6HREEMXJY4UPW">
+        <div class="jive-content-rating j-rc4 clearfix" data-guid="81ON3RQR5MVIT4PZIGYW26JF37T2GUIW">
 
 <script type='text/javascript'>
     $j(document).ready(function() {
@@ -1320,7 +1338,7 @@ Categories:
         };
 
 
-        new jive.Rate(14, 2997, 102, 5952, 'doc', i18n, true, 'BO6EK4S2VQDNE80ENHS6HREEMXJY4UPW', rteOptions);
+        new jive.Rate(14, 2997, 102, 5952, 'doc', i18n, true, '81ON3RQR5MVIT4PZIGYW26JF37T2GUIW', rteOptions);
     });
 
 </script>
@@ -1495,6 +1513,17 @@ Categories:
     <div class="j-box-body">
         <ul class="j-icon-list">
                     <li>
+                        <a href="https://discussions.apple.com/message/28834940#28834940">
+            <span              title="Discussion"
+            class="jive-icon-med jive-icon-discussion-question"
+ ></span>
+                            Re: keyboard stops working for certain apps
+                        </a>
+                    </li>
+                    <li>  <!-- Customization for Incoming links widget, #153 -->
+                    	5 hours ago
+                    </li>
+                    <li>
                         <a href="https://discussions.apple.com/message/28831195#28831195">
             <span              title="Discussion"
             class="jive-icon-med jive-icon-discussion-question"
@@ -1503,7 +1532,7 @@ Categories:
                         </a>
                     </li>
                     <li>  <!-- Customization for Incoming links widget, #153 -->
-                    	3 hours ago
+                    	18 hours ago
                     </li>
                     <li>
                         <a href="https://discussions.apple.com/message/28828967#28828967">
@@ -1514,18 +1543,18 @@ Categories:
                         </a>
                     </li>
                     <li>  <!-- Customization for Incoming links widget, #153 -->
-                    	18 hours ago
+                    	1 day ago
                     </li>
                     <li>
                         <a href="https://discussions.apple.com/message/28828196#28828196">
             <span              title="Discussion"
-            class="jive-icon-med jive-icon-discussion-question"
+            class="jive-icon-med jive-icon-discussion-correct"
  ></span>
                             Re: ibooks freezes Macbook Pro
                         </a>
                     </li>
                     <li>  <!-- Customization for Incoming links widget, #153 -->
-                    	20 hours ago
+                    	1 day ago
                     </li>
                     <li>
                         <a href="https://discussions.apple.com/message/28823163#28823163">
@@ -1544,17 +1573,6 @@ Categories:
             class="jive-icon-med jive-icon-discussion-correct"
  ></span>
                             Re: Kernel Panic, now it won't boot. HELP
-                        </a>
-                    </li>
-                    <li>  <!-- Customization for Incoming links widget, #153 -->
-                    	2 days ago
-                    </li>
-                    <li>
-                        <a href="https://discussions.apple.com/message/28820860#28820860">
-            <span              title="Discussion"
-            class="jive-icon-med jive-icon-discussion-question"
- ></span>
-                            Re: screen goes black during login but not during safe mode
                         </a>
                     </li>
                     <li>  <!-- Customization for Incoming links widget, #153 -->
@@ -1659,19 +1677,9 @@ Apple disclaims any and all liability for the acts, omissions and conduct of any
     });
 </script>
 
-
 <script src="/6.0.3.0/themes/apple_0.7.0/js/theme.js"></script>
 <script src="https://ssl.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    
 
-
-
-
-
-</script>
-
-    <script type="text/javascript" src="https://ssl.apple.com/support/assets/scripts/global/survey/accsoffer.js" charset="utf-8"></script>
 
             </footer>
         </div>
@@ -1684,6 +1692,8 @@ Apple disclaims any and all liability for the acts, omissions and conduct of any
         
         
 
+
+        
 
     </div>
 </body>
