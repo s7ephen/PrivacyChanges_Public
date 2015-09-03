@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="http://media.scrippsnationalnews.com/cms/css/all.css">
+    <link rel="stylesheet" href="http://media.scrippsnationalnews.com/cms/css/large.css" media="screen and (min-width: 1020px)">
+    <link rel="stylesheet" href="http://media.scrippsnationalnews.com/cms/css/medium.css" media="screen and (min-width: 700px) and (max-width: 1019px)">
+    <link rel="stylesheet" href="http://media.scrippsnationalnews.com/cms/css/small.css" media="screen and (max-width: 699px)">
+    <link rel="stylesheet" href="http://media.scrippsnationalnews.com/cms/css/site.css">
+    
+    <style>
+      .header--bg{
+        height: 147px;
+      }
+      
+      .nav-item--lvl-1 > a{
+        min-height: 37px;
+        display: inline-block;
+      }
+      
+      .is-current > a, .js-is-expanded-fast > a, .js-is-expanded > a, .js-is-expanded-fast > button, .js-is-expanded > button, .navitron__links a:hover, .nav-item--lvl-1:hover > a{
+        border-left: 0;
+      }
+      
+      .nav--navitron > .nav-item > a{
+        top: 0;
+      }
+      
+      .nav-item--lvl-1{
+        display: inline;
+      }
+      
+      .site__type--np .masthead__nav{
+        margin: 0;
+      }
+      
+      .site-logo {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 415px;
+        height: 50px;
+        display: block;
+        background-size: contain;
+        position: relative;
+        top: 65px;
+        left: 24px;
+      }
+      
+      .nav--navitron > .nav-item--lvl-1 > a{
+        height: 50px;
+      }
+      
+      .nav__right{
+        display: block;
+      }
+      
+      .site__type--np .subscriber-box .button:after{
+        margin-top: -13px;
+      }
+      
+    
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body class="site__type--np site__color--blue">
+    <script>
+    (function(){
+        var ScrippsSites = {
+            "localhost" : {type: "tv", color : "blue", callLetters : "WEWS"},
+            "www.newsnet5.com" : {type: "tv", color : "blue", callLetters : "WEWS"},
+            "www.abc15.com" : {type: "tv", color : "blue", callLetters : "KNXV"},
+            "www.abc2news.com" : {type: "tv", color : "yellow", callLetters : "WMAR"},
+            "www.abcactionnews.com" : {type: "tv", color : "red", callLetters : "WFTS"},
+            "www.kjrh.com" : {type: "tv", color : "maroon", callLetters : "KJRH"},
+            "www.kshb.com" : {type: "tv", color : "maroon", callLetters : "KSHB"},
+            "www.wcpo.com" : {type: "tv", color : "maroon", callLetters : "WCPO"},
+            "www.wptv.com" : {type: "tv", color : "blue", callLetters : "WPTV"},
+            "www.wxyz.com" : {type: "tv", color : "blue", callLetters : "WXYZ"},
+            "www.turnto23.com" : {type: "tv", color : "maroon", callLetters : "KERO"},
+            "www.10news.com" : {type: "tv", color : "yellow", callLetters : "KGTV"},
+            "www.thedenverchannel.com" : {type: "tv", color : "blue", callLetters : "KMGH"},
+            "www.aztecacolorado.com" : {type: "tv", color : "blue", callLetters : "KMGH"},
+            "www.theindychannel.com" : {type: "tv", color : "maroon", callLetters : "WRTV"},
+            "www.thelistshow.tv" : {type: "tv", color : "blue", callLetters : ""},
+
+            "www.caller.com" : {type: "np", color : "blue", callLetters : "CCCT"},
+            "www.reporternews.com" : {type: "np", color : "blue", callLetters : "ABIL"},
+            "www.independentmail.com" : {type: "np", color : "blue", callLetters : "AIM"},
+            "www.courierpress.com" : {type: "np", color : "blue", callLetters : "ECP"},
+            "www.kitsapsun.com" : {type: "np", color : "blue", callLetters : "BSUN"},
+            "www.knoxnews.com" : {type: "np", color : "blue", callLetters : "KNS"},
+            "www.commercialappeal.com" : {type: "np", color : "blue", callLetters : "MCA"},
+            "www.naplesnews.com" : {type: "np", color : "blue", callLetters : "NPDN"},
+            "www.redding.com" : {type: "np", color : "blue", callLetters : "REDD"},
+            "www.gosanangelo.com" : {type: "np", color : "blue", callLetters : "SAST"},
+            "www.tcpalm.com" : {type: "np", color : "blue", callLetters : "TCP"},
+            "www.vcstar.com" : {type: "np", color : "blue", callLetters : "VCS"},
+            "www.timesrecordnews.com" : {type: "np", color : "blue", callLetters : "TRN"}
+        };
+
+        var currentSite = ScrippsSites[window.location.host];
+        if(typeof currentSite != 'undefined'){
+            $("body")[0].className = "";
+            $("body").addClass(currentSite.callLetters.toLowerCase() + " site__color--" + currentSite.color.toLowerCase() + " site__type--" + currentSite.type.toLowerCase());
+        }
+
+    })();
+    </script>
+    <div class="header--bg hide-phone">
+      <div class="container">
+        <div class="masthead--bg">
+          <div class="masthead__nav">
+            <a target="_blank" id="logo-home" href="/" class="site-logo">
+              
+            </a>
+          </div>
+          <div class="masthead__content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="navbar navbar--bg hide-phone">
+      <div class="container">
+        <div class="nav nav--navitron">
+          <div class="nav__left">
+            <div class="nav-item nav-item--lvl-1">
+              <a id="home" href="/" target="blank">
+                Home
+              </a>
+            </div>
+            <div class="nav-item nav-item--lvl-1">
+              <a id="news" href="/news" target="blank">
+                News
+              </a>
+            </div>
+            <div class="nav-item nav-item--lvl-1">
+              <a id="weather" href="/weather" target="blank">
+                Weather
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header -->
+
+
+    <div class="page page__two-col container">
+
+      <div class="page--white">
+          <div class="module module--page-title"> <header class="header--light">
+            <h1 class="header">500 Internal server error</h1> </header>
+          <div class="module__body">
+            <div class="abstract" style="display: block!important"> <p>Sorry, the page you requested has an error. You can refresh your browser or return <a href="/" id="link-home">home</a></p> </div> </div></div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer footer--bg" id="footer" role="contentinfo">
+      <div class="container">
+        <section class="scripps-brand"> 
+        <div class="block">
+          <div class="side__media media__container--1x1">
+            <img class="media" src="http://www.wcpo.com/wcpo-digital-theme/images/custom/logo-scripps.png" />
+          </div>
+          <div class="side__body">
+            <strong>Scripps Media, Inc</strong> &copy; 2014 The E.W. Scripps Co
+          </div>
+        </div> 
+      </section> 
+      </div>
+    </div>
+
+
+  </body>
+</html>
+
