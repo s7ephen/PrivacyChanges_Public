@@ -110,6 +110,10 @@ sessionExpiration: -2,
 enabledProviders: 'facebook,twitter,googleplus,google,linkedin,yahoo,microsoft,aol'
 }
 </script>
+<script type="text/javascript"> 
+TBS = window.TBS || {}; 
+TBS.adTargets = {}; 
+</script> 
 <script type="text/javascript" src="/js/libs/modernizr.js"></script>
 <!--[if lt IE 9]>
 <script src="http://i.cdn.turner.com/v5cache/TBS/js/html5shiv.js"></script>
@@ -205,15 +209,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="modal-header">
 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
 </div>
-<div class="col-sm-3"></div>
-<div class="col-sm-6">
-<h1>Want to finish later?</h1>
-<p>You can continue watching this video later.</p>
-<p>Just <span class="create-profile">Create a profile</span> and we'll remember where you stopped.</p>
-<button class="btn logIn">Create a profile</button><br>
-<input type="checkbox" id="hide-watch-later"><p class="hide-watch-later"> Don't show me this message again.</p>
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<h1>Want to finish watching this later?</h1>
+<p><span class="signin" data-start-screen="gigya-login-screen">Sign in</span> or <span class="logIn create-profile">Create a profile</span> and we'll remember where you stopped.</p>
+<div>
+<input type="checkbox" id="hide-watch-later"><p class="hide-watch-later"> Don't show me this message again.
 </div>
-<div class="col-sm-3"></div>
+</div>
+<div class="col-sm-2"></div>
 </div>
 </div>
 </div>
