@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/02/2015 07:13 PM",
+            DATE_IN_USE: "09/02/2015 09:15 PM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -2619,10 +2619,16 @@ if( jQuery.wcdSharedOverride_globalGatewayOverrides && jQuery.wcdSharedOverride_
 			var currentPopUp = jQuery('#shippingOptionsPopUp');
 			if( currentPopUp.length > 0 ) currentPopUp.remove();
 
-			var responseString = response.responseText;
+			var responseString = '';
+			if( response.responseText ) {
+				responseString = response.responseText;
+			}
+			else {
+				responseString = response;
+			}
 			responseString = responseString.replace('Borderfree','Borderfree');
 
-			document.body.appendChild('<div id="shippingOptionsPopUp" style="top:' + top + 'px;left:' + getLeftMargin() + 'px;width:' + width + 'px;height: ' + height + 'px">' + responseString + '</div>');
+			jQuery('body').append('<div id="shippingOptionsPopUp" style="top:' + top + 'px;left:' + getLeftMargin() + 'px;width:' + width + 'px;height: ' + height + 'px">' + responseString + '</div>');
 
 			window.onresize = function () {
 				div.style.left = getLeftMargin() + 'px';
