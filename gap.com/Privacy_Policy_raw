@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/03/2015 05:09 PM",
+            DATE_IN_USE: "09/03/2015 06:41 PM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -4729,11 +4729,24 @@ if( location.pathname == '/checkout/order.do' ) {
 /////////  IOS 8 PP Hover Events Patch v3  ///////
 //////////////////////////////////////////////////
 
+//Begin adding Gap Kiosk Patch
+var checkGapKiosk = (gidLib.getQuerystringParam("gapkiosk") == "true") || (gidLib.getCookieVar("mktUniversalPersist","gapkiosk") == "true");
+if(checkGapKiosk){
+	gidLib.setCookieVar('mktUniversalPersist', 'gapkiosk', 'true');
+	jQuery(document).ready(function(){
+		jQuery('#textFooterLinks1_10000515').hide();
+		if (location.pathname == '/browse/product.do'){
+			jQuery('#findInStoreTabWindow').hide();
+		}
+	});
+}
+//End adding Gap Kiosk Patch
+
 var iOS8PPPatch = function() {
 	var iOS8PPPatchURL = document.location.href;
 	var iOS8PPPatchDevice = navigator.userAgent;
-	if (((iOS8PPPatchURL.indexOf("product.do") > 0) || (iOS8PPPatchURL.indexOf("outfit.do") > 0)) && ((iOS8PPPatchDevice.indexOf("Version/8") > 0) || (iOS8PPPatchDevice.indexOf("CriOS") > 0) && (iOS8PPPatchDevice.indexOf("Mobile") > 0)) ) {		
-//console.info("iOS 8 Patching...");		
+	if ( (gidLib.getCookieVar("mktUniversalPersist","gapkiosk") == "true") || (((iOS8PPPatchURL.indexOf("product.do") > 0) || (iOS8PPPatchURL.indexOf("outfit.do") > 0)) && ((iOS8PPPatchDevice.indexOf("Version/8") > 0) || (iOS8PPPatchDevice.indexOf("CriOS") > 0) && (iOS8PPPatchDevice.indexOf("Mobile") > 0))) ) {		
+//console.info("iOS 8 Patching...");				
 		//// take action and remove the offending events on the first touch...
 		var ColorSwatchArr = jQuery("#colorSwatchContent").children("input");
 		var SizeChoiceArr1 = jQuery("#sizeDimension1Swatches").children("button");
