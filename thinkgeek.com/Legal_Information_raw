@@ -107,7 +107,7 @@
 
 
 
-<script type="text/javascript">var cart_id = '';</script><!-- SiteCatalyst code version: H.22.1. Copyright 1996-2009 Adobe, Inc. All Rights Reserved More info available at http://www.omniture.com -->
+<script type="text/javascript">var cart_id = cookieMonkey.get('funkymonkey') || cookieMonkey.get('funkyape') || false;</script><!-- SiteCatalyst code version: H.22.1. Copyright 1996-2009 Adobe, Inc. All Rights Reserved More info available at http://www.omniture.com -->
 <script language="JavaScript" type="text/javascript" src="/js/omniture.js"></script><script language="JavaScript" type="text/javascript"><!--
 s.pageName="Legal Information"
 s.server=""
@@ -1953,7 +1953,7 @@ try{rkg_track_sid("thinkgeek");}catch(e){}
 
 </div>
 
-<!-- Brought to you by the letter Z and by the numbers -88, 150, 32, 150, and 2. And by http33... -->
+<!-- Brought to you by the letter Z and by the numbers -88, 150, 32, 150, and 2. And by http53... -->
 
 
 
@@ -2004,7 +2004,7 @@ try{rkg_track_sid("thinkgeek");}catch(e){}
 
 <script>
     var remote_addr = '52.2.142.173';
-    var webhead = 'www.thinkgeek.com/http33';
+    var webhead = 'www.thinkgeek.com/http53';
 
     // Writes Omniture Report Suite ID to topnav
     topnavOmniture('thinkgeek', ['#nav-top-primary', '#leftnav', '#nav-top-secondary']);
@@ -2012,7 +2012,6 @@ try{rkg_track_sid("thinkgeek");}catch(e){}
     $('.lablr').lablr();
 </script>
 
-<script src="/js/jquery/jquery.placeholder.min.js"></script>
 <script>
 var ieVer;
 $(function() {
@@ -2070,18 +2069,7 @@ $(function(){
  
 });
 </script>
-<script>
-$(function() {
-	if( ieVer == -1 || ieVer >= 8 ) {
-		$('.account-login-form input').placeholder();
-		$('.account-login-loggedout a').click(function(e) {
-			$(this).parent().toggleClass('active');
-			$('.account-login-form').toggleClass('active');
-			return false;
-		});
-	}
-});
-</script>
+
 <script>
 
 var tg_data = {
@@ -2096,7 +2084,7 @@ tg_data.session.rsid = 'thinkgeek';
 
 
 tg_data.page.uri = '/help/legal.shtml';
-tg_data.page.sec = '1'
+tg_data.page.sec = '0'
 
 </script>
 
