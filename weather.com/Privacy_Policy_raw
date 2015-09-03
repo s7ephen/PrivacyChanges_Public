@@ -40,8 +40,11 @@
 <link type="text/css" rel="stylesheet" href="http://www.weather.com/sites/acquia-prod/files/css/css_4RwmkvrkaP44aLdSx-3QR3B1nX_e9JVPn4xLymFRZq0.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.weather.com/sites/acquia-prod/files/css/css_8EXHjJ14sI5gIDUvc_qyBiIEw8XLCG1LXOPst7Jxj3Q.css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.weather.com/sites/acquia-prod/files/css/css_MZebjWzajeQQUWUyQlgnrtcs3KHhUOTUjHLx8-Ec8B0.css" media="all" />
-  <script src="http://www.weather.com/sites/acquia-prod/files/js/js_Xx36tGT2rpbtPmo2tDiq1NOmMF2Qo9BLvL0qFxRexsg.js"></script>
-<script src="http://www.weather.com/sites/acquia-prod/files/js/js_g9E5F-ZVx7DvsWo1istpoiDL93c8pJ3Aj8i23AkJlQc.js"></script>
+  <script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/jquery/1.8/jquery.js?v=1.8"></script>
+<script src="http://www.weather.com/misc/jquery.once.js?v=1.2"></script>
+<script src="http://www.weather.com/misc/drupal.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/themes/omega/omega/js/no-js.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/core-utils.js?v=v3"></script>
 <script>
         window['adrum-app-key'] = 'AD-AAB-AAA-FCA';
         window['appdynamics_percentage'] = 10;
@@ -89,10 +92,38 @@
        window.TWC.profile={
         'base_url'  : 'https://profile.weather.com'
       };</script>
-<script src="http://www.weather.com/sites/acquia-prod/files/js/js_w92CcrqRHwpSY7JHkhjiM4DsxqNoATEC0xjKQW9I6Pw.js"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/jquery.cookie.min.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/jquery.jqplugin.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/jStorage.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/themes/radix/js/domready.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/themes/radix/js/twc.eq.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/themes/radix/js/modernizr.js?v=v1.3.16"></script>
+<script defer="defer" src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/app_dynamics/app_dynamics_config.js?v=v1"></script>
+<script defer="defer" src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/app_dynamics/adrum.js?v=v1"></script>
 <script src="//cdn.optimizely.com/js/177031030.js"></script>
-<script src="http://www.weather.com/sites/acquia-prod/files/js/js_JM9aoXZWDjoqqPAm9wS9ktLfXbo-1MpPlS8QWUfV-0k.js"></script>
-<script src="http://www.weather.com/sites/acquia-prod/files/js/js_Nu6CtgwGjmd3hSUOk7T8FCe58RX1NPb-hM36zCK22BA.js"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/twc_static/files/foresee/foresee-trigger.js?v=1142014"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/tealium_utag_data/tealium_utag_data.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/amznslots/twc_amznslots.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/criteo/twc_criteo.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wfxtg/wfxtg.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/lotame/twc_lotame.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/node-rules.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/node.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/profile.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/page.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/product.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/user.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/device.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/wx.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/ad.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/metrics.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/twclog.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/nodes/performance.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/themes/radix/plugins/layouts/alexandria/../../../js/viewport-changes.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/aws-sdk/aws-sdk.min.js?v=v2.1.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/pco/pco.js?v=v3"></script>
+<script src="http://www.weather.com/sites/all/modules/contrib/admin_menu/admin_devel/admin_devel.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/features/tf_full_html/tf_full_html.js?nu44ui"></script>
 <script>window.googletag = window.googletag || {};googletag.cmd = googletag.cmd || [];</script>
 <script>
       // Disable console.log/debug/info
@@ -108,9 +139,9 @@
           'ampm':       'pm',
           'timezone':   'EDT',
           'serverdate': '09/03/2015',
-          'servertime': '12:29:14',
+          'servertime': '14:09:35',
           'locale':     'en',
-          'serverhrs':  '12',
+          'serverhrs':  '14',
           'lang':       'en',
           'serverday':  'Thu'
         },ad:{}},
@@ -362,8 +393,10 @@
         </div>
           </div> <!-- end header-content-wrap -->
 
+</div> 
+</div> <!-- end wx-header -->
+
   </div>
-</div> <!-- end wx-header -->  </div>
 </div>
       </div>
     </header>
@@ -856,8 +889,112 @@
           </div>
 
 </div>
-  <script src="http://www.weather.com/sites/acquia-prod/files/js/js_YUSvxtfHPitftp0oh-XK93JKSC1rUlVJI_kVcxXWpv0.js"></script>
-<script src="http://www.weather.com/sites/acquia-prod/files/js/js_1tzyPG-GpdATCKExraGJ1d8M4TWqrUWyftun3wscsjo.js"></script>
+  <script src="http://www.weather.com/sites/all/themes/radix/js/jquery.placeholder.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/angular/angular.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/angular/angular-touch.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/translate/angular-translate.min.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/lab/lab.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/assets/angular/i18n/angular-locale_en.js?v=v1.3.16"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pf_drupal_translate/pf_drupal_translate.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/shared_module/shared_module.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/config/config.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/instance/instance.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/track_str/track_str.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/track_str/track_str_action_tracker.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/model/model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_events/twc_events.run.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_modal/twc_modal.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_keypress/twc_keypress.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/q.loc.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/pco.config.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/glomo/shared/glomo_location_name/glomo_location_name.filter.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/metrics_control/metrics_control.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_microdata/twc_microdata.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_ups_alert/twc_ups_alert.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/back_button_broadcast/back_button_broadcast.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/alert_factory/alert_factory.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/app_config/app.config.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_logger/twc_logger.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_logger/twc_logger.config.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/linker_factory/linker_factory.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/fast_button/fastbutton/google.fastbutton.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/fast_button/fast_button.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/base_search_controller/base_search_controller.controller.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/xweb.webloc.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_constant/twc_constant.constant.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_typeahead/twc_typeahead.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_tooltip/twc_tooltip.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_input_error_state/twc_input_error_state.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/filters/module_filters.filter.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_select_text/twc_select_text.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/class/class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_placeholder/twc_placeholder.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/collections/collections.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/from_str/from_str.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/pco.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/pco.run.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.user.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.device.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.twclog.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.performance.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.page.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.ad.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.savedLocation.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.profile.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.metrics.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pco/models/pco.products.model.class.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/glomo/shared/glomo_location_name/twc_location_name.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/util/util.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/notify/notify.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/throttled_events/throttle.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/throttled_events/on_resize.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/mobile_header_display_ctr/mobile_header_display_ctr.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/loc_util/loc_util.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsx_date/dsx_date.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsx_date/dsx_date.config.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dom_event_origin_verifier/dom_event_origin_verifier.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/custom_event/custom_event.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.utils.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/httpclient/httpclient.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/base.model.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.response.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.promise.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.cache.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/pagecache/pagecache.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.config.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/mouse_broadcast/mouse_broadcast.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/promise_pool/promise_pool.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/dsxclient.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/drupal_settings/drupal_settings.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.berecord.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.pollen.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.alertsarea.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.alertlocations.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/cs.datetime.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsx_date/dsx_date.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/preload/preload.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/wxicon.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/wxicon.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.loc.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/dsxclient/models/v2/wxd.morecord.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/error_handler/error_handler.directive.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_main_menu/header_main_menu.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/sqs_beacons/sqs_beacons.factory.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_savedlocations/header_savedlocations.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/search/search.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/search/translations/search.en_us.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/twc_typeahead/twc_alias.value.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/footer/footer.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/footer/translations/footer.en_us.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/title/title.app.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/error_handler/translations/error_handler.en_us.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_main_menu/header_main_menu.controller.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/search/search.controller.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_main_menu/header_main_menu.directives.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/title/title.controller.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_savedlocations/header_savedlocations.controller.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/error_handler/translations/error_handler.fr_fr.js?nu44ui"></script>
+<script src="http://www.weather.com/sites/all/modules/custom/angularmods/modules/header_savedlocations/header_savedlocations.directives.js?nu44ui"></script>
 <script>
         if (Drupal.settings.angularmods && Drupal.settings.angularmods.active){
           if (twc.shared && twc.shared.apps) {
