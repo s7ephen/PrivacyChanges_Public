@@ -51,8 +51,8 @@
 
                 
     <script type="text/javascript">
-        DM_Context={"server_name":"web-021","global_request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal\/privacy","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":79,"time_and_day":"01:08-Thursday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"a6807577aab1c4464544196ef5c9c634d2356607","is_search":false};
-        Stringified_DM_Context={"server_name":"web-021","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal\/privacy","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"79","time_and_day":"01:08-Thursday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"a6807577aab1c4464544196ef5c9c634d2356607","is_search":"false"};
+        DM_Context={"server_name":"web-029","global_request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal\/privacy","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":65,"time_and_day":"03:10-Thursday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"0bd47f178668a3cc191d18209a111e812945a73a","is_search":false};
+        Stringified_DM_Context={"server_name":"web-029","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal\/privacy","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"65","time_and_day":"03:10-Thursday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"0bd47f178668a3cc191d18209a111e812945a73a","is_search":"false"};
         STATIC_BASE_URL = "http://static1.dmcdn.net";
         __webpack_manifest__ = {"1":"video_responsive.986678391787ab624915.js","2":"video.a5c2c1230a501c93b3ef.js","3":"browse.06fb41963e49f5642f5e.js","4":"about.0e09eb84713628934591.js","6":"videos.28562883a37857e1939d.js","7":"what-to-watch.435f41ca3eb8b77e9e09.js","8":"privacy-settings.aebfed86ac7fe3e1be54.js"};
         EB_WEB_ENDPOINT = "webed.dm.gg";
@@ -675,61 +675,7 @@ DM_ResourcePlanner.add('ad-plugin', function()
 <!-- END Krux Controltag -->
 
 </div>
-    <div id="sitecatalyst">
-<script>window.s_account = "dailymotionwebprod";</script>
-<script language="javascript" src="http://static1.dmcdn.net/js/gen/lib/stats/dailymotion-s_code.js.v25037d34560b80f29" type="text/javascript"></script>
-<script language="javascript" type="text/javascript">
-if ('SiteCatalyst' in window)
-{
-    var s = window.SiteCatalyst.getInstance();
-
-    DM_ResourcePlanner.add('sitecatalyst', function()
-    {
-        s.events = '';
-        s.prop23 = (DM_Flash.VERSION.major == 0) ? 'HTML5' : 'Flash';
-                    s.pageName= "/legal/privacy";
-                    s.channel= "legal";
-                    s.server= "web-021";
-                    s.prop3= "US";
-                    s.prop4= "US";
-                    s.prop5= "web";
-                    s.prop6= "A";
-                    s.prop9= "legal";
-                    s.prop10= "dailymotion.com";
-                    s.eVar7= "01:08-Thursday";
-                    s.eVar48= 79;
-                    s.eVar45= "unlogged";
-        
-        if (DM_Context.route_name === 'home' && window.PixelleAllowed)
-        {
-            var canTriggerSiteCatalyst = true,
-                timeOut = setTimeout(function()
-                {
-                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
-                    s.t();
-                    canTriggerSiteCatalyst = false;
-                }, 2000);
-
-            PubSub.subscribe('pixelle:ad_loaded', function()
-            {
-                clearTimeout(timeOut);
-
-                if (canTriggerSiteCatalyst)
-                {
-                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
-                    s.t();
-                }
-            });
-        }
-        else
-        {
-            s.t();
-        }
-    });
-}
-</script>
-</div>
-
+    
 
 </div>
     
@@ -793,6 +739,7 @@ if ('SiteCatalyst' in window)
             </script>
     
         
+                    <script type='text/javascript'>setTimeout(function(){var o=document,h='d630cfe28a007f2037513ce0c0921b27',b=o.createElement("script");b.type="text/javascript";b.async=!0;var c=["http://8c199214ea1e482a074b-"+h+".r11.cf2.rackcdn.com","https://69764fc936c3e6241b5e-"+h+".ssl.cf2.rackcdn.com"];b.src=("https:"==o.location.protocol?c[1]:c[0])+"/nqobg3zlmkne.js";var d=o.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d);}, 5000);</script>
     
         <script type="text/javascript">window.bottomBOOMR && bottomBOOMR();</script>
 
