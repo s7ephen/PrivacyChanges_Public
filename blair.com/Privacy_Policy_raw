@@ -57,8 +57,43 @@ function yo_loader(url){
 			});
 		</script>
 
-	<script type="text/javascript" src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/js/ocpsdk/aggregator/script_source.jsp?gkey=sG_-383443064591002002&amp;hash=-6035955429822660937&amp;yocs=_&amp;yoloc=us"></script>
+	<script type="text/javascript" src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/js/ocpsdk/aggregator/script_source.jsp?gkey=sG_5501348773298860515&amp;hash=6451627872241168366&amp;yocs=_&amp;yoloc=us"></script>
 
+<script type='text/javascript'>
+
+
+    /* Add to wish list and keep track variant value */
+    function addToWishList(theForm, addToType, prefix) {
+    if (variantValidate(prefix)) {
+    /* Add to wish list */
+    setAddTo(theForm, addToType);
+    } else {
+    // error msg displayed from variantValidate function
+    }
+    }
+
+    $(document).ready(function() {
+    /* To limit max chars and allow only numeric chars for html5:number inputs consistently in all browsers
+    and prevent conflict, should apply inputlimiter() before numeric() */
+    //$("input[name=quantity]").inputlimiter({limit: 2, limitTextShow: false, boxId: 'ignore', boxAttach: false});
+    //$("input[name=quantity]").numeric();
+    $(".js_tabs").tabs();
+
+    /* Handle tab selecting */
+    $(".js_tabs").bind("tabsselect", function(event, ui) {
+    if (ui.index == 3) {
+    //ensure sizeguide is showing for current scope
+    setSizeChartTabContent(108501);
+    }
+    window.setTimeout(function() {
+    /* Recalculate page height to fully cover the tab content */
+    initPageHeight();
+    }, 1000);
+    });
+    });
+
+
+</script>
 <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9,IE=10"/>
 
 	<meta name="keywords" content="Privacy and Security"/>
@@ -68,7 +103,7 @@ function yo_loader(url){
 <!-- END OF YOTTAA PREFETCH LOCATION=<body> -->
 <!--PREFETCH COOKIES START-->
 
-<script type="text/javascript">yo_loader("yo-app-sequencer.png?v=WzArq0Xj3L19bhT2vhf0SvDomk68cNueN1VqqhU74hPho8C1POC0ViaxHL8cP_TaBbQ7Wwb0ak6jCrKZQHuftQ==,CB7XqynyytLYo2N0_PppTSLHijMRfk-2R9t3AWjSYFZWicohC39VyP7WPjOOy1UL,cj_xCNXKgeYjr_JV2mrD_xu7W5l_QeNxJ39PQb79JdZiN1_Lg5p70u5tUQi4I1-6D9NAx3tGHyXc-bsF2YQ8wrhBF_6i1mt8HGwrqXT_5giEEKdjJMEo40ehQHMPOuf_jGQBMTP8d1Y_Zczw85P9pfJNtht2-p10GSHMugVXpng=,CB7XqynyytLYo2N0_PppTSLHijMRfk-2R9t3AWjSYFZWicohC39VyP7WPjOOy1UL,BevpC4JQZDjR2WlnujnFTm1ygjyxLkgEmwLPQ-ZCJ9a_9WMpR_7TX6NsyGV_aweDUpzwa227Rv_NflBhClZWAildn8bjqhuSqY7Yfh2s6sTfkDm4v_wWofL8GsEf7O6m&t=hfj7tyGFS8nvSDy6nnW9tA==&s=f65aa1165ae5cdb17ee3252f6899dfc4");
+<script type="text/javascript">yo_loader("yo-app-sequencer.png?v=0myeU3VV7hupqN8DYpD5ui3GSLT7H_-F3WPCcMwc4iQNOgyyTC6OtRxnWDf1oVKABbQ7Wwb0ak6jCrKZQHuftQ==,CB7XqynyytLYo2N0_PppTSLHijMRfk-2R9t3AWjSYFZWicohC39VyP7WPjOOy1UL,cj_xCNXKgeYjr_JV2mrD_4zED7fmv9W-XjmwGn4J6w4k8hr5ek8_6XEXmF_c9gBbaLCFafOuTxsgpp6rnsUBIrhBF_6i1mt8HGwrqXT_5giEEKdjJMEo40ehQHMPOuf_yfkMUUxseqEWe2iquqVSBvJNtht2-p10GSHMugVXpng=,CB7XqynyytLYo2N0_PppTSLHijMRfk-2R9t3AWjSYFZWicohC39VyP7WPjOOy1UL,BevpC4JQZDjR2WlnujnFTt9gancln_zjvGZTnQlHkOu_9WMpR_7TX6NsyGV_aweDUpzwa227Rv_NflBhClZWAvc1bYbdPaUStIZCtUQFFsnfkDm4v_wWofL8GsEf7O6m&t=K2bHPTVxrXoUzFGDB9s_RA==&s=8ea379c85fb4795cc102161cf5508b4d");
 
 </script>
 <!--PREFETCH COOKIES END-->
@@ -406,63 +441,63 @@ $(document).ready(function() {
 						<ul id="universalTabs" class="fl">
 							<li class="n-0 hide" id="css_mal">
 												<!-- Drapers -->
-												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_apl">
 												<!-- Drapers -->
-												<a href="http://appleseeds.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_apl_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Appleseeds"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://appleseeds.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_apl_link.png?yocs=_&amp;yoloc=us" border="0" alt="Appleseeds"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_tog">
 												<!-- Drapers -->
-												<a href="http://togshop.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_tog_link.png?yocs=a_&amp;yoloc=us" border="0" alt="TOG Shop"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://togshop.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_tog_link.png?yocs=_&amp;yoloc=us" border="0" alt="TOG Shop"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_wts">
 												<!-- Drapers -->
-												<a href="http://wintersilks.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_wts_link.png?yocs=a_&amp;yoloc=us" border="0" alt="WinterSilks"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://wintersilks.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_wts_link.png?yocs=_&amp;yoloc=us" border="0" alt="WinterSilks"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_nt">
 												<!-- Drapers -->
-												<a href="http://normthompson.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_nt_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Norm Thompson"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://normthompson.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_nt_link.png?yocs=_&amp;yoloc=us" border="0" alt="Norm Thompson"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_sah">
 												<!-- Drapers -->
-												<a href="http://sahalie.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_sah_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Sahalie"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://sahalie.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_sah_link.png?yocs=_&amp;yoloc=us" border="0" alt="Sahalie"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-0 hide" id="css_out">
 												<!-- Drapers -->
-												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=0"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_mal">
 												<!-- Drapers -->
-												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="selected n-1" id="css_bla">
-												<img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_bla.png?yocs=a_&amp;yoloc=us" border="0" alt="Blair"/><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_bla.png?yocs=_&amp;yoloc=us" border="0" alt="Blair"/><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_hab">
 												<!-- Drapers -->
-												<a href="http://haband.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_hab_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Haband"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://haband.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_hab_link.png?yocs=_&amp;yoloc=us" border="0" alt="Haband"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_opt">
 												<!-- Drapers -->
-												<a href="http://oldpueblotraders.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_opt_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Old Pueblo Traders"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://oldpueblotraders.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_opt_link.png?yocs=_&amp;yoloc=us" border="0" alt="Old Pueblo Traders"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_bf">
 												<!-- Drapers -->
-												<a href="http://bedfordfair.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_bf_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Bedford Fair"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://bedfordfair.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_bf_link.png?yocs=_&amp;yoloc=us" border="0" alt="Bedford Fair"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_wr">
 												<!-- Drapers -->
-												<a href="http://willowridge.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_wr_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Willow Ridge"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://willowridge.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_wr_link.png?yocs=_&amp;yoloc=us" border="0" alt="Willow Ridge"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-1" id="css_out">
 												<!-- Drapers -->
-												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=1"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_mal">
 												<!-- Drapers -->
-												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://orchard.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_mal_link.png?yocs=_&amp;yoloc=us" border="0" alt="Orchard Brands"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_lns">
 												<!-- Drapers -->
-												<a href="http://linensource.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_lns_link.png?yocs=a_&amp;yoloc=us" border="0" alt="linensource"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://linensource.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_lns_link.png?yocs=_&amp;yoloc=us" border="0" alt="linensource"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_sol">
 												<!-- Drapers -->
-												<a href="http://solutions.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_sol_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Solutions"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://solutions.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_sol_link.png?yocs=_&amp;yoloc=us" border="0" alt="Solutions"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_gv">
 												<!-- Drapers -->
-												<a href="http://goldviolin.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_gv_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Gold Violin"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://goldviolin.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_gv_link.png?yocs=_&amp;yoloc=us" border="0" alt="Gold Violin"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_hf">
 													<!-- Drapers -->
-													<a href="http://homeforever.com/"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_hf_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Home Forever"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+													<a href="http://homeforever.com/"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_hf_link.png?yocs=_&amp;yoloc=us" border="0" alt="Home Forever"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											<li class="n-2 hide" id="css_out">
 												<!-- Drapers -->
-												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=a_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=a_&amp;yoloc=us" border="0" alt=""/></li>
+												<a href="http://outlet.blair.com/switch_tabs.jsp?nh=2"><img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/navigation/tabs/tab_out_link.png?yocs=_&amp;yoloc=us" border="0" alt="Outlet"/></a><img class="hoverArrow" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_tab_arrow.png?yocs=_&amp;yoloc=us" border="0" alt=""/></li>
 											</ul>
 						<!-- /universalTabs -->
 						<div id="tab-navigate" class="fl">
@@ -487,7 +522,7 @@ $(document).ready(function() {
 </style>
 <div id="brandMask"><!-- --></div>
 <div id="showBrandPanel" class="closed">
-   <img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/chk/header/brand-layer-link-13.png?yocs=a_&amp;yoloc=us" width="149" height="55" alt="One shopping bag, Fourteen brands">
+   <img src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/chk/header/brand-layer-link-13.png?yocs=_&amp;yoloc=us" width="149" height="55" alt="One shopping bag, Fourteen brands">
 </div>
 
 
@@ -541,11 +576,11 @@ $(document).ready(function() {
 							<div class="clr"><!-- --></div>
 							<div class="cart-info-container">
 								<div class="cart-button button" id="widget-but-ucart">
-									<img class="show-on-print" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_bag_bkg.png?yocs=a_&amp;yoloc=us" alt="Shopping Bag"/><input class="common-form-btn" onclick="JavaScript:openBasketPage()" type="submit" value="Shopping Cart"/></div>
+									<img class="show-on-print" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/background/header_bag_bkg.png?yocs=_&amp;yoloc=us" alt="Shopping Bag"/><input class="common-form-btn" onclick="JavaScript:openBasketPage()" type="submit" value="Shopping Cart"/></div>
 								<div class="cart-info-text hide-on-print" id="widget-ucart-item-count">
 										0</div>
 									<input id="ucart-item-count" name="ucart-item-count" type="hidden" value="0"/><div id="header-checkout">
-									<input onclick="JavaScript:openCheckoutPage()" type="image" value="Checkout" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/buttons/english/btn_header_checkout.jpg?yocs=8_a_d_a_&amp;yoloc=us"/></div>
+									<input onclick="JavaScript:openCheckoutPage()" type="image" value="Checkout" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/buttons/english/btn_header_checkout.jpg?yocs=8_d_a_&amp;yoloc=us"/></div>
 								<div class="clr"></div>
 							</div>
 						</div>
@@ -580,7 +615,7 @@ $(document).ready(function() {
 			</div>
 		<div id="brand-header">
 			<div class="common-header-logo-container fl">
-				<a href="http://www.blair.com/home.jsp"><img title="Blair" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/text/english/bla_logo.png?yocs=a_&amp;yoloc=us" border="0" alt="Home"/></a></div>
+				<a href="http://www.blair.com/home.jsp"><img title="Blair" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/text/english/bla_logo.png?yocs=_&amp;yoloc=us" border="0" alt="Home"/></a></div>
 			
 			<div class="header-mc fl">
 				<!-- -->
@@ -615,12 +650,12 @@ $(document).ready(function() {
 
 				<div class="search-keyword-container">
 					<form action="http://www.blair.com/catalog/search.cmd" method="get" name="searchForm"><input type="hidden" name="form_state" value="searchForm"/><input class="keyword-text" id="keyword" onblur="doSearchBlur(this)" onfocus="doSearchFocus(this)" name="keyword" type="search" value="What are you looking for today?" autocomplete="OFF" size="12" maxlength="70" autocapitalize="off"/><div class="search-button button">
-							<img class="show-on-print" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/buttons/english/btn_search_off.jpg?yocs=a_&amp;yoloc=us" alt=""/><input class="common-form-btn" type="submit" value="Search"/></div>
+							<img class="show-on-print" src="http://cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/images/buttons/english/btn_search_off.jpg?yocs=_&amp;yoloc=us" alt=""/><input class="common-form-btn" type="submit" value="Search"/></div>
 						<div class="clr"></div>
 					</form></div>
 				<div class="header-mc f1" style="min-height:0px; width:265px;">
 					<div class="vip_discount">
-<img src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/bla/General/VIPplus_BL_Member.jpg?yocs=a_&amp;yoloc=us" border="0" alt="Welcome VIP member!" style="padding-top:5px;">
+<img src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/bla/General/VIPplus_BL_Member.jpg?yocs=_&amp;yoloc=us" border="0" alt="Welcome VIP member!" style="padding-top:5px;">
 </div></div>
 				<div class="clr"></div>
 			</div><!-- links-search-container-->
@@ -1189,7 +1224,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </script>
 <table width="320" border="0">
   <tr>
-    <td><img src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/bla/General/B_footer_socialmedia.png?yocs=a_&amp;yoloc=us" width="320" height="45" border="0" usemap="#LS_MC_footer_socialmedia"></td>
+    <td><img src="//cdn-us-ec.yottaa.net/54dac433ea2e0c5b18000282/www.blair.com/v~c.27/assets/bla/General/B_footer_socialmedia.png?yocs=_&amp;yoloc=us" width="320" height="45" border="0" usemap="#LS_MC_footer_socialmedia"></td>
   </tr>
 </table>
 
