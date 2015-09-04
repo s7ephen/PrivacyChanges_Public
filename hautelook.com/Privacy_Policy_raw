@@ -1655,8 +1655,12 @@ $.cachedScript("//cdn.ravenjs.com/1.1.16/raven.min.js").done(function() {
         <!-- START Core Metrics -->
                     <script src="//libs.coremetrics.com/eluminate.js"></script>
 <script>
-    // Client Managed First Party
-    cmSetClientID("90409691",true,"data.coremetrics.com","hautelook.com");
+    if (typeof cmSetClientID !== 'undefined') {
+        // Client Managed First Party
+        cmSetClientID("90409691", true, "data.coremetrics.com", "hautelook.com");
+    } else {
+        var isCoremetricsBlocked = true;
+    }
 </script>
                 <!-- END Core Metrics -->
 
