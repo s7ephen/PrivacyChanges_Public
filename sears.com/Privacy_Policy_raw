@@ -160,7 +160,8 @@ shc = $.extend(shc, {
   feedbackProvider: 'QUAL', // used by O_LC_Utility in shcGlobalTracking.js
   footer: false, 
   IRP: trim($.cookie('ot')).startsWith('i'),
-  entCSSVersion: '.1.5.0'
+  entCSSVersion: '.1.5.0',
+  abTest:[]
 });
 shc.asapAkamaiBasePath = shc.asapAkamaiBasePath || '';
 //need to have path prefixed for dynamic file adds in IE8
@@ -256,6 +257,18 @@ if (!(/universalprofile/.test(location.href))) {
 }
 
 shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
+shc.abTest = function() {
+  var ab = [];
+  if ($.query.get('hdrTest') === 'C') {
+   ab.push('hdrTestC');
+   $.q('body').addClass('hdrTestC');
+   $('#hdrv3 [data-test="remove"]').hide();
+   $('#gnf_nav_deals').remove();
+   $('#gnf_nav_more').addClass('gnf-nav-last');
+  }
+  if ($.query.get('ttpr') === 'search_autofill_new' || $.cookie('ngsub')=== '55') {ab.push('autofill');}
+  return ab;
+}();
 </script>
 
 
@@ -2089,7 +2102,7 @@ updateOmnitureValues();
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '302p' -->
+<!-- Publish Server: '408p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
