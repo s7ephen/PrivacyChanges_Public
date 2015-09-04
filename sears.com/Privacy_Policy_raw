@@ -63,8 +63,8 @@
 }
 </style>
 <script type="text/javascript" src="http://c.shld.net/etc/clientlibs/granite/clientlibrarymanager.min.js"></script>
-<link rel="stylesheet" href="http://c.shld.net/etc/designs/shc/sears/base.min.S0fyTpZP4M82QPZ7qG_Qsw==.css" type="text/css"/>
-<script src="http://c.shld.net/etc/designs/shc/sears/base.min.vk2t87o9fr4B2876KUaLvQ==.js"></script>
+<link rel="stylesheet" href="http://c.shld.net/etc/designs/shc/sears/base.min.IqzgTPTT3m2fpNp65YZbjg==.css" type="text/css"/>
+<script src="http://c.shld.net/etc/designs/shc/sears/base.min.0bEunUhWJUa8eFb_GdngMA==.js"></script>
 <!-- AAM API reference tag -->
 		<!--script type="text/JavaScript" src="//sears.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_tnt_cb"></script-->
     
@@ -160,7 +160,8 @@ shc = $.extend(shc, {
   feedbackProvider: 'QUAL', // used by O_LC_Utility in shcGlobalTracking.js
   footer: false, 
   IRP: trim($.cookie('ot')).startsWith('i'),
-  entCSSVersion: '.1.5.0'
+  entCSSVersion: '.1.5.0',
+  abTest:[]
 });
 shc.asapAkamaiBasePath = shc.asapAkamaiBasePath || '';
 //need to have path prefixed for dynamic file adds in IE8
@@ -256,6 +257,18 @@ if (!(/universalprofile/.test(location.href))) {
 }
 
 shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
+shc.abTest = function() {
+  var ab = [];
+  if ($.query.get('hdrTest') === 'C') {
+   ab.push('hdrTestC');
+   $.q('body').addClass('hdrTestC');
+   $('#hdrv3 [data-test="remove"]').hide();
+   $('#gnf_nav_deals').remove();
+   $('#gnf_nav_more').addClass('gnf-nav-last');
+  }
+  if ($.query.get('ttpr') === 'search_autofill_new' || $.cookie('ngsub')=== '55') {ab.push('autofill');}
+  return ab;
+}();
 </script>
 
 
@@ -1801,7 +1814,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
                             <dt class="navItems-heading">Get Rewarded</dt>
                             <dd class="footer-membership has-shop-your-way">
                                 <div class="footer-membership-left">
-                                    <a href="/shopyourway" class="footer-sprite shop-your-way" rel="nofollow">shop your way</a>
+                                    <a href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" class="footer-sprite shop-your-way" rel="nofollow">shop your way</a>
                                 </div>
                                 <div class="footer-membership-right">
                                     <p>Not a member?</p>
@@ -1846,7 +1859,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
 <div class="footer-middle-top">
         <ul class="footer-content">
             <li class="footer-left">
-                <a class="footer-sprite shop-your-way" href="/shopyourway" rel="nofollow">shop your way</a>
+                <a class="footer-sprite shop-your-way" href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow">shop your way</a>
             </li>
             <li class="footer-right">
                 <ul class="logos">
@@ -1912,7 +1925,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
             <li class="copyright">&copy; 2015 Sears Brands, LLC. All Rights Reserved</li>
             <li class="footer-right">
                 <ul>
-                    <li><a class="footer-sprite shop-your-way" href="//www.shopyourway.com/tag/sears-com/414208" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow" target="_blank">shop your way</a></li>
+                    <li><a class="footer-sprite shop-your-way" href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html" rel="nofollow" target="_blank">shop your way</a></li>
                     <li><a class="footer-sprite facebook" href="//www.facebook.com/sears" rel="nofollow" target="_blank">Facebook</a></li>
                     <li><a class="footer-sprite twitter" href="//twitter.com/#!/searsdeals" rel="nofollow" target="_blank">Twitter</a></li>
                     <li><a class="footer-sprite google-plus" href="//plus.google.com/+Sears" rel="nofollow" target="_blank">Google Plus</a></li>
@@ -2007,13 +2020,13 @@ $(window).on('load', function() {
  if (!!$.cookie('irp-preview')){
   FED.Util.addJsFile(shc.URLs.staticAssets + 'js/previewHeader');
  }
- /*UHF-405 - flip URL based on signin vs guest
+ //UHF-405 - flip URL based on signin vs guest
  if ($('#profileArea.loggedIn').length) {
   $('#gnf_header, #gnf_footer').find('a[data-alt-href]').each(function() {
    var el = $(this), alt = el.attr('data-alt-href');
    if (!!alt) {el.attr('href', alt);}
   })
- }*/
+ }
 });
 </script>
 
@@ -2078,15 +2091,18 @@ var omtitle= "Customer Service > Policies > Privacy Policy";var omcategory= "Cus
 <script src="http://c.shld.net/staticassets/versions/sears/js/s_code_combined.js" type="text/javascript"></script>
 		<script>
 
-		/* Omniture function to update prop and evar values on page load */
-		updateOmnitureValues();
+		$( window ).load(function() {
+ 	/* Omniture function to update prop and evar values on page load */
+updateOmnitureValues();
+});
+
 
 	</script>
 	<noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http:///b/ss/searscom/1/H.9--NS/0" height="1" width="1" border="0" alt=""/></a></noscript><!--/DO NOT REMOVE/-->
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '408p' -->
+<!-- Publish Server: '410p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
