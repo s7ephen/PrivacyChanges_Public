@@ -34,7 +34,10 @@
   </script>
   <script src="//use.typekit.net/lqk3qcq.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" type="text/css" href="/css/app.css?v=1.0.2">
+  <link rel="stylesheet" type="text/css" href="/css/app.css?v=1.0.5">
+  <!-- ko if: pageCanonicalUrl -->
+  <link rel="canonical" data-bind="attr: {href: pageCanonicalUrl}">
+  <!-- /ko -->
 </head>
 <body data-bind="css: { 'like-button': showLikeButton }">
 <!--[if lt IE 9]>
@@ -55,7 +58,7 @@
   document.createElement("search-overlay");
   document.createElement("video-player");
 </script>
-<script id="mainjs" data-main="/js/main.js?v=1.0.2" src="/vendor/require.js"></script>
+<script id="mainjs" data-main="/js/main.js?v=1.0.5" src="/vendor/require.js"></script>
 <!-- ko if: showLikeButton() && currentLikeButton() -->
 <div data-bind="component: currentLikeButton"></div>
 <!-- /ko -->
