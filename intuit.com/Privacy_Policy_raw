@@ -119,14 +119,6 @@ openCookieDisableMessage('/dotcom/jsp/global/cookieDisabledMessage.jsp?cookieMsg
 openContextChooser('/dotcom/jsp/checkout/contextChooser.jsp');
 }
 
-$.ajax( {
-type : "GET",
-url : "/dotcom/jsp/browse/common/personalization.jsp",
-dataType : "html",
-error : dataError,
-success : function(data) {
-}
-});
 });
 function dataError(){
 //alert('Error!!');
@@ -143,14 +135,7 @@ function dataError(){
 
 <link rel="alternate" href="http://m.jcpenney.com" />
 
-
-                  <script type="text/javascript">
-                    var AKSB=AKSB||{};AKSB.q=[];AKSB.mark=function(c,a){AKSB.q.push(["mark",c,a||(new Date).getTime()])};AKSB.measure=function(c,a,b){AKSB.q.push(["measure",c,a,b||(new Date).getTime()])};AKSB.done=function(c){AKSB.q.push(["done",c])};AKSB.mark("firstbyte",(new Date).getTime());
-                    AKSB.prof={custid:"399520",ustr:"",originlat:0,clientrtt:1,ghostip:"96.6.47.37",ipv6:false,pct:10,xhrtest:false,clientip:"52.2.142.173",requestid:"1a4a9c",protocol:"",akM:"b",akN:"ae"};
-                    (function(c){var a=document.createElement("iframe");a.src="javascript:false";(a.frameElement||a).style.cssText="width: 0; height: 0; border: 0; display: none";var b=document.getElementsByTagName("script"),b=b[b.length-1];b.parentNode.insertBefore(a,b);a=a.contentWindow.document;b=String.fromCharCode;c=b(60)+"body onload=\"var js = document.createElement('script');js.id = 'aksb-ifr';js.src = '"+c+"';document.body.appendChild(js);\""+b(62);a.open().write(c);a.close()})(("https:"===document.location.protocol?
-                    "https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js");
-                  </script>
-                  </head>
+</head>
 <body>
 
 
@@ -168,9 +153,9 @@ var contextRootForURLs = '';
 <script type="text/javascript" src="/dotcom/js/lib/eluminate.js?v=2015.6.1.14.0"></script>
 <fieldset>
 <input type="hidden" id="context" value="/dotcom" />
-<input type="hidden" id="hiddenShipToCountry" value="FR" />
-<input type="hidden" id="hiddenFrontLoadCoefficient" value="1.25" />
-<input type="hidden" id="hiddenExchangeRate" value="0.941824" />
+<input type="hidden" id="hiddenShipToCountry" value="US" />
+<input type="hidden" id="hiddenFrontLoadCoefficient" value="0.0" />
+<input type="hidden" id="hiddenExchangeRate" value="0.0" />
 </fieldset>
 
 <div class="holder">
@@ -256,7 +241,7 @@ no saved items
 <a id="usrName" class="jcp_header_list_items" title="my account" onclick="setIsHeaderFlag();" href="/jsp/profile/secure/myAccount.jsp">Hello &nbsp;</a>
 </li>
 <li class="pipe jcp_header_list_sep_pipe">
-<form id="logoutForm" action="/jsp/profile/logout.jsp?_DARGS=/dotcom/jsp/global/signInHeader.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-8913908682374432802" type="hidden"/> </div><fieldset>
+<form id="logoutForm" action="/jsp/profile/logout.jsp?_DARGS=/dotcom/jsp/global/signInHeader.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-1219844577299323616" type="hidden"/> </div><fieldset>
 <p><a onclick="setIsHeaderFlag();doLogOut();" title="sign out" href="javascript:void(signOut);">(<span class="blueLink">sign out</span>)</a></p>
 <input id="logoutSuccessURL" name="/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value="/jsp/profile/logout.jsp" type="hidden"/><input name="_D:/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value=" " type="hidden"/><input name="/atg/userprofiling/ProfileFormHandler.logout" value="submit" type="hidden"/><input name="_D:/atg/userprofiling/ProfileFormHandler.logout" value=" " type="hidden"/></fieldset>
 <div style="display:none"><input name="_DARGS" value="/dotcom/jsp/global/signInHeader.jsp" type="hidden"/> </div></form></li>
@@ -314,7 +299,7 @@ var userName = getCookie("DP_USER_NAME");
 var userState = getCookie("DP_USER_STATE");
 var favCount = getCookie("DP_USER_FAVCOUNT");
 var rewarsPoints = getCookie("rewardsPointsCookie");
-var country = 'FR';
+var country = 'US';
 if(country == null || country == '' ||country == 'undefined'){
 country = 'US';
 }
@@ -467,10 +452,10 @@ cmCreateManualPageviewTag(pageId, categoryId,window.location.href,document.refer
 
 <div class="hide_display" style="display:none" id="enablePageLoadTracker">true</div>
 <div class="hide_display" style="display:none" id="ipAddress"></div>
-<div class="hide_display" style="display:none" id="orderId">L13927904946</div>
+<div class="hide_display" style="display:none" id="orderId">C13817770794</div>
 <div id="shopping_bag_flyout_content">
 </div>
-<form id="bagContents" action="/dotcom/jsp/cart/shoppingBagPreview.jsp"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-8913908682374432802" type="hidden"/> </div></form>
+<form id="bagContents" action="/dotcom/jsp/cart/shoppingBagPreview.jsp"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-1219844577299323616" type="hidden"/> </div></form>
 <script type="text/javascript" src="/dotcom/js/bumperSiteLists.js?v=2015.6.1.14.0"></script>
 <script type="text/javascript">
 var cartDataLoaded;
@@ -619,7 +604,7 @@ defaultImage:''
 var trueClientIPPresent = true;
 var contextRootForURLs = '';
 </script>
-<form id="keywordSearch" action="/jsp/search/searchSubmit.jsp" onsubmit="return submitForm();"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input value="-8913908682374432802" type="hidden"/> </div><fieldset>
+<form id="keywordSearch" action="/jsp/search/searchSubmit.jsp" onsubmit="return submitForm();"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input value="-1219844577299323616" type="hidden"/> </div><fieldset>
 
 <input id="searchType" type="hidden" name="searchType" value=""/>
 <p><input autocomplete="off" name="searchTerm" id="searchTerm" type="text" value="enter search term or web id" maxlength="175" class="searchT flt_lft search_input"
@@ -721,8 +706,8 @@ $(".jcp_search .header_search .search_input").css("color", "#000000");
 </div>
 </div>
 
-<form action="/dotcom/jsp/global/" class="frm_item flt_lft"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-8913908682374432802" type="hidden"/> </div><fieldset>
-<input id="shipToCountry" name="/atg/userprofiling/Profile.shipToCountry" value="FR" type="hidden"/><input name="_D:/atg/userprofiling/Profile.shipToCountry" value=" " type="hidden"/></fieldset>
+<form action="/dotcom/jsp/global/" class="frm_item flt_lft"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-1219844577299323616" type="hidden"/> </div><fieldset>
+<input id="shipToCountry" name="/atg/userprofiling/Profile.shipToCountry" value="US" type="hidden"/><input name="_D:/atg/userprofiling/Profile.shipToCountry" value=" " type="hidden"/></fieldset>
 <div style="display:none"><input name="_DARGS" value="/dotcom/jsp/global/globalNavHeader.jsp" type="hidden"/> </div></form>
 <div class="shopping_cart flt_rgt">
 
@@ -741,9 +726,9 @@ $(".jcp_search .header_search .search_input").css("color", "#000000");
 </div>
 <div id="userNetworkInfo" style="display:none">
 ***************************************************
-HOST NAME :-> lenldtabepr1p02.jcpenney.com
-SERVER NAME :-> dtbotexpr1l2j1
-TIME :-> Thu Sep 03 07:48:58 CDT 2015
+HOST NAME :-> colldtabepr1p01.jcpenney.com
+SERVER NAME :-> dtbotexpr1c1j6
+TIME :-> Thu Sep 03 04:20:01 CDT 2015
 ***************************************************
 </div>
 
@@ -1369,24 +1354,6 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-jcpenney_homepage-
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Using Common Content targeter to render. -->
 <!-- render international content only if its not rendered in the previous loop-->
 
@@ -1409,39 +1376,12 @@ return $(img);
 <!-- render the default content from common content targeter if nothing gets rendered from the above code -->
 
 
-
-
-
-
-
-
-
-
-
 </p>
 </div>
 </div>
 <div class="content flt_wdt">
 <div class="row t1_welcome_page_container">
 <div class="welcome_image_container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1459,20 +1399,13 @@ return $(img);
 
 
 <div class="ck_edit_content">
-<p><link rel="stylesheet" href="/dotcom/images/39200052_09042015/css/main.css" type="text/css" media="screen"><!--[if IE 8]><div id="jcpd" class="no-js lt-ie10 lt-ie9"><![endif]--><!--[if IE 9]><div id="jcpd" class="no-js lt-ie10"><![endif]--><div id="jcpd" class="no-js"><div class="hp-wrapper"><div class="offer no-text"><h3>$10 Off* $25 or More</h3><p>In Store and Online</p><p>Ends September 7 | Code: PICNIC4U</p><a class="print-coupon" href="https://e.jcpenney.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGmKzgInWogYIzazbHpPYzfBMrquIOzfzbW6SCVXMtX%3DWQpglLjHJlYQGhohzgCn19vk1zehukzfXzbPHhYlB34eya6&_ei_=ElYkuP8">Print Coupon</a><h3>Or, Extra 20% Off* with your JCPenney Credit Card</h3><p>In Store and Online</p><p>Ends September 7 | Code: PARADE4U</p><h3>Or, Extra 15% Off* with any other method of payment</h3><p>Online Only</p><p>Ends September 7 | Code: PARADE4U</p><h3>Or, Extra 10% Off* select watches, salon products, furniture, mattresses and custom blinds and shades.</h3><p>In Store and Online</p><p>Ends September 7 | Code: PARADE4U</p><p>*Credit offers subject to credit approval. All offers apply to select, orig, reg, sale and clearance-priced items.</p><a class="offer-details" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40027100018&cm_re=S2-_-M2-_-PARADE4U_CTR2">*See exclusions and details.</a></div><div class="header"><div class="slide-nav"><ul><li class="nav-link-1 active"><h3>star wars&trade;<br>force friday</h3></li><li class="nav-link-2"><h3>labor day<br>sale &amp;<br>clearance</h3></li><li class="nav-link-3"><h3>labor day<br>home sale<br><span>30-50% off</span></h3><p>select styles</p></li><li class="nav-link-4"><h3>new<br>markdowns<br>clearance<br><span>50-80% off</span></h3></li></ul></div><div class="flexslider slideshow no-text"><ul class="slides"><li class="slide-1"><h3>Star Wars&trade; Force Friday</h3><p>An all new generation has arrived. Be ready in full force</p><a class="starwars" href="/jsp/browse/category.jsp?id=cat1005250002&cm_re=S2-_-CAT-_-STARWARS_CTR3">Shop all Star Wars</a><p>11.99, 2 for $20, Guys' Star Wars Graphic Tees</p><p>Select styles</p><a class="guys-of" href="men/shop-clothing/t-shirts-tanks/graphic-t-shirts/star-wars/_/N-gl5k1hZ5xn/cat.jump?id=cat1002990005&deptId=dept20000014&cm_re=s2-_-CAT-_-guys_star_wars_tees_CTR3">&nbsp;</a> <a class="guys" href="men/shop-clothing/t-shirts-tanks/graphic-t-shirts/star-wars/_/N-gl5k1hZ5xn/cat.jump?id=cat1002990005&deptId=dept20000014&cm_re=s2-_-CAT-_-guys_star_wars_tees_CTR3">Shop Guys</a><p>11.99 Juniors' Star Wars Graphic Tees</p><p>Select styles</p><a class="juniors-of" href="juniors-guys/view-all-juniors/graphic-tees/cat.jump?id=cat100250156&deptId=dept20023450025&cm_re=S2-_-CAT-_-StarwarsJrsgraphictee_CTR3">&nbsp;</a> <a class="juniors" href="juniors-guys/view-all-juniors/graphic-tees/cat.jump?id=cat100250156&deptId=dept20023450025&cm_re=S2-_-CAT-_-StarwarsJrsgraphictee_CTR3">Shop Juniors</a><p>40% Off Kids' Star Wars Tees</p><p>Select styles</p><a class="kids-of" href="shops/star-wars/girls/boys/shirts-tops/_/N-gmhzv6Ze6Ze5Z1z140sb/cat.jump?id=cat1005250002&cm_re=S2-_-CAT-_-KIDS_STARWARS_CTR3">&nbsp;</a> <a class="kids" href="shops/star-wars/girls/boys/shirts-tops/_/N-gmhzv6Ze6Ze5Z1z140sb/cat.jump?id=cat1005250002&cm_re=S2-_-CAT-_-KIDS_STARWARS_CTR3">Shop Kids</a></li><li class="slide-2"><h3>Labor Day Sale and Clearance</h3><p>In Store and Online | Ends Monday, 9/7</p><a class="shop-sale" href="/jsp/browse/department.jsp?id=dept20025530023&cm_re=S2-_-DEPT-_-SALE_CTR4">Shop the Labor Day Sale and Clearance</a> <a class="view-ad" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40030000010&flyer_type_name=circular&flyer_run_id=73161&cm_re=S2-_-M2-_-STOREAD_CTR4">View Store Ad</a> <a class="men" href="men/sale/cat.jump?id=cat100560017&deptId=dept20000014&cm_re=S2-_-CAT-_-mens_sale_CTR4">Shop Men</a> <a class="women" href="women/sale/cat.jump?id=cat100590006&deptId=dept20000013&cm_re=S2-_-CAT-_-womens_sale_CTR4">Shop Women</a> <a class="kids" href="kids/sale/cat.jump?id=cat100260131&deptId=dept20000016&cm_re=S2-_-CAT-_-KIDS_SALE_CTR4">Shop Kids</a> <a class="baby" href="baby/sale/cat.jump?id=cat100260127&deptId=dept20000017&cm_re=S2-_-CAT-_-BABY_SALE_CTR4">Shop Baby</a> <a class="shoes" href="shoes/sale/cat.jump?id=cat100580056&deptId=dept20000018&cm_re=S2-_-CAT-_-SHOP_SHOES_SALE_CTR4">Shop Shoes</a> <a class="juniors" href="juniors/dept.jump?id=dept20023450025&cm_re=S2-_-CAT-_-JRS_CTR4">Shop Juniors</a> <a class="guys" href="juniors-guys/view-all-guys/cat.jump?id=cat100250145&subcatId=&deptId=dept20000014&null&cm_re=s2-_-CAT-_-shop_guys_CTR4">Shop Guys</a> <a class="home" href="for-the-home/dept.jump?id=dept20000011&cm_re=S2-_-CAT-_-home_sale_CTR4">Shop Home</a> <a class="jewelry" href="jewelry-watches/sale/cat.jump?id=cat1003600020&deptId=dept20000020&cm_re=S2-_-DIM-_-HUBSALE_CTR4">Shop Jewelry</a> <a class="accessories" href="handbags-accessories/sale/cat.jump?id=cat100590060&deptId=dept20000019&cm_re=S2-_-CAT-_-ACCESSORIES_CTR4">Shop Accessories</a></li><li class="slide-3"><h3>Labor Day</h3><p>40 to 60% Off Furniture and Mattresses + Extra 10% Off* With Coupon</p><a class="shop-furn" href="for-the-home/furniture/cat.jump?id=cat100240019&deptId=dept20000011&cm_re=S2-_-CAT-_-furniture_CTR5">Shop Furniture and Mattresses</a><p>Home Sale 30 to 50% Off select styles</p><a class="shop-sale" href="for-the-home/dept.jump?id=dept20000011&cm_re=S2-_-CAT-_-HOME_SALE_CTR5">Shop Home Sale</a> <a class="shop-bed" href="bed-bath/dept.jump?id=dept20000012&cm_re=S2-_-CAT-_-BEDBATH_CTR5">Shop Bedding and Bath</a> <a class="shop-window" href="window/dept.jump?id=dept20022800026&&cm_re=S2-_-CAT-_-WINDOW_CTR5">Shop Window</a> <a class="shop-kitchen" href="for-the-home/kitchen-dining/cat.jump?id=cat100240016&deptId=dept20000011&cm_re=S2-_-CAT-_-Kitchen_Dining_CTR5">Shop Kitchen and Dining</a> <a class="shop-decor" href="for-the-home/home-decor/cat.jump?id=cat100240022&deptId=dept20000011&cm_re=S2-_-CAT-_-home_decor_CTR5">Shop Home Decor</a> <a class="shop-luggage" href="for-the-home/luggage-backpacks/cat.jump?id=cat100210003&deptId=dept20000011&cm_re=S2-_-CAT-_-luggage_CTR5">Shop Luggage</a><h3>Special Promotional Financing**</h3><p>Available for furniture and mattresses when you use your JCPenney Credit Card.</p><a class="offer-tails" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40028300009&cm_re=S2-_-m2-_-promo_financing_CTR5">**See exclusions and details:</a></li><li class="slide-4"><h3>Clearance 50 to 80% Off</h3><p>In Store and Online | New Markdowns!</p><a class="shop-clearance" href="clearance/dept.jump?id=dept20021210041&cm_re=S2-_-DEPT-_-CLEARANCE_CTR6">Shop Clearance</a> <a class="women" href="women/clearance/cat.jump?id=cat100590008&deptId=dept20000013&cm_re=S2-_-CAT-_-WOMEN CLEARANCE_CTR6">Shop Women</a> <a class="men" href="men/clearance/cat.jump?id=cat100560018&deptId=dept20000014&cm_re=S2-_-CAT-_-mens_clearance_CTR6">Shop Men</a> <a class="kids" href="kids/clearance/cat.jump?id=cat100260132&deptId=dept20000016&cm_re=S2-_-CAT-_-kids_clearance_CTR6">Shop Kids</a> <a class="baby" href="baby/clearance/cat.jump?id=cat100260126&deptId=dept20000017&cm_re=S2-_-CAT-_-baby_clearance_CTR6">Shop Baby</a> <a class="shoes" href="shoes/clearance/cat.jump?id=cat100580057&deptId=dept20000018&cm_re=S2-_-CAT-_-SHOES_CLEARANCE_CTR6">Shop Shoes</a> <a class="jewelry" href="jewelry-watches/clearance/cat.jump?id=cat1003600022&deptId=dept20000020&cm_re=S2-_-CAT-_-HUBCLEARANCE_CTR6">Shop Jewelry and Watches</a> <a class="accessories" href="handbags-accessories/clearance/cat.jump?id=cat100440136&subcatId=&deptId=dept20021210041&null&cm_re=S2-_-CAT-_-ACCESSORIES_CTR6">Shop Handbags and Accessories</a> <a class="furniture" href="for-the-home/furniture/clearance/cat.jump?id=cat100560033&subcatId=cat100240019&deptId=dept20000011&cm_re=S2-_-CAT-_-FURNITURE_CLEARANCE_CTR6">Shop Furniture and Mattresses</a> <a class="decor" href="for-the-home/home-decor/clearance/cat.jump?id=cat100590297&subcatId=&deptId=dept20021210041&null&cm_re=S2-_-CAT-_-DECOR_CLEARANCE_CTR6">Shop Home Decor</a> <a class="bedding" href="bed-bath/clearance/cat.jump?id=cat100560072&subcatId=&deptId=dept20021210041&null&cm_re=S2-_-CAT-_-BEDBATH_CLEARANCE_CTR6">Shop Bedding and Bath</a> <a class="window" href="window/clearance/cat.jump?id=cat100560212&subcatId=&deptId=dept20021210041&null&cm_re=S2-_-CAT-_-WINDOW_CLEARANCE_CTR6">Shop Window</a> <a class="kitchen" href="for-the-home/kitchen-dining/clearance/cat.jump?id=cat100560065&subcatId=&deptId=dept20021210041&null&cm_re=S2-_-CAT-_-KITCHEN_CLEARANCE_CTR6">Shop Kitchen and Dining</a></li></ul></div></div><div class="just-for-you no-text"><h3>Just For You</h3><p>Discover personalized recommendations that fit your style.</p><a href="/jsp/browse/recommendation/recommendation.jsp?_requestid=819860&cm_re=S2-_-CAT-_-MY_RECS_CTR7">Try it now:</a></div><div class="marketing no-text"><h3>Carter&rsquo;s Baby Sale</h3><p>In Store and Online | Now Through September 27</p><p>40 to 50% Off Carter&rsquo;s Apparel and Sleepwear, select sizes</p><a class="carters" href="baby/carters/cat.jump?id=cat100260150&deptId=dept20000017&cm_re=S2-_-CAT-_-CARTERS_CTR8">Shop Carter&rsquo;s</a><p>15 to 25% Off Baby Furniture</p><a class="baby-furn" href="baby/baby-furniture/cat.jump?id=cat100260091&deptId=dept20000017&cm_re=S2-_-CAT-_-BABY_FURN_CTR8">Shop Baby Furniture</a><h3>Let's Talk Baby!</h3><p>Join the JCPenney + Carter's Twitter chat on 9/10 at 12pm CDT with #CartersChat</p></div><div class="footer no-text"><div><h3>College Colors Day</h3><p>September 4, 2015</p><a href="http://sportsfanshop.jcpenney.com/source/bm-JCP_homepage&cm_re=S2-_-CAT-_-homepage_sfs_CTR9">Shop Now</a></div><div><h3>It's Your Night: Homecoming 2015</h3><a href="homecoming/cat.jump?id=cat1003070071&subcatId=&deptId=dept20023450025&null&cm_re=S2-_-CAT-_-homecomingshop_CTR9">Shop Homecoming</a></div><div><h3>Back to School</h3><a href="/jsp/browse/department.jsp?id=cat1002910036&cm_re=S2-_-CAT-_-BTS_SHOP_CTR9">Find Your Style</a></div><div class="right-link"><h3>JCPenney Optical</h3><p>Kids' Eyeglasses for $29.99</p><a href="http://www.jcpenneyoptical.com/offers-discounts/?cm_re=S2-_-M2-_-optical_CTR9">Get Details</a></div></div></div></div><script type="text/javascript" src="/dotcom/images/39200052_09042015/js/main.js"></script></p>
+<p><link rel="stylesheet" href="/dotcom/images/39200031_09022015/css/main.css" type="text/css" media="screen"><!--[if IE 8]><div id="jcpd" class="no-js lt-ie10 lt-ie9"><![endif]--><!--[if IE 9]><div id="jcpd" class="no-js lt-ie10"><![endif]--><div id="jcpd" class="no-js"><div class="hp-wrapper"><div class="offer no-text"><h3>$10 Off* $25 or More</h3><p>In Store and Online</p><p>Ends September 7 | Code: PICNIC4U</p><a class="print-coupon" href="https://e.jcpenney.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DWQpglLjHJlYQGmKzgInWogYIzazbHpPYzfBMrquIOzfzbW6SCVXMtX%3DWQpglLjHJlYQGhohzgCn19vk1zehukzfXzbPHhYlB34eya6&_ei_=ElYkuP8">Print Coupon</a><h3>Or, Extra 20% Off* with your JCPenney Credit Card</h3><p>In Store and Online</p><p>Ends September 7 | Code: PARADE4U</p><h3>Or, Extra 15% Off* with any other method of payment</h3><p>Online Only</p><p>Ends September 7 | Code: PARADE4U</p><h3>Or, Extra 10% Off* select watches, salon products, furniture, mattresses and custom blinds and shades.</h3><p>In Store and Online</p><p>Ends September 7 | Code: PARADE4U</p><p>*Credit offers subject to credit approval. All offers apply to select, orig, reg, sale and clearance-priced items.</p><a class="offer-details" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40027100018&cm_re=S2-_-M2-_-PARADE4U_CTR2">*See exclusions and details.</a></div><div class="header"><div class="slide-nav"><ul><li class="nav-link-1 active"><h3>starts now<br>labor day<br>sale</h3></li><li class="nav-link-2"><h3>labor day<br>home sale<br><span>30-50% off</span></h3><p>select styles</p></li><li class="nav-link-3"><h3>one day<br>clearaway!<br><span>up to 80% off</span></h3></li><li class="nav-link-4"><h3>carter&rsquo;s<br>baby sale<br><span>40-50% off</span></h3><p>select styles</p></li></ul></div><div class="flexslider slideshow no-text"><ul class="slides"><li class="slide-1"><h3>Labor Day Sale and Clearance</h3><p>In Store and Online | Starts Now!</p><a class="shop-sale" href="/jsp/browse/department.jsp?id=dept20025530023&cm_re=S2-_-DEPT-_-SALE_CTR3">Shop the Labor Day Sale and Clearance</a> <a class="view-ad" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40030000010&flyer_type_name=circular&flyer_run_id=73161&cm_re=S2-_-M2-_-STOREAD_CTR3">View Store Ad</a> <a class="men" href="men/sale/cat.jump?id=cat100560017&deptId=dept20000014&cm_re=S2-_-CAT-_-mens_sale_CTR3">Shop Men</a> <a class="women" href="women/sale/cat.jump?id=cat100590006&deptId=dept20000013&cm_re=S2-_-CAT-_-womens_sale_CTR3">Shop Women</a> <a class="kids" href="kids/sale/cat.jump?id=cat100260131&deptId=dept20000016&cm_re=S2-_-CAT-_-KIDS_SALE_CTR3">Shop Kids</a> <a class="baby" href="baby/sale/cat.jump?id=cat100260127&deptId=dept20000017&cm_re=S2-_-CAT-_-BABY_SALE_CTR3">Shop Baby</a> <a class="shoes" href="shoes/sale/cat.jump?id=cat100580056&deptId=dept20000018&cm_re=S2-_-CAT-_-SHOP_SHOES_SALE_CTR3">Shop Shoes</a> <a class="juniors" href="juniors/dept.jump?id=dept20023450025&cm_re=S2-_-CAT-_-JRS_CTR3">Shop Juniors</a> <a class="guys" href="juniors-guys/view-all-guys/cat.jump?id=cat100250145&subcatId=&deptId=dept20000014&null&cm_re=s2-_-CAT-_-shop_guys_CTR3">Shop Guys</a> <a class="home" href="for-the-home/dept.jump?id=dept20000011&cm_re=S2-_-CAT-_-home_sale_CTR3">Shop Home</a> <a class="jewelry" href="jewelry-watches/sale/cat.jump?id=cat1003600020&deptId=dept20000020&cm_re=S2-_-DIM-_-HUBSALE_CTR3">Shop Jewelry</a> <a class="accessories" href="handbags-accessories/sale/cat.jump?id=cat100590060&deptId=dept20000019&cm_re=S2-_-CAT-_-ACCESSORIES_CTR3">Shop Accessories</a></li><li class="slide-2"><h3>Labor Day</h3><p>40 to 60% Off Furniture and Mattresses + Extra 10% Off* With Coupon</p><a class="shop-furn" href="for-the-home/furniture/cat.jump?id=cat100240019&deptId=dept20000011&cm_re=S2-_-CAT-_-furniture_CTR4">Shop Furniture and Mattresses</a><p>Home Sale 30 to 50% Off select styles</p><a class="shop-sale" href="for-the-home/dept.jump?id=dept20000011&cm_re=S2-_-CAT-_-HOME_SALE_CTR4">Shop Home Sale</a> <a class="shop-bed" href="bed-bath/dept.jump?id=dept20000012&cm_re=S2-_-CAT-_-BEDBATH_CTR4">Shop Bedding and Bath</a> <a class="shop-window" href="window/dept.jump?id=dept20022800026&&cm_re=S2-_-CAT-_-WINDOW_CTR4">Shop Window</a> <a class="shop-kitchen" href="for-the-home/kitchen-dining/cat.jump?id=cat100240016&deptId=dept20000011&cm_re=S2-_-CAT-_-Kitchen_Dining_CTR4">Shop Kitchen and Dining</a> <a class="shop-decor" href="for-the-home/home-decor/cat.jump?id=cat100240022&deptId=dept20000011&cm_re=S2-_-CAT-_-home_decor_CTR4">Shop Home Decor</a> <a class="shop-luggage" href="for-the-home/luggage-backpacks/cat.jump?id=cat100210003&deptId=dept20000011&cm_re=S2-_-CAT-_-luggage_CTR4">Shop Luggage</a><h3>Special Promotional Financing**</h3><p>Available for furniture and mattresses when you use your JCPenney Credit Card.</p><a class="offer-tails" href="/jsp/browse/marketing/promotion.jsp?pageId=pg40028300009&cm_re=S2-_-m2-_-promo_financing_CTR4">**See exclusions and details:</a></li><li class="slide-3"><h3>One Day | In Store | Clearaway!</h3><p>In store only! Wednesday, September 2 | Stores Open at 10AM</p><p>Up to 80% Off | Bigger Markdowns on Clearance</p><p>Plus, find new markdowns 50 to 80% Off In Store and Online</p><a class="shop-clearance" href="clearance/dept.jump?id=dept20021210041&cm_re=S2-_-DEPT-_-CLEARANCE_CTR5">Shop Clearance</a> <a class="find-a-store" href="/jsp/storelocator/storeResults.jsp?_requestid=1380294&cm_re=S2-_-CS-_-LOCATOR_CTR5">Find a Store</a></li><li class="slide-4"><h3>Carter&rsquo;s Baby Sale</h3><p>In Store and Online | Now Through September 27</p><p>40 to 50% Off Carter&rsquo;s Apparel and Sleepwear, select styles</p><a class="carters" href="baby/carters/cat.jump?id=cat100260150&deptId=dept20000017&cm_re=S2-_-CAT-_-CARTERS_CTR6">Shop Carter&rsquo;s</a><p>15 to 25% Off Baby Furniture</p><a class="baby-furn" href="baby/baby-furniture/cat.jump?id=cat100260091&deptId=dept20000017&cm_re=S2-_-CAT-_-BABY_FURN_CTR6">Shop Baby Furniture</a></li></ul></div></div><div class="marketing no-text"><img src="/dotcom/images/39200031_09022015/img/marketing_animation.gif" alt="Homecoming Animation"><h3>40% Off Homecoming</h3><p>It's Your Night</p><a href="homecoming/cat.jump?id=cat1003070071&subcatId=&deptId=dept20023450025&null&cm_re=S2-_-CAT-_-homecomingshop_CTR8">Shop all Homecoming</a></div><div class="footer no-text"><div><h3>Star Wars&trade;</h3><a href="/jsp/browse/category.jsp?id=cat1005250002&cm_re=S2-_-CAT-_-STARWARS_CTR9">Shop Star Wars</a></div><div><h3>College Colors Day</h3><p>September 4, 2015</p><a href="http://sportsfanshop.jcpenney.com/source/bm-JCP_homepage&cm_re=S2-_-CAT-_-homepage_sfs_CTR9">Shop Now</a></div><div><h3>Back to School</h3><a href="/jsp/browse/department.jsp?id=cat1002910036&cm_re=S2-_-CAT-_-BTS_SHOP_CTR9">Find Your Style</a></div><div class="right-link"><h3>JCPenney Optical</h3><p>Kids' Eyeglasses for $29.99</p><a href="http://www.jcpenneyoptical.com/offers-discounts/?cm_re=S2-_-M2-_-optical_CTR9">Get Details</a></div></div></div></div><script type="text/javascript" src="/dotcom/images/39200031_09022015/js/main.js"></script></p>
 </div>
 
 
+<!-- render international content only if its not rendered in the previous loop-->
+
 <!-- render the default content from common content targeter if nothing gets rendered from the above code -->
-
-
-
-
-
-
-
-
-
 
 
 </div>
@@ -1796,7 +1729,7 @@ var contextRootForURLs = '';
 <div id="emailOffers">
 <h3>Sign up for email alerts, offers promotions</h3>
 <div class="jcp-footer-promo-input-container">
-<form id="emailOptinForm" action="/dotcom/jsp/global/cache/optinFooterEmail.jsp?_DARGS=/dotcom/jsp/global/cache/optinFooterEmail.jsp" class="jcp_form" method="post" onsubmit="return detectEnterKey('email');"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-8913908682374432802" type="hidden"/> </div>
+<form id="emailOptinForm" action="/dotcom/jsp/global/cache/optinFooterEmail.jsp?_DARGS=/dotcom/jsp/global/cache/optinFooterEmail.jsp" class="jcp_form" method="post" onsubmit="return detectEnterKey('email');"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-1219844577299323616" type="hidden"/> </div>
 
 <label for="optinEmail" id="emailLabel" class='floatL '>
 <input id="optinEmail" maxlength="70" name="email" onblur="if(this.value == '') { this.value = 'enter email address';}" value="enter email address" class="jcp-footer-promo-input" onclick="clearErrorState('optinEmail')" onfocus="if(this.value == 'enter email address') { this.value = '';}" type="text"/><input name="_D:email" value=" " type="hidden"/>
@@ -1816,7 +1749,7 @@ var contextRootForURLs = '';
 <div id="phoneOffers">
 <h3>Mobile offers and promotions</h3>
 <div class="jcp-footer-promo-input-container">
-<form id="mobileOptinForm" action="/dotcom/jsp/global/cache/optinFooterMobile.jsp?_DARGS=/dotcom/jsp/global/cache/optinFooterMobile.jsp" class="jcp_form" method="post" onsubmit="return detectEnterKey('mobile');"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-8913908682374432802" type="hidden"/> </div>
+<form id="mobileOptinForm" action="/dotcom/jsp/global/cache/optinFooterMobile.jsp?_DARGS=/dotcom/jsp/global/cache/optinFooterMobile.jsp" class="jcp_form" method="post" onsubmit="return detectEnterKey('mobile');"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-1219844577299323616" type="hidden"/> </div>
 
 <label for="mobileno" class='floatL ' id="mobileLabel">
 <input id="optinMobileno" name="mobileno" onblur="if(this.value == '') { this.value = 'enter phone number';}" value="enter phone number" class="jcp-footer-promo-input" onclick="clearErrorState('optinMobileno')" onfocus="if(this.value == 'enter phone number') { this.value = '';}" type="text"/><input name="_D:mobileno" value=" " type="hidden"/></label>
@@ -2203,43 +2136,6 @@ $('#descriptionTextCopy table').height('100%').css('margin-bottom', '12px');
 var displayIntlShippingModal = true;
 </script>
 
-
-<script type="text/javascript">
-function wlcme51func(url) {
-var wlcme51 = document.createElement("script");
-wlcme51.src = url;
-wlcme51.type = "text/javascript";
-document.getElementsByTagName("head")[0].appendChild(wlcme51);
-}
-// Drop / Check for cookie to ensure visitor only sees Welcome Mat once per session
-function isWelcome() {
-var c_name = 'wlcme';
-if (document.cookie.length > 0) {
-c_start = document.cookie.indexOf(c_name + "=");
-if (c_start != -1) {
-c_start = c_start + c_name.length + 1;
-c_end = document.cookie.indexOf(";", c_start);
-if (c_end == -1) c_end = document.cookie.length;
-return unescape(document.cookie.substring(c_start, c_end));
-}
-}
-return "";
-}
-// If first page view per session, launch the Welcome Mat
-if (are_cookies_enabled() == true && !isWelcome()) {
-var ordVid = getVidFromCookie();
-var mmcAttributeArray = getMarketingAttributeFromCookie();
-var countryCode = 'FR';
-var currencyCode = 'EUR'
-var attribute = '-_-'+'-_-'+'-_-'+ordVid+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+countryCode+'-_-'+currencyCode+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+'-_-'+mmcAttributeArray[0]+'-_-'+mmcAttributeArray[1]+'-_-'+mmcAttributeArray[2]+'-_-'+mmcAttributeArray[3];
-cmSetClientID("90024642",false,"www88.jcpenney.com","jcpenney.com");
-cmSetupOther({"cm_FormPageID":true});
-cmCreatePageviewTag("CountryWelcome","JCP|Welcome","","",attribute,"");
-if (displayIntlShippingModal) {
-wlcme51func("https://embassy.fiftyone.com/welcome/welcome.srv?merchId=3001&countryId=FR&setCookie=Y");
-}
-}
-</script>
 
 </div>
 </div>
