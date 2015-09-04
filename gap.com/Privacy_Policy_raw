@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/04/2015 05:31 PM",
+            DATE_IN_USE: "09/04/2015 07:04 PM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -10038,7 +10038,7 @@ function validateFormGFOL()
 	
 	<script type="text/javascript" src="/gid/js/common/layouts/en/reporting/sCode.js"></script>
 	 <script type="text/javascript">
-	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "9712387,9058692,9712385,9894771,9894937,10131655,9712387,10130952,10130955,10130957,9938486";
+	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "9712387,9712385,9894771,9894937,10131655,9712387,10130952,10130955,10130957,9938486";
 	 </script>
 	
 	<noscript>
@@ -10449,73 +10449,6 @@ function validateFormGFOL()
 
 
 <div id="siteWideBusinessCodeBody"><!-- @TemplateContentLayout(templateRegionName:"gid.common.siteWide.businessCode.regionBottom") -->
-<!-- start onesite-611-->
-<script type="text/html" id="onesite-brandbar">
-  <div id="smBPLogo" class="newSmBPLogo needsclick">
-    <a href="/" class="needsclick">
-      <img src="/content/static-preview/grunticon-logos/png/gap.png" alt="gap home" class="needsclick"/>
-    </a>
-  </div>
-
-  <div class="static-edfs onesite">
-    <!-- BEGIN - WCD Sitewide Container 19 -->
-    <!-- BEGIN Content Item File: /content/0009/058/692/cn9058692.html -->
-<div id="contentItemContainer212630" class="9058692" >
-
-<div id="sm_bp_edfs_banner"><a href="#edfs" onclick="" rel="jbox" data-jbox-url="/buy/info.do?cid=47471" data-jbox-width="300" data-jbox-height="350" class="needsclick"><img src="/content/static/edfs/gol/gap_us.png" alt="Free shipping on all orders over $50. Free returns on all orders." width="100%" class="needsclick" /></a></div>
-
-
-</div>
-<!-- END Content Item File: /content/0009/058/692/cn9058692.html -->
-
-    <!-- END - WCD Sitewide Container 19 -->
-  </div> 
-
-</script>
-<!-- end onesite-611-->
-<style>
-/* new edfs banner */
-.static-edfs { display:none; margin-bottom: 1em;}
-/*#responsiveUniversalBar > .limit-width, 
-#responsiveUniversalBar > .edfs_for-sm { display: none; } // TAKE THIS OUT
- #smBPLogo {height: 37px;margin-left: auto;margin-right: auto; width: 249px;} */
-#smBPLogo {text-align: center; max-width: 177px; margin: 0.4em auto;}
-
-.breakpoint-medium .newSmBPLogo, .breakpoint-small .newSmBPLogo,
-.breakpoint-medium .static-edfs, .breakpoint-small .static-edfs { display: block;}
-
-.breakpoint-large .newSmBPLogo, .breakpoint-large .newSmBPLogo,
-.breakpoint-large .static-edfs, .breakpoint-large .static-edfs,
-.breakpoint-xlarge .newSmBPLogo, .breakpoint-xlarge .newSmBPLogo,
-.breakpoint-xlarge .static-edfs, .breakpoint-xlarge .static-edfs { display: none;}
-
-.breakpoint-medium #universalBar, .breakpoint-small #universalBar,
-.breakpoint-medium #storeLogoContainer, .breakpoint-small #storeLogoContainer {display:none !important; height: 0px;}
-
-/* FIX TO DIRECT CLASS TO THE CORRECT URL FOR BGD IMAGE 
-.sister-brands--sprite {
-  background-image: url(/Asset_Archive/static-content-preview/build/images/sprite/sister-brands-1x.png);
-}*/
-</style>
-
-<!--script>
-(function($) {
-  /* this is for the static edfs, logo and hiding universal bar in s bp*/
-
-  $(function () {
-    var shouldCare = /(order|orderConfirm|shopping_bag)\.do/.test(window.location.pathname) && $('.newSmBPLogo').length == 0,
-      universalBar;
-    var isASeg = gidLib.getCookie("ABSeg") === 'ASeg' || gidLib.getCookie("ABSeg") === 0;
-    if(shouldCare && isASeg) {
-      universalBar = $('#universalBar')[0] || $('#responsiveUniversalBar')[0];
-      $($("#onesite-brandbar").text())
-      .insertAfter(universalBar);
-    }
-
-  });
-
-})(jQuery);
-</script-->
 
 <!-- BEGIN - WCD Sitewide Container 16 -->
 <!-- BEGIN Content Item File: /content/0009/712/385/cn9712385.html -->
