@@ -57,7 +57,7 @@ document.write('<link href=\'http://fonts.googleapis.com/css?family=Lobster|Robo
 
 <!-- End MyBuys libraries and style sheet --><script type='text/javascript'>
 	
-		var ml_user = {"WME":"","email":"","customercode":"","lastVisit":"2015-09-03","merchTotal": "","basketValue":"","basketCount":"0","historicalPurchases":"","referredFrom":[],"customergroupsactive":[], "sourcecodes":[], "sourceIP":"52.2.142.173, 52.2.142.173, 198.143.34.1"};
+		var ml_user = {"WME":"","email":"","customercode":"","lastVisit":"2015-09-04","merchTotal": "","basketValue":"","basketCount":"0","historicalPurchases":"","referredFrom":[],"customergroupsactive":[], "sourcecodes":[], "sourceIP":"52.2.142.173, 52.2.142.173, 198.143.34.1"};
 
 </script><!-- start worldmarket_header_pixels.html -->
 <!-- rev 12.23.2014 | 1.06.2015 | 1.15.2015 | 1.19.2015 | 1.20.2015 | 1.26.2015 | 1.28.2015 | 2.16.2015 -->
@@ -786,136 +786,7 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 			</div>
 			<div class="globalNavTop">
 				<div class="fLeft promoSection2">
-					<!-- start wknn-promo-kiosk-template.html | rev 07.27.2015 ekw  | rev 08.05.2015 ekw | rev 08.07.2015 ekw -->
-<style>
-#cpwm_promo2 {}
-#cpwmMarketingPopup .closebutton {background:url(/images/misc/blank.gif) no-repeat; position:absolute; right:3px; top:3px; width:75px; height:25px; display:block; z-index:1000}
-#cpwmMarketingDisclaimer h3 {font-family: SofiaProBold,sans-serif; margin: 10px 0 5px 0;}
-#cpwmMarketingDisclaimer p {margin:10px 0 0 0; padding:0;}
-</style>
-<script type="text/javascript" language="javascript">
-(function(){
-	var isKiosk = false; 
-	var popupIsActive = false;       // [step 0] set to true if current CPWM promo includes a popup; otherwise set to false
-	var newCookie = "2015wk22";      // [step 1a] set standard promo cookie name with each new promo
-	var kioskCookie = "kiosk150727"; // [step 1b] set kiosk cookie name (if applicable)
-	var showPop = false;
-	var leftNavImage = "/text/promo-slots/2-left-of-search/2014/wk43/wk43-wmfs1502-leftnav.jpg";   // [step x] specify standard left nav image
-	var promo2topbanner = "/text/promo-slots/2-left-of-search/2014/wk43/wk43-promo2-wmfs1502.png"; // [step x] specify standard top banner image
-	var popupImage = "/text/promo-slots/2-left-of-search/2015/wk19/wk19_15off+FS100_popup.jpg";    // [step x] specify standard popup image
-	var promo2Disclaimer = "Free Shipping on orders $150+";    
-	var disclaimerID = "cpwmMarketingDisclaimer";
-	var isAOS = jQuery('#storeClerkToolBar').length != 0; // If this element exists on page, we are in AOS (associate order system) mode
-
-	// Test whether we are running on a store kiosk
-	if (jQuery.cookie(kioskCookie)) {
-		isKiosk = true;
-	} else if (location.search.indexOf("code=WMNYSHIP") >-1 ) {
-		isKiosk = true;
-		jQuery.cookie(kioskCookie, "seen", { path: "/", expires: 365});
-	}
-
-	// If we are in Kiosk mode, set up kiosk image and disclaimer.
-	// Otherwise, we are in standard promo mode. Use defaults (initialized above).
-	// Note: there is currently no popup for kiosk.
-	if (isKiosk) {
-		popupIsActive = false;
-		leftNavImage = "/text/promo-slots/2-left-of-search/2015/wk18/wk18-promo-kiosk-leftnav.jpg";
-		promo2Disclaimer = "Pay no more than $100 per purchase for shipping, surcharges included.";
-		promo2topbanner = "/text/promo-slots/2-left-of-search/2015/wk18/wk18-promo-kiosk-topbanner.png";
-		var disclaimerID = "kioskDisclaimer";
-	}
-
-	// block partner popups if we have an active promotion with popup OR we are in kiosk mode OR we are in AOS mode
-	window._cpwm_block_ups_stlhs = popupIsActive || isKiosk || isAOS; 
-
-	// if there is an active CPWM promo popup and this is a new cookie, enable popup and block partner popups
-	if (popupIsActive && !jQuery.cookie(newCookie)) {
-		showPop = true;
-	}
-
-	jQuery(function(){
-		// Set up top banner
-		jQuery ('#cpwm_promo2 img').attr('src', promo2topbanner);
-
-		// Set up Left Nav
-		// [] change leftnav width and height if needed.
-		if (jQuery('.navleftbg .leftPromoSlot').size() === 0) {
-			jQuery('<div style="background:url(/images/worldmarket/en_us/global/globalgraphics/fabric.png) repeat; padding-bottom:10px"><img src="" width="223" height="122" alt="" class="leftPromoSlot" style="cursor:pointer" title="Click for Details" /></div>').prependTo('td.navleftbg');
-			jQuery('.leftPromoSlot').attr('src', leftNavImage);
-		}		
-
-		var marketingPopup = jQuery('#cpwmMarketingPopup').simplePopup().hideCloseButton().makemodal();
-		var isHome = (jQuery('#homeSlides').length != 0) || (jQuery('#cpwmhome').length != 0);
-
-		console.log ("Home Page: " + isHome);
-		showPop = showPop && (jQuery('.revtrax').length == 0);
-
-		// Setup Image popup
-		if (location.pathname.indexOf("/admin/") >-1 ) return;
-
-		if (showPop) {
-			jQuery ('#cpwmMarketingPopup img').attr('src', popupImage);
-			marketingPopup.pop();
-			jQuery.cookie(newCookie, "seen", { path: "/", expires: 7} );
-		}
-
-
-		// Setup Disclaimer for PROMO2 and LeftNavPromoSlot
-		jQuery('#cpwm_promo2, .leftPromoSlot').click(function(){
-			openDialogInfo(disclaimerID, promo2Disclaimer); // Div ID disclaimer + Disclaimers Headline
-		});
-
-		// [3] Adjust parameters for Promo Popup if applicable. See step 5 for changing Popup image.
-		jQuery('#cpwmMarketingPopup').click(function(e){
-			var a = window.location.href;
-			var offset = jQuery(this).offset();
-			var relativeX = (e.pageX - offset.left);
-			var relativeY = (e.pageY - offset.top);
-			var threshold = 425; // [3a] hotspot offset from top of graphic; typical value is 345; use image height (typically 425) if entire graphic is a single hotspot
-
-			console.log ("User clicked at y-coordinate " + relativeY + " | threshold set to " + threshold);
-
-			// if user clicks above the threshold, go to URL, else stay on this page and apply promo code
-			if (relativeY > threshold) {
-				window.location.href = '/category/code/109530.do?coupon=ffship0987'; // [3b] set url eg /category/code/109530.do?coupon=sunnydays
-			}
-			else {
-				a += (a.indexOf('?')>1 ? "&":"?");
-				window.location.href =  a + 'code=HELLOJULY'; // [3c] change promo source code
-			}
-
-			return false;
-		});
-	});
-})()
-</script>
-
-<div id="cpwm_promo2">
-  <!-- [4] change promo2 image -->
-  <img src="" width="240" height="42" alt="" title="Click for Details" style="cursor:pointer"/>
-</div>
-
-
-<div id="cpwmMarketingPopup" style="display:none; cursor:pointer;">
-	<div class="closebutton"></div>
-	<!-- [5] change popup image -->
-    <img src="/text/promo-slots/2-left-of-search/2015/wk19/wk19_15off+FS100_popup.jpg" width="562" height="426" alt="Click to Apply Code" title="Click to APPLY CODE" />
-</div>
-
-
-<div id="cpwmMarketingDisclaimer" style="display:none; line-height:1.3">
-    <!-- [6] change disclaimer block -->
-	<!--<a href="/category/code/109847.do?wk6=wm-com">GET IN-STORE COUPON HERE &gt;</a>-->
-	<p class="promostd">Valid at worldmarket.com on ground shipping on a purchase of $150 or more, excluding items purchased for in-store pick-up, and before taxes, shipping, and handling. Delivery surcharges, and 2-day and overnight shipping charges still apply. Offer not valid in Alaska and Hawaii. Cannot be combined with other coupons. No adjustments to prior purchases.</p>
-</div>
-
-<div id="kioskDisclaimer" style="display:none; line-height:1.3">
-    <!-- [6] change disclaimer block -->
-	<p class="promokiosk">Valid at worldmarket.com on ground shipping. Orders must be placed in the Chelsea, Manhattan, NY Cost Plus World Market store on an associate’s tablet. Maximum shipping charge of $100 includes standard ground shipping fees and any applicable delivery surcharges. Excludes 2-day and overnight shipping orders, and orders shipping to Alaska and Hawaii. Cannot be combined with other shipping offers. No adjustments to prior purchases.</p>
-</div>
-<!-- start wknn-promo-kiosk-template.html -->
-</div>
+					 <div id="cpwm_promo2"></div></div>
 				<div class="fRight" id="globalcart_container" style="padding-right:0;background:none;"><div id="globalBasket" class="popDownWrapper globalCartWrapper">
 	<div class="popDownNav globalCartNav">
 		<div class="globalCartBasketImg">
@@ -1521,7 +1392,7 @@ http://www.omniture.com -->
     };
 
     function getSerializationID() {
-    	return "3439108";
+    	return "7150943";
     };
 </script>
 <!-- script language="JavaScript" type="text/javascript" src="/omniture/s_code.js"></script --> <!-- WOMA-2441 -->
