@@ -239,9 +239,10 @@ Help &amp; Support <span class="downArrow">&nbsp;&#9660;</span>
 </ul>
 </div>
 </li>
-<li class="login-bag-links"><a href="/user/login.jsp"></a>
-<span id="welcome-name-hidden" class="no-display">
-to Eddie Bauer</span>
+<li class="login-bag-links"><a href="/user/member-account.jsp"></a></li>
+<li class="login-bag-links"><a href="/user/logout.jsp?successUrl=/user/logout.jsp&_DARGS=/xhr/login-status-header.jsp_A&_DAV=logout&_dynSessConf=5625528708733990511"></a><div id="log-out-the-user" class="no-display">
+<form id="log-out-the-user-form" action="/includes/logout.jsp"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="5625528708733990511" type="hidden"></input><input name="/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value="/" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.logoutErrorURL" value="/?err=true" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logoutErrorURL" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.logout" value="true" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logout" value=" " type="hidden"><input name="_DARGS" value="/xhr/login-status-header.jsp.log-out-user" type="hidden"></input></form><a href="/user/logout.jsp?successUrl=/user/logout.jsp&_DARGS=/xhr/login-status-header.jsp.1_A&_DAV=logout&_dynSessConf=5625528708733990511">Sign Out</a></span>
+<span id="welcome-name-hidden" class="no-display">carol</span>
 </li>
 <li id="headShoppingHolder" class="clearfix login-bag-links">
 <img id="headBagIcon" class="left" src="/static/img/head-bag-icon.png" alt="Header Bag Icon Asset" />
@@ -331,13 +332,13 @@ alt="">
 </div>
 </form>
 <script type="text/javascript">
-if(false){
+if(true){
 var snapDefaultConfig = {
 accountId: "5034",
 authKey: "7n0es2mr3scz6ptx",
 domainKey: "eddiebauer_com",
 request_type: "suggest",
-enableSnapSearch: false,
+enableSnapSearch: true,
 minAutoSuggestInputLength: "3",
 delay: 250,
 autoSuggestServiceUrl: "http://brm-suggest-0.brsrvr.com/api/v1/suggest/",
@@ -1398,7 +1399,7 @@ Store Locator
 </div>
 <div id="footQuickOrder" class="separator-right blk-c">
 <h5>Catalog Quick Order</h5>
-<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="-8124156128067760769" type="hidden"></input><p>Enter a three-part item number.</p>
+<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="5625528708733990511" type="hidden"></input><p>Enter a three-part item number.</p>
 <fieldset class="formItem">
 <label for="deptMFT" class="visuallyhidden">Enter the first part of the item number</label>
 <input id="deptMFT" maxlength="3" placeholder="A00" data-error="" name="department" value="" class="text-input" type="text" autocomplete="off" aria-label="Catalog Quick Order Form Handler - Department"><input name="_D:department" value=" " type="hidden"><label for="effortMFT" class="visuallyhidden">Enter the second part of the item number</label>
@@ -1419,12 +1420,12 @@ Store Locator
 <h5>Help &amp; Support</h5>
 <ul class="nav-list">
 <li><a href="/custserv/customer-service-landing.jsp">Customer Service</a></li>
-<li><a href="/user/login.jsp?successUrl=/user/order-history.jsp">Order Status</a></li>
+<li><a href="/user/order-history.jsp">Order Status</a></li>
 <li><a href="/custserv/ask-eddie-email.jsp">Contact Us</a></li>
 <li><a href="/custserv/customer-service-returns-and-exchanges.jsp">Returns</a></li>
 <li><a href="/custserv/customer-service-shipping.jsp">Shipping</a></li>
 <li><a href="/custserv/customer-service-size-charts.jsp">Size Charts</a></li>
-<li><a href="/user/login.jsp?successUrl=/user/wishlist.jsp">Wish List</a></li>
+<li><a href="/user/wishlist.jsp">Wish List</a></li>
 <li><a href="/custserv/ask-eddie-email.jsp?subject=catalog">Request a Catalog</a></li>
 <li><a href="/view/shopping-index/index.html">Site Map</a></li>
 </ul>
@@ -1499,9 +1500,9 @@ Store Locator
 </div>
 <!--
 DO NOT REMOVE THIS []
-Server Name: 482318-rsatgprd02.eddiebauer.com:8853
-Profile: u630567861
-Order: A633736210
+Server Name: 482317-rsatgprd01.eddiebauer.com:8850
+Profile: u623185876
+Order: A633673562
 mode: 
 Server is alive... />
 -->
@@ -1511,7 +1512,7 @@ Server is alive... />
 <script src="/static/js/jquery/core_601_modified.js"></script>
 <script src="/static/js/jquery/options.js"></script>
 <script src="/static/js/eb-plugins.js"></script>
-<script src="/static/js/endeca-auto-suggest.js"></script>
+<script src="/static/js/snap-auto-suggest.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 EBGLOBAL.sessionTimeout.durationInMinutes = 30;
