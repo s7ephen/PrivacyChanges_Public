@@ -1986,34 +1986,35 @@ $(function() {
 		}
 	});
 	
-	var pageId = $.q('body').attr('id');
- 
-	
+	var pageId = $.q('body').attr('id'),
+	    getFile = function() {
+		console.log('SignalDataReady caught');
+		if (!shc.AdSenseJS) {
+		  FED.Util.addJsFile('//www.google.com/adsense/search/ads.js')
+		    .done(function() {
+			shc.doAdSense(pageId);
+			shc.AdSenseJS = true;
+		    });
+		}
+		else {
+		  shc.doAdSense(pageId);
+		}
+	    };
+
 	//include Adsense only only on search/pdp
-	if (['sears', 'kmart'].indexOf(shc.storeName) >= 0 && pageId === 'search-page' && $('#gnf_footer_GADS').length) {
-		$(window).on('SearchContentChanged', function() {
-			console.log('SearchContentChanged: Level=' + bt.levels);
-   			if (!shc.AdSenseJS) {
-			   FED.Util.addJsFile('//www.google.com/adsense/search/ads.js')
-					.done(function() {
-						shc.doAdSense(pageId);
-						shc.AdSenseJS = true;
-					});
-			}
-			else {
-				shc.doAdSense(pageId);
-			}
-		});
+	if (['sears', 'kmart'].indexOf(shc.storeName) >= 0 && $('#gnf_footer_GADS').length) {
+	  if (/*pageId === 'search-page' || */ pageId === 'product') {
+	    $(document).on(shcWidgets.EVENTS.signalDataReady, getFile);
+ 	  }
+	  //this one goes away & above gets uncommented when ECOM-371674 hits prod
+	  if (pageId === 'search-page') {
+	    $(window).on('SearchContentChanged', getFile);
+ 	  }
 	}
 
 	//push Ad stuff further to allow PDP and other pages to render needed data
 	$('#OAS_posBottom').remove(); //hack this out - still in ASAP template
 	$('#gnf_footer').find('.OAS_wrap').show();
-
-	//exclude hooklogic from vert/cat/BOF
-	//if (['category', 'vertical', 'shoppingcart'].indexOf(pageId) < 0 && location.protocol === 'http:') {
-	//	$('#gnf_footer .HL_wrap').show();
-	//}
 });
 
 $(window).on('load', function() {
@@ -2102,7 +2103,7 @@ updateOmnitureValues();
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '410p' -->
+<!-- Publish Server: '304p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
