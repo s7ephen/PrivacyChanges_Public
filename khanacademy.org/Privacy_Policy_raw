@@ -23,7 +23,9 @@ KAdefine.require("./javascript/shared-package/ka.js");
       xmlns:fb="http://www.facebook.com/2008/fbml"  >
       <head prefix="og: http://ogp.me/ns# khanacademy:
                         http://ogp.me/ns/apps/khanacademy#">
-        
+        <script>
+           window.KA_ENABLE_RAVENJS = true;
+        </script>
         <!--[if lte IE 8]><script src="/javascript/ie-warning.js"></script><script>window.onload=function(){e("/images/ie-warning/")}</script><![endif]-->
         
 
@@ -38,7 +40,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:LRKTL8UPTxaLvc3wJyS3PYNoh9pkqYLEVWWkR2IL",
+        bingoId: "_gae_bingo_random:4Q9WuxpXEtxZP2EaAqo03uFGyg2YUaCjN_S0tKCZ",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +55,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441463103.19751;
+            return 1441468530.89838;
         },
 
         // return a path to this static content given a path url - example:
@@ -87,7 +89,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55eafb3f00ff02d2914200ffde8c0001737e6b68616e2d61636164656d7900013135303930342d323135342d6338316139356563363931660001013e",
+        requestLogId: "55eb107200ff0d8f41d6ab468f0001737e6b68616e2d61636164656d7900013135303930342d323135342d633831613935656336393166000101ab",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -1935,7 +1937,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:LRKTL8UPTxaLvc3wJyS3PYNoh9pkqYLEVWWkR2IL']);
+                _kiq.push(['identify', '_gae_bingo_random:4Q9WuxpXEtxZP2EaAqo03uFGyg2YUaCjN_S0tKCZ']);
                 _kiq.push(['set', {"eligible_for_nps_survey": false, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
@@ -2055,7 +2057,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:LRKTL8UPTxaLvc3wJyS3PYNoh9pkqYLEVWWkR2IL"
+                bingoId: "_gae_bingo_random:4Q9WuxpXEtxZP2EaAqo03uFGyg2YUaCjN_S0tKCZ"
             });
         }, 0);
     </script>
