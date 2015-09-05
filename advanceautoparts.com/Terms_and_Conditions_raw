@@ -1770,11 +1770,11 @@ pageViewAttr[3] = engine;
 }
 }
 var priceZone = "";
-var validZone = validateInput(getAAPPriceZoneCookieRegex(), '1020');
+var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
 if(!validZone){
 priceZone = invalidatePriceZoneCookie();
 }else{
-priceZone = '1020';
+priceZone = '';
 }
 pageViewAttr[11] = priceZone;
 productViewAttr[2] = priceZone;
