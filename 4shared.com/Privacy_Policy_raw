@@ -38,7 +38,7 @@
   Config.isReplaceSearchNameForSeo = false;
   Config.revisionNum = 50231;
   Config.syncDomain = 'https://www.4sync.com/';
-  Config.cdDomain = '//dc429.4shared.com/';
+  Config.cdDomain = '//dc150.4shared.com/';
   Config.mailPatterrn = new RegExp("^[_A-Za-z0-9-]+(?:\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(?:\\.[A-Za-z0-9-]+)+$");
   Config.isMobile = false;
   Config.isIpad = false;
@@ -880,6 +880,21 @@
   ga('send', 'pageview');
 </script>
 <!-- End of google-analytics -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function()
+  { var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.4shared.com/"; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s); }
+      )();
+  function sendPiwik(siteId, category, action) {
+    var url = "//piwik.4shared.com/piwik.php?e_c=" + category + "&e_a=" + action + "&idsite=" + siteId + "&rec=1&rand=" + Math.random();
+    $("body").append($("<img />").attr("src", url).css("border", "0").hide());
+  }
+</script>
+<noscript><p><img src="https://piwik.4shared.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 <!-- Start of StatCounter Code -->
 <script type="text/javascript">
 var sc_project=4135125;
