@@ -1770,11 +1770,11 @@ pageViewAttr[3] = engine;
 }
 }
 var priceZone = "";
-var validZone = validateInput(getAAPPriceZoneCookieRegex(), '1020');
+var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
 if(!validZone){
 priceZone = invalidatePriceZoneCookie();
 }else{
-priceZone = '1020';
+priceZone = '';
 }
 pageViewAttr[11] = priceZone;
 productViewAttr[2] = priceZone;
@@ -2117,7 +2117,7 @@ var chooseVehicleViewURL = '/web/ChooseVehicleView?langId=-1&storeId=10151&catal
 var store_Id = '10151';
 var catalog_Id = '10051';
 var lang_Id = '-1';
-var product_Id = '-49853202';
+var product_Id = '';
 j(document).ready(function () {
 verifyYMME();
 });
