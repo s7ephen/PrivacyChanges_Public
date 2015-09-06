@@ -2585,7 +2585,8 @@ width: 100%;
 									<footer role="navigation">
 										<div class="footer-navigation-header">
 											<div class="footer-navigation-newsletter">										    
-												<link rel="stylesheet" type="text/css" href="//shop.lenovo.com/ISS_Static/WW/ag/templates/footer/owv2/twistie.css" />
+												
+<link rel="stylesheet" type="text/css" href="//shop.lenovo.com/ISS_Static/WW/ag/templates/footer/owv2/twistie.css" />
 
 <div class="newsletterSignup">
 	<aside>
@@ -2593,7 +2594,7 @@ width: 100%;
 			STAY CONNECTED
 		</h2>
 		<div class="newsletterInput-wrapper">
-			<form class="newsletterInput" action="//shop.lenovo.com/us/en/portals/communications" method="get">
+			<form class="newsletterInput" action="https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2=us&ldsrc=emlsu3a" method="get">
 				<input type="hidden" name="ipromoID" value="emlsu3a"/>
 				<input class="newsletterInput-text" type="email" name="email" placeholder="Enter email address" onfocus="this.value=''"/>
 				<input class="button-standard button-small newsletterInput-button" id="footerSignUp" type="submit" value="SIGN UP">
@@ -2602,34 +2603,85 @@ width: 100%;
 	</aside>
 </div>
 
+<script>
+//Email SingnUp
+  var site_Geo = $('meta[name="country"]').attr('content');
+	$('li.email_menu > a').attr('href','https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2='+ site_Geo +'&ldsrc=emlsu1a');
+	$(function(){
+		$('li.email_menu > a').fancybox({
+			'type':'iframe',
+			onComplete: function(){
+			   $('#fancybox-content').css({'height':'400px','background':'#fff'});
+			   $('#fancybox-close').css({'right':'-30px'});
+			}
+		});
+		$('.newsletterInput').submit(function() {
+		    var cus_email = $('.newsletterInput .newsletterInput-text').val();	
+			$(this).attr("action","https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2="+ site_Geo +"&ldsrc=emlsu3a");
+            var url = $(this).attr("action") + "&email=" + (encodeURIComponent(cus_email));			
+            $.fancybox({
+                href: url,
+                'type': 'iframe',
+				onComplete: function(){
+				$('#fancybox-content').css({'height':'400px','background':'#fff'});
+				$('#fancybox-close').css({'right':'-30px'});
+				}
+            }); 
+			return false;			
+        });
+	});
+
+</script>
+
 <script src="/ISS_Static/WW/ag/templates/bazaarvoice/owv2/bvloader2.js"></script>
-<!--Adding CTA color for PC Finder link on Masthead -->
 
 
 <script type="text/javascript">
-	$('ol.productList > li > div.link-wrapper').each(function(){
-		 if($(this).text().indexOf("Which PC is right for me?") > 0)
-		 {
-			$(this).addClass("pcfinder-called-out");
-			return false;
-		 }
+	//Re-branding Free shipping
+	var $window = $(window);
+    var $freeship = $('.bar_3-logos > .left img');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 798) {
+            $freeship.attr('src','//www.lenovo.com/images/OneWebImages/Common/NEW-free-shipping-offer-en_US.png');
+        } else {
+		    $freeship.attr('src','//www.lenovo.com/images/OneWebImages/Common/NEW-mobile-free-shipping-offer-en_US.png');
+		}
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+	
+	//Free shipping Overlay
+	$('.bar_3-logos').find('.left a').attr('href','/ISS_Static/WW/wci3/us/en/deals/info/freeshipping_overlay.html');
+	
+	//Email SingnUp
+	$('li.email_menu > a').attr('href','https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2=us&ldsrc=emlsu1a');
+	$(function(){
+		$('li.email_menu > a').fancybox({
+			'type':'iframe',
+			onComplete: function(){
+			   $('#fancybox-content').css({'height':'400px','background':'#fff'});
+			   $('#fancybox-close').css({'right':'-30px'});
+			}
+		});
+		$('.newsletterInput').submit(function() {
+		     var cus_email = $('.newsletterInput .newsletterInput-text').val();		
+            var url = $(this).attr("action") + "&email=" + (encodeURIComponent(cus_email));			
+            $.fancybox({
+                href: url,
+                'type': 'iframe',
+				onComplete: function(){
+				$('#fancybox-content').css({'height':'400px','background':'#fff'});
+				$('#fancybox-close').css({'right':'-30px'});
+				}
+            }); 
+			return false;			
+        });
 	});
 
-	//System MegaMenu changes
-	/*$('ol.productList.menuLevel_1 > li').each(function(){
-	   if($(this).find('.linkLevel_1').text().indexOf("Servers & Storage") > 0)
-		 {
-			$(this).find('.menuLevel_2').addClass('systems-menu').find('.seeAllButton > a > span').text("See All Systems");
-			return false;
-		  }
-	});*/
-
-   $('.searchContainer').find('.searchInput-button').removeClass('button-standard').addClass('button-called-out');
-
-	$('.bar_3-logos').find('.left a').attr('href','/ISS_Static/WW/wci3/us/en/deals/info/freeshipping_overlay.html');
-$(document).ready(function(){
-$('.searchContainer').find('.searchInput-button').removeClass('button-standard').addClass('button-called-out');
-});
 </script>
 
 <style>
@@ -2676,7 +2728,7 @@ setCookie("SLIsearch_siteID", "web");
 			STAY CONNECTED
 		</h2>
 		<div class="newsletterInput-wrapper">
-			<form class="newsletterInput" action="/us/en/portals/communications" method="get">
+			<form class="newsletterInput" action="https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2=us&ldsrc=emlsu3a" method="get">
 				<input type="hidden" name="ipromoID" value="emlsu3a"/>
 				<input class="newsletterInput-text" type="email" name="email" placeholder="Enter email address" onfocus="this.value=''"/>
 				<input class="button-standard button-small newsletterInput-button" id="footerSignUp" type="submit" value="SIGN UP">
