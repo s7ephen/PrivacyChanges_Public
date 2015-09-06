@@ -847,43 +847,79 @@ try {
 var hostname = window.location.hostname;
 if (hostname.indexOf("kiosk") > -1) {
 $( "#end-kiosk-session" ).show();
+if(window.BOOMR && window.BOOMR.version){return;}
+						var dom,doc,where,iframe = document.createElement('iframe'),win = window;
+
+						function boomerangSaveLoadTime(e) {
+							win.BOOMR_onload=(e && e.timeStamp) || new Date().getTime();
+						}
+						if (win.addEventListener) {
+							win.addEventListener("load", boomerangSaveLoadTime, false);
+						} else if (win.attachEvent) {
+							win.attachEvent("onload", boomerangSaveLoadTime);
+						}
+
+						iframe.src = "javascript:false";
+						iframe.title = ""; iframe.role="presentation";
+						(iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+						where = document.getElementsByTagName('script')[0];
+						where.parentNode.insertBefore(iframe, where);
+
+						try {
+							doc = iframe.contentWindow.document;
+						} catch(e) {
+							dom = document.domain;
+							iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+							doc = iframe.contentWindow.document;
+						}
+						doc.open()._l = function() {
+							var js = this.createElement("script");
+							if(dom) this.domain = dom;
+						js.id = "boomr-if-as";
+							js.src = '//c.go-mpulse.net/boomerang/' +
+							'94AZ9-TANCQ-NZ8GC-RTNCQ-CMBN8';
+							BOOMR_lstart=new Date().getTime();
+							this.body.appendChild(js);
+						};
+						doc.write('<body onload="document._l();">');
+						doc.close();	
+
 } else {
 $( "#end-kiosk-session" ).hide();
+if(window.BOOMR && window.BOOMR.version){return;}
+						  var dom,doc,where,iframe = document.createElement('iframe');
+						  iframe.src = "javascript:false";
+						  iframe.title = ""; iframe.role="presentation";
+						  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+						  where = document.getElementsByTagName('script')[0];
+						  where.parentNode.insertBefore(iframe, where);
+		
+						  try {
+						    doc = iframe.contentWindow.document;
+						  } catch(e) {
+						    dom = document.domain;
+						    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+						    doc = iframe.contentWindow.document;
+						  }
+						  doc.open()._l = function() {
+						    var js = this.createElement("script");
+						    if(dom) this.domain = dom;
+						    js.id = "boomr-if-as";
+						    js.src = '//c.go-mpulse.net/boomerang/' +
+						    'NQ5VF-BTBHE-8LCV4-4SXP7-C4XED';
+						    BOOMR_lstart=new Date().getTime();
+						    this.body.appendChild(js);
+						  };
+						  doc.write('<body onload="document._l();">');
+						  doc.close();	
+
 }
 } catch (err) {
 console.log('error');
 }
 });
 </script>
-<script>
-(function(){
-if(window.BOOMR && window.BOOMR.version){return;}
-var dom,doc,where,iframe = document.createElement('iframe');
-iframe.src = "javascript:false";
-iframe.title = ""; iframe.role="presentation";
-(iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
-where = document.getElementsByTagName('script')[0];
-where.parentNode.insertBefore(iframe, where);
-try {
-doc = iframe.contentWindow.document;
-} catch(e) {
-dom = document.domain;
-iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
-doc = iframe.contentWindow.document;
-}
-doc.open()._l = function() {
-var js = this.createElement("script");
-if(dom) this.domain = dom;
-js.id = "boomr-if-as";
-js.src = '//c.go-mpulse.net/boomerang/' +
-'NQ5VF-BTBHE-8LCV4-4SXP7-C4XED';
-BOOMR_lstart=new Date().getTime();
-this.body.appendChild(js);
-};
-doc.write('<body onload="document._l();">');
-doc.close();
-})();
-</script>
+
 <div id="siteContainer"><noscript>
 <div class="response-error">
 <p><strong>JavaScript is not enabled in your browser.</strong></p>
@@ -1398,7 +1434,7 @@ Store Locator
 </div>
 <div id="footQuickOrder" class="separator-right blk-c">
 <h5>Catalog Quick Order</h5>
-<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="6581870255777003245" type="hidden"></input><p>Enter a three-part item number.</p>
+<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="506545221371765459" type="hidden"></input><p>Enter a three-part item number.</p>
 <fieldset class="formItem">
 <label for="deptMFT" class="visuallyhidden">Enter the first part of the item number</label>
 <input id="deptMFT" maxlength="3" placeholder="A00" data-error="" name="department" value="" class="text-input" type="text" autocomplete="off" aria-label="Catalog Quick Order Form Handler - Department"><input name="_D:department" value=" " type="hidden"><label for="effortMFT" class="visuallyhidden">Enter the second part of the item number</label>
@@ -1499,9 +1535,9 @@ Store Locator
 </div>
 <!--
 DO NOT REMOVE THIS []
-Server Name: rsatgprd04.ebauer.us:8850
-Profile: u632641909
-Order: A635822369
+Server Name: rsatgprd04.ebauer.us:8853
+Profile: u632744949
+Order: A635925209
 mode: 
 Server is alive... />
 -->
