@@ -51,8 +51,8 @@
 
                 
     <script type="text/javascript">
-        DM_Context={"server_name":"web-088","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":44,"time_and_day":"22:26-Sunday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"a65297ead39947ac0a491cbbbf9feb8dadef33f3","is_search":false};
-        Stringified_DM_Context={"server_name":"web-088","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"44","time_and_day":"22:26-Sunday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"a65297ead39947ac0a491cbbbf9feb8dadef33f3","is_search":"false"};
+        DM_Context={"server_name":"web-088","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":10,"time_and_day":"23:58-Sunday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"cf2d45b6a5eaacb8258c4014ea34c65438ecfba8","is_search":false};
+        Stringified_DM_Context={"server_name":"web-088","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"10","time_and_day":"23:58-Sunday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"cf2d45b6a5eaacb8258c4014ea34c65438ecfba8","is_search":"false"};
         STATIC_BASE_URL = "http://static1.dmcdn.net";
         __webpack_manifest__ = {"1":"video_responsive.db424dfec7b58a74bbf4.js","2":"video.3972aee0253d841ddb93.js","3":"browse.c3c3bf7ba4c11009d0f6.js","4":"about.f8750961964c014b6033.js","5":"videos.cf37133ac666650ce65f.js","6":"what-to-watch.01cd3e3ec632239d807e.js","7":"privacy-settings.945a5727948aad843ab4.js"};
         EB_WEB_ENDPOINT = "webed.dm.gg";
@@ -816,7 +816,40 @@ DM_ResourcePlanner.add('ad-plugin', function()
                 );
             </script>
     
-        
+                        <script type="text/javascript">
+            function forensIQWrapper()
+            {
+                var forensiq_script=document.createElement("script");
+                forensiq_script.type="text/javascript";
+                forensiq_script.src="//c.fqtag.com/tag/implement-r.js?org=teduveba2tanetrucruf&p=legal&rt=display&fmt=banner&fq=1&s1=1";
+                forensiq_script.id = "forensiq_script";
+                forensiq_script.async=true;
+
+                //added that
+                if (document.getElementById("forensiq_script"))
+                {
+                    document.getElementsByTagName("head")[0].appendChild(forensiq_script);
+                }
+                //end added that
+
+                else if(document.getElementsByTagName("head").length>0)
+                {
+                    document.getElementsByTagName("head")[0].appendChild(forensiq_script);
+                }
+                else if(document.getElementsByTagName("body").length>0)
+                {
+                    document.getElementsByTagName("body")[0].appendChild(forensiq_script);
+                }
+            }
+
+            DM_ResourcePlanner.add(
+                  "ad-plugin",
+                  function() {
+                    forensIQWrapper();
+                  }
+            );
+        </script>
+    
     
         <script type="text/javascript">window.bottomBOOMR && bottomBOOMR();</script>
 
