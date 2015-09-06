@@ -2419,8 +2419,8 @@ width: 100%;
     <property key="search" value=""/>
   </properties>
   <footer>
-    <menu id="upper" label="upper" link="JavaScript:{ }" promo="">
-      <menu id="links" label="links" link="JavaScript:{ }" promo="">
+    <menu id="upper" label="upper" link="http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/JavaScript:{ }" promo="">
+      <menu id="links" label="links" link="http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/JavaScript:{ }" promo="">
         <menu id="about" label="About Lenovo" link="//www.lenovo.com/lenovo/us/en/index.shtml" promo="">
           <menu id="company" label="Our Company" link="//www.lenovo.com/lenovo/us/en/index.shtml" promo=""/>
           <menu id="culture" label="Culture" link="//www.lenovo.com/lenovo/us/en/index.shtml#culture" promo=""/>
@@ -2538,7 +2538,7 @@ width: 100%;
       <menu id="links-minor" label="links-minor" link="//privacy.truste.com/privacy-seal/Lenovo/validation?rid=3de9ef3e-221f-48c5-827e-399a67246cef" promo="">
         <menu id="trusteValidation" label="trusteValidation&#10;" link="//privacy.truste.com/privacy-seal/Lenovo/validation?rid=3de9ef3e-221f-48c5-827e-399a67246cef" promo=""/>
       </menu>
-      <menu id="social" label="social" link="JavaScript:{ }" promo="">
+      <menu id="social" label="social" link="http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/JavaScript:{ }" promo="">
         <menu id="facebook" label="facebook" link="https://www.facebook.com/lenovoUS" promo=""/>
         <menu id="twitter" label="twitter" link="https://twitter.com/lenovous" promo=""/>
         <menu id="googlePlus" label="googlePlus" link="https://plus.google.com/u/0/103692672929561152823/posts" promo=""/>
@@ -2548,7 +2548,7 @@ width: 100%;
         <menu id="lenovoForums" label="lenovoForums" link="http://forums.lenovo.com/" promo=""/>
       </menu>
     </menu>
-    <menu id="lower" label="lower" link="JavaScript:{ }" promo="">
+    <menu id="lower" label="lower" link="http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/JavaScript:{ }" promo="">
       <menu id="copyright" label="2015 Lenovo. All rights reserved." link="//www.lenovo.com/legal/copytrade.html" promo=""/>
       <menu id="print" label="Print this page" link="JavaScript:window.print();" promo=""/>
       <menu id="privacy" label="Privacy" link="//www.lenovo.com/privacy/us/en/" promo=""/>
@@ -2586,53 +2586,7 @@ width: 100%;
 										<div class="footer-navigation-header">
 											<div class="footer-navigation-newsletter">										    
 												
-<link rel="stylesheet" type="text/css" href="//shop.lenovo.com/ISS_Static/WW/ag/templates/footer/owv2/twistie.css" />
-
-<div class="newsletterSignup">
-	<aside>
-		<h2 class="newsletter-header">
-			STAY CONNECTED
-		</h2>
-		<div class="newsletterInput-wrapper">
-			<form class="newsletterInput" action="https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2=us&ldsrc=emlsu3a" method="get">
-				<input type="hidden" name="ipromoID" value="emlsu3a"/>
-				<input class="newsletterInput-text" type="email" name="email" placeholder="Enter email address" onfocus="this.value=''"/>
-				<input class="button-standard button-small newsletterInput-button" id="footerSignUp" type="submit" value="SIGN UP">
-			</form>
-		</div>
-	</aside>
-</div>
-
-<script>
-//Email SingnUp
-  var site_Geo = $('meta[name="country"]').attr('content');
-	$('li.email_menu > a').attr('href','https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2='+ site_Geo +'&ldsrc=emlsu1a');
-	$(function(){
-		$('li.email_menu > a').fancybox({
-			'type':'iframe',
-			onComplete: function(){
-			   $('#fancybox-content').css({'height':'400px','background':'#fff'});
-			   $('#fancybox-close').css({'right':'-30px'});
-			}
-		});
-		$('.newsletterInput').submit(function() {
-		    var cus_email = $('.newsletterInput .newsletterInput-text').val();	
-			$(this).attr("action","https://webform.wd.lenovo.com/webforms/Signup/COMEMS15?country_iso2="+ site_Geo +"&ldsrc=emlsu3a");
-            var url = $(this).attr("action") + "&email=" + (encodeURIComponent(cus_email));			
-            $.fancybox({
-                href: url,
-                'type': 'iframe',
-				onComplete: function(){
-				$('#fancybox-content').css({'height':'400px','background':'#fff'});
-				$('#fancybox-close').css({'right':'-30px'});
-				}
-            }); 
-			return false;			
-        });
-	});
-
-</script>
-
+												
 <script src="/ISS_Static/WW/ag/templates/bazaarvoice/owv2/bvloader2.js"></script>
 
 
