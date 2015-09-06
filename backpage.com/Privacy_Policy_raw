@@ -25,7 +25,7 @@
       
 
       
-      <link rel="stylesheet" type="text/css" href="http://www.backpage.com/styles/Global.css?cb=173046642dd49fc5c0402e8f3b91d9e4">
+      <link rel="stylesheet" type="text/css" href="http://www.backpage.com/styles/Global.css?cb=73b3e44ec4a4bf2d9c35d6595733bcff">
 
       
       
@@ -37,6 +37,9 @@
       <script type="text/javascript">
          (function($){Menu=function(e){return e&&e.on_before_open&&(this.on_before_open=e.on_before_open),$(document).ready(function(){var e=".dimmer",t=".sidebar",n=".sidebar-nav",s=".sidebar-toggle";this.elements={menu:$(t),dimmer:$(e),trigger:$(s),wrapper:$(n)},this.elements.trigger.on("click",this.toggle.bind(this)),this.elements.dimmer.on("click",this.close.bind(this)),$(window).on("resize orientationchange",this.set_height.bind(this)),this.state="closed"}.bind(this)),this},Menu.prototype.toggle=function(){"open"==this.state?this.close():this.open()},Menu.prototype.open=function(){if("closed"==this.state){this.on_before_open();var e=this.elements.wrapper,t=(this.elements.dimmer,this.elements.trigger,this.elements.menu);e.addClass("active"),this.set_height(),setTimeout(function(){e.addClass("open"),t.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(){this.state="open"}.bind(this))}.bind(this),0)}},Menu.prototype.set_height=function(){this.elements.wrapper.css("min-height","");var e=$(document).height();this.elements.wrapper.css("min-height",e+"px")},Menu.prototype.close=function(){if("open"==this.state){var e=this.elements.menu,t=this.elements.wrapper;t.removeClass("open"),e.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",function(){t.removeClass("active"),this.state="closed"}.bind(this))}};var menu=new Menu({on_before_open:function(){search&&"open"==search.state&&search.elements.trigger.css("z-index","9998")}});Search=function(e){return e&&e.on_before_open&&(this.on_before_open=e.on_before_open),$(document).ready(function(){var e=".search-wrap",t=".search-trigger",n='.search-wrap input[type="text"]';this.elements={menu:$(e),trigger:$(t),keywords:$(n)},this.elements.trigger.on("click",this.toggle.bind(this)),this.elements.keywords.on("click focus keypress",this.open.bind(this)),this.state="closed"}.bind(this)),this},Search.prototype.toggle=function(){"open"==this.state?this.close():this.open(),this.elements.trigger.css("z-index",10004)},Search.prototype.open=function(){this.on_before_open();var e=this.elements.menu,t=this.elements.trigger;e.addClass("open"),t.addClass("active"),this.elements.trigger.css("z-index",10004),this.state="open"},Search.prototype.close=function(){var e=this.elements.menu,t=this.elements.trigger;e.removeClass("open"),t.removeClass("active"),this.state="closed"};var search=new Search({on_before_open:function(){menu.close()}});})(jQuery);
       </script>
+
+      
+      <script>dataLayer=[];</script>
     </head>
 
     <body id="PrivacyPolicy">
@@ -45,12 +48,9 @@
     
 
 
-  
 
-  <script>
-    dataLayer=[];
-    
-  </script>
+
+  
 
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5KCSP8"
