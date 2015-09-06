@@ -519,21 +519,21 @@ P.when('cs-retail-help-omniture','jQuery', 'ready').execute('cs-retail-help-omni
   background-position: center center;
   background-repeat: no-repeat;
 }
-.nav-timeline-icon {
+.nav-timeline-icon, .nav-access-image {
   background-image: url(http://g-ecx.images-amazon.com/images/G/08/gno/sprites/timeline_sprite_1x.png);
   background-repeat: no-repeat;
 }
 --></style>
-<!-- nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::auiDebug=0::isSecure=0 navc-swKZVAQYQvPKATsP9PhZEnxZFVT4t6Vsg+9zGXScdsjPRfzx0Cxs2RVnSFGeKNFlMTJFbkDEDbA= rid-0QVXCPY05RSX69AHP65J seq-225 (Sun Sep  6 23:14:37 2015) **CACHED-BY-NCCC** -->
-<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min" />
+<!-- nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::auiDebug=0::isSecure=0 navc-CbS8Cy19uGckBBZY0E0iCPqnOJOMXRyQ9kyiwaui1vCbVA0k+zQjkP51B4XUe8UXvfNYnljoEkE= rid-157T0ZZ0XK5QZWMZ2EE1 seq-225 (Mon Sep  7 01:00:07 2015) **CACHED-BY-NCCC** -->
+<link rel="stylesheet" href="http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-ca562f13160024362fd944a365b77ac435a5c51e._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min" />
 <link rel="stylesheet" href="https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset" />
-<!-- nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::auiDebug=0::isSecure=0 navc-swKZVAQYQvPKATsP9PhZEnxZFVT4t6Vsg+9zGXScdsjPRfzx0Cxs2RVnSFGeKNFlMTJFbkDEDbA= rid-0QVXCPY05RSX69AHP65J seq-225 (Sun Sep  6 23:14:37 2015) **CACHED-BY-NCCC** -->
+<!-- nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::auiDebug=0::isSecure=0 navc-CbS8Cy19uGckBBZY0E0iCPqnOJOMXRyQ9kyiwaui1vCbVA0k+zQjkP51B4XUe8UXvfNYnljoEkE= rid-157T0ZZ0XK5QZWMZ2EE1 seq-225 (Mon Sep  7 01:00:07 2015) **CACHED-BY-NCCC** -->
 <script>
 (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
-  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-c5ccca56a46e6c6840ed138113fd94890a8f2a37._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
 });
 (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
-  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/01jIyNYDdjL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
 });
 </script>
 <!-- From remote config v3-->
@@ -604,6 +604,17 @@ window._navbar = (function (o) {
   return o;
 }(window._navbar || {}));
 
+window._navbar.declareOnLoad = function () { window.$Nav && $Nav.declare('page.load'); };
+if (window.addEventListener) {
+  window.addEventListener("load", window._navbar.declareOnLoad, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", window._navbar.declareOnLoad);
+} else if (window.$Nav) {
+  $Nav.when('page.domReady').run("OnloadFallbackSetup", function () {
+    window._navbar.declareOnLoad();
+  });
+}
+
 window.$Nav && $Nav.declare('logEvent.enabled',
   false);
 
@@ -615,7 +626,7 @@ window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
 </script>
 
 
-<!-- navp-S4JgIZViumc0hiaXVqE8aXL2y1itJ6xleNiKzFH/RXWAipUSp990Jcc2a8vnTngHPF8sKcXPcaE= rid-0D47C81NM46W74SCXYHZ (Mon Sep  7 00:12:52 2015) -->
+<!-- navp-WGK9eQFp6WaWWhtr9eEO8idz/5feuSzkvTICmjPuPirVE10q8F1ASHRdQyAe1f5x+U/MQygsrp4= rid-0S2M1GKVB2DF1R92MTQ5 (Mon Sep  7 01:43:51 2015) -->
 
 
 
@@ -833,7 +844,7 @@ window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
 
 
 <map name="nav_imgmap_nav-sa-clothing-shoes" id="nav_imgmap_nav-sa-clothing-shoes">
-<area shape="rect" coords="4,198,459,569" href="/Amazon-Mode/b?ie=UTF8&node=2726544031" alt="nav-sa-clothing-shoes"/>
+<area shape="rect" coords="0,22,406,496" href="/Amazon-Mode/b?ie=UTF8&node=2726544031" alt="nav-sa-clothing-shoes"/>
 </map>
 
 
@@ -857,13 +868,13 @@ window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
 
 
 <map name="nav_imgmap_nav-sa-hightechinfo" id="nav_imgmap_nav-sa-hightechinfo">
-<area shape="rect" coords="1,460,478,1" href="/s?_encoding=UTF8&rh=i%3Aelectronics%2Cn%3A682942031" alt=""/>
+<area shape="rect" coords="1,1,511,431" href="/dp/B0142QUZFW?_encoding=UTF8&m=A1X6FK5RDHNB96" alt=""/>
 </map>
 
 
 
 <map name="nav_imgmap_nav-sa-home-garden-tools" id="nav_imgmap_nav-sa-home-garden-tools">
-<area shape="rect" coords="1,100,480,410" href="/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.fr%2Fgp%2Fsearch%2Fref%3Dsr_nr_p_6_3%3Ffst%3Das%253Aoff%26keywords%3Dpedigree%26qid%3D1434462618%26rh%3Dn%253A1571268031%252Ck%253Apedigree%252Cp_89%253APedigree%252Cp_6%253AA1X6FK5RDHNB96%26rnid%3D437864031&source=standards&token=EE1EA6AB57493F5C3DA46E2CE0BE07638B8F6F3F" alt=""/>
+<area shape="rect" coords="1,100,480,510" href="/dp/B00TO8POVY" alt=""/>
 </map>
 
 
@@ -942,7 +953,7 @@ window.$Nav && $Nav.declare('config.subnavFlyoutUrl',
 window.$Nav && $Nav.declare('config.readyOnATF', false);
 
 window.$Nav && $Nav.declare('config.dynamicMenuArgs',
-  {"rid":"0D47C81NM46W74SCXYHZ","isPrime":0,"weblabs":"","primeMenuWidth":310});
+  {"rid":"0S2M1GKVB2DF1R92MTQ5","isPrime":0,"weblabs":"","primeMenuWidth":310});
 
 window.$Nav && $Nav.declare('config.signOutText',
   null);
@@ -956,7 +967,7 @@ window.$Nav && $Nav.declare('config.yourAccountPrimeHover',
 window.$Nav && $Nav.declare('config.primeEventLoggingEnabled', true);
 
 window.$Nav && $Nav.declare('config.primeFlyoutProfilingUrl',
-    '/gp/prime/navigation/record-prime-menu-event.html?ie=UTF8&rid=0D47C81NM46W74SCXYHZ');
+    '/gp/prime/navigation/record-prime-menu-event.html?ie=UTF8&rid=0S2M1GKVB2DF1R92MTQ5');
 
 window.$Nav && $Nav.declare('config.searchBackState',
   {});
@@ -996,7 +1007,7 @@ if (window.amznJQ && amznJQ.available) {
     , searchAliases: ["aps", "stripbooks", "popular", "dvd", "electronics", "videogames", "toys", "english-books", "kitchen", "luggage", "classical", "vhs", "software", "jewelry", "watches", "music-song", "music-title", "music-artist", "mp3-downloads", "digital-music", "digital-music-track", "digital-music-album", "digital-text", "lighting", "baby", "beauty", "hpc", "office-products", "shoes", "sports", "mi", "computers", "clothing", "appliances", "diy", "mobile-apps", "pets", "gift-cards", "automotive", "garden", "tradein-aps", "warehouse-deals", "grocery", "luxury-beauty", "banjo-apps", "industrial"]
     , isDoCtw: 1
     , pageType: "GPHelp"
-    , requestId: "0D47C81NM46W74SCXYHZ"
+    , requestId: "0S2M1GKVB2DF1R92MTQ5"
     , keydownTriggeredWeblabs: []
     , displayTriggeredWeblabs: [      function(data) {
         return data && data.fastlabs ? data.fastlabs : undefined;
@@ -1248,12 +1259,12 @@ window.$Nav && $Nav.declare('config.timeline', false);
  _navbar.browsepromos['nav-sa-auto-bike'] = {"width":487,"promoType":"wide","destination":null,"vertOffset":"0","horizOffset":"-19","height":447,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/Automotive/Fly-outs/lux_auto_17-02-2015_march-carcare_fr-final_flyout._V328819096_.png"}; 
  _navbar.browsepromos['nav-sa-baby-toys-kids'] = {"width":500,"promoType":"wide","destination":null,"vertOffset":"-9","horizOffset":"-19","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/baby/bebes-puericulture/Disney/Operation/FR_Baby_ChambreDisneyBaby_Flyout._V314505052_.png"}; 
  _navbar.browsepromos['nav-sa-books'] = {"width":511,"promoType":"wide","destination":"/b?_encoding=UTF8&node=6680516031","vertOffset":"-21","horizOffset":"-22","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/books/2015/New_releases/FR_Books_new_releases_section-_24-6-2015_Flyout-._V318733380_.png"}; 
- _navbar.browsepromos['nav-sa-clothing-shoes'] = {"width":435,"promoType":"wide","destination":null,"vertOffset":"0","horizOffset":"-10","height":496,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/AMAZON-FASHION/2015/CLOTHING/EDITORIAL/AUTUMN1/NEA_SEASON/GATEWAY/AW15_FLYOUT._V313449073_.png"}; 
+ _navbar.browsepromos['nav-sa-clothing-shoes'] = {"width":406,"promoType":"wide","destination":null,"vertOffset":"0","horizOffset":"-30","height":496,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/softlines/2015-08-EARLYBIRD-FW15/2/FR-AW15-Earlybird_FLYOUT._V313518532_.png"}; 
  _navbar.browsepromos['nav-sa-cloud-drive'] = {"width":499,"promoType":"wide","destination":null,"vertOffset":"0","horizOffset":"0","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/digital/adrive/images/gno/fr_cd_filler14_gno_6._V349633636_.png"}; 
  _navbar.browsepromos['nav-sa-digital-games-software'] = {"width":518,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-20","height":448,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/videogames/dsv/2015/Gateway/fr_vg_fifa16_r1_flyout._V312570958_.png"}; 
  _navbar.browsepromos['nav-sa-grocery-health-beauty'] = {"width":518,"promoType":"wide","destination":"/dp/B00OB722Y0","vertOffset":"-9","horizOffset":"-20","height":448,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/hpc/braun-store/male/Braun_Series_9_FlyOut._V312163946_.png"}; 
- _navbar.browsepromos['nav-sa-hightechinfo'] = {"width":511,"promoType":"wide","destination":null,"vertOffset":"-20","horizOffset":"-22","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/electronics/HiFiweek/FR_CE_GNO-HIFi-Week_27-8-2015_flyout._V311850548_.png"}; 
- _navbar.browsepromos['nav-sa-home-garden-tools'] = {"width":518,"promoType":"wide","destination":null,"vertOffset":"-10","horizOffset":"-20","height":465,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/pets/gno/fr_pets_12-06-2015_pedigree_flyout._V302832029_.png"}; 
+ _navbar.browsepromos['nav-sa-hightechinfo'] = {"width":511,"promoType":"wide","destination":"?_encoding=UTF8&ASIN=B0142QUZFW","vertOffset":"-21","horizOffset":"-22","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/product/electronic/GNO/FR_CE_Pack-Samsung-S6-edg-J5_31-8-2015_flyout_v2._V312373265_.png"}; 
+ _navbar.browsepromos['nav-sa-home-garden-tools'] = {"width":511,"promoType":"wide","destination":null,"vertOffset":"-20","horizOffset":"-20","height":431,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/kitchen/GNOflyout/FR_Kitchen_AMG-Cuisinart_30-7-2015_flyout._V313095563_.png"}; 
  _navbar.browsepromos['nav-sa-kindle-fire-tablet'] = {"width":500,"promoType":"wide","destination":"/dp/B00IRKMZX0","vertOffset":"10","horizOffset":"5","height":472,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/kindle/merch/gno/2014/gen7-tablets-gno-d-fr-500x472._V325604649_.png"}; 
  _navbar.browsepromos['nav-sa-kindle-reader'] = {"width":500,"promoType":"wide","destination":"/dp/B00QJDO0QC","vertOffset":"0","horizOffset":"0","height":352,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/kindle/merch/2015/campaign/KM/KM-GNO-fr._V317853901_.png"}; 
  _navbar.browsepromos['nav-sa-music-dvd-bluray'] = {"width":511,"promoType":"wide","destination":"/b?_encoding=UTF8&node=7161929031","vertOffset":"-20","horizOffset":"-21","height":479,"altText":null,"image":"http://g-ecx.images-amazon.com/images/G/08/products/dvd/images/2015-09/MoisDisney/fr_dvd_disney-v2_24-08-2015_flyout_r1._V312101076_.png"}; 
@@ -1269,6 +1280,7 @@ window.$Nav && $Nav.declare('config.extendedFlyout', false);
 window.$Nav && $Nav.declare('config.enableBbPrefetch', false);
 
 window.$Nav && $Nav.declare('config.enableBbAaProx', false);
+
 
 window.$Nav && $Nav.declare('configComplete');
 
@@ -2022,8 +2034,8 @@ vos livres au format papier</span></a></td>
 <div class="navFooterLine navFooterLinkLine navFooterPadItemLine"><ul><li class='nav_first'><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=548524' class='nav_a'>Conditions générales de vente</a></li><li><a href='/gp/help/customer/display.html?ie=UTF8&amp;nodeId=3329781' class='nav_a'>Vos informations personnelles</a></li><li class='nav_last'><a href='/cookiesetpublicitesurinternet' class='nav_a'>Cookies et Publicité sur Internet</a></li></ul><span>© 1996-2015, Amazon.com, Inc. ou ses filiales.</span><ul></ul></div>
 </div>
 
-<!-- whfh-qjjnssZHIjvtSe4Kxcy652eSgP8URkjI/DQ23V2Bvm3egjnLs9OaWa3Htbd4ursj rid-0D47C81NM46W74SCXYHZ -->
-<div id="sis_pixel_r2" aria-hidden="true" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.fr&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1441577572894" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});</script>
+<!-- whfh-5yV8vYA9o57d737b07Cc2wCk3hRIinl8Q4XVeNcsCCSL7ggaP76M8xXnp6qC4Nob rid-0S2M1GKVB2DF1R92MTQ5 -->
+<div id="sis_pixel_r2" aria-hidden="true" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.fr&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1441583031258" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});</script>
 
 
 
@@ -2094,24 +2106,24 @@ vos livres au format papier</span></a></td>
 </script>
 
   <script type='text/javascript'>
-      window.$Nav && $Nav.declare('config.prefetchUrls', ["https://images-eu.ssl-images-amazon.com/images/G/01/authportal/common/images/amznbtn-sprite03._V395592492_.png","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/common/images/amazon_logo_no-org_mid._V143113030_.png","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.0._V309248277_.js","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.1._V343893933_.css","https://images-eu.ssl-images-amazon.com/images/G/08/gno/images/general/navAmazonLogoFooter._V169459217_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/common/buttons/sign-in-secure._V192553741_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/common/login/fwcim._V342129214_.js","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/communities/social/snwicons_v2._V402379885_.png","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/help/images/spotlight/kindle-family-02b._V369420148_.jpg","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/acorn._V192553873_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/amazon-gc-100._V192553872_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/amazon-gcs-100._V192553873_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/btn-close._V192553878_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/projects/text-trace/texttrace_typ._V353753427_.js","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/ya/images/new-link._V232463653_.png","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/ya/images/shipment_large_lt._V192553575_.gif","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-1284596852._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-673430403._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-order-history-beaconized/wcs-ya-order-history-beaconized-207125090._V1_.css"]);
+      window.$Nav && $Nav.declare('config.prefetchUrls', ["https://images-eu.ssl-images-amazon.com/images/G/01/authportal/common/images/amznbtn-sprite03._V395592492_.png","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/common/images/amazon_logo_no-org_mid._V143113030_.png","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.0._V309248277_.js","https://images-eu.ssl-images-amazon.com/images/G/08/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.1._V343893933_.css","https://images-eu.ssl-images-amazon.com/images/G/08/gno/images/general/navAmazonLogoFooter._V169459217_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/common/buttons/sign-in-secure._V192553741_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/common/login/fwcim._V342129214_.js","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/communities/social/snwicons_v2._V402379885_.png","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/help/images/spotlight/kindle-family-02b._V369420148_.jpg","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/acorn._V192553873_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/amazon-gc-100._V192553872_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/amazon-gcs-100._V192553873_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/orders/images/btn-close._V192553878_.gif","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/projects/text-trace/texttrace_typ._V353753427_.js","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/ya/images/new-link._V232463653_.png","https://images-eu.ssl-images-amazon.com/images/G/08/x-locale/cs/ya/images/shipment_large_lt._V192553575_.gif","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/fr-site-wide-css-beacon/site-wide-6800426958._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/site-wide-js-1.2.6-beacon/site-wide-6851225134._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-1284596852._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-673430403._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-order-history-beaconized/wcs-ya-order-history-beaconized-207125090._V1_.css"]);
 window.$Nav && $Nav.declare('config.prefetch',function() {
     var pUrls = window.$Nav.getNow('config.prefetchUrls');
     (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute(function (A) { A.preload(pUrls); });
 });
 
-  /* nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::isSecure=0::preload navc-Er9l+6B6zUvFFCoiAAyHBaZNRGHUHMsbiV6mDhQp8r9K1g97Zy89Fu+tv87wWaTsauJvaMAx0jw= rid-0WC3GZTME0KH62X30172 seq-487 (Sun Sep  6 23:23:08 2015) **CACHED-BY-NCCC** */
+  /* nav-config-asset-injection FR::desktop::standard::53154:C&53341:T1&56182:C::isSecure=0::preload navc-CbS8Cy19uGckBBZY0E0iCPqnOJOMXRyQ9kyiwaui1vCbVA0k+zQjkP51B4XUe8UXvfNYnljoEkE= rid-157T0ZZ0XK5QZWMZ2EE1 seq-487 (Mon Sep  7 01:00:07 2015) **CACHED-BY-NCCC** */
   
   __auiPreloadIndex = window.__auiPreloadIndex || 0;
   (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadJS_"+(++__auiPreloadIndex), function(A){
-    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
-    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-9a43a9eaaec7351fc93371c95adc2e456802f740._V2_.js#AUIClients/NavAuiBeaconbeltAssets.secure.min');
-    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
-    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01aaYZ8LoXL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-c5ccca56a46e6c6840ed138113fd94890a8f2a37._V2_.js#AUIClients/NavAuiBeaconbeltAssets.min');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-c5ccca56a46e6c6840ed138113fd94890a8f2a37._V2_.js#AUIClients/NavAuiBeaconbeltAssets.secure.min');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01jIyNYDdjL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
+    A.preload('https://images-eu.ssl-images-amazon.com/images/I/01jIyNYDdjL._RC|51l+bXVfWkL.js,01iJISYbTrL.js,319ahL31uIL.js,01wBjiz9OvL.js_.js#AUIClients/NavMetaAsset');
   });
   (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('A').execute("auiPreloadCSS_"+(++__auiPreloadIndex), function(A){
-    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min');
-    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-4dbb696ea68ca0913a670ea3d36043e783f5120b._V2_.css#AUIClients/NavAuiBeaconbeltAssets.secure.min');
+    A.preload('http://z-ecx.images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-ca562f13160024362fd944a365b77ac435a5c51e._V2_.css#AUIClients/NavAuiBeaconbeltAssets.min');
+    A.preload('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/NavAuiBeaconbeltAssets-ca562f13160024362fd944a365b77ac435a5c51e._V2_.css#AUIClients/NavAuiBeaconbeltAssets.secure.min');
     A.preload('https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset');
     A.preload('https://images-eu.ssl-images-amazon.com/images/I/01h78L-cgLL._RC|215ezqStD+L.css_.css#AUIClients/NavMetaAsset');
   });
