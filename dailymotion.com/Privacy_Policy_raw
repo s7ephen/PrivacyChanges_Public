@@ -51,8 +51,8 @@
 
                 
     <script type="text/javascript">
-        DM_Context={"server_name":"web-037","global_request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal\/privacy","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":56,"time_and_day":"08:50-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"6a5fbb2013c1ac801688be7bdd95f914cc6eef5c","is_search":false};
-        Stringified_DM_Context={"server_name":"web-037","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal\/privacy","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"56","time_and_day":"08:50-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"6a5fbb2013c1ac801688be7bdd95f914cc6eef5c","is_search":"false"};
+        DM_Context={"server_name":"web-149","global_request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/privacy","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal\/privacy","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":4,"time_and_day":"09:20-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"4e4ada17de1ef9dce10a6516911b7ca7e81f83f4","is_search":false};
+        Stringified_DM_Context={"server_name":"web-149","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal\/privacy","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"4","time_and_day":"09:20-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"4e4ada17de1ef9dce10a6516911b7ca7e81f83f4","is_search":"false"};
         STATIC_BASE_URL = "http://static1.dmcdn.net";
         __webpack_manifest__ = {"1":"video_responsive.db424dfec7b58a74bbf4.js","2":"video.3972aee0253d841ddb93.js","3":"browse.c3c3bf7ba4c11009d0f6.js","4":"about.f8750961964c014b6033.js","5":"videos.cf37133ac666650ce65f.js","6":"what-to-watch.01cd3e3ec632239d807e.js","7":"privacy-settings.945a5727948aad843ab4.js"};
         EB_WEB_ENDPOINT = "webed.dm.gg";
@@ -515,6 +515,7 @@ These companies may use non-personally identifiable information (e.g., click str
 
     
 
+            
     
                 
                             DM_ENV._add('DM_Widget_Page', {"authenticationLink":"\/pageitem\/authenticationContainer"});
@@ -524,6 +525,7 @@ These companies may use non-personally identifiable information (e.g., click str
                             DM_ENV._add('DM_HapYak', {"cssPath":"http:\/\/static1.dmcdn.net\/css\/gen\/views\/shared\/video\/annotations.ltr.css.v5ba03d41b50d35c19","siteVersion":"us","baseUrl":"\/\/hapyak.dmcdn.net","readerId":""});
                             DM_ENV._add('DM_TourLoader', {"readerEndedWelcomeTour":null});
                             DM_ENV._add('Sd_Navigation_Panel', {"responsive":false});
+                            DM_ENV._add('Sd_CustomerSurvey', {"surveyScriptURL":"https:\/\/www.research.net\/jsEmbed.aspx?sm=A2B1qqbJVO6m87AfpvGHKg_3d_3d&country=us&authenticated=0"});
                             DM_ENV._add('DM_ResourcePlanner', {"delayResources":true});
                     
     </script>
@@ -570,7 +572,17 @@ These companies may use non-personally identifiable information (e.g., click str
     })();
     </script>
 </div>
-                
+                <script type="text/javascript">
+            DM_ResourcePlanner.add('stat', function()
+            {
+                DM_JS.load("http://static1.dmcdn.net/js/gen/views/shared/customersurvey.js.v921c12fe919cda2c9", 'Sd_CustomerSurvey');
+            });
+        </script>
+        <div class="sd_customersurvey">
+            <h2 class="popup_title">Dailymotion Customer Satisfaction Survey</h2>
+            <div id="surveyMonkeyInfo"><div id="survey_ph"></div></div>
+        </div>
+            
             
 <div id="external_scripts">
 
@@ -738,7 +750,40 @@ DM_ResourcePlanner.add('ad-plugin', function()
                 );
             </script>
     
-        
+                        <script type="text/javascript">
+            function forensIQWrapper()
+            {
+                var forensiq_script=document.createElement("script");
+                forensiq_script.type="text/javascript";
+                forensiq_script.src="//c.fqtag.com/tag/implement-r.js?org=teduveba2tanetrucruf&p=legal&rt=display&fmt=banner&fq=1&s1=1";
+                forensiq_script.id = "forensiq_script";
+                forensiq_script.async=true;
+
+                //added that
+                if (document.getElementById("forensiq_script"))
+                {
+                    document.getElementsByTagName("head")[0].appendChild(forensiq_script);
+                }
+                //end added that
+
+                else if(document.getElementsByTagName("head").length>0)
+                {
+                    document.getElementsByTagName("head")[0].appendChild(forensiq_script);
+                }
+                else if(document.getElementsByTagName("body").length>0)
+                {
+                    document.getElementsByTagName("body")[0].appendChild(forensiq_script);
+                }
+            }
+
+            DM_ResourcePlanner.add(
+                  "ad-plugin",
+                  function() {
+                    forensIQWrapper();
+                  }
+            );
+        </script>
+    
     
         <script type="text/javascript">window.bottomBOOMR && bottomBOOMR();</script>
 
