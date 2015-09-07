@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '978bfd547c', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '114982e296', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1501686560'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=93771117'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=140418611'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=53535443&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1647614025'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1746603621'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1725832427'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=28456087&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, 'bcb2dd17e5');
+      PJMedia.SharingButtons.initialize(null, null, '212c97caa7');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=821081681');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1205645366');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1395941057');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1657686853');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1774653747');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1130990667');"></a>
   </span>
 </span>
 
@@ -612,7 +612,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 											
 											<li><a href="http://pjmedia.com/diaryofamadvoter/2015/09/07/which-republican-candidates-could-win-the-general/">Which Republican Candidates Could Win the General?</a></li>
 											
-											<li><a href="http://pjmedia.com/vodkapundit/2015/09/04/the-fall-guy-2/">The Fall Guy</a></li>
+											<li><a href="http://pjmedia.com/tatler/2015/09/06/giuliani-blames-new-yorks-homeless-crisis-on-progressivism-of-de-blasio/">Giuliani Blames New York's Homeless Crisis on Progressivism of De Blasio </a></li>
 																		</ul>
 
 									<div class="sidebar-footer" style="margin-top:10px;"><a class="more-link" href="/popular/">More</a> </div>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/06/the-insanity-of-gender-neutral-pronouns/">The Insanity of &#8216;Gender Neutral&#8217; Pronouns</a></li><li><a href="http://pjmedia.com/tatler/2015/09/06/giuliani-blames-new-yorks-homeless-crisis-on-progressivism-of-de-blasio/">Giuliani Blames New York&#8217;s Homeless Crisis on Progressivism of De Blasio</a></li><li><a href="http://pjmedia.com/tatler/2015/09/06/where-in-the-world-is-that-escaped-king-cobra/">Where in the World Is that Escaped King Cobra?</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/07/future-candidates-will-look-more-like-trump-than-not/">Future Candidates Will Look More Like Trump</a></li><li><a href="http://pjmedia.com/tatler/2015/09/06/the-insanity-of-gender-neutral-pronouns/">The Insanity of &#8216;Gender Neutral&#8217; Pronouns</a></li><li><a href="http://pjmedia.com/tatler/2015/09/06/giuliani-blames-new-yorks-homeless-crisis-on-progressivism-of-de-blasio/">Giuliani Blames New York&#8217;s Homeless Crisis on Progressivism of De Blasio</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -640,7 +640,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/lifestyle/2015/09/05/goddess-worship-choir-replaces-jesus-with-hillarys-name-in-hymn/">Goddess Worship: Choir Replaces Jesus with Hillary&#8217;s Name in Hymn</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/5-personalities-at-your-gym-that-will-make-you-healthier-and-happier/">5 Personalities at Your Gym That Will Make You Healthier and Happier</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/04/eat-better-while-rpg/">Some Unsolicited Advice on How to Eat Better at Your Roleplaying Game Sessions</a></li>
+				<li><a href="http://pjmedia.com/lifestyle/2015/09/07/blacks-and-whites-have-different-experiences-saying-so-does-not-make-one-racist/">Is It Racist to Acknowledge That Blacks and Whites Have Different Experiences?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/goddess-worship-choir-replaces-jesus-with-hillarys-name-in-hymn/">Goddess Worship: Choir Replaces Jesus with Hillary&#8217;s Name in Hymn</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/5-personalities-at-your-gym-that-will-make-you-healthier-and-happier/">5 Personalities at Your Gym That Will Make You Healthier and Happier</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213912/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">SECOND ANNUAL LABOR DAY INDIE AUTHOR SALE:  <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/B00HHLWBP2/wwwviolentkicom">Eyes of Osiris by Anita Young, $2.99</a> and <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/B00NHAWCKQ/wwwviolentkicom">Acts of War by James Young, $2.99</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213911/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">I&#8217;VE SAID THIS FOR YEARS: <a target="_blank" href="http://www.theatlantic.com/technology/archive/2014/09/millennials-are-out-reading-older-generations/379934/?utm_source=SFFB">Millennials Are Out-Reading Older Generations.</a> This is, after all, the generation that had to become fluent readers in order to participate in the online give and take.  No matter how they abbreviated or misspelled, they still had to read well. ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213910/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">HAIL ATLANTIS:  Yes, of course I&#8217;m joking, <a target="_blank" href="http://www.ibtimes.co.uk/massive-ancient-greek-city-discovered-submerged-aegean-sea-photos-1517615">but this is interesting.</a>  Plus some nice photos.</a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213898/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">SEVEN SURPRISING DOWNSIDES <a target="_blank" href="http://www.businessinsider.com/downsides-of-being-extremely-intelligent-2015-8">OF BEING EXTREMELY INTELLIGENT</a>.</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213865/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">A survey conducted by researchers from Duke University and the University of Chicago found that Chicago criminals obtained their firearms almost exclusively from friends and family. ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213913/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">ROGER SIMON ASKS, <a target="_blank" href="http://pjmedia.com/diaryofamadvoter/2015/09/07/which-republican-candidates-could-win-the-general/">WHICH REPUBLICAN CANDIDATES COULD WIN THE GENERAL</a>?</a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":360,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":398,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
