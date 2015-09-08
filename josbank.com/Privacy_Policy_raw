@@ -629,12 +629,12 @@ Join Email List
 </a>
 </li>	
 <li class="registered-only" style="display:none;">
-<a href="https://www.josbank.com/AccountInfoView?profileFormStyle=strong&amp;catalogId=14052&amp;langId=-1&amp;storeId=13452&amp;page=accountInformation" id="myAccountQuickLink">
+<a href="https://www.josbank.com/AccountInfoView?profileFormStyle=strong&amp;catalogId=14052&amp;langId=&amp;storeId=13452&amp;page=accountInformation" id="myAccountQuickLink">
 My Account
 </a>
 </li>
 <li class="separator-false">
-<a id="requestcatalog" class="requestcatalog" href="http://www.josbank.com/CatalogRequestView?catalogId=14052&amp;langId=-1&amp;storeId=13452" style="display:none">Request a Catalog</a>
+<a id="requestcatalog" class="requestcatalog" href="http://www.josbank.com/CatalogRequestView?catalogId=14052&amp;langId=&amp;storeId=13452" style="display:none">Request a Catalog</a>
 </li>
 <li class="separator-false registered-only" style="display:none;">
 <a href="javascript:logout('https://www.josbank.com/Logoff?catalogId=14052&amp;myAcctMain=1&amp;langId=-1&amp;storeId=13452&amp;deleteCartCookie=true&amp;URL=LogonForm')" id="signOutQuickLink">Sign Out</a>
@@ -658,8 +658,8 @@ console.error('Failed to init header links: ' + e);
 <script>
 require(["dojo/domReady!"], function() {
 SearchJS.init();
-SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=13452&catalogId=14052");
-SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_14002_CatalogEntry_en_US&serverURL=http%3a%2f%2fsearch.tmw.com%2fsolr%2fMC_14002_CatalogEntry_en_US&langId=-1&storeId=13452&catalogId=14052");
+SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=&storeId=13452&catalogId=14052");
+SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_14002_CatalogEntry_en_US&serverURL=http%3a%2f%2fsearch.tmw.com%2fsolr%2fMC_14002_CatalogEntry_en_US&langId=&storeId=13452&catalogId=14052");
 document.forms["searchBox"].action = getAbsoluteURL() + "SearchDisplay";
 });
 var staticContent = [];
@@ -692,7 +692,7 @@ var staticContentHeaders = [];
 <ul><li><div id="autoSuggestStatic_2"></div></li></ul>
 <ul><li><div id="autoSuggestStatic_3"></div></li></ul>
 <ul><li><div id="autoSuggestHistory"></div></li></ul>
-<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=-1&storeId=13452" onclick="SearchJS.gotoAdvancedSearch('http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=-1&storeId=13452');return false;" id="advancedSearch" ><div>Advanced Search</div></a></li></ul>
+<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=&storeId=13452" onclick="SearchJS.gotoAdvancedSearch('http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=&storeId=13452');return false;" id="advancedSearch" ><div>Advanced Search</div></a></li></ul>
 </div>
 
 </div>
@@ -877,7 +877,7 @@ Jos. A. Bank has partnered with international shipping solution Borderfree to al
 <a class="header-international-link" data-modal-fn="languageCurrencyModal" href="#">
 <span class="header-international-label" id="header-international-label">Change Region</span><span class="visuallyhidden">. This action will open a modal dialog.</span><img class="header-international-img" id="header-international-img" data-url-pattern="/wcsstore/JABAuroraStorefrontAssetStore//images/global/flags/[COUNTRY].gif" alt="" style="display:none;"/>
 </a>
-<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
+<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=&storeId=13452" />	
 <input type="hidden" id="shoppingCartURL" name="shoppingCartURL" value="OrderCalculate?langId=-1&storeId=13452&catalogId=14052&calculationUsageId=-1&calculationUsageId=-2&calculationUsageId=-7&updatePrices=1&orderId=.&URL=AjaxOrderItemDisplayView&errorViewName=AjaxOrderItemDisplayView" />
 
 </div>
@@ -2704,7 +2704,7 @@ wc.render.getRefreshControllerById("departmentSubMenu_Controller").url = getAbso
 <form name="JoinSweepstakesForm" id="JoinSweepstakesForm" action="JABSweepStakes" method="post">
 <input type="hidden" id="storeId" name="storeId" value="13452"/>
 <input type="hidden" id="catalogId" name="catalogId" value="14052"/>
-<input type="hidden" id="langId" name="langId" value="-1"/>
+<input type="hidden" id="langId" name="langId" value=""/>
 <input type="hidden" name="URL" value="JABThankYouView" id="URL1">
 <div class="row">
 <div class="col12">
@@ -2831,7 +2831,7 @@ Amber Smithson - Knoxville, TN </p><br>
 <div class="row row-margin">
 <div class="col12" data-slot-id="1">
 
-<div id="contentRecommendationWidget_1_-1012_3074457345618262969" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-ShopByShipSweeps" class="contentRecommendationWidget" >
 
 <div class="left_espot">
 <script type="text/javascript">
@@ -2935,7 +2935,7 @@ dojo.publish("CMPageRefreshEvent");
 </script>
 
 
-<div id="contentRecommendationWidget_1_-1012_3074457345618262974" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-TopNav-PromoBanner" class="contentRecommendationWidget" >
 
 <div class="left_espot">
 <a href="/current-promotions" title="" target="">
@@ -5666,7 +5666,7 @@ Japanese</td>
 <div class="row row-margin">
 <div class="col6 acol12" data-slot-id="21">
 
-<div id="contentRecommendationWidget_8_-1012_3074457345618262973" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-BottomLeft" class="contentRecommendationWidget" >
 
 <div class="left_espot">
 <div class="win-gift dc_hide"> <div class="win-gift-bg"> <img src="//content.josbank.com/Global/GlobalFly-BttmLeftBkgrd_sweeps.jpg" alt="Gift Card Sweepstakes" border="0"> </div> <div class="win-gift-body"> <div class="win-gift-form"> <form name="JoinSweepstakesBottomForm" id="JoinSweepstakesBottomForm" action="JABSweepStakes" method="post"> <input type="hidden" name="storeId" value="13452" id="storeId2"> <input type="hidden" name="catalogId" value="14052" id="catalogId2"> <input type="hidden" name="URL" value="JABThankYouView" id="URL2"> <div class="row"> <div class="col12"> <input type="email" id="email1" name="email11" errpage="97" errors="15,1"> <button class="button"><span>Enter</span></button> </div> </div> </form> </div> <a class="win-gift-more" href="#" data-modal-fn="giftCardRulesModal">More Information</a> </div></div>
@@ -5731,7 +5731,7 @@ dojo.publish("CMPageRefreshEvent");
 </div>
 <div class="col6 acol12" data-slot-id="22">
 
-<div id="contentRecommendationWidget_9_-1012_3074457345618262972" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-BottomRight" class="contentRecommendationWidget" >
 
 <div class="left_espot">
 <div class="free-ship-bottom">
@@ -5837,7 +5837,7 @@ dojo.publish("CMPageRefreshEvent");
 </div>
 <div class="section">
 <ul>
-<li><a href="https://www.josbank.com/AskAQuestionView?catalogId=14052&langId=-1&storeId=13452">Contact Us</a></li>
+<li><a href="https://www.josbank.com/AskAQuestionView?catalogId=14052&langId=&storeId=13452">Contact Us</a></li>
 <li><a href="http://www.josbank.com/company-information">Company Information</a></li>
 <li><a href="https://jobs.josbank.com/?utm_source=careersite">Jobs</a></li>
 </ul>
@@ -6063,7 +6063,7 @@ Join email list dialog close
 <input type="email" id="emailUpdatesEmail" name="emailUpdatesEmail" placeholder="Email Address" maxlength="50" required>
 <input type="hidden" id="storeId" name="storeId" value="13452"/>
 <input type="hidden" id="catalogId" name="catalogId" value="14052"/>
-<input type="hidden" id="langId" name="langId" value="-1"/>
+<input type="hidden" id="langId" name="langId" value=""/>
 <button class="button"><span>Go</span></button>
 </form>
 </div>
