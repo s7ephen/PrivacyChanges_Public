@@ -44,12 +44,12 @@
 <!-- gl-header-legacy.en.html -->
 
 <div id="gl-outer-wrapper" class="gl-en cf">
-    <div id="gl-header" class="cf">
+    <div id="gl-header">
         <div id="gl-header-top">
             <ul class="cf">
                 <li><a href="http://www.wolframalpha.com/?source=nav">WolframAlpha.com</a></li>
                 <li><a href="http://www.wolframcloud.com/?source=nav">WolframCloud.com</a></li>
-                <li class="gl-last"><a href="http://www.wolfram.com/resources/?source=nav">All Sites &amp; Public Resources...</a></li>
+                <li><a href="http://www.wolfram.com/resources/?source=nav">All Sites &amp; Public Resources...</a></li>
             </ul>
         </div>
         <div id="gl-header-bottom" class="cf">
@@ -60,19 +60,19 @@
                     <img src="/common/images/gl-logo-computation-meets-knowledge.png" width="160" height="6" alt="Computation Meets Knowledge" id="gl-logo-slogan">
                 </a>
             </div>
-            <div id="gl-menu" class="cf">
+            <ul id="gl-menu" class="cf">
 
-                <div id="gl-menu-products" class="gl-has-submenu">
-                    <a href="http://www.wolfram.com/products/?source=nav" class="gl-submenu-wrapper">Products &amp; Services</a>
-                    <div id="gl-submenu-products" class="gl-submenu">
-                        <div class="gl-col-wrapper cf">
+                <li id="gl-menu-products" class="gl-menu-tab">
+                    <a href="http://www.wolfram.com/products/?source=nav">Products &amp; Services<i class="gl-icon gl-r6-c2"></i></a>
+                    <ul class="gl-submenu">
+                        <li class="gl-col-wrapper cf">
                             <ul class="gl-col gl-col1 gl-hover">
                                 <li><a href="http://www.wolfram.com/mathematica/?source=nav"><i class="gl-icon gl-r1-c2"></i><em>Mathematica</em></a></li>
                                 <li><a href="http://www.wolfram.com/programming-cloud/?source=nav"><i class="gl-icon gl-r1-c1"></i>Programming Cloud</a></li>
                                 <li><a href="http://www.wolfram.com/discovery-platform/?source=nav"><i class="gl-icon gl-r1-c3"></i>Discovery Platform</a></li>
                                 <li><a href="http://www.wolfram.com/data-science-platform/?source=nav"><i class="gl-icon gl-r1-c4"></i>Data Science Platform</a></li>
                                 <li><a href="http://www.wolfram.com/finance-platform/?source=nav"><i class="gl-icon gl-r1-c5"></i><em>Finance Platform</em></a></li>
-                                <li class="gl-last"><a href="http://www.wolfram.com/system-modeler/?source=nav"><i class="gl-icon gl-r1-c6"></i><em>SystemModeler</em></a></li>
+                                <li><a href="http://www.wolfram.com/system-modeler/?source=nav"><i class="gl-icon gl-r1-c6"></i><em>SystemModeler</em></a></li>
                             </ul>
                             <ul class="gl-col gl-col2 gl-hover">
                                 <li><a href="http://www.wolframalpha.com/?source=nav"><i class="gl-icon gl-r1-c7"></i>Wolfram|Alpha</a>
@@ -80,40 +80,40 @@
                                         <li><a href="http://www.wolframalpha.com/pro/?source=nav">Wolfram|Alpha Pro</a></li>
                                         <li><a href="http://www.wolframalpha.com/pro/problem-generator/?source=nav">Problem Generator</a></li>
                                         <li><a href="http://products.wolframalpha.com/api/?source=nav">APIs</a></li>
-                                        <li class="gl-last"><a href="http://products.wolframalpha.com/business/?source=nav">Business Solutions</a></li>
+                                        <li><a href="http://products.wolframalpha.com/business/?source=nav">Business Solutions</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="gl-col gl-col3 gl-hover">
-                                <li class="cf"><a href="http://www.wolfram.com/education/?source=nav"><i class="gl-icon gl-r3-c2"></i>Products for Education</a></li>
-                                <li><i class="gl-icon gl-r1-c8"></i>Mobile Apps
+                            <ul class="gl-col gl-col3">
+                                <li class="gl-hover"><a href="http://www.wolfram.com/education/?source=nav"><i class="gl-icon gl-r3-c2"></i>Products for Education</a></li>
+                                <li class="gl-hover"><i class="gl-icon gl-r1-c8"></i>Mobile Apps
                                     <ul>
                                         <li><a href="http://products.wolframalpha.com/mobile/?source=nav">Wolfram|Alpha for Mobile</a></li>
                                         <li><a href="http://products.wolframalpha.com/courseassistants/?source=nav">Course Assistant Apps</a></li>
-                                        <li class="gl-last"><a href="http://products.wolframalpha.com/referenceapps/?source=nav">Reference Apps</a></li>
+                                        <li><a href="http://products.wolframalpha.com/referenceapps/?source=nav">Reference Apps</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="gl-col gl-col4 gl-hover gl-last">
+                            <ul class="gl-col gl-col4 gl-hover">
                                 <li><i class="gl-icon gl-r1-c9"></i>Services
                                     <ul>
                                         <li><a href="http://www.wolframsolutions.com/?source=nav">Corporate Consulting</a></li>
                                         <li><a href="http://www.wolfram.com/support/technical-services/?source=nav">Paid Project Support</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/training/?source=nav">Training</a></li>
+                                        <li><a href="http://www.wolfram.com/training/?source=nav">Training</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div><!--/.gl-col-wrapper -->
-                        <div class="gl-col-footer cf">
+                        </li><!--/.gl-col-wrapper -->
+                        <li class="gl-col-footer">
                             <a href="http://www.wolfram.com/products/?source=nav">All Products &amp; Services &raquo;</a>
-                        </div>
-                    </div><!--/#gl-submenu-products -->
-                </div><!--/#gl-menu-products -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-products -->
 
-                <div id="gl-menu-technologies" class="gl-has-submenu">
-                    <a href="http://www.wolfram.com/technologies/?source=nav" class="gl-submenu-wrapper">Technologies</a>
-                    <div id="gl-submenu-technologies" class="gl-submenu">
-                        <div class="gl-col-wrapper">
+                <li id="gl-menu-technologies" class="gl-menu-tab">
+                    <a href="http://www.wolfram.com/technologies/?source=nav">Technologies<i class="gl-icon gl-r6-c2"></i></a>
+                    <ul class="gl-submenu">
+                        <li class="gl-col-wrapper">
                             <div class="gl-col gl-col1">
                                 <a href="http://www.wolfram.com/language/?source=nav" class="gl-hover">
                                     <span><i class="gl-icon gl-r2-c1"></i>Wolfram Language</span>
@@ -156,17 +156,17 @@
                                     <span>Curated computable knowledge powering Wolfram|Alpha.</span>
                                 </a>
                             </div>
-                        </div>
-                        <div class="gl-col-footer">
+                        </li><!--/.gl-col-wrapper -->
+                        <li class="gl-col-footer">
                             <a href="http://www.wolfram.com/technologies/?source=nav">All Technologies &raquo;</a>
-                        </div>
-                    </div><!--/#gl-submenu-technologies -->
-                </div><!--/#gl-menu-technologies -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-technologies -->
 
-                <div id="gl-menu-solutions" class="gl-has-submenu">
-                    <a href="http://www.wolfram.com/solutions/?source=nav" class="gl-submenu-wrapper">Solutions</a>
-                    <div id="gl-submenu-solutions" class="gl-submenu">
-                        <div class="gl-col-wrapper">
+                <li id="gl-menu-solutions" class="gl-menu-tab">
+                    <a href="http://www.wolfram.com/solutions/?source=nav">Solutions<i class="gl-icon gl-r6-c2"></i></a>
+                    <ul class="gl-submenu">
+                        <li class="gl-col-wrapper">
                             <ul class="gl-col gl-col1 gl-hover">
                                 <li><i class="gl-icon gl-r3-c1"></i>Engineering, R&amp;D
                                     <ul>
@@ -178,7 +178,7 @@
                                         <li><a href="http://www.wolfram.com/solutions/industry/industrial-engineering/?source=nav">Industrial Engineering</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/mechanical-engineering/?source=nav">Mechanical Engineering</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/operations-research/?source=nav">Operations Research</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
+                                        <li><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -193,7 +193,7 @@
                                         <li><a href="http://www.wolfram.com/solutions/industry/electronic-publishing/?source=nav">Authoring &amp; Publishing</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/interface-development/?source=nav">Interface Development</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/software-engineering/?source=nav">Software Engineering</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/solutions/industry/web-development/?source=nav">Web Development</a></li>
+                                        <li><a href="http://www.wolfram.com/solutions/industry/web-development/?source=nav">Web Development</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -206,44 +206,44 @@
                                         <li><a href="http://www.wolfram.com/solutions/industry/econometrics/?source=nav">Econometrics</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/financial-risk-management/?source=nav">Financial Risk Management</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/statistics/?source=nav">Statistics</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
+                                        <li><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="gl-col gl-col4 gl-last">
+                            <ul class="gl-col gl-col4">
                                 <li class="gl-hover"><i class="gl-icon gl-r3-c5"></i>Sciences
                                     <ul>
                                         <li><a href="http://www.wolfram.com/solutions/industry/astronomy/?source=nav">Astronomy</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/biological-sciences/?source=nav">Biology</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/industry/chemistry/?source=nav">Chemistry</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
+                                        <li><a href="http://www.wolfram.com/solutions/?source=nav"><em>More...</em></a></li>
                                     </ul>
                                 </li>
                                 <li class="gl-hover"><i class="gl-icon gl-r3-c6"></i>Trends
                                     <ul>
                                         <li><a href="http://www.wolfram.com/internet-of-things/?source=nav">Internet of Things</a></li>
                                         <li><a href="http://www.wolfram.com/solutions/hpc/?source=nav">High-Performance Computing</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/hackathons/?source=nav">Hackathons</a></li>
+                                        <li><a href="http://www.wolfram.com/hackathons/?source=nav">Hackathons</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="gl-col-footer">
+                        </li><!--/.gl-col-wrapper -->
+                        <li class="gl-col-footer">
                             <a href="http://www.wolfram.com/solutions/?source=nav">All Solutions &raquo;</a>
-                        </div>
-                    </div><!--/#gl-submenu-solutions -->
-                </div><!--/#gl-menu-solutions -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-solutions -->
 
-                <div id="gl-menu-support" class="gl-has-submenu">
-                    <a href="http://www.wolfram.com/support/?source=nav" class="gl-submenu-wrapper">Support &amp; Learning</a>
-                    <div id="gl-submenu-support" class="gl-submenu">
-                        <div class="gl-col-wrapper">
+                <li id="gl-menu-support" class="gl-menu-tab">
+                    <a href="http://www.wolfram.com/support/?source=nav">Support &amp; Learning<i class="gl-icon gl-r6-c2"></i></a>
+                    <ul class="gl-submenu">
+                        <li class="gl-col-wrapper">
                             <ul class="gl-col gl-col1 gl-hover">
                                 <li><i class="gl-icon gl-r4-c1"></i>Find an Answer
                                     <ul>
                                         <li><a href="http://reference.wolfram.com/language/?source=nav">Documentation</a></li>
                                         <li><a href="http://support.wolfram.com/kb/?source=nav">Support FAQs</a></li>
-                                        <li class="gl-last"><a href="http://community.wolfram.com/?source=nav">Wolfram Community</a></li>
+                                        <li><a href="http://community.wolfram.com/?source=nav">Wolfram Community</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -251,7 +251,7 @@
                                 <li><i class="gl-icon gl-r4-c2"></i>Ask for Help
                                     <ul>
                                         <li><a href="http://community.wolfram.com/?source=nav">Post a Question</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/support/contact/?source=nav">Contact Support</a></li>
+                                        <li><a href="http://www.wolfram.com/support/contact/?source=nav">Contact Support</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -260,29 +260,29 @@
                                     <ul>
                                         <li><a href="http://www.wolfram.com/broadcast/?source=nav">Videos &amp; Screencasts</a></li>
                                         <li><a href="http://www.wolfram.com/training/special-event/?source=nav">Training Events</a></li>
-                                        <li class="gl-last"><a href="http://company.wolfram.com/events/?source=nav">Conferences &amp; Seminars</a></li>
+                                        <li><a href="http://company.wolfram.com/events/?source=nav">Conferences &amp; Seminars</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul class="gl-col gl-col4 gl-hover gl-last">
+                            <ul class="gl-col gl-col4 gl-hover">
                                 <li><i class="gl-icon gl-r4-c4"></i>Premium Support
                                     <ul>
                                         <li><a href="http://www.wolfram.com/mathematica/pricing/premier-service.php?source=nav"><em>Premier Service</em></a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/support/technical-services/?source=nav">Technical Services</a></li>
+                                        <li><a href="http://www.wolfram.com/support/technical-services/?source=nav">Technical Services</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="gl-col-footer">
+                        </li><!--/.gl-col-wrapper -->
+                        <li class="gl-col-footer">
                             <a href="http://www.wolfram.com/support/?source=nav">All Support &amp; Learning &raquo;</a>
-                        </div>
-                    </div><!--/#gl-submenu-support -->
-                </div><!--/#gl-menu-support -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-support -->
 
-                <div id="gl-menu-company" class="gl-has-submenu">
-                    <a href="http://www.wolfram.com/company/?source=nav" class="gl-submenu-wrapper">Company</a>
-                    <div id="gl-submenu-company" class="gl-submenu">
-                        <div class="gl-col-wrapper">
+                <li id="gl-menu-company" class="gl-menu-tab">
+                    <a href="http://www.wolfram.com/company/?source=nav">Company<i class="gl-icon gl-r6-c2"></i></a>
+                    <ul class="gl-submenu">
+                        <li class="gl-col-wrapper">
                             <ul class="gl-col gl-col1 gl-hover">
                                 <li><i class="gl-icon gl-r5-c1"></i>About
                                     <ul>
@@ -290,7 +290,7 @@
                                         <li><a href="http://blog.wolfram.com/?source=nav">Wolfram Blog</a></li>
                                         <li><a href="http://company.wolfram.com/news/?source=nav">News</a></li>
                                         <li><a href="http://company.wolfram.com/events/?source=nav">Events</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/company/contact/?source=nav">Contact Us</a></li>
+                                        <li><a href="http://www.wolfram.com/company/contact/?source=nav">Contact Us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -298,54 +298,50 @@
                                 <li><i class="gl-icon gl-r5-c2"></i>Work with Us
                                     <ul>
                                         <li><a href="http://www.wolfram.com/company/careers/?source=nav">Careers</a></li>
-                                        <li class="gl-last"><a href="http://www.wolfram.com/company/careers/?source=nav">Internships</a></li>
+                                        <li><a href="http://www.wolfram.com/company/careers/?source=nav">Internships</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <div class="gl-hover">
-                                <ul class="gl-col gl-col3 gl-last">
-                                    <li><i class="gl-icon gl-r5-c3"></i>Initiatives
-                                        <ul>
-                                            <li><a href="http://www.wolframfoundation.org/?source=nav">Wolfram Foundation</a></li>
-                                            <li><a href="http://mathworld.wolfram.com/?source=nav" target="_blank"><em>MathWorld</em></a></li>
-                                            <li><a href="http://www.computerbasedmath.org/?source=nav">Computer-Based Math</a></li>
-                                            <li class="gl-last"><a href="http://www.wolframscience.com/?source=nav"><em>A New Kind of Science</em></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="gl-col gl-col4 gl-last">
-                                    <li>&nbsp;
-                                        <ul>
-                                            <li><a href="http://www.wolfram.com/raspberry-pi/?source=nav">Wolfram + Raspberry Pi</a></li>
-                                            <li><a href="http://demonstrations.wolfram.com/?source=nav">Demonstrations Project</a></li>
-                                            <li><a href="http://www.wolfram.com/events/technology-conference/innovator-award/?source=nav">Wolfram Innovator Awards</a></li>
-                                            <li class="gl-last"><a href="http://www.wolfram.com/resources/?source=nav"><em>More...</em></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="gl-col-footer">
+                            <ul class="gl-col gl-col3 gl-hover cf">
+                                <li class="gl-col3"><i class="gl-icon gl-r5-c3"></i>Initiatives
+                                    <ul>
+                                        <li><a href="http://www.wolframfoundation.org/?source=nav">Wolfram Foundation</a></li>
+                                        <li><a href="http://mathworld.wolfram.com/?source=nav" target="_blank"><em>MathWorld</em></a></li>
+                                        <li><a href="http://www.computerbasedmath.org/?source=nav">Computer-Based Math</a></li>
+                                        <li><a href="http://www.wolframscience.com/?source=nav"><em>A New Kind of Science</em></a></li>
+                                    </ul>
+                                </li>
+                                <li class="gl-col4">&nbsp;
+                                    <ul>
+                                        <li><a href="http://www.wolfram.com/raspberry-pi/?source=nav">Wolfram + Raspberry Pi</a></li>
+                                        <li><a href="http://demonstrations.wolfram.com/?source=nav">Demonstrations Project</a></li>
+                                        <li><a href="http://www.wolfram.com/events/technology-conference/innovator-award/?source=nav">Wolfram Innovator Awards</a></li>
+                                        <li><a href="http://www.wolfram.com/resources/?source=nav"><em>More...</em></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--/.gl-col-wrapper -->
+                        <li class="gl-col-footer">
                             <a href="http://www.wolfram.com/company/?source=nav">All Company &raquo;</a>
-                        </div>
-                    </div><!--/#gl-submenu-company -->
-                </div><!--/#gl-menu-company -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-company -->
 
-                <div id="gl-menu-divider"></div>
-                <div id="gl-menu-search" class="gl-has-submenu">
-                    <a href="http://search.wolfram.com/?source=nav" class="gl-submenu-wrapper"><i class="gl-icon gl-r6-c1"></i>Search</a>
-                    <div id="gl-submenu-search" class="gl-submenu">
-                        <div id="gl-search-wrapper" class="cf">
+                <li id="gl-menu-divider"></li>
+                <li id="gl-menu-search" class="gl-menu-tab">
+                    <a href="http://search.wolfram.com/?source=nav"><i class="gl-icon gl-r6-c1"></i>Search</a>
+                    <ul class="gl-submenu">
+                        <li id="gl-search-wrapper" class="cf">
                             <form action="http://search.wolfram.com/" method="get" accept-charset="utf-8">
                                 <div>
                                     <input type="text" name="query" value="What are you looking for?" autocomplete="off" id="gl-search">
                                 </div>
                             </form>
-                        </div>
-                    </div><!--/#gl-submenu-search -->
-                </div><!--/#gl-menu-search -->
+                        </li>
+                    </ul><!--/.gl-submenu -->
+                </li><!--/#gl-menu-search -->
 
-            </div><!--/#gl-menu -->
+            </ul><!--/#gl-menu -->
         </div><!--/#gl-header-bottom -->
     </div><!--/#gl-header -->
     <div id="gl-header-bg"><span><!-- --></span></div>
@@ -605,7 +601,7 @@
     <div id="gl-footer-menu" class="cf">
         <div class="gl-col gl-col-1">
             <ul>
-                <li class="gl-first">Products</li>
+                <li>Products</li>
                 <li><a href="http://www.wolfram.com/programming-cloud/?source=footer">Programming Cloud</a></li>
                 <li><a href="http://www.wolfram.com/mathematica/?source=footer"><em>Mathematica</em></a></li>
                 <li><a href="http://www.wolfram.com/discovery-platform/?source=footer">Discovery Platform</a></li>
@@ -621,13 +617,13 @@
         </div>
         <div class="gl-col gl-col-2">
             <ul>
-                <li class="gl-first">Services</li>
+                <li>Services</li>
                 <li><a href="http://www.wolfram.com/support/technical-services/?source=footer">Technical Services</a></li>
                 <li><a href="http://www.wolframsolutions.com/?source=footer">Corporate Consulting</a></li>
                 <li><a href="http://www.wolfram.com/training/?source=footer">Training</a></li>
             </ul>
             <ul>
-                <li class="gl-first">Customer Care</li>
+                <li>Customer Care</li>
                 <li><a href="https://user.wolfram.com/portal/ProductRegistration?source=footer">Product Registration</a></li>
                 <li><a href="https://user.wolfram.com/portal/login.html?source=footer">Product Downloads</a></li>
                 <li><a href="https://user.wolfram.com/portal/login.html?source=footer"><em>Premier Service</em> Benefits</a></li>
@@ -636,14 +632,14 @@
         </div>
         <div class="gl-col gl-col-3">
             <ul>
-                <li class="gl-first">Support</li>
+                <li>Support</li>
                 <li><a href="http://support.wolfram.com/kb/?source=footer">Support FAQs</a></li>
                 <li><a href="http://www.wolfram.com/support/contact/email/?source=footer">Customer Service</a></li>
                 <li><a href="http://www.wolfram.com/support/contact/?source=footer">Contact Support</a></li>
                 <li class="gl-all"><a href="http://www.wolfram.com/support/?source=footer">View all...</a></li>
             </ul>
             <ul>
-                <li class="gl-first">Learning</li>
+                <li>Learning</li>
                 <li><a href="http://reference.wolfram.com/language/?source=footer">Wolfram Language Documentation</a></li>
                 <li><a href="http://community.wolfram.com/?source=footer">Community</a></li>
                 <li><a href="http://www.wolfram.com/training/special-event/?source=footer">Training Events</a></li>
@@ -653,7 +649,7 @@
         </div>
         <div class="gl-col gl-col-4">
             <ul>
-                <li class="gl-first">Public Resources</li>
+                <li>Public Resources</li>
                 <li><a href="http://www.wolframalpha.com/?source=footer">Wolfram|Alpha</a></li>
                 <li><a href="http://demonstrations.wolfram.com/?source=footer">Demonstrations Project</a></li>
                 <li><a href="http://devices.wolfram.com/?source=footer">Connected Devices Project</a></li>
@@ -667,7 +663,7 @@
         </div>
         <div class="gl-col gl-col-5">
             <ul>
-                <li class="gl-first">Company</li>
+                <li>Company</li>
                 <li><a href="http://company.wolfram.com/news/?source=footer">News</a></li>
                 <li><a href="http://company.wolfram.com/events/?source=footer">Events</a></li>
                 <li><a href="http://www.wolfram.com/company/background.html?source=footer">About Wolfram</a></li>
@@ -675,7 +671,7 @@
                 <li><a href="http://www.wolfram.com/company/contact/?source=footer">Contact</a></li>
             </ul>
             <ul>
-                <li class="gl-first">Connect</li>
+                <li>Connect</li>
                 <li><a href="http://community.wolfram.com/?source=footer">Wolfram Community</a></li>
                 <li><a href="http://blog.wolfram.com/?source=footer">Wolfram Blog</a></li>
                 <li><a href="http://company.wolfram.com/news/newsletter/?source=footer">Newsletter</a></li>
@@ -684,7 +680,7 @@
         </div>
     </div><!--/#gl-footer-menu -->
     <div id="gl-footer-copyright" class="cf">
-        <div class="gl-col1 cf">
+        <div class="gl-col1">
             <span>&copy; 2015 Wolfram. All rights reserved.</span>
         </div>
         <div class="gl-col2 cf">
@@ -692,7 +688,7 @@
                 <li><a href="http://www.wolfram.com/legal/?source=footer">Legal</a></li>
                 <li><a href="http://www.wolfram.com/site-map/?source=footer">Site Map</a></li>
                 <li><a href="http://www.wolframalpha.com/?source=footer">WolframAlpha.com</a></li>
-                <li class="gl-last"><a href="http://www.wolframcloud.com/?source=footer">WolframCloud.com</a></li>
+                <li><a href="http://www.wolframcloud.com/?source=footer">WolframCloud.com</a></li>
             </ul>
         </div>
     </div><!--/#gl-footer-copyright -->
