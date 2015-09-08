@@ -3474,7 +3474,10 @@ $('<img height="1" width="1" style="border-style:none;" alt="" src="//insight.ad
                         type: 'GET', dataType: 'text',
                         success: function (server_data) {
                             if (server_data.split('^')[0] !== 'succ') {
-                                $error.html('We\'re sorry. There\'s been a server error. <!-- No success msg. -->');
+                                if(server_data.split('^')[1] == 'MMode')
+										    window.location.href = "/Default.aspx?MMode=y";
+                                else
+                                            $error.html('We\'re sorry. There\'s been a server error. <!-- No success msg. -->');
                             } else {
                                 $close.click();
                                 email_signup_2014.confirmation(address);
@@ -4947,7 +4950,7 @@ the next lines. */
 <!-- legacy -->
 s.pageName="US:OSP:privacysecurity.aspx";
 s.prop19="US:OSP:privacysecurity.aspx";
-s.server="MIXUS1WEBPR15";
+s.server="MIXUS3WEBPR15";
 s.prop5="One Stop Plus";
 s.eVar5="One Stop Plus";
 s.eVar29="non-content";
@@ -4968,4 +4971,4 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <script type="text/javascript"></script></body>  
 
 </html>
-<!-- Source: x.x.x.25, TimeStamp: 9/8/2015 7:02:02 PM -->
+<!-- Source: x.x.x.25, TimeStamp: 9/8/2015 8:34:45 PM -->
