@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'dedc016e65', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'a6e9088382', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=741058655'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=984617944'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1094881935'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=21452998&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=908552448'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=636812094'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=29397613'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1019169409&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, '41f41961dd');
+      PJMedia.SharingButtons.initialize(null, null, '5a8c890984');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=806000265');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=676655567');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=968393748');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1081703363');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=879754265');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2073867458');"></a>
   </span>
 </span>
 
@@ -610,9 +610,9 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 							
 											<li><a href="http://pjmedia.com/blog/its-not-classified-because-its-marked-its-marked-because-its-classified/">'It’s Not Classified Because It’s Marked; It’s Marked Because It’s Classified'</a></li>
 											
-											<li><a href="http://pjmedia.com/tatler/2015/09/07/special-intel-review-finds-hillary-clinton-received-top-secret-emails-on-personal-account/">Special Intel Review Finds Hillary Clinton Received Top Secret Emails on Personal Account</a></li>
+											<li><a href="http://pjmedia.com/tatler/2015/09/07/as-iran-deal-is-talked-up-in-washington-israel-iran-prepare-for-war/">As Iran Deal Is Talked Up in Washington, Israel, Iran Prepare for War</a></li>
 											
-											<li><a href="http://pjmedia.com/victordavishanson/black-lives-matter-year-from-now/">‘Black Lives Matter’—a Year From Now </a></li>
+											<li><a href="http://pjmedia.com/tatler/2015/09/07/special-intel-review-finds-hillary-clinton-received-top-secret-emails-on-personal-account/">Special Intel Review Finds Hillary Clinton Received Top Secret Emails on Personal Account</a></li>
 																		</ul>
 
 									<div class="sidebar-footer" style="margin-top:10px;"><a class="more-link" href="/popular/">More</a> </div>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/07/special-intel-review-finds-hillary-clinton-received-top-secret-emails-on-personal-account/">Special Intel Review Finds Hillary Clinton Received Top Secret Emails on Personal Account</a></li><li><a href="http://pjmedia.com/tatler/2015/09/07/german-pastor-claims-that-hundreds-of-iranian-refugees-are-converting-to-christianity/">German Pastor Claims that Hundreds of Muslim Refugees Are Converting to Christianity</a></li><li><a href="http://pjmedia.com/tatler/2015/09/07/leon-panetta-was-really-once-director-of-the-cia-sheesh/">Leon Panetta Was  Really Once Director of the CIA? Sheesh</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/08/is-boehner-on-his-way-out/">Is Boehner on His Way Out?</a></li><li><a href="http://pjmedia.com/tatler/2015/09/08/former-terror-chief-muslim-brotherhood-is-one-of-the-most-dangerous-organizations/">Former Al-Qaeda Leader: &#8216;Muslim Brotherhood Is One of the Most Dangerous Organizations&#8217;</a></li><li><a href="http://pjmedia.com/tatler/2015/09/07/special-intel-review-finds-hillary-clinton-received-top-secret-emails-on-personal-account/">Special Intel Review Finds Hillary Clinton Received Top Secret Emails on Personal Account</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -640,7 +640,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/lifestyle/2015/09/07/blacks-and-whites-have-different-experiences-saying-so-does-not-make-one-racist/">Is It Racist to Acknowledge That Blacks and Whites Have Different Experiences?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/goddess-worship-choir-replaces-jesus-with-hillarys-name-in-hymn/">Goddess Worship: Choir Replaces Jesus with Hillary&#8217;s Name in Hymn</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/5-personalities-at-your-gym-that-will-make-you-healthier-and-happier/">5 Personalities at Your Gym That Will Make You Healthier and Happier</a></li>
+				<li><a href="http://pjmedia.com/lifestyle/2015/09/08/why-the-hell-would-anyone-want-to-read-the-bible/">Why the Hell Would Anyone Want to Read the Bible?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/07/blacks-and-whites-have-different-experiences-saying-so-does-not-make-one-racist/">Is It Racist to Acknowledge That Blacks and Whites Have Different Experiences?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/05/goddess-worship-choir-replaces-jesus-with-hillarys-name-in-hymn/">Goddess Worship: Choir Replaces Jesus with Hillary&#8217;s Name in Hymn</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213985/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">THERE ARE DIFFERENCES: <a target="_blank" href="http://www.patheos.com/blogs/simchafisher/2015/09/05/boys-with-sticks/">Boys with sticks.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213984/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">THE LAW IS ALWAYS IN OUR HANDS:  And sometimes people enforce it.  <a target="_blank" href="http://www.theblaze.com/stories/2015/09/07/i-picked-him-up-and-just-slammed-him-hero-bystanders-dish-out-a-painful-dose-of-karma-to-alleged-woman-beater/?utm_source=TheBlaze.com&amp;utm_medium=rss&amp;utm_campaign=story&amp;utm_content=i-picked-him-up-and-just-slammed-him-hero-bystanders-dish-out-a-painful-dose-of-karma-to-alleged-woman-beater">Hero Bystanders Dish Out a Painful Dose of Karma to Alleged Woman Beater</a>.  Note this was a frequent flyer of our judicial system.</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213983/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">SECOND ANNUAL LABOR DAY INDIE AUTHOR SALE: <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/B00CMYWNXE/wwwviolentkicom">Morning Star, Dave Freer, $2.99.</a></a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213954/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">BEHOLD THE TRUMPEN PROLETARIAT: “No Movement That Embraces Trump <a target="_blank" href="http://www.nationalreview.com/article/423607/donald-trump-conservative-movement-jonah-goldberg?target=author&amp;tid=897">Can Call Itself Conservative</a>,” Jonah Goldberg exclaims. Is he right? ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213922/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">If the eventual Republican nominee needs 47 percent of the Latino vote to win the general election — the threshold set by two political scientists in a study for Latino Decisions — what chance does Trump have? ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213993/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">SHA-NA-NA FOUNDER (AND LAWPROF) <a target="_blank" href="http://taxprof.typepad.com/taxprof_blog/2015/09/death-of-law-prof-dennis-greene-sha-na-na-co-founder.html">Dennis Greene has died.</a>  That&#8217;s sad.  I went to law school with him (it was his second career), and he was a good guy.</a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":358,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":1008,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
