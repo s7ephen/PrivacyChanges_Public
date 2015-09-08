@@ -83,9 +83,6 @@
                 <link href='http://fonts.googleapis.com/css?family=Oswald:700,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/mbox.js"></script>
-<script src="https://code.jquery.com/jquery-1.7.0.min.js"></script>
-<script type="text/javascript">jq170 = $.noConflict(true);</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
 
 <style>
    .common-nav-main li.main-cat>a{padding:0px 24px;}
@@ -93,7 +90,7 @@
    .common-nav-main ul table.old, .common-nav-main .cat-CatGroups div.navWrap{top:29px!important;}
 
    /* GLOBAL NAV BANNER */ 
-   div#globalBanner{margin-top:4px;height:78px;}
+   div#globalBanner{margin-top:4px;height:124px;}
 
    div.email-signup-contianer{bottom:auto!important;margin-top:13px;}
 
@@ -138,7 +135,8 @@
       ////// make sure to check that the global banner image height matches the height of the #globalBanner div defined in CSS above
 
 
-      $('.common-header').append('<div id="globalBanner"><a href="/content.jsp?pageName=5daysale&int=Global_BOGO"><img src="/assets/cms/images/homepage_headers_large/Global_5Day_Last_090715.jpg" width="970" height="78" ></a></div>');
+      $('.common-header').append('<div id="globalBanner"><map name="gobalBannerMap"><area shape="rect" coords="76,89,207,116" href="#" class="promoModalTrigger"><area shape="rect" coords="223,89,485,116" href="/assets/cms/images/homepage_headers_large/BMSM_Coupon_Web_090815.jpg" target="_blank"></map><img src="/assets/cms/images/homepage_headers_large/Global_BMSM_090815.jpg" width="970" height="124" usemap="#gobalBannerMap"></div>');
+
     }
 
     //temp link fix
@@ -212,7 +210,7 @@
   </a>
 
 </div><div class="email-signup-contianer">
-	<form id="subscribeForm" action="/user/preferences.cmd" method="post" name="subscribeForm" target="_blank"><input type='hidden' name='form_state' value='subscribeForm'/><input type='hidden' name='CSRF_TOKEN' value='xDmhmlVxYC2JWLhP7PAS4EaGA2DJ0Jga84WEcnblt94=jzFQmSZKCLM='/><input id="userEmail" name="userEmail" type="hidden"/><input class="user-email forceStatic" id="userEmailFooter" name="userEmailFooter" type="text" value="" size="20" maxlength="60"/><div class="signup-button-container">
+	<form id="subscribeForm" action="/user/preferences.cmd" method="post" name="subscribeForm" target="_blank"><input type='hidden' name='form_state' value='subscribeForm'/><input type='hidden' name='CSRF_TOKEN' value='NMiui5lqCW/f+molsmsYwyXYLh8plksd6UJYEQEaKbg=pI0ZDKG5680='/><input id="userEmail" name="userEmail" type="hidden"/><input class="user-email forceStatic" id="userEmailFooter" name="userEmailFooter" type="text" value="" size="20" maxlength="60"/><div class="signup-button-container">
 		<div class="signup-button-cheetah button">
 			<span class="signup-text-cheetah">Sign Up Now</span>
 		</div>
@@ -1595,7 +1593,64 @@ exclusive gift offers.</p>-->
 <div class="copyright-text">
   <a href="/custserv/sitemap.jsp">Site Map</a>
   &copy; Things Remembered 2015. All rights reserved.
-</div><!-- Footer - Managed Content - Area 5 - end -->
+</div>
+
+
+<!------------ BEGIN: promo modal code ------------>
+
+
+<style>
+    div#promoModal{display:none;background-image:url('/assets/cms/images/general_banners_small/blk_50.png');position:fixed;top:0px;right:0px;bottom:0px;left:0px;z-index:60;}
+    span#closePromoModal{background-color:black;color:white;padding:5px;cursor:pointer;position:absolute;top:0px;right:0px;}
+    div#promoModalContainer{position:relative;color:black;background-color:white;margin: 15% auto;width:650px;min-height:200px;box-shadow:0px 0px 5px black;}
+    div#innerFrame{
+      border:2px solid #00a499;
+      padding:10px;
+      position:absolute;
+      top:15px;right:15px;bottom:15px;left:15px;
+      text-align:center;
+    }
+    div#innerFrame h3{
+      color:#00a499;
+      font-size:3em;
+    }
+    div#innerFrame ul{list-style-type:none;}
+    div#innerFrame ul li{float:left;width:50%;margin:10px 0;}
+    p.finePrint{font-size:1em;width:520px;margin:0 auto;line-height:1.2em;margin-bottom:10px;}
+    /*div#promoModal{display:block;}*/
+    a#printCoupon{font-size:2em;}
+</style>
+
+<div id="promoModal">
+    <div id="promoModalContainer">
+      <div id="innerFrame">
+        <span id="closePromoModal">CLOSE</span>
+        <h3 class="gotham_boldregular">$15 OFF $60 | $30 OFF $120</h3>
+        <ul><li>CODE: 4733</li><li>CODE: 4737</li></ul>
+        <p class="finePrint">Coupon is valid 9/8  through 9/25.  Print this coupon and present in store at the time of purchase.  To redeem online, enter coupon code at checkout.  Coupon cannot be combined with any other coupon, offer or deal.</p>
+        <a id="printCoupon" href="/assets/cms/images/homepage_headers_large/BMSM_Coupon_Web_090815.jpg" target="_blank">PRINT COUPON</a>
+      </div>
+    </div>
+</div>
+
+<!------------ END: promo modal code ------------>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+       $("span#closePromoModal").click(function(){
+          $('div#promoModal').fadeOut();
+       });
+
+      $('.promoModalTrigger').click(function(e){
+          e.preventDefault();
+          $('div#promoModal').fadeIn();
+      }); 
+
+    });
+
+</script><!-- Footer - Managed Content - Area 5 - end -->
    </div>
 </div>
 <!-- footer_nav Ends -->
