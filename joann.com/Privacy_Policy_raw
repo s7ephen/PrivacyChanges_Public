@@ -636,6 +636,32 @@ body {background: none repeat scroll 0 0 #f6f4f4 !important;}
 						</li>
 						
 						<li>
+							<div id="header-email-signup">
+							<div class="header-email-signup-title">
+							   <a href="javascript:void(0);" title="Email Sign Up">
+									Email Sign Up
+								</a>
+							</div>
+							<div class="header-email-signup-content">
+								<form action="#" method="post" id="header-email-alert-signup" class="clearfix">
+									<label for="email-alert-address">Sign up for our email updates</label>
+									<span class="header-email-signup-subhead">
+										Be the first to hear about special deals and exclusive promotions.
+									</span>
+									<span class="header-email-signup-tryit">
+										Sign up today!
+									</span>
+									<div style="clearfix">
+										<div class="input"><input type="email" id="email-alert-address" class="headerCustomerEmail" value="Your Email Address" onfocus="this.value = '';" onblur="if (this.value =='') {this.value = 'Your Email Address';}" /></div>
+										<input id="header-email-thank-you" type="submit" name="home-email" class="submitEmail"/>
+									</div>
+								
+				    			</form>
+							</div>
+							</div>
+						</li>
+						
+						<li>
 							<a href="http://www.joann.com/coupon/" title="Coupons">
 								Coupons
 							</a>
@@ -9343,8 +9369,8 @@ body {background: none repeat scroll 0 0 #f6f4f4 !important;}
 
 <style>
        #header-banner a {color: inherit;}
-       #header-banner .header-banner .header-banner-bar.first {width: 390px;}
-       #header-banner .header-banner .header-banner-bar {width: 326px;}
+       #header-banner .header-banner .header-banner-bar.first {width: 343px;}
+       #header-banner .header-banner .header-banner-bar {width: 343px;}
 	   #header-banner .header-banner-divider-or {       
 		vertical-align: middle;
 		width: 30px;
@@ -9366,35 +9392,43 @@ body {background: none repeat scroll 0 0 #f6f4f4 !important;}
         .header-banner-divider {display: none;}
 		.header-banner-divider-or  {visibility:hidden; display:none;}
         .header-banner-divider.header-banner-tablet {display: block;}
-   }
+    }
 	
 	@media screen and (max-width: 768px) and (min-width: 320px){
 	#header-banner .header-banner-divider-or {visibility:hidden; display:none;}
 	}
 </style>
 
-<div class="header-banner-bar first">
-        <!-- MARKETING CONTENT START -->
+<div class="header-banner-bar header-banner-mobile first">
+    <!-- MARKETING CONTENT START -->
         <span class="primary-text">
-		<a href="http://www.joann.com/labordaysale/?icn=Home&amp;ici=hb-1control">
-			<img src="http://demandware.edgesuite.net/aamm_prd/on/demandware.static/-/Sites-JoAnn-Library/default/dwc6a11035/static/homepage/09_03_15/HB_opt1.jpg">
+		<a href="http://www.joann.com/coupon/?icn=Home&amp;ici=hb-1">
+			50% OFF ANY REG-PRICED ITEM
+		</a>
+	</span>
+    <span class="secondary-text">
+		<a href="/cart?icn=Home&ici=apply-code-EXTRAFIFTY" class="dwre-add-coupon-button" data-code="EXTRAFIFTY" data-notification="true">
+		Thru Sat., Sept. 12.
+		</a>
+		<a href="http://www.joann.com/cart?cpn=EXTRAFIFTY" class="dwre-add-coupon-button" data-code="EXTRAFIFTY" data-notification="true">
+		&nbsp;Apply code: EXTRAFIFTY &#9658; 
 		</a>
 	</span>
     <!-- MARKETING CONTENT END -->
 </div>
 
-<div class="header-banner-divider"></div>
+<div class="header-banner-divider-or"></div>
 
-<div class="header-banner-bar middle header-banner-tablet header-banner-mobile">
+<div class="header-banner-bar middle header-banner-tablet">
     <!-- MARKETING CONTENT START -->
     <span class="primary-text">
-		<a href="/cart?icn=Home&ici=apply-code-LABORDAY15" class="dwre-add-coupon-button" data-code="LABORDAY15" data-notification="true">
-		1.99 Shipping or Free with $60+&nbsp;<img src="http://demandware.edgesuite.net/aamm_prd/on/demandware.static/-/Sites-JoAnn-Library/default/dw5439819e/static/site/header-banner/truck3.png">
+		<a href="/cart?icn=Home&ici=apply-code-SEPT60" class="dwre-add-coupon-button" data-code="SEPT60" data-notification="true">
+		FREE SHIPPING $60 OR MORE&nbsp;<img src="http://demandware.edgesuite.net/aamm_prd/on/demandware.static/-/Sites-JoAnn-Library/default/dw5439819e/static/site/header-banner/truck3.png">
 		</a>
 	</span>
     <span class="secondary-text">
-		<a href="/cart?icn=Home&ici=apply-code-LABORDAY15" class="dwre-add-coupon-button" data-code="LABORDAY15" data-notification="true">
-		&nbsp;Apply code: LABORDAY15 &#9658; 
+		<a href="http://www.joann.com/cart?cpn=SEPT60" class="dwre-add-coupon-button" data-code="SEPT60" data-notification="true">
+		&nbsp;Apply code: SEPT60 &#9658; 
 		</a>
 	</span>
     <!-- MARKETING CONTENT END -->
