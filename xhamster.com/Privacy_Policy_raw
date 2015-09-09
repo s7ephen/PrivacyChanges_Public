@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Privacy Policy</title>
+<script type="text/javascript" src="http://us-st.xhcdn.com/js/dw.js"></script>
 <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA">
 <meta name="viewport" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +27,13 @@
     <script>
         window.js_vars={"cookieDomain":".xhamster.com"}    </script>
 
+<script type="text/javascript">
+    $.ajaxSetup({
+        beforeSend: function(){
+            collect(this.url);
+        }
+    })
+</script>
 </head>
 <body >
 <div id='main'>
