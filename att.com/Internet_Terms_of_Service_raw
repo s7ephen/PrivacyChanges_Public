@@ -1,23 +1,7 @@
 <!DOCTYPE HTML> 
 <html lang="en"> 
-<script> 
-        function getURLParam(pName) 
-        { 
-            var queryString = location.search; var startPos = 0; var stopPos = 0; var tempPos = 0; var pValue = ""; 
-            if (pName) 
-            { 
-                if (queryString.indexOf(pName) != -1) 
-                { 
-                    startPos = queryString.indexOf(pName) + pName.length + 1; 
-                    stopPos = ((tempPos = (queryString.indexOf("&", startPos))) == -1) ? queryString.length : tempPos; 
-                    pValue = queryString.substring(startPos, stopPos); 
-                    pValue = unescape(pValue); 
-                } 
-            } 
-            return pValue; 
-        } 
-</script> 
 <head> 
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />  
 <script type="text/javascript"> 
   	if (typeof(lpUnit)=='undefined')	 
         var lpUnit='international';   
@@ -53,7 +37,6 @@
       text-decoration:none; 
   } 
 </style> 
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />  
 <script type="text/javascript"> 
 (function SSLredirect(){ 
 	if(window.location.protocol != "http:"){return} 
@@ -91,7 +74,7 @@
 			<script type="text/javascript" src="http://www.att.com/scripts/tealeaf/tealeaf.min.4.0.1607.js"></script> 
 	<!-- Tesla Defaults --> 
 	<link href="/styles/tesla1.3.0.1_SHOP/ge5p_combined.css" rel="stylesheet"/> 
-<script type="text/javascript">CQURLInfo={"requestPath":"/content/att/shop/en/internet/att-internet-terms-of-service","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"samplecontent,crx2,publish,crx3mongo"};</script> 
+<script type="text/javascript">CQURLInfo={"requestPath":"/content/att/shop/en/internet/att-internet-terms-of-service","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"crx2,publish,crx3mongo"};</script> 
 <link rel="stylesheet" href="/shopcms/shopetc/att/common/components/page/globalhardrockcombined/clientlib.min.css" type="text/css"> 
 <!--[if IE 8]> 
 <style type="text/css"> 
@@ -110,7 +93,7 @@
 <link rel="stylesheet" href="http://www.att.com/styles/global-ie7.css" type="text/css" media="screen, projection, print" /> 
 <![endif]--> 
 <link rel="stylesheet" type="text/css" href="http://www.att.com/styles/shop-styles.css"/>  
-        <script type="text/javascript">CQURLInfo={"requestPath":"/content/att/shop/en/internet/att-internet-terms-of-service","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"samplecontent,crx2,publish,crx3mongo"};</script> 
+        <script type="text/javascript">CQURLInfo={"requestPath":"/content/att/shop/en/internet/att-internet-terms-of-service","extension":"html","selectors":[],"systemId":"12b32c41-8d69-473f-9d63-fabaf0641cda","runModes":"crx2,publish,crx3mongo"};</script> 
 <link rel="stylesheet" href="/shopcms/equipmentstore/clientlib/clientlib.min.css" type="text/css"> 
     <!-- Tesla Global Variable and scripts --> 
 <!--********** Getting Environment.properties values from dspjspTaglib file**********--> 
@@ -157,6 +140,18 @@
 		setTimeout(function() {  
 			jQuery('#ge5p_z2-zipcode-change').hide(); 
 		},400); 
+	} 
+	function getURLParam(pName) { 
+		var queryString = location.search; var startPos = 0; var stopPos = 0; var tempPos = 0; var pValue = ""; 
+		if (pName) { 
+			if (queryString.indexOf(pName) != -1) { 
+				startPos = queryString.indexOf(pName) + pName.length + 1; 
+				stopPos = ((tempPos = (queryString.indexOf("&", startPos))) == -1) ? queryString.length : tempPos; 
+				pValue = queryString.substring(startPos, stopPos); 
+				pValue = unescape(pValue); 
+			} 
+		} 
+		return pValue; 
 	} 
 </script> 
 	<script type="text/javascript" src="http://www.att.com/media/gvp/GVP.js"></script> 
@@ -1161,7 +1156,7 @@ try{document.getElementById('web_bug').innerHTML='<img src="/monitoring/cgcheck/
                     } 
                 } 
          </script> 
-	    <!--X-Renderer: 239889875972649204979822083285784952007 --> 
+	    <!--X-Renderer: 340120403249039865812680420352522932821 --> 
 		<!-- /FOOTER -->  
    <script type="text/javascript"> 
    jQuery(document).ready(function(){ 
@@ -1279,7 +1274,7 @@ try{document.getElementById('web_bug').innerHTML='<img src="/monitoring/cgcheck/
     	};  
 </script> 
 	<!-- Webtrend global --> 
-	<meta NAME="DCSext.sessionid" CONTENT="k2OvU1JFUPLwnc6_x3rK__9hmFomFQLh!1472105696!1441755517509" /> 
+	<meta NAME="DCSext.sessionid" CONTENT="Fcyvpxy4lBH0wU2PprJpcTnRzlx8OUvJ!-982618449!1441761008824" /> 
 	<script> 
 	//<![CDATA[ 
  	if(~location.href.indexOf('attaccesserror')){ 
@@ -1301,7 +1296,7 @@ try{document.getElementById('web_bug').innerHTML='<img src="/monitoring/cgcheck/
 	ATT.globalVars.ban = ""; 
 	ATT.globalVars.loginId = ""; 
 	ATT.globalVars.userState = ""; 
-	ATT.globalVars.sessionid = "k2OvU1JFUPLwnc6_x3rK__9hmFomFQLh!1472105696!1441755517509"; 
+	ATT.globalVars.sessionid = "Fcyvpxy4lBH0wU2PprJpcTnRzlx8OUvJ!-982618449!1441761008824"; 
 	ATT.globalVars.paymentProfileName = ""; 
 	ATT.globalVars.paymentType = function(){ 
 		var wtPaymentMethod; 
