@@ -70,8 +70,8 @@
     
 	
 
-<link href="//nav.shld.net/assets/css/gnf_sears-us-8e74ae0b700f1461a8581996ea7a423d.css" media="all" rel="stylesheet" type="text/css" />
-<script src="//nav.shld.net/assets/gnf/gnf_Combined-0f0eb5c465bd165a1049ac852ee4a0e8.js" type="text/javascript"></script>
+<link href="//nav.shld.net/assets/css/gnf_sears-us-5f60981d706a4cab734e1e59733ab25c.css" media="all" rel="stylesheet" type="text/css" />
+<script src="//nav.shld.net/assets/gnf/gnf_Combined-ccce342480898f64abbd95b0db2bb474.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -257,18 +257,6 @@ if (!(/universalprofile/.test(location.href))) {
 }
 
 shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
-shc.abTest = function() {
-  var ab = [];
-  if ($.query.get('hdrTest') === 'C') {
-   ab.push('hdrTestC');
-   $.q('body').addClass('hdrTestC');
-   $('#hdrv3 [data-test="remove"]').hide();
-   $('#gnf_nav_deals').remove();
-   $('#gnf_nav_more').addClass('gnf-nav-last');
-  }
-  if ($.query.get('ttpr') === 'search_autofill_new' || $.cookie('ngsub')=== '55') {ab.push('autofill');}
-  return ab;
-}();
 </script>
 
 
@@ -1515,6 +1503,18 @@ $('#srchFrm').on('submit', function(e) {
   location.href=$(this).attr('action') + '=' + s;
  }
 });
+shc.abTest = function() {
+  var ab = [];
+  if ($.query.get('hdrTest') === 'C') {
+   ab.push('hdrTestC');
+   $.q('body').addClass('hdrTestC');
+   $('#hdrv3 [data-test="remove"]').hide();
+   $('#gnf_nav_deals').remove();
+   $('#gnf_nav_more').addClass('gnf-nav-last');
+  }
+  if ($.query.get('ttpr') === 'search_autofill_new' || $.cookie('ngsub')=== '55') {ab.push('autofill');}
+  return ab;
+}();
 </script>
 </div>
 
@@ -2105,7 +2105,7 @@ updateOmnitureValues();
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '408p' -->
+<!-- Publish Server: '304p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
