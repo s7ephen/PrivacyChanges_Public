@@ -4,8 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<title>Steam Subscriber Agreement</title>
-	<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=9OdR_5y5E0pz" rel="stylesheet" type="text/css" >
-<link href="http://store.akamai.steamstatic.com/public/css/styles_storev5.css?v=kCDcu1IQaT3s" rel="stylesheet" type="text/css" >
+	<link href="http://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=Kb4TtiZh4n2E" rel="stylesheet" type="text/css" >
+<link href="http://store.akamai.steamstatic.com/public/css/styles_storev5.css?v=UhKKi2O6d3tt" rel="stylesheet" type="text/css" >
 <!--[if lte IE 6]> <link href="http://store.akamai.steamstatic.com/public/css/styles_storev5_ie6.css?v=sEaT8nRDvs3H" rel="stylesheet" type="text/css" >
  <![endif]-->
 <!--[if lte IE 7]> <style type="text/css"> .iepopupfix{ display: block; } </style> <![endif]-->
@@ -13,9 +13,9 @@
 	<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU"></script>
 <script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.KzKRWeioOYcP"></script>
 
-<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=btI-C7RbiYVt&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=dOTXhsVTCr7S&amp;l=english"></script>
 
-<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=G0EYRqlsSyxm&amp;l=english"></script>
+<script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/main.js?v=P-uCvUDqQ7bg&amp;l=english"></script>
 
 <script type="text/javascript" src="http://store.akamai.steamstatic.com/public/javascript/prototype-1.7.js?v=.a38iP7Khdmyy"></script>
 
@@ -24,7 +24,7 @@
 <script type="text/javascript">
 jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() ); 
 $J.data( document, 'x_oldref', GetNavCookie() ); 
-$('.tooltip').v_tooltip(); $('.supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#supernav'});
+$('.tooltip').v_tooltip();
 window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
 BindStoreTooltip( $('[data-store-tooltip]') ); 
 });</script><script type="text/javascript">
@@ -98,7 +98,7 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 			SUPPORT		</a>
 		</div>
 	<script type="text/javascript">
-		jQuery(document).ready(function($) {
+		jQuery(function($) {
 			$('.tooltip').v_tooltip();
 			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
 		});
@@ -152,7 +152,7 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 			</div>
 </div>
 
-		<div id="store_header">
+		<div id="store_header" class="">
 		<div class="content">
 			<div id="store_controls">
 				<div id="cart_status_data">
@@ -172,11 +172,11 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 							<a class="tab " href="http://store.steampowered.com/?snr=1_subscriberagreement_SubscriberAgreement__12">
 									<span>Featured Items</span>
 							</a>
-															<div class="tab  flyout_tab" id="genre_tab" onmouseover="FlyoutMenu( 'genre_tab', 'genre_flyout', 'left', 'bottom' );" onmouseout="HideFlyoutMenu( event, 'genre_tab', 'genre_flyout' );">
+															<div class="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom">
 									<span class="pulldown">Games<span ></span></span>
 
 								</div>
-								<div class="popup_block_new flyout_tab_flyout" id="genre_flyout" style="display: none;" onmouseout="HideFlyoutMenu( event, 'genre_tab', 'genre_flyout' );">
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;">
 									<div class="popup_body popup_menu">
 																																											<a class="popup_menu_item" href="http://store.steampowered.com/genre/Free%20to%20Play/?snr=1_subscriberagreement_SubscriberAgreement__12">
 													Free to Play												</a>
@@ -218,11 +218,11 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 									</div>
 								</div>
 							
-							<div class="tab  flyout_tab" id="software_tab" onmouseover="FlyoutMenu( 'software_tab', 'software_flyout', 'left', 'bottom' );" onmouseout="HideFlyoutMenu( event, 'software_tab', 'software_flyout' );">
+							<div class="tab  flyout_tab" id="software_tab" data-flyout="software_flyout" data-flyout-align="left" data-flyout-valign="bottom">
 								<span class="pulldown">Software<span ></span></span>
 
 							</div>
-							<div class="popup_block_new flyout_tab_flyout" id="software_flyout" style="display: none;" onmouseout="HideFlyoutMenu( event, 'software_tab', 'software_flyout' );">
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="software_flyout" style="display: none;">
 								<div class="popup_body popup_menu">
 
 																			<a class="popup_menu_item" href="http://store.steampowered.com/tag/en/Animation%20%26%20Modeling/?snr=1_subscriberagreement_SubscriberAgreement__12">
@@ -245,11 +245,11 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 								</div>
 							</div>
 
-							<div class="tab  flyout_tab" id="hardware_tab" onmouseover="FlyoutMenu( 'hardware_tab', 'hardware_flyout', 'left', 'bottom' );" onmouseout="HideFlyoutMenu( event, 'hardware_tab', 'hardware_flyout' );">
+							<div class="tab  flyout_tab" id="hardware_tab" data-flyout="hardware_flyout" data-flyout-align="left" data-flyout-valign="bottom">
 								<span class="pulldown">Hardware<span ></span></span>
 
 							</div>
-							<div class="popup_block_new flyout_tab_flyout" id="hardware_flyout" style="display: none;" onmouseout="HideFlyoutMenu( event, 'hardware_tab', 'hardware_flyout' );">
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="hardware_flyout" style="display: none;">
 								<div class="popup_body popup_menu">
 									<a class="popup_menu_item" href="http://store.steampowered.com/app/353370?snr=1_subscriberagreement_SubscriberAgreement__12">
 										Steam Controller									</a>
@@ -272,12 +272,12 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 
 
 							
-								<div class="tab  flyout_tab" id="foryou_tab" onmouseover="EnsureStoreMenuTagsLoaded( '#foryou_yourtags' ); FlyoutMenu( 'foryou_tab', 'foryou_flyout', 'left', 'bottom' );" onmouseout="HideFlyoutMenu( event, 'foryou_tab', 'foryou_flyout' );">
+								<div class="tab  flyout_tab" id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" onmouseover="EnsureStoreMenuTagsLoaded( '#foryou_yourtags' );">
 								<span class="pulldown">
 									For You									<span></span>
 								</span>
 								</div>
-								<div class="popup_block_new flyout_tab_flyout" id="foryou_flyout" style="display: none;" onmouseout="HideFlyoutMenu( event, 'foryou_tab', 'foryou_flyout' );">
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;">
 									<div class="popup_body popup_menu">
 										<a class="popup_menu_item" href="http://store.steampowered.com/recommended/?snr=1_subscriberagreement_SubscriberAgreement__12">
 											Recently viewed										</a>
@@ -289,24 +289,23 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 								</div>
 
 							
-							<div id="store_search">
-								<form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
-									<input type="hidden" name="snr" value="1_subscriberagreement_SubscriberAgreement__12" >
-									<div class="searchbox">
-										<input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off">
-										<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="http://store.akamai.steamstatic.com/public/images/blank.gif"></a>
-									</div>
-								</form>
-							</div>
-							<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
-								<div class="popup_body" style="border-top: none;">
-									<div id="search_suggestion_contents">
+							<div class="search_area">
+								<div id="store_search">
+									<form id="searchform" name="searchform" method="get" action="http://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
+										<input type="hidden" name="snr" value="1_subscriberagreement_SubscriberAgreement__12" >
+										<div class="searchbox">
+											<input id="store_nav_search_term" name="term" type="text" class="default" value="search the store" size="22" autocomplete="off">
+											<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="http://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+										</div>
+									</form>
+								</div>
+								<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
+									<div class="popup_body" style="border-top: none;">
+										<div id="search_suggestion_contents">
+										</div>
 									</div>
 								</div>
 							</div>
-							<script language="JavaScript">
-								$J( function() { EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_subscriberagreement_SubscriberAgreement_', 'US', 'english', '1272308' ); } );
-							</script>
 
 						</div>
 					</div>
@@ -314,10 +313,45 @@ BindStoreTooltip( $('[data-store-tooltip]') );
 				</div>
 					</div>
 	</div>
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavCtn = $J('#responsive_store_nav_ctn');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode =window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+					if ( !$HeaderWrapper )
+						$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+					if ( bUseSmallScreenMode )
+						$ResponsiveNavCtn.append( $Header );
+					else
+						$HeaderWrapper.append( $Header );
+
+
+					if ( bUseSmallScreenMode )
+					{
+						$Header.css( 'visibility', 'hidden' );
+						$Header.show();
+						var nMenuHeight = $J('#store_header' ).height() + $J('#store_header' ).offset().top;
+						if ( $Window.scrollTop() < nMenuHeight )
+							$Window.scrollTop( nMenuHeight - GetResponsiveHeaderFixedOffsetAdjustment() );
+
+						$Header.css('visibility', 'visible');
+					}
+				} ).trigger('Responsive_SmallScreenModeToggled.StoreMenu');
+
+				EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_subscriberagreement_SubscriberAgreement_', 'US', 'english', '1272401' );
+			} );
+		</script>
 	<script type="text/javascript">
 	var g_AccountID = 0;
-	var g_sessionID = "b1c524ebc86262feffe2edaa";
-	var g_ServerTime = 1441755619;
+	var g_sessionID = "587bdd098feda85b2edb3f99";
+	var g_ServerTime = 1441761106;
 
 	$J( InitMiniprofileHovers );
 
