@@ -462,7 +462,7 @@ a{color:#00628b;text-decoration:none}a:hover{color:#009ee0;text-decoration:under
       token: ''
     },
     loggerUrl: '//beacon.gutefrage.net/js/logger',
-    hostname: 'gfapp38.endor.gutefrage.net',
+    hostname: 'gfapp36.endor.gutefrage.net',
     baseUrl: 'http://www.gutefrage.net'   };
 
   window.gf.core = window.gf.core || {
@@ -542,7 +542,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
 
             window.gf.ext.gutefrage.settings.platform = 'gf';
       window.gf.ext.gutefrage.settings.platforms = ['gutefrage', 'motorradfrage', 'sportlerfrage', 'finanzfrage', 'reisefrage', 'gesundheitsfrage', 'computerfrage', 'autofrage'];
-      window.gf.ext.gutefrage.settings.featureManager.rate = 90;
+      window.gf.ext.gutefrage.settings.featureManager.rate = 29;
       window.gf.ext.gutefrage.settings.isInternal = false;
       
       if (window.gf.app.version === 'desktop') {
@@ -619,7 +619,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
           + "&amp;user_agent=" + escape(navigator.userAgent)
           + "&amp;gf_version=" + escape(gf.ext.gutefrage.settings.version)
           + "&amp;visitor_type=" + escape('visitor')
-          + "&amp;hostname=" + escape("gfapp38.endor.gutefrage.net");
+          + "&amp;hostname=" + escape("gfapp36.endor.gutefrage.net");
 
       new Image().src = loggerUrl + parameters;
     };
@@ -1358,7 +1358,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
   <a href="https://www.gutefrage.net/password_anfrage">Nutzernamen oder Passwort vergessen?</a>
 
   <div class="Form-item Form-item__checkbox">
-    <input id="fLogin_remember_55efc4a4451fa" name="remember" value="yes" type="checkbox" class="Form-input Form-input__checkbox" />    <label for="fLogin_remember_55efc4a4451fa" class="Form-label Form-label__checkbox">
+    <input id="fLogin_remember_55efd9fe92749" name="remember" value="yes" type="checkbox" class="Form-input Form-input__checkbox" />    <label for="fLogin_remember_55efd9fe92749" class="Form-label Form-label__checkbox">
       Angemeldet bleiben    </label>
   </div>
 
@@ -1393,7 +1393,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
     data-ng-init="regToggle.init()"
     data-tabset-default-tab="registrierung-privat">
 
-  <form class="Form" data-ng-cloak="1" data-ng-controller="RegistrationFormCtrl as form" id="regForm1657938285" method="post" name="regForm" novalidate="1" action="https://www.gutefrage.net/nutzer_hinzufuegen">
+  <form class="Form" data-ng-cloak="1" data-ng-controller="RegistrationFormCtrl as form" id="regForm1804363470" method="post" name="regForm" novalidate="1" action="https://www.gutefrage.net/nutzer_hinzufuegen">
     <input type="hidden" name="fRegister[checksum]" data-ng-value="form.f.checksum">
     
     
@@ -1564,6 +1564,14 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
   
   
         <li>
+          <a class="TagList-button" href="/tag/groesse/1" title="Größe" rel="tag">
+            Größe          </a>
+        </li>
+
+  
+  
+  
+        <li>
           <a class="TagList-button" href="/tag/tattoo/1" title="Tattoo" rel="tag">
             Tattoo          </a>
         </li>
@@ -1576,14 +1584,6 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
             PS4          </a>
         </li>
 
-  
-  
-  
-        <li>
-          <a class="TagList-button" href="/tag/aquarium/1" title="Aquarium" rel="tag">
-            Aquarium          </a>
-        </li>
-
         </ol>
     </div>
   
@@ -1592,8 +1592,8 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
       <ol class="TagList TagList__orderedList" start="6">
   
         <li>
-          <a class="TagList-button" href="/tag/instagram/1" title="instagram" rel="tag">
-            instagram          </a>
+          <a class="TagList-button" href="/tag/aquarium/1" title="Aquarium" rel="tag">
+            Aquarium          </a>
         </li>
 
   
@@ -2328,7 +2328,15 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
           <div class="UserTeaser">
             <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/kampfschwei_medium.png?3f546ace10b75ff6f46971137cb2c7ee","alt":"kampfschwei"}'></span>            <div class="pull-left">
               <a href="/nutzer/kampfschwei" class="UserTeaser-name" title="kampfschwei" data-gf-tooltip='{"url":"\/nutzer\/kampfschwei\/tooltipp","type":"user","track":"user"}'>kampfschwei</a><br>
-              Punkte: 480<br>
+              Punkte: 460<br>
+                          </div>
+          </div>
+        </li>
+                <li>
+          <div class="UserTeaser">
+            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/Temas_medium.png?9e80e2b20569eddf4e1f0a10f832fa21","alt":"Temas"}'></span>            <div class="pull-left">
+              <a href="/nutzer/Temas" class="UserTeaser-name" title="Temas" data-gf-tooltip='{"url":"\/nutzer\/Temas\/tooltipp","type":"user","track":"user"}'>Temas</a><br>
+              Punkte: 430<br>
                           </div>
           </div>
         </li>
@@ -2336,15 +2344,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
           <div class="UserTeaser">
             <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/McToska_medium.png?5761755b4574ae8b7ee993bcea6e70ef","alt":"McToska"}'></span>            <div class="pull-left">
               <a href="/nutzer/McToska" class="UserTeaser-name" title="McToska" data-gf-tooltip='{"url":"\/nutzer\/McToska\/tooltipp","type":"user","track":"user"}'>McToska</a><br>
-              Punkte: 385<br>
-                          </div>
-          </div>
-        </li>
-                <li>
-          <div class="UserTeaser">
-            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/images\/user\/avatar_medium.png?d41d8cd98f00b204e9800998ecf8427e","alt":"BekirC"}'></span>            <div class="pull-left">
-              <a href="/nutzer/BekirC" class="UserTeaser-name" title="BekirC" data-gf-tooltip='{"url":"\/nutzer\/BekirC\/tooltipp","type":"user","track":"user"}'>BekirC</a><br>
-              Punkte: 365<br>
+              Punkte: 375<br>
                           </div>
           </div>
         </li>
@@ -2363,7 +2363,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
     <div class="Block-badge Block-badge__highlight">&#xe621;</div>
     <div class="Block-body Block-body__small">
       <h3 class="Block-headline Block-headline__highlight">
-        Gute Fragen von heute        <small>Aktuell 15.100.540 gute Fragen</small>
+        Gute Fragen von heute        <small>Aktuell 15.100.634 gute Fragen</small>
       </h3>
 
       <ul class="QuestionTeaser-list">
@@ -2373,7 +2373,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
               <a class="QuestionTeaser-title" href="/frage/seit-ich-bei-gf-mein-unwesen-treibe-ist-mir-aufgefallen-dass-viele-jugendliche-keine-verstaendlichentexte-schreiben-koennen-taeuscht-mein-eindruck">Mir ist aufgefallen, dass viele Jugendliche keine verständlichen Texte schreiben können. Täuscht mein Eindruck?</a>
               Ich finde es teilweise erschreckend, was ich lese. Sätze unvollständig, der Sinn der Frage kaum zu verstehen. Sind Jugendliche wirklich immer weniger in der Lage sich schriftlich verständlich auszudrücken? Woran kann es liegen? Mangelnde Unterweis...            </p>
             <span class="QuestionTeaser-upVotes pull-right">
-              19            </span>
+              20            </span>
             <a href="/frage/seit-ich-bei-gf-mein-unwesen-treibe-ist-mir-aufgefallen-dass-viele-jugendliche-keine-verstaendlichentexte-schreiben-koennen-taeuscht-mein-eindruck" class="more-link pull-left">
               39 Antworten            </a>
           </article>
@@ -2384,9 +2384,9 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
               <a class="QuestionTeaser-title" href="/frage/wieso-gibt-es-gerade-jetzt-so-viele-fluechtlinge">Wieso gibt es gerade jetzt so viele Flüchtlinge?</a>
               Es gab ja schon immer Flüchtlinge die nach Deutschland gekommen sind, aber warum sind es jetzt so massenhaft man hört ja in den Medien kaum ein anderes Thema .. Ich verstehe nicht so ganz woher jetzt soviele kommen ich meine es ist doch jetzt nich...            </p>
             <span class="QuestionTeaser-upVotes pull-right">
-              15            </span>
+              16            </span>
             <a href="/frage/wieso-gibt-es-gerade-jetzt-so-viele-fluechtlinge" class="more-link pull-left">
-              12 Antworten            </a>
+              13 Antworten            </a>
           </article>
         </li>
                 <li>
@@ -2397,7 +2397,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
             <span class="QuestionTeaser-upVotes pull-right">
               6            </span>
             <a href="/frage/wenn-man-das-leben-in-einem-wort-beschreiben-koennte-welches-wort-waere-es" class="more-link pull-left">
-              22 Antworten            </a>
+              23 Antworten            </a>
           </article>
         </li>
               </ul>
