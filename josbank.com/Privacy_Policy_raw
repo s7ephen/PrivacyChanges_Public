@@ -500,8 +500,6 @@ window.jQuery_1_10_2 = $.noConflict(true);
 
 
 
-
-
 <script src="/wcsstore/JABAuroraStorefrontAssetStore/javascript/Analytics.js"></script>
 <script>
 dojo.addOnLoad(function() {
@@ -629,12 +627,12 @@ Join Email List
 </a>
 </li>	
 <li class="registered-only" style="display:none;">
-<a href="https://www.josbank.com/AccountInfoView?profileFormStyle=strong&amp;catalogId=14052&amp;langId=&amp;storeId=13452&amp;page=accountInformation" id="myAccountQuickLink">
+<a href="https://www.josbank.com/AccountInfoView?profileFormStyle=strong&amp;catalogId=14052&amp;langId=-1&amp;storeId=13452&amp;page=accountInformation" id="myAccountQuickLink">
 My Account
 </a>
 </li>
 <li class="separator-false">
-<a id="requestcatalog" class="requestcatalog" href="http://www.josbank.com/CatalogRequestView?catalogId=14052&amp;langId=&amp;storeId=13452" style="display:none">Request a Catalog</a>
+<a id="requestcatalog" class="requestcatalog" href="http://www.josbank.com/CatalogRequestView?catalogId=14052&amp;langId=-1&amp;storeId=13452" style="display:none">Request a Catalog</a>
 </li>
 <li class="separator-false registered-only" style="display:none;">
 <a href="javascript:logout('https://www.josbank.com/Logoff?catalogId=14052&amp;myAcctMain=1&amp;langId=-1&amp;storeId=13452&amp;deleteCartCookie=true&amp;URL=LogonForm')" id="signOutQuickLink">Sign Out</a>
@@ -658,8 +656,8 @@ console.error('Failed to init header links: ' + e);
 <script>
 require(["dojo/domReady!"], function() {
 SearchJS.init();
-SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=&storeId=13452&catalogId=14052");
-SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_14002_CatalogEntry_en_US&serverURL=http%3a%2f%2fsearch.tmw.com%2fsolr%2fMC_14002_CatalogEntry_en_US&langId=&storeId=13452&catalogId=14052");
+SearchJS.setCachedSuggestionsURL("SearchComponentCachedSuggestionsView?langId=-1&storeId=13452&catalogId=14052");
+SearchJS.setAutoSuggestURL("SearchComponentAutoSuggestView?coreName=MC_14002_CatalogEntry_en_US&serverURL=http%3a%2f%2fsearch.tmw.com%2fsolr%2fMC_14002_CatalogEntry_en_US&langId=-1&storeId=13452&catalogId=14052");
 document.forms["searchBox"].action = getAbsoluteURL() + "SearchDisplay";
 });
 var staticContent = [];
@@ -692,7 +690,7 @@ var staticContentHeaders = [];
 <ul><li><div id="autoSuggestStatic_2"></div></li></ul>
 <ul><li><div id="autoSuggestStatic_3"></div></li></ul>
 <ul><li><div id="autoSuggestHistory"></div></li></ul>
-<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=&storeId=13452" onclick="SearchJS.gotoAdvancedSearch('http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=&storeId=13452');return false;" id="advancedSearch" ><div>Advanced Search</div></a></li></ul>
+<ul><li id="autoSuggestAdvancedSearch" class="heading"> <a href="http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=-1&storeId=13452" onclick="SearchJS.gotoAdvancedSearch('http://www.josbank.com/AdvancedSearchDisplay?catalogId=14052&langId=-1&storeId=13452');return false;" id="advancedSearch" ><div>Advanced Search</div></a></li></ul>
 </div>
 
 </div>
@@ -778,7 +776,6 @@ aria-label="Shopping Cart">
 <span>Checkout</span>
 </a>
 <div id="freeShippingMessage">
-FREE Shipping on All Orders over $50.00!
 </div>
 </div>
 </div>
@@ -877,7 +874,7 @@ Jos. A. Bank has partnered with international shipping solution Borderfree to al
 <a class="header-international-link" data-modal-fn="languageCurrencyModal" href="#">
 <span class="header-international-label" id="header-international-label">Change Region</span><span class="visuallyhidden">. This action will open a modal dialog.</span><img class="header-international-img" id="header-international-img" data-url-pattern="/wcsstore/JABAuroraStorefrontAssetStore//images/global/flags/[COUNTRY].gif" alt="" style="display:none;"/>
 </a>
-<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=&storeId=13452" />	
+<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
 <input type="hidden" id="shoppingCartURL" name="shoppingCartURL" value="OrderCalculate?langId=-1&storeId=13452&catalogId=14052&calculationUsageId=-1&calculationUsageId=-2&calculationUsageId=-7&updatePrices=1&orderId=.&URL=AjaxOrderItemDisplayView&errorViewName=AjaxOrderItemDisplayView" />
 
 </div>
@@ -2704,7 +2701,7 @@ wc.render.getRefreshControllerById("departmentSubMenu_Controller").url = getAbso
 <form name="JoinSweepstakesForm" id="JoinSweepstakesForm" action="JABSweepStakes" method="post">
 <input type="hidden" id="storeId" name="storeId" value="13452"/>
 <input type="hidden" id="catalogId" name="catalogId" value="14052"/>
-<input type="hidden" id="langId" name="langId" value=""/>
+<input type="hidden" id="langId" name="langId" value="-1"/>
 <input type="hidden" name="URL" value="JABThankYouView" id="URL1">
 <div class="row">
 <div class="col12">
@@ -2939,7 +2936,7 @@ dojo.publish("CMPageRefreshEvent");
 
 <div class="left_espot">
 <a href="/current-promotions" title="" target="">
-<img src="//content.josbank.com/Navigation/TopNav-PromoBanner_090815.gif" alt="" BORDER="0"/>
+<img src="//content.josbank.com/Navigation/TopNav-PromoBanner_090915.gif" alt="" BORDER="0"/>
 </a>
 </div>
 
@@ -5837,7 +5834,7 @@ dojo.publish("CMPageRefreshEvent");
 </div>
 <div class="section">
 <ul>
-<li><a href="https://www.josbank.com/AskAQuestionView?catalogId=14052&langId=&storeId=13452">Contact Us</a></li>
+<li><a href="https://www.josbank.com/AskAQuestionView?catalogId=14052&langId=-1&storeId=13452">Contact Us</a></li>
 <li><a href="http://www.josbank.com/company-information">Company Information</a></li>
 <li><a href="https://jobs.josbank.com/?utm_source=careersite">Jobs</a></li>
 </ul>
@@ -6063,7 +6060,7 @@ Join email list dialog close
 <input type="email" id="emailUpdatesEmail" name="emailUpdatesEmail" placeholder="Email Address" maxlength="50" required>
 <input type="hidden" id="storeId" name="storeId" value="13452"/>
 <input type="hidden" id="catalogId" name="catalogId" value="14052"/>
-<input type="hidden" id="langId" name="langId" value=""/>
+<input type="hidden" id="langId" name="langId" value="-1"/>
 <button class="button"><span>Go</span></button>
 </form>
 </div>
