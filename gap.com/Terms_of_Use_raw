@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/08/2015 10:23 PM",
+            DATE_IN_USE: "09/08/2015 11:55 PM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -5076,15 +5076,15 @@ var wcdProductPageShipReturnInserter = {
 		var shipReturnContent = '';
 		switch( prodType ) {
 			case "general":
-				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail &amp; to stores on all orders</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="http://www.shipmentmanager.com/Gap/default.aspx?merchantid=1392" target="_new">prepaid U.S. Postal Service SmartLabel&trade;</a>.';
+				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail &amp; to stores on all orders</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="/profile/returns_address_entry_usps.do">prepaid USPS return shipping label</a>.';
 				break;
 			
 			case "generalExclusive":
-				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="http://www.shipmentmanager.com/Gap/default.aspx?merchantid=1392" target="_new">prepaid U.S. Postal Service SmartLabel&trade;</a>.';
+				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="/profile/returns_address_entry_usps.do">prepaid USPS return shipping label</a>.';
 				break;
 			
 			case "selectExclusive":
-				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="http://www.shipmentmanager.com/Gap/default.aspx?merchantid=1392" target="_new">prepaid U.S. Postal Service SmartLabel&trade;</a>.';
+				shipReturnContent = '<div class="copyBlock">shipping &amp; returns </div><ul><li>FREE shipping on all orders over $50<br /><span class="italCopy">Select  the "FREE" option in the shopping bag</span></li><li>$7 Flat Rate for orders under $50</li><li>FREE returns &amp; exchanges by mail</li><li>No returns or exchanges on final sale items.</li></ul><a href="javascript:void(0)" onclick="return wcdProductPageShipReturnInserter.openPopAndSendToOmni()">Learn More</a><br/><br/>Print out a <a href="http://www.gap.com/profile/returns_address_entry.do">prepaid UPS label</a> or a <a href="/profile/returns_address_entry_usps.do">prepaid USPS return shipping label</a>.';
 				break;
 				
 		}
@@ -9498,6 +9498,24 @@ document.observe('personalizationData:ready', function() {
 });
 </script>
 <!-- End Pull Year from Personalization - DO NOT REMOVE est. 2014 -->
+
+<script type="text/javascript">
+var cantUSPSReturnOverride = {
+  init: function() {
+    jQuery(function($) {
+        if(location.pathname == '/profile/returns_label_usps.do') {
+            var $cantUSPSReturnElement = $('#cantUSPSReturn');
+                if($cantUSPSReturnElement.length > 0) {
+                    var $cantUSPSReturnElementAnchor = $cantUSPSReturnElement.find('a');
+                            $cantUSPSReturnElementAnchor.attr('href', '/customerService/info.do?cid=81264&cs=items_bought_online');
+                }
+        }
+    });
+  }
+}
+jQuery(document).ready(cantUSPSReturnOverride.init);
+</script>
+
 
 <script type="text/javascript">
 /*RESPONSIVE IMAGE MAP FOR FOOTER*/
