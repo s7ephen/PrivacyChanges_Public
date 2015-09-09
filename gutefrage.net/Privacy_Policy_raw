@@ -462,7 +462,7 @@ a{color:#00628b;text-decoration:none}a:hover{color:#009ee0;text-decoration:under
       token: ''
     },
     loggerUrl: '//beacon.gutefrage.net/js/logger',
-    hostname: 'gfapp39.endor.gutefrage.net',
+    hostname: 'gfapp42.endor.gutefrage.net',
     baseUrl: 'http://www.gutefrage.net'   };
 
   window.gf.core = window.gf.core || {
@@ -542,7 +542,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
 
             window.gf.ext.gutefrage.settings.platform = 'gf';
       window.gf.ext.gutefrage.settings.platforms = ['gutefrage', 'motorradfrage', 'sportlerfrage', 'finanzfrage', 'reisefrage', 'gesundheitsfrage', 'computerfrage', 'autofrage'];
-      window.gf.ext.gutefrage.settings.featureManager.rate = 6;
+      window.gf.ext.gutefrage.settings.featureManager.rate = 60;
       window.gf.ext.gutefrage.settings.isInternal = false;
       
       if (window.gf.app.version === 'desktop') {
@@ -619,7 +619,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
           + "&amp;user_agent=" + escape(navigator.userAgent)
           + "&amp;gf_version=" + escape(gf.ext.gutefrage.settings.version)
           + "&amp;visitor_type=" + escape('visitor')
-          + "&amp;hostname=" + escape("gfapp39.endor.gutefrage.net");
+          + "&amp;hostname=" + escape("gfapp42.endor.gutefrage.net");
 
       new Image().src = loggerUrl + parameters;
     };
@@ -1358,7 +1358,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
   <a href="https://www.gutefrage.net/password_anfrage">Nutzernamen oder Passwort vergessen?</a>
 
   <div class="Form-item Form-item__checkbox">
-    <input id="fLogin_remember_55ef99a542ec3" name="remember" value="yes" type="checkbox" class="Form-input Form-input__checkbox" />    <label for="fLogin_remember_55ef99a542ec3" class="Form-label Form-label__checkbox">
+    <input id="fLogin_remember_55efaf10248f0" name="remember" value="yes" type="checkbox" class="Form-input Form-input__checkbox" />    <label for="fLogin_remember_55efaf10248f0" class="Form-label Form-label__checkbox">
       Angemeldet bleiben    </label>
   </div>
 
@@ -1393,7 +1393,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
     data-ng-init="regToggle.init()"
     data-tabset-default-tab="registrierung-privat">
 
-  <form class="Form" data-ng-cloak="1" data-ng-controller="RegistrationFormCtrl as form" id="regForm820521675" method="post" name="regForm" novalidate="1" action="https://www.gutefrage.net/nutzer_hinzufuegen">
+  <form class="Form" data-ng-cloak="1" data-ng-controller="RegistrationFormCtrl as form" id="regForm89599659" method="post" name="regForm" novalidate="1" action="https://www.gutefrage.net/nutzer_hinzufuegen">
     <input type="hidden" name="fRegister[checksum]" data-ng-value="form.f.checksum">
     
     
@@ -2326,6 +2326,14 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
       <ol class="UserTeaser-list" start="1">
                 <li>
           <div class="UserTeaser">
+            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/McToska_medium.png?5761755b4574ae8b7ee993bcea6e70ef","alt":"McToska"}'></span>            <div class="pull-left">
+              <a href="/nutzer/McToska" class="UserTeaser-name" title="McToska" data-gf-tooltip='{"url":"\/nutzer\/McToska\/tooltipp","type":"user","track":"user"}'>McToska</a><br>
+              Punkte: 385<br>
+                          </div>
+          </div>
+        </li>
+                <li>
+          <div class="UserTeaser">
             <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/images\/user\/avatar_medium.png?d41d8cd98f00b204e9800998ecf8427e","alt":"BekirC"}'></span>            <div class="pull-left">
               <a href="/nutzer/BekirC" class="UserTeaser-name" title="BekirC" data-gf-tooltip='{"url":"\/nutzer\/BekirC\/tooltipp","type":"user","track":"user"}'>BekirC</a><br>
               Punkte: 365<br>
@@ -2334,17 +2342,9 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
         </li>
                 <li>
           <div class="UserTeaser">
-            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/McToska_medium.png?5761755b4574ae8b7ee993bcea6e70ef","alt":"McToska"}'></span>            <div class="pull-left">
-              <a href="/nutzer/McToska" class="UserTeaser-name" title="McToska" data-gf-tooltip='{"url":"\/nutzer\/McToska\/tooltipp","type":"user","track":"user"}'>McToska</a><br>
-              Punkte: 360<br>
-                          </div>
-          </div>
-        </li>
-                <li>
-          <div class="UserTeaser">
-            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/images\/user\/avatar_medium.png?d41d8cd98f00b204e9800998ecf8427e","alt":"buddamilk"}'></span>            <div class="pull-left">
-              <a href="/nutzer/buddamilk" class="UserTeaser-name" title="buddamilk" data-gf-tooltip='{"url":"\/nutzer\/buddamilk\/tooltipp","type":"user","track":"user"}'>buddamilk</a><br>
-              Punkte: 300<br>
+            <span class="is-hidden-mobile UserTeaser-avatar" data-gf-image='{"desktopSrc":"\/\/images.gutefrage.net\/media\/user\/Temas_medium.png?9e80e2b20569eddf4e1f0a10f832fa21","alt":"Temas"}'></span>            <div class="pull-left">
+              <a href="/nutzer/Temas" class="UserTeaser-name" title="Temas" data-gf-tooltip='{"url":"\/nutzer\/Temas\/tooltipp","type":"user","track":"user"}'>Temas</a><br>
+              Punkte: 335<br>
                           </div>
           </div>
         </li>
@@ -2363,7 +2363,7 @@ i=e;return{init:l,displayAd:c,adBlockDisplayed:f,getAdChannel:function(){return 
     <div class="Block-badge Block-badge__highlight">&#xe621;</div>
     <div class="Block-body Block-body__small">
       <h3 class="Block-headline Block-headline__highlight">
-        Gute Fragen von heute        <small>Aktuell 15.100.438 gute Fragen</small>
+        Gute Fragen von heute        <small>Aktuell 15.100.466 gute Fragen</small>
       </h3>
 
       <ul class="QuestionTeaser-list">
