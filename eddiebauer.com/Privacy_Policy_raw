@@ -239,10 +239,9 @@ Help &amp; Support <span class="downArrow">&nbsp;&#9660;</span>
 </ul>
 </div>
 </li>
-<li class="login-bag-links"><a href="/user/member-account.jsp"></a></li>
-<li class="login-bag-links"><a href="/user/logout.jsp?successUrl=/user/logout.jsp&_DARGS=/xhr/login-status-header.jsp_A&_DAV=logout&_dynSessConf=-7554681861010890434"></a><div id="log-out-the-user" class="no-display">
-<form id="log-out-the-user-form" action="/includes/logout.jsp"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="-7554681861010890434" type="hidden"></input><input name="/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value="/" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logoutSuccessURL" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.logoutErrorURL" value="/?err=true" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logoutErrorURL" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.logout" value="true" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.logout" value=" " type="hidden"><input name="_DARGS" value="/xhr/login-status-header.jsp.log-out-user" type="hidden"></input></form><a href="/user/logout.jsp?successUrl=/user/logout.jsp&_DARGS=/xhr/login-status-header.jsp.1_A&_DAV=logout&_dynSessConf=-7554681861010890434">Sign Out</a></span>
-<span id="welcome-name-hidden" class="no-display">Wendy</span>
+<li class="login-bag-links"><a href="/user/login.jsp"></a>
+<span id="welcome-name-hidden" class="no-display">
+to Eddie Bauer</span>
 </li>
 <li id="headShoppingHolder" class="clearfix login-bag-links">
 <img id="headBagIcon" class="left" src="/static/img/head-bag-icon.png" alt="Header Bag Icon Asset" />
@@ -266,55 +265,45 @@ loginLoaded = true;
 <img src="/static/img/head-logo.png" alt="Eddie Bauer(R). EST.1920">
 </a>
 <div id="headContentHolder">
-	<style> 
-#headContentHolder a { 
-display: inline-block; 
-color: #c1d82f; 
-text-transform: uppercase; 
-} 
+<style>
+    #headContentHolder a {
+        display: inline-block;
+        color: #c1d82f;
+        text-transform: uppercase;
+    }
 
-#headContentHolder a:after { 
-display: inline-block; 
-position: relative; 
-top: 0; 
-left: 4px; 
-width: 0; 
-height: 0; 
-border-top: 4px solid transparent; 
-border-bottom: 4px solid transparent; 
-border-left: 6px solid #c1d82f; 
-color: #c1d82f; 
-content: ''; 
-} 
+        #headContentHolder a:after {
+            display: inline-block;
+            position: relative;
+            top: 0;
+            left: 4px;
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid #c1d82f;
+            color: #c1d82f;
+            content: '';
+        }
 
-#headContentHolder i { 
-padding: 0 .2em; 
-font-style: normal; 
-} 
-</style> 
-
-<p class="headLeftBorder"> 
-<a class="floatbox naked" href="#hc_disclaimer" 
-data-fb-options=" 
-type:ajax 
-width:450 
-height:380 
-showOnce:true 
-autoEndVideo:false 
-contentScroll:false 
-doAnimations:false 
-"> 
-FREE SHIPPING ON ALL 
-<br /> 
-ORDERS OF $99 OR MORE 
-</a> 
-</p> 
-
-<div id="hc_container" style="display: none;"> 
-<div id="hc_disclaimer"> 
-<img src="//eddiebauer.scene7.com/is/image/EBContent/150723%5Fpromo%5Fdetails%5Ffreeshipping?$jpg12$&amp;scl=1" 
-alt=""> 
-</div> 
+    #headContentHolder i {
+        padding: 0 .2em;
+        font-style: normal;
+    }
+</style>
+<!--
+<p class="headLeftBorder">
+    <a class="floatbox naked" href="#hc_disclaimer" data-fb-options="type:ajax width:450 height:380 autoEndVideo:false contentScroll:false doAnimations:false">
+        FREE SHIPPING ON ALL ORDERS
+        <br />
+        DETAILS
+    </a>
+</p>
+-->
+<div id="hc_container" style="display: none;">
+    <div id="hc_disclaimer">
+        <img src="//eddiebauer.scene7.com/is/image/EBContent/150723%5Fpromo%5Fdetails%5Ffreeshipping?$jpg12$&amp;scl=1" alt="">
+    </div>
 </div></div>
 <div id="headSearchHolder">
 <form id="headSearchForm" class="clearfix" action="/includes/searchInter.jsp" method="get" autocomplete="off">
@@ -784,28 +773,39 @@ hr {
     }
 </style>
 <div id="new_rail">
-    <img alt="" height="60" width="995" src="//eddiebauer.scene7.com/is/image/EBContent/150904%5Fsitewide%5Frail%5Fsale?$jpg12$&amp;scl=1"
+    <img alt="" height="76" width="995" src="//eddiebauer.scene7.com/is/image/EBContent/150909%5Fsite%5Fwide%5Frail?$jpg12$&amp;scl=1"
          usemap="#m_swr" style="margin-top:10px !important;" />
     <map id="m_swr" name="m_swr">
-        <area shape="rect" coords="726,0,848,60"
-              href="/browse/men/_/N-1z13xm6Z26y3?Endeca_user_segments=sale&currentNode=men&tab=sale&previousPage=BAN&cm_re=rail-_-1_to_s-_-RailMenSale_150904&cm_sp=PulseDealUpdate-_-r_1-_-RailMenSale_150904"
+        <area shape="rect" coords="0,0,472,76"
+              alt="See Details" class="floatbox naked" href="#swr_disclaimer"
+              data-fb-options="type:ajax width:480 height:560 autoEndVideo:false contentScroll:false doAnimations:false" />
+        <area shape="rect" coords="474,0,560,76"
+              href="/browse/men/_/N-1z13xm6Z26y3?Endeca_user_segments=sale&currentNode=men&tab=sale&previousPage=BAN&cm_re=rail-_-1_to_s-_-RailMenSale_150909&cm_sp=PreseasonOWSale-_-r_1-_-RailMenSale_150909"
               alt="Shop Men's Sale" title="Shop Men's Sale" />
-        <area shape="rect" coords="848,0,994,60"
-              href="/browse/women/_/N-1z13xm6Z278f?Endeca_user_segments=sale&currentNode=women&tab=sale&previousPage=BAN&cm_re=rail-_-1_to_s-_-RailWosSale_150904&cm_sp=PulseDealUpdate-_-r_1-_-RailWosSale_150904"
+        <area shape="rect" coords="562,0,680,76"
+              href="/browse/women/_/N-1z13xm6Z278f?Endeca_user_segments=sale&currentNode=women&tab=sale&previousPage=BAN&cm_re=rail-_-1_to_s-_-RailWosSale_150909&cm_sp=PreseasonOWSale-_-r_1-_-RailWosSale_150909"
               alt="Shop Women's Sale" title="Shop Women's Sale" />
+        <area shape="rect" coords="680,0,995,76"
+              alt="See Details" class="floatbox naked" href="#swr_free_disclaimer"
+              data-fb-options="type:ajax width:480 height:480 autoEndVideo:false contentScroll:false doAnimations:false" />
     </map>
 </div>
 
 
 <div id="swr_container" style="display: none;">
     <div id="swr_disclaimer">
-        <img width="480" height="480" src="//eddiebauer.scene7.com/is/image/EBContent/150723%5Fpromo%5Fdetails%5Ffreeshipping?$jpg12$&amp;scl=1" alt="" />
+        <img width="480" height="560" src="//eddiebauer.scene7.com/is/image/EBContent/150909_promo_details_25off_fs?$jpg12$&amp;scl=1" alt="" />
+    </div>
+</div>
+<div id="swr_free_container" style="display: none;">
+    <div id="swr_free_disclaimer">
+        <img width="480" height="480" src="//eddiebauer.scene7.com/is/image/EBContent/150909%5Fpromo%5Fdetails%5Ffreeship?$jpg12$&amp;scl=1" alt="" />
     </div>
 </div>
 
 <div data-mobile-content="top-rail" data-bg-color="#5f6062" data-icon-color="#efe9e5" style="display: none !important;">
     <div class="summary">
-        <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150904%5Ftop%2Drail%2Dsummary?$jpg12$&amp;scl=1" alt="Everything On Sale Up To 40% Off">
+        <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F090915%5Ftop%2Drail%2Dsummary?$jpg12$&amp;scl=1" alt="Everything On Sale Up To 40% Off">
     </div>
     <div class="details">
         <div class="body">
@@ -817,26 +817,21 @@ hr {
             </a>
         </div>
         <div class="footer">
-            <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150825%5Ftop%2Drail%2Dfooter%2Dleft?$jpg12$&amp;scl=1" alt="Everything On Sale Up To 40% Off">
+            <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F090915%5Ftop%2Drail%2Dfooter%2Dleft?$jpg12$&amp;scl=1" alt="Everything On Sale Up To 40% Off">
             <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150825%5Ftop%2Drail%2Dfooter%2Dright?$jpg12$&amp;scl=1" alt="See Details">
         </div>
     </div>
 </div>
 <div data-mobile-content="bottom-rail" data-bg-color="#5f6062" data-icon-color="#efe9e5" style="display: none !important;">
     <div class="summary">
-        <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150825%5Fbottom%2Drail%2Dsummary?$jpg12$&amp;scl=1" alt="Free Shipping On All Orders Of $99 Or More">
+        <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150909%5Fbottom%2Drail%2Dsummary?$jpg12$&amp;scl=1" alt="Free Shipping On All Orders">
     </div>
     <div class="details">
         <div class="body">
             <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150822%5Fbottom%2Drail%2Dcta?$jpg12$&amp;scl=1" alt="">
         </div>
-        <div class="footer">
-            <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150825%5Fbottom%2Drail%2Dfooter%2Dleft?$jpg12$&amp;scl=1" alt="No Code Required">
-            <img src="//www.eddiebauer.com/static/img/spacer.gif" data-mobile-src="//eddiebauer.scene7.com/is/image/EBContent/mobi%5F150825%5Fbottom%2Drail%2Dfooter%2Dright?$jpg12$&amp;scl=1" alt="View Details">
-        </div>
     </div>
-</div>
-</div>
+</div></div>
 </div>
 <div id="end-kiosk-session" style="display: none;">
 <div id="kiosk">
@@ -1399,7 +1394,7 @@ Store Locator
 </div>
 <div id="footQuickOrder" class="separator-right blk-c">
 <h5>Catalog Quick Order</h5>
-<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="-7554681861010890434" type="hidden"></input><p>Enter a three-part item number.</p>
+<form id="CatalogQuickOrder" name="CatalogQuickOrder" action="/xhr/submit.jsp?_DARGS=/includes/eob-form.jsp.CatalogQuickOrder" method="post"><input name="_dyncharset" value="UTF-8" type="hidden"></input><input value="-1422664684819348085" type="hidden"></input><p>Enter a three-part item number.</p>
 <fieldset class="formItem">
 <label for="deptMFT" class="visuallyhidden">Enter the first part of the item number</label>
 <input id="deptMFT" maxlength="3" placeholder="A00" data-error="" name="department" value="" class="text-input" type="text" autocomplete="off" aria-label="Catalog Quick Order Form Handler - Department"><input name="_D:department" value=" " type="hidden"><label for="effortMFT" class="visuallyhidden">Enter the second part of the item number</label>
@@ -1420,12 +1415,12 @@ Store Locator
 <h5>Help &amp; Support</h5>
 <ul class="nav-list">
 <li><a href="/custserv/customer-service-landing.jsp">Customer Service</a></li>
-<li><a href="/user/order-history.jsp">Order Status</a></li>
+<li><a href="/user/login.jsp?successUrl=/user/order-history.jsp">Order Status</a></li>
 <li><a href="/custserv/ask-eddie-email.jsp">Contact Us</a></li>
 <li><a href="/custserv/customer-service-returns-and-exchanges.jsp">Returns</a></li>
 <li><a href="/custserv/customer-service-shipping.jsp">Shipping</a></li>
 <li><a href="/custserv/customer-service-size-charts.jsp">Size Charts</a></li>
-<li><a href="/user/wishlist.jsp">Wish List</a></li>
+<li><a href="/user/login.jsp?successUrl=/user/wishlist.jsp">Wish List</a></li>
 <li><a href="/custserv/ask-eddie-email.jsp?subject=catalog">Request a Catalog</a></li>
 <li><a href="/view/shopping-index/index.html">Site Map</a></li>
 </ul>
@@ -1501,8 +1496,8 @@ Store Locator
 <!--
 DO NOT REMOVE THIS []
 Server Name: 482295-rsatgprd03.eddiebauer.com:8852
-Profile: 4819710
-Order: A640565951
+Profile: u637644945
+Order: A640837134
 mode: 
 Server is alive... />
 -->
