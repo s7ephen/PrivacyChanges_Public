@@ -41,7 +41,7 @@ var autoSuggestOn = '1';
 var maxSuggestions = '10';
 var suggestHeight = '200';
 var suggestWidth = '325';
-var suggestDelay = '500';
+var suggestDelay = '100';
 var cartMaxItems = '99.0';
 var headerStoreSelect = 'Select Your Store';
 var cartMaxExceeded = 'Quantity exceeds maximum of';
@@ -76,6 +76,14 @@ var speedperksPromocodeReceivedMsg = 'Promo code {0} of {1} has now been activat
 var speedperksPromocodeError = 'The code you have entered {0} has either expired, is invalid or has been used before. Double check your code and try again in the cart.';
 var speedperksThankyouWhenPurchasing = "In participating stores, you'll need to provide your Speed Perks mobile number <br> <strong>{0}</strong> to redeem your reward. With every qualifying purchase of $30 or more, you will get an additional reward. You will receive your reward by email within one week of making the qualifying purchase.";
 var speedperksThankyouSignupMatch = "We were able to associate your Speed Perks account with your Advance Auto Parts account. Just present your Speed Perks mobile number at any participating Advance stores to redeem your reward. Each qualifying purchase of $30 or more will get you an additional reward. You will receive your reward by email within one week of making a qualifying purchase.";
+var timer;
+j(window).load(function () {
+var cqbUrlParam = getURLParameter('CQB');
+if(null != cqbUrlParam && cqbUrlParam.toLowerCase() == 'true'){
+setUserSessionCookie();
+}
+displayCarQuestBanner();
+});
 j(document).ready(function() {
 header1CachedDisplayReady();
 espotOnReady();
@@ -92,6 +100,32 @@ espotOnReady();
 </form>
 <div id="global_top_banner2"> 
 <div id="global_inner_banner2">
+<div class="carQuest_AAP_Top_Banner_Wrapper">
+<div class="carQuestLargeBanner">
+<!-- Start - ES_CQ_LARGE_BANNER -->
+<div class="largeBannerInner"> 
+<img src="/wcsstore/CVB2BDirectStorefrontAssetStore/images/common/carquest.gif"/>
+<span class="h2">CARQUEST is now part of the Advance Auto Parts family</span>
+<p>
+CARQUEST and Advance Auto Parts have joined forces to bring you an even better shopping experience. CARQUEST customers can now take advantage of all Advance online promotions, plus enjoy the convenience of ordering online and picking up at their nearest CARQUEST store, or shipping to home.
+</p>
+</div>
+<!-- End - ES_CQ_LARGE_BANNER -->
+</div>
+<div class="carQuestSkinnyBanner">
+<!-- Start - ES_CQ_SMALL_BANNER -->
+<div class="skinnyBannerInner">
+<div class="logo"><img src="/wcsstore/CVB2BDirectStorefrontAssetStore/images/common/carquest_small.gif"/></div>
+<div class="title">Carquest Auto Parts now is a part of the Advance Auto Parts family.</div>
+<div class="link"><a href="#">Learn More</a></div>
+<div class="clear"> </div>
+</div>
+<!-- End - ES_CQ_SMALL_BANNER -->
+</div>
+<a class="openBtn" href="#" onclick="openAD();">&nbsp;</a>
+<a class="closeBtn" onclick="closeAD();" href="#">X</a>
+<div class="clear">&nbsp;</div>
+</div>
 <!-- Start - ES_Global_Banner -->
 <div id="espotVC" style="display:block;"><style type="text/css">
 #global_top_banner { 
@@ -386,6 +420,10 @@ displayCheckOutButton('10151_CVMINICART', 'amount');
 </ul><!-- end header-top -->
 <div class="clear">&nbsp;</div>
 <!-- Start - ES_GlobalHeader_SecNav -->
+<style type="text/css">
+.prodRecWrapper .prodModule .prodImg, .modalRecommendations .prodModule .prodImg, .cartRecommendations .prodModule .prodImg {display:none}
+.prodRecWrapper .prodModule .prodInfo {padding-left:24px}
+</style>
 <ul class="main-sub-nav">
 <li><a href="/o/help" title="Help" id="header_help" manual_cm_sp="Header-_-Customer+Service-_-Help">Help</a></li>
 <li><a manual_cm_sp="Category-_-Advance+Know-How-_-Advance+Know-How" id="header_adv_know_how" title="Resources" href="/o/article-know-how-index">Resources</a></li>
@@ -1033,10 +1071,12 @@ var jsVehicleId = new Array();
 var jsVehicleDesc = new Array();
 var jsVehicleCode = new Array();
 var jsVehicleMeta = new Array();
+var jsVehicleEngine = new Array();
 jsVehicleId[0] = '';
 jsVehicleDesc[0] = '';
 jsVehicleCode[0] = '';
 jsVehicleMeta[0] = '';
+jsVehicleEngine[0] = '';
 </script>
 <div id="select" class="customSelect select">
 <select id="vehicleIdSearch" name="vehicleIdSearch">
@@ -1060,6 +1100,11 @@ var myDefVehicleId = '';
 var marketType = '';
 var prefStoredSet = '';// reading from param
 var prefZC = '';// reading from param
+var speedperkLN = '';
+var speedperkLN2 = '';
+if (speedperkLN == '' && speedperkLN2 != ''){
+speedperkLN = speedperkLN2;
+}
 </script>
 <!-- End marketTypePriceZoneInclude.jsp -->
 </td>
@@ -1668,6 +1713,37 @@ View full vehicle information in
 <div id="a2cOkTitle">This item has been added to your cart:</div>
 <div id="a2cCatName"></div>
 <!-- Start - ES_AddToCart_Mid -->
+<script type="text/javascript">
+function addItemShowOverlay(a) {
+if (a.inventoryCheck == "false") window.location.href = "/web/OrderItemDisplay?storeId=10151&catalogId=10051&langId=-1&orderId=.&outOrderName=orderId&calculationUsageId=-1&updatePrces=1&defaultDelivery=1";
+else {
+var c = a.partNumber_1 ? a.partNumber_1[0] : a.ccPartNumber ? a.ccPartNumber[0] : "";
+a2cProductThumb = j("#quickViewImgPath_" + c).length > 0 ? j("#quickViewImgPath_" + c)[0].value : j('img[name="productThumbImage_' + c + '"]').length > 0 ? j('img[name="productThumbImage_' + c + '"]')[0].src : typeof a2cProductThumb !=
+"undefined" ? a2cProductThumb : "";
+typeof utag != "undefined" && utag.view({
+page_type: "ajax_addtocart",
+resx_itemid: c
+});
+if (a2cProductThumb=="/wcsstore/CVWEB/staticproductimage/images/NoImage_75x75.gif") a2cProductThumb = "/wcsstore/CVB2BDirectStorefrontAssetStore/images/common/blank.gif";
+if (j("#a2cProductImg").length > 0) j("#a2cProductImg")[0].src = a2cProductThumb;
+else j("#a2cOkTitle").after('<img id="a2cProductImg" width="100" height="100" src="' + a2cProductThumb + '" alt="' + j("#a2cCatName").html().replace(/"/g, "&quot;") + '" onerror="this.src=\'/wcsstore/CVWEB/staticproductimage/images/NoImage_75x75.gif\';">');
+j("#a2cCatName").next().hasClass("clear") || j("#a2cCatName").after('<div class="clear">&nbsp;</div>');
+if (a.notBuyable == "true") {
+j("#a2cBackground").css({
+opacity: "0.6"
+}).fadeIn("slow");
+j("#a2cOkNotBuyable").fadeIn("slow")
+} else j.fancybox({
+content: j("#a2cOk"),
+autoSize: true,
+autoResize: true,
+padding: 0,
+scrolling: "no",
+openEffect: "none"
+})
+}
+}
+</script>
 <div id="addtocart_rr"></div>
 <!-- End - ES_AddToCart_Mid -->
 <a href="javascript:;"><img src="/wcsstore/CVB2BDirectStorefrontAssetStore/images/button/continue.png" id="a2cOkShop"/></a>
@@ -1701,6 +1777,43 @@ ajaxAddToCartReady();
 cmSetClientID("90227392",true,"data.coremetrics.com","advanceautoparts.com"); 
 </script> 
 <script language="javascript1.1" type="text/javascript">
+var dp = {};
+var mt ='';
+var testreferrer = document.referrer;
+if(mt != '')
+{
+dp.marketing_touch = mt;
+}else{
+var url1=document.location.href;
+var exists = url1.indexOf('utm_source');
+if (exists != -1){
+var urlpart = url1.substring( exists + 11);
+var index = urlpart.indexOf('&');
+if(index != -1){
+var utm_source = urlpart.substring(0,index);
+dp.marketing_touch = utm_source;
+}
+}
+}
+dp.site_type = 'Desktop';
+dp.customer_status = 'anonymous';
+var spLNDuringRegtest = '';
+dp.customer_id = '351239553';
+if (j.cookie('PREFSTORE') != null ) {
+dp.primary_store_number = j.cookie('PREFSTORE');
+}else{
+dp.primary_store_number = '';
+}
+if (j.cookie('ZIPCODE') != null ) {
+dp.zip = j.cookie('ZIPCODE');
+}else{
+dp.zip = '';
+}
+if (j.cookie('REFERRER') != null ) {
+var referrer = j.cookie('REFERRER');
+dp.referrer = unescape(referrer);
+}
+var cmEnable = '1';
 var cmSeparator = "-_-";
 var cmPageType_prod = 'PRODUCT:';
 var cmPageType_cat = 'CATEGORY:';
@@ -1727,11 +1840,18 @@ srchEvtAttr[i] = '';
 ecomEvtAttr[i] = '';
 }
 var tempMeta = jsVehicleMeta[0];
+var tempEngine = '';
+if (typeof jsVehicleEngine != "undefined")
+{
+tempEngine = jsVehicleEngine[0];
+}
+var garageEngine = '';
 if (tempMeta != null) {
 if (tempMeta.indexOf('OR') > -1) {
 var vehicleMeta = tempMeta.split('+OR+');
 var tempDesc = jsVehicleDesc[0];
 var vehicleDesc = tempDesc.split('+OR+');
+var vehicleEngArray = tempEngine.split('+OR+');
 pageViewAttr[0] = '';
 pageViewAttr[1] = '';
 pageViewAttr[2] = '';
@@ -1755,6 +1875,13 @@ pageViewAttr[2] += ymm[2];
 pageViewAttr[3] += engine;
 }
 }
+for (var i = 0; i < vehicleEngArray.length; i++) {
+if (i != (vehicleEngArray.length - 1)) {
+garageEngine += vehicleEngArray[i] + '|';
+} else {
+garageEngine += vehicleEngArray[i];
+}
+}
 } else {
 var ymm = tempMeta.split('|');
 var vehicleDesc = jsVehicleDesc[0];
@@ -1767,7 +1894,15 @@ pageViewAttr[0] = ymm[0];
 pageViewAttr[1] = ymm[1];
 pageViewAttr[2] = ymm[2];
 pageViewAttr[3] = engine;
+if (typeof jsVehicleEngine != "undefined")
+{
+garageEngine = jsVehicleEngine[0];
+}	
 }
+dp.auto_year = pageViewAttr[0] ;
+dp.auto_make = pageViewAttr[1] ;
+dp.auto_model = pageViewAttr[2] ;
+dp.auto_engine = garageEngine ;
 }
 var priceZone = "";
 var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
@@ -1808,11 +1943,19 @@ for ( i=0; i<14; i++ ) {
 cmExtraParms += pageViewAttr[i] + cmSeparator;
 }
 cmExtraParms += pageViewAttr[14];
+dp.sc_error = pageViewAttr[7];
 </script>
 <script language="javascript1.1" type="text/javascript">
 <!--
 var pageID = 'CONTENT: privacypolicy'; 
 cmCreatePageviewTag("CONTENT: privacypolicy","-10011",null,null,"10151",cmExtraParms); 
+var viewData = {};
+if(typeof dp != 'undefined')
+{
+viewData = dp;
+}
+viewData.page_type="CONTENT:";
+viewData.page_name = "privacypolicy";
 //-->
 </script>
 <!-- End Coremetrics Impl -->
@@ -2027,7 +2170,7 @@ var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
 if(!validZone){
 priceZone = invalidatePriceZoneCookie();
 }else{
-priceZone = "";
+priceZone = '';
 }
 j("#currZoneId").html(priceZone);	
 </script>
@@ -2111,17 +2254,6 @@ a.parentNode.insertBefore(d, a);
 <!-- End - ES_GlobalFooter_Bottom -->
 <!-- END Global Footer Bottom-->	
 </div>	
-<script type="text/javascript">
-var checkFitViewURL = '/web/CheckFitView?langId=-1&storeId=10151&catalogId=10051';
-var chooseVehicleViewURL = '/web/ChooseVehicleView?langId=-1&storeId=10151&catalogId=10051';
-var store_Id = '10151';
-var catalog_Id = '10051';
-var lang_Id = '-1';
-var product_Id = '';
-j(document).ready(function () {
-verifyYMME();
-});
-</script>	
 </div><!-- :footer -->
 <!-- END FooterDisplay.jspf -->
 </div>
