@@ -175,6 +175,7 @@
 
 <script type="text/javascript">
     EDM.UDMSegment.rtmodelStart = new Date().getTime();
+    document.cookie="udm-timer-start="+new Date().getTime()+";domain=.edmunds.com;path=/";
 </script>
 <script type="text/javascript" async src="http://udm.edmunds.com/api/rt/models">
 </script>
@@ -200,7 +201,7 @@
 
 <!-- ncrs_dfp is called -->
 <script type="text/javascript">
-	EDM.UDMSegment.typeAdFlag = 'false';
+	EDM.UDMSegment.typeAdFlag = 'true';
 </script>
 <!-- ncrs_dfp is called -->
 
