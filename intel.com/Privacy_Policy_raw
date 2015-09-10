@@ -51,7 +51,7 @@
     
         <meta name="description" content="Notice outlines Intel's privacy, marketing, and advertising practices regarding the collection of personal information through the Intel web site."/>
     
-        <meta name="X-Server" content="PRD1PCQAPP01"/>
+        <meta name="X-Server" content="PRD1PCQAPP06"/>
     
         <meta name="language" content="en"/>
     
@@ -71,8 +71,8 @@
         <meta property="og:url" content="http://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html"/>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/ver/5.7.33/intel/default/favicon.ico"/>
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/ver/5.7.33/intel/default/favicon.ico"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/ver/5.7.28/intel/default/favicon.ico"/>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/ver/5.7.28/intel/default/favicon.ico"/>
     <link rel="canonical" href="http://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html"/>
     
 
@@ -94,8 +94,8 @@
 	})();
 	</script>
     <!--[if gt IE 9 | !IE ]><!-->
-        <link rel="stylesheet" href="/etc/designs/ver/5.7.33.8.19/intel/clientlibs/pages/commons-page.min.css" type="text/css">
-<script type="text/javascript" src="/etc/designs/ver/5.7.33.8.19/intel/clientlibs/pages/commons-page.min.js"></script>
+        <link rel="stylesheet" href="/etc/designs/ver/5.7.28.8.19/intel/clientlibs/pages/commons-page.min.css" type="text/css">
+<script type="text/javascript" src="/etc/designs/ver/5.7.28.8.19/intel/clientlibs/pages/commons-page.min.js"></script>
 
     <![endif]-->
     <!--[if lte IE 9]>
@@ -342,8 +342,8 @@ wa_vphid_secondary:""
 <script type="text/javascript">
     var globalSearch=globalSearch || {};
     globalSearch={
-        sharePointSearch:true,
-        baseSearchQuery:'localecode:"en_US" NOT generic1:"false" ',
+        sharePointSearch:false,
+        baseSearchQuery:'filter(localecode:string("en_US") ANDNOT generic1:"false" ',
         langRootPath:'/content/www/us/en',
         headingTxt:'Best Match',
         locale:'en_US',
@@ -352,7 +352,7 @@ wa_vphid_secondary:""
         searchRealm:'Default',
         bestMatchQ1:'reimagine',
         bestMatchQ2:'en',
-        bestMatchQ11:'sptitle,description,url,thumbnailurl,reimaginerootlevel',
+        bestMatchQ11:'title,description,url,thumbnailurl,reimaginerootlevel',
         progId:'',
         gtvLabels:{
             suggested:"Suggested",
