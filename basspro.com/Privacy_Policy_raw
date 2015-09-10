@@ -64,7 +64,7 @@
 	var subsTimePeriodAttrName = "timePeriod";
 	
 	var storeNLS = null;
-	var storeUserType = "R";
+	var storeUserType = "G";
 	var ios = false;
 	var android = false;
 	//var multiSessionEnabled = ;
@@ -149,7 +149,7 @@
 
 <script type="text/javascript">
 	dojo.addOnLoad(function() { 
-		shoppingActionsJS.setCommonParameters('-1','10151','10051','R','$');
+		shoppingActionsJS.setCommonParameters('-1','10151','10051','G','$');
 		
 		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
@@ -204,11 +204,11 @@ setMonetateTag();
 
   <script type="text/javascript" src="//media.basspro.com/js/bpsguid.js"></script>
   <script type="text/javascript">
-    var bpsuid = "999000093582085";
+    var bpsuid = "";
   </script>
 
   <script language="javascript" type="text/javascript">
-      setRRUID(1906958330998563);
+      
 
     var tag = new Tag();
     tag.setIds();
