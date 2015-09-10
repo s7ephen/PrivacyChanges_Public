@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/09/2015 11:03 PM",
+            DATE_IN_USE: "09/10/2015 12:35 AM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -2808,7 +2808,7 @@ jQuery(document).on('personalizationData:ready', function() {
 <!-- END - WCD Sitewide Container 1 -->
 
 <!-- BEGIN - WCD Sitewide Container 2 -->
-<!-- BEGIN Content Item File: /content/0010/146/929/cn10146929.html -->
+<!-- BEGIN Content Item File: /content/0010/181/897/cn10181897.html -->
 
 
 <!-- WCD Brand Code - Gap -->
@@ -3309,20 +3309,26 @@ if( location.pathname == "/browse/category.do" ) {
 </script>
 <!-- END Banner Insert on VIs -->
 
-<!-- BEGIN Email Sign-up Pop-up on HP with no PAS -->
+<!-- BEGIN Email Sign-up Pop-up on HP with PAS -->
 <script type="text/javascript">
+/******************************************
+
+    Email Sign-up Pop-up on HP
+    (with PAS check) 09/09/15
+
+******************************************/
 if( location.pathname == '/browse/home.do' || location.pathname == '/' ) {
 	
 var wcdEmailPopupGOL = {
 	init: function() {
-		//var hasDIparam = gidLib.getQuerystringParam('DI');
 		var hasTIDparam = gidLib.getQuerystringParam('tid');
 		var hasMDTSparam = gidLib.getQuerystringParam('mdts');
 		var getTIDstring = hasTIDparam.substr(0, 4);
+		var hasdesktopActive = gidLib.getQuerystringParam('desktopSiteActive'); 
 		var emailCookieName = "GOL_hasSeenEmailpop";
 		// Check if user has seen cookie or is on the mobile site/has MDTS param
 		var hasSeenEmailPop = gidLib.getCookieVar("mktUniversalPersist", emailCookieName);
-		if( location.hostname.indexOf('m.gap') > -1 || location.hostname.indexOf('m.secure-www.gap.com') > -1 || hasMDTSparam == "true" ) hasSeenEmailPop = 1;
+		if( location.hostname.indexOf('m.gap') > -1 || location.hostname.indexOf('m.secure-www.gap.com') > -1 || hasMDTSparam == "true" || hasdesktopActive == "true") hasSeenEmailPop = 1;
 
 		// Exclude if &EV param
 		if( hasSeenEmailPop != '1' && ( hasTIDparam == "" || hasTIDparam == undefined || getTIDstring != 'gpem' ) ) { 
@@ -3342,18 +3348,49 @@ var wcdEmailPopupGOL = {
 			// Only show pop-up to US and WIP
 			if( ( marketMessageService.requestOriginCountryCode == 'US' || marketMessageService.requestOriginCountryCode == '' ) && ( location.pathname == '/browse/home.do' || location.pathname == '/' ) && document.cookie.indexOf( 'emailCookieRemindMeLater' ) == -1 ) {
 
-				jbox.boxIt({width:633,height:640,url:"/browse/info.do?cid=1000698"}); 
-				gidLib.setCookieVar("mktUniversalPersist", emailCookieName, "1"); 
+				Event.observe(window, "load", function() {
+					jbox.boxIt({width:633,height:640,url:"/browse/info.do?cid=1000698"}); 
+					gidLib.setCookieVar("mktUniversalPersist", emailCookieName, "1"); 
+				});
 			}
 		}
 	}
 }
-wcdEmailPopupGOL.init();
 
-}
+	var isGPSubsriber = false;
+	var isCardStatus = false;
+
+	//EMAIL STATUS PERSONALIZATION
+	personalizationService.api.onPersonalization(function(event) {
+
+	    var emailStatusAttributeWeCareAbout = "EMAILUS";
+	    var emailStatus = event[emailStatusAttributeWeCareAbout];
+
+	    if (emailStatus) { //email status recognized
+
+	      personalizationService.api.personalizationDone([emailStatus, {}]);
+
+	      var isGPSubscriber = emailStatus.indexOf("GP") >= 0 ? true : false;
+
+	      if (!isGPSubscriber){
+	        wcdEmailPopupGOL.init();
+	      }
+	      
+	    } else {
+	      //unrecognized email status/ launch popup = ' + emailStatus);
+	        wcdEmailPopupGOL.init();
+	    }  
+
+	}); //END CARD STATUS PERSONALIZATION
+
+} //end if HP
+
+/******************************************
+    End Sign-up Pop-up on HP
+******************************************/
 </script>
 
-<!-- END Content Item File: /content/0010/146/929/cn10146929.html -->
+<!-- END Content Item File: /content/0010/181/897/cn10181897.html -->
 
 <!-- END - WCD Sitewide Container 2 -->
 
@@ -8905,7 +8942,43 @@ html.breakpoint-large .responsiveShoppingBag .universalBarBrandTab .universalBar
     <!--Container 5 -->
 </div>
 <div class="topNavGFOLContainer" class="clearfix">
-    <!--Container 6 -->
+    <!--Container 6 --><!-- BEGIN Content Item File: /content/0010/128/269/cn10128269.html -->
+<div id="contentItemContainer10000390" class="10128269" >
+
+
+<div id="gfol-banner" style="height:70px">
+<!--     <a href="javascript:void(0);" rel="jbox" data-jbox-url="/buy/promo_legal_details.do?promoId=148641" data-jbox-width="500" data-jbox-height="450">
+       <img src="/Asset_Archive/GPWeb/content/0010/128/269/assets/091015_GTB_25Adult_PROMO.gif" alt="25% off all adults styles" id="my_image">
+    </a> -->
+    <!-- New Modal -->
+    <a href="javascript:void(0);" class="toggle-universal-modal" data-title="25% off all adults styles" data-url="/buy/promo_legal_details.do?promoId=148641" data-modal-size="standard" data-action-sheet="small">
+        <img src="/Asset_Archive/GPWeb/content/0010/128/269/assets/091015_GTB_25Adult_PROMO.gif" alt="25% off all adults styles" id="my_image">
+    </a>
+</div>
+
+<script type="text/javascript">
+
+jQuery(window).ready(function() {
+
+    if ((omni.strCurrentPageName && omni.strCurrentPageName.indexOf("Factory") > -1) || (window.location.href.indexOf("cid=48620") > -1)){ //show only on Factory pages
+
+        var bannerContainer = jQuery('.topNavGFOLContainer'),
+            banner = jQuery('#gfol-banner');
+            if(bannerContainer.length > 1){
+                bannerContainer.show();
+                bannerContainer[0].remove(); //remove double instance (onesite)
+            }; 
+    };
+ 
+});
+                 
+  
+</script>
+
+
+</div>
+<!-- END Content Item File: /content/0010/128/269/cn10128269.html -->
+
     <!--Container 7 -->
 </div>
 
@@ -10056,7 +10129,7 @@ function validateFormGFOL()
 	
 	<script type="text/javascript" src="/gid/js/common/layouts/en/reporting/sCode.js"></script>
 	 <script type="text/javascript">
-	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "10157482,9712387,9712385,9894771,9894937,10133947,9712387,10130952,10130955,10130957,9938486";
+	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "10157482,10128269,9712387,9712385,9894771,9894937,10128269,10159328,9712387,10130952,10130955,10130957,9938486";
 	 </script>
 	
 	<noscript>
