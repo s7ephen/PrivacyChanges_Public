@@ -38,7 +38,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:HIKU8lr5L_EsPvUs-lda0TeF_WwTG4D4mOs8N2rD",
+        bingoId: "_gae_bingo_random:BW9DA6Q1trwSQo5Mvvw1nkVoOvv13alBo58kRXo7",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +53,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441893593.05406;
+            return 1441899157.0111401;
         },
 
         // return a path to this static content given a path url - example:
@@ -64,7 +64,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         // Keep this in sync with the url in khan-exercises.js:loadMathJax()
         mathjaxUrl: "https://www.kastatic.org/khan-exercises/third_party/MathJax/2.1/MathJax.js?config=KAthJax-eaf1d9cafdc2fc68897cf72d30d67d5a",
-        commitSHA: "6aaeccdbfe074f2c58b6d62d75190023912f0b42",
+        commitSHA: "0fae5355e1caa8ed330d4acc832718d599d4d8cc",
         loginUrl: "/login?continue=%2Fabout%2Fprivacy-policy",
         language: "en",
         kaLocale: "en",
@@ -87,7 +87,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55f18cd900ff00ffa3101fc394f50001737e6b68616e2d61636164656d7900013135303930392d323231312d3263626233313563353463360001016e",
+        requestLogId: "55f1a29500ff00ff091d040835960001737e6b68616e2d61636164656d7900013135303930392d323231312d3263626233313563353463360001017d",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -95,12 +95,12 @@ KAdefine.require("./javascript/shared-package/ka.js");
         VIDEO_PAGE_PRACTICE_BUTTON: "",
         NAV_ON_RIGHT: "",
 
-        NEW_PLAYER_CODE: true,
+        NEW_PLAYER_CODE: false,
         NEW_PLAYER_UI: false,
         NEW_PLAYER_DARK: false,
         NEW_PLAYER_DOMAIN_COLORS: true,
         EUREKA_NEW_VIDEO_PLAYER:
-            true || false,
+            false || false,
 
         VIDEO_AUTOPLAY: false &&
             'WebkitAppearance' in document.documentElement.style,
@@ -122,7 +122,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
     });
     ga('set', 'dimension8', "main:/about/privacy-policy");
     ga('set', 'dimension3', "true");
-    ga('set', 'dimension7', "a0:g1:");
+    ga('set', 'dimension7', "a0:g0:");
 
     ga('send', 'pageview');
 </script>
@@ -1926,13 +1926,6 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
         
-        
-        <script type="text/javascript">
-        (function(){
-            KAdefine.require("./javascript/shared-package/session-survey.jsx")();
-        })();
-        </script>
-        
         <script type="text/javascript">
             (function(){
                 window._kiq = window._kiq || [];
@@ -1940,7 +1933,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:HIKU8lr5L_EsPvUs-lda0TeF_WwTG4D4mOs8N2rD']);
+                _kiq.push(['identify', '_gae_bingo_random:BW9DA6Q1trwSQo5Mvvw1nkVoOvv13alBo58kRXo7']);
                 _kiq.push(['set', {"eligible_for_nps_survey": true, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
@@ -2060,7 +2053,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:HIKU8lr5L_EsPvUs-lda0TeF_WwTG4D4mOs8N2rD"
+                bingoId: "_gae_bingo_random:BW9DA6Q1trwSQo5Mvvw1nkVoOvv13alBo58kRXo7"
             });
         }, 0);
     </script>
