@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '6b48d59bae', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'b1da46a52b', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1192807747'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2004737025'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=64050151'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=572137263&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=718629336'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2352345'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=963863613'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=627611997&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, '3616d57aa9');
+      PJMedia.SharingButtons.initialize(null, null, '917f53f47d');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=2068662446');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1276663987');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=529301650');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1299673367');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1179859338');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=251008899');"></a>
   </span>
 </span>
 
@@ -608,9 +608,9 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 
 
 							
-											<li><a href="http://pjmedia.com/vodkapundit/2015/09/09/this-deal-still-keeps-getting-worse-all-the-time-2/">This Deal (Still) Keeps Getting Worse All the Time</a></li>
+											<li><a href="http://pjmedia.com/andrewmccarthy/2015/09/09/kerry-letter-to-congress-obama-administrations-guilty-plea-to-iran-deals-material-support-to-terrorism/">John Kerry's Letter to Congress Is a 'Guilty' Plea to the Charge That Iran Deal Materially Supports Terrorism</a></li>
 											
-											<li><a href="http://pjmedia.com/lifestyle/2015/09/08/why-the-hell-would-anyone-want-to-read-the-bible/">Why the Hell Would Anyone Want to Read the Bible?</a></li>
+											<li><a href="http://pjmedia.com/vodkapundit/2015/09/09/this-deal-still-keeps-getting-worse-all-the-time-2/">This Deal (Still) Keeps Getting Worse All the Time</a></li>
 											
 											<li><a href="http://pjmedia.com/tatler/2015/09/09/report-50-spies-accuse-obama-admin-of-cooking-isis-intel/">Report: 50 Spies Accuse Obama Admin. of Cooking ISIS Intel</a></li>
 																		</ul>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/09/report-50-spies-accuse-obama-admin-of-cooking-isis-intel/">Report: 50 Spies Accuse Obama Admin. of Cooking ISIS Intel</a></li><li><a href="http://pjmedia.com/tatler/2015/09/09/conservative-revolt-forces-gop-to-delay-iran-vote-alter-strategy/">Conservative Revolt Forces GOP to Delay Iran Vote, Alter Strategy</a></li><li><a href="http://pjmedia.com/tatler/2015/09/09/stu-rothenberg-becoming-a-trump-believer/">Stu Rothenberg Becoming a Trump Believer</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/10/this-is-what-islamic-invasion-looks-like/">This Is What Islamic Invasion Looks Like</a></li><li><a href="http://pjmedia.com/tatler/2015/09/10/report-georgia-taxpayers-paid-to-pave-road-to-governors-home/">Report: Georgia Taxpayers Paid to Pave Road to Governor&#8217;s Home</a></li><li><a href="http://pjmedia.com/tatler/2015/09/09/report-50-spies-accuse-obama-admin-of-cooking-isis-intel/">Report: 50 Spies Accuse Obama Admin. of Cooking ISIS Intel</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -640,7 +640,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/lifestyle/2015/09/09/george-takei-responds-to-the-release-of-kim-davis/">George Takei Responds to the Release of Kim Davis</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/09/conspiracy-research-community-declares-va-reporter-shooting-a-hoax/">&#8216;Conspiracy Research Community&#8217; Declares VA Reporter Shooting a Hoax</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/09/film-critic-tells-fans-why-he-wont-review-war-room/">Film Critic Tells Fans Why He Won&#8217;t Review &#8216;War Room&#8217;</a></li>
+				<li><a href="http://pjmedia.com/lifestyle/2015/09/10/christian-blogger-kim-davis-hasnt-experienced-true-persecution/">Christian Blogger: Kim Davis Hasn&#8217;t Experienced True Persecution</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/09/george-takei-responds-to-the-release-of-kim-davis/">George Takei Responds to the Release of Kim Davis</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/09/conspiracy-research-community-declares-va-reporter-shooting-a-hoax/">&#8216;Conspiracy Research Community&#8217; Declares VA Reporter Shooting a Hoax</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214178/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">UNEXPECTEDLY: <a target="_blank" href="http://pjmedia.com/vodkapundit/2015/09/09/this-deal-still-keeps-getting-worse-all-the-time-2/">This Deal (Still) Keeps Getting Worse All the Time.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214177/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">WAIT, WHAT: Al Qaeda Mag, Occupy Mag&#8230; at this point what difference does it make? <a target="_blank" href="http://www.nbcnews.com/business/economy/al-qaeda-mag-urges-attack-koch-brothers-buffett-bloomberg-n424386">Al Qaeda Mag Urges Attack on Koch Brothers, Buffett, Bloomberg</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214176/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">I&#8217;M NOT THE ONLY ONE WORRYING ABOUT THE SILLY: <a target="_blank" href="http://substratewars.com/2015/09/09/men-of-honor-vs-victim-culture/">Men of Honor vs Victim Culture.</a></a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214124/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">AT AMAZON, <a target="_blank" href="http://www.amazon.com/Best-Sellers/zgbs/ref=assoc_tag_ph_1384415829754?_encoding=UTF8&#038;camp=1789&#038;creative=9325&#038;linkCode=pf4&#038;tag=wwwviolentkicom">fresh deals on bestselling products, updated every hour.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214187/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">MY <em>USA TODAY</em> COLUMN:  <a target="_blank" href="http://www.usatoday.com/story/opinion/2015/09/10/obama-hillary-clinton-middle-east-debacles-column/71949834/">It&#8217;s Not Just Syria:  The Obama-Hillary Mideast Debacles.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214150/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">MEET THE NEW PALACE GUARD, THE SAME AS THE OLD PALACE GUARD: <a target="_blank" href="http://www.thegatewaypundit.com/2015/09/gross-colbert-launches-late-show-with-donald-trump-on-screen-with-kkk-video/">GROSS: Colbert Launches ‘Late Show’ with Donald Trump on Screen With KKK (Video)</a>.</a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":366,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":345,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
