@@ -135,7 +135,7 @@
   var progLogin = "https://onlineservice3.progressive.com/SelfService.Web/SelfService.aspx?Page=Login.AuthenticateUser&amp;QueryStringSetKey=SessionGateway&amp;OfferingID=SelfService&amp;SessionStart=TRUE";
 
   try {
-  	var visitorID = 'ID=9ab69f1488d341948dad1fd987167017';
+  	var visitorID = 'ID=db48e4801d1140f8ac8b2b4da79d153c';
   	visitorID = visitorID.split('=')[1];
   	if (visitorID === undefined) {
   		visitorID = '';
@@ -146,7 +146,7 @@
   epm.CountryCode = "US";
   epm.PostalCode = "10020";
   epm.StateCode = "NY";
-  epm.Time = "0812";
+  epm.Time = "0945";
   epm.Day = "Thu";
   epm.Date = "09/10/2015";
   epm.Source = "";
@@ -202,7 +202,7 @@
 	var epm = epm || [];
 	var dataLayer = [{
 		'domain': getDomainForGA(),
-		'siteServerSessionID': '9ab69f1488d341948dad1fd987167017',
+		'siteServerSessionID': 'db48e4801d1140f8ac8b2b4da79d153c',
 		'partnerCode': epm.Code || '',
 		'device': epm.Device || '',
 		'deviceType': epm.DeviceType || '',
