@@ -23,14 +23,16 @@ KAdefine.require("./javascript/shared-package/ka.js");
       xmlns:fb="http://www.facebook.com/2008/fbml"  >
       <head prefix="og: http://ogp.me/ns# khanacademy:
                         http://ogp.me/ns/apps/khanacademy#">
-        
+        <script>
+           window.KA_ENABLE_RAVENJS = true;
+        </script>
         <!--[if lte IE 8]><script src="/javascript/ie-warning.js"></script><script>window.onload=function(){e("/images/ie-warning/")}</script><![endif]-->
         
 
 <script type="text/javascript">
 (function() {
     window.KA = {                   
-        version: "150909-2013-73952e87d9b6.387045112758377099",
+        version: "150909-2211-2cbb315c54c6.387047009191596069",
         isMobileCapable: false,
         isIPad: false,
         useKatex: true,
@@ -38,7 +40,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l",
+        bingoId: "_gae_bingo_random:C2F48swfgmYQbQrWBHwC8OXjCWa1rjkRb3YH0e2F",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +55,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441860458.80372;
+            return 1441865974.7690301;
         },
 
         // return a path to this static content given a path url - example:
@@ -64,7 +66,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         // Keep this in sync with the url in khan-exercises.js:loadMathJax()
         mathjaxUrl: "https://www.kastatic.org/khan-exercises/third_party/MathJax/2.1/MathJax.js?config=KAthJax-eaf1d9cafdc2fc68897cf72d30d67d5a",
-        commitSHA: "e1bd9b613a0353cf7bb755255f38e8cf446f7688",
+        commitSHA: "79f7906c3a3c4ce82e021ea4ccfd411889b9ea6e",
         loginUrl: "/login?continue=%2Fabout%2Fprivacy-policy",
         language: "en",
         kaLocale: "en",
@@ -87,7 +89,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55f10b6a00ff0c22ee9c0a32430001737e6b68616e2d61636164656d7900013135303930392d323031332d373339353265383764396236000101a9",
+        requestLogId: "55f120f600ff0b9667c6f829940001737e6b68616e2d61636164656d7900013135303930392d323231312d32636262333135633534633600010148",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -96,11 +98,11 @@ KAdefine.require("./javascript/shared-package/ka.js");
         NAV_ON_RIGHT: "",
 
         NEW_PLAYER_CODE: true,
-        NEW_PLAYER_UI: false,
+        NEW_PLAYER_UI: true,
         NEW_PLAYER_DARK: false,
         NEW_PLAYER_DOMAIN_COLORS: true,
         EUREKA_NEW_VIDEO_PLAYER:
-            true || false,
+            true || true,
 
         VIDEO_AUTOPLAY: false &&
             'WebkitAppearance' in document.documentElement.style,
@@ -1835,7 +1837,7 @@ Please contact Khan Academy with any questions or comments about this Privacy No
                 <span><a href="/about/privacy-policy">Privacy Notice</a></span>
             </div>
             
-            <div class="copyright" title="Version: 150909-2013-73952e87d9b6.387045112758377099">
+            <div class="copyright" title="Version: 150909-2211-2cbb315c54c6.387047009191596069">
                 &copy; 2015
                 
                 
@@ -1881,7 +1883,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
     
-    <script crossorigin='anonymous' src='/genfiles/package-manifest-en.efece7.js'></script>
+    <script crossorigin='anonymous' src='/genfiles/package-manifest-en.0f229c.js'></script>
 
     
     <script type="text/javascript">
@@ -1926,6 +1928,13 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
         
+        
+        <script type="text/javascript">
+        (function(){
+            KAdefine.require("./javascript/shared-package/session-survey.jsx")();
+        })();
+        </script>
+        
         <script type="text/javascript">
             (function(){
                 window._kiq = window._kiq || [];
@@ -1933,8 +1942,8 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l']);
-                _kiq.push(['set', {"eligible_for_nps_survey": true, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
+                _kiq.push(['identify', '_gae_bingo_random:C2F48swfgmYQbQrWBHwC8OXjCWa1rjkRb3YH0e2F']);
+                _kiq.push(['set', {"eligible_for_nps_survey": false, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
 
@@ -2053,7 +2062,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l"
+                bingoId: "_gae_bingo_random:C2F48swfgmYQbQrWBHwC8OXjCWa1rjkRb3YH0e2F"
             });
         }, 0);
     </script>
