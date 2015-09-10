@@ -9,17 +9,17 @@
 <meta name="keywords" content="privacy, security" />
 <link rel="canonical" href="http://www.walgreens.com/topic/generalhelp/privacyandsecurity.jsp" />
 <link rel="shortcut icon" type="image/x-icon" href="http://www.walgreens.com/favicon.ico" />
-<link href="/share/adaptive/walgreens/css/desktop/Walgreens-a9534acece6d955156f4ad31e502381e.css" rel="stylesheet">
-									<link href="/share/adaptive/walgreens/css/desktop/Header-Footer-847565040965fb2e3fd8a54f58a04561.css" rel="stylesheet">
+<link href="/share/adaptive/walgreens/css/desktop/Walgreens-fa90bcc3391d8cf2122a2e0dd01c819e.css" rel="stylesheet">
+									<link href="/share/adaptive/walgreens/css/desktop/Header-Footer-eaac5603f215fd3d7ca9ab899da80049.css" rel="stylesheet">
 									<!--[if lt IE 9]>
      <script type="text/javascript" src="/share/jslib/plugin/html5shiv-08add538cdde7034fe3db0564cc24d41.js"></script>
 				<![endif]--> 
-<link href="/share/adaptive/bas-topic-pages-3199def66471768159d33d036e02309b.css" rel="stylesheet">
+<link href="/share/adaptive/bas-topic-pages-53925c7d2306c37237e36672fc3eae9a.css" rel="stylesheet">
 							<link href="/share/adaptive/walgreens/css/desktop/BalancerewardsPage-93b834b36d8e75fcf446ae0ee4edf6de.css" rel="stylesheet">
-									<link href="/share/adaptive/walgreens/css/desktop/Offerspage-46e2a1a93a8bd2c62d24847d63de1a5e.css" rel="stylesheet">
-									<link href="/share/adaptive/dcs-topic-pages-1dd4aec6b1e6e3f1433ee2b0a0fee444.css" rel="stylesheet">
+									<link href="/share/adaptive/walgreens/css/desktop/Offerspage-5dde7ab3127a4c2d691c6e602cf419f5.css" rel="stylesheet">
+									<link href="/share/adaptive/dcs-topic-pages-040f40b9f0fad15e1d80c084e831d337.css" rel="stylesheet">
 							<link href="/share/adaptive/walgreens/css/desktop/BalancerewardsPage-93b834b36d8e75fcf446ae0ee4edf6de.css" rel="stylesheet">
-									<link href="/share/adaptive/walgreens/css/desktop/Offerspage-46e2a1a93a8bd2c62d24847d63de1a5e.css" rel="stylesheet">
+									<link href="/share/adaptive/walgreens/css/desktop/Offerspage-5dde7ab3127a4c2d691c6e602cf419f5.css" rel="stylesheet">
 									<meta property="og:image" content='http://www.walgreens.com/images/37811/29897_Logo4_800x420_713.png' />
 <meta property="og:title" content='Online Privacy and Security Policy | Walgreens ' />
 <meta property="og:description" content='' />
@@ -61,7 +61,11 @@ var clearIntentForLogin = true;
 			<input type="hidden" id="pharmacyUrlContext" value='/pharmacy'>
 
 <section class="wag-header-logo-container">
-<span class="clearfix wag-skip-main-navtextspan"> <a class="wag-skip-main-navtext" href="#mainContentStart" tabindex="1" title="Skip main navigation">Skip main navigation</a></span>
+<span class="clearfix wag-skip-main-navtextspan">
+<a class="wag-skip-main-navtext" href="#mainContentStart" onclick="document.getElementById('mainContentStart').focus();" tabindex="1">
+Skip main navigation
+</a>
+</span>
 <figure class="wag-header-logo-desktop">
 <a href='/' title="Walgreens" target="_self">
 <img src="/images/adaptive/share/images/logos/walgreens-logo-desktop.png" alt="Walgreens" title="Walgreens" aria-label="Walgreens-logo">
@@ -188,6 +192,10 @@ Clinic</a>
 </div>
 
 </wag:nav>
+<div class="clearfix"></div>
+               <span id="mainContentStart" tabindex="-1" aria-labelledby="mainContentStart" class="sr-only">
+start main content
+</span>
 </wag:header>		
 	<script type="text/javascript">
 var cookielessDomainURL = "";
@@ -220,7 +228,7 @@ window.dtmObject.BAS.Common.ImageCollection="";
 <section class="wag-body-container-wrapper" >			
 				<section class="row  wag-page-min-height">
 					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<a href="#" id="mainContentStart" tabindex="-1" aria-labelledby="mainContentStart"><span class="wag-skip-access">skip link</span></a>
+				
 						<wag:preview-default>
 <!DOCTYPE html>
 <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
@@ -263,9 +271,8 @@ window.dtmObject.BAS.Common.ImageCollection="";
 </section></wag:help-leftnav>
 <section class="col-lg-9 col-md-9 col-sm-9 col-xs-12 p0 m0">
 <section class="hidden-xs">
-<link href="/share/css/sharebar-gigya.css" rel="stylesheet" />
-
-<div id="gigyaShareBarUI_dt" class="hide">
+<link href="/share/adaptive/walgreens/css/desktop/sharebar-gigya.min-9fa6c1d4ab0a0f13d9061cccfae002ec.css" rel="stylesheet">
+									<div id="gigyaShareBarUI_dt" class="hide">
 	<div id="gigyaShareBarUI_top" class="text-nowrap"></div>
 </div>
 
@@ -479,9 +486,8 @@ Deerfield, IL 60015
 
 <section class="clearfix"></section>
 <section class="hidden-lg hidden-md hidden-sm visible-xs">
-<link href="/share/css/sharebar-gigya.css" rel="stylesheet" />
-
-<div id="gigyaShareBarUI_mob" class="hide">
+<link href="/share/adaptive/walgreens/css/desktop/sharebar-gigya.min-9fa6c1d4ab0a0f13d9061cccfae002ec.css" rel="stylesheet">
+									<div id="gigyaShareBarUI_mob" class="hide">
 	<h2>Share</h2>
 	<div class="row wag-stroke-grey-top wag-stroke-grey-bottom wag-bg-light-grey text-center p20">
 		<div class="visible-xs-inline-block text-left">
@@ -525,9 +531,8 @@ $(".wag-breadcrumb-mob").insertAfter( $("#gigyaShareBarUI_mob") );
 </wag:footer>
 <!-- The below code added for BAS-24281 -->
 <script type="text/javascript" src="/share/jslib/plugin/mbox-79fcfac9d513f634960fbb598c53ca41.js"></script>
-				<script type="text/javascript" src="/livestyleguidenew/js/mCustomScrollbar-bd1376290e3d3e4811699b80425996cc.js"></script>
-				<!-- customs for overlay scrollbar -->
-<div style="display:none"><a href="#" id="omnitureLink" title="omnitureLink"><span style="display:none">omnitureLink1</span></a></div>
+				<!--/content/templates/page/genericTemplate.jsp-->
+<!-- <div class="mboxDefault"></div><script>abtesttypeahead = false;if (typeof mboxCreate == 'function') {    mboxCreate("WG_Typeahead_Test")}</script>--><div style="display:none"><a href="#" id="omnitureLink" title="omnitureLink"><span style="display:none">omnitureLink1</span></a></div>
 <script type="text/javascript" src="/share/jslib/omn_track/device-f2531f426e83ef8a9380ee7f0e46c6d4.js"></script>
 				<script type="text/javascript">_satellite.pageBottom();
 </script>
@@ -591,17 +596,17 @@ cookielessDomainURL = "";
 </script>
 <![endif]--><script type="text/javascript" src="/share/jslib/jquery/jquery-ui.min-fd255415839568e52a48da5de5af244c.js"></script>
 				<script type="text/javascript" src="/livestyleguidenew/js/bootstrap.min-03ebbea2dedb08197637883019cfc9a7.js"></script>
-				<script type="text/javascript" src="/livestyleguidenew/js/wag-custom-8c7158fddffd788ca97aa46d8b723f2d.js"></script>
-				<!-- customs for LSG accordion, tabs, menudraw, popover, datepicker -->
-<script type="text/javascript" src="/share/jslib/jquery/jquery-ui-touch-punch-89fa2c2bd0f90b169f1a1e5b7e40e8fc.js"></script>
+				<script type="text/javascript" src="/share/adaptive/walgreens/js/wag-custom.min-097eee3390dfac1e80aeb884476ca13c.js"></script>
+					<script type="text/javascript" src="/share/jslib/jquery/jquery-ui-touch-punch.min-eef4e98b20caae1f6f05bae99ed93853.js"></script>
 				<script type="text/javascript" src="/share/jslib/angular/angular.min-d8f8b0ca5f0d23111b7e88a68f9046d8.js"></script>
 				<script type="text/javascript" src="/share/jslib/angular/angular-cookies.min-0c89da25de01becaaed35acf444ac090.js"></script>
-				<script type="text/javascript" src="/share/jslib/config/template-url-config-4f1dde9b52042bbf652395b2d42b3159.js"></script>
+				<script type="text/javascript" src="/share/jslib/config/template-url-config-4bb34e65641f23e4a1aa5b09fc424357.js"></script>
 				<script type="text/javascript" src="/share/jslib/config/global-config-bb9fbab1b14ce70eba4a265a54645fc2.js"></script>
-				<script type="text/javascript" src="/share/adaptive/Framework.min-bbdd1fad5ff19cd52df6f3afac5a3470.js"></script>
+				<script type="text/javascript" src="/share/adaptive/Framework.min-29c3331e8692bcb2d3b7a97f745cac67.js"></script>
 					<script type="text/javascript" src="/share/jslib/config/common-config-0eb519a82ea0864595c0d5353d3e6b9c.js"></script>
-				<script type="text/javascript" src="/share/adaptive/walgreens/js/Header-Footer-593c196e281c6b2ca1456c316e107194.js"></script>
-					<script src="/share/jslib/jquery/jquery.ui.totop.js"></script>
-<script src="/controller/default_controller.js" type="text/javascript"></script>
-</body>
+				<script type="text/javascript" src="/share/adaptive/walgreens/js/Header-Footer-f0dae9fdd5086b9560be5c04426d608e.js"></script>
+					<script type="text/javascript" src="/share/jslib/jquery/jquery.ui.totop-2472082fb96c408d802fa067e6cfd6ad.js"></script>
+				<script type="text/javascript" src="/controller/default_controller-ca8aab06e433daaa8490143725e9cc9d.js"></script>
+				<script type="text/javascript" src="/share/jslib/plugin/jquery.mobile.custom.min-2482fec49a7c4ce5bf8d2651d111fa29.js"></script>
+				</body>
 </html>
