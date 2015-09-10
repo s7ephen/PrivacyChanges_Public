@@ -64,9 +64,9 @@
 	var subsTimePeriodAttrName = "timePeriod";
 	
 	var storeNLS = null;
-	var storeUserType = "G";
+	var storeUserType = "R";
 	var ios = false;
-	var android = true;
+	var android = false;
 	//var multiSessionEnabled = ;
 	
 	// Store the amount of time of inactivity before a re-login is required, this value is retrieved from wc-server.xml, default is 30 mins
@@ -149,7 +149,7 @@
 
 <script type="text/javascript">
 	dojo.addOnLoad(function() { 
-		shoppingActionsJS.setCommonParameters('-1','10151','10051','G','$');
+		shoppingActionsJS.setCommonParameters('-1','10151','10051','R','$');
 		
 		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
@@ -204,11 +204,11 @@ setMonetateTag();
 
   <script type="text/javascript" src="//media.basspro.com/js/bpsguid.js"></script>
   <script type="text/javascript">
-    var bpsuid = "";
+    var bpsuid = "999000093582085";
   </script>
 
   <script language="javascript" type="text/javascript">
-      
+      setRRUID(1906958330998563);
 
     var tag = new Tag();
     tag.setIds();
