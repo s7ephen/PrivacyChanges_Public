@@ -46,6 +46,7 @@
 document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=7rurhilS20pNrVcviE3PbA%3D%3D"></' + 'script>');
 document.write('<script type="text/javascript" src="/ScriptResource.axd?d=-ikBxGOoUmOWT8uPW2JAXzBirakK_tzbvtyYN64kEYFqYBwJwzoaxJrZ25wbA48sjzELOD6-r51ellC2w1g6l8SLP6Y3Wo7Qo3qJizA9wWkhNCwwumXifTMd_2lDh6EOg2cnRpfP2sq3JUuXx4nx6RUYMb01&amp;t=ffffffffb868b5f4"></' + 'script>');
 document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=V3EAU9uYQmD-n1pdrCQnssel0ktApaOSFal53rRAzjb170ffcrUisrvPtBPHJjA_tOHa40DFnrBTMklAvgLS4k3y37mnM_axiA5gXlWKgJuocYxOWlFlMO2q0vbArPSDG7P74w2jQ-OYUEuF-MVOqiTsNO2kWVP_SaRmouxvebYz1r5L0&amp;t=ffffffffb868b5f4"></' + 'script>');
 // ]]>
 </script>
 
@@ -123,7 +124,7 @@ document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYA
 <input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0x99632268047BD3CC9A6E516AA10CAAF19A5E6E6E2C41E4164569F2F4C694548AA996E9BE4A555D8B49953AD4C568AC7B4B8F7D5DEC2ED76B146B3386320FE748,10 Sep 2015 16:40:30 -0000" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0xB75BE26E694C08926E66E90C42EA15EBD4837D39196922FB02AE3792BD3015FA75E8E38484B410EEC2C49DB51DBD8064C7595C06EC94C14E98560B82C481928C,10 Sep 2015 17:55:44 -0000" />
 <input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
 <input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
 <input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
@@ -213,7 +214,13 @@ return true;
 </div>
 	
 		<!-- SharePoint Scripts Handler -->
-		
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$panelZone'], [], [], 90);
+//]]>
+</script>
+
 		<!-- end SharePoint Scripts Handler -->
 		
 		<!-- Web Parts and Zones Controller -->
@@ -637,7 +644,8 @@ return true;
 
 <script type="text/javascript">
 //<![CDATA[
-var _spFormDigestRefreshInterval = 1440000;function loadMDN2() { EnsureScript('MDN.js', typeof(loadFilterFn), null); }
+var _spFormDigestRefreshInterval = 1440000;
+WebForm_InitCallback();function loadMDN2() { EnsureScript('MDN.js', typeof(loadFilterFn), null); }
 function loadMDN1() { ExecuteOrDelayUntilScriptLoaded(loadMDN2, 'sp.ribbon.js'); }
 _spBodyOnLoadFunctionNames.push('loadMDN1');
 function _spNavigateHierarchyEx(nodeDiv, dataSourceId, dataPath, url, listInContext, type, additionalQString) {
