@@ -22,22 +22,22 @@
   </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link href="http://www.healthline.com/resources/healthline/css/site.less?v=v1.20150825140411" type="text/css" rel="stylesheet"/>
-  <link href="http://www.healthline.com/resources/healthline/css/article.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/rwd/article.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/rwd/sponsor-disclaimer.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/sticky-wsl.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/rwd/sticky-wsl.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/title-area.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/rwd/title-area.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/sharebar.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/content-promotion-widget-sliding.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
-<link href="http://www.healthline.com/resources/healthline/css/sitepopup.less?v=v1.20150825140411" media="all" type="text/css" rel="stylesheet"/>
+  <link href="http://www.healthline.com/resources/healthline/css/site.less?v=v1.20150909121339" type="text/css" rel="stylesheet"/>
+  <link href="http://www.healthline.com/resources/healthline/css/article.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/rwd/article.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/rwd/sponsor-disclaimer.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/sticky-wsl.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/rwd/sticky-wsl.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/title-area.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/rwd/title-area.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/sharebar.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/content-promotion-widget-sliding.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
+<link href="http://www.healthline.com/resources/healthline/css/sitepopup.less?v=v1.20150909121339" media="all" type="text/css" rel="stylesheet"/>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 
   <script src="//cdn.optimizely.com/js/1131552301.js" type="text/javascript"></script>
   <script src="//cse.google.com/cse.js?cx=015752621822392293707:ovcgybsc0c0" async="true" type="text/javascript"></script>
-  <script src="http://www.healthline.com/resources/base/js/lib/main.js?v=v1.20150825140411"></script>
+  <script src="http://www.healthline.com/resources/base/js/lib/main.js?v=v1.20150909121339"></script>
     <script>
       requirejs.config({
         baseUrl: '/'
@@ -167,6 +167,8 @@
                         gaEventAction : 'Key Impression',
                         gaEventLabel: adObject.label + ": " + topLevelAdUnit,
                         gaEventNonInteraction: true});
+
+                      log.debug( 'Ad-Common - KIMP called: ' + adObject.label + ' : ' + topLevelAdUnit );
                     }
                   }
                   googletag.pubads().refresh( adPositions );
@@ -340,7 +342,7 @@ require([
       smartAnswerCount: HL_ga_smartAnswerCount,
       isExpandableNav: false ? true : false,
       dfpAdSite: "hn.us.hl.lc.x.x.x",
-      webHostName: "njc-web04.healthline.com",
+      webHostName: "sfc-web06.healthline.com",
       k1: "otherhealthsystems",
       k2: "healthsystems",
       imuid: false ? "" : "",
@@ -926,13 +928,13 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
         <ul class="list-pagination c">
 
           <li class="list-item-pagi" id="btn-previous-page">
-            <a class="anchor-pagi" href="#"><img class="icon-list-item-pagi" src="http://www.healthline.com/resources/healthline/images/pagi-prev-big.v1.20150825140411.png" width="9" height="14" alt="Previous page button" /></a>
+            <a class="anchor-pagi" href="#"><img class="icon-list-item-pagi" src="http://www.healthline.com/resources/healthline/images/pagi-prev-big.v1.20150909121339.png" width="9" height="14" alt="Previous page button" /></a>
           </li>
 
           <li class="list-item-pagi btn-page">1</li>
 
           <li class="list-item-pagi" id="btn-next-page">
-            <a class="anchor-pagi" href="#"><img class="icon-list-item-pagi" src="http://www.healthline.com/resources/healthline/images/pagi-next-big.v1.20150825140411.png" width="9" height="14" alt="Next page button" /></a>
+            <a class="anchor-pagi" href="#"><img class="icon-list-item-pagi" src="http://www.healthline.com/resources/healthline/images/pagi-next-big.v1.20150909121339.png" width="9" height="14" alt="Next page button" /></a>
           </li>
 
         </ul>
@@ -1097,7 +1099,6 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
             </div>
           </div>
 
-
           <div class="mr3block c">
             <div class="box-ad-mr3">
               <div class="ads-margin ads-box-header">Advertisement</div>
@@ -1105,7 +1106,6 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
               </div>
             </div>
           </div>
-
 
           <div class="mr3block c">
             <div class="box-ad-mr3">
@@ -1115,7 +1115,6 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
             </div>
           </div>
 
-
           <div class="mr3block c">
             <div class="box-ad-mr3">
               <div class="ads-margin ads-box-header">Advertisement</div>
@@ -1124,7 +1123,6 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
             </div>
           </div>
 
-
           <div class="mr3block c">
             <div class="box-ad-mr3">
               <div class="ads-margin ads-box-header">Advertisement</div>
@@ -1132,7 +1130,6 @@ lodge a complaint, please visit the FTC's Consumer Response Center:&nbsp;<a href
               </div>
             </div>
           </div>
-
 
           </div>
 
@@ -1519,22 +1516,25 @@ qacct:"p-EtueP4RBs10Ha"
 
                   
                     if( matchMedia( 'only screen and (min-width: 1240px)' ).matches && $( '.hl-ad-wsl' ).length && $( '.ad-lb' ).hasClass( 'hidden-ad-lb' ) ) {
-                      defer.reject();
+                    log.debug( 'GPT Promise - LB rejected - DESKTOP WIDE - WSL true - LB hidden' );
+
+                    defer.reject();
                       return;
                     }
                   
 
-                  var isHealthline = true,
-                      isSlideShow = false;
-                  if( !isSlideShow && matchMedia( 'only screen and (max-width: 599px)').matches && isHealthline ) {
+                  var isHealthline = true;
+                  if( matchMedia( 'only screen and (max-width: 599px)').matches && isHealthline ) {
+                    log.debug( 'GPT Promise - LB rejected - MOBILE' );
+
                     window.HL_lbSlot.setCollapseEmptyDiv(true, true);
                     defer.reject();
                   } else {
                     if ( isAdOnPageLoad ){
-                      log.debug( 'GPT Promise - LB expected' );
+                      log.debug( 'GPT Promise - LB expected - slot object passed - DESKTOP' );
                       defer.resolve( { slotObj: HL_lbSlot, slotName: "LB" });
                     } else {
-                      log.debug( 'GPT Promise - LB expected' );
+                      log.debug( 'GPT Promise - LB expected - resolve false - DESKTOP' );
                       defer.resolve( false );
                     }
                   }
@@ -1594,6 +1594,9 @@ qacct:"p-EtueP4RBs10Ha"
                     googletag.pubads().addEventListener('slotRenderEnded', function(event) {
                       if (event.slot === window.HL_lb3Slot ) {
                         if( event.isEmpty ) {
+
+                          log.debug( 'GPT Promise - LB expected - MOBILE' );
+
                           googletag.cmd.push( function(){
                             if( window.HL_lbSlot ) {
                               window.HL_gptRefreshAds( ['mr1','mr2','mr3','wsl','wsr','pb'] );
@@ -1606,6 +1609,8 @@ qacct:"p-EtueP4RBs10Ha"
                               gaEventAction : 'Key Impression',
                               gaEventLabel: "LB3: hn.us.hl.lc.x.x.x",
                               gaEventNonInteraction: true});
+                            log.debug( 'GPT Common - KIMP called: LB3: hn.us.hl.lc.x.x.x' );
+
                           } catch (e) {
                           // if an undefined value in array exists, do no log in GA
                           // this does not affect ad refresh
@@ -1614,6 +1619,13 @@ qacct:"p-EtueP4RBs10Ha"
 
                       } else if( event.slot === window.HL_lbSlot && !event.isEmpty ) {
                         originalLeaderboard.css({height: 79, visibility: 'visible', overflow: 'hidden' });
+                      } else {
+                        var index = window.HL_mr3Slots.indexOf( event.slot );
+                        $.each( HL_mr3Slots, function( i ) {
+                          if( HL_mr3Slots[i].ad === event.slot ) {
+                            $(document).trigger('event:LoadedMR3:'+i);
+                          }
+                        });
                       }
                     });
                     if( isAdOnPageLoad ) {
@@ -1830,18 +1842,27 @@ qacct:"p-EtueP4RBs10Ha"
 
     // activate toggle for hide/show FB comments
     $(window).load(function() {
+      var $fbViewCommentsBar = $('.fb-view-comments-bar'),
+        $fbViewCount = $('#fb-view-count'),
+        $fbCommentBlock = $('#fb-comment-block');
 
-      if( $('.fb-view-comments-bar').length ) {
-        $('.fb-view-comments-bar').click(function() {
-          $('.fb-view-comments-bar').toggleClass( 'open' );
-          if( $('.fb-view-comments-bar').hasClass( 'open' ) ) {
+      if( $fbViewCommentsBar.length ) {
+          $fbViewCommentsBar.click(function() {
+          $fbViewCommentsBar.toggleClass( 'open' );
+          if( $fbViewCommentsBar.hasClass( 'open' ) ) {
             $('.fb-view-comments-bar span.fb-view-comments-arrow').removeClass( "hl-icon-right-solid-arrow" ).addClass('hl-icon-down-arrow');
-            $('#fb-view-count').hide();
+            $fbViewCount.hide();
+            $fbCommentBlock.css('height','auto');
+            $fbCommentBlock.children().css('visibility','visible');
           } else {
             $('.fb-view-comments-bar span.fb-view-comments-arrow').removeClass( "hl-icon-down-arrow" ).addClass('hl-icon-right-solid-arrow');
-            $('#fb-view-count').show();
+            $fbViewCount.show();
+            $fbCommentBlock.css('height','0');
+            $fbCommentBlock.children().css('visibility','hidden');
           }
-          if($('#fb-view-count').html() == '&nbsp;()') $('#fb-view-count').hide();
+          if( $fbViewCount.html() == '&nbsp;()' ) {
+            $fbViewCount.hide();
+          }
         });
       }
 
@@ -1866,271 +1887,346 @@ qacct:"p-EtueP4RBs10Ha"
 <script>
 
 
-            arrayPromiseFunctions.push( function() {
-              var defer = $.Deferred();
+            require([
+            'jquery'
+            ], function( $ ) {
 
-              require([ "jquery", "base/responsive-ads", "matchmedia"], function($,AppResponsiveAds){
+              arrayPromiseFunctions.push( function() {
+                var defer = $.Deferred();
 
-                // determine if mr3 ad is shown on page load
-                var isAdOnPageLoad = false;
+                require([
+                  'jquery',
+                  'base/responsive-ads',
+                  'matchmedia'
+                  ], function( $, AppResponsiveAds ) {
 
-                // load MR3 on new slideshow design by Default on mobile
-                if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
-                  isAdOnPageLoad = true;
-                }
+                  // determine if mr3 ad is shown on page load
+                  var isAdOnPageLoad = false;
 
-                if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
-                  !false && false ) {
-                  isAdOnPageLoad = false;
-                }
-
-
-
-                if( typeof window.HL_mr3Slot10 !== 'undefined' ) {
-                  defer.reject();
-                  return;
-                }
-
-                googletag.cmd.push(function() {
-                  // need to create an MR3 slot object/array and dynmaically add individual slots
-                  window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
-                  window.HL_mr3Slot10 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-10")
-                  .addService(googletag.pubads());
-
-                  window.HL_mr3Slot10.setTargeting("pos", "mr3");
-                  googletag.display("gpt-ad-mr3-10");
-
-                  // test this
-                  window.HL_mr3Slots.push( window.HL_mr3Slot10 );
-
-                  if( isAdOnPageLoad ) {
-                    log.debug( 'GPT Promise - MR3 expected' );
-                    defer.resolve( { slotObj: HL_mr3Slot10, slotName: "MR3" } );
-                  } else {
-                    defer.reject( );
+                  // defer MR3 on pageload on mobile for article ad widgets
+                  if ( matchMedia('only screen and (max-width: 600px)').matches && false ) {
+                    isAdOnPageLoad = false;
                   }
-                });
 
-              }); // require
+                  // load MR3 on new slideshow design by Default on mobile
+                  if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
+                    isAdOnPageLoad = true;
+                  }
 
-              return defer.promise();
-            });
+                  if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
+                    !false && false ) {
+                    isAdOnPageLoad = false;
+                  }
+
+                  if( typeof window.HL_mr3Slot10 !== 'undefined' ) {
+                    log.debug( 'GPT Promise - MR3 rejected - mr3Slot object already exist' );
+
+                    defer.reject();
+                    return;
+                  }
+
+                  googletag.cmd.push(function() {
+                    // need to create an MR3 slot object/array and dynmaically add individual slots
+                    window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
+                    window.HL_mr3Slot10 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-10")
+                    .addService(googletag.pubads());
+
+                    window.HL_mr3Slot10.setTargeting("pos", "mr3");
+                    googletag.display("gpt-ad-mr3-10");
+
+                    window.HL_mr3Slots.push( {id: "gpt-ad-mr3-10", ad: window.HL_mr3Slot10 } );
+
+                    if( isAdOnPageLoad ) {
+                      log.debug( 'GPT Promise - MR3 expected' );
+
+                      defer.resolve( { slotObj: HL_mr3Slot10, slotName: "MR3" } );
+                    } else {
+                      defer.reject( );
+                    }
+                  });
+
+                }); // require
+
+                return defer.promise();
+              });
+
+            }); // require
           
 </script>
 <script>
 
 
-            arrayPromiseFunctions.push( function() {
-              var defer = $.Deferred();
+            require([
+            'jquery'
+            ], function( $ ) {
 
-              require([ "jquery", "base/responsive-ads", "matchmedia"], function($,AppResponsiveAds){
+              arrayPromiseFunctions.push( function() {
+                var defer = $.Deferred();
 
-                // determine if mr3 ad is shown on page load
-                var isAdOnPageLoad = false;
+                require([
+                  'jquery',
+                  'base/responsive-ads',
+                  'matchmedia'
+                  ], function( $, AppResponsiveAds ) {
 
-                // load MR3 on new slideshow design by Default on mobile
-                if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
-                  isAdOnPageLoad = true;
-                }
+                  // determine if mr3 ad is shown on page load
+                  var isAdOnPageLoad = false;
 
-                if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
-                  !false && false ) {
-                  isAdOnPageLoad = false;
-                }
-
-
-
-                if( typeof window.HL_mr3Slot11 !== 'undefined' ) {
-                  defer.reject();
-                  return;
-                }
-
-                googletag.cmd.push(function() {
-                  // need to create an MR3 slot object/array and dynmaically add individual slots
-                  window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
-                  window.HL_mr3Slot11 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-11")
-                  .addService(googletag.pubads());
-
-                  window.HL_mr3Slot11.setTargeting("pos", "mr3");
-                  googletag.display("gpt-ad-mr3-11");
-
-                  // test this
-                  window.HL_mr3Slots.push( window.HL_mr3Slot11 );
-
-                  if( isAdOnPageLoad ) {
-                    log.debug( 'GPT Promise - MR3 expected' );
-                    defer.resolve( { slotObj: HL_mr3Slot11, slotName: "MR3" } );
-                  } else {
-                    defer.reject( );
+                  // defer MR3 on pageload on mobile for article ad widgets
+                  if ( matchMedia('only screen and (max-width: 600px)').matches && false ) {
+                    isAdOnPageLoad = false;
                   }
-                });
 
-              }); // require
+                  // load MR3 on new slideshow design by Default on mobile
+                  if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
+                    isAdOnPageLoad = true;
+                  }
 
-              return defer.promise();
-            });
+                  if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
+                    !false && false ) {
+                    isAdOnPageLoad = false;
+                  }
+
+                  if( typeof window.HL_mr3Slot11 !== 'undefined' ) {
+                    log.debug( 'GPT Promise - MR3 rejected - mr3Slot object already exist' );
+
+                    defer.reject();
+                    return;
+                  }
+
+                  googletag.cmd.push(function() {
+                    // need to create an MR3 slot object/array and dynmaically add individual slots
+                    window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
+                    window.HL_mr3Slot11 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-11")
+                    .addService(googletag.pubads());
+
+                    window.HL_mr3Slot11.setTargeting("pos", "mr3");
+                    googletag.display("gpt-ad-mr3-11");
+
+                    window.HL_mr3Slots.push( {id: "gpt-ad-mr3-11", ad: window.HL_mr3Slot11 } );
+
+                    if( isAdOnPageLoad ) {
+                      log.debug( 'GPT Promise - MR3 expected' );
+
+                      defer.resolve( { slotObj: HL_mr3Slot11, slotName: "MR3" } );
+                    } else {
+                      defer.reject( );
+                    }
+                  });
+
+                }); // require
+
+                return defer.promise();
+              });
+
+            }); // require
           
 </script>
 <script>
 
 
-            arrayPromiseFunctions.push( function() {
-              var defer = $.Deferred();
+            require([
+            'jquery'
+            ], function( $ ) {
 
-              require([ "jquery", "base/responsive-ads", "matchmedia"], function($,AppResponsiveAds){
+              arrayPromiseFunctions.push( function() {
+                var defer = $.Deferred();
 
-                // determine if mr3 ad is shown on page load
-                var isAdOnPageLoad = false;
+                require([
+                  'jquery',
+                  'base/responsive-ads',
+                  'matchmedia'
+                  ], function( $, AppResponsiveAds ) {
 
-                // load MR3 on new slideshow design by Default on mobile
-                if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
-                  isAdOnPageLoad = true;
-                }
+                  // determine if mr3 ad is shown on page load
+                  var isAdOnPageLoad = false;
 
-                if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
-                  !false && false ) {
-                  isAdOnPageLoad = false;
-                }
-
-
-
-                if( typeof window.HL_mr3Slot12 !== 'undefined' ) {
-                  defer.reject();
-                  return;
-                }
-
-                googletag.cmd.push(function() {
-                  // need to create an MR3 slot object/array and dynmaically add individual slots
-                  window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
-                  window.HL_mr3Slot12 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-12")
-                  .addService(googletag.pubads());
-
-                  window.HL_mr3Slot12.setTargeting("pos", "mr3");
-                  googletag.display("gpt-ad-mr3-12");
-
-                  // test this
-                  window.HL_mr3Slots.push( window.HL_mr3Slot12 );
-
-                  if( isAdOnPageLoad ) {
-                    log.debug( 'GPT Promise - MR3 expected' );
-                    defer.resolve( { slotObj: HL_mr3Slot12, slotName: "MR3" } );
-                  } else {
-                    defer.reject( );
+                  // defer MR3 on pageload on mobile for article ad widgets
+                  if ( matchMedia('only screen and (max-width: 600px)').matches && false ) {
+                    isAdOnPageLoad = false;
                   }
-                });
 
-              }); // require
+                  // load MR3 on new slideshow design by Default on mobile
+                  if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
+                    isAdOnPageLoad = true;
+                  }
 
-              return defer.promise();
-            });
+                  if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
+                    !false && false ) {
+                    isAdOnPageLoad = false;
+                  }
+
+                  if( typeof window.HL_mr3Slot12 !== 'undefined' ) {
+                    log.debug( 'GPT Promise - MR3 rejected - mr3Slot object already exist' );
+
+                    defer.reject();
+                    return;
+                  }
+
+                  googletag.cmd.push(function() {
+                    // need to create an MR3 slot object/array and dynmaically add individual slots
+                    window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
+                    window.HL_mr3Slot12 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-12")
+                    .addService(googletag.pubads());
+
+                    window.HL_mr3Slot12.setTargeting("pos", "mr3");
+                    googletag.display("gpt-ad-mr3-12");
+
+                    window.HL_mr3Slots.push( {id: "gpt-ad-mr3-12", ad: window.HL_mr3Slot12 } );
+
+                    if( isAdOnPageLoad ) {
+                      log.debug( 'GPT Promise - MR3 expected' );
+
+                      defer.resolve( { slotObj: HL_mr3Slot12, slotName: "MR3" } );
+                    } else {
+                      defer.reject( );
+                    }
+                  });
+
+                }); // require
+
+                return defer.promise();
+              });
+
+            }); // require
           
 </script>
 <script>
 
 
-            arrayPromiseFunctions.push( function() {
-              var defer = $.Deferred();
+            require([
+            'jquery'
+            ], function( $ ) {
 
-              require([ "jquery", "base/responsive-ads", "matchmedia"], function($,AppResponsiveAds){
+              arrayPromiseFunctions.push( function() {
+                var defer = $.Deferred();
 
-                // determine if mr3 ad is shown on page load
-                var isAdOnPageLoad = false;
+                require([
+                  'jquery',
+                  'base/responsive-ads',
+                  'matchmedia'
+                  ], function( $, AppResponsiveAds ) {
 
-                // load MR3 on new slideshow design by Default on mobile
-                if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
-                  isAdOnPageLoad = true;
-                }
+                  // determine if mr3 ad is shown on page load
+                  var isAdOnPageLoad = false;
 
-                if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
-                  !false && false ) {
-                  isAdOnPageLoad = false;
-                }
-
-
-
-                if( typeof window.HL_mr3Slot13 !== 'undefined' ) {
-                  defer.reject();
-                  return;
-                }
-
-                googletag.cmd.push(function() {
-                  // need to create an MR3 slot object/array and dynmaically add individual slots
-                  window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
-                  window.HL_mr3Slot13 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-13")
-                  .addService(googletag.pubads());
-
-                  window.HL_mr3Slot13.setTargeting("pos", "mr3");
-                  googletag.display("gpt-ad-mr3-13");
-
-                  // test this
-                  window.HL_mr3Slots.push( window.HL_mr3Slot13 );
-
-                  if( isAdOnPageLoad ) {
-                    log.debug( 'GPT Promise - MR3 expected' );
-                    defer.resolve( { slotObj: HL_mr3Slot13, slotName: "MR3" } );
-                  } else {
-                    defer.reject( );
+                  // defer MR3 on pageload on mobile for article ad widgets
+                  if ( matchMedia('only screen and (max-width: 600px)').matches && false ) {
+                    isAdOnPageLoad = false;
                   }
-                });
 
-              }); // require
+                  // load MR3 on new slideshow design by Default on mobile
+                  if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
+                    isAdOnPageLoad = true;
+                  }
 
-              return defer.promise();
-            });
+                  if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
+                    !false && false ) {
+                    isAdOnPageLoad = false;
+                  }
+
+                  if( typeof window.HL_mr3Slot13 !== 'undefined' ) {
+                    log.debug( 'GPT Promise - MR3 rejected - mr3Slot object already exist' );
+
+                    defer.reject();
+                    return;
+                  }
+
+                  googletag.cmd.push(function() {
+                    // need to create an MR3 slot object/array and dynmaically add individual slots
+                    window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
+                    window.HL_mr3Slot13 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-13")
+                    .addService(googletag.pubads());
+
+                    window.HL_mr3Slot13.setTargeting("pos", "mr3");
+                    googletag.display("gpt-ad-mr3-13");
+
+                    window.HL_mr3Slots.push( {id: "gpt-ad-mr3-13", ad: window.HL_mr3Slot13 } );
+
+                    if( isAdOnPageLoad ) {
+                      log.debug( 'GPT Promise - MR3 expected' );
+
+                      defer.resolve( { slotObj: HL_mr3Slot13, slotName: "MR3" } );
+                    } else {
+                      defer.reject( );
+                    }
+                  });
+
+                }); // require
+
+                return defer.promise();
+              });
+
+            }); // require
           
 </script>
 <script>
 
 
-            arrayPromiseFunctions.push( function() {
-              var defer = $.Deferred();
+            require([
+            'jquery'
+            ], function( $ ) {
 
-              require([ "jquery", "base/responsive-ads", "matchmedia"], function($,AppResponsiveAds){
+              arrayPromiseFunctions.push( function() {
+                var defer = $.Deferred();
 
-                // determine if mr3 ad is shown on page load
-                var isAdOnPageLoad = false;
+                require([
+                  'jquery',
+                  'base/responsive-ads',
+                  'matchmedia'
+                  ], function( $, AppResponsiveAds ) {
 
-                // load MR3 on new slideshow design by Default on mobile
-                if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
-                  isAdOnPageLoad = true;
-                }
+                  // determine if mr3 ad is shown on page load
+                  var isAdOnPageLoad = false;
 
-                if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
-                  !false && false ) {
-                  isAdOnPageLoad = false;
-                }
-
-
-
-                if( typeof window.HL_mr3Slot14 !== 'undefined' ) {
-                  defer.reject();
-                  return;
-                }
-
-                googletag.cmd.push(function() {
-                  // need to create an MR3 slot object/array and dynmaically add individual slots
-                  window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
-                  window.HL_mr3Slot14 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-14")
-                  .addService(googletag.pubads());
-
-                  window.HL_mr3Slot14.setTargeting("pos", "mr3");
-                  googletag.display("gpt-ad-mr3-14");
-
-                  // test this
-                  window.HL_mr3Slots.push( window.HL_mr3Slot14 );
-
-                  if( isAdOnPageLoad ) {
-                    log.debug( 'GPT Promise - MR3 expected' );
-                    defer.resolve( { slotObj: HL_mr3Slot14, slotName: "MR3" } );
-                  } else {
-                    defer.reject( );
+                  // defer MR3 on pageload on mobile for article ad widgets
+                  if ( matchMedia('only screen and (max-width: 600px)').matches && false ) {
+                    isAdOnPageLoad = false;
                   }
-                });
 
-              }); // require
+                  // load MR3 on new slideshow design by Default on mobile
+                  if ( matchMedia('only screen and (max-width: 997px)').matches && false ) {
+                    isAdOnPageLoad = true;
+                  }
 
-              return defer.promise();
-            });
+                  if ( matchMedia('only screen and (min-width: 768px)').matches && matchMedia('only screen and (max-width: 997px)').matches &&
+                    !false && false ) {
+                    isAdOnPageLoad = false;
+                  }
+
+                  if( typeof window.HL_mr3Slot14 !== 'undefined' ) {
+                    log.debug( 'GPT Promise - MR3 rejected - mr3Slot object already exist' );
+
+                    defer.reject();
+                    return;
+                  }
+
+                  googletag.cmd.push(function() {
+                    // need to create an MR3 slot object/array and dynmaically add individual slots
+                    window.HL_mr3Slots = window.HL_mr3Slots ? window.HL_mr3Slots : [];
+                    window.HL_mr3Slot14 = googletag.defineSlot(slotName, [[300, 250]],"gpt-ad-mr3-14")
+                    .addService(googletag.pubads());
+
+                    window.HL_mr3Slot14.setTargeting("pos", "mr3");
+                    googletag.display("gpt-ad-mr3-14");
+
+                    window.HL_mr3Slots.push( {id: "gpt-ad-mr3-14", ad: window.HL_mr3Slot14 } );
+
+                    if( isAdOnPageLoad ) {
+                      log.debug( 'GPT Promise - MR3 expected' );
+
+                      defer.resolve( { slotObj: HL_mr3Slot14, slotName: "MR3" } );
+                    } else {
+                      defer.reject( );
+                    }
+                  });
+
+                }); // require
+
+                return defer.promise();
+              });
+
+            }); // require
           
 </script>
 <script>
@@ -2462,7 +2558,8 @@ qacct:"p-EtueP4RBs10Ha"
       isNews: isNews,
       isDiabetesMine: false,
       isGpt: true,
-      isFdaArticle: false
+      isFdaArticle: false,
+      lazyLoadMR3: false
     });
 
     });
@@ -2525,7 +2622,7 @@ qacct:"p-EtueP4RBs10Ha"
               gaEventNonInteraction: true
             });
 
-            log.debug( 'GPT Common - KIMP called: ' + adsArrayForKIMP[i] + ': hn.us.hl.lc.x.x.x' );
+            log.debug( 'GPT-Common-Ad-Load-Script - KIMP called: ' + adsArrayForKIMP[i] + ': hn.us.hl.lc.x.x.x' );
           } catch (e) {
             // if an undefined value in array exists, do no log in GA
             // this does not affect ad refresh
