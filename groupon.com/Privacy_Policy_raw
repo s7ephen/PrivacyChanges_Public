@@ -54,7 +54,7 @@
       };
     </script>
     <script> window.Optimize = (function (arg) { var appConfig, appName, channel, config, cookieDomain, deepmerge, isObject, layoutConfig, page, pageType, suiteData; appConfig = arg.appConfig, appName = arg.appName, channel = arg.channel, cookieDomain = arg.cookieDomain, pageType = arg.pageType, layoutConfig = arg.layoutConfig; isObject = function(x) { return Object.prototype.toString.call(x) === '[object Object]'; }; deepmerge = function(a, b) { var key, results, value; results = []; for (key in b) { value = b[key]; if (b.hasOwnProperty(key)) { if (a[key] && value && isObject(a[key]) && isObject(value)) { results.push(deepmerge(a[key], value)); } else { results.push(a[key] = value); } } else { results.push(void 0); } } return results; }; suiteData = layoutConfig.suiteData; config = suiteData.config; deepmerge(config, appConfig); page = config.page; suiteData.pageType = page.type = pageType || page.type; suiteData.channel = page.channel = channel || page.channel; suiteData.cookieDomain = config.cookieDomain != null ? config.cookieDomain : config.cookieDomain = cookieDomain; suiteData.app = page.app != null ? page.app : page.app = appName; return layoutConfig; })({
-      appConfig: {"cookieDomain":".groupon.com","seed":"0d7e53d0-824e-45a5-b98a-d30ff11a1781","page":{"id":"0d7e53d0-824e-45a5-b98a-d30ff11a1781-1441853927590-TH0","app":"content-pages","channel":"content_pages","country":"US","division":null,"parentEventId":null,"parentPageId":null,"url":"http%3A%2F%2Fwww.groupon.com%2Fprivacy","type":"content_page"},"user":{"browser":"Other","browserId":"e4b07af8-c23a-1fc3-a427-4d61c00e61d6","browserVersion":"Other","consumerId":null,"consumerIdSource":null,"device":"Other","deviceType":"Other","loggedIn":false,"os":"Other","permalink":null,"scid":null,"userAgent":"Python-urllib\/2.7","visit":null,"platform":"desktop"},"session":{"id":"0d7e53d0-824e-45a5-b98a-d30ff11a1781","referral":{"source":"direct"}}},
+      appConfig: {"cookieDomain":".groupon.com","seed":"e0855973-2bd3-456e-9542-2495e5460bc2","page":{"id":"e0855973-2bd3-456e-9542-2495e5460bc2-1441859457039-TH0","app":"content-pages","channel":"content_pages","country":"US","division":null,"parentEventId":null,"parentPageId":null,"url":"http%3A%2F%2Fwww.groupon.com%2Fprivacy","type":"content_page"},"user":{"browser":"Other","browserId":"e93c0f52-74f2-806b-7b46-db856ea44dd1","browserVersion":"Other","consumerId":null,"consumerIdSource":null,"device":"Other","deviceType":"Other","loggedIn":false,"os":"Other","permalink":null,"scid":null,"userAgent":"Python-urllib\/2.7","visit":null,"platform":"desktop"},"session":{"id":"e0855973-2bd3-456e-9542-2495e5460bc2","referral":{"source":"direct"}}},
       appName: "content-pages",
       channel: "",
       cookieDomain: ".groupon.com",
@@ -106,7 +106,7 @@
     <style>html{background: #222;}</style>
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
 
-        <meta name="request-id" content="f7098eff-8dd0-4c26-9faf-b7dbf3b64094">
+        <meta name="request-id" content="30a32cfe-563c-4375-8faa-5cf84a5fd15c">
 
 
 <script>
@@ -172,14 +172,13 @@
                   <div class="row">
                         <div class='eight columns search-bar-wrapper' id='ls-search-bar-wrapper'>
                           
-              
-              
-                    <form class="search-bar-v2 ls-location-as-link ls-before-subtle-location" id="search-bar" data-bhw="SearchBar" data-nosearchbarfocus="true" role="search">
-                      <label class="search-box deal-search" for="search">
+                    <form class="search-bar-v2 ls-two-fields" id="search-bar" data-bhw="SearchBar" data-nosearchbarfocus="true" role="search">
+                      <label class="icon-magnifying-glass search-box deal-search" for="search">
                         <span class="accessibility-hidden">What are you looking for?</span>
                         <input type="search" name="search" autocomplete="off" spellcheck="false"
-                          placeholder="massage, watches, hotels"
-                          id="search" data-bhw="FreeTextSearchField" data-log="Deal">
+                          id="search" data-bhw="FreeTextSearchField" data-log="Deal"
+                            data-focus="search"
+          >
                       </label>
                       <label class="icon-marker search-box location-search" for="location"
                              data-error-generic="There was an error"
@@ -187,12 +186,14 @@
                              data-error-availability="We are experiencing difficulty finding your location. Try again later.">
                         <span class="accessibility-hidden">Enter your location</span>
                         <input type="text" name="location" autocomplete="off" spellcheck="false"
-                          id="location" data-bhw="LocationBarField" data-log="Location" data-manuallocation="false" disabled>
+                          placeholder="Enter your location"
+                          id="location" data-bhw="LocationBarField" data-log="Location" data-manuallocation="false">
                       </label>
-                      <button id="ls-header-search-button" type="submit" class="icon-magnifying-glass" data-bhw="LocationBarFindDeals"></button>
-                      <div class="ls-subtle-location icon-marker"></div>
+                      <button id="ls-header-search-button" type="submit" data-bhw="LocationBarFindDeals">Search</button>
                     </form>
 
+              
+              
 
                           </div>
                     <div class="four columns user-wrapper">
@@ -259,9 +260,9 @@
             </li>
 
               <li id="occasion-tab" class="Occasion ls-occasion-tab primary-nav-tab last" data-bhw="NavOccasion">
-            <a href="/occasion/most-wanted" class="G_event E-GobalTopNavNH_GrouponOccasion " data-bhc="NavOccasion:most-wanted">
+            <a href="/occasion/fall-cleanup" class="G_event E-GobalTopNavNH_GrouponOccasion " data-bhc="NavOccasion:fall-cleanup">
               
-              Hot This Week
+              Fall Cleanup
             </a>
           </li>
     </ul>
@@ -276,7 +277,7 @@
                      data-bhc="category:local-tab-all-deals" id="all-deals"
                      >
                       All Deals
-                        <span class="count">4154</span>
+                        <span class="count">4152</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/browse/washington-dc?category=automotive"
                      data-bhc="category:local-tab-automotive" id="automotive"
@@ -300,7 +301,7 @@
                      data-bhc="category:local-tab-food-and-drink" id="food-and-drink"
                      >
                       Food &amp; Drink
-                        <span class="count">594</span>
+                        <span class="count">595</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/browse/washington-dc?category=health-and-fitness"
                      data-bhc="category:local-tab-health-and-fitness" id="health-and-fitness"
@@ -348,13 +349,13 @@
                   </a>
             </div>
 
-              <a id="ls-widget-local-1" class="column subnav-megamind-widget" href="https://groupon.com/occasion/most-wanted" data-bhw="WidgetLocal1">
-                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/aqJVaFakdnVeTUEtGUuj/Ak-440x420" data-original-2x="https://img.grouponcdn.com/sparta/aqJVaFakdnVeTUEtGUuj/Ak-440x420#@2x" alt=""
-                   data-bhc="banner:Megamindlocal_subnav_hotthisweeklocal" data-bhd="{&quot;campaign&quot;:&quot;most-wanted&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;91aa4a01&quot;,&quot;mm_position&quot;:1}"/>
+              <a id="ls-widget-local-1" class="column subnav-megamind-widget" href="https://groupon.com/occasion/customizable" data-bhw="WidgetLocal1">
+                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/vq1GEHutZnsHtBavMiSi/mS-440x420.jpg" data-original-2x="https://img.grouponcdn.com/sparta/vq1GEHutZnsHtBavMiSi/mS-440x420.jpg#@2x" alt=""
+                   data-bhc="banner:MegamindMultiMarket_SubNav_Customizables" data-bhd="{&quot;campaign&quot;:&quot;us-customizable-shop-2015_customizable&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;2b6f31d8&quot;,&quot;mm_position&quot;:1}"/>
               </a>
-            <a id="ls-widget-local-2" class="column subnav-megamind-widget" href="https://www.groupon.com/browse/washington-dc?filters=new" data-bhw="WidgetLocal2">
-                <img class="ls-lazy" data-original="https://img.grouponcdn.com/deal/dqEFUJRPbha7NQ2aL8Mt1c/mu_local-newdeals_jpg-440x420" data-original-2x="https://img.grouponcdn.com/deal/dqEFUJRPbha7NQ2aL8Mt1c/mu_local-newdeals_jpg-440x420#@2x" alt=""
-                   data-bhc="banner:MegamindNavBar" data-bhd="{&quot;campaign&quot;:&quot;unknown&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;f796ef82&quot;,&quot;mm_position&quot;:2}"/>
+            <a id="ls-widget-local-2" class="column subnav-megamind-widget" href="https://www.groupon.com/occasion/tickets" data-bhw="WidgetLocal2">
+                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/7Q5uWXE8z1fcayD3mNyV/L5-440x420" data-original-2x="https://img.grouponcdn.com/sparta/7Q5uWXE8z1fcayD3mNyV/L5-440x420#@2x" alt=""
+                   data-bhc="banner:MegamindNavBar" data-bhd="{&quot;campaign&quot;:&quot;tickets&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;f796ef82&quot;,&quot;mm_position&quot;:2}"/>
               </a>
       </nav>
 
@@ -364,7 +365,7 @@
                      data-bhc="category:goods-tab-all-goods" id="all-goods"
                      >
                       All Goods
-                        <span class="count">32218</span>
+                        <span class="count">32210</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/all?discount=gg-clearance"
                      data-bhc="category:goods-tab-all" id="all"
@@ -376,7 +377,7 @@
                      data-bhc="category:goods-tab-auto-and-home-improvement" id="auto-and-home-improvement"
                      >
                       Auto &amp; Home Improvement
-                        <span class="count">1132</span>
+                        <span class="count">1130</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/baby-kids-and-toys"
                      data-bhc="category:goods-tab-baby-kids-and-toys" id="baby-kids-and-toys"
@@ -394,7 +395,7 @@
                      data-bhc="category:goods-tab-electronics" id="electronics"
                      >
                       Electronics
-                        <span class="count">3065</span>
+                        <span class="count">3066</span>
                   </a>
             </div>
             <div class="column subnav-categories">
@@ -402,31 +403,31 @@
                      data-bhc="category:goods-tab-entertainment-and-media" id="entertainment-and-media"
                      >
                       Entertainment
-                        <span class="count">1693</span>
+                        <span class="count">1694</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/food-and-drink-goods"
                      data-bhc="category:goods-tab-food-and-drink-goods" id="food-and-drink-goods"
                      >
                       Food &amp; Drink
-                        <span class="count">1952</span>
+                        <span class="count">1951</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/health-and-beauty"
                      data-bhc="category:goods-tab-health-and-beauty" id="health-and-beauty"
                      >
                       Health &amp; Beauty
-                        <span class="count">4109</span>
+                        <span class="count">4104</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/home-and-garden"
                      data-bhc="category:goods-tab-home-and-garden" id="home-and-garden"
                      >
                       Home &amp; Garden
-                        <span class="count">4611</span>
+                        <span class="count">4606</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/household-essentials"
                      data-bhc="category:goods-tab-household-essentials" id="household-essentials"
                      >
                       Household Essentials
-                        <span class="count">455</span>
+                        <span class="count">454</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/jewelry-and-watches"
                      data-bhc="category:goods-tab-jewelry-and-watches" id="jewelry-and-watches"
@@ -440,25 +441,25 @@
                      data-bhc="category:goods-tab-men" id="men"
                      >
                       Men&#39;s Fashion
-                        <span class="count">1652</span>
+                        <span class="count">1653</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/sports-and-outdoors"
                      data-bhc="category:goods-tab-sports-and-outdoors" id="sports-and-outdoors"
                      >
                       Sports &amp; Outdoors
-                        <span class="count">3445</span>
+                        <span class="count">3447</span>
                   </a>
                   <a class="subnav-link subnav-link-count" href="/goods/women"
                      data-bhc="category:goods-tab-women" id="women"
                      >
                       Women&#39;s Fashion
-                        <span class="count">3847</span>
+                        <span class="count">3848</span>
                   </a>
             </div>
 
               <a id="ls-widget-goods-1" class="column subnav-megamind-widget" href="https://www.groupon.com/occasion/gg-fall-tv" data-bhw="WidgetGoods1">
                 <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/hXdhcxragiehYooCAHPE/Uk-440x420" data-original-2x="https://img.grouponcdn.com/sparta/hXdhcxragiehYooCAHPE/Uk-440x420#@2x" alt=""
-                   data-bhc="banner:MegamindGoods_SubNav_FallTV" data-bhd="{&quot;campaign&quot;:&quot;gg-fall-tv&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;1746fee8&quot;,&quot;mm_position&quot;:1}"/>
+                   data-bhc="banner:MegamindGoods_SubNav_FallTV" data-bhd="{&quot;campaign&quot;:&quot;gg-fall-tv&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;1746fee8&quot;,&quot;mm_position&quot;:1}"/>
               </a>
       </nav>
 
@@ -486,17 +487,17 @@
                     </a>
             </div>
 
-              <a id="ls-widget-getaways-1" class="column subnav-megamind-widget" href="https://groupon.com/occasion/travel" data-bhw="WidgetGetaways1">
-                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/6vnQtrMjs3dsN71pKEga/4a-440x420.jpg" data-original-2x="https://img.grouponcdn.com/sparta/6vnQtrMjs3dsN71pKEga/4a-440x420.jpg#@2x" alt=""
-                   data-bhc="banner:MegamindGA_travel" data-bhd="{&quot;campaign&quot;:&quot;us-getaways-shop_travel&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;9d58c08&quot;,&quot;mm_position&quot;:1}"/>
+              <a id="ls-widget-getaways-1" class="column subnav-megamind-widget" href="https://groupon.com/occasion/ga-great-wolf-lodge" data-bhw="WidgetGetaways1">
+                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/333i1mqWV4zfB7rjiCTj/BF-440x420" data-original-2x="https://img.grouponcdn.com/sparta/333i1mqWV4zfB7rjiCTj/BF-440x420#@2x" alt=""
+                   data-bhc="banner:MegamindGA_ga-great-wolf-lodge" data-bhd="{&quot;campaign&quot;:&quot;ga-great-wolf-lodge&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;14fe1a49&quot;,&quot;mm_position&quot;:1}"/>
               </a>
-            <a id="ls-widget-getaways-2" class="column subnav-megamind-widget" href="https://groupon.com/occasion/getaways-staff-picks" data-bhw="WidgetGetaways2">
-                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/9ZAz6gj1wRrcAazonpvU/vq-440x420" data-original-2x="https://img.grouponcdn.com/sparta/9ZAz6gj1wRrcAazonpvU/vq-440x420#@2x" alt=""
-                   data-bhc="banner:MegamindGA_SubNav_StaffPicks" data-bhd="{&quot;campaign&quot;:&quot;unknown&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;fb01da5f&quot;,&quot;mm_position&quot;:2}"/>
-              </a>
-            <a id="ls-widget-getaways-3" class="column subnav-megamind-widget" href="https://groupon.com/occasion/hot-travel-deals" data-bhw="WidgetGetaways3">
+            <a id="ls-widget-getaways-2" class="column subnav-megamind-widget" href="https://groupon.com/occasion/hot-travel-deals" data-bhw="WidgetGetaways2">
                 <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/kfDM7Qox31RcMyobJQQv/T3-440x420" data-original-2x="https://img.grouponcdn.com/sparta/kfDM7Qox31RcMyobJQQv/T3-440x420#@2x" alt=""
-                   data-bhc="banner:MegamindGA_NewDeals" data-bhd="{&quot;campaign&quot;:&quot;us-getaways-shop_hot-travel-deals&quot;,&quot;mm_request_id&quot;:&quot;014842683581441207897&quot;,&quot;mm_treatment&quot;:&quot;b80d457&quot;,&quot;mm_position&quot;:3}"/>
+                   data-bhc="banner:MegamindGA_NewDeals" data-bhd="{&quot;campaign&quot;:&quot;us-getaways-shop_hot-travel-deals&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;fee7ded6&quot;,&quot;mm_position&quot;:2}"/>
+              </a>
+            <a id="ls-widget-getaways-3" class="column subnav-megamind-widget" href="https://groupon.com/occasion/getaways-staff-picks" data-bhw="WidgetGetaways3">
+                <img class="ls-lazy" data-original="https://img.grouponcdn.com/sparta/9ZAz6gj1wRrcAazonpvU/vq-440x420" data-original-2x="https://img.grouponcdn.com/sparta/9ZAz6gj1wRrcAazonpvU/vq-440x420#@2x" alt=""
+                   data-bhc="banner:MegamindGA_SubNav_StaffPicks" data-bhd="{&quot;campaign&quot;:&quot;unknown&quot;,&quot;mm_request_id&quot;:&quot;01300372958144141874&quot;,&quot;mm_treatment&quot;:&quot;fbae85fe&quot;,&quot;mm_position&quot;:3}"/>
               </a>
       </nav>
 
