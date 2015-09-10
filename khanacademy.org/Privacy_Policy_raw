@@ -30,7 +30,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 <script type="text/javascript">
 (function() {
     window.KA = {                   
-        version: "150909-1824-7a1f2dfc035d.387043393787218098",
+        version: "150909-2013-73952e87d9b6.387045112758377099",
         isMobileCapable: false,
         isIPad: false,
         useKatex: true,
@@ -38,7 +38,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:-LJj3iFW-k1pcGqouO34qAcVVKqxBq0-LSB8I_gP",
+        bingoId: "_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +53,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441854961.62918;
+            return 1441860458.80372;
         },
 
         // return a path to this static content given a path url - example:
@@ -87,7 +87,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55f0f5f100ff0971286f326f670001737e6b68616e2d61636164656d7900013135303930392d313832342d3761316632646663303335640001010d",
+        requestLogId: "55f10b6a00ff0c22ee9c0a32430001737e6b68616e2d61636164656d7900013135303930392d323031332d373339353265383764396236000101a9",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -95,14 +95,12 @@ KAdefine.require("./javascript/shared-package/ka.js");
         VIDEO_PAGE_PRACTICE_BUTTON: "",
         NAV_ON_RIGHT: "",
 
-        // Only enable the new video player on Webkit-based browsers for now.
-        // There's lots of cross-browser issues that we haven't had time to
-        // work through yet, but hope to get to some later time.
-        EUREKA_NEW_VIDEO_PLAYER: false, // &&
-            // 'WebkitAppearance' in document.documentElement.style,
-
-        NEW_VIDEO_PLAYER_CODE_OLD_UI: false, // &&
-            // 'WebkitAppearance' in document.documentElement.style,
+        NEW_PLAYER_CODE: true,
+        NEW_PLAYER_UI: false,
+        NEW_PLAYER_DARK: false,
+        NEW_PLAYER_DOMAIN_COLORS: true,
+        EUREKA_NEW_VIDEO_PLAYER:
+            true || false,
 
         VIDEO_AUTOPLAY: false &&
             'WebkitAppearance' in document.documentElement.style,
@@ -124,7 +122,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
     });
     ga('set', 'dimension8', "main:/about/privacy-policy");
     ga('set', 'dimension3', "true");
-    ga('set', 'dimension7', "a0:g0:");
+    ga('set', 'dimension7', "a0:g1:");
 
     ga('send', 'pageview');
 </script>
@@ -1837,7 +1835,7 @@ Please contact Khan Academy with any questions or comments about this Privacy No
                 <span><a href="/about/privacy-policy">Privacy Notice</a></span>
             </div>
             
-            <div class="copyright" title="Version: 150909-1824-7a1f2dfc035d.387043393787218098">
+            <div class="copyright" title="Version: 150909-2013-73952e87d9b6.387045112758377099">
                 &copy; 2015
                 
                 
@@ -1866,7 +1864,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
 <script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/corelibs-package-eec115.js'></script>
 <script>PackageManager.markExecuted("corelibs.js")</script>
 
-<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/shared-package-de5e68.js'></script>
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/shared-package-f3c7e8.js'></script>
 <script>PackageManager.markExecuted("shared.js")</script>
 
     <script>KAdefine.require("./javascript/shared-package/site-infra.js").init();</script>
@@ -1883,7 +1881,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
     
-    <script crossorigin='anonymous' src='/genfiles/package-manifest-en.219bce.js'></script>
+    <script crossorigin='anonymous' src='/genfiles/package-manifest-en.efece7.js'></script>
 
     
     <script type="text/javascript">
@@ -1928,13 +1926,6 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
         
-        
-        <script type="text/javascript">
-        (function(){
-            KAdefine.require("./javascript/shared-package/session-survey.jsx")();
-        })();
-        </script>
-        
         <script type="text/javascript">
             (function(){
                 window._kiq = window._kiq || [];
@@ -1942,7 +1933,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:-LJj3iFW-k1pcGqouO34qAcVVKqxBq0-LSB8I_gP']);
+                _kiq.push(['identify', '_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l']);
                 _kiq.push(['set', {"eligible_for_nps_survey": true, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
@@ -2062,7 +2053,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:-LJj3iFW-k1pcGqouO34qAcVVKqxBq0-LSB8I_gP"
+                bingoId: "_gae_bingo_random:jevRxSitX2bQnG5AgzZfSlVBRw0WEUIRi68md-1l"
             });
         }, 0);
     </script>
