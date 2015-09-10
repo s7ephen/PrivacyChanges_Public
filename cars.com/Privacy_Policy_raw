@@ -56,39 +56,27 @@
 
 
   
-  
-    <script class="kxint" type="text/javascript">
-        window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
-        (function(){
-            function retrieve(n){
-              var m, k='kx'+n;
-                if (window.localStorage){
-                  return window.localStorage[k] || "";
-                }else if (navigator.cookieEnabled){
-                  m = document.cookie.match(k+'=([^;]*)');
-                  return (m && unescape(m[1])) || "";
-                } else {
-                  return '';
-                }
-            }
-
-            Krux.user = retrieve('user');
-            Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : 
-            [];
-
-            //(DFP(Premium(Interchange
-            var dfpp = [];
-            if (Krux.user) {
-              dfpp.push('kuid=' + Krux.user);
-            }
-            for (var i =0; i < Krux.segments.length; i++) {
-              dfpp.push('ksg=' + Krux.segments[i]);
-            }
-            Krux.dfppKeyValues = dfpp.length ? dfpp.join(';') + ';' : '';
-
-        })();
+    <script>
+      window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+      (function(){
+        function retrieve(n){
+          var m, k='kx'+n;
+          if (window.localStorage){
+            return window.localStorage[k] || "";
+          }
+          else if (navigator.cookieEnabled){
+            m = document.cookie.match(k+'=([^;]*)');
+            return (m && unescape(m[1])) || "";
+          }
+          else{
+            return '';
+          }
+        }
+        Krux.user = retrieve('user');
+        Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+    })();
     </script>
-
+  
   
 
 
@@ -351,6 +339,9 @@
     </script>
 
 
+
+  <script src="/core/js/libs/ads/gpt.js"></script>
+  <script src="/core/js/modules/common/genericGptAdModel.js"></script>
 
 
 
@@ -656,9 +647,13 @@
     <div class="row grid-layout">
         
             
-                <div class="leaderboard-ad"><script>CARS.adtag.drop({'sz':'728x90, 970x66'});</script></div>
             
             
+                <div id="div-gpt-leaderboard-ad-1" class="leaderboard-ad">
+                    <script>
+                        CARS.gptAdTag.setAdSlot([[728,90],[970,66]],'div-gpt-leaderboard-ad-1');
+                    </script>
+                </div>
             
         
     </div>
