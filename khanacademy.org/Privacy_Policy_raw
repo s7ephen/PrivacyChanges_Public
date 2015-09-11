@@ -38,7 +38,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:tUN9tihQR24AlTiY3nZa4-ba3XNERxi8lXCTEgRN",
+        bingoId: "_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +53,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441965672.9266701;
+            return 1441971175.5090301;
         },
 
         // return a path to this static content given a path url - example:
@@ -87,7 +87,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55f2a66800ff0ccb9df82654f50001737e6b68616e2d61636164656d7900013135303931302d313931392d3833633938326439626538340001013c",
+        requestLogId: "55f2bbe700ff0797eef17daa0d0001737e6b68616e2d61636164656d7900013135303931302d313931392d3833633938326439626538340001017f",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -122,7 +122,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
     });
     ga('set', 'dimension8', "main:/about/privacy-policy");
     ga('set', 'dimension3', "true");
-    ga('set', 'dimension7', "a0:g0:");
+    ga('set', 'dimension7', "a1:g1:");
 
     ga('send', 'pageview');
 </script>
@@ -1926,6 +1926,13 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
         
+        
+        <script type="text/javascript">
+        (function(){
+            KAdefine.require("./javascript/shared-package/session-survey.jsx")();
+        })();
+        </script>
+        
         <script type="text/javascript">
             (function(){
                 window._kiq = window._kiq || [];
@@ -1933,8 +1940,8 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:tUN9tihQR24AlTiY3nZa4-ba3XNERxi8lXCTEgRN']);
-                _kiq.push(['set', {"eligible_for_nps_survey": true, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
+                _kiq.push(['identify', '_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D']);
+                _kiq.push(['set', {"eligible_for_nps_survey": false, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
 
@@ -2053,7 +2060,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:tUN9tihQR24AlTiY3nZa4-ba3XNERxi8lXCTEgRN"
+                bingoId: "_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D"
             });
         }, 0);
     </script>
