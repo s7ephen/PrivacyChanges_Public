@@ -100,256 +100,6 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         <div>
             
 <!-- targeted_table -->
-<style>
-    .clearfix {
-        clear: both;
-    }
-
-    .containerSignup,
-    .containerThankYou {
-        font-size: 16px;
-        font-family: "Arial Black", Gadget, sans-serif;
-        color: #fff;
-        line-height: 21px;
-    }
-
-    .closebutton {
-        position: absolute;
-        right: -20px;
-        top: -20px;
-        cursor: pointer;
-    }
-
-    #containerSignup {
-        /*use relative path for production release*/
-        background: url(/images/content/15-Off-Blue.jpg);
-        width: 600px;
-        height: 406px;
-        text-align: center;
-        position: relative;
-        box-shadow: 3px 3px 15px #333333;
-    }
-
-    .headline {
-        height: 60px;
-        width: 560px;
-        color: #2d2d2d;
-        background: url(images/content/emailPopSignup-2.png) repeat-x #fffb7e;
-        background: -webkit-linear-gradient(#ffd60a, #fffb7e); /* Safari */
-        background: -o-linear-gradient(#ffd60a, #fffb7e); /* Opera */
-        background: -moz-linear-gradient(#ffd60a, #fffb7e); /* Firefox */
-        background: linear-gradient(#ffd60a, #fffb7e); /* Standard syntax */
-        font-weight: bold;
-        font-size: 35px;
-        line-height: 65px;
-    }
-
-    .subhead {
-        font-size: 28px;
-        line-height: 55px;
-        font-weight: bold;
-    }
-
-    .offer {
-        font-size: 95px;
-        font-weight: bold;
-        line-height: 90px;
-    }
-
-    .subhead-2 {
-        font-size: 43px;
-        line-height: 60px;
-        font-weight: bold;
-    }
-
-    .box {
-        width: 250px;
-        height: 30px;
-        margin: 0;
-        font-size: 12px;
-        font-weight: bold;
-        float: left;
-    }
-
-
-
-    .box-23 {
-        z-index: 10002;
-        position: fixed;
-        left: 55%;
-        margin-top: -250px;
-        margin-left: -360px;
-    }
-    /* ThankYou Message */
-    .containerThankYou {
-        background: #fff;
-        width: 600px;
-        border: solid 1px green;
-        color: #2d2d2d;
-        padding: 25px;
-        -moz-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        border-radius: 8px;
-        display: none;
-    }
-
-    .thankyou-header {
-        color: green;
-    }
-
-    .thankyou-text {
-        font-size: 14px;
-    }
-
-    .thankyou {
-        cursor: pointer;
-    }
-    /*Error Message */
-    .containerError {
-        background: #fff;
-        width: 540px;
-        border: solid 1px red;
-        color: #2d2d2d;
-        padding: 25px;
-        -moz-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        border-radius: 8px;
-        display: none;
-    }
-
-    .emailError {
-        clear:both;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 18px;
-        padding: 5px 0 5px 0;
-        margin-top: 30px;
-        color: #fdfd00 !important;
-    }
-
-    .error-header {
-        font-weight: bold;
-        color: red;
-        font-size: 18px;
-    }
-
-    .error-text {
-        font-size: 14px;
-    }
-
-    .error {
-        cursor: pointer;
-    }
-
-    .roundedButton {
-        font-family: arial;
-        font-weight: bold;
-        font-size: 14px;
-        cursor: pointer;
-        padding: 7px 0;
-    }
-
-
-    #goButton {
-        color: #fff !important;
-        width: 150px;
-        height: 34px;
-        background: #38b048;
-    }
-
-        #goButton:hover {
-            color: #ffffff !important;
-            background: green;
-        }
-
-    .submit {
-        float: right;
-        cursor: pointer;
-    }
-
-
-    .emailSubmission {
-        display: block;
-        width: 430px;
-        padding: 20px 0 0;
-        margin: 20px auto 0;
-    }
-
-    #txtEmailOverlay {
-        color: #000;
-        font-family: 'Arial';
-        padding: 0 2px 0 8px;
-    }
-</style>
-
-<div class="box-23">
-    <div class="containerSignup" id="containerSignup">
-        <img class="closebutton" src="/images/content/x-button_blk-wht.png" onclick="CloseOverlay(true);" />
-        <div class="emailSubmission" style="padding-top: 275px">
-            <!--email input box-->
-            <div class=" inputrow">
-                <input class="box" id="txtEmailOverlay" name="Enter Your Email." type="text" placeholder="enter your email address here." onfocus="if($(this).val() =='Enter Your Email Address Here and Receive Special Offers.'){$(this).val('');}">
-            </div>
-            <!--submit button-->
-            <div id="goButton" class="roundedButton submit"><p>GET MY COUPON</p></div>
-
-        </div>
-        <!--error message-->
-        <div class="emailError" id="emailError"></div>
-        <div class="clearfix"></div>
-        <a href="index.aspx" manual_cm_re="HP! 2011/19/09 Version A-_-Email Signup Overlay-_-Show!"></a>
-        <a href="index.aspx" manual_cm_sp="HP! 2011/19/09 Version A-_-Email Signup Overlay-_-Show!"></a>
-    </div>
-
-    <div class="containerThankYou" id="containerThankYou">
-        <div class="thankyou-header">
-            <b>Thank you! Check your inbox for more information.</b>
-        </div>
-        <br />
-        <div class="thankyou-text">New email subscribers qualify for a 15% discount on their next order. Stay tuned for more exciting news from Collections Etc., including exclusive promotions and savings just for you!</div>
-        <br />
-        <div class="thankyou">
-            <img src="/images/content/continue-shopping.png" onclick="CloseOverlay(false)" />
-        </div>
-    </div>
-
-    <div class="containerError" id="containerError">
-        <div class="error-header">
-            <b>Error! Something went wrong.</b>
-        </div>
-        <br />
-        <div id="txtTryAgain" class="error-text">Invalid email address. Please try again.</div>
-        <br />
-        <div class="error">
-            <img id="btnTryAgain" src="/images/content/try-again.png" onclick="CEI.Email.goToEmailPopup()" />
-        </div>
-    </div>
-</div>
-<!-- end .box-23 -->
-<script>
-var path = window.location.pathname;
-path = path.toLowerCase();
-
-
-function CloseOverlay(bCancel) {
-            CEI.Email.closeEmailOverlay(bCancel);
-        }
-
-        function SaveOverlay() {
-            var inputValue = document.getElementById("txtEmailOverlay").value;
-            CEI.Email.saveEmailOverlay(inputValue);
-        }
-
-    $('#goButton').click(function () {
-        SaveOverlay();
-    });
-
-</script>
-
-
-
 
 <!-- /targeted_table -->
         </div>
@@ -1414,10 +1164,10 @@ function CloseOverlay(bCancel) {
             </div>
             <div>
                 <form name="aspnetForm" method="post" action="helpprivacy.aspx?name=privacy" id="aspnetForm">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTkzMDU2ODE3D2QWAmYPZBYKZg9kFgICAQ8WAh4EVGV4dAWrATxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz52YXIgbW9iaWxlUGFyYW1zID0gJyc7PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9zMy5hbWF6b25hd3MuY29tL21hZG1vYmlsZS9jb2xsZWN0aW9uc2V0Yy9qcy9tb2JpbGVkaXJlY3QuanMnPjwvc2NyaXB0PmQCBA9kFgICAw9kFgICCQ8QZGQWAWZkAgYPDxYCHgdWaXNpYmxlaGRkAgcPDxYCHwFnZGQCCA8WAh8BZ2RkE0kc2KsbDcUvDFavR83bYcg7bZw=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTkzMDU2ODE3D2QWAmYPZBYIZg9kFgICAQ8WAh4EVGV4dAWrATxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz52YXIgbW9iaWxlUGFyYW1zID0gJyc7PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9zMy5hbWF6b25hd3MuY29tL21hZG1vYmlsZS9jb2xsZWN0aW9uc2V0Yy9qcy9tb2JpbGVkaXJlY3QuanMnPjwvc2NyaXB0PmQCBA9kFgICAw9kFgICCQ8QZGQWAWZkAgYPDxYCHgdWaXNpYmxlaGRkAgcPDxYCHwFnZGRkTy45fhp6/II4pRTj9j5GpoUgXBk=" />
 
 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F20EDA95" />
-<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAQEIg6PNsU3crtdtgz89Y1ATk4MP8fXvhJzHH7+itkCUi8i4OMnOpdqJaHX37UtC1TAj7994yNoH7Gl2IFHZgFBV7JqUXBn5nyPnLZ6sIAdhSCO4JU=" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARAcJCJWsjKRDwi5zSuVbrKTk4MP8fXvhJzHH7+itkCUi8i4OMnOpdqJaHX37UtC1TAj7994yNoH7Gl2IFHZgFBSqkmvBLbcW56WFf+iDwtKi/nqH0=" />
                 
 	<table cellpadding="0" cellspacing="0" width="100%">
 		<tr>
@@ -1746,11 +1496,11 @@ Privacy & Security
                 <ul>
                     <li><a href="/service.aspx">Help/Customer Service</a></li>
                     <li>
-                        <a id="ctl00_ucFooter_myAccount_hlGeneric" href="https://192.168.20.62:8190/shoplogin.aspx">My Account</a>
+                        <a id="ctl00_ucFooter_myAccount_hlGeneric" href="https://www.collectionsetc.com/shoplogin.aspx">My Account</a>
 
                     </li>
                     <li>
-                        <a id="ctl00_ucFooter_trackOrder_hlGeneric" href="https://192.168.20.62:8190/orderstatuscheck.aspx">Track Order</a>
+                        <a id="ctl00_ucFooter_trackOrder_hlGeneric" href="https://www.collectionsetc.com/orderstatuscheck.aspx">Track Order</a>
 
                     </li>
                     <li><a href="/helpguarantee.aspx">Satisfaction Guarantee</a></li>
@@ -1760,7 +1510,7 @@ Privacy & Security
                     <li><a href="/helpproductrecalls.aspx">Product Recalls</a></li>
                     <li><a href="http://reviews.collectionsetc.com/">Customer Reviews</a></li>
                     <li>
-                        <a id="ctl00_ucFooter_catalogRequest_hlGeneric" href="https://192.168.20.62:8190/catalogrequest.aspx">Catalog Request</a>
+                        <a id="ctl00_ucFooter_catalogRequest_hlGeneric" href="https://www.collectionsetc.com/catalogrequest.aspx">Catalog Request</a>
 
                     </li>
                 </ul>
@@ -1875,14 +1625,6 @@ var s = d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
        var backgroundId;
        var modalId;
    </script>
-    
-        <script language="javascript" type="text/javascript">
-            $(document).ready(function () {
-                backgroundId = setTimeout("$('#body').append('<div id=\"background\"></div>');", 5000);
-                modalId = setTimeout(function () {
-                  $('#overlay').fadeIn(250); }, 5000);
-            });
-        </script>
     
 
     <script language="javascript" type="text/javascript">
