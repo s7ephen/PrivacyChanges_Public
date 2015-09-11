@@ -51,8 +51,8 @@
 
                 
     <script type="text/javascript">
-        DM_Context={"server_name":"web-079","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":34,"time_and_day":"16:21-Friday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"0862dedddda0a1f492f532eeaf4303b16be9b761","is_search":false};
-        Stringified_DM_Context={"server_name":"web-079","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"34","time_and_day":"16:21-Friday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"0862dedddda0a1f492f532eeaf4303b16be9b761","is_search":"false"};
+        DM_Context={"server_name":"web-035","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":97,"time_and_day":"17:54-Friday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"f7fe994b4e3692dd4d1135cd140cc2f875cdaf23","is_search":false};
+        Stringified_DM_Context={"server_name":"web-035","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"97","time_and_day":"17:54-Friday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"f7fe994b4e3692dd4d1135cd140cc2f875cdaf23","is_search":"false"};
         STATIC_BASE_URL = "http://static1.dmcdn.net";
         __webpack_manifest__ = {"1":"video_responsive.824e7cac1109fa0d8c15.js","2":"video.a326aeaeb817cf530677.js","3":"browse.9333c773098a3839a903.js","4":"about.0e09eb84713628934591.js","6":"videos.1fcd2cbb798774e6e39f.js","7":"what-to-watch.013e957fc349c6aef7cd.js","8":"privacy-settings.6f06b3742486787275ae.js","9":"live-create.3d5aee17fe03ca75346f.js"};
         EB_WEB_ENDPOINT = "webed.dm.gg";
@@ -753,7 +753,61 @@ DM_ResourcePlanner.add('ad-plugin', function()
 <!-- END Krux Controltag -->
 
 </div>
-    
+    <div id="sitecatalyst">
+<script>window.s_account = "dailymotionwebprod";</script>
+<script language="javascript" src="http://static1.dmcdn.net/js/gen/lib/stats/dailymotion-s_code.js.v25037d34560b80f29" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+if ('SiteCatalyst' in window)
+{
+    var s = window.SiteCatalyst.getInstance();
+
+    DM_ResourcePlanner.add('sitecatalyst', function()
+    {
+        s.events = '';
+        s.prop23 = (DM_Flash.VERSION.major == 0) ? 'HTML5' : 'Flash';
+                    s.pageName= "/legal/terms";
+                    s.channel= "legal";
+                    s.server= "web-035";
+                    s.prop3= "US";
+                    s.prop4= "US";
+                    s.prop5= "web";
+                    s.prop6= "A";
+                    s.prop9= "legal";
+                    s.prop10= "dailymotion.com";
+                    s.eVar7= "17:54-Friday";
+                    s.eVar48= 97;
+                    s.eVar45= "unlogged";
+        
+        if (DM_Context.route_name === 'home' && window.PixelleAllowed)
+        {
+            var canTriggerSiteCatalyst = true,
+                timeOut = setTimeout(function()
+                {
+                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
+                    s.t();
+                    canTriggerSiteCatalyst = false;
+                }, 2000);
+
+            PubSub.subscribe('pixelle:ad_loaded', function()
+            {
+                clearTimeout(timeOut);
+
+                if (canTriggerSiteCatalyst)
+                {
+                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
+                    s.t();
+                }
+            });
+        }
+        else
+        {
+            s.t();
+        }
+    });
+}
+</script>
+</div>
+
 
 </div>
     
