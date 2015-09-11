@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/11/2015 01:30 PM",
+            DATE_IN_USE: "09/11/2015 03:04 PM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -5038,34 +5038,7 @@ if( location.pathname == '/checkout/order.do' ) {
 
 </style>
 
-<!-- BEGIN FB Like button -->
-<script type="text/javascript">
-// Facebook like button
-if( location.pathname == '/browse/product.do' ) {
-	var fbProductPageLikeButton = {
-		initialize: function() { },
-		model: {
-			searchDexPageStructure: 'http%3A%2F%2Fwww.gap.com%2Fproducts%2F'
-		},
-		controller: {
-			init: function() {
-				if( jQuery('#fb_like').length == 0 && productPage.productId ) {
-					var model = fbProductPageLikeButton.model;
 
-					var productName = escape('P' + productPage.productId + '.jsp?tid=atsm000000');
-					
-					jQuery('#variantButtons').before('<div id="fb_like" style="margin-top:7px"><iframe src="http://www.facebook.com/plugins/like.php?href=' + model.searchDexPageStructure + productName + '&send=false&layout=button_count&width=330&show_faces=false&action=like&colorscheme=light&font&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:21px" allowTransparency="true"></iframe></div>');
-				}
-			}
-		}
-	}
-
-	jQuery(document).on('productPage:ready', function(e) {
-		fbProductPageLikeButton.controller.init();
-	});
-}
-</script>
-<!-- END FB Like button -->
 
 <!-- BEGIN Product page insert Free Shipping link -->
 <script type="text/javascript">
@@ -10129,7 +10102,7 @@ function validateFormGFOL()
 	
 	<script type="text/javascript" src="/gid/js/common/layouts/en/reporting/sCode.js"></script>
 	 <script type="text/javascript">
-	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "10160316,10128269,9712387,9712385,9894771,9058692,9894937,10128269,10159328,9712387,10130952,10130955,10130957,9938486";
+	   reportingService.controller.viewManagers.commonViewManager.model.contentItemIdListReport = "10160316,10128269,9712387,9712385,9894771,9894937,10128269,10159328,9712387,10130952,10130955,10130957,9938486";
 	 </script>
 	
 	<noscript>
@@ -10792,17 +10765,6 @@ jQuery.wcdSharedOverride_bodyClassContextSetter.init();
 
 <!-- END - WCD Sitewide Container 18 -->
 
-<!-- BEGIN - WCD Sitewide Container 19 -->
-<!-- BEGIN Content Item File: /content/0009/058/692/cn9058692.html -->
-<div id="contentItemContainer212630" class="9058692" >
-
-<div id="sm_bp_edfs_banner"><a href="#edfs" onclick="" rel="jbox" data-jbox-url="/buy/info.do?cid=47471" data-jbox-width="300" data-jbox-height="350" class="needsclick"><img src="/content/static/edfs/gol/gap_us.png" alt="Free shipping on all orders over $50. Free returns on all orders." width="100%" class="needsclick" /></a></div>
-
-
-</div>
-<!-- END Content Item File: /content/0009/058/692/cn9058692.html -->
-
-<!-- END - WCD Sitewide Container 19 -->
 
 <!-- BEGIN - WCD Sitewide Container 20 -->
 <!-- BEGIN Content Item File: /content/0009/894/937/cn9894937.html -->
