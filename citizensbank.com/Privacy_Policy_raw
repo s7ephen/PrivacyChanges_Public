@@ -3,13 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta id="objCommonHeader_mServerID" name="ServerID" content="63"></meta>
+    <meta id="objCommonHeader_mServerID" name="ServerID" content="83"></meta>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <title>Online Privacy Policy | Citizens Bank</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<meta name="CmsTimeStamp" content="9/11/2015 7:26:40 AM" />
+<meta name="CmsTimeStamp" content="9/11/2015 7:20:18 AM" />
 <link href="/styles/v2/main.css" type="text/css" media="screen" rel="stylesheet" />
 <link href="/styles/v2/ValidatingControls.css" type="text/css" media="screen" rel="stylesheet" />
 <!--[if IE 10]> <link href="/styles/v2/ie10.css" rel="stylesheet" media="screen" type="text/css" /> <![endif]-->
@@ -112,7 +112,7 @@ var IP_TERM_FIELD = "TopNav_ipSearchText";
     
 <div id="logo">
     <a id="TopNav_lnkLogo" title="Citizens Bank | Good Banking is Good Citizenship" href="../"><img id="TopNav_imgLogo" src="/images/v2/branding/ctz-logo-combined.jpg" alt="Citizens Bank | Good Banking is Good Citizenship" /></a>
-    <div id="TopNav_pnlSearchArea">
+    <div id="TopNav_pnlSearchArea" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;TopNav_btnSearchSubmit&#39;)">
 	
         <div id="TopNav_SearchArea" class="search">
             
@@ -430,7 +430,28 @@ If you have any questions or comments concerning our Privacy Policy please let u
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EB704426" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAASUc6MB/w8vaJw7P8cswgyNcJ0dAmakSnQj9vj2NZ1ksh6a42qYjG9VBV1+Ab9amDWs4F8GXQtBxRWKX4I9IK9HxUDM54RU5NwOX3oHRsHfqUtKgSuin1HXcWRXBVIDjoE=" />
-</div></form>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmMain'];
+if (!theForm) {
+    theForm = document.frmMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=16uyIQNRrdmEWYU71SLzJ20jUTD4w-wxmsWtP7Tb6tjNeeXwUez15uMnhwIZX_xf8ADHtXCg984fiduZywTFYsv2dY6oSSgqKkeh7XMxOUI1&amp;t=635586452020000000" type="text/javascript"></script>
+</form>
 </body>
 </html>
