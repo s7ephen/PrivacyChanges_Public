@@ -100,6 +100,256 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
         <div>
             
 <!-- targeted_table -->
+<style>
+    .clearfix {
+        clear: both;
+    }
+
+    .containerSignup,
+    .containerThankYou {
+        font-size: 16px;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: #fff;
+        line-height: 21px;
+    }
+
+    .closebutton {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        cursor: pointer;
+    }
+
+    #containerSignup {
+        /*use relative path for production release*/
+        background: url(/images/content/15-Off-Blue.jpg);
+        width: 600px;
+        height: 406px;
+        text-align: center;
+        position: relative;
+        box-shadow: 3px 3px 15px #333333;
+    }
+
+    .headline {
+        height: 60px;
+        width: 560px;
+        color: #2d2d2d;
+        background: url(images/content/emailPopSignup-2.png) repeat-x #fffb7e;
+        background: -webkit-linear-gradient(#ffd60a, #fffb7e); /* Safari */
+        background: -o-linear-gradient(#ffd60a, #fffb7e); /* Opera */
+        background: -moz-linear-gradient(#ffd60a, #fffb7e); /* Firefox */
+        background: linear-gradient(#ffd60a, #fffb7e); /* Standard syntax */
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 65px;
+    }
+
+    .subhead {
+        font-size: 28px;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    .offer {
+        font-size: 95px;
+        font-weight: bold;
+        line-height: 90px;
+    }
+
+    .subhead-2 {
+        font-size: 43px;
+        line-height: 60px;
+        font-weight: bold;
+    }
+
+    .box {
+        width: 250px;
+        height: 30px;
+        margin: 0;
+        font-size: 12px;
+        font-weight: bold;
+        float: left;
+    }
+
+
+
+    .box-23 {
+        z-index: 10002;
+        position: fixed;
+        left: 55%;
+        margin-top: -250px;
+        margin-left: -360px;
+    }
+    /* ThankYou Message */
+    .containerThankYou {
+        background: #fff;
+        width: 600px;
+        border: solid 1px green;
+        color: #2d2d2d;
+        padding: 25px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .thankyou-header {
+        color: green;
+    }
+
+    .thankyou-text {
+        font-size: 14px;
+    }
+
+    .thankyou {
+        cursor: pointer;
+    }
+    /*Error Message */
+    .containerError {
+        background: #fff;
+        width: 540px;
+        border: solid 1px red;
+        color: #2d2d2d;
+        padding: 25px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .emailError {
+        clear:both;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 18px;
+        padding: 5px 0 5px 0;
+        margin-top: 30px;
+        color: #fdfd00 !important;
+    }
+
+    .error-header {
+        font-weight: bold;
+        color: red;
+        font-size: 18px;
+    }
+
+    .error-text {
+        font-size: 14px;
+    }
+
+    .error {
+        cursor: pointer;
+    }
+
+    .roundedButton {
+        font-family: arial;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 7px 0;
+    }
+
+
+    #goButton {
+        color: #fff !important;
+        width: 150px;
+        height: 34px;
+        background: #38b048;
+    }
+
+        #goButton:hover {
+            color: #ffffff !important;
+            background: green;
+        }
+
+    .submit {
+        float: right;
+        cursor: pointer;
+    }
+
+
+    .emailSubmission {
+        display: block;
+        width: 430px;
+        padding: 20px 0 0;
+        margin: 20px auto 0;
+    }
+
+    #txtEmailOverlay {
+        color: #000;
+        font-family: 'Arial';
+        padding: 0 2px 0 8px;
+    }
+</style>
+
+<div class="box-23">
+    <div class="containerSignup" id="containerSignup">
+        <img class="closebutton" src="/images/content/x-button_blk-wht.png" onclick="CloseOverlay(true);" />
+        <div class="emailSubmission" style="padding-top: 275px">
+            <!--email input box-->
+            <div class=" inputrow">
+                <input class="box" id="txtEmailOverlay" name="Enter Your Email." type="text" placeholder="enter your email address here." onfocus="if($(this).val() =='Enter Your Email Address Here and Receive Special Offers.'){$(this).val('');}">
+            </div>
+            <!--submit button-->
+            <div id="goButton" class="roundedButton submit"><p>GET MY COUPON</p></div>
+
+        </div>
+        <!--error message-->
+        <div class="emailError" id="emailError"></div>
+        <div class="clearfix"></div>
+        <a href="index.aspx" manual_cm_re="HP! 2011/19/09 Version A-_-Email Signup Overlay-_-Show!"></a>
+        <a href="index.aspx" manual_cm_sp="HP! 2011/19/09 Version A-_-Email Signup Overlay-_-Show!"></a>
+    </div>
+
+    <div class="containerThankYou" id="containerThankYou">
+        <div class="thankyou-header">
+            <b>Thank you! Check your inbox for more information.</b>
+        </div>
+        <br />
+        <div class="thankyou-text">New email subscribers qualify for a 15% discount on their next order. Stay tuned for more exciting news from Collections Etc., including exclusive promotions and savings just for you!</div>
+        <br />
+        <div class="thankyou">
+            <img src="/images/content/continue-shopping.png" onclick="CloseOverlay(false)" />
+        </div>
+    </div>
+
+    <div class="containerError" id="containerError">
+        <div class="error-header">
+            <b>Error! Something went wrong.</b>
+        </div>
+        <br />
+        <div id="txtTryAgain" class="error-text">Invalid email address. Please try again.</div>
+        <br />
+        <div class="error">
+            <img id="btnTryAgain" src="/images/content/try-again.png" onclick="CEI.Email.goToEmailPopup()" />
+        </div>
+    </div>
+</div>
+<!-- end .box-23 -->
+<script>
+var path = window.location.pathname;
+path = path.toLowerCase();
+
+
+function CloseOverlay(bCancel) {
+            CEI.Email.closeEmailOverlay(bCancel);
+        }
+
+        function SaveOverlay() {
+            var inputValue = document.getElementById("txtEmailOverlay").value;
+            CEI.Email.saveEmailOverlay(inputValue);
+        }
+
+    $('#goButton').click(function () {
+        SaveOverlay();
+    });
+
+</script>
+
+
+
 
 <!-- /targeted_table -->
         </div>
@@ -246,31 +496,46 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 <ul class="nav navbar-nav">
             
                 <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/apparel" class="top-nav-link uppercase" role="button">Apparel</a>
-                    <ul id="menu-apparel" class="dropdown-menu split-list ddl-menu-border" role="menu">
+                    <a href="http://www.collectionsetc.com/products/new" class="top-nav-link uppercase" role="button">New</a>
+                    <ul id="menu-new" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
                                     <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl01_pnlContainer" class="row col-size-12">
 	
                                     
-                                
-</div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            
-                <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/household-solutions" class="top-nav-link uppercase" role="button">Household Solutions</a>
-                    <ul id="menu-household-solutions" class="dropdown-menu split-list ddl-menu-border" role="menu">
-                        <li>
-                            <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl02_pnlContainer" class="row col-size-12">
-	
-                                    
                                             <div class='col-sm-12'>
-                                            <a href='/products/household-solutions/chair-cushions2'>
-                                                <div class="subcategory col-sm-12">chair cushions2</div>
+                                            <a href='/products/new/gifts'>
+                                                <div class="subcategory col-sm-12">Gifts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/new/seasonal'>
+                                                <div class="subcategory col-sm-12">Seasonal</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/new/for-the-home'>
+                                                <div class="subcategory col-sm-12">For The Home</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/new/outdoor-amp-garden'>
+                                                <div class="subcategory col-sm-12">Outdoor & Garden</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/new/apparel'>
+                                                <div class="subcategory col-sm-12">Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/new/etc'>
+                                                <div class="subcategory col-sm-12">Etc</div>
                                             </a>
                                             </div>
                                         
@@ -282,220 +547,160 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 </li>
             
                 <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/home-decoration" class="top-nav-link uppercase" role="button">Home Decoration</a>
-                    <ul id="menu-home-decoration" class="dropdown-menu split-list ddl-menu-border" role="menu">
+                    <a href="http://www.collectionsetc.com/products/gifts" class="top-nav-link uppercase" role="button">Gifts</a>
+                    <ul id="menu-gifts" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl03_pnlContainer" class="row col-size-12">
-	
-                                    
-                                
-</div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            
-                <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/health-amp-beauty" class="top-nav-link uppercase" role="button">Health & Beauty</a>
-                    <ul id="menu-health-amp-beauty" class="dropdown-menu split-list ddl-menu-border" role="menu">
-                        <li>
-                            <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl04_pnlContainer" class="row col-size-12">
-	
-                                    
-                                            <div class='col-sm-12'>
-                                            <a href='/products/health-amp-beauty/personal-care-yo'>
-                                                <div class="subcategory col-sm-12">Personal Care, Yo!</div>
-                                            </a>
-                                            </div>
-                                        
-                                
-</div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            
-                <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/gifts-test" class="top-nav-link uppercase" role="button">Gifts test</a>
-                    <ul id="menu-gifts-test" class="dropdown-menu split-list ddl-menu-border" role="menu">
-                        <li>
-                            <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl05_pnlContainer" class="row col-size-4">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl02_pnlContainer" class="row col-size-4">
 	
                                     
                                             <div class='col-sm-4'>
-                                            <a href='/products/gifts-test/angel-gifts'>
-                                                <div class="subcategory col-sm-12">Angel Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/as-seen-on-tv'>
-                                                <div class="subcategory col-sm-12">As Seen on TV</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/gifts-test-for-jen'>
-                                                <div class="subcategory col-sm-12">gifts for jen</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/baby'>
-                                                <div class="subcategory col-sm-12">Baby</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/boys'>
-                                                <div class="subcategory col-sm-12">Boys</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/collectibles'>
-                                                <div class="subcategory col-sm-12">Collectibles</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/collectible-dolls'>
-                                                <div class="subcategory col-sm-12">Collectible Dolls</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/fathers-day-gifts'>
-                                                <div class="subcategory col-sm-12">Fathers Day Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/figurines'>
-                                                <div class="subcategory col-sm-12">Figurines</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/food'>
-                                                <div class="subcategory col-sm-12">Food</div>
-                                            </a>
-                                            </div>
-                                        
-                                            <div class='col-sm-4'>
-                                            <a href='/products/gifts-test/girls'>
-                                                <div class="subcategory col-sm-12">Girls</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/graduation-gifts'>
-                                                <div class="subcategory col-sm-12">Graduation Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/jewelry-gifts'>
-                                                <div class="subcategory col-sm-12">Jewelry Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/memorial-amp-sympathy-gifts'>
-                                                <div class="subcategory col-sm-12">Memorial & Sympathy Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/men'>
-                                                <div class="subcategory col-sm-12">Men</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/mothers-day-gifts'>
-                                                <div class="subcategory col-sm-12">Mother's Day Gifts</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/novelty'>
-                                                <div class="subcategory col-sm-12">Novelty</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/pets-amp-animals'>
-                                                <div class="subcategory col-sm-12">Pets & Animals</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/patriotic'>
-                                                <div class="subcategory col-sm-12">Patriotic</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/religious-amp-inspirational'>
-                                                <div class="subcategory col-sm-12">Religious & Inspirational</div>
-                                            </a>
-                                            </div>
-                                        
-                                            <div class='col-sm-4'>
-                                            <a href='/products/gifts-test/toys'>
-                                                <div class="subcategory col-sm-12">Toys</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/throws-amp-blankets'>
-                                                <div class="subcategory col-sm-12">Throws & Blankets</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/unique'>
-                                                <div class="subcategory col-sm-12">Unique</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/wedding-amp-anniversary'>
-                                                <div class="subcategory col-sm-12">Wedding & Anniversary</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/women'>
-                                                <div class="subcategory col-sm-12">Women</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/gifts-test/shop-gifts-by-interest'>
+                                            <a href='/products/gifts/shop-gifts-by-interest'>
                                                 <div class="subcategory col-sm-12">Shop Gifts By Interest</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/gifts-test/gifts-test-under-10'>
-                                                <div class="subcategory col-sm-12">Gifts Under $10</div>
+                                            <a href='/products/gifts/men'>
+                                                <div class="subcategory col-sm-12">Men</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/gifts-test/gifts-test-under-15'>
-                                                <div class="subcategory col-sm-12">Gifts Under $15</div>
+                                            <a href='/products/gifts/women'>
+                                                <div class="subcategory col-sm-12">Women</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/gifts-test/gifts-test-under-20'>
-                                                <div class="subcategory col-sm-12">Gifts Under $20</div>
+                                            <a href='/products/gifts/girls'>
+                                                <div class="subcategory col-sm-12">Girls</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/boys'>
+                                                <div class="subcategory col-sm-12">Boys</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/pets-amp-animals'>
+                                                <div class="subcategory col-sm-12">Pets & Animals</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/angel-gifts'>
+                                                <div class="subcategory col-sm-12">Angel Gifts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/baby'>
+                                                <div class="subcategory col-sm-12">Baby</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/collectibles'>
+                                                <div class="subcategory col-sm-12">Collectibles</div>
+                                            </a>
+                                            </div>
+                                        
+                                            <div class='col-sm-4'>
+                                            <a href='/products/gifts/collectible-dolls'>
+                                                <div class="subcategory col-sm-12">Collectible Dolls</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/jewelry-gifts'>
+                                                <div class="subcategory col-sm-12">Jewelry Gifts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/novelty'>
+                                                <div class="subcategory col-sm-12">Novelty</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/religious-amp-inspirational'>
+                                                <div class="subcategory col-sm-12">Religious & Inspirational</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/throws-amp-blankets'>
+                                                <div class="subcategory col-sm-12">Throws & Blankets</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/unique'>
+                                                <div class="subcategory col-sm-12">Unique</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/toys'>
+                                                <div class="subcategory col-sm-12">Toys</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/as-seen-on-tv'>
+                                                <div class="subcategory col-sm-12">As Seen on TV</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/food'>
+                                                <div class="subcategory col-sm-12">Food</div>
+                                            </a>
+                                            </div>
+                                        
+                                            <div class='col-sm-4'>
+                                            <a href='/products/gifts/graduation-gifts'>
+                                                <div class="subcategory col-sm-12">Graduation Gifts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/figurines'>
+                                                <div class="subcategory col-sm-12">Figurines</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/patriotic'>
+                                                <div class="subcategory col-sm-12">Patriotic</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/memorial-amp-sympathy-gifts'>
+                                                <div class="subcategory col-sm-12">Memorial & Sympathy Gifts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/wedding-amp-anniversary'>
+                                                <div class="subcategory col-sm-12">Wedding & Anniversary</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/fathers-day'>
+                                                <div class="subcategory col-sm-12">Fathers Day</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/gifts/mothers-day'>
+                                                <div class="subcategory col-sm-12">Mothers Day</div>
                                             </a>
                                             
                                         
@@ -511,7 +716,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <ul id="menu-seasonal" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl06_pnlContainer" class="row col-size-6">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl03_pnlContainer" class="row col-size-6">
 	
                                     
                                             <div class='col-sm-6'>
@@ -551,6 +756,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             </div>
                                         
                                             <div class='col-sm-6'>
+                                            <a href='/products/seasonal/spring'>
+                                                <div class="subcategory col-sm-12">Spring</div>
+                                            </a>
+                                            
+                                        
+                                            
                                             <a href='/products/seasonal/st-patricks-day'>
                                                 <div class="subcategory col-sm-12">St. Patricks Day</div>
                                             </a>
@@ -563,26 +774,20 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             
                                         
                                             
-                                            <a href='/products/seasonal/spring'>
-                                                <div class="subcategory col-sm-12">Spring</div>
-                                            </a>
-                                            
-                                        
-                                            
                                             <a href='/products/seasonal/memorial-day'>
                                                 <div class="subcategory col-sm-12">Memorial Day</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/seasonal/summer'>
-                                                <div class="subcategory col-sm-12">Summer</div>
+                                            <a href='/products/seasonal/4th-of-july'>
+                                                <div class="subcategory col-sm-12">4th of July</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/seasonal/4th-of-july'>
-                                                <div class="subcategory col-sm-12">4th of July</div>
+                                            <a href='/products/seasonal/summer'>
+                                                <div class="subcategory col-sm-12">Summer</div>
                                             </a>
                                             </div>
                                         
@@ -598,18 +803,24 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <ul id="menu-for-the-home" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl07_pnlContainer" class="row col-size-6">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl04_pnlContainer" class="row col-size-6">
 	
                                     
                                             <div class='col-sm-6'>
-                                            <a href='/products/for-the-home/bathroom'>
-                                                <div class="subcategory col-sm-12">Bathroom</div>
+                                            <a href='/products/for-the-home/bedding'>
+                                                <div class="subcategory col-sm-12">Bedding</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/for-the-home/bedding'>
-                                                <div class="subcategory col-sm-12">Bedding</div>
+                                            <a href='/products/for-the-home/home-decor'>
+                                                <div class="subcategory col-sm-12">Home Decor</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/for-the-home/bathroom'>
+                                                <div class="subcategory col-sm-12">Bathroom</div>
                                             </a>
                                             
                                         
@@ -653,17 +864,17 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             <a href='/products/for-the-home/housewares'>
                                                 <div class="subcategory col-sm-12">Housewares</div>
                                             </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/for-the-home/home-solutions'>
-                                                <div class="subcategory col-sm-12">Home Solutions</div>
-                                            </a>
                                             </div>
                                         
                                             <div class='col-sm-6'>
                                             <a href='/products/for-the-home/cleaning'>
                                                 <div class="subcategory col-sm-12">Cleaning</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/for-the-home/home-solutions'>
+                                                <div class="subcategory col-sm-12">Home Solutions</div>
                                             </a>
                                             
                                         
@@ -692,18 +903,6 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             
                                         
                                             
-                                            <a href='/products/for-the-home/health-amp-wellness'>
-                                                <div class="subcategory col-sm-12">Health & Wellness</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/for-the-home/personal-care'>
-                                                <div class="subcategory col-sm-12">Personal Care</div>
-                                            </a>
-                                            
-                                        
-                                            
                                             <a href='/products/for-the-home/as-seen-on-tv-for-home'>
                                                 <div class="subcategory col-sm-12">As Seen on TV for Home</div>
                                             </a>
@@ -712,6 +911,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             
                                             <a href='/products/for-the-home/shop-by-theme'>
                                                 <div class="subcategory col-sm-12">Shop By Theme</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/for-the-home/home-decor-sale'>
+                                                <div class="subcategory col-sm-12">Home Decor Sale</div>
                                             </a>
                                             
                                         
@@ -727,7 +932,7 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <ul id="menu-outdoor-amp-garden" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl08_pnlContainer" class="row col-size-4">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl05_pnlContainer" class="row col-size-4">
 	
                                     
                                             <div class='col-sm-4'>
@@ -898,6 +1103,204 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             </a>
                                             
                                         
+                                            
+                                            <a href='/products/outdoor-amp-garden/garden-sale'>
+                                                <div class="subcategory col-sm-12">Garden Sale</div>
+                                            </a>
+                                            
+                                        
+                                
+</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown top-nav-item">
+                    <a href="http://www.collectionsetc.com/products/apparel" class="top-nav-link uppercase" role="button">Apparel</a>
+                    <ul id="menu-apparel" class="dropdown-menu split-list ddl-menu-border" role="menu">
+                        <li>
+                            <div class="yamm-content">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl06_pnlContainer" class="row col-size-6">
+	
+                                    
+                                            <div class='col-sm-6'>
+                                            <a href='/products/apparel/womens-clothing'>
+                                                <div class="subcategory col-sm-12">Womens Clothing</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/fall-amp-winter-apparel'>
+                                                <div class="subcategory col-sm-12">Fall & Winter Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/tops-amp-shirts'>
+                                                <div class="subcategory col-sm-12">Tops & Shirts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/sweaters'>
+                                                <div class="subcategory col-sm-12">Sweaters</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/pants-amp-bottoms'>
+                                                <div class="subcategory col-sm-12">Pants & Bottoms</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/dresses-amp-skirts'>
+                                                <div class="subcategory col-sm-12">Dresses & Skirts</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/activewear'>
+                                                <div class="subcategory col-sm-12">Activewear</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/loungewear-amp-intimates'>
+                                                <div class="subcategory col-sm-12">Loungewear & Intimates</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/holiday-inspired-womens-clothing'>
+                                                <div class="subcategory col-sm-12">Holiday Inspired Womens Clothing</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/coordinating-sets'>
+                                                <div class="subcategory col-sm-12">Coordinating Sets</div>
+                                            </a>
+                                            </div>
+                                        
+                                            <div class='col-sm-6'>
+                                            <a href='/products/apparel/novelty-apparel'>
+                                                <div class="subcategory col-sm-12">Novelty Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/outerwear'>
+                                                <div class="subcategory col-sm-12">Outerwear</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/womens-accessories'>
+                                                <div class="subcategory col-sm-12">Womens Accessories</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/shoes-amp-slippers'>
+                                                <div class="subcategory col-sm-12">Shoes & Slippers</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/bags-amp-wallets'>
+                                                <div class="subcategory col-sm-12">Bags & Wallets</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/mens-clothing'>
+                                                <div class="subcategory col-sm-12">Mens Clothing</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/jewelry'>
+                                                <div class="subcategory col-sm-12">Jewelry</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/spring-amp-summer-apparel'>
+                                                <div class="subcategory col-sm-12">Spring & Summer Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/apparel/apparel-sale'>
+                                                <div class="subcategory col-sm-12">Apparel Sale</div>
+                                            </a>
+                                            
+                                        
+                                
+</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown top-nav-item">
+                    <a href="http://www.collectionsetc.com/products/etc" class="top-nav-link uppercase" role="button">Etc</a>
+                    <ul id="menu-etc" class="dropdown-menu split-list ddl-menu-border" role="menu">
+                        <li>
+                            <div class="yamm-content">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl07_pnlContainer" class="row col-size-12">
+	
+                                    
+                                            <div class='col-sm-12'>
+                                            <a href='/products/etc/best-sellers'>
+                                                <div class="subcategory col-sm-12">Best Sellers</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/9-99-or-less'>
+                                                <div class="subcategory col-sm-12">$9.99 or Less!</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/top-rated-items'>
+                                                <div class="subcategory col-sm-12">Top Rated Items</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/exclusive'>
+                                                <div class="subcategory col-sm-12">Exclusive</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/automotive'>
+                                                <div class="subcategory col-sm-12">Automotive</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/solutions'>
+                                                <div class="subcategory col-sm-12">Solutions</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/health-amp-wellness'>
+                                                <div class="subcategory col-sm-12">Health & Wellness</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/etc/personal-care'>
+                                                <div class="subcategory col-sm-12">Personal Care</div>
+                                            </a>
+                                            </div>
+                                        
                                 
 </div>
                             </div>
@@ -910,36 +1313,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <ul id="menu-sale" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl09_pnlContainer" class="row col-size-12">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl08_pnlContainer" class="row col-size-12">
 	
                                     
                                             <div class='col-sm-12'>
-                                            <a href='/products/sale/apparel'>
-                                                <div class="subcategory col-sm-12">Apparel</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/sale/household-solutions'>
-                                                <div class="subcategory col-sm-12">Household Solutions</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/sale/home-decoration'>
-                                                <div class="subcategory col-sm-12">Home Decoration</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/sale/health-amp-beauty'>
-                                                <div class="subcategory col-sm-12">Health & Beauty</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/sale/gifts-test'>
-                                                <div class="subcategory col-sm-12">Gifts test</div>
+                                            <a href='/products/sale/gifts'>
+                                                <div class="subcategory col-sm-12">Gifts</div>
                                             </a>
                                             
                                         
@@ -959,6 +1338,18 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             <a href='/products/sale/outdoor-amp-garden'>
                                                 <div class="subcategory col-sm-12">Outdoor & Garden</div>
                                             </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/sale/apparel'>
+                                                <div class="subcategory col-sm-12">Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/sale/etc'>
+                                                <div class="subcategory col-sm-12">Etc</div>
+                                            </a>
                                             </div>
                                         
                                 
@@ -973,36 +1364,12 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                     <ul id="menu-clearance" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl10_pnlContainer" class="row col-size-6">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl09_pnlContainer" class="row col-size-6">
 	
                                     
                                             <div class='col-sm-6'>
                                             <a href='/products/clearance/clearance-closeouts'>
                                                 <div class="subcategory col-sm-12">Clearance CLOSEOUTS</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/clearance/apparel'>
-                                                <div class="subcategory col-sm-12">Apparel</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/clearance/household-solutions'>
-                                                <div class="subcategory col-sm-12">Household Solutions</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/clearance/home-decoration'>
-                                                <div class="subcategory col-sm-12">Home Decoration</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/clearance/health-amp-beauty'>
-                                                <div class="subcategory col-sm-12">Health & Beauty</div>
                                             </a>
                                             
                                         
@@ -1013,8 +1380,8 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             
                                         
                                             
-                                            <a href='/products/clearance/gifts-test'>
-                                                <div class="subcategory col-sm-12">Gifts test</div>
+                                            <a href='/products/clearance/gifts'>
+                                                <div class="subcategory col-sm-12">Gifts</div>
                                             </a>
                                             
                                         
@@ -1028,9 +1395,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             <a href='/products/clearance/seasonal'>
                                                 <div class="subcategory col-sm-12">Seasonal</div>
                                             </a>
-                                            </div>
+                                            
                                         
-                                            <div class='col-sm-6'>
+                                            
                                             <a href='/products/clearance/christmas-outlet'>
                                                 <div class="subcategory col-sm-12">Christmas Outlet</div>
                                             </a>
@@ -1046,9 +1413,9 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             <a href='/products/clearance/home-decor-outlet'>
                                                 <div class="subcategory col-sm-12">Home Decor Outlet</div>
                                             </a>
-                                            
+                                            </div>
                                         
-                                            
+                                            <div class='col-sm-6'>
                                             <a href='/products/clearance/outdoor-amp-garden'>
                                                 <div class="subcategory col-sm-12">Outdoor & Garden</div>
                                             </a>
@@ -1061,8 +1428,20 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                                             
                                         
                                             
+                                            <a href='/products/clearance/apparel'>
+                                                <div class="subcategory col-sm-12">Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
                                             <a href='/products/clearance/fall-outlet'>
                                                 <div class="subcategory col-sm-12">Fall Outlet</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/clearance/etc'>
+                                                <div class="subcategory col-sm-12">Etc</div>
                                             </a>
                                             
                                         
@@ -1086,64 +1465,46 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
                 </li>
             
                 <li class="dropdown top-nav-item">
-                    <a href="http://www.collectionsetc.com/products/14-99-or-less" class="top-nav-link uppercase" role="button">$14.99 or Less</a>
-                    <ul id="menu-14-99-or-less" class="dropdown-menu split-list ddl-menu-border" role="menu">
+                    <a href="http://www.collectionsetc.com/products/14-99-store" class="top-nav-link uppercase" role="button">$14.99 Store</a>
+                    <ul id="menu-14-99-store" class="dropdown-menu split-list ddl-menu-border" role="menu">
                         <li>
                             <div class="yamm-content">
-                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl11_pnlContainer" class="row col-size-12">
+                                    <div id="ctl00_ucHeader1_tnl1_repGlobalNavCollection_ctl10_pnlContainer" class="row col-size-12">
 	
                                     
                                             <div class='col-sm-12'>
-                                            <a href='/products/14-99-or-less/apparel'>
-                                                <div class="subcategory col-sm-12">Apparel</div>
+                                            <a href='/products/14-99-store/gifts'>
+                                                <div class="subcategory col-sm-12">Gifts</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/14-99-or-less/household-solutions'>
-                                                <div class="subcategory col-sm-12">Household Solutions</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/14-99-or-less/home-decoration'>
-                                                <div class="subcategory col-sm-12">Home Decoration</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/14-99-or-less/health-amp-beauty'>
-                                                <div class="subcategory col-sm-12">Health & Beauty</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/14-99-or-less/9-99-store'>
-                                                <div class="subcategory col-sm-12">$9.99 Store</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/14-99-or-less/gifts-test'>
-                                                <div class="subcategory col-sm-12">Gifts test</div>
-                                            </a>
-                                            
-                                        
-                                            
-                                            <a href='/products/14-99-or-less/seasonal'>
+                                            <a href='/products/14-99-store/seasonal'>
                                                 <div class="subcategory col-sm-12">Seasonal</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/14-99-or-less/for-the-home'>
+                                            <a href='/products/14-99-store/for-the-home'>
                                                 <div class="subcategory col-sm-12">For The Home</div>
                                             </a>
                                             
                                         
                                             
-                                            <a href='/products/14-99-or-less/outdoor-amp-garden'>
+                                            <a href='/products/14-99-store/outdoor-amp-garden'>
                                                 <div class="subcategory col-sm-12">Outdoor & Garden</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/14-99-store/apparel'>
+                                                <div class="subcategory col-sm-12">Apparel</div>
+                                            </a>
+                                            
+                                        
+                                            
+                                            <a href='/products/14-99-store/etc'>
+                                                <div class="subcategory col-sm-12">Etc</div>
                                             </a>
                                             </div>
                                         
@@ -1164,10 +1525,10 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
             </div>
             <div>
                 <form name="aspnetForm" method="post" action="helpprivacy.aspx?name=privacy" id="aspnetForm">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTkzMDU2ODE3D2QWAmYPZBYIZg9kFgICAQ8WAh4EVGV4dAWrATxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz52YXIgbW9iaWxlUGFyYW1zID0gJyc7PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9zMy5hbWF6b25hd3MuY29tL21hZG1vYmlsZS9jb2xsZWN0aW9uc2V0Yy9qcy9tb2JpbGVkaXJlY3QuanMnPjwvc2NyaXB0PmQCBA9kFgICAw9kFgICCQ8QZGQWAWZkAgYPDxYCHgdWaXNpYmxlaGRkAgcPDxYCHwFnZGRkTy45fhp6/II4pRTj9j5GpoUgXBk=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTkzMDU2ODE3D2QWAmYPZBYKZg9kFgICAQ8WAh4EVGV4dAWrATxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz52YXIgbW9iaWxlUGFyYW1zID0gJyc7PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0nLy9zMy5hbWF6b25hd3MuY29tL21hZG1vYmlsZS9jb2xsZWN0aW9uc2V0Yy9qcy9tb2JpbGVkaXJlY3QuanMnPjwvc2NyaXB0PmQCBA9kFgICAw9kFgICCQ8QZGQWAWZkAgYPDxYCHgdWaXNpYmxlaGRkAgcPDxYCHwFnZGQCCA8WAh8BZ2RkE0kc2KsbDcUvDFavR83bYcg7bZw=" />
 
 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F20EDA95" />
-<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARAcJCJWsjKRDwi5zSuVbrKTk4MP8fXvhJzHH7+itkCUi8i4OMnOpdqJaHX37UtC1TAj7994yNoH7Gl2IFHZgFBSqkmvBLbcW56WFf+iDwtKi/nqH0=" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAQEIg6PNsU3crtdtgz89Y1ATk4MP8fXvhJzHH7+itkCUi8i4OMnOpdqJaHX37UtC1TAj7994yNoH7Gl2IFHZgFBV7JqUXBn5nyPnLZ6sIAdhSCO4JU=" />
                 
 	<table cellpadding="0" cellspacing="0" width="100%">
 		<tr>
@@ -1625,6 +1986,14 @@ var s = d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
        var backgroundId;
        var modalId;
    </script>
+    
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function () {
+                backgroundId = setTimeout("$('#body').append('<div id=\"background\"></div>');", 5000);
+                modalId = setTimeout(function () {
+                  $('#overlay').fadeIn(250); }, 5000);
+            });
+        </script>
     
 
     <script language="javascript" type="text/javascript">
