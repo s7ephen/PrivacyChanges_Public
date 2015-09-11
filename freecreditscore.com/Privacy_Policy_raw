@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html data-ng-app="ectOrderFunnel" ng-controller="orderFunnelLayoutCtrl as lvm" ng-strict-di ng-class="{ orderFunnelLayout: lvm.displayOrderFunnelLayout, hybridLayout: !lvm.displayOrderFunnelLayout, headerHybrid1: lvm.displayHybrid1, headerHybrid2: lvm.displayHybrid2, footerHybrid1: lvm.displayHybrid1, footerHybrid2: lvm.displayHybrid2 }">
+<html lang="en-us">
 <head>
-	<title ng-bind="pageTitle"></title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="robots" content="noindex, follow">
-    <meta ng-if="lvm.showMobileSmartBanner" name="apple-itunes-app" content="app-id=965030252">
-    
-	<!-- CSS Section -->
-	<!-- Load all bundled CSS files -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Our Privacy Policy describes the usage of the information that we collect from our members." />
+    <meta name="keywords" content="FreeCreditScore.com Privacy Policy, How Does FreeCreditScore.com Use my Information" />
+    <meta name="robots" content="noindex, follow" />
+    <title>Privacy Policy | Freecreditscore.com™</title>
+
+    <!-- CSS Section -->
+    <!-- Load all bundled CSS files -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
 <script>(function() {
                 var loadFallback,
                     len = document.styleSheets.length;
@@ -29,226 +31,473 @@
                 return true;
             }())||document.write('<script src="/Content/bootstrap/css"><\/script>');</script>
 
-	<link href="/Content/themes/base/css?v=me_Wtk3PfUEdGh0iWbW2WAv_J3P-uOf-71L7DvwTJTU1" rel="stylesheet"/>
+    <link href="/CSS/FCS/style.css" rel="stylesheet"/>
 
-	<link href="/Content/css?v=MqaQx-K2jg8tSiCMlbTIbEKox8R1wv_OIYKvJ2w1d281" rel="stylesheet"/>
+    <link href="/CSS/FCS/layout.css" rel="stylesheet"/>
 
-	<link href="/Content/orderfunnel/css?v=xYxZK7zhjuJ-8vkLMF2R-avo70fT4iBNLfSGLtHNnBU1" rel="stylesheet"/>
+    <link href="/CSS/FCS/commercials.css" rel="stylesheet"/>
 
-	
-	<link href="/Content/app/ecsWidgets/css?v=WqpbMRisstE_Ui9Jyzziqi1ZoHB3EFF0Dwp2q4pECFo1" rel="stylesheet"/>
 
-	<link href="/Content/app/ecsCreditWidgets/css?v=yBQMOjzEUtta1m42IY-nnJGcsU-1uoqXo3cuq3UFnNY1" rel="stylesheet"/>
+    <link href="/CSS/FCS/PartialPages/homepageHeader.css" rel="stylesheet"/>
 
-	
+    <link href="/CSS/FCS/PartialPages/staticFooter.css" rel="stylesheet"/>
 
-	<link rel="stylesheet" ng-href="{{lvm.headerStyle}}" />
-	<link rel="stylesheet" ng-href="{{lvm.footerStyle}}" />
-    <link rel="shortcut icon" ng-href="{{lvm.favicon}}" type="image/x-icon" />
-    <style>
-        .ng-cloak, .ect-first-load-cloak {
-            display: none !important;
-        }
-    </style>
-    
-    <div id="secret">
-        <input id="hdnTransferData" type="Hidden" />
-    </div>
+    <link href="/CSS/FCS/homepageLayout.css" rel="stylesheet"/>
+
 
     
-	<script type="text/javascript" src="//nexus.ensighten.com/experian/usexpprod/Bootstrap.js"></script>
+    <script src="/Scripts/public.js"></script>
 
-    <style id="antiClickjack">
-        body {
-            display: none !important;
-        }
-    </style>
+
+    <link rel="shortcut icon" href="Images/fcs.ico" type="image/x-icon" />
+
+    
+    <script type="text/javascript" src="//nexus.ensighten.com/experian/usexpprod/Bootstrap.js"></script>
+
     <script type="text/javascript">
-        if (self === top) {
-            var antiClickjack = document.getElementById("antiClickjack");
-            antiClickjack.parentNode.removeChild(antiClickjack);
-        } else {
-            top.location = self.location;
+        var pathname = window.location.pathname.split('/');
+        var $ECD =
+        {
+            Brand: 'FCS',
+            Domain: document.domain,
+            AffliateID: '',
+            MPI: '',
+            BannerCode: '',
+            CreativeID: '',
+            PageID: getPageID(),
+            PageLoaded: true,
+            SiteVersionID: '1003',
+            SourceCode: '678508'
+        }
+
+        sessionStorage.setItem('ECDObjectBackup', JSON.stringify($ECD));
+
+        var buildNumber = 'Sprint 4 - 2015.09.03.16.17'
+
+        function jumpToAnchor(e) {
+            var jump = document.getElementById(e).offsetTop;
+            window.scrollTo(0, jump);
         }
     </script>
-    <!-- AppDynamics -->
     <script>window['adrum-start-time'] = new Date().getTime();</script>
     <script language="javascript" src="/scripts/appdynamics/adrum.js"></script>
 </head>
 <body>
-    <ecs-mobile-smart-banner-dir data="lvm.mobileSmartBanner.data" hide="!lvm.showMobileSmartBanner" visible="lvm.setIsMobileSmartBannerVisible(visible)"></ecs-mobile-smart-banner-dir>
-	<div id="top"></div>
-	<div ng-class="lvm.showNav ? 'container order-page-container': ''" class="ect-first-load-cloak">
-		<div ng-show="lvm.showNav">
-			<header id="header" class="row" style="">
-    <div class="header-logo"><a ng-href="{{lvm.logoLink}}"><img ng-src="{{lvm.logo}}" alt="{{lvm.logoAltTag}}" width="162" height="45" /></a></div>
-    <div class="header-title visible-mobile" ng-bind-html="lvm.title"></div>
-    <div id="mobile-logo" class="visible-mobile" ng-style="{'background' : background }"></div>
-</header>
 
-		</div>
-		<div ng-show="!lvm.showNav" id="memberHeaderInFunnel" ng-cloak>
-			<div id="fixedHeaderWrapper" class="ect-first-load-cloak">
-    <div id="blockHeaderWrapper">
-
-        <div id="primaryNavIndicatorBar"></div>
-
+    <div class="headerNoticeContainer">
+        <div class="disclaimer">
+    <div class="disclaimerBox">
         <div class="container">
-
-            <div id="blockHeader">
-                <!-- MAIN HEADER CONTENT BEGINS -->
-
-                <div class="contentPositioner">
-
-                    <div id="primaryNavContainer" class="ng-class: lvm.menuClass" ng-hide="lvm.hideLinks">
-                        <div id="navMenuOpenBkg" ng-click="lvm.openCloseMenu()"></div>
-
-                        <div id="primaryNavButton">
-                            <span class="spanLink" ng-click="lvm.openCloseMenu()"><img src="/Images/menu.svg" /></span>
-                        </div>
-
-                        <div id="primaryNavItems" ng-click="lvm.closeMenu()">
-                            <div ng-if="lvm.showOverviewTab" class="primaryNavLink first" ng-class="{ current: lvm.selectedTab === 'overview' }"><a ng-href="{{lvm.links.topNav.overview}}">Overview</a></div>
-                            <div ng-if="lvm.showScoreTab" class="primaryNavLink" ng-class="{ current: lvm.selectedTab === 'score' }"><a ng-href="{{lvm.links.topNav.score}}">Score</a></div>
-                            <div class="primaryNavLink" ng-class="{ current: lvm.selectedTab === 'reports' }"><a ng-href="{{lvm.links.topNav.reports}}">Reports</a></div>
-                            <div ng-if="lvm.showProtectionTab" class="primaryNavLink" ng-class="{ current: lvm.selectedTab === 'protection' }"><a ng-href="{{lvm.links.topNav.protection}}">Protection</a><span class="styledBadge badge" ng-bind="lvm.numOfNewAlerts > 0 ? lvm.numOfNewAlerts : null"></span></div>
-                            <div ng-if="lvm.showPlanningTab" class="primaryNavLink" ng-class="{ current: lvm.selectedTab === 'planning' }"><a ng-href="{{lvm.links.topNav.planning}}">Planning</a></div>
-                            <div class="primaryNavLink" ng-class="{ current: lvm.selectedTab === 'offer' }"><a ng-href="{{lvm.links.topNav.offers}}">Offers</a></div>
-                            <div class="primaryNavLink last" ng-class="{ current: lvm.selectedTab === 'education' }"><a ng-href="{{lvm.links.topNav.education}}">Education</a></div>
-                            <div class="primaryNavLink mobileSecondary" style='color:white'><a ng-href="tel:{{lvm.phoneNumberLink}}">{{lvm.phoneNumber}}</a></div>
-                            <div class="primaryNavLink mobileSecondary"><a ng-href="{{lvm.links.topNav.settings}}">Settings</a></div>
-                            <div class="primaryNavLink mobileSecondary"><a href="" ng-click="lvm.logout()">Sign Out</a></div>
-                        </div>
-
-                    </div>
-
-                    <div id="publicHeader">
-                        <a ng-if="lvm.isTrulyFreeCustomer" ng-href="{{lvm.links.topNav.reports}}"><img ng-src="{{lvm.logo}}" class="{{lvm.headerLogoClass}}" /></a>
-                        <a ng-if="!lvm.isTrulyFreeCustomer" ng-href="{{lvm.links.topNav.overview}}"><img ng-src="{{lvm.logo}}" class="{{lvm.headerLogoClass}}" /></a>
-                    </div>
-
-                    <div id="secondaryNavContainer" ng-hide="lvm.hideLinks">
-                        <div id="secondaryNavButton">
-
-                        </div>
-                        <div id="secondaryNavItems">
-                            <div class="secondaryNavLink first" style='color:white'><span ng-bind="lvm.phoneNumber"></span></div>
-                            <div class="secondaryNavLink"><a ng-href="{{lvm.links.topNav.settings}}">Settings</a></div>
-                            <div class="secondaryNavLink last"><span class="spanLink" ng-click="lvm.logout()">Sign Out</span></div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- MAIN HEADER CONTENT ENDS -->
-            </div>
-
+            <div class="disclaimerItem"><strong>IMPORTANT INFORMATION:</strong><br> When you order your $1 Credit Report &amp; FICO<sup>&reg;</sup> Score, you will begin your 7-day trial membership in Experian Credit Tracker<sup>SM</sup>. If you don't cancel your membership within the 7-day trial period*, you will be billed $21.95 for each month that you continue your membership. You may cancel your trial membership anytime within the trial period without charge.</div>
+            <div class="disclaimerItem">Credit score calculated based on FICO Score 8 model. Your lender or insurer may use a different FICO Score than FICO Score 8, or another type of credit score altogether. <a href="#" data-toggle="modal" data-target="#basicModal">Learn More</a>.</div>            
         </div>
     </div>
 </div>
 
-		</div>
 
-		<div id="blockMainContent">
-			
+    <!--  Modal Container  -->
 
-<div data-ng-view="" autoscroll="true"></div>
-            
-		</div>
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">FICO</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <p>FICO<sup>&reg;</sup> Scores are developed by Fair Isaac Corporation. The FICO Score provided by Experian is based on FICO Score 8. Many but not all lenders use FICO Score 8. There are many different credit scoring models that can give a different assessment of your credit rating and relative risk (risk of default) for the same credit report. Your lender or insurer may use a different FICO Score than FICO Score 8, or another type of credit score altogether. Just remember that your credit rating is often the same even if the number is not. For some consumers, however, the credit rating of FICO Score 8 could vary from the score used by your lender. The statements that "90% of top lenders use FICO Scores" and "FICO Scores are used in 90% of credit decisions" are based on a third-party study of all versions of FICO Scores sold to lenders, including but not limited to scores based on FICO Score 8.</p>
+                        <p>FICO Score 8 ranges from 300 to 850. Higher scores represent a greater likelihood that you'll pay back your debts so you are viewed as being a lower credit risk to lenders. A lower FICO Score indicates to lenders that you may be a higher credit risk. There are three different major credit reporting agencies &mdash; Experian, TransUnion<sup>&reg;</sup> and Equifax<sup>&reg;</sup> &mdash; that maintain a record of your credit history known as your credit report. Your FICO Score is based on the information in your credit report at the time it is requested. Your credit report information can vary from agency to agency because some lenders report your credit history to only one or two of the agencies. So your FICO Score can vary if the information they have on file for you is different. Since the information in your report can change over time, your FICO Score may also change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <ng-include src="lvm.footerTemplate"></ng-include>
-	</div>
-    <form id="transferDomainForm" action='https://experian.experiandirect.com /member#/Overview/Overview' method="POST">
-        <input type="hidden" name="transferData" id="transferDataInput" />
-    </form>
+    <!--  End of Modal Container  -->
 
-	<ecs-modal-message-dir show="lvm.isModalMessageVisible" data="lvm.modalMessageData"></ecs-modal-message-dir>
-	<ecs-modal-spinner-dir show="lvm.isModalSpinnerVisible" data="lvm.modalSpinnerData"></ecs-modal-spinner-dir>
-	<ecs-modal-dialog-dir show="lvm.isModalDialogVisible" data="lvm.modalDialogData">
-		<ng-include src="lvm.modalDialogTemplateUrl"></ng-include>
-	</ecs-modal-dialog-dir>
+    </div>
 
-    <!-- mobile smart banner header override page styles - pushes the header and content down -->
-    <style ng-if="lvm.isMobileSmartBannerVisible">
-        /*modal header style*/
-        #loginFormPage .preheaderBox {
-            top: 85px !important;
-        }
-
-        #fixedHeaderWrapper {
-            top: 285px !important;
-        }
-
-        #blockMainContent {
-            padding-top: 373px;
-        }
-    </style>
     
-	<!-- Load all bundled Javascript files -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="blockHeader">
+
+    <div id="mainNav">
+
+        <div class="navbar navbar-default" role="navigation">
+
+            <div class="container">
+
+                <div class="navWrapper">
+                    <div class="menuButton"><a data-toggle="collapse" data-target="#main-navbar-collapse"><span class="sr-only">Toggle navigation</span><img src="/Images/menu-toggle-white.png" alt="Open Menu" /></a></div>
+                    <div class="menuLogo"><a href="/"><img src="/Images/Logos/fcs-dkbk-1.svg" alt="FreeCreditScore.com" /></a></div>
+                    <div class="menuLogin"><a href="/credit#/signin?sc=678508">Sign&nbsp;In</a></div>
+
+                    <div class="menuNav collapse navbar-collapse" id="main-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="first"><a href="/credit-score">Credit&nbsp;Score</a></li>
+                            <li><a href="/savings">Savings</a></li>
+                            <li><a href="/why-credit-matters">Why&nbsp;Credit&nbsp;Matters</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                            <li><a href="/glossary">Glossary</a></li>
+                            <li><a href="https://www.freecreditscore.com/blog/category/financial-calculators">Financial&nbsp;Calculators</a></li> 
+                            <li class="last"><a href="/blog">Blog</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    
+
+<div class="container">
+    <div id="privacy-policy-page">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Privacy Policy</h1>
+                <p><em>Last Revised: 8/22/2012</em></p>
+                <p>ConsumerInfo.com, Inc. ("we" or "us") wants you to be familiar with what information we collect about you, how the information is being used and what choices you have regarding the collection and use of the information. This Privacy Policy (the "Policy") describes our practices in connection with information that we collect through our websites (collectively, the "Site"). Please take a moment to review this Policy and feel free to contact us with any questions at 1-877-284-7942.</p>
+                <p>By using the Site, you agree to the terms of this Policy. If you do not agree to the terms of this Policy, please do not use the Site. We reserve the right to change this Policy without prior notice. You agree to obtain annual notices of, and changes to, this Policy electronically by visiting this Site. You can determine when this Policy was last revised by referring to the "Last Revised" legend at the top of this page. Any changes to our Policy will become effective upon our posting of the revised Policy on the Site. Use of the Site following such changes constitutes your acceptance of the revised Policy then in effect. Therefore, we encourage you to review this Site from time to time for changes to our Policy.</p>
+                <p>
+                    <h2>WHAT TYPES OF INFORMATION DO WE COLLECT ABOUT YOU?</h2>
+                    We collect personal information and non-personal information through the Site. Personal information is information that identifies you as an individual. Non-personal information is aggregated information, demographic information, IP addresses and any other information that does not reveal your specific identity.
+                </p>
+                <p>
+                    <em><strong>Personal information.</strong></em> We may collect the following types of personal information:
+                    <ul>
+                        <li>Information provided by you when ordering credit-related products through the Site. For example, you will be required to submit personal information such as your name, address, social security number, date of birth, telephone number and e-mail address.</li>
+                        <li>Information provided about your children when enrolling your children in child identity monitoring products. For example, as a legal guardian, you will be required to submit the child's first and last name, Social Security number, and date of birth in order to register that child in identity monitoring with the credit bureau.</li>
+                        <li>Credit and debit card account information collected from you or your credit reports when enrolling in our card registry product. For example, we will collect credit and debit card account information from you on our sites, over the phone, and from your credit reports from the three national credit reporting companies in order to cancel the cards per your request in the event that they are lost or stolen. </li>
+                        <li>When you make a purchase through the Site, we may collect your credit card number or other payment account number, billing address and other information related to such purchase (collectively, <strong>"Payment Information"</strong>) from you.</li>
+                        <li>Other information we collect, such as city of birth and mother's maiden name, is used to verify your identity in the event you forget your login information required for our online products.</li>
+                        <li>Information you provide us through customer service correspondence and general feedback.</li>
+                        <li>Video content you choose to submit to us, such as commentary about our products and services, testimonials, or other similar content you share through video.</li>
+                    </ul>
+                </p>
+                <p>
+                    <em><strong>Non-Personal information.</strong></em> When you visit the Site, we may collect non-personal information, such as a catalog of the Site pages you visit. Non-personal information is generally collected through the Site from the following sources: server log files, environmental variables, cookies, pixel tags and other similar technologies and information that you voluntarily provide.
+                    <ul>
+                        <li><strong>Server Log Files.</strong> Your Internet Protocol (IP) address is a number that is automatically assigned to the computer that you are using by your Internet Service Provider (ISP). This number is identified and logged automatically in our server log files whenever you visit the Site, along with the time(s) of your visit(s) and the page(s) that you visited. We use your IP address, and the IP addresses of all users, for purposes such as calculating Site usage levels, helping diagnose problems with the Site's servers, and administering the Site. Collecting IP addresses is standard practice on the Internet and is done automatically by many websites.</li>
+                        <li><strong>Environmental Variables.</strong> We and our service providers may also collect certain environmental variables, such as computer type (Windows or Macintosh), screen resolution, OS version, Internet browser, and Internet browser version. These environmental variables are collected by most browsers, and can be used to optimize your experience on the Site.</li>
+                        <li><strong>Cookies and Similar Technologies.</strong>We, our service providers, and/or non-affiliated Third-parties, may use "cookies" or similar technologies on the Site. Cookies are data that a web server transfers to an individual's computer for recordkeeping purposes. Cookies are an industry standard used by many websites, and can facilitate your ongoing access to and use of a particular website; cookies do not cause damage to your computer systems or files. If you do not want information collected through the use of cookies, there is a simple procedure in most browsers that allows you to automatically decline cookies, or to be given the choice of declining or accepting the transfer of a particular cookie, or cookies from a particular website, to your computer. Additionally, please see the "Your Choices" section below for instructions on how to opt-out of sharing certain information related to the use of cookies.</li>
+                        <li><strong>Pixel Tags.</strong> We, our service providers, and/or non-affiliated Third-parties, may also use so-called "pixel tags," "web beacons," "clear GIFs" or similar means (collectively, <strong>"Pixel Tags"</strong>) in connection with some Site pages and HTML-formatted e-mail messages to, among other things, compile aggregate statistics about Site usage and response rates. A Pixel Tag is an electronic image, often a single pixel (1x1), that is ordinarily not visible to Site visitors and may be associated with Cookies on the visitors' hard drives. Pixel Tags allow us to count users who have visited certain pages of the Site, to deliver branded services, to provide online advertising, and to help determine the effectiveness of promotional or advertising campaigns. When used in HTML-formatted e-mail messages, Pixel Tags can tell the sender whether and when the e-mail has been opened.</li>
+                        <li><strong>Information That You Voluntarily Provide.</strong> We also collect non-personal information (e.g., your geographic location, etc.) when you voluntarily provide such information to us. When such information is not combined with any personal information, such information is considered to be non-personal information, as it does not personally identify you or any other user. Additionally, we may aggregate personal information in a manner such that the end-product does not personally identify you or any other user of the Site, for example, by using personal information to calculate the percentage of our users who have a particular telephone area code. Such aggregate information is considered non-personal information for purposes of this Policy.</li>
+                        <li>Please note that if we combine any non-personal information with personal information, the combined information will be treated by us as personal information as long as it is so combined.</li>
+                    </ul>
+                </p>
+                <p>
+                    <h2>HOW DO WE USE THE INFORMATION COLLECTED?</h2>
+                    <em><strong>Personal Information.</strong></em> We may use personal information we collect in the following ways:
+                    <ul>
+                        <li><strong>Fulfillment of Requests.</strong> We may use personal information collected about you to provide you with products, services or information that you request.</li>
+                        <li><strong>Administrative Communications.</strong> From time to time we may use personal information to send to you important information regarding the Site, or changes to our terms, conditions, and policies. Because this information may be important to your use of the Site, you may not opt-out of receiving such communications.</li>
+                        <li><strong>Other Communications.</strong> From time to time, we may use personal information to inform you of products, programs, services and promotions that we believe may be of interest to you. If you would prefer that we do not send such email marketing messages to you, please see the "Your Choices" section below.</li>
+                        <li><strong>Purchases.</strong> We may use personal information, including Payment Information in order to fulfill your purchase.</li>
+                        <li><strong>Promotions.</strong> We may operate sweepstakes, contests and similar promotions (collectively, <strong>"Promotions"</strong>) through the Site. We typically ask you for certain personal information when you enter and, if applicable, win a Promotion. You should carefully review the rules, if any, of each Promotion in which you participate through the Site, as they may contain additional important information about our use of personal information. To the extent that the terms and conditions of such rules concerning the treatment of personal information conflict with this Policy, the terms and conditions of such rules will control.</li>
+                        <li><strong>Internal Business Purposes.</strong> We may also use personal information for our internal business purposes, such as data analysis and audits. In addition, we may also use personal information to enhance our information and to aid us in providing our customers with targeted promotions.</li>
+                    </ul>
+                </p>
+                <p><em><strong>Non-Personal Information.</strong></em> Because non-personal information does not personally identify you, we may use such information for any purpose. In addition, we reserve the right to disclose such non personal information to other third parties, for any purpose.</p>
+                <p>In some instances, we may combine non-personal information with personal information. If we combine any non-personal information with personal information so that it personally identifies you, the combined information will be treated by us as personal information as long as it is combined.</p>
+                <p>We may, along with our affiliates and marketing partners enhance and/or merge personal information about you with data collected from other sources and use it in direct and/or online marketing and, to the extent permitted by law, individual reference and look-up service programs. In the event we enhance and/or merge such personal information with data collected from other sources, we will take reasonable steps to maintain the integrity and quality of that information.</p>
+                <p>
+                    <h2>DO WE DISCLOSE INFORMATION TO THIRD PARTIES?</h2>
+                    We may disclose information about you to affiliated and non-affiliated third parties.
+                    <ul>
+                        <li><strong>Affiliates.</strong> We may disclose the information that we collect to our affiliated companies to provide the products you request, to enhance our products to better suit your needs, and from time to time for marketing purposes.</li>
+                        <li><strong>Business Partners.</strong> We may partner with other companies to offer you products or services or to fulfill the products or services that you order. We may disclose personal information and/or non-personal or de-identified information collected about you to such third-party partners for the purposes described in this Policy.</li>
+                        <li><strong>Service Providers.</strong> We work with third parties who provide services including but not limited to data analysis, order fulfillment, list enhancement and other administrative services. We may disclose personal information to such third parties for the purpose of enabling these third parties to provide services to us. Such services may include: marketing distribution, email list management services, advertising, certain product functionalities, customer support, web hosting, customer data management and enhancement, fulfillment services (e.g., companies that fill product orders or coordinate mailings), research and surveys, data analysis and email service.</li>
+                        <li><strong>Assignment.</strong> We reserve the right to transfer any and all information that we collect from Site users to an affiliate or a third party in the event of any reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets or stock (including without limitation in connection with any bankruptcy or similar proceedings).</li>
+                        <li><strong>Law enforcement; emergencies; compliance; other purposes permitted by law.</strong> Notwithstanding any other provision of this Policy to the contrary, we reserve the right to disclose personal information to others as we believe appropriate (a) to comply with legal process; (b) to respond to governmental requests; (c) to enforce our Terms of Use; (d) to protect the rights, privacy, safety or property of ConsumerInfo.com, Inc., our affiliated companies, you or others; (e) to permit us to pursue available remedies or limit the damages that we may sustain; and (f) for any other purpose permitted by applicable law.</li>
+                        <li><strong>Aggregate, Non-Personal, or De-identified Information.</strong> We may share aggregated information (i.e., information about you and other customers collectively, but not specifically identifiable to you) and other non-personal, de-identified, or anonymous information we collect with third parties, including affiliates to develop and deliver targeted advertising on our Site and on the websites of third parties. If you would prefer that we do not utilize cookies with your website experience, or would prefer to restrict the use of cookies with network advertising partners, please see the "Your Choices" section below.</li>
+                    </ul>
+                </p>
+                <p>
+                    <h2>YOUR CHOICES</h2>
+                    You have choices when it comes to updating your information, learning about new offers or products offered by us, our partners or affiliates. If you do not wish to receive offers of products from us, our partners or affiliates, here are the methods in which you can opt out:
+                    <ul>
+                        <li><strong>ConsumerInfo.com, Inc. Commercial Email.</strong> If you prefer not to receive emails from us about offers and Promotions please unsubscribe via the unsubscribe link in an email, or contact us at 1-877-284-7942. Alternatively, you may opt-out of commercial email directly on the order form while placing a new order.</li>
+                        <li><strong>Cookies.</strong> Subject to the section above pertaining to cookies and similar technologies, you have the ability to prohibit being served an advertisement based on cookie technology. We utilize reputable third-party vendors to serve advertisements. If however, you are not comfortable with cookies, you can adjust the settings within your browser to further prohibit being served a cookie. Please see the browser's instructions to perform this task. Additionally, the Network Advertising Initiative (NAI) has developed an opt-out tool with the express purpose of allowing consumers to "opt-out" of the targeted advertising delivered by its member networks. We may share anonymous or de-identified information with such member networks for the purposes of delivering targeted advertising; however you may visit the NAI opt-out page and opt-out of this cookie tracking if you do not wish to receive targeted advertising. Please visit: <a href="http://www.networkadvertising.org/optout_nonppii.asp" target="_blank">http://www.networkadvertising.org/optout_nonppii.asp</a> for more information.</li>
+                        <li><strong>Changing information.</strong> Corrections or updates to your information including your email address, phone number, mailing address, credit card information or password reminder phrase can be made through the edit profile section of your account on the Site. If necessary, other corrections or updates to your information can be made by contacting a customer care representative at 1-877-284-7942.  For your protection, our customer care representatives may request supporting documents before making any changes or updates to your membership information.</li>
+                    </ul>
+                </p>
+                <p>We will endeavor to comply with your request as soon as reasonably practicable. Please note that if you opt-out as described above, we will not be able to remove personal information about you from the databases of third parties with which we have already disclosed personal information as of the date that we implement your opt-out request. If you wish to cease receiving marketing-related e-mails from third parties, please contact such third parties directly or utilize any opt-out mechanisms set forth in their respective privacy policies or marketing-related emails.</p>
+                <p>
+                    <h2>HOW DO WE PROTECT YOUR INFORMATION?</h2>
+                    We have security measures and tools, such as firewalls, in place to help protect against the loss, misuse and alteration of the information under our control. Unfortunately, no data transmission over the Internet or data storage system can be guaranteed to be 100% secure. If you have reason to believe that your interaction with us is no longer secure (for example, if you feel that the security of any account you might have with us has been compromised), please notify us of the problem as soon as possible by contacting us in accordance with the Section "Contacting Us" below (note that if you choose to notify us via physical mail, this will delay the time it takes for us to respond to the problem).
+                </p>
+                <p>
+                    <h2>LINKS</h2>
+                    The Site may contain links to third-party websites. These linked sites are not under our control and we are not responsible for the privacy practices or the contents of any such linked site, or any link contained in any linked site. We provide such links only as a convenience, and the inclusion of a link on the Site does not imply endorsement of the linked site by us. If you provide any personal information through any such third-party website, your transaction will occur on the third party's website (not the Site) and the personal information you provide will be collected by, and controlled by the privacy policy of, that third party. We recommend that you familiarize yourself with the privacy policies and practices of any third parties. PLEASE NOTE THAT THIS POLICY DOES NOT ADDRESS THE PRIVACY OR INFORMATION PRACTICES OF ANY THIRD PARTIES.
+                </p>
+                <p>
+                    <h2>LOCATION</h2>
+                    We control and operate the Site from the United States, and the Site is not intended to subject us to the laws or jurisdiction of any state, country or territory other than that of the United States. We do not represent or warrant that the Site, or any part thereof, is appropriate or available for use in any particular jurisdiction. Those who choose to access the Site do so on their own initiative and at their own risk, and are responsible for complying with all local laws, rules and regulations. We may limit the Site's availability, in whole or in part, to any person, geographic area or jurisdiction we choose, at any time and in our sole discretion.
+                </p>
+                <p>
+                    <h2>A SPECIAL NOTE REGARDING INDIVIDUALS UNDER 18 YEARS OLD</h2>
+                    The Site is not directed to individuals under the age of eighteen (18), and we request that such individuals not provide personal information through the Site. If you are under 18 years of age, you may browse our Site; however, you may not provide personal information to us such as name, address, or email address, and you may not register for, enroll in, and/or make product purchases.
+                </p>
+                <p>
+                    <h2>CONTACTING US</h2>
+                    If you have any questions regarding this Policy, please contact us at 1-877-284-7942. Please note that email communications will not necessarily be secure; accordingly you should not include credit card information or other sensitive information in your email correspondence with us.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="footerNoticeContainer">
+            <div class="disclaimer">
+    <div class="disclaimerBox">
+        <div class="container">
+            <div class="disclaimerItem"><strong>IMPORTANT INFORMATION:</strong><br> When you order your $1 Credit Report &amp; FICO<sup>&reg;</sup> Score, you will begin your 7-day trial membership in Experian Credit Tracker<sup>SM</sup>. If you don't cancel your membership within the 7-day trial period*, you will be billed $21.95 for each month that you continue your membership. You may cancel your trial membership anytime within the trial period without charge.</div>
+            <div class="disclaimerItem">Credit score calculated based on FICO Score 8 model. Your lender or insurer may use a different FICO Score than FICO Score 8, or another type of credit score altogether. <a href="#" data-toggle="modal" data-target="#basicModal">Learn More</a>.</div>            
+        </div>
+    </div>
+</div>
+
+
+    <!--  Modal Container  -->
+
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">FICO</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <p>FICO<sup>&reg;</sup> Scores are developed by Fair Isaac Corporation. The FICO Score provided by Experian is based on FICO Score 8. Many but not all lenders use FICO Score 8. There are many different credit scoring models that can give a different assessment of your credit rating and relative risk (risk of default) for the same credit report. Your lender or insurer may use a different FICO Score than FICO Score 8, or another type of credit score altogether. Just remember that your credit rating is often the same even if the number is not. For some consumers, however, the credit rating of FICO Score 8 could vary from the score used by your lender. The statements that "90% of top lenders use FICO Scores" and "FICO Scores are used in 90% of credit decisions" are based on a third-party study of all versions of FICO Scores sold to lenders, including but not limited to scores based on FICO Score 8.</p>
+                        <p>FICO Score 8 ranges from 300 to 850. Higher scores represent a greater likelihood that you'll pay back your debts so you are viewed as being a lower credit risk to lenders. A lower FICO Score indicates to lenders that you may be a higher credit risk. There are three different major credit reporting agencies &mdash; Experian, TransUnion<sup>&reg;</sup> and Equifax<sup>&reg;</sup> &mdash; that maintain a record of your credit history known as your credit report. Your FICO Score is based on the information in your credit report at the time it is requested. Your credit report information can vary from agency to agency because some lenders report your credit history to only one or two of the agencies. So your FICO Score can vary if the information they have on file for you is different. Since the information in your report can change over time, your FICO Score may also change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  End of Modal Container  -->
+
+        </div>
+    <div class="blockFooter">
+    <div id="prefooterContainer" class="clearFix">
+        <div class="prefooter">
+            <div class="getmyficoscoreContainer">
+    <div class="getmyficoscore">
+        <div class="cta clearFix">
+            <div class="left">Yes! I'd Like to Know My FICO<sup>&#174;</sup> Score. </div>
+            <div class="right"><a href="https://experian.experiandirect.com/credit#/orderpage1?areaid=22&amp;pkgid=E2NHZ&amp;sc=678508"><span class="button">Get My FICO Score Now</span></a></div>
+        </div>
+    </div>
+</div>
+            <div class="infosiderContainer">
+                <div class="infosider">
+                    <div class="section1 clearFix" style="">
+    <div class="right">
+        <img src="/Images/Icons/logo.svg" class="section1Image" />
+    </div>
+    <div class="left">
+        <div class="header">Credit Reports and Monthly Credit Statement</div>
+        <div class="description">
+            After your trial period ends, you will have unlimited access to your
+            Experian Credit Report and a Monthly Credit Statement. We also offer
+            discounted pricing on your comprehensive 3-Bureau Credit Report.
+        </div>
+    </div>
+</div>
+                    <div class="section2 clearFix">
+    <div class="left">
+        <img src="/Images/fcs/Static/section2image.png" class="section2Image" />
+    </div>
+    <div class="right">
+        <div class="header">Alerts and Credit Monitoring</div>
+        <div class="description">
+            Alerts and Credit Monitoring can help you defend against fraud, identity theft, and
+            inaccurate negative information on your Credit Report. We scan your Credit Reports and alert
+            you to any key changes, including suspicious activity and potential errors that could be
+            costing you thousands of dollars each year.<br />
+            <br />
+            <a href="https://experian.experiandirect.com/credit#/orderpage1?areaid=22&amp;pkgid=E2NHZ&amp;sc=678508">Sign up now to see what's going on with your credit!</a>
+        </div>
+    </div>
+</div>
+                    <div class="section3">
+    Taking good care of your credit can help you get the things you want. <a href="https://experian.experiandirect.com/credit#/orderpage1?areaid=22&amp;pkgid=E2NHZ&amp;sc=678508">Get started now</a>!
+</div>
+                    <div class="section4 clearFix">
+    <div class="leftsection clearFix">
+        <div class="left">
+            <img src="/Images/Icons/icon-3BSpread.svg" class="section4Image1" />
+        </div>
+        <div class="right">
+            <div class="header">3-Bureau Credit Reports and FICO<sup>&#174;</sup> Scores</div>
+            <div class="description">
+                The information on each of your Credit Reports could be different. View your Credit
+                Reports & FICO Scores.
+            </div>
+        </div>
+    </div>
+    <div class="rightsection clearFix">
+        <div class="left">
+            <img src="/Images/fcs/Static/section4image2.png" />
+        </div>
+        <div class="right">
+            <div class="header">ChildSecure&#8480;</div>
+            <div class="description">
+                Child identity theft could tarnish your child's future! For just a
+                few dollars, help safeguard your kids from identity theft with this special offer. More
+                than half a million children are targets each year of identity theft, so start
+                protecting yours today!
+            </div>
+        </div>
+    </div>
+</div>
+                    <div class="section5 clearFix">
+    
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <div class="left">
+        <div class="header">Around the Web</div>
+        <div class="description">
+            Join the freecreditscore.com community for fun and games, customer
+            service, and credit facts.
+        </div>
+    </div>
+    <div class="right">
+        <a href="https://plus.google.com/+freecreditscore"><img src="/Images/fcs/Static/google-plus-icon.png" /></a>
+        <a href="https://twitter.com/freecreditscore"><img src="/Images/fcs/Static/twitter-icon.png" /></a>
+        <a href="https://facebook.com/freecreditscore"><img src="/Images/fcs/Static/facebook-icon.png" /></a>
+        <a href="https://youtube.com/freecreditscore"><img src="/Images/fcs/Static/youtube-icon.png" /></a>
+        <a href="https://www.pinterest.com/freecreditscore/"><img src="/Images/fcs/Static/pinterest-icon.png" /></a>
+        <a href="https://instagram.com/freecreditscore"><img src="/Images/fcs/Static/instagram-icon.png" /></a>
+        <div class="fb-wrapper">
+            <div class="fb-like btnSocial" data-href="https://www.facebook.com/freecreditscore" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </div>
+        <div class="gplus-wrapper">
+            <div class="g-plusone btnSocial" data-size="medium" data-href="https://plus.google.com/+freecreditscore"></div>
+        </div>
+    </div>
+    <br class="clearFix" />
+</div>
+                    <div class="section6 clearFix">
+    <div class="left">
+        <div><img src="/Images/fcs/Static/section6image1.png" /></div>
+        <div class="header">Get to Know Us</div>
+        <div class="links">
+            <a href="/about-us">About Us</a> | <a href="/faqs">FAQs</a>  |  <a href="/glossary">Glossary</a>  |  <a href="/blog">Blog</a>
+        </div>
+    </div>
+    <div class="left">
+        <div><img src="/Images/fcs/Static/section6image2.png" /></div>
+        <div class="header">Get Started</div>
+        <div class="links"><a href="/credit-score">Credit&nbsp;Score</a>  |  <a href="/why-credit-matters">Why&nbsp;Credit&nbsp;Matters</a></div>
+    </div>
+    <div class="left">
+        <div><img src="/Images/fcs/Static/section6image3.png" /></div>
+        <div class="header">Get in Touch</div>
+        <div class="links"><a href="/contact-us">Contact&nbsp;Us</a>  |  <a href="/site-map">Site&nbsp;Map</a></div>
+    </div>
+</div>
+                    <div class="section7 clearFix">
+    <div class="left">
+        *The credit monitoring benefit may only be available for 5 days during your trial period since
+        enrollment can take up to 48 hours. You may cancel your trial membership any time during your first 7 days without charge.<br />
+        <br />
+        **Due to New York state law restrictions, the Experian Credit Tracker&#8480; Guarantee cannot be
+        offered to residents of New York.<br />
+        <br />
+        <a href="https://www.annualcreditreport.com">Click here</a> to access your free annual credit report available under federal law.
+    </div>
+    <div class="right badges">
+        <div class="badge sslSeal-badge">
+            <a target="_blank" href="https://www.entrust.net/customer/profile.cfm?domain=www.freecreditscore.com"><img src="/images/logos/entrust-site-seal.png" alt="" /></a>
+        </div>
+        <div class="badge mcaffee-badge"><a target="_blank" href="https://www.mcafeesecure.com/verify?host=www.freecreditscore.com"><img class="mfes-trustmark" border="0" src="//cdn.ywxi.net/meter/www.freecreditscore.com/102.gif?w=96" width="96" height="40" title="McAfee SECURE sites help keep you safe from identity theft, credit card fraud, spyware, spam, viruses and online scams" alt="McAfee SECURE sites help keep you safe from identity theft, credit card fraud, spyware, spam, viruses and online scams" oncontextmenu="window.open('https://www.mcafeesecure.com/verify?host=www.freecreditscore.com'); return false;"></a></div>
+        <div class="badge bbb-badge"><a target="_blank" href="http://www.bbb.org/sdoc/business-reviews/credit-reporting-agencies/experian-consumer-services-in-costa-mesa-ca-13062929"><img style="border: 0; width: 94px;" src="http://seal-la.bbb.org/seals/blue-seal-120-61-experian-13062929.png" title="Click for the Business Review of www.freecreditscore.com, a Credit Reporting Agencies in Costa Mesa CA" alt="Click for the Business Review of www.freecreditscore.com, a Credit Reporting Agencies in Costa Mesa CA" /></a></div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerContainer" class="clearFix">
+    <div id="footer">
+        <div class="linksContainer">
+            <div>
+                <div class="copyrightContainer">
+                    &copy; 2015 ConsumerInfo.com, Inc.
+                </div>
+                <div class="navigationContainer clearFix">
+                    <ul>
+                        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/ad-targeting-policy">Ad Targeting Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="logoImageContainer">
+            <img src="/Images/Logos/experian-dkbk-1.svg" />
+        </div>
+    </div>
+</div>
+</div>    
+
+    <!-- Load all bundled Javascript files -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>(window.jQuery)||document.write('<script src="/bundles/jquery"><\/script>');</script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script>(window.jQuery.ui)||document.write('<script src="/bundles/jquery-ui"><\/script>');</script>
-
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script>($.fn.modal)||document.write('<script src="/bundles/bootstrap"><\/script>');</script>
 
-	
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
-<script>(window.angular)||document.write('<script src="/bundles/angularJS"><\/script>');</script>
+    <script src="/bundles/respond?v=sbFboOuLdtmhD0n_uFzollmELtGkPsU5cTntphHFa-01"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-animate.min.js"></script>
-<script>((function() { try { window.angular.module('ngAnimate'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-animate"><\/script>');</script>
+    <!-- Load all partial pages Javascript files -->
+    
+    <!-- 3rd Party Scripts -->
+    <!--move into bundle-->
+    <script>
+        var videos = [
+            { "id": "video1", "title": "Can You Monitor a Credit Report for Minors? – Credit in 60 Seconds", "date": "Mon Jun 01 2015", "description": "Do you need to check a credit report for a child? Guardians should check to make sure there are no signs of identity theft, to protect the child’s future.", "url": "https://www.youtube.com/embed/6gG96N2gycQ" },
+            { "id": "video2", "title": "Does Getting Denied for Auto Financing Affect Your Credit? – Credit in 60 Seconds", "date": "Mon Jun 01 2015", "description": "You’ve been declined for auto financing. What comes next? We’ll tell you how much impact to expect on the credit side.", "url": "https://www.youtube.com/embed/AHV2lkXLBdA" },
+            { "id": "video3", "title": "How to Budget for a Mortgage – Credit in 60 Seconds", "date": "Mon Jun 01 2015", "description": "How to budget for a mortgage is a real concern. Make sure you approach it with a solid plan, and good information.", "url": "https://www.youtube.com/embed/8XOxeiySMO8" },
+            { "id": "video4", "title": "Does It Hurt Your Credit to Prequalify Online for a Real Estate Loan? – Credit in 60 Seconds", "date": "Mon Jun 01 2015", "description": "Does prequalifying online for a real estate loan do damage to your credit? Let’s start by understanding what it means to prequalify for a loan.", "url": "https://www.youtube.com/embed/VT6IzyE_Wgs" },
+            { "id": "video5", "title": "What Hurts Your Credit Score More: Bankruptcy or Debt Settlement? – Credit in 60 Seconds", "date": "Mon Jun 01 2015", "description": "Between a bankruptcy or debt settlement, which can damage your credit more? Neither should be entered into lightly; start your thought process here.", "url": "https://www.youtube.com/embed/kS9xbYQGdvo" }
+        ];
 
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-cookies.min.js"></script>
-<script>((function() { try { window.angular.module('ngCookies'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-cookies"><\/script>');</script>
+        $(document).ready(function () {
+            $.each(videos, function (i, item) {
+                $('.videoList .media-list').append('<li class="media"><div class="media-left"><a class="' + videos[i].id + '"><img class="media-object" src="images/placeholder.png"></a></div><div class="media-body"><h4 class="media-heading">' + videos[i].title + '</h4></div></li>');
 
-	<script src="/bundles/angular-loader?v=FLXktyTqCgL7n_RUR7hTCJB2wCUIYabq5PcINNmnBJU1"></script>
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-resource.min.js"></script>
-<script>((function() { try { window.angular.module('ngResource'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-resource"><\/script>');</script>
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.min.js"></script>
-<script>((function() { try { window.angular.module('ngRoute'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-route"><\/script>');</script>
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-sanitize.min.js"></script>
-<script>((function() { try { window.angular.module('ngSanitize'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-sanitize"><\/script>');</script>
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-touch.min.js"></script>
-<script>((function() { try { window.angular.module('ngTouch'); } catch(e) { return false; } return true; })())||document.write('<script src="/bundles/angular-touch"><\/script>');</script>
-
-	<script src="/bundles/otherAngular?v=JgJkdGtilKnQaJN2icaBKew7gaJJbuMnb-CvguE1vU01"></script>
-
-	<script src="/bundles/flot?v=Ajx3UHlMvs5pB4PJWd0S3oAvrk0sviLRnkt7qiu_kuk1"></script>
-
-	<script src="/bundles/misc?v=UCMGz3uGg-EpbYjiR1BRcHO_p2v9lXVjjL2B1OMv6KE1"></script>
-
-	<script src="/bundles/jaydata?v=5NP5eqO19Yw8f1wFz3SeVcdg90HGVrqpoj_Lv3SAGvs1"></script>
-
-
-	<!-- Load all of the shared modules -->
-	<script src="/bundles/app/ectCommon?v=PZmt8d145Tl86i6nB-gvlx3CggA-87G8gjRHj145BPE1"></script>
-
-	<script src="/bundles/app/ectData?v=aIw8Vw4pzpygEp8T5H6G4jtpgcEP_wfELhR9eFPof7M1"></script>
-
-	<script src="/bundles/app/ectOrderFunnel?v=mfTEr4XIlrWG_oNj_g7s87WOTgc_cgGFTFS4Tl91dnc1"></script>
-
-	<script src="/bundles/app/ectShared?v=A3DQb5qkScbxI_6mn6OK2tJMjd3QImgV14LjrYTmgL01"></script>
-
-	<script src="/bundles/app/ecsWidgets?v=kvyPdLsw68f_hWh2fELVK7NvSnwDlTvBpj0R6bqGe1Q1"></script>
-
-	<script src="/bundles/app/ecsCreditWidgets?v=JlGd4nYwI-wo6Cs2O3ZK3EEeAMM5pPxWgenHo0crDrM1"></script>
-
-
-	<!-- Load all partial pages Javascript files -->
-	
-
-
-	<!-- 3rd Party Scripts -->
-	<!-- IOvation for Order 2 Page -->
-	<script language="javascript" src="//mpsnare.iesnare.com/snare.js"></script>
+                $('.' + videos[i].id).on('click', function () {
+                    $('.videoDisplay').html('<iframe width="554" height="391" src="' + videos[i].url + '" frameborder="0" allowfullscreen></iframe>');
+                    $('.videoInformation #title').html(videos[i].title);
+                    $('.videoInformation #date').html(videos[i].date);
+                    $('.videoInformation #description').html(videos[i].description);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
