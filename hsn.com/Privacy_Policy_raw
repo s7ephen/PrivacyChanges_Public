@@ -22,7 +22,7 @@
     
         <script src="//www.hsn.com/cassette.axd/script/5e3957de62ee0de38e8e14e0367559b3566a46be/legacypages3.js"></script>
     
-<!-- Build Time: 9/11/2015 1:55:21 PM -->
+<!-- Build Time: 9/11/2015 3:29:27 PM -->
 <link type="text/css" rel="stylesheet" href="http://www.hsn.com/legacy/css/cssHandler.ashx?css=/css/main.css&amp;FC=007ddc&amp;v252" />
 <title>Privacy Policy at HSN.com</title>
 <meta name="format-detection" content="telephone=no" />
@@ -37,7 +37,7 @@
 <link rel="stylesheet" href="http://www.hsn.com/legacy/css/ie7.css?v252" type="text/css" />
 <![endif]-->
 
-<!-- Web Server Num: HD32 -->
+<!-- Web Server Num: EC31 -->
 <link href="http://www.hsn.com/favicon.ico" rel="SHORTCUT ICON" />
 <link type="text/css" rel="StyleSheet" href="http://www.hsn.com/legacy/css/cssHandler.ashx?css=/css/Breadcrumbs.css&v252" type="text/css" />
 <link type="text/css" rel="StyleSheet" href="http://www.hsn.com/legacy/css/cssHandler.ashx?css=/css/LeftNav.css&v252" type="text/css" />
@@ -65,7 +65,7 @@ Hsn.Com = (function() {
 	 var _environment = '';
 	 var _scene7ImageUrl = 'http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/';
 	 var _boxNumber = '';
-	 var _pageTime = '2015/09/11 13:55:21';
+	 var _pageTime = '2015/09/11 15:29:27';
 	 var _cmValues = '';
 	 var _procAuth = false;
 	 var _procimgSrc = 'http://img.hsni.com/images/formatting/process_checkout.gif';
@@ -97,16 +97,9 @@ Hsn.Com = (function() {
 window.name="";
 
 </script>
-<meta charset='utf-8' />
-                  <script type="text/javascript">
-                    var AKSB=AKSB||{};AKSB.q=[];AKSB.mark=function(c,a){AKSB.q.push(["mark",c,a||(new Date).getTime()])};AKSB.measure=function(c,a,b){AKSB.q.push(["measure",c,a,b||(new Date).getTime()])};AKSB.done=function(c){AKSB.q.push(["done",c])};AKSB.mark("firstbyte",(new Date).getTime());
-                    AKSB.prof={custid:"57452",ustr:"",originlat:0,clientrtt:2,ghostip:"69.31.17.14",ipv6:false,pct:10,xhrtest:false,clientip:"52.2.142.173",requestid:"39de1ca",protocol:"",akM:"b",akN:"ae"};
-                    (function(c){var a=document.createElement("iframe");a.src="javascript:false";(a.frameElement||a).style.cssText="width: 0; height: 0; border: 0; display: none";var b=document.getElementsByTagName("script"),b=b[b.length-1];b.parentNode.insertBefore(a,b);a=a.contentWindow.document;b=String.fromCharCode;c=b(60)+"body onload=\"var js = document.createElement('script');js.id = 'aksb-ifr';js.src = '"+c+"';document.body.appendChild(js);\""+b(62);a.open().write(c);a.close()})(("https:"===document.location.protocol?
-                    "https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js");
-                  </script>
-                  </head>
+<meta charset='utf-8' /></head>
 <body id="_PageBody"><span></span>
-    <div id="_serverName" style="position: absolute; left: 0px; top: 0px; height: 20px; width: 20px; z-index: 50001;" title="HD32">&nbsp;</div>
+    <div id="_serverName" style="position: absolute; left: 0px; top: 0px; height: 20px; width: 20px; z-index: 50001;" title="EC31">&nbsp;</div>
     
 <header>
     
@@ -612,51 +605,54 @@ jQuery(document).ready(function($) {
 	
 	// 06/04/15 - TS Add presale to flyout
 	// Fill TS flyout with data
-	$.ajax(
-		"/headerfooter/todaysspecial",
-		{
-			cache: false,
-			data: {},
-			dataType: 'html',
-			success: function (data, status, xhr) {
-				var myFlyout = jQuery('#todayspecial .flyout')
-				
-				myFlyout.html(data)
-				
-				// Make TS Horizontal
-				myFlyout.addClass("mk_TsFlyout")
-				var Tmp = myFlyout.find(".body .ts > div")
-				Tmp.eq(0).css("clear", "none").css({cssClear: "none", width: "36%", padding: "3%"})
-				Tmp.eq(1).css("clear", "none").css({cssClear: "none", width: "55%", padding: "3% 3% 3% 0%"})
-				
-				myFlyout.find(".body .ts").append($("<div style='clear: both; float: none;'>"))
-				
-				// Add TS Presales
-				var mkPresales = $("#mk_FlyoutPresaleContainer")
-				myFlyout.append(mkPresales)
-				mkPresales.show()
-				
-				// Add TS Header
-				$("<span>TODAY'S SPECIAL: </span>").insertBefore($("#TSBug_PD_Amount"))
-			},
-		}
-	);
-	
-	// Find existing TS flyout, and annihilate it
-	$(HSN.Instance().FlyoutManager.Flyouts).each(function(){
-		if (this.Url == "/headerfooter/todaysspecial")
-			this.RemoveHandlers()
-	})
-	
-	// Replace the flyout with a new, non ajax version
-	var NewFlyout = new HSN.Flyout({
-		closeClass: 'ir',
-		trigger: '#todayspecial',
-		triggerEvent: HSN.Flyout.TRIGGER_EVENT.HOVER,
-		flyout: '#todayspecial .flyout'
-	});
-	
-	HSN.Instance().FlyoutManager.Add(NewFlyout)
+	if (window.HSN && HSN.Instance && HSN.Instance() && HSN.Instance().FlyoutManager && (window.location.hostname.indexOf("community") < 0))
+	{
+		$.ajax(
+			"/headerfooter/todaysspecial",
+			{
+				cache: false,
+				data: {},
+				dataType: 'html',
+				success: function (data, status, xhr) {
+					var myFlyout = jQuery('#todayspecial .flyout')
+					
+					myFlyout.html(data)
+					
+					// Make TS Horizontal
+					myFlyout.addClass("mk_TsFlyout")
+					var Tmp = myFlyout.find(".body .ts > div")
+					Tmp.eq(0).css("clear", "none").css({cssClear: "none", width: "36%", padding: "3%"})
+					Tmp.eq(1).css("clear", "none").css({cssClear: "none", width: "55%", padding: "3% 3% 3% 0%"})
+					
+					myFlyout.find(".body .ts").append($("<div style='clear: both; float: none;'>"))
+					
+					// Add TS Presales
+					var mkPresales = $("#mk_FlyoutPresaleContainer")
+					myFlyout.append(mkPresales)
+					mkPresales.show()
+					
+					// Add TS Header
+					$("<span>TODAY'S SPECIAL: </span>").insertBefore($("#TSBug_PD_Amount"))
+				},
+			}
+		);
+		
+		// Find existing TS flyout, and annihilate it
+		$(HSN.Instance().FlyoutManager.Flyouts).each(function(){
+			if (this.Url == "/headerfooter/todaysspecial")
+				this.RemoveHandlers()
+		})
+		
+		// Replace the flyout with a new, non ajax version
+		var NewFlyout = new HSN.Flyout({
+			closeClass: 'ir',
+			trigger: '#todayspecial',
+			triggerEvent: HSN.Flyout.TRIGGER_EVENT.HOVER,
+			flyout: '#todayspecial .flyout'
+		});
+		
+		HSN.Instance().FlyoutManager.Add(NewFlyout)
+	}
 	// END: 06/04/15 - TS Add presale to flyout
 });
 </script>
@@ -1200,7 +1196,7 @@ var scFlashObj='0';
 var scEnvironment='';
 var scScene7ImageURL='http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/';
 var scBoxNumber='';
-var scPageTime ='2015/09/11 13:55:21';
+var scPageTime ='2015/09/11 15:29:27';
 var cmValues='';
 var ProcAuth='False';
 var ProcimgSrc='http://img.hsni.com/images/formatting/process_checkout.gif';
@@ -1880,7 +1876,7 @@ return qs[1];}
 var refUl = unescape(getQuerystring('OrgRef'));
 if(refUl.length > 0) {
 cmCreateManualPageviewTag("Customer Service | Company Information | Privacy Policy","OTCS",document.URL,refUl);}
-else {cmCreatePageviewTag("Customer Service | Company Information | Privacy Policy","OTCS","","","-_--_--_--_-TestA-_-","");}
+else {cmCreatePageviewTag("Customer Service | Company Information | Privacy Policy","OTCS","","","-_--_--_--_-TestB-_-","");}
 </script>
     <img src="http://www.hsn.com/legacy/code/pix.aspx" id="pixtract" />
     
@@ -1916,10 +1912,10 @@ else {cmCreatePageviewTag("Customer Service | Company Information | Privacy Poli
                 <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/rosetta-stone-language-learning-system-levels-1-5/7724827">Rosetta Stone Language Learning System - Levels 1 - 5</a>
             </li>
             <li class="highest-rated">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/curtis-stone-durapan-nonstick-2pk-12-covered-frypans/7658663"><img alt="Curtis Stone DuraPan Nonstick 2pk 12&quot; Covered Frypans" src="//i02.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/curtis-stone-durapan-nonstick-2pk-12-covered-frypans-d-20150904084555897~400775_001.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/curtis-stone-durapan-nonstick-2pk-12-covered-frypans/7658663"></a>
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/glycolic-gommage-exfoliating-facial/10069112"><img alt="Glycolic Gommage Exfoliating Facial" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/serious-skincare-glycolic-gommage-facial-autoship-d-2012080717042509~213682.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/glycolic-gommage-exfoliating-facial/10069112"></a>
                 <div class="header">5-star review</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/curtis-stone-durapan-nonstick-2pk-12-covered-frypans/7658663">Curtis Stone DuraPan Nonstick 2pk 12&quot; Covered Frypans</a>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/glycolic-gommage-exfoliating-facial/10069112">Glycolic Gommage Exfoliating Facial</a>
             </li>
             <li class="most-favorited">
                 <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/rosetta-stone-language-learning-system-levels-1-5/7724827"><img alt="Rosetta Stone Language Learning System - Levels 1 - 5" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/rosetta-stone-language-learning-system-levels-1-5-d-20150225181721743~417547.jpg" width="54" height="54"></a>
@@ -1928,58 +1924,58 @@ else {cmCreatePageviewTag("Customer Service | Company Information | Privacy Poli
                 <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/rosetta-stone-language-learning-system-levels-1-5/7724827">Rosetta Stone Language Learning System - Levels 1 - 5</a>
             </li>
             <li class="best-seller">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/jam-transit-bluetooth-earbuds-with-speakerphone/7438982"><img alt="Jam Transit Bluetooth Earbuds with Speakerphone" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/jam-transit-bluetooth-earbuds-with-speakerphone-d-2014061015204428~345858_001.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/jam-transit-bluetooth-earbuds-with-speakerphone/7438982"></a>
-                <div class="header">best seller</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/jam-transit-bluetooth-earbuds-with-speakerphone/7438982">Jam Transit Bluetooth Earbuds with Speakerphone</a>
-            </li>
-            <li class="highest-rated">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-team-thematic-zombie-figurine/10070170"><img alt="NFL Team Thematic Zombie Figurine" src="//i03.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/nfl-team-thematic-zombie-figurine-broncos-d-20150826153911783~7768359w.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-team-thematic-zombie-figurine/10070170"></a>
-                <div class="header">5-star review</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-team-thematic-zombie-figurine/10070170">NFL Team Thematic Zombie Figurine</a>
-            </li>
-            <li class="most-favorited">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/travelsox-coolmax-padded-compression-sock/7572162"><img alt="TravelSox® CoolMax Padded Compression Sock" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/travelsox-coolmax-padded-compression-sock-d-20140829153754797~375864_001.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/travelsox-coolmax-padded-compression-sock/7572162"></a>
-                <div class="header">most favorited</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/travelsox-coolmax-padded-compression-sock/7572162">TravelSox® CoolMax Padded Compression Sock</a>
-            </li>
-            <li class="best-seller">
                 <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/kitchen-master-set-of-5-smart-lids/7717688"><img alt="Kitchen Master Set of 5 Smart Lids" src="//i02.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/kitchen-master-set-of-5-smart-lids-d-2015012615421585~415946.jpg" width="54" height="54"></a>
                 <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/kitchen-master-set-of-5-smart-lids/7717688"></a>
                 <div class="header">best seller</div>
                 <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/kitchen-master-set-of-5-smart-lids/7717688">Kitchen Master Set of 5 Smart Lids</a>
             </li>
             <li class="highest-rated">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/prai-ageless-best-sellers-collection/7847542"><img alt="PRAI Ageless Best Sellers Collection" src="//i03.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/prai-ageless-best-sellers-collection-d-2015090409391702~440448.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/prai-ageless-best-sellers-collection/7847542"></a>
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/daily-concepts-your-konjac-sponge-turmeric/7675944"><img alt="Daily Concepts Your Konjac Sponge - Turmeric" src="//i02.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/daily-concepts-your-konjac-sponge-turmeric-d-2015013015233321~403925.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/daily-concepts-your-konjac-sponge-turmeric/7675944"></a>
                 <div class="header">5-star review</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/prai-ageless-best-sellers-collection/7847542">PRAI Ageless Best Sellers Collection</a>
-            </li>
-            <li class="most-favorited">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607"><img alt="ALCATEL ONETOUCH Watch with Fitness/Phone Notifications" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/alcatel-onetouch-watch-with-fitnessphone-notifications-d-2015082817254246~452495.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607"></a>
-                <div class="header">most favorited</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607">ALCATEL ONETOUCH Watch with Fitness/Phone Notifications</a>
-            </li>
-            <li class="best-seller">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607"><img alt="ALCATEL ONETOUCH Watch with Fitness/Phone Notifications" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/alcatel-onetouch-watch-with-fitnessphone-notifications-d-2015082817254246~452495.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607"></a>
-                <div class="header">best seller</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/alcatel-onetouch-watch-with-fitnessphone-notifications/7896607">ALCATEL ONETOUCH Watch with Fitness/Phone Notifications</a>
-            </li>
-            <li class="highest-rated">
-                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-snap-shot-polar-fleece-full-zip-hoodie/7757900"><img alt="NFL Snap Shot Polar Fleece Full Zip Hoodie" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/nfl-snap-shot-polar-fleece-full-zip-hoodie-d-20150827173845583~7757900w.jpg" width="54" height="54"></a>
-                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-snap-shot-polar-fleece-full-zip-hoodie/7757900"></a>
-                <div class="header">5-star review</div>
-                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-snap-shot-polar-fleece-full-zip-hoodie/7757900">NFL Snap Shot Polar Fleece Full Zip Hoodie</a>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/daily-concepts-your-konjac-sponge-turmeric/7675944">Daily Concepts Your Konjac Sponge - Turmeric</a>
             </li>
             <li class="most-favorited">
                 <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/hp-156-touch-intel-quad-core-8gb1tb-win-10-laptop/7874228"><img alt="HP 15.6&quot; Touch Intel Quad-Core, 8GB/1TB Win 10 Laptop" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/hp-156-touch-intel-quad-core-8gb1tb-win-10-laptop-d-2015081313525465~445690.jpg" width="54" height="54"></a>
                 <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/hp-156-touch-intel-quad-core-8gb1tb-win-10-laptop/7874228"></a>
                 <div class="header">most favorited</div>
                 <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/hp-156-touch-intel-quad-core-8gb1tb-win-10-laptop/7874228">HP 15.6&quot; Touch Intel Quad-Core, 8GB/1TB Win 10 Laptop</a>
+            </li>
+            <li class="best-seller">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-automatic-eyebrow-pencil-duo/10067344"><img alt="ybf Automatic Eyebrow Pencil Duo" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/ybf-automatic-eyebrow-pencil-duo-autoship-d-2010081019001786~961264.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-automatic-eyebrow-pencil-duo/10067344"></a>
+                <div class="header">best seller</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-automatic-eyebrow-pencil-duo/10067344">ybf Automatic Eyebrow Pencil Duo</a>
+            </li>
+            <li class="highest-rated">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/sparkle-sparkle-jewelry-cleaning-travel-kit-with-case/7636818"><img alt="Sparkle Sparkle® Jewelry Cleaning Travel Kit with Case" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/sparkle-sparkle-jewelry-cleaning-travel-kit-with-case-d-20141202165635207~395152_001.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/sparkle-sparkle-jewelry-cleaning-travel-kit-with-case/7636818"></a>
+                <div class="header">5-star review</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/sparkle-sparkle-jewelry-cleaning-travel-kit-with-case/7636818">Sparkle Sparkle® Jewelry Cleaning Travel Kit with Case</a>
+            </li>
+            <li class="most-favorited">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086"><img alt="ybf Beauty Kissable Coral Lipstick and Lip Gloss" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/ybf-beauty-kissable-coral-lipstick-and-lip-gloss-d-20150825113738787~444367.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086"></a>
+                <div class="header">most favorited</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086">ybf Beauty Kissable Coral Lipstick and Lip Gloss</a>
+            </li>
+            <li class="best-seller">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086"><img alt="ybf Beauty Kissable Coral Lipstick and Lip Gloss" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/ybf-beauty-kissable-coral-lipstick-and-lip-gloss-d-20150825113738787~444367.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086"></a>
+                <div class="header">best seller</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:BestSeller" manual_cm_sp="Global-_-Footer-_-Trending:BestSeller" href="/products/ybf-beauty-kissable-coral-lipstick-and-lip-gloss/7869086">ybf Beauty Kissable Coral Lipstick and Lip Gloss</a>
+            </li>
+            <li class="highest-rated">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-3-in-1-t-shirt-combo/10070082"><img alt="NFL 3-in-1 T-Shirt Combo" src="//i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/nfl-3-in-1-t-shirt-combo-patriots-d-20150731104442177~7749539w.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-3-in-1-t-shirt-combo/10070082"></a>
+                <div class="header">5-star review</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:5StarReview" manual_cm_sp="Global-_-Footer-_-Trending:5StarReview" href="/products/nfl-3-in-1-t-shirt-combo/10070082">NFL 3-in-1 T-Shirt Combo</a>
+            </li>
+            <li class="most-favorited">
+                <a class="product-image" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/joy-shades-readers-velvety-chic-11-piece-glamour-set/7534112"><img alt="JOY SHADES Readers Velvety Chic 11-piece Glamour Set" src="//i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/joy-shades-readers-velvety-chic-11-piece-glamour-set-d-2014101618155935~363956.jpg" width="54" height="54"></a>
+                <a class="icon" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/joy-shades-readers-velvety-chic-11-piece-glamour-set/7534112"></a>
+                <div class="header">most favorited</div>
+                <a class="title" manual_cm_re="Global-_-Footer-_-Trending:MostFavorited" manual_cm_sp="Global-_-Footer-_-Trending:MostFavorited" href="/products/joy-shades-readers-velvety-chic-11-piece-glamour-set/7534112">JOY SHADES Readers Velvety Chic 11-piece Glamour Set</a>
             </li>
 </ul>
 <script>
