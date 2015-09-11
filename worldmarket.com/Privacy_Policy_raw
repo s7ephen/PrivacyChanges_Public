@@ -786,7 +786,7 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 			</div>
 			<div class="globalNavTop">
 				<div class="fLeft promoSection2">
-					<!-- start wknn-promo-kiosk-template.html | rev 07.27.2015 ekw  | rev 08.05.2015 ekw | rev 08.07.2015 ekw -->
+					<!-- start wknn-promo-kiosk-template.html | rev 07.27.2015 ekw  | rev 08.05.2015 ekw | rev 08.07.2015 ekw | 09.11.2015 ekw -->
 <style>
 #cpwm_promo2 {}
 #cpwmMarketingPopup .closebutton {background:url(/images/misc/blank.gif) no-repeat; position:absolute; right:3px; top:3px; width:75px; height:25px; display:block; z-index:1000}
@@ -795,6 +795,7 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 </style>
 <script type="text/javascript" language="javascript">
 (function(){
+	window.isKioskMode = false;
 	var isKiosk = false; 
 	var popupIsActive = false;       // [step 0] set to true if current CPWM promo includes a popup; otherwise set to false
 	var newCookie = "2015wk22";      // [step 1a] set standard promo cookie name with each new promo
@@ -810,9 +811,11 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 	// Test whether we are running on a store kiosk
 	if (jQuery.cookie(kioskCookie)) {
 		isKiosk = true;
+		window.isKioskMode = true;
 	} else if (location.search.indexOf("code=WMNYSHIP") >-1 ) {
 		isKiosk = true;
 		jQuery.cookie(kioskCookie, "seen", { path: "/", expires: 365});
+		window.isKioskMode = true;
 	}
 
 	// If we are in Kiosk mode, set up kiosk image and disclaimer.
@@ -1521,7 +1524,7 @@ http://www.omniture.com -->
     };
 
     function getSerializationID() {
-    	return "6940042";
+    	return "3496842";
     };
 </script>
 <!-- script language="JavaScript" type="text/javascript" src="/omniture/s_code.js"></script --> <!-- WOMA-2441 -->
