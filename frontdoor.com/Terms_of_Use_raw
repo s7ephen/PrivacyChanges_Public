@@ -44,9 +44,9 @@
 	<script type="text/javascript">
 // <![CDATA[
 document.write('<script type="text/javascript" src="/_layouts/1033/init.js?rev=7rurhilS20pNrVcviE3PbA%3D%3D"></' + 'script>');
-document.write('<script type="text/javascript" src="/ScriptResource.axd?d=-ikBxGOoUmOWT8uPW2JAXzBirakK_tzbvtyYN64kEYFqYBwJwzoaxJrZ25wbA48sjzELOD6-r51ellC2w1g6l8SLP6Y3Wo7Qo3qJizA9wWkhNCwwumXifTMd_2lDh6EOg2cnRpfP2sq3JUuXx4nx6RUYMb01&amp;t=ffffffffb868b5f4"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=4S-TnPx4--SHeIgzZcjU8Rq3eLFpLtMSM7B-6cqvX4eg-aZ8XwgxyqpnfIXRqsfG-J_LbgsjsPi7fqQrk4wYy31fa_cpoxEvbrpUSYW-9N9LVager5xM6SxcvAz941HOJbouoc3496xKxMsfhoNfUMKs_SE1&amp;t=ffffffffb868b5f4"></' + 'script>');
 document.write('<script type="text/javascript" src="/_layouts/blank.js?rev=QGOYAJlouiWgFRlhHVlMKA%3D%3D"></' + 'script>');
-document.write('<script type="text/javascript" src="/ScriptResource.axd?d=V3EAU9uYQmD-n1pdrCQnssel0ktApaOSFal53rRAzjb170ffcrUisrvPtBPHJjA_tOHa40DFnrBTMklAvgLS4k3y37mnM_axiA5gXlWKgJuocYxOWlFlMO2q0vbArPSDG7P74w2jQ-OYUEuF-MVOqiTsNO2kWVP_SaRmouxvebYz1r5L0&amp;t=ffffffffb868b5f4"></' + 'script>');
+document.write('<script type="text/javascript" src="/ScriptResource.axd?d=pS1CnaHk8IeDkHNk5b4TILKrsJwORIjWUmcaIlecIHxAy5lYaFCaTos0BEOv1v631jztchQgPEfZQluSUJ7ZXi9r6jWlpbo61ZpizXzaBGSYo44c4FqtnAI7Z_00MIQMrQyMzQeD6PS6WLqWJEUpMCS-ZA06eX9YpMwvv48OFzh0pLh00&amp;t=ffffffffb868b5f4"></' + 'script>');
 // ]]>
 </script>
 
@@ -124,7 +124,7 @@ document.write('<script type="text/javascript" src="/ScriptResource.axd?d=V3EAU9
 <input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0x4D5421768B68BEF91C6CF4BFC2C621A35236E5E64C9352247C9967961A85D08D62FE9215E12C01A17C3CE618ADDF7BCABD94C2DE22D76B53864F9E60D5495A07,10 Sep 2015 18:25:02 -0000" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0x16CECDFAA32A4FE24770FDDE8E6B97A50A4CE12322F73AE697CA11753A019BF3D49CDC2F033FACCD6144143B1548D498A1F9B4FC22F2F3BEF134FC507565804D,11 Sep 2015 20:43:57 -0000" />
 <input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
 <input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
 <input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
@@ -794,7 +794,8 @@ else
 }
 
 function SEF02AB3A_OSBEK(event1) { 
-if((event1.which == 10) || (event1.which == 13))
+var kCode = String.fromCharCode(event1.keyCode);
+if(kCode == "\n" || kCode == "\r")
 {   
 SEF02AB3A_Submit();return false;
 }
@@ -889,7 +890,13 @@ function init_zz1_TopNavigationMenuV4() {$create(SP.UI.AspMenu, null, null, null
 	<!-- end Additional Footer Placeholder -->
 	
 	<!-- Browser Check for Warning (warn users of old browsers that they need to upgrade) -->
-	
+	<script type="text/javascript">
+                        var dMessage = "Your Web browser will have problems displaying this web page. Changes to the site may not function properly. For a better experience, please update your browser to its latest version.";
+                        var loadWarningDialog = function () {
+                            alert(dMessage);
+                        }
+                        window.setTimeout(loadWarningDialog, 0);
+                        </script>
 	<!-- end Browser Check for Warning -->
 	
 	<!-- Omniture tracking -->
