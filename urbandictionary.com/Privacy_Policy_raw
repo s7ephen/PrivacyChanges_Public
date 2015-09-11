@@ -325,7 +325,7 @@
 <div class='row'>
 <div class='columns search-and-actions'>
 <div class='main-search'>
-<form accept-charset="UTF-8" action="/search.php" method="post"><div style="display:none"><input name="authenticity_token" type="hidden" value="Ybo61Kk7DjkU7fw9f2yZxHi1I/dYkxY8tqrxq415q9Q=" /></div>
+<form accept-charset="UTF-8" action="/search.php" method="post"><div style="display:none"><input name="authenticity_token" type="hidden" value="088jULLLojXDvf7yOJoAR2uWe5zNuPGQdp/WcBPGURk=" /></div>
 <input autocapitalize="off" autocomplete="off" autocorrect="off" class="autocomplete form-control" id="term" name="term" placeholder="Type any word here..." spellcheck="false" tabindex="1" type="text" />
 </form>
 
@@ -537,16 +537,14 @@ Copyright © 2008 Urban Dictionary, LLC
 </div>
 </div>
 </div>
-<div class='reveal-modal' data-reveal='' id='remote_modal'></div>
-
+<div id="add-modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" data-options="close_on_background_click:false" aria-hidden="true" role="dialog">
+</div>
 <noscript>
 <div style='display: none;'>
 <img alt='Quantcast' height='1' src='//pixel.quantserve.com/pixel/p-77H27_lnOeCCI.gif' width='1'>
 </div>
 </noscript>
 
-<div id="add-modal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" data-options="close_on_background_click:false" aria-hidden="true" role="dialog">
-</div>
 <div class='reveal-modal' data-reveal='' id='subscribe_modal'>
 <h1>Free Daily Email</h1>
 <p class='text-center' id='subscribe_status'>
@@ -585,6 +583,8 @@ Email Address
 <p class='text-center'>Emails are sent from daily@urbandictionary.com. We'll never spam you.</p>
 <a class='close-reveal-modal'>×</a>
 </div>
+
+<div class='reveal-modal' data-reveal='' id='remote_modal'></div>
 
 </body>
 </html>
