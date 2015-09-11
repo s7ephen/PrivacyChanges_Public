@@ -246,9 +246,10 @@ dataLayer[0]['prodid'] = '';
 						<li>
 							Customer Service:
 						</li>
-						<li><span>
-	Chat Unavailable
-</span>						</li>
+						<li><a id="rn_sccl_header_Link" href="javascript:void(0);" onclick="sccl_header.chatLinkClicked();">
+	<i class="icon-comments"></i>
+	Live Chat
+</a>						</li>
 						<li>
 							<a href="http://www.thinkgeek.com/help">
 								<i class="icon-question-circle"></i>
@@ -1569,9 +1570,9 @@ dataLayer[0]['prodid'] = '';
 						<p class="caption-text">
 							Our helpful Live Support Monkeys are here to help through live online chat.
 						</p>
-						<p>								<span class="butt0n butt0n-orange butt0n-disabled butt0n-full">
-									Live Chat Unavailable
-								</span>						</p>
+						<p>								<a id="rn_sccl_help_Link" class="butt0n butt0n-orange butt0n-full" href="javascript:void(0);" onclick="sccl_help.chatLinkClicked();">
+									Chat With Someone Now
+								</a>						</p>
 					</div><!-- End #method-livechat -->
 
 				<div id="method-oldfashioned-wrapper">
@@ -1761,8 +1762,10 @@ $(function(){
 					</li>
 					<li>
 						<a href="http://www.thinkgeek.com/help/terms-of-use.shtml">Terms of Use</a>
-					</li>						<li>
-							<span>Live Chat Unavailable</span>
+					</li>						<li id="footer-livechat-container">
+							<a id="rn_sccl_footer_Link" href="javascript:void(0);" onclick="sccl_footer.chatLinkClicked();">
+								Live Chat
+							</a>
 						</li>				</ul>
 				
 			</div>
@@ -1955,7 +1958,7 @@ try{rkg_track_sid("thinkgeek");}catch(e){}
 
 </div>
 
-<!-- Brought to you by the letter Z and by the numbers -88, 150, 32, 150, and 2. And by http29... -->
+<!-- Brought to you by the letter Z and by the numbers -88, 150, 32, 150, and 2. And by http34... -->
 
 
 
@@ -2006,7 +2009,7 @@ try{rkg_track_sid("thinkgeek");}catch(e){}
 
 <script>
     var remote_addr = '52.2.142.173';
-    var webhead = 'www.thinkgeek.com/http29';
+    var webhead = 'www.thinkgeek.com/http34';
 
     // Writes Omniture Report Suite ID to topnav
     topnavOmniture('thinkgeek', ['#nav-top-primary', '#leftnav', '#nav-top-secondary']);
