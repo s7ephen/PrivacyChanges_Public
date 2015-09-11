@@ -80,7 +80,7 @@
     
     
     <script data-ad-site="slate" src="http://static.cdnslate.com/etc/designs/slate/js/libs/require.js"></script>
-    <script>requirejs.config({"baseUrl":"http://static.cdnslate.com/etc/designs/slate/js","waitSeconds":0,"paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min","modernizr":"/etc/designs/slate/js/libs/modernizr-2.6.1.min","announcements":"/etc/designs/slate/js/announcements","slate":"/etc/designs/slate/lib","hogan":"libs/hogan-2.0.0","facebook":"//connect.facebook.net/en_US/all","twitter":"//platform.twitter.com/widgets","livefyre":"//cdn.livefyre.com/Livefyre","brightcove":"https://sadmin.brightcove.com/js/BrightcoveExperiences","brightcovetracking":"/etc/designs/slate/js/brightcovetracking","mobileredirection":"libs/redirection_mobile_1.0.0.min","optimizely":"//cdn.optimizely.com/js/37441550","outbrain":"//widgets.outbrain.com/outbrain","shared":"http://static.cdnslate.com/etc/designs/shared/js","instafeed":"/etc/designs/slate/js/instafeed","campaigns":"http://campaigns.slate.com/campaigns/slate","clipboard":"libs/zeroclipboard/ZeroClipboard.min","tinypass":"https://cdn.tinypass.com/api/tinypass.min","rpxnow":window.location.protocol==='https:'?'https://rpxnow.com/load/login.slate.com?noext':'http://widget-cdn.rpxnow.com/load/login.slate.com?noext','promise':'requirejs-promise','youtube':"/etc/designs/slate/js/youtube",'youtubeapi':"https://www.youtube.com/iframe_api?noext","keywee":"https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min"},"shim":{"shared/devicemode":["modernizr"],"hcs/script":["jquery","modernizr","shared/devicemode"],"libs/jquery-plugins/jquery.browser":["jquery"],"hcs/plugins/jquery.transit":["jquery"],"hcs/plugins/SGFootnote.jquery":["jquery"],"hcs/plugins/SGSocialIcons.jquery":["jquery","hcs/script"],"hcs/plugins/SGNavDropdown.jquery":["jquery"],"hcs/plugins/SGComments.jquery":["jquery","hcs/script"],"hcs/plugins/SGRollup.jquery":["jquery","hcs/script"],"hcs/plugins/SGGlobalNav.jquery":["jquery","hcs/script"],"hcs/plugins/SGLightbox.jquery":["jquery"],"hcs/plugins/jQuery.highlighter":["jquery"],"hcs/libs/swipe":["jquery"],"hcs/libs/magnific":["jquery"],"hcs/plugins/jquery.swipebox":["jquery"],"hcs/plugins/SGBigSlider.jquery":["jquery","hcs/script","hcs/libs/swipe"],"hcs/plugins/jquery.placeholder.min":["jquery"],"libs/jquery-plugins/jquery.timeago":["jquery"],"libs/jquery-plugins/jquery.form":["jquery"],"libs/jquery-plugins/jquery.cookie":["jquery"],"libs/jquery-plugins/jquery.fittext":["jquery"],"libs/jquery-plugins/jquery.backgroundSize":["jquery"],"libs/jquery-plugins/jquery.flexslider":["jquery"],"libs/jquery-plugins/purl":["jquery"],"libs/jquery-plugins/jquery.colorbox":["jquery"],"libs/jquery-plugins/jquery.sticky":["jquery"],"libs/jquery-plugins/jquery.autoComplete":["jquery"],"libs/jquery-plugins/jquery.boxfit":["jquery"],"libs/jquery-plugins/jquery.dateformat":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.extra":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.bg":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.widget":["jquery"],"libs/jquery-plugins/jquery.storageapi":["jquery"],"libs/jquery-plugins/jquery.ba-throttle-debounce":["jquery"],"libs/jquery-plugins/jquery.visible":["jquery"],"libs/jquery-plugins/jquery.event.move":["jquery"],"libs/jquery-plugins/jquery.twentytwenty":["jquery"],"optimizely":["jquery"],"facebook":{deps:["site-bottom"],exports:"FB"},"livefyre":{exports:"fyre"},"brightcove":{"exports":"brightcove"},"mobileredirection":{"exports":"mobileredirection"},"hogan":{"exports":"Hogan"},"outbrain":{"exports":"OBR"}},map:{'*':{'css':'libs/require-css/css'}}});define("config",{"env":{"edit":false,"environment":"prod"},"janrain":{"siteConfig":{"enabled":true,"propertyId":"login.slate.com","raceConditionTimeout":+"500".replace(/\D/gi,''),"jsNamespace":"slateJanrain","userMessage":""},"appUrl":"https://login.slate.com","tokenUrl":"http://www.slate.com","capture":{"appId":"dbuhzej2qm7k436x6jg4qpef3f","captureServer":"https://profile.slate.com","clientId":"sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha","accessTokenLifeHours":+"730".replace(/\D/gi,''),"returnExperienceUserData":"uuid,displayName,email".split(",").map(function(item){return item.trim();}),"flowVersion":"HEAD"}},"myslate":{"site_base_domain":"slate.com","site_path":"/","site_url":"//www.slate.com/","myslate_domain":"//my.slate.com/","myslateTokenPath":"proxies/livefyre/token/","myslateJanrainTokenPath":"proxies/janrain/token/","myslateVerifyPath":"proxies/janrain/verify/","myslateSubscriptionsManagePath":"subscriptions/manage/","myslate_https":true,"fb_xd_receiver":"http://www.slate.com/xd_receiver.htm","fb_app_id":142011022527753,},"livefyre":{"network":"slate.fyre.co","jsSourceUrl":"http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js","siteId":"337720","loadTiming":"immediate"},"campaigns":{"domain":"campaigns.slate.com"},"site":{"site":"slate","title":"Slate","staticUrl":"http://static.cdnslate.com","omniturePrefix":"sl"},"data_domain":"http://www.slate.com/","page":{"articleId":"100121206008","roadblocked":false,"embeddedContent":false,"slateplus":false,"enableIssueCollector":false},"ads":{"enableHomepageViewability":false,"enableStoryViewability":true,"viewabilityEnabled":true,"viewability":{"leaderboardRollup":true,"leaderboardRollupDisabledList":"","refreshInterval":"30","refreshPolar":false,"testPageList":"news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts","lazyload":{"homepageBB":true,"leaderboard_2":true,"tiffTiles":true,"rightflex":true}}},"tinypass":{"jsNamespace":"slateTinypass","enabled":true,"globalTrackPageview":true,"aid":"Ey9jlGV74T","rid":"PW_54887721","paywallId":"54887721","sandbox":false,"contentCreated":"2012-12-06T13:21:58","contentAuthor":[],"contentSection":"briefing","janrainAppName":"the-slate-group-prod.us","ribbonText":"","excludedSocialDomains":"".split(",").filter(function(item){item=item.trim();return item!=='';}),"templates":{"offerId":"OFRO847YFZZ2","defaultOffer":"OT6TPCSI94W5","reminder":"OTN6JFAPXOAR","curtain":"OTM6Z4P8U1OE","template4of5":"OT8HXCA1TCPX","template5of5":"OT0V1T3EU4ZQ","faq":"OT8KJPE8Z2CA"},"internationalOffers":{"CA":{"offerId":"OFNFOLDOUBN1","defaultOffer":"OTFKE6VMUTRA","reminder":"OTU0BN1RZA59","curtain":"OT522QEFSKBU","template4of5":"OTQU7V4J5Q1T","template5of5":"OTKAIYO11WCR","faq":"OTSLZE94Q7NN"},"GB":{"offerId":"OF5X80KUVFDM","defaultOffer":"OT5GZFNKVV0D","reminder":"OTDIACLP1GJX","curtain":"OT0NLDL4GAER","template4of5":"OT4QBVKACCOA","template5of5":"OTGBVZ3P6CZ1","faq":"OTVZPJFCMPKK"},"Europe":{"offerId":"OF9H1SAODWS3","defaultOffer":"OT425B0PIB6C","reminder":"OT6BUP2JE3WW","curtain":"OTPJJ9ZUK744","template4of5":"OT4TEJCCMP4K","template5of5":"OT2GTODIR962","faq":"OT58VOY6CJFC"},"AU":{"offerId":"OF130IZX2JU6","defaultOffer":"OTJXP44SQVU8","reminder":"OT68H8QOVXWC","curtain":"OTGKO7WOSR97","template4of5":"OT0UEZXM0KFO","template5of5":"OTDW9GU7L9UW","faq":"OT7SRU05FQPZ"}}},"_log":[],"log":function(data){requirejs(["config"],function(config){if(typeof console!="undefined"&&typeof console.log!="undefined"){console.log(data);}
+    <script>requirejs.config({"baseUrl":"http://static.cdnslate.com/etc/designs/slate/js","waitSeconds":0,"paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min","modernizr":"/etc/designs/slate/js/libs/modernizr-2.6.1.min","announcements":"/etc/designs/slate/js/announcements","slate":"/etc/designs/slate/lib","hogan":"libs/hogan-2.0.0","facebook":"//connect.facebook.net/en_US/all","twitter":"//platform.twitter.com/widgets","livefyre":"//cdn.livefyre.com/Livefyre","brightcove":"https://sadmin.brightcove.com/js/BrightcoveExperiences","brightcovetracking":"/etc/designs/slate/js/brightcovetracking","mobileredirection":"libs/redirection_mobile_1.0.0.min","optimizely":"//cdn.optimizely.com/js/37441550","outbrain":"//widgets.outbrain.com/outbrain","shared":"http://static.cdnslate.com/etc/designs/shared/js","instafeed":"/etc/designs/slate/js/instafeed","campaigns":"http://campaigns.slate.com/campaigns/slate","clipboard":"libs/zeroclipboard/ZeroClipboard.min","tinypass":"https://cdn.tinypass.com/api/tinypass.min","rpxnow":window.location.protocol==='https:'?'https://rpxnow.com/load/login.slate.com?noext':'http://widget-cdn.rpxnow.com/load/login.slate.com?noext','promise':'requirejs-promise','youtube':"/etc/designs/slate/js/youtube",'youtubeapi':"https://www.youtube.com/iframe_api?noext","keywee":"https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min"},"shim":{"shared/devicemode":["modernizr"],"hcs/script":["jquery","modernizr","shared/devicemode"],"libs/jquery-plugins/jquery.browser":["jquery"],"hcs/plugins/jquery.transit":["jquery"],"hcs/plugins/SGFootnote.jquery":["jquery"],"hcs/plugins/SGSocialIcons.jquery":["jquery","hcs/script"],"hcs/plugins/SGNavDropdown.jquery":["jquery"],"hcs/plugins/SGComments.jquery":["jquery","hcs/script"],"hcs/plugins/SGRollup.jquery":["jquery","hcs/script"],"hcs/plugins/SGGlobalNav.jquery":["jquery","hcs/script"],"hcs/plugins/SGLightbox.jquery":["jquery"],"hcs/plugins/jQuery.highlighter":["jquery"],"hcs/libs/swipe":["jquery"],"hcs/libs/magnific":["jquery"],"hcs/plugins/jquery.swipebox":["jquery"],"hcs/plugins/SGBigSlider.jquery":["jquery","hcs/script","hcs/libs/swipe"],"hcs/plugins/jquery.placeholder.min":["jquery"],"libs/jquery-plugins/jquery.timeago":["jquery"],"libs/jquery-plugins/jquery.form":["jquery"],"libs/jquery-plugins/jquery.cookie":["jquery"],"libs/jquery-plugins/jquery.fittext":["jquery"],"libs/jquery-plugins/jquery.backgroundSize":["jquery"],"libs/jquery-plugins/jquery.flexslider":["jquery"],"libs/jquery-plugins/purl":["jquery"],"libs/jquery-plugins/jquery.colorbox":["jquery"],"libs/jquery-plugins/jquery.sticky":["jquery"],"libs/jquery-plugins/jquery.autoComplete":["jquery"],"libs/jquery-plugins/jquery.boxfit":["jquery"],"libs/jquery-plugins/jquery.dateformat":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.extra":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.bg":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.widget":["jquery"],"libs/jquery-plugins/jquery.storageapi":["jquery"],"libs/jquery-plugins/jquery.ba-throttle-debounce":["jquery"],"libs/jquery-plugins/jquery.visible":["jquery"],"libs/jquery-plugins/jquery.event.move":["jquery"],"libs/jquery-plugins/jquery.twentytwenty":["jquery"],"optimizely":["jquery"],"facebook":{deps:["site-bottom"],exports:"FB"},"livefyre":{exports:"fyre"},"brightcove":{"exports":"brightcove"},"mobileredirection":{"exports":"mobileredirection"},"hogan":{"exports":"Hogan"},"outbrain":{"exports":"OBR"}},map:{'*':{'css':'libs/require-css/css'}}});define("config",{"env":{"edit":false,"environment":"prod"},"janrain":{"siteConfig":{"enabled":true,"propertyId":"login.slate.com","raceConditionTimeout":+"500".replace(/\D/gi,''),"jsNamespace":"slateJanrain","userMessage":""},"appUrl":"https://login.slate.com","tokenUrl":"http://www.slate.com","capture":{"appId":"dbuhzej2qm7k436x6jg4qpef3f","captureServer":"https://profile.slate.com","clientId":"sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha","accessTokenLifeHours":+"730".replace(/\D/gi,''),"returnExperienceUserData":"uuid,displayName,email".split(",").map(function(item){return item.trim();}),"flowVersion":"HEAD"}},"myslate":{"site_base_domain":"slate.com","site_path":"/","site_url":"//www.slate.com/","myslate_domain":"//my.slate.com/","myslateTokenPath":"proxies/livefyre/token/","myslateJanrainTokenPath":"proxies/janrain/token/","myslateVerifyPath":"proxies/janrain/verify/","myslateSubscriptionsManagePath":"subscriptions/manage/","myslate_https":true,"fb_xd_receiver":"http://www.slate.com/xd_receiver.htm","fb_app_id":142011022527753,},"livefyre":{"network":"slate.fyre.co","jsSourceUrl":"http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js","siteId":"337720","loadTiming":"immediate"},"campaigns":{"domain":"campaigns.slate.com"},"site":{"site":"slate","title":"Slate","staticUrl":"http://static.cdnslate.com","omniturePrefix":"sl"},"data_domain":"http://www.slate.com/","page":{"articleId":"100121206008","roadblocked":false,"embeddedContent":false,"slateplus":false,"enableIssueCollector":false},"ads":{"enableHomepageViewability":false,"enableStoryViewability":true,"viewabilityEnabled":true,"viewability":{"leaderboardRollup":true,"leaderboardRollupDisabledList":"","refreshInterval":"30","refreshPolar":false,"testPageList":"news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts","lazyload":{"homepageBB":true,"leaderboard_2":true,"tiffTiles":true,"rightflex":true}}},"tinypass":{"jsNamespace":"slateTinypass","enabled":true,"globalTrackPageview":true,"aid":"Ey9jlGV74T","rid":"PW_54887721","paywallId":"54887721","sandbox":false,"contentCreated":"2012-12-06T13:21:58","contentAuthor":[],"contentSection":"briefing","janrainAppName":"the-slate-group-prod.us","ribbonText":"","excludedSocialDomains":"".split(",").filter(function(item){item=item.trim();return item!=='';}),"templates":{"offerId":"OFRO847YFZZ2","defaultOffer":"OT6TPCSI94W5","reminder":"OTN6JFAPXOAR","curtain":"OTM6Z4P8U1OE","template4of5":"OT8HXCA1TCPX","template5of5":"OT0V1T3EU4ZQ","faq":"OT8KJPE8Z2CA"},"internationalOffers":{"CA":{"offerId":"OFNFOLDOUBN1","defaultOffer":"OTFKE6VMUTRA","reminder":"OTU0BN1RZA59","curtain":"OT522QEFSKBU","template4of5":"OTQU7V4J5Q1T","template5of5":"OTKAIYO11WCR","faq":"OTSLZE94Q7NN"},"Europe":{"offerId":"OF9H1SAODWS3","defaultOffer":"OT425B0PIB6C","reminder":"OT6BUP2JE3WW","curtain":"OTPJJ9ZUK744","template4of5":"OT4TEJCCMP4K","template5of5":"OT2GTODIR962","faq":"OT58VOY6CJFC"},"AU":{"offerId":"OF130IZX2JU6","defaultOffer":"OTJXP44SQVU8","reminder":"OT68H8QOVXWC","curtain":"OTGKO7WOSR97","template4of5":"OT0UEZXM0KFO","template5of5":"OTDW9GU7L9UW","faq":"OT7SRU05FQPZ"},"GB":{"offerId":"OF5X80KUVFDM","defaultOffer":"OT5GZFNKVV0D","reminder":"OTDIACLP1GJX","curtain":"OT0NLDL4GAER","template4of5":"OT4QBVKACCOA","template5of5":"OTGBVZ3P6CZ1","faq":"OTVZPJFCMPKK"}}},"_log":[],"log":function(data){requirejs(["config"],function(config){if(typeof console!="undefined"&&typeof console.log!="undefined"){console.log(data);}
 config._log.push(data);});}});requirejs(['config'],function(config){var documentDomain='slate.com';if(config.janrain.siteConfig.enabled){documentDomain=config.myslate.site_base_domain;}
 document.domain=documentDomain;});var homepagePolarSpot='b1';</script>
     
@@ -123,7 +123,7 @@ s.t();});</script>
 
     
     <![if gte IE 8]>
-    <script type="text/javascript">requirejs(['jquery'],function($){var SlateNextbox={};SlateNextbox.data={'headline':'This Week\u2019s 2016 Twitter Power Rankings','subhead':'','url':'http:\/\/www.slate.com\/blogs\/the_slatest\/2015\/09\/11\/_2016_twitter_power_rankings_trump_s_cnn_stunt_works_while_cruz_and_huckabee.html','article_id':'227150911005','hasImage':true,'image':'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/the_slatest\/2015\/09\/11\/_2016_twitter_power_rankings_trump_s_cnn_stunt_works_while_cruz_and_huckabee\/487405120-republican-presidential-candidate-jim-gilmore-addresses.jpg.CROP.rectangle-small.jpg','section':'The Slatest','subscribe_type':'rubric'};$.data(window,"SlateNextbox",SlateNextbox);});</script>
+    <script type="text/javascript">requirejs(['jquery'],function($){var SlateNextbox={};SlateNextbox.data={'headline':'Serena Williams Loses in U.S. Open Semis in Massive Upset','subhead':'','url':'http:\/\/www.slate.com\/blogs\/the_slatest\/2015\/09\/11\/serena_williams_upset_unseeded_roberta_vinci_defeats_overwhelming_favorite.html','article_id':'227150911006','hasImage':true,'image':'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/the_slatest\/2015\/09\/11\/serena_williams_upset_unseeded_roberta_vinci_defeats_overwhelming_favorite\/487766558.jpg.CROP.rectangle-small.jpg','section':'The Slatest','subscribe_type':'rubric'};$.data(window,"SlateNextbox",SlateNextbox);});</script>
     <![endif]>
     
 
@@ -1725,8 +1725,6 @@ Life</header>
     
     
     
-      
-    
     
         
             
@@ -1743,27 +1741,47 @@ Life</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/atlas_obscura/2015/09/11/the_phenomenon_of_the_zaragoza_stove_goblin_was_blamed_on_unconscious_ventriloquism/image.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/atlas_obscura/2015/09/11/the_phenomenon_of_the_zaragoza_stove_goblin_was_blamed_on_unconscious_ventriloquism/image.jpg.CROP.promo-medium2.jpg">
-            <a href="http://www.slate.com/blogs/atlas_obscura/2015/09/11/the_phenomenon_of_the_zaragoza_stove_goblin_was_blamed_on_unconscious_ventriloquism.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/life/caixin/2015/09/150911_CAI_Pianist.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/life/caixin/2015/09/150911_CAI_Pianist.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/life/caixin/2015/09/history_of_the_piano_in_china_jesuit_missionaries_brought_the_clavichord.html" class="primary"></a>
             
             
-                <span class="rubrik">Atlas Obscura</span>
+                <span class="rubrik">Caixin</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 1:06 PM</span>
-                <!-- <span class="hed">Unconscious Ventriloquism: The Weird Case of the Zaragoza Goblin</span> -->
+                <span class="timestamp">Sept. 11 2015 1:56 PM</span>
+                <!-- <span class="hed">Piano Nation</span> -->
                 
                   
                   
-                    <span class="hed">Unconscious Ventriloquism: The Weird Case of the Zaragoza Goblin</span>
+                    <span class="hed">Piano Nation</span>
                   
                 
-                <span class="dek"></span>
-                <span class="byline">Eric Grundhauser</span>
+                <span class="dek">Christian missionaries brought the instrument to China, and China fell in love with it.&nbsp;</span>
+                <span class="byline">Sheila Melvin</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/atlas_obscura/2015/09/11/the_phenomenon_of_the_zaragoza_stove_goblin_was_blamed_on_unconscious_ventriloquism.html" class="primary">The Zaragoza Stove Goblin Baffled An Entire City Until The Poor Maid Was Blamed&nbsp;</a>
+            </div>
         
     
 
@@ -1878,11 +1896,11 @@ Life</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
+            <div class="section-list  last" data-vr-contentbox="">
               <a href="http://www.slate.com/blogs/schooled/2015/09/11/common_core_standards_how_four_teachers_are_dealing_with_the_new_standards.html" class="primary">“It’s Not Like a Switch That You Can Flick on Overnight”: Four Teachers on Adapting to Common Core</a>
             </div>
         
+        
     
 
     
@@ -1897,10 +1915,6 @@ Life</header>
     
     
         
-        
-            <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/quora/2015/09/11/christopher_nolan_batman_what_did_the_director_get_wrong_in_his_films.html" class="primary">What Did Christopher Nolan Get Wrong in His Batman Films?</a>
-            </div>
         
         
     
@@ -2022,20 +2036,6 @@ Life</header>
     
     
       
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
     
     
         
@@ -3143,6 +3143,8 @@ Technology</header>
     
     
     
+      
+    
     
         
             
@@ -3159,27 +3161,45 @@ Technology</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/business/the_juice/2015/09/150911_JUI_StAntoSolar.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/business/the_juice/2015/09/150911_JUI_StAntoSolar.jpg.CROP.promo-medium2.jpg">
-            <a href="http://www.slate.com/articles/technology/the_juice/2015/09/solar_panels_from_cps_energy_the_san_antonio_utility_s_brilliant_new_business.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/11/intel_drops_6_million_in_funding_for_science_talent_search_starting_in_2018/109272940-president-barack-obama-speaks-with-intel-science-talent.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/11/intel_drops_6_million_in_funding_for_science_talent_search_starting_in_2018/109272940-president-barack-obama-speaks-with-intel-science-talent.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/future_tense/2015/09/11/intel_drops_6_million_in_funding_for_science_talent_search_starting_in_2018.html" class="primary"></a>
             
             
-                <span class="rubrik">The Juice</span>
+                <span class="rubrik">Future Tense</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 1:42 PM</span>
-                <!-- <span class="hed">Take My Solar Panel, Please!</span> -->
+                <span class="timestamp">Sept. 11 2015 2:52 PM</span>
+                <!-- <span class="hed">For Some Reason, Intel Isn't Going to Fund the High School Science Talent Search Anymore</span> -->
                 
                   
                   
-                    <span class="hed">Take My Solar Panel, Please!</span>
+                    <span class="hed">For Some Reason, Intel Isn't Going to Fund the High School Science Talent Search Anymore</span>
                   
                 
-                <span class="dek">San Antonio just announced a brilliant new business model for renewable energy.</span>
-                <span class="byline">Daniel Gross</span>
+                <span class="dek"></span>
+                <span class="byline">Lily Hay Newman</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/technology/the_juice/2015/09/solar_panels_from_cps_energy_the_san_antonio_utility_s_brilliant_new_business.html" class="primary">Take Our Solar Panels, Please! San Antonio’s Brilliant New Business Model for Renewable Energy.</a>
+            </div>
         
     
 
@@ -3270,11 +3290,11 @@ Technology</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
+            <div class="section-list  last" data-vr-contentbox="">
               <a href="http://www.slate.com/blogs/future_tense/2015/09/10/uber_s_biggest_rival_in_china_didi_kuaidi_is_backing_lyft.html" class="primary">Uber’s Biggest Chinese Rival Has Found a Brilliant Way to Screw With It in America</a>
             </div>
         
+        
     
 
     
@@ -3288,9 +3308,21 @@ Technology</header>
     
         
         
-            <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/articles/technology/users/2015/09/love_and_connection_in_the_internet_age_we_ve_got_this.html" class="primary">We Used to Believe the Internet Made Us Lonely. A Whole New Body of Research Says It Doesn’t.</a>
-            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
         
         
     
@@ -3398,38 +3430,6 @@ Technology</header>
     
     
     
-    
-      
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-      
     
     
         
@@ -4185,32 +4185,34 @@ Sports</header>
   
     
       
-      <li><a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/stephen_colbert_s_emotional_interview_with_joe_biden_the_vice_president.html"><small>1.</small> <span>Why We Connect to Joe Biden</span></a></li>
+      <li><a href="http://www.slate.com/articles/technology/history/2013/09/danny_lewin_the_first_victim_on_9_11_and_an_architect_of_the_internet.html"><small>1.</small> <span>He Was the First Person Killed on 9/11, But His Influence Was Felt That Entire Day—Online</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/articles/technology/history/2013/09/danny_lewin_the_first_victim_on_9_11_and_an_architect_of_the_internet.html"><small>2.</small> <span>He Was the First Person Killed on 9/11, But His Influence Was Felt That Entire Day—Online</span></a></li>
+      <li><a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/09/why_drivers_in_china_intentionally_kill_the_pedestrians_they_hit_china_s.html"><small>2.</small> <span>Why Drivers in China Intentionally Kill the Pedestrians They Hit</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/mike_huckabee_dred_scott_black_people_aren_t_fully_human_under_law_he_erroneously.html"><small>3.</small> <span>Huckabee Claims Black People Aren't Technically Citizens During Critique of Unjust Laws</span></a></li>
+      <li><a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/stephen_colbert_s_emotional_interview_with_joe_biden_the_vice_president.html"><small>3.</small> <span>Why We Connect to Joe Biden</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html"><small>4.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span></a></li>
+      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/mike_huckabee_dred_scott_black_people_aren_t_fully_human_under_law_he_erroneously.html"><small>4.</small> <span>Huckabee Claims Black People Aren't Technically Citizens During Critique of Unjust Laws</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/blogs/future_tense/2015/09/10/apple_s_new_ipad_pro_review_it_s_a_blatant_microsoft_ripoff_that_s_not_a.html"><small>5.</small> <span>The New iPad Is a Blatant Microsoft Ripoff. That’s Not a Bad Thing.</span></a></li>
+      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html"><small>5.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span></a></li>
       
+    
+  
     
   
     
@@ -4271,8 +4273,8 @@ Sports</header>
             
                 
                 <li data-vr-contentbox="">
-                  <a href="http://www.slate.com/blogs/bad_astronomy/2015/09/10/pluto_new_images_from_new_horizons.html">
-                    <small>4.</small> <span>New Breathtaking Hi-Res Photos of Pluto</span>
+                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html">
+                    <small>4.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span>
                   </a>
                 </li>
                 
@@ -4281,8 +4283,8 @@ Sports</header>
             
                 
                 <li data-vr-contentbox="">
-                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html">
-                    <small>5.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span>
+                  <a href="http://www.slate.com/blogs/bad_astronomy/2015/09/10/pluto_new_images_from_new_horizons.html">
+                    <small>5.</small> <span>New Breathtaking Hi-Res Photos of Pluto</span>
                   </a>
                 </li>
                 
@@ -4595,9 +4597,9 @@ Sailthru.setup({domain:'horizon.slate.com'});};})();});</script>
 
   
   
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":182,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5bRg0HUVBcVx5KXgVFXGsREVJLbVFWS1cBXFxaED1WV1ZvQUtbElBaTTsSWFVbU0gWGEsbFkcIA0NcbUNuTVcWXEprCwRoSldCR1BRAR9RQAkO","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":191,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5bRg0HUVBcVx5KXgVFXGsREVJLbVFWS1cBXFxaED1WV1ZvQUtbElBaTTsSWFVbU0gWGEsbFkcIA0NcbUNuTVcWXEprCwRoSldCR1BRAR9RQAkO","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
 <!--
-Page Loading starts on 2015/09/11 13:54:42, Total time elapsed to render is 0.17503569 seconds, Server: pub2.slate.com
+Page Loading starts on 2015/09/11 15:28:47, Total time elapsed to render is 0.18297565 seconds, Server: pub1.slate.com
 -->
   </body>
 </html>
