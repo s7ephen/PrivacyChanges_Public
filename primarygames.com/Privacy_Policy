@@ -1,11 +1,5 @@
 
-Warning:  mysql_connect(): Unknown MySQL server host 'top100mirror.primarygames.com' (111) in /home/primaryg/public_html/sources/sql/mysql.php on line 32
+Warning:  fopen(/home/primaryg/www/geoip/GeoIP.dat): failed to open stream: No such file or directory in /home/primaryg/public_html/geoip/geoip.inc on line 1535
 
-Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/primaryg/public_html/sources/sql/mysql.php on line 33
-
-Warning:  mysql_query(): Access denied for user 'primaryg'@'localhost' (using password: NO) in /home/primaryg/public_html/sources/sql/mysql.php on line 47
-
-Warning:  mysql_query(): A link to the server could not be established in /home/primaryg/public_html/sources/sql/mysql.php on line 47
-
-Fatal error:  Database error in "/home/primaryg/public_html/include/db_connect.php" on line 40
- in /home/primaryg/public_html/sources/sql/mysql.php on line 88
+Fatal error:  GeoIP API: Can not open /home/primaryg/www/geoip/GeoIP.dat
+ in /home/primaryg/public_html/geoip/geoip.inc on line 1535
