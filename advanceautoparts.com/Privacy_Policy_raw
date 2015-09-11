@@ -1798,7 +1798,7 @@ dp.marketing_touch = utm_source;
 dp.site_type = 'Desktop';
 dp.customer_status = 'anonymous';
 var spLNDuringRegtest = '';
-dp.customer_id = '353058619';
+dp.customer_id = '353047981';
 if (j.cookie('PREFSTORE') != null ) {
 dp.primary_store_number = j.cookie('PREFSTORE');
 }else{
@@ -1905,11 +1905,11 @@ dp.auto_model = pageViewAttr[2] ;
 dp.auto_engine = garageEngine ;
 }
 var priceZone = "";
-var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
+var validZone = validateInput(getAAPPriceZoneCookieRegex(), '1060');
 if(!validZone){
 priceZone = invalidatePriceZoneCookie();
 }else{
-priceZone = '';
+priceZone = '1060';
 }
 pageViewAttr[11] = priceZone;
 productViewAttr[2] = priceZone;
