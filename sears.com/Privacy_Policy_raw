@@ -220,7 +220,7 @@ shc.features = $.extend(shc.features, {
       headerFields: 'count'
    }
   },
-  chat247: ['10151', '10153'].indexOf(shc.storeId)>=0 && location.href.indexOf('i2-prod')>=0,
+  chat247: shc.storeId==='10153' && location.port === '4780',
   load_sCode: false,
   fitment: false
 });
@@ -1449,6 +1449,8 @@ shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
 <a href="/beauty-lips/b-1024626?sName=View%20All" rel="external">Lips</a>
 </span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_4_9'><span>
 <a href="/beauty-bath-body/b-1023310?sName=View%20All" rel="external">Bath & Beauty</a>
+</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_4_10'><span class='heading'>
+<a href="/pet-supplies/b-1029162" rel="external">Pet Supplies</a>
 </span></li></ul></li><li class=' gnf_nav_depth2_item' id='gnf_dept_tree_item_13_5'><ul class='gnf_nav_depth3_list gnf-dept-four gnf-dept-col' id='gnf_dept_tree_item_13_5_list'><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_1'><span class='heading'>
 <a href="/sears-gift-cards.html" rel="external">Gift Cards</a>
 </span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_2'><span class='heading'>
@@ -1458,12 +1460,10 @@ shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
 </span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_4'><span class='heading'>
 <a href="/books-magazines/b-1029616" rel="external">Books & Magazines</a>
 </span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_5'><span class='heading'>
-<a href="/pet-supplies/b-1029162" rel="external">Pet Supplies</a>
-</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_6'><span class='heading'>
 <a href="/en_us/dap/layaway.html" rel="external">Layaway</a>
-</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_7'><span class='heading'>
+</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_6'><span class='heading'>
 <a href="/en_us/dap/leasing.html" rel="external">Leasing</a>
-</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_8'><span class='heading'>
+</span></li><li class=' gnf_nav_depth3_item' id='gnf_dept_tree_item_13_5_7'><span class='heading'>
 <a href="/articles/knowledge-center.html" rel="external">Knowledge Center</a>
 </span></li></ul></li></ul></li><li class=' gnf_nav_depth1_item gnf_dept_tree_item' id='gnf_nav_deals'><span>
 <a href="/en_us/dap/deals-center.html" class="gnf_tree_junction" rel="external">Deals</a>
@@ -2105,7 +2105,7 @@ updateOmnitureValues();
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '411p' -->
+<!-- Publish Server: '408p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
