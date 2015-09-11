@@ -80,7 +80,7 @@
     
     
     <script data-ad-site="slate" src="http://static.cdnslate.com/etc/designs/slate/js/libs/require.js"></script>
-    <script>requirejs.config({"baseUrl":"http://static.cdnslate.com/etc/designs/slate/js","waitSeconds":0,"paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min","modernizr":"/etc/designs/slate/js/libs/modernizr-2.6.1.min","announcements":"/etc/designs/slate/js/announcements","slate":"/etc/designs/slate/lib","hogan":"libs/hogan-2.0.0","facebook":"//connect.facebook.net/en_US/all","twitter":"//platform.twitter.com/widgets","livefyre":"//cdn.livefyre.com/Livefyre","brightcove":"https://sadmin.brightcove.com/js/BrightcoveExperiences","brightcovetracking":"/etc/designs/slate/js/brightcovetracking","mobileredirection":"libs/redirection_mobile_1.0.0.min","optimizely":"//cdn.optimizely.com/js/37441550","outbrain":"//widgets.outbrain.com/outbrain","shared":"http://static.cdnslate.com/etc/designs/shared/js","instafeed":"/etc/designs/slate/js/instafeed","campaigns":"http://campaigns.slate.com/campaigns/slate","clipboard":"libs/zeroclipboard/ZeroClipboard.min","tinypass":"https://cdn.tinypass.com/api/tinypass.min","rpxnow":window.location.protocol==='https:'?'https://rpxnow.com/load/login.slate.com?noext':'http://widget-cdn.rpxnow.com/load/login.slate.com?noext','promise':'requirejs-promise','youtube':"/etc/designs/slate/js/youtube",'youtubeapi':"https://www.youtube.com/iframe_api?noext","keywee":"https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min"},"shim":{"shared/devicemode":["modernizr"],"hcs/script":["jquery","modernizr","shared/devicemode"],"libs/jquery-plugins/jquery.browser":["jquery"],"hcs/plugins/jquery.transit":["jquery"],"hcs/plugins/SGFootnote.jquery":["jquery"],"hcs/plugins/SGSocialIcons.jquery":["jquery","hcs/script"],"hcs/plugins/SGNavDropdown.jquery":["jquery"],"hcs/plugins/SGComments.jquery":["jquery","hcs/script"],"hcs/plugins/SGRollup.jquery":["jquery","hcs/script"],"hcs/plugins/SGGlobalNav.jquery":["jquery","hcs/script"],"hcs/plugins/SGLightbox.jquery":["jquery"],"hcs/plugins/jQuery.highlighter":["jquery"],"hcs/libs/swipe":["jquery"],"hcs/libs/magnific":["jquery"],"hcs/plugins/jquery.swipebox":["jquery"],"hcs/plugins/SGBigSlider.jquery":["jquery","hcs/script","hcs/libs/swipe"],"hcs/plugins/jquery.placeholder.min":["jquery"],"libs/jquery-plugins/jquery.timeago":["jquery"],"libs/jquery-plugins/jquery.form":["jquery"],"libs/jquery-plugins/jquery.cookie":["jquery"],"libs/jquery-plugins/jquery.fittext":["jquery"],"libs/jquery-plugins/jquery.backgroundSize":["jquery"],"libs/jquery-plugins/jquery.flexslider":["jquery"],"libs/jquery-plugins/purl":["jquery"],"libs/jquery-plugins/jquery.colorbox":["jquery"],"libs/jquery-plugins/jquery.sticky":["jquery"],"libs/jquery-plugins/jquery.autoComplete":["jquery"],"libs/jquery-plugins/jquery.boxfit":["jquery"],"libs/jquery-plugins/jquery.dateformat":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.extra":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.bg":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.widget":["jquery"],"libs/jquery-plugins/jquery.storageapi":["jquery"],"libs/jquery-plugins/jquery.ba-throttle-debounce":["jquery"],"libs/jquery-plugins/jquery.visible":["jquery"],"libs/jquery-plugins/jquery.event.move":["jquery"],"libs/jquery-plugins/jquery.twentytwenty":["jquery"],"optimizely":["jquery"],"facebook":{deps:["site-bottom"],exports:"FB"},"livefyre":{exports:"fyre"},"brightcove":{"exports":"brightcove"},"mobileredirection":{"exports":"mobileredirection"},"hogan":{"exports":"Hogan"},"outbrain":{"exports":"OBR"}},map:{'*':{'css':'libs/require-css/css'}}});define("config",{"env":{"edit":false,"environment":"prod"},"janrain":{"siteConfig":{"enabled":true,"propertyId":"login.slate.com","raceConditionTimeout":+"500".replace(/\D/gi,''),"jsNamespace":"slateJanrain","userMessage":""},"appUrl":"https://login.slate.com","tokenUrl":"http://www.slate.com","capture":{"appId":"dbuhzej2qm7k436x6jg4qpef3f","captureServer":"https://profile.slate.com","clientId":"sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha","accessTokenLifeHours":+"730".replace(/\D/gi,''),"returnExperienceUserData":"uuid,displayName,email".split(",").map(function(item){return item.trim();}),"flowVersion":"HEAD"}},"myslate":{"site_base_domain":"slate.com","site_path":"/","site_url":"//www.slate.com/","myslate_domain":"//my.slate.com/","myslateTokenPath":"proxies/livefyre/token/","myslateJanrainTokenPath":"proxies/janrain/token/","myslateVerifyPath":"proxies/janrain/verify/","myslateSubscriptionsManagePath":"subscriptions/manage/","myslate_https":true,"fb_xd_receiver":"http://www.slate.com/xd_receiver.htm","fb_app_id":142011022527753,},"livefyre":{"network":"slate.fyre.co","jsSourceUrl":"http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js","siteId":"337720","loadTiming":"immediate"},"campaigns":{"domain":"campaigns.slate.com"},"site":{"site":"slate","title":"Slate","staticUrl":"http://static.cdnslate.com","omniturePrefix":"sl"},"data_domain":"http://www.slate.com/","page":{"articleId":"100121206008","roadblocked":false,"embeddedContent":false,"slateplus":false,"enableIssueCollector":false},"ads":{"enableHomepageViewability":false,"enableStoryViewability":true,"viewabilityEnabled":true,"viewability":{"leaderboardRollup":true,"leaderboardRollupDisabledList":"","refreshInterval":"30","refreshPolar":false,"testPageList":"news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts","lazyload":{"homepageBB":true,"leaderboard_2":true,"tiffTiles":true,"rightflex":true}}},"tinypass":{"jsNamespace":"slateTinypass","enabled":true,"globalTrackPageview":true,"aid":"Ey9jlGV74T","rid":"PW_54887721","paywallId":"54887721","sandbox":false,"contentCreated":"2012-12-06T13:21:58","contentAuthor":[],"contentSection":"briefing","janrainAppName":"the-slate-group-prod.us","ribbonText":"","excludedSocialDomains":"".split(",").filter(function(item){item=item.trim();return item!=='';}),"templates":{"offerId":"OFRO847YFZZ2","defaultOffer":"OT6TPCSI94W5","reminder":"OTN6JFAPXOAR","curtain":"OTM6Z4P8U1OE","template4of5":"OT8HXCA1TCPX","template5of5":"OT0V1T3EU4ZQ","faq":"OT8KJPE8Z2CA"},"internationalOffers":{"CA":{"offerId":"OFNFOLDOUBN1","defaultOffer":"OTFKE6VMUTRA","reminder":"OTU0BN1RZA59","curtain":"OT522QEFSKBU","template4of5":"OTQU7V4J5Q1T","template5of5":"OTKAIYO11WCR","faq":"OTSLZE94Q7NN"},"GB":{"offerId":"OF5X80KUVFDM","defaultOffer":"OT5GZFNKVV0D","reminder":"OTDIACLP1GJX","curtain":"OT0NLDL4GAER","template4of5":"OT4QBVKACCOA","template5of5":"OTGBVZ3P6CZ1","faq":"OTVZPJFCMPKK"},"Europe":{"offerId":"OF9H1SAODWS3","defaultOffer":"OT425B0PIB6C","reminder":"OT6BUP2JE3WW","curtain":"OTPJJ9ZUK744","template4of5":"OT4TEJCCMP4K","template5of5":"OT2GTODIR962","faq":"OT58VOY6CJFC"},"AU":{"offerId":"OF130IZX2JU6","defaultOffer":"OTJXP44SQVU8","reminder":"OT68H8QOVXWC","curtain":"OTGKO7WOSR97","template4of5":"OT0UEZXM0KFO","template5of5":"OTDW9GU7L9UW","faq":"OT7SRU05FQPZ"}}},"_log":[],"log":function(data){requirejs(["config"],function(config){if(typeof console!="undefined"&&typeof console.log!="undefined"){console.log(data);}
+    <script>requirejs.config({"baseUrl":"http://static.cdnslate.com/etc/designs/slate/js","waitSeconds":0,"paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min","modernizr":"/etc/designs/slate/js/libs/modernizr-2.6.1.min","announcements":"/etc/designs/slate/js/announcements","slate":"/etc/designs/slate/lib","hogan":"libs/hogan-2.0.0","facebook":"//connect.facebook.net/en_US/all","twitter":"//platform.twitter.com/widgets","livefyre":"//cdn.livefyre.com/Livefyre","brightcove":"https://sadmin.brightcove.com/js/BrightcoveExperiences","brightcovetracking":"/etc/designs/slate/js/brightcovetracking","mobileredirection":"libs/redirection_mobile_1.0.0.min","optimizely":"//cdn.optimizely.com/js/37441550","outbrain":"//widgets.outbrain.com/outbrain","shared":"http://static.cdnslate.com/etc/designs/shared/js","instafeed":"/etc/designs/slate/js/instafeed","campaigns":"http://campaigns.slate.com/campaigns/slate","clipboard":"libs/zeroclipboard/ZeroClipboard.min","tinypass":"https://cdn.tinypass.com/api/tinypass.min","rpxnow":window.location.protocol==='https:'?'https://rpxnow.com/load/login.slate.com?noext':'http://widget-cdn.rpxnow.com/load/login.slate.com?noext','promise':'requirejs-promise','youtube':"/etc/designs/slate/js/youtube",'youtubeapi':"https://www.youtube.com/iframe_api?noext","keywee":"https://dc8xl0ndzn2cb.cloudfront.net/js/slate/v0/keywee.min"},"shim":{"shared/devicemode":["modernizr"],"hcs/script":["jquery","modernizr","shared/devicemode"],"libs/jquery-plugins/jquery.browser":["jquery"],"hcs/plugins/jquery.transit":["jquery"],"hcs/plugins/SGFootnote.jquery":["jquery"],"hcs/plugins/SGSocialIcons.jquery":["jquery","hcs/script"],"hcs/plugins/SGNavDropdown.jquery":["jquery"],"hcs/plugins/SGComments.jquery":["jquery","hcs/script"],"hcs/plugins/SGRollup.jquery":["jquery","hcs/script"],"hcs/plugins/SGGlobalNav.jquery":["jquery","hcs/script"],"hcs/plugins/SGLightbox.jquery":["jquery"],"hcs/plugins/jQuery.highlighter":["jquery"],"hcs/libs/swipe":["jquery"],"hcs/libs/magnific":["jquery"],"hcs/plugins/jquery.swipebox":["jquery"],"hcs/plugins/SGBigSlider.jquery":["jquery","hcs/script","hcs/libs/swipe"],"hcs/plugins/jquery.placeholder.min":["jquery"],"libs/jquery-plugins/jquery.timeago":["jquery"],"libs/jquery-plugins/jquery.form":["jquery"],"libs/jquery-plugins/jquery.cookie":["jquery"],"libs/jquery-plugins/jquery.fittext":["jquery"],"libs/jquery-plugins/jquery.backgroundSize":["jquery"],"libs/jquery-plugins/jquery.flexslider":["jquery"],"libs/jquery-plugins/purl":["jquery"],"libs/jquery-plugins/jquery.colorbox":["jquery"],"libs/jquery-plugins/jquery.sticky":["jquery"],"libs/jquery-plugins/jquery.autoComplete":["jquery"],"libs/jquery-plugins/jquery.boxfit":["jquery"],"libs/jquery-plugins/jquery.dateformat":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.extra":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.bg":["jquery"],"libs/jquery-plugins/jquery.lazyloadxt.widget":["jquery"],"libs/jquery-plugins/jquery.storageapi":["jquery"],"libs/jquery-plugins/jquery.ba-throttle-debounce":["jquery"],"libs/jquery-plugins/jquery.visible":["jquery"],"libs/jquery-plugins/jquery.event.move":["jquery"],"libs/jquery-plugins/jquery.twentytwenty":["jquery"],"optimizely":["jquery"],"facebook":{deps:["site-bottom"],exports:"FB"},"livefyre":{exports:"fyre"},"brightcove":{"exports":"brightcove"},"mobileredirection":{"exports":"mobileredirection"},"hogan":{"exports":"Hogan"},"outbrain":{"exports":"OBR"}},map:{'*':{'css':'libs/require-css/css'}}});define("config",{"env":{"edit":false,"environment":"prod"},"janrain":{"siteConfig":{"enabled":true,"propertyId":"login.slate.com","raceConditionTimeout":+"500".replace(/\D/gi,''),"jsNamespace":"slateJanrain","userMessage":""},"appUrl":"https://login.slate.com","tokenUrl":"http://www.slate.com","capture":{"appId":"dbuhzej2qm7k436x6jg4qpef3f","captureServer":"https://profile.slate.com","clientId":"sskdd3tv7ekxx8mt6gq5hnu7mdxpmpha","accessTokenLifeHours":+"730".replace(/\D/gi,''),"returnExperienceUserData":"uuid,displayName,email".split(",").map(function(item){return item.trim();}),"flowVersion":"HEAD"}},"myslate":{"site_base_domain":"slate.com","site_path":"/","site_url":"//www.slate.com/","myslate_domain":"//my.slate.com/","myslateTokenPath":"proxies/livefyre/token/","myslateJanrainTokenPath":"proxies/janrain/token/","myslateVerifyPath":"proxies/janrain/verify/","myslateSubscriptionsManagePath":"subscriptions/manage/","myslate_https":true,"fb_xd_receiver":"http://www.slate.com/xd_receiver.htm","fb_app_id":142011022527753,},"livefyre":{"network":"slate.fyre.co","jsSourceUrl":"http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js","siteId":"337720","loadTiming":"immediate"},"campaigns":{"domain":"campaigns.slate.com"},"site":{"site":"slate","title":"Slate","staticUrl":"http://static.cdnslate.com","omniturePrefix":"sl"},"data_domain":"http://www.slate.com/","page":{"articleId":"100121206008","roadblocked":false,"embeddedContent":false,"slateplus":false,"enableIssueCollector":false},"ads":{"enableHomepageViewability":false,"enableStoryViewability":true,"viewabilityEnabled":true,"viewability":{"leaderboardRollup":true,"leaderboardRollupDisabledList":"","refreshInterval":"30","refreshPolar":false,"testPageList":"news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts","lazyload":{"homepageBB":true,"leaderboard_2":true,"tiffTiles":true,"rightflex":true}}},"tinypass":{"jsNamespace":"slateTinypass","enabled":true,"globalTrackPageview":true,"aid":"Ey9jlGV74T","rid":"PW_54887721","paywallId":"54887721","sandbox":false,"contentCreated":"2012-12-06T13:21:58","contentAuthor":[],"contentSection":"briefing","janrainAppName":"the-slate-group-prod.us","ribbonText":"","excludedSocialDomains":"".split(",").filter(function(item){item=item.trim();return item!=='';}),"templates":{"offerId":"OFRO847YFZZ2","defaultOffer":"OT6TPCSI94W5","reminder":"OTN6JFAPXOAR","curtain":"OTM6Z4P8U1OE","template4of5":"OT8HXCA1TCPX","template5of5":"OT0V1T3EU4ZQ","faq":"OT8KJPE8Z2CA"},"internationalOffers":{"GB":{"offerId":"OF5X80KUVFDM","defaultOffer":"OT5GZFNKVV0D","reminder":"OTDIACLP1GJX","curtain":"OT0NLDL4GAER","template4of5":"OT4QBVKACCOA","template5of5":"OTGBVZ3P6CZ1","faq":"OTVZPJFCMPKK"},"CA":{"offerId":"OFNFOLDOUBN1","defaultOffer":"OTFKE6VMUTRA","reminder":"OTU0BN1RZA59","curtain":"OT522QEFSKBU","template4of5":"OTQU7V4J5Q1T","template5of5":"OTKAIYO11WCR","faq":"OTSLZE94Q7NN"},"AU":{"offerId":"OF130IZX2JU6","defaultOffer":"OTJXP44SQVU8","reminder":"OT68H8QOVXWC","curtain":"OTGKO7WOSR97","template4of5":"OT0UEZXM0KFO","template5of5":"OTDW9GU7L9UW","faq":"OT7SRU05FQPZ"},"Europe":{"offerId":"OF9H1SAODWS3","defaultOffer":"OT425B0PIB6C","reminder":"OT6BUP2JE3WW","curtain":"OTPJJ9ZUK744","template4of5":"OT4TEJCCMP4K","template5of5":"OT2GTODIR962","faq":"OT58VOY6CJFC"}}},"_log":[],"log":function(data){requirejs(["config"],function(config){if(typeof console!="undefined"&&typeof console.log!="undefined"){console.log(data);}
 config._log.push(data);});}});requirejs(['config'],function(config){var documentDomain='slate.com';if(config.janrain.siteConfig.enabled){documentDomain=config.myslate.site_base_domain;}
 document.domain=documentDomain;});var homepagePolarSpot='b1';</script>
     
@@ -123,7 +123,7 @@ s.t();});</script>
 
     
     <![if gte IE 8]>
-    <script type="text/javascript">requirejs(['jquery'],function($){var SlateNextbox={};SlateNextbox.data={'headline':'There Have Been 11 Non-Fatal Shootings in 12 Days on the I-10 Freeway in Downtown Phoenix','subhead':'','url':'http:\/\/www.slate.com\/blogs\/the_slatest\/2015\/09\/11\/phoenix_highway_shootings_i_10_freeway_site_of_11_incidents_none_fatal_police.html','article_id':'227150911002','hasImage':true,'image':'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/the_slatest\/2015\/09\/11\/phoenix_highway_shootings_i_10_freeway_site_of_11_incidents_none_fatal_police\/screen_shot_20150911_at_9.19.07_am.png.CROP.rectangle-small.png','section':'The Slatest','subscribe_type':'rubric'};$.data(window,"SlateNextbox",SlateNextbox);});</script>
+    <script type="text/javascript">requirejs(['jquery'],function($){var SlateNextbox={};SlateNextbox.data={'headline':'Huckabee Claims Black People Aren\'t Technically Citizens During Critique of Unjust Laws','subhead':'','url':'http:\/\/www.slate.com\/blogs\/the_slatest\/2015\/09\/11\/mike_huckabee_dred_scott_black_people_aren_t_fully_human_under_law_he_erroneously.html','article_id':'227150911003','hasImage':true,'image':'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/the_slatest\/2015\/09\/11\/mike_huckabee_dred_scott_black_people_aren_t_fully_human_under_law_he_erroneously\/487307190.jpg.CROP.rectangle-small.jpg','section':'The Slatest','subscribe_type':'rubric'};$.data(window,"SlateNextbox",SlateNextbox);});</script>
     <![endif]>
     
 
@@ -1031,27 +1031,63 @@ News & Politics</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/news_and_politics/crime/2015/09/LA_crime_prevention_obbie/150910_CRIME_LAPrevent_arrestgang.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/news_and_politics/crime/2015/09/LA_crime_prevention_obbie/150910_CRIME_LAPrevent_arrestgang.jpg.CROP.promo-medium2.jpg">
-            <a href="http://www.slate.com/articles/news_and_politics/crime/2015/09/los_angeles_crime_a_new_way_of_fighting_crime_and_helping_victims_in_a_city.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/news_and_politics/roads/2015/09/150910_ROADS_Congo_pirogemen.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/news_and_politics/roads/2015/09/150910_ROADS_Congo_pirogemen.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/news_and_politics/roads/2015/09/congo_by_barge_giant_overstuffed_river_barges_are_the_best_way_to_get_from.html" class="primary"></a>
             
             
-                <span class="rubrik">Crime</span>
+                <span class="rubrik">Roads &amp; Kingdoms</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 3:44 AM</span>
-                <!-- <span class="hed">Gangland</span> -->
+                <span class="timestamp">Sept. 11 2015 11:21 AM</span>
+                <!-- <span class="hed">Life on the Congo</span> -->
                 
                   
                   
-                    <span class="hed">Gangland</span>
+                    <span class="hed">Life on the Congo</span>
                   
                 
-                <span class="dek">A new way of fighting crime, and helping victims, in Los Angeles—a city with no shortage of either.</span>
-                <span class="byline">Mark Obbie</span>
+                <span class="dek">In a country with crumbling infrastructure, cargo barges are vital for ferrying goods and unofficial passengers along the Democratic Republic of Congo’s aquatic superhighway.</span>
+                <span class="byline">Samuel Middleton</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/stephen_colbert_s_emotional_interview_with_joe_biden_the_vice_president.html" class="primary">Why We Connect to Joe Biden</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/news_and_politics/crime/2015/09/los_angeles_crime_a_new_way_of_fighting_crime_and_helping_victims_in_a_city.html" class="primary">A New Way of Fighting Crime—and Helping Victims—on the Violent Streets of Los Angeles</a>
+            </div>
         
     
 
@@ -1140,44 +1176,8 @@ News & Politics</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
-              <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/09/europe_s_migrant_crisis_is_explained_by_economic_globalization_smuggling.html" class="primary">How Globalization Explains the Horrors of Europe’s Migrant Crisis</a>
-            </div>
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
-        
-            <div class="section-list " data-vr-contentbox="">
-              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/stop_the_iran_deal_rally_s_unexpected_target_conservatives_are_now_blaming.html" class="primary">Look Who Conservatives Are Blaming for the Iran Deal Now</a>
-            </div>
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
             <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/hillary_clinton_s_tough_iran_speech_the_democratic_frontrunner_is_offering.html" class="primary">Hillary Clinton Is Offering a More Muscular Version of Obama’s Foreign Policy</a>
+              <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/09/europe_s_migrant_crisis_is_explained_by_economic_globalization_smuggling.html" class="primary">How Globalization Explains the Horrors of Europe’s Migrant Crisis</a>
             </div>
         
         
@@ -1743,27 +1743,47 @@ Life</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/outward/2015/09/11/the_britcom_roots_of_pbs_sitcom_vicious_video/screen_shot_20150910_at_4.45.25_pm.png.CROP.promo-medium2.png" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/outward/2015/09/11/the_britcom_roots_of_pbs_sitcom_vicious_video/screen_shot_20150910_at_4.45.25_pm.png.CROP.promo-medium2.png">
-            <a href="http://www.slate.com/blogs/outward/2015/09/11/the_britcom_roots_of_pbs_sitcom_vicious_video.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/the_vault/2015/09/11/SmCertification.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/the_vault/2015/09/11/SmCertification.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/blogs/the_vault/2015/09/11/history_of_freedom_suits_freedom_petitions_from_dc_courts_available_in_a.html" class="primary"></a>
             
             
-                <span class="rubrik">Outward</span>
+                <span class="rubrik">The Vault</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 8:30 AM</span>
-                <!-- <span class="hed">The Britcom Roots of the PBS Sitcom <em>Vicious</em></span> -->
+                <span class="timestamp">Sept. 11 2015 12:15 PM</span>
+                <!-- <span class="hed">Browse Hundreds of Documents Submitted by Enslaved People Petitioning for Freedom</span> -->
                 
                   
                   
-                    <span class="hed">The Britcom Roots of the PBS Sitcom <em>Vicious</em></span>
+                    <span class="hed">Browse Hundreds of Documents Submitted by Enslaved People Petitioning for Freedom</span>
                   
                 
                 <span class="dek"></span>
-                <span class="byline">June Thomas and Daniel  Hubbard</span>
+                <span class="byline">Rebecca Onion</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/outward/2015/09/11/the_britcom_roots_of_pbs_sitcom_vicious_video.html" class="primary">If PBS Sitcom <em>Vicious</em> Seems Odd, You Need to Brush Up on Your Britcoms (Video)</a>
+            </div>
         
     
 
@@ -1878,11 +1898,11 @@ Life</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
+            <div class="section-list  last" data-vr-contentbox="">
               <a href="http://www.slate.com/articles/life/inside_higher_ed/2015/09/kansas_state_marching_band_controversy_when_attempts_to_emulate_a_jayhawk.html" class="primary">What Does the Starship <em>Enterprise</em> and an Amorous Bird Have in Common With Kansas State’s Marching Band?</a>
             </div>
         
+        
     
 
     
@@ -1896,9 +1916,21 @@ Life</header>
     
         
         
-            <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/articles/life/family/2015/09/summer_vacation_is_a_financial_and_educational_burden_on_poor_children.html" class="primary">When Poor Kids Return to School From Summer Vacation, They’re Already a Month Behind</a>
-            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
         
         
     
@@ -1943,8 +1975,6 @@ Life</header>
     
     
     
-      
-    
     
         
         
@@ -1986,36 +2016,6 @@ Life</header>
     
     
     
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-      
     
     
         
@@ -2816,27 +2816,83 @@ Arts</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/behold/2015/09/School/RAIMOND_130508_027.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/behold/2015/09/School/RAIMOND_130508_027.jpg.CROP.promo-medium2.jpg">
-            <a href="http://www.slate.com/blogs/behold/2015/09/11/raimond_wouda_s_school_a_look_at_students_in_school_around_europe_photos.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/arts/books/2015/09/150910_BOOKS_Leguin_illo.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/arts/books/2015/09/150910_BOOKS_Leguin_illo.jpg.CROP.promo-medium2.jpg">
+            <a href="http://www.slate.com/articles/arts/books/2015/09/ursula_le_guin_s_writing_guide_steering_the_craft_reviewed.html" class="primary"></a>
             
             
-                <span class="rubrik">Behold</span>
+                <span class="rubrik">Books</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 10:41 AM</span>
-                <!-- <span class="hed">What the School Day Looks Like Around Europe&nbsp;</span> -->
+                <span class="timestamp">Sept. 11 2015 11:47 AM</span>
+                <!-- <span class="hed">Unlearning to Write</span> -->
                 
                   
                   
-                    <span class="hed">What the School Day Looks Like Around Europe&nbsp;</span>
+                    <span class="hed">Unlearning to Write</span>
                   
                 
-                <span class="dek"></span>
-                <span class="byline">David Rosenberg</span>
+                <span class="dek">Ursula Le Guin’s guide to the impossible craft of storytelling.</span>
+                <span class="byline">Jacob Brogan</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/arts/books/2015/09/can_i_go_now_biography_of_agent_sue_mengers_by_brian_kellow_reviewed.html" class="primary">The Untold Story of the Female Agent Who Ruled 1970s Hollywood</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/browbeat/2015/09/11/michael_moore_s_new_movie_where_to_invade_next_gets_first_trailer_after.html" class="primary">Michael Moore Just Premiered a “Secret” New Movie. Here’s the First Trailer.</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/blogs/behold/2015/09/11/raimond_wouda_s_school_a_look_at_students_in_school_around_europe_photos.html" class="primary">Is Going Back to School in Europe Any Different Than in America?</a>
+            </div>
         
     
 
@@ -2891,30 +2947,10 @@ Arts</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
+            <div class="section-list  last" data-vr-contentbox="">
               <a href="http://www.slate.com/blogs/browbeat/2015/09/10/welsh_weatherman_correctly_pronounces_welsh_town_name_llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.html" class="primary">Watch a Welsh Weatherman Casually, Correctly Pronounce a 58-Letter Town Name&nbsp; &nbsp;&nbsp;</a>
             </div>
         
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-      
-    
-    
-        
-        
-        
-            <div class="section-list " data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/browbeat/2015/09/10/fka_twigs_elastic_heart_cover_singer_performs_a_spellbinding_cover_of_sia.html" class="primary">Watch FKA Twigs&nbsp;Hypnotically Cover—and Dance to—Sia’s “Elastic Heart”</a>
-            </div>
         
     
 
@@ -2932,10 +2968,6 @@ Arts</header>
         
         
         
-            <div class="section-list " data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/browbeat/2015/09/10/mindy_project_season_4_trailer_flings_mom_problems_and_joseph_gordon_levitt.html" class="primary">Hulu’s <em>Mindy Project </em>Trailer Promises Flings, Mom Problems, and Joseph Gordon-Levitt</a>
-            </div>
-        
     
 
     
@@ -2951,9 +2983,21 @@ Arts</header>
     
         
         
-            <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/browbeat/2015/09/10/_ferrell_takes_the_field_review_will_ferrell_s_new_hbo_special_about_playing.html" class="primary">Will Ferrell’s New HBO Doc About Playing for 10 Different MLB Teams Is Ferrell at His Best</a>
-            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
         
         
     
@@ -3041,50 +3085,6 @@ Arts</header>
     
     
       
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-      
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
     
     
         
@@ -3139,6 +3139,8 @@ Technology</header>
     
     
     
+      
+    
     
         
             
@@ -3155,27 +3157,63 @@ Technology</header>
                 
             
             
-        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/articles/technology/future_tense/2015/09/150910_FT_DroneTennis.jpg.CROP.promo-medium2.jpg" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/technology/future_tense/2015/09/150910_FT_DroneTennis.jpg.CROP.promo-medium2.jpg">
-            <a href="http://www.slate.com/articles/technology/future_tense/2015/09/drones_in_sports_they_can_help_coaches_and_athletes_but_also_create_major.html" class="primary"></a>
+        <div class="tile stacked long-hed " data-bg="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/11/popemoji_for_pope_francis_american_visit_swyft_media_has_created_pope_emojis/popemoji.png.CROP.promo-medium2.png" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/future_tense/2015/09/11/popemoji_for_pope_francis_american_visit_swyft_media_has_created_pope_emojis/popemoji.png.CROP.promo-medium2.png">
+            <a href="http://www.slate.com/blogs/future_tense/2015/09/11/popemoji_for_pope_francis_american_visit_swyft_media_has_created_pope_emojis.html" class="primary"></a>
             
             
                 <span class="rubrik">Future Tense</span>
             
             <div class="full-tile">
-                <span class="timestamp">Sept. 11 2015 8:08 AM</span>
-                <!-- <span class="hed">Buzz Off?</span> -->
+                <span class="timestamp">Sept. 11 2015 11:06 AM</span>
+                <!-- <span class="hed">You Can Now Use Popemojis to Talk About How Much You Love Pope Francis</span> -->
                 
                   
                   
-                    <span class="hed">Buzz Off?</span>
+                    <span class="hed">You Can Now Use Popemojis to Talk About How Much You Love Pope Francis</span>
                   
                 
-                <span class="dek">Drones can be awful at sporting events. But they could also be awesome.</span>
-                <span class="byline">Justin Peters</span>
+                <span class="dek"></span>
+                <span class="byline">Miriam Krule</span>
             </div>
         </div>
         
         
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/technology/books/2015/09/gamelife_by_michael_clune_reviewed.html" class="primary">**** You have lost ****: A 1980s Video Game Memoir, Reviewed</a>
+            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        
+        
+            <div class="section-list " data-vr-contentbox="">
+              <a href="http://www.slate.com/articles/technology/future_tense/2015/09/drones_in_sports_they_can_help_coaches_and_athletes_but_also_create_major.html" class="primary">Drones Could Be Awesome for Sports, if the Idiots Don’t Ruin It</a>
+            </div>
         
     
 
@@ -3248,30 +3286,10 @@ Technology</header>
     
         
         
-        
-            <div class="section-list " data-vr-contentbox="">
+            <div class="section-list  last" data-vr-contentbox="">
               <a href="http://www.slate.com/blogs/future_tense/2015/09/10/apple_s_new_middle_finger_emoji_is_anatomically_inaccurate.html" class="primary">There’s a Big Problem With Apple’s New Middle-Finger Emoji</a>
             </div>
         
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-      
-    
-    
-        
-        
-        
-            <div class="section-list " data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/future_tense/2015/09/10/apple_s_new_ipad_pro_review_it_s_a_blatant_microsoft_ripoff_that_s_not_a.html" class="primary">The New iPad Is a Blatant Microsoft Ripoff. That’s Not a Bad Thing.</a>
-            </div>
         
     
 
@@ -3288,9 +3306,21 @@ Technology</header>
     
         
         
-            <div class="section-list  last" data-vr-contentbox="">
-              <a href="http://www.slate.com/blogs/future_tense/2015/09/10/researchers_found_flaws_in_11_million_hashed_ashley_madison_passwords.html" class="primary">Researchers Already Cracked the Supposedly Impenetrable Ashley Madison Passwords</a>
-            </div>
+        
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+      
+    
+    
+        
         
         
     
@@ -3414,34 +3444,6 @@ Technology</header>
     
     
       
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-        
-        
-        
-    
-
-    
-    
-
-    
-    
-    
-    
     
     
         
@@ -4183,25 +4185,25 @@ Sports</header>
   
     
       
-      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html"><small>1.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span></a></li>
+      <li><a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/stephen_colbert_s_emotional_interview_with_joe_biden_the_vice_president.html"><small>1.</small> <span>Why We Connect to Joe Biden</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/blogs/future_tense/2015/09/10/apple_s_new_ipad_pro_review_it_s_a_blatant_microsoft_ripoff_that_s_not_a.html"><small>2.</small> <span>The New iPad Is a Blatant Microsoft Ripoff. That’s Not a Bad Thing.</span></a></li>
+      <li><a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html"><small>2.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/articles/news_and_politics/politics/2015/09/ben_carson_and_donald_trump_heat_up_their_gop_primary_rivalry.html"><small>3.</small> <span>Ben Carson May Have Figured Out How to Beat Donald Trump at His Own Game</span></a></li>
+      <li><a href="http://www.slate.com/articles/technology/history/2013/09/danny_lewin_the_first_victim_on_9_11_and_an_architect_of_the_internet.html"><small>3.</small> <span>He Was the First Person Killed on 9/11, But His Influence Was Felt That Entire Day—Online</span></a></li>
       
     
   
     
       
-      <li><a href="http://www.slate.com/articles/technology/history/2013/09/danny_lewin_the_first_victim_on_9_11_and_an_architect_of_the_internet.html"><small>4.</small> <span>He Was the First Person Killed on 9/11, But His Influence Was Felt That Entire Day—Online</span></a></li>
+      <li><a href="http://www.slate.com/blogs/future_tense/2015/09/10/apple_s_new_ipad_pro_review_it_s_a_blatant_microsoft_ripoff_that_s_not_a.html"><small>4.</small> <span>The New iPad Is a Blatant Microsoft Ripoff. That’s Not a Bad Thing.</span></a></li>
       
     
   
@@ -4209,6 +4211,8 @@ Sports</header>
       
       <li><a href="http://www.slate.com/articles/life/dear_prudence/2015/09/dear_prudence_my_mother_s_support_for_donald_trump_is_jeopardizing_her_job.html"><small>5.</small> <span>Help! My Mother’s Vitriolic Support of Donald Trump Is Ruining Our Relationship.</span></a></li>
       
+    
+  
     
   
     
@@ -4247,8 +4251,8 @@ Sports</header>
             
                 
                 <li data-vr-contentbox="">
-                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/09/labor_day_child_gun_deaths_at_least_five_kids_killed.html">
-                    <small>2.</small> <span>11-Year-Old, 7-Year-Old, Two 5-Year-Olds, and 3-Year-Old Killed by Guns Over Labor Day Weekend</span>
+                  <a href="http://www.slate.com/articles/life/history/2015/09/vox_victorians_sarah_a_chrisman_s_essay_on_living_like_a_victorian_is_preposterous.html">
+                    <small>2.</small> <span>Those Preposterous Victorians on <em>Vox</em> Have No Idea What It Was Like to Live in the 19th Century</span>
                   </a>
                 </li>
                 
@@ -4257,8 +4261,8 @@ Sports</header>
             
                 
                 <li data-vr-contentbox="">
-                  <a href="http://www.slate.com/articles/life/history/2015/09/vox_victorians_sarah_a_chrisman_s_essay_on_living_like_a_victorian_is_preposterous.html">
-                    <small>3.</small> <span>Those Preposterous Victorians on <em>Vox</em> Have No Idea What It Was Like to Live in the 19th Century</span>
+                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/09/labor_day_child_gun_deaths_at_least_five_kids_killed.html">
+                    <small>3.</small> <span>11-Year-Old, 7-Year-Old, Two 5-Year-Olds, and 3-Year-Old Killed by Guns Over Labor Day Weekend</span>
                   </a>
                 </li>
                 
@@ -4277,8 +4281,8 @@ Sports</header>
             
                 
                 <li data-vr-contentbox="">
-                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/09/james_blake_tackled_by_nypd_tennis_star_says_officers_took_him_down_outside.html">
-                    <small>5.</small> <span>Black, Harvard-Educated Ex-Tennis Star Says NYPD Tackled Him Outside Luxury Hotel</span>
+                  <a href="http://www.slate.com/blogs/the_slatest/2015/09/11/joe_biden_colbert_interview_vice_president_not_sure_if_he_d_be_able_to_give.html">
+                    <small>5.</small> <span>Joe Biden and Stephen Colbert Both Got Emotional in a Candid Interview About Grief</span>
                   </a>
                 </li>
                 
@@ -4311,10 +4315,10 @@ Sports</header>
     <div id='small_video_gallery_mobile_wrap'>
         
         <div class="current-video">
-            <img src="http://www.slate.com/content/dam/slate/articles/video/video/2015/09/labor_day_northern_lights_from_space_time_lapse_video_reveals_what_an_aurora/21061460860_1c495c9606_h.jpg.CROP.hd-large.jpg"/>
-            <a href="http://www.slate.com/articles/video/video/2015/09/labor_day_northern_lights_from_space_time_lapse_video_reveals_what_an_aurora.html?wpisrc=seg_video" class="primary">
+            <img src="http://www.slate.com/content/dam/slate/articles/video/video/2015/09/gopro_whale_video_an_incredible_humpback_whale_breach_caught_on_camera/screen_shot_20150911_at_10.57.38_am.png.CROP.hd-large.png"/>
+            <a href="http://www.slate.com/articles/video/video/2015/09/gopro_whale_video_an_incredible_humpback_whale_breach_caught_on_camera.html?wpisrc=seg_video" class="primary">
                 <span class="play-button"></span>
-                <span class="main-title">The Aurora Borealis From Above</span>
+                <span class="main-title">Whale Rising</span>
             </a>
         </div>
         
@@ -4591,9 +4595,9 @@ Sailthru.setup({domain:'horizon.slate.com'});};})();});</script>
 
   
   
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":173,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5bRg0HUVBcVx5KXgVFXGsREVJLbVFWS1cBXFxaED1WV1ZvQUtbElBaTTsSWFVbU0gWGEsbFkcIA0NcbUNuTVcWXEprCwRoSldCR1BRAR9RQAkO","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":280,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5bRg0HUVBcVx5KXgVFXGsREVJLbVFWS1cBXFxaED1WV1ZvQUtbElBaTTsSWFVbU0gWGEsbFkcIA0NcbUNuTVcWXEprCwRoSldCR1BRAR9RQAkO","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
 <!--
-Page Loading starts on 2015/09/11 10:49:19, Total time elapsed to render is 0.16530515 seconds, Server: pub2.slate.com
+Page Loading starts on 2015/09/11 12:21:51, Total time elapsed to render is 0.2664991 seconds, Server: pub2w.slate.com
 -->
   </body>
 </html>
