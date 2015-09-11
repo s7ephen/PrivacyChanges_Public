@@ -16,7 +16,7 @@
 	
 	var HAS_ADFREE = 1;
 	var ACCESS_TOKEN = "";
-	var SERVER_TIME = 1441971063;
+	var SERVER_TIME = 1441976612;
 	var ENV = 'prod';
 	var PORT = '';
 	var SERVICE = "textpub";
@@ -24,7 +24,7 @@
 	var PLATFORM = 'DESKTOP';
 	var USER_GROUP = 0; 
 	if (typeof console == 'undefined' || typeof console.log == 'undefined') console = { 'log':function(){} };
-	 CurrentGMT = new Date(1441971063*1000); 
+	 CurrentGMT = new Date(1441976612*1000); 
 	var SESSION = {};
 	var user_demo = {};
 	var AUTHCODE = "";
@@ -47,7 +47,7 @@
 	
 			var QM_GROUP = null;
 		
-			var AGEBLOCK_GROUP = null;
+			var AGEBLOCK_GROUP = "tester_med";
 		
 
 	
@@ -101,6 +101,24 @@ FeedbackBanner.init();
 	util.stopTimer("body-load");
 	util.executeDomLoad();
 
+	
+		! function timePageLoad() {
+			if (typeof(AUTOCORE_START_TIMER) == "undefined" || typeof(OkC) == "undefined" || !AUTOCORE_START_TIMER) {
+				return;
+			}
+			var service, time;
+
+			service = "other";
+			time = new Date() - AUTOCORE_START_TIMER;
+
+			OkC.api("/rendertime", {
+				data: {
+					loadtime: time,
+					service: service
+				}
+			});
+
+		}();
 	
 
 	
