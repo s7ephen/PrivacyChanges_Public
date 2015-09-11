@@ -38,7 +38,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
         // TODO(eater): Remove after clues are fully launched
         allowEditingClues: false,
         staticHost: "www.kastatic.org",
-        bingoId: "_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D",
+        bingoId: "_gae_bingo_random:kYb2Z_CapyEBaKJ6JdDi4UBdJaxgZX2ovRXUUy_i",
 
         "FB_APP_NAMESPACE": "khanacademy",
         
@@ -53,7 +53,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
             
         },
         currentServerTime: function() {
-            return 1441971175.5090301;
+            return 1441976727.2149601;
         },
 
         // return a path to this static content given a path url - example:
@@ -64,7 +64,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         // Keep this in sync with the url in khan-exercises.js:loadMathJax()
         mathjaxUrl: "https://www.kastatic.org/khan-exercises/third_party/MathJax/2.1/MathJax.js?config=KAthJax-eaf1d9cafdc2fc68897cf72d30d67d5a",
-        commitSHA: "6191167f3242391acdb85e7eee575786a160557b",
+        commitSHA: "964c43b4beecba753593024a260f6189ce15353f",
         loginUrl: "/login?continue=%2Fabout%2Fprivacy-policy",
         language: "en",
         kaLocale: "en",
@@ -87,7 +87,7 @@ KAdefine.require("./javascript/shared-package/ka.js");
 
         stripePublicKey: "pk_live_bOMeT1j35MoCY5NMcddnG0ke",
 
-        requestLogId: "55f2bbe700ff0797eef17daa0d0001737e6b68616e2d61636164656d7900013135303931302d313931392d3833633938326439626538340001017f",
+        requestLogId: "55f2d19700ff03260cc3c308510001737e6b68616e2d61636164656d7900013135303931302d313931392d383363393832643962653834000101b7",
         gaeStatsKeyPrefix: null,
 
         SHOW_SAT_DEV: false,
@@ -95,12 +95,12 @@ KAdefine.require("./javascript/shared-package/ka.js");
         VIDEO_PAGE_PRACTICE_BUTTON: "",
         NAV_ON_RIGHT: "",
 
-        NEW_PLAYER_CODE: false,
-        NEW_PLAYER_UI: false,
+        NEW_PLAYER_CODE: true,
+        NEW_PLAYER_UI: true,
         NEW_PLAYER_DARK: false,
         NEW_PLAYER_DOMAIN_COLORS: true,
         EUREKA_NEW_VIDEO_PLAYER:
-            false || false,
+            true || true,
 
         VIDEO_AUTOPLAY: false &&
             'WebkitAppearance' in document.documentElement.style,
@@ -1926,13 +1926,6 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
     
 
         
-        
-        <script type="text/javascript">
-        (function(){
-            KAdefine.require("./javascript/shared-package/session-survey.jsx")();
-        })();
-        </script>
-        
         <script type="text/javascript">
             (function(){
                 window._kiq = window._kiq || [];
@@ -1940,7 +1933,7 @@ PackageManager.markExecuted("shared.css","mobile.css","tos-privacy.css")</script
                 var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
                 s.async = true; s.src = '//s3.amazonaws.com/ki.js/53782/bH0.js'; f.parentNode.insertBefore(s, f);
                 }, 1);
-                _kiq.push(['identify', '_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D']);
+                _kiq.push(['identify', '_gae_bingo_random:kYb2Z_CapyEBaKJ6JdDi4UBdJaxgZX2ovRXUUy_i']);
                 _kiq.push(['set', {"eligible_for_nps_survey": false, "eligible_for_sat_intent_survey_1": false, "eligible_for_sat_satisfaction_survey": false, "eligible_for_unregistered_user_goal_survey": false, "eligible_for_sat_intent_survey_2": false}]);
             })();
         </script>
@@ -2060,7 +2053,7 @@ olark.identify('8268-583-10-4648');
             
             window.olark('api.visitor.updateCustomFields', {
                 loggedIn: false,
-                bingoId: "_gae_bingo_random:tbnGO6vvkYm1msMaX9t9YGL-jtonHAlvHSAMwY_D"
+                bingoId: "_gae_bingo_random:kYb2Z_CapyEBaKJ6JdDi4UBdJaxgZX2ovRXUUy_i"
             });
         }, 0);
     </script>
