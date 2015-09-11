@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'b1da46a52b', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'e3e0fe9b83', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=835256175'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2032034543'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=249820514'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=529660457&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1402118474'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1702705028'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1133315100'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1658032542&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, '917f53f47d');
+      PJMedia.SharingButtons.initialize(null, null, '9bc6dbd6b2');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1341423175');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1186737156');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=139721966');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=877717431');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1146031371');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=423610894');"></a>
   </span>
 </span>
 
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/10/who-is-taking-potshots-at-arizona-interstate-drivers/">Who Is Taking Potshots at Arizona Interstate Drivers?</a></li><li><a href="http://pjmedia.com/tatler/2015/09/10/senate-dems-filibuster-iran-deal-disapproval-resolution/">Senate Dems Filibuster Iran Deal Disapproval Resolution</a></li><li><a href="http://pjmedia.com/tatler/2015/09/10/nyt-marks-jewish-opponents-of-iran-deal-with-yellow-highlighter/">NYT Marks Jewish Opponents of Iran Deal with Yellow Highlighter</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/10/gop-to-make-iran-deal-its-latest-all-or-nothing-rallying-point/">GOP to Make Iran Deal Its Latest All-Or-Nothing Rallying Point</a></li><li><a href="http://pjmedia.com/tatler/2015/09/10/colorado-lawmakers-furious-at-consideration-of-site-for-guantanamo-transfers/">Colorado Lawmakers Furious at Consideration of Site for Guantanamo Transfers</a></li><li><a href="http://pjmedia.com/tatler/2015/09/10/who-is-taking-potshots-at-arizona-interstate-drivers/">Who Is Taking Potshots at Arizona Interstate Drivers?</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214157/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">AT AMAZON, <a target="_blank" href="http://www.amazon.com/s/?ref_=assoc_tag_ph_1441059739668&#038;_encoding=UTF8&#038;camp=1789&#038;creative=9325&#038;emi=ATVPDKIKX0DER&#038;linkCode=pf4&#038;lo=outdoor-recreation&#038;node=11627822011&#038;tag=wwwviolentkicom&#038;linkId=ABHH5O3KJYG5MLTU">25% Off Rocky Mounts Car Racks &#038; Accessories.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214187/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">MY <em>USA TODAY</em> COLUMN:  <a target="_blank" href="http://www.usatoday.com/story/opinion/2015/09/10/obama-hillary-clinton-middle-east-debacles-column/71949834/">It&#8217;s Not Just Syria:  The Obama-Hillary Mideast Debacles.</a>  (Bumped).</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214196/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">LIVING THROUGH A REPLAY OF <a target="_blank" href="http://laurencejarvikonline.blogspot.com/2015/09/life-imitates-art-march-bbc-tv-1990.html">&#8220;THE MARCH.&#8221;</A></a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214192/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">WHY RUNNERS GET SLOWER WITH AGE, <a target="_blank" href="http://well.blogs.nytimes.com/2015/09/09/why-runners-get-slower-with-age-and-how-strength-training-may-help/?ref=health">and how strength training may help.</a>  You know, <a target="_blank" href="http://www.amazon.com/gp/product/0982522738/ref=as_li_qf_sp_asin_tl?ie=UTF8&#038;tag=insta0c-20&#038;linkCode=as2&#038;camp=217145&#038;creative=399373&#038;creativeASIN=0982522738">it may.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214221/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">ROBERT MCMANUS:  <a target="_blank" href="http://nypost.com/2015/09/09/trumps-delusions-of-honor-insult-all-who-served/">Trump’s delusions of honor insult all who served.</A></a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -779,7 +779,7 @@ jQuery(document).ready(function($){
     ga('create', 'UA-3218147-1', 'auto');
     ga('require', 'displayfeatures');
         ga('send', 'pageview', {
-      'dimension5': '|b=1|t=p|i=29384|d=1441893960|a=1|'
+      'dimension5': '|b=1|t=p|i=29384|d=1441980360|a=1|'
     });
         </script>    <script type='text/javascript'>
     PJInterop.CookieCache.bind();
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":348,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":353,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
