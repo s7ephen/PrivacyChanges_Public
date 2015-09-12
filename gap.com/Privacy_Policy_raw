@@ -1369,7 +1369,7 @@
             DIVISION_2_ACTION: "division.do",
             SUBDIVISION_2_ACTION: "subdivision.do",
             HOME_2_ACTION: "home.do",
-            DATE_IN_USE: "09/12/2015 12:20 AM",
+            DATE_IN_USE: "09/12/2015 01:51 AM",
             PREVIOUS_LOCALE : "en_US",
             
             IS_NAV2_ENABLED: 'false',
@@ -5009,7 +5009,7 @@ if( location.pathname == '/checkout/order.do' ) {
 <!-- END - WCD Sitewide Container 3 -->
 
 <!-- BEGIN - WCD Sitewide Container 4 -->
-<!-- BEGIN Content Item File: /content/0009/894/511/cn9894511.html -->
+<!-- BEGIN Content Item File: /content/0010/188/255/cn10188255.html -->
 
 
 <!-- WCD Product Page overrides -->
@@ -5038,7 +5038,34 @@ if( location.pathname == '/checkout/order.do' ) {
 
 </style>
 
+<!-- BEGIN FB Like button -->
+<script type="text/javascript">
+// Facebook like button
+if( location.pathname == '/browse/product.do' ) {
+	var fbProductPageLikeButton = {
+		initialize: function() { },
+		model: {
+			searchDexPageStructure: 'http%3A%2F%2Fwww.gap.com%2Fproducts%2F'
+		},
+		controller: {
+			init: function() {
+				if( jQuery('#fb_like').length == 0 && productPage.productId ) {
+					var model = fbProductPageLikeButton.model;
 
+					var productName = escape('P' + productPage.productId + '.jsp?tid=atsm000000');
+					
+					jQuery('#variantButtons').before('<div id="fb_like" style="margin-top:7px"><iframe src="http://www.facebook.com/plugins/like.php?href=' + model.searchDexPageStructure + productName + '&send=false&layout=button_count&width=330&show_faces=false&action=like&colorscheme=light&font&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:21px" allowTransparency="true"></iframe></div>');
+				}
+			}
+		}
+	}
+
+	jQuery(document).on('productPage:ready', function(e) {
+		fbProductPageLikeButton.controller.init();
+	});
+}
+</script>
+<!-- END FB Like button -->
 
 <!-- BEGIN Product page insert Free Shipping link -->
 <script type="text/javascript">
@@ -5225,15 +5252,20 @@ if( location.pathname == "/browse/product.do" ) {
 		pinMedia: '',
 		pinURL: '',
 		pinItDivStr: '',
+		pinItProductID: '',
+		pinItProductIDImgPath:'',
+		
 		
 		insert_pinIt_Btn : function() {
 			if( jQuery('#fb_like').length > 0 && jQuery('#pinItDiv').length == 0 ) {
 				jQuery("#fb_like").css({ "margin-left" : "45px", "overflow" : " hidden", "width" : "200px", "margin-top" : "-22px"});
 				wcdPinItButtonInsert.pinURL = encodeURIComponent(window.location.href);
 		
-				if( jQuery('#product_image').length > 0 ) {
-					wcdPinItButtonInsert.pinMedia = encodeURIComponent( jQuery('#product_image').attr('src') );
-				}
+				//Set Path for the Image To Pin
+				wcdPinItButtonInsert.pinItProductID = productPage.objV.arrayVariantStyleColors[productPage.selectedColor].strColorCodeId;
+				wcdPinItButtonInsert.pinItProductIDImgPath = "http://www.gap.com/resources/productImage/v1/" + wcdPinItButtonInsert.pinItProductID + "/VLI";
+				wcdPinItButtonInsert.pinMedia = encodeURIComponent( wcdPinItButtonInsert.pinItProductIDImgPath);
+	
 				if( jQuery('#productNameText').length > 0 ) {
 					wcdPinItButtonInsert.pinDesc = jQuery('.productName').html();
 				}
@@ -5247,7 +5279,7 @@ if( location.pathname == "/browse/product.do" ) {
 				
 				wcdPinItButtonInsert.pinItStr = 'http://pinterest.com/pin/create/button/?url=' + wcdPinItButtonInsert.pinURL + '&media=' + wcdPinItButtonInsert.pinMedia + '&description=' + wcdPinItButtonInsert.pinDesc;
 			
-				jQuery('#fb_like').before('<div id="pinItDiv"><a href="javascript:void(0);" onclick="window.open(\'' + wcdPinItButtonInsert.pinItStr + '\',\'pinIt\',\'toolbar=0,status=0,width=620,height=500\');"><img src="/Asset_Archive/GPWeb/content/0006/556/731/assets/builder_pinit.png" /></a></div>');
+				jQuery('#fb_like').before('<div id="pinItDiv"><a href="javascript:void(0);" onclick="window.open(\'' + wcdPinItButtonInsert.pinItStr + '\',\'pinIt\',\'toolbar=0,status=0,width=620,height=500\');"><img src="/Asset_Archive/ATWeb/content/0006/555/712/assets/builder_pinit.png" /></a></div>');
 				
 				jQuery('#colorSwatchContent').on('click', function(e) { wcdPinItButtonInsert.updatePinIt(); });
 				jQuery('#pinItDiv').on('click', function(e) { wcdPinItButtonInsert.pinItTracking(); });
@@ -5261,9 +5293,12 @@ if( location.pathname == "/browse/product.do" ) {
 				wcdPinItButtonInsert.pinURL = wcdPinItButtonInsert.pinURL + productPage.objV.arrayVariantStyleColors[productPage.selectedColor].strColorCodeId;
 			}
 			wcdPinItButtonInsert.pinURL = encodeURIComponent(wcdPinItButtonInsert.pinURL);
-			if( jQuery('#product_image').length > 0 ) {
-				wcdPinItButtonInsert.pinMedia = encodeURIComponent( jQuery('#product_image').attr('src') );
-			}
+			
+			//Update Path for the Image To Pin
+			wcdPinItButtonInsert.pinItProductID = productPage.objV.arrayVariantStyleColors[productPage.selectedColor].strColorCodeId;
+			wcdPinItButtonInsert.pinItProductIDImgPath = "http://www.gap.com/resources/productImage/v1/" + wcdPinItButtonInsert.pinItProductID + "/VLI";
+			wcdPinItButtonInsert.pinMedia = encodeURIComponent( wcdPinItButtonInsert.pinItProductIDImgPath);
+			
 			if( jQuery('#productNameText').length > 0 ) {
 				wcdPinItButtonInsert.pinDesc = jQuery('.productName').html();
 			}
@@ -5276,7 +5311,7 @@ if( location.pathname == "/browse/product.do" ) {
 			wcdPinItButtonInsert.pinDesc = wcdPinItButtonInsert.pinDesc.replace("'","");
 			wcdPinItButtonInsert.pinItStr = 'http://pinterest.com/pin/create/button/?url=' + wcdPinItButtonInsert.pinURL + '&media=' + wcdPinItButtonInsert.pinMedia + '&description=' + wcdPinItButtonInsert.pinDesc;
 	
-			jQuery('#pinItDiv').html('<a href="javascript:void(0);" onclick="window.open(\'' + wcdPinItButtonInsert.pinItStr + '\',\'pinIt\',\'toolbar=0,status=0,width=620,height=500\');"><img src="/Asset_Archive/GPWeb/content/0006/556/731/assets/builder_pinit.png" /></a>');
+			jQuery('#pinItDiv').html('<a href="javascript:void(0);" onclick="window.open(\'' + wcdPinItButtonInsert.pinItStr + '\',\'pinIt\',\'toolbar=0,status=0,width=620,height=500\');"><img src="/Asset_Archive/ATWeb/content/0006/555/712/assets/builder_pinit.png" /></a>');
 	
 		},
 		
@@ -5671,7 +5706,7 @@ jQuery(document).on('productPage:ready', productPageFinalSale.init );
 <!-- END: Product Page Final Sale title override 2/19 cleanup -->
 
 
-<!-- END Content Item File: /content/0009/894/511/cn9894511.html -->
+<!-- END Content Item File: /content/0010/188/255/cn10188255.html -->
 
 <!-- END - WCD Sitewide Container 4 -->
 
