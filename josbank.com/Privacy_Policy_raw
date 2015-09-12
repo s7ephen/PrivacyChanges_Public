@@ -745,7 +745,7 @@ onclick="javascript:toggleMiniShopCartDropDown('widget_minishopcart','quick_cart
 onKeyPress="javascript:toggleMiniShopCartDropDownEvent(event,'widget_minishopcart','quick_cart_container','orderItemsList');"
 aria-label="Shopping Cart">
 <span id="minishopcart_total">
-<a href="http://www.josbank.com/OrderCalculate?calculationUsageId=-1&updatePrices=1&doConfigurationValidation=Y&catalogId=14052&errorViewName=AjaxOrderItemDisplayView&orderId=.&langId=-1&storeId=13452&URL=https%3A%2F%2Fwww.josbank.com%2FAjaxOrderItemDisplayView%3F">
+<a href="https://www.josbank.com/OrderCalculate?calculationUsageId=-1&updatePrices=1&doConfigurationValidation=Y&catalogId=14052&errorViewName=AjaxOrderItemDisplayView&orderId=.&langId=-1&storeId=13452&URL=https%3A%2F%2Fwww.josbank.com%2FAjaxOrderItemDisplayView%3F">
 <span class="minicartbag">
 <span class="uline">My Cart:</span> 
 <span id="cookieCartTotal">0</span>
@@ -778,10 +778,11 @@ aria-label="Shopping Cart">
 <a id="ContinueShoppingButton" onclick="javascript:window.location.hash = '#orderId='; window.location.reload(true);" class="button btn-tertiary">
 <span>Continue Shopping</span>
 </a>
-<a id="GotoCartButton2" href="http://www.josbank.com/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;doConfigurationValidation=Y&amp;catalogId=14052&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=13452&amp;URL=https%3A%2F%2Fwww.josbank.com%2FAjaxOrderItemDisplayView%3F" class="button">
+<a id="GotoCartButton2" href="https://www.josbank.com/OrderCalculate?calculationUsageId=-1&amp;updatePrices=1&amp;doConfigurationValidation=Y&amp;catalogId=14052&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=13452&amp;URL=https%3A%2F%2Fwww.josbank.com%2FAjaxOrderItemDisplayView%3F" class="button">
 <span>Checkout</span>
 </a>
 <div id="freeShippingMessage">
+FREE Shipping on All Orders over $50.00!
 </div>
 </div>
 </div>
@@ -880,7 +881,7 @@ Jos. A. Bank has partnered with international shipping solution Borderfree to al
 <a class="header-international-link" data-modal-fn="languageCurrencyModal" href="#">
 <span class="header-international-label" id="header-international-label">Change Region</span><span class="visuallyhidden">. This action will open a modal dialog.</span><img class="header-international-img" id="header-international-img" data-url-pattern="/wcsstore/JABAuroraStorefrontAssetStore//images/global/flags/[COUNTRY].gif" alt="" style="display:none;"/>
 </a>
-<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="https://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
+<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
 <input type="hidden" id="shoppingCartURL" name="shoppingCartURL" value="OrderCalculate?langId=-1&storeId=13452&catalogId=14052&calculationUsageId=-1&calculationUsageId=-2&calculationUsageId=-7&updatePrices=1&orderId=.&URL=AjaxOrderItemDisplayView&errorViewName=AjaxOrderItemDisplayView" />
 
 </div>
@@ -892,7 +893,7 @@ international.init('2440');
 </script>
 <script type="text/javascript">
 try {
-UserInfoJS.setURL('getUserInfoURL','https://www.josbank.com/FetchUserDetailsAjax?catalogId=14052&langId=-1&storeId=13452');
+UserInfoJS.setURL('getUserInfoURL','http://www.josbank.com/FetchUserDetailsAjax?catalogId=14052&langId=-1&storeId=13452');
 if (UserInfoJS.isAjaxCallNeeded()) {
 dojo.addOnLoad(function() {
 UserInfoJS.init();	
