@@ -444,7 +444,9 @@ document.write('<SCR'+'IPT SRC="https://fls.doubleclick.net/activityj;src=371761
     data-forgot-username="https://mysprint.sprint.com/mysprint/pages/sl/forgotpassword/external_forgot_username.jsp?INTNAV=LeftNav:SignIn:ForgotUsername"
     data-mobile-forgot-username="https://m.sprint.com/mySprintMobile/registration/forgotusernamemain.jsp?INTNAV=LeftNav:MyS:ForgotUsername"
     data-forgot-password="https://mysprint.sprint.com/mysprint/pages/sl/forgotpassword/external_forgot_password.jsp?INTNAV=LeftNav:SignIn:ForgotPassword"
-    data-mobile-forgot-password="https://m.sprint.com/mySprintMobile/registration/forgotpasswordmain.jsp?INTNAV=LeftNav:MyS:ForgotPassword">Sign In</h2>
+    data-mobile-forgot-password="https://m.sprint.com/mySprintMobile/registration/forgotpasswordmain.jsp?INTNAV=LeftNav:MyS:ForgotPassword"
+    data-disable-geolocation="false"
+    data-disable-reload-on-geolocate="true">Sign In</h2>
 <ul blade="signin">
   <input sub-blade="signinForm" name="USER" placeholder="Username">
   <input sub-blade="signinForm" name="PASSWORD" placeholder="Password">
@@ -496,13 +498,16 @@ document.write('<SCR'+'IPT SRC="https://fls.doubleclick.net/activityj;src=371761
 <h2 blade="shop"
     data-device-promo-endpoint="/api/devices/promos.json"
     data-device-hero-endpoint="/api/devices/heroes.json"
+    data-disable-geolocation="false"
+    data-disable-reload-on-geolocate="false"
         >Shop</h2>
 <ul blade="shop">
-  <li id="tl_desktop_phones" desktop-only><a href="http://www.sprint.com/shop/#!/device/list/PHONE">Phones</a></li>
-  <li id="tl_mobile_phones" mobile-only><a href="https://m.sprint.com/shop/#!/device/list/PHONE">Phones</a></li>
 
-  <li id="tl_desktop_tablets" desktop-only><a href="http://www.sprint.com/shop/#!/device/list/TABLET">Tablets</a></li>
-  <li id="tl_mobile_tablets" mobile-only><a href="https://m.sprint.com/shop/#!/device/list/TABLET">Tablets</a></li>
+  <li id="tl_desktop_phones" desktop-only><a href="http://www.sprint.com/shop/?INTNAV=LeftNav:Shop:Phones#!/device/list/PHONE">Phones</a></li>
+  <li id="tl_mobile_phones" mobile-only><a href="https://m.sprint.com/shop/?INTNAV=LeftNav:Shop:Phones#!/device/list/PHONE">Phones</a></li>
+
+  <li id="tl_desktop_tablets" desktop-only><a href="http://www.sprint.com/shop/INTNAV=LeftNav:Shop:Tablets#!/device/list/TABLET">Tablets</a></li>
+  <li id="tl_mobile_tablets" mobile-only><a href="https://m.sprint.com/shop/INTNAV=LeftNav:Shop:Tablets#!/device/list/TABLET">Tablets</a></li>
 
   <li id="tl_desktop_hotspots" desktop-only><a href="http://shop.sprint.com/mysprint/shop/phone_wall.jsp?flow=&amp;tabId=dt_mbc&amp;INTNAV=LeftNav:Shop:HotspotsMore">Hotspots &amp; more</a></li>
   <li id="tl_mobile_hotspots" mobile-only><a href="https://m.sprint.com/shop/mobile/shop/phone_wall.jsp?selDeviceCategory=dt_mbc&amp;INTNAV=LeftNav:Shop:HotspotsMore">Hotspots &amp; more</a></li>
@@ -510,14 +515,16 @@ document.write('<SCR'+'IPT SRC="https://fls.doubleclick.net/activityj;src=371761
   <li id="tl_desktop_data-share-plans" desktop-only logged-in="false"><a href="http://www.sprint.com/landings/datashare/index.html?INTNAV=LeftNav:Shop:DataSharePlans">Data Share plans</a></li>
   <li id="tl_mobile_data-share-plans" mobile-only logged-in="false"><a href="https://m.sprint.com/mobile/landings/datashare/index.html?INTNAV=LeftNav:Shop:DataSharePlans">Data Share plans</a></li>
 
-  <li id="tl_desktop_other-plans" desktop-only logged-in="true"><a href="/shop/plan-wall/#!/">Plans</a></li>
-  <li id="tl_mobile_other-plans" mobile-only logged-in="true"><a href="/shop/plan-wall/#!/">Plans</a></li>
+  <li id="tl_desktop_other-plans" desktop-only logged-in="true"><a href="http://www.sprint.com/shop/plan-wall/?INTNAV=LeftNav:Shop:Plans">Plans</a></li>
+  <li id="tl_mobile_other-plans" mobile-only logged-in="true"><a href="https://m.sprint.com/shop/plan-wall/?INTNAV=LeftNav:Shop:Plans">Plans</a></li>
 
   <li id="tl_desktop_other-plans" desktop-only logged-in="false"><a href="http://www.sprint.com/shop/plan-wall/?INTNAV=LeftNav:Shop:OtherPlans">Other plans</a></li>
   <li id="tl_mobile_other-plans" mobile-only logged-in="false"><a href="https://m.sprint.com/shop/plan-wall/?INTNAV=LeftNav:Shop:OtherPlans">Other Plans</a></li>
 
-  <li id="tl_desktop_promotions" desktop-only><a href="http://shop.sprint.com/mysprint/shop_landing.jsp?INTNAV=LeftNav:Shop:Promotions">Promotions</a></li>
-  <li id="tl_mobile_promotions" mobile-only><a href="https://m.sprint.com/mobile/landings/deals-and-discounts/?INTNAV=LeftNav:Shop:Promotions">Promotions</a></li>
+  <li id="tl_mobile_promotions" mobile-only><a href="http://www.sprint.com/landings/promotions/index.html?INTNAV=LeftNav:Shop:Promotions">Promotions</a></li>
+  <li id="tl_desktop_promotions_previously_logged_in" desktop-only previously-logged-in="true"><a href="http://shop.sprint.com/mysprint/shop_landing.jsp?INTNAV=LeftNav:Shop:Promotions">Promotions</a></li>
+  <li id="tl_desktop_promotions" desktop-only previously-logged-in="false"><a href="http://www.sprint.com/landings/promotions/index.html?INTNAV=LeftNav:Shop:Promotions">Promotions</a></li>
+
 
   <li id="tl_desktop_accessories" desktop-only><a href="http://www.sprint.com/landings/accessorylanding/?INTNAV=LeftNav:Shop:Accessories">Accessories</a></li>
   <li id="tl_mobile_accessories" mobile-only><a href="https://m.sprint.com/shop/mobile/shop/accessory/ao/accessory_wall.jsp?INTNAV=LeftNav:Shop:Accessories">Accessories</a></li>
