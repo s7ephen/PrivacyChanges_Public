@@ -16,7 +16,7 @@
 	
 	var HAS_ADFREE = 1;
 	var ACCESS_TOKEN = "";
-	var SERVER_TIME = 1442026699;
+	var SERVER_TIME = 1442032240;
 	var ENV = 'prod';
 	var PORT = '';
 	var SERVICE = "textpub";
@@ -24,7 +24,7 @@
 	var PLATFORM = 'DESKTOP';
 	var USER_GROUP = 0; 
 	if (typeof console == 'undefined' || typeof console.log == 'undefined') console = { 'log':function(){} };
-	 CurrentGMT = new Date(1442026699*1000); 
+	 CurrentGMT = new Date(1442032240*1000); 
 	var SESSION = {};
 	var user_demo = {};
 	var AUTHCODE = "";
@@ -33,8 +33,8 @@
 	var PROFILE_PANEL_STATE = "";
 	var DAISY_URL = "http://ads.okcimg.com/daisy";
 	var DAISY_PAGE = "";
-	var HAS_GLOBAL_MESSAGING_THREADS = true;
-	var ONLY_MESSAGING_STATE = "tester";
+	var HAS_GLOBAL_MESSAGING_THREADS = false;
+	var ONLY_MESSAGING_STATE = "";
 	var PRIDE = false;
 	var L10N_DEBUG = false;
 
@@ -47,32 +47,20 @@
 	
 			var QM_GROUP = null;
 		
-			var AGEBLOCK_GROUP = "control";
+			var AGEBLOCK_GROUP = "tester_low";
 		
 
 	
 
 	// 
 	var DeferredJS={list:[],checker:null,init:function(t){this.context=t},addBundles:function(t){clearTimeout(this.checker),t&&(this.list=this.list.concat(t)),this.check()},isFunction:function(t){return!!(t&&t.constructor&&t.call&&t.apply)},check:function(){this.list.length&&(this.checkList(),this.recheck())},checkList:function(){var t,i,c,e,n,s,h,r;for(t=this.list.length-1;t>=0;t--)for(e=this.list[t],n=e.hierarchy,s=e.params,h=r=this.context,i=0,c=n.length;c>i&&(h=h[n[i]],"undefined"!=typeof h);i++)this.isFunction(h)&&(h.apply(r,s),this.list.splice(t,1)),r=h},recheck:function(){this.checker=setTimeout(function(t){return function(){t.check()}}(this),10)}};DeferredJS.init(this);
-</script>  <script src="//includes.okccdn.com/lang/en/version/0.001/lib/raven.min.js"></script> <script>
-			// First drop in our own onerror handler.
-			 var erroriframe = null; var erroriframecreated = false; var errorlist = []; window.onerror = function WindowOnError(message, url, line) { var errors = {}, whitelist, reporturl, prop, iframe, ua, i, length; errorlist.push({ message: message, url: url, line: line }); if (typeof(url) == 'undefined' || !url || url == 'undefined') { return; } if (window.navigator && window.navigator.userAgent) { ua = window.navigator.userAgent; if (ua.indexOf('Googlebot') != -1) { return; } } if (url.search(/^http/) != -1) { if (url.indexOf('okcupid.com') == -1 && url.indexOf('includes.okccdn.com') == -1) { return; } } if (url.search(/^resource/) != -1) { return; } if (url.search(/^chrome/) != -1) { return; } whitelist = [ "fidoCallback", "atomicFindClose", "NPObject", "Script error", "__gCrWeb" ]; for (i = 0, length = whitelist.length; i < length; i++) { if (message.indexOf(whitelist[i]) != -1) { return; } } if (typeof(message) != 'undefined') { errors.message = message; } if (typeof(line) != 'undefined') { errors.line = line; } if (typeof(url) != 'undefined') { if (typeof(url) == 'string' && url.length > 200) { url = url.slice(0, 200); } errors.url = url; } if (typeof(SCREENNAME) != 'undefined') { errors.sn = SCREENNAME; } if (url.indexOf("www.okcupid.com") == -1 && window.location && window.location.pathname) { errors.page = window.location.pathname; } if (window.navigator && window.navigator.userAgent) { errors.ua = window.navigator.userAgent; } if (typeof(BrowserDetect) != "undefined") { errors.ua = BrowserDetect.versionSearchString + " " + BrowserDetect.browser + " " + BrowserDetect.version; } reporturl = "/globalerror?"; for (prop in errors) { if (errors.hasOwnProperty(prop)) { reporturl += prop + '=' + encodeURIComponent(errors[prop]) + '&'; } } iframe = document.createElement('IFRAME'); iframe.setAttribute('src', reporturl); iframe.style.width = '1px'; iframe.style.height = '1px'; erroriframe = iframe; setTimeout(addErrorIframe, 100); }; function addErrorIframe() { var errorcontainer = document.getElementById('global_js_errors'); if (!erroriframe || erroriframecreated) { return; } if (errorcontainer) { document.getElementById('global_js_errors').appendChild(erroriframe); erroriframecreated = true; } else { setTimeout(addErrorIframe, 100); } } 
+</script>  <script>
+				var errorlist = [];
 
-			// Then drop in Sentry, which maintains the old onerror handler.
-			if (window.Raven) {
-				Raven.config('https://cc706cb497d347f98cc3f8cf146179d5@app.getsentry.com/44006', {
-					logger: 'javascript',
-					collectWindowErrors: true,
-					// Optionally add more params. Might be useful in the future.
-					// release: AUTOCORE.version,
-					// tags: {
-					//   experimentNameOrSomething: 'Pizza'
-					// },
-				}).install();
-
-				
-			}
-		</script>  <link rel="stylesheet" href="//includes.okccdn.com/lang/en/version/91bf43317f08ea3/globals.css" /><link rel="stylesheet" href="//includes.okccdn.com/lang/en/version/6a81acf4c3cb7d7/locals.css?set=help" />  <script>
+				window.onerror = function WindowOnError(message, url, line) {
+					errorlist.push({ message: message, url: url, line: line });
+				};
+			</script> <link rel="stylesheet" href="//includes.okccdn.com/lang/en/version/91bf43317f08ea3/globals.css" /><link rel="stylesheet" href="//includes.okccdn.com/lang/en/version/6a81acf4c3cb7d7/locals.css?set=help" />  <script>
 		AUTOCORE_SELF_CHECK = null;
 		AUTOCORE_START_TIMER = new Date();
 	</script>  <script src="//includes.okccdn.com/lang/en/version/0.10/core.js?modern=1"></script>  <script src="//includes.okccdn.com/autocore.js?files=c26,c05,c23,c25,d08,d09,f80,d07,d01,f62,f60,d05,f59,b01,f33,f23,f21,f12,c01,j85,f65,j83,f66,f76,f67,f70,f90,f87,f88,f89,d10,d12,j62&version=0172e01606"></script>  <script src="//includes.okccdn.com/autocore.js?files=j43&version=10102f9715"></script>  <script>
