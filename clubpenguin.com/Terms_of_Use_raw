@@ -71,7 +71,7 @@ a.button_link, a.button_link span  {color:#ffffff;}
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://disneytermsofuse.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.1.7" />
 <link rel='shortlink' href='http://disneytermsofuse.com/?p=878' />
-<link rel="canonical" href="http://disneytermsofuse.com/english/" /><script type="text/javascript">/* <![CDATA[ */jQuery(document).ready(function() {var search = jQuery('#fancy_search'),searchField = search.find('input.text');var hoverConfigSearch = {interval:100,timeout:2000,over:function(){jQuery(searchField).css('display', 'block');searchField.animate({width:160}, 400, 'easeInOutQuad').focus();},out:function(){searchField.animate({width:0}, 400, 'easeInOutQuad', function(){ jQuery(searchField).css('display', 'none') } ).blur();}};search.hoverIntent(hoverConfigSearch);});/* ]]> */</script><script type="text/javascript">
+<link rel="canonical" href="http://disneytermsofuse.com/english/" /><meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript">/* <![CDATA[ */jQuery(document).ready(function() {var search = jQuery('#fancy_search'),searchField = search.find('input.text');var hoverConfigSearch = {interval:100,timeout:2000,over:function(){jQuery(searchField).css('display', 'block');searchField.animate({width:160}, 400, 'easeInOutQuad').focus();},out:function(){searchField.animate({width:0}, 400, 'easeInOutQuad', function(){ jQuery(searchField).css('display', 'none') } ).blur();}};search.hoverIntent(hoverConfigSearch);});/* ]]> */</script><script type="text/javascript">
 	/* <![CDATA[ */
 	jQuery(document).ready(function() {
 		jQuery('#body_inner').fitVids();
@@ -81,7 +81,7 @@ a.button_link, a.button_link span  {color:#ffffff;}
 <meta name="msvalidate.01" content="1172945D51F80608C9726582F3DDA44D" />
 <meta name="viewport" content="width=device-width, initial-scale=1"></head>
 
-<body class="mysite_responsive has_breadcrumbs full_width has_intro no_footer">
+<body class="mysite_responsive ipad has_breadcrumbs full_width has_intro no_footer">
 <div class="multibg"><div class="multibg"></div></div>
 <div id="body_inner">
 	
@@ -286,6 +286,18 @@ Email:  designated.agent@dig.twdc.com</p>
 
 			<script type='text/javascript' src='/wp-content/plugins/dtss-ddm-requeued/js/prettyphoto/js/jquery.prettyPhoto.js?ver=dtss.rq.1'></script>
 <script type='text/javascript' src='/wp-content/themes/elegance/lib/scripts/flexslider/jquery.flexslider-min.js?ver=2.7-dtss.2'></script>
-<script type="text/javascript">/* <![CDATA[ */jQuery( '#main_inner' ).preloader({ imgSelector: '.blog_index_image_load span img', imgAppend: '.blog_index_image_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.one_column_portfolio' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.two_column_portfolio' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.three_column_portfolio' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.four_column_portfolio' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.portfolio_gallery.large_post_list' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load', oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '.portfolio_gallery.medium_post_list' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load' });jQuery( '.portfolio_gallery.small_post_list' ).preloader({ imgSelector: '.portfolio_img_load span img', imgAppend: '.portfolio_img_load' });jQuery( '#main_inner' ).preloader({ imgSelector: '.portfolio_full_image span img', imgAppend: '.portfolio_full_image' });jQuery( '#main_inner' ).preloader({ imgSelector: '.blog_sc_image_load span img', imgAppend: '.blog_sc_image_load' , oneachload: function(image) { jQuery(image).parent().parent().next().fadeIn(200); } });jQuery( '#main_inner, #sidebar_inner' ).preloader({ imgSelector: '.fancy_image_load span img', imgAppend: '.fancy_image_load', oneachload: function(image){var imageCaption = jQuery(image).parent().parent().next();if(imageCaption.length>0){imageCaption.remove();jQuery(image).parent().addClass('has_caption_frame');jQuery(image).parent().append(imageCaption);jQuery(image).next().css('display','block');}}});jQuery( '#intro_inner' ).preloader({ imgSelector: '.fancy_image_load span img', imgAppend: '.fancy_image_load', oneachload: function(image){var imageCaption = jQuery(image).parent().parent().next();if(imageCaption.length>0){imageCaption.remove();jQuery(image).parent().addClass('has_caption_frame');jQuery(image).parent().append(imageCaption);jQuery(image).next().css('display','block');}}});function mysite_jcarousel_setup(c) {c.clip.parent().parent().parent().parent().parent().removeClass('noscript');var jcarousel_img_load = c.clip.children().children().find('.post_grid_image .portfolio_img_load');if( jcarousel_img_load.length>1 ) {jcarousel_img_load.each(function(i) {var filename = jQuery(this).attr('href'),videos=['swf','youtube','vimeo','mov'];for(var v in videos){if(filename.match(videos[v])){jQuery(this).css('backgroundImage','url(' +assetsUri+ '/play.png)');}else{jQuery(this).css('backgroundImage','url(' +assetsUri+ '/zoom.png)');}}jQuery(this).next().fadeIn(200);});}}/* ]]> */</script>
+<script type="text/javascript">
+	/* <![CDATA[ */
+		//if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+		    var viewportmeta = document.querySelectorAll('meta[name="viewport"]')[0];
+		    if (viewportmeta) {
+		        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+		        document.body.addEventListener('gesturestart', function() {
+		            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+		        }, false);
+		    }
+		//}
+	/* ]]> */
+	</script>
 </body>
 </html>
