@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '3c555a8657', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '386e3b08c5', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=703315064'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1402308671'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=230682858'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=585076388&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1188901221'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=423589576'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1757105355'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=206800152&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, 'e92807a30f');
+      PJMedia.SharingButtons.initialize(null, null, '2b2c44ee0f');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=346465061');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=359978810');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1399477751');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1224991862');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1860744651');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=40089292');"></a>
   </span>
 </span>
 
@@ -608,9 +608,9 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 
 
 							
-											<li><a href="http://pjmedia.com/lifestyle/2015/09/12/on-the-dreaded-retcon/">On the Dreaded Retcon</a></li>
-											
 											<li><a href="http://pjmedia.com/michaelledeen/2015/09/12/the-two-mark-levins/">The Two Mark Levins</a></li>
+											
+											<li><a href="http://pjmedia.com/tatler/2015/09/11/fyf911-protest-at-stone-mountain-fizzles-badly/">#FYF911 Protest in Stone Mountain Fizzles Badly</a></li>
 											
 											<li><a href="http://pjmedia.com/tatler/2015/09/12/daily-kos-founder-markos-moulitsas-embarrasses-himself-on-twitter/">Daily Kos founder Markos Moulitsas Embarrasses Himself on Twitter</a></li>
 																		</ul>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/12/daily-kos-founder-markos-moulitsas-embarrasses-himself-on-twitter/">Daily Kos founder Markos Moulitsas Embarrasses Himself on Twitter</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/george-takei-fundraising-for-dnc-slams-discomfort-at-beautiful-diversity-in-country/">George Takei Fundraising for DNC, Slams &#8216;Discomfort at Beautiful Diversity&#8217; in Country</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/boy-13-charged-with-assault-after-kissing-girl-on-a-dare/">Boy, 13, Charged With Assault After Kissing Girl on a Dare</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/13/eureka-iran-discovers-unexpectedly-high-uranium-reserves/">Eureka! Iran Discovers &#8216;Unexpectedly High&#8217; Uranium Reserves</a></li><li><a href="http://pjmedia.com/tatler/2015/09/13/obama-influences-jewish-high-holiday-sermons/">Obama Influences Jewish High Holiday Sermons</a></li><li><a href="http://pjmedia.com/tatler/2015/09/13/idf-creates-5-year-plan-to-prepare-for-war-with-iran/">IDF Creates 5-Year Plan to Prepare for War with Iran</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -640,7 +640,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/lifestyle/2015/09/12/eventide-h3000-plugin-harmonizer/">Eventide H3000 Factory Plugin Harmonizer Review</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/12/on-the-dreaded-retcon/">On the Dreaded Retcon</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/11/8-great-gangster-films/">8 Great Gangster Films</a></li>
+				<li><a href="http://pjmedia.com/lifestyle/2015/09/13/is-ad-blocking-software-immoral/">Is Ad-Blocking Software Immoral?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/12/eventide-h3000-plugin-harmonizer/">Eventide H3000 Factory Plugin Harmonizer Review</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/12/on-the-dreaded-retcon/">On the Dreaded Retcon</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214388/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">ENGLAND, LESS CRAZY THAN CALIFORNIA:<a target="_blank" href="http://www.telegraph.co.uk/news/uknews/assisted-dying/11857940/Assisted-dying-vote-in-House-of-Commons.html">Right to die: MPs reject assisted dying law.</a>  (There is no way for assisted suicide laws NOT to be abused, particularly when they intersect with a state health system.)</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214387/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit"></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214386/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">THEY&#8217;D NEVER DO THE EQUIVALENT IN A MOSQUE: <a target="_blank" href="http://www.sunderlandecho.com/news/crime/sunderland-priest-s-disgust-after-burglars-urinate-in-church-s-holy-water-1-7455181">Sunderland priest’s disgust after burglars urinate in church’s holy water.</a>  We all know why.  Beware the incentives this creates.</a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/213917/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">IN THE MAIL:  From David Weber &#038; Timothy Zahn, <a target="_blank" href="http://www.amazon.com/gp/product/1476780811/ref=as_li_tl?ie=UTF8&#038;camp=1789&#038;creative=9325&#038;creativeASIN=1476780811&#038;linkCode=as2&#038;tag=wwwviolentkicom&#038;linkId=NVX2OVGTYILOWBN7"><em>A Call to Duty.</em></a>  ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214395/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">TAXPROF ROUNDUP:  <a target="_blank" href="http://taxprof.typepad.com/taxprof_blog/2015/09/the-irs-scandal-day-857.html">The IRS Scandal, Day 857.</a></a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":376,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":344,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
