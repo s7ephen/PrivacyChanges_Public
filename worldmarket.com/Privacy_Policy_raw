@@ -786,7 +786,7 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 			</div>
 			<div class="globalNavTop">
 				<div class="fLeft promoSection2">
-					<!-- start wknn-promo-kiosk-template.html | rev 07.27.2015 ekw  | rev 08.05.2015 ekw | rev 08.07.2015 ekw | 09.11.2015 ekw -->
+					<!-- start wk29-promo-ends-wednesday.html | rev 08.17.2015 ekw | 09.11.2015 ekw -->
 <style>
 #cpwm_promo2 {}
 #cpwmMarketingPopup .closebutton {background:url(/images/misc/blank.gif) no-repeat; position:absolute; right:3px; top:3px; width:75px; height:25px; display:block; z-index:1000}
@@ -795,16 +795,16 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 </style>
 <script type="text/javascript" language="javascript">
 (function(){
-	window.isKioskMode = false;
 	var isKiosk = false; 
-	var popupIsActive = false;       // [step 0] set to true if current CPWM promo includes a popup; otherwise set to false
-	var newCookie = "2015wk22";      // [step 1a] set standard promo cookie name with each new promo
-	var kioskCookie = "kiosk150727"; // [step 1b] set kiosk cookie name (if applicable)
+	window.isKioskMode = false;
+	var popupIsActive = true;       // [step 0] set to true if current CPWM promo includes a popup; otherwise set to false
+	var newCookie = "2015wk29";      // [step 1a] set standard promo cookie name with each new promo
+	var kioskCookie = "kiosk150827"; // [step 1b] set kiosk cookie name (if applicable)
 	var showPop = false;
-	var leftNavImage = "/text/promo-slots/2-left-of-search/2014/wk43/wk43-wmfs1502-leftnav.jpg";   // [step x] specify standard left nav image
-	var promo2topbanner = "/text/promo-slots/2-left-of-search/2014/wk43/wk43-promo2-wmfs1502.png"; // [step x] specify standard top banner image
-	var popupImage = "/text/promo-slots/2-left-of-search/2015/wk19/wk19_15off+FS100_popup.jpg";    // [step x] specify standard popup image
-	var promo2Disclaimer = "Free Shipping on orders $150+";    
+	var leftNavImage = "/text/promo-slots/2-left-of-search/2015/wk29/wk29_15off_leftNav-ends-wednesday.jpg";   // [step x] specify standard left nav image
+	var promo2topbanner = "/text/promo-slots/2-left-of-search/2015/wk29/wk29_15off_promo2.png"; // [step x] specify standard top banner image
+	var popupImage = "/text/promo-slots/2-left-of-search/2015/wk29/wk29_15off_popup-ends-wednesday.jpg";    // [step x] specify standard popup image
+	var promo2Disclaimer = "15% off Regular-Price Items + Free Shipping on orders $150 or more – Ends 9/16";    
 	var disclaimerID = "cpwmMarketingDisclaimer";
 	var isAOS = jQuery('#storeClerkToolBar').length != 0; // If this element exists on page, we are in AOS (associate order system) mode
 
@@ -823,6 +823,7 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 	// Note: there is currently no popup for kiosk.
 	if (isKiosk) {
 		popupIsActive = false;
+		showPop = false;
 		leftNavImage = "/text/promo-slots/2-left-of-search/2015/wk18/wk18-promo-kiosk-leftnav.jpg";
 		promo2Disclaimer = "Pay no more than $100 per purchase for shipping, surcharges included.";
 		promo2topbanner = "/text/promo-slots/2-left-of-search/2015/wk18/wk18-promo-kiosk-topbanner.png";
@@ -832,8 +833,8 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 	// block partner popups if we have an active promotion with popup OR we are in kiosk mode OR we are in AOS mode
 	window._cpwm_block_ups_stlhs = popupIsActive || isKiosk || isAOS; 
 
-	// if there is an active CPWM promo popup and this is a new cookie, enable popup and block partner popups
-	if (popupIsActive && !jQuery.cookie(newCookie)) {
+	// if there is an active CPWM promo popup AND this is a new cookie AND we are not in kiosk mode, enable popup and block partner popups
+	if (popupIsActive && !jQuery.cookie(newCookie) && !isKiosk) {
 		showPop = true;
 	}
 
@@ -881,11 +882,11 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 
 			// if user clicks above the threshold, go to URL, else stay on this page and apply promo code
 			if (relativeY > threshold) {
-				window.location.href = '/category/code/109530.do?coupon=ffship0987'; // [3b] set url eg /category/code/109530.do?coupon=sunnydays
+				window.location.href = 'http://images.revtrax.com/RevTrax/cpn1?channel=brand&merchantId=49060623&affiliateId=58960924&programId=66515712'; // [3b] set url eg /category/code/109530.do?coupon=sunnydays
 			}
 			else {
 				a += (a.indexOf('?')>1 ? "&":"?");
-				window.location.href =  a + 'code=HELLOJULY'; // [3c] change promo source code
+				window.location.href =  a + 'code=DOUBLEDEAL'; // [3c] change promo source code
 			}
 
 			return false;
@@ -903,21 +904,29 @@ if(typeof(cpwm_search_default_text)  !='undefined' && cpwm_search_default_text !
 <div id="cpwmMarketingPopup" style="display:none; cursor:pointer;">
 	<div class="closebutton"></div>
 	<!-- [5] change popup image -->
-    <img src="/text/promo-slots/2-left-of-search/2015/wk19/wk19_15off+FS100_popup.jpg" width="562" height="426" alt="Click to Apply Code" title="Click to APPLY CODE" />
+    <img src="/text/promo-slots/2-left-of-search/2015/wk29/wk29_15off_popup-ends-wednesday.jpg" width="562" height="426" alt="Click to Apply Code" title="Click to APPLY CODE" />
 </div>
 
 
 <div id="cpwmMarketingDisclaimer" style="display:none; line-height:1.3">
     <!-- [6] change disclaimer block -->
 	<!--<a href="/category/code/109847.do?wk6=wm-com">GET IN-STORE COUPON HERE &gt;</a>-->
-	<p class="promostd">Valid at worldmarket.com on ground shipping on a purchase of $150 or more, excluding items purchased for in-store pick-up, and before taxes, shipping, and handling. Delivery surcharges, and 2-day and overnight shipping charges still apply. Offer not valid in Alaska and Hawaii. Cannot be combined with other coupons. No adjustments to prior purchases.</p>
+	
+	<h3>15% off Regular-Price Items:</h3>
+	<p class="promostd">Valid through 9/16/15. Valid at worldmarket.com on purchases of regular-price items. Not valid in store. Not valid on alcoholic beverages, gift cards, eGift Cards, CRAFT BY WORLD MARKET merchandise, One of a Kind Rugs, delivery surcharges, and shipping fees. One-time use only. Cannot be combined with other coupons and offers. Discount will be applied to current selling price. Employees not eligible. No adjustments to prior purchases. No cash value or rain checks issued. When you return an item, you will forfeit the discount applied to that item.</p>
+
+	<h3>Free Shipping on orders $150+:</h3>
+	<p class="promostd">Valid through 9/16/15. Valid at worldmarket.com on ground shipping on a purchase of $150 or more before taxes, shipping, and handling. Delivery surcharges, and 2-day and overnight shipping charges still apply. Offer not valid in Alaska and Hawaii. Cannot be combined with other coupons. No adjustments to prior purchases.</p>
+
+	<!--<a href="http://www.worldmarket.com/category/code/109530.do?coupon=ffship0987">GET IN-STORE COUPON HERE  &gt;</a> -->
+
 </div>
 
 <div id="kioskDisclaimer" style="display:none; line-height:1.3">
     <!-- [6] change disclaimer block -->
 	<p class="promokiosk">Valid at worldmarket.com on ground shipping. Orders must be placed in the Chelsea, Manhattan, NY Cost Plus World Market store on an associate’s tablet. Maximum shipping charge of $100 includes standard ground shipping fees and any applicable delivery surcharges. Excludes 2-day and overnight shipping orders, and orders shipping to Alaska and Hawaii. Cannot be combined with other shipping offers. No adjustments to prior purchases.</p>
 </div>
-<!-- start wknn-promo-kiosk-template.html -->
+<!-- start wk29-promo-ends-wednesday.html -->
 </div>
 				<div class="fRight" id="globalcart_container" style="padding-right:0;background:none;"><div id="globalBasket" class="popDownWrapper globalCartWrapper">
 	<div class="popDownNav globalCartNav">
@@ -1524,7 +1533,7 @@ http://www.omniture.com -->
     };
 
     function getSerializationID() {
-    	return "4148472";
+    	return "9213365";
     };
 </script>
 <!-- script language="JavaScript" type="text/javascript" src="/omniture/s_code.js"></script --> <!-- WOMA-2441 -->
@@ -2443,7 +2452,15 @@ if (window.addEventListener){
 	USI_installCode();
 }
 </script>
-<!-- MyBuys Page Initialization Place after </body> tag -->
+<!-- MyBuys Page Initialization Place after <script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05,1bdc3619b18fec3386f24752c62c3f9d&ns=1';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body> tag -->
 <script type="text/javascript">
   mybuys.initPage();
 </script>
