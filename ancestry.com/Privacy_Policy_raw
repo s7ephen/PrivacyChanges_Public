@@ -24,38 +24,11 @@
 	<script src="http://c.mfcreative.com/lib/tgn/util/v1.1/AjaxManager.js?v=4" type="text/javascript"></script>
 	<script src="http://c.mfcreative.com/lib/tgn/util/v1.1/ResourceManager.js?v=4" type="text/javascript"></script>
 		<!-- Header top resources -->
-				<link rel="stylesheet" href="http://c.mfcreative.com//SSS_NAV/1.0.888/Content/2.1/header.css"/>
-				<script type="text/javascript" src="http://c.mfcreative.com//SSS_NAV/1.0.888/Content/2.1/header.js"></script>
+				<link rel="stylesheet" href="http://c.mfcreative.com//SSS_NAV/1.0.888/Content/1.2/header.css"/>
+				<script type="text/javascript" src="http://c.mfcreative.com//SSS_NAV/1.0.888/Content/1.2/header.js"></script>
 				<script type="text/javascript">
 					
-$(function setupHeader(numTries) {
-	numTries = numTries || 0;
-	if (typeof header !== 'undefined') {
-		header.init({
-		    'userId': '',
-			'rootDomain': 'ancestry.com',
-			'ajaxUrl': '//navigation.ancestry.com/ajax/userdata/2.1',
-			'dnaUrl': '//dna.ancestry.com',
-			'userAjaxUrl': '//navigation.ancestry.com/ajax/UserInfo',
-			'clearUserDataUrl': '//navigation.ancestry.com/ajax/Clear',
-			'treesAjaxUrl': '//navigation.ancestry.com/ajax/Trees',
-			'hintsAjaxUrl': '//navigation.ancestry.com/ajax/Hints',
-			'messagesAjaxUrl': '//navigation.ancestry.com/ajax/Messages',
-			'cacheDomain': '//c.mfcreative.com',
-			'isLoggedIn': 'False' == 'True',
-			'selectedTabName': 'SELECTEDTAB',
-			'facebookUrl': '//fbsso.ajax.ancestry.com/SignOn/Login',
-			'hintsClearAllUrl': '//navigation.ancestry.com/ajax/ClearAllHints',
-			'addTracking': 'False' == 'True',
-			'showHireAnExpertWarning': 'False' == 'True',
-			'cachedData': {}
-		});
-	} else if (numTries < 5) {
-		setTimeout(function () {
-			setupHeader(numTries + 1);
-		}, 100);
-	}
-});
+function SetupHeader(onDocReady, retries) { if (typeof AHS !== 'undefined') { AHS.AncestryDomain = 'http://www.ancestry.com';AHS.SelectedTab = 'SELECTEDTAB';AHS.CacheUrl = '//c.mfcreative.com/';AHS.jQueryTimeout = 15000;AHS.CountCache = 360;AHS.Dna.AjaxDomain = '//dna.ancestry.com';AHS.Dna.MakeCall = true;AHS.TreesAjaxDomain = '//header.ajax.ancestry.com';if ('False' == 'True') { AHS.IsLoggedIn = true;AHS.MessageCount = '0';AHS.MoreTreesText = 'More';AHS.TreesDomain = 'http://trees.ancestry.com';AHS.Hints.AjaxDomain = '//header.ajax.ancestry.com';AHS.UserId = '';AHS.Messages.AjaxDomain = '//header.ajax.ancestry.com'; AHS.NavigationAjaxUrl = '//navigation.ancestry.com/ajax'; AHS.loadUserInfo(); } else { AHS.UsernameText = 'Username or email';AHS.PasswordText = 'Password'; } if ('False' == 'True') { AHS.allowTracking = true; } AHS.ShowTreesTab = true;if (onDocReady) { AHS.initialize();}else {$(document).ready(function () { AHS.initialize(); }); } } else if (retries > 0) { setTimeout('SetupHeader('+onDocReady+','+(retries-1)+')',100);} } if (typeof AHS === 'undefined') { $(document).ready(function () { SetupHeader(true,5); }); } else { SetupHeader(false,5); }
 				</script>
 				<script type="text/javascript">
 					
@@ -77,134 +50,26 @@ $(function(){var n={Get:function(n){var i=new RegExp(n+"=([^;]+)","i"),t=i.exec(
 	<body>
 
 	<div id="HeaderRegion">
-		<h2 class="hideVisually">Ancestry</h2>
-<nav class="nav navLoggedOut navVersion21" id="nav" aria-labelledby="navMainMenuTitle" data-nav-version="navVersion21" role="banner">
-    <h3 class="hideVisually" id="navMainMenuTitle">Main Menu</h3>
-	<a href="#skipped-nav" class="hideVisually" id="navSkip">Skip Ancestry main menu</a>
-	<a class="navLink navLogo" data-tracking-name="Logo" href="http://www.ancestry.com"><img alt="Home" height="21" src="//c.mfcreative.com/i/logo/ancestry-on-dark.svg" width="118" /></a><!--
-	--><div class="navMainMenu hide480">
-<a class="navLink navMainLink navHomeLoggedOut calloutTriggerNoArrow hide768 show480" data-tracking-name="Home" href="http://www.ancestry.com" id="navHomeLoggedOut"  >Home</a><a class="navLink navMainLink navTreesLoggedOut calloutTriggerNoArrow" data-tracking-name="Family Trees" href="http://trees.ancestry.com" id="navTreesLoggedOut"  aria-controls="navTreesLoggedOutMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navTreesLoggedOutMenu"  >Trees</a><a class="navLink navMainLink navSearch calloutTriggerNoArrow" data-tracking-name="Search" href="http://search.ancestry.com" id="navSearch"  aria-controls="navSearchMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navSearchMenu"  >Search</a><a class="navLink navMainLink navDna calloutTriggerNoArrow" data-tracking-name="AncestryDNA" href="http://dna.ancestry.com" id="navDna"  aria-controls="navDnaMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navDnaMenu"  >DNA</a><a class="navLink navMainLink navHelp calloutTriggerNoArrow" data-tracking-name="Get Help" href="http://help.ancestry.com" id="navHelp"  aria-controls="navHelpMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navHelpMenu"  >Help</a><a class="navLink navMainLink navExtras calloutTriggerNoArrow" data-tracking-name="Extras" href="http://www.ancestry.com/cs/apps/allproducts" id="navExtras"  aria-controls="navExtrasMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navExtrasMenu"  >Extras</a>		</div><!--
-	--><div class="navSecondaryMenu ">
-<a class="navLink navSubscribe hide320" id="navSubscribe" href="http://www.ancestry.com/t7364/rd.ashx" data-tracking-name="Subscribe">Subscribe</a><!--
-		--><a href="https://secure.ancestry.com/login?ti.si=0&amp;ti=0" class="navLink navAccount iconAfter iconArrowSmallDownAfter" id="navAccount" aria-controls="navAccountMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navAccountMenu" data-submenu-type="click" data-tracking-name="Load Sign In">Sign In</a><!--
-		--><button type="button" class="link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow" data-submenu-type="click" title="Main Menu" id="navMobile" aria-controls="navMobileMenu" aria-expanded="false" aria-haspopup="true" aria-owns="navMobileMenu"></button>
-	</div>
-	<div class="navMobileMenu" id="navMobileMenu">
-<a class="calloutMenuTitle navMobileHomeLoggedOut" data-tracking-name="Home" href="http://www.ancestry.com" id="navMobileHomeLoggedOut">Home</a>
-			<div class="navTreesLoggedOutMenu navSubMenu navMobileSubMenu" id="navTreesLoggedOutMenu" role="group" aria-expanded="false" aria-labelledby="navTreesLoggedOut">
-
-				<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Family Trees</h5>
-								<ul>
-			    	
- 
-					<li><a href="http://trees.ancestry.com/pt/startped.aspx" id="navLinkStartTree" data-tracking-name="Start a new tree">Start a New Tree</a></li>
-					 
-					<li><a href="http://trees.ancestry.com/pt/uploadfile.aspx" id="navLinkUploadGedcom" data-tracking-name="Upload a GEDCOM">Upload a GEDCOM</a></li>
-								    	
-				</ul>
-			</div>
-		
-			<div class="navSearchMenu navSubMenu navMobileSubMenu" id="navSearchMenu" role="group" aria-expanded="false" aria-labelledby="navSearch">
-
-				<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Search &amp; Browse</h5>
-								<ul>
-			    	
- 
-					<li><a href="http://search.ancestry.com" id="navLinkAllCategories" data-tracking-name="All Categories">All Collections</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/category.aspx?cat=35" id="navLinkCensus" data-tracking-name="Census &amp; Voter Lists">Census &amp; Voter Lists</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/category.aspx?cat=34" id="navLinkBMD" data-tracking-name="Birth, Marriage &amp; Death">Birth, Marriage &amp; Death</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/category.aspx?cat=40" id="navLinkImmigration" data-tracking-name="Immigration &amp; Travel">Immigration &amp; Travel</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/db.aspx?dbid=1030" id="navLinkPublicMemberTrees" data-tracking-name="Public Member Trees">Public Member Trees</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/category.aspx?cat=39" id="navLinkMilitary" data-tracking-name="Military">Military</a></li>
-					 
-					<li><a href="http://search.ancestry.com/search/cardcatalog.aspx#ccat=hc%3D25%26dbSort%3D1%26sbo%3D1%26" id="navLinkCardCatalog" data-tracking-name="Card Catalog">Card Catalog</a></li>
-					 
-					<li><a href="http://community.ancestry.com/directory/directory.aspx" id="navLinkMemberDirectory" data-tracking-name="Search Member Directory">Member Directory</a></li>
-								    	
-				</ul>
-			</div>
-		
-			<div class="navDnaMenu navSubMenu navMobileSubMenu" id="navDnaMenu" role="group" aria-expanded="false" aria-labelledby="navDna">
-
-				<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">DNA</h5>
-								<ul>
-			    	
- 
-					<li><a href="http://dna.ancestry.com" id="navLinkLearnAboutDNA" data-tracking-name="Learn About DNA">Learn about DNA</a></li>
-								    	
-				</ul>
-			</div>
-		
-			<div class="navHelpMenu navSubMenu navMobileSubMenu" id="navHelpMenu" role="group" aria-expanded="false" aria-labelledby="navHelp">
-
-				<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Get Help</h5>
-								<ul>
-			    	
- 
-					<li><a href="http://help.ancestry.com" id="navLinkSupportHome" data-tracking-name="Support">Support Center</a></li>
-					 
-					<li><a href="http://www.ancestry.com/cs/HelpAndAdviceUS" id="navLinkLearningCenter" data-tracking-name="Learning Center">Learning Center</a></li>
-					 
-					<li><a href="http://www.ancestry.com/cs/community" id="navLinkCommunity" data-tracking-name="Community">Community</a></li>
-					 
-					<li><a href="http://boards.ancestry.com" id="navLinkMessageBoards" data-tracking-name="Message Boards">Message Boards</a></li>
-					 
-					<li><a href="https://www.progenealogists.com/?test=help.default" id="navLinkExpert" data-tracking-name="Expert Assistance">Hire an Expert</a></li>
-								    	
-				</ul>
-			</div>
-		
-			<div class="navExtrasMenu navSubMenu navMobileSubMenu" id="navExtrasMenu" role="group" aria-expanded="false" aria-labelledby="navExtras">
-
-				<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Extras</h5>
-								<ul>
-			    	
- 
-					<li><a href="http://www.ancestry.com/cs/apps/products" id="navLinkFTM" data-tracking-name="Family Tree Maker Software">Family Tree Maker Software</a></li>
-					 
-					<li><a href="http://www.ancestry.com/cs/ancestry-app" id="navLinkMobileApps" data-tracking-name="iOS &amp; Android Apps">iOS &amp; Android Apps</a></li>
-					 
-					<li><a href="http://mycanvas.ancestry.com" id="navLinkMyCanvas" data-tracking-name="Photo Books &amp; Posters">Photo Books &amp; Posters</a></li>
-					 
-					<li><a href="https://www.progenealogists.com/?test=extras.default" id="navLinkProGen" data-tracking-name="ProGenealogists">ProGenealogists</a></li>
-					 
-					<li><a href="http://www.ancestry.com/s65625/t32756/rd.ashx" id="navLinkAcademy" data-tracking-name="Ancestry Academy">Ancestry Academy&nbsp;<span class="badge badgeColor1 noDisplay" data-badge-id="8" data-badge-expiration="2015-06-01T01:00:00">New</span></a></li>
-					 
-					<li><a href="http://www.ancestry.com/s50918/t22130/rd.ashx" id="navLinkGiftSub" data-tracking-name="Give a Gift Subscription">Gift Subscriptions&nbsp;<span class="badge badgeColor1 noDisplay" data-badge-id="7" data-badge-expiration="2014-12-26T01:00:00">Offer</span></a></li>
-								    	
-				</ul>
-			</div>
-			</div>
-	<div class="navAccountMenu navSubMenu calloutDomContent" id="navAccountMenu">
-		<form class="form" method="post" action="https://secure.ancestry.com/login?ti.si=0&amp;ti=0" aria-expanded="false" aria-labelledby="navAccount">
-			<label for="username">Username or email</label>
-			<input type="text" name="username" id="username" />
-			<label for="password" class="topSpacing">Password</label>
-			<input type="password" name="password" id="password" />
-			<input type="hidden" name="kurl" id="sh_kurl" value="http://www.ancestry.com/cs/legal/privacystatement" />
-			<div class="formFooter">
-				<input class="ancBtn orange" type="submit" value="Sign in" data-tracking-name="Sign In" /><a href="https://secure.ancestry.com/security/forgotpassword.aspx" class="navForgot" data-tracking-name="Forgot Password">Forgot?</a>
-				<button type="button" class="link icon iconFacebook navFacebookLogin" title="Sign In with Facebook" data-tracking-name="Sign In with Facebook"><span class="hideVisually">Login with Facebook</span></button>
-			</div>
-			<div class="noDisplay" id="facebook-sso-webpart-region" data-lcid="1033" data-partnerid="0" class="noDisplay"><div id="SignOnRegion"></div></div>
-			<div class="noDisplay" id="fb-root"></div>
-		</form>
-		<ul class="calloutMenu show320 topSpacing">
-			<li><a href="http://www.ancestry.com/t7364/rd.ashx" data-tracking-name="Subscribe Mobile">Subscribe</a></li>
-		</ul>
-	</div>
-		<div id="skipped-nav"></div>
-</nav>
-<div class="textCenter" data-title="You are leaving the Ancestry website." id="progenLeavingAncestryModal" style="display:none">
-	<img alt="ProGenealogists" src="//c.mfcreative.com/i/logo/progen.svg" style="height:33px; margin-top:15px; max-width:100%;" />
-	<p class="topSpacingBlock">The website you are about to visit is ProGenealogists<sup>&reg;</sup>, operated <br class="hide320" />by TGN Services, LLC, a subsidiary of Ancestry.</p>
-	<footer class="textCenter topSpacingBlock"><a class="ancBtn" id="goToProGen" href="http://www.progenealogists.com/?iid=39424&o_iid=39424&o_lid=39424&o_sch=Web+Property">Continue to the ProGenealogists website</a></footer>
+		<!-- Navigation/v1.2/0/1033 --><header class="headWrp  loggedOut" role="banner" aria-label="Main Navigation"><div class="topSec clearfix"><div id="Hdr_LogoWrp" class="localLogo"><a href="http://www.ancestry.com/" data-tracking-name="Home Logo"><img src="//c.mfcreative.com//SSS_NAV/1.0.888//Content/1.2/i/logos/ancestry.png" alt="Ancestry" /><span class="localLeaf"></span></a></div>
+			<ul class="userControls textsml"><li class="acctNote" data-menu="account"><button type="button" id="showSignIn" class="ancBtn sml silver iconAfter iconArrowSmallDownAfter" onclick="AHS.showLogin(); AHS.prepareFacebook('//fbsso.ajax.ancestry.com/SignOn/Login?partnerid=0&lcid=1033');" data-tracking-name="Load Sign In">Sign In</button><span id="profileButton"></span><div class="loginBox textsml"><div class="acctNoteArrow"><div class="acctNoteInnerArrow"></div></div><form id="loginForm" action="https://secure.ancestry.com/login?ti.si=0&ti=0" method="post" class="form loginForm"><div><label for="username">Username or email</label><input type="text" class="ancUser loginFormInput" name="username" id="username" /></div><div class="topSpacing"><label for="password">Password</label><input type="password" class="ancPass loginFormInput" name="password" id="password" /></div><div class="topSpacing"><input type="submit" id="signin" class="ancBtn orange" data-tracking-name="Sign In" value="Sign In" /><a href="https://secure.ancestry.com/Account/ForgotPassword" class="forgotInfo" data-tracking-name="Forgot Password">Forgot?</a></div><input type="hidden" name="kurl" id="sh_kurl" value="http://www.ancestry.com/cs/legal/privacystatement" /></form><div id="facebook-sso-webpart-region" style="display: none"><div id="SignOnRegion"></div></div><div id="fb-root"></div><div id="helpInsertLO"><a class="acctHelp" onclick="var s=s_gi('myfamilyancestry');s.tl(this,'o','Global Help');" href="http://ancestry.custhelp.com/app/home">Help</a></div><div id="subInsertLO"><a class="" href="http://www.ancestry.com//t7364/rd.ashx" data-tracking-name="Subscribe Mobile">Subscribe</a></div></div></li><li><a class="ancBtn sml" href="http://www.ancestry.com//t7364/rd.ashx" data-tracking-name="Subscribe">Subscribe</a></li><li><a class="acctHelp" href="http://ancestry.custhelp.com/app/home" data-tracking-name="Get Help">Help</a></li></ul>
 </div>
+
+
+
+<div class="ieGrad"><a id="menuButton" href="javascript:void(0);" data-tracking-name="Show Mobile Menu"><span class="menuBar"></span><span class="menuBar"></span><span class="menuBar"></span></a><div class="mainNav"><div class="menuContArrow"></div><ul id="Hdr_Tabs" class="gLinks"><li><a id="tabHome" class="tabHome" href="http://www.ancestry.com/">
+						Home
+					</a></li><li><a id="tabTrees" class="tabTrees" href="http://trees.ancestry.com?req=tree">
+						Family Trees
+ <span></span></a><div class="listWrpr" id="tabTreesListWrpr"><div class="innerListWrpr"><ul class="ddList"><li id="_tLoad_" class=" lastLi "><a href="#"><em class="listWrprLoading">Loading...</em></a></li></ul></div></div></li><li><a id="tabSearch" class="tabSearch" href="http://search.ancestry.com/search/">
+						Search
+ <span></span></a><div class="listWrpr" id="tabSearchListWrpr"><div class="innerListWrpr"><ul class="ddList"><li id="Hdr_Srch_All" class=""><a href="http://search.ancestry.com/search/">Search All Records</a></li><li id="Hdr_Srch_Census" class=""><a href="http://search.ancestry.com/search/category.aspx?cat=35">Census & Voter Lists</a></li><li id="Hdr_Srch_BMD" class=""><a href="http://search.ancestry.com/search/category.aspx?cat=34">Birth, Marriage & Death</a></li><li id="Hdr_Srch_PublicTrees" class=""><a href="http://search.ancestry.com/search/db.aspx?dbid=1030">Public Member Trees</a></li><li id="Hdr_Srch_Military" class=""><a href="http://search.ancestry.com/search/category.aspx?cat=39">Military</a></li><li id="Hdr_Srch_Immigration" class=""><a href="http://search.ancestry.com/search/category.aspx?cat=40">Immigration & Travel</a></li><li id="Hdr_Srch_CardCatalog" class=" lastLi "><a href="http://search.ancestry.com/search/CardCatalog.aspx">Card Catalog</a></li></ul></div></div></li><li><a id="tabDna" class="tabDna" href="http://dna.ancestry.com">
+						DNA
+ <span></span></a><div class="listWrpr" id="tabDnaListWrpr"><div class="innerListWrpr"><ul class="ddList"><li id="_dnaLoad_" class=" lastLi "><a href="#"><em class="listWrprLoading">Loading...</em></a></li></ul></div></div></li><li><a id="tabColl" class="tabColl" href="http://community.ancestry.com">
+						Collaborate
+ <span></span></a><div class="listWrpr" id="tabCollListWrpr"><div class="innerListWrpr"><ul class="ddList"><li id="Hdr_Coll_RecentMemberActivity" class=""><a href="http://community.ancestry.com/fullfeed.aspx">Recent Member Connect Activity</a></li><li id="Hdr_Coll_OnlineSupportCommunity" class=""><a href="http://ancestryforums.custhelp.com/pages/home">Online Support Community</a></li><li id="Hdr_Coll_MessageBoards" class=""><a href="http://boards.ancestry.com">Message Boards</a></li><li id="Hdr_Coll_WorldArchives" class=""><a href="http://community.ancestry.com/awap">Ancestry World Archives Project</a></li><li id="Hdr_Coll_MemberDirectory" class=""><a href="http://community.ancestry.com/directory/">Member Directory</a></li><li id="Hdr_Coll_PublicProfile" class=" lastLi "><a href="http://community.ancestry.com/profile.aspx">Public Profile</a></li></ul></div></div></li><li><a id="tabLearn" class="tabLearn" href="http://www.ancestry.com/cs/HelpAndAdviceUS">
+						Learning Center
+ <span></span></a><div class="listWrpr" id="tabLearnListWrpr"><div class="innerListWrpr"><ul class="ddList"><li id="Hdr_Lrn_WhatsNew" class=""><a href="http://www.ancestry.com/cs/Satellite?childpagename=USLearningCenter%2FLearning_C%2FPageDefault&cid=1265124574476&pagename=LearningWrapper">What's New</a></li><li id="Hdr_Lrn_FirstSteps" class=""><a href="http://www.ancestry.com/cs/Satellite?childpagename=USLearningCenter%2FLearning_C%2FPageDefault&cid=1265124577005&pagename=LearningWrapper">First Steps</a></li><li id="Hdr_Lrn_NextSteps" class=""><a href="http://www.ancestry.com/cs/Satellite?childpagename=USLearningCenter%2FLearning_C%2FPageDefault&cid=1265124601069&pagename=LearningWrapper">Next Steps</a></li><li id="Hdr_Lrn_FH101" class=""><a href="http://www.ancestry.com/cs/Satellite?childpagename=USLearningCenter%2FLearning_C%2FPageDefault&cid=1265124593193&pagename=LearningWrapper">Family History 101</a></li><li id="Hdr_Lrn_Webinars" class=""><a href="http://www.ancestry.com/cs/us/videos">Webinars</a></li><li id="Hdr_Lrn_FAQ" class=""><a href="http://ancestry.custhelp.com/cgi-bin/ancestry.cfg/php/enduser/entry.php?offerid=0%3a679%3a0">Help - FAQ</a></li><li id="Hdr_Lrn_Wiki" class=""><a href="http://www.ancestry.com/wiki/index.php?title=Main_Page">Family History Wiki</a></li><li id="Hdr_Lrn_Academy" class=" lastLi "><a href="http://www.ancestry.com/s65625/t32756/rd.ashx">Ancestry Academy</a></li></ul></div></div></li></ul><ul id="Hdr_Pills" class="secLinks textsml"><li id="responsiveSubMenu"><a href="#">More</a></li><li class="headerPill"><a id="tabPublish" href="http://mycanvas.ancestry.com" >Publish</a></li><li class="headerPill"><a id="tabShop" href="http://www.ancestry.com/s59013/t29601/rd.ashx" >Shop + Gift</a></li><li class="headerPill"><a id="tabExpertConnect" href="http://www.progenealogists.com/?iid=39424&amp;o_iid=39424&amp;o_lid=39424&amp;o_sch=Web+Property" >Hire an Expert</a></li><li class="headerPillMarketing headerPillGift"><a href="http://www.ancestry.com/s50918/t22130/rd.ashx" class="gift" title="Give A Gift" data-tracking-name="Give a Gift"><span class="headerPillText">Give A Gift</span></a></li></ul></div><div class="fader"></div></div>
+</header><!--NAV-->
 	</div>
 
 		
@@ -387,7 +252,7 @@ Provo, UT 84604</p>
 </div><!-- End of legalbody -->
 		
 		<script type="text/javascript">$(document).ready(function () {$('#sitesSelect').val($('#sitesSelect [ancSelected="true"]').val());});</script><link type="text/css" rel="stylesheet" href="http://c.mfcreative.com//SSS_FTB/1.1.130/CDN/css/v1.css"/>
-	<div id="FooterRegion"><!-- v1/0/1033/LoggedOut/ Server: PRDSLVWSSSFTB01 TS: 09/12/2015 16:00:24 --><footer class="footer clearfix" id="footer" role="contentinfo"><div class="footerLinks clearfix"><ul class=""><li id="Ftr_TL_SupportCenter"><span class="footerLink"><a id="Ftr_TL_SupportCenter_Link" href="http://help.ancestry.com/">Support Center</a></span></li><li id="Ftr_TL_Blog"><a class="footerLink" id="Ftr_TL_Blog_Link" href="http://blogs.ancestry.com/ancestry/">Ancestry Blog</a></li><li id="Ftr_TL_Affiliates"><a class="footerLink" id="Ftr_TL_Affiliates_Link" href="http://www.ancestry.com/cs/sitemap-us">Site Map</a></li><li id="Ftr_TL_GiftSubs"><a class="footerLink" id="Ftr_TL_GiftSubs_Link" href="http://www.ancestry.com/s45554/key/rd.ashx?key=Uhttp://www.ancestry.com/cs/gifts">Gift Memberships</a></li><li id="Ftr_TL_Careers"><a class="footerLink" id="Ftr_TL_Careers_Link" href="http://corporate.ancestry.com/careers/">Careers</a></li></ul><div class="footerSites"><label for="footerSitesSelect">Visit our other sites:</label><select class="footerSitesSelect" onchange="window.location = this.value;" id="footerSitesSelect"><optgroup label="International"><option id="OS_US" value="http://www.ancestry.com" selected="selected" ancselected="true">United States</option><option id="OS_UK" value="http://www.ancestry.co.uk">United Kingdom</option><option id="OS_CA_EN" value="http://www.ancestry.ca?lcid=4105">Canada (English)</option><option id="OS_CA_FR" value="http://www.ancestry.ca?lcid=3084">Canada (Français)</option><option id="OS_AU" value="http://www.Ancestry.com.au">Australia</option><option id="OS_DE" value="http://www.Ancestry.de">Deutschland</option><option id="OS_IT" value="http://www.ancestry.it">Italia</option><option id="OS_FR" value="http://www.ancestry.fr">France</option><option id="OS_SE" value="http://www.ancestry.se">Sverige</option><option id="OS_MX" value="http://www.ancestry.mx">México</option></optgroup><optgroup label="Other Sites"><option id="OS_Corporate" value="http://corporate.ancestry.com">Ancestry.com Corporate</option><option id="OS_IECorporate" value="http://www.ancestryeurope.ie">Ancestry.ie Corporate</option><option id="OS_FTM" value="http://www.familytreemaker.com">FamilyTreeMaker.com</option><option id="OS_Fold3" value="http://www.fold3.com">Fold3.com</option><option id="OS_MyCanvas" value="http://www.mycanvas.com">MyCanvas.com</option><option id="OS_Newspapers" value="http://www.newspapers.com">Newspapers.com</option><option id="OS_Progen" value="http://www.progenealogists.com">Progenealogists.com</option><option id="OS_RootsWeb" value="http://www.rootsweb.com">RootsWeb.com</option></optgroup></select></div></div><div class="footerLegal"><span>&copy; 1997-2015 Ancestry</span><span><a id="Ftr_LL_CorporateInfo_Link" href="http://corporate.ancestry.com/">Corporate Information</a></span><span><a id="Ftr_LL_Privacy_Link" href="http://www.ancestry.com/cs/legal/privacyphilosophy">Privacy</a></span><span><a id="Ftr_LL_TermsAndConditions_Link" href="http://www.ancestry.com/cs/legal/termsandconditions">Terms and Conditions</a></span></div></footer><script>
+	<div id="FooterRegion"><!-- v1/0/1033/LoggedOut/ Server: PRDSLVWSSSFTB04 TS: 09/12/2015 19:14:56 --><footer class="footer clearfix" id="footer" role="contentinfo"><div class="footerLinks clearfix"><ul class=""><li id="Ftr_TL_SupportCenter"><span class="footerLink"><a id="Ftr_TL_SupportCenter_Link" href="http://help.ancestry.com/">Support Center</a></span></li><li id="Ftr_TL_Blog"><a class="footerLink" id="Ftr_TL_Blog_Link" href="http://blogs.ancestry.com/ancestry/">Ancestry Blog</a></li><li id="Ftr_TL_Affiliates"><a class="footerLink" id="Ftr_TL_Affiliates_Link" href="http://www.ancestry.com/cs/sitemap-us">Site Map</a></li><li id="Ftr_TL_GiftSubs"><a class="footerLink" id="Ftr_TL_GiftSubs_Link" href="http://www.ancestry.com/s45554/key/rd.ashx?key=Uhttp://www.ancestry.com/cs/gifts">Gift Memberships</a></li><li id="Ftr_TL_Careers"><a class="footerLink" id="Ftr_TL_Careers_Link" href="http://corporate.ancestry.com/careers/">Careers</a></li></ul><div class="footerSites"><label for="footerSitesSelect">Visit our other sites:</label><select class="footerSitesSelect" onchange="window.location = this.value;" id="footerSitesSelect"><optgroup label="International"><option id="OS_US" value="http://www.ancestry.com" selected="selected" ancselected="true">United States</option><option id="OS_UK" value="http://www.ancestry.co.uk">United Kingdom</option><option id="OS_CA_EN" value="http://www.ancestry.ca?lcid=4105">Canada (English)</option><option id="OS_CA_FR" value="http://www.ancestry.ca?lcid=3084">Canada (Français)</option><option id="OS_AU" value="http://www.Ancestry.com.au">Australia</option><option id="OS_DE" value="http://www.Ancestry.de">Deutschland</option><option id="OS_IT" value="http://www.ancestry.it">Italia</option><option id="OS_FR" value="http://www.ancestry.fr">France</option><option id="OS_SE" value="http://www.ancestry.se">Sverige</option><option id="OS_MX" value="http://www.ancestry.mx">México</option></optgroup><optgroup label="Other Sites"><option id="OS_Corporate" value="http://corporate.ancestry.com">Ancestry.com Corporate</option><option id="OS_IECorporate" value="http://www.ancestryeurope.ie">Ancestry.ie Corporate</option><option id="OS_FTM" value="http://www.familytreemaker.com">FamilyTreeMaker.com</option><option id="OS_Fold3" value="http://www.fold3.com">Fold3.com</option><option id="OS_MyCanvas" value="http://www.mycanvas.com">MyCanvas.com</option><option id="OS_Newspapers" value="http://www.newspapers.com">Newspapers.com</option><option id="OS_Progen" value="http://www.progenealogists.com">Progenealogists.com</option><option id="OS_RootsWeb" value="http://www.rootsweb.com">RootsWeb.com</option></optgroup></select></div></div><div class="footerLegal"><span>&copy; 1997-2015 Ancestry</span><span><a id="Ftr_LL_CorporateInfo_Link" href="http://corporate.ancestry.com/">Corporate Information</a></span><span><a id="Ftr_LL_Privacy_Link" href="http://www.ancestry.com/cs/legal/privacyphilosophy">Privacy</a></span><span><a id="Ftr_LL_TermsAndConditions_Link" href="http://www.ancestry.com/cs/legal/termsandconditions">Terms and Conditions</a></span></div></footer><script>
 		(function() {
 			if (document.cookie.indexOf("NEWSITEEXPERIENCE=true") !== -1) {
 				document.getElementById('FooterRegion').className += ' footer2';
