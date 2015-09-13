@@ -1077,7 +1077,7 @@ function search(){
 		if (!($.browser.msie && parseInt($.browser.version, 10) === 7)) {
 			var storeNumber = getStoreNumber();
 			var PROD = 'true';	
-			var availabilityStatus = 'true';
+			var availabilityStatus = 'false';
 			var recencyAccountInfo = '';
 			if (storeNumber == null ) {
 				 loadMoxieAvailability(availabilityStatus);
@@ -2027,7 +2027,7 @@ $(document).ready(function() {
 					if (!($.browser.msie && parseInt($.browser.version, 10) === 7)) {
 						var storeNumber = getStoreNumber();
 						var PROD = 'true';	
-						var availabilityStatus = 'true';
+						var availabilityStatus = 'false';
 						var recencyAccountInfo = '';	
 						if (storeNumber == null ) {
 							 if(availabilityStatus == "true") {
