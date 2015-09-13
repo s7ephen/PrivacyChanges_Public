@@ -1,972 +1,234 @@
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" class="htmlMain">
-
-<head id="ctl00_headMain"><title>
-	Mentions légales
-| La Redoute</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=982, user-scalable=yes">
-    <meta name="robots" content="index, follow" /><meta id="metaSmartAppBanner" name="apple-itunes-app" content="app-id=393136788" />
-<meta id="metaAndroidSmartAppBanner" name="google-play-app" content="app-id=com.ocito.laredoute" />
-        <script type="text/javascript" src="/dtagent61_xjnp_8191.js" data-dtconfig="rid=RID_1684356487|rpid=1793157169|domain=laredoute.fr|tp=500,50,0|reportUrl=dynaTraceMonitor"></script><link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link href="/css/1/fr-FR/bundles/master?v=dKcaBgkV99rJnuaFEPTq9B4Zb57Abx3PlMTLkLvPfRg1" rel="stylesheet"/>
-<script type="text/javascript" src="/js/1/fr-FR/bundles/master?v=Qxgk-QXRFefQP4LdW3ITI1WQ7LhI9Gdu_p5_yz3mtEU1"></script>
-
-
-    <!--[if lt IE 9]>
-       <script>
-          // HTML5 tag support in IE8
-          document.createElement('header');
-          document.createElement('section');
-          document.createElement('article');
-          document.createElement('footer');
-       </script>
-    <![endif]-->
-
-    
-<script type="text/javascript">
-  var kameleoonLoadingTimeout = 1000;
-  if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut){
-  var kameleoonS = document.getElementsByTagName("script")[0];var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
-  var kameleoonStn = document.createElement("style");kameleoonStn.type = "text/css";kameleoonStn.id = "kameleoonLoadingStyleSheet";
-  if (kameleoonStn.styleSheet){kameleoonStn.styleSheet.cssText = kameleoonCc;}else{kameleoonStn.appendChild(document.createTextNode(kameleoonCc));}kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
-  window.kameleoonDisplayPage = function(){if (kameleoonStn.parentNode){kameleoonStn.parentNode.removeChild(kameleoonStn);}};
-  window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);}
-</script>
-<script src="//static-bp.kameleoon.com/css/customers/kd4vjeef9h/0/kameleoon.js" async="true"></script>
-        <script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="msvalidate.01" content="35A8FD93D60AD016E22DAF468254AFFD" />
+    <meta name="google-site-verification" content="rVfvAgcsdAF2xEiAnE4WlW2r_g5FRWt6ZHQMQ9pInEw" />
+    <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1" />
+        <title>Splashpage </title>
+        <style type="text/css">
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                font-family: verdana,arial,sans-serif;
+            }
+            
+            body
+            {
+                background-image: white;
+            }
+            div.container
+            {
+                width: 982px;
+                margin: auto auto;
+            }
+            div.logo
+            {
+                margin: 20px 0px 16px 12px;
+                background: url(http://media.laredoute.com/projets/fr-fr/splashpage/www/logo.png) center center no-repeat;
+                width: 249px;
+                height: 43px;
+            }
+            div.content
+            {
+                background: url(http://media.laredoute.com/projets/fr-fr/splashpage/www/background_splashpage.png) center center;
+                height: 392px;
+                margin-top: 40px;
+            }
+            div.left
+            {
+                width: 542px;
+                float: left;
+                height: 392px;
+                margin-left: 28px;
+                display: inline;
+            }
+            div.header
+            {
+                margin: 35px 0 0 0;
+            }
+            .bold
+            {
+                font-weight: bold;
+                margin-top: 250px;
+                font-size: 13px;
+            }
+            .regular
+            {
+                font-weight: normal;
+                margin-top: 4px;
+                font-size: 18px;
+                color: #000000;
+            }
+            .big
+            {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            a, a:hover
+            {
+                font-size: 13px;
+                color: #455B5F;
+                text-decoration: underline;
+            }
+            .small
+            {
+                color: #000000;
+                font-size: 15px;
+            }
+            
+            /*Overwrite iAdvize stylesheets*/
+            div.call_chat
+            {
+                display: none;
+                width: 424px;
+                height: 138px;
+                margin: 25px 0px 0px 0px;
+                background: transparent url(http://media.laredoute.com/projets/fr-fr/splashpage/www/background_iadvize_splashpage1.png) center center no-repeat scroll;
+            }
+            .idz_btn
+            {
+                margin-left: 92px;
+                padding-top: 92px;
+            }
+            .idz_widget, idz_c2widget
+            {
+                float: left;
+            }
+            .idz_widget
+            {
+                margin-right: 8px;
+            }
+            .idz_c2widget
+            {
+            }
+            div#button_offline_LRFR.idz_widget_off
+            {
+                margin: 25px 0px 0px 0px;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   </meta>
+   	<script type="text/javascript">
 window.wa_data={};
-window.wa_data.channel="staticpage";
-window.wa_data.pageName="FR:RE:STATICPAGE:espace-mentions_legales";
-window.wa_data.server="172.26.71.222";
+window.wa_data.pageName="FR:RE:ERREUR:Sp front office";
+window.wa_data.server="SplashPageServer";
 window.wa_data.eVar1="FR_La Redoute FR_La Redoute_La Redoute FR_La Redoute FR";
-window.wa_data.eVar40="netwave";
 window.wa_data.prop1="FR";
 window.wa_data.prop2="La Redoute FR";
 window.wa_data.prop3="La Redoute";
 window.wa_data.prop4="La Redoute FR";
 window.wa_data.prop5="La Redoute FR";
-window.wa_data.events="";
-window.wa_data.products="";
-virtualSite="laredoute";
-pageType = 17;
 window.wa_data.reportSuite="redouteprodfrmainsite";
 window.wa_data.currencyCode="EUR";
-FinaliseTracking();
 </script>
 <script src="//assets.adobedtm.com/409567f830ae9b37911ba9d4d8af4ddef0bc818a/satelliteLib-34bae0f2826b07df150b94cac705e83a5842ddc2.js" ></script>
-<meta name="Language" content="fr" /></head>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="header">
+                    <span class="big"><b>Oups...Une erreur vient de se produire</b></span><br />
+                    <span class="regular">Un incident technique temporaire nous empêche<br />
+                        de vous accueillir sur le site pour le moment.</span>
+                    <br />
+                    <br />
+                    <span class="small">Nos équipes travaillent déjà à résoudre ce contretemps au plus vite</span>
+                </div>
+                <br />
+                <div class="call_chat">
+                    <div class="idz_btn">
+                        <!-- START IADVIZE CHAT BUTTON -->
+                        <div id="button_online" class="idz_widget" style="display: none;">
+                            <a href="javascript:void(0);" class="operator_status_button">
+                                <img border="0" alt="" src="http://media.laredoute.com/projets/fr-fr/splashpage/www/button_tchat.png
+" /></a></div>
+                        <!--// END IADVIZE CHAT BUTTON -->
+                        <!-- START IADVIZE CALL BUTTON -->
+                        <div class="idz_c2cwidget" style="display: none;">
+                            <a href="javascript:void(0);">
+                                <img src="http://media.laredoute.com/projets/fr-fr/splashpage/www/button_to_be_called.png" alt=""
+                                    border="0" /></a></div>
+                        <!--// END IADVIZE CALL BUTTON -->
+                    </div>
+                </div>
+                <!-- IADVIZE OFFLINE BUTTON -->
+                <div id="button_offline_LRFR" class="idz_widget_off">
+                        <img border="0" alt="" src="http://media.laredoute.com/projets/fr-fr/splashpage/www/background_iadvize_splashpage2.png" />
+                </div>
+                <!--// END OF IADVIZE OFFLINE BUTTON -->
+            </div>
+        </div>
+    </div>
 
-<body id="ctl00_bodyMain" class="bodyMain">
-
-    <form method="post" action="/espace-mentions_legales.aspx" id="aspnetForm" novalidate="novalidate">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
-</div>
+	
+	
 
 
-<script type="text/javascript">
-//<![CDATA[
-var contextInfo={"Customer":{"IsLoggedIn":false,"IsIdentified":false},"PageType":"StaticPage","Products":[],"ShoppingCart":{"Line":[],"TotalToPay":0},"CategoryId":0,"RecoEngineAgent":"R_Netwave_L_Netwave","RecoEngineAgentURL":"//ws-red.web-boosting.net","Breadcrumb":[]};//]]>
-</script>
+    <script type="text/javascript">
+        var tc_vars = new Array();
+		
+		tc_vars["env_work"] = "PRODUCTION"; 
+		tc_vars["env_dnt"] = "disabled"; 
+		tc_vars["env_template"] = "ErrorSplashPage"; 
 
+        var tagCmdScrptJS = '//cdn.tagcommander.com/1485/tc_1.js';
+        var tagCmdScrpt = document.createElement( 'script' );
+        tagCmdScrpt.src = tagCmdScrptJS;
+        tagCmdScrpt.async = true;
+        tagCmdScrpt.type = 'text/javascript';
+        tagCmdScrpt.charset = 'utf-8';
+        (document.getElementsByTagName( 'body' )[0] || document.getElementsByTagName( 'script' )[0].parentNode ).insertBefore( tagCmdScrpt, null );
+	
+    </script>
+    <!-- IAdvize script. DO NOT ALTER ANYTHING-->
+    <script language="javascript" type="text/javascript">
+        var ruleTriggered = false;
+        var speed = 600;
+        var isChatOffline = false;
 
-        
+        iAdvizeCallbacks = {
 
-        <script type="text/javascript">
-            var touchType = ((document.ontouchstart !== null) ? 'notouch' : 'touch');
-
-            if (touchType == 'touch') {
-                if (navigator.platform.indexOf("iPhone") != -1)
-                    $('meta[name=viewport]').attr('content', 'width=982, initial-scale=0.3, maximum-scale=10.0, user-scalable=yes');
-                else
-                    $('meta[name=viewport]').attr('content', 'width=982, user-scalable=yes');
-            }
-
-            $(document).ajaxComplete(
-            function () {
-                var clickEventType = ((document.ontouchstart !== null) ? 'click' : 'touchstart');
-                if (clickEventType == 'touchstart') {
-                    replaceHoverWithClick($('.divFOCol li a'));
+            onRuleStarted: function ( obj ) {
+                ruleTriggered = true;
+            },
+            onStatusChanged: function ( obj ) { // callback chat
+                if ( ruleTriggered == false ) { return; }
+                if ( obj.offline == 0 && obj.busy == 0 ) {
+                    $( "div#button_offline_LRFR.idz_widget_off" ).hide();
+                    $( ".call_chat" ).stop( true, true ).fadeIn( speed );
+                } else {
+                    $( "div#button_offline_LRFR.idz_widget" ).stop( true, true ).fadeIn( speed );
+                    isChatOffline = true;
+                    $(".call_chat").hide();
                 }
-            });
-        </script>
+            },
+            onCallStatusChanged: function ( obj ) { // callback call
 
-        <input name="ctl00$hidInvalidEmail" type="hidden" id="ctl00_hidInvalidEmail" />
+                if ( ruleTriggered == false ) { return; }
+                if ( obj.offline == 0 ) {
+                    $( "div#button_offline_LRFR.idz_widget_off" ).hide();
+                    $( ".call_chat" ).stop( true, true ).fadeIn( speed );
+                } else if ( obj.offline == 1 && isChatOffline ) {
+                    $("div#button_offline_LRFR.idz_widget").stop(true, true).fadeIn(speed);
+                    $(".call_chat").hide();
+                }
+            }
+        };
 
-        
-
-        
-        
-        
-        
-
-        
-
-        <div class="divMasterInterveil" onclick="MasterHideLayerContent();"></div>
-
-        <div id="ctl00_divBackground" class="virtual-site_Laredoute">
-
-            <header>
-                
-
-
-<div id="ctl00_ctl03_ctl00_templatePanel">
-	<div class="template"><div></div><div></div><div class="panel" rotateContent="false"><div style="width:100%;" class="horizontal"><div></div><div class="html"><div class="banner slider" style="width:100%;font-size:14px;color:#fff;line-height:39px;max-height:39px;background:#000;">
-<div class="divInner982" style="text-align:center;background:#000;">
-	<div id="bdexoRed" class="bdGif" style="display:none">
-			<a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong style="text-transform: uppercase;">-10% supplémentaires sur TOUTE la mode</strong> jusqu’à lundi minuit ! Code <strong>45101</strong> >en savoir +</a>
-			<a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong>LIVRAISON OFFERTE CHEZ VOUS Y COMPRIS SUR LES VOLUMINEUX </strong> dès 89€* d’achats code <strong>45101</strong> >en savoir +</a>
-	</div>
-	<div id="bdexoAub" style="display:none">
-		<a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong>-10% supplémentaires sur les produits signalés </strong><span style="padding-left:25px;background:url(//media.laredoute.com/marketing/StudioFR/OPECO/AH15/20150908/aubaines/picto.png) no-repeat 0px -3px;">Code : 58777 >en savoir + ></span></a>
-        <a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong>Livraison offerte dès 89€ d'achats même sur les articles volumineux </strong>avec le code 58777 >en savoir +</a>
-	</div>
-	<div id="bdexoAMPM" style="display:none">
-		<a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong>Homedays jusqu'à -30%*</strong></a>
-		<a href="/PopupMentionsLegales.aspx" onclick="OpenLegalMentions();return false;" style="display:block;color:#fff;"><strong>Livraison offerte dès 89€ d'achats même sur les articles volumineux </strong>avec le code 55115 >en savoir +</a>
-	</div>
-</div>
-</div>
-<script type="text/javascript">
-$(function(){
-		//redoute
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-100_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-100_1_fr-FR.png')||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-100_1_fr-FR.png')){$('#bdexoRed').show()};
-		//aubaines
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-1326_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-1326_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-1326_1_fr-FR.png')){$('#bdexoAub').show()};
-		//AMPM
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-85201_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-85201_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-85201_1_fr-FR.png')){$('#bdexoAMPM').show()};
-		//Taillissime
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-101_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-101_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-101_1_fr-FR.png')){$('#bdexoTaill').show()};
-		//Anne weyburn
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-111_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-111_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-111_1_fr-FR.png')){$('#bdexoAW').show()};
-		//Brandboutique
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-151517_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-151517_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-151517_1_fr-FR.png')){$('#bdexoBB').show()};
-		//Castaluna
-		if(($('#ctl00_ctl04_imgLogo').attr('src')=='/images/header/logov2-141652_1_fr-FR.png') ||($('#ctl00_ctl03_imgLogo').attr('src')=='/images/header/logov2-141652_1_fr-FR.png') ||($('#ctl00_ctl05_imgLogo').attr('src')=='/images/header/logov2-141652_1_fr-FR.png')){$('#bdexoCast').show()};
-	});
-</script>
-<script type="text/javascript">
-	speedTransition=400;
-	duration=3000;
-	setInterval(
-		function(){
-			if($('#bdexoRed a:eq(0)').css('display')=='block'){
-				$('#bdexoRed a:eq(0)').fadeOut(speedTransition);$('#bdexoAMPM a:eq(1)').fadeIn(speedTransition)
-			}else{
-				$('#bdexoRed a:eq(0)').fadeIn(speedTransition);$('#bdexoAMPM a:eq(1)').fadeOut(speedTransition)
-			}
-		},4000
-	);
-	setInterval(
-		function(){
-			if($('#bdexoAMPM a:eq(0)').css('display')=='block'){
-				$('#bdexoAMPM a:eq(0)').fadeOut(speedTransition);$('#bdexoAMPM a:eq(1)').fadeIn(speedTransition)
-			}else{
-				$('#bdexoAMPM a:eq(0)').fadeIn(speedTransition);$('#bdexoAMPM a:eq(1)').fadeOut(speedTransition)
-			}
-		},4000
-	);
-	setInterval(
-		function(){
-			if($('#bdexoAub a:eq(0)').css('display')=='block'){
-				$('#bdexoAub a:eq(0)').fadeOut(speedTransition);$('#bdexoAub a:eq(1)').fadeIn(speedTransition)
-			}else{
-				$('#bdexoAub a:eq(0)').fadeIn(speedTransition);$('#bdexoAub a:eq(1)').fadeOut(speedTransition)
-			}
-		},4000
-	);
-</script></div></div><div class="clearFloat"></div></div></div>
-</div>
-
-
-
-
-<div id="mhFRdivMain" class="mhFRv3-divMain mhFRv2-100" data-virtualsite="100">
-		 
-	<div class="divInner982" data-cerberus="area_header">
-
-        <input name="ctl00$ctl03$hidSuggEnabled" type="hidden" id="ctl00_ctl03_hidSuggEnabled" value="true" />
-        <input name="ctl00$ctl03$hidUserSugg" type="hidden" id="ctl00_ctl03_hidUserSugg" />
-        <input id="hidSuggCounter" type="hidden" value="-1" />
-
-		
-
-        
-
-        <div class="divLogo">
-            <a href="http://www.laredoute.fr" id="ctl00_ctl03_aLogo">
-                <img src="/images/header/logov2-100_1_fr-FR.png" id="ctl00_ctl03_imgLogo" data-cerberus="img_header_logo" Title="Retour accueil La Redoute" alt="La Redoute vetements, chaussures, linge de maison et meubles" />
-            </a>
-        </div>
-
-        <div class="divSearch" data-cerberus="area_searchEngine1">
-            <input name="ctl00$ctl03$txtHeadSearch" type="search" id="txtHeadSearch" class="txtSearch" data-cerberus="textBox_header_search-engine" autocomplete="off" data-suggestions="true" data-collid="100" data-placeholder="Rechercher une marque, un article, une référence" />
-
-            <div class="divSearchAction" data-cerberus="button_header_search-engine"></div>
-
-            
-                <a class="aDirectOrder" href="/directorder/directorder.aspx" rel="nofollow" data-cerberus="lnk_header_search-engine_order-reference">Commander avec les références catalogue</a>
-            
-
-            <div id="divSearchSugg" class="divSearchSugg" tabindex="1">
-			    <div class="emTitle" data-cerberus="area_searchEngine_help1">Mes recherches précédentes</div>
-	
-			    <div id="divSearchSugg"></div>
-		    </div>
-        </div>
-
-        <div class="divBasket divOption" data-cerberus="area_header_basket">
-            <a class="aBasket" href="/shoppingbasket/basket.aspx">
-			    <p class="h3pTag">Mon panier</p>
-                <div class="divItems"></div>
-                <script>if (typeof Headerv2 !== "undefined") Headerv2.GetBasketProductCount();</script>
-		    </a>
-
-            <div id="divBasketLayerPlaceholder" class="divContent" tabindex="-1"><div class="divLoader"></div></div>
-        </div>
-
-        
-            <div class="divWishList divOption">
-                <a class="aWishList" href="/myaccount/wishlist.aspx#shoppingtool=treestructureguidednavigation">
-                    <p class="h3pTag">Mes préférés</p>
-                    <div class="divItems"></div>                    
-
-                    <div class="divTooltip divContent">Retrouvez vos articles préférés !</div>
-                </a>
-
-                
-                
-            </div>
-        
-
-        <div id="ctl00_ctl03_divAccount" class="divAccount divOption divAccountLoggedOut" data-cerberus="area_header_account">
-            <a href="/login/login.aspx" id="ctl00_ctl03_aAccount" class="aAccount">
-                <p class="h3pTag" data-cerberus="lnk_header_myAccount">Mon compte</p>
-            </a>
-
-            <div id="divAccountLayerPlaceholder" class="divContent" tabindex="-1"><div class="divLoader"></div></div>
-
-            
-                <a href="/myaccount/myoffers.aspx" class="aIdenLayer">Connectez-vous pour retrouver toutes vos offres en cours !</a>
-            
-        </div>
-
-        <div class="divNewsletter divOption" data-cerberus="lnk_header_newsletter">
-            <p class="h3pTag">10 € offerts !</p>
-
-            <div id="divNewsletterPlaceholder" class="divContent" tabindex="-1">
-                <div class="divClose">
-                    <a href="javascript:void(0)">Fermer</a>
-                    <img id="imgClose" src="https://media.laredoute.com/share/payments/ogone/resources/images/global/closePopup.jpg" />
-                </div>
-				<p class="h3pTag">OFFRE DE BIENVENUE</p>
-
-				<p>Inscrivez-vous pour tout savoir des dernières tendances mode et maison et être prévenu en avant première de nos promotions !</p>
-
-				<input id="txtNewsletterSubscribe" type="email" rel="grpNewsHeader" tag="Email" maxlength="50" data-placeholder="Votre email" autocomplete="off" />
-
-                <div class="divMessages">
-                    <span id="txtNewsletterSubscribeHelp" class="spanMessage">Exemple : nom@yahoo.fr</span>
-                    <span id="txtNewsletterSubscribeEmpty" class="spanMessage spanMessageError">Merci d'indiquer votre email ou votre n° de client.</span>
-                    <span id="txtNewsletterSubscribeValEmail" class="spanMessage spanMessageError">Ce format est incorrect. Merci de supprimer les espaces, les caractères spéciaux et les accents.</span>
-                    <span id="txtNewsletterSubscribeGeneric" class="spanMessage spanMessageError"></span>
-                </div>
-
-                
-
-                <button type="button">VALIDER</button>
-			</div>
-        </div>
-
-		<br class="clearFloat" />
-
-
-		<script type="text/javascript">
-			var userSearchSugg = 'Mes recherches précédentes';
-		    var systemSearchSugg = 'Mot(s) clé(s) suggéré(s)';
-		</script>
-
-	</div>
-
-	
-
-    <script type="text/javascript">
-        defaultNewsEmail = "Votre email";
-        defaultLoginEmail = "exemple : nom@yahoo.fr ou 123456789";
-        defaultLoginPassword = "saisissez votre mot de passe";
-        searchNotEnoughChars = "Pas assez de caractères";
-        genericError = "Erreur générique! S'il vous plaît réessayer plus tard.";
-        disableWishListsProductCount = false;
     </script>
-
-</div>
-
-                
-            </header>
-
-            <div id="ctl00_divMarketingMsg">
-
-</div>
-
-            
-
-	<div id="ctl00_cphMain_divMain"><div id="ctl00_cphMain_ctl00_divMain" class="help-divMain">
-
-	<div id="ctl00_cphMain_ctl00_divInner982" class="divInner982">
-
-		
-
-<div class="divBCrumbV2" data-cerberus="area_plpProduit_breadcrumb1">
-    
-
-    <ol>
-	    
-                
-                    
-                        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <a href="http://www.laredoute.fr/pplp/cat-100.aspx" id="ctl00_cphMain_ctl00_ctl00_repBreadCrumb_ctl00_aItem" itemprop="url"><span itemprop="title">Accueil</span></a>
-                        </li>
-                    
-
-                    
-		    
-
-        
-            <li>Mentions légales</li>
-        
-    </ol>
-
-    <input name="ctl00$cphMain$ctl00$ctl00$hidJsonBreadCrumb" type="hidden" id="hidJsonBreadCrumb" />
-</div>
-
-		<style>
-#Rdte_mentions_content {font-size:11px;font-family: Arial,Helvetica,sans-serif;color:#000000;position:relative;width:972px;padding: 10px}
-#Rdte_mentions_letitle {font:700 24px Arial; padding:0 0 5px 0;margin:0 0 0 -10px;border-bottom: 1px solid #dbdbdb;margin-bottom:15px}
-#Rdte_mentions_letitle span {padding-left:10px;}
-.Rdte_mentions_letexte {width:960px;}
-.Rdte_mentions_letexte a {color:#000000; text-decoration:underline;}
-</style>
-<div id="Rdte_mentions_content">
-<h1 id="Rdte_mentions_letitle"><span>Données personnelles et Cookies</span></h1>
-
-<div class="Rdte_mentions_letexte">
-  <p>
-    <strong>Bienvenue sur le site Redoute.fr.</strong><br>
-    <strong>Cette rubrique est consacrée à notre Politique de Protection  de la Vie Privée. </strong></p>
-  <p>Elle  a pour objet de vous donner les informations quand à l’utilité et à l’usage des  données personnelles que nous recueillons lors de vos visites sur notre site, lors  de la création de votre compte client, lors de vos commandes, lors de vos  contact avec la relation client.</p>
-  <ul>
-    <li><strong>Données personnelles</strong></li>
-    <ul>
-      <li><strong>Identité du responsable du traitement</strong></li>
-    </ul>
-  </ul>
-  <p>Les  données sont collectées par la société La Redoute<br>
-    Société par Actions Simplifié au capital de 353 490 250  Euros, immatriculée au Registre du Commerce et des Sociétés de Lille-Métropole  sous le numéro 477 180&nbsp;186<br>
-    Siège social&nbsp;: 57, rue de Blanchemaille, 59100 Roubaix.</p>
-  <ul>
-    <ul>
-      <li><strong>Collecte et traitement de vos données</strong></li>
-    </ul>
-  </ul>
-  <p>Les  informations que nous collectons nous aident à personnaliser et à améliorer  continuellement votre expérience d'achat sur laredoute.fr. Nous les utilisons  pour traiter les commandes, livrer les produits et services, traiter les paiements  et communiquer avec vous concernant vos commandes, les produits, les services  et offres promotionnelles. Nous utilisons également ces informations aux fins  d’études statistiques pour améliorer nos boutiques et vous proposer les offres  les plus pertinentes.</p>
-  <p><em>Gestion de vos  commandes et de la relation client</em><br>
-    Lors de vos visites sur notre site,  nous pouvons vous demander des informations par le biais de questionnaires,  formulaires et notamment lors de la création de votre compte client. <br>
-    Les informations demandées, signalées par un astérisque, sont obligatoires.  Elles sont nécessaires au traitement de vos demandes. En cas de non réponse, La  Redoute ne pourra y répondre.<br>
-    Les autres informations sont destinées à mieux vous connaître et sont, par  conséquent, facultatives. Vous êtes libre de ne pas y répondre.</p>
-  <p><em>Gestion du  panier d’achat</em><br>
-    Afin que  vos faciliter vos achats, nous gardons en mémoire votre panier d’achat par le  biais d’un cookie. Si votre compte est activé nous enregistrons et conservons  votre panier afin que vous puissiez concrétiser votre achat ultérieurement.  Nous sommes susceptibles de vous envoyer des communications électroniques pour  vous informer de l’état de votre panier.</p>
-  <p><em>Personnalisation de nos  services</em><br>
-    Lors de la consultation de notre site,  des informations relatives à votre navigation sont susceptibles d'être  enregistrées par l’intermédiaire de fichiers &quot;Cookies&quot; installés sur  votre terminal. Dans la mesure où vous vous êtes identifiés, nous sommes  susceptibles d’associer vos données de navigation avec vos données personnelles  afin de vous proposer des offres personnalisés, adaptées à vos centres  d’intérêts. Vous pourrez à tout moment nous demander de ne plus recevoir  d’offres adaptées aux informations de navigation de votre terminal, en nous  contactant par courrier à La Redoute – Service Relations Clients – 59081  Roubaix Cedex 2.<br>
-  <br>
-  <em>Offres commerciales et  Newsletters</em><br>
-    La Redoute vous adressera ses offres commerciales par mail,  sms, si vous l'avez accepté et par voie postale ou téléphone, si vous ne vous y  êtes pas opposé. <br>
-    A tout moment, vous gardez la possibilité de vous opposer sans frais à la  prospection commerciale de La Redoute, en cliquant sur le lien «se  désabonner&nbsp;» figurant dans chaque email, en  vous connectant sur le site dans votre espace  client, en envoyant un email à partir du site redoute.fr (Nous contacter par  email) ou en envoyant un courrier à La Redoute – Service Relations Clients –  59081 Roubaix Cedex 2.<br>
-  </p>
-  <ul>
-    <ul>
-      <li><strong>Destinataires des données</strong></li>
-    </ul>
-  </ul>
-  <p>Les informations collectées sont  destinées à La Redoute, responsable du traitement. <br>
-    <br>
-    Sauf opposition de votre part lors du recueil de vos données, les informations  vous concernant pourront être communiquées aux partenaires commerciaux de La  Redoute qui pourront vous envoyer leurs offres commerciales par courrier.<br>
-    Ils pourront vous envoyer leurs  offres  par mail si vous l'avez  explicitement accepté lors de la création de votre compte Web.<br>
-  <br>
-    Les informations recueillies pourront éventuellement être communiquées à des  tiers liés à La Redoute par contrat pour l'exécution de tâches sous-traitées  nécessaires à la gestion de votre compte, de vos commandes et paiements.<br>
-  <br>
-    Vos données personnelles pourront notamment, en raison de la sous-traitance  partielle du traitement, faire l'objet d'un transfert vers un prestataire  téléphonique établi en Tunisie ou au Maroc pour la gestion des appels. Ce  prestataire s'est engagé contractuellement à garantir un niveau de sécurité, de  confidentialité et de protection suffisant de la vie privée et des droits  fondamentaux.<br>
-  <br>
-    Dans le cadre du suivi de la qualité et de la formation de notre service  clients, certains appels téléphoniques peuvent être enregistrés.</p>
-  <ul>
-    <ul>
-      <li><strong>Vos droits d'accès, de modification et de  suppression</strong></li>
-    </ul>
-  </ul>
-  <p>Vous pouvez à tout moment avoir  accès et changer les informations concernant vos coordonnées dans votre espace  client à la rubrique « modification de votre compte » et gérer vos newsletters  à la rubrique « modification de vos newsletters ». </p>
-  <p><strong>Conformément à la Loi Informatique  et Libertés du 06/01/1978, vous disposez d'un droit d'accès, de rectification  et de suppression des données vous concernant et d'opposition à leur  traitement. Si vous souhaitez l'exercer, vous pouvez écrire à La Redoute –  Service Relations Clients – 59081 Roubaix Cedex 2, en indiquant vos nom, prénom,  adresse, email et si possible référence client afin d'accélérer la prise en  compte de votre demande.</strong></p>
-  <ul>
-    <li><strong>Données bancaires</strong></li>
-    <ul>
-      <li><strong>La collecte des données</strong></li>
-    </ul>
-  </ul>
-  <p>&nbsp;</p>
-  <p>Afin d´assurer la sécurité  des paiements, La Redoute utilise les services  d’un prestataire, OGONE, certifié PCI-DSS.  Cette norme est un standard de sécurité  international dont les objectifs sont d’assurer la confidentialité et  l’intégrité des données des porteurs de cartes, et ainsi de sécuriser la  protection des données cartes et de transaction.  </p>
-  <p>Lorsque vous passez une  commande en  paiement carte bancaire à La  Redoute, notre système de prise de commande se connecte en temps réel avec le  système d’OGONE qui collecte vos données et procède aux diverses vérifications  pour éviter les abus et les fraudes. <strong>Les  données sont stockées sur les serveurs OGONE et ne sont à aucun moment  transmises sur les serveurs de La Redoute.</strong> OGONE fait la demande d’autorisation  auprès de la banque et nous transmet un n° de transaction qui permet des  opérations à hauteur du montant de l’autorisation. </p>
-  <p>Afin  de vous éviter de saisir à nouveau vos coordonnées bancaires lors de prochaines  commandes, vous pouvez choisir, en cochant la case d’acceptation prévue à cet  effet, que vos cartes bancaires soient associées à votre compte en ligne. Elles  sont enregistrées chez OGONE de façon sécurisée. Vous pouvez consulter la liste  de vos cartes enregistrées (en mode masqué), mais également supprimer tout ou  partie de son contenu, dans la partie « Moyens de paiement » de la rubrique «  Mes achats » de « Mon Compte ». Dans ce cas, vos cartes supprimées  n’apparaîtront plus dans votre compte en ligne ni lors de futures commandes,</p>
-  <ul>
-    <ul>
-      <li><strong>Traitement des paiements </strong></li>
-    </ul>
-  </ul>
-  <p>Le prélèvement sur mon compte s'effectue au fur et à  mesure de l'expédition des  articles. Les retours sont crédités sur votre compte. En cas de produits  différés, le débit du montant de la commande peut être effectué en plusieurs  fois selon les différentes dates de livraison de vos produits.</p>
-  <ul>
-    <ul>
-      <li><strong>Durée de conservation des données </strong></li>
-    </ul>
-  </ul>
-  <p>Afin de pouvoir débiter le compte lors de la  facturation ou de la créditer suite à un retour, OGONE garde les données  bancaires associées au n° d’autorisation, le temps nécessaire à la réalisation  de la transaction (paiements après expédition de la marchandise) et au  traitement des éventuelles réclamations (retours, litiges).</p>
-  <p>Si vous avez fait le choix d’enregistrer vos  cartes bancaires, celles-ci sont désactivées automatiquement à l’expiration de  la date de validité de  la carte.</p>
-  <ul>
-    <li><strong>Les Cookies</strong></li>
-  </ul>
-  <p>Cette rubrique « COOKIES » vous  permet d’en savoir plus sur l’origine et l'usage des informations de navigation  traitées à l'occasion de votre consultation de notre site et sur vos droits.</p>
-  <p>Ainsi,  lors de la consultation de notre site, des informations relatives à votre  navigation sont susceptibles d'être enregistrées dans des fichiers  &quot;Cookies&quot; installés sur votre terminal (ordinateur, tablette,  smartphone, etc.).<br>
-    Ces  cookies sont émis par nous même dans le but de faciliter votre navigation sur  notre site. Ils peuvent être émis par nos partenaires afin de personnaliser l’offre  publicitaire qui vous est adressée en dehors du site Redoute.fr.</p>
-  <p>Par  ailleurs des cookies sont susceptibles d'être inclus dans les espaces  publicitaires de notre site. Ces espaces publicitaires affichent sur votre  terminal des contenus publicitaires émanant d'annonceurs.</p>
-  <p>Sachez  que seul l’émetteur d'un cookie est susceptible de lire ou de modifier des informations  qui y sont contenues.</p>
-  <p>Si  vous partagez l'utilisation de votre terminal avec d'autres personnes, nous ne  pouvons pas nous assurer de manière certaine que les services et publicités  destinés à votre terminal correspondent bien à votre  propre utilisation de ce terminal et non à celle d'un autre utilisateur de ce  terminal.</p>
-  <ul>
-    <ul>
-      <li><strong>Les cookies que nous émettons.</strong></li>
-    </ul>
-  </ul>
-  <p>Les cookies que nous installons,  dans votre terminal, nous permettent de  reconnaître votre navigateur lorsque vous vous connectez à notre site. <strong> </strong><br>
-    Soucieux  de servir nos clients au mieux, nous émettons des cookies afin&nbsp;:</p>
-  <ul>
-    <li>D’établir des statistiques de fréquentation (nombre de  visites, de pages vues, d’abandon dans le processus de commande, . .) afin de  suivre et d’améliorer la qualité de nos services.</li>
-    <li>D'adapter la présentation de notre site aux préférences  d'affichage de votre terminal</li>
-    <li>De mémoriser des informations saisies dans des formulaires,  gérer et sécuriser l’accès à des espaces réservés et personnels tels que votre  compte, gérer votre panier de commande.</li>
-    <li>De vous fournir du contenu, y compris de la publicité, en  rapport avec vos centres d'intérêt et de personnaliser les offres que nous vous  adressons. </li>
-    <ul>
-      <li><strong>Les Cookies tiers</strong></li>
-    </ul>
-  </ul>
-  <p>Lorsque  vous accédez au site Redoute.fr, un ou plusieurs cookies de sociétés  partenaires (cookies tiers) sont susceptibles d’être placés dans votre  ordinateur via les pages de notre site ou via des contenus diffusés dans nos  espaces publicitaires.</p>
-  <p>Les  cookies déposés sur notre site par les prestataires auxquels  nous faisons appel pour promouvoir nos activités et nos offres, ont pour objet</p>
-  <ul>
-    <li>d’identifier les produits  consultés ou achetés sur notre site afin de personnaliser l’offre publicitaire  qui vous est adressée en dehors du site redoute.fr. </li>
-    <li>de vous adresser, si vous  l’avez autorisé lors de votre inscription auprès de ces prestataires, des  offres Redoute par email.</li>
-  </ul>
-  <p>Les  cookies contenus dans les espaces publicitaires de notre site ont pour objet de  permettre l’établissement de statistiques sur les publicités diffusées (nombre  d’affichage, publicités affichées, nombre d'utilisateurs ayant cliqué sur  chaque publicité, . .)</p>
-  <p>L'émission  et l'utilisation de cookies par des tiers, sont soumises aux politiques de  protection de la vie privée de ces tiers.  Nous avons ni accès et ni contrôle sur les  cookies tiers. Toutefois nous veillons à ce que les sociétés partenaires  traitent les informations collectées sur le site redoute.fr exclusivement pour  les besoins de la Redoute  et dans le  respect de la loi «Informatique et Libertés »</p>
-  <p>Nous  vous informons que vous pouvez refuser les cookies tiers par un paramétrage  appropriés de votre navigateur.</p>
-  <ul>
-    <ul>
-      <li><strong>Vos choix concernant les cookies</strong></li>
-    </ul>
-  </ul>
-  <p>Plusieurs  possibilités vous sont offertes pour gérer les cookies. Tout paramétrage que  vous pouvez entreprendre sera susceptible de modifier votre navigation sur  Internet et vos conditions d'accès à certains services nécessitant  l'utilisation de Cookies.<br>
-    Vous  pouvez exprimer et modifier à tout moment vos souhaits en matière de cookies,  par les moyens décrits ci-dessous.</p>
-  <p><em>2.31 Les choix qui vous sont  offerts par votre logiciel de navigation</em><br>
-    Vous pouvez configurer votre  logiciel de navigation de manière à ce que des cookies soient enregistrés dans  votre terminal ou, au contraire, qu'ils soient rejetés, soit systématiquement,  soit selon leur émetteur. Vous pouvez également configurer votre logiciel de  navigation de manière à ce que l'acceptation ou le refus des cookies vous  soient proposés ponctuellement, avant qu'un cookie soit susceptible d'être  enregistré dans votre terminal.</p>
-  <p>Nous vous informons que si votre  navigateur est configuré de manière à refuser tous les cookies, vous ne pourrez  pas effectuer d'achats ou profiter de fonctions essentielles de notre site,  comme par exemple stocker des articles dans votre panier ou recevoir des  recommandations personnalisées. Nous vous invitons à paramétrer votre  navigateur au mieux.</p>
-  <p>La  configuration de chaque navigateur est différente. Elle est décrite dans le  menu d'aide de votre navigateur, qui vous permettra de savoir de quelle manière  modifier vos souhaits en matière de cookies.</p>
-  <p>Vous  trouverez ci-dessous des éléments de paramétrage des principaux navigateurs</p>
-  <p><em>2.3.2 Vos choix exprimés en  ligne auprès de plateformes interprofessionnelles</em><br>
-    Vous  pouvez vous connecter au site <a href="http://www.youronlinechoices.com/fr/" target="_blank">Youronlinechoices</a>, proposé par les professionnels de la  publicité digitale regroupés au sein de l’association européenne EDAA (European  Digital Advertising Alliance) et géré en France par l’Interactive Advertising  Bureau France.</p>
-  <p>Cette  plate-forme européenne est partagée par des centaines de professionnels de la  publicité sur Internet et constitue une interface centralisée vous permettant  d'exprimer votre refus ou votre acceptation des cookies  utilisés afin d'adapter les publicités à la  navigation de votre terminal.<br>
-    <a href="http://www.youronlinechoices.com/fr/controler-ses-cookies/" target="_blank">http://www.youronlinechoices.com/fr/controler-ses-cookies/.</a></p>
-  <p>Notez  que cette procédure n'empêchera pas l'affichage de publicités sur les sites  Internet que vous visitez. Elle ne bloquera que les technologies qui permettent  d'adapter des publicités à vos centres d'intérêts.</p>
-  <p><em>2.3.3  Les cookies &quot;Flash&quot;© de &quot;Adobe Flash Player</em><br>
-  &quot;Adobe Flash Player&quot;™ est  une application informatique qui permet le développement rapide des contenus  dynamiques utilisant le langage informatique &quot;Flash&quot;. Flash (et les  applications de même type) mémorise les paramètres, les préférences et  l'utilisation de ces contenus grâce à une technologie similaire aux cookies.  Toutefois, &quot;Adobe Flash Player&quot;™ gère ces informations et vos choix  via une interface différente de celle fournie par votre logiciel de navigation.</p>
-  <p>Dans la mesure où votre terminal  serait susceptible de visualiser des contenus développés avec le langage Flash,  nous vous invitons à accéder à vos outils de gestion des cookies Flash,  directement depuis le site Web d'Adobe : <a href="http://www.adobe.com/fr/">http://www.adobe.com/fr/</a>. (Onglet  Cookies) </p>
-  <ul>
-    <ul>
-      <li><strong>Eléments de paramétrage des principaux  navigateurs</strong></li>
-    </ul>
-  </ul>
-  <p><strong>Internet  explorer</strong><br>
-    1. Dans le menu « Outils » en haut à  droite de la barre de navigation, sélectionnez « Options Internet »<br>
-    2. Cliquez sur l’onglet «  Confidentialité »<br>
-    3. Vous pouvez paramétrer vos choix  concernant les cookies à l’aide d’un curseur. Si vous cliquez sur « Avancé » vous  pouvez faire une gestion manuelle et avancée des cookies<br>
-    4. Sauvegardez vos préférences en  cliquant sur « OK »</p>
-  <p><strong>Mozilla  Firefox</strong><br>
-    1. Dans le menu en haut de la page  cliquez sur « Outils » puis « Options »<br>
-    2. Sélectionnez l’onglet « Vie  privée »<br>
-    3. Paragraphe Historique&nbsp;: Dans  le menu déroulant « Règles de conservation », cliquez sur « utiliser les  paramètres personnalisés pour l’historique »<br>
-    4. Les paramètres qui s’affichent  vous permettent de paramétrer vos choix concernant les cookies et leur durée de  conservation (refuser tous les cookies, d’accepter les cookies en refusant les  cookies tiers, . . .) <br>
-    5. Sauvegardez vos préférences en  cliquant sur « OK »</p>
-  <p><strong>Google  Chrome</strong><br>
-    1. Cliquez sur l’icône personnaliser  et contrôler Google Chrome située en haut à droite de la barre de navigation<br>
-    2. Sélectionnez « Paramètres » puis  activez «&nbsp;afficher les paramètres avancés&nbsp;»<br>
-    3. Dans la partie confidentialité,  activez le menu «&nbsp;paramètres de contenus&nbsp;». <br>
-    4. Paramétrez vos choix concernant  les cookies, sélectionnez « Blocage des sites tiers.</p>
-  <p><strong>Safari</strong><br>
-    1. Dans la barre de menu en haut,  cliquez sur « Safari », puis « Préférences » <br>
-    2. Sélectionnez l’icône « Confidentialité» <br>
-    3. Paramétrez vos choix concernant  les cookies (Blocage des sites tiers)</p>
-  <ul>
-    <li><strong>Les réseaux sociaux</strong></li>
-  </ul>
-  <p>Notre site utilise des applications  informatiques émanant de tiers, qui permettent à l’internaute de partager des  contenus de notre site avec d'autres personnes ou de faire connaître à ces  autres personnes son opinion concernant un contenu de notre site. Tel est  notamment le cas des boutons &quot;Partager&quot;, &quot;J'aime&quot;, issus de  réseaux sociaux tels que Facebook, &quot;Google+&quot;,&quot;Twitter&quot;,  etc.</p>
-  <p>Lorsque le client consulte une page  du site contenant un tel bouton, son navigateur établit une connexion directe  avec les serveurs du réseau social.</p>
-  <ul>
-    <li>S’il est connecté au réseau  social lors de sa navigation, les boutons applicatifs permettent de relier les  pages consultées à son compte utilisateur. </li>
-    <li>S’il interagit au moyen des  plug-ins, par exemple en cliquant sur le bouton « J’aime » ou en laissant un  commentaire, les informations correspondantes seront transmises au réseau  social et publiées sur son compte.</li>
-  </ul>
-  <p>Si le client ne souhaite pas que le  réseau social relie les informations collectées par l’intermédiaire de  Redoute.fr à son compte utilisateur, il doit se déconnecter du réseau social  avant de visiter Redoute.fr.</p>
-  <p>Nous vous invitons à consulter les  politiques de protection de la vie privée de ces réseaux sociaux afin de  prendre connaissance des finalités d'utilisation, notamment publicitaires, des  informations de navigation qu'ils peuvent recueillir grâce à ces boutons  applicatifs.</p>
-</div>
-<div class="Rdte_engagements_line"></div>
-</div>
-
-
-<!--
-<br style="clear:both"/>
-
-<style type="text/css">
-#ftr13{width:957px;margin-bottom:25px;}
-#ftr13 ul{width:190px;float:none}
-#ftr13 h3{margin-top:10px;margin-bottom:7px}
-#ftr13 .clmn{float:left;width:191px}
-</style>
-<div class="link_footer" style="background:#f7f6f4 !important;border:none;width:937px !important;overflow:hidden;margin:12px 0 0 0;padding:0 25px 10px 25px !important;border-top:1px solid #CBCBCB">
-<div id="ct_cc" style="position:relative;width:982px !important;oveflow:hidden">
-<div id="footer_redoute_2012" style="padding-top:0;border:0">
-	<ul id="ftr13" style="margin:0">
-		<li class="clmn" style="width:110px;margin-left:16px">
-		<h3>NOUVEAUTES</h3>
-		<ul>
-		<li><a href="/achat-jardin-mobilier-de-jardin.aspx?categoryid=120002452" title="Mobilier de jardin">Mobilier de jardin</a></li>
-		<li><a href="/achat-femme-jean.aspx?categoryid=22905201" title="Jean">Jean</a></li>
-		<li><a href="/achat-linge-de-maison-rideaux-voilages.aspx?categoryid=51020857" title="Rideaux">Rideaux</a></li>
-		<li><a href="/achat-femme-maillot-de-bain.aspx?categoryid=25997380" title="Maillot de bain">Maillot de bain</a></li>
-		<li><a href="/achat-femme-robe.aspx?categoryid=31522059" title="Robe">Robe</a></li>
-		<li><a href="/achat-linge-de-maison-linge-de-table-nappe.aspx?categoryid=22939282" title="Nappe">Nappe</a></li>
-		<li><a href="/achat-high-tech-apple.aspx?categoryid=120016429" title="Apple">Apple</a></li>
-		<li><a href="/achat-high-tech-tablette-tactile.aspx?categoryid=111142289" title="Tablette tactile">Tablette tactile</a></li>
-		<li><a href="/achat-jardin-mobilier-de-jardin-salon-de-jardino.aspx?categoryid=120002463" title="Salon de jardin">Salon de jardin</a></li>
-		<li><a href="/achat-homme-t-shirt.aspx?categoryid=22898417" title="Tee shirt">Tee shirt</a></li>
-		</ul>
-		</li>
-		<li class="clmn" style="width:110px;margin-left:96px">
-		<h3>TOP MODE</h3>
-		<ul>
-		<li><a href="/achat-chaussures-chaussures-femme.aspx?categoryid=30342981" title="Chaussures femme">Chaussures femme</a></li>
-		<li><a href="/achat-lingerie-lingerie-sexy.aspx?categoryid=22939451" title="Lingerie sexy">Lingerie sexy</a></li>
-		<li><a href="/achat-lingerie-soutien-gorge.aspx?categoryid=22936253" title="Soutien-gorge">Soutien-gorge</a></li>
-		<li><a href="/achat-chaussures-chaussures-femme-escarpins.aspx?categoryid=30355138" title="Escarpins">Escarpins</a></li>
-		<li><a href="/achat-chaussures-chaussures-homme.aspx?categoryid=30343336" title="Chaussures homme">Chaussures homme</a></li>
-		<li><a href="/achat-lingerie-nuisette.aspx?categoryid=120002799" title="Nuisette">Nuisette</a></li>
-		<li><a href="/achat-grandes-tailles-lingerie.aspx?categoryid=61162777" title="Lingerie grande taille">Lingerie grande taille</a></li>
-		<li><a href="/achat-femme-sweat.aspx?categoryid=120014316" title="Sweat">Sweat</a></li>
-		<li><a href="/achat-femme-robe-robe-de-soiree.aspx?categoryid=120010385" title="Robe de soirée">Robe de soirée</a></li>
-		<li><a href="/achat-chaussures-chaussures-femme-boots-bottines.aspx?categoryid=74795929" title="Bottines">Bottines</a></li>
-		</ul>
-		</li>
-		<li class="clmn" style="width:110px;margin-left:96px">
-		<h3>TOP MAISON</h3>
-		<ul>
-		<li><a href="/achat-meubles-deco-commode-armoire-dressing-armoire.aspx?categoryid=120005357" title="Armoire">Armoire</a></li>
-		<li><a href="/achat-meubles-deco-commode-armoire-dressing-commode.aspx?categoryid=61098271" title="Commode">Commode</a></li>
-		<li><a href="/achat-meubles-deco-chambre-adulte-lit.aspx?categoryid=66804199" title="Lit">Lit</a></li>
-		<li><a href="/achat-meubles-deco-table.aspx?categoryid=120003415" title="Table">Table</a></li>
-		<li><a href="/achat-meubles-deco-canape.aspx?categoryid=61098222" title="Canapé">Canapé</a></li>
-		<li><a href="/achat-literie-matelas.aspx?categoryid=44311465" title="Matelas">Matelas</a></li>
-		<li><a href="/achat-literie-sommier.aspx?categoryid=44311822" title="Sommier">Sommier</a></li>
-		<li><a href="/achat-meubles-deco-table-basse.aspx?categoryid=120002343" title="Table basse">Table basse</a></li>
-		<li><a href="/achat-meubles-deco-tapis.aspx?categoryid=68240967" title="Tapis">Tapis</a></li>
-
-		<li><a href="/achat-meubles-deco-meuble-tv.aspx?categoryid=61098253" title="Meuble tv">Meuble tv</a></li>
-		</ul>
-		</li>
-		<li class="clmn" style="width:110px;margin-left:96px">
-		<h3>PAGES PLAN</h3>
-		<ul>
-		<li><a href="/espace-sitemap-femme.aspx" title="Femme">Femme</a></li>
-		<li><a href="/espace-sitemap-beaute-bien-etre.aspx" title="Beauté">Beauté</a></li>
-		<li><a href="/espace-sitemap-electro.aspx" title="Electro">Electro</a></li>
-		<li><a href="/espace-sitemap-sport-loisirs.aspx" title="Sport, loisirs">Sport, loisirs</a></li>
-		<li><a href="/espace-sitemap-lingerie.aspx" title="Lingerie">Lingerie</a></li>
-		<li><a href="/espace-sitemap-shoes.aspx" title="Chaussures">Chaussures</a></li>
-		<li><a href="/espace-sitemap-ldm.aspx" title="Linge de maison">Linge de maison</a></li>
-		<li><a href="/espace-sitemap-literie.aspx" title="Literie">Literie</a></li>
-		<li><a href="/espace-sitemap-meuble.aspx" title="Meubles">Meubles</a></li>
-		<li><a href="/achat-meubles-deco-canape.aspx?categoryid=61098222" title="Jardin, bricolage">Jardin, bricolage</a></li>
-		</ul>
-		</li>
-		<li class="clmn" style="width:110px;margin-left:96px">
-		<h3>MARQUES</h3>
-		<ul>
-		<li><a href="/achat-adidas.aspx?categoryid=73781768" title="Adidas">Adidas</a></li>
-		<li><a href="/achat-femme-robe.aspx?categoryid=31522059&marque=desigual&dims=1000000012%3a4294963460&dimorder=1000000215,1000000012,1000000021,1000000274,1000000265,1000000275,1000000269,4000000975,1000000013,1000000496,1000000538" title="Desigual">Desigual</a></li>
-		<li><a href="/achat-jouets-playmobil.aspx?categoryid=111137343" title="Playmobil">Playmobil</a></li>
-		<li><a href="/achat-boutique-levis.aspx?categoryid=68241533" title="Levi's">Levi's</a></li>
-		<li><a href="/achat-femme-robe.aspx?categoryid=31522059&marque=mango&dims=1000000012%3a4294963460%7c4294962900&dimorder=1000000215,294966327,1000000012,1000000021,1000000265,1000000269,4000000975,1000000013,1000000496,1000000538" title="Robe Mango">Robe Mango</a></li>
-		<li><a href="/achat-boutique-dim.aspx?categoryid=120014034" title="Dim">Dim</a></li>
-		<li><a href="/achat-femme-accessoires-sac-a-main.aspx?categoryid=111143264&marque=guess&dims=1000000012%3a4294964645&dimorder=1000000215,1000000041,1000000012,1000000021,1000000013,1000000496,1000000538" title="Sac Guess">Sac Guess</a></li>
-		<li><a href="/achat-chaussures-chaussures-homme.aspx?categoryid=30343336&marque=nike&dims=1000000012%3a4294965487&dimorder=1000000215,294966327,1000000012,1000000021,4000000862,4000000417,1000000496,1000000013,1000000538" title="Nike">Nike</a></li>
-		<li><a href="/achat-jouets-poupee-mannequin-barbie.aspx?categoryid=120011007" title="Barbie">Barbie</a></li>
-		<li><a href="/achat-literie-matelas.aspx?categoryid=44311465&marque=bultex&dims=1000000012%3a4294966648&dimorder=1000000029,1000000012,294966327,1000000053,1000000051,1000000010,1000000013,1000000538" title="Chantelle">Bultex</a></li>
-		</ul>
-		</li>
-		</ul>
-	</div>
-</div>
-</div>-->
-	    
-		
-<div id="ctl00_cphMain_ctl00_ucMarketTemplateStaticPage_templatePanel">
-
-</div>
-
-	    
-		
-
-		<input name="ctl00$cphMain$ctl00$hidStaticPageSave" type="hidden" id="ctl00_cphMain_ctl00_hidStaticPageSave" />
-		<a id="ctl00_cphMain_ctl00_lnkSave" href="javascript:__doPostBack(&#39;ctl00$cphMain$ctl00$lnkSave&#39;,&#39;&#39;)"></a>
-
-	</div>
+    <!-- End of IAdvize script.-->
 	
-</div></div>
-			
-
-
-            
-
-<footer id="footerDivMain" class="footerv2-divMain" data-virtualsite="100">
-
-        
-
-        <section class="secSocial" data-cerberus="area_footer_social">
-            <div class="divInner982">
-		  <span>
-                <strong>0892 350 350</strong><span>0,34€/min + surcoût éventuel de l'opérateur</span><br />
-			    <span></span>
-		  </span>
-                
-                <ul>
-                    
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl00_aLink" class="aMedia-youtube" title="YouTube"></a></li>
-                        
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl01_aLink" class="aMedia-twitter" title="Twitter"></a></li>
-                        
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl02_aLink" class="aMedia-facebook" title="Facebook"></a></li>
-                        
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl03_aLink" class="aMedia-pinterest" title="Pinterest"></a></li>
-                        
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl04_aLink" class="aMedia-googleplus" title="GooglePlus"></a></li>
-                        
-                            <li><a href="/espace-reseaux-sociaux.aspx" id="ctl00_ctl06_repSocialMedia_ctl05_aLink" class="aMedia-instagram" title="Instagram"></a></li>
-                        
-                </ul>
-
-                <br class="clearFloat" />
-            </div>
-        </section>
-
-        <section class="secColumns">
-            <div class="divInner982">
-                <div class="divColumns">
-                    <div class="divTable">
-                        
-
-
-            <div class="divColumn">
-                <ul data-cerberus="area_footer_corporate"><li><p class="h3pTag">A propos<br />de La Redoute</p></li><li><a href="http://www.laredoute-corporate.com/fr/actualites" target="_blank" rel="follow" data-cerberus="lnk_footer_corporate_actuality">Actualités</a></li><li><a href="http://www.laredoute-corporate.com/fr/lentreprise/qui-sommes-nous" rel="follow" data-cerberus="lnk_footer_corporate_company">Entreprise</a></li><li><a href="http://www.laredoute.fr/espace-qualite-securite.aspx" rel="follow" data-cerberus="lnk_footer_corporate_engagements">Engagement et qualité</a></li><li><a href="http://www.laredoute-corporate.com/fr/activites/creation-nos-createurs-ont-du-talent" target="_blank" rel="follow" data-cerberus="lnk_footer_corporate_activity">Activités</a></li><li><a href="http://www.laredoute-corporate.com/fr/recrutement/choisir-redoute" rel="follow" data-cerberus="lnk_footer_corporate_recruitment">Recrutement</a></li><li><a href="http://www.laredoute-corporate.com/fr/espace-presse" target="_blank" rel="follow" data-cerberus="lnk_footer_corporate_press">Espace presse</a></li></ul><ul><li><a href="/myredoute.aspx" rel="nofollow" data-cerberus="img_footer_mode_myRedoute"><h4>#MYRedoute</h4>La Redoute vue par ses fans</a></li></ul>
-            </div>
-        
-            <div class="divColumn">
-                <ul data-cerberus="area_footer_services"><li><p class="h3pTag" data-cerberus="text_footer_services_title">Les services </br>la redoute</p></li><li><a href="/espace-pages-services.aspx#footerlink=ServicesLaRedoute" rel="nofollow" data-cerberus="lnk_footer_services_Redoute">Services La Redoute</a></li><li><a href="/espace-suivre-commande.aspx#footerlink=Suivreunecommande" rel="nofollow" data-cerberus="lnk_footer_services_followOrder">Suivre une commande</a></li><li><a href="/espace-mes-retours.aspx#footerlink=Retournerunarticle" rel="nofollow" data-cerberus="lnk_footer_services_returnOrder">Retourner un article</a></li><li><a href="/carte-cadeau.aspx" class="noWrap" data-cerberus="lnk_footer_services_CarteCadeau">Carte Cadeau La Redoute&nbsp;<span class="new">New</span></a></li><li><a href="/myaccount/finaref/rpremiumoffer.aspx#footerlink=CarteRpremium,Rselec" rel="nofollow" data-cerberus="lnk_footer_services_Rprem">Carte R premium, R select</a></li><li><a href="/myaccount/finaref/rexpressoffer.aspx#footerlink=Paiement3x" rel="nofollow" data-cerberus="lnk_footer_services_3xPayment">Paiement 3x</a></li><li><a href="/espace-marketplace.aspx#footerlink=Marketplace" rel="nofollow" data-cerberus="lnk_footer_corporate_marketplace">Marketplace</a></li><li><a href="/help/faq.aspx#footerlink=Questionsfrequentes" rel="nofollow" data-cerberus="lnk_footer_services_faq">Questions fréquentes</a></li></ul>
-            </div>
-        
-            <div class="divColumn">
-                <ul><li><p class="h3pTag" data-cerberus="text_footer_corporate_title_OtherSites">Nos sites<br />partenaires</p></li><li><a href="/pplp/cat-85201.aspx#footerlink=ampm.fr" data-cerberus="lnk_footer_corporate_AMPM">AMPM</a></li><li><a href="/pplp/cat-101.aspx#footerlink=taillissime.fr" data-cerberus="lnk_footer_corporate_Taillissime">Taillissime</a></li><li><a href="/pplp/cat-111.aspx#footerlink=anneweyburn.fr" data-cerberus="lnk_footer_corporate_Weyburn">Anne Weyburn</a></li><li><a href="/pplp/cat-1326.aspx#footerlink=lesaubaines.fr" data-cerberus="lnk_footer_corporate_Aubaines">Les Aubaines</a></li><li><a href="/pplp/cat-141652.aspx#footerlink=castaluna.fr" data-cerberus="lnk_footer_corporate_Castaluna">Castaluna</a></li><li><a href="/pplp/cat-151517.aspx" data-cerberus="lnk_footer_La_BrandBoutique">La Brand Boutique</a></li></ul>
-            </div>
-        
-            <div class="divColumn">
-                <ul data-cerberus="area_footer_mode"><li><p class="h3pTag" data-cerberus="text_footer_mode_title">Encore + de mode<br />et de déco !</p></li><li><a href="http://lemag.laredoute.fr/?utm_source=laredoute.fr&utm_medium=footer&utm_campaign=footerredoute" data-cerberus="lnk_footer_mode_mag">Le Mag des tendances</a></li><li><a href="http://interieurs.laredoute.fr/#footerlink=Style&Interieurs,vot?utm_source=Google&utm_medium=lien&utm_term=laredouteHP&utm_content=lienboutique&utm_campaign=lienverslri" target="_blank" data-cerberus="lnk_footer_mode_spot">Style & Intérieurs, votre magazine déco</a></li><li><a href="/espace-spot-pub-tv.aspx#footerlink=%28Re%29voirnosspotstv" rel="nofollow" data-cerberus="lnk_footer_mode_spot">(Re)voir nos spots tv</a></li><li><a href="/espace-redoute_mobile.aspx#footerlink=Telechargernosapplis" rel="nofollow" data-cerberus="lnk_footer_mode_appli">Télécharger nos applis smartphone et tablette</a></li><li><a href="/espace-catalogues.aspx#footerlink=Feuilleteruncatalogu" rel="nofollow" data-cerberus="lnk_footer_mode_catalog">Feuilleter un catalogue en ligne ou demander à le recevoir</a></li></ul>
-            </div>
-        
-            <div class="divColumn">
-                <ul data-cerberus="area_footer_relation"><li><p class="h3pTag" data-cerberus="text_footer_relation_title">10 € offerts sur votre<br />prochaine commande</p></li><li>Mobilier, ligne de maison et décoration, nouveaux designer... inscrivez-vous pour tout savoir et être prévenu en avant-première de nos promotions !</li></ul>
-            </div>
-        
-
-
-
-
-                    </div>
-                </div>
-                <div class="divNewsletterFooter">
-                    <input id="txtNewsletterFooter" type="email" rel="grpNewsFooter" tag="Email" maxlength="50" data-placeholder="Votre email" autocomplete="off" data-cerberus="textBox_footer_newsletter" />
-                    <div class="divAction" data-cerberus="validationButton_footer_newsletter"></div>
-
-                    <div class="divMessages">
-                        <span id="txtNewsletterFooterHelp" class="spanMessage">Exemple : nom@yahoo.fr</span>
-                        <span id="txtNewsletterFooterEmpty" class="spanMessage spanMessageError">Merci d'indiquer votre email ou votre n° de client.</span>
-                        <span id="txtNewsletterFooterValEmail" class="spanMessage spanMessageError">Ce format est incorrect. Merci de supprimer les espaces, les caractères spéciaux et les accents.</span>
-                        <span id="txtNewsletterFooterGeneric" class="spanMessage spanMessageError"></span>
-                    </div>
-
-                    
-				
-
-                </div>
-                <div class="divExpand">
-                    <button type="button" class="buttonOutline">VOIR LES SERVICES ET RUBRIQUES</button>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <section class="secText" data-cerberus="area_footer_link">
-            <div class="divInner982">
-                
-<div id="ctl00_ctl06_ctl01_templatePanel">
-	<div class="template"><div></div><div></div><div class="panel" rotateContent="false"><div style="width:100%;" class="horizontal"><div></div><div class="html"><p>La Redoute : achat en ligne, code promo, livraison à domicile ou livraison gratuite en relais colis, reprise ou échange gratuit. Livraison 24H chrono ou sur RDV. Large choix de produits de marque. Les plus grandes marques sont au catalogue de La Redoute. 18 modes de paiement sécurisés sont acceptés dont la carte bleue, le paiement à la livraison et Paypal. Possibilité de payer en plusieurs fois avec La Carte "R premium" ou la Carte "Kangourou" même pendant les soldes. Retrouvez  nos autres sites e-commerce francophones <a href="http://www.laredoute.be/">La Redoute Belgique</a> et <a href="http://www.laredoute.ch/">La Redoute Suisse</a>.</p>
-<ul data-cerberus="lnk_footer_link">
-                        
-                                <li><a href="/help_conditions.aspx#footerlink=Conditionsgeneralesd" id="ctl00_ctl06_repConditions_ctl00_aLink" rel="nofollow">Conditions générales de vente</a></li>
-                            
-                                <li><a href="/PopUpVendorTermsConditions.aspx?internal=1#footerlink=ConditionsgeneralesM" id="ctl00_ctl06_repConditions_ctl01_aLink" rel="nofollow">Conditions générales Marketplace</a></li>
-                            
-                                <li><a href="/espace-mentions_legales.aspx#footerlink=Donneespersonnelles" id="ctl00_ctl06_repConditions_ctl02_aLink" rel="nofollow">Données personnelles</a></li>
-                            
-                                <li><a href="/PopupMentionsLegales.aspx#footerlink=*Lesconditionsdel'of" id="ctl00_ctl06_repConditions_ctl03_aLink" rel="nofollow">*Les conditions de l'offre</a></li>
-                            
-                                <li><a href="/popupfinarefconditions.aspx#footerlink=**Lesconditionsdesfa" id="ctl00_ctl06_repConditions_ctl04_aLink" rel="nofollow">**Les conditions des facilités de paiement</a></li>
-                            
-                    </ul>
-<br class="clearFloat">
-<div class="divRPremium" data-cerberus="text_footer_link">(1) Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</div></div></div><div class="clearFloat"></div></div></div>
-</div>
-
-
-                <div class="divPayment">Les modes de paiement :</div>
-
-                <a href="http://www.fevad.com/espace-consommateurs/les-reclamations-et-les-recours#topContent" id="ctl00_ctl06_aFevad" class="aFevad" target="_blank" rel="nofollow">
-                    <div data-cerberus="img_footer_link_fevad"></div>
-                    <span data-cerberus="lnk_footer_link_fevad">La Redoute adhère au code déontologique de la FEVAD et au système de Médiation du e-commerce.</span>
-                </a>
-
-                <div class="divConditions"></div>
-
-            </div>
-        </section>
-
-        <section class="secSubFooter" data-cerberus="area_footer_bottom">
-            <div class="divInner982">
-                <div class="divCountry" data-cerberus="text_footer_bottom_country">
-                    France
-                    <ul class="faded" data-cerberus="dropDown_footer_bottom_country">
-                        <li><a href="//www.laredoute.fr?omniturecode=CORfrFooter&flag=1">France</a></li>
-                        <li><a href="//www.laredoute.co.uk?omniturecode=CORco.ukFooter&flag=1">United Kingdom</a></li>
-                        <li><a href="//www.laredoute.pt?omniturecode=CORptFooter&flag=1">Portugal</a></li>
-                        <li><a href="//www.laredoute.it?omniturecode=CORitFooter&flag=1">Italy</a></li>
-                        <li><a href="//www.laredoute.ru">Russia</a></li>
-                        <li><a href="//www.laredoute.ch?omniturecode=CORchFooter&flag=1">Switzerland</a></li>
-                        <li><a href="//www.laredoute.se">Sweden</a></li>
-                        <li><a href="//www.laredoute.no">Norway</a></li>
-                        <li><a href="//www.laredoute.com?omniturecode=CORcomFooter&flag=1">International</a></li>
-                        <li><a href="//www.laredoute.gr">Greece</a></li>
-                        <li><a href="//www.laredoute.co.kr">Korea</a></li>
-                        <li><a href="//www.laredouteliban.com">Lebanon</a></li>
-                        <li><a href="//www.laredoute.hr">Croatia</a></li>
-                        <li><a href="//www.laredoute.si">Slovenia</a></li>
-                        <li><a href="//www.laredoute.be?omniturecode=CORbeFooter&flag=1">Belgium</a></li>
-                        <li><a href="//www.laredoute.es?omniturecode=COResFooter&flag=1">Spain</a></li>
-                        <li><a href="//www.laredoute.pl?omniturecode=CORplFooter&flag=1">Poland</a></li>
-                        <li><a href="//www.laredoute.ma">Morocco</a></li>
-                    </ul>
-                </div>
-
-                <ul class="ulLinks" data-cerberus="lnk_footer_bottom">
-                    
-                            <li><a href="/espace-sitemap.aspx#footerlink=Plandusite" id="ctl00_ctl06_repLinks_ctl00_aLink">Plan du site</a></li>
-                        
-                            <li><a href="/page-help_winnergame.aspx#footerlink=Jeux&gagnants" id="ctl00_ctl06_repLinks_ctl01_aLink">Jeux & gagnants</a></li>
-                        
-                            <li><a href="https://ui.zanox.com/bin/z_in_frm.dll?1001100210030&0C0&123096_113_341#footerlink=Affiliation" id="ctl00_ctl06_repLinks_ctl02_aLink">Affiliation</a></li>
-                        
-                </ul>
-
-                <br class="clearFloat" />
-            </div>
-        </section>
-
-        <script type="text/javascript">
-            var defaultNewsEmail = "Votre email";
-        </script>
-
-    </footer>
-
-
-
-
-
-            
-
-            
-
-<div id="divCookiePolicy" class="ulCookiePolPos3">
-
-    <h3>Utilisation des cookies</h3>
-
-    <p>La Redoute utilise des cookies pour vous proposer des services et des offres adaptés à vos centres d’intérêts. En poursuivant votre navigation, vous acceptez l’utilisation de cookies sur ce site. Pour en savoir plus et paramétrer les cookies,<br /><a href="http://www.laredoute.fr/espace-mentions_legales.aspx#footerlink=Donneespersonnelles">« Cliquez ici »</a></p>
-
-    <img width="20" height="20" title="" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAM1BMVEUAAABQUFB9fX2mpqbQ0NDe3+Ds6uv////9/Pz9/v3V19r5+vrz9PbQz9Hr5+Tx8fH59vZQwUOvAAAAB3RSTlMANmOPu/39R/qluAAAAJZJREFUeF5VjluKBDEMxMqxHXX3zD7uf9qFwkxY/RgUHFlGkdVdGTpEXRjqo9fmw3uNuziAbWx4b8x+wW9ISuhQAqSioaR4eSghJRUQWsD2Rs5fpJ/4Dpn4ASg1AB3TdG4kKTdH1nFjeTxvN1yby4BywzcUsDzKDdcKviTFxZXpbmfd4EMWh9Nc9383thieJTO69+4a9QdNggZ0ldRb2QAAAABJRU5ErkJggg==" onclick="$('#divCookiePolicy').hide()" />
-
-</div>
-
-
-
-
-            
-
-        </div>
-
-        <div class="master-layerContent">
-
-            <input name="ctl00$hidAddToCartQty" type="hidden" id="ctl00_hidAddToCartQty" />
-
-            <table class="tableLayer" width="100%">
-
-                <tr>
-                    <td class="tdTopLeft"></td>
-                    <td class="tdTopMiddle"></td>
-                    <td class="tdTopRight"></td>
-                </tr>
-
-                <tr>
-                    <td class="tdMiddleLeft"></td>
-
-                    <td class="tdMiddleMiddle">
-                        <div class="divClose"><a onclick="MasterHideLayerContent();">Fermer<span></span></a></div>
-
-                        <div id="divMasterLayerContent"></div>
-                    </td>
-
-                    <td class="tdMiddleRight"></td>
-                </tr>
-
-                <tr>
-                    <td class="tdBottomLeft"></td>
-                    <td class="tdBottomMiddle"></td>
-                    <td class="tdBottomRight"></td>
-                </tr>
-
-            </table>
-
-        </div>
-
-        <div class="master-layerLoader divDHTMLoading">
-            <div class="divClose">
-                <a href="javascript:void(0)" onclick="CloseLayerLoading()">Fermer<span></span></a>
-            </div>
-            <img id="imgQZLoading" src="/images/global/ajax-loader.gif" alt="Loading">
-            <div class="divText">Page en cours de chargement.<br>Veuillez patienter.</div>
-        </div>
-
-        <div class="master-layerBubble"></div>
-
-        <div class="divStickyBar"></div>
-
-        
-
-        
-
-        
-
-        
-
-		
-
-		
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        <script type="text/javascript">var arrServerRequest = [{ "seconds" : "0", "milliSeconds" : "15", "complete" : "0.15" } ];</script><script type="text/javascript">var ws_data = { "navigation": { "platform":"desktop", "requestTimeServer":"0.15" } }</script>
-
-        
-
-<div class="theseusTag-divMain">
-    <span id="crb-rsid"></span>
-	<span id="crb-serverName">172.26.71.222</span>
-	<span id="crb-TheseusVersion">42243.9252083333</span>
-	<span id="crb-elaspedTime">47</span>
-	<span id="crb-environment">PRODUCTION</span>
-</div>
-
-        
-
-
-<script type="text/javascript">
-    var tc_vars = new Array();tc_vars["env_template"] = "Static"; tc_vars["env_work"] = "PRD"; tc_vars["env_channel"] = "WEB"; tc_vars["env_language"] = "FR"; tc_vars["env_country"] = "FRANCE METROPOLITAINE"; tc_vars["env_is_xhr_request"] = "N"; tc_vars["page_breadcrumb_id"] = ""; tc_vars["page_breadcrumb_label"] = ""; tc_vars["user_id"] = ""; 
-</script>
-
-
-    <script type="text/javascript">
-        var tagCommanderScript = document.createElement('script');
-        tagCommanderScript.src = "//cdn.tagcommander.com/1351/tc_1.js";
-        tagCommanderScript.async = true;
-        tagCommanderScript.type = 'text/javascript';
-        tagCommanderScript.charset = 'utf-8';
-        (document.getElementsByTagName('body')[0] || document.getElementsByTagName('script')[0].parentNode).insertBefore(tagCommanderScript, null);
-    </script>
-
-
-
-
-
-        
-
-        
-    <script type="text/javascript">
-        var siteSelectorConfig =
-              {
-                  Countries: [{CountryCode: "AF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ZA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DZ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "DE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AQ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BB",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "BY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BE",SiteUrl: "laredoute.be",LayerType: "normal"},{CountryCode: "BZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "BI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KY",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "KH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CF",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CN",SiteUrl: "laredoute.cn",LayerType: "normal"},{CountryCode: "CX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CD",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CK",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KR",SiteUrl: "laredoute.co.kr",LayerType: "normal"},{CountryCode: "KP",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "CR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "HR",SiteUrl: "laredoute.hr",LayerType: "normal"},{CountryCode: "CU",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "CW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "DK",SiteUrl: "laredoute.se",LayerType: "normal"},{CountryCode: "DJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "DM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "EG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "AE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "EC",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ER",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ES",SiteUrl: "laredoute.es",LayerType: "normal"},{CountryCode: "EE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "US",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ET",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "FO",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "FJ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FR",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "GA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GR",SiteUrl: "laredoute.gr",LayerType: "normal"},{CountryCode: "GD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GP",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "GU",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "GQ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "GF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "HT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "HU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "VI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "IN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ID",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IR",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "IQ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "IT",SiteUrl: "laredoute.it",LayerType: "normal"},{CountryCode: "JM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JP",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "JO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "KI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LB",SiteUrl: "laredouteliban.com",LayerType: "normal"},{CountryCode: "LR",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LY",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LI",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "LU",SiteUrl: "laredoute.be",LayerType: "normal"},{CountryCode: "MO",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ML",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MT",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MP",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MA",SiteUrl: "laredoute.ma",LayerType: "normal"},{CountryCode: "MH",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MQ",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "YT",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MX",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "FM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "MN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ME",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "MM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NA",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NR",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NP",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NI",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NU",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "NO",SiteUrl: "laredoute.no",LayerType: "normal"},{CountryCode: "NC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "NZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "OM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "NL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PL",SiteUrl: "laredoute.pl",LayerType: "normal"},{CountryCode: "PF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "PR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "PT",SiteUrl: "laredoute.pt",LayerType: "normal"},{CountryCode: "QA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "RE",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "RO",SiteUrl: "laredoute.ro",LayerType: "normal"},{CountryCode: "GB",SiteUrl: "laredoute.co.uk",LayerType: "normal"},{CountryCode: "RU",SiteUrl: "laredoute.ru",LayerType: "normal"},{CountryCode: "RW",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "EH",SiteUrl: "laredoute.ma",LayerType: "normal"},{CountryCode: "BL",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "KN",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "MF",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "SX",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "PM",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "VA",SiteUrl: "laredoute.com",LayerType: ""},{CountryCode: "VC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SH",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LC",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SB",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "WS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "AS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ST",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SN",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "RS",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SC",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SL",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "SG",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SI",SiteUrl: "laredoute.si",LayerType: "normal"},{CountryCode: "SO",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SD",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SS",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "LK",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SE",SiteUrl: "laredoute.se",LayerType: "normal"},{CountryCode: "CH",SiteUrl: "laredoute.ch",LayerType: "normal"},{CountryCode: "SR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SJ",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "SZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "SY",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TJ",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TW",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TD",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "CZ",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "TH",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TL",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TG",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TO",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "TT",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TN",SiteUrl: "dealoo.tn",LayerType: "normal"},{CountryCode: "TM",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TC",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "TR",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "TV",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UA",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "UY",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VU",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VE",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "VN",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "WF",SiteUrl: "laredoute.fr",LayerType: "normal"},{CountryCode: "YE",SiteUrl: "laredoute.com",LayerType: "nodelivery"},{CountryCode: "ZM",SiteUrl: "laredoute.com",LayerType: "normal"},{CountryCode: "ZW",SiteUrl: "laredoute.com",LayerType: "normal"}],
-                  SupportedLanguages: ["fr", "it", "en", "es", "pt", "pl", "no", "se", "nl", "ru", "de"],
-                  RedirectPreferenceDuration: 0,
-                  VisitorCountryCode : "US"
-              };
-    </script>
-
-
-
-
-
-
-
-        <script type="text/javascript">
+	<script type="text/javascript">
             _satellite.pageBottom();
         </script>
 
-        <script type="text/javascript" src="/js/1/fr-FR/bundles/master_defer?v=TnLtGOXchlXZ3tTAwMxIZzUHq0UfNnCdM8hsxFdZV0I1" async defer onload="(typeof AsyncLoader_master === 'undefined' ? AsyncLoader_master = $.Deferred() : ''); AsyncLoader_master.resolve(event);"></script>
-
-
-    
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C79428CC" />
-</div></form>
-
 </body>
-
 </html>
