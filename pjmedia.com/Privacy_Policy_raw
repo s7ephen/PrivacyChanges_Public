@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '326cfc03ea', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '3c555a8657', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1727325604'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=961338833'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=325691050'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2116139521&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1706591884'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2078318875'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1702988127'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=991011482&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, '94769593ba');
+      PJMedia.SharingButtons.initialize(null, null, 'e92807a30f');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=832098992');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1469244827');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=567793309');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=53916053');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1147599122');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=2097913720');"></a>
   </span>
 </span>
 
@@ -608,9 +608,9 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 
 
 							
-											<li><a href="http://pjmedia.com/tatler/2015/09/11/fyf911-protest-at-stone-mountain-fizzles-badly/">#FYF911 Protest in Stone Mountain Fizzles Badly</a></li>
+											<li><a href="http://pjmedia.com/michaelledeen/2015/09/12/the-two-mark-levins/">The Two Mark Levins</a></li>
 											
-											<li><a href="http://pjmedia.com/tatler/2015/09/12/office-depot-ceo-apologizes-for-store-discriminating-against-pro-life-customer/">Office Depot CEO Apologizes For Store Discriminating Against Pro-Life Customer</a></li>
+											<li><a href="http://pjmedia.com/tatler/2015/09/11/fyf911-protest-at-stone-mountain-fizzles-badly/">#FYF911 Protest in Stone Mountain Fizzles Badly</a></li>
 											
 											<li><a href="http://pjmedia.com/tatler/2015/09/12/loony-leftist-elected-leader-of-uks-labor-party/">Loony Leftist Elected Leader of UK's Labor Party</a></li>
 																		</ul>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/12/boy-13-charged-with-assault-after-kissing-girl-on-a-dare/">Boy, 13, Charged With Assault After Kissing Girl on a Dare</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/office-depot-ceo-apologizes-for-store-discriminating-against-pro-life-customer/">Office Depot CEO Apologizes For Store Discriminating Against Pro-Life Customer</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/loony-leftist-elected-leader-of-uks-labor-party/">Loony Leftist Elected Leader of UK&#8217;s Labor Party</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/12/george-takei-fundraising-for-dnc-slams-discomfort-at-beautiful-diversity-in-country/">George Takei Fundraising for DNC, Slams &#8216;Discomfort at Beautiful Diversity&#8217; in Country</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/boy-13-charged-with-assault-after-kissing-girl-on-a-dare/">Boy, 13, Charged With Assault After Kissing Girl on a Dare</a></li><li><a href="http://pjmedia.com/tatler/2015/09/12/office-depot-ceo-apologizes-for-store-discriminating-against-pro-life-customer/">Office Depot CEO Apologizes For Store Discriminating Against Pro-Life Customer</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214341/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">BRENDAN O&#8217;NEILL:  <a target="_blank" href="http://blogs.spectator.co.uk/brendan-oneill/2015/09/a-compliment-isnt-misogynistic-why-dont-feminists-understand-this/">A compliment isn’t misogynistic. Why can’t feminists understand this?</a>  &#8220;What must the veiled, subjugated women of genuinely patriarchal societies in the East and South think when they see a free, well-connected woman in the West scream ‘misogyny!’ over a compliment? They must feel pretty lonely, knowing they’re unlikely ever to win solidarity from such sorry, self-obsessed excuses for feminists.&#8221; ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214336/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">LEFT BEHIND:  <a target="_blank" href="http://www.bostonglobe.com/lifestyle/2015/09/11/thinking-mom-every-day-not-just-sept/F8UzVHe37pSJOinjzKEEZN/story.html?s_campaign=bostonglobe%3Asocialflow%3Atwitter">Thinking of Mom every day, not just Sept. 11.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214352/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">FALSE AND DEFAMATORY:  <a target="_blank" href="http://www.breitbart.com/big-government/2015/09/12/daily-kos-founder-claims-contributor-at-daily-kos-is-a-breitbart-writer-arrested-for-terrorism/">Daily Kos Founder Claims Contributor at Daily Kos Is a ‘Breitbart Writer Arrested for Terrorism.’</A>  &#8220;He linked to an article that made no mention of Breitbart. But it did list the publications that this terrorist troll, Joshua Goldberg, wrote for, including… the Daily Kos. . . .  Moulitsas then, bizarrely, went on to claim that &#8216;trying to incite terrorism&#8217; was &#8216;a conservative thing.&#8217;” ...</a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214350/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">K-12 IMPLOSION UPDATE:  <a target="_blank" href="https://reason.com/blog/2015/09/11/teen-boy-kissed-girl-on-a-dare-now-he-fa">13-year-old boy kissed 14-year-old girl on a dare.  Now he faces assault charges.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214367/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">SO THE INSTA-WIFE AND I MOVED A SOFA TODAY, and there was a nasty coffee stain under it.  The <a target="_blank" href="http://www.amazon.com/gp/product/B00AZBIRDQ?ie=UTF8&#038;camp=1789&#038;creativeASIN=B00AZBIRDQ&#038;linkCode=xm2&#038;tag=insta0c-20">Bissell Spot Cleaner</a> removed it completely.  That thing has paid for itself many times over.  Together with the <a target="_blank" href="http://www.amazon.com/gp/product/B000V72992?ie=UTF8&#038;camp=1789&#038;creativeASIN=B000V72992&#038;linkCode=xm2&#038;tag=insta0c-20">Barkeeper&#8217;s Friend</a> and the <a target="_blank" href="http://www.amazon.com/gp/product/B001339ZMW?ie=UTF8&#038;camp=1789&#038;creativeASIN=B001339ZMW&#038;linkCode=xm2&#038;tag=insta0c-20">Mr. Clean Magic Eraser,</a> it&#8217;s part of my hypermasculine cleaning arsenal. ...</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214348/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">HIGHER EDUCATION BUBBLE UPDATE:  <a target="_blank" href="http://www.psmag.com/health-and-behavior/help-my-son-has-become-an-eco-conscious-monster?utm_source=Pacific%20Standard%20Newsletter&#038;utm_campaign=9ae09db45a-daily-rss-newsletter&#038;utm_medium=email&#038;utm_term=0_a4fd1bcb7e-9ae09db45a-80489949">Bidding My College-Bound Son Good Riddance:  I have raised a sweet, thoughtful, environmentally conscious monster—and soon I will be free.</a>  Your son sounds like an idiot.  I hope he grows out of it.</a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -779,7 +779,7 @@ jQuery(document).ready(function($){
     ga('create', 'UA-3218147-1', 'auto');
     ga('require', 'displayfeatures');
         ga('send', 'pageview', {
-      'dimension5': '|b=1|t=p|i=29384|d=1442066760|a=1|'
+      'dimension5': '|b=1|t=p|i=29384|d=1442153160|a=1|'
     });
         </script>    <script type='text/javascript'>
     PJInterop.CookieCache.bind();
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":366,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":394,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
