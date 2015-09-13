@@ -588,11 +588,9 @@
 
 
 <!-- SECONDARY BANNER -->
-<!-- <div class="secondary-global-banner">
-	<a href="/ns/disclaimers/external.html" rel="shadowbox[banner];width=540;height=200" target="_blank" alt="Free Shipping on orders $75 or more">
-		<img src="http://kidsfootlocker.uat.msp.guidance.com/ns/headers/globalbanners/kflgb040912-2b-FS50ends.jpg" border="5">
-	</a>
-</div> -->
+<div class="secondary-global-banner">
+	<a dialog="global_banner_disclaimer" href="#"><span style="background-color:#ac1f2d;"><strong>20% off $99 Or More! <br/> Online Only. Some Styles Excluded.</strong><br/> Use code: <strong>MBCH59V6</strong> - Details</span></a>
+</div>
 <!-- END SECONDARY BANNER -->
 
 <!-- DISCLAIMER -->
@@ -600,6 +598,25 @@
     <div id="close">
         <a href="#" class="button">Close</a>
     </div>
+    <div class="offer_title">
+        <span class="offer_text">
+            <span class="large_text">20% OFF</span> <span class="small_text">$99 Or More</span>
+        </span>
+        <span class="code_text">
+            <span class="small_text">use code <span class="large_text">MBCH59V6</span> in checkout</span>
+        </span>     
+    </div>   
+    <p align="center">
+    	<a href="javascript:void();" class="action_btn button" onClick="saveCode('MBCH57Y6'); return false;">Copy Code to Cart</a>
+    </p>
+    <p>
+        *Some exclusions may apply.
+<strong>Select Nike styles excluded.</strong>
+To receive 20% off your $99 purchase, enter promotion code MBCH59V6 at checkout. Promo Code box is located in Step 4 of checkout. Order value must total $99 or more before services, taxes, shipping and handling. Valid online at champssports.com. Not valid in store. Does not apply to prior purchases or open orders and cannot be combined with any other offers. May not be used with purchase of GiftCards. Promotion may be modified or terminated at any time. Other exclusions apply, <a href="http://m.champssports.com/?uri=promo&id=5003989" title="Promotion Restrictions">click here</a> for full details. Certain restrictions may apply. Some items are not eligible for discount and will indicate "excluded from discount" in red type on the product's description page. Offer expires 9/14/2015 (11:59 pm CT).
+    </p>
+    
+    </br>
+
     <div class="offer_title">
         <span class="offer_text">
             <span class="large_text">FREE SHIPPING</span> <span class="small_text">on orders $75 or more</span>
@@ -621,7 +638,7 @@
 		<!--
 			$(document).ready(function(){
 				try{
-			 		viewBannerEvent("Free Shipping Over $75");
+			 		viewBannerEvent("20% Off $99");
 			 	} 
 			 	catch(e) {
 					console.log("ViewBannerEvent():Exception", e);
