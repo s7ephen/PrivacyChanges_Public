@@ -1800,21 +1800,7 @@ dp.marketing_touch = utm_source;
 dp.site_type = 'Desktop';
 dp.customer_status = 'anonymous';
 var spLNDuringRegtest = '';
-dp.customer_status = 'Logged-in';
-dp.user_id = '128171142';
-var spLNDuringReg = '';
-if (spLNDuringReg != null && spLNDuringReg != '' && spLNDuringReg != 'null'){
-dp.sp_loyalty_no = spLNDuringReg;
-}
-var spLN = '';
-if (spLN != null && spLN != '' && spLN != 'null'){
-dp.sp_loyalty_no = spLN;
-}
-if (typeof speedperkLN != "undefined" && speedperkLN != '')
-{
-dp.sp_loyalty_no = speedperkLN;
-}
-dp.customer_id = '128171142';
+dp.customer_id = '353337231';
 if (j.cookie('PREFSTORE') != null ) {
 dp.primary_store_number = j.cookie('PREFSTORE');
 }else{
@@ -1921,11 +1907,11 @@ dp.auto_model = pageViewAttr[2] ;
 dp.auto_engine = garageEngine ;
 }
 var priceZone = "";
-var validZone = validateInput(getAAPPriceZoneCookieRegex(), '1091');
+var validZone = validateInput(getAAPPriceZoneCookieRegex(), '');
 if(!validZone){
 priceZone = invalidatePriceZoneCookie();
 }else{
-priceZone = '1091';
+priceZone = '';
 }
 pageViewAttr[11] = priceZone;
 productViewAttr[2] = priceZone;
