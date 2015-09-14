@@ -905,9 +905,9 @@ mboxCreate('global_nav','type='+Dtv.Profile.type,'visit='+Dtv.Profile.visit,'pro
 	
 
 <!-- DBUG
-SNAME:PXDTPW11B
-PID:ANON:4375385285_px
-LID:4663806114
+SNAME:DXDTPW20C
+PID:ANON:4465428937_dn
+LID:4737873842
 
 
 isPr:false
@@ -917,12 +917,12 @@ isAuto:false
 
 -->
 <ul id="DBUG" style="display:none;font-size:1px;">
-	<li id="DBUG_SNAME">PXDTPW11B</li>
+	<li id="DBUG_SNAME">DXDTPW20C</li>
 	
-	<li id="DBUG_PID_ANON">4375385285_px</li>
+	<li id="DBUG_PID_ANON">4465428937_dn</li>
 	
 	
-	<li id="DBUG_LID">4663806114</li>
+	<li id="DBUG_LID">4737873842</li>
 
 
 	<li id="DBUG_isPr">false</li>
@@ -1324,10 +1324,13 @@ isAuto:false
 </div>
 <div class="dtv-login-box bau-login" id="login-box-module">
 <input type=hidden id="user-session-success-url" value= />
-<form id="signinForm" name="signinForm" action="https://www.directv.com/DTVAPP/login/login.jsp?_DARGS=/DTVAPP/global/old/loginBox.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-117734693167333819" type="hidden"/> </div>
+<form id="signinForm" name="signinForm" action="https://cprodmasx.att.com/commonLogin/igate_wam/login.do?_DARGS=/DTVAPP/global/old/loginBox.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-569549148702229885" type="hidden"/> </div>
 <input type="hidden" id="isTguardAuthEnabled" name="isTguardAuthEnabled" value="true" />
-<input type="hidden" id="nflRushHourEnabled" name="nflRushHourEnabled" value="true" />
+<input type="hidden" id="nflRushHourEnabled" name="nflRushHourEnabled" value="false" />
 <input type="hidden" name="loginPage" value="https://www.directv.com/DTVAPP/login/login.jsp" />
+<input type="hidden" name="targetURL" value="https://cprodx.att.com/TokenService/nxsATS/WATokenService?isPassive=true&appID=m93639&returnURL=https%3A%2F%2Fwww.directv.com%2FDTVAPP%2Fauth.jsp%3Fremember%3Dfalse%26nextUrl%3Dhttp%253A%252F%252Fwww.directv.com%252FDTVAPP%252Fcontent%252Flegal%252Fprivacy_policy%253FassetId%253DP6470131" />
+<input type="hidden" name="returnErrorCode" value="true" />
+<input type="hidden" name="loginURL" value="https://www.directv.com/DTVAPP/auth.jsp?remember=false&nextUrl=http%3A%2F%2Fwww.directv.com%2FDTVAPP%2Fcontent%2Flegal%2Fprivacy_policy%3FassetId%3DP6470131" />
 <input name="/atg/userprofiling/ProfileFormHandler.landingPageUrl" value="" type="hidden"/><input name="_D:/atg/userprofiling/ProfileFormHandler.landingPageUrl" value=" " type="hidden"/>
 <input name="/atg/userprofiling/ProfileFormHandler.userLoginSuccessUrl" value="/DTVAPP/mydirectv/account/myOverview.jsp" class="login_success_url" type="hidden"/><input name="_D:/atg/userprofiling/ProfileFormHandler.userLoginSuccessUrl" value=" " type="hidden"/>
 <input name="/atg/userprofiling/ProfileFormHandler.userLoginErrorUrl" value="/DTVAPP/login/login.jsp" class="login_error_url" type="hidden"/><input name="_D:/atg/userprofiling/ProfileFormHandler.userLoginErrorUrl" value=" " type="hidden"/>
@@ -1336,12 +1339,12 @@ isAuto:false
 <fieldset>
 <dl>
 <dd class="login-text loginPlaceholder">
-<input id="loginDropdownField" maxlength="255" name="userName" value="" tabindex="1" class="borderFocus selfcare prepopLogin" type="text" size="25"/><input name="_D:userName" value=" " type="hidden"/>
+<input tabindex="1" type="text" name="userid" id="loginDropdownField" maxlength="255" size="25" class="borderFocus selfcare prepopLogin" value="" />
 <span id="loginDropdownFieldPlaceholder" class="input-placeholder">Email or Access ID<!-- @key: label.tguard.input.login.placeholder --></span>
 <div class="tguard-prosp-email-des">Use your DIRECTV email or AT&T Access ID<!-- @key: label.tguard.login.description --></div>
 </dd>
 <dd class="login-text loginPlaceholder">
-<input id="passwordDropdownField" maxlength="100" name="password" value="" tabindex="2" class="borderFocus selfcare prepopLogin" type="password" autocomplete="off" size="25"/><input name="_D:password" value=" " type="hidden"/>
+<input tabindex="2" name="password" id="passwordDropdownField" class="borderFocus selfcare prepopLogin" size="25" maxlength="100" type="password" value="" autocomplete="off" />
 <span id="passwordDropdownFieldPlaceholder" class="input-placeholder">Password</span>
 </dd>
 <dd>
@@ -1356,7 +1359,7 @@ login-box-link
 <var title="altLoginUrl">"https://login.directv.com/nfl"</var>
 </dd>
 <dd>
-<input id="btn_login" style="display:none;" name="/atg/userprofiling/ProfileFormHandler.userPinning" type="submit"/><input name="_D:/atg/userprofiling/ProfileFormHandler.userPinning" value=" " type="hidden"/>
+<input type="submit" style="display:none;" id="btn_login" />
 <a tabindex="4" id="btn_login_submit" class="medium-button btn-mid-std js-submit btn-grey btn-mid-std-new login-button btn-login-submit"
 >
 <span>Sign In to My Account<!-- @key: label.login --></span>
@@ -2326,7 +2329,7 @@ Not a DIRECTV <span class="customer-text">Customer?</span><br />
 <p>We look forward to sending you the latest news and offers tailored to your specific interests.</p>
 </div>
 <div id="email_signup_form_container">
-<form id="email_signup_form" action="/DTVAPP/content/contentPage.jsp?_DARGS=/DTVAPP/content/component/emailSignup.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-117734693167333819" type="hidden"/> </div>
+<form id="email_signup_form" action="/DTVAPP/content/contentPage.jsp?_DARGS=/DTVAPP/content/component/emailSignup.jsp" method="post"><div style="display:none"><input name="_dyncharset" value="UTF-8" type="hidden"/> </div><div style="display:none"><input name="_dynSessConf" value="-569549148702229885" type="hidden"/> </div>
 <h4>Get the Inside Scoop</h4>
 <div id="email_interest_message_container">
 <div class="dtv-message-tup js_message_wrapper error-message" style="display:none">
@@ -4528,7 +4531,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 
 
 
-<!-- Omniture START: 14824846109823670 -->
+<!-- Omniture START: 15469322706595199 -->
 <!-- CMP Code for Refer A Friend Project -->
 <!-- Online Opinion variable -->
 <script type="text/javascript">
@@ -4580,8 +4583,8 @@ if (typeof(Reporting.errorPage) == "undefined") {
 Reporting.errorPage = false;
 }
 Reporting.PageData.accountNumber = "";
-Reporting.PageData.upId = "4375385285_px";
-Reporting.PageData.prospectAccountNumber = "4375385285_px";
+Reporting.PageData.upId = "4465428937_dn";
+Reporting.PageData.prospectAccountNumber = "4465428937_dn";
 if (readCookie('socialUserDetails')!=null && readCookie('socialUserDetails') != ''){
 Reporting.PageData.userType = "existing";
 } else {
@@ -4982,7 +4985,7 @@ jQuery(document).trigger(Reporting.Constants.DTV_REPORTING_DATA_SENT);
 jQuery(Reporting.reportPageData);
 if ($profile.loggers.omniture) $profile.loggers.omniture.stop();
 </script>
-<!-- Omniture END: 14824846113940670 (4 msec) Load Counter: 1 -->
+<!-- Omniture END: 15469322711910199 (5 msec) Load Counter: 1 -->
 
 
 
