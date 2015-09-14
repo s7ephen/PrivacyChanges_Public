@@ -579,7 +579,7 @@ APP.Form.baseFormConfig();
 <div id="contentRecommendationWidget_HeaderStoreLogo_Content" class="contentRecommendationWidget" >
 
 <div class="left_espot">
-<a href="/" id="contentLink_1_HeaderStoreLogo_Content"><img style=" width: 272px; height: 72px; margin-top: 35px;" src="//content.josbank.com/Global/logo.png" alt="Jos. A. Bank" border="0" /></a>
+<a href="/" id="contentLink_1_HeaderStoreLogo_Content"><img src="//content.josbank.com/Global/logo-center.jpg" style=" width: 293px; height: 72px; margin-top: 35px;" alt="Jos. A. Bank" border="0"></a>
 </div>
 
 </div>
@@ -597,8 +597,7 @@ APP.Form.baseFormConfig();
 <div id="contentRecommendationWidget_Espot-PhoneNumber" class="contentRecommendationWidget" >
 
 <div class="left_espot">
-1-800-285-2265
-
+<span style="color: #000000">1-800-285-2265</span>
 </div>
 
 </div>
@@ -880,7 +879,7 @@ Jos. A. Bank has partnered with international shipping solution Borderfree to al
 <a class="header-international-link" data-modal-fn="languageCurrencyModal" href="#">
 <span class="header-international-label" id="header-international-label">Change Region</span><span class="visuallyhidden">. This action will open a modal dialog.</span><img class="header-international-img" id="header-international-img" data-url-pattern="/wcsstore/JABAuroraStorefrontAssetStore//images/global/flags/[COUNTRY].gif" alt="" style="display:none;"/>
 </a>
-<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="https://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
+<input type="hidden" id="miniShopingCartInvalidateURL" name="miniShopingCartInvalidateURL" value="http://www.josbank.com/TMWINMiniCartInvalidate?catalogId=14052&langId=-1&storeId=13452" />	
 <input type="hidden" id="shoppingCartURL" name="shoppingCartURL" value="OrderCalculate?langId=-1&storeId=13452&catalogId=14052&calculationUsageId=-1&calculationUsageId=-2&calculationUsageId=-7&updatePrices=1&orderId=.&URL=AjaxOrderItemDisplayView&errorViewName=AjaxOrderItemDisplayView" />
 
 </div>
@@ -892,7 +891,7 @@ international.init('2440');
 </script>
 <script type="text/javascript">
 try {
-UserInfoJS.setURL('getUserInfoURL','https://www.josbank.com/FetchUserDetailsAjax?catalogId=14052&langId=-1&storeId=13452');
+UserInfoJS.setURL('getUserInfoURL','http://www.josbank.com/FetchUserDetailsAjax?catalogId=14052&langId=-1&storeId=13452');
 if (UserInfoJS.isAjaxCallNeeded()) {
 dojo.addOnLoad(function() {
 UserInfoJS.init();	
@@ -2852,9 +2851,171 @@ Amber Smithson - Knoxville, TN </p><br>
 <div class="row row-margin">
 <div class="col12" data-slot-id="1">
 
-<div id="contentRecommendationWidget_1_-1012_3074457345618262958" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-ShopByShipSweeps" class="contentRecommendationWidget" >
 
 <div class="left_espot">
+<style>
+body {
+width: 915px;
+margin: 0 auto;
+padding: 0;
+color: #000;
+font-family: sans-serif;
+line-height: 14px;
+font-size: 12px;
+background: none;
+overflow-x: hidden;
+}
+a {
+color: #000;
+cursor: pointer;
+text-decoration: underline;
+}
+#contentWrapper {
+background: none;
+}
+#content {
+background: none;
+}
+#header {
+background: none;
+padding-left: 10px;
+}
+#headerRow1 a {
+color: #000;
+} 
+#headerRow2 {
+background: #fff;
+}
+#headerRow2 a > span {
+color: #000;
+font-weight: 600;
+}
+#departmentsMenu > li {
+padding-right: 3px;
+}
+#headerRow2 a.departmentButton span {
+border-radius: 0px;
+}
+#headerRow2 a.departmentButton.selected > span{
+background-color: #FFF;
+border-color: #FFF;
+color: #888;
+}
+.mini-cart {
+color: #fff; 
+}
+#tuxRentalBanner {
+padding: 10px 0px;
+}
+div.footer_wrapper_position {
+min-height: 10px;
+width: 3000px !important;
+overflow: hidden;
+margin-left: -1050px;
+background-color: #000;
+overflow-x: hidden;
+}
+#footerWrapper {
+min-height: 10px;
+width: 3000px !important;
+overflow-x: hidden;
+margin-left: -1050px;
+background-color: #000;
+}
+#footer {
+margin-left: 1050px;
+}
+#container_3074457345618279817 > .row.row-margin:first-child {
+display: none;
+}
+.win-gift {
+max-width: 434px;
+height: 102px;
+margin: 0px 0px 18px;
+}
+.win-gift-body {
+position: absolute;
+left: 0px;
+right: 0px;
+bottom: 15px;
+padding: 10px;
+}
+.win-gift-form {
+padding: 0px 0px 0px 115px;
+}
+.win-gift-body input {
+max-width: 230px;
+width: 230px;
+height: 25px;
+text-align: center;
+font-family: "Times New Roman";
+font-style: italic;
+}
+.win-gift .button {
+padding: 0px 5px 0px 0px;
+background: #80632d;
+}
+.win-gift .button span {
+padding: 0px 0px 0px 5px;
+background: #80632d;
+color: #fff;
+font-family: "Times New Roman";
+font-size: 11px;
+text-transform: uppercase;
+}
+.win-gift-more {
+position: absolute;
+right: 210px;
+bottom: 10px;
+width: 90px;
+line-height: 11px;
+font-size: 11px;
+color: #80632d;
+font-family: "Times New Roman";
+text-decoration: none;
+}
+.sweep-panel {
+position: fixed;
+right: 10%;
+top: 100%;
+margin-top: -316px;
+background-color: #ebebeb;
+}
+.sweep-close {
+position: absolute;
+top: 0px;
+right: 0px;
+z-index: 1000;
+width: 22px;
+height: 20px;
+background: url('http://scene7.josbank.com/is/image/JosBank/GlobalFlyout%5Fclose?scl=1&qlt=90') no-repeat;
+}
+.sweep-main-form {
+padding: 26px 13px;
+}
+.sweep-main-form input#email11 {
+height: 30px;
+width: 207px;
+text-align: center;
+font-family: "Times New Roman";
+}
+.sweep-main-form button {
+width: 60px;
+height: 30px;
+}
+.sweep-main-form button span {
+padding: 0px 6px;
+font-family: "Times New Roman";
+font-size: 15px;
+}
+.sweep-main-form button, .sweep-main-form button span {
+background: #80632d;
+}
+.sweep-main-form button:hover, .sweep-main-form button:hover span{
+background: #80632d;
+}
+</style>
 <script type="text/javascript">
 try {
 var affiliateParam = getParameterByName('cm_mmc');
@@ -2867,36 +3028,6 @@ dojo.cookie('affiliateReferrer', 'LS', {path:'/', expires: 30});
 console.error('failed to check mmc parameter:' + e);
 }
 </script>
-<div class="top-navigation">
-<div class="shop-by" style="display: none;">
-<span class="shop-by-label">
-Shop By:
-</span>
-<span class="shop-by-links">
-<a href="/mens-tailored-fit">Tailored Fit</a>
-<span class="divider">|</span>
-<a href="/mens-slim-fit">Slim Fit</a>
-</span>
-</div>
-<div class="top-free-ship">
-<div style="color:#dc291e; font-weight:bold;padding: 4px 3px;">FREE SHIPPING ON ALL ORDERS $50+
-<span style="font-size:xx-small; vertical-align:top;">&loz;</span>
-</div>
-</div>
-<div class="sweep-action">
-<a href="#" data-toggle-el="sweepStakesPanel"><img src="//content.josbank.com/Global/GlobalFly-Open_sweeps.gif"/></a>
-</div>
-<div id="mw-category-top" class="mw-hidden-content" style="display:none;"> 
-<div class="mw-homepage-banner-5">
-<img src="//content.josbank.com/Mobile/Mobile-catbanner_FS50.png" border="0" />
-</div>
-</div>
-<div id="mw-tablet-category-top" class="mw-hidden-content" style="display:none;">
-<div class="mw-tablet-homepage-banner-1">
-<img src="//content.josbank.com/Mobile/Tablet-catbanner_FS50.png" border="0" />
-</div>
-</div>
-</div>
 </div>
 
 </div>
@@ -2955,6 +3086,16 @@ dojo.publish("CMPageRefreshEvent");
 });
 </script>
 
+
+<div id="contentRecommendationWidget_Espot-TopNav-PromoBanner" class="contentRecommendationWidget" >
+
+<div class="left_espot">
+<a href="/current-promotions" title="" target="">
+<img src="//content.josbank.com/Navigation/TopNav-PromoBanner_091415.gif" alt="" BORDER="0"/>
+</a>
+</div>
+
+</div>
 
 
 
@@ -5677,10 +5818,12 @@ Japanese</td>
 <div class="row row-margin">
 <div class="col6 acol12" data-slot-id="21">
 
-<div id="contentRecommendationWidget_8_-1012_3074457345618262960" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-BottomLeft" class="contentRecommendationWidget" >
 
 <div class="left_espot">
-<div class="win-gift dc_hide"> <div class="win-gift-bg"> <img src="//content.josbank.com/Global/GlobalFly-BttmLeftBkgrd_sweeps.jpg" alt="Gift Card Sweepstakes" border="0"> </div> <div class="win-gift-body"> <div class="win-gift-form"> <form name="JoinSweepstakesBottomForm" id="JoinSweepstakesBottomForm" action="JABSweepStakes" method="post"> <input type="hidden" name="storeId" value="13452" id="storeId2"> <input type="hidden" name="catalogId" value="14052" id="catalogId2"> <input type="hidden" name="URL" value="JABThankYouView" id="URL2"> <div class="row"> <div class="col12"> <input type="email" id="email1" name="email11" errpage="97" errors="15,1"> <button class="button"><span>Enter</span></button> </div> </div> </form> </div> <a class="win-gift-more" href="#" data-modal-fn="giftCardRulesModal">More Information</a> </div></div>
+<a href="/customer-service-information#SHIPPING">
+<img src="//content.josbank.com/Global/Global-BottomLeft_FS50.jpg" alt="Free Shipping on orders of 50$ or more">
+</a>
 </div>
 
 </div>
@@ -5742,20 +5885,27 @@ dojo.publish("CMPageRefreshEvent");
 </div>
 <div class="col6 acol12" data-slot-id="22">
 
-<div id="contentRecommendationWidget_9_-1012_3074457345618262957" class="contentRecommendationWidget" >
+<div id="contentRecommendationWidget_Espot-Global-BottomRight" class="contentRecommendationWidget" >
 
 <div class="left_espot">
-<div class="free-ship-bottom">
-<a href="/customer-service-information#SHIPPING">
-<span class="free-ship-left">
-FREE <br/>
-SHIPPING
-</span>
-<span class="free-ship-content">
-On all online orders <br/>
-$50 or more <span style="font-size:xx-small; vertical-align:top;">&loz;</span>
-</span>
-</a>
+<div class="win-gift dc_hide">
+<div class="win-gift-bg"> <img src="//content.josbank.com/Global/Global-BottomRight_sweeps.jpg" alt="Gift Card Sweepstakes" border="0"> </div>
+<div class="win-gift-body">
+<div class="win-gift-form">
+<form name="JoinSweepstakesBottomForm" id="JoinSweepstakesBottomForm" action="JABSweepStakes" method="post">
+<input type="hidden" name="storeId" value="13452" id="storeId2">
+<input type="hidden" name="catalogId" value="14052" id="catalogId2">
+<input type="hidden" name="URL" value="JABThankYouView" id="URL2">
+<div class="row">
+<div class="col12">
+<input type="email" id="email1" name="email11" errpage="97" errors="15,1" placeholder='Email Here'>
+<button class="button"><span>Enter</span></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<a class="win-gift-more" href="#" data-modal-fn="giftCardRulesModal">More Information</a>
 </div>
 </div>
 
