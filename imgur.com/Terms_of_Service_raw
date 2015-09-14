@@ -16,12 +16,12 @@
     <link rel="apple-touch-icon-precomposed" href="//s.imgur.com/images/favicon-152.png">
     <meta name="msapplication-TileColor" content="#2cd63c">
     <meta name="msapplication-TileImage" content="//s.imgur.com/images/favicon-144.png">
-            <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/global.css?1442020661" />
+            <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/global.css?1442255552" />
 
         
         
     
-        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/subpage_queries.css?1442020661" />
+        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/subpage_queries.css?1442255552" />
 
             <!--[if IE 9]><link rel="stylesheet" href="//s.imgur.com/include/css/ie-sucks.css?0" type="text/css" /><![endif]-->
     
@@ -48,7 +48,7 @@
         <meta name="twitter:image:height" content="630" />
         <meta name="twitter:image:width" content="1200" />
     
-    <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1442020661"></script>
+    <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1442255552"></script>
 <![endif]-->
     
     
@@ -85,8 +85,8 @@
                     <div class="link-menu">
                         <div class="test-1868-show">
                             <ul class="topics cf">
-                                <li class="item bold" data-value="hot"><a href="/hot" class="name" data-jafo="{@@event@@:@@hamburgerTopicClick@@,@@meta@@:{@@location@@:@@header@@,@@galleryType@@:@@hot@@,@@previousSort@@:@@@@,@@previousType@@:@@@@,@@inSearch@@:@@@@}}">Most Viral</a></li>
-                                <li class="item bold" data-value="new"><a href="/new" class="name" data-jafo="{@@event@@:@@hamburgerTopicClick@@,@@meta@@:{@@location@@:@@header@@,@@galleryType@@:@@new@@,@@previousSort@@:@@@@,@@previousType@@:@@@@,@@inSearch@@:@@@@}}">User Submitted</a></li>
+                                <li class="item bold" data-value="hot"><a href="//imgur.com/hot" class="name" data-jafo="{@@event@@:@@hamburgerTopicClick@@,@@meta@@:{@@location@@:@@header@@,@@galleryType@@:@@hot@@,@@previousSort@@:@@@@,@@previousType@@:@@@@,@@inSearch@@:@@@@}}">Most Viral</a></li>
+                                <li class="item bold" data-value="new"><a href="//imgur.com/new" class="name" data-jafo="{@@event@@:@@hamburgerTopicClick@@,@@meta@@:{@@location@@:@@header@@,@@galleryType@@:@@new@@,@@previousSort@@:@@@@,@@previousType@@:@@@@,@@inSearch@@:@@@@}}">User Submitted</a></li>
                                 
                             </ul>
                             <ul class="dropdown-footer cf">
@@ -282,36 +282,11 @@
                 </div>
 
                 <div id="upload-global-album-options">
-                    
-
-
-
-
-
-
-
-<table id="upload-global-album-layout">
+                    <table id="upload-global-album-layout">
     <tr>
         <td id="upload-global-album-td">
             <input name="album_title" type="text" title="Optional Album Title" class="placeholder-onkeydown" id="upload-global-album-title" maxlength="55" />
         </td>
-
-        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-blog.png&#039; style=&#039;padding-right: 2px;&#039;/&gt;</td><td>&lt;h1&gt;Blog Layout&lt;/h1&gt;Shows all the images on one page in a blog post style layout. Best for albums with a small to medium amount of images.</td></tr></table>">
-            <input id="blog-layout-upload" type="radio" name="layout" value="b" checked="checked"/>
-            <label for="blog-layout-upload">Blog</label>
-        </td>
-
-        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-horizontal.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Horizontal Layout&lt;/h1&gt;Shows one image at a time in a traditional style, with thumbnails on top. Best for albums that have high resolution photos.</td></tr></table>">
-            <input id="horizontal-layout-upload" type="radio" name="layout" value="h"/>
-            <label for="horizontal-layout-upload">Horizontal</label>
-        </td>
-
-        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-grid.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Grid Layout&lt;/h1&gt;Shows all the images on one page as thumbnails that expand when clicked on. Best for albums with lots of images.</td></tr></table>">
-            <input id="grid-layout-upload" type="radio" name="layout" value="g"/>
-            <label for="grid-layout-upload">Grid</label>
-        </td>
-
-        <td width="15"></td>
     </tr>
 </table>
 
@@ -544,7 +519,7 @@ if(typeof jQuery === 'undefined') {
 
 
 
-        <script type="text/javascript" src="//s.imgur.com/min/global.js?1442020661"></script>
+        <script type="text/javascript" src="//s.imgur.com/min/global.js?1442255552"></script>
 
         <script type="text/javascript">
             Imgur.Environment = {
@@ -558,7 +533,7 @@ if(typeof jQuery === 'undefined') {
                 recaptcha_key: '6LeZbt4SAAAAAKEsafT3QzEFp5vJ1-Z23uy5mPDz',
                 msid:          '97fc96702de9f6d67297e8767eb3abc6',
                 beta:          {
-                    enabled:   true,
+                    enabled:   false,
                     inBeta:    false
                 },
                 
@@ -572,7 +547,7 @@ if(typeof jQuery === 'undefined') {
             imgur.init(_.merge(Imgur.Environment, {
                 
                 
-                beta: {"enabled":true,"inBeta":false,"showInvite":false,"ctaInvite":[],"ctaWelcome":[]},
+                beta: {"enabled":false,"inBeta":false,"showInvite":false,"ctaInvite":[],"ctaWelcome":[]},
             }));
 
                             var uploader = Imgur.Upload.Global.getInstance(Imgur.getInstance()._);
