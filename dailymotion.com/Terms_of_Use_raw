@@ -51,8 +51,8 @@
 
                 
     <script type="text/javascript">
-        DM_Context={"server_name":"web-045","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":74,"time_and_day":"20:02-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"00db12d282472f5368805e1c7c8e49a130dc203b","is_search":false};
-        Stringified_DM_Context={"server_name":"web-045","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"74","time_and_day":"20:02-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"00db12d282472f5368805e1c7c8e49a130dc203b","is_search":"false"};
+        DM_Context={"server_name":"web-013","global_request":{"requestURI":"\/legal\/terms","objectFactory":{}},"is_ajax":false,"request":{"requestURI":"\/legal\/terms","objectFactory":{}},"reader":null,"real_user":null,"uri":"\/legal","route_name":"legal","is_logged":false,"is_web_crawler":false,"version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":4,"time_and_day":"23:28-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":false,"reader_has_history":false,"reader_has_family_filter":true,"reader_reqid":"021bcfd1033a10f0497738f36a2b8550ab61a30b","is_search":false};
+        Stringified_DM_Context={"server_name":"web-013","is_ajax":"false","reader":null,"real_user":null,"uri":"\/legal","is_logged":"false","is_web_crawler":"false","version":"us","content_version":"us","language":"us","locale":"en_us","content_language":"en","rfc1766_language":"en-US","direction":"ltr","country_name":"united states","country":"us","geoip_country":"us","geoip_as":"AS14618","device":"desktop","page_type":"legal","page_channel":"","traffic_segment":"4","time_and_day":"23:28-Monday","browser_language":null,"env":"prod","domain":"dailymotion.com","v1st":null,"reader_is_admin":"false","reader_has_history":"false","reader_has_family_filter":"true","reader_reqid":"021bcfd1033a10f0497738f36a2b8550ab61a30b","is_search":"false"};
         STATIC_BASE_URL = "http://static1.dmcdn.net";
         __webpack_manifest__ = {"1":"video_responsive.d3b64a69c4383882e81c.js","2":"video.82c0aa127829ff1b004a.js","3":"browse.f2d22cc9a574d45f6d01.js","4":"about.f8750961964c014b6033.js","5":"videos.084dec487a94c78493f6.js","6":"what-to-watch.940e7b8057baccfb1382.js","7":"privacy-settings.58e5ca68cd81ac761542.js","8":"live-create.5cf387c08a63d0de4c80.js"};
         EB_WEB_ENDPOINT = "webed.dm.gg";
@@ -593,6 +593,7 @@ Dailymotion<br/>
 
     
 
+            
     
                 
                             DM_ENV._add('DM_Widget_Page', {"authenticationLink":"\/pageitem\/authenticationContainer"});
@@ -602,6 +603,7 @@ Dailymotion<br/>
                             DM_ENV._add('DM_HapYak', {"cssPath":"http:\/\/static1.dmcdn.net\/css\/gen\/views\/shared\/video\/annotations.ltr.css.v5ba03d41b50d35c19","siteVersion":"us","baseUrl":"\/\/hapyak.dmcdn.net","readerId":""});
                             DM_ENV._add('DM_TourLoader', {"readerEndedWelcomeTour":null});
                             DM_ENV._add('Sd_Navigation_Panel', {"responsive":false});
+                            DM_ENV._add('Sd_CustomerSurvey', {"surveyScriptURL":"https:\/\/www.research.net\/jsEmbed.aspx?sm=A2B1qqbJVO6m87AfpvGHKg_3d_3d&country=us&authenticated=0"});
                             DM_ENV._add('DM_ResourcePlanner', {"delayResources":true});
                     
     </script>
@@ -648,7 +650,17 @@ Dailymotion<br/>
     })();
     </script>
 </div>
-                
+                <script type="text/javascript">
+            DM_ResourcePlanner.add('stat', function()
+            {
+                DM_JS.load("http://static1.dmcdn.net/js/gen/views/shared/customersurvey.js.v921c12fe919cda2c9", 'Sd_CustomerSurvey');
+            });
+        </script>
+        <div class="sd_customersurvey">
+            <h2 class="popup_title">Dailymotion Customer Satisfaction Survey</h2>
+            <div id="surveyMonkeyInfo"><div id="survey_ph"></div></div>
+        </div>
+            
             
 <div id="external_scripts">
 
@@ -753,7 +765,61 @@ DM_ResourcePlanner.add('ad-plugin', function()
 <!-- END Krux Controltag -->
 
 </div>
-    
+    <div id="sitecatalyst">
+<script>window.s_account = "dailymotionwebprod";</script>
+<script language="javascript" src="http://static1.dmcdn.net/js/gen/lib/stats/dailymotion-s_code.js.v25037d34560b80f29" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+if ('SiteCatalyst' in window)
+{
+    var s = window.SiteCatalyst.getInstance();
+
+    DM_ResourcePlanner.add('sitecatalyst', function()
+    {
+        s.events = '';
+        s.prop23 = (DM_Flash.VERSION.major == 0) ? 'HTML5' : 'Flash';
+                    s.pageName= "/legal/terms";
+                    s.channel= "legal";
+                    s.server= "web-013";
+                    s.prop3= "US";
+                    s.prop4= "US";
+                    s.prop5= "web";
+                    s.prop6= "A";
+                    s.prop9= "legal";
+                    s.prop10= "dailymotion.com";
+                    s.eVar7= "23:28-Monday";
+                    s.eVar48= 4;
+                    s.eVar45= "unlogged";
+        
+        if (DM_Context.route_name === 'home' && window.PixelleAllowed)
+        {
+            var canTriggerSiteCatalyst = true,
+                timeOut = setTimeout(function()
+                {
+                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
+                    s.t();
+                    canTriggerSiteCatalyst = false;
+                }, 2000);
+
+            PubSub.subscribe('pixelle:ad_loaded', function()
+            {
+                clearTimeout(timeOut);
+
+                if (canTriggerSiteCatalyst)
+                {
+                    s.list2 = Pg_WhatToWatch.trackVideoDisplay();
+                    s.t();
+                }
+            });
+        }
+        else
+        {
+            s.t();
+        }
+    });
+}
+</script>
+</div>
+
 
 </div>
     
