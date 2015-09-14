@@ -6,13 +6,13 @@
 					return true;
 				},
 				getMajorVersion: function() {
-					return 6.0;
+					return 0.0;
 				},
 				getRevision: function() {
-					return "6.0";
+					return "";
 				},
 				getVersion: function() {
-					return "6.0";
+					return "";
 				},
 				isAir: function() {
 					return false;
@@ -27,7 +27,7 @@
 					return false;
 				},
 				isIe: function() {
-					return true;
+					return false;
 				},
 				isIphone: function() {
 					return false;
@@ -48,7 +48,7 @@
 					return false;
 				},
 				isRtf: function() {
-					return true;
+					return false;
 				},
 				isSafari: function() {
 					return false;
@@ -66,7 +66,7 @@
 					return false;
 				},
 				isWindows: function() {
-					return true;
+					return false;
 				},
 				isWml: function() {
 					return false;
@@ -189,7 +189,7 @@
 					return "http://www.redding.com/web/guest";
 				},
 				getSessionId: function() {
-					return "D2205A995CD84D52E429769A4AD71D4A";
+					return "7263EAFBC74DCB1B22FCB1A3E20BAB00";
 				},
 				getPortletSetupShowBordersDefault: function() {
 					return false;
@@ -309,47 +309,6 @@
 /*]]>*/</script> <link class="lfr-css-file" href="http&#x3a;&#x2f;&#x2f;www&#x2e;redding&#x2e;com&#x2f;newspaper-responsive-base-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;themeId&#x3d;newspaperresponsivebasetheme_WAR_newspaperresponsivebasetheme&#x26;languageId&#x3d;en_US&#x26;b&#x3d;6110&#x26;t&#x3d;1441935918000" rel="stylesheet" type="text/css" /> <style type="text/css">
 	/* <![CDATA[ */
 		
-			img, .png {
-				position: relative;
-				behavior: expression(
-					(this.runtimeStyle.behavior = "none") &&
-					(
-						this.pngSet || (this.src && this.src.toLowerCase().indexOf('spacer.png') > -1) ?
-							this.pngSet = true :
-								(
-									this.nodeName == "IMG" &&
-									(
-										(
-											(this.src.toLowerCase().indexOf('.png') > -1) ||
-											(this.className && ([''].concat(this.className.split(' ')).concat(['']).join('|').indexOf('|png|')) > -1)
-										) &&
-										(this.className.indexOf('no-png-fix') == -1)
-									) ?
-										(
-											this.runtimeStyle.backgroundImage = "none",
-											this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
-											this.src = "http://www.redding.com/newspaper-responsive-base-theme/images/spacer.png"
-										) :
-											(
-												(
-													(this.currentStyle.backgroundImage.toLowerCase().indexOf('.png') > -1) ||
-													(this.className && ([''].concat(this.className.split(' ')).concat(['']).join('|').indexOf('|png|')) > -1)
-												) ?
-													(
-															this.origBg = this.origBg ?
-																this.origBg :
-																this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
-																this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
-																this.runtimeStyle.backgroundImage = "none"
-													) :
-														''
-											)
-								),
-								this.pngSet = true
-					)
-				);
-			}
-		
 	/* ]]> */
 </style> <style type="text/css">
 
@@ -424,7 +383,7 @@ dataLayer = [gtmObj]; /*]]>*/</script><!-- END : Adding Data Layer Variables to 
             f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WCF86M');/*]]>*/</script> <!-- End Google Tag Manager --> <header id="header" class="js-toggleGroup header--np" data-toggle-class="is-active" role="banner"> <div class="header--bg "> <div class="container"> <div class="masthead--bg"> <div class="masthead masthead--np"> <div class="masthead__nav"> <button type="button" data-icon="nav" class="navitron-toggle js-nav-toggle"></button> <a href="/" class="site-logo site-logo--np">REDD</a> <div class="gray-box"> <form class="site-search js-search" id="search"> <input class="site-search__field" type="search" /> <input class="site-search__button" type="submit" value="search" /> </form> </div> </div> <div class="masthead__content"> <div class="link-list link-list--inline"> <a class="e_link" href="http://www.redding.com/advertise">Advertise With Us</a> <a class="e_link" href="/contact">Contact Us</a> <a class="e_link" target="_blank" href="http://reddingsearchlight.ca.newsmemory.com/">e-Edition</a> </div> <div class="subscriber-box js-member-links"> <p class="">Want full access?</p> <div class="links"> <div class="link link--subscribe js-member-link-subscribe"> <a class="button" href="/subscribe">Subscribe</a> </div> <div class="link link--activate js-member-link-activate"> <p><span class="hide-phone hide-tablet show-desktop">Current subscriber?</span><a href="/subscribe">Activate</a></p> </div> <div class="link link--login js-member-link-login"> <p><span class="hide-phone hide-tablet show-desktop">Have an account? </span><a href="/subscribe">Login</a></p> </div> </div> </div> <div class="site-dashboard"> <div class="block block--weather"> <div class="module module--dashboard--weather-new"> <div class="l-current-conditions"> <a href="/weather"> <img class="current-conditions__img" src="http://content.wdtinc.com/images/icons_scripps/150x100/night/mostlycloudy.png"> </a> <div class="l-current-conditions__left"> <a href="/weather" target="_top" data-temperature="78" class="current-conditions__temperature js-current-temp">78&deg;</a> </div> <div class="l-current-conditions__right"> <a href="/weather" class="current-conditions__text">Mostly cloudy</a> <div class="current-conditions__links link"> <a href="/weather">Weather</a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="container container--ad"> <div id="mAD_994_BY_30" class="module module--ad content-box show-desktop hide-tablet hide-phone "> <!-- siteType: redd.type --> <script>/*<![CDATA[*/
+            })(window,document,'script','dataLayer','GTM-WCF86M');/*]]>*/</script> <!-- End Google Tag Manager --> <header id="header" class="js-toggleGroup header--np" data-toggle-class="is-active" role="banner"> <div class="header--bg "> <div class="container"> <div class="masthead--bg"> <div class="masthead masthead--np"> <div class="masthead__nav"> <button type="button" data-icon="nav" class="navitron-toggle js-nav-toggle"></button> <a href="/" class="site-logo site-logo--np">REDD</a> <div class="gray-box"> <form class="site-search js-search" id="search"> <input class="site-search__field" type="search" /> <input class="site-search__button" type="submit" value="search" /> </form> </div> </div> <div class="masthead__content"> <div class="link-list link-list--inline"> <a class="e_link" href="http://www.redding.com/advertise">Advertise With Us</a> <a class="e_link" href="/contact">Contact Us</a> <a class="e_link" target="_blank" href="http://reddingsearchlight.ca.newsmemory.com/">e-Edition</a> </div> <div class="subscriber-box js-member-links"> <p class="">Want full access?</p> <div class="links"> <div class="link link--subscribe js-member-link-subscribe"> <a class="button" href="/subscribe">Subscribe</a> </div> <div class="link link--activate js-member-link-activate"> <p><span class="hide-phone hide-tablet show-desktop">Current subscriber?</span><a href="/subscribe">Activate</a></p> </div> <div class="link link--login js-member-link-login"> <p><span class="hide-phone hide-tablet show-desktop">Have an account? </span><a href="/subscribe">Login</a></p> </div> </div> </div> <div class="site-dashboard"> <div class="block block--weather"> <div class="module module--dashboard--weather-new"> <div class="l-current-conditions"> <a href="/weather"> <img class="current-conditions__img" src="http://content.wdtinc.com/images/icons_scripps/150x100/day/mostlycloudy.png"> </a> <div class="l-current-conditions__left"> <a href="/weather" target="_top" data-temperature="76" class="current-conditions__temperature js-current-temp">76&deg;</a> </div> <div class="l-current-conditions__right"> <a href="/weather" class="current-conditions__text">Mostly cloudy</a> <div class="current-conditions__links link"> <a href="/weather">Weather</a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="container container--ad"> <div id="mAD_994_BY_30" class="module module--ad content-box show-desktop hide-tablet hide-phone "> <!-- siteType: redd.type --> <script>/*<![CDATA[*/
                 (function(){
                     var adData = { "pageType" : "subindex", "kw" : "kw=privacy_policy;kw=redding_record_searchlight;kw=information;kw=personal;kw=share;kw=cookies;kw=advertising;kw=email;kw=communication;kw=forum;kw=blog;kw=comments;kw=opt-out;kw=secure;", "siteType" : "np", "primaryCategory" : "232886501", "Call_Letters" : "redd", "Position" : "above", "Zone" : "about_us/landing", "renderOn" : "[DESKTOP]", "fname" : "about_us", "Size" : "994x30"};
                     ScrippsAdUtils.createAd(adData, 'mAD_994_BY_30');
@@ -584,7 +543,7 @@ dataLayer = [gtmObj]; /*]]>*/</script><!-- END : Adding Data Layer Variables to 
 						refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d492064959\x26p_p_id\x3dsearchbox_WAR_sitesearchportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3d\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d0\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fprivacy\x252F'
 					}
 				);
-			AUI().ready('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', function(A) {(function() {
+			AUI().use('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', function(A) {(function() {
 	Liferay.Util.addInputType();
 
 	Liferay.Portlet.ready(
