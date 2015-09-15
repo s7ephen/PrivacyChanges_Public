@@ -334,6 +334,197 @@ var addthis_share = {
 		<div class="bd">
 			<ul>
 	<li tabcontent="0" >
+<div id="RightRailFeature4" class="RightRailFeature module"> 
+	<div class="inner">
+		<div class="hd">
+			<span class="modTitle2">About Us</span>		</div>
+		<div class="bd">
+			
+<div class="media">
+	<div class="bd">
+		<ul class="bulleted">
+	<div>
+		<li class="marginTop3">
+			<div class="linkContainer" >
+				
+				<a class="bold"  omni="Article : Rt Rail 4 : Pos 1 " href="http://www.howstuffworks.com/about-hsw.htm">
+					<div class="roundedDot">
+					<img src="http://static.howstuffworks.com/gif/rightrail-numeral-1-36x36.png">
+				</div>
+					<div class="featuredLink" >
+						About HowStuffWorks					</div>
+				</a>
+			</div>
+			<div class="unitLast" style="">
+				<a  omni="Article : Rt Rail 4 : Pos 1 " href="http://www.howstuffworks.com/about-hsw.htm">
+					<img width="100px" height="60px" style="width:100px; height:60px;" src="http://static.howstuffworks.com/gif/hsw-iphone-app-100x60.jpg" >
+				</a>
+			</div>
+		</li>
+	</div>
+	<div>
+		<li class="marginTop3">
+			<div class="linkContainer" >
+				
+				<a class="bold"  omni="Article : Rt Rail 4 : Pos 2 " href="http://www.howstuffworks.com/hsw-awards.htm">
+					<div class="roundedDot">
+					<img src="http://static.howstuffworks.com/gif/rightrail-numeral-2-36x36.png">
+				</div>
+					<div class="featuredLink" >
+						Awards					</div>
+				</a>
+			</div>
+			<div class="unitLast" style="">
+				<a  omni="Article : Rt Rail 4 : Pos 2 " href="http://www.howstuffworks.com/hsw-awards.htm">
+					<img width="100px" height="60px" style="width:100px; height:60px;" src="http://static.howstuffworks.com/gif/awards-100x60.jpg" >
+				</a>
+			</div>
+		</li>
+	</div>
+	<div>
+		<li class="marginTop3">
+			<div class="linkContainer" >
+				
+				<a class="bold"  omni="Article : Rt Rail 4 : Pos 3 " href="http://www.howstuffworks.com/advertise.htm">
+					<div class="roundedDot">
+					<img src="http://static.howstuffworks.com/gif/rightrail-numeral-3-36x36.png">
+				</div>
+					<div class="featuredLink" >
+						Advertising					</div>
+				</a>
+			</div>
+			<div class="unitLast" style="">
+				<a  omni="Article : Rt Rail 4 : Pos 3 " href="http://www.howstuffworks.com/advertise.htm">
+					<img width="100px" height="60px" style="width:100px; height:60px;" src="http://static.howstuffworks.com/gif/web-advertising-1-100x60.jpg" >
+				</a>
+			</div>
+		</li>
+	</div>
+	<div>
+		<li class="marginTop3">
+			<div class="linkContainer" >
+				
+				<a class="bold"  omni="Article : Rt Rail 4 : Pos 4 " href="http://www.howstuffworks.com/jobs.htm">
+					<div class="roundedDot">
+					<img src="http://static.howstuffworks.com/gif/rightrail-numeral-4-36x36.png">
+				</div>
+					<div class="featuredLink" >
+						Working for HowStuffWorks					</div>
+				</a>
+			</div>
+			<div class="unitLast" style="">
+				<a  omni="Article : Rt Rail 4 : Pos 4 " href="http://www.howstuffworks.com/jobs.htm">
+					<img width="100px" height="60px" style="width:100px; height:60px;" src="http://static.howstuffworks.com/gif/how-to-write-resume-100x60.jpg" >
+				</a>
+			</div>
+		</li>
+	</div>
+	<div>
+		<li class="marginTop3">
+			<div class="linkContainer" >
+				
+				<a class="bold"  omni="Article : Rt Rail 4 : Pos 5 " href="http://www.howstuffworks.com/writing-for-hsw.htm">
+					<div class="roundedDot">
+					<img src="http://static.howstuffworks.com/gif/rightrail-numeral-5-36x36.png">
+				</div>
+					<div class="featuredLink" >
+						Freelance Writers: Apply to Write for HowStuffWorks					</div>
+				</a>
+			</div>
+			<div class="unitLast" style="">
+				<a  omni="Article : Rt Rail 4 : Pos 5 " href="http://www.howstuffworks.com/writing-for-hsw.htm">
+					<img width="100px" height="60px" style="width:100px; height:60px;" src="http://static.howstuffworks.com/gif/poetry-100x60.jpg" >
+				</a>
+			</div>
+		</li>
+	</div>
+</ul>
+
+<script>
+	(function ($) {
+	// VERTICALLY ALIGN FUNCTION
+	$.fn.vAlign = function(height) {
+		/*if(height==16)
+		{
+			$(this).css('top', "12px");
+			//alert(-4*mult);
+		}
+		if(height==32)
+		{
+			$(this).css('top', "8px");
+		}
+		else
+		{
+				$(this).css('top', "-4px");
+		}*/
+		return this.each(function(i){
+		var ah = $(this).height();
+		
+		if(height>16 && height<20)
+		{
+			$(this).css('top', "18px");
+		}
+		if(height >= 36 && height < 40)
+		{
+			$(this).css('top',"10px");
+		}
+		if(height>=54)
+		{
+			$(this).css('top',"0px");
+		}
+		//alert(mh);
+		});
+	};
+	})(jQuery);
+	
+		$(".tabs .inner .bd ul li").each(function(){
+			$(this).attr('display', 'block');
+			$(".featuredLink").each(function(){
+		
+				$(this).vAlign($(this).height());
+		
+			//alert($(this).height());
+			});
+		});
+		
+		function doCenter()
+		{
+			$(".featuredLink").each(function(){
+				//alert($(this).height());
+				$(this).vAlign($(this).height());
+		
+			//alert($(this).height());
+			});
+		}
+
+		$(".tabControl li a").click(function(){
+			//alert('here');
+			setTimeout('doCenter()',10);
+			//$(this).attr('display', 'block');
+		});
+
+		$(".tabControl").each(function(){
+			$(this).removeClass("tabControl").addClass("modTitle2");
+			$(this).css('padding-bottom', "10px");
+			$(this).css('width', "300px");
+			$(this).css('border-bottom', "2px solid #ccc");
+		});
+
+		$(".modTitle2 li a").each(function(){
+			$(this).css('color', "#0FA7F8");
+			$(this).css('pointer-events', "none");
+			$(this).css('text-decoration', 'none');
+			$(this).css('cursor', 'default');
+		});
+
+</script>
+
+	</div>
+</div>
+
+		</div>
+	</div>
+</div>
 	</li>
 </ul>
 		</div>
