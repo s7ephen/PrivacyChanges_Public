@@ -124,7 +124,7 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 
   if (safety < 4) {
     /* <![CDATA[ */
-        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '4056d3ee2d', id: 29384}, function(data){/*alert(data);*/});
+        jQuery.post('http://pjmedia.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: '80fff5ceb6', id: 29384}, function(data){/*alert(data);*/});
     /* ]]> */
   }
 
@@ -136,10 +136,10 @@ var ajaxurl = 'http://pjmedia.com/wp-admin/admin-ajax.php';
 var ssoTokenCookieName = "pjssocsrf";
 var cacheCookieName = "pjssocache";
 
-function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1393966728'); }
-function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1220155537'); }
-function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1481702125'); }
-function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=370488234&source=loginbar'); }
+function ssoAccount(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=700774712'); }
+function ssoLogin() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=476679681'); }
+function ssoLogout(){ PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1674332693'); }
+function ssoRegister() { PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=493725266&source=loginbar'); }
 
 var oldS = null;
 if($) { oldS = $; }
@@ -218,7 +218,7 @@ window.fbAsyncInit = function() {
 
 </script>    <script>
     jQuery(document).ready(function() {
-      PJMedia.SharingButtons.initialize(null, null, 'b32b568db7');
+      PJMedia.SharingButtons.initialize(null, null, 'a0bcc57dc1');
     });        
     </script>
     <style>
@@ -428,14 +428,14 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-8');
   <span class="pjsso-bind" style="display:none" id="pjsso-logged-in" data-pjsso-bind="inline,email">
   <a href="#" class="pjsso-bind" data-pjsso-bind="onClick,profileURL" onClick="void(0);">My Account</a>
   |
-  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=353266814');">Sign Out</a>
+  <a href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=logout&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&random=1135748042');">Sign Out</a>
   </span>
 
   <span class="pjsso-bind" style="display:none" id="pjsso-login" data-pjsso-bind="inline,!email">
   <a class="fbreg" href="#" onclick="PJTV.SingleSignOn.connectWithFacebook('login', true);" title="Connect Using Facebook">&nbsp;</a>
   <span class="text" id="or">or</span>
-  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=833325714');"></a>
-  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=51233144');"></a>
+  <a class="sign-in" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=login&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=193464319');"></a>
+  <a class="sign-up" href="#" onClick="PJTV.SingleSignOn.openDialog('http://pjmedia.com/plugins/pjinteropplugin/pjinteropplugin.php?cmd=register&ssor=http%3A%2F%2Fpjmedia.com%2Fprivacy-policy%2F&branded-site-id=12&random=1321617553');"></a>
   </span>
 </span>
 
@@ -608,11 +608,11 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 
 
 							
-											<li><a href="http://pjmedia.com/victordavishanson/weariness-of-whiners/">The Weariness of the Whiners</a></li>
+											<li><a href="http://pjmedia.com/blog/barack-obamas-half-clocked-tale-of-islamophobia/">Barack Obama's Half-Clocked Tale of Islamophobia</a></li>
 											
-											<li><a href="http://pjmedia.com/richardfernandez/2015/09/13/the-map-comes-to-life/">The Map Comes To Life</a></li>
+											<li><a href="http://pjmedia.com/diaryofamadvoter/2015/09/17/who-won-the-reagan-library-debate/">Who Won the Reagan Library Debate?</a></li>
 											
-											<li><a href="http://pjmedia.com/tatler/2015/09/14/is-this-fiorina-ad-the-best-of-the-campaign-cycle-thus-far/">Is This Fiorina Ad the Best of the Campaign Cycle Thus Far?</a></li>
+											<li><a href="http://pjmedia.com/richardfernandez/2015/09/17/finally-here/">Finally Here</a></li>
 																		</ul>
 
 									<div class="sidebar-footer" style="margin-top:10px;"><a class="more-link" href="/popular/">More</a> </div>
@@ -627,7 +627,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/tatler/2015/09/14/controversial-military-exercise-jade-helm-15-ends-without-government-takeover-of-texas/">Controversial Military Exercise &#8216;Jade Helm 15&#8242; Ends Without Government Takeover of Texas</a></li><li><a href="http://pjmedia.com/tatler/2015/09/14/prostitutes-pose-for-escort-site-ad-in-atlanta-fire-station/">Prostitutes Pose for Escort-Site Ad in Atlanta Fire Station</a></li><li><a href="http://pjmedia.com/tatler/2015/09/14/hillary-clinton-announces-plan-to-combat-campus-sexual-assaults/">Hillary Clinton Announces Plan to Combat Campus Sexual Assaults</a></li>
+				<li><a href="http://pjmedia.com/tatler/2015/09/17/state-department-warns-americans-to-get-out-of-libya-now/">State Department Warns Americans to Get Out of Libya Now</a></li><li><a href="http://pjmedia.com/tatler/2015/09/17/billionaire-seeks-to-build-island-refuge-for-those-fleeing-isis/">Billionaire Seeks to Build Island Refuge for Those Fleeing ISIS</a></li><li><a href="http://pjmedia.com/tatler/2015/09/17/carly-fiorina-very-satisfied-with-debate-performance-video/">(Video) Carly Fiorina &#8216;Very Satisfied&#8217; with Debate Performance</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -640,7 +640,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1347323895031-5');
 			</div>
 
 			<ul class="sidebar-content">
-				<li><a href="http://pjmedia.com/lifestyle/2015/09/14/christians-were-never-a-moral-majority/">Christians Were Never a Moral Majority</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/13/is-ad-blocking-software-immoral/">Is Ad-Blocking Software Immoral?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/12/eventide-h3000-plugin-harmonizer/">Eventide H3000 Factory Plugin Harmonizer Review</a></li>
+				<li><a href="http://pjmedia.com/lifestyle/2015/09/17/evangelical-leaders-rebuke-trumps-immigration-stance/">Evangelical Leaders Rebuke Trump&#8217;s Immigration Stance</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/16/is-cannabis-the-best-treatment-for-epilepsy/">Is Cannabis the Best Treatment for Epilepsy?</a></li><li><a href="http://pjmedia.com/lifestyle/2015/09/16/google-exec-says-no-google-car-anytime-soon/">Google Exec Says No Google Car Anytime Soon</a></li>
 			</ul>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
@@ -659,7 +659,7 @@ Scribol.frames.push('3946842');</script>
 			</div>
 
 			<table border="0" cellpadding="0" cellspacing="0" class="sidebar-instapundit">
-				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214458/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">AT AMAZON, <a target="_blank" href="http://www.amazon.com/Trade-In/b/?ref_=assoc_tag_ph_1441390747781&#038;_encoding=UTF8&#038;camp=1789&#038;creative=9325&#038;linkCode=pf4&#038;node=9187220011&#038;tag=wwwviolentkicom&#038;linkId=SLZVJ5AWJTCZLTUQ">Trade In Your Phone For Top Dollar.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214467/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">MY <em>USA TODAY</em> COLUMN:  <a target="_blank" href="http://www.usatoday.com/story/opinion/2015/09/14/campus-sexual-assault-crisis-war-men-column/72209292/">Rep. Jared Polis (D-CO) and The War On College Men.</a></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214472/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">HIGHER EDUCATION BUBBLE UPDATE:  <a target="_blank" href="http://www.goacta.org/news/college_graduates_don_know_basic_facts_about_the_constitution">College Graduates Don’t Know Basic Facts About the Constitution.</A>  &#8220;According to the study, nearly 10% of college graduates think Judith Sheindlin — commonly known as Judge Judy — is on the Supreme Court; one-third of college graduates can’t identify the Bill of Rights as a name given to a group of Constitutional amendments; and 32% believe that Representative John Boehner is the current president of the U.S. Senate. Shockingly, 46% of college grads don’t know the election cycle — six years for senators, two years for representatives. Turning to the general population, the report finds that over half (54%) of those surveyed cannot identify the Bill of Rights accurately, and over 1 in 10 (11%) of those ages 25–34 believe that the Constitution must be reauthorized every four years.&#8221; ...</a></div></td></tr>			</table>
+				<tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214629/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">THE QUESTIONS WE&#8217;RE NOT ASKING <a target="_blank" href="http://www.popularmechanics.com/technology/robots/a17357/there-is-now-a-campaign-against-sex-robots/">ABOUT SEX ROBOTS.</A>  Well, my question is, is a vibrator a sex robot?</a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214627/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit">NANOTECHNOLOGY UPDATE:  <a target="_blank" href="http://www.nature.com/news/nanoparticles-disguised-as-blood-cell-fragments-slip-past-body-s-immune-defence-1.18380?WT.mc_id=TWT_NatureNews">Nanoparticles disguised as blood-cell fragments slip past body&#8217;s immune defence:  Drug-delivery systems coated in platelets used to repair damaged blood vessels.</A></a></div></td></tr><tr><td valign="top"><div class="bullet-instapundit"><a href="http://pjmedia.com/instapundit/214666/" target="_blank"><img src="http://pjmedia-new.pjmedia.netdna-cdn.com/themes/pjm/images/orangebullet.gif?pjmv=1.000051f alt="bullet" border="0" /></a></div></td><td valign="top"><div class="content-instapundit"><a target="_blank" href="https://twitter.com/DeanClancy/status/644344427578818560">TWEET OF THE WEEK:</a></a></div></td></tr>			</table>
 
 			<div class="sidebar-footer" style="margin-top:10px;">
 			<a href="http://pjmedia.com/instapundit/" class="more-link">More</a>
@@ -693,7 +693,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1381265307268-1');
 <!-- |  <a href="#">Unsubscribe</a> -->
 </p>
 <p>Copyright &copy; 2005-2015 PJ Media&nbsp;&nbsp;&nbsp;All Rights Reserved. v1.000051f 
-web4</p>
+web3</p>
 </div>
 
 
@@ -779,7 +779,7 @@ jQuery(document).ready(function($){
     ga('create', 'UA-3218147-1', 'auto');
     ga('require', 'displayfeatures');
         ga('send', 'pageview', {
-      'dimension5': '|b=1|t=p|i=29384|d=1442325960|a=1|'
+      'dimension5': '|b=1|t=p|i=29384|d=1442498760|a=1|'
     });
         </script>    <script type='text/javascript'>
     PJInterop.CookieCache.bind();
@@ -849,5 +849,5 @@ _qevents.push([{
     })();
     </script><!-- end chartbeat end-->
     
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":355,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7a07db8704","applicationID":"4071090","transactionName":"MVFTMRRXVhEDB0RRVggbcAYSX1cMTRRRX1w=","queueTime":0,"applicationTime":352,"atts":"HRZQR1xNRR8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
 </html>
