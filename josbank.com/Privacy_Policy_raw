@@ -172,6 +172,50 @@ dojo.attr(dojo.body(),"data-wc-device","mobile");
 </head>
 <body>
 
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-M5SKTF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script type="text/javascript">
+//Google Tag Manager parameters
+var GTM = {
+isEnabled: 'true',
+id: 'GTM-M5SKTF',
+storeName: "Jos. A. Bank",
+pageTitleSeparator: '|',
+getCleanPageTitle: function(){
+var title = document.title.split("|");
+return title[0];
+},
+getFilteredPageTitle: function(title){
+var newTitle = '';
+if(title == ''){
+newTitle = this.getCleanPageTitle();
+}
+else if(title.indexOf(':') == title.length-1){
+newTitle = title +' '+ this.getCleanPageTitle();
+}
+else
+newTitle = title;
+return newTitle;
+}
+}
+var dataLayer = [{
+'event' : 'page-load',
+'url' : document.location.href, 
+'siteEnvironment': 'test', /* Based on requested domain */
+'pageCategory': "GenericStaticContentPageLayoutView",
+'visitorType': 'visitor',
+'memberId': '',
+'pageName': GTM.getFilteredPageTitle("")
+}];
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M5SKTF');
+</script>
 
 <div id="progress_bar_dialog" data-dojo-type="dijit/Dialog" style="display: none;">
 <div id="progress_bar">
@@ -372,8 +416,6 @@ window.jQuery_1_10_2 = $.noConflict(true);
 <div class="clear_float"></div>
 </div>
 </div>
-
-
 
 
 
@@ -1334,9 +1376,9 @@ Traveler Sportcoats
 </a>
 </li>
 <li class="">
-<a id="categoryLink_900023110_900025144" href="http://www.josbank.com/tropical-blend-sportcoats" class="menuLink"
+<a id="categoryLink_900023110_900025145" href="http://www.josbank.com/clearance-sportcoats" class="menuLink"
 role="menuitem" tabindex="-1">
-Tropical Blend Sportcoats
+Clearance Sportcoats
 </a>
 </li>
 </ul>
@@ -1577,18 +1619,6 @@ Patterned Ties
 <a id="categoryLink_900023107_900025311" href="http://www.josbank.com/striped-ties" class="menuLink"
 role="menuitem" tabindex="-1">
 Striped Ties
-</a>
-</li>
-<li class="">
-<a id="categoryLink_900023107_900025312" href="http://www.josbank.com/solid-ties" class="menuLink"
-role="menuitem" tabindex="-1">
-Solid Ties
-</a>
-</li>
-<li class="">
-<a id="categoryLink_900023107_900025313" href="http://www.josbank.com/bow-ties" class="menuLink"
-role="menuitem" tabindex="-1">
-Bow Ties
 </a>
 </li>
 <li class="">
@@ -2422,7 +2452,7 @@ All Dress Shirts
 <a id="subcategoryLink_900023602_900023603_900026132"
 href="http://www.josbank.com/bt-executive"
 class="menuLink" role="menuitem" tabindex="-1">
-Executive Dress Shirt
+Executive No Iron Dress Shirts
 </a>
 </li>
 <li>
@@ -2762,7 +2792,7 @@ Gift card official rules dialog close
 <p/>
 <br>
 <p><b>NO PURCHASE OR PAYMENT OF ANY KIND IS NECESSARY TO ENTER OR WIN IN THIS SWEEPSTAKES. Void in Puerto Rico, outside of the United States, and where prohibited by law. Subject to all federal, state and local laws, regulations, and ordinances. </b>
-</p><br><p> The <b>Jos. A. Bank® </b>Online Gift Card Sweepstakes (the “Sweepstakes”) begins at 12:00:00 AM Eastern Daylight Savings Time (“ET”) on September 1, 2015 and ends at 11:59:59 p.m. ET on September 15, 2015 (the “Sweepstakes Period”). 
+</p><br><p> The <b>Jos. A. Bank® </b>Online Gift Card Sweepstakes (the “Sweepstakes”) begins at 12:00:00 AM Eastern Daylight Savings Time (“ET”) on September 16, 2015 and ends at 11:59:59 p.m. ET on September 30, 2015 (the “Sweepstakes Period”). 
 </p><br><p><strong>1. ELIGIBILITY: </strong> The Sweepstakes is open only to legal residents of the 50 United States (including the District of Columbia) who are 21 years of age or older at time of entry and have a valid, working email address. Employees, officers, and directors of Jos. A. Bank Clothiers, Inc. and any of its parent companies, subsidiaries, affiliates, representatives, consultants, contractors, legal counsel, and advertising, public relations, promotional, fulfillment, and marketing agencies, website providers, web masters, and members of their immediate families (spouses, parents, children, siblings and their spouses, regardless of where they live) and those living in the same household are not eligible to enter or win. Participation constitutes entrant’s full and unconditional agreement to these Official Rules and to Sponsor’s decisions, which are final and binding in all matters related to the Sweepstakes. Winning a prize is contingent on fulfilling all requirements set forth herein. Sponsor reserves the right to verify the eligibility of winner. Only one entry per person permitted. Entrants only eligible to win one prize during the Sweepstakes Period. 
 </p><br><p><strong>2. SPONSOR: </strong> Jos. A. Bank Clothiers, Inc. 500 Hanover Pike, Hampstead, MD 21074 (“Sponsor”).
 </p><br><p><strong>3.HOW TO ENTER SWEEPSTAKES: </strong> To enter, visit <a href="/" title="" target="">www.josbank.com</a> and click the promotional graphic for the Sweepstakes to access the email address entry form. Upon submission of your email address through the entry form, you will be automatically entered with one (1) entry into the Sweepstakes. All entries become the property of Sponsor and will not be returned or acknowledged, and Sponsor will not verify receipt of entries. Sponsor and its agencies are not responsible for lost, late, incomplete, damaged, stolen, misdirected, or illegible entries, which will be disqualified. Sponsor is not responsible for transmission, typing, and/or computer error. Limit: one entry per person during the Sweepstakes Period. Bulk, automated, or third party entries are prohibited and will be disqualified. Multiple participants are not permitted to use the same email address. Any attempt by any participant to obtain more than the stated number of entries by using multiple or different identities, forms, or email addresses or any other methods will void all of that participant’s entries, and that participant may be disqualified at Sponsor’s discretion. In the event of a dispute as to any entry, the authorized account holder of the email address used to enter will be deemed to be the registered player. The “authorized account holder” is the natural person assigned an email address by an Internet access provider, online service provider, or other organization responsible for assigning email addresses for the domain associated with the submitted email address. Potential winners may be required to show proof of being the authorized account holder or forfeit the prize. Entries specifying an invalid, non-working, or inactive email address will be disqualified and ineligible to win. <b> Sponsor and Sponsor’s agents, affiliates, subsidiaries, representatives, or service providers may use entrants’ email address submitted with entry for purposes of prize notification, prize fulfillment, and/or future marketing by Sponsor. You may remove your email address from future email marketing promotions by following the instructions on any email marketing promotion. </b> Information collected from entrants is subject to the Sponsor’s Privacy Policy, which may be found at <a href="/privacy-policy" title="" target="">http://www.josbank.com/privacy-policy</a>. 
@@ -2885,6 +2915,7 @@ padding-left: 10px;
 color: #000;
 } 
 #headerRow2 {
+filter: none;
 background: #fff;
 }
 #headerRow2 a > span {
@@ -3091,7 +3122,7 @@ dojo.publish("CMPageRefreshEvent");
 
 <div class="left_espot">
 <a href="/current-promotions" title="" target="">
-<img src="//content.josbank.com/Navigation/TopNav-PromoBanner_091415.gif" alt="" BORDER="0"/>
+<img src="//content.josbank.com/Navigation/TopNav-PromoBanner_091715.gif" alt="" BORDER="0"/>
 </a>
 </div>
 
