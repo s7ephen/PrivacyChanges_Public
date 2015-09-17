@@ -63,7 +63,7 @@
 }
 </style>
 <script type="text/javascript" src="http://c.shld.net/etc/clientlibs/granite/clientlibrarymanager.min.js"></script>
-<link rel="stylesheet" href="http://c.shld.net/etc/designs/shc/sears/base.min.wt5wjc6YLGicy_Hnasxk2A==.css" type="text/css"/>
+<link rel="stylesheet" href="http://c.shld.net/etc/designs/shc/sears/base.min.L0SHyWYZD5LugLIao1r0HA==.css" type="text/css"/>
 <script src="http://c.shld.net/etc/designs/shc/sears/base.min.GXJyqfnpGLnny-BpRGqMQA==.js"></script>
 <!-- AAM API reference tag -->
 		<!--script type="text/JavaScript" src="//sears.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_tnt_cb"></script-->
@@ -197,7 +197,9 @@ shc.URLs = $.extend(shc.URLs, {
     addToCart: shc.IRP ? '/crsp/mx/cart' : String.format('/shc/s/OrderItemDisplay{0}&orderId=.', shc.commonQS),
     staticAssets: '//c.shld.net/staticassets/Assets_0.90/',
     searsCard: String.format('https://{1}:{0}/universalprofile/ApplyCitiSearsCard?upid={2}',shc.sslPort, location.hostname, shcWidgets.USR_SITEID[shc.storeId]),
-    returns: String.format('https://{1}:{0}/universalprofile/makeareturn?upid={2}',shc.sslPort, location.hostname, shcWidgets.USR_SITEID[shc.storeId])
+    returns: String.format('https://{1}:{0}/universalprofile/makeareturn?upid={2}',shc.sslPort, location.hostname, shcWidgets.USR_SITEID[shc.storeId]),
+    manageAccount: String.format('https://{1}:{0}/universalprofile/managemyaccount?upid={2}',shc.sslPort, location.hostname, shcWidgets.USR_SITEID[shc.storeId]),
+  layawayPmt: ['10151', '10153'].indexOf(shc.storeId) >=0 ? String.format('https://{1}:{0}/universalprofile/layawayorders?upid={2}',shc.sslPort, location.hostname, shcWidgets.USR_SITEID[shc.storeId]) : ''
 });
 
 shc.features = $.extend(shc.features, {
@@ -268,28 +270,34 @@ shc.URLs.dealCenter = '/en_us/dap/deals-center.html';
 <a class="ribbon-sears-logo" data-trk="Logo" href="/">Sears</a>
 </div>
 
-<nav class='gnf_clr tree gnf_nav_depth1_list' id='gnf_01_tree_nav'><ul class='gnf_clr dropmenu'><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_1'><span class='storeLocator'>
+<nav class='gnf_clr tree gnf_nav_depth1_list' id='gnf_01_tree_nav'><ul class='gnf_clr dropmenu'><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_1'><span class='hdrC_on' style='display:none'>
+<a href="/en_us/dealcenter.html" rel="external">Deals & Coupons</a>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_2'><span class='weeklyLocalAd hdrC_on' style='display:none'>
+<a href="//local.sears.com" rel="external">Weekly Ad</a>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_3'><span class='storeLocator'>
 <a href="/stores.html" data-trk="Y" rel="external">Store Locator</a>
-</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_2'><span class='giftCards'>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_4'><span class='giftCards hdrC_off'>
 <a href="/sears-gift-cards.html" data-trk="Y" rel="external">Gift Cards</a>
-</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_3'><span>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_5'><span class='hdrC_off'>
 <a href="/shc/s/GiftRegistryApp?storeId=10153&amp;catalogId=12605" rel="external">Gift Registry</a>
-</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_4'><span class='searsCC downTriangle'>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_6'><span class='searsCC downTriangle'>
 <a href="#" class="gnf_tree_junction" rel="external">Credit Card</a>
-</span><ul class='gnf_nav_depth2_list' id='gnf_01_tree_item_4_list'><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_4_1'><span>
+</span><ul class='gnf_nav_depth2_list' id='gnf_01_tree_item_6_list'><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_6_1'><span>
 <a href="/en_us/dap/sears-credit-offers-members.html" data-trk="Header > Sears Credit Cards > Credit Offers" rel="external nofollow">Credit Offers</a>
-</span></li><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_4_2'><span>
+</span></li><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_6_2'><span>
 <a href="https://www.sears.com/universalprofile/ApplyCitiSearsCard?upid=3" data-trk="Header > Sears Credit Cards > Apply Now" rel="external">Apply Now</a>
-</span></li><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_4_3'><span>
+</span></li><li class=' gnf_nav_depth2_item' id='gnf_01_tree_item_6_3'><span>
 <a href="https://www.citibank.com/us/cards/srs/index.jsp?BAC=SearsMemberOffers" data-trk="Header > Sears Credit Cards > Pay My Bill" rel="external nofollow">Pay My Bill</a>
-</span></li></ul></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_5'><span>
+</span></li></ul></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_7'><span>
 <a href="//www.kmart.com/?intcmp=xsite_Sears" rel="external" target="_blank">Kmart.com</a>
-</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_6'><span>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_8'><span class='hdrC_off'>
 <a href="https://www.sears.com/universalprofile/checkorderstatus?upid=3" rel="external nofollow">My Orders</a>
-</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_7'><span>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='gnf_01_tree_item_9'><span>
 <a href="/en_us/customer-service.html" rel="external">Help</a>
 </span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='lpHeaderChatButton'><span class='globalChat'>
 <span>&nbsp;</span>
+</span></li><li class=' gnf_nav_depth1_item gnf_01_tree_item' id='headerChat'><span class='chatAvailable' style='display:none'>
+<span>Chat</span>
 </span></li></ul></nav>
 
 <a id="header-shop-your-way-partner" href="/en_us/dap/free-shop-your-way-membership.html" data-alt-href="/en_us/dap/shop-your-way.html">sears | A Shop Your Way Partner</a>
@@ -1575,7 +1583,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
 	    		<a href="/en_us/customer-service/policies/price-match-policy.html">Price Match Policy</a>
 	    	</li>
 	    	<li>
-	    		<a href="/en_us/customer-service/policies/sears-store-returnpolicy.html">Sears Store Return Policy</a>
+	    		<a href="/en_us/customer-service/policies/sears-store-returnpolicy.html">Sears Return Policy</a>
 	    	</li>
 	    	<li>
 	    		<a href="/en_us/customer-service/policies/california-transparencyact.html">California Transparency Act</a>
@@ -1745,13 +1753,7 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
     	</div>
         
 
-    <div id="gnf_footer" style="display:none"><!--isEsiEnabledOnPage ::false--><div class="HL_wrap" style="display:none">
- <div id="gnf_footer_HL" style="border:solid 1px grey">
-  <p class="OAS_disclaimer" style="max-width:inherit; margin-right:10px;">ADVERTISEMENT</p>
-  <div style="margin:10px; text-align:left;">Sponsored Products (HookLogic)</div>
- </div>
-</div>
-<div class="GADS_wrap" style="display:none;width: 600px; text-align: center; margin: 0px auto;">
+    <div id="gnf_footer" style="display:none"><!--isEsiEnabledOnPage ::false--><div class="GADS_wrap" style="display:none;width: 600px; text-align: center; margin: 0px auto;">
  <div id="gnf_footer_GADS" style="margin:0 10px">
   <p class="OAS_disclaimer" style="max-width:inherit; margin-right:10px;">ADVERTISEMENT</p>
   <div style="margin:10px; text-align:left;">Google AdSense</div>
@@ -1772,38 +1774,50 @@ if (trim($('#gnf_header').html()).length < 50 && !!shc.URLs) {
                         <ul class="navItems">
                             <li class="navItems-heading"><a href="/en_us/customer-service.html" rel="nofollow">Customer Service</a></li>
                             <li><a href="{orderCenter}" rel="nofollow">Order Status</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/en_us/customer-service/contact-us.html" rel="nofollow">Contact Us</a></li>
                             <li><a href="/csdelivery/nb-120000000358418" rel="nofollow">Shipping &amp; Delivery</a></li>
-                       <!-- below path not relative due to prod issue -->
                             <li><a href="{returns}" rel="nofollow">Returns &amp; Exchanges</a></li>
                             <li class="feedback"><a href="#">Give Us Feedback</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="navItems">
-                            <li class="navItems-heading">Stores &amp; Services</li>
+                            <li class="navItems-heading hdrC_off">Stores &amp; Services</li>
+                            <li class="navItems-heading hdrC_on" style="display:none">Stores</li>
                             <li><a href="/stores.html">Store Locator</a></li>
                             <li><a href="//local.sears.com">Weekly &amp; Local Ads</a></li>
-                            <li><a href="//www.searspartsdirect.com/partsdirect/index.action?SID=MerchSearsxHSTopNavPartsDirect">Parts Direct</a></li>
-                            <li><a href="//www.searshomeservices.com/?intcmp=xsite_Sears">Sears Home Services</a></li>
-                            <li><a href="/en_us/dap/email-signup.html" rel="nofollow">Email Signup</a></li>
+                            <li class="hdrC_off"><a href="//www.searspartsdirect.com/partsdirect/index.action?SID=MerchSearsxHSTopNavPartsDirect">Parts Direct</a></li>
+                            <li class="hdrC_off"><a href="//www.searshomeservices.com/?intcmp=xsite_Sears">Sears Home Services</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="{manageAccount}" rel="nofollow">Your Preferred Store</a></li>
+                            <li class="hdrC_off"><a href="/en_us/dap/email-signup.html" rel="nofollow">Email Signup</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="navItems">
-                            <li class="navItems-heading"><a href="{profile}" rel="nofollow">My Accounts</a></li>
-                            <li><a href="{profile}" rel="nofollow">Access My Profile</a></li>
-                            <li><a href="{profile}" rel="nofollow">Check My Rewards Points</a></li>
-                            <li><a href="https://www.citibank.com/us/cards/srs/index.jsp?BAC=SearsMemberOffers" rel="nofollow">Pay Sears Credit Card Bill</a></li>
-                            <li><a href="/gclanding/nb-120000000208424" rel="nofollow">Gift Card Balance</a></li>
+                            <li class="navItems-heading"><a href="{profile}" rel="nofollow">Your Account</a></li>
+                            <li><a href="{profile}" rel="nofollow">Access Your Account</a></li>
+                            <li class="hdrC_off"><a href="{profile}" rel="nofollow">Check My Rewards Points</a></li>
+                            <li class="hdrC_off"><a href="https://www.citibank.com/us/cards/srs/index.jsp?BAC=SearsMemberOffers" rel="nofollow">Pay Sears Credit Card Bill</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="https://www.citibank.com/us/cards/srs/index.jsp?BAC=SearsMemberOffers" rel="nofollow">Pay Sears Card Bill</a></li>
+                            <li class="hdrC_off"><a href="/gclanding/nb-120000000208424" rel="nofollow">Gift Card Balance</a></li>
+                            <li class="navItems-heading hdrC_on" style="display:none"><a href="/gifts/b-1020009">Gifts</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/sears-gift-cards.html">Gift Cards</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/shc/s/GiftRegistryApp?langId=-1&amp;storeId=10153&amp;catalogId=12605#!/landing/home">Gift Registry</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/sears-gift-cards.html" rel="nofollow">Gift Card Balance</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="navItems">
-                            <li class="navItems-heading"><a href="https://seller.marketplace.sears.com/SellerPortal/d/index.jsp" rel="nofollow">Commerce Services</a></li>
-                            <li><a href="https://seller.marketplace.sears.com/SellerPortal/d/index.jsp" rel="nofollow">Sell on Sears</a></li>
-                            <li><a href="/en_us/dap/advertise-with-us.html" rel="nofollow">Advertise on Sears</a></li>
-                            <li><a href="https://seller.marketplace.sears.com/SellerPortal/d/help/about_marketplace.jsp" rel="nofollow">About Marketplace</a></li>
-                            <li><a href="https://seller.marketplace.sears.com/SellerPortal/d/login.jsp" rel="nofollow">Seller Portal Login</a></li>
+                            <li class="navItems-heading hdrC_off"><a href="https://seller.marketplace.sears.com/SellerPortal/d/index.jsp" rel="nofollow">Commerce Services</a></li>
+                            <li class="hdrC_off"><a href="https://seller.marketplace.sears.com/SellerPortal/d/index.jsp" rel="nofollow">Sell on Sears</a></li>
+                            <li class="hdrC_off"><a href="/en_us/dap/advertise-with-us.html" rel="nofollow">Advertise on Sears</a></li>
+                            <li class="hdrC_off"><a href="https://seller.marketplace.sears.com/SellerPortal/d/help/about_marketplace.jsp" rel="nofollow">About Marketplace</a></li>
+                            <li class="hdrC_off"><a href="https://seller.marketplace.sears.com/SellerPortal/d/login.jsp" rel="nofollow">Seller Portal Login</a></li>
+                            <li class="navItems-heading hdrC_on" style="display:none">Payment Options</li>
+                            <li class="hdrC_on" style="display:none"><a href="/en_us/dap/layaway.html">Layaway</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/en_us/dap/leasing.html">Leasing</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="https://www.citibank.com/us/cards/srs/index.jsp?BAC=SearsMemberOffers" rel="nofollow">Sears Credit Cards</a></li>
+                            <li class="hdrC_on" style="display:none"><a href="/sears-gift-cards.html" rel="nofollow">Gift Cards</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1942,9 +1956,10 @@ shc.doAdSense = function(pageId) {
 	var p1, p2, pubId = shc.storeName;
 	
 	switch (pageId) {
-		case 'pdp': pubId += '-pdp'; break;
+		case 'product': pubId += '-pdp'; break;
 		case 'search-page':
 			pubId += (bt.pageType === 'search' ? '-search' : '-browse');
+                        //kill the iframe b/c paging is not a refresh & subsequent ad calls won't happen if iframe is already there
                         $('#gnf_footer_GADS').html('');
 			break;
 	}
@@ -1960,15 +1975,14 @@ shc.doAdSense = function(pageId) {
 		};
 	p2 =  {
 		container: 'gnf_footer_GADS', width: '600px',
-		colorLocation: '#333333', colorAnnotation: '#666666', colorAttribution: '#333333', colorBackground: '#FFFFFF',
+     		colorLocation: '#333333', colorAnnotation: '#666666', colorAttribution: '#333333', colorBackground: '#FFFFFF',
 		colorBorder: '#d0d0d0', colorDomainLink: '#333333', colorText: '#333333', colorTitleLink: '#333333',
 		fontSizeAnnotation: 13, fontSizeDescription: 13, fontSizeDomainLink: 13, fontSizeTitle: 15, fontSizeLocation: 13,
 		siteLinks: true, lineHeightTitle: 20, lineHeightDescription: 14, lineHeightDomainLink: 14, titleBold: true,
 		verticalSpacing: 2, linkTarget: '_blank', longerHeadlines: true,
 		number: 6, sellerRatings: true, detailedAttribution: true
 	};
-console.log('Adsense P1:');console.log(p1);
-console.log('Adsense bt:');console.log(bt);
+
 	new google.ads.search.Ads(p1, p2);
 	$('#gnf_footer .GADS_wrap').show();
 };
@@ -1982,7 +1996,8 @@ $(function() {
 					.replace('{searsCard}', shc.URLs.searsCard)
 					.replace('{listCenter}', shc.URLs.listCenter)
 					.replace('{returns}', shc.URLs.returns)
-					.replace('{manageAccount}', shc.URLs.manageAccount);
+					.replace('{manageAccount}', shc.URLs.manageAccount)
+                                        .replace('{layawayPmt}', shc.URLs.layawayPmt);
 
 			el.attr('href', href);
 		}
@@ -2005,16 +2020,11 @@ $(function() {
 
 	//include Adsense only only on search/pdp
 	if (['sears', 'kmart'].indexOf(shc.storeName) >= 0 && $('#gnf_footer_GADS').length) {
-	  if (/*pageId === 'search-page' || */ pageId === 'product') {
+	  if (pageId === 'search-page' ||  pageId === 'product') {
 	    $(document).on(shcWidgets.EVENTS.signalDataReady, getFile);
- 	  }
-	  //this one goes away & above gets uncommented when ECOM-371674 hits prod
-	  if (pageId === 'search-page') {
-	    $(window).on('SearchContentChanged', getFile);
  	  }
 	}
 
-	//push Ad stuff further to allow PDP and other pages to render needed data
 	$('#OAS_posBottom').remove(); //hack this out - still in ASAP template
 	$('#gnf_footer').find('.OAS_wrap').show();
 });
@@ -2094,10 +2104,10 @@ var omtitle= "Customer Service > Policies > Privacy Policy";var omcategory= "Cus
 <script src="http://c.shld.net/staticassets/versions/sears/js/s_code_combined.js" type="text/javascript"></script>
 		<script>
 
-		$( window ).load(function() {
+
  	/* Omniture function to update prop and evar values on page load */
 updateOmnitureValues();
-});
+
 
 
 	</script>
@@ -2105,7 +2115,7 @@ updateOmnitureValues();
 	<!-- End SiteCatalyst code version: H.9. -->
 
 <!-- Modified at: '2015-07-06T13:16:33.999-05:00' by: 'jh' -->
-<!-- Publish Server: '304p' -->
+<!-- Publish Server: '411p' -->
 <!-- Page path : 'shc/sears/en_us/customer-service/policies/privacy-policy.html' -->
 </body></html>
 
