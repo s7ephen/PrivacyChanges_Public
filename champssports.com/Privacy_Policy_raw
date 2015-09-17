@@ -578,7 +578,7 @@
 	
 		<!-- tpbann --><!-- GLOBAL BANNER SLIDES -->
     <li>
-        <a dialog="global_banner_disclaimer" href="#">
+        <a dialog="global_banner_disclaimer" href="javascript:void(0);">
             <div><strong>Free Shipping</strong><br/>over $75*</div>
         </a>
     </li>
@@ -588,35 +588,18 @@
 
 
 <!-- SECONDARY BANNER -->
-<div class="secondary-global-banner">
-	<a dialog="global_banner_disclaimer" href="#"><span style="background-color:#ac1f2d;"><strong>20% off $99 Or More! <br/> Online Only. Some Styles Excluded.</strong><br/> Use code: <strong>MBCH59V6</strong> - Details</span></a>
-</div>
+<!-- <div class="secondary-global-banner">
+	<a href="/ns/disclaimers/external.html" rel="shadowbox[banner];width=540;height=200" target="_blank" alt="Free Shipping on orders $75 or more">
+		<img src="http://kidsfootlocker.uat.msp.guidance.com/ns/headers/globalbanners/kflgb040912-2b-FS50ends.jpg" border="5">
+	</a>
+</div> -->
 <!-- END SECONDARY BANNER -->
 
 <!-- DISCLAIMER -->
 <div id="global_banner_disclaimer" class="dialog">
     <div id="close">
-        <a href="#" class="button">Close</a>
+        <a href="javascript:void(0);" class="button leave_quietly">Close</a>
     </div>
-    <div class="offer_title">
-        <span class="offer_text">
-            <span class="large_text">20% OFF</span> <span class="small_text">$99 Or More</span>
-        </span>
-        <span class="code_text">
-            <span class="small_text">use code <span class="large_text">MBCH59V6</span> in checkout</span>
-        </span>     
-    </div>   
-    <p align="center">
-    	<a href="javascript:void();" class="action_btn button" onClick="saveCode('MBCH57Y6'); return false;">Copy Code to Cart</a>
-    </p>
-    <p>
-        *Some exclusions may apply.
-<strong>Select Nike styles excluded.</strong>
-To receive 20% off your $99 purchase, enter promotion code MBCH59V6 at checkout. Promo Code box is located in Step 4 of checkout. Order value must total $99 or more before services, taxes, shipping and handling. Valid online at champssports.com. Not valid in store. Does not apply to prior purchases or open orders and cannot be combined with any other offers. May not be used with purchase of GiftCards. Promotion may be modified or terminated at any time. Other exclusions apply, <a href="http://m.champssports.com/?uri=promo&id=5003989" title="Promotion Restrictions">click here</a> for full details. Certain restrictions may apply. Some items are not eligible for discount and will indicate "excluded from discount" in red type on the product's description page. Offer expires 9/14/2015 (11:59 pm CT).
-    </p>
-    
-    </br>
-
     <div class="offer_title">
         <span class="offer_text">
             <span class="large_text">FREE SHIPPING</span> <span class="small_text">on orders $75 or more</span>
@@ -626,7 +609,7 @@ To receive 20% off your $99 purchase, enter promotion code MBCH59V6 at checkout.
         </span>     
     </div>   
     <p align="center">
-    	<a href="javascript:void();" class="action_btn button" onClick="saveCode('MBCH2W67'); return false;">Copy Code to Cart</a>
+    	<a href="javascript:void();" id="saveCodeToCartBtn" class="action_btn button leave_quietly" onClick="saveCode('MBCH2W67'); return false;">Copy Code to Cart</a>
     </p>
     <p>
         *Use promotional code MBCH2W67 at checkout. Promotion/source code box is located during the Payment Information tab at checkout. Order value must total $75 or more before services, taxes, shipping and handling. Valid online at m.champssports.com, www.champssports.com, by phone, or by mail. Offer is limited to standard delivery within the contiguous US and APO/FPO addresses. Excludes bulk orders and drop ships. Entire order must be shipped to a single address. Does not apply to prior purchases or open orders and cannot be combined with any other offer. Customer is responsible for shipping costs on returned merchandise. May not be used toward purchase of GiftCards or team orders. Promotion may be modified or terminated at any time. Certain restrictions and exclusions may apply. 
@@ -638,7 +621,7 @@ To receive 20% off your $99 purchase, enter promotion code MBCH59V6 at checkout.
 		<!--
 			$(document).ready(function(){
 				try{
-			 		viewBannerEvent("20% Off $99");
+			 		viewBannerEvent("");
 			 	} 
 			 	catch(e) {
 					console.log("ViewBannerEvent():Exception", e);
@@ -769,7 +752,7 @@ To receive 20% off your $99 purchase, enter promotion code MBCH59V6 at checkout.
 <script type="text/javascript">
     $('#footer_chat').chat({ offlineLink: '#" dialog="footer_chat_hours', onlineLink: 'https://m.champssports.com/?uri=promo&id=5003447#app' });
 </script>
-<script type="text/javascript" src="/combine.cfm?type=js&files=shared/mobile/js/main.js,shared/scripts/common.js,/images/common/mobile/js/global.js,/images/common/iscroll/src/iscroll.js,/images/common/mobile/js/scode.js,/images/common/mobile/js/jquery/jquery.lazyload.min.js,/images/common/mobile/minicart/minicart.js&ver=20150903"></script>
+<script type="text/javascript" src="/combine.cfm?type=js&files=shared/mobile/js/main.js,shared/scripts/common.js,/images/common/mobile/js/global.js,/images/common/iscroll/src/iscroll.js,/images/common/mobile/js/scode.js,/images/common/mobile/js/jquery/jquery.lazyload.min.js,/images/common/mobile/minicart/minicart.js&ver=20150916"></script>
 <script src="/ns/common/js/backtofull.js"></script>
 <script type="text/javascript" src="/ns/common/js/keyword-search.js"></script>
 <script type="text/javascript" src="/ns/common/mobile/menu.min.js"></script>
