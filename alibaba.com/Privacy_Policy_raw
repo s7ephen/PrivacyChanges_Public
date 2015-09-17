@@ -16,8 +16,8 @@
 
 </head>
 <body><script type=text/javascript src="http://img.alibaba.com/js/beacon_en.js"></script>
-<script type=text/javascript>var dmtrack_c='{-}'; var dmtrack_pageid='34028ead0ab115451442278585'; sk_dmtracking();</script>
-<noscript><img src="http://dmtracking2.alibaba.com/b.jpg?cD0xJnU9e3J1bGUuYWxpYmFiYS5jb20lMmZydWxlJTJmZGV0YWlsJTJlaHRtP3J1bGVJZD0yMDM0fSZtPXtHRVR9JnM9ezIwMH0mcj17LX0mYT17LX0mYj0tJmM9ey19Cg==&ver=40&pageid=34028ead0ab115451442278585&time=1442278585" width="1" height="1" style="display:none"></noscript>
+<script type=text/javascript>var dmtrack_c='{-}'; var dmtrack_pageid='34028ead0a64613a1442514597'; sk_dmtracking();</script>
+<noscript><img src="http://dmtracking2.alibaba.com/b.jpg?cD0xJnU9e3J1bGUuYWxpYmFiYS5jb20lMmZydWxlJTJmZGV0YWlsJTJlaHRtP3J1bGVJZD0yMDM0fSZtPXtHRVR9JnM9ezIwMH0mcj17LX0mYT17LX0mYj0tJmM9ey19Cg==&ver=40&pageid=34028ead0a64613a1442514597&time=1442514597" width="1" height="1" style="display:none"></noscript>
 
 <script>
     seajs.use(['gdata'], function(gdata){
@@ -305,7 +305,7 @@
 
 
 				<script>
-			seajs.use(['$', 'gdata', 'http://style.aliunicorn.com/js/6v/biz/common/header/??header-v4-sc.js?t=f7b0adda_46fe9d7aac',
+			seajs.use(['$', 'gdata', 'http://style.aliunicorn.com/js/6v/biz/common/header/??header-v4-sc.js?t=439ae0c9_4775a01c53',
 'http://style.aliunicorn.com/js/6v/biz/common/top-reached/??top-reached.js?t=7af468ff_83262e252',
 'http://style.aliunicorn.com/js/6v/biz/common/url/??url.js?t=7273ad7f_fffb973a',
 'http://style.aliunicorn.com/js/6v/lib/gallery/store/??store.js?t=66ea0bf6_0',
@@ -326,7 +326,7 @@
 
 				
 					function shouldShowBanner() {
-    var filterList = ['offer.alibaba.com', 'ptsid', 'http://www.alibaba.com/catalogs/premium', 'http://www.alibaba.com/premiumsupplier/', 'http://www.alibaba.com/premium', 'http://m.alibaba.com/premium', 'http://m.alibaba.com/catalogs/premium/'];
+    var filterList = ['offer.alibaba.com'];
 
     var href = window.location.href;
 
@@ -339,91 +339,64 @@
     return true;
 }
 
-function requestUserArea() {
 
-    jq.ajax({
-        url: '//www.alibaba.com/detail/ajax/queryIpAjax.do',
-        dataType: 'jsonp',
-        jsonp: 'jsonp',
-        data: {
-            ip: ''
-        }
+function showTopReached() {
     
-    }).done(function(data) {
+    function getCookie(c_name){
+　　　　if (document.cookie.length>0){　　
+　　　　　　c_start=document.cookie.indexOf(c_name + "=")　　
+　　　　　　if (c_start!=-1){ 
+　　　　　　　　c_start=c_start + c_name.length+1　　
+　　　　　　　　c_end=document.cookie.indexOf(";",c_start)　
+　　　　　　　　if (c_end==-1) c_end=document.cookie.length　　
+　　　　　　　　return unescape(document.cookie.substring(c_start,c_end))　　
+　　　　　　} 
+　　　　}
+　　　　return ""
+　　}　　
 
-        var countryCode = '';
-        // modify
-        if(data && data.countryCode) {
+    function getUserId() {
+        var userId = '';
+        var cookieValue = getCookie('ali_apache_track');
 
-            countryCode = data.countryCode;
-
-            showTopReached(countryCode);
-        }else{
-            showTopReached('');
+        if (cookieValue) {
+            var values = cookieValue.match(/mid=([^&"]+)/);
+            if (Object.prototype.toString.call(values) === '[object Array]' && values.length > 0) {
+                userId = values[1].split('|')[0];
+            }
         }
 
-        var currentTime = (new Date()).getTime();
-        Store.set('lastTopBannerTime', currentTime);
-        Store.set('topBannerUserArea', countryCode);
+        return userId;
+    }
+    
+    var banners = [{
+        bannerUrl: 'https://img.alicdn.com/tps/TB11BtXJFXXXXXQXpXXXXXXXXXX-990-70.png',
+        href: 'http://activities.alibaba.com/alibaba/916_index.php?tracelog=xpzhgsjbzhg916',
+        color: '#ff3928',
+        time: '2015-09-15~2015-09-30'
+    }];
 
-    }).fail(function() {
-        showTopReached('');
+    if(getUserId()) {
+        banners = [{
+            bannerUrl: 'https://img.alicdn.com/tps/TB11BtXJFXXXXXQXpXXXXXXXXXX-990-70.png',
+            href: 'http://activities.alibaba.com/alibaba/big_profit_on_brand_products.php?tracelog=ali_wc_brand_0916',
+            color: '#ff3928',
+            time: '2015-09-15~2015-09-30'
+        }];
+    }
+
+    if(config.banners) {
+        banners = config.banners;
+    }
+
+    new TopReached({
+        type: 'small',
+        urlList: banners
     });
 }
 
-
-function showTopReached(countryCode) {
-    var banners = [];
-    
-    // modify
-    switch(countryCode) {
-        case 'AU':
-        case 'NZ':
-        case 'US':
-            banners = [{
-                bannerUrl: '//is.alicdn.com/tps/i3/TB1XVFoIXXXXXaYaXXXYK2lJVXX-990-70.jpg',
-                href: 'http://tradeassurance.alibaba.com/?tracelog=ta20',
-                color: '#df3909',
-                time: '2015-07-15~2015-08-01'
-            }];
-            break;
-        default:
-            banners = [{
-                bannerUrl: '//is.alicdn.com/tps/i2/TB1xHQ0IFXXXXXaapXXBLvlJVXX-990-70.png',
-                href: 'http://activities.alibaba.com/alibaba/summerevent.php?tracelog=hotsourcing_dingtong_new',
-                color: '#1d88cc',
-                time: '2015-07-15~2015-07-29'
-            }];
-            break;
-    }
-
-    if(banners.length > 0) {
-        new TopReached({
-            type: 'small',
-            urlList: banners
-        });
-    }
-}
-
-function showBanner() {
-    var storedArea = Store.get('topBannerUserArea');
-
-    if(!storedArea) {
-        requestUserArea();
-    }else{
-        var lastTopBannerTime = parseInt(Store.get('lastTopBannerTime'));
-        var currentTime = (new Date()).getTime();
-
-        if(currentTime - lastTopBannerTime > 24*3600*1000){
-            requestUserArea();
-        }else{
-            showTopReached(storedArea);
-        }
-    }
-}
-
 if(shouldShowBanner()) {
-    showBanner();
+    showTopReached();
 }
 
 					
@@ -580,7 +553,7 @@ seajs.Module.define('mm-sc-new-header', function(require, exports) {
             <div class="ui-searchbar-main" data-role="ui-searchbar-main">
                 <input type="text" data-role="search-text" class="ui-searchbar-keyword" autocomplete="off" autofocus="" x-webkit-speech="x-webkit-speech" placeholder="What are you looking for…" value="" name="key">
             <div class="ui-searchbar-keyword-panel ui-searchbar-dynamic" data-widget-cid="widget-2" style="z-index: 99; display: none;"><ul class="ui-searchbar-dynamic-ctn" data-role="items"></ul></div></div>
-            <input name='_csrf_token_' type='hidden' value='_9ls0c7k31gz'>
+            <input name='_csrf_token_' type='hidden' value='14_z0lkti2_0x'>
             <input type="button" data-role="search-button" class="hc-searchbar-submit" value="Search">           
         </div>
     </div>
@@ -738,7 +711,7 @@ seajs.use('http://style.aliunicorn.com/js/6v/biz/icburules/detail/??detail.js?t=
 			
 </div>
 
-<div id="ServerId" style="color:whitesmoke;text-align:center;background:whitesmoke"> icburule010177021069 </div>
+<div id="ServerId" style="color:whitesmoke;text-align:center;background:whitesmoke"> icburule010100097058 </div>
 
 </div></div>
 
