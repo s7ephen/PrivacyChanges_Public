@@ -7,7 +7,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIAWVFSGwIDVFZWAAk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQIAWVFSGwIDVFZWAAk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-741.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-itunes-app" content="app-id=549374205, app-argument=http://www.salon.com/">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -32,7 +32,7 @@
     <link rel='index' title='Salon.com' href='http://www.salon.com/' />
     <link rel="alternate" type="application/rss+xml" title="Salon.com RSS Feed" href="http://www.salon.com/feed/" />
     <!-- End Meta Info from Old Site -->
-    <link rel='stylesheet' href='/combo/css?fonts/Didot/didot.css&typography.css&resets.css&left-sidebars.css&right-sidebars.css&ads.css&livefyre.css&compiled-sass.css&overrides.css&ver=350' /><script type='text/javascript' src='/combo/js?yui/yui-min.js&oop/oop-min.js&event-custom-base/event-custom-base-min.js&dom-core/dom-core-min.js&dom-base/dom-base-min.js&selector-native/selector-native-min.js&selector/selector-min.js&node-core/node-core-min.js&node-base/node-base-min.js&event-base/event-base-min.js&event-base-ie/event-base-ie-min.js&dom-style-ie/dom-style-ie-min.js&event-delegate/event-delegate-min.js&node-event-delegate/node-event-delegate-min.js&pluginhost-base/pluginhost-base-min.js&pluginhost-config/pluginhost-config-min.js&node-pluginhost/node-pluginhost-min.js&color-base/color-base-min.js&dom-style/dom-style-min.js&dom-screen/dom-screen-min.js&node-screen/node-screen-min.js&node-style/node-style-min.js&slnm/utils/set-browser-css.js&plugins/salon-login/js/salon-user.js&slnm/apps/salon-ads.js&slnm/slnm.js&slnm/modules/salon-modules.js&ver=350' ></script>
+    <link rel='stylesheet' href='/combo/css?fonts/Didot/didot.css&typography.css&resets.css&left-sidebars.css&right-sidebars.css&ads.css&livefyre.css&compiled-sass.css&overrides.css&ver=351' /><script type='text/javascript' src='/combo/js?yui/yui-min.js&oop/oop-min.js&event-custom-base/event-custom-base-min.js&dom-core/dom-core-min.js&dom-base/dom-base-min.js&selector-native/selector-native-min.js&selector/selector-min.js&node-core/node-core-min.js&node-base/node-base-min.js&event-base/event-base-min.js&event-base-ie/event-base-ie-min.js&dom-style-ie/dom-style-ie-min.js&event-delegate/event-delegate-min.js&node-event-delegate/node-event-delegate-min.js&pluginhost-base/pluginhost-base-min.js&pluginhost-config/pluginhost-config-min.js&node-pluginhost/node-pluginhost-min.js&color-base/color-base-min.js&dom-style/dom-style-min.js&dom-screen/dom-screen-min.js&node-screen/node-screen-min.js&node-style/node-style-min.js&slnm/utils/set-browser-css.js&plugins/salon-login/js/salon-user.js&slnm/apps/salon-ads.js&slnm/slnm.js&slnm/modules/salon-modules.js&ver=351' ></script>
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -164,15 +164,15 @@
                                 <ul>
                                     
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/11/bernie_sanders_ties_to_met_with_black_leaders_and_nobody_shows_up_only_6_congressional_black_caucus_members_attend/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend'>
+            <a href='http://www.salon.com/2015/09/15/bernie_sanders_shuts_down_fox_news_jesse_watters_i_dont_do_ambush_interviews/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders shuts down Fox News&#039; Jesse Watters: &quot;I don&#039;t do ambush interviews&quot;'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/bernie_sanders_black_lives_matter-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Jesse-Watters-ambushes-Bernie-Sanders-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/11/bernie_sanders_ties_to_met_with_black_leaders_and_nobody_shows_up_only_6_congressional_black_caucus_members_attend/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend'>
-                    Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend
+                <a href='http://www.salon.com/2015/09/15/bernie_sanders_shuts_down_fox_news_jesse_watters_i_dont_do_ambush_interviews/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders shuts down Fox News&#039; Jesse Watters: &quot;I don&#039;t do ambush interviews&quot;'>
+                    Bernie Sanders shuts down Fox News' Jesse Watters: "I don't do ambush interviews"
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
@@ -180,34 +180,34 @@
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/hillary_clinton_is_about_to_make_a_huge_mistake_heres_what_she_needs_to_learn_from_bernie_sanders/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Hillary Clinton is about to make a huge mistake: Here&#039;s what she needs to learn from Bernie Sanders'>
+            <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/hillary_sanders2-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Jack-Byrd-Jimmy-Kimmel-e1442409582767-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/hillary_clinton_is_about_to_make_a_huge_mistake_heres_what_she_needs_to_learn_from_bernie_sanders/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Hillary Clinton is about to make a huge mistake: Here&#039;s what she needs to learn from Bernie Sanders'>
-                    Hillary Clinton is about to make a huge mistake: Here's what she needs to learn from Bernie Sanders
+                <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
+                    "Jimmy Kimmel Live" perfectly trolls Donald Trump supporters at Texas rally
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/conor_lynch_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Conor Lynch&quot;]" >Conor Lynch</a>
+                    <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
                 </span>
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/take_that_charter_schools_why_a_washington_court_decision_will_force_accountability_to_a_movement_that_needs_it_badly/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Take that, charter schools: Why a Washington court decision will force accountability to a movement that needs it badly'>
+            <a href='http://www.salon.com/2015/09/15/this_is_what_a_political_earthquake_feels_like_why_bernie_sanderss_speech_at_liberty_university_matters/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is what a political earthquake feels like: Why Bernie Sanders&#039;s speech at Liberty University matters'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2013/03/AP150473324814-1-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/bernie_sanders16-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/take_that_charter_schools_why_a_washington_court_decision_will_force_accountability_to_a_movement_that_needs_it_badly/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Take that, charter schools: Why a Washington court decision will force accountability to a movement that needs it badly'>
-                    Take that, charter schools: Why a Washington court decision will force accountability to a movement that needs it badly
+                <a href='http://www.salon.com/2015/09/15/this_is_what_a_political_earthquake_feels_like_why_bernie_sanderss_speech_at_liberty_university_matters/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is what a political earthquake feels like: Why Bernie Sanders&#039;s speech at Liberty University matters'>
+                    This is what a political earthquake feels like: Why Bernie Sanders's speech at Liberty University matters
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/jeff_bryant_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Jeff Bryant&quot;]" >Jeff Bryant</a>
+                    <a href='http://www.salon.com/writer/sean_illing/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sean Illing&quot;]" >Sean Illing</a>
                 </span>
             </div>
         </li>								</ul>
@@ -264,15 +264,15 @@
                                 <ul>
                                     
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/11/bernie_sanders_ties_to_met_with_black_leaders_and_nobody_shows_up_only_6_congressional_black_caucus_members_attend/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend'>
+            <a href='http://www.salon.com/2015/09/15/bernie_sanders_shuts_down_fox_news_jesse_watters_i_dont_do_ambush_interviews/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders shuts down Fox News&#039; Jesse Watters: &quot;I don&#039;t do ambush interviews&quot;'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/bernie_sanders_black_lives_matter-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Jesse-Watters-ambushes-Bernie-Sanders-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/11/bernie_sanders_ties_to_met_with_black_leaders_and_nobody_shows_up_only_6_congressional_black_caucus_members_attend/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend'>
-                    Bernie Sanders tries to meet with Black leaders but nobody shows up: Only 6 Congressional Black Caucus members attend
+                <a href='http://www.salon.com/2015/09/15/bernie_sanders_shuts_down_fox_news_jesse_watters_i_dont_do_ambush_interviews/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Bernie Sanders shuts down Fox News&#039; Jesse Watters: &quot;I don&#039;t do ambush interviews&quot;'>
+                    Bernie Sanders shuts down Fox News' Jesse Watters: "I don't do ambush interviews"
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
@@ -280,34 +280,34 @@
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/hillary_clinton_is_about_to_make_a_huge_mistake_heres_what_she_needs_to_learn_from_bernie_sanders/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Hillary Clinton is about to make a huge mistake: Here&#039;s what she needs to learn from Bernie Sanders'>
+            <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/hillary_sanders2-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Jack-Byrd-Jimmy-Kimmel-e1442409582767-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/hillary_clinton_is_about_to_make_a_huge_mistake_heres_what_she_needs_to_learn_from_bernie_sanders/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Hillary Clinton is about to make a huge mistake: Here&#039;s what she needs to learn from Bernie Sanders'>
-                    Hillary Clinton is about to make a huge mistake: Here's what she needs to learn from Bernie Sanders
+                <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
+                    "Jimmy Kimmel Live" perfectly trolls Donald Trump supporters at Texas rally
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/conor_lynch_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Conor Lynch&quot;]" >Conor Lynch</a>
+                    <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
                 </span>
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/trump_sanders_and_tribalism_why_the_donalds_dark_allure_goes_deeper_than_racism_and_xenophobia/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Trump, Sanders and tribalism: Why the Donald&#039;s dark allure goes deeper than racism and xenophobia'>
+            <a href='http://www.salon.com/2015/09/15/this_is_what_a_political_earthquake_feels_like_why_bernie_sanderss_speech_at_liberty_university_matters/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is what a political earthquake feels like: Why Bernie Sanders&#039;s speech at Liberty University matters'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/trump_sanders-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/bernie_sanders16-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/trump_sanders_and_tribalism_why_the_donalds_dark_allure_goes_deeper_than_racism_and_xenophobia/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Trump, Sanders and tribalism: Why the Donald&#039;s dark allure goes deeper than racism and xenophobia'>
-                    Trump, Sanders and tribalism: Why the Donald's dark allure goes deeper than racism and xenophobia
+                <a href='http://www.salon.com/2015/09/15/this_is_what_a_political_earthquake_feels_like_why_bernie_sanderss_speech_at_liberty_university_matters/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is what a political earthquake feels like: Why Bernie Sanders&#039;s speech at Liberty University matters'>
+                    This is what a political earthquake feels like: Why Bernie Sanders's speech at Liberty University matters
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/andrew_ohehir/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Andrew O\&#039;Hehir&quot;]" >Andrew O'Hehir</a>
+                    <a href='http://www.salon.com/writer/sean_illing/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sean Illing&quot;]" >Sean Illing</a>
                 </span>
             </div>
         </li>								</ul>
@@ -364,31 +364,15 @@
                                 <ul>
                                     
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/13/the_ashley_madison_hack_revealed_more_than_names_what_we_still_get_wrong_about_cheating_lying_privacy_and_marriage/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The Ashley Madison hack revealed more than names: What we still get wrong about cheating, lying, privacy and marriage'>
+            <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/man_removing_wedding_ring-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Jack-Byrd-Jimmy-Kimmel-e1442409582767-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/13/the_ashley_madison_hack_revealed_more_than_names_what_we_still_get_wrong_about_cheating_lying_privacy_and_marriage/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The Ashley Madison hack revealed more than names: What we still get wrong about cheating, lying, privacy and marriage'>
-                    The Ashley Madison hack revealed more than names: What we still get wrong about cheating, lying, privacy and marriage
-                </a>
-                <span class='byline'>
-                    <a href='http://www.salon.com/writer/neil_strauss/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Neil Strauss&quot;]" >Neil Strauss</a>
-                </span>
-            </div>
-        </li>
-        <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/11/larry_wilmore_ridicules_dick_cheneys_iran_warmongering_that_even_fox_news_wont_buy/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Larry Wilmore ridicules Dick Cheney&#039;s Iran warmongering that even Fox News won&#039;t buy'>
-                <span class='thumbWrap'>
-                    
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/Wilmore-Cheney--90x60.jpg'  />
-                </span>
-            </a>
-            <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/11/larry_wilmore_ridicules_dick_cheneys_iran_warmongering_that_even_fox_news_wont_buy/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Larry Wilmore ridicules Dick Cheney&#039;s Iran warmongering that even Fox News won&#039;t buy'>
-                    Larry Wilmore ridicules Dick Cheney's Iran warmongering that even Fox News won't buy
+                <a href='http://www.salon.com/2015/09/16/jimmy_kimmel_live_perfectly_trolls_donald_trump_supporters_at_texas_rally/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Jimmy Kimmel Live&quot; perfectly trolls Donald Trump supporters at Texas rally'>
+                    "Jimmy Kimmel Live" perfectly trolls Donald Trump supporters at Texas rally
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
@@ -396,18 +380,34 @@
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/09/r_e_m_slams_donald_trump_we_do_not_authorize_or_condone_the_use_of_our_music_at_this_event/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='R.E.M. slams Donald Trump: &quot;We do not authorize or condone the use of our music at this event&quot;'>
+            <a href='http://www.salon.com/2015/09/16/kim_cattrall_is_right_about_childless_women_it_sounds_like_youre_less_because_you_havent_had_a_child/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Kim Cattrall is right about childless women: &quot;It sounds like you’re less, because you haven’t had a child&quot;'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2011/09/how_r_e_m_invented_alternative_music-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/kim_cattrall-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/09/r_e_m_slams_donald_trump_we_do_not_authorize_or_condone_the_use_of_our_music_at_this_event/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='R.E.M. slams Donald Trump: &quot;We do not authorize or condone the use of our music at this event&quot;'>
-                    R.E.M. slams Donald Trump: "We do not authorize or condone the use of our music at this event"
+                <a href='http://www.salon.com/2015/09/16/kim_cattrall_is_right_about_childless_women_it_sounds_like_youre_less_because_you_havent_had_a_child/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Kim Cattrall is right about childless women: &quot;It sounds like you’re less, because you haven’t had a child&quot;'>
+                    Kim Cattrall is right about childless women: "It sounds like you’re less, because you haven’t had a child"
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/erin_keane/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Erin Keane&quot;]" >Erin Keane</a>
+                    <a href='http://www.salon.com/writer/mary_elizabeth_williams/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Mary Elizabeth Williams&quot;]" >Mary Elizabeth Williams</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/14/matt_damon_needs_to_open_his_eyes_on_diversity_whos_behind_the_camera_does_matter_as_much_as_whos_on_screen/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Matt Damon needs to open his eyes on diversity: Who&#039;s behind the camera does matter as much as who&#039;s on-screen'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/matt_damon-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/14/matt_damon_needs_to_open_his_eyes_on_diversity_whos_behind_the_camera_does_matter_as_much_as_whos_on_screen/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Matt Damon needs to open his eyes on diversity: Who&#039;s behind the camera does matter as much as who&#039;s on-screen'>
+                    Matt Damon needs to open his eyes on diversity: Who's behind the camera does matter as much as who's on-screen
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_timberg/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Timberg&quot;]" >Scott Timberg</a>
                 </span>
             </div>
         </li>								</ul>
@@ -472,34 +472,34 @@
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/13/ted_cruz_and_kim_davis_true_love_forever_the_right_wing_theocracy_that_threatens_the_rule_of_law/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Ted Cruz and Kim Davis, true love forever: The right-wing theocracy that threatens the rule of law'>
+            <a href='http://www.salon.com/2015/09/16/kim_cattrall_is_right_about_childless_women_it_sounds_like_youre_less_because_you_havent_had_a_child/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Kim Cattrall is right about childless women: &quot;It sounds like you’re less, because you haven’t had a child&quot;'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/cruz_davis-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/kim_cattrall-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/13/ted_cruz_and_kim_davis_true_love_forever_the_right_wing_theocracy_that_threatens_the_rule_of_law/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Ted Cruz and Kim Davis, true love forever: The right-wing theocracy that threatens the rule of law'>
-                    Ted Cruz and Kim Davis, true love forever: The right-wing theocracy that threatens the rule of law
+                <a href='http://www.salon.com/2015/09/16/kim_cattrall_is_right_about_childless_women_it_sounds_like_youre_less_because_you_havent_had_a_child/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Kim Cattrall is right about childless women: &quot;It sounds like you’re less, because you haven’t had a child&quot;'>
+                    Kim Cattrall is right about childless women: "It sounds like you’re less, because you haven’t had a child"
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/jeffrey_tayler/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Jeffrey Tayler&quot;]" >Jeffrey Tayler</a>
+                    <a href='http://www.salon.com/writer/mary_elizabeth_williams/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Mary Elizabeth Williams&quot;]" >Mary Elizabeth Williams</a>
                 </span>
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/this_is_why_women_get_inked_feminism_tattoos_and_the_new_politics_of_body_art/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is why women get inked: Feminism, tattoos and the new politics of body art'>
+            <a href='http://www.salon.com/2015/09/16/when_you_or_your_partner_are_most_likely_to_cheat_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='When you or your partner are most likely to cheat'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/tattooed_woman-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2014/08/bra_removal-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/this_is_why_women_get_inked_feminism_tattoos_and_the_new_politics_of_body_art/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='This is why women get inked: Feminism, tattoos and the new politics of body art'>
-                    This is why women get inked: Feminism, tattoos and the new politics of body art
+                <a href='http://www.salon.com/2015/09/16/when_you_or_your_partner_are_most_likely_to_cheat_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='When you or your partner are most likely to cheat'>
+                    When you or your partner are most likely to cheat
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/beverly_yuen_thompson/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Beverly Yuen Thompson&quot;]" >Beverly Yuen Thompson</a>
+                    <a href='http://www.salon.com/writer/daniel_yudkin/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Daniel Yudkin&quot;]" >Daniel Yudkin</a>, Scientific American
                 </span>
             </div>
         </li>								</ul>
@@ -556,6 +556,22 @@
                                 <ul>
                                     
         <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/16/istandwithahmed_social_media_campaign_interrupted_by_grumpy_twitter_conservatives/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='#IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/ahmed_mohamed2-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/16/istandwithahmed_social_media_campaign_interrupted_by_grumpy_twitter_conservatives/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='#IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives'>
+                    #IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
             <a href='http://www.salon.com/2015/09/12/obama_has_done_more_for_clean_energy_than_you_think_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Obama has done more for clean energy than you think'>
                 <span class='thumbWrap'>
                     
@@ -568,22 +584,6 @@
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/david_biello/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;David Biello&quot;]" >David Biello</a>, Scientific American
-                </span>
-            </div>
-        </li>
-        <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/08/imagine_the_human_equivalent_of_a_roomba_the_problem_with_amcs_sci_fi_hit_humans_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Our robotic usurpers are already here&quot;: Reality is scarier than &quot;Humans&quot;'>
-                <span class='thumbWrap'>
-                    
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/150628-news-humans-90x60.jpg'  />
-                </span>
-            </a>
-            <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/08/imagine_the_human_equivalent_of_a_roomba_the_problem_with_amcs_sci_fi_hit_humans_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Our robotic usurpers are already here&quot;: Reality is scarier than &quot;Humans&quot;'>
-                    "Our robotic usurpers are already here": Reality is scarier than "Humans"
-                </a>
-                <span class='byline'>
-                    <a href='http://www.salon.com/writer/andrew_aghapour_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Andrew Aghapour&quot;]" >Andrew Aghapour</a>, Religion Dispatches
                 </span>
             </div>
         </li>								</ul>
@@ -632,50 +632,50 @@
                                 <ul>
                                     
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/12/screw_u_the_gops_war_on_college_students_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Screw U: Inside the GOP&#039;s war on college students'>
+            <a href='http://www.salon.com/2015/09/15/the_donald_trump_scandal_he_wants_you_to_forget_inside_his_despicable_scheme_to_prey_on_the_poor_make_himself_richer/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The Donald Trump scandal he wants you to forget: Inside his despicable scheme to prey on the poor &amp; make himself richer'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/03/university_storm-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/donald_trump31-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/12/screw_u_the_gops_war_on_college_students_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Screw U: Inside the GOP&#039;s war on college students'>
-                    Screw U: Inside the GOP's war on college students
+                <a href='http://www.salon.com/2015/09/15/the_donald_trump_scandal_he_wants_you_to_forget_inside_his_despicable_scheme_to_prey_on_the_poor_make_himself_richer/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='The Donald Trump scandal he wants you to forget: Inside his despicable scheme to prey on the poor &amp; make himself richer'>
+                    The Donald Trump scandal he wants you to forget: Inside his despicable scheme to prey on the poor & make himself richer
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/sophia_a_mcclennen/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia A. McClennen&quot;]" >Sophia A. McClennen</a>, AlterNet`
+                    <a href='http://www.salon.com/writer/joe_miller/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Joe Miller&quot;]" >Joe Miller</a>
                 </span>
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/13/healthcare_govs_choice_overload_its_no_wonder_people_end_up_spending_more_than_they_need_to/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Healthcare.gov&#039;s choice overload: It&#039;s no wonder people end up spending more than they need to'>
+            <a href='http://www.salon.com/2015/09/15/elizabeth_warren_just_launched_her_latest_populist_fight_and_it_impacts_millions_of_american_workers/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Elizabeth Warren just launched her latest populist fight -- and it impacts millions of American workers'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/couple_laptop_frustrated-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/08/elizabeth-warren-ap-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/13/healthcare_govs_choice_overload_its_no_wonder_people_end_up_spending_more_than_they_need_to/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Healthcare.gov&#039;s choice overload: It&#039;s no wonder people end up spending more than they need to'>
-                    Healthcare.gov's choice overload: It's no wonder people end up spending more than they need to
+                <a href='http://www.salon.com/2015/09/15/elizabeth_warren_just_launched_her_latest_populist_fight_and_it_impacts_millions_of_american_workers/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Elizabeth Warren just launched her latest populist fight -- and it impacts millions of American workers'>
+                    Elizabeth Warren just launched her latest populist fight -- and it impacts millions of American workers
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/shlomo_benartzi/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Shlomo Benartzi&quot;]" >Shlomo Benartzi</a> and <a href='http://www.salon.com/writer/jonah_lehrer/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;jonah lehrer&quot;]" >jonah lehrer</a>
+                    <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
                 </span>
             </div>
         </li>
         <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/09/robert_reich_americas_economy_is_immoral_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Robert Reich: America&#039;s economy is immoral'>
+            <a href='http://www.salon.com/2015/09/14/paul_krugman_the_problem_with_the_left_is_that_moderates_have_abandoned_it/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: The problem with the left is that moderates have abandoned it'>
                 <span class='thumbWrap'>
                     
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2014/01/robert_reich-90x60.jpg'  />
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/07/paul_krugman6-90x60.jpg'  />
                 </span>
             </a>
             <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/09/robert_reich_americas_economy_is_immoral_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Robert Reich: America&#039;s economy is immoral'>
-                    Robert Reich: America's economy is immoral
+                <a href='http://www.salon.com/2015/09/14/paul_krugman_the_problem_with_the_left_is_that_moderates_have_abandoned_it/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Paul Krugman: The problem with the left is that moderates have abandoned it'>
+                    Paul Krugman: The problem with the left is that moderates have abandoned it
                 </a>
                 <span class='byline'>
-                    <a href='http://www.salon.com/writer/robert_reich_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Robert Reich&quot;]" >Robert Reich</a>, ROBERTREICH.org
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
                 </span>
             </div>
         </li>								</ul>
@@ -724,6 +724,22 @@
                                 <ul>
                                     
         <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/14/california_governor_jerry_brown_uses_twitter_to_school_ben_carson_about_the_reality_of_global_warming/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='California Governor Jerry Brown uses Twitter to school Ben Carson about the reality of global warming'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/jerry-brown-ben-carson-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/14/california_governor_jerry_brown_uses_twitter_to_school_ben_carson_about_the_reality_of_global_warming/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='California Governor Jerry Brown uses Twitter to school Ben Carson about the reality of global warming'>
+                    California Governor Jerry Brown uses Twitter to school Ben Carson about the reality of global warming
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/scott_eric_kaufman/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Scott Eric Kaufman&quot;]" >Scott Eric Kaufman</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
             <a href='http://www.salon.com/2015/09/12/obama_has_done_more_for_clean_energy_than_you_think_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Obama has done more for clean energy than you think'>
                 <span class='thumbWrap'>
                     
@@ -736,22 +752,6 @@
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/david_biello/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;David Biello&quot;]" >David Biello</a>, Scientific American
-                </span>
-            </div>
-        </li>
-        <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/09/every_inspiring_story_about_climate_change_i_hope_to_read/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Every inspiring story about climate change I hope to read'>
-                <span class='thumbWrap'>
-                    
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/barack_obama_crude_oil-90x60.jpg'  />
-                </span>
-            </a>
-            <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/09/every_inspiring_story_about_climate_change_i_hope_to_read/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Every inspiring story about climate change I hope to read'>
-                    Every inspiring story about climate change I hope to read
-                </a>
-                <span class='byline'>
-                    <a href='http://www.salon.com/writer/lindsay_abrams/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Lindsay Abrams&quot;]" >Lindsay Abrams</a>
                 </span>
             </div>
         </li>								</ul>
@@ -808,6 +808,38 @@
                                 <ul>
                                     
         <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/16/istandwithahmed_social_media_campaign_interrupted_by_grumpy_twitter_conservatives/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='#IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/ahmed_mohamed2-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/16/istandwithahmed_social_media_campaign_interrupted_by_grumpy_twitter_conservatives/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='#IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives'>
+                    #IStandWithAhmed social media campaign interrupted by grumpy Twitter conservatives
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/sophia_tesfaye_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Sophia Tesfaye&quot;]" >Sophia Tesfaye</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
+            <a href='http://www.salon.com/2015/09/16/human_evolution_hasnt_been_a_process_of_gradual_fine_tuning_as_finds_like_homo_naledi_in_south_africa_make_plain/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Human evolution hasn&#039;t been a process of gradual fine-tuning -- as finds like Homo naledi in South Africa make plain'>
+                <span class='thumbWrap'>
+                    
+                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/homo_naledi-90x60.jpg'  />
+                </span>
+            </a>
+            <div class='story-info'>
+                <a href='http://www.salon.com/2015/09/16/human_evolution_hasnt_been_a_process_of_gradual_fine_tuning_as_finds_like_homo_naledi_in_south_africa_make_plain/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Human evolution hasn&#039;t been a process of gradual fine-tuning -- as finds like Homo naledi in South Africa make plain'>
+                    Human evolution hasn't been a process of gradual fine-tuning -- as finds like Homo naledi in South Africa make plain
+                </a>
+                <span class='byline'>
+                    <a href='http://www.salon.com/writer/ian_tattersall/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Ian Tattersall&quot;]" >Ian Tattersall</a>
+                </span>
+            </div>
+        </li>
+        <li class='smr-post'>
             <a href='http://www.salon.com/2015/09/13/healthcare_govs_choice_overload_its_no_wonder_people_end_up_spending_more_than_they_need_to/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='Healthcare.gov&#039;s choice overload: It&#039;s no wonder people end up spending more than they need to'>
                 <span class='thumbWrap'>
                     
@@ -820,22 +852,6 @@
                 </a>
                 <span class='byline'>
                     <a href='http://www.salon.com/writer/shlomo_benartzi/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Shlomo Benartzi&quot;]" >Shlomo Benartzi</a> and <a href='http://www.salon.com/writer/jonah_lehrer/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;jonah lehrer&quot;]" >jonah lehrer</a>
-                </span>
-            </div>
-        </li>
-        <li class='smr-post'>
-            <a href='http://www.salon.com/2015/09/08/imagine_the_human_equivalent_of_a_roomba_the_problem_with_amcs_sci_fi_hit_humans_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Our robotic usurpers are already here&quot;: Reality is scarier than &quot;Humans&quot;'>
-                <span class='thumbWrap'>
-                    
-                    <img class='lazyLoad' data-yab-app='lazy-loader' data-source-standard='http://media.salon.com/2015/09/150628-news-humans-90x60.jpg'  />
-                </span>
-            </a>
-            <div class='story-info'>
-                <a href='http://www.salon.com/2015/09/08/imagine_the_human_equivalent_of_a_roomba_the_problem_with_amcs_sci_fi_hit_humans_partner/' class="gaTrackLinkEvent" data-ga-track-json="[&quot;navigation&quot;, &quot;click&quot;, &quot;mostread&quot;]" title='&quot;Our robotic usurpers are already here&quot;: Reality is scarier than &quot;Humans&quot;'>
-                    "Our robotic usurpers are already here": Reality is scarier than "Humans"
-                </a>
-                <span class='byline'>
-                    <a href='http://www.salon.com/writer/andrew_aghapour_2/'  class="gaTrackLinkEvent" data-ga-track-json="[&quot;author&quot;,&quot;click&quot;, &quot;Andrew Aghapour&quot;]" >Andrew Aghapour</a>, Religion Dispatches
                 </span>
             </div>
         </li>								</ul>
@@ -1172,5 +1188,5 @@ console.log("adobe");
 		    document.body.appendChild(script);
 		  })();
 		</script>
-		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"83bbceb499","applicationID":"1307478","transactionName":"ZABWYRBYCBBZVkNeXl1KdVYWUAkNF0VWUFQ=","queueTime":0,"applicationTime":251,"atts":"SEdVF1hCGx4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"83bbceb499","applicationID":"1307478","transactionName":"ZABWYRBYCBBZVkNeXl1KdVYWUAkNF0VWUFQ=","queueTime":0,"applicationTime":266,"atts":"SEdVF1hCGx4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-741.min.js"}</script></body>
 </html>
