@@ -54,10 +54,6 @@
     dfp_unit = "MW_GEN";
     
         
-    mw_setup_ads({
-        pub_id: '/34444486/Merriam-Webster/MW_GEN'
-    });
-
     function reloadCreatives (url)
     {
         // Reload the ads.
@@ -72,6 +68,24 @@
        };
     };
 
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+var pub_id = '/34444486/Merriam-Webster/MW_GEN';
+
+var slot2 = googletag.defineSlot(pub_id, [[728,90]], 'div-gpt-ad-219827234313134000-5').setTargeting('POS',['BOT']).addService(googletag.pubads());
+var slot3 = googletag.defineSlot(pub_id, [[300,250]], 'div-gpt-ad-219827234313134000-2').setTargeting('POS',['TOP']).addService(googletag.pubads());
+var slot4 = googletag.defineSlot(pub_id, [[300,250]], 'div-gpt-ad-219827234313134000-4').setTargeting('POS',['BOT']).addService(googletag.pubads());
+var slot5 = googletag.defineSlot(pub_id, [[160,600]], 'div-gpt-ad-219827234313134000-3').setTargeting('POS',['TOP']).addService(googletag.pubads());
+
+
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().setTargeting('QSEGS',get_qsegs()).setTargeting('PAGE',[parseInt("" + getCookie("page-view", 1)) - 1]);
+googletag.pubads().enableAsyncRendering();
+googletag.enableServices();
+});
 </script>
 </head>
 
