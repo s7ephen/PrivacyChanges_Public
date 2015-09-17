@@ -12,7 +12,7 @@ url('//img1.wsimg.com/ux/fonts/1.2/woff/w7.woff') format('woff'),
 url('//img1.wsimg.com/ux/fonts/1.2/ttf/w7.ttf') format('truetype');
 font-weight: 400;
 font-style: normal;
-color: '1.3.20';
+color: '1.3.21';
 }
 @font-face {
 font-family: 'Walsheim-Bold';
@@ -34,11 +34,11 @@ font-style: normal;
 }
 @font-face {
 font-family: 'uxfont';
-src: url('//img1.wsimg.com/ux/1.3.20-brand/fonts/uxfont.eot');
-src: url('//img1.wsimg.com/ux/1.3.20-brand/fonts/uxfont.eot?#iefix') format('embedded-opentype'),
-url('//img1.wsimg.com/ux/1.3.20-brand/fonts/uxfont.woff2') format('woff2'),
-url('//img1.wsimg.com/ux/1.3.20-brand/fonts/uxfont.woff') format('woff'),
-url('//img1.wsimg.com/ux/1.3.20-brand/fonts/uxfont.ttf') format('truetype');
+src: url('//img1.wsimg.com/ux/1.3.21-brand/fonts/uxfont.eot');
+src: url('//img1.wsimg.com/ux/1.3.21-brand/fonts/uxfont.eot?#iefix') format('embedded-opentype'),
+url('//img1.wsimg.com/ux/1.3.21-brand/fonts/uxfont.woff2') format('woff2'),
+url('//img1.wsimg.com/ux/1.3.21-brand/fonts/uxfont.woff') format('woff'),
+url('//img1.wsimg.com/ux/1.3.21-brand/fonts/uxfont.ttf') format('truetype');
 }
 </style>
 <style>
@@ -125,7 +125,7 @@ var _gaDataLayer = _gaDataLayer || [];
 _gaDataLayer.push({ 'shopperId': '' });
 _gaDataLayer.push({ 'privateLabelId': '1' });
 _gaDataLayer.push({ 'isc': '' });
-_gaDataLayer.push({ 'server': 'P3PWCORPWEB150' });
+_gaDataLayer.push({ 'server': 'P3PWCORPWEB109' });
 _gaDataLayer.push({ 'segmentId': '0' });
 var _gaq = _gaq || [];
 _gaq.push(['_setDomainName', 'godaddy.com']);
@@ -169,7 +169,7 @@ setTimeout(insertTrafficImage, 2000);
 }
 function insertTrafficImage(a, b, c, d) {
 if (window.ux && window.ux.disable && window.ux.disable.trafficImage == false) { return; }
-a = 'https://img.godaddy.com/image.aspx?sitename=www.godaddy.com&server=P3PWCORPWEB150&privatelabelid=1&status=200&rand=377160&page=%2flegal-agreements.aspx&ci=20802&querystring=ci%3d20802&seg=0';b = document; c = 'img'; d = b.createElement(c); d.src = a; d.alt = '';d.className = 'traffic';
+a = 'https://img.godaddy.com/image.aspx?sitename=www.godaddy.com&server=P3PWCORPWEB109&privatelabelid=1&status=200&rand=825684&page=%2flegal-agreements.aspx&ci=20802&querystring=ci%3d20802&seg=0';b = document; c = 'img'; d = b.createElement(c); d.src = a; d.alt = '';d.className = 'traffic';
 a = b.getElementsByTagName('script')[0]; a.parentNode.insertBefore(d, a);
 }
 })();
@@ -2507,7 +2507,7 @@ var ux = ux || {};
 ux.config = ux.config || {};
 ux.config.plabel = '1';
 </script>
-<script src="//img1.wsimg.com/ux/1.3.20/js/uxcore.en.min.js"></script>
+<script src="//img1.wsimg.com/ux/1.3.21/js/uxcore.en.min.js"></script>
 <script>
 var uxel = ux.eldorado || {};
 uxel.fns = [];
@@ -2516,7 +2516,7 @@ uxel.data = {
 app: 'sales',
 market: 'en-us',
 appAlias: 'sales',
-version: '1.5.16',
+version: '1.5.19',
 plId: '1',
 context: {
 isrslr: false,
@@ -2533,13 +2533,16 @@ env: 'prodPhx',
 manifest: 'standardheaderfooter',
 urlArgs: '?ci=',
 formats: {
-sfullname: '{f} {l}',
-smenu: '{f}'
+sfullname: '%7Bf%7D%20%7Bl%7D',
+smenu: '%7Bf%7D'
 },
-thirdParty: {}
+thirdParty: {},
+inappHelpSupported: false
 };
-uxel.texts = {};
-uxel.urls = {};
+uxel.texts = {
+inappHelpTitle: 'Help'
+};
+uxel.urls = { };
 ux.eldorado = uxel;
 </script>
 <script>
@@ -2556,7 +2559,7 @@ cmp.indexOf('>') === 0 && major > version ? true :
 false;
 }
 if (!found) { return; }
-window.location = '//img1.wsimg.com/ux/1.3.20/html/browser-upgrade.en.html' +
+window.location = '//img1.wsimg.com/ux/1.3.21/html/browser-upgrade.en.html' +
 '?shopper=' + uxel.data.shopperId +
 '&pl=' + uxel.data.plId;
 }
@@ -2589,7 +2592,7 @@ uxel.urls.store = "http://companystore.godaddy.net/";
 </script>
 <script>uxel.data.thirdParty.livePerson = { js: '//img1.wsimg.com/fos/liveperson/js/liveperson_20150217.min.js', css: '//img1.wsimg.com/fos/liveperson/css/chat-window_20140205.css' };</script>
 <script>ux.jQuery = $;</script>
-<script src="//img1.wsimg.com/ux/eldorado/1.5.16/js/standardheaderfooter.min.js"></script>
+<script src="//img1.wsimg.com/ux/eldorado/1.5.19/js/standardheaderfooter.min.js"></script>
 <script>
 if (resetJQ) { jQuery.noConflict(true); }
 </script><!-- Manifest standardheaderfooter -->
