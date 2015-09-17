@@ -422,10 +422,6 @@ displayCheckOutButton('10151_CVMINICART', 'amount');
 </ul><!-- end header-top -->
 <div class="clear">&nbsp;</div>
 <!-- Start - ES_GlobalHeader_SecNav -->
-<style type="text/css">
-.prodRecWrapper .prodModule .prodImg, .modalRecommendations .prodModule .prodImg, .cartRecommendations .prodModule .prodImg {display:none}
-.prodRecWrapper .prodModule .prodInfo {padding-left:24px}
-</style>
 <ul class="main-sub-nav">
 <li><a href="/o/help" title="Help" id="header_help" manual_cm_sp="Header-_-Customer+Service-_-Help">Help</a></li>
 <li><a manual_cm_sp="Category-_-Advance+Know-How-_-Advance+Know-How" id="header_adv_know_how" title="Resources" href="/o/article-know-how-index">Resources</a></li>
@@ -1715,37 +1711,6 @@ View full vehicle information in
 <div id="a2cOkTitle">This item has been added to your cart:</div>
 <div id="a2cCatName"></div>
 <!-- Start - ES_AddToCart_Mid -->
-<script type="text/javascript">
-function addItemShowOverlay(a) {
-if (a.inventoryCheck == "false") window.location.href = "/web/OrderItemDisplay?storeId=10151&catalogId=10051&langId=-1&orderId=.&outOrderName=orderId&calculationUsageId=-1&updatePrces=1&defaultDelivery=1";
-else {
-var c = a.partNumber_1 ? a.partNumber_1[0] : a.ccPartNumber ? a.ccPartNumber[0] : "";
-a2cProductThumb = j("#quickViewImgPath_" + c).length > 0 ? j("#quickViewImgPath_" + c)[0].value : j('img[name="productThumbImage_' + c + '"]').length > 0 ? j('img[name="productThumbImage_' + c + '"]')[0].src : typeof a2cProductThumb !=
-"undefined" ? a2cProductThumb : "";
-typeof utag != "undefined" && utag.view({
-page_type: "ajax_addtocart",
-resx_itemid: c
-});
-if (a2cProductThumb=="/wcsstore/CVWEB/staticproductimage/images/NoImage_75x75.gif") a2cProductThumb = "/wcsstore/CVB2BDirectStorefrontAssetStore/images/common/blank.gif";
-if (j("#a2cProductImg").length > 0) j("#a2cProductImg")[0].src = a2cProductThumb;
-else j("#a2cOkTitle").after('<img id="a2cProductImg" width="100" height="100" src="' + a2cProductThumb + '" alt="' + j("#a2cCatName").html().replace(/"/g, "&quot;") + '" onerror="this.src=\'/wcsstore/CVWEB/staticproductimage/images/NoImage_75x75.gif\';">');
-j("#a2cCatName").next().hasClass("clear") || j("#a2cCatName").after('<div class="clear">&nbsp;</div>');
-if (a.notBuyable == "true") {
-j("#a2cBackground").css({
-opacity: "0.6"
-}).fadeIn("slow");
-j("#a2cOkNotBuyable").fadeIn("slow")
-} else j.fancybox({
-content: j("#a2cOk"),
-autoSize: true,
-autoResize: true,
-padding: 0,
-scrolling: "no",
-openEffect: "none"
-})
-}
-}
-</script>
 <div id="addtocart_rr"></div>
 <!-- End - ES_AddToCart_Mid -->
 <a href="javascript:;"><img src="/wcsstore/CVB2BDirectStorefrontAssetStore/images/button/continue.png" id="a2cOkShop"/></a>
@@ -1800,7 +1765,7 @@ dp.marketing_touch = utm_source;
 dp.site_type = 'Desktop';
 dp.customer_status = 'anonymous';
 var spLNDuringRegtest = '';
-dp.customer_id = '-1002';
+dp.customer_id = '354578267';
 if (j.cookie('PREFSTORE') != null ) {
 dp.primary_store_number = j.cookie('PREFSTORE');
 }else{
