@@ -39,8 +39,8 @@ window.HSW=window.HSW||{};HSW.contentInfo={contentId:"555"};
 /* ]]> */
 </script>
 
-<link href="http://www.howstuffworks.com/css/index/m/oo%252Freset.css%252Coo%252Fgrids.css%252Coo%252Fhsw%252Fall.css%252Coo%252Fplugin%252Fads.css%252Coo%252Fplugin%252Ftophat.css%252Coo%252Fplugin%252Fvendor%252Fss-social-circle.css%252Coo%252Fplugin%252FchannelNav.css%252Coo%252Fplugin%252Fbuttons.css%252Coo%252Fplugin%252FtocPagination.css%252Coo%252Fplugin%252Fstructured.css%252Coo%252Fplugin%252Fshare.css%252Coo%252Fplugin%252FpageTools.css%252Coo%252Fplugin%252FrightRail.css%252Coo%252Fplugin%252Ftabs.css%252Coo%252Fplugin%252Fpodcasts.css/s/hsw/v/en-us/r/10817" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://www.howstuffworks.com/js/index/m/jquery183.js%252Chsw-tlc.js%252Cmodal.js%252CpanelHover.js%252Csmartbanner.js%252Cnavigation.js%252CinView.js%252Cui%252Ftabs.js%252Cjquery.tools.scrollable125.js/s/hsw/v/en-us/r/10817"></script>
+<link href="http://www.howstuffworks.com/css/index/m/oo%252Freset.css%252Coo%252Fgrids.css%252Coo%252Fhsw%252Fall.css%252Coo%252Fplugin%252Fads.css%252Coo%252Fplugin%252Ftophat.css%252Coo%252Fplugin%252Fvendor%252Fss-social-circle.css%252Coo%252Fplugin%252FchannelNav.css%252Coo%252Fplugin%252Fbuttons.css%252Coo%252Fplugin%252FtocPagination.css%252Coo%252Fplugin%252Fstructured.css%252Coo%252Fplugin%252Fshare.css%252Coo%252Fplugin%252FpageTools.css%252Coo%252Fplugin%252FrightRail.css%252Coo%252Fplugin%252Ftabs.css%252Coo%252Fplugin%252Fpodcasts.css/s/hsw/v/en-us/r/10821" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.howstuffworks.com/js/index/m/jquery183.js%252Chsw-tlc.js%252Cmodal.js%252CpanelHover.js%252Csmartbanner.js%252Cnavigation.js%252CinView.js%252Cui%252Ftabs.js%252Cjquery.tools.scrollable125.js/s/hsw/v/en-us/r/10821"></script>
 
 
 <script>
@@ -612,7 +612,7 @@ DDM.adManager.init ({
 	<!-- AD : DFP -->
 	<div id="page-ad-container-bannerBottom" class="ad-tag" style="display: none;"></div>
 	
-<link href="http://www.howstuffworks.com/css/index/m/oo%252Fhsw%252Ffooter.css/s/hsw/v/en-us/r/10817" rel="stylesheet" type="text/css" />
+<link href="http://www.howstuffworks.com/css/index/m/oo%252Fhsw%252Ffooter.css/s/hsw/v/en-us/r/10821" rel="stylesheet" type="text/css" />
 <div class="footer-backdrop"></div>
 <footer data-track-gtm="Footer">
   <div class="footer-wrapper">
@@ -647,7 +647,7 @@ DDM.adManager.init ({
           </div>
         </div>
         <div class="col-md-4 col-lg-3 hidden-xs hidden-sm col-devices">
-          <h4>HSW ON THE GO</h4>
+          <h4 class="onthego"><a href="http://www.howstuffworks.com/app.htm" >HSW ON THE GO</a></h4>
           <p>Take us with you on your iPad, iPhone or favorite Android device.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -712,23 +712,10 @@ $(document).ready(function(){$("html").bind("mousemove keypress",function(event)
 {var that={};var $submitButton=$('#f-newsletter-btn'),$emailInput=$('#f-email-input'),$newsletterBlock=$('#f-newsletter'),mClass='subscribed',$newsletterMsg=$('#f-newsletter-msg');that.signup=function(e)
 {that.msg("<span class="+mClass+">Please wait while we subscribe you!</span>");$.ajax({type:'GET',url:'/ajax/newsletter-sign-up',dataType:'json',data:{email:$emailInput.val()},error:function(xhr,status,error){this.error();},success:function(data){if(data.success){that.msg("<span class="+mClass+">Thanks, we'll send you some Stuff soon!</span>");}
 else{that.error();}}});return false;}
-that.msg=function(code){$newsletterBlock.hide();$newsletterMsg.html(code);}
-that.error=function(){$newsletterBlock.show();$newsletterMsg.html('Oops! Something went wrong.<br />Please enter a valid email address.').css('color','red');}
+that.msg=function(code){$newsletterBlock.hide();$newsletterMsg.html(code);$newsletterMsg.show();}
+that.error=function(){$newsletterMsg.hide();$newsletterBlock.show();}
 $submitButton.click(function(e){if($emailInput.val()==$emailInput.attr('placeholder')){that.error();}
-else{that.signup();}});return that;})();HSW.newsletterSignUpOrig=(function()
-{var that={};var $submitButton=$('.subscribeButton'),$emailInput=$('#footerNewsletterSignUpEmail'),$okMessage=$('.footerNewsletter .emailInput'),$class='subscribed';$footerNewsletterMessage=$('#footerNewsletterMessage');that.signup=function(e)
-{that.msg("<span class="+$class+">Please wait while we subscribe you!</span>");$.ajax({type:'GET',url:'/ajax/newsletter-sign-up',dataType:'json',data:{email:$emailInput.val()},success:function(data)
-{if(data.success)
-{that.msg("<span class="+$class+">Thanks, we'll send you some Stuff soon!</span>");}
-else
-{that.error();}}});return false;}
-that.msg=function(code){if($class=="subscribedtop"){$(".subscribe").css('height','60px');$okMessage.html(code);$(".subscribe").animate({height:"28px"},15000);}else{$okMessage.html(code);}}
-that.error=function(){if($class=="subscribedtop"){$(".subscribe").css('height','60px');$okMessage.html("<span class='errorsibcription'>Oops! Something went wrong.<br />Please enter a valid email address.</span>");$(".errorsibcription").show().delay(5000).fadeOut();$(".subscribe").animate({height:"28px"},7000);}else{$footerNewsletterMessage.html('Oops! Something went wrong.<br />Please enter a valid email address.').css('color','red');}}
-$submitButton.click(function(event)
-{id=this.getAttribute("id");if(id!=="footerSubscribe2"){$emailInput=$('#footerNewsletterSignUpEmailTop');$okMessage=$('.message');$class='subscribedtop';};if($emailInput.val()==$emailInput.attr('placeholder'))
-{that.error();}
-else
-{that.signup();var tag='Article : Newsletter';var vars='&c25='+tag+'&v39='+tag+'&events=event11';sendTags(tag,vars,this,event,true);}});return that;})();
+else{that.signup();}});return that;})();
 /* ]]> */
 </script>
 <script type="text/javascript">
