@@ -3,6 +3,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type='text/javascript'>var mobileParams = '';</script><script type='text/javascript' src='//s3.amazonaws.com/madmobile/collectionsetc/js/mobiledirect.js'></script>
+
+<!-- preload dns names -->
+   <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.mercent.com">
+     <link rel="dns-prefetch" href="//googletagmanager.com">
+    <link rel="dns-prefetch" href="//manage.hawksearch.com">
+ 
+
+
 <!-- Begin Monetate ExpressTag Sync v8. Place at start of document head. DO NOT ALTER. -->
 <script type="text/javascript">
     var monetateT = new Date().getTime();
@@ -19,7 +29,7 @@
 
 <!-- App Dynamics EUEM agent -->
 <script>window['adrum-start-time'] = new Date().getTime();</script>
-<script src="/scripts/app-dynamics?v=ymVgNxxR3qDTQa7dqBaQlBYt79WJSWYmcGF6VammDJo1"></script>
+<script src="/scripts/app-dynamics?v=fVV0ID3-sgFSZG5Grg8edM58rcsjj8QYhyoTNJtuo6M1"></script>
 
 <!-- End of App Dynamics EUEM Agent -->    
 
@@ -33,43 +43,27 @@
 <link rel="shortcut icon" media="all" href="/images/Misc/favicon.ico" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<link href="/css/styles?v=0hVC1FuDhsMa53vochUzcAtrP-nOM2dANFf9JmJ74bI1" rel="stylesheet"/>
+<link href="/css/styles?v=ltKNZmMFsGq0Pxkh-6fV-fw73MtBXni3MhablCsYqxI1" rel="stylesheet"/>
 
-<link href="/css/info?v=zAWj_3eNz0kNC5i6xwzEAVwN4wlybQFfox5lML5sxm01" rel="stylesheet"/>
+<link href="/css/info?v=H5oItzLn_KFcdvnR8jp-EFCK8RYRGfkOLNroLMWQIII1" rel="stylesheet"/>
 
 <link href="/css/ecommerce-webforms?v=CtfZor4UfNw3SQ4gY_v1uAV9_5zzD_-oF_ie38brntg1" rel="stylesheet"/>
 
-<link href="/css/ecommerce?v=-mSSrJhKdmf--XBLMQ8ac33OQ5GO12_wgl2vCdE2SQo1" rel="stylesheet"/>
-
-
-
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.0.0.min.js"></script>
-
-    <script type="text/javascript" src="//t.p.mybuys.com/js/mybuys4.js"></script>
-    <script type="text/javascript" src="//t.p.mybuys.com/clients/COLLECTIONSETC/js/setup.js"></script>
-    <script type="text/javascript">
-        (function (HawkSearch, undefined) {
-            HawkSearch.BaseUrl = 'http://manage.hawksearch.com/sites/collectionsetc';
-            if ("https:" == document.location.protocol) {
-                HawkSearch.BaseUrl = HawkSearch.BaseUrl.replace("http://", "https://");
-            }
-        }
-
-        (window.HawkSearch = window.HawkSearch || {}));
-        document.write(unescape("%3Clink rel='stylesheet' type='text/css' href='" + HawkSearch.BaseUrl + "/includes/hawksuggest.css'%3E%3C/link%3E"));
-        document.write(unescape("%3Cscript src='" + HawkSearch.BaseUrl + "/includes/hawksearch.min.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-
-<!--[if lt IE 9]>
-    <script src="/scripts/respond?v=6VHd2jB-V3mqXjqCtgdXrfWdAZBVeUUflf9bSRcC2rM1"></script>
-
-<![endif]-->
+<link href="/css/ecommerce?v=UMSkolaXf64QMgISTUoxsDLEze24fAMXimOtfYgmgB01" rel="stylesheet"/>
 
 <title>
 
 </title></head>
 <body id="body" itemscope itemtype="http://schema.org/WebPage">
+     <script src="/scripts/plugins/mybuys?v=HTzLLyvZQh1K8qY46y8COSLXuX9tifHWS9XKPxy-aV41"></script>
+
+        <script src="/scripts/plugins/jquery?v=frdC2HG4wTLzJOHitkeFYw16pE-9lJQkiQC5ltZPUj01"></script>
+
+
+<!--[if lt IE 9]>
+    <script src="/scripts/respond?v=GhzPtFRt1dPVUviwwIIdAPDlWTLqG-X17SPrcvwSpRM1"></script>
+
+<![endif]-->
     
 
 <script>
@@ -332,7 +326,6 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
 var path = window.location.pathname;
 path = path.toLowerCase();
 
-
 function CloseOverlay(bCancel) {
             CEI.Email.closeEmailOverlay(bCancel);
         }
@@ -342,12 +335,27 @@ function CloseOverlay(bCancel) {
             CEI.Email.saveEmailOverlay(inputValue);
         }
 
+if (path !== "/shopcart.aspx"
+    && path !== "/billinginfo.aspx"
+    && path !== "/addressverification.aspx"
+    && path !== "/checkoutoption.aspx"
+    && path !== "/orderpayment.aspx"
+    && path !== "/orderconfirmation.aspx"
+    && path !== "/cart.aspx"
+    && path !== "/onepagecheckout.aspx"
+    && path !== "/checkoutoption2.aspx"
+    && path !== "/orderconfirmation2.aspx") {
+    if ($("#overlay").text().length > 50) {
+            backgroundId = setTimeout("$('#body').append('<div id=\"background\"></div>');", 5000);
+            modalId = setTimeout(function() { $('#overlay').fadeIn(250); }, 5000);
+    }
+}
+
     $('#goButton').click(function () {
         SaveOverlay();
     });
 
 </script>
-
 
 
 
@@ -1958,7 +1966,8 @@ Privacy & Security
 
 
     <!-- BEGIN MERCENT -->
-    <script type="text/javascript" src="//cdn.mercent.com/js/tracker.js"></script>
+    <script src="/scripts/plugins/mercent?v=JpgM6BjowKQR9nsRiyEudGy_JRC5RL-kmEbaSlaoJHM1"></script>
+
     <script type="text/javascript"><!-- try{mr_merchantID="CollectionsEtc";mr_Track();}catch(err){}--></script>
     
     <!-- END MERCENT -->
@@ -1987,25 +1996,20 @@ var s = d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
        var modalId;
    </script>
     
-        <script language="javascript" type="text/javascript">
-            $(document).ready(function () {
-                backgroundId = setTimeout("$('#body').append('<div id=\"background\"></div>');", 5000);
-                modalId = setTimeout(function () {
-                  $('#overlay').fadeIn(250); }, 5000);
-            });
-        </script>
-    
 
-    <script language="javascript" type="text/javascript">
-        function CloseOverlay(bCancel) {
-            CEI.Email.closeEmailOverlay(bCancel);
+
+
+      <script type="text/javascript">
+          (function (HawkSearch, undefined) {
+              HawkSearch.BaseUrl = 'http://manage.hawksearch.com/sites/collectionsetc';
+            if ("https:" == document.location.protocol) {
+                HawkSearch.BaseUrl = HawkSearch.BaseUrl.replace("http://", "https://");
+            }
         }
 
-        function SaveOverlay() {
-            var inputValue = document.getElementById("txtEmailOverlay").value;
-            CEI.Email.saveEmailOverlay(inputValue);
-        }
-
+        (window.HawkSearch = window.HawkSearch || {}));
+        document.write(unescape("%3Clink rel='stylesheet' type='text/css' href='" + HawkSearch.BaseUrl + "/includes/hawksuggest.css'%3E%3C/link%3E"));
+        document.write(unescape("%3Cscript src='" + HawkSearch.BaseUrl + "/includes/hawksearch.min.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
      
     <script type="text/javascript">
@@ -2018,13 +2022,11 @@ var s = d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
                 isAutoWidth: true
             });
         };
-
-      
         //]]>
     </script>
 </body>
     
-    <script src="/scripts/scripts?v=ZTWYeVqOt_tvnKymST2bIQbCP4kquiUZpY2kUbox2Lw1"></script>
+    <script src="/scripts/scripts?v=XYUbV7Tm2gKhomIyLANCOMq5TL9GIOvRC96WQfndtmo1"></script>
 
   
    
