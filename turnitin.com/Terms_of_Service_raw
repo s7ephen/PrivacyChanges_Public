@@ -113,7 +113,7 @@
 
 
 	                        </div>
-                                                                <a href="/newuser_type.asp?lang=en-us">Create Account</a>
+                                                                <a id="newuser" href="/newuser_type.asp?lang=en-us">Create Account</a>
                         <span style="color: rgb(0, 103, 159); font-size: 1.05rem; font-weight: 200;">|</span>
                         <a id="login" href="/en-us/login">Log In</a>
                                     </div>
@@ -631,6 +631,7 @@
           	}
           }
           $('a#login').attr('href',window.location.protocol+'//'+window.location.host+langCode[0]+'/login');
+          $('a#newuser').attr('href',window.location.protocol+'//'+window.location.host+'/newuser_type.asp?lang='+langCode[0].substr(1));
           $('a#logo-link').attr('href', window.location.protocol+'//'+window.location.host+langCode[0]+'/');
 
           $('.bannergroup').bjqs({
