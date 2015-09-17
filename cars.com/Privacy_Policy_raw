@@ -528,7 +528,7 @@
                                         </li>
                                         <li>
                                             <a href="/recalls/" name="&lid=header-get-recalls">
-                                                Safety & Recall Notes
+                                                Safety & Recall Notices
                                             </a>
                                         </li>
                                         <li>
@@ -886,6 +886,7 @@
 
 
 
+
 <!-- SiteCatalyst code: http://www.omniture.com -->
 <script type="text/javascript" src="/js/omniture/s_code.js"></script>
 <script type="text/javascript">
@@ -1037,7 +1038,7 @@ if (window.srpData && window.srpData.activeState && window.srpData.activeState.u
 }
 s_clven.prop71 = decodeURIComponent(QueryString.prop71); /* Band(s) with selection(s) in Shop-by widget on Research Index */
 
-if ( window.sessionStorage.getItem('prop73') ) {  
+if ( window.sessionStorage.getItem('prop73') ) {
     s_clven.prop73 = window.sessionStorage.getItem('prop73');
     window.sessionStorage.removeItem("prop73");
 }
@@ -1132,7 +1133,6 @@ s_clven.eVar54="";
 s_clven.eVar60=""; 
 s_clven.eVar61=""; 
 s_clven.eVar62=""; 
- 
 
 function readCookie(name) {
   var nameEQ = name + "=";
@@ -1146,15 +1146,21 @@ function readCookie(name) {
 }
 
 
-if(carsJSModule === 'modules/vdp/vdp' ){
-  var range = parseInt(readCookie('showhidewidget'),0);
-  if (range < 5){
-    s_clven.eVar64="VDP Price Range:Test";
-  }
-  if (range >= 95 && range <= 100){
-    s_clven.eVar64="VDP Price Range:Control";
-  }
-};
+//   s_clven.eVar64 = 'shoptest-' + readCookie('rollout');
+
+
+// show rollout number on eVar54 on EVERY non-cms page
+s_clven.eVar54=readCookie('rollout');
+// 
+// if(carsJSModule === 'modules/vdp/vdp' ){
+//   var range = parseInt(readCookie('showhidewidget'),0);
+//   if (range < 5){
+//     s_clven.eVar64="VDP Price Range:Test";
+//   }
+//   if (range >= 95 && range <= 100){
+//     s_clven.eVar64="VDP Price Range:Control";
+//   }
+// };
 
  
 
@@ -1188,21 +1194,21 @@ optimizely.push("sc_activate");
 
 
 // overrides for page-over-page prop, evar, event & listvar tracking
-// NOTE: Code in the header takes the https: localStorage omniture values 
+// NOTE: Code in the header takes the https: localStorage omniture values
 //       and resaves them to http: localStorage for access here
 //       After saving the https values to http, the https values get flushed to prevent unintentional refires
 
 (function() {
   if (window.CARSBRIDGE.getOmnitureBridgeValue('props')) {
-    var o = window.CARSBRIDGE.getOmnitureBridgeValue('props');  
+    var o = window.CARSBRIDGE.getOmnitureBridgeValue('props');
     for (var k in o) {
       s_clven[k] = o[k];
     }
     window.CARSBRIDGE.setOmnitureBridgeValue('props','');
-  } 
+  }
 
   if (window.CARSBRIDGE.getOmnitureBridgeValue('evars')) {
-    var o = window.CARSBRIDGE.getOmnitureBridgeValue('evars');  
+    var o = window.CARSBRIDGE.getOmnitureBridgeValue('evars');
     for (var k in o) {
       s_clven[k] = o[k];
     }
@@ -1213,7 +1219,7 @@ optimizely.push("sc_activate");
     var o = window.CARSBRIDGE.getOmnitureBridgeValue('events');
     // events is a comma-delimited string, so be careful about additions
     if (s_clven.events) {
-      s_clven.events = s_clven.events + "," + o;  
+      s_clven.events = s_clven.events + "," + o;
     } else {
       s_clven.events = o;
     }
@@ -1233,7 +1239,6 @@ optimizely.push("sc_activate");
 /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! ***************/
 var s_code=s_clven.t();if(s_code) { document.write(s_code); };document.close();
 </script>
-
 
 
 
