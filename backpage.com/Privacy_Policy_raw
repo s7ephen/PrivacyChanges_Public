@@ -25,7 +25,7 @@
       
 
       
-      <link rel="stylesheet" type="text/css" href="http://www.backpage.com/styles/Global.css?cb=cec50f2db07932404317d8233c2fedbe">
+      <link rel="stylesheet" type="text/css" href="http://www.backpage.com/styles/Global.css?cb=9729dcdd3d5c0a4653363de0fef0dea6">
 
       
       
@@ -64,41 +64,42 @@
 
 
 
+    
+    <div class="nav-trigger sidebar-toggle">nav</div>
+    <div class="search-trigger">search</div>
+    
+
+<div class="sidebar-nav">
+  <div class="sidebar">
+    <div class="inner">
       
-      <div class="nav-trigger sidebar-toggle">nav</div>
-      <div class="search-trigger">search</div>
+      <div id="postAdButton">
+        <form name="formPost" id="formPost" action="http://posting.www.backpage.com/online/classifieds/PostAdPPI.html/www/www.backpage.com/" method="get">
+          <input type="submit" value="Post Ad" class="button" id="postAdButton">
+          <input type="hidden" name="u" value="central">
+          <input type="hidden" name="serverName" value="www.backpage.com">
+        </form>
+      </div><!-- #postAdButton -->
 
-      <div class="sidebar-nav">
-        <div class="sidebar">
-          <div class="inner">
-            
-            <div id="postAdButton">
-              <form name="formPost" id="formPost" action="http://posting.www.backpage.com/online/classifieds/PostAdPPI.html/www/www.backpage.com/" method="get">
-                <input type="submit" value="Post Ad" class="button" id="postAdButton">
-                <input type="hidden" name="u" value="central">
-                <input type="hidden" name="serverName" value="www.backpage.com">
-              </form>
-            </div><!-- #postAdButton -->
+      
+      <ul class="top">
+        <li class="nav-item"><a href="http://www.backpage.com/classifieds/AllCities">Home</a></li>
+        <li class="nav-item"><a href="https://my.backpage.com/classifieds/central/index">My Account</a></li>
+        <li class="nav-item"><a href="https://my.backpage.com/classifieds/central/PurchaseCredits.html/www.backpage.com/">Buy Credits<span class="newIcon">(new!)</span></a></li>
+      </ul>
 
-            
-            <ul class="top">
-              <li class="nav-item"><a href="http://www.backpage.com/classifieds/AllCities">Home</a></li>
-              <li class="nav-item"><a href="https://my.backpage.com/classifieds/central/index">My Account</a></li>
-              <li class="nav-item"><a href="https://my.backpage.com/classifieds/central/PurchaseCredits.html/www.backpage.com/">Buy Credits<span class="newIcon">(new!)</span></a></li>
-            </ul>
+      
+      
 
-            
-            
+        
+        
 
-              
-              
+          
+          
 
-                
-                
-
-                <h3>Change Language</h3>
-                <ul class="list languageSwitch">
-                  <li class="nav-item"><a href="#cn-cn" rel="nofollow" data-lang="cn-cn">中文</a></li>
+          <h3>Change Language</h3>
+          <ul class="list languageSwitch">
+            <li class="nav-item"><a href="#cn-cn" rel="nofollow" data-lang="cn-cn">中文</a></li>
 <li class="nav-item"><a href="#cs-cz" rel="nofollow" data-lang="cs-cz">czech</a></li>
 <li class="nav-item"><a href="#da-dk" rel="nofollow" data-lang="da-dk">danish</a></li>
 <li class="nav-item"><a href="#de-de" rel="nofollow" data-lang="de-de">deutsch</a></li>
@@ -121,49 +122,51 @@
 <li class="nav-item"><a href="#sk-sk" rel="nofollow" data-lang="sk-sk">slovak</a></li>
 <li class="nav-item"><a href="#sv-se" rel="nofollow" data-lang="sv-se">swedish</a></li>
 <li class="nav-item"><a href="#tr-tr" rel="nofollow" data-lang="tr-tr">türkçe</a></li>
-                </ul>
-                
-                <script>
-                  $("ul.languageSwitch li a").on("click", function(e){
-                    e.preventDefault();
-                    var myLang = $(this).attr("data-lang");
-                    var myStart = window.location.href.match(/^https?:\/\//)||'';
-                    var myUrl = window.location.href.replace(/^https?:\/\//,'');
-                    if (myLang!=""){
-                      if (myUrl.search(/\/..-..\//) == -1){
-                        
-                          var newUrl = myUrl.replace(/\//, '/'+myLang+'/');
-                        
-                      } else {
-                        var newUrl = myUrl.replace(/\/..-..\//, '/'+myLang+'/');
-                      }
-                      setCookie("languageCode",myLang,30,"backpage.com");
-                    } else {
-                      var newUrl = myUrl.replace(/\/..-..\//, '/');
-                      setCookie("languageCode","",30,"backpage.com");
-                    }
-                    //console.log(myStart+newUrl);
-                    window.location = myStart+newUrl;
-                  });
-                </script>
-              
-            
+<li class="nav-item"><a href="#ur-pk" rel="nofollow" data-lang="ur-pk">urdu</a></li>
+          </ul>
+          
+          <script>
+            $("ul.languageSwitch li a").on("click", function(e){
+              e.preventDefault();
+              var myLang = $(this).attr("data-lang");
+              var myStart = window.location.href.match(/^https?:\/\//)||'';
+              var myUrl = window.location.href.replace(/^https?:\/\//,'');
+              if (myLang!=""){
+                if (myUrl.search(/\/..-..\//) == -1){
+                  
+                    var newUrl = myUrl.replace(/\//, '/'+myLang+'/');
+                  
+                } else {
+                  var newUrl = myUrl.replace(/\/..-..\//, '/'+myLang+'/');
+                }
+                setCookie("languageCode",myLang,30,"backpage.com");
+              } else {
+                var newUrl = myUrl.replace(/\/..-..\//, '/');
+                setCookie("languageCode","",30,"backpage.com");
+              }
+              //console.log(myStart+newUrl);
+              window.location = myStart+newUrl;
+            });
+          </script>
+        
+      
 
-            
-            
-            <br>
+      
+      
+      <br>
 
-            
-            <ul class="list">
-              <li class="nav-item">
-                <a href="http://www.backpage.com/classifieds/AllCities">View All Cities</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="dimmer"></div>
-      </div><!-- .sidebar-nav -->
-    
+      
+      <ul class="list">
+        <li class="nav-item">
+          <a href="http://www.backpage.com/classifieds/AllCities">View All Cities</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="dimmer"></div>
+</div><!-- .sidebar-nav -->
+
+  
 
   
   
