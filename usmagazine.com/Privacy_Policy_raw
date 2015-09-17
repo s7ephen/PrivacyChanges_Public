@@ -156,6 +156,32 @@ node.parentNode.insertBefore(gads, node);
                         }
                     });        
     			}                
+			},
+			rightRailBoxLoaded: false,
+			loadRightRailBox: function() {
+
+    			if (!gptAds.rightRailBoxLoaded) {
+            		googletag.cmd.push(function() {
+            
+                        var slot = googletag.defineSlot(gptAds.adUnitPath, [300,252], 'right_rail_box').addService(googletag.pubads());
+                        googletag.display('right_rail_box');
+                        
+                        try {
+                            amznads.getAdsCallback('3050', function() {
+                                amznads.setTargetingForGPTAsync('amznslots');
+                                googletag.pubads().refresh([slot]);                     
+                                // once the right rail box is loaded, prevent this function from firing again
+                                gptAds.rightRailBoxLoaded = true;
+                            });
+                            googletag.pubads().clearTargeting('amznslots');
+                        } 
+                        catch(e) {
+                            googletag.pubads().refresh([slot]);                     
+                            // once the footer is loaded, prevent this function from firing again
+                            gptAds.rightRailBoxLoaded = true;
+                        }
+                    });        
+    			}                
 			}
 		};
 		
@@ -247,7 +273,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             	<a href="/" data-label="Logo" title="US Weekly">
             		<span class="altText">US Weekly</span>
             	</a>
-            	            	<img src="https://ad.doubleclick.net/ddm/ad/N5776.129448WENNERMEDIA-USWEEKLY/B9009406.122213597;sz=1x1;ord=%%CACHEBUSTER%%?" />
             	            </h3>
 
                          
@@ -316,19 +341,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<h4><span class="altText">Trending</span></h4>
 		<ul class="clearfix" data-track-tags="a" data-category="Nav" data-action="Subnav" data-label="window.location">
 																			<li>
-							<a href="/celebrity-news/news/rebel-wilson-splits-from-mickey-gooch-jr-after-a-few-months-of-dating-2015149">Rebel Wilson</a>
+							<a href="/celebrity-style/pictures/tiff-2015-2015149/47143">TIFF</a>
 						</li>
 																			<li class="separator">|</li>
 												<li>
-							<a href="/celebrity-style/news/gigi-bella-hadid-flash-their-butts-in-bikinis-at-nyfw-photos-2015149">Gigi and Bella</a>
+							<a href="/celebrity-style/pictures/stars-fashion-week-2015-spring-2016-2015109/47040">NYFW</a>
 						</li>
 																			<li class="separator">|</li>
 												<li>
-							<a href="/celebrity-news/news/kanye-west-slammed-as-unethical-goliath-by-designer-anne-bowen-2015149">Kanye Slammed</a>
+							<a href="/entertainment/news/emmy-nominees-2105-full-list-of-nominations-for-the-67th-emmy-awards-2015167">Emmys </a>
 						</li>
 																			<li class="separator">|</li>
 												<li>
-							<a href="/celebrity-news/news/kim-richards-sentenced-to-aa-meetings-for-hotel-arrest-2015149">Kim Richards</a>
+							<a href="/celebrity-style/news/kylie-jenner-demure-makeunder-all-black-outfit-vera-wang-spring-2016-2015159">Kylie Jenner</a>
 						</li>
 																			<li class="separator">|</li>
 												<li>
@@ -586,10 +611,10 @@ New York, NY 10104
 	<div class="bottom">
 		<div class="top">
 			<div id="hot-pics-content" class="clearfix" data-track-tags="a" data-category="Article" data-action="HotPics">
-				<a href="/hot-pics/honestly-amazing-2015149" class="featured">
-					<img width="286px" alt="Honestly Amazing" src="http://assets-s3.usmagazine.com/uploads/assets/photo_galleries/hot_pics_galleries/20090-honestly-amazing/1442279946_jessica-alba-jimmy-fallon-453.jpg" />					<span class="caption">
+				<a href="/hot-pics/heirs-to-hollywood-2015179" class="featured">
+					<img width="286px" alt="Heirs to Hollywood" src="http://assets-s3.usmagazine.com/uploads/assets/photo_galleries/hot_pics_galleries/20119-heirs-to-hollywood/1442499726_jaden-smith-hailey-baldwin-453.jpg" />					<span class="caption">
 						<h3><span class="altText">Hot Pics!</span></h3>
-						<h4>Honestly Amazing&nbsp;<span class="link-arrow">&raquo;</span></h4>
+						<h4>Heirs to Hollywood&nbsp;<span class="link-arrow">&raquo;</span></h4>
 					</span>
 				</a>
 			</div><!-- #hot-pics-content -->
@@ -603,10 +628,10 @@ New York, NY 10104
 				<h3>Top Stories</h3>
 																		<li  id="story-1">
 						<div class="info">
-							<span class="label">Exclusive</span>
+							<span class="label"></span>
 							<h4>
-								<a href="/celebrity-news/news/taylor-swift-calls-boyfriend-calvin-harris-adam-real-name-2015149">
-									Taylor Swift Calls Boyfriend Calvin Harris by His Real Name, Which Is…<span class="link-arrow">&nbsp;&#187;</span>
+								<a href="/celebrity-news/news/mystery-gop-hunk-revealed-find-out-who-was-sitting-behind-tapper-2015179">
+									Hot Debate Guy Revealed! Find Out Who Was Sitting Behind Jake Tapper<span class="link-arrow">&nbsp;&#187;</span>
 								</a>
 							</h4>
 						</div>
@@ -617,8 +642,8 @@ New York, NY 10104
 						<div class="info">
 							<span class="label"></span>
 							<h4>
-								<a href="/celebrity-news/news/miss-america-betty-cantrell-is-crowned-after-brady-response-reactions-2015149">
-									Miss America Says Brady "Definitely Cheated," Then Crowned: Reactions<span class="link-arrow">&nbsp;&#187;</span>
+								<a href="/celebrity-style/news/kate-middleton-houndstooth-dress-black-pumps-style-details-2015179">
+									Kate Middleton's $1,595 Houndstooth Dress: All the Details! <span class="link-arrow">&nbsp;&#187;</span>
 								</a>
 							</h4>
 						</div>
@@ -629,8 +654,8 @@ New York, NY 10104
 						<div class="info">
 							<span class="label"></span>
 							<h4>
-								<a href="/celebrity-news/news/kanye-west-slammed-as-unethical-goliath-by-designer-anne-bowen-2015149">
-									Designer Slams Kanye as Unethical "Goliath" After NYFW Conflict<span class="link-arrow">&nbsp;&#187;</span>
+								<a href="/celebrity-style/news/kate-middleton-returns-to-work-officially-debuts-bangs-in-london-2015179">
+									Looking Great! Kate Middleton (and Her Bangs!) Get Back to Work<span class="link-arrow">&nbsp;&#187;</span>
 								</a>
 							</h4>
 						</div>
@@ -641,8 +666,8 @@ New York, NY 10104
 						<div class="info">
 							<span class="label"></span>
 							<h4>
-								<a href="/celebrity-style/news/jessica-biel-works-post-baby-body-in-floral-dress-on-rare-outing-2015149">
-									Work It! Jessica Biel Displays Slim Post-Baby Bod on Rare Outing<span class="link-arrow">&nbsp;&#187;</span>
+								<a href="/celebrity-style/news/pregnant-kristin-cavallari-sheer-separates-nyfw-style-photos-2015179">
+									Baby Boom! Kristin Cavallari Works Her Bump in Sheer Separates at NYFW<span class="link-arrow">&nbsp;&#187;</span>
 								</a>
 							</h4>
 						</div>
@@ -653,8 +678,8 @@ New York, NY 10104
 						<div class="info">
 							<span class="label"></span>
 							<h4>
-								<a href="/celebrity-moms/news/jessica-simpson-daughter-maxwell-cheeses-perfection-new-pic-2015149">
-									Jessica Simpson's Daughter Is the Definition of Perfection in New Pic!<span class="link-arrow">&nbsp;&#187;</span>
+								<a href="/celebrity-news/news/jessica-alba-got-bodychecked-by-kylie-jenners-bodyguards-at-nyfw-2015179">
+									Jessica Alba: I Got "Bodychecked" by Kylie Jenner's Bodyguards at NYFW<span class="link-arrow">&nbsp;&#187;</span>
 								</a>
 							</h4>
 						</div>
@@ -714,31 +739,24 @@ New York, NY 10104
 	<ul>
 					<li class="style">
 				<span class="channel">Style</span>
-				<a href="/celebrity-style/news/katie-holmes-hugs-sweetie-suri-cruise-in-adorable-instagram-photo-2015149"><img width="148" class="thumbnail" alt="Katie Holmes Hugs &quot;Sweetie&quot; Suri Cruise in Adorable Instagram Photo" src="http://assets-s3.usmagazine.com/uploads/assets/articles/91957-katie-holmes-hugs-sweetie-suri-cruise-in-adorable-instagram-photo/promo/148x88/1442265232_katie-holmes-suri-cruise-300.jpg" /></a>				<a class="type" href="/celebrity-style/news/katie-holmes-hugs-sweetie-suri-cruise-in-adorable-instagram-photo-2015149">Adorable! Katie Holmes Hugs "Sweetie" Suri Cruise</a>                			</li>
+				<a href="/celebrity-style/news/lupita-nyongo-second-vogue-cover-73-questions-video-2015179"><img width="148" class="thumbnail" alt="Lupita Nyong'o Weighs in on the Age-Old Han vs. Luke Debate in Vogue's 73 Questions: Watch!" src="http://assets-s3.usmagazine.com/uploads/assets/articles/92089-lupita-nyongo-second-vogue-cover-73-questions-video/promo/148x88/1442502251_lupita-nyongo-vogue-cover-300.jpg" /></a>				<a class="type" href="/celebrity-style/news/lupita-nyongo-second-vogue-cover-73-questions-video-2015179">Lupita Nyong'o Hula-Hoops in Heels, Dishes on Star Wars for&hellip;</a>                			</li>
 					
 					<li class="beauty">
 				<span class="channel">Beauty</span>
-				<a href="/celebrity-beauty/news/kylie-jenner-squashes-boob-job-rumors-i-use-a-victorias-secret-bra-2015149"><img width="148" class="thumbnail" alt="Kylie Jenner Squashes Boob Job Rumors: See Before and After Pics!" src="http://assets-s3.usmagazine.com/uploads/assets/articles/91950-kylie-jenner-squashes-boob-job-rumors-i-use-a-victorias-secret-bra/promo/148x88/1442258675_kylie-jenner-300.jpg" /></a>				<a class="type" href="/celebrity-body/news/kylie-jenner-squashes-boob-job-rumors-i-use-a-victorias-secret-bra-2015149">They're Real! Kylie Jenner Squashes Boob Job Rumors</a>				
+				<a href="/celebrity-beauty/news/gwen-stefani-repeats-hairstyle-even-though-shes-scared-youll-be-mad-2015169"><img width="148" class="thumbnail" alt="Gwen Stefani on Dip-Dyed Hair: Fans Get Mad When I Don't Do Something New Every Time" src="http://assets-s3.usmagazine.com/uploads/assets/articles/92061-gwen-stefani-repeats-hairstyle-even-though-shes-scared-youll-be-mad/promo/148x88/1442436295_gwen-stefani-300.jpg" /></a>				<a class="type" href="/celebrity-body/news/gwen-stefani-repeats-hairstyle-even-though-shes-scared-youll-be-mad-2015169">Oh No! Gwen Stefani: Fans Are "Going to Be So Mad" at My&hellip;</a>				
                             </li>
 					
 					<li class="moms">
 				<span class="channel">Moms</span>
-				<a href="/celebrity-moms/news/jessica-simpson-daughter-maxwell-cheeses-perfection-new-pic-2015149"><img width="148" class="thumbnail" alt="Jessica Simpson's Daughter, Maxwell, Cheeses, Is &quot;Perfection&quot; in Precious New Pic" src="http://assets-s3.usmagazine.com/uploads/assets/articles/91949-jessica-simpson-daughter-maxwell-cheeses-perfection-new-pic/promo/148x88/1442258269_jessica-simpson-maxwell-300.jpg" /></a>				<a class="type" href="/celebrity-moms/news/jessica-simpson-daughter-maxwell-cheeses-perfection-new-pic-2015149">Jessica Simpson's Daughter Is the Definition of Perfection&hellip;</a>                     <!-- sponsor logo -->
-    <div>
-       <a href="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=20&amp;mc=click&amp;pli=11859979&amp;PluID=0&amp;ord=%%CACHEBUSTER%%" target="_blank"><img title="babybel_footer_148x60" src="/uploads/assets/touts/babybel_footer_148x60.png" alt="babybel_footer_148x60" width="148" height="60" /></a>
-&nbsp;
-&nbsp;             
-    </div>
-    <!-- end sponsor logo -->
-			</li>
+				<a href="/celebrity-moms/news/danielle-milian-opens-up-about-newborn-sons-death-from-omphalocele-2015179"><img width="148" class="thumbnail" alt="Danielle Milian Opens Up About Newborn Son's Death: &quot;Every Moment We Had With Him Was a Blessing&quot;" src="http://assets-s3.usmagazine.com/uploads/assets/articles/92086-danielle-milian-opens-up-about-newborn-sons-death-from-omphalocele/promo/148x88/1442500957_danielle-milian-178.jpg" /></a>				<a class="type" href="/celebrity-moms/news/danielle-milian-opens-up-about-newborn-sons-death-from-omphalocele-2015179">Danielle Milian Opens Up About Newborn Son's Death: He Was&hellip;</a>                 			</li>
 				
 					<li class="body">
 				<span class="channel">Body</span>
-				<a href="/celebrity-body/news/amy-duggar-bikini-2015149"><img width="148" class="thumbnail" alt="Amy Duggar Flashes Bikini Body as She Honeymoons with Husband Dillon King: Instagram Vid" src="http://assets-s3.usmagazine.com/uploads/assets/articles/91926-amy-duggar-bikini/promo/148x88/1442238130_amy-duggar-bikini-300.jpg" /></a>				<a class="type" href="/celebrity-body/news/amy-duggar-bikini-2015149">Showing Off! Amy Duggar Proudly Displays Bikini Body:&hellip;</a>                            </li>
+				<a href="/celebrity-body/news/shakiras-abs-are-sculpted-in-post-baby-body-reveal-photo-details-2015159"><img width="148" class="thumbnail" alt="Shakira's Abs Are More Sculpted Than Ever in Post-Baby Body Reveal: Photo, Details" src="http://assets-s3.usmagazine.com/uploads/assets/articles/92009-shakiras-abs-are-sculpted-in-post-baby-body-reveal-photo-details/promo/148x88/1442353057_anna-kaiser-shakira-178.jpg" /></a>				<a class="type" href="/celebrity-body/news/shakiras-abs-are-sculpted-in-post-baby-body-reveal-photo-details-2015159">Shakira's Abs Are More Sculpted Than Ever in Post-Baby Body&hellip;</a>                            </li>
 					
 					<li class="last entertainment">
 				<span class="channel">Entertainment</span>
-				<a href="/entertainment/news/downton-abbey-final-season-trailer-its-the-end-of-an-era-2015149"><img width="148" class="thumbnail" alt="Downton Abbey Final Season Trailer Reveals Characters Moving on, It's the &quot;End of an Era&quot;" src="http://assets-s3.usmagazine.com/uploads/assets/articles/91947-downton-abbey-final-season-trailer-its-the-end-of-an-era/promo/148x88/1442257742_downton-abbey-178.jpg" /></a>				<a class="type" href="/entertainment/news/downton-abbey-final-season-trailer-its-the-end-of-an-era-2015149">Downton Abbey's Moving Into a New Era in Final Season&hellip;</a>                            </li>
+				<a href="/entertainment/news/madonna-concert-review-pop-icon-takes-manhattan-with-nyc-tour-stop-2015179"><img width="148" class="thumbnail" alt="Madonna Concert Review: Pop Icon Takes Manhattan With &quot;Astonishingly Impressive&quot; NYC Tour Stop" src="http://assets-s3.usmagazine.com/uploads/assets/articles/92091-madonna-concert-review-pop-icon-takes-manhattan-with-nyc-tour-stop/promo/148x88/1442504682_madonna-performs-178.jpg" /></a>				<a class="type" href="/entertainment/news/madonna-concert-review-pop-icon-takes-manhattan-with-nyc-tour-stop-2015179">Review: Madonna Is "Astonishingly Impressive" in NYC&hellip;</a>                            </li>
 		
 		
 	</ul>
@@ -751,7 +769,10 @@ New York, NY 10104
         </div><!-- .page-content -->
          
     </div><!-- .page-content-bottom -->
-	    <div id="footer">
+	    <script src="/js/fe/waypoints/noframework.waypoints.min.js"></script>
+    <script src="/js/fe/waypoints/inview.min.js"></script>
+
+    <div id="footer">
     	<div id="footer-inner">
     	
          
@@ -761,26 +782,10 @@ New York, NY 10104
 				                <div id="leaderboard_footer"></div>
                 
 			</div>
-            <script src="/js/fe/waypoints/noframework.waypoints.min.js"></script>
-            <script src="/js/fe/waypoints/inview.min.js"></script>
-            <script>
-                /* 
-                    a min-height set on the leaderboard_footer div allows Waypoints to accurately determine 
-                    when the slot is in-view before firing the ad call.  If no ad is returned, GPT will apply 
-                    an inline display:none.
-                */
-        		var waypointFooterInView = new Waypoint.Inview({
-            		element: document.getElementById('leaderboard_footer'),
-            		entered: function(direction) {
-                        // only trigger ad load when scrolling down
-                		if (direction === 'down') {
-                    		gptAds.loadLeaderboardFooter();
-                		}        		
-            		}
-        		});
-            </script>
-            
+                        
         			
+            <script src="/js/fe/inview.js"></script>
+
 	    	<div id="footer-content" data-track-tags="a" data-category="Nav" data-action="Footer">
 	        	<div class="footer-links clearfix">
 	            	<div class="category magazine clearfix">
@@ -945,5 +950,5 @@ dataLayer.push({
         });
     </script>
     
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5ee52db725","applicationID":"8011350","transactionName":"YAFVYhZSXBcDWk0KV1lLdlUQWl0KTUpcEU5eB1JFS1pcAAdB","queueTime":0,"applicationTime":367,"atts":"TEZWFF5ITxk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5ee52db725","applicationID":"8011350","transactionName":"YAFVYhZSXBcDWk0KV1lLdlUQWl0KTUpcEU5eB1JFS1pcAAdB","queueTime":0,"applicationTime":399,"atts":"TEZWFF5ITxk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script></body>
 </html>	
