@@ -26,6 +26,8 @@
 // Updated 08-12-2015 | Keith Davis - KD5879 //
 // Updated 08-27-2015 | Keith Davis - KD5879 //
 // Updated 08-28-2015 | Keith Davis - KD5879 //
+// Updated 09-15-2015 | Keith Davis - KD5879 //
+// Updated 09-17-2015 | Keith Davis - KD5879 //
  
 if (location.pathname == '/Common/about_us/privacy_policy/print_policy.html') {
 	pid = 'printversion';
@@ -183,8 +185,8 @@ function setFaqContent(sectionID)
 			+ 'What does this Policy cover?'
 			+ 'This Privacy Policy covers our practices regarding the information we collect about our customers and users (how we collect it and how we use it). Use of our products and services, as well as visits to our websites, are subject to this Privacy Policy.'
 			+ 'Do you have any Privacy Policies other than this one?'
-						+ 'Yes. AT&T companies that do not operate under our brand, or certain co-branded services, may have separate privacy policies'
-			+ 'Some areas outside the United States require us to work a little differently. In that case, AT&T may adopt separate privacy policies as necessary to reflect the requirements of applicable local laws, such as with our wireless operations in Mexico. Satellite TV subscribers in certain U.S. Territories also may have separate privacy policies. Satellite TV subscribers in certain U.S. Territories also may have separate privacy policies.'
+						+ 'Yes. Companies that do not operate under our brand, or certain co-branded services, may have separate privacy policies'
+			+ 'Some areas outside the United States require us to work a little differently. In that case, AT&T may adopt separate privacy policies as necessary to reflect the requirements of applicable local laws. Satellite TV subscribers in certain U.S. Territories also may have separate privacy policies.'
 			+ 'The Joint AT&T EchoStar Privacy Policy for AT&T|DISH Network Customer Account Information remains in effect for AT&T|DISH subscribers.'			
 			+ ' What about my family members and other users of my AT&T account? Does this Policy apply to them?'
 			+ ' Yes. You're responsible for making sure all family members or other users under your account understand and agree to this Policy. Get everyone together and talk about it. Or, send it by e-mail to make sure they're on board. Hang it on the fridge. Up to you, just share it! '
@@ -425,11 +427,10 @@ function setFaqContent(sectionID)
 			+ '                    '
 			+ 'You can choose not to receive some types of advertising online, on your satellite TV service or on your wireless device.'
 			+ ''
-			+ 'Opt-out of Relevant Advertising delivered online by AT&T here and you can opt out of Mobile Relevant Advertising on your mobile device here. You'll need to opt-out on each  browser and mobile device you want to exclude.'
-			+ 'Opt-out of Online Behavioral Advertising provided by AT&T and other advertisers on your computer by clicking the "Advertising Choices" " link at the bottom of our web pages.'
-			+ 'Opt-out of Relevant Advertising by AT&T on Satellite TV Viewing here.'
+			+ 'Opt-out of Relevant Advertising delivered by AT&T here.'
+			+ 'Opt-out of Online Behavioral Advertising provided by AT&T and other advertisers on your computer by clicking the "Advertising Choices" link at the bottom of our web pages.'
 			+ 'Opt-out of interest-based advertising on att.net powered by Yahoo! here.'
-			+ 'Opt-out of online behavioral advertising from many other ad networks at the Network Advertising Initiative (NAI) site..'
+			+ 'Opt-out of online behavioral advertising from many other ad networks at the Network Advertising Initiative (NAI) site.'
 			+ 'When you see online ads for AT&T products and services that display this icon , click and you will get information on how to opt-out.'
 			+ 'To limit collection of data on web sites that may be used for advertising, go here for information on how to manage cookies and other similar technologies on your computer.'
 			+ ''
@@ -447,7 +448,7 @@ function setFaqContent(sectionID)
 			+ 'All of our practices are designed to satisfy state and federal legal requirements limiting marketing contacts. Those laws and regulations - such as the requirements governing the state and federal "Do Not Call" lists - generally permit companies to contact their own current and, in some cases, former customers, even when those customers are listed on the federal and state "Do Not Call" lists.'
 			+ 'Restricting our use of your CPNI will not eliminate all types of our marketing contacts.'
 			+ 'Can I choose to exclude my anonymous information from your External Marketing & Analytics and other similar reports?  '
-			+ 'Yes. Click here to opt-out. Satellite TV-only customers who have recently joined the AT&T Family of Companies can opt out here. This opt-out also applies to the sharing of your anonymous information with other companies for their use in creating marketing and analytics reports. Although this opt out does not apply to Metrics Reports, it will apply if we combine Metrics Report information with other customer information (like demographics) to create reports that we provide to our business customers or service suppliers.'
+			+ 'Yes. Click here to opt-out. This opt-out also applies to the sharing of your anonymous information with other companies for their use in creating marketing and analytics reports. Although this opt out does not apply to Metrics Reports, it will apply if we combine Metrics Report information with other customer information (like demographics) to create reports that we provide to our business customers or service suppliers.'
 			+ 'What is DNS error assist?'
 			
 			+ 'When you mistype a web address, or the address is not working, DNS Error Assist provides an automated list of similar pages – such as possibly the one you meant to type – for your consideration. The service is provided on your AT&T residential broadband connection, and you can opt-out here. If you opt-out, you will get a standard “no results found” error message instead of the error-assist page.'
@@ -556,17 +557,9 @@ function renderCookies() {
 function renderOptOut() {
   document.write('You have choices about how your information is collected and used, both by AT&T and by other companies. That includes "opting out" of some programs, setting privacy preferences, and unsubscribing from certain kinds of emails or letters. We've listed your choices below.'
 			+ ''  
-			+ 'Online Advertising from AT&T: You can opt-out of Relevant Advertising  delivered by AT&T on your computer by going to Opt out of Relevant Advertising at http://www.att.com/cmpchoice on each computer browser you wish to exclude.'
-  			+ 'Mobile Advertising from AT&T: You can opt-out of receiving Relevant Advertising delivered by AT&T on your mobile device. You will need to opt-out on each mobile device you wish to exclude.'
-  			+ 'You can follow the steps below:'
-  			  			+ 'Make sure you are on the AT&T wireless network, and not on any Wi-Fi'
-						+ 'From your AT&T mobile device you want to opt out, go to mobileoptout.att.com/'
-  			+ 'Choose the blue Opt-Out button. You should receive the following message: "Thank you. This device will not be receiving AT&T Relevant Advertising"'
-  			+ ''
-  			+ ''
-  			+ 'Online Behavioral Advertising from AT&T and Other Advertisers: You can opt out of online behavioral advertising from our advertising partners and others by going to Your Advertising Choices site. You will need to opt-out on each computer browser you wish to exclude.'
-			+ 'Advertising on Satellite TV: You can opt out of Relevant Advertising by AT&T on Satellite TV by going to manage your privacy choices. If you are a satellite only subscriber by going to www.att.com/directvprivacy'
-			  			+ 'Advertising on att.net: You can opt-out of receiving targeted online ads from Yahoo! when using our att.net email service or other Yahoo! services by accessing ATT.net marketing preferences through your account.'
+			+ 'Relevant Advertising from AT&T: You can opt-out of Relevant Advertising delivered by AT&T by going to Manage Your Privacy Choices.'
+  			+ 'Online Behavioral Advertising from AT&T and Other Advertisers: You can opt out of online behavioral advertising from our advertising partners and others by going to Your Advertising Choices site. You will need to opt-out on each computer browser you wish to exclude. '
+			+ 'Advertising on att.net: You can opt-out of receiving targeted online ads from Yahoo! when using our att.net email service or other Yahoo! services by accessing ATT.net marketing preferences through your account.'
   			+ 'Additional Advertising Opt-Out Choices: You can opt out of online behavioral advertising from other companies who have joined an association called the Network Advertising Initiative.'
   			+ 'Information about Cookies and Similar Technologies: To limit collection of data on web sites that may be used for advertising, see the Definitions for information on how to manage cookies and other similar technologies on your computer.'
 			+ ''
@@ -682,8 +675,8 @@ if (pid == '2506') {
 			+'A.  Customers can unsubscribe from AT&T marketing materials sent by U.S. mail here. '
 			+'Q.  I have an AT&T business account. Will my anonymous information be used in External Marketing & Analytics Reports?'
 			+'A.  These reports will use anonymous information from AT&T consumer accounts. Business accounts are not included except for small-business U-verse accounts. However, they can opt out just like consumer accounts by visiting www.att.com/cmpchoice.'
-			+'Q.  For AT&T Relevant Advertising, why do I have to opt out from each computer or mobile device?'
-			+'A. That's a good question. Opt-out works differently for your computer than for your mobile device.  On your computer's web browser, opt-out works through a small data file called a "cookie." The cookie communicates from your browser, telling advertisers that you don't want to receive the relevant ad. It is anonymous, and is not linked to your identity or account. This is the current, standard method for online advertising. You can learn more about cookies here, and you can opt-out your computer's browser at http://preferences-mgr.truste.com/?&type;=att&pid;=ATT_Publisher if you are on that computer now.'
+		/*	+'Q.  For AT&T Relevant Advertising, why do I have to opt out from each computer or mobile device?'
+			+'A. That's a good question. Opt-out works differently for your computer than for your mobile device.  On your computer's web browser, opt-out works through a small data file called a "cookie." The cookie communicates from your browser, telling advertisers that you don't want to receive the relevant ad. It is anonymous, and is not linked to your identity or account. This is the current, standard method for online advertising. You can learn more about cookies here, and you can opt-out your computer's browser at http://preferences-mgr.truste.com/?&type;=att&pid;=ATT_Publisher if you are on that computer now.'*/
 			+'For mobile, different devices use different technologies. Some mobile devices, for example, do not support the use of cookies.  Therefore, to ensure that we don't deliver AT&T Relevant Advertising to your mobile device, we must be able to accurately identify the device that you are opting out. To do that, on each device that you wish to opt-out, go to http://preferences-mgr.truste.com/?&type;=att&pid;=ATT_Publisher  and click "Opt-Out". Please make sure you are connected to the AT&T cellular network when you do so.'
 			+'Q. I can't figure out how to opt out of the External Marketing & Analytics Reports.'
 			+'A. You can opt out of External Marketing & Analytics reports in two ways. You can go to http://att.com/cmpchoice with your account ID and password, or you can call 866.344.9850. If you have more than one AT&T account, such as wireless and AT&T U-verse, you may have to log in to each account if you use att.com/cmpchoice. We require logging in for security, to make sure it's really you making a change to your account.'
