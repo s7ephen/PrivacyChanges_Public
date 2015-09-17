@@ -32,7 +32,8 @@
 
 	<link rel="canonical" href="http://www.spiegel.de/meinspiegel/artikel/a-703602.html" />
 			<link rel="alternate" media="only screen and (max-width: 640px)" id="alternate-mobileplus" href="http://m.spiegel.de/meinspiegel/artikel/a-703602.html" />
-	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+		<link rel="alternate" id="alternate-androidapp" href="android-app://de.spiegel.android.app.spon/http/a.spiegel.de/meinspiegel/artikel/a-703602.html" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 <link rel="apple-touch-icon" sizes="57x57"   href="/static/sys/v10/icons/touch-icon-iphone.png" />
 <link rel="apple-touch-icon" sizes="72x72"   href="/static/sys/v10/icons/touch-icon72.png" />
 <link rel="apple-touch-icon" sizes="76x76"   href="/static/sys/v10/icons/touch-icon76.png" />
@@ -41,37 +42,37 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/static/sys/v10/icons/touch-icon144.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/static/sys/v10/icons/touch-icon152.png" />
 <!-- ##SPONTAG: CSS## -->
-		<link rel="stylesheet" type="text/css" href="/layout/css/style-V6-13.css" />
+		<link rel="stylesheet" type="text/css" href="/layout/css/style-V6-14.css" />
 	<!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="/layout/css/ie7-V6-13.css" />
+	<link rel="stylesheet" type="text/css" href="/layout/css/ie7-V6-14.css" />
 	<![endif]-->
 	<!--[if IE 8]>
-	<link rel="stylesheet" type="text/css" href="/layout/css/ie8-V6-13.css" />
+	<link rel="stylesheet" type="text/css" href="/layout/css/ie8-V6-14.css" />
 	<![endif]-->
-	<script src="/layout/jscfg/http/global-V6-13a.js" type="text/javascript"></script>
-		<script src="/layout/js/http/javascript-V6-13a.js" type="text/javascript"></script>
+	<script src="/layout/jscfg/http/global-V6-14.js" type="text/javascript"></script>
+		<script src="/layout/js/http/javascript-V6-14.js" type="text/javascript"></script>
 		<script type="text/javascript" id="spIpadScript">
 		if (spUA.isIPad()) {
 			if ("https:" == window.location.protocol){
-				document.write('<scr' + 'ipt src="/layout/js/https/ipad-V6-13a.js" type="text/javascript"><\/scr' + 'ipt>');
+				document.write('<scr' + 'ipt src="/layout/js/https/ipad-V6-14.js" type="text/javascript"><\/scr' + 'ipt>');
 			} else
-				document.write('<scr' + 'ipt src="/layout/js/http/ipad-V6-13a.js" type="text/javascript"><\/scr' + 'ipt>');
+				document.write('<scr' + 'ipt src="/layout/js/http/ipad-V6-14.js" type="text/javascript"><\/scr' + 'ipt>');
 		}
 		</script>
 		<script type="text/javascript" id="spIpadVideoScript">
 			var hashParams = spGetHashParams();
 			var forceJWPlayer = hashParams['sp.forceJWPlayer'] && hashParams['sp.forceJWPlayer'] === '1';
 			if (spUA.isIDevice() || spUA.isAndroid() || !isValidPluginVersion() || forceJWPlayer) {
-				document.write('<scr' + 'ipt src="/layout/js/http/ipadvideo-V6-13a.js" type="text/javascript"><\/scr' + 'ipt>');
+				document.write('<scr' + 'ipt src="/layout/js/http/ipadvideo-V6-14.js" type="text/javascript"><\/scr' + 'ipt>');
 			}
 		</script>
-		<script src="/layout/js/http/interface-V6-13a.js" type="text/javascript"></script>
+		<script src="/layout/js/http/interface-V6-14.js" type="text/javascript"></script>
 
 
-	<script src="/layout/js/http/netmind-V6-13a.js" type="text/javascript"></script>
+	<script src="/layout/js/http/netmind-V6-14.js" type="text/javascript"></script>
 		<script type="text/javascript" src="https://script.ioam.de/iam.js"></script>
 	<!--[if lte IE 8]>
-		<script src="/layout/js/http/respond_min-V6-13a.js" type="text/javascript"></script>
+		<script src="/layout/js/http/respond_min-V6-14.js" type="text/javascript"></script>
 	<![endif]-->
 	<script type="text/javascript">
 <!--
@@ -1141,7 +1142,8 @@ checkRemotePermission(pushNotification.permission(websitePushID));
 </div>
 <br class="clearfix" />
 </div>
-</div> <script type='text/javascript'>
+<!-- kein sharedcount --></div> <div id="article-overscroll-area"></div>
+	<script type='text/javascript'>
 	<!--
         var channel = 'Mein SPIEGEL';
         var authors = '';
@@ -1156,9 +1158,12 @@ checkRemotePermission(pushNotification.permission(websitePushID));
 			spAutoOpenSendForm('de','mail');
 		
 		spGotoBlogComment();
+		
+			var articleoverscroll = new spArticleOverscroll();
+		
 
 		// -->
 	</script> 
 
-<!-- kein sharedcount --></body>
+</body>
 </html>
